@@ -82,7 +82,7 @@
     "outdir": "dist",
     "targets": {
       "java": {
-        "package": "com.hashicorp.cdktf.providers.google_beta",
+        "package": "com.hashicorp.cdktf.providers.google-beta",
         "maven": {
           "groupId": "com.hashicorp",
           "artifactId": "cdktf-provider-google-beta"
