@@ -1,0 +1,2744 @@
+// https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface GoogleSqlDatabaseInstanceConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * The MySQL, PostgreSQL or SQL Server (beta) version to use. Supported values include MYSQL_5_6, MYSQL_5_7, MYSQL_8_0, POSTGRES_9_6, POSTGRES_10, POSTGRES_11, POSTGRES_12, POSTGRES_13, SQLSERVER_2017_STANDARD, SQLSERVER_2017_ENTERPRISE, SQLSERVER_2017_EXPRESS, SQLSERVER_2017_WEB. Database Version Policies includes an up-to-date reference of supported versions.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#database_version GoogleSqlDatabaseInstance#database_version}
+  */
+  readonly databaseVersion: string;
+  /**
+  * Used to block Terraform from deleting a SQL Instance.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#deletion_protection GoogleSqlDatabaseInstance#deletion_protection}
+  */
+  readonly deletionProtection?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#encryption_key_name GoogleSqlDatabaseInstance#encryption_key_name}
+  */
+  readonly encryptionKeyName?: string;
+  /**
+  * The name of the instance that will act as the master in the replication setup. Note, this requires the master to have binary_log_enabled set, as well as existing backups.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#master_instance_name GoogleSqlDatabaseInstance#master_instance_name}
+  */
+  readonly masterInstanceName?: string;
+  /**
+  * The name of the instance. If the name is left blank, Terraform will randomly generate one when the instance is first created. This is done because after a name is used, it cannot be reused for up to one week.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
+  */
+  readonly name?: string;
+  /**
+  * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#project GoogleSqlDatabaseInstance#project}
+  */
+  readonly project?: string;
+  /**
+  * The region the instance will sit in. Note, Cloud SQL is not available in all regions. A valid region must be provided to use this resource. If a region is not provided in the resource definition, the provider region will be used instead, but this will be an apply-time error for instances if the provider region is not supported with Cloud SQL. If you choose not to provide the region argument for this resource, make sure you understand this.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#region GoogleSqlDatabaseInstance#region}
+  */
+  readonly region?: string;
+  /**
+  * Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#root_password GoogleSqlDatabaseInstance#root_password}
+  */
+  readonly rootPassword?: string;
+  /**
+  * clone block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#clone GoogleSqlDatabaseInstance#clone}
+  */
+  readonly clone?: GoogleSqlDatabaseInstanceClone;
+  /**
+  * replica_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#replica_configuration GoogleSqlDatabaseInstance#replica_configuration}
+  */
+  readonly replicaConfiguration?: GoogleSqlDatabaseInstanceReplicaConfiguration;
+  /**
+  * restore_backup_context block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#restore_backup_context GoogleSqlDatabaseInstance#restore_backup_context}
+  */
+  readonly restoreBackupContext?: GoogleSqlDatabaseInstanceRestoreBackupContext;
+  /**
+  * settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#settings GoogleSqlDatabaseInstance#settings}
+  */
+  readonly settings?: GoogleSqlDatabaseInstanceSettings;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#timeouts GoogleSqlDatabaseInstance#timeouts}
+  */
+  readonly timeouts?: GoogleSqlDatabaseInstanceTimeouts;
+}
+export interface GoogleSqlDatabaseInstanceIpAddress {
+}
+
+export function googleSqlDatabaseInstanceIpAddressToTerraform(struct?: GoogleSqlDatabaseInstanceIpAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GoogleSqlDatabaseInstanceIpAddressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceIpAddress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceIpAddress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ip_address - computed: true, optional: false, required: false
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+
+  // time_to_retire - computed: true, optional: false, required: false
+  public get timeToRetire() {
+    return this.getStringAttribute('time_to_retire');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class GoogleSqlDatabaseInstanceIpAddressList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleSqlDatabaseInstanceIpAddressOutputReference {
+    return new GoogleSqlDatabaseInstanceIpAddressOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleSqlDatabaseInstanceServerCaCert {
+}
+
+export function googleSqlDatabaseInstanceServerCaCertToTerraform(struct?: GoogleSqlDatabaseInstanceServerCaCert): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GoogleSqlDatabaseInstanceServerCaCertOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceServerCaCert | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceServerCaCert | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cert - computed: true, optional: false, required: false
+  public get cert() {
+    return this.getStringAttribute('cert');
+  }
+
+  // common_name - computed: true, optional: false, required: false
+  public get commonName() {
+    return this.getStringAttribute('common_name');
+  }
+
+  // create_time - computed: true, optional: false, required: false
+  public get createTime() {
+    return this.getStringAttribute('create_time');
+  }
+
+  // expiration_time - computed: true, optional: false, required: false
+  public get expirationTime() {
+    return this.getStringAttribute('expiration_time');
+  }
+
+  // sha1_fingerprint - computed: true, optional: false, required: false
+  public get sha1Fingerprint() {
+    return this.getStringAttribute('sha1_fingerprint');
+  }
+}
+
+export class GoogleSqlDatabaseInstanceServerCaCertList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleSqlDatabaseInstanceServerCaCertOutputReference {
+    return new GoogleSqlDatabaseInstanceServerCaCertOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleSqlDatabaseInstanceClone {
+  /**
+  * The name of the allocated ip range for the private ip CloudSQL instance. For example: "google-managed-services-default". If set, the cloned instance ip will be created in the allocated range. The range name must comply with [RFC 1035](https://tools.ietf.org/html/rfc1035). Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
+  */
+  readonly allocatedIpRange?: string;
+  /**
+  * The timestamp of the point in time that should be restored.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#point_in_time GoogleSqlDatabaseInstance#point_in_time}
+  */
+  readonly pointInTime?: string;
+  /**
+  * The name of the instance from which the point in time should be restored.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#source_instance_name GoogleSqlDatabaseInstance#source_instance_name}
+  */
+  readonly sourceInstanceName: string;
+}
+
+export function googleSqlDatabaseInstanceCloneToTerraform(struct?: GoogleSqlDatabaseInstanceCloneOutputReference | GoogleSqlDatabaseInstanceClone): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allocated_ip_range: cdktf.stringToTerraform(struct!.allocatedIpRange),
+    point_in_time: cdktf.stringToTerraform(struct!.pointInTime),
+    source_instance_name: cdktf.stringToTerraform(struct!.sourceInstanceName),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceCloneOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceClone | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allocatedIpRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allocatedIpRange = this._allocatedIpRange;
+    }
+    if (this._pointInTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pointInTime = this._pointInTime;
+    }
+    if (this._sourceInstanceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceInstanceName = this._sourceInstanceName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceClone | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allocatedIpRange = undefined;
+      this._pointInTime = undefined;
+      this._sourceInstanceName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allocatedIpRange = value.allocatedIpRange;
+      this._pointInTime = value.pointInTime;
+      this._sourceInstanceName = value.sourceInstanceName;
+    }
+  }
+
+  // allocated_ip_range - computed: false, optional: true, required: false
+  private _allocatedIpRange?: string; 
+  public get allocatedIpRange() {
+    return this.getStringAttribute('allocated_ip_range');
+  }
+  public set allocatedIpRange(value: string) {
+    this._allocatedIpRange = value;
+  }
+  public resetAllocatedIpRange() {
+    this._allocatedIpRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocatedIpRangeInput() {
+    return this._allocatedIpRange;
+  }
+
+  // point_in_time - computed: false, optional: true, required: false
+  private _pointInTime?: string; 
+  public get pointInTime() {
+    return this.getStringAttribute('point_in_time');
+  }
+  public set pointInTime(value: string) {
+    this._pointInTime = value;
+  }
+  public resetPointInTime() {
+    this._pointInTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pointInTimeInput() {
+    return this._pointInTime;
+  }
+
+  // source_instance_name - computed: false, optional: false, required: true
+  private _sourceInstanceName?: string; 
+  public get sourceInstanceName() {
+    return this.getStringAttribute('source_instance_name');
+  }
+  public set sourceInstanceName(value: string) {
+    this._sourceInstanceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInstanceNameInput() {
+    return this._sourceInstanceName;
+  }
+}
+export interface GoogleSqlDatabaseInstanceReplicaConfiguration {
+  /**
+  * PEM representation of the trusted CA's x509 certificate.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#ca_certificate GoogleSqlDatabaseInstance#ca_certificate}
+  */
+  readonly caCertificate?: string;
+  /**
+  * PEM representation of the replica's x509 certificate.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#client_certificate GoogleSqlDatabaseInstance#client_certificate}
+  */
+  readonly clientCertificate?: string;
+  /**
+  * PEM representation of the replica's private key. The corresponding public key in encoded in the client_certificate.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#client_key GoogleSqlDatabaseInstance#client_key}
+  */
+  readonly clientKey?: string;
+  /**
+  * The number of seconds between connect retries.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#connect_retry_interval GoogleSqlDatabaseInstance#connect_retry_interval}
+  */
+  readonly connectRetryInterval?: number;
+  /**
+  * Path to a SQL file in Google Cloud Storage from which replica instances are created. Format is gs://bucket/filename.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#dump_file_path GoogleSqlDatabaseInstance#dump_file_path}
+  */
+  readonly dumpFilePath?: string;
+  /**
+  * Specifies if the replica is the failover target. If the field is set to true the replica will be designated as a failover replica. If the master instance fails, the replica instance will be promoted as the new master instance.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#failover_target GoogleSqlDatabaseInstance#failover_target}
+  */
+  readonly failoverTarget?: boolean | cdktf.IResolvable;
+  /**
+  * Time in ms between replication heartbeats.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#master_heartbeat_period GoogleSqlDatabaseInstance#master_heartbeat_period}
+  */
+  readonly masterHeartbeatPeriod?: number;
+  /**
+  * Password for the replication connection.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#password GoogleSqlDatabaseInstance#password}
+  */
+  readonly password?: string;
+  /**
+  * Permissible ciphers for use in SSL encryption.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#ssl_cipher GoogleSqlDatabaseInstance#ssl_cipher}
+  */
+  readonly sslCipher?: string;
+  /**
+  * Username for replication connection.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#username GoogleSqlDatabaseInstance#username}
+  */
+  readonly username?: string;
+  /**
+  * True if the master's common name value is checked during the SSL handshake.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#verify_server_certificate GoogleSqlDatabaseInstance#verify_server_certificate}
+  */
+  readonly verifyServerCertificate?: boolean | cdktf.IResolvable;
+}
+
+export function googleSqlDatabaseInstanceReplicaConfigurationToTerraform(struct?: GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference | GoogleSqlDatabaseInstanceReplicaConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ca_certificate: cdktf.stringToTerraform(struct!.caCertificate),
+    client_certificate: cdktf.stringToTerraform(struct!.clientCertificate),
+    client_key: cdktf.stringToTerraform(struct!.clientKey),
+    connect_retry_interval: cdktf.numberToTerraform(struct!.connectRetryInterval),
+    dump_file_path: cdktf.stringToTerraform(struct!.dumpFilePath),
+    failover_target: cdktf.booleanToTerraform(struct!.failoverTarget),
+    master_heartbeat_period: cdktf.numberToTerraform(struct!.masterHeartbeatPeriod),
+    password: cdktf.stringToTerraform(struct!.password),
+    ssl_cipher: cdktf.stringToTerraform(struct!.sslCipher),
+    username: cdktf.stringToTerraform(struct!.username),
+    verify_server_certificate: cdktf.booleanToTerraform(struct!.verifyServerCertificate),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceReplicaConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._caCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.caCertificate = this._caCertificate;
+    }
+    if (this._clientCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientCertificate = this._clientCertificate;
+    }
+    if (this._clientKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clientKey = this._clientKey;
+    }
+    if (this._connectRetryInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.connectRetryInterval = this._connectRetryInterval;
+    }
+    if (this._dumpFilePath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dumpFilePath = this._dumpFilePath;
+    }
+    if (this._failoverTarget !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failoverTarget = this._failoverTarget;
+    }
+    if (this._masterHeartbeatPeriod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.masterHeartbeatPeriod = this._masterHeartbeatPeriod;
+    }
+    if (this._password !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.password = this._password;
+    }
+    if (this._sslCipher !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslCipher = this._sslCipher;
+    }
+    if (this._username !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.username = this._username;
+    }
+    if (this._verifyServerCertificate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.verifyServerCertificate = this._verifyServerCertificate;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceReplicaConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._caCertificate = undefined;
+      this._clientCertificate = undefined;
+      this._clientKey = undefined;
+      this._connectRetryInterval = undefined;
+      this._dumpFilePath = undefined;
+      this._failoverTarget = undefined;
+      this._masterHeartbeatPeriod = undefined;
+      this._password = undefined;
+      this._sslCipher = undefined;
+      this._username = undefined;
+      this._verifyServerCertificate = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._caCertificate = value.caCertificate;
+      this._clientCertificate = value.clientCertificate;
+      this._clientKey = value.clientKey;
+      this._connectRetryInterval = value.connectRetryInterval;
+      this._dumpFilePath = value.dumpFilePath;
+      this._failoverTarget = value.failoverTarget;
+      this._masterHeartbeatPeriod = value.masterHeartbeatPeriod;
+      this._password = value.password;
+      this._sslCipher = value.sslCipher;
+      this._username = value.username;
+      this._verifyServerCertificate = value.verifyServerCertificate;
+    }
+  }
+
+  // ca_certificate - computed: false, optional: true, required: false
+  private _caCertificate?: string; 
+  public get caCertificate() {
+    return this.getStringAttribute('ca_certificate');
+  }
+  public set caCertificate(value: string) {
+    this._caCertificate = value;
+  }
+  public resetCaCertificate() {
+    this._caCertificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get caCertificateInput() {
+    return this._caCertificate;
+  }
+
+  // client_certificate - computed: false, optional: true, required: false
+  private _clientCertificate?: string; 
+  public get clientCertificate() {
+    return this.getStringAttribute('client_certificate');
+  }
+  public set clientCertificate(value: string) {
+    this._clientCertificate = value;
+  }
+  public resetClientCertificate() {
+    this._clientCertificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientCertificateInput() {
+    return this._clientCertificate;
+  }
+
+  // client_key - computed: false, optional: true, required: false
+  private _clientKey?: string; 
+  public get clientKey() {
+    return this.getStringAttribute('client_key');
+  }
+  public set clientKey(value: string) {
+    this._clientKey = value;
+  }
+  public resetClientKey() {
+    this._clientKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clientKeyInput() {
+    return this._clientKey;
+  }
+
+  // connect_retry_interval - computed: false, optional: true, required: false
+  private _connectRetryInterval?: number; 
+  public get connectRetryInterval() {
+    return this.getNumberAttribute('connect_retry_interval');
+  }
+  public set connectRetryInterval(value: number) {
+    this._connectRetryInterval = value;
+  }
+  public resetConnectRetryInterval() {
+    this._connectRetryInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get connectRetryIntervalInput() {
+    return this._connectRetryInterval;
+  }
+
+  // dump_file_path - computed: false, optional: true, required: false
+  private _dumpFilePath?: string; 
+  public get dumpFilePath() {
+    return this.getStringAttribute('dump_file_path');
+  }
+  public set dumpFilePath(value: string) {
+    this._dumpFilePath = value;
+  }
+  public resetDumpFilePath() {
+    this._dumpFilePath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dumpFilePathInput() {
+    return this._dumpFilePath;
+  }
+
+  // failover_target - computed: false, optional: true, required: false
+  private _failoverTarget?: boolean | cdktf.IResolvable; 
+  public get failoverTarget() {
+    return this.getBooleanAttribute('failover_target');
+  }
+  public set failoverTarget(value: boolean | cdktf.IResolvable) {
+    this._failoverTarget = value;
+  }
+  public resetFailoverTarget() {
+    this._failoverTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failoverTargetInput() {
+    return this._failoverTarget;
+  }
+
+  // master_heartbeat_period - computed: false, optional: true, required: false
+  private _masterHeartbeatPeriod?: number; 
+  public get masterHeartbeatPeriod() {
+    return this.getNumberAttribute('master_heartbeat_period');
+  }
+  public set masterHeartbeatPeriod(value: number) {
+    this._masterHeartbeatPeriod = value;
+  }
+  public resetMasterHeartbeatPeriod() {
+    this._masterHeartbeatPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get masterHeartbeatPeriodInput() {
+    return this._masterHeartbeatPeriod;
+  }
+
+  // password - computed: false, optional: true, required: false
+  private _password?: string; 
+  public get password() {
+    return this.getStringAttribute('password');
+  }
+  public set password(value: string) {
+    this._password = value;
+  }
+  public resetPassword() {
+    this._password = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get passwordInput() {
+    return this._password;
+  }
+
+  // ssl_cipher - computed: false, optional: true, required: false
+  private _sslCipher?: string; 
+  public get sslCipher() {
+    return this.getStringAttribute('ssl_cipher');
+  }
+  public set sslCipher(value: string) {
+    this._sslCipher = value;
+  }
+  public resetSslCipher() {
+    this._sslCipher = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslCipherInput() {
+    return this._sslCipher;
+  }
+
+  // username - computed: false, optional: true, required: false
+  private _username?: string; 
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+  public set username(value: string) {
+    this._username = value;
+  }
+  public resetUsername() {
+    this._username = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username;
+  }
+
+  // verify_server_certificate - computed: false, optional: true, required: false
+  private _verifyServerCertificate?: boolean | cdktf.IResolvable; 
+  public get verifyServerCertificate() {
+    return this.getBooleanAttribute('verify_server_certificate');
+  }
+  public set verifyServerCertificate(value: boolean | cdktf.IResolvable) {
+    this._verifyServerCertificate = value;
+  }
+  public resetVerifyServerCertificate() {
+    this._verifyServerCertificate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get verifyServerCertificateInput() {
+    return this._verifyServerCertificate;
+  }
+}
+export interface GoogleSqlDatabaseInstanceRestoreBackupContext {
+  /**
+  * The ID of the backup run to restore from.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#backup_run_id GoogleSqlDatabaseInstance#backup_run_id}
+  */
+  readonly backupRunId: number;
+  /**
+  * The ID of the instance that the backup was taken from.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#instance_id GoogleSqlDatabaseInstance#instance_id}
+  */
+  readonly instanceId?: string;
+  /**
+  * The full project ID of the source instance.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#project GoogleSqlDatabaseInstance#project}
+  */
+  readonly project?: string;
+}
+
+export function googleSqlDatabaseInstanceRestoreBackupContextToTerraform(struct?: GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference | GoogleSqlDatabaseInstanceRestoreBackupContext): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    backup_run_id: cdktf.numberToTerraform(struct!.backupRunId),
+    instance_id: cdktf.stringToTerraform(struct!.instanceId),
+    project: cdktf.stringToTerraform(struct!.project),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceRestoreBackupContext | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backupRunId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupRunId = this._backupRunId;
+    }
+    if (this._instanceId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceId = this._instanceId;
+    }
+    if (this._project !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.project = this._project;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceRestoreBackupContext | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._backupRunId = undefined;
+      this._instanceId = undefined;
+      this._project = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._backupRunId = value.backupRunId;
+      this._instanceId = value.instanceId;
+      this._project = value.project;
+    }
+  }
+
+  // backup_run_id - computed: false, optional: false, required: true
+  private _backupRunId?: number; 
+  public get backupRunId() {
+    return this.getNumberAttribute('backup_run_id');
+  }
+  public set backupRunId(value: number) {
+    this._backupRunId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupRunIdInput() {
+    return this._backupRunId;
+  }
+
+  // instance_id - computed: false, optional: true, required: false
+  private _instanceId?: string; 
+  public get instanceId() {
+    return this.getStringAttribute('instance_id');
+  }
+  public set instanceId(value: string) {
+    this._instanceId = value;
+  }
+  public resetInstanceId() {
+    this._instanceId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceIdInput() {
+    return this._instanceId;
+  }
+
+  // project - computed: false, optional: true, required: false
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  public resetProject() {
+    this._project = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+}
+export interface GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings {
+  /**
+  * Number of backups to retain.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#retained_backups GoogleSqlDatabaseInstance#retained_backups}
+  */
+  readonly retainedBackups: number;
+  /**
+  * The unit that 'retainedBackups' represents. Defaults to COUNT
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#retention_unit GoogleSqlDatabaseInstance#retention_unit}
+  */
+  readonly retentionUnit?: string;
+}
+
+export function googleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference | GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    retained_backups: cdktf.numberToTerraform(struct!.retainedBackups),
+    retention_unit: cdktf.stringToTerraform(struct!.retentionUnit),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._retainedBackups !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retainedBackups = this._retainedBackups;
+    }
+    if (this._retentionUnit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retentionUnit = this._retentionUnit;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._retainedBackups = undefined;
+      this._retentionUnit = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._retainedBackups = value.retainedBackups;
+      this._retentionUnit = value.retentionUnit;
+    }
+  }
+
+  // retained_backups - computed: false, optional: false, required: true
+  private _retainedBackups?: number; 
+  public get retainedBackups() {
+    return this.getNumberAttribute('retained_backups');
+  }
+  public set retainedBackups(value: number) {
+    this._retainedBackups = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retainedBackupsInput() {
+    return this._retainedBackups;
+  }
+
+  // retention_unit - computed: false, optional: true, required: false
+  private _retentionUnit?: string; 
+  public get retentionUnit() {
+    return this.getStringAttribute('retention_unit');
+  }
+  public set retentionUnit(value: string) {
+    this._retentionUnit = value;
+  }
+  public resetRetentionUnit() {
+    this._retentionUnit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionUnitInput() {
+    return this._retentionUnit;
+  }
+}
+export interface GoogleSqlDatabaseInstanceSettingsBackupConfiguration {
+  /**
+  * True if binary logging is enabled. If settings.backup_configuration.enabled is false, this must be as well. Cannot be used with Postgres.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#binary_log_enabled GoogleSqlDatabaseInstance#binary_log_enabled}
+  */
+  readonly binaryLogEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * True if backup configuration is enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#enabled GoogleSqlDatabaseInstance#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Location of the backup configuration.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#location GoogleSqlDatabaseInstance#location}
+  */
+  readonly location?: string;
+  /**
+  * True if Point-in-time recovery is enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#point_in_time_recovery_enabled GoogleSqlDatabaseInstance#point_in_time_recovery_enabled}
+  */
+  readonly pointInTimeRecoveryEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * HH:MM format time indicating when backup configuration starts.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#start_time GoogleSqlDatabaseInstance#start_time}
+  */
+  readonly startTime?: string;
+  /**
+  * The number of days of transaction logs we retain for point in time restore, from 1-7.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#transaction_log_retention_days GoogleSqlDatabaseInstance#transaction_log_retention_days}
+  */
+  readonly transactionLogRetentionDays?: number;
+  /**
+  * backup_retention_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#backup_retention_settings GoogleSqlDatabaseInstance#backup_retention_settings}
+  */
+  readonly backupRetentionSettings?: GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings;
+}
+
+export function googleSqlDatabaseInstanceSettingsBackupConfigurationToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference | GoogleSqlDatabaseInstanceSettingsBackupConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    binary_log_enabled: cdktf.booleanToTerraform(struct!.binaryLogEnabled),
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    location: cdktf.stringToTerraform(struct!.location),
+    point_in_time_recovery_enabled: cdktf.booleanToTerraform(struct!.pointInTimeRecoveryEnabled),
+    start_time: cdktf.stringToTerraform(struct!.startTime),
+    transaction_log_retention_days: cdktf.numberToTerraform(struct!.transactionLogRetentionDays),
+    backup_retention_settings: googleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsToTerraform(struct!.backupRetentionSettings),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettingsBackupConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._binaryLogEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.binaryLogEnabled = this._binaryLogEnabled;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._location !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location;
+    }
+    if (this._pointInTimeRecoveryEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pointInTimeRecoveryEnabled = this._pointInTimeRecoveryEnabled;
+    }
+    if (this._startTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    if (this._transactionLogRetentionDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transactionLogRetentionDays = this._transactionLogRetentionDays;
+    }
+    if (this._backupRetentionSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupRetentionSettings = this._backupRetentionSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettingsBackupConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._binaryLogEnabled = undefined;
+      this._enabled = undefined;
+      this._location = undefined;
+      this._pointInTimeRecoveryEnabled = undefined;
+      this._startTime = undefined;
+      this._transactionLogRetentionDays = undefined;
+      this._backupRetentionSettings.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._binaryLogEnabled = value.binaryLogEnabled;
+      this._enabled = value.enabled;
+      this._location = value.location;
+      this._pointInTimeRecoveryEnabled = value.pointInTimeRecoveryEnabled;
+      this._startTime = value.startTime;
+      this._transactionLogRetentionDays = value.transactionLogRetentionDays;
+      this._backupRetentionSettings.internalValue = value.backupRetentionSettings;
+    }
+  }
+
+  // binary_log_enabled - computed: false, optional: true, required: false
+  private _binaryLogEnabled?: boolean | cdktf.IResolvable; 
+  public get binaryLogEnabled() {
+    return this.getBooleanAttribute('binary_log_enabled');
+  }
+  public set binaryLogEnabled(value: boolean | cdktf.IResolvable) {
+    this._binaryLogEnabled = value;
+  }
+  public resetBinaryLogEnabled() {
+    this._binaryLogEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get binaryLogEnabledInput() {
+    return this._binaryLogEnabled;
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // location - computed: false, optional: true, required: false
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  public resetLocation() {
+    this._location = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // point_in_time_recovery_enabled - computed: false, optional: true, required: false
+  private _pointInTimeRecoveryEnabled?: boolean | cdktf.IResolvable; 
+  public get pointInTimeRecoveryEnabled() {
+    return this.getBooleanAttribute('point_in_time_recovery_enabled');
+  }
+  public set pointInTimeRecoveryEnabled(value: boolean | cdktf.IResolvable) {
+    this._pointInTimeRecoveryEnabled = value;
+  }
+  public resetPointInTimeRecoveryEnabled() {
+    this._pointInTimeRecoveryEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pointInTimeRecoveryEnabledInput() {
+    return this._pointInTimeRecoveryEnabled;
+  }
+
+  // start_time - computed: true, optional: true, required: false
+  private _startTime?: string; 
+  public get startTime() {
+    return this.getStringAttribute('start_time');
+  }
+  public set startTime(value: string) {
+    this._startTime = value;
+  }
+  public resetStartTime() {
+    this._startTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeInput() {
+    return this._startTime;
+  }
+
+  // transaction_log_retention_days - computed: true, optional: true, required: false
+  private _transactionLogRetentionDays?: number; 
+  public get transactionLogRetentionDays() {
+    return this.getNumberAttribute('transaction_log_retention_days');
+  }
+  public set transactionLogRetentionDays(value: number) {
+    this._transactionLogRetentionDays = value;
+  }
+  public resetTransactionLogRetentionDays() {
+    this._transactionLogRetentionDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transactionLogRetentionDaysInput() {
+    return this._transactionLogRetentionDays;
+  }
+
+  // backup_retention_settings - computed: false, optional: true, required: false
+  private _backupRetentionSettings = new GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettingsOutputReference(this, "backup_retention_settings");
+  public get backupRetentionSettings() {
+    return this._backupRetentionSettings;
+  }
+  public putBackupRetentionSettings(value: GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings) {
+    this._backupRetentionSettings.internalValue = value;
+  }
+  public resetBackupRetentionSettings() {
+    this._backupRetentionSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupRetentionSettingsInput() {
+    return this._backupRetentionSettings.internalValue;
+  }
+}
+export interface GoogleSqlDatabaseInstanceSettingsDatabaseFlags {
+  /**
+  * Name of the flag.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
+  */
+  readonly name: string;
+  /**
+  * Value of the flag.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}
+  */
+  readonly value: string;
+}
+
+export function googleSqlDatabaseInstanceSettingsDatabaseFlagsToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsDatabaseFlags | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface GoogleSqlDatabaseInstanceSettingsInsightsConfig {
+  /**
+  * True if Query Insights feature is enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#query_insights_enabled GoogleSqlDatabaseInstance#query_insights_enabled}
+  */
+  readonly queryInsightsEnabled?: boolean | cdktf.IResolvable;
+  /**
+  * Maximum query length stored in bytes. Between 256 and 4500. Default to 1024.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#query_string_length GoogleSqlDatabaseInstance#query_string_length}
+  */
+  readonly queryStringLength?: number;
+  /**
+  * True if Query Insights will record application tags from query when enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#record_application_tags GoogleSqlDatabaseInstance#record_application_tags}
+  */
+  readonly recordApplicationTags?: boolean | cdktf.IResolvable;
+  /**
+  * True if Query Insights will record client address when enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#record_client_address GoogleSqlDatabaseInstance#record_client_address}
+  */
+  readonly recordClientAddress?: boolean | cdktf.IResolvable;
+}
+
+export function googleSqlDatabaseInstanceSettingsInsightsConfigToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference | GoogleSqlDatabaseInstanceSettingsInsightsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    query_insights_enabled: cdktf.booleanToTerraform(struct!.queryInsightsEnabled),
+    query_string_length: cdktf.numberToTerraform(struct!.queryStringLength),
+    record_application_tags: cdktf.booleanToTerraform(struct!.recordApplicationTags),
+    record_client_address: cdktf.booleanToTerraform(struct!.recordClientAddress),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettingsInsightsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._queryInsightsEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryInsightsEnabled = this._queryInsightsEnabled;
+    }
+    if (this._queryStringLength !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryStringLength = this._queryStringLength;
+    }
+    if (this._recordApplicationTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recordApplicationTags = this._recordApplicationTags;
+    }
+    if (this._recordClientAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recordClientAddress = this._recordClientAddress;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettingsInsightsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._queryInsightsEnabled = undefined;
+      this._queryStringLength = undefined;
+      this._recordApplicationTags = undefined;
+      this._recordClientAddress = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._queryInsightsEnabled = value.queryInsightsEnabled;
+      this._queryStringLength = value.queryStringLength;
+      this._recordApplicationTags = value.recordApplicationTags;
+      this._recordClientAddress = value.recordClientAddress;
+    }
+  }
+
+  // query_insights_enabled - computed: false, optional: true, required: false
+  private _queryInsightsEnabled?: boolean | cdktf.IResolvable; 
+  public get queryInsightsEnabled() {
+    return this.getBooleanAttribute('query_insights_enabled');
+  }
+  public set queryInsightsEnabled(value: boolean | cdktf.IResolvable) {
+    this._queryInsightsEnabled = value;
+  }
+  public resetQueryInsightsEnabled() {
+    this._queryInsightsEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInsightsEnabledInput() {
+    return this._queryInsightsEnabled;
+  }
+
+  // query_string_length - computed: false, optional: true, required: false
+  private _queryStringLength?: number; 
+  public get queryStringLength() {
+    return this.getNumberAttribute('query_string_length');
+  }
+  public set queryStringLength(value: number) {
+    this._queryStringLength = value;
+  }
+  public resetQueryStringLength() {
+    this._queryStringLength = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryStringLengthInput() {
+    return this._queryStringLength;
+  }
+
+  // record_application_tags - computed: false, optional: true, required: false
+  private _recordApplicationTags?: boolean | cdktf.IResolvable; 
+  public get recordApplicationTags() {
+    return this.getBooleanAttribute('record_application_tags');
+  }
+  public set recordApplicationTags(value: boolean | cdktf.IResolvable) {
+    this._recordApplicationTags = value;
+  }
+  public resetRecordApplicationTags() {
+    this._recordApplicationTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recordApplicationTagsInput() {
+    return this._recordApplicationTags;
+  }
+
+  // record_client_address - computed: false, optional: true, required: false
+  private _recordClientAddress?: boolean | cdktf.IResolvable; 
+  public get recordClientAddress() {
+    return this.getBooleanAttribute('record_client_address');
+  }
+  public set recordClientAddress(value: boolean | cdktf.IResolvable) {
+    this._recordClientAddress = value;
+  }
+  public resetRecordClientAddress() {
+    this._recordClientAddress = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recordClientAddressInput() {
+    return this._recordClientAddress;
+  }
+}
+export interface GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#expiration_time GoogleSqlDatabaseInstance#expiration_time}
+  */
+  readonly expirationTime?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#name GoogleSqlDatabaseInstance#name}
+  */
+  readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#value GoogleSqlDatabaseInstance#value}
+  */
+  readonly value: string;
+}
+
+export function googleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    expiration_time: cdktf.stringToTerraform(struct!.expirationTime),
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export interface GoogleSqlDatabaseInstanceSettingsIpConfiguration {
+  /**
+  * The name of the allocated ip range for the private ip CloudSQL instance. For example: "google-managed-services-default". If set, the instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
+  */
+  readonly allocatedIpRange?: string;
+  /**
+  * Whether this Cloud SQL instance should be assigned a public IPV4 address. At least ipv4_enabled must be enabled or a private_network must be configured.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#ipv4_enabled GoogleSqlDatabaseInstance#ipv4_enabled}
+  */
+  readonly ipv4Enabled?: boolean | cdktf.IResolvable;
+  /**
+  * The VPC network from which the Cloud SQL instance is accessible for private IP. For example, projects/myProject/global/networks/default. Specifying a network enables private IP. At least ipv4_enabled must be enabled or a private_network must be configured. This setting can be updated, but it cannot be removed after it is set.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#private_network GoogleSqlDatabaseInstance#private_network}
+  */
+  readonly privateNetwork?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#require_ssl GoogleSqlDatabaseInstance#require_ssl}
+  */
+  readonly requireSsl?: boolean | cdktf.IResolvable;
+  /**
+  * authorized_networks block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#authorized_networks GoogleSqlDatabaseInstance#authorized_networks}
+  */
+  readonly authorizedNetworks?: GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[] | cdktf.IResolvable;
+}
+
+export function googleSqlDatabaseInstanceSettingsIpConfigurationToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference | GoogleSqlDatabaseInstanceSettingsIpConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allocated_ip_range: cdktf.stringToTerraform(struct!.allocatedIpRange),
+    ipv4_enabled: cdktf.booleanToTerraform(struct!.ipv4Enabled),
+    private_network: cdktf.stringToTerraform(struct!.privateNetwork),
+    require_ssl: cdktf.booleanToTerraform(struct!.requireSsl),
+    authorized_networks: cdktf.listMapper(googleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksToTerraform)(struct!.authorizedNetworks),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettingsIpConfiguration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allocatedIpRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allocatedIpRange = this._allocatedIpRange;
+    }
+    if (this._ipv4Enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv4Enabled = this._ipv4Enabled;
+    }
+    if (this._privateNetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateNetwork = this._privateNetwork;
+    }
+    if (this._requireSsl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requireSsl = this._requireSsl;
+    }
+    if (this._authorizedNetworks !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authorizedNetworks = this._authorizedNetworks;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettingsIpConfiguration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allocatedIpRange = undefined;
+      this._ipv4Enabled = undefined;
+      this._privateNetwork = undefined;
+      this._requireSsl = undefined;
+      this._authorizedNetworks = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allocatedIpRange = value.allocatedIpRange;
+      this._ipv4Enabled = value.ipv4Enabled;
+      this._privateNetwork = value.privateNetwork;
+      this._requireSsl = value.requireSsl;
+      this._authorizedNetworks = value.authorizedNetworks;
+    }
+  }
+
+  // allocated_ip_range - computed: false, optional: true, required: false
+  private _allocatedIpRange?: string; 
+  public get allocatedIpRange() {
+    return this.getStringAttribute('allocated_ip_range');
+  }
+  public set allocatedIpRange(value: string) {
+    this._allocatedIpRange = value;
+  }
+  public resetAllocatedIpRange() {
+    this._allocatedIpRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allocatedIpRangeInput() {
+    return this._allocatedIpRange;
+  }
+
+  // ipv4_enabled - computed: false, optional: true, required: false
+  private _ipv4Enabled?: boolean | cdktf.IResolvable; 
+  public get ipv4Enabled() {
+    return this.getBooleanAttribute('ipv4_enabled');
+  }
+  public set ipv4Enabled(value: boolean | cdktf.IResolvable) {
+    this._ipv4Enabled = value;
+  }
+  public resetIpv4Enabled() {
+    this._ipv4Enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv4EnabledInput() {
+    return this._ipv4Enabled;
+  }
+
+  // private_network - computed: false, optional: true, required: false
+  private _privateNetwork?: string; 
+  public get privateNetwork() {
+    return this.getStringAttribute('private_network');
+  }
+  public set privateNetwork(value: string) {
+    this._privateNetwork = value;
+  }
+  public resetPrivateNetwork() {
+    this._privateNetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateNetworkInput() {
+    return this._privateNetwork;
+  }
+
+  // require_ssl - computed: false, optional: true, required: false
+  private _requireSsl?: boolean | cdktf.IResolvable; 
+  public get requireSsl() {
+    return this.getBooleanAttribute('require_ssl');
+  }
+  public set requireSsl(value: boolean | cdktf.IResolvable) {
+    this._requireSsl = value;
+  }
+  public resetRequireSsl() {
+    this._requireSsl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requireSslInput() {
+    return this._requireSsl;
+  }
+
+  // authorized_networks - computed: false, optional: true, required: false
+  private _authorizedNetworks?: GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[] | cdktf.IResolvable; 
+  public get authorizedNetworks() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('authorized_networks')));
+  }
+  public set authorizedNetworks(value: GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[] | cdktf.IResolvable) {
+    this._authorizedNetworks = value;
+  }
+  public resetAuthorizedNetworks() {
+    this._authorizedNetworks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizedNetworksInput() {
+    return this._authorizedNetworks;
+  }
+}
+export interface GoogleSqlDatabaseInstanceSettingsLocationPreference {
+  /**
+  * A Google App Engine application whose zone to remain in. Must be in the same region as this instance.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#follow_gae_application GoogleSqlDatabaseInstance#follow_gae_application}
+  */
+  readonly followGaeApplication?: string;
+  /**
+  * The preferred compute engine zone.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#zone GoogleSqlDatabaseInstance#zone}
+  */
+  readonly zone?: string;
+}
+
+export function googleSqlDatabaseInstanceSettingsLocationPreferenceToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference | GoogleSqlDatabaseInstanceSettingsLocationPreference): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    follow_gae_application: cdktf.stringToTerraform(struct!.followGaeApplication),
+    zone: cdktf.stringToTerraform(struct!.zone),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettingsLocationPreference | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._followGaeApplication !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.followGaeApplication = this._followGaeApplication;
+    }
+    if (this._zone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zone = this._zone;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettingsLocationPreference | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._followGaeApplication = undefined;
+      this._zone = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._followGaeApplication = value.followGaeApplication;
+      this._zone = value.zone;
+    }
+  }
+
+  // follow_gae_application - computed: false, optional: true, required: false
+  private _followGaeApplication?: string; 
+  public get followGaeApplication() {
+    return this.getStringAttribute('follow_gae_application');
+  }
+  public set followGaeApplication(value: string) {
+    this._followGaeApplication = value;
+  }
+  public resetFollowGaeApplication() {
+    this._followGaeApplication = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get followGaeApplicationInput() {
+    return this._followGaeApplication;
+  }
+
+  // zone - computed: false, optional: true, required: false
+  private _zone?: string; 
+  public get zone() {
+    return this.getStringAttribute('zone');
+  }
+  public set zone(value: string) {
+    this._zone = value;
+  }
+  public resetZone() {
+    this._zone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zoneInput() {
+    return this._zone;
+  }
+}
+export interface GoogleSqlDatabaseInstanceSettingsMaintenanceWindow {
+  /**
+  * Day of week (1-7), starting on Monday
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#day GoogleSqlDatabaseInstance#day}
+  */
+  readonly day?: number;
+  /**
+  * Hour of day (0-23), ignored if day not set
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#hour GoogleSqlDatabaseInstance#hour}
+  */
+  readonly hour?: number;
+  /**
+  * Receive updates earlier (canary) or later (stable)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#update_track GoogleSqlDatabaseInstance#update_track}
+  */
+  readonly updateTrack?: string;
+}
+
+export function googleSqlDatabaseInstanceSettingsMaintenanceWindowToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference | GoogleSqlDatabaseInstanceSettingsMaintenanceWindow): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day: cdktf.numberToTerraform(struct!.day),
+    hour: cdktf.numberToTerraform(struct!.hour),
+    update_track: cdktf.stringToTerraform(struct!.updateTrack),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettingsMaintenanceWindow | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._hour !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hour = this._hour;
+    }
+    if (this._updateTrack !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.updateTrack = this._updateTrack;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettingsMaintenanceWindow | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._day = undefined;
+      this._hour = undefined;
+      this._updateTrack = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._day = value.day;
+      this._hour = value.hour;
+      this._updateTrack = value.updateTrack;
+    }
+  }
+
+  // day - computed: false, optional: true, required: false
+  private _day?: number; 
+  public get day() {
+    return this.getNumberAttribute('day');
+  }
+  public set day(value: number) {
+    this._day = value;
+  }
+  public resetDay() {
+    this._day = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // hour - computed: false, optional: true, required: false
+  private _hour?: number; 
+  public get hour() {
+    return this.getNumberAttribute('hour');
+  }
+  public set hour(value: number) {
+    this._hour = value;
+  }
+  public resetHour() {
+    this._hour = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hourInput() {
+    return this._hour;
+  }
+
+  // update_track - computed: false, optional: true, required: false
+  private _updateTrack?: string; 
+  public get updateTrack() {
+    return this.getStringAttribute('update_track');
+  }
+  public set updateTrack(value: string) {
+    this._updateTrack = value;
+  }
+  public resetUpdateTrack() {
+    this._updateTrack = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateTrackInput() {
+    return this._updateTrack;
+  }
+}
+export interface GoogleSqlDatabaseInstanceSettings {
+  /**
+  * This specifies when the instance should be active. Can be either ALWAYS, NEVER or ON_DEMAND.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#activation_policy GoogleSqlDatabaseInstance#activation_policy}
+  */
+  readonly activationPolicy?: string;
+  /**
+  * The availability type of the Cloud SQL instance, high availability
+(REGIONAL) or single zone (ZONAL). For MySQL instances, ensure that
+settings.backup_configuration.enabled and
+settings.backup_configuration.binary_log_enabled are both set to true.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#availability_type GoogleSqlDatabaseInstance#availability_type}
+  */
+  readonly availabilityType?: string;
+  /**
+  * The name of server instance collation.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#collation GoogleSqlDatabaseInstance#collation}
+  */
+  readonly collation?: string;
+  /**
+  * Configuration to increase storage size automatically.  Note that future terraform apply calls will attempt to resize the disk to the value specified in disk_size - if this is set, do not set disk_size.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#disk_autoresize GoogleSqlDatabaseInstance#disk_autoresize}
+  */
+  readonly diskAutoresize?: boolean | cdktf.IResolvable;
+  /**
+  * The maximum size, in GB, to which storage capacity can be automatically increased. The default value is 0, which specifies that there is no limit.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#disk_autoresize_limit GoogleSqlDatabaseInstance#disk_autoresize_limit}
+  */
+  readonly diskAutoresizeLimit?: number;
+  /**
+  * The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#disk_size GoogleSqlDatabaseInstance#disk_size}
+  */
+  readonly diskSize?: number;
+  /**
+  * The type of data disk: PD_SSD or PD_HDD.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#disk_type GoogleSqlDatabaseInstance#disk_type}
+  */
+  readonly diskType?: string;
+  /**
+  * Pricing plan for this instance, can only be PER_USE.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#pricing_plan GoogleSqlDatabaseInstance#pricing_plan}
+  */
+  readonly pricingPlan?: string;
+  /**
+  * The machine type to use. See tiers for more details and supported versions. Postgres supports only shared-core machine types, and custom machine types such as db-custom-2-13312. See the Custom Machine Type Documentation to learn about specifying custom machine types.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#tier GoogleSqlDatabaseInstance#tier}
+  */
+  readonly tier: string;
+  /**
+  * A set of key/value user label pairs to assign to the instance.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#user_labels GoogleSqlDatabaseInstance#user_labels}
+  */
+  readonly userLabels?: { [key: string]: string };
+  /**
+  * backup_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#backup_configuration GoogleSqlDatabaseInstance#backup_configuration}
+  */
+  readonly backupConfiguration?: GoogleSqlDatabaseInstanceSettingsBackupConfiguration;
+  /**
+  * database_flags block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#database_flags GoogleSqlDatabaseInstance#database_flags}
+  */
+  readonly databaseFlags?: GoogleSqlDatabaseInstanceSettingsDatabaseFlags[] | cdktf.IResolvable;
+  /**
+  * insights_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#insights_config GoogleSqlDatabaseInstance#insights_config}
+  */
+  readonly insightsConfig?: GoogleSqlDatabaseInstanceSettingsInsightsConfig;
+  /**
+  * ip_configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#ip_configuration GoogleSqlDatabaseInstance#ip_configuration}
+  */
+  readonly ipConfiguration?: GoogleSqlDatabaseInstanceSettingsIpConfiguration;
+  /**
+  * location_preference block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#location_preference GoogleSqlDatabaseInstance#location_preference}
+  */
+  readonly locationPreference?: GoogleSqlDatabaseInstanceSettingsLocationPreference;
+  /**
+  * maintenance_window block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#maintenance_window GoogleSqlDatabaseInstance#maintenance_window}
+  */
+  readonly maintenanceWindow?: GoogleSqlDatabaseInstanceSettingsMaintenanceWindow;
+}
+
+export function googleSqlDatabaseInstanceSettingsToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsOutputReference | GoogleSqlDatabaseInstanceSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    activation_policy: cdktf.stringToTerraform(struct!.activationPolicy),
+    availability_type: cdktf.stringToTerraform(struct!.availabilityType),
+    collation: cdktf.stringToTerraform(struct!.collation),
+    disk_autoresize: cdktf.booleanToTerraform(struct!.diskAutoresize),
+    disk_autoresize_limit: cdktf.numberToTerraform(struct!.diskAutoresizeLimit),
+    disk_size: cdktf.numberToTerraform(struct!.diskSize),
+    disk_type: cdktf.stringToTerraform(struct!.diskType),
+    pricing_plan: cdktf.stringToTerraform(struct!.pricingPlan),
+    tier: cdktf.stringToTerraform(struct!.tier),
+    user_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.userLabels),
+    backup_configuration: googleSqlDatabaseInstanceSettingsBackupConfigurationToTerraform(struct!.backupConfiguration),
+    database_flags: cdktf.listMapper(googleSqlDatabaseInstanceSettingsDatabaseFlagsToTerraform)(struct!.databaseFlags),
+    insights_config: googleSqlDatabaseInstanceSettingsInsightsConfigToTerraform(struct!.insightsConfig),
+    ip_configuration: googleSqlDatabaseInstanceSettingsIpConfigurationToTerraform(struct!.ipConfiguration),
+    location_preference: googleSqlDatabaseInstanceSettingsLocationPreferenceToTerraform(struct!.locationPreference),
+    maintenance_window: googleSqlDatabaseInstanceSettingsMaintenanceWindowToTerraform(struct!.maintenanceWindow),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._activationPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.activationPolicy = this._activationPolicy;
+    }
+    if (this._availabilityType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.availabilityType = this._availabilityType;
+    }
+    if (this._collation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.collation = this._collation;
+    }
+    if (this._diskAutoresize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskAutoresize = this._diskAutoresize;
+    }
+    if (this._diskAutoresizeLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskAutoresizeLimit = this._diskAutoresizeLimit;
+    }
+    if (this._diskSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskSize = this._diskSize;
+    }
+    if (this._diskType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskType = this._diskType;
+    }
+    if (this._pricingPlan !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pricingPlan = this._pricingPlan;
+    }
+    if (this._tier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tier = this._tier;
+    }
+    if (this._userLabels !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userLabels = this._userLabels;
+    }
+    if (this._backupConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupConfiguration = this._backupConfiguration?.internalValue;
+    }
+    if (this._databaseFlags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.databaseFlags = this._databaseFlags;
+    }
+    if (this._insightsConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.insightsConfig = this._insightsConfig?.internalValue;
+    }
+    if (this._ipConfiguration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipConfiguration = this._ipConfiguration?.internalValue;
+    }
+    if (this._locationPreference?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.locationPreference = this._locationPreference?.internalValue;
+    }
+    if (this._maintenanceWindow?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maintenanceWindow = this._maintenanceWindow?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._activationPolicy = undefined;
+      this._availabilityType = undefined;
+      this._collation = undefined;
+      this._diskAutoresize = undefined;
+      this._diskAutoresizeLimit = undefined;
+      this._diskSize = undefined;
+      this._diskType = undefined;
+      this._pricingPlan = undefined;
+      this._tier = undefined;
+      this._userLabels = undefined;
+      this._backupConfiguration.internalValue = undefined;
+      this._databaseFlags = undefined;
+      this._insightsConfig.internalValue = undefined;
+      this._ipConfiguration.internalValue = undefined;
+      this._locationPreference.internalValue = undefined;
+      this._maintenanceWindow.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._activationPolicy = value.activationPolicy;
+      this._availabilityType = value.availabilityType;
+      this._collation = value.collation;
+      this._diskAutoresize = value.diskAutoresize;
+      this._diskAutoresizeLimit = value.diskAutoresizeLimit;
+      this._diskSize = value.diskSize;
+      this._diskType = value.diskType;
+      this._pricingPlan = value.pricingPlan;
+      this._tier = value.tier;
+      this._userLabels = value.userLabels;
+      this._backupConfiguration.internalValue = value.backupConfiguration;
+      this._databaseFlags = value.databaseFlags;
+      this._insightsConfig.internalValue = value.insightsConfig;
+      this._ipConfiguration.internalValue = value.ipConfiguration;
+      this._locationPreference.internalValue = value.locationPreference;
+      this._maintenanceWindow.internalValue = value.maintenanceWindow;
+    }
+  }
+
+  // activation_policy - computed: false, optional: true, required: false
+  private _activationPolicy?: string; 
+  public get activationPolicy() {
+    return this.getStringAttribute('activation_policy');
+  }
+  public set activationPolicy(value: string) {
+    this._activationPolicy = value;
+  }
+  public resetActivationPolicy() {
+    this._activationPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activationPolicyInput() {
+    return this._activationPolicy;
+  }
+
+  // availability_type - computed: false, optional: true, required: false
+  private _availabilityType?: string; 
+  public get availabilityType() {
+    return this.getStringAttribute('availability_type');
+  }
+  public set availabilityType(value: string) {
+    this._availabilityType = value;
+  }
+  public resetAvailabilityType() {
+    this._availabilityType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get availabilityTypeInput() {
+    return this._availabilityType;
+  }
+
+  // collation - computed: false, optional: true, required: false
+  private _collation?: string; 
+  public get collation() {
+    return this.getStringAttribute('collation');
+  }
+  public set collation(value: string) {
+    this._collation = value;
+  }
+  public resetCollation() {
+    this._collation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get collationInput() {
+    return this._collation;
+  }
+
+  // disk_autoresize - computed: false, optional: true, required: false
+  private _diskAutoresize?: boolean | cdktf.IResolvable; 
+  public get diskAutoresize() {
+    return this.getBooleanAttribute('disk_autoresize');
+  }
+  public set diskAutoresize(value: boolean | cdktf.IResolvable) {
+    this._diskAutoresize = value;
+  }
+  public resetDiskAutoresize() {
+    this._diskAutoresize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskAutoresizeInput() {
+    return this._diskAutoresize;
+  }
+
+  // disk_autoresize_limit - computed: false, optional: true, required: false
+  private _diskAutoresizeLimit?: number; 
+  public get diskAutoresizeLimit() {
+    return this.getNumberAttribute('disk_autoresize_limit');
+  }
+  public set diskAutoresizeLimit(value: number) {
+    this._diskAutoresizeLimit = value;
+  }
+  public resetDiskAutoresizeLimit() {
+    this._diskAutoresizeLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskAutoresizeLimitInput() {
+    return this._diskAutoresizeLimit;
+  }
+
+  // disk_size - computed: true, optional: true, required: false
+  private _diskSize?: number; 
+  public get diskSize() {
+    return this.getNumberAttribute('disk_size');
+  }
+  public set diskSize(value: number) {
+    this._diskSize = value;
+  }
+  public resetDiskSize() {
+    this._diskSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskSizeInput() {
+    return this._diskSize;
+  }
+
+  // disk_type - computed: false, optional: true, required: false
+  private _diskType?: string; 
+  public get diskType() {
+    return this.getStringAttribute('disk_type');
+  }
+  public set diskType(value: string) {
+    this._diskType = value;
+  }
+  public resetDiskType() {
+    this._diskType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskTypeInput() {
+    return this._diskType;
+  }
+
+  // pricing_plan - computed: false, optional: true, required: false
+  private _pricingPlan?: string; 
+  public get pricingPlan() {
+    return this.getStringAttribute('pricing_plan');
+  }
+  public set pricingPlan(value: string) {
+    this._pricingPlan = value;
+  }
+  public resetPricingPlan() {
+    this._pricingPlan = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pricingPlanInput() {
+    return this._pricingPlan;
+  }
+
+  // tier - computed: false, optional: false, required: true
+  private _tier?: string; 
+  public get tier() {
+    return this.getStringAttribute('tier');
+  }
+  public set tier(value: string) {
+    this._tier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tierInput() {
+    return this._tier;
+  }
+
+  // user_labels - computed: true, optional: true, required: false
+  private _userLabels?: { [key: string]: string }; 
+  public get userLabels() {
+    return this.getStringMapAttribute('user_labels');
+  }
+  public set userLabels(value: { [key: string]: string }) {
+    this._userLabels = value;
+  }
+  public resetUserLabels() {
+    this._userLabels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userLabelsInput() {
+    return this._userLabels;
+  }
+
+  // version - computed: true, optional: false, required: false
+  public get version() {
+    return this.getNumberAttribute('version');
+  }
+
+  // backup_configuration - computed: false, optional: true, required: false
+  private _backupConfiguration = new GoogleSqlDatabaseInstanceSettingsBackupConfigurationOutputReference(this, "backup_configuration");
+  public get backupConfiguration() {
+    return this._backupConfiguration;
+  }
+  public putBackupConfiguration(value: GoogleSqlDatabaseInstanceSettingsBackupConfiguration) {
+    this._backupConfiguration.internalValue = value;
+  }
+  public resetBackupConfiguration() {
+    this._backupConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupConfigurationInput() {
+    return this._backupConfiguration.internalValue;
+  }
+
+  // database_flags - computed: false, optional: true, required: false
+  private _databaseFlags?: GoogleSqlDatabaseInstanceSettingsDatabaseFlags[] | cdktf.IResolvable; 
+  public get databaseFlags() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('database_flags');
+  }
+  public set databaseFlags(value: GoogleSqlDatabaseInstanceSettingsDatabaseFlags[] | cdktf.IResolvable) {
+    this._databaseFlags = value;
+  }
+  public resetDatabaseFlags() {
+    this._databaseFlags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseFlagsInput() {
+    return this._databaseFlags;
+  }
+
+  // insights_config - computed: false, optional: true, required: false
+  private _insightsConfig = new GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference(this, "insights_config");
+  public get insightsConfig() {
+    return this._insightsConfig;
+  }
+  public putInsightsConfig(value: GoogleSqlDatabaseInstanceSettingsInsightsConfig) {
+    this._insightsConfig.internalValue = value;
+  }
+  public resetInsightsConfig() {
+    this._insightsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insightsConfigInput() {
+    return this._insightsConfig.internalValue;
+  }
+
+  // ip_configuration - computed: false, optional: true, required: false
+  private _ipConfiguration = new GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference(this, "ip_configuration");
+  public get ipConfiguration() {
+    return this._ipConfiguration;
+  }
+  public putIpConfiguration(value: GoogleSqlDatabaseInstanceSettingsIpConfiguration) {
+    this._ipConfiguration.internalValue = value;
+  }
+  public resetIpConfiguration() {
+    this._ipConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipConfigurationInput() {
+    return this._ipConfiguration.internalValue;
+  }
+
+  // location_preference - computed: false, optional: true, required: false
+  private _locationPreference = new GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference(this, "location_preference");
+  public get locationPreference() {
+    return this._locationPreference;
+  }
+  public putLocationPreference(value: GoogleSqlDatabaseInstanceSettingsLocationPreference) {
+    this._locationPreference.internalValue = value;
+  }
+  public resetLocationPreference() {
+    this._locationPreference.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationPreferenceInput() {
+    return this._locationPreference.internalValue;
+  }
+
+  // maintenance_window - computed: false, optional: true, required: false
+  private _maintenanceWindow = new GoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference(this, "maintenance_window");
+  public get maintenanceWindow() {
+    return this._maintenanceWindow;
+  }
+  public putMaintenanceWindow(value: GoogleSqlDatabaseInstanceSettingsMaintenanceWindow) {
+    this._maintenanceWindow.internalValue = value;
+  }
+  public resetMaintenanceWindow() {
+    this._maintenanceWindow.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceWindowInput() {
+    return this._maintenanceWindow.internalValue;
+  }
+}
+export interface GoogleSqlDatabaseInstanceTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#create GoogleSqlDatabaseInstance#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#delete GoogleSqlDatabaseInstance#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#update GoogleSqlDatabaseInstance#update}
+  */
+  readonly update?: string;
+}
+
+export function googleSqlDatabaseInstanceTimeoutsToTerraform(struct?: GoogleSqlDatabaseInstanceTimeoutsOutputReference | GoogleSqlDatabaseInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceTimeouts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceTimeouts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance google_sql_database_instance}
+*/
+export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "google_sql_database_instance";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance google_sql_database_instance} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options GoogleSqlDatabaseInstanceConfig
+  */
+  public constructor(scope: Construct, id: string, config: GoogleSqlDatabaseInstanceConfig) {
+    super(scope, id, {
+      terraformResourceType: 'google_sql_database_instance',
+      terraformGeneratorMetadata: {
+        providerName: 'google-beta',
+        providerVersion: '4.17.0',
+        providerVersionConstraint: '~> 4.17'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._databaseVersion = config.databaseVersion;
+    this._deletionProtection = config.deletionProtection;
+    this._encryptionKeyName = config.encryptionKeyName;
+    this._masterInstanceName = config.masterInstanceName;
+    this._name = config.name;
+    this._project = config.project;
+    this._region = config.region;
+    this._rootPassword = config.rootPassword;
+    this._clone.internalValue = config.clone;
+    this._replicaConfiguration.internalValue = config.replicaConfiguration;
+    this._restoreBackupContext.internalValue = config.restoreBackupContext;
+    this._settings.internalValue = config.settings;
+    this._timeouts.internalValue = config.timeouts;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // connection_name - computed: true, optional: false, required: false
+  public get connectionName() {
+    return this.getStringAttribute('connection_name');
+  }
+
+  // database_version - computed: false, optional: false, required: true
+  private _databaseVersion?: string; 
+  public get databaseVersion() {
+    return this.getStringAttribute('database_version');
+  }
+  public set databaseVersion(value: string) {
+    this._databaseVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseVersionInput() {
+    return this._databaseVersion;
+  }
+
+  // deletion_protection - computed: false, optional: true, required: false
+  private _deletionProtection?: boolean | cdktf.IResolvable; 
+  public get deletionProtection() {
+    return this.getBooleanAttribute('deletion_protection');
+  }
+  public set deletionProtection(value: boolean | cdktf.IResolvable) {
+    this._deletionProtection = value;
+  }
+  public resetDeletionProtection() {
+    this._deletionProtection = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionProtectionInput() {
+    return this._deletionProtection;
+  }
+
+  // encryption_key_name - computed: false, optional: true, required: false
+  private _encryptionKeyName?: string; 
+  public get encryptionKeyName() {
+    return this.getStringAttribute('encryption_key_name');
+  }
+  public set encryptionKeyName(value: string) {
+    this._encryptionKeyName = value;
+  }
+  public resetEncryptionKeyName() {
+    this._encryptionKeyName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionKeyNameInput() {
+    return this._encryptionKeyName;
+  }
+
+  // first_ip_address - computed: true, optional: false, required: false
+  public get firstIpAddress() {
+    return this.getStringAttribute('first_ip_address');
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // ip_address - computed: true, optional: false, required: false
+  private _ipAddress = new GoogleSqlDatabaseInstanceIpAddressList(this, "ip_address", false);
+  public get ipAddress() {
+    return this._ipAddress;
+  }
+
+  // master_instance_name - computed: true, optional: true, required: false
+  private _masterInstanceName?: string; 
+  public get masterInstanceName() {
+    return this.getStringAttribute('master_instance_name');
+  }
+  public set masterInstanceName(value: string) {
+    this._masterInstanceName = value;
+  }
+  public resetMasterInstanceName() {
+    this._masterInstanceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get masterInstanceNameInput() {
+    return this._masterInstanceName;
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // private_ip_address - computed: true, optional: false, required: false
+  public get privateIpAddress() {
+    return this.getStringAttribute('private_ip_address');
+  }
+
+  // project - computed: true, optional: true, required: false
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  public resetProject() {
+    this._project = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // public_ip_address - computed: true, optional: false, required: false
+  public get publicIpAddress() {
+    return this.getStringAttribute('public_ip_address');
+  }
+
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+
+  // root_password - computed: false, optional: true, required: false
+  private _rootPassword?: string; 
+  public get rootPassword() {
+    return this.getStringAttribute('root_password');
+  }
+  public set rootPassword(value: string) {
+    this._rootPassword = value;
+  }
+  public resetRootPassword() {
+    this._rootPassword = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rootPasswordInput() {
+    return this._rootPassword;
+  }
+
+  // self_link - computed: true, optional: false, required: false
+  public get selfLink() {
+    return this.getStringAttribute('self_link');
+  }
+
+  // server_ca_cert - computed: true, optional: false, required: false
+  private _serverCaCert = new GoogleSqlDatabaseInstanceServerCaCertList(this, "server_ca_cert", false);
+  public get serverCaCert() {
+    return this._serverCaCert;
+  }
+
+  // service_account_email_address - computed: true, optional: false, required: false
+  public get serviceAccountEmailAddress() {
+    return this.getStringAttribute('service_account_email_address');
+  }
+
+  // clone - computed: false, optional: true, required: false
+  private _clone = new GoogleSqlDatabaseInstanceCloneOutputReference(this, "clone");
+  public get clone() {
+    return this._clone;
+  }
+  public putClone(value: GoogleSqlDatabaseInstanceClone) {
+    this._clone.internalValue = value;
+  }
+  public resetClone() {
+    this._clone.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloneInput() {
+    return this._clone.internalValue;
+  }
+
+  // replica_configuration - computed: false, optional: true, required: false
+  private _replicaConfiguration = new GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference(this, "replica_configuration");
+  public get replicaConfiguration() {
+    return this._replicaConfiguration;
+  }
+  public putReplicaConfiguration(value: GoogleSqlDatabaseInstanceReplicaConfiguration) {
+    this._replicaConfiguration.internalValue = value;
+  }
+  public resetReplicaConfiguration() {
+    this._replicaConfiguration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replicaConfigurationInput() {
+    return this._replicaConfiguration.internalValue;
+  }
+
+  // restore_backup_context - computed: false, optional: true, required: false
+  private _restoreBackupContext = new GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference(this, "restore_backup_context");
+  public get restoreBackupContext() {
+    return this._restoreBackupContext;
+  }
+  public putRestoreBackupContext(value: GoogleSqlDatabaseInstanceRestoreBackupContext) {
+    this._restoreBackupContext.internalValue = value;
+  }
+  public resetRestoreBackupContext() {
+    this._restoreBackupContext.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restoreBackupContextInput() {
+    return this._restoreBackupContext.internalValue;
+  }
+
+  // settings - computed: false, optional: true, required: false
+  private _settings = new GoogleSqlDatabaseInstanceSettingsOutputReference(this, "settings");
+  public get settings() {
+    return this._settings;
+  }
+  public putSettings(value: GoogleSqlDatabaseInstanceSettings) {
+    this._settings.internalValue = value;
+  }
+  public resetSettings() {
+    this._settings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get settingsInput() {
+    return this._settings.internalValue;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new GoogleSqlDatabaseInstanceTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: GoogleSqlDatabaseInstanceTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      database_version: cdktf.stringToTerraform(this._databaseVersion),
+      deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
+      encryption_key_name: cdktf.stringToTerraform(this._encryptionKeyName),
+      master_instance_name: cdktf.stringToTerraform(this._masterInstanceName),
+      name: cdktf.stringToTerraform(this._name),
+      project: cdktf.stringToTerraform(this._project),
+      region: cdktf.stringToTerraform(this._region),
+      root_password: cdktf.stringToTerraform(this._rootPassword),
+      clone: googleSqlDatabaseInstanceCloneToTerraform(this._clone.internalValue),
+      replica_configuration: googleSqlDatabaseInstanceReplicaConfigurationToTerraform(this._replicaConfiguration.internalValue),
+      restore_backup_context: googleSqlDatabaseInstanceRestoreBackupContextToTerraform(this._restoreBackupContext.internalValue),
+      settings: googleSqlDatabaseInstanceSettingsToTerraform(this._settings.internalValue),
+      timeouts: googleSqlDatabaseInstanceTimeoutsToTerraform(this._timeouts.internalValue),
+    };
+  }
+}
