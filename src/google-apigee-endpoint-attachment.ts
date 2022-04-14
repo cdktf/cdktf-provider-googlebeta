@@ -1,0 +1,276 @@
+// https://www.terraform.io/docs/providers/google-beta/r/google_apigee_endpoint_attachment
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface GoogleApigeeEndpointAttachmentConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * ID of the endpoint attachment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_endpoint_attachment#endpoint_attachment_id GoogleApigeeEndpointAttachment#endpoint_attachment_id}
+  */
+  readonly endpointAttachmentId: string;
+  /**
+  * Location of the endpoint attachment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_endpoint_attachment#location GoogleApigeeEndpointAttachment#location}
+  */
+  readonly location: string;
+  /**
+  * The Apigee Organization associated with the Apigee instance,
+in the format 'organizations/{{org_name}}'.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_endpoint_attachment#org_id GoogleApigeeEndpointAttachment#org_id}
+  */
+  readonly orgId: string;
+  /**
+  * Format: projects/*\/regions/*\/serviceAttachments/*
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_endpoint_attachment#service_attachment GoogleApigeeEndpointAttachment#service_attachment}
+  */
+  readonly serviceAttachment: string;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_endpoint_attachment#timeouts GoogleApigeeEndpointAttachment#timeouts}
+  */
+  readonly timeouts?: GoogleApigeeEndpointAttachmentTimeouts;
+}
+export interface GoogleApigeeEndpointAttachmentTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_endpoint_attachment#create GoogleApigeeEndpointAttachment#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_endpoint_attachment#delete GoogleApigeeEndpointAttachment#delete}
+  */
+  readonly delete?: string;
+}
+
+export function googleApigeeEndpointAttachmentTimeoutsToTerraform(struct?: GoogleApigeeEndpointAttachmentTimeoutsOutputReference | GoogleApigeeEndpointAttachmentTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+  }
+}
+
+export class GoogleApigeeEndpointAttachmentTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleApigeeEndpointAttachmentTimeouts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleApigeeEndpointAttachmentTimeouts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._create = undefined;
+      this._delete = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._create = value.create;
+      this._delete = value.delete;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_endpoint_attachment google_apigee_endpoint_attachment}
+*/
+export class GoogleApigeeEndpointAttachment extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "google_apigee_endpoint_attachment";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_endpoint_attachment google_apigee_endpoint_attachment} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options GoogleApigeeEndpointAttachmentConfig
+  */
+  public constructor(scope: Construct, id: string, config: GoogleApigeeEndpointAttachmentConfig) {
+    super(scope, id, {
+      terraformResourceType: 'google_apigee_endpoint_attachment',
+      terraformGeneratorMetadata: {
+        providerName: 'google-beta',
+        providerVersion: '4.17.0',
+        providerVersionConstraint: '~> 4.17'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._endpointAttachmentId = config.endpointAttachmentId;
+    this._location = config.location;
+    this._orgId = config.orgId;
+    this._serviceAttachment = config.serviceAttachment;
+    this._timeouts.internalValue = config.timeouts;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // endpoint_attachment_id - computed: false, optional: false, required: true
+  private _endpointAttachmentId?: string; 
+  public get endpointAttachmentId() {
+    return this.getStringAttribute('endpoint_attachment_id');
+  }
+  public set endpointAttachmentId(value: string) {
+    this._endpointAttachmentId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointAttachmentIdInput() {
+    return this._endpointAttachmentId;
+  }
+
+  // host - computed: true, optional: false, required: false
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // location - computed: false, optional: false, required: true
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // org_id - computed: false, optional: false, required: true
+  private _orgId?: string; 
+  public get orgId() {
+    return this.getStringAttribute('org_id');
+  }
+  public set orgId(value: string) {
+    this._orgId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get orgIdInput() {
+    return this._orgId;
+  }
+
+  // service_attachment - computed: false, optional: false, required: true
+  private _serviceAttachment?: string; 
+  public get serviceAttachment() {
+    return this.getStringAttribute('service_attachment');
+  }
+  public set serviceAttachment(value: string) {
+    this._serviceAttachment = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAttachmentInput() {
+    return this._serviceAttachment;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new GoogleApigeeEndpointAttachmentTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: GoogleApigeeEndpointAttachmentTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      endpoint_attachment_id: cdktf.stringToTerraform(this._endpointAttachmentId),
+      location: cdktf.stringToTerraform(this._location),
+      org_id: cdktf.stringToTerraform(this._orgId),
+      service_attachment: cdktf.stringToTerraform(this._serviceAttachment),
+      timeouts: googleApigeeEndpointAttachmentTimeoutsToTerraform(this._timeouts.internalValue),
+    };
+  }
+}

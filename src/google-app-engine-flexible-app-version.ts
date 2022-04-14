@@ -1,0 +1,3956 @@
+// https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface GoogleAppEngineFlexibleAppVersionConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Metadata settings that are supplied to this version to enable beta runtime features.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#beta_settings GoogleAppEngineFlexibleAppVersion#beta_settings}
+  */
+  readonly betaSettings?: { [key: string]: string };
+  /**
+  * Duration that static files should be cached by web proxies and browsers.
+Only applicable if the corresponding StaticFilesHandler does not specify its own expiration time.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#default_expiration GoogleAppEngineFlexibleAppVersion#default_expiration}
+  */
+  readonly defaultExpiration?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#delete_service_on_destroy GoogleAppEngineFlexibleAppVersion#delete_service_on_destroy}
+  */
+  readonly deleteServiceOnDestroy?: boolean | cdktf.IResolvable;
+  /**
+  * Environment variables available to the application.  As these are not returned in the API request, Terraform will not detect any changes made outside of the Terraform config.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#env_variables GoogleAppEngineFlexibleAppVersion#env_variables}
+  */
+  readonly envVariables?: { [key: string]: string };
+  /**
+  * A list of the types of messages that this application is able to receive. Possible values: ["INBOUND_SERVICE_MAIL", "INBOUND_SERVICE_MAIL_BOUNCE", "INBOUND_SERVICE_XMPP_ERROR", "INBOUND_SERVICE_XMPP_MESSAGE", "INBOUND_SERVICE_XMPP_SUBSCRIBE", "INBOUND_SERVICE_XMPP_PRESENCE", "INBOUND_SERVICE_CHANNEL_PRESENCE", "INBOUND_SERVICE_WARMUP"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#inbound_services GoogleAppEngineFlexibleAppVersion#inbound_services}
+  */
+  readonly inboundServices?: string[];
+  /**
+  * Instance class that is used to run this version. Valid values are
+AutomaticScaling: F1, F2, F4, F4_1G
+ManualScaling: B1, B2, B4, B8, B4_1G
+Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#instance_class GoogleAppEngineFlexibleAppVersion#instance_class}
+  */
+  readonly instanceClass?: string;
+  /**
+  * Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#nobuild_files_regex GoogleAppEngineFlexibleAppVersion#nobuild_files_regex}
+  */
+  readonly nobuildFilesRegex?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#noop_on_destroy GoogleAppEngineFlexibleAppVersion#noop_on_destroy}
+  */
+  readonly noopOnDestroy?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#project GoogleAppEngineFlexibleAppVersion#project}
+  */
+  readonly project?: string;
+  /**
+  * Desired runtime. Example python27.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#runtime GoogleAppEngineFlexibleAppVersion#runtime}
+  */
+  readonly runtime: string;
+  /**
+  * The version of the API in the given runtime environment.
+Please see the app.yaml reference for valid values at 'https://cloud.google.com/appengine/docs/standard/<language>/config/appref'\
+Substitute '<language>' with 'python', 'java', 'php', 'ruby', 'go' or 'nodejs'.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#runtime_api_version GoogleAppEngineFlexibleAppVersion#runtime_api_version}
+  */
+  readonly runtimeApiVersion?: string;
+  /**
+  * The channel of the runtime to use. Only available for some runtimes.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#runtime_channel GoogleAppEngineFlexibleAppVersion#runtime_channel}
+  */
+  readonly runtimeChannel?: string;
+  /**
+  * The path or name of the app's main executable.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#runtime_main_executable_path GoogleAppEngineFlexibleAppVersion#runtime_main_executable_path}
+  */
+  readonly runtimeMainExecutablePath?: string;
+  /**
+  * AppEngine service resource. Can contain numbers, letters, and hyphens.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#service GoogleAppEngineFlexibleAppVersion#service}
+  */
+  readonly service: string;
+  /**
+  * Current serving status of this version. Only the versions with a SERVING status create instances and can be billed. Default value: "SERVING" Possible values: ["SERVING", "STOPPED"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#serving_status GoogleAppEngineFlexibleAppVersion#serving_status}
+  */
+  readonly servingStatus?: string;
+  /**
+  * Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters, numbers, or hyphens.
+Reserved names,"default", "latest", and any name with the prefix "ah-".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#version_id GoogleAppEngineFlexibleAppVersion#version_id}
+  */
+  readonly versionId?: string;
+  /**
+  * api_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#api_config GoogleAppEngineFlexibleAppVersion#api_config}
+  */
+  readonly apiConfig?: GoogleAppEngineFlexibleAppVersionApiConfig;
+  /**
+  * automatic_scaling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#automatic_scaling GoogleAppEngineFlexibleAppVersion#automatic_scaling}
+  */
+  readonly automaticScaling?: GoogleAppEngineFlexibleAppVersionAutomaticScaling;
+  /**
+  * deployment block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#deployment GoogleAppEngineFlexibleAppVersion#deployment}
+  */
+  readonly deployment?: GoogleAppEngineFlexibleAppVersionDeployment;
+  /**
+  * endpoints_api_service block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#endpoints_api_service GoogleAppEngineFlexibleAppVersion#endpoints_api_service}
+  */
+  readonly endpointsApiService?: GoogleAppEngineFlexibleAppVersionEndpointsApiService;
+  /**
+  * entrypoint block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#entrypoint GoogleAppEngineFlexibleAppVersion#entrypoint}
+  */
+  readonly entrypoint?: GoogleAppEngineFlexibleAppVersionEntrypoint;
+  /**
+  * handlers block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#handlers GoogleAppEngineFlexibleAppVersion#handlers}
+  */
+  readonly handlers?: GoogleAppEngineFlexibleAppVersionHandlers[] | cdktf.IResolvable;
+  /**
+  * liveness_check block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#liveness_check GoogleAppEngineFlexibleAppVersion#liveness_check}
+  */
+  readonly livenessCheck: GoogleAppEngineFlexibleAppVersionLivenessCheck;
+  /**
+  * manual_scaling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#manual_scaling GoogleAppEngineFlexibleAppVersion#manual_scaling}
+  */
+  readonly manualScaling?: GoogleAppEngineFlexibleAppVersionManualScaling;
+  /**
+  * network block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#network GoogleAppEngineFlexibleAppVersion#network}
+  */
+  readonly network?: GoogleAppEngineFlexibleAppVersionNetwork;
+  /**
+  * readiness_check block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#readiness_check GoogleAppEngineFlexibleAppVersion#readiness_check}
+  */
+  readonly readinessCheck: GoogleAppEngineFlexibleAppVersionReadinessCheck;
+  /**
+  * resources block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#resources GoogleAppEngineFlexibleAppVersion#resources}
+  */
+  readonly resources?: GoogleAppEngineFlexibleAppVersionResources;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#timeouts GoogleAppEngineFlexibleAppVersion#timeouts}
+  */
+  readonly timeouts?: GoogleAppEngineFlexibleAppVersionTimeouts;
+  /**
+  * vpc_access_connector block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#vpc_access_connector GoogleAppEngineFlexibleAppVersion#vpc_access_connector}
+  */
+  readonly vpcAccessConnector?: GoogleAppEngineFlexibleAppVersionVpcAccessConnector;
+}
+export interface GoogleAppEngineFlexibleAppVersionApiConfig {
+  /**
+  * Action to take when users access resources that require authentication. Default value: "AUTH_FAIL_ACTION_REDIRECT" Possible values: ["AUTH_FAIL_ACTION_REDIRECT", "AUTH_FAIL_ACTION_UNAUTHORIZED"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#auth_fail_action GoogleAppEngineFlexibleAppVersion#auth_fail_action}
+  */
+  readonly authFailAction?: string;
+  /**
+  * Level of login required to access this resource. Default value: "LOGIN_OPTIONAL" Possible values: ["LOGIN_OPTIONAL", "LOGIN_ADMIN", "LOGIN_REQUIRED"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#login GoogleAppEngineFlexibleAppVersion#login}
+  */
+  readonly login?: string;
+  /**
+  * Path to the script from the application root directory.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#script GoogleAppEngineFlexibleAppVersion#script}
+  */
+  readonly script: string;
+  /**
+  * Security (HTTPS) enforcement for this URL. Possible values: ["SECURE_DEFAULT", "SECURE_NEVER", "SECURE_OPTIONAL", "SECURE_ALWAYS"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#security_level GoogleAppEngineFlexibleAppVersion#security_level}
+  */
+  readonly securityLevel?: string;
+  /**
+  * URL to serve the endpoint at.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#url GoogleAppEngineFlexibleAppVersion#url}
+  */
+  readonly url?: string;
+}
+
+export function googleAppEngineFlexibleAppVersionApiConfigToTerraform(struct?: GoogleAppEngineFlexibleAppVersionApiConfigOutputReference | GoogleAppEngineFlexibleAppVersionApiConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    auth_fail_action: cdktf.stringToTerraform(struct!.authFailAction),
+    login: cdktf.stringToTerraform(struct!.login),
+    script: cdktf.stringToTerraform(struct!.script),
+    security_level: cdktf.stringToTerraform(struct!.securityLevel),
+    url: cdktf.stringToTerraform(struct!.url),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionApiConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionApiConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._authFailAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authFailAction = this._authFailAction;
+    }
+    if (this._login !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.login = this._login;
+    }
+    if (this._script !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.script = this._script;
+    }
+    if (this._securityLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityLevel = this._securityLevel;
+    }
+    if (this._url !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionApiConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._authFailAction = undefined;
+      this._login = undefined;
+      this._script = undefined;
+      this._securityLevel = undefined;
+      this._url = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._authFailAction = value.authFailAction;
+      this._login = value.login;
+      this._script = value.script;
+      this._securityLevel = value.securityLevel;
+      this._url = value.url;
+    }
+  }
+
+  // auth_fail_action - computed: false, optional: true, required: false
+  private _authFailAction?: string; 
+  public get authFailAction() {
+    return this.getStringAttribute('auth_fail_action');
+  }
+  public set authFailAction(value: string) {
+    this._authFailAction = value;
+  }
+  public resetAuthFailAction() {
+    this._authFailAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authFailActionInput() {
+    return this._authFailAction;
+  }
+
+  // login - computed: false, optional: true, required: false
+  private _login?: string; 
+  public get login() {
+    return this.getStringAttribute('login');
+  }
+  public set login(value: string) {
+    this._login = value;
+  }
+  public resetLogin() {
+    this._login = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loginInput() {
+    return this._login;
+  }
+
+  // script - computed: false, optional: false, required: true
+  private _script?: string; 
+  public get script() {
+    return this.getStringAttribute('script');
+  }
+  public set script(value: string) {
+    this._script = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scriptInput() {
+    return this._script;
+  }
+
+  // security_level - computed: false, optional: true, required: false
+  private _securityLevel?: string; 
+  public get securityLevel() {
+    return this.getStringAttribute('security_level');
+  }
+  public set securityLevel(value: string) {
+    this._securityLevel = value;
+  }
+  public resetSecurityLevel() {
+    this._securityLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityLevelInput() {
+    return this._securityLevel;
+  }
+
+  // url - computed: false, optional: true, required: false
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  public resetUrl() {
+    this._url = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilization {
+  /**
+  * Period of time over which CPU utilization is calculated.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#aggregation_window_length GoogleAppEngineFlexibleAppVersion#aggregation_window_length}
+  */
+  readonly aggregationWindowLength?: string;
+  /**
+  * Target CPU utilization ratio to maintain when scaling. Must be between 0 and 1.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_utilization GoogleAppEngineFlexibleAppVersion#target_utilization}
+  */
+  readonly targetUtilization: number;
+}
+
+export function googleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationToTerraform(struct?: GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationOutputReference | GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilization): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    aggregation_window_length: cdktf.stringToTerraform(struct!.aggregationWindowLength),
+    target_utilization: cdktf.numberToTerraform(struct!.targetUtilization),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilization | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._aggregationWindowLength !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aggregationWindowLength = this._aggregationWindowLength;
+    }
+    if (this._targetUtilization !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetUtilization = this._targetUtilization;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilization | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._aggregationWindowLength = undefined;
+      this._targetUtilization = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._aggregationWindowLength = value.aggregationWindowLength;
+      this._targetUtilization = value.targetUtilization;
+    }
+  }
+
+  // aggregation_window_length - computed: false, optional: true, required: false
+  private _aggregationWindowLength?: string; 
+  public get aggregationWindowLength() {
+    return this.getStringAttribute('aggregation_window_length');
+  }
+  public set aggregationWindowLength(value: string) {
+    this._aggregationWindowLength = value;
+  }
+  public resetAggregationWindowLength() {
+    this._aggregationWindowLength = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aggregationWindowLengthInput() {
+    return this._aggregationWindowLength;
+  }
+
+  // target_utilization - computed: false, optional: false, required: true
+  private _targetUtilization?: number; 
+  public get targetUtilization() {
+    return this.getNumberAttribute('target_utilization');
+  }
+  public set targetUtilization(value: number) {
+    this._targetUtilization = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetUtilizationInput() {
+    return this._targetUtilization;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilization {
+  /**
+  * Target bytes read per second.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_read_bytes_per_second GoogleAppEngineFlexibleAppVersion#target_read_bytes_per_second}
+  */
+  readonly targetReadBytesPerSecond?: number;
+  /**
+  * Target ops read per seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_read_ops_per_second GoogleAppEngineFlexibleAppVersion#target_read_ops_per_second}
+  */
+  readonly targetReadOpsPerSecond?: number;
+  /**
+  * Target bytes written per second.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_write_bytes_per_second GoogleAppEngineFlexibleAppVersion#target_write_bytes_per_second}
+  */
+  readonly targetWriteBytesPerSecond?: number;
+  /**
+  * Target ops written per second.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_write_ops_per_second GoogleAppEngineFlexibleAppVersion#target_write_ops_per_second}
+  */
+  readonly targetWriteOpsPerSecond?: number;
+}
+
+export function googleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationToTerraform(struct?: GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference | GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilization): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    target_read_bytes_per_second: cdktf.numberToTerraform(struct!.targetReadBytesPerSecond),
+    target_read_ops_per_second: cdktf.numberToTerraform(struct!.targetReadOpsPerSecond),
+    target_write_bytes_per_second: cdktf.numberToTerraform(struct!.targetWriteBytesPerSecond),
+    target_write_ops_per_second: cdktf.numberToTerraform(struct!.targetWriteOpsPerSecond),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilization | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._targetReadBytesPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetReadBytesPerSecond = this._targetReadBytesPerSecond;
+    }
+    if (this._targetReadOpsPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetReadOpsPerSecond = this._targetReadOpsPerSecond;
+    }
+    if (this._targetWriteBytesPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetWriteBytesPerSecond = this._targetWriteBytesPerSecond;
+    }
+    if (this._targetWriteOpsPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetWriteOpsPerSecond = this._targetWriteOpsPerSecond;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilization | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._targetReadBytesPerSecond = undefined;
+      this._targetReadOpsPerSecond = undefined;
+      this._targetWriteBytesPerSecond = undefined;
+      this._targetWriteOpsPerSecond = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._targetReadBytesPerSecond = value.targetReadBytesPerSecond;
+      this._targetReadOpsPerSecond = value.targetReadOpsPerSecond;
+      this._targetWriteBytesPerSecond = value.targetWriteBytesPerSecond;
+      this._targetWriteOpsPerSecond = value.targetWriteOpsPerSecond;
+    }
+  }
+
+  // target_read_bytes_per_second - computed: false, optional: true, required: false
+  private _targetReadBytesPerSecond?: number; 
+  public get targetReadBytesPerSecond() {
+    return this.getNumberAttribute('target_read_bytes_per_second');
+  }
+  public set targetReadBytesPerSecond(value: number) {
+    this._targetReadBytesPerSecond = value;
+  }
+  public resetTargetReadBytesPerSecond() {
+    this._targetReadBytesPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetReadBytesPerSecondInput() {
+    return this._targetReadBytesPerSecond;
+  }
+
+  // target_read_ops_per_second - computed: false, optional: true, required: false
+  private _targetReadOpsPerSecond?: number; 
+  public get targetReadOpsPerSecond() {
+    return this.getNumberAttribute('target_read_ops_per_second');
+  }
+  public set targetReadOpsPerSecond(value: number) {
+    this._targetReadOpsPerSecond = value;
+  }
+  public resetTargetReadOpsPerSecond() {
+    this._targetReadOpsPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetReadOpsPerSecondInput() {
+    return this._targetReadOpsPerSecond;
+  }
+
+  // target_write_bytes_per_second - computed: false, optional: true, required: false
+  private _targetWriteBytesPerSecond?: number; 
+  public get targetWriteBytesPerSecond() {
+    return this.getNumberAttribute('target_write_bytes_per_second');
+  }
+  public set targetWriteBytesPerSecond(value: number) {
+    this._targetWriteBytesPerSecond = value;
+  }
+  public resetTargetWriteBytesPerSecond() {
+    this._targetWriteBytesPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetWriteBytesPerSecondInput() {
+    return this._targetWriteBytesPerSecond;
+  }
+
+  // target_write_ops_per_second - computed: false, optional: true, required: false
+  private _targetWriteOpsPerSecond?: number; 
+  public get targetWriteOpsPerSecond() {
+    return this.getNumberAttribute('target_write_ops_per_second');
+  }
+  public set targetWriteOpsPerSecond(value: number) {
+    this._targetWriteOpsPerSecond = value;
+  }
+  public resetTargetWriteOpsPerSecond() {
+    this._targetWriteOpsPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetWriteOpsPerSecondInput() {
+    return this._targetWriteOpsPerSecond;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization {
+  /**
+  * Target bytes received per second.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_received_bytes_per_second GoogleAppEngineFlexibleAppVersion#target_received_bytes_per_second}
+  */
+  readonly targetReceivedBytesPerSecond?: number;
+  /**
+  * Target packets received per second.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_received_packets_per_second GoogleAppEngineFlexibleAppVersion#target_received_packets_per_second}
+  */
+  readonly targetReceivedPacketsPerSecond?: number;
+  /**
+  * Target bytes sent per second.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_sent_bytes_per_second GoogleAppEngineFlexibleAppVersion#target_sent_bytes_per_second}
+  */
+  readonly targetSentBytesPerSecond?: number;
+  /**
+  * Target packets sent per second.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_sent_packets_per_second GoogleAppEngineFlexibleAppVersion#target_sent_packets_per_second}
+  */
+  readonly targetSentPacketsPerSecond?: number;
+}
+
+export function googleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationToTerraform(struct?: GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference | GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    target_received_bytes_per_second: cdktf.numberToTerraform(struct!.targetReceivedBytesPerSecond),
+    target_received_packets_per_second: cdktf.numberToTerraform(struct!.targetReceivedPacketsPerSecond),
+    target_sent_bytes_per_second: cdktf.numberToTerraform(struct!.targetSentBytesPerSecond),
+    target_sent_packets_per_second: cdktf.numberToTerraform(struct!.targetSentPacketsPerSecond),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._targetReceivedBytesPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetReceivedBytesPerSecond = this._targetReceivedBytesPerSecond;
+    }
+    if (this._targetReceivedPacketsPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetReceivedPacketsPerSecond = this._targetReceivedPacketsPerSecond;
+    }
+    if (this._targetSentBytesPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetSentBytesPerSecond = this._targetSentBytesPerSecond;
+    }
+    if (this._targetSentPacketsPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetSentPacketsPerSecond = this._targetSentPacketsPerSecond;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._targetReceivedBytesPerSecond = undefined;
+      this._targetReceivedPacketsPerSecond = undefined;
+      this._targetSentBytesPerSecond = undefined;
+      this._targetSentPacketsPerSecond = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._targetReceivedBytesPerSecond = value.targetReceivedBytesPerSecond;
+      this._targetReceivedPacketsPerSecond = value.targetReceivedPacketsPerSecond;
+      this._targetSentBytesPerSecond = value.targetSentBytesPerSecond;
+      this._targetSentPacketsPerSecond = value.targetSentPacketsPerSecond;
+    }
+  }
+
+  // target_received_bytes_per_second - computed: false, optional: true, required: false
+  private _targetReceivedBytesPerSecond?: number; 
+  public get targetReceivedBytesPerSecond() {
+    return this.getNumberAttribute('target_received_bytes_per_second');
+  }
+  public set targetReceivedBytesPerSecond(value: number) {
+    this._targetReceivedBytesPerSecond = value;
+  }
+  public resetTargetReceivedBytesPerSecond() {
+    this._targetReceivedBytesPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetReceivedBytesPerSecondInput() {
+    return this._targetReceivedBytesPerSecond;
+  }
+
+  // target_received_packets_per_second - computed: false, optional: true, required: false
+  private _targetReceivedPacketsPerSecond?: number; 
+  public get targetReceivedPacketsPerSecond() {
+    return this.getNumberAttribute('target_received_packets_per_second');
+  }
+  public set targetReceivedPacketsPerSecond(value: number) {
+    this._targetReceivedPacketsPerSecond = value;
+  }
+  public resetTargetReceivedPacketsPerSecond() {
+    this._targetReceivedPacketsPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetReceivedPacketsPerSecondInput() {
+    return this._targetReceivedPacketsPerSecond;
+  }
+
+  // target_sent_bytes_per_second - computed: false, optional: true, required: false
+  private _targetSentBytesPerSecond?: number; 
+  public get targetSentBytesPerSecond() {
+    return this.getNumberAttribute('target_sent_bytes_per_second');
+  }
+  public set targetSentBytesPerSecond(value: number) {
+    this._targetSentBytesPerSecond = value;
+  }
+  public resetTargetSentBytesPerSecond() {
+    this._targetSentBytesPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetSentBytesPerSecondInput() {
+    return this._targetSentBytesPerSecond;
+  }
+
+  // target_sent_packets_per_second - computed: false, optional: true, required: false
+  private _targetSentPacketsPerSecond?: number; 
+  public get targetSentPacketsPerSecond() {
+    return this.getNumberAttribute('target_sent_packets_per_second');
+  }
+  public set targetSentPacketsPerSecond(value: number) {
+    this._targetSentPacketsPerSecond = value;
+  }
+  public resetTargetSentPacketsPerSecond() {
+    this._targetSentPacketsPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetSentPacketsPerSecondInput() {
+    return this._targetSentPacketsPerSecond;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilization {
+  /**
+  * Target number of concurrent requests.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_concurrent_requests GoogleAppEngineFlexibleAppVersion#target_concurrent_requests}
+  */
+  readonly targetConcurrentRequests?: number;
+  /**
+  * Target requests per second.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#target_request_count_per_second GoogleAppEngineFlexibleAppVersion#target_request_count_per_second}
+  */
+  readonly targetRequestCountPerSecond?: string;
+}
+
+export function googleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationToTerraform(struct?: GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationOutputReference | GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilization): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    target_concurrent_requests: cdktf.numberToTerraform(struct!.targetConcurrentRequests),
+    target_request_count_per_second: cdktf.stringToTerraform(struct!.targetRequestCountPerSecond),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilization | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._targetConcurrentRequests !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetConcurrentRequests = this._targetConcurrentRequests;
+    }
+    if (this._targetRequestCountPerSecond !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetRequestCountPerSecond = this._targetRequestCountPerSecond;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilization | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._targetConcurrentRequests = undefined;
+      this._targetRequestCountPerSecond = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._targetConcurrentRequests = value.targetConcurrentRequests;
+      this._targetRequestCountPerSecond = value.targetRequestCountPerSecond;
+    }
+  }
+
+  // target_concurrent_requests - computed: false, optional: true, required: false
+  private _targetConcurrentRequests?: number; 
+  public get targetConcurrentRequests() {
+    return this.getNumberAttribute('target_concurrent_requests');
+  }
+  public set targetConcurrentRequests(value: number) {
+    this._targetConcurrentRequests = value;
+  }
+  public resetTargetConcurrentRequests() {
+    this._targetConcurrentRequests = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetConcurrentRequestsInput() {
+    return this._targetConcurrentRequests;
+  }
+
+  // target_request_count_per_second - computed: false, optional: true, required: false
+  private _targetRequestCountPerSecond?: string; 
+  public get targetRequestCountPerSecond() {
+    return this.getStringAttribute('target_request_count_per_second');
+  }
+  public set targetRequestCountPerSecond(value: string) {
+    this._targetRequestCountPerSecond = value;
+  }
+  public resetTargetRequestCountPerSecond() {
+    this._targetRequestCountPerSecond = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetRequestCountPerSecondInput() {
+    return this._targetRequestCountPerSecond;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionAutomaticScaling {
+  /**
+  * The time period that the Autoscaler should wait before it starts collecting information from a new instance.
+This prevents the autoscaler from collecting information when the instance is initializing,
+during which the collected usage would not be reliable. Default: 120s
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#cool_down_period GoogleAppEngineFlexibleAppVersion#cool_down_period}
+  */
+  readonly coolDownPeriod?: string;
+  /**
+  * Number of concurrent requests an automatic scaling instance can accept before the scheduler spawns a new instance.
+
+Defaults to a runtime-specific value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#max_concurrent_requests GoogleAppEngineFlexibleAppVersion#max_concurrent_requests}
+  */
+  readonly maxConcurrentRequests?: number;
+  /**
+  * Maximum number of idle instances that should be maintained for this version.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#max_idle_instances GoogleAppEngineFlexibleAppVersion#max_idle_instances}
+  */
+  readonly maxIdleInstances?: number;
+  /**
+  * Maximum amount of time that a request should wait in the pending queue before starting a new instance to handle it.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#max_pending_latency GoogleAppEngineFlexibleAppVersion#max_pending_latency}
+  */
+  readonly maxPendingLatency?: string;
+  /**
+  * Maximum number of instances that should be started to handle requests for this version. Default: 20
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#max_total_instances GoogleAppEngineFlexibleAppVersion#max_total_instances}
+  */
+  readonly maxTotalInstances?: number;
+  /**
+  * Minimum number of idle instances that should be maintained for this version. Only applicable for the default version of a service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#min_idle_instances GoogleAppEngineFlexibleAppVersion#min_idle_instances}
+  */
+  readonly minIdleInstances?: number;
+  /**
+  * Minimum amount of time a request should wait in the pending queue before starting a new instance to handle it.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#min_pending_latency GoogleAppEngineFlexibleAppVersion#min_pending_latency}
+  */
+  readonly minPendingLatency?: string;
+  /**
+  * Minimum number of running instances that should be maintained for this version. Default: 2
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#min_total_instances GoogleAppEngineFlexibleAppVersion#min_total_instances}
+  */
+  readonly minTotalInstances?: number;
+  /**
+  * cpu_utilization block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#cpu_utilization GoogleAppEngineFlexibleAppVersion#cpu_utilization}
+  */
+  readonly cpuUtilization: GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilization;
+  /**
+  * disk_utilization block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#disk_utilization GoogleAppEngineFlexibleAppVersion#disk_utilization}
+  */
+  readonly diskUtilization?: GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilization;
+  /**
+  * network_utilization block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#network_utilization GoogleAppEngineFlexibleAppVersion#network_utilization}
+  */
+  readonly networkUtilization?: GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization;
+  /**
+  * request_utilization block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#request_utilization GoogleAppEngineFlexibleAppVersion#request_utilization}
+  */
+  readonly requestUtilization?: GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilization;
+}
+
+export function googleAppEngineFlexibleAppVersionAutomaticScalingToTerraform(struct?: GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference | GoogleAppEngineFlexibleAppVersionAutomaticScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cool_down_period: cdktf.stringToTerraform(struct!.coolDownPeriod),
+    max_concurrent_requests: cdktf.numberToTerraform(struct!.maxConcurrentRequests),
+    max_idle_instances: cdktf.numberToTerraform(struct!.maxIdleInstances),
+    max_pending_latency: cdktf.stringToTerraform(struct!.maxPendingLatency),
+    max_total_instances: cdktf.numberToTerraform(struct!.maxTotalInstances),
+    min_idle_instances: cdktf.numberToTerraform(struct!.minIdleInstances),
+    min_pending_latency: cdktf.stringToTerraform(struct!.minPendingLatency),
+    min_total_instances: cdktf.numberToTerraform(struct!.minTotalInstances),
+    cpu_utilization: googleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationToTerraform(struct!.cpuUtilization),
+    disk_utilization: googleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationToTerraform(struct!.diskUtilization),
+    network_utilization: googleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationToTerraform(struct!.networkUtilization),
+    request_utilization: googleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationToTerraform(struct!.requestUtilization),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionAutomaticScaling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._coolDownPeriod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.coolDownPeriod = this._coolDownPeriod;
+    }
+    if (this._maxConcurrentRequests !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxConcurrentRequests = this._maxConcurrentRequests;
+    }
+    if (this._maxIdleInstances !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxIdleInstances = this._maxIdleInstances;
+    }
+    if (this._maxPendingLatency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxPendingLatency = this._maxPendingLatency;
+    }
+    if (this._maxTotalInstances !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxTotalInstances = this._maxTotalInstances;
+    }
+    if (this._minIdleInstances !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minIdleInstances = this._minIdleInstances;
+    }
+    if (this._minPendingLatency !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minPendingLatency = this._minPendingLatency;
+    }
+    if (this._minTotalInstances !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minTotalInstances = this._minTotalInstances;
+    }
+    if (this._cpuUtilization?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpuUtilization = this._cpuUtilization?.internalValue;
+    }
+    if (this._diskUtilization?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskUtilization = this._diskUtilization?.internalValue;
+    }
+    if (this._networkUtilization?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkUtilization = this._networkUtilization?.internalValue;
+    }
+    if (this._requestUtilization?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestUtilization = this._requestUtilization?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionAutomaticScaling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._coolDownPeriod = undefined;
+      this._maxConcurrentRequests = undefined;
+      this._maxIdleInstances = undefined;
+      this._maxPendingLatency = undefined;
+      this._maxTotalInstances = undefined;
+      this._minIdleInstances = undefined;
+      this._minPendingLatency = undefined;
+      this._minTotalInstances = undefined;
+      this._cpuUtilization.internalValue = undefined;
+      this._diskUtilization.internalValue = undefined;
+      this._networkUtilization.internalValue = undefined;
+      this._requestUtilization.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._coolDownPeriod = value.coolDownPeriod;
+      this._maxConcurrentRequests = value.maxConcurrentRequests;
+      this._maxIdleInstances = value.maxIdleInstances;
+      this._maxPendingLatency = value.maxPendingLatency;
+      this._maxTotalInstances = value.maxTotalInstances;
+      this._minIdleInstances = value.minIdleInstances;
+      this._minPendingLatency = value.minPendingLatency;
+      this._minTotalInstances = value.minTotalInstances;
+      this._cpuUtilization.internalValue = value.cpuUtilization;
+      this._diskUtilization.internalValue = value.diskUtilization;
+      this._networkUtilization.internalValue = value.networkUtilization;
+      this._requestUtilization.internalValue = value.requestUtilization;
+    }
+  }
+
+  // cool_down_period - computed: false, optional: true, required: false
+  private _coolDownPeriod?: string; 
+  public get coolDownPeriod() {
+    return this.getStringAttribute('cool_down_period');
+  }
+  public set coolDownPeriod(value: string) {
+    this._coolDownPeriod = value;
+  }
+  public resetCoolDownPeriod() {
+    this._coolDownPeriod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get coolDownPeriodInput() {
+    return this._coolDownPeriod;
+  }
+
+  // max_concurrent_requests - computed: true, optional: true, required: false
+  private _maxConcurrentRequests?: number; 
+  public get maxConcurrentRequests() {
+    return this.getNumberAttribute('max_concurrent_requests');
+  }
+  public set maxConcurrentRequests(value: number) {
+    this._maxConcurrentRequests = value;
+  }
+  public resetMaxConcurrentRequests() {
+    this._maxConcurrentRequests = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxConcurrentRequestsInput() {
+    return this._maxConcurrentRequests;
+  }
+
+  // max_idle_instances - computed: false, optional: true, required: false
+  private _maxIdleInstances?: number; 
+  public get maxIdleInstances() {
+    return this.getNumberAttribute('max_idle_instances');
+  }
+  public set maxIdleInstances(value: number) {
+    this._maxIdleInstances = value;
+  }
+  public resetMaxIdleInstances() {
+    this._maxIdleInstances = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxIdleInstancesInput() {
+    return this._maxIdleInstances;
+  }
+
+  // max_pending_latency - computed: false, optional: true, required: false
+  private _maxPendingLatency?: string; 
+  public get maxPendingLatency() {
+    return this.getStringAttribute('max_pending_latency');
+  }
+  public set maxPendingLatency(value: string) {
+    this._maxPendingLatency = value;
+  }
+  public resetMaxPendingLatency() {
+    this._maxPendingLatency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxPendingLatencyInput() {
+    return this._maxPendingLatency;
+  }
+
+  // max_total_instances - computed: false, optional: true, required: false
+  private _maxTotalInstances?: number; 
+  public get maxTotalInstances() {
+    return this.getNumberAttribute('max_total_instances');
+  }
+  public set maxTotalInstances(value: number) {
+    this._maxTotalInstances = value;
+  }
+  public resetMaxTotalInstances() {
+    this._maxTotalInstances = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxTotalInstancesInput() {
+    return this._maxTotalInstances;
+  }
+
+  // min_idle_instances - computed: false, optional: true, required: false
+  private _minIdleInstances?: number; 
+  public get minIdleInstances() {
+    return this.getNumberAttribute('min_idle_instances');
+  }
+  public set minIdleInstances(value: number) {
+    this._minIdleInstances = value;
+  }
+  public resetMinIdleInstances() {
+    this._minIdleInstances = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minIdleInstancesInput() {
+    return this._minIdleInstances;
+  }
+
+  // min_pending_latency - computed: false, optional: true, required: false
+  private _minPendingLatency?: string; 
+  public get minPendingLatency() {
+    return this.getStringAttribute('min_pending_latency');
+  }
+  public set minPendingLatency(value: string) {
+    this._minPendingLatency = value;
+  }
+  public resetMinPendingLatency() {
+    this._minPendingLatency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minPendingLatencyInput() {
+    return this._minPendingLatency;
+  }
+
+  // min_total_instances - computed: false, optional: true, required: false
+  private _minTotalInstances?: number; 
+  public get minTotalInstances() {
+    return this.getNumberAttribute('min_total_instances');
+  }
+  public set minTotalInstances(value: number) {
+    this._minTotalInstances = value;
+  }
+  public resetMinTotalInstances() {
+    this._minTotalInstances = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minTotalInstancesInput() {
+    return this._minTotalInstances;
+  }
+
+  // cpu_utilization - computed: false, optional: false, required: true
+  private _cpuUtilization = new GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationOutputReference(this, "cpu_utilization");
+  public get cpuUtilization() {
+    return this._cpuUtilization;
+  }
+  public putCpuUtilization(value: GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilization) {
+    this._cpuUtilization.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuUtilizationInput() {
+    return this._cpuUtilization.internalValue;
+  }
+
+  // disk_utilization - computed: false, optional: true, required: false
+  private _diskUtilization = new GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOutputReference(this, "disk_utilization");
+  public get diskUtilization() {
+    return this._diskUtilization;
+  }
+  public putDiskUtilization(value: GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilization) {
+    this._diskUtilization.internalValue = value;
+  }
+  public resetDiskUtilization() {
+    this._diskUtilization.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskUtilizationInput() {
+    return this._diskUtilization.internalValue;
+  }
+
+  // network_utilization - computed: false, optional: true, required: false
+  private _networkUtilization = new GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilizationOutputReference(this, "network_utilization");
+  public get networkUtilization() {
+    return this._networkUtilization;
+  }
+  public putNetworkUtilization(value: GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization) {
+    this._networkUtilization.internalValue = value;
+  }
+  public resetNetworkUtilization() {
+    this._networkUtilization.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkUtilizationInput() {
+    return this._networkUtilization.internalValue;
+  }
+
+  // request_utilization - computed: false, optional: true, required: false
+  private _requestUtilization = new GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilizationOutputReference(this, "request_utilization");
+  public get requestUtilization() {
+    return this._requestUtilization;
+  }
+  public putRequestUtilization(value: GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilization) {
+    this._requestUtilization.internalValue = value;
+  }
+  public resetRequestUtilization() {
+    this._requestUtilization.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestUtilizationInput() {
+    return this._requestUtilization.internalValue;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions {
+  /**
+  * Path to the yaml file used in deployment, used to determine runtime configuration details.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#app_yaml_path GoogleAppEngineFlexibleAppVersion#app_yaml_path}
+  */
+  readonly appYamlPath: string;
+  /**
+  * The Cloud Build timeout used as part of any dependent builds performed by version creation. Defaults to 10 minutes.
+
+A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#cloud_build_timeout GoogleAppEngineFlexibleAppVersion#cloud_build_timeout}
+  */
+  readonly cloudBuildTimeout?: string;
+}
+
+export function googleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsToTerraform(struct?: GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference | GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    app_yaml_path: cdktf.stringToTerraform(struct!.appYamlPath),
+    cloud_build_timeout: cdktf.stringToTerraform(struct!.cloudBuildTimeout),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._appYamlPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appYamlPath = this._appYamlPath;
+    }
+    if (this._cloudBuildTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudBuildTimeout = this._cloudBuildTimeout;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._appYamlPath = undefined;
+      this._cloudBuildTimeout = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._appYamlPath = value.appYamlPath;
+      this._cloudBuildTimeout = value.cloudBuildTimeout;
+    }
+  }
+
+  // app_yaml_path - computed: false, optional: false, required: true
+  private _appYamlPath?: string; 
+  public get appYamlPath() {
+    return this.getStringAttribute('app_yaml_path');
+  }
+  public set appYamlPath(value: string) {
+    this._appYamlPath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appYamlPathInput() {
+    return this._appYamlPath;
+  }
+
+  // cloud_build_timeout - computed: false, optional: true, required: false
+  private _cloudBuildTimeout?: string; 
+  public get cloudBuildTimeout() {
+    return this.getStringAttribute('cloud_build_timeout');
+  }
+  public set cloudBuildTimeout(value: string) {
+    this._cloudBuildTimeout = value;
+  }
+  public resetCloudBuildTimeout() {
+    this._cloudBuildTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudBuildTimeoutInput() {
+    return this._cloudBuildTimeout;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionDeploymentContainer {
+  /**
+  * URI to the hosted container image in Google Container Registry. The URI must be fully qualified and include a tag or digest.
+Examples: "gcr.io/my-project/image:tag" or "gcr.io/my-project/image@digest"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#image GoogleAppEngineFlexibleAppVersion#image}
+  */
+  readonly image: string;
+}
+
+export function googleAppEngineFlexibleAppVersionDeploymentContainerToTerraform(struct?: GoogleAppEngineFlexibleAppVersionDeploymentContainerOutputReference | GoogleAppEngineFlexibleAppVersionDeploymentContainer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    image: cdktf.stringToTerraform(struct!.image),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionDeploymentContainerOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionDeploymentContainer | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._image !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.image = this._image;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionDeploymentContainer | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._image = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._image = value.image;
+    }
+  }
+
+  // image - computed: false, optional: false, required: true
+  private _image?: string; 
+  public get image() {
+    return this.getStringAttribute('image');
+  }
+  public set image(value: string) {
+    this._image = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageInput() {
+    return this._image;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionDeploymentFiles {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#name GoogleAppEngineFlexibleAppVersion#name}
+  */
+  readonly name: string;
+  /**
+  * SHA1 checksum of the file
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#sha1_sum GoogleAppEngineFlexibleAppVersion#sha1_sum}
+  */
+  readonly sha1Sum?: string;
+  /**
+  * Source URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#source_url GoogleAppEngineFlexibleAppVersion#source_url}
+  */
+  readonly sourceUrl: string;
+}
+
+export function googleAppEngineFlexibleAppVersionDeploymentFilesToTerraform(struct?: GoogleAppEngineFlexibleAppVersionDeploymentFiles | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    sha1_sum: cdktf.stringToTerraform(struct!.sha1Sum),
+    source_url: cdktf.stringToTerraform(struct!.sourceUrl),
+  }
+}
+
+export interface GoogleAppEngineFlexibleAppVersionDeploymentZip {
+  /**
+  * files count
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#files_count GoogleAppEngineFlexibleAppVersion#files_count}
+  */
+  readonly filesCount?: number;
+  /**
+  * Source URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#source_url GoogleAppEngineFlexibleAppVersion#source_url}
+  */
+  readonly sourceUrl: string;
+}
+
+export function googleAppEngineFlexibleAppVersionDeploymentZipToTerraform(struct?: GoogleAppEngineFlexibleAppVersionDeploymentZipOutputReference | GoogleAppEngineFlexibleAppVersionDeploymentZip): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    files_count: cdktf.numberToTerraform(struct!.filesCount),
+    source_url: cdktf.stringToTerraform(struct!.sourceUrl),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionDeploymentZipOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionDeploymentZip | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filesCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filesCount = this._filesCount;
+    }
+    if (this._sourceUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sourceUrl = this._sourceUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionDeploymentZip | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._filesCount = undefined;
+      this._sourceUrl = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._filesCount = value.filesCount;
+      this._sourceUrl = value.sourceUrl;
+    }
+  }
+
+  // files_count - computed: false, optional: true, required: false
+  private _filesCount?: number; 
+  public get filesCount() {
+    return this.getNumberAttribute('files_count');
+  }
+  public set filesCount(value: number) {
+    this._filesCount = value;
+  }
+  public resetFilesCount() {
+    this._filesCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filesCountInput() {
+    return this._filesCount;
+  }
+
+  // source_url - computed: false, optional: false, required: true
+  private _sourceUrl?: string; 
+  public get sourceUrl() {
+    return this.getStringAttribute('source_url');
+  }
+  public set sourceUrl(value: string) {
+    this._sourceUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceUrlInput() {
+    return this._sourceUrl;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionDeployment {
+  /**
+  * cloud_build_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#cloud_build_options GoogleAppEngineFlexibleAppVersion#cloud_build_options}
+  */
+  readonly cloudBuildOptions?: GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions;
+  /**
+  * container block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#container GoogleAppEngineFlexibleAppVersion#container}
+  */
+  readonly container?: GoogleAppEngineFlexibleAppVersionDeploymentContainer;
+  /**
+  * files block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#files GoogleAppEngineFlexibleAppVersion#files}
+  */
+  readonly files?: GoogleAppEngineFlexibleAppVersionDeploymentFiles[] | cdktf.IResolvable;
+  /**
+  * zip block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#zip GoogleAppEngineFlexibleAppVersion#zip}
+  */
+  readonly zip?: GoogleAppEngineFlexibleAppVersionDeploymentZip;
+}
+
+export function googleAppEngineFlexibleAppVersionDeploymentToTerraform(struct?: GoogleAppEngineFlexibleAppVersionDeploymentOutputReference | GoogleAppEngineFlexibleAppVersionDeployment): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cloud_build_options: googleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsToTerraform(struct!.cloudBuildOptions),
+    container: googleAppEngineFlexibleAppVersionDeploymentContainerToTerraform(struct!.container),
+    files: cdktf.listMapper(googleAppEngineFlexibleAppVersionDeploymentFilesToTerraform)(struct!.files),
+    zip: googleAppEngineFlexibleAppVersionDeploymentZipToTerraform(struct!.zip),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionDeploymentOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionDeployment | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cloudBuildOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudBuildOptions = this._cloudBuildOptions?.internalValue;
+    }
+    if (this._container?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.container = this._container?.internalValue;
+    }
+    if (this._files !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.files = this._files;
+    }
+    if (this._zip?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zip = this._zip?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionDeployment | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cloudBuildOptions.internalValue = undefined;
+      this._container.internalValue = undefined;
+      this._files = undefined;
+      this._zip.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cloudBuildOptions.internalValue = value.cloudBuildOptions;
+      this._container.internalValue = value.container;
+      this._files = value.files;
+      this._zip.internalValue = value.zip;
+    }
+  }
+
+  // cloud_build_options - computed: false, optional: true, required: false
+  private _cloudBuildOptions = new GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference(this, "cloud_build_options");
+  public get cloudBuildOptions() {
+    return this._cloudBuildOptions;
+  }
+  public putCloudBuildOptions(value: GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions) {
+    this._cloudBuildOptions.internalValue = value;
+  }
+  public resetCloudBuildOptions() {
+    this._cloudBuildOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudBuildOptionsInput() {
+    return this._cloudBuildOptions.internalValue;
+  }
+
+  // container - computed: false, optional: true, required: false
+  private _container = new GoogleAppEngineFlexibleAppVersionDeploymentContainerOutputReference(this, "container");
+  public get container() {
+    return this._container;
+  }
+  public putContainer(value: GoogleAppEngineFlexibleAppVersionDeploymentContainer) {
+    this._container.internalValue = value;
+  }
+  public resetContainer() {
+    this._container.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerInput() {
+    return this._container.internalValue;
+  }
+
+  // files - computed: false, optional: true, required: false
+  private _files?: GoogleAppEngineFlexibleAppVersionDeploymentFiles[] | cdktf.IResolvable; 
+  public get files() {
+    // Getting the computed value is not yet implemented
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('files')));
+  }
+  public set files(value: GoogleAppEngineFlexibleAppVersionDeploymentFiles[] | cdktf.IResolvable) {
+    this._files = value;
+  }
+  public resetFiles() {
+    this._files = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filesInput() {
+    return this._files;
+  }
+
+  // zip - computed: false, optional: true, required: false
+  private _zip = new GoogleAppEngineFlexibleAppVersionDeploymentZipOutputReference(this, "zip");
+  public get zip() {
+    return this._zip;
+  }
+  public putZip(value: GoogleAppEngineFlexibleAppVersionDeploymentZip) {
+    this._zip.internalValue = value;
+  }
+  public resetZip() {
+    this._zip.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zipInput() {
+    return this._zip.internalValue;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionEndpointsApiService {
+  /**
+  * Endpoints service configuration ID as specified by the Service Management API. For example "2016-09-19r1".
+
+By default, the rollout strategy for Endpoints is "FIXED". This means that Endpoints starts up with a particular configuration ID.
+When a new configuration is rolled out, Endpoints must be given the new configuration ID. The configId field is used to give the configuration ID
+and is required in this case.
+
+Endpoints also has a rollout strategy called "MANAGED". When using this, Endpoints fetches the latest configuration and does not need
+the configuration ID. In this case, configId must be omitted.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#config_id GoogleAppEngineFlexibleAppVersion#config_id}
+  */
+  readonly configId?: string;
+  /**
+  * Enable or disable trace sampling. By default, this is set to false for enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#disable_trace_sampling GoogleAppEngineFlexibleAppVersion#disable_trace_sampling}
+  */
+  readonly disableTraceSampling?: boolean | cdktf.IResolvable;
+  /**
+  * Endpoints service name which is the name of the "service" resource in the Service Management API.
+For example "myapi.endpoints.myproject.cloud.goog"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#name GoogleAppEngineFlexibleAppVersion#name}
+  */
+  readonly name: string;
+  /**
+  * Endpoints rollout strategy. If FIXED, configId must be specified. If MANAGED, configId must be omitted. Default value: "FIXED" Possible values: ["FIXED", "MANAGED"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#rollout_strategy GoogleAppEngineFlexibleAppVersion#rollout_strategy}
+  */
+  readonly rolloutStrategy?: string;
+}
+
+export function googleAppEngineFlexibleAppVersionEndpointsApiServiceToTerraform(struct?: GoogleAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference | GoogleAppEngineFlexibleAppVersionEndpointsApiService): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    config_id: cdktf.stringToTerraform(struct!.configId),
+    disable_trace_sampling: cdktf.booleanToTerraform(struct!.disableTraceSampling),
+    name: cdktf.stringToTerraform(struct!.name),
+    rollout_strategy: cdktf.stringToTerraform(struct!.rolloutStrategy),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionEndpointsApiService | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._configId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.configId = this._configId;
+    }
+    if (this._disableTraceSampling !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disableTraceSampling = this._disableTraceSampling;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._rolloutStrategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rolloutStrategy = this._rolloutStrategy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionEndpointsApiService | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._configId = undefined;
+      this._disableTraceSampling = undefined;
+      this._name = undefined;
+      this._rolloutStrategy = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._configId = value.configId;
+      this._disableTraceSampling = value.disableTraceSampling;
+      this._name = value.name;
+      this._rolloutStrategy = value.rolloutStrategy;
+    }
+  }
+
+  // config_id - computed: false, optional: true, required: false
+  private _configId?: string; 
+  public get configId() {
+    return this.getStringAttribute('config_id');
+  }
+  public set configId(value: string) {
+    this._configId = value;
+  }
+  public resetConfigId() {
+    this._configId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configIdInput() {
+    return this._configId;
+  }
+
+  // disable_trace_sampling - computed: false, optional: true, required: false
+  private _disableTraceSampling?: boolean | cdktf.IResolvable; 
+  public get disableTraceSampling() {
+    return this.getBooleanAttribute('disable_trace_sampling');
+  }
+  public set disableTraceSampling(value: boolean | cdktf.IResolvable) {
+    this._disableTraceSampling = value;
+  }
+  public resetDisableTraceSampling() {
+    this._disableTraceSampling = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disableTraceSamplingInput() {
+    return this._disableTraceSampling;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // rollout_strategy - computed: false, optional: true, required: false
+  private _rolloutStrategy?: string; 
+  public get rolloutStrategy() {
+    return this.getStringAttribute('rollout_strategy');
+  }
+  public set rolloutStrategy(value: string) {
+    this._rolloutStrategy = value;
+  }
+  public resetRolloutStrategy() {
+    this._rolloutStrategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rolloutStrategyInput() {
+    return this._rolloutStrategy;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionEntrypoint {
+  /**
+  * The format should be a shell command that can be fed to bash -c.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#shell GoogleAppEngineFlexibleAppVersion#shell}
+  */
+  readonly shell: string;
+}
+
+export function googleAppEngineFlexibleAppVersionEntrypointToTerraform(struct?: GoogleAppEngineFlexibleAppVersionEntrypointOutputReference | GoogleAppEngineFlexibleAppVersionEntrypoint): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    shell: cdktf.stringToTerraform(struct!.shell),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionEntrypointOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionEntrypoint | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._shell !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shell = this._shell;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionEntrypoint | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._shell = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._shell = value.shell;
+    }
+  }
+
+  // shell - computed: false, optional: false, required: true
+  private _shell?: string; 
+  public get shell() {
+    return this.getStringAttribute('shell');
+  }
+  public set shell(value: string) {
+    this._shell = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shellInput() {
+    return this._shell;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionHandlersScript {
+  /**
+  * Path to the script from the application root directory.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#script_path GoogleAppEngineFlexibleAppVersion#script_path}
+  */
+  readonly scriptPath: string;
+}
+
+export function googleAppEngineFlexibleAppVersionHandlersScriptToTerraform(struct?: GoogleAppEngineFlexibleAppVersionHandlersScriptOutputReference | GoogleAppEngineFlexibleAppVersionHandlersScript): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    script_path: cdktf.stringToTerraform(struct!.scriptPath),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionHandlersScriptOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionHandlersScript | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._scriptPath !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scriptPath = this._scriptPath;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionHandlersScript | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._scriptPath = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._scriptPath = value.scriptPath;
+    }
+  }
+
+  // script_path - computed: false, optional: false, required: true
+  private _scriptPath?: string; 
+  public get scriptPath() {
+    return this.getStringAttribute('script_path');
+  }
+  public set scriptPath(value: string) {
+    this._scriptPath = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scriptPathInput() {
+    return this._scriptPath;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionHandlersStaticFiles {
+  /**
+  * Whether files should also be uploaded as code data. By default, files declared in static file handlers are
+uploaded as static data and are only served to end users; they cannot be read by the application. If enabled,
+uploads are charged against both your code and static data storage resource quotas.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#application_readable GoogleAppEngineFlexibleAppVersion#application_readable}
+  */
+  readonly applicationReadable?: boolean | cdktf.IResolvable;
+  /**
+  * Time a static file served by this handler should be cached by web proxies and browsers.
+A duration in seconds with up to nine fractional digits, terminated by 's'. Example "3.5s".
+Default is '0s'
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#expiration GoogleAppEngineFlexibleAppVersion#expiration}
+  */
+  readonly expiration?: string;
+  /**
+  * HTTP headers to use for all responses from these URLs.
+An object containing a list of "key:value" value pairs.".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#http_headers GoogleAppEngineFlexibleAppVersion#http_headers}
+  */
+  readonly httpHeaders?: { [key: string]: string };
+  /**
+  * MIME type used to serve all files served by this handler.
+Defaults to file-specific MIME types, which are derived from each file's filename extension.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#mime_type GoogleAppEngineFlexibleAppVersion#mime_type}
+  */
+  readonly mimeType?: string;
+  /**
+  * Path to the static files matched by the URL pattern, from the application root directory.
+The path can refer to text matched in groupings in the URL pattern.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#path GoogleAppEngineFlexibleAppVersion#path}
+  */
+  readonly path?: string;
+  /**
+  * Whether this handler should match the request if the file referenced by the handler does not exist.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#require_matching_file GoogleAppEngineFlexibleAppVersion#require_matching_file}
+  */
+  readonly requireMatchingFile?: boolean | cdktf.IResolvable;
+  /**
+  * Regular expression that matches the file paths for all files that should be referenced by this handler.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#upload_path_regex GoogleAppEngineFlexibleAppVersion#upload_path_regex}
+  */
+  readonly uploadPathRegex?: string;
+}
+
+export function googleAppEngineFlexibleAppVersionHandlersStaticFilesToTerraform(struct?: GoogleAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference | GoogleAppEngineFlexibleAppVersionHandlersStaticFiles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    application_readable: cdktf.booleanToTerraform(struct!.applicationReadable),
+    expiration: cdktf.stringToTerraform(struct!.expiration),
+    http_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.httpHeaders),
+    mime_type: cdktf.stringToTerraform(struct!.mimeType),
+    path: cdktf.stringToTerraform(struct!.path),
+    require_matching_file: cdktf.booleanToTerraform(struct!.requireMatchingFile),
+    upload_path_regex: cdktf.stringToTerraform(struct!.uploadPathRegex),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionHandlersStaticFiles | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._applicationReadable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.applicationReadable = this._applicationReadable;
+    }
+    if (this._expiration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expiration = this._expiration;
+    }
+    if (this._httpHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpHeaders = this._httpHeaders;
+    }
+    if (this._mimeType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mimeType = this._mimeType;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._requireMatchingFile !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requireMatchingFile = this._requireMatchingFile;
+    }
+    if (this._uploadPathRegex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uploadPathRegex = this._uploadPathRegex;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionHandlersStaticFiles | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._applicationReadable = undefined;
+      this._expiration = undefined;
+      this._httpHeaders = undefined;
+      this._mimeType = undefined;
+      this._path = undefined;
+      this._requireMatchingFile = undefined;
+      this._uploadPathRegex = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._applicationReadable = value.applicationReadable;
+      this._expiration = value.expiration;
+      this._httpHeaders = value.httpHeaders;
+      this._mimeType = value.mimeType;
+      this._path = value.path;
+      this._requireMatchingFile = value.requireMatchingFile;
+      this._uploadPathRegex = value.uploadPathRegex;
+    }
+  }
+
+  // application_readable - computed: false, optional: true, required: false
+  private _applicationReadable?: boolean | cdktf.IResolvable; 
+  public get applicationReadable() {
+    return this.getBooleanAttribute('application_readable');
+  }
+  public set applicationReadable(value: boolean | cdktf.IResolvable) {
+    this._applicationReadable = value;
+  }
+  public resetApplicationReadable() {
+    this._applicationReadable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get applicationReadableInput() {
+    return this._applicationReadable;
+  }
+
+  // expiration - computed: false, optional: true, required: false
+  private _expiration?: string; 
+  public get expiration() {
+    return this.getStringAttribute('expiration');
+  }
+  public set expiration(value: string) {
+    this._expiration = value;
+  }
+  public resetExpiration() {
+    this._expiration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expirationInput() {
+    return this._expiration;
+  }
+
+  // http_headers - computed: false, optional: true, required: false
+  private _httpHeaders?: { [key: string]: string }; 
+  public get httpHeaders() {
+    return this.getStringMapAttribute('http_headers');
+  }
+  public set httpHeaders(value: { [key: string]: string }) {
+    this._httpHeaders = value;
+  }
+  public resetHttpHeaders() {
+    this._httpHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpHeadersInput() {
+    return this._httpHeaders;
+  }
+
+  // mime_type - computed: false, optional: true, required: false
+  private _mimeType?: string; 
+  public get mimeType() {
+    return this.getStringAttribute('mime_type');
+  }
+  public set mimeType(value: string) {
+    this._mimeType = value;
+  }
+  public resetMimeType() {
+    this._mimeType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mimeTypeInput() {
+    return this._mimeType;
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // require_matching_file - computed: false, optional: true, required: false
+  private _requireMatchingFile?: boolean | cdktf.IResolvable; 
+  public get requireMatchingFile() {
+    return this.getBooleanAttribute('require_matching_file');
+  }
+  public set requireMatchingFile(value: boolean | cdktf.IResolvable) {
+    this._requireMatchingFile = value;
+  }
+  public resetRequireMatchingFile() {
+    this._requireMatchingFile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requireMatchingFileInput() {
+    return this._requireMatchingFile;
+  }
+
+  // upload_path_regex - computed: false, optional: true, required: false
+  private _uploadPathRegex?: string; 
+  public get uploadPathRegex() {
+    return this.getStringAttribute('upload_path_regex');
+  }
+  public set uploadPathRegex(value: string) {
+    this._uploadPathRegex = value;
+  }
+  public resetUploadPathRegex() {
+    this._uploadPathRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uploadPathRegexInput() {
+    return this._uploadPathRegex;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionHandlers {
+  /**
+  * Actions to take when the user is not logged in. Possible values: ["AUTH_FAIL_ACTION_REDIRECT", "AUTH_FAIL_ACTION_UNAUTHORIZED"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#auth_fail_action GoogleAppEngineFlexibleAppVersion#auth_fail_action}
+  */
+  readonly authFailAction?: string;
+  /**
+  * Methods to restrict access to a URL based on login status. Possible values: ["LOGIN_OPTIONAL", "LOGIN_ADMIN", "LOGIN_REQUIRED"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#login GoogleAppEngineFlexibleAppVersion#login}
+  */
+  readonly login?: string;
+  /**
+  * 30x code to use when performing redirects for the secure field. Possible values: ["REDIRECT_HTTP_RESPONSE_CODE_301", "REDIRECT_HTTP_RESPONSE_CODE_302", "REDIRECT_HTTP_RESPONSE_CODE_303", "REDIRECT_HTTP_RESPONSE_CODE_307"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#redirect_http_response_code GoogleAppEngineFlexibleAppVersion#redirect_http_response_code}
+  */
+  readonly redirectHttpResponseCode?: string;
+  /**
+  * Security (HTTPS) enforcement for this URL. Possible values: ["SECURE_DEFAULT", "SECURE_NEVER", "SECURE_OPTIONAL", "SECURE_ALWAYS"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#security_level GoogleAppEngineFlexibleAppVersion#security_level}
+  */
+  readonly securityLevel?: string;
+  /**
+  * URL prefix. Uses regular expression syntax, which means regexp special characters must be escaped, but should not contain groupings.
+All URLs that begin with this prefix are handled by this handler, using the portion of the URL after the prefix as part of the file path.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#url_regex GoogleAppEngineFlexibleAppVersion#url_regex}
+  */
+  readonly urlRegex?: string;
+  /**
+  * script block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#script GoogleAppEngineFlexibleAppVersion#script}
+  */
+  readonly script?: GoogleAppEngineFlexibleAppVersionHandlersScript;
+  /**
+  * static_files block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#static_files GoogleAppEngineFlexibleAppVersion#static_files}
+  */
+  readonly staticFiles?: GoogleAppEngineFlexibleAppVersionHandlersStaticFiles;
+}
+
+export function googleAppEngineFlexibleAppVersionHandlersToTerraform(struct?: GoogleAppEngineFlexibleAppVersionHandlers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    auth_fail_action: cdktf.stringToTerraform(struct!.authFailAction),
+    login: cdktf.stringToTerraform(struct!.login),
+    redirect_http_response_code: cdktf.stringToTerraform(struct!.redirectHttpResponseCode),
+    security_level: cdktf.stringToTerraform(struct!.securityLevel),
+    url_regex: cdktf.stringToTerraform(struct!.urlRegex),
+    script: googleAppEngineFlexibleAppVersionHandlersScriptToTerraform(struct!.script),
+    static_files: googleAppEngineFlexibleAppVersionHandlersStaticFilesToTerraform(struct!.staticFiles),
+  }
+}
+
+export interface GoogleAppEngineFlexibleAppVersionLivenessCheck {
+  /**
+  * Interval between health checks.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#check_interval GoogleAppEngineFlexibleAppVersion#check_interval}
+  */
+  readonly checkInterval?: string;
+  /**
+  * Number of consecutive failed checks required before considering the VM unhealthy. Default: 4.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#failure_threshold GoogleAppEngineFlexibleAppVersion#failure_threshold}
+  */
+  readonly failureThreshold?: number;
+  /**
+  * Host header to send when performing a HTTP Readiness check. Example: "myapp.appspot.com"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#host GoogleAppEngineFlexibleAppVersion#host}
+  */
+  readonly host?: string;
+  /**
+  * The initial delay before starting to execute the checks. Default: "300s"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#initial_delay GoogleAppEngineFlexibleAppVersion#initial_delay}
+  */
+  readonly initialDelay?: string;
+  /**
+  * The request path.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#path GoogleAppEngineFlexibleAppVersion#path}
+  */
+  readonly path: string;
+  /**
+  * Number of consecutive successful checks required before considering the VM healthy. Default: 2.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#success_threshold GoogleAppEngineFlexibleAppVersion#success_threshold}
+  */
+  readonly successThreshold?: number;
+  /**
+  * Time before the check is considered failed. Default: "4s"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#timeout GoogleAppEngineFlexibleAppVersion#timeout}
+  */
+  readonly timeout?: string;
+}
+
+export function googleAppEngineFlexibleAppVersionLivenessCheckToTerraform(struct?: GoogleAppEngineFlexibleAppVersionLivenessCheckOutputReference | GoogleAppEngineFlexibleAppVersionLivenessCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    check_interval: cdktf.stringToTerraform(struct!.checkInterval),
+    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
+    host: cdktf.stringToTerraform(struct!.host),
+    initial_delay: cdktf.stringToTerraform(struct!.initialDelay),
+    path: cdktf.stringToTerraform(struct!.path),
+    success_threshold: cdktf.numberToTerraform(struct!.successThreshold),
+    timeout: cdktf.stringToTerraform(struct!.timeout),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionLivenessCheckOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionLivenessCheck | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._checkInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.checkInterval = this._checkInterval;
+    }
+    if (this._failureThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failureThreshold = this._failureThreshold;
+    }
+    if (this._host !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.host = this._host;
+    }
+    if (this._initialDelay !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialDelay = this._initialDelay;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._successThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.successThreshold = this._successThreshold;
+    }
+    if (this._timeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeout = this._timeout;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionLivenessCheck | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._checkInterval = undefined;
+      this._failureThreshold = undefined;
+      this._host = undefined;
+      this._initialDelay = undefined;
+      this._path = undefined;
+      this._successThreshold = undefined;
+      this._timeout = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._checkInterval = value.checkInterval;
+      this._failureThreshold = value.failureThreshold;
+      this._host = value.host;
+      this._initialDelay = value.initialDelay;
+      this._path = value.path;
+      this._successThreshold = value.successThreshold;
+      this._timeout = value.timeout;
+    }
+  }
+
+  // check_interval - computed: false, optional: true, required: false
+  private _checkInterval?: string; 
+  public get checkInterval() {
+    return this.getStringAttribute('check_interval');
+  }
+  public set checkInterval(value: string) {
+    this._checkInterval = value;
+  }
+  public resetCheckInterval() {
+    this._checkInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get checkIntervalInput() {
+    return this._checkInterval;
+  }
+
+  // failure_threshold - computed: false, optional: true, required: false
+  private _failureThreshold?: number; 
+  public get failureThreshold() {
+    return this.getNumberAttribute('failure_threshold');
+  }
+  public set failureThreshold(value: number) {
+    this._failureThreshold = value;
+  }
+  public resetFailureThreshold() {
+    this._failureThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failureThresholdInput() {
+    return this._failureThreshold;
+  }
+
+  // host - computed: false, optional: true, required: false
+  private _host?: string; 
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+  public set host(value: string) {
+    this._host = value;
+  }
+  public resetHost() {
+    this._host = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host;
+  }
+
+  // initial_delay - computed: false, optional: true, required: false
+  private _initialDelay?: string; 
+  public get initialDelay() {
+    return this.getStringAttribute('initial_delay');
+  }
+  public set initialDelay(value: string) {
+    this._initialDelay = value;
+  }
+  public resetInitialDelay() {
+    this._initialDelay = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialDelayInput() {
+    return this._initialDelay;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // success_threshold - computed: false, optional: true, required: false
+  private _successThreshold?: number; 
+  public get successThreshold() {
+    return this.getNumberAttribute('success_threshold');
+  }
+  public set successThreshold(value: number) {
+    this._successThreshold = value;
+  }
+  public resetSuccessThreshold() {
+    this._successThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get successThresholdInput() {
+    return this._successThreshold;
+  }
+
+  // timeout - computed: false, optional: true, required: false
+  private _timeout?: string; 
+  public get timeout() {
+    return this.getStringAttribute('timeout');
+  }
+  public set timeout(value: string) {
+    this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionManualScaling {
+  /**
+  * Number of instances to assign to the service at the start.
+
+**Note:** When managing the number of instances at runtime through the App Engine Admin API or the (now deprecated) Python 2
+Modules API set_num_instances() you must use 'lifecycle.ignore_changes = ["manual_scaling"[0].instances]' to prevent drift detection.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#instances GoogleAppEngineFlexibleAppVersion#instances}
+  */
+  readonly instances: number;
+}
+
+export function googleAppEngineFlexibleAppVersionManualScalingToTerraform(struct?: GoogleAppEngineFlexibleAppVersionManualScalingOutputReference | GoogleAppEngineFlexibleAppVersionManualScaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    instances: cdktf.numberToTerraform(struct!.instances),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionManualScalingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionManualScaling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._instances !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instances = this._instances;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionManualScaling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._instances = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._instances = value.instances;
+    }
+  }
+
+  // instances - computed: false, optional: false, required: true
+  private _instances?: number; 
+  public get instances() {
+    return this.getNumberAttribute('instances');
+  }
+  public set instances(value: number) {
+    this._instances = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancesInput() {
+    return this._instances;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionNetwork {
+  /**
+  * List of ports, or port pairs, to forward from the virtual machine to the application container.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#forwarded_ports GoogleAppEngineFlexibleAppVersion#forwarded_ports}
+  */
+  readonly forwardedPorts?: string[];
+  /**
+  * Tag to apply to the instance during creation.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#instance_tag GoogleAppEngineFlexibleAppVersion#instance_tag}
+  */
+  readonly instanceTag?: string;
+  /**
+  * Google Compute Engine network where the virtual machines are created. Specify the short name, not the resource path.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#name GoogleAppEngineFlexibleAppVersion#name}
+  */
+  readonly name: string;
+  /**
+  * Enable session affinity.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#session_affinity GoogleAppEngineFlexibleAppVersion#session_affinity}
+  */
+  readonly sessionAffinity?: boolean | cdktf.IResolvable;
+  /**
+  * Google Cloud Platform sub-network where the virtual machines are created. Specify the short name, not the resource path.
+
+If the network that the instance is being created in is a Legacy network, then the IP address is allocated from the IPv4Range.
+If the network that the instance is being created in is an auto Subnet Mode Network, then only network name should be specified (not the subnetworkName) and the IP address is created from the IPCidrRange of the subnetwork that exists in that zone for that network.
+If the network that the instance is being created in is a custom Subnet Mode Network, then the subnetworkName must be specified and the IP address is created from the IPCidrRange of the subnetwork.
+If specified, the subnetwork must exist in the same region as the App Engine flexible environment application.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#subnetwork GoogleAppEngineFlexibleAppVersion#subnetwork}
+  */
+  readonly subnetwork?: string;
+}
+
+export function googleAppEngineFlexibleAppVersionNetworkToTerraform(struct?: GoogleAppEngineFlexibleAppVersionNetworkOutputReference | GoogleAppEngineFlexibleAppVersionNetwork): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    forwarded_ports: cdktf.listMapper(cdktf.stringToTerraform)(struct!.forwardedPorts),
+    instance_tag: cdktf.stringToTerraform(struct!.instanceTag),
+    name: cdktf.stringToTerraform(struct!.name),
+    session_affinity: cdktf.booleanToTerraform(struct!.sessionAffinity),
+    subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionNetworkOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionNetwork | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._forwardedPorts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forwardedPorts = this._forwardedPorts;
+    }
+    if (this._instanceTag !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceTag = this._instanceTag;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._sessionAffinity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sessionAffinity = this._sessionAffinity;
+    }
+    if (this._subnetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetwork = this._subnetwork;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionNetwork | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._forwardedPorts = undefined;
+      this._instanceTag = undefined;
+      this._name = undefined;
+      this._sessionAffinity = undefined;
+      this._subnetwork = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._forwardedPorts = value.forwardedPorts;
+      this._instanceTag = value.instanceTag;
+      this._name = value.name;
+      this._sessionAffinity = value.sessionAffinity;
+      this._subnetwork = value.subnetwork;
+    }
+  }
+
+  // forwarded_ports - computed: false, optional: true, required: false
+  private _forwardedPorts?: string[]; 
+  public get forwardedPorts() {
+    return this.getListAttribute('forwarded_ports');
+  }
+  public set forwardedPorts(value: string[]) {
+    this._forwardedPorts = value;
+  }
+  public resetForwardedPorts() {
+    this._forwardedPorts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forwardedPortsInput() {
+    return this._forwardedPorts;
+  }
+
+  // instance_tag - computed: false, optional: true, required: false
+  private _instanceTag?: string; 
+  public get instanceTag() {
+    return this.getStringAttribute('instance_tag');
+  }
+  public set instanceTag(value: string) {
+    this._instanceTag = value;
+  }
+  public resetInstanceTag() {
+    this._instanceTag = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTagInput() {
+    return this._instanceTag;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // session_affinity - computed: false, optional: true, required: false
+  private _sessionAffinity?: boolean | cdktf.IResolvable; 
+  public get sessionAffinity() {
+    return this.getBooleanAttribute('session_affinity');
+  }
+  public set sessionAffinity(value: boolean | cdktf.IResolvable) {
+    this._sessionAffinity = value;
+  }
+  public resetSessionAffinity() {
+    this._sessionAffinity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sessionAffinityInput() {
+    return this._sessionAffinity;
+  }
+
+  // subnetwork - computed: false, optional: true, required: false
+  private _subnetwork?: string; 
+  public get subnetwork() {
+    return this.getStringAttribute('subnetwork');
+  }
+  public set subnetwork(value: string) {
+    this._subnetwork = value;
+  }
+  public resetSubnetwork() {
+    this._subnetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetworkInput() {
+    return this._subnetwork;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionReadinessCheck {
+  /**
+  * A maximum time limit on application initialization, measured from moment the application successfully
+replies to a healthcheck until it is ready to serve traffic. Default: "300s"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#app_start_timeout GoogleAppEngineFlexibleAppVersion#app_start_timeout}
+  */
+  readonly appStartTimeout?: string;
+  /**
+  * Interval between health checks.  Default: "5s".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#check_interval GoogleAppEngineFlexibleAppVersion#check_interval}
+  */
+  readonly checkInterval?: string;
+  /**
+  * Number of consecutive failed checks required before removing traffic. Default: 2.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#failure_threshold GoogleAppEngineFlexibleAppVersion#failure_threshold}
+  */
+  readonly failureThreshold?: number;
+  /**
+  * Host header to send when performing a HTTP Readiness check. Example: "myapp.appspot.com"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#host GoogleAppEngineFlexibleAppVersion#host}
+  */
+  readonly host?: string;
+  /**
+  * The request path.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#path GoogleAppEngineFlexibleAppVersion#path}
+  */
+  readonly path: string;
+  /**
+  * Number of consecutive successful checks required before receiving traffic. Default: 2.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#success_threshold GoogleAppEngineFlexibleAppVersion#success_threshold}
+  */
+  readonly successThreshold?: number;
+  /**
+  * Time before the check is considered failed. Default: "4s"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#timeout GoogleAppEngineFlexibleAppVersion#timeout}
+  */
+  readonly timeout?: string;
+}
+
+export function googleAppEngineFlexibleAppVersionReadinessCheckToTerraform(struct?: GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference | GoogleAppEngineFlexibleAppVersionReadinessCheck): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    app_start_timeout: cdktf.stringToTerraform(struct!.appStartTimeout),
+    check_interval: cdktf.stringToTerraform(struct!.checkInterval),
+    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
+    host: cdktf.stringToTerraform(struct!.host),
+    path: cdktf.stringToTerraform(struct!.path),
+    success_threshold: cdktf.numberToTerraform(struct!.successThreshold),
+    timeout: cdktf.stringToTerraform(struct!.timeout),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionReadinessCheck | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._appStartTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.appStartTimeout = this._appStartTimeout;
+    }
+    if (this._checkInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.checkInterval = this._checkInterval;
+    }
+    if (this._failureThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failureThreshold = this._failureThreshold;
+    }
+    if (this._host !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.host = this._host;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._successThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.successThreshold = this._successThreshold;
+    }
+    if (this._timeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeout = this._timeout;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionReadinessCheck | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._appStartTimeout = undefined;
+      this._checkInterval = undefined;
+      this._failureThreshold = undefined;
+      this._host = undefined;
+      this._path = undefined;
+      this._successThreshold = undefined;
+      this._timeout = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._appStartTimeout = value.appStartTimeout;
+      this._checkInterval = value.checkInterval;
+      this._failureThreshold = value.failureThreshold;
+      this._host = value.host;
+      this._path = value.path;
+      this._successThreshold = value.successThreshold;
+      this._timeout = value.timeout;
+    }
+  }
+
+  // app_start_timeout - computed: false, optional: true, required: false
+  private _appStartTimeout?: string; 
+  public get appStartTimeout() {
+    return this.getStringAttribute('app_start_timeout');
+  }
+  public set appStartTimeout(value: string) {
+    this._appStartTimeout = value;
+  }
+  public resetAppStartTimeout() {
+    this._appStartTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appStartTimeoutInput() {
+    return this._appStartTimeout;
+  }
+
+  // check_interval - computed: false, optional: true, required: false
+  private _checkInterval?: string; 
+  public get checkInterval() {
+    return this.getStringAttribute('check_interval');
+  }
+  public set checkInterval(value: string) {
+    this._checkInterval = value;
+  }
+  public resetCheckInterval() {
+    this._checkInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get checkIntervalInput() {
+    return this._checkInterval;
+  }
+
+  // failure_threshold - computed: false, optional: true, required: false
+  private _failureThreshold?: number; 
+  public get failureThreshold() {
+    return this.getNumberAttribute('failure_threshold');
+  }
+  public set failureThreshold(value: number) {
+    this._failureThreshold = value;
+  }
+  public resetFailureThreshold() {
+    this._failureThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failureThresholdInput() {
+    return this._failureThreshold;
+  }
+
+  // host - computed: false, optional: true, required: false
+  private _host?: string; 
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+  public set host(value: string) {
+    this._host = value;
+  }
+  public resetHost() {
+    this._host = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // success_threshold - computed: false, optional: true, required: false
+  private _successThreshold?: number; 
+  public get successThreshold() {
+    return this.getNumberAttribute('success_threshold');
+  }
+  public set successThreshold(value: number) {
+    this._successThreshold = value;
+  }
+  public resetSuccessThreshold() {
+    this._successThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get successThresholdInput() {
+    return this._successThreshold;
+  }
+
+  // timeout - computed: false, optional: true, required: false
+  private _timeout?: string; 
+  public get timeout() {
+    return this.getStringAttribute('timeout');
+  }
+  public set timeout(value: string) {
+    this._timeout = value;
+  }
+  public resetTimeout() {
+    this._timeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutInput() {
+    return this._timeout;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionResourcesVolumes {
+  /**
+  * Unique name for the volume.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#name GoogleAppEngineFlexibleAppVersion#name}
+  */
+  readonly name: string;
+  /**
+  * Volume size in gigabytes.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#size_gb GoogleAppEngineFlexibleAppVersion#size_gb}
+  */
+  readonly sizeGb: number;
+  /**
+  * Underlying volume type, e.g. 'tmpfs'.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#volume_type GoogleAppEngineFlexibleAppVersion#volume_type}
+  */
+  readonly volumeType: string;
+}
+
+export function googleAppEngineFlexibleAppVersionResourcesVolumesToTerraform(struct?: GoogleAppEngineFlexibleAppVersionResourcesVolumes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    size_gb: cdktf.numberToTerraform(struct!.sizeGb),
+    volume_type: cdktf.stringToTerraform(struct!.volumeType),
+  }
+}
+
+export interface GoogleAppEngineFlexibleAppVersionResources {
+  /**
+  * Number of CPU cores needed.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#cpu GoogleAppEngineFlexibleAppVersion#cpu}
+  */
+  readonly cpu?: number;
+  /**
+  * Disk size (GB) needed.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#disk_gb GoogleAppEngineFlexibleAppVersion#disk_gb}
+  */
+  readonly diskGb?: number;
+  /**
+  * Memory (GB) needed.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#memory_gb GoogleAppEngineFlexibleAppVersion#memory_gb}
+  */
+  readonly memoryGb?: number;
+  /**
+  * volumes block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#volumes GoogleAppEngineFlexibleAppVersion#volumes}
+  */
+  readonly volumes?: GoogleAppEngineFlexibleAppVersionResourcesVolumes[] | cdktf.IResolvable;
+}
+
+export function googleAppEngineFlexibleAppVersionResourcesToTerraform(struct?: GoogleAppEngineFlexibleAppVersionResourcesOutputReference | GoogleAppEngineFlexibleAppVersionResources): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    cpu: cdktf.numberToTerraform(struct!.cpu),
+    disk_gb: cdktf.numberToTerraform(struct!.diskGb),
+    memory_gb: cdktf.numberToTerraform(struct!.memoryGb),
+    volumes: cdktf.listMapper(googleAppEngineFlexibleAppVersionResourcesVolumesToTerraform)(struct!.volumes),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionResourcesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionResources | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cpu !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpu = this._cpu;
+    }
+    if (this._diskGb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskGb = this._diskGb;
+    }
+    if (this._memoryGb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryGb = this._memoryGb;
+    }
+    if (this._volumes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.volumes = this._volumes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionResources | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cpu = undefined;
+      this._diskGb = undefined;
+      this._memoryGb = undefined;
+      this._volumes = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cpu = value.cpu;
+      this._diskGb = value.diskGb;
+      this._memoryGb = value.memoryGb;
+      this._volumes = value.volumes;
+    }
+  }
+
+  // cpu - computed: false, optional: true, required: false
+  private _cpu?: number; 
+  public get cpu() {
+    return this.getNumberAttribute('cpu');
+  }
+  public set cpu(value: number) {
+    this._cpu = value;
+  }
+  public resetCpu() {
+    this._cpu = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuInput() {
+    return this._cpu;
+  }
+
+  // disk_gb - computed: false, optional: true, required: false
+  private _diskGb?: number; 
+  public get diskGb() {
+    return this.getNumberAttribute('disk_gb');
+  }
+  public set diskGb(value: number) {
+    this._diskGb = value;
+  }
+  public resetDiskGb() {
+    this._diskGb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskGbInput() {
+    return this._diskGb;
+  }
+
+  // memory_gb - computed: false, optional: true, required: false
+  private _memoryGb?: number; 
+  public get memoryGb() {
+    return this.getNumberAttribute('memory_gb');
+  }
+  public set memoryGb(value: number) {
+    this._memoryGb = value;
+  }
+  public resetMemoryGb() {
+    this._memoryGb = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryGbInput() {
+    return this._memoryGb;
+  }
+
+  // volumes - computed: false, optional: true, required: false
+  private _volumes?: GoogleAppEngineFlexibleAppVersionResourcesVolumes[] | cdktf.IResolvable; 
+  public get volumes() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('volumes');
+  }
+  public set volumes(value: GoogleAppEngineFlexibleAppVersionResourcesVolumes[] | cdktf.IResolvable) {
+    this._volumes = value;
+  }
+  public resetVolumes() {
+    this._volumes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get volumesInput() {
+    return this._volumes;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#create GoogleAppEngineFlexibleAppVersion#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#delete GoogleAppEngineFlexibleAppVersion#delete}
+  */
+  readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#update GoogleAppEngineFlexibleAppVersion#update}
+  */
+  readonly update?: string;
+}
+
+export function googleAppEngineFlexibleAppVersionTimeoutsToTerraform(struct?: GoogleAppEngineFlexibleAppVersionTimeoutsOutputReference | GoogleAppEngineFlexibleAppVersionTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionTimeouts | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._delete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.delete = this._delete;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionTimeouts | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._create = undefined;
+      this._delete = undefined;
+      this._update = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._create = value.create;
+      this._delete = value.delete;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // delete - computed: false, optional: true, required: false
+  private _delete?: string; 
+  public get delete() {
+    return this.getStringAttribute('delete');
+  }
+  public set delete(value: string) {
+    this._delete = value;
+  }
+  public resetDelete() {
+    this._delete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteInput() {
+    return this._delete;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
+export interface GoogleAppEngineFlexibleAppVersionVpcAccessConnector {
+  /**
+  * Full Serverless VPC Access Connector name e.g. /projects/my-project/locations/us-central1/connectors/c1.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version#name GoogleAppEngineFlexibleAppVersion#name}
+  */
+  readonly name: string;
+}
+
+export function googleAppEngineFlexibleAppVersionVpcAccessConnectorToTerraform(struct?: GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference | GoogleAppEngineFlexibleAppVersionVpcAccessConnector): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleAppEngineFlexibleAppVersionVpcAccessConnector | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineFlexibleAppVersionVpcAccessConnector | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version google_app_engine_flexible_app_version}
+*/
+export class GoogleAppEngineFlexibleAppVersion extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "google_app_engine_flexible_app_version";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options GoogleAppEngineFlexibleAppVersionConfig
+  */
+  public constructor(scope: Construct, id: string, config: GoogleAppEngineFlexibleAppVersionConfig) {
+    super(scope, id, {
+      terraformResourceType: 'google_app_engine_flexible_app_version',
+      terraformGeneratorMetadata: {
+        providerName: 'google-beta',
+        providerVersion: '4.17.0',
+        providerVersionConstraint: '~> 4.17'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle
+    });
+    this._betaSettings = config.betaSettings;
+    this._defaultExpiration = config.defaultExpiration;
+    this._deleteServiceOnDestroy = config.deleteServiceOnDestroy;
+    this._envVariables = config.envVariables;
+    this._inboundServices = config.inboundServices;
+    this._instanceClass = config.instanceClass;
+    this._nobuildFilesRegex = config.nobuildFilesRegex;
+    this._noopOnDestroy = config.noopOnDestroy;
+    this._project = config.project;
+    this._runtime = config.runtime;
+    this._runtimeApiVersion = config.runtimeApiVersion;
+    this._runtimeChannel = config.runtimeChannel;
+    this._runtimeMainExecutablePath = config.runtimeMainExecutablePath;
+    this._service = config.service;
+    this._servingStatus = config.servingStatus;
+    this._versionId = config.versionId;
+    this._apiConfig.internalValue = config.apiConfig;
+    this._automaticScaling.internalValue = config.automaticScaling;
+    this._deployment.internalValue = config.deployment;
+    this._endpointsApiService.internalValue = config.endpointsApiService;
+    this._entrypoint.internalValue = config.entrypoint;
+    this._handlers = config.handlers;
+    this._livenessCheck.internalValue = config.livenessCheck;
+    this._manualScaling.internalValue = config.manualScaling;
+    this._network.internalValue = config.network;
+    this._readinessCheck.internalValue = config.readinessCheck;
+    this._resources.internalValue = config.resources;
+    this._timeouts.internalValue = config.timeouts;
+    this._vpcAccessConnector.internalValue = config.vpcAccessConnector;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // beta_settings - computed: false, optional: true, required: false
+  private _betaSettings?: { [key: string]: string }; 
+  public get betaSettings() {
+    return this.getStringMapAttribute('beta_settings');
+  }
+  public set betaSettings(value: { [key: string]: string }) {
+    this._betaSettings = value;
+  }
+  public resetBetaSettings() {
+    this._betaSettings = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get betaSettingsInput() {
+    return this._betaSettings;
+  }
+
+  // default_expiration - computed: false, optional: true, required: false
+  private _defaultExpiration?: string; 
+  public get defaultExpiration() {
+    return this.getStringAttribute('default_expiration');
+  }
+  public set defaultExpiration(value: string) {
+    this._defaultExpiration = value;
+  }
+  public resetDefaultExpiration() {
+    this._defaultExpiration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultExpirationInput() {
+    return this._defaultExpiration;
+  }
+
+  // delete_service_on_destroy - computed: false, optional: true, required: false
+  private _deleteServiceOnDestroy?: boolean | cdktf.IResolvable; 
+  public get deleteServiceOnDestroy() {
+    return this.getBooleanAttribute('delete_service_on_destroy');
+  }
+  public set deleteServiceOnDestroy(value: boolean | cdktf.IResolvable) {
+    this._deleteServiceOnDestroy = value;
+  }
+  public resetDeleteServiceOnDestroy() {
+    this._deleteServiceOnDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteServiceOnDestroyInput() {
+    return this._deleteServiceOnDestroy;
+  }
+
+  // env_variables - computed: false, optional: true, required: false
+  private _envVariables?: { [key: string]: string }; 
+  public get envVariables() {
+    return this.getStringMapAttribute('env_variables');
+  }
+  public set envVariables(value: { [key: string]: string }) {
+    this._envVariables = value;
+  }
+  public resetEnvVariables() {
+    this._envVariables = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get envVariablesInput() {
+    return this._envVariables;
+  }
+
+  // id - computed: true, optional: true, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // inbound_services - computed: false, optional: true, required: false
+  private _inboundServices?: string[]; 
+  public get inboundServices() {
+    return cdktf.Fn.tolist(this.getListAttribute('inbound_services'));
+  }
+  public set inboundServices(value: string[]) {
+    this._inboundServices = value;
+  }
+  public resetInboundServices() {
+    this._inboundServices = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get inboundServicesInput() {
+    return this._inboundServices;
+  }
+
+  // instance_class - computed: false, optional: true, required: false
+  private _instanceClass?: string; 
+  public get instanceClass() {
+    return this.getStringAttribute('instance_class');
+  }
+  public set instanceClass(value: string) {
+    this._instanceClass = value;
+  }
+  public resetInstanceClass() {
+    this._instanceClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceClassInput() {
+    return this._instanceClass;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // nobuild_files_regex - computed: false, optional: true, required: false
+  private _nobuildFilesRegex?: string; 
+  public get nobuildFilesRegex() {
+    return this.getStringAttribute('nobuild_files_regex');
+  }
+  public set nobuildFilesRegex(value: string) {
+    this._nobuildFilesRegex = value;
+  }
+  public resetNobuildFilesRegex() {
+    this._nobuildFilesRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nobuildFilesRegexInput() {
+    return this._nobuildFilesRegex;
+  }
+
+  // noop_on_destroy - computed: false, optional: true, required: false
+  private _noopOnDestroy?: boolean | cdktf.IResolvable; 
+  public get noopOnDestroy() {
+    return this.getBooleanAttribute('noop_on_destroy');
+  }
+  public set noopOnDestroy(value: boolean | cdktf.IResolvable) {
+    this._noopOnDestroy = value;
+  }
+  public resetNoopOnDestroy() {
+    this._noopOnDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get noopOnDestroyInput() {
+    return this._noopOnDestroy;
+  }
+
+  // project - computed: true, optional: true, required: false
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  public resetProject() {
+    this._project = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // runtime - computed: false, optional: false, required: true
+  private _runtime?: string; 
+  public get runtime() {
+    return this.getStringAttribute('runtime');
+  }
+  public set runtime(value: string) {
+    this._runtime = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeInput() {
+    return this._runtime;
+  }
+
+  // runtime_api_version - computed: true, optional: true, required: false
+  private _runtimeApiVersion?: string; 
+  public get runtimeApiVersion() {
+    return this.getStringAttribute('runtime_api_version');
+  }
+  public set runtimeApiVersion(value: string) {
+    this._runtimeApiVersion = value;
+  }
+  public resetRuntimeApiVersion() {
+    this._runtimeApiVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeApiVersionInput() {
+    return this._runtimeApiVersion;
+  }
+
+  // runtime_channel - computed: false, optional: true, required: false
+  private _runtimeChannel?: string; 
+  public get runtimeChannel() {
+    return this.getStringAttribute('runtime_channel');
+  }
+  public set runtimeChannel(value: string) {
+    this._runtimeChannel = value;
+  }
+  public resetRuntimeChannel() {
+    this._runtimeChannel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeChannelInput() {
+    return this._runtimeChannel;
+  }
+
+  // runtime_main_executable_path - computed: false, optional: true, required: false
+  private _runtimeMainExecutablePath?: string; 
+  public get runtimeMainExecutablePath() {
+    return this.getStringAttribute('runtime_main_executable_path');
+  }
+  public set runtimeMainExecutablePath(value: string) {
+    this._runtimeMainExecutablePath = value;
+  }
+  public resetRuntimeMainExecutablePath() {
+    this._runtimeMainExecutablePath = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runtimeMainExecutablePathInput() {
+    return this._runtimeMainExecutablePath;
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+
+  // serving_status - computed: false, optional: true, required: false
+  private _servingStatus?: string; 
+  public get servingStatus() {
+    return this.getStringAttribute('serving_status');
+  }
+  public set servingStatus(value: string) {
+    this._servingStatus = value;
+  }
+  public resetServingStatus() {
+    this._servingStatus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servingStatusInput() {
+    return this._servingStatus;
+  }
+
+  // version_id - computed: false, optional: true, required: false
+  private _versionId?: string; 
+  public get versionId() {
+    return this.getStringAttribute('version_id');
+  }
+  public set versionId(value: string) {
+    this._versionId = value;
+  }
+  public resetVersionId() {
+    this._versionId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionIdInput() {
+    return this._versionId;
+  }
+
+  // api_config - computed: false, optional: true, required: false
+  private _apiConfig = new GoogleAppEngineFlexibleAppVersionApiConfigOutputReference(this, "api_config");
+  public get apiConfig() {
+    return this._apiConfig;
+  }
+  public putApiConfig(value: GoogleAppEngineFlexibleAppVersionApiConfig) {
+    this._apiConfig.internalValue = value;
+  }
+  public resetApiConfig() {
+    this._apiConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiConfigInput() {
+    return this._apiConfig.internalValue;
+  }
+
+  // automatic_scaling - computed: false, optional: true, required: false
+  private _automaticScaling = new GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference(this, "automatic_scaling");
+  public get automaticScaling() {
+    return this._automaticScaling;
+  }
+  public putAutomaticScaling(value: GoogleAppEngineFlexibleAppVersionAutomaticScaling) {
+    this._automaticScaling.internalValue = value;
+  }
+  public resetAutomaticScaling() {
+    this._automaticScaling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get automaticScalingInput() {
+    return this._automaticScaling.internalValue;
+  }
+
+  // deployment - computed: false, optional: true, required: false
+  private _deployment = new GoogleAppEngineFlexibleAppVersionDeploymentOutputReference(this, "deployment");
+  public get deployment() {
+    return this._deployment;
+  }
+  public putDeployment(value: GoogleAppEngineFlexibleAppVersionDeployment) {
+    this._deployment.internalValue = value;
+  }
+  public resetDeployment() {
+    this._deployment.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deploymentInput() {
+    return this._deployment.internalValue;
+  }
+
+  // endpoints_api_service - computed: false, optional: true, required: false
+  private _endpointsApiService = new GoogleAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference(this, "endpoints_api_service");
+  public get endpointsApiService() {
+    return this._endpointsApiService;
+  }
+  public putEndpointsApiService(value: GoogleAppEngineFlexibleAppVersionEndpointsApiService) {
+    this._endpointsApiService.internalValue = value;
+  }
+  public resetEndpointsApiService() {
+    this._endpointsApiService.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointsApiServiceInput() {
+    return this._endpointsApiService.internalValue;
+  }
+
+  // entrypoint - computed: false, optional: true, required: false
+  private _entrypoint = new GoogleAppEngineFlexibleAppVersionEntrypointOutputReference(this, "entrypoint");
+  public get entrypoint() {
+    return this._entrypoint;
+  }
+  public putEntrypoint(value: GoogleAppEngineFlexibleAppVersionEntrypoint) {
+    this._entrypoint.internalValue = value;
+  }
+  public resetEntrypoint() {
+    this._entrypoint.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entrypointInput() {
+    return this._entrypoint.internalValue;
+  }
+
+  // handlers - computed: false, optional: true, required: false
+  private _handlers?: GoogleAppEngineFlexibleAppVersionHandlers[] | cdktf.IResolvable; 
+  public get handlers() {
+    // Getting the computed value is not yet implemented
+    return this.interpolationForAttribute('handlers');
+  }
+  public set handlers(value: GoogleAppEngineFlexibleAppVersionHandlers[] | cdktf.IResolvable) {
+    this._handlers = value;
+  }
+  public resetHandlers() {
+    this._handlers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get handlersInput() {
+    return this._handlers;
+  }
+
+  // liveness_check - computed: false, optional: false, required: true
+  private _livenessCheck = new GoogleAppEngineFlexibleAppVersionLivenessCheckOutputReference(this, "liveness_check");
+  public get livenessCheck() {
+    return this._livenessCheck;
+  }
+  public putLivenessCheck(value: GoogleAppEngineFlexibleAppVersionLivenessCheck) {
+    this._livenessCheck.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get livenessCheckInput() {
+    return this._livenessCheck.internalValue;
+  }
+
+  // manual_scaling - computed: false, optional: true, required: false
+  private _manualScaling = new GoogleAppEngineFlexibleAppVersionManualScalingOutputReference(this, "manual_scaling");
+  public get manualScaling() {
+    return this._manualScaling;
+  }
+  public putManualScaling(value: GoogleAppEngineFlexibleAppVersionManualScaling) {
+    this._manualScaling.internalValue = value;
+  }
+  public resetManualScaling() {
+    this._manualScaling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get manualScalingInput() {
+    return this._manualScaling.internalValue;
+  }
+
+  // network - computed: false, optional: true, required: false
+  private _network = new GoogleAppEngineFlexibleAppVersionNetworkOutputReference(this, "network");
+  public get network() {
+    return this._network;
+  }
+  public putNetwork(value: GoogleAppEngineFlexibleAppVersionNetwork) {
+    this._network.internalValue = value;
+  }
+  public resetNetwork() {
+    this._network.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network.internalValue;
+  }
+
+  // readiness_check - computed: false, optional: false, required: true
+  private _readinessCheck = new GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference(this, "readiness_check");
+  public get readinessCheck() {
+    return this._readinessCheck;
+  }
+  public putReadinessCheck(value: GoogleAppEngineFlexibleAppVersionReadinessCheck) {
+    this._readinessCheck.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readinessCheckInput() {
+    return this._readinessCheck.internalValue;
+  }
+
+  // resources - computed: false, optional: true, required: false
+  private _resources = new GoogleAppEngineFlexibleAppVersionResourcesOutputReference(this, "resources");
+  public get resources() {
+    return this._resources;
+  }
+  public putResources(value: GoogleAppEngineFlexibleAppVersionResources) {
+    this._resources.internalValue = value;
+  }
+  public resetResources() {
+    this._resources.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourcesInput() {
+    return this._resources.internalValue;
+  }
+
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new GoogleAppEngineFlexibleAppVersionTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: GoogleAppEngineFlexibleAppVersionTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
+  // vpc_access_connector - computed: false, optional: true, required: false
+  private _vpcAccessConnector = new GoogleAppEngineFlexibleAppVersionVpcAccessConnectorOutputReference(this, "vpc_access_connector");
+  public get vpcAccessConnector() {
+    return this._vpcAccessConnector;
+  }
+  public putVpcAccessConnector(value: GoogleAppEngineFlexibleAppVersionVpcAccessConnector) {
+    this._vpcAccessConnector.internalValue = value;
+  }
+  public resetVpcAccessConnector() {
+    this._vpcAccessConnector.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vpcAccessConnectorInput() {
+    return this._vpcAccessConnector.internalValue;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      beta_settings: cdktf.hashMapper(cdktf.stringToTerraform)(this._betaSettings),
+      default_expiration: cdktf.stringToTerraform(this._defaultExpiration),
+      delete_service_on_destroy: cdktf.booleanToTerraform(this._deleteServiceOnDestroy),
+      env_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._envVariables),
+      inbound_services: cdktf.listMapper(cdktf.stringToTerraform)(this._inboundServices),
+      instance_class: cdktf.stringToTerraform(this._instanceClass),
+      nobuild_files_regex: cdktf.stringToTerraform(this._nobuildFilesRegex),
+      noop_on_destroy: cdktf.booleanToTerraform(this._noopOnDestroy),
+      project: cdktf.stringToTerraform(this._project),
+      runtime: cdktf.stringToTerraform(this._runtime),
+      runtime_api_version: cdktf.stringToTerraform(this._runtimeApiVersion),
+      runtime_channel: cdktf.stringToTerraform(this._runtimeChannel),
+      runtime_main_executable_path: cdktf.stringToTerraform(this._runtimeMainExecutablePath),
+      service: cdktf.stringToTerraform(this._service),
+      serving_status: cdktf.stringToTerraform(this._servingStatus),
+      version_id: cdktf.stringToTerraform(this._versionId),
+      api_config: googleAppEngineFlexibleAppVersionApiConfigToTerraform(this._apiConfig.internalValue),
+      automatic_scaling: googleAppEngineFlexibleAppVersionAutomaticScalingToTerraform(this._automaticScaling.internalValue),
+      deployment: googleAppEngineFlexibleAppVersionDeploymentToTerraform(this._deployment.internalValue),
+      endpoints_api_service: googleAppEngineFlexibleAppVersionEndpointsApiServiceToTerraform(this._endpointsApiService.internalValue),
+      entrypoint: googleAppEngineFlexibleAppVersionEntrypointToTerraform(this._entrypoint.internalValue),
+      handlers: cdktf.listMapper(googleAppEngineFlexibleAppVersionHandlersToTerraform)(this._handlers),
+      liveness_check: googleAppEngineFlexibleAppVersionLivenessCheckToTerraform(this._livenessCheck.internalValue),
+      manual_scaling: googleAppEngineFlexibleAppVersionManualScalingToTerraform(this._manualScaling.internalValue),
+      network: googleAppEngineFlexibleAppVersionNetworkToTerraform(this._network.internalValue),
+      readiness_check: googleAppEngineFlexibleAppVersionReadinessCheckToTerraform(this._readinessCheck.internalValue),
+      resources: googleAppEngineFlexibleAppVersionResourcesToTerraform(this._resources.internalValue),
+      timeouts: googleAppEngineFlexibleAppVersionTimeoutsToTerraform(this._timeouts.internalValue),
+      vpc_access_connector: googleAppEngineFlexibleAppVersionVpcAccessConnectorToTerraform(this._vpcAccessConnector.internalValue),
+    };
+  }
+}
