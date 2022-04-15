@@ -887,9 +887,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.0.114"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.114.tgz#ddbad928e44ff6fed89422eb9efcbd6921849625"
-  integrity sha512-er6NTso71PfZ+D9EfwtZmWJpTkDWUlKYkFHAlpT+DJ8Z7gUshEe8m4pq9PSYmKnKCKj3gta/Cq17W6a4hkg+Kw==
+  version "10.0.115"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.0.115.tgz#f077848b33d001ac9e804111f5f8e1d0f6df1771"
+  integrity sha512-BZfiDjilEzfq+y8hNGRbh5yIYa+mK6ZAO172Q03pvN47Fe2a2PxzA1Y6dNCP+AKcajAiyzHjYg/hw98XheZh5A==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -1796,9 +1796,9 @@ http-proxy-agent@^5.0.0:
     debug "4"
 
 https-proxy-agent@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-5.0.0.tgz#e2a90542abb68a762e0a0850f6c9edadfd8506b2"
-  integrity sha512-EkYm5BcKUGiduxzSt3Eppko+PiNWNEpa4ySk9vTC6wDsQJW9rHSa+UhGNJoRYp7bz6Ht1eaRIa6QaJqO5rCFbA==
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz#c59ef224a04fe8b754f3db0063a25ea30d0005d6"
+  integrity sha512-dFcAjpTQFgoLMzC2VwU+C/CbS7uRL0lWmxDITmqm7C+7F0Odmj6s9l6alZc6AELXhrnggM2CeWSXHGOdX2YtwA==
   dependencies:
     agent-base "6"
     debug "4"
