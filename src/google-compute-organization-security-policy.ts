@@ -187,7 +187,7 @@ export class GoogleComputeOrganizationSecurityPolicy extends cdktf.TerraformReso
       terraformResourceType: 'google_compute_organization_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.17.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

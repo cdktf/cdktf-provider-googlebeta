@@ -179,7 +179,7 @@ export class GoogleApigeeEnvgroup extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_envgroup',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.17.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
