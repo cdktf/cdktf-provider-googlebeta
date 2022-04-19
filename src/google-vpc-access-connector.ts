@@ -294,7 +294,7 @@ export class GoogleVpcAccessConnector extends cdktf.TerraformResource {
       terraformResourceType: 'google_vpc_access_connector',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.17.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -434,7 +434,7 @@ export class GoogleVpcAccessConnector extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // network - computed: false, optional: true, required: false
+  // network - computed: true, optional: true, required: false
   private _network?: string; 
   public get network() {
     return this.getStringAttribute('network');

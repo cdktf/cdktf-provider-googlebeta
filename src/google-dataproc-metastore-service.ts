@@ -53,6 +53,12 @@ and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of 
   */
   readonly tier?: string;
   /**
+  * encryption_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#encryption_config GoogleDataprocMetastoreService#encryption_config}
+  */
+  readonly encryptionConfig?: GoogleDataprocMetastoreServiceEncryptionConfig;
+  /**
   * hive_metastore_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#hive_metastore_config GoogleDataprocMetastoreService#hive_metastore_config}
@@ -70,6 +76,71 @@ and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#timeouts GoogleDataprocMetastoreService#timeouts}
   */
   readonly timeouts?: GoogleDataprocMetastoreServiceTimeouts;
+}
+export interface GoogleDataprocMetastoreServiceEncryptionConfig {
+  /**
+  * The fully qualified customer provided Cloud KMS key name to use for customer data encryption.
+Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#kms_key GoogleDataprocMetastoreService#kms_key}
+  */
+  readonly kmsKey: string;
+}
+
+export function googleDataprocMetastoreServiceEncryptionConfigToTerraform(struct?: GoogleDataprocMetastoreServiceEncryptionConfigOutputReference | GoogleDataprocMetastoreServiceEncryptionConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_key: cdktf.stringToTerraform(struct!.kmsKey),
+  }
+}
+
+export class GoogleDataprocMetastoreServiceEncryptionConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocMetastoreServiceEncryptionConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKey = this._kmsKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocMetastoreServiceEncryptionConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsKey = value.kmsKey;
+    }
+  }
+
+  // kms_key - computed: false, optional: false, required: true
+  private _kmsKey?: string; 
+  public get kmsKey() {
+    return this.getStringAttribute('kms_key');
+  }
+  public set kmsKey(value: string) {
+    this._kmsKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyInput() {
+    return this._kmsKey;
+  }
 }
 export interface GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab {
   /**
@@ -612,7 +683,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataproc_metastore_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.17.0',
+        providerVersion: '4.18.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -627,6 +698,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
     this._project = config.project;
     this._serviceId = config.serviceId;
     this._tier = config.tier;
+    this._encryptionConfig.internalValue = config.encryptionConfig;
     this._hiveMetastoreConfig.internalValue = config.hiveMetastoreConfig;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
     this._timeouts.internalValue = config.timeouts;
@@ -775,6 +847,22 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
     return this._tier;
   }
 
+  // encryption_config - computed: false, optional: true, required: false
+  private _encryptionConfig = new GoogleDataprocMetastoreServiceEncryptionConfigOutputReference(this, "encryption_config");
+  public get encryptionConfig() {
+    return this._encryptionConfig;
+  }
+  public putEncryptionConfig(value: GoogleDataprocMetastoreServiceEncryptionConfig) {
+    this._encryptionConfig.internalValue = value;
+  }
+  public resetEncryptionConfig() {
+    this._encryptionConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionConfigInput() {
+    return this._encryptionConfig.internalValue;
+  }
+
   // hive_metastore_config - computed: false, optional: true, required: false
   private _hiveMetastoreConfig = new GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference(this, "hive_metastore_config");
   public get hiveMetastoreConfig() {
@@ -836,6 +924,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       service_id: cdktf.stringToTerraform(this._serviceId),
       tier: cdktf.stringToTerraform(this._tier),
+      encryption_config: googleDataprocMetastoreServiceEncryptionConfigToTerraform(this._encryptionConfig.internalValue),
       hive_metastore_config: googleDataprocMetastoreServiceHiveMetastoreConfigToTerraform(this._hiveMetastoreConfig.internalValue),
       maintenance_window: googleDataprocMetastoreServiceMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
       timeouts: googleDataprocMetastoreServiceTimeoutsToTerraform(this._timeouts.internalValue),
