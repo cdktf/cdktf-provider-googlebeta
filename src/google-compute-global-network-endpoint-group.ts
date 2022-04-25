@@ -169,7 +169,7 @@ export class GoogleComputeGlobalNetworkEndpointGroup extends cdktf.TerraformReso
       terraformResourceType: 'google_compute_global_network_endpoint_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.18.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

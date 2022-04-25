@@ -1000,6 +1000,99 @@ export class GoogleComputeSecurityPolicyRuleRateLimitOptionsOutputReference exte
     return this._rateLimitThreshold.internalValue;
   }
 }
+export interface GoogleComputeSecurityPolicyRuleRedirectOptions {
+  /**
+  * Target for the redirect action. This is required if the type is EXTERNAL_302 and cannot be specified for GOOGLE_RECAPTCHA.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#target GoogleComputeSecurityPolicy#target}
+  */
+  readonly target?: string;
+  /**
+  * Type of the redirect action. Available options: EXTERNAL_302: Must specify the corresponding target field in config. GOOGLE_RECAPTCHA: Cannot specify target field in config.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#type GoogleComputeSecurityPolicy#type}
+  */
+  readonly type: string;
+}
+
+export function googleComputeSecurityPolicyRuleRedirectOptionsToTerraform(struct?: GoogleComputeSecurityPolicyRuleRedirectOptionsOutputReference | GoogleComputeSecurityPolicyRuleRedirectOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    target: cdktf.stringToTerraform(struct!.target),
+    type: cdktf.stringToTerraform(struct!.type),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRuleRedirectOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRuleRedirectOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._target !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRuleRedirectOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._target = undefined;
+      this._type = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._target = value.target;
+      this._type = value.type;
+    }
+  }
+
+  // target - computed: false, optional: true, required: false
+  private _target?: string; 
+  public get target() {
+    return this.getStringAttribute('target');
+  }
+  public set target(value: string) {
+    this._target = value;
+  }
+  public resetTarget() {
+    this._target = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target;
+  }
+
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
 export interface GoogleComputeSecurityPolicyRule {
   /**
   * Action to take when match matches the request.
@@ -1037,6 +1130,12 @@ export interface GoogleComputeSecurityPolicyRule {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#rate_limit_options GoogleComputeSecurityPolicy#rate_limit_options}
   */
   readonly rateLimitOptions?: GoogleComputeSecurityPolicyRuleRateLimitOptions;
+  /**
+  * redirect_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#redirect_options GoogleComputeSecurityPolicy#redirect_options}
+  */
+  readonly redirectOptions?: GoogleComputeSecurityPolicyRuleRedirectOptions;
 }
 
 export function googleComputeSecurityPolicyRuleToTerraform(struct?: GoogleComputeSecurityPolicyRule | cdktf.IResolvable): any {
@@ -1051,6 +1150,7 @@ export function googleComputeSecurityPolicyRuleToTerraform(struct?: GoogleComput
     priority: cdktf.numberToTerraform(struct!.priority),
     match: googleComputeSecurityPolicyRuleMatchToTerraform(struct!.match),
     rate_limit_options: googleComputeSecurityPolicyRuleRateLimitOptionsToTerraform(struct!.rateLimitOptions),
+    redirect_options: googleComputeSecurityPolicyRuleRedirectOptionsToTerraform(struct!.redirectOptions),
   }
 }
 
@@ -1200,7 +1300,7 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.18.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

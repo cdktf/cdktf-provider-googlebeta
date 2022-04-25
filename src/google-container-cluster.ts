@@ -663,6 +663,68 @@ export class GoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutput
     return this._enabled;
   }
 }
+export interface GoogleContainerClusterAddonsConfigGkeBackupAgentConfig {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+}
+
+export function googleContainerClusterAddonsConfigGkeBackupAgentConfigToTerraform(struct?: GoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference | GoogleContainerClusterAddonsConfigGkeBackupAgentConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class GoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterAddonsConfigGkeBackupAgentConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterAddonsConfigGkeBackupAgentConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
 export interface GoogleContainerClusterAddonsConfigHorizontalPodAutoscaling {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#disabled GoogleContainerCluster#disabled}
@@ -1036,6 +1098,12 @@ export interface GoogleContainerClusterAddonsConfig {
   */
   readonly gcpFilestoreCsiDriverConfig?: GoogleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig;
   /**
+  * gke_backup_agent_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#gke_backup_agent_config GoogleContainerCluster#gke_backup_agent_config}
+  */
+  readonly gkeBackupAgentConfig?: GoogleContainerClusterAddonsConfigGkeBackupAgentConfig;
+  /**
   * horizontal_pod_autoscaling block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#horizontal_pod_autoscaling GoogleContainerCluster#horizontal_pod_autoscaling}
@@ -1078,6 +1146,7 @@ export function googleContainerClusterAddonsConfigToTerraform(struct?: GoogleCon
     dns_cache_config: googleContainerClusterAddonsConfigDnsCacheConfigToTerraform(struct!.dnsCacheConfig),
     gce_persistent_disk_csi_driver_config: googleContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigToTerraform(struct!.gcePersistentDiskCsiDriverConfig),
     gcp_filestore_csi_driver_config: googleContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigToTerraform(struct!.gcpFilestoreCsiDriverConfig),
+    gke_backup_agent_config: googleContainerClusterAddonsConfigGkeBackupAgentConfigToTerraform(struct!.gkeBackupAgentConfig),
     horizontal_pod_autoscaling: googleContainerClusterAddonsConfigHorizontalPodAutoscalingToTerraform(struct!.horizontalPodAutoscaling),
     http_load_balancing: googleContainerClusterAddonsConfigHttpLoadBalancingToTerraform(struct!.httpLoadBalancing),
     istio_config: googleContainerClusterAddonsConfigIstioConfigToTerraform(struct!.istioConfig),
@@ -1120,6 +1189,10 @@ export class GoogleContainerClusterAddonsConfigOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.gcpFilestoreCsiDriverConfig = this._gcpFilestoreCsiDriverConfig?.internalValue;
     }
+    if (this._gkeBackupAgentConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gkeBackupAgentConfig = this._gkeBackupAgentConfig?.internalValue;
+    }
     if (this._horizontalPodAutoscaling?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.horizontalPodAutoscaling = this._horizontalPodAutoscaling?.internalValue;
@@ -1151,6 +1224,7 @@ export class GoogleContainerClusterAddonsConfigOutputReference extends cdktf.Com
       this._dnsCacheConfig.internalValue = undefined;
       this._gcePersistentDiskCsiDriverConfig.internalValue = undefined;
       this._gcpFilestoreCsiDriverConfig.internalValue = undefined;
+      this._gkeBackupAgentConfig.internalValue = undefined;
       this._horizontalPodAutoscaling.internalValue = undefined;
       this._httpLoadBalancing.internalValue = undefined;
       this._istioConfig.internalValue = undefined;
@@ -1164,6 +1238,7 @@ export class GoogleContainerClusterAddonsConfigOutputReference extends cdktf.Com
       this._dnsCacheConfig.internalValue = value.dnsCacheConfig;
       this._gcePersistentDiskCsiDriverConfig.internalValue = value.gcePersistentDiskCsiDriverConfig;
       this._gcpFilestoreCsiDriverConfig.internalValue = value.gcpFilestoreCsiDriverConfig;
+      this._gkeBackupAgentConfig.internalValue = value.gkeBackupAgentConfig;
       this._horizontalPodAutoscaling.internalValue = value.horizontalPodAutoscaling;
       this._httpLoadBalancing.internalValue = value.httpLoadBalancing;
       this._istioConfig.internalValue = value.istioConfig;
@@ -1250,6 +1325,22 @@ export class GoogleContainerClusterAddonsConfigOutputReference extends cdktf.Com
   // Temporarily expose input value. Use with caution.
   public get gcpFilestoreCsiDriverConfigInput() {
     return this._gcpFilestoreCsiDriverConfig.internalValue;
+  }
+
+  // gke_backup_agent_config - computed: false, optional: true, required: false
+  private _gkeBackupAgentConfig = new GoogleContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference(this, "gke_backup_agent_config");
+  public get gkeBackupAgentConfig() {
+    return this._gkeBackupAgentConfig;
+  }
+  public putGkeBackupAgentConfig(value: GoogleContainerClusterAddonsConfigGkeBackupAgentConfig) {
+    this._gkeBackupAgentConfig.internalValue = value;
+  }
+  public resetGkeBackupAgentConfig() {
+    this._gkeBackupAgentConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gkeBackupAgentConfigInput() {
+    return this._gkeBackupAgentConfig.internalValue;
   }
 
   // horizontal_pod_autoscaling - computed: false, optional: true, required: false
@@ -7570,7 +7661,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.18.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

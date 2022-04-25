@@ -14,6 +14,12 @@ export interface GoogleFilestoreInstanceConfig extends cdktf.TerraformMetaArgume
   */
   readonly description?: string;
   /**
+  * KMS key name used for data encryption.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_filestore_instance#kms_key_name GoogleFilestoreInstance#kms_key_name}
+  */
+  readonly kmsKeyName?: string;
+  /**
   * Resource labels to represent user-provided metadata.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_filestore_instance#labels GoogleFilestoreInstance#labels}
@@ -37,7 +43,7 @@ export interface GoogleFilestoreInstanceConfig extends cdktf.TerraformMetaArgume
   readonly project?: string;
   /**
   * The service tier of the instance.
-Possible values include: STANDARD, PREMIUM, BASIC_HDD, BASIC_SSD, HIGH_SCALE_SSD and ENTERPRISE (beta only)
+Possible values include: STANDARD, PREMIUM, BASIC_HDD, BASIC_SSD, HIGH_SCALE_SSD and ENTERPRISE
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_filestore_instance#tier GoogleFilestoreInstance#tier}
   */
@@ -434,7 +440,7 @@ export class GoogleFilestoreInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_filestore_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.18.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -443,6 +449,7 @@ export class GoogleFilestoreInstance extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._kmsKeyName = config.kmsKeyName;
     this._labels = config.labels;
     this._location = config.location;
     this._name = config.name;
@@ -487,6 +494,22 @@ export class GoogleFilestoreInstance extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // kms_key_name - computed: false, optional: true, required: false
+  private _kmsKeyName?: string; 
+  public get kmsKeyName() {
+    return this.getStringAttribute('kms_key_name');
+  }
+  public set kmsKeyName(value: string) {
+    this._kmsKeyName = value;
+  }
+  public resetKmsKeyName() {
+    this._kmsKeyName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyNameInput() {
+    return this._kmsKeyName;
   }
 
   // labels - computed: false, optional: true, required: false
@@ -629,6 +652,7 @@ export class GoogleFilestoreInstance extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      kms_key_name: cdktf.stringToTerraform(this._kmsKeyName),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
