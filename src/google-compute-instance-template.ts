@@ -526,7 +526,7 @@ export interface GoogleComputeInstanceTemplateNetworkInterfaceAccessConfig {
   */
   readonly natIp?: string;
   /**
-  * The networking tier used for configuring this instance template. This field can take the following values: PREMIUM or STANDARD. If this field is not specified, it is assumed to be PREMIUM.
+  * The networking tier used for configuring this instance template. This field can take the following values: PREMIUM, STANDARD, FIXED_STANDARD. If this field is not specified, it is assumed to be PREMIUM.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_template#network_tier GoogleComputeInstanceTemplate#network_tier}
   */
@@ -1495,7 +1495,7 @@ export class GoogleComputeInstanceTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.18.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

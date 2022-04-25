@@ -1796,9 +1796,12 @@ export interface GoogleSqlDatabaseInstanceSettings {
   readonly activationPolicy?: string;
   /**
   * The availability type of the Cloud SQL instance, high availability
-(REGIONAL) or single zone (ZONAL). For MySQL instances, ensure that
+(REGIONAL) or single zone (ZONAL). For MySQL and SQL Server instances, ensure that
 settings.backup_configuration.enabled and
 settings.backup_configuration.binary_log_enabled are both set to true.
+For Postgres instances, ensure that settings.backup_configuration.enabled
+and settings.backup_configuration.point_in_time_recovery_enabled
+are both set to true.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#availability_type GoogleSqlDatabaseInstance#availability_type}
   */
@@ -2441,7 +2444,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_sql_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.18.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

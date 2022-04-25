@@ -474,7 +474,7 @@ App Engine: The service and version, Cloud Functions: The function name, Cloud R
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_network_endpoint_group#url_mask GoogleComputeRegionNetworkEndpointGroup#url_mask}
   */
-  readonly urlMask: string;
+  readonly urlMask?: string;
   /**
   * The optional resource version. The version identified by this value is platform-specific and is follows:
 API Gateway: Unused, App Engine: The service version, Cloud Functions: Unused, Cloud Run: The service tag
@@ -576,13 +576,16 @@ export class GoogleComputeRegionNetworkEndpointGroupServerlessDeploymentOutputRe
     return this._resource;
   }
 
-  // url_mask - computed: false, optional: false, required: true
+  // url_mask - computed: false, optional: true, required: false
   private _urlMask?: string; 
   public get urlMask() {
     return this.getStringAttribute('url_mask');
   }
   public set urlMask(value: string) {
     this._urlMask = value;
+  }
+  public resetUrlMask() {
+    this._urlMask = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get urlMaskInput() {
@@ -724,7 +727,7 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
       terraformResourceType: 'google_compute_region_network_endpoint_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.18.0',
+        providerVersion: '4.19.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
