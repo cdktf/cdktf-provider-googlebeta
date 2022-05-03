@@ -118,7 +118,7 @@ export class GoogleComputeProjectDefaultNetworkTier extends cdktf.TerraformResou
       terraformResourceType: 'google_compute_project_default_network_tier',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

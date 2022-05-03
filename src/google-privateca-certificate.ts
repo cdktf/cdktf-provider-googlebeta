@@ -1283,6 +1283,700 @@ export class GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdList ex
     return new GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectId {
+}
+
+export function googlePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdToTerraform(struct?: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectId): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectId | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectId | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // object_id_path - computed: true, optional: false, required: false
+  public get objectIdPath() {
+    return this.getNumberListAttribute('object_id_path');
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference {
+    return new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions {
+}
+
+export function googlePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsToTerraform(struct?: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // critical - computed: true, optional: false, required: false
+  public get critical() {
+    return this.getBooleanAttribute('critical');
+  }
+
+  // object_id - computed: true, optional: false, required: false
+  private _objectId = new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsObjectIdList(this, "object_id", false);
+  public get objectId() {
+    return this._objectId;
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference {
+    return new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions {
+}
+
+export function googlePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsToTerraform(struct?: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // is_ca - computed: true, optional: false, required: false
+  public get isCa() {
+    return this.getBooleanAttribute('is_ca');
+  }
+
+  // max_issuer_path_length - computed: true, optional: false, required: false
+  public get maxIssuerPathLength() {
+    return this.getNumberAttribute('max_issuer_path_length');
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference {
+    return new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage {
+}
+
+export function googlePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageToTerraform(struct?: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cert_sign - computed: true, optional: false, required: false
+  public get certSign() {
+    return this.getBooleanAttribute('cert_sign');
+  }
+
+  // content_commitment - computed: true, optional: false, required: false
+  public get contentCommitment() {
+    return this.getBooleanAttribute('content_commitment');
+  }
+
+  // crl_sign - computed: true, optional: false, required: false
+  public get crlSign() {
+    return this.getBooleanAttribute('crl_sign');
+  }
+
+  // data_encipherment - computed: true, optional: false, required: false
+  public get dataEncipherment() {
+    return this.getBooleanAttribute('data_encipherment');
+  }
+
+  // decipher_only - computed: true, optional: false, required: false
+  public get decipherOnly() {
+    return this.getBooleanAttribute('decipher_only');
+  }
+
+  // digital_signature - computed: true, optional: false, required: false
+  public get digitalSignature() {
+    return this.getBooleanAttribute('digital_signature');
+  }
+
+  // encipher_only - computed: true, optional: false, required: false
+  public get encipherOnly() {
+    return this.getBooleanAttribute('encipher_only');
+  }
+
+  // key_agreement - computed: true, optional: false, required: false
+  public get keyAgreement() {
+    return this.getBooleanAttribute('key_agreement');
+  }
+
+  // key_encipherment - computed: true, optional: false, required: false
+  public get keyEncipherment() {
+    return this.getBooleanAttribute('key_encipherment');
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference {
+    return new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage {
+}
+
+export function googlePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageToTerraform(struct?: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // client_auth - computed: true, optional: false, required: false
+  public get clientAuth() {
+    return this.getBooleanAttribute('client_auth');
+  }
+
+  // code_signing - computed: true, optional: false, required: false
+  public get codeSigning() {
+    return this.getBooleanAttribute('code_signing');
+  }
+
+  // email_protection - computed: true, optional: false, required: false
+  public get emailProtection() {
+    return this.getBooleanAttribute('email_protection');
+  }
+
+  // ocsp_signing - computed: true, optional: false, required: false
+  public get ocspSigning() {
+    return this.getBooleanAttribute('ocsp_signing');
+  }
+
+  // server_auth - computed: true, optional: false, required: false
+  public get serverAuth() {
+    return this.getBooleanAttribute('server_auth');
+  }
+
+  // time_stamping - computed: true, optional: false, required: false
+  public get timeStamping() {
+    return this.getBooleanAttribute('time_stamping');
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference {
+    return new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsages {
+}
+
+export function googlePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesToTerraform(struct?: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsages): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsages | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsages | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // object_id_path - computed: true, optional: false, required: false
+  public get objectIdPath() {
+    return this.getNumberListAttribute('object_id_path');
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference {
+    return new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsage {
+}
+
+export function googlePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageToTerraform(struct?: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsage): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // base_key_usage - computed: true, optional: false, required: false
+  private _baseKeyUsage = new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageBaseKeyUsageList(this, "base_key_usage", false);
+  public get baseKeyUsage() {
+    return this._baseKeyUsage;
+  }
+
+  // extended_key_usage - computed: true, optional: false, required: false
+  private _extendedKeyUsage = new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageExtendedKeyUsageList(this, "extended_key_usage", false);
+  public get extendedKeyUsage() {
+    return this._extendedKeyUsage;
+  }
+
+  // unknown_extended_key_usages - computed: true, optional: false, required: false
+  private _unknownExtendedKeyUsages = new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageUnknownExtendedKeyUsagesList(this, "unknown_extended_key_usages", false);
+  public get unknownExtendedKeyUsages() {
+    return this._unknownExtendedKeyUsages;
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference {
+    return new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIds {
+}
+
+export function googlePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsToTerraform(struct?: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIds): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIds | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIds | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // object_id_path - computed: true, optional: false, required: false
+  public get objectIdPath() {
+    return this.getNumberListAttribute('object_id_path');
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference {
+    return new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GooglePrivatecaCertificateCertificateDescriptionX509Description {
+}
+
+export function googlePrivatecaCertificateCertificateDescriptionX509DescriptionToTerraform(struct?: GooglePrivatecaCertificateCertificateDescriptionX509Description): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GooglePrivatecaCertificateCertificateDescriptionX509Description | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GooglePrivatecaCertificateCertificateDescriptionX509Description | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // additional_extensions - computed: true, optional: false, required: false
+  private _additionalExtensions = new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionAdditionalExtensionsList(this, "additional_extensions", false);
+  public get additionalExtensions() {
+    return this._additionalExtensions;
+  }
+
+  // aia_ocsp_servers - computed: true, optional: false, required: false
+  public get aiaOcspServers() {
+    return this.getListAttribute('aia_ocsp_servers');
+  }
+
+  // ca_options - computed: true, optional: false, required: false
+  private _caOptions = new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionCaOptionsList(this, "ca_options", false);
+  public get caOptions() {
+    return this._caOptions;
+  }
+
+  // key_usage - computed: true, optional: false, required: false
+  private _keyUsage = new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList(this, "key_usage", false);
+  public get keyUsage() {
+    return this._keyUsage;
+  }
+
+  // policy_ids - computed: true, optional: false, required: false
+  private _policyIds = new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList(this, "policy_ids", false);
+  public get policyIds() {
+    return this._policyIds;
+  }
+}
+
+export class GooglePrivatecaCertificateCertificateDescriptionX509DescriptionList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GooglePrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference {
+    return new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GooglePrivatecaCertificateCertificateDescription {
 }
 
@@ -1367,6 +2061,12 @@ export class GooglePrivatecaCertificateCertificateDescriptionOutputReference ext
   private _subjectKeyId = new GooglePrivatecaCertificateCertificateDescriptionSubjectKeyIdList(this, "subject_key_id", false);
   public get subjectKeyId() {
     return this._subjectKeyId;
+  }
+
+  // x509_description - computed: true, optional: false, required: false
+  private _x509Description = new GooglePrivatecaCertificateCertificateDescriptionX509DescriptionList(this, "x509_description", false);
+  public get x509Description() {
+    return this._x509Description;
   }
 }
 
@@ -3431,7 +4131,7 @@ export class GooglePrivatecaCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'google_privateca_certificate',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -3504,6 +4204,11 @@ export class GooglePrivatecaCertificate extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // issuer_certificate_authority - computed: true, optional: false, required: false
+  public get issuerCertificateAuthority() {
+    return this.getStringAttribute('issuer_certificate_authority');
+  }
+
   // labels - computed: false, optional: true, required: false
   private _labels?: { [key: string]: string }; 
   public get labels() {
@@ -3565,6 +4270,11 @@ export class GooglePrivatecaCertificate extends cdktf.TerraformResource {
   // pem_certificate - computed: true, optional: false, required: false
   public get pemCertificate() {
     return this.getStringAttribute('pem_certificate');
+  }
+
+  // pem_certificate_chain - computed: true, optional: false, required: false
+  public get pemCertificateChain() {
+    return this.getListAttribute('pem_certificate_chain');
   }
 
   // pem_certificates - computed: true, optional: false, required: false

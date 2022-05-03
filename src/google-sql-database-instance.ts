@@ -938,7 +938,7 @@ export class GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetention
 }
 export interface GoogleSqlDatabaseInstanceSettingsBackupConfiguration {
   /**
-  * True if binary logging is enabled. If settings.backup_configuration.enabled is false, this must be as well. Cannot be used with Postgres.
+  * True if binary logging is enabled. If settings.backup_configuration.enabled is false, this must be as well. Can only be used with MySQL.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#binary_log_enabled GoogleSqlDatabaseInstance#binary_log_enabled}
   */
@@ -1796,12 +1796,11 @@ export interface GoogleSqlDatabaseInstanceSettings {
   readonly activationPolicy?: string;
   /**
   * The availability type of the Cloud SQL instance, high availability
-(REGIONAL) or single zone (ZONAL). For MySQL and SQL Server instances, ensure that
-settings.backup_configuration.enabled and
-settings.backup_configuration.binary_log_enabled are both set to true.
-For Postgres instances, ensure that settings.backup_configuration.enabled
-and settings.backup_configuration.point_in_time_recovery_enabled
-are both set to true.
+(REGIONAL) or single zone (ZONAL). For all instances, ensure that
+settings.backup_configuration.enabled is set to true.
+For MySQL instances, ensure that settings.backup_configuration.binary_log_enabled is set to true.
+For Postgres instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled
+is set to true.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#availability_type GoogleSqlDatabaseInstance#availability_type}
   */
@@ -2444,7 +2443,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_sql_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
