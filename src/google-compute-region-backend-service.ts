@@ -222,6 +222,12 @@ failed request. Default is 30 seconds. Valid range is [1, 86400].
   */
   readonly outlierDetection?: GoogleComputeRegionBackendServiceOutlierDetection;
   /**
+  * subsetting block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_backend_service#subsetting GoogleComputeRegionBackendService#subsetting}
+  */
+  readonly subsetting?: GoogleComputeRegionBackendServiceSubsetting;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_backend_service#timeouts GoogleComputeRegionBackendService#timeouts}
@@ -2655,6 +2661,70 @@ export class GoogleComputeRegionBackendServiceOutlierDetectionOutputReference ex
     return this._interval.internalValue;
   }
 }
+export interface GoogleComputeRegionBackendServiceSubsetting {
+  /**
+  * The algorithm used for subsetting. Possible values: ["CONSISTENT_HASH_SUBSETTING"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_backend_service#policy GoogleComputeRegionBackendService#policy}
+  */
+  readonly policy: string;
+}
+
+export function googleComputeRegionBackendServiceSubsettingToTerraform(struct?: GoogleComputeRegionBackendServiceSubsettingOutputReference | GoogleComputeRegionBackendServiceSubsetting): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    policy: cdktf.stringToTerraform(struct!.policy),
+  }
+}
+
+export class GoogleComputeRegionBackendServiceSubsettingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeRegionBackendServiceSubsetting | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._policy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policy = this._policy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionBackendServiceSubsetting | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._policy = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._policy = value.policy;
+    }
+  }
+
+  // policy - computed: false, optional: false, required: true
+  private _policy?: string; 
+  public get policy() {
+    return this.getStringAttribute('policy');
+  }
+  public set policy(value: string) {
+    this._policy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy;
+  }
+}
 export interface GoogleComputeRegionBackendServiceTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_backend_service#create GoogleComputeRegionBackendService#create}
@@ -2801,7 +2871,7 @@ export class GoogleComputeRegionBackendService extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_region_backend_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -2833,6 +2903,7 @@ export class GoogleComputeRegionBackendService extends cdktf.TerraformResource {
     this._iap.internalValue = config.iap;
     this._logConfig.internalValue = config.logConfig;
     this._outlierDetection.internalValue = config.outlierDetection;
+    this._subsetting.internalValue = config.subsetting;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -3242,6 +3313,22 @@ export class GoogleComputeRegionBackendService extends cdktf.TerraformResource {
     return this._outlierDetection.internalValue;
   }
 
+  // subsetting - computed: false, optional: true, required: false
+  private _subsetting = new GoogleComputeRegionBackendServiceSubsettingOutputReference(this, "subsetting");
+  public get subsetting() {
+    return this._subsetting;
+  }
+  public putSubsetting(value: GoogleComputeRegionBackendServiceSubsetting) {
+    this._subsetting.internalValue = value;
+  }
+  public resetSubsetting() {
+    this._subsetting.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subsettingInput() {
+    return this._subsetting.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleComputeRegionBackendServiceTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -3288,6 +3375,7 @@ export class GoogleComputeRegionBackendService extends cdktf.TerraformResource {
       iap: googleComputeRegionBackendServiceIapToTerraform(this._iap.internalValue),
       log_config: googleComputeRegionBackendServiceLogConfigToTerraform(this._logConfig.internalValue),
       outlier_detection: googleComputeRegionBackendServiceOutlierDetectionToTerraform(this._outlierDetection.internalValue),
+      subsetting: googleComputeRegionBackendServiceSubsettingToTerraform(this._subsetting.internalValue),
       timeouts: googleComputeRegionBackendServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

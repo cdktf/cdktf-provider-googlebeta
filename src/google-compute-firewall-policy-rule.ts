@@ -369,7 +369,7 @@ export class GoogleComputeFirewallPolicyRule extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_firewall_policy_rule',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.19.0',
+        providerVersion: '4.20.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
