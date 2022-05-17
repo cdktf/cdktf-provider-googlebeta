@@ -523,7 +523,7 @@ export interface GoogleEventarcTriggerMatchingCriteria {
   */
   readonly operator?: string;
   /**
-  * Required. The value for the attribute.
+  * Required. The value for the attribute. See https://cloud.google.com/eventarc/docs/creating-triggers#trigger-gcloud for available values.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_eventarc_trigger#value GoogleEventarcTrigger#value}
   */
@@ -827,7 +827,7 @@ export class GoogleEventarcTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'google_eventarc_trigger',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

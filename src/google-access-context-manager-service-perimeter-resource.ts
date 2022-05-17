@@ -147,7 +147,7 @@ export class GoogleAccessContextManagerServicePerimeterResource extends cdktf.Te
       terraformResourceType: 'google_access_context_manager_service_perimeter_resource',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

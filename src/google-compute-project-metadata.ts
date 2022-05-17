@@ -145,7 +145,7 @@ export class GoogleComputeProjectMetadata extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_project_metadata',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

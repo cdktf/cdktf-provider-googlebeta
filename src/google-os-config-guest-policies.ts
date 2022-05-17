@@ -3152,7 +3152,7 @@ export class GoogleOsConfigGuestPolicies extends cdktf.TerraformResource {
       terraformResourceType: 'google_os_config_guest_policies',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

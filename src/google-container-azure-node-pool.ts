@@ -170,6 +170,96 @@ export class GoogleContainerAzureNodePoolAutoscalingOutputReference extends cdkt
     return this._minNodeCount;
   }
 }
+export interface GoogleContainerAzureNodePoolConfigProxyConfig {
+  /**
+  * The ARM ID the of the resource group containing proxy keyvault. Resource group ids are formatted as `/subscriptions/<subscription-id>/resourceGroups/<resource-group-name>`
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_azure_node_pool#resource_group_id GoogleContainerAzureNodePool#resource_group_id}
+  */
+  readonly resourceGroupId: string;
+  /**
+  * The URL the of the proxy setting secret with its version. Secret ids are formatted as `https:<key-vault-name>.vault.azure.net/secrets/<secret-name>/<secret-version>`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_azure_node_pool#secret_id GoogleContainerAzureNodePool#secret_id}
+  */
+  readonly secretId: string;
+}
+
+export function googleContainerAzureNodePoolConfigProxyConfigToTerraform(struct?: GoogleContainerAzureNodePoolConfigProxyConfigOutputReference | GoogleContainerAzureNodePoolConfigProxyConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    resource_group_id: cdktf.stringToTerraform(struct!.resourceGroupId),
+    secret_id: cdktf.stringToTerraform(struct!.secretId),
+  }
+}
+
+export class GoogleContainerAzureNodePoolConfigProxyConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerAzureNodePoolConfigProxyConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._resourceGroupId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceGroupId = this._resourceGroupId;
+    }
+    if (this._secretId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretId = this._secretId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerAzureNodePoolConfigProxyConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._resourceGroupId = undefined;
+      this._secretId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._resourceGroupId = value.resourceGroupId;
+      this._secretId = value.secretId;
+    }
+  }
+
+  // resource_group_id - computed: false, optional: false, required: true
+  private _resourceGroupId?: string; 
+  public get resourceGroupId() {
+    return this.getStringAttribute('resource_group_id');
+  }
+  public set resourceGroupId(value: string) {
+    this._resourceGroupId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceGroupIdInput() {
+    return this._resourceGroupId;
+  }
+
+  // secret_id - computed: false, optional: false, required: true
+  private _secretId?: string; 
+  public get secretId() {
+    return this.getStringAttribute('secret_id');
+  }
+  public set secretId(value: string) {
+    this._secretId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretIdInput() {
+    return this._secretId;
+  }
+}
 export interface GoogleContainerAzureNodePoolConfigRootVolume {
   /**
   * Optional. The size of the disk, in GiBs. When unspecified, a default value is provided. See the specific reference in the parent resource.
@@ -303,6 +393,12 @@ export class GoogleContainerAzureNodePoolConfigSshConfigOutputReference extends 
 }
 export interface GoogleContainerAzureNodePoolConfigA {
   /**
+  * The OS image type to use on node pool instances.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_azure_node_pool#image_type GoogleContainerAzureNodePool#image_type}
+  */
+  readonly imageType?: string;
+  /**
   * Optional. A set of tags to apply to all underlying Azure resources for this node pool. This currently only includes Virtual Machine Scale Sets. Specify at most 50 pairs containing alphanumerics, spaces, and symbols (.+-=_:@/). Keys can be up to 127 Unicode characters. Values can be up to 255 Unicode characters.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_azure_node_pool#tags GoogleContainerAzureNodePool#tags}
@@ -314,6 +410,12 @@ export interface GoogleContainerAzureNodePoolConfigA {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_azure_node_pool#vm_size GoogleContainerAzureNodePool#vm_size}
   */
   readonly vmSize?: string;
+  /**
+  * proxy_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_azure_node_pool#proxy_config GoogleContainerAzureNodePool#proxy_config}
+  */
+  readonly proxyConfig?: GoogleContainerAzureNodePoolConfigProxyConfig;
   /**
   * root_volume block
   * 
@@ -334,8 +436,10 @@ export function googleContainerAzureNodePoolConfigAToTerraform(struct?: GoogleCo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    image_type: cdktf.stringToTerraform(struct!.imageType),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     vm_size: cdktf.stringToTerraform(struct!.vmSize),
+    proxy_config: googleContainerAzureNodePoolConfigProxyConfigToTerraform(struct!.proxyConfig),
     root_volume: googleContainerAzureNodePoolConfigRootVolumeToTerraform(struct!.rootVolume),
     ssh_config: googleContainerAzureNodePoolConfigSshConfigToTerraform(struct!.sshConfig),
   }
@@ -355,6 +459,10 @@ export class GoogleContainerAzureNodePoolConfigAOutputReference extends cdktf.Co
   public get internalValue(): GoogleContainerAzureNodePoolConfigA | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._imageType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageType = this._imageType;
+    }
     if (this._tags !== undefined) {
       hasAnyValues = true;
       internalValueResult.tags = this._tags;
@@ -362,6 +470,10 @@ export class GoogleContainerAzureNodePoolConfigAOutputReference extends cdktf.Co
     if (this._vmSize !== undefined) {
       hasAnyValues = true;
       internalValueResult.vmSize = this._vmSize;
+    }
+    if (this._proxyConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.proxyConfig = this._proxyConfig?.internalValue;
     }
     if (this._rootVolume?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -377,18 +489,38 @@ export class GoogleContainerAzureNodePoolConfigAOutputReference extends cdktf.Co
   public set internalValue(value: GoogleContainerAzureNodePoolConfigA | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._imageType = undefined;
       this._tags = undefined;
       this._vmSize = undefined;
+      this._proxyConfig.internalValue = undefined;
       this._rootVolume.internalValue = undefined;
       this._sshConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._imageType = value.imageType;
       this._tags = value.tags;
       this._vmSize = value.vmSize;
+      this._proxyConfig.internalValue = value.proxyConfig;
       this._rootVolume.internalValue = value.rootVolume;
       this._sshConfig.internalValue = value.sshConfig;
     }
+  }
+
+  // image_type - computed: true, optional: true, required: false
+  private _imageType?: string; 
+  public get imageType() {
+    return this.getStringAttribute('image_type');
+  }
+  public set imageType(value: string) {
+    this._imageType = value;
+  }
+  public resetImageType() {
+    this._imageType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageTypeInput() {
+    return this._imageType;
   }
 
   // tags - computed: false, optional: true, required: false
@@ -421,6 +553,22 @@ export class GoogleContainerAzureNodePoolConfigAOutputReference extends cdktf.Co
   // Temporarily expose input value. Use with caution.
   public get vmSizeInput() {
     return this._vmSize;
+  }
+
+  // proxy_config - computed: false, optional: true, required: false
+  private _proxyConfig = new GoogleContainerAzureNodePoolConfigProxyConfigOutputReference(this, "proxy_config");
+  public get proxyConfig() {
+    return this._proxyConfig;
+  }
+  public putProxyConfig(value: GoogleContainerAzureNodePoolConfigProxyConfig) {
+    this._proxyConfig.internalValue = value;
+  }
+  public resetProxyConfig() {
+    this._proxyConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyConfigInput() {
+    return this._proxyConfig.internalValue;
   }
 
   // root_volume - computed: false, optional: true, required: false
@@ -662,7 +810,7 @@ export class GoogleContainerAzureNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_azure_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
