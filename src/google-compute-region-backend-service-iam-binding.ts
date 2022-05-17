@@ -174,7 +174,7 @@ export class GoogleComputeRegionBackendServiceIamBinding extends cdktf.Terraform
       terraformResourceType: 'google_compute_region_backend_service_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

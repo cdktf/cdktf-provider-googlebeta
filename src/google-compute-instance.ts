@@ -373,7 +373,7 @@ export interface GoogleComputeInstanceBootDiskInitializeParams {
   */
   readonly size?: number;
   /**
-  * The Google Compute Engine disk type. One of pd-standard, pd-ssd or pd-balanced.
+  * The Google Compute Engine disk type. Such as pd-standard, pd-ssd or pd-balanced.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance#type GoogleComputeInstance#type}
   */
@@ -1852,7 +1852,7 @@ export class GoogleComputeInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -62,6 +62,12 @@ export interface GoogleContainerAwsClusterConfig extends cdktf.TerraformMetaArgu
   */
   readonly fleet: GoogleContainerAwsClusterFleet;
   /**
+  * logging_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_cluster#logging_config GoogleContainerAwsCluster#logging_config}
+  */
+  readonly loggingConfig?: GoogleContainerAwsClusterLoggingConfig;
+  /**
   * networking block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_cluster#networking GoogleContainerAwsCluster#networking}
@@ -451,6 +457,73 @@ export class GoogleContainerAwsClusterControlPlaneDatabaseEncryptionOutputRefere
   // Temporarily expose input value. Use with caution.
   public get kmsKeyArnInput() {
     return this._kmsKeyArn;
+  }
+}
+export interface GoogleContainerAwsClusterControlPlaneInstancePlacement {
+  /**
+  * The tenancy for the instance. Possible values: TENANCY_UNSPECIFIED, DEFAULT, DEDICATED, HOST
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_cluster#tenancy GoogleContainerAwsCluster#tenancy}
+  */
+  readonly tenancy?: string;
+}
+
+export function googleContainerAwsClusterControlPlaneInstancePlacementToTerraform(struct?: GoogleContainerAwsClusterControlPlaneInstancePlacementOutputReference | GoogleContainerAwsClusterControlPlaneInstancePlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    tenancy: cdktf.stringToTerraform(struct!.tenancy),
+  }
+}
+
+export class GoogleContainerAwsClusterControlPlaneInstancePlacementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerAwsClusterControlPlaneInstancePlacement | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tenancy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tenancy = this._tenancy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerAwsClusterControlPlaneInstancePlacement | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._tenancy = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._tenancy = value.tenancy;
+    }
+  }
+
+  // tenancy - computed: true, optional: true, required: false
+  private _tenancy?: string; 
+  public get tenancy() {
+    return this.getStringAttribute('tenancy');
+  }
+  public set tenancy(value: string) {
+    this._tenancy = value;
+  }
+  public resetTenancy() {
+    this._tenancy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tenancyInput() {
+    return this._tenancy;
   }
 }
 export interface GoogleContainerAwsClusterControlPlaneMainVolume {
@@ -971,6 +1044,12 @@ export interface GoogleContainerAwsClusterControlPlane {
   */
   readonly databaseEncryption: GoogleContainerAwsClusterControlPlaneDatabaseEncryption;
   /**
+  * instance_placement block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_cluster#instance_placement GoogleContainerAwsCluster#instance_placement}
+  */
+  readonly instancePlacement?: GoogleContainerAwsClusterControlPlaneInstancePlacement;
+  /**
   * main_volume block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_cluster#main_volume GoogleContainerAwsCluster#main_volume}
@@ -1011,6 +1090,7 @@ export function googleContainerAwsClusterControlPlaneToTerraform(struct?: Google
     aws_services_authentication: googleContainerAwsClusterControlPlaneAwsServicesAuthenticationToTerraform(struct!.awsServicesAuthentication),
     config_encryption: googleContainerAwsClusterControlPlaneConfigEncryptionToTerraform(struct!.configEncryption),
     database_encryption: googleContainerAwsClusterControlPlaneDatabaseEncryptionToTerraform(struct!.databaseEncryption),
+    instance_placement: googleContainerAwsClusterControlPlaneInstancePlacementToTerraform(struct!.instancePlacement),
     main_volume: googleContainerAwsClusterControlPlaneMainVolumeToTerraform(struct!.mainVolume),
     proxy_config: googleContainerAwsClusterControlPlaneProxyConfigToTerraform(struct!.proxyConfig),
     root_volume: googleContainerAwsClusterControlPlaneRootVolumeToTerraform(struct!.rootVolume),
@@ -1068,6 +1148,10 @@ export class GoogleContainerAwsClusterControlPlaneOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.databaseEncryption = this._databaseEncryption?.internalValue;
     }
+    if (this._instancePlacement?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instancePlacement = this._instancePlacement?.internalValue;
+    }
     if (this._mainVolume?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.mainVolume = this._mainVolume?.internalValue;
@@ -1099,6 +1183,7 @@ export class GoogleContainerAwsClusterControlPlaneOutputReference extends cdktf.
       this._awsServicesAuthentication.internalValue = undefined;
       this._configEncryption.internalValue = undefined;
       this._databaseEncryption.internalValue = undefined;
+      this._instancePlacement.internalValue = undefined;
       this._mainVolume.internalValue = undefined;
       this._proxyConfig.internalValue = undefined;
       this._rootVolume.internalValue = undefined;
@@ -1115,6 +1200,7 @@ export class GoogleContainerAwsClusterControlPlaneOutputReference extends cdktf.
       this._awsServicesAuthentication.internalValue = value.awsServicesAuthentication;
       this._configEncryption.internalValue = value.configEncryption;
       this._databaseEncryption.internalValue = value.databaseEncryption;
+      this._instancePlacement.internalValue = value.instancePlacement;
       this._mainVolume.internalValue = value.mainVolume;
       this._proxyConfig.internalValue = value.proxyConfig;
       this._rootVolume.internalValue = value.rootVolume;
@@ -1246,6 +1332,22 @@ export class GoogleContainerAwsClusterControlPlaneOutputReference extends cdktf.
   // Temporarily expose input value. Use with caution.
   public get databaseEncryptionInput() {
     return this._databaseEncryption.internalValue;
+  }
+
+  // instance_placement - computed: false, optional: true, required: false
+  private _instancePlacement = new GoogleContainerAwsClusterControlPlaneInstancePlacementOutputReference(this, "instance_placement");
+  public get instancePlacement() {
+    return this._instancePlacement;
+  }
+  public putInstancePlacement(value: GoogleContainerAwsClusterControlPlaneInstancePlacement) {
+    this._instancePlacement.internalValue = value;
+  }
+  public resetInstancePlacement() {
+    this._instancePlacement.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePlacementInput() {
+    return this._instancePlacement.internalValue;
   }
 
   // main_volume - computed: false, optional: true, required: false
@@ -1382,6 +1484,140 @@ export class GoogleContainerAwsClusterFleetOutputReference extends cdktf.Complex
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+}
+export interface GoogleContainerAwsClusterLoggingConfigComponentConfig {
+  /**
+  * Components of the logging configuration to be enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_cluster#enable_components GoogleContainerAwsCluster#enable_components}
+  */
+  readonly enableComponents?: string[];
+}
+
+export function googleContainerAwsClusterLoggingConfigComponentConfigToTerraform(struct?: GoogleContainerAwsClusterLoggingConfigComponentConfigOutputReference | GoogleContainerAwsClusterLoggingConfigComponentConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable_components: cdktf.listMapper(cdktf.stringToTerraform)(struct!.enableComponents),
+  }
+}
+
+export class GoogleContainerAwsClusterLoggingConfigComponentConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerAwsClusterLoggingConfigComponentConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableComponents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableComponents = this._enableComponents;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerAwsClusterLoggingConfigComponentConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableComponents = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableComponents = value.enableComponents;
+    }
+  }
+
+  // enable_components - computed: true, optional: true, required: false
+  private _enableComponents?: string[]; 
+  public get enableComponents() {
+    return this.getListAttribute('enable_components');
+  }
+  public set enableComponents(value: string[]) {
+    this._enableComponents = value;
+  }
+  public resetEnableComponents() {
+    this._enableComponents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableComponentsInput() {
+    return this._enableComponents;
+  }
+}
+export interface GoogleContainerAwsClusterLoggingConfig {
+  /**
+  * component_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_cluster#component_config GoogleContainerAwsCluster#component_config}
+  */
+  readonly componentConfig?: GoogleContainerAwsClusterLoggingConfigComponentConfig;
+}
+
+export function googleContainerAwsClusterLoggingConfigToTerraform(struct?: GoogleContainerAwsClusterLoggingConfigOutputReference | GoogleContainerAwsClusterLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    component_config: googleContainerAwsClusterLoggingConfigComponentConfigToTerraform(struct!.componentConfig),
+  }
+}
+
+export class GoogleContainerAwsClusterLoggingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerAwsClusterLoggingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._componentConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.componentConfig = this._componentConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerAwsClusterLoggingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._componentConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._componentConfig.internalValue = value.componentConfig;
+    }
+  }
+
+  // component_config - computed: false, optional: true, required: false
+  private _componentConfig = new GoogleContainerAwsClusterLoggingConfigComponentConfigOutputReference(this, "component_config");
+  public get componentConfig() {
+    return this._componentConfig;
+  }
+  public putComponentConfig(value: GoogleContainerAwsClusterLoggingConfigComponentConfig) {
+    this._componentConfig.internalValue = value;
+  }
+  public resetComponentConfig() {
+    this._componentConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get componentConfigInput() {
+    return this._componentConfig.internalValue;
   }
 }
 export interface GoogleContainerAwsClusterNetworking {
@@ -1646,7 +1882,7 @@ export class GoogleContainerAwsCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_aws_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1663,6 +1899,7 @@ export class GoogleContainerAwsCluster extends cdktf.TerraformResource {
     this._authorization.internalValue = config.authorization;
     this._controlPlane.internalValue = config.controlPlane;
     this._fleet.internalValue = config.fleet;
+    this._loggingConfig.internalValue = config.loggingConfig;
     this._networking.internalValue = config.networking;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -1843,6 +2080,22 @@ export class GoogleContainerAwsCluster extends cdktf.TerraformResource {
     return this._fleet.internalValue;
   }
 
+  // logging_config - computed: false, optional: true, required: false
+  private _loggingConfig = new GoogleContainerAwsClusterLoggingConfigOutputReference(this, "logging_config");
+  public get loggingConfig() {
+    return this._loggingConfig;
+  }
+  public putLoggingConfig(value: GoogleContainerAwsClusterLoggingConfig) {
+    this._loggingConfig.internalValue = value;
+  }
+  public resetLoggingConfig() {
+    this._loggingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loggingConfigInput() {
+    return this._loggingConfig.internalValue;
+  }
+
   // networking - computed: false, optional: false, required: true
   private _networking = new GoogleContainerAwsClusterNetworkingOutputReference(this, "networking");
   public get networking() {
@@ -1887,6 +2140,7 @@ export class GoogleContainerAwsCluster extends cdktf.TerraformResource {
       authorization: googleContainerAwsClusterAuthorizationToTerraform(this._authorization.internalValue),
       control_plane: googleContainerAwsClusterControlPlaneToTerraform(this._controlPlane.internalValue),
       fleet: googleContainerAwsClusterFleetToTerraform(this._fleet.internalValue),
+      logging_config: googleContainerAwsClusterLoggingConfigToTerraform(this._loggingConfig.internalValue),
       networking: googleContainerAwsClusterNetworkingToTerraform(this._networking.internalValue),
       timeouts: googleContainerAwsClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };

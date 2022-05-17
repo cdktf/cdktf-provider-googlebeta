@@ -74,6 +74,12 @@ export interface GoogleContainerAzureClusterConfig extends cdktf.TerraformMetaAr
   */
   readonly fleet: GoogleContainerAzureClusterFleet;
   /**
+  * logging_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_azure_cluster#logging_config GoogleContainerAzureCluster#logging_config}
+  */
+  readonly loggingConfig?: GoogleContainerAzureClusterLoggingConfig;
+  /**
   * networking block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_azure_cluster#networking GoogleContainerAzureCluster#networking}
@@ -1014,6 +1020,140 @@ export class GoogleContainerAzureClusterFleetOutputReference extends cdktf.Compl
     return this._project;
   }
 }
+export interface GoogleContainerAzureClusterLoggingConfigComponentConfig {
+  /**
+  * Components of the logging configuration to be enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_azure_cluster#enable_components GoogleContainerAzureCluster#enable_components}
+  */
+  readonly enableComponents?: string[];
+}
+
+export function googleContainerAzureClusterLoggingConfigComponentConfigToTerraform(struct?: GoogleContainerAzureClusterLoggingConfigComponentConfigOutputReference | GoogleContainerAzureClusterLoggingConfigComponentConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable_components: cdktf.listMapper(cdktf.stringToTerraform)(struct!.enableComponents),
+  }
+}
+
+export class GoogleContainerAzureClusterLoggingConfigComponentConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerAzureClusterLoggingConfigComponentConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableComponents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableComponents = this._enableComponents;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerAzureClusterLoggingConfigComponentConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableComponents = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableComponents = value.enableComponents;
+    }
+  }
+
+  // enable_components - computed: true, optional: true, required: false
+  private _enableComponents?: string[]; 
+  public get enableComponents() {
+    return this.getListAttribute('enable_components');
+  }
+  public set enableComponents(value: string[]) {
+    this._enableComponents = value;
+  }
+  public resetEnableComponents() {
+    this._enableComponents = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableComponentsInput() {
+    return this._enableComponents;
+  }
+}
+export interface GoogleContainerAzureClusterLoggingConfig {
+  /**
+  * component_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_azure_cluster#component_config GoogleContainerAzureCluster#component_config}
+  */
+  readonly componentConfig?: GoogleContainerAzureClusterLoggingConfigComponentConfig;
+}
+
+export function googleContainerAzureClusterLoggingConfigToTerraform(struct?: GoogleContainerAzureClusterLoggingConfigOutputReference | GoogleContainerAzureClusterLoggingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    component_config: googleContainerAzureClusterLoggingConfigComponentConfigToTerraform(struct!.componentConfig),
+  }
+}
+
+export class GoogleContainerAzureClusterLoggingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerAzureClusterLoggingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._componentConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.componentConfig = this._componentConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerAzureClusterLoggingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._componentConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._componentConfig.internalValue = value.componentConfig;
+    }
+  }
+
+  // component_config - computed: false, optional: true, required: false
+  private _componentConfig = new GoogleContainerAzureClusterLoggingConfigComponentConfigOutputReference(this, "component_config");
+  public get componentConfig() {
+    return this._componentConfig;
+  }
+  public putComponentConfig(value: GoogleContainerAzureClusterLoggingConfigComponentConfig) {
+    this._componentConfig.internalValue = value;
+  }
+  public resetComponentConfig() {
+    this._componentConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get componentConfigInput() {
+    return this._componentConfig.internalValue;
+  }
+}
 export interface GoogleContainerAzureClusterNetworking {
   /**
   * The IP address range of the pods in this cluster, in CIDR notation (e.g. `10.96.0.0/14`). All pods in the cluster get assigned a unique RFC1918 IPv4 address from these ranges. Only a single range is supported. This field cannot be changed after creation.
@@ -1276,7 +1416,7 @@ export class GoogleContainerAzureCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_azure_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1295,6 +1435,7 @@ export class GoogleContainerAzureCluster extends cdktf.TerraformResource {
     this._authorization.internalValue = config.authorization;
     this._controlPlane.internalValue = config.controlPlane;
     this._fleet.internalValue = config.fleet;
+    this._loggingConfig.internalValue = config.loggingConfig;
     this._networking.internalValue = config.networking;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -1501,6 +1642,22 @@ export class GoogleContainerAzureCluster extends cdktf.TerraformResource {
     return this._fleet.internalValue;
   }
 
+  // logging_config - computed: false, optional: true, required: false
+  private _loggingConfig = new GoogleContainerAzureClusterLoggingConfigOutputReference(this, "logging_config");
+  public get loggingConfig() {
+    return this._loggingConfig;
+  }
+  public putLoggingConfig(value: GoogleContainerAzureClusterLoggingConfig) {
+    this._loggingConfig.internalValue = value;
+  }
+  public resetLoggingConfig() {
+    this._loggingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loggingConfigInput() {
+    return this._loggingConfig.internalValue;
+  }
+
   // networking - computed: false, optional: false, required: true
   private _networking = new GoogleContainerAzureClusterNetworkingOutputReference(this, "networking");
   public get networking() {
@@ -1547,6 +1704,7 @@ export class GoogleContainerAzureCluster extends cdktf.TerraformResource {
       authorization: googleContainerAzureClusterAuthorizationToTerraform(this._authorization.internalValue),
       control_plane: googleContainerAzureClusterControlPlaneToTerraform(this._controlPlane.internalValue),
       fleet: googleContainerAzureClusterFleetToTerraform(this._fleet.internalValue),
+      logging_config: googleContainerAzureClusterLoggingConfigToTerraform(this._loggingConfig.internalValue),
       networking: googleContainerAzureClusterNetworkingToTerraform(this._networking.internalValue),
       timeouts: googleContainerAzureClusterTimeoutsToTerraform(this._timeouts.internalValue),
     };

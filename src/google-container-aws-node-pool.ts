@@ -228,6 +228,163 @@ export class GoogleContainerAwsNodePoolConfigConfigEncryptionOutputReference ext
     return this._kmsKeyArn;
   }
 }
+export interface GoogleContainerAwsNodePoolConfigInstancePlacement {
+  /**
+  * The tenancy for the instance. Possible values: TENANCY_UNSPECIFIED, DEFAULT, DEDICATED, HOST
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#tenancy GoogleContainerAwsNodePool#tenancy}
+  */
+  readonly tenancy?: string;
+}
+
+export function googleContainerAwsNodePoolConfigInstancePlacementToTerraform(struct?: GoogleContainerAwsNodePoolConfigInstancePlacementOutputReference | GoogleContainerAwsNodePoolConfigInstancePlacement): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    tenancy: cdktf.stringToTerraform(struct!.tenancy),
+  }
+}
+
+export class GoogleContainerAwsNodePoolConfigInstancePlacementOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerAwsNodePoolConfigInstancePlacement | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._tenancy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tenancy = this._tenancy;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerAwsNodePoolConfigInstancePlacement | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._tenancy = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._tenancy = value.tenancy;
+    }
+  }
+
+  // tenancy - computed: true, optional: true, required: false
+  private _tenancy?: string; 
+  public get tenancy() {
+    return this.getStringAttribute('tenancy');
+  }
+  public set tenancy(value: string) {
+    this._tenancy = value;
+  }
+  public resetTenancy() {
+    this._tenancy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tenancyInput() {
+    return this._tenancy;
+  }
+}
+export interface GoogleContainerAwsNodePoolConfigProxyConfig {
+  /**
+  * The ARN of the AWS Secret Manager secret that contains the HTTP(S) proxy configuration.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#secret_arn GoogleContainerAwsNodePool#secret_arn}
+  */
+  readonly secretArn: string;
+  /**
+  * The version string of the AWS Secret Manager secret that contains the HTTP(S) proxy configuration.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#secret_version GoogleContainerAwsNodePool#secret_version}
+  */
+  readonly secretVersion: string;
+}
+
+export function googleContainerAwsNodePoolConfigProxyConfigToTerraform(struct?: GoogleContainerAwsNodePoolConfigProxyConfigOutputReference | GoogleContainerAwsNodePoolConfigProxyConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    secret_arn: cdktf.stringToTerraform(struct!.secretArn),
+    secret_version: cdktf.stringToTerraform(struct!.secretVersion),
+  }
+}
+
+export class GoogleContainerAwsNodePoolConfigProxyConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerAwsNodePoolConfigProxyConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._secretArn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretArn = this._secretArn;
+    }
+    if (this._secretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretVersion = this._secretVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerAwsNodePoolConfigProxyConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._secretArn = undefined;
+      this._secretVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._secretArn = value.secretArn;
+      this._secretVersion = value.secretVersion;
+    }
+  }
+
+  // secret_arn - computed: false, optional: false, required: true
+  private _secretArn?: string; 
+  public get secretArn() {
+    return this.getStringAttribute('secret_arn');
+  }
+  public set secretArn(value: string) {
+    this._secretArn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretArnInput() {
+    return this._secretArn;
+  }
+
+  // secret_version - computed: false, optional: false, required: true
+  private _secretVersion?: string; 
+  public get secretVersion() {
+    return this.getStringAttribute('secret_version');
+  }
+  public set secretVersion(value: string) {
+    this._secretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretVersionInput() {
+    return this._secretVersion;
+  }
+}
 export interface GoogleContainerAwsNodePoolConfigRootVolume {
   /**
   * Optional. The number of I/O operations per second (IOPS) to provision for GP3 volume.
@@ -487,6 +644,12 @@ export interface GoogleContainerAwsNodePoolConfigA {
   */
   readonly iamInstanceProfile: string;
   /**
+  * The OS image type to use on node pool instances.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#image_type GoogleContainerAwsNodePool#image_type}
+  */
+  readonly imageType?: string;
+  /**
   * Optional. The AWS instance type. When unspecified, it defaults to `m5.large`.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#instance_type GoogleContainerAwsNodePool#instance_type}
@@ -517,6 +680,18 @@ export interface GoogleContainerAwsNodePoolConfigA {
   */
   readonly configEncryption: GoogleContainerAwsNodePoolConfigConfigEncryption;
   /**
+  * instance_placement block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#instance_placement GoogleContainerAwsNodePool#instance_placement}
+  */
+  readonly instancePlacement?: GoogleContainerAwsNodePoolConfigInstancePlacement;
+  /**
+  * proxy_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#proxy_config GoogleContainerAwsNodePool#proxy_config}
+  */
+  readonly proxyConfig?: GoogleContainerAwsNodePoolConfigProxyConfig;
+  /**
   * root_volume block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#root_volume GoogleContainerAwsNodePool#root_volume}
@@ -543,11 +718,14 @@ export function googleContainerAwsNodePoolConfigAToTerraform(struct?: GoogleCont
   }
   return {
     iam_instance_profile: cdktf.stringToTerraform(struct!.iamInstanceProfile),
+    image_type: cdktf.stringToTerraform(struct!.imageType),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     config_encryption: googleContainerAwsNodePoolConfigConfigEncryptionToTerraform(struct!.configEncryption),
+    instance_placement: googleContainerAwsNodePoolConfigInstancePlacementToTerraform(struct!.instancePlacement),
+    proxy_config: googleContainerAwsNodePoolConfigProxyConfigToTerraform(struct!.proxyConfig),
     root_volume: googleContainerAwsNodePoolConfigRootVolumeToTerraform(struct!.rootVolume),
     ssh_config: googleContainerAwsNodePoolConfigSshConfigToTerraform(struct!.sshConfig),
     taints: cdktf.listMapper(googleContainerAwsNodePoolConfigTaintsToTerraform)(struct!.taints),
@@ -572,6 +750,10 @@ export class GoogleContainerAwsNodePoolConfigAOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.iamInstanceProfile = this._iamInstanceProfile;
     }
+    if (this._imageType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.imageType = this._imageType;
+    }
     if (this._instanceType !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceType = this._instanceType;
@@ -592,6 +774,14 @@ export class GoogleContainerAwsNodePoolConfigAOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.configEncryption = this._configEncryption?.internalValue;
     }
+    if (this._instancePlacement?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instancePlacement = this._instancePlacement?.internalValue;
+    }
+    if (this._proxyConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.proxyConfig = this._proxyConfig?.internalValue;
+    }
     if (this._rootVolume?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rootVolume = this._rootVolume?.internalValue;
@@ -611,11 +801,14 @@ export class GoogleContainerAwsNodePoolConfigAOutputReference extends cdktf.Comp
     if (value === undefined) {
       this.isEmptyObject = false;
       this._iamInstanceProfile = undefined;
+      this._imageType = undefined;
       this._instanceType = undefined;
       this._labels = undefined;
       this._securityGroupIds = undefined;
       this._tags = undefined;
       this._configEncryption.internalValue = undefined;
+      this._instancePlacement.internalValue = undefined;
+      this._proxyConfig.internalValue = undefined;
       this._rootVolume.internalValue = undefined;
       this._sshConfig.internalValue = undefined;
       this._taints = undefined;
@@ -623,11 +816,14 @@ export class GoogleContainerAwsNodePoolConfigAOutputReference extends cdktf.Comp
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._iamInstanceProfile = value.iamInstanceProfile;
+      this._imageType = value.imageType;
       this._instanceType = value.instanceType;
       this._labels = value.labels;
       this._securityGroupIds = value.securityGroupIds;
       this._tags = value.tags;
       this._configEncryption.internalValue = value.configEncryption;
+      this._instancePlacement.internalValue = value.instancePlacement;
+      this._proxyConfig.internalValue = value.proxyConfig;
       this._rootVolume.internalValue = value.rootVolume;
       this._sshConfig.internalValue = value.sshConfig;
       this._taints = value.taints;
@@ -645,6 +841,22 @@ export class GoogleContainerAwsNodePoolConfigAOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get iamInstanceProfileInput() {
     return this._iamInstanceProfile;
+  }
+
+  // image_type - computed: true, optional: true, required: false
+  private _imageType?: string; 
+  public get imageType() {
+    return this.getStringAttribute('image_type');
+  }
+  public set imageType(value: string) {
+    this._imageType = value;
+  }
+  public resetImageType() {
+    this._imageType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageTypeInput() {
+    return this._imageType;
   }
 
   // instance_type - computed: true, optional: true, required: false
@@ -722,6 +934,38 @@ export class GoogleContainerAwsNodePoolConfigAOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get configEncryptionInput() {
     return this._configEncryption.internalValue;
+  }
+
+  // instance_placement - computed: false, optional: true, required: false
+  private _instancePlacement = new GoogleContainerAwsNodePoolConfigInstancePlacementOutputReference(this, "instance_placement");
+  public get instancePlacement() {
+    return this._instancePlacement;
+  }
+  public putInstancePlacement(value: GoogleContainerAwsNodePoolConfigInstancePlacement) {
+    this._instancePlacement.internalValue = value;
+  }
+  public resetInstancePlacement() {
+    this._instancePlacement.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instancePlacementInput() {
+    return this._instancePlacement.internalValue;
+  }
+
+  // proxy_config - computed: false, optional: true, required: false
+  private _proxyConfig = new GoogleContainerAwsNodePoolConfigProxyConfigOutputReference(this, "proxy_config");
+  public get proxyConfig() {
+    return this._proxyConfig;
+  }
+  public putProxyConfig(value: GoogleContainerAwsNodePoolConfigProxyConfig) {
+    this._proxyConfig.internalValue = value;
+  }
+  public resetProxyConfig() {
+    this._proxyConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get proxyConfigInput() {
+    return this._proxyConfig.internalValue;
   }
 
   // root_volume - computed: false, optional: true, required: false
@@ -983,7 +1227,7 @@ export class GoogleContainerAwsNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_aws_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.20.0',
+        providerVersion: '4.21.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
