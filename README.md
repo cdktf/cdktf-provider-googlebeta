@@ -13,9 +13,9 @@ The npm package is available at [https://www.npmjs.com/package/@cdktf/provider-g
 
 ### PyPI
 
-The PyPI package is available at [https://pypi.org/project/cdktf-cdktf-provider-google-beta](https://pypi.org/project/cdktf-cdktf-provider-google-beta).
+The PyPI package is available at [https://pypi.org/project/cdktf-cdktf-provider-google_beta](https://pypi.org/project/cdktf-cdktf-provider-google_beta).
 
-`pipenv install cdktf-cdktf-provider-google-beta`
+`pipenv install cdktf-cdktf-provider-google_beta`
 
 ### Nuget
 
