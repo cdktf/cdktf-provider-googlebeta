@@ -14,6 +14,13 @@ export interface GoogleComputeRegionAutoscalerConfig extends cdktf.TerraformMeta
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_autoscaler#id GoogleComputeRegionAutoscaler#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Name of the resource. The name must be 1-63 characters long and match
 the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the
 first character must be a lowercase letter, and all following
@@ -332,6 +339,171 @@ export function googleComputeRegionAutoscalerAutoscalingPolicyMetricToTerraform(
   }
 }
 
+export class GoogleComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeRegionAutoscalerAutoscalingPolicyMetric | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._singleInstanceAssignment !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.singleInstanceAssignment = this._singleInstanceAssignment;
+    }
+    if (this._target !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.target = this._target;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionAutoscalerAutoscalingPolicyMetric | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._filter = undefined;
+      this._name = undefined;
+      this._singleInstanceAssignment = undefined;
+      this._target = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._filter = value.filter;
+      this._name = value.name;
+      this._singleInstanceAssignment = value.singleInstanceAssignment;
+      this._target = value.target;
+      this._type = value.type;
+    }
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter?: string; 
+  public get filter() {
+    return this.getStringAttribute('filter');
+  }
+  public set filter(value: string) {
+    this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // single_instance_assignment - computed: false, optional: true, required: false
+  private _singleInstanceAssignment?: number; 
+  public get singleInstanceAssignment() {
+    return this.getNumberAttribute('single_instance_assignment');
+  }
+  public set singleInstanceAssignment(value: number) {
+    this._singleInstanceAssignment = value;
+  }
+  public resetSingleInstanceAssignment() {
+    this._singleInstanceAssignment = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get singleInstanceAssignmentInput() {
+    return this._singleInstanceAssignment;
+  }
+
+  // target - computed: false, optional: true, required: false
+  private _target?: number; 
+  public get target() {
+    return this.getNumberAttribute('target');
+  }
+  public set target(value: number) {
+    this._target = value;
+  }
+  public resetTarget() {
+    this._target = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetInput() {
+    return this._target;
+  }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class GoogleComputeRegionAutoscalerAutoscalingPolicyMetricList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeRegionAutoscalerAutoscalingPolicyMetric[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference {
+    return new GoogleComputeRegionAutoscalerAutoscalingPolicyMetricOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlMaxScaledDownReplicas {
   /**
   * Specifies a fixed number of VM instances. This must be a positive
@@ -781,6 +953,206 @@ export function googleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesTo
   }
 }
 
+export class GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._disabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disabled = this._disabled;
+    }
+    if (this._durationSec !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.durationSec = this._durationSec;
+    }
+    if (this._minRequiredReplicas !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minRequiredReplicas = this._minRequiredReplicas;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._schedule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.schedule = this._schedule;
+    }
+    if (this._timeZone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeZone = this._timeZone;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._disabled = undefined;
+      this._durationSec = undefined;
+      this._minRequiredReplicas = undefined;
+      this._name = undefined;
+      this._schedule = undefined;
+      this._timeZone = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._disabled = value.disabled;
+      this._durationSec = value.durationSec;
+      this._minRequiredReplicas = value.minRequiredReplicas;
+      this._name = value.name;
+      this._schedule = value.schedule;
+      this._timeZone = value.timeZone;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // disabled - computed: false, optional: true, required: false
+  private _disabled?: boolean | cdktf.IResolvable; 
+  public get disabled() {
+    return this.getBooleanAttribute('disabled');
+  }
+  public set disabled(value: boolean | cdktf.IResolvable) {
+    this._disabled = value;
+  }
+  public resetDisabled() {
+    this._disabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disabledInput() {
+    return this._disabled;
+  }
+
+  // duration_sec - computed: false, optional: false, required: true
+  private _durationSec?: number; 
+  public get durationSec() {
+    return this.getNumberAttribute('duration_sec');
+  }
+  public set durationSec(value: number) {
+    this._durationSec = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get durationSecInput() {
+    return this._durationSec;
+  }
+
+  // min_required_replicas - computed: false, optional: false, required: true
+  private _minRequiredReplicas?: number; 
+  public get minRequiredReplicas() {
+    return this.getNumberAttribute('min_required_replicas');
+  }
+  public set minRequiredReplicas(value: number) {
+    this._minRequiredReplicas = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minRequiredReplicasInput() {
+    return this._minRequiredReplicas;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // schedule - computed: false, optional: false, required: true
+  private _schedule?: string; 
+  public get schedule() {
+    return this.getStringAttribute('schedule');
+  }
+  public set schedule(value: string) {
+    this._schedule = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduleInput() {
+    return this._schedule;
+  }
+
+  // time_zone - computed: false, optional: true, required: false
+  private _timeZone?: string; 
+  public get timeZone() {
+    return this.getStringAttribute('time_zone');
+  }
+  public set timeZone(value: string) {
+    this._timeZone = value;
+  }
+  public resetTimeZone() {
+    this._timeZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeZoneInput() {
+    return this._timeZone;
+  }
+}
+
+export class GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference {
+    return new GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeRegionAutoscalerAutoscalingPolicy {
   /**
   * The number of seconds that the autoscaler should wait before it
@@ -916,9 +1288,9 @@ export class GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference exten
       hasAnyValues = true;
       internalValueResult.loadBalancingUtilization = this._loadBalancingUtilization?.internalValue;
     }
-    if (this._metric !== undefined) {
+    if (this._metric?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.metric = this._metric;
+      internalValueResult.metric = this._metric?.internalValue;
     }
     if (this._scaleDownControl?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -928,9 +1300,9 @@ export class GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference exten
       hasAnyValues = true;
       internalValueResult.scaleInControl = this._scaleInControl?.internalValue;
     }
-    if (this._scalingSchedules !== undefined) {
+    if (this._scalingSchedules?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.scalingSchedules = this._scalingSchedules;
+      internalValueResult.scalingSchedules = this._scalingSchedules?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -944,10 +1316,10 @@ export class GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference exten
       this._mode = undefined;
       this._cpuUtilization.internalValue = undefined;
       this._loadBalancingUtilization.internalValue = undefined;
-      this._metric = undefined;
+      this._metric.internalValue = undefined;
       this._scaleDownControl.internalValue = undefined;
       this._scaleInControl.internalValue = undefined;
-      this._scalingSchedules = undefined;
+      this._scalingSchedules.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -957,10 +1329,10 @@ export class GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference exten
       this._mode = value.mode;
       this._cpuUtilization.internalValue = value.cpuUtilization;
       this._loadBalancingUtilization.internalValue = value.loadBalancingUtilization;
-      this._metric = value.metric;
+      this._metric.internalValue = value.metric;
       this._scaleDownControl.internalValue = value.scaleDownControl;
       this._scaleInControl.internalValue = value.scaleInControl;
-      this._scalingSchedules = value.scalingSchedules;
+      this._scalingSchedules.internalValue = value.scalingSchedules;
     }
   }
 
@@ -1055,20 +1427,19 @@ export class GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference exten
   }
 
   // metric - computed: false, optional: true, required: false
-  private _metric?: GoogleComputeRegionAutoscalerAutoscalingPolicyMetric[] | cdktf.IResolvable; 
+  private _metric = new GoogleComputeRegionAutoscalerAutoscalingPolicyMetricList(this, "metric", false);
   public get metric() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metric');
+    return this._metric;
   }
-  public set metric(value: GoogleComputeRegionAutoscalerAutoscalingPolicyMetric[] | cdktf.IResolvable) {
-    this._metric = value;
+  public putMetric(value: GoogleComputeRegionAutoscalerAutoscalingPolicyMetric[] | cdktf.IResolvable) {
+    this._metric.internalValue = value;
   }
   public resetMetric() {
-    this._metric = undefined;
+    this._metric.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get metricInput() {
-    return this._metric;
+    return this._metric.internalValue;
   }
 
   // scale_down_control - computed: false, optional: true, required: false
@@ -1104,20 +1475,19 @@ export class GoogleComputeRegionAutoscalerAutoscalingPolicyOutputReference exten
   }
 
   // scaling_schedules - computed: false, optional: true, required: false
-  private _scalingSchedules?: GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedules[] | cdktf.IResolvable; 
+  private _scalingSchedules = new GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList(this, "scaling_schedules", true);
   public get scalingSchedules() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('scaling_schedules')));
+    return this._scalingSchedules;
   }
-  public set scalingSchedules(value: GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedules[] | cdktf.IResolvable) {
-    this._scalingSchedules = value;
+  public putScalingSchedules(value: GoogleComputeRegionAutoscalerAutoscalingPolicyScalingSchedules[] | cdktf.IResolvable) {
+    this._scalingSchedules.internalValue = value;
   }
   public resetScalingSchedules() {
-    this._scalingSchedules = undefined;
+    this._scalingSchedules.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get scalingSchedulesInput() {
-    return this._scalingSchedules;
+    return this._scalingSchedules.internalValue;
   }
 }
 export interface GoogleComputeRegionAutoscalerTimeouts {
@@ -1149,6 +1519,7 @@ export function googleComputeRegionAutoscalerTimeoutsToTerraform(struct?: Google
 
 export class GoogleComputeRegionAutoscalerTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1158,7 +1529,10 @@ export class GoogleComputeRegionAutoscalerTimeoutsOutputReference extends cdktf.
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeRegionAutoscalerTimeouts | undefined {
+  public get internalValue(): GoogleComputeRegionAutoscalerTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -1176,15 +1550,21 @@ export class GoogleComputeRegionAutoscalerTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeRegionAutoscalerTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeRegionAutoscalerTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -1275,6 +1655,7 @@ export class GoogleComputeRegionAutoscaler extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._project = config.project;
     this._region = config.region;
@@ -1309,8 +1690,19 @@ export class GoogleComputeRegionAutoscaler extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1412,6 +1804,7 @@ export class GoogleComputeRegionAutoscaler extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),

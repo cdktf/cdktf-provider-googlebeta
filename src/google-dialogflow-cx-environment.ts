@@ -20,6 +20,13 @@ export interface GoogleDialogflowCxEnvironmentConfig extends cdktf.TerraformMeta
   */
   readonly displayName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_environment#id GoogleDialogflowCxEnvironment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The Agent to create an Environment for. 
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
   * 
@@ -68,6 +75,7 @@ export function googleDialogflowCxEnvironmentTimeoutsToTerraform(struct?: Google
 
 export class GoogleDialogflowCxEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -77,7 +85,10 @@ export class GoogleDialogflowCxEnvironmentTimeoutsOutputReference extends cdktf.
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDialogflowCxEnvironmentTimeouts | undefined {
+  public get internalValue(): GoogleDialogflowCxEnvironmentTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -95,15 +106,21 @@ export class GoogleDialogflowCxEnvironmentTimeoutsOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDialogflowCxEnvironmentTimeouts | undefined) {
+  public set internalValue(value: GoogleDialogflowCxEnvironmentTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -177,6 +194,83 @@ export function googleDialogflowCxEnvironmentVersionConfigsToTerraform(struct?: 
   }
 }
 
+export class GoogleDialogflowCxEnvironmentVersionConfigsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDialogflowCxEnvironmentVersionConfigs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxEnvironmentVersionConfigs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._version = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._version = value.version;
+    }
+  }
+
+  // version - computed: false, optional: false, required: true
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+}
+
+export class GoogleDialogflowCxEnvironmentVersionConfigsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDialogflowCxEnvironmentVersionConfigs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDialogflowCxEnvironmentVersionConfigsOutputReference {
+    return new GoogleDialogflowCxEnvironmentVersionConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_environment google_dialogflow_cx_environment}
@@ -214,9 +308,10 @@ export class GoogleDialogflowCxEnvironment extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._displayName = config.displayName;
+    this._id = config.id;
     this._parent = config.parent;
     this._timeouts.internalValue = config.timeouts;
-    this._versionConfigs = config.versionConfigs;
+    this._versionConfigs.internalValue = config.versionConfigs;
   }
 
   // ==========
@@ -253,8 +348,19 @@ export class GoogleDialogflowCxEnvironment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: false, required: false
@@ -300,17 +406,16 @@ export class GoogleDialogflowCxEnvironment extends cdktf.TerraformResource {
   }
 
   // version_configs - computed: false, optional: false, required: true
-  private _versionConfigs?: GoogleDialogflowCxEnvironmentVersionConfigs[] | cdktf.IResolvable; 
+  private _versionConfigs = new GoogleDialogflowCxEnvironmentVersionConfigsList(this, "version_configs", false);
   public get versionConfigs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('version_configs');
+    return this._versionConfigs;
   }
-  public set versionConfigs(value: GoogleDialogflowCxEnvironmentVersionConfigs[] | cdktf.IResolvable) {
-    this._versionConfigs = value;
+  public putVersionConfigs(value: GoogleDialogflowCxEnvironmentVersionConfigs[] | cdktf.IResolvable) {
+    this._versionConfigs.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get versionConfigsInput() {
-    return this._versionConfigs;
+    return this._versionConfigs.internalValue;
   }
 
   // =========
@@ -321,9 +426,10 @@ export class GoogleDialogflowCxEnvironment extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
+      id: cdktf.stringToTerraform(this._id),
       parent: cdktf.stringToTerraform(this._parent),
       timeouts: googleDialogflowCxEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
-      version_configs: cdktf.listMapper(googleDialogflowCxEnvironmentVersionConfigsToTerraform)(this._versionConfigs),
+      version_configs: cdktf.listMapper(googleDialogflowCxEnvironmentVersionConfigsToTerraform)(this._versionConfigs.internalValue),
     };
   }
 }

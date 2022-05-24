@@ -60,6 +60,13 @@ export interface GoogleStorageBucketObjectConfig extends cdktf.TerraformMetaArgu
   */
   readonly eventBasedHold?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket_object#id GoogleStorageBucketObject#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Resource name of the Cloud KMS key that will be used to encrypt the object. Overrides the object metadata's kmsKeyName value, if any.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket_object#kms_key_name GoogleStorageBucketObject#kms_key_name}
@@ -230,6 +237,7 @@ export function googleStorageBucketObjectTimeoutsToTerraform(struct?: GoogleStor
 
 export class GoogleStorageBucketObjectTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -239,7 +247,10 @@ export class GoogleStorageBucketObjectTimeoutsOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleStorageBucketObjectTimeouts | undefined {
+  public get internalValue(): GoogleStorageBucketObjectTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -257,15 +268,21 @@ export class GoogleStorageBucketObjectTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleStorageBucketObjectTimeouts | undefined) {
+  public set internalValue(value: GoogleStorageBucketObjectTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -364,6 +381,7 @@ export class GoogleStorageBucketObject extends cdktf.TerraformResource {
     this._contentType = config.contentType;
     this._detectMd5Hash = config.detectMd5Hash;
     this._eventBasedHold = config.eventBasedHold;
+    this._id = config.id;
     this._kmsKeyName = config.kmsKeyName;
     this._metadata = config.metadata;
     this._name = config.name;
@@ -525,8 +543,19 @@ export class GoogleStorageBucketObject extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_key_name - computed: true, optional: true, required: false
@@ -689,6 +718,7 @@ export class GoogleStorageBucketObject extends cdktf.TerraformResource {
       content_type: cdktf.stringToTerraform(this._contentType),
       detect_md5hash: cdktf.stringToTerraform(this._detectMd5Hash),
       event_based_hold: cdktf.booleanToTerraform(this._eventBasedHold),
+      id: cdktf.stringToTerraform(this._id),
       kms_key_name: cdktf.stringToTerraform(this._kmsKeyName),
       metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
       name: cdktf.stringToTerraform(this._name),

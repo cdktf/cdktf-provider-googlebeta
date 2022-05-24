@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleAppEngineApplicationUrlDispatchRulesConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_application_url_dispatch_rules#id GoogleAppEngineApplicationUrlDispatchRules#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_application_url_dispatch_rules#project GoogleAppEngineApplicationUrlDispatchRules#project}
   */
   readonly project?: string;
@@ -60,6 +67,124 @@ export function googleAppEngineApplicationUrlDispatchRulesDispatchRulesToTerrafo
   }
 }
 
+export class GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleAppEngineApplicationUrlDispatchRulesDispatchRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAppEngineApplicationUrlDispatchRulesDispatchRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._domain = undefined;
+      this._path = undefined;
+      this._service = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._domain = value.domain;
+      this._path = value.path;
+      this._service = value.service;
+    }
+  }
+
+  // domain - computed: false, optional: true, required: false
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  public resetDomain() {
+    this._domain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
+
+export class GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleAppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference {
+    return new GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleAppEngineApplicationUrlDispatchRulesTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_application_url_dispatch_rules#create GoogleAppEngineApplicationUrlDispatchRules#create}
@@ -89,6 +214,7 @@ export function googleAppEngineApplicationUrlDispatchRulesTimeoutsToTerraform(st
 
 export class GoogleAppEngineApplicationUrlDispatchRulesTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -98,7 +224,10 @@ export class GoogleAppEngineApplicationUrlDispatchRulesTimeoutsOutputReference e
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleAppEngineApplicationUrlDispatchRulesTimeouts | undefined {
+  public get internalValue(): GoogleAppEngineApplicationUrlDispatchRulesTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -116,15 +245,21 @@ export class GoogleAppEngineApplicationUrlDispatchRulesTimeoutsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleAppEngineApplicationUrlDispatchRulesTimeouts | undefined) {
+  public set internalValue(value: GoogleAppEngineApplicationUrlDispatchRulesTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -214,8 +349,9 @@ export class GoogleAppEngineApplicationUrlDispatchRules extends cdktf.TerraformR
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._project = config.project;
-    this._dispatchRules = config.dispatchRules;
+    this._dispatchRules.internalValue = config.dispatchRules;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -224,8 +360,19 @@ export class GoogleAppEngineApplicationUrlDispatchRules extends cdktf.TerraformR
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // project - computed: true, optional: true, required: false
@@ -245,17 +392,16 @@ export class GoogleAppEngineApplicationUrlDispatchRules extends cdktf.TerraformR
   }
 
   // dispatch_rules - computed: false, optional: false, required: true
-  private _dispatchRules?: GoogleAppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktf.IResolvable; 
+  private _dispatchRules = new GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList(this, "dispatch_rules", false);
   public get dispatchRules() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('dispatch_rules');
+    return this._dispatchRules;
   }
-  public set dispatchRules(value: GoogleAppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktf.IResolvable) {
-    this._dispatchRules = value;
+  public putDispatchRules(value: GoogleAppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktf.IResolvable) {
+    this._dispatchRules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get dispatchRulesInput() {
-    return this._dispatchRules;
+    return this._dispatchRules.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -280,8 +426,9 @@ export class GoogleAppEngineApplicationUrlDispatchRules extends cdktf.TerraformR
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
-      dispatch_rules: cdktf.listMapper(googleAppEngineApplicationUrlDispatchRulesDispatchRulesToTerraform)(this._dispatchRules),
+      dispatch_rules: cdktf.listMapper(googleAppEngineApplicationUrlDispatchRulesDispatchRulesToTerraform)(this._dispatchRules.internalValue),
       timeouts: googleAppEngineApplicationUrlDispatchRulesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

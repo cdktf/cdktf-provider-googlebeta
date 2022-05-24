@@ -29,6 +29,13 @@ alpha formats if you are a member of the [alpha user group](https://cloud.google
   */
   readonly format: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#id GoogleArtifactRegistryRepository#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The Cloud KMS resource name of the customer managed encryption key that’s
 used to encrypt the contents of the Repository. Has the form:
 'projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key'.
@@ -203,6 +210,7 @@ export function googleArtifactRegistryRepositoryTimeoutsToTerraform(struct?: Goo
 
 export class GoogleArtifactRegistryRepositoryTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -212,7 +220,10 @@ export class GoogleArtifactRegistryRepositoryTimeoutsOutputReference extends cdk
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleArtifactRegistryRepositoryTimeouts | undefined {
+  public get internalValue(): GoogleArtifactRegistryRepositoryTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -230,15 +241,21 @@ export class GoogleArtifactRegistryRepositoryTimeoutsOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleArtifactRegistryRepositoryTimeouts | undefined) {
+  public set internalValue(value: GoogleArtifactRegistryRepositoryTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -330,6 +347,7 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._format = config.format;
+    this._id = config.id;
     this._kmsKeyName = config.kmsKeyName;
     this._labels = config.labels;
     this._location = config.location;
@@ -378,8 +396,19 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kms_key_name - computed: false, optional: true, required: false
@@ -509,6 +538,7 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       format: cdktf.stringToTerraform(this._format),
+      id: cdktf.stringToTerraform(this._id),
       kms_key_name: cdktf.stringToTerraform(this._kmsKeyName),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       location: cdktf.stringToTerraform(this._location),

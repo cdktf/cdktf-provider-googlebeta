@@ -14,6 +14,13 @@ export interface GoogleIamDenyPolicyConfig extends cdktf.TerraformMetaArguments 
   */
   readonly displayName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iam_deny_policy#id GoogleIamDenyPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the policy.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iam_deny_policy#name GoogleIamDenyPolicy#name}
@@ -402,6 +409,108 @@ export function googleIamDenyPolicyRulesToTerraform(struct?: GoogleIamDenyPolicy
   }
 }
 
+export class GoogleIamDenyPolicyRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleIamDenyPolicyRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._denyRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.denyRule = this._denyRule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleIamDenyPolicyRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._denyRule.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._denyRule.internalValue = value.denyRule;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // deny_rule - computed: false, optional: true, required: false
+  private _denyRule = new GoogleIamDenyPolicyRulesDenyRuleOutputReference(this, "deny_rule");
+  public get denyRule() {
+    return this._denyRule;
+  }
+  public putDenyRule(value: GoogleIamDenyPolicyRulesDenyRule) {
+    this._denyRule.internalValue = value;
+  }
+  public resetDenyRule() {
+    this._denyRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get denyRuleInput() {
+    return this._denyRule.internalValue;
+  }
+}
+
+export class GoogleIamDenyPolicyRulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleIamDenyPolicyRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleIamDenyPolicyRulesOutputReference {
+    return new GoogleIamDenyPolicyRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleIamDenyPolicyTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iam_deny_policy#create GoogleIamDenyPolicy#create}
@@ -431,6 +540,7 @@ export function googleIamDenyPolicyTimeoutsToTerraform(struct?: GoogleIamDenyPol
 
 export class GoogleIamDenyPolicyTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -440,7 +550,10 @@ export class GoogleIamDenyPolicyTimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleIamDenyPolicyTimeouts | undefined {
+  public get internalValue(): GoogleIamDenyPolicyTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -458,15 +571,21 @@ export class GoogleIamDenyPolicyTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleIamDenyPolicyTimeouts | undefined) {
+  public set internalValue(value: GoogleIamDenyPolicyTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -557,9 +676,10 @@ export class GoogleIamDenyPolicy extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._displayName = config.displayName;
+    this._id = config.id;
     this._name = config.name;
     this._parent = config.parent;
-    this._rules = config.rules;
+    this._rules.internalValue = config.rules;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -589,8 +709,19 @@ export class GoogleIamDenyPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -620,17 +751,16 @@ export class GoogleIamDenyPolicy extends cdktf.TerraformResource {
   }
 
   // rules - computed: false, optional: false, required: true
-  private _rules?: GoogleIamDenyPolicyRules[] | cdktf.IResolvable; 
+  private _rules = new GoogleIamDenyPolicyRulesList(this, "rules", false);
   public get rules() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rules');
+    return this._rules;
   }
-  public set rules(value: GoogleIamDenyPolicyRules[] | cdktf.IResolvable) {
-    this._rules = value;
+  public putRules(value: GoogleIamDenyPolicyRules[] | cdktf.IResolvable) {
+    this._rules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get rulesInput() {
-    return this._rules;
+    return this._rules.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -656,9 +786,10 @@ export class GoogleIamDenyPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       display_name: cdktf.stringToTerraform(this._displayName),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       parent: cdktf.stringToTerraform(this._parent),
-      rules: cdktf.listMapper(googleIamDenyPolicyRulesToTerraform)(this._rules),
+      rules: cdktf.listMapper(googleIamDenyPolicyRulesToTerraform)(this._rules.internalValue),
       timeouts: googleIamDenyPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -21,6 +21,13 @@ the resource.
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_url_map#id GoogleComputeUrlMap#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Name of the resource. Provided by the client when the resource is created. The
 name must be 1-63 characters long, and comply with RFC1035. Specifically, the
 name must be 1-63 characters long and match the regular expression
@@ -1278,6 +1285,130 @@ export function googleComputeUrlMapDefaultRouteActionWeightedBackendServicesHead
   }
 }
 
+export class GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: true, required: false
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  public resetHeaderName() {
+    this._headerName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: true, required: false
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  public resetHeaderValue() {
+    this._headerValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: true, required: false
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  public resetReplace() {
+    this._replace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
   /**
   * The name of the header to add.
@@ -1312,6 +1443,130 @@ export function googleComputeUrlMapDefaultRouteActionWeightedBackendServicesHead
   }
 }
 
+export class GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: true, required: false
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  public resetHeaderName() {
+    this._headerName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: true, required: false
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  public resetHeaderValue() {
+    this._headerValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: true, required: false
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  public resetReplace() {
+    this._replace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction {
   /**
   * A list of header names for headers that need to be removed from the request prior to
@@ -1376,13 +1631,13 @@ export class GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
       hasAnyValues = true;
       internalValueResult.responseHeadersToRemove = this._responseHeadersToRemove;
     }
-    if (this._requestHeadersToAdd !== undefined) {
+    if (this._requestHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd;
+      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd?.internalValue;
     }
-    if (this._responseHeadersToAdd !== undefined) {
+    if (this._responseHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd;
+      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1392,15 +1647,15 @@ export class GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
       this.isEmptyObject = false;
       this._requestHeadersToRemove = undefined;
       this._responseHeadersToRemove = undefined;
-      this._requestHeadersToAdd = undefined;
-      this._responseHeadersToAdd = undefined;
+      this._requestHeadersToAdd.internalValue = undefined;
+      this._responseHeadersToAdd.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._requestHeadersToRemove = value.requestHeadersToRemove;
       this._responseHeadersToRemove = value.responseHeadersToRemove;
-      this._requestHeadersToAdd = value.requestHeadersToAdd;
-      this._responseHeadersToAdd = value.responseHeadersToAdd;
+      this._requestHeadersToAdd.internalValue = value.requestHeadersToAdd;
+      this._responseHeadersToAdd.internalValue = value.responseHeadersToAdd;
     }
   }
 
@@ -1437,37 +1692,35 @@ export class GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderA
   }
 
   // request_headers_to_add - computed: false, optional: true, required: false
-  private _requestHeadersToAdd?: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable; 
+  private _requestHeadersToAdd = new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(this, "request_headers_to_add", false);
   public get requestHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_headers_to_add');
+    return this._requestHeadersToAdd;
   }
-  public set requestHeadersToAdd(value: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
-    this._requestHeadersToAdd = value;
+  public putRequestHeadersToAdd(value: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+    this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
-    this._requestHeadersToAdd = undefined;
+    this._requestHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requestHeadersToAddInput() {
-    return this._requestHeadersToAdd;
+    return this._requestHeadersToAdd.internalValue;
   }
 
   // response_headers_to_add - computed: false, optional: true, required: false
-  private _responseHeadersToAdd?: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable; 
+  private _responseHeadersToAdd = new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(this, "response_headers_to_add", false);
   public get responseHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_headers_to_add');
+    return this._responseHeadersToAdd;
   }
-  public set responseHeadersToAdd(value: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
-    this._responseHeadersToAdd = value;
+  public putResponseHeadersToAdd(value: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+    this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
-    this._responseHeadersToAdd = undefined;
+    this._responseHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responseHeadersToAddInput() {
-    return this._responseHeadersToAdd;
+    return this._responseHeadersToAdd.internalValue;
   }
 }
 export interface GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices {
@@ -1512,6 +1765,130 @@ export function googleComputeUrlMapDefaultRouteActionWeightedBackendServicesToTe
   }
 }
 
+export class GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backendService !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backendService = this._backendService;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    if (this._headerAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerAction = this._headerAction?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._backendService = undefined;
+      this._weight = undefined;
+      this._headerAction.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._backendService = value.backendService;
+      this._weight = value.weight;
+      this._headerAction.internalValue = value.headerAction;
+    }
+  }
+
+  // backend_service - computed: false, optional: true, required: false
+  private _backendService?: string; 
+  public get backendService() {
+    return this.getStringAttribute('backend_service');
+  }
+  public set backendService(value: string) {
+    this._backendService = value;
+  }
+  public resetBackendService() {
+    this._backendService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backendServiceInput() {
+    return this._backendService;
+  }
+
+  // weight - computed: false, optional: true, required: false
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  public resetWeight() {
+    this._weight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+
+  // header_action - computed: false, optional: true, required: false
+  private _headerAction = new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference(this, "header_action");
+  public get headerAction() {
+    return this._headerAction;
+  }
+  public putHeaderAction(value: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesHeaderAction) {
+    this._headerAction.internalValue = value;
+  }
+  public resetHeaderAction() {
+    this._headerAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerActionInput() {
+    return this._headerAction.internalValue;
+  }
+}
+
+export class GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference {
+    return new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapDefaultRouteAction {
   /**
   * cors_policy block
@@ -1611,9 +1988,9 @@ export class GoogleComputeUrlMapDefaultRouteActionOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.urlRewrite = this._urlRewrite?.internalValue;
     }
-    if (this._weightedBackendServices !== undefined) {
+    if (this._weightedBackendServices?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.weightedBackendServices = this._weightedBackendServices;
+      internalValueResult.weightedBackendServices = this._weightedBackendServices?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1627,7 +2004,7 @@ export class GoogleComputeUrlMapDefaultRouteActionOutputReference extends cdktf.
       this._retryPolicy.internalValue = undefined;
       this._timeout.internalValue = undefined;
       this._urlRewrite.internalValue = undefined;
-      this._weightedBackendServices = undefined;
+      this._weightedBackendServices.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1637,7 +2014,7 @@ export class GoogleComputeUrlMapDefaultRouteActionOutputReference extends cdktf.
       this._retryPolicy.internalValue = value.retryPolicy;
       this._timeout.internalValue = value.timeout;
       this._urlRewrite.internalValue = value.urlRewrite;
-      this._weightedBackendServices = value.weightedBackendServices;
+      this._weightedBackendServices.internalValue = value.weightedBackendServices;
     }
   }
 
@@ -1738,20 +2115,19 @@ export class GoogleComputeUrlMapDefaultRouteActionOutputReference extends cdktf.
   }
 
   // weighted_backend_services - computed: false, optional: true, required: false
-  private _weightedBackendServices?: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable; 
+  private _weightedBackendServices = new GoogleComputeUrlMapDefaultRouteActionWeightedBackendServicesList(this, "weighted_backend_services", false);
   public get weightedBackendServices() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('weighted_backend_services');
+    return this._weightedBackendServices;
   }
-  public set weightedBackendServices(value: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
-    this._weightedBackendServices = value;
+  public putWeightedBackendServices(value: GoogleComputeUrlMapDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
+    this._weightedBackendServices.internalValue = value;
   }
   public resetWeightedBackendServices() {
-    this._weightedBackendServices = undefined;
+    this._weightedBackendServices.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get weightedBackendServicesInput() {
-    return this._weightedBackendServices;
+    return this._weightedBackendServices.internalValue;
   }
 }
 export interface GoogleComputeUrlMapDefaultUrlRedirect {
@@ -2025,6 +2401,121 @@ export function googleComputeUrlMapHeaderActionRequestHeadersToAddToTerraform(st
   }
 }
 
+export class GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: false, required: true
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: false, required: true
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapHeaderActionRequestHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapHeaderActionResponseHeadersToAdd {
   /**
   * The name of the header.
@@ -2060,6 +2551,121 @@ export function googleComputeUrlMapHeaderActionResponseHeadersToAddToTerraform(s
   }
 }
 
+export class GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: false, required: true
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: false, required: true
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapHeaderActionResponseHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapHeaderAction {
   /**
   * A list of header names for headers that need to be removed from the request
@@ -2124,13 +2730,13 @@ export class GoogleComputeUrlMapHeaderActionOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.responseHeadersToRemove = this._responseHeadersToRemove;
     }
-    if (this._requestHeadersToAdd !== undefined) {
+    if (this._requestHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd;
+      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd?.internalValue;
     }
-    if (this._responseHeadersToAdd !== undefined) {
+    if (this._responseHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd;
+      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -2140,15 +2746,15 @@ export class GoogleComputeUrlMapHeaderActionOutputReference extends cdktf.Comple
       this.isEmptyObject = false;
       this._requestHeadersToRemove = undefined;
       this._responseHeadersToRemove = undefined;
-      this._requestHeadersToAdd = undefined;
-      this._responseHeadersToAdd = undefined;
+      this._requestHeadersToAdd.internalValue = undefined;
+      this._responseHeadersToAdd.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._requestHeadersToRemove = value.requestHeadersToRemove;
       this._responseHeadersToRemove = value.responseHeadersToRemove;
-      this._requestHeadersToAdd = value.requestHeadersToAdd;
-      this._responseHeadersToAdd = value.responseHeadersToAdd;
+      this._requestHeadersToAdd.internalValue = value.requestHeadersToAdd;
+      this._responseHeadersToAdd.internalValue = value.responseHeadersToAdd;
     }
   }
 
@@ -2185,37 +2791,35 @@ export class GoogleComputeUrlMapHeaderActionOutputReference extends cdktf.Comple
   }
 
   // request_headers_to_add - computed: false, optional: true, required: false
-  private _requestHeadersToAdd?: GoogleComputeUrlMapHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable; 
+  private _requestHeadersToAdd = new GoogleComputeUrlMapHeaderActionRequestHeadersToAddList(this, "request_headers_to_add", false);
   public get requestHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_headers_to_add');
+    return this._requestHeadersToAdd;
   }
-  public set requestHeadersToAdd(value: GoogleComputeUrlMapHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
-    this._requestHeadersToAdd = value;
+  public putRequestHeadersToAdd(value: GoogleComputeUrlMapHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+    this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
-    this._requestHeadersToAdd = undefined;
+    this._requestHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requestHeadersToAddInput() {
-    return this._requestHeadersToAdd;
+    return this._requestHeadersToAdd.internalValue;
   }
 
   // response_headers_to_add - computed: false, optional: true, required: false
-  private _responseHeadersToAdd?: GoogleComputeUrlMapHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable; 
+  private _responseHeadersToAdd = new GoogleComputeUrlMapHeaderActionResponseHeadersToAddList(this, "response_headers_to_add", false);
   public get responseHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_headers_to_add');
+    return this._responseHeadersToAdd;
   }
-  public set responseHeadersToAdd(value: GoogleComputeUrlMapHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
-    this._responseHeadersToAdd = value;
+  public putResponseHeadersToAdd(value: GoogleComputeUrlMapHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+    this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
-    this._responseHeadersToAdd = undefined;
+    this._responseHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responseHeadersToAddInput() {
-    return this._responseHeadersToAdd;
+    return this._responseHeadersToAdd.internalValue;
   }
 }
 export interface GoogleComputeUrlMapHostRule {
@@ -2255,6 +2859,124 @@ export function googleComputeUrlMapHostRuleToTerraform(struct?: GoogleComputeUrl
   }
 }
 
+export class GoogleComputeUrlMapHostRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapHostRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._hosts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hosts = this._hosts;
+    }
+    if (this._pathMatcher !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pathMatcher = this._pathMatcher;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapHostRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._hosts = undefined;
+      this._pathMatcher = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._hosts = value.hosts;
+      this._pathMatcher = value.pathMatcher;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // hosts - computed: false, optional: false, required: true
+  private _hosts?: string[]; 
+  public get hosts() {
+    return cdktf.Fn.tolist(this.getListAttribute('hosts'));
+  }
+  public set hosts(value: string[]) {
+    this._hosts = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostsInput() {
+    return this._hosts;
+  }
+
+  // path_matcher - computed: false, optional: false, required: true
+  private _pathMatcher?: string; 
+  public get pathMatcher() {
+    return this.getStringAttribute('path_matcher');
+  }
+  public set pathMatcher(value: string) {
+    this._pathMatcher = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathMatcherInput() {
+    return this._pathMatcher;
+  }
+}
+
+export class GoogleComputeUrlMapHostRuleList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapHostRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapHostRuleOutputReference {
+    return new GoogleComputeUrlMapHostRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherDefaultRouteActionCorsPolicy {
   /**
   * In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
@@ -3455,6 +4177,130 @@ export function googleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendS
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: true, required: false
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  public resetHeaderName() {
+    this._headerName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: true, required: false
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  public resetHeaderValue() {
+    this._headerValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: true, required: false
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  public resetReplace() {
+    this._replace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
   /**
   * The name of the header to add.
@@ -3489,6 +4335,130 @@ export function googleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendS
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: true, required: false
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  public resetHeaderName() {
+    this._headerName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: true, required: false
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  public resetHeaderValue() {
+    this._headerValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: true, required: false
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  public resetReplace() {
+    this._replace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction {
   /**
   * A list of header names for headers that need to be removed from the request prior to
@@ -3553,13 +4523,13 @@ export class GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
       hasAnyValues = true;
       internalValueResult.responseHeadersToRemove = this._responseHeadersToRemove;
     }
-    if (this._requestHeadersToAdd !== undefined) {
+    if (this._requestHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd;
+      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd?.internalValue;
     }
-    if (this._responseHeadersToAdd !== undefined) {
+    if (this._responseHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd;
+      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -3569,15 +4539,15 @@ export class GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
       this.isEmptyObject = false;
       this._requestHeadersToRemove = undefined;
       this._responseHeadersToRemove = undefined;
-      this._requestHeadersToAdd = undefined;
-      this._responseHeadersToAdd = undefined;
+      this._requestHeadersToAdd.internalValue = undefined;
+      this._responseHeadersToAdd.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._requestHeadersToRemove = value.requestHeadersToRemove;
       this._responseHeadersToRemove = value.responseHeadersToRemove;
-      this._requestHeadersToAdd = value.requestHeadersToAdd;
-      this._responseHeadersToAdd = value.responseHeadersToAdd;
+      this._requestHeadersToAdd.internalValue = value.requestHeadersToAdd;
+      this._responseHeadersToAdd.internalValue = value.responseHeadersToAdd;
     }
   }
 
@@ -3614,37 +4584,35 @@ export class GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServ
   }
 
   // request_headers_to_add - computed: false, optional: true, required: false
-  private _requestHeadersToAdd?: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable; 
+  private _requestHeadersToAdd = new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(this, "request_headers_to_add", false);
   public get requestHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_headers_to_add');
+    return this._requestHeadersToAdd;
   }
-  public set requestHeadersToAdd(value: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
-    this._requestHeadersToAdd = value;
+  public putRequestHeadersToAdd(value: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+    this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
-    this._requestHeadersToAdd = undefined;
+    this._requestHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requestHeadersToAddInput() {
-    return this._requestHeadersToAdd;
+    return this._requestHeadersToAdd.internalValue;
   }
 
   // response_headers_to_add - computed: false, optional: true, required: false
-  private _responseHeadersToAdd?: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable; 
+  private _responseHeadersToAdd = new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(this, "response_headers_to_add", false);
   public get responseHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_headers_to_add');
+    return this._responseHeadersToAdd;
   }
-  public set responseHeadersToAdd(value: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
-    this._responseHeadersToAdd = value;
+  public putResponseHeadersToAdd(value: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+    this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
-    this._responseHeadersToAdd = undefined;
+    this._responseHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responseHeadersToAddInput() {
-    return this._responseHeadersToAdd;
+    return this._responseHeadersToAdd.internalValue;
   }
 }
 export interface GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices {
@@ -3689,6 +4657,130 @@ export function googleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendS
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backendService !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backendService = this._backendService;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    if (this._headerAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerAction = this._headerAction?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._backendService = undefined;
+      this._weight = undefined;
+      this._headerAction.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._backendService = value.backendService;
+      this._weight = value.weight;
+      this._headerAction.internalValue = value.headerAction;
+    }
+  }
+
+  // backend_service - computed: false, optional: true, required: false
+  private _backendService?: string; 
+  public get backendService() {
+    return this.getStringAttribute('backend_service');
+  }
+  public set backendService(value: string) {
+    this._backendService = value;
+  }
+  public resetBackendService() {
+    this._backendService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backendServiceInput() {
+    return this._backendService;
+  }
+
+  // weight - computed: false, optional: true, required: false
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  public resetWeight() {
+    this._weight = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+
+  // header_action - computed: false, optional: true, required: false
+  private _headerAction = new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderActionOutputReference(this, "header_action");
+  public get headerAction() {
+    return this._headerAction;
+  }
+  public putHeaderAction(value: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesHeaderAction) {
+    this._headerAction.internalValue = value;
+  }
+  public resetHeaderAction() {
+    this._headerAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerActionInput() {
+    return this._headerAction.internalValue;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference {
+    return new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherDefaultRouteAction {
   /**
   * cors_policy block
@@ -3788,9 +4880,9 @@ export class GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference ext
       hasAnyValues = true;
       internalValueResult.urlRewrite = this._urlRewrite?.internalValue;
     }
-    if (this._weightedBackendServices !== undefined) {
+    if (this._weightedBackendServices?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.weightedBackendServices = this._weightedBackendServices;
+      internalValueResult.weightedBackendServices = this._weightedBackendServices?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -3804,7 +4896,7 @@ export class GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference ext
       this._retryPolicy.internalValue = undefined;
       this._timeout.internalValue = undefined;
       this._urlRewrite.internalValue = undefined;
-      this._weightedBackendServices = undefined;
+      this._weightedBackendServices.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -3814,7 +4906,7 @@ export class GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference ext
       this._retryPolicy.internalValue = value.retryPolicy;
       this._timeout.internalValue = value.timeout;
       this._urlRewrite.internalValue = value.urlRewrite;
-      this._weightedBackendServices = value.weightedBackendServices;
+      this._weightedBackendServices.internalValue = value.weightedBackendServices;
     }
   }
 
@@ -3915,20 +5007,19 @@ export class GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference ext
   }
 
   // weighted_backend_services - computed: false, optional: true, required: false
-  private _weightedBackendServices?: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable; 
+  private _weightedBackendServices = new GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServicesList(this, "weighted_backend_services", false);
   public get weightedBackendServices() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('weighted_backend_services');
+    return this._weightedBackendServices;
   }
-  public set weightedBackendServices(value: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
-    this._weightedBackendServices = value;
+  public putWeightedBackendServices(value: GoogleComputeUrlMapPathMatcherDefaultRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
+    this._weightedBackendServices.internalValue = value;
   }
   public resetWeightedBackendServices() {
-    this._weightedBackendServices = undefined;
+    this._weightedBackendServices.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get weightedBackendServicesInput() {
-    return this._weightedBackendServices;
+    return this._weightedBackendServices.internalValue;
   }
 }
 export interface GoogleComputeUrlMapPathMatcherDefaultUrlRedirect {
@@ -4202,6 +5293,121 @@ export function googleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddToT
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: false, required: true
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: false, required: true
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd {
   /**
   * The name of the header.
@@ -4237,6 +5443,121 @@ export function googleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddTo
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: false, required: true
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: false, required: true
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherHeaderAction {
   /**
   * A list of header names for headers that need to be removed from the request
@@ -4301,13 +5622,13 @@ export class GoogleComputeUrlMapPathMatcherHeaderActionOutputReference extends c
       hasAnyValues = true;
       internalValueResult.responseHeadersToRemove = this._responseHeadersToRemove;
     }
-    if (this._requestHeadersToAdd !== undefined) {
+    if (this._requestHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd;
+      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd?.internalValue;
     }
-    if (this._responseHeadersToAdd !== undefined) {
+    if (this._responseHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd;
+      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -4317,15 +5638,15 @@ export class GoogleComputeUrlMapPathMatcherHeaderActionOutputReference extends c
       this.isEmptyObject = false;
       this._requestHeadersToRemove = undefined;
       this._responseHeadersToRemove = undefined;
-      this._requestHeadersToAdd = undefined;
-      this._responseHeadersToAdd = undefined;
+      this._requestHeadersToAdd.internalValue = undefined;
+      this._responseHeadersToAdd.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._requestHeadersToRemove = value.requestHeadersToRemove;
       this._responseHeadersToRemove = value.responseHeadersToRemove;
-      this._requestHeadersToAdd = value.requestHeadersToAdd;
-      this._responseHeadersToAdd = value.responseHeadersToAdd;
+      this._requestHeadersToAdd.internalValue = value.requestHeadersToAdd;
+      this._responseHeadersToAdd.internalValue = value.responseHeadersToAdd;
     }
   }
 
@@ -4362,37 +5683,35 @@ export class GoogleComputeUrlMapPathMatcherHeaderActionOutputReference extends c
   }
 
   // request_headers_to_add - computed: false, optional: true, required: false
-  private _requestHeadersToAdd?: GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable; 
+  private _requestHeadersToAdd = new GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAddList(this, "request_headers_to_add", false);
   public get requestHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_headers_to_add');
+    return this._requestHeadersToAdd;
   }
-  public set requestHeadersToAdd(value: GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
-    this._requestHeadersToAdd = value;
+  public putRequestHeadersToAdd(value: GoogleComputeUrlMapPathMatcherHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+    this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
-    this._requestHeadersToAdd = undefined;
+    this._requestHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requestHeadersToAddInput() {
-    return this._requestHeadersToAdd;
+    return this._requestHeadersToAdd.internalValue;
   }
 
   // response_headers_to_add - computed: false, optional: true, required: false
-  private _responseHeadersToAdd?: GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable; 
+  private _responseHeadersToAdd = new GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAddList(this, "response_headers_to_add", false);
   public get responseHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_headers_to_add');
+    return this._responseHeadersToAdd;
   }
-  public set responseHeadersToAdd(value: GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
-    this._responseHeadersToAdd = value;
+  public putResponseHeadersToAdd(value: GoogleComputeUrlMapPathMatcherHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+    this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
-    this._responseHeadersToAdd = undefined;
+    this._responseHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responseHeadersToAddInput() {
-    return this._responseHeadersToAdd;
+    return this._responseHeadersToAdd.internalValue;
   }
 }
 export interface GoogleComputeUrlMapPathMatcherPathRuleRouteActionCorsPolicy {
@@ -5582,6 +6901,121 @@ export function googleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackend
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: false, required: true
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: false, required: true
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
   /**
   * The name of the header.
@@ -5617,6 +7051,121 @@ export function googleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackend
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: false, required: true
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: false, required: true
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction {
   /**
   * A list of header names for headers that need to be removed from the request
@@ -5681,13 +7230,13 @@ export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
       hasAnyValues = true;
       internalValueResult.responseHeadersToRemove = this._responseHeadersToRemove;
     }
-    if (this._requestHeadersToAdd !== undefined) {
+    if (this._requestHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd;
+      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd?.internalValue;
     }
-    if (this._responseHeadersToAdd !== undefined) {
+    if (this._responseHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd;
+      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -5697,15 +7246,15 @@ export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
       this.isEmptyObject = false;
       this._requestHeadersToRemove = undefined;
       this._responseHeadersToRemove = undefined;
-      this._requestHeadersToAdd = undefined;
-      this._responseHeadersToAdd = undefined;
+      this._requestHeadersToAdd.internalValue = undefined;
+      this._responseHeadersToAdd.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._requestHeadersToRemove = value.requestHeadersToRemove;
       this._responseHeadersToRemove = value.responseHeadersToRemove;
-      this._requestHeadersToAdd = value.requestHeadersToAdd;
-      this._responseHeadersToAdd = value.responseHeadersToAdd;
+      this._requestHeadersToAdd.internalValue = value.requestHeadersToAdd;
+      this._responseHeadersToAdd.internalValue = value.responseHeadersToAdd;
     }
   }
 
@@ -5742,37 +7291,35 @@ export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendSer
   }
 
   // request_headers_to_add - computed: false, optional: true, required: false
-  private _requestHeadersToAdd?: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable; 
+  private _requestHeadersToAdd = new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(this, "request_headers_to_add", false);
   public get requestHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_headers_to_add');
+    return this._requestHeadersToAdd;
   }
-  public set requestHeadersToAdd(value: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
-    this._requestHeadersToAdd = value;
+  public putRequestHeadersToAdd(value: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+    this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
-    this._requestHeadersToAdd = undefined;
+    this._requestHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requestHeadersToAddInput() {
-    return this._requestHeadersToAdd;
+    return this._requestHeadersToAdd.internalValue;
   }
 
   // response_headers_to_add - computed: false, optional: true, required: false
-  private _responseHeadersToAdd?: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable; 
+  private _responseHeadersToAdd = new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(this, "response_headers_to_add", false);
   public get responseHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_headers_to_add');
+    return this._responseHeadersToAdd;
   }
-  public set responseHeadersToAdd(value: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
-    this._responseHeadersToAdd = value;
+  public putResponseHeadersToAdd(value: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+    this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
-    this._responseHeadersToAdd = undefined;
+    this._responseHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responseHeadersToAddInput() {
-    return this._responseHeadersToAdd;
+    return this._responseHeadersToAdd.internalValue;
   }
 }
 export interface GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices {
@@ -5815,6 +7362,124 @@ export function googleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackend
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backendService !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backendService = this._backendService;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    if (this._headerAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerAction = this._headerAction?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._backendService = undefined;
+      this._weight = undefined;
+      this._headerAction.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._backendService = value.backendService;
+      this._weight = value.weight;
+      this._headerAction.internalValue = value.headerAction;
+    }
+  }
+
+  // backend_service - computed: false, optional: false, required: true
+  private _backendService?: string; 
+  public get backendService() {
+    return this.getStringAttribute('backend_service');
+  }
+  public set backendService(value: string) {
+    this._backendService = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backendServiceInput() {
+    return this._backendService;
+  }
+
+  // weight - computed: false, optional: false, required: true
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+
+  // header_action - computed: false, optional: true, required: false
+  private _headerAction = new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderActionOutputReference(this, "header_action");
+  public get headerAction() {
+    return this._headerAction;
+  }
+  public putHeaderAction(value: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesHeaderAction) {
+    this._headerAction.internalValue = value;
+  }
+  public resetHeaderAction() {
+    this._headerAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerActionInput() {
+    return this._headerAction.internalValue;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference {
+    return new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherPathRuleRouteAction {
   /**
   * cors_policy block
@@ -5914,9 +7579,9 @@ export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference ex
       hasAnyValues = true;
       internalValueResult.urlRewrite = this._urlRewrite?.internalValue;
     }
-    if (this._weightedBackendServices !== undefined) {
+    if (this._weightedBackendServices?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.weightedBackendServices = this._weightedBackendServices;
+      internalValueResult.weightedBackendServices = this._weightedBackendServices?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -5930,7 +7595,7 @@ export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference ex
       this._retryPolicy.internalValue = undefined;
       this._timeout.internalValue = undefined;
       this._urlRewrite.internalValue = undefined;
-      this._weightedBackendServices = undefined;
+      this._weightedBackendServices.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -5940,7 +7605,7 @@ export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference ex
       this._retryPolicy.internalValue = value.retryPolicy;
       this._timeout.internalValue = value.timeout;
       this._urlRewrite.internalValue = value.urlRewrite;
-      this._weightedBackendServices = value.weightedBackendServices;
+      this._weightedBackendServices.internalValue = value.weightedBackendServices;
     }
   }
 
@@ -6041,20 +7706,19 @@ export class GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference ex
   }
 
   // weighted_backend_services - computed: false, optional: true, required: false
-  private _weightedBackendServices?: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] | cdktf.IResolvable; 
+  private _weightedBackendServices = new GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServicesList(this, "weighted_backend_services", false);
   public get weightedBackendServices() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('weighted_backend_services');
+    return this._weightedBackendServices;
   }
-  public set weightedBackendServices(value: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
-    this._weightedBackendServices = value;
+  public putWeightedBackendServices(value: GoogleComputeUrlMapPathMatcherPathRuleRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
+    this._weightedBackendServices.internalValue = value;
   }
   public resetWeightedBackendServices() {
-    this._weightedBackendServices = undefined;
+    this._weightedBackendServices.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get weightedBackendServicesInput() {
-    return this._weightedBackendServices;
+    return this._weightedBackendServices.internalValue;
   }
 }
 export interface GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect {
@@ -6339,6 +8003,149 @@ export function googleComputeUrlMapPathMatcherPathRuleToTerraform(struct?: Googl
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherPathRuleOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherPathRule | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._paths !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.paths = this._paths;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    if (this._routeAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routeAction = this._routeAction?.internalValue;
+    }
+    if (this._urlRedirect?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.urlRedirect = this._urlRedirect?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherPathRule | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._paths = undefined;
+      this._service = undefined;
+      this._routeAction.internalValue = undefined;
+      this._urlRedirect.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._paths = value.paths;
+      this._service = value.service;
+      this._routeAction.internalValue = value.routeAction;
+      this._urlRedirect.internalValue = value.urlRedirect;
+    }
+  }
+
+  // paths - computed: false, optional: false, required: true
+  private _paths?: string[]; 
+  public get paths() {
+    return cdktf.Fn.tolist(this.getListAttribute('paths'));
+  }
+  public set paths(value: string[]) {
+    this._paths = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathsInput() {
+    return this._paths;
+  }
+
+  // service - computed: false, optional: true, required: false
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  public resetService() {
+    this._service = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+
+  // route_action - computed: false, optional: true, required: false
+  private _routeAction = new GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference(this, "route_action");
+  public get routeAction() {
+    return this._routeAction;
+  }
+  public putRouteAction(value: GoogleComputeUrlMapPathMatcherPathRuleRouteAction) {
+    this._routeAction.internalValue = value;
+  }
+  public resetRouteAction() {
+    this._routeAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeActionInput() {
+    return this._routeAction.internalValue;
+  }
+
+  // url_redirect - computed: false, optional: true, required: false
+  private _urlRedirect = new GoogleComputeUrlMapPathMatcherPathRuleUrlRedirectOutputReference(this, "url_redirect");
+  public get urlRedirect() {
+    return this._urlRedirect;
+  }
+  public putUrlRedirect(value: GoogleComputeUrlMapPathMatcherPathRuleUrlRedirect) {
+    this._urlRedirect.internalValue = value;
+  }
+  public resetUrlRedirect() {
+    this._urlRedirect.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlRedirectInput() {
+    return this._urlRedirect.internalValue;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherPathRuleList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherPathRule[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherPathRuleOutputReference {
+    return new GoogleComputeUrlMapPathMatcherPathRuleOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd {
   /**
   * The name of the header.
@@ -6374,6 +8181,121 @@ export function googleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeade
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: false, required: true
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: false, required: true
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd {
   /**
   * The name of the header.
@@ -6409,6 +8331,121 @@ export function googleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHead
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: false, required: true
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: false, required: true
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction {
   /**
   * A list of header names for headers that need to be removed from the request
@@ -6473,13 +8510,13 @@ export class GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference
       hasAnyValues = true;
       internalValueResult.responseHeadersToRemove = this._responseHeadersToRemove;
     }
-    if (this._requestHeadersToAdd !== undefined) {
+    if (this._requestHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd;
+      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd?.internalValue;
     }
-    if (this._responseHeadersToAdd !== undefined) {
+    if (this._responseHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd;
+      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -6489,15 +8526,15 @@ export class GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference
       this.isEmptyObject = false;
       this._requestHeadersToRemove = undefined;
       this._responseHeadersToRemove = undefined;
-      this._requestHeadersToAdd = undefined;
-      this._responseHeadersToAdd = undefined;
+      this._requestHeadersToAdd.internalValue = undefined;
+      this._responseHeadersToAdd.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._requestHeadersToRemove = value.requestHeadersToRemove;
       this._responseHeadersToRemove = value.responseHeadersToRemove;
-      this._requestHeadersToAdd = value.requestHeadersToAdd;
-      this._responseHeadersToAdd = value.responseHeadersToAdd;
+      this._requestHeadersToAdd.internalValue = value.requestHeadersToAdd;
+      this._responseHeadersToAdd.internalValue = value.responseHeadersToAdd;
     }
   }
 
@@ -6534,37 +8571,35 @@ export class GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference
   }
 
   // request_headers_to_add - computed: false, optional: true, required: false
-  private _requestHeadersToAdd?: GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable; 
+  private _requestHeadersToAdd = new GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAddList(this, "request_headers_to_add", false);
   public get requestHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_headers_to_add');
+    return this._requestHeadersToAdd;
   }
-  public set requestHeadersToAdd(value: GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
-    this._requestHeadersToAdd = value;
+  public putRequestHeadersToAdd(value: GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+    this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
-    this._requestHeadersToAdd = undefined;
+    this._requestHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requestHeadersToAddInput() {
-    return this._requestHeadersToAdd;
+    return this._requestHeadersToAdd.internalValue;
   }
 
   // response_headers_to_add - computed: false, optional: true, required: false
-  private _responseHeadersToAdd?: GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable; 
+  private _responseHeadersToAdd = new GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAddList(this, "response_headers_to_add", false);
   public get responseHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_headers_to_add');
+    return this._responseHeadersToAdd;
   }
-  public set responseHeadersToAdd(value: GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
-    this._responseHeadersToAdd = value;
+  public putResponseHeadersToAdd(value: GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+    this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
-    this._responseHeadersToAdd = undefined;
+    this._responseHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responseHeadersToAddInput() {
-    return this._responseHeadersToAdd;
+    return this._responseHeadersToAdd.internalValue;
   }
 }
 export interface GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch {
@@ -6742,6 +8777,237 @@ export function googleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesT
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exactMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exactMatch = this._exactMatch;
+    }
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._invertMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invertMatch = this._invertMatch;
+    }
+    if (this._prefixMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefixMatch = this._prefixMatch;
+    }
+    if (this._presentMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.presentMatch = this._presentMatch;
+    }
+    if (this._regexMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regexMatch = this._regexMatch;
+    }
+    if (this._suffixMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.suffixMatch = this._suffixMatch;
+    }
+    if (this._rangeMatch?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeMatch = this._rangeMatch?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._exactMatch = undefined;
+      this._headerName = undefined;
+      this._invertMatch = undefined;
+      this._prefixMatch = undefined;
+      this._presentMatch = undefined;
+      this._regexMatch = undefined;
+      this._suffixMatch = undefined;
+      this._rangeMatch.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._exactMatch = value.exactMatch;
+      this._headerName = value.headerName;
+      this._invertMatch = value.invertMatch;
+      this._prefixMatch = value.prefixMatch;
+      this._presentMatch = value.presentMatch;
+      this._regexMatch = value.regexMatch;
+      this._suffixMatch = value.suffixMatch;
+      this._rangeMatch.internalValue = value.rangeMatch;
+    }
+  }
+
+  // exact_match - computed: false, optional: true, required: false
+  private _exactMatch?: string; 
+  public get exactMatch() {
+    return this.getStringAttribute('exact_match');
+  }
+  public set exactMatch(value: string) {
+    this._exactMatch = value;
+  }
+  public resetExactMatch() {
+    this._exactMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactMatchInput() {
+    return this._exactMatch;
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // invert_match - computed: false, optional: true, required: false
+  private _invertMatch?: boolean | cdktf.IResolvable; 
+  public get invertMatch() {
+    return this.getBooleanAttribute('invert_match');
+  }
+  public set invertMatch(value: boolean | cdktf.IResolvable) {
+    this._invertMatch = value;
+  }
+  public resetInvertMatch() {
+    this._invertMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invertMatchInput() {
+    return this._invertMatch;
+  }
+
+  // prefix_match - computed: false, optional: true, required: false
+  private _prefixMatch?: string; 
+  public get prefixMatch() {
+    return this.getStringAttribute('prefix_match');
+  }
+  public set prefixMatch(value: string) {
+    this._prefixMatch = value;
+  }
+  public resetPrefixMatch() {
+    this._prefixMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixMatchInput() {
+    return this._prefixMatch;
+  }
+
+  // present_match - computed: false, optional: true, required: false
+  private _presentMatch?: boolean | cdktf.IResolvable; 
+  public get presentMatch() {
+    return this.getBooleanAttribute('present_match');
+  }
+  public set presentMatch(value: boolean | cdktf.IResolvable) {
+    this._presentMatch = value;
+  }
+  public resetPresentMatch() {
+    this._presentMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get presentMatchInput() {
+    return this._presentMatch;
+  }
+
+  // regex_match - computed: false, optional: true, required: false
+  private _regexMatch?: string; 
+  public get regexMatch() {
+    return this.getStringAttribute('regex_match');
+  }
+  public set regexMatch(value: string) {
+    this._regexMatch = value;
+  }
+  public resetRegexMatch() {
+    this._regexMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexMatchInput() {
+    return this._regexMatch;
+  }
+
+  // suffix_match - computed: false, optional: true, required: false
+  private _suffixMatch?: string; 
+  public get suffixMatch() {
+    return this.getStringAttribute('suffix_match');
+  }
+  public set suffixMatch(value: string) {
+    this._suffixMatch = value;
+  }
+  public resetSuffixMatch() {
+    this._suffixMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get suffixMatchInput() {
+    return this._suffixMatch;
+  }
+
+  // range_match - computed: false, optional: true, required: false
+  private _rangeMatch = new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatchOutputReference(this, "range_match");
+  public get rangeMatch() {
+    return this._rangeMatch;
+  }
+  public putRangeMatch(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesRangeMatch) {
+    this._rangeMatch.internalValue = value;
+  }
+  public resetRangeMatch() {
+    this._rangeMatch.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeMatchInput() {
+    return this._rangeMatch.internalValue;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels {
   /**
   * Name of metadata label. The name can have a maximum length of 1024 characters
@@ -6770,6 +9036,102 @@ export function googleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilter
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters {
   /**
   * Specifies how individual filterLabel matches within the list of filterLabels
@@ -6801,6 +9163,102 @@ export function googleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilter
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filterMatchCriteria !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterMatchCriteria = this._filterMatchCriteria;
+    }
+    if (this._filterLabels?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterLabels = this._filterLabels?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._filterMatchCriteria = undefined;
+      this._filterLabels.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._filterMatchCriteria = value.filterMatchCriteria;
+      this._filterLabels.internalValue = value.filterLabels;
+    }
+  }
+
+  // filter_match_criteria - computed: false, optional: false, required: true
+  private _filterMatchCriteria?: string; 
+  public get filterMatchCriteria() {
+    return this.getStringAttribute('filter_match_criteria');
+  }
+  public set filterMatchCriteria(value: string) {
+    this._filterMatchCriteria = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterMatchCriteriaInput() {
+    return this._filterMatchCriteria;
+  }
+
+  // filter_labels - computed: false, optional: false, required: true
+  private _filterLabels = new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabelsList(this, "filter_labels", false);
+  public get filterLabels() {
+    return this._filterLabels;
+  }
+  public putFilterLabels(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersFilterLabels[] | cdktf.IResolvable) {
+    this._filterLabels.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterLabelsInput() {
+    return this._filterLabels.internalValue;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches {
   /**
   * The queryParameterMatch matches if the value of the parameter exactly matches
@@ -6849,6 +9307,149 @@ export function googleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameter
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exactMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exactMatch = this._exactMatch;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._presentMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.presentMatch = this._presentMatch;
+    }
+    if (this._regexMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regexMatch = this._regexMatch;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._exactMatch = undefined;
+      this._name = undefined;
+      this._presentMatch = undefined;
+      this._regexMatch = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._exactMatch = value.exactMatch;
+      this._name = value.name;
+      this._presentMatch = value.presentMatch;
+      this._regexMatch = value.regexMatch;
+    }
+  }
+
+  // exact_match - computed: false, optional: true, required: false
+  private _exactMatch?: string; 
+  public get exactMatch() {
+    return this.getStringAttribute('exact_match');
+  }
+  public set exactMatch(value: string) {
+    this._exactMatch = value;
+  }
+  public resetExactMatch() {
+    this._exactMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exactMatchInput() {
+    return this._exactMatch;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // present_match - computed: false, optional: true, required: false
+  private _presentMatch?: boolean | cdktf.IResolvable; 
+  public get presentMatch() {
+    return this.getBooleanAttribute('present_match');
+  }
+  public set presentMatch(value: boolean | cdktf.IResolvable) {
+    this._presentMatch = value;
+  }
+  public resetPresentMatch() {
+    this._presentMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get presentMatchInput() {
+    return this._presentMatch;
+  }
+
+  // regex_match - computed: false, optional: true, required: false
+  private _regexMatch?: string; 
+  public get regexMatch() {
+    return this.getStringAttribute('regex_match');
+  }
+  public set regexMatch(value: string) {
+    this._regexMatch = value;
+  }
+  public resetRegexMatch() {
+    this._regexMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexMatchInput() {
+    return this._regexMatch;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesMatchRules {
   /**
   * For satisfying the matchRule condition, the path of the request must exactly
@@ -6922,6 +9523,218 @@ export function googleComputeUrlMapPathMatcherRouteRulesMatchRulesToTerraform(st
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRulesMatchRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fullPathMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fullPathMatch = this._fullPathMatch;
+    }
+    if (this._ignoreCase !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ignoreCase = this._ignoreCase;
+    }
+    if (this._prefixMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prefixMatch = this._prefixMatch;
+    }
+    if (this._regexMatch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regexMatch = this._regexMatch;
+    }
+    if (this._headerMatches?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerMatches = this._headerMatches?.internalValue;
+    }
+    if (this._metadataFilters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metadataFilters = this._metadataFilters?.internalValue;
+    }
+    if (this._queryParameterMatches?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queryParameterMatches = this._queryParameterMatches?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._fullPathMatch = undefined;
+      this._ignoreCase = undefined;
+      this._prefixMatch = undefined;
+      this._regexMatch = undefined;
+      this._headerMatches.internalValue = undefined;
+      this._metadataFilters.internalValue = undefined;
+      this._queryParameterMatches.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._fullPathMatch = value.fullPathMatch;
+      this._ignoreCase = value.ignoreCase;
+      this._prefixMatch = value.prefixMatch;
+      this._regexMatch = value.regexMatch;
+      this._headerMatches.internalValue = value.headerMatches;
+      this._metadataFilters.internalValue = value.metadataFilters;
+      this._queryParameterMatches.internalValue = value.queryParameterMatches;
+    }
+  }
+
+  // full_path_match - computed: false, optional: true, required: false
+  private _fullPathMatch?: string; 
+  public get fullPathMatch() {
+    return this.getStringAttribute('full_path_match');
+  }
+  public set fullPathMatch(value: string) {
+    this._fullPathMatch = value;
+  }
+  public resetFullPathMatch() {
+    this._fullPathMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fullPathMatchInput() {
+    return this._fullPathMatch;
+  }
+
+  // ignore_case - computed: false, optional: true, required: false
+  private _ignoreCase?: boolean | cdktf.IResolvable; 
+  public get ignoreCase() {
+    return this.getBooleanAttribute('ignore_case');
+  }
+  public set ignoreCase(value: boolean | cdktf.IResolvable) {
+    this._ignoreCase = value;
+  }
+  public resetIgnoreCase() {
+    this._ignoreCase = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreCaseInput() {
+    return this._ignoreCase;
+  }
+
+  // prefix_match - computed: false, optional: true, required: false
+  private _prefixMatch?: string; 
+  public get prefixMatch() {
+    return this.getStringAttribute('prefix_match');
+  }
+  public set prefixMatch(value: string) {
+    this._prefixMatch = value;
+  }
+  public resetPrefixMatch() {
+    this._prefixMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixMatchInput() {
+    return this._prefixMatch;
+  }
+
+  // regex_match - computed: false, optional: true, required: false
+  private _regexMatch?: string; 
+  public get regexMatch() {
+    return this.getStringAttribute('regex_match');
+  }
+  public set regexMatch(value: string) {
+    this._regexMatch = value;
+  }
+  public resetRegexMatch() {
+    this._regexMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexMatchInput() {
+    return this._regexMatch;
+  }
+
+  // header_matches - computed: false, optional: true, required: false
+  private _headerMatches = new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatchesList(this, "header_matches", false);
+  public get headerMatches() {
+    return this._headerMatches;
+  }
+  public putHeaderMatches(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesHeaderMatches[] | cdktf.IResolvable) {
+    this._headerMatches.internalValue = value;
+  }
+  public resetHeaderMatches() {
+    this._headerMatches.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerMatchesInput() {
+    return this._headerMatches.internalValue;
+  }
+
+  // metadata_filters - computed: false, optional: true, required: false
+  private _metadataFilters = new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFiltersList(this, "metadata_filters", false);
+  public get metadataFilters() {
+    return this._metadataFilters;
+  }
+  public putMetadataFilters(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesMetadataFilters[] | cdktf.IResolvable) {
+    this._metadataFilters.internalValue = value;
+  }
+  public resetMetadataFilters() {
+    this._metadataFilters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataFiltersInput() {
+    return this._metadataFilters.internalValue;
+  }
+
+  // query_parameter_matches - computed: false, optional: true, required: false
+  private _queryParameterMatches = new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatchesList(this, "query_parameter_matches", false);
+  public get queryParameterMatches() {
+    return this._queryParameterMatches;
+  }
+  public putQueryParameterMatches(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesQueryParameterMatches[] | cdktf.IResolvable) {
+    this._queryParameterMatches.internalValue = value;
+  }
+  public resetQueryParameterMatches() {
+    this._queryParameterMatches.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryParameterMatchesInput() {
+    return this._queryParameterMatches.internalValue;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRulesMatchRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesRouteActionCorsPolicy {
   /**
   * In response to a preflight request, setting this to true indicates that the
@@ -8122,6 +10935,121 @@ export function googleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBacke
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: false, required: true
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: false, required: true
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd {
   /**
   * The name of the header.
@@ -8157,6 +11085,121 @@ export function googleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBacke
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    if (this._replace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replace = this._replace;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+      this._replace = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+      this._replace = value.replace;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: false, required: true
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+
+  // replace - computed: false, optional: false, required: true
+  private _replace?: boolean | cdktf.IResolvable; 
+  public get replace() {
+    return this.getBooleanAttribute('replace');
+  }
+  public set replace(value: boolean | cdktf.IResolvable) {
+    this._replace = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceInput() {
+    return this._replace;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction {
   /**
   * A list of header names for headers that need to be removed from the request
@@ -8221,13 +11264,13 @@ export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
       hasAnyValues = true;
       internalValueResult.responseHeadersToRemove = this._responseHeadersToRemove;
     }
-    if (this._requestHeadersToAdd !== undefined) {
+    if (this._requestHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd;
+      internalValueResult.requestHeadersToAdd = this._requestHeadersToAdd?.internalValue;
     }
-    if (this._responseHeadersToAdd !== undefined) {
+    if (this._responseHeadersToAdd?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd;
+      internalValueResult.responseHeadersToAdd = this._responseHeadersToAdd?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -8237,15 +11280,15 @@ export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
       this.isEmptyObject = false;
       this._requestHeadersToRemove = undefined;
       this._responseHeadersToRemove = undefined;
-      this._requestHeadersToAdd = undefined;
-      this._responseHeadersToAdd = undefined;
+      this._requestHeadersToAdd.internalValue = undefined;
+      this._responseHeadersToAdd.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._requestHeadersToRemove = value.requestHeadersToRemove;
       this._responseHeadersToRemove = value.responseHeadersToRemove;
-      this._requestHeadersToAdd = value.requestHeadersToAdd;
-      this._responseHeadersToAdd = value.responseHeadersToAdd;
+      this._requestHeadersToAdd.internalValue = value.requestHeadersToAdd;
+      this._responseHeadersToAdd.internalValue = value.responseHeadersToAdd;
     }
   }
 
@@ -8282,37 +11325,35 @@ export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendS
   }
 
   // request_headers_to_add - computed: false, optional: true, required: false
-  private _requestHeadersToAdd?: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable; 
+  private _requestHeadersToAdd = new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAddList(this, "request_headers_to_add", false);
   public get requestHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('request_headers_to_add');
+    return this._requestHeadersToAdd;
   }
-  public set requestHeadersToAdd(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
-    this._requestHeadersToAdd = value;
+  public putRequestHeadersToAdd(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionRequestHeadersToAdd[] | cdktf.IResolvable) {
+    this._requestHeadersToAdd.internalValue = value;
   }
   public resetRequestHeadersToAdd() {
-    this._requestHeadersToAdd = undefined;
+    this._requestHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requestHeadersToAddInput() {
-    return this._requestHeadersToAdd;
+    return this._requestHeadersToAdd.internalValue;
   }
 
   // response_headers_to_add - computed: false, optional: true, required: false
-  private _responseHeadersToAdd?: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable; 
+  private _responseHeadersToAdd = new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAddList(this, "response_headers_to_add", false);
   public get responseHeadersToAdd() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('response_headers_to_add');
+    return this._responseHeadersToAdd;
   }
-  public set responseHeadersToAdd(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
-    this._responseHeadersToAdd = value;
+  public putResponseHeadersToAdd(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionResponseHeadersToAdd[] | cdktf.IResolvable) {
+    this._responseHeadersToAdd.internalValue = value;
   }
   public resetResponseHeadersToAdd() {
-    this._responseHeadersToAdd = undefined;
+    this._responseHeadersToAdd.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get responseHeadersToAddInput() {
-    return this._responseHeadersToAdd;
+    return this._responseHeadersToAdd.internalValue;
   }
 }
 export interface GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices {
@@ -8355,6 +11396,124 @@ export function googleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBacke
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backendService !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backendService = this._backendService;
+    }
+    if (this._weight !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.weight = this._weight;
+    }
+    if (this._headerAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerAction = this._headerAction?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._backendService = undefined;
+      this._weight = undefined;
+      this._headerAction.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._backendService = value.backendService;
+      this._weight = value.weight;
+      this._headerAction.internalValue = value.headerAction;
+    }
+  }
+
+  // backend_service - computed: false, optional: false, required: true
+  private _backendService?: string; 
+  public get backendService() {
+    return this.getStringAttribute('backend_service');
+  }
+  public set backendService(value: string) {
+    this._backendService = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backendServiceInput() {
+    return this._backendService;
+  }
+
+  // weight - computed: false, optional: false, required: true
+  private _weight?: number; 
+  public get weight() {
+    return this.getNumberAttribute('weight');
+  }
+  public set weight(value: number) {
+    this._weight = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get weightInput() {
+    return this._weight;
+  }
+
+  // header_action - computed: false, optional: true, required: false
+  private _headerAction = new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderActionOutputReference(this, "header_action");
+  public get headerAction() {
+    return this._headerAction;
+  }
+  public putHeaderAction(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesHeaderAction) {
+    this._headerAction.internalValue = value;
+  }
+  public resetHeaderAction() {
+    this._headerAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerActionInput() {
+    return this._headerAction.internalValue;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcherRouteRulesRouteAction {
   /**
   * cors_policy block
@@ -8454,9 +11613,9 @@ export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference 
       hasAnyValues = true;
       internalValueResult.urlRewrite = this._urlRewrite?.internalValue;
     }
-    if (this._weightedBackendServices !== undefined) {
+    if (this._weightedBackendServices?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.weightedBackendServices = this._weightedBackendServices;
+      internalValueResult.weightedBackendServices = this._weightedBackendServices?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -8470,7 +11629,7 @@ export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference 
       this._retryPolicy.internalValue = undefined;
       this._timeout.internalValue = undefined;
       this._urlRewrite.internalValue = undefined;
-      this._weightedBackendServices = undefined;
+      this._weightedBackendServices.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -8480,7 +11639,7 @@ export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference 
       this._retryPolicy.internalValue = value.retryPolicy;
       this._timeout.internalValue = value.timeout;
       this._urlRewrite.internalValue = value.urlRewrite;
-      this._weightedBackendServices = value.weightedBackendServices;
+      this._weightedBackendServices.internalValue = value.weightedBackendServices;
     }
   }
 
@@ -8581,20 +11740,19 @@ export class GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference 
   }
 
   // weighted_backend_services - computed: false, optional: true, required: false
-  private _weightedBackendServices?: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktf.IResolvable; 
+  private _weightedBackendServices = new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServicesList(this, "weighted_backend_services", false);
   public get weightedBackendServices() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('weighted_backend_services');
+    return this._weightedBackendServices;
   }
-  public set weightedBackendServices(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
-    this._weightedBackendServices = value;
+  public putWeightedBackendServices(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteActionWeightedBackendServices[] | cdktf.IResolvable) {
+    this._weightedBackendServices.internalValue = value;
   }
   public resetWeightedBackendServices() {
-    this._weightedBackendServices = undefined;
+    this._weightedBackendServices.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get weightedBackendServicesInput() {
-    return this._weightedBackendServices;
+    return this._weightedBackendServices.internalValue;
   }
 }
 export interface GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect {
@@ -8902,6 +12060,193 @@ export function googleComputeUrlMapPathMatcherRouteRulesToTerraform(struct?: Goo
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherRouteRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcherRouteRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    if (this._headerAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerAction = this._headerAction?.internalValue;
+    }
+    if (this._matchRules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchRules = this._matchRules?.internalValue;
+    }
+    if (this._routeAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routeAction = this._routeAction?.internalValue;
+    }
+    if (this._urlRedirect?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.urlRedirect = this._urlRedirect?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcherRouteRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._priority = undefined;
+      this._service = undefined;
+      this._headerAction.internalValue = undefined;
+      this._matchRules.internalValue = undefined;
+      this._routeAction.internalValue = undefined;
+      this._urlRedirect.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._priority = value.priority;
+      this._service = value.service;
+      this._headerAction.internalValue = value.headerAction;
+      this._matchRules.internalValue = value.matchRules;
+      this._routeAction.internalValue = value.routeAction;
+      this._urlRedirect.internalValue = value.urlRedirect;
+    }
+  }
+
+  // priority - computed: false, optional: false, required: true
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // service - computed: false, optional: true, required: false
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  public resetService() {
+    this._service = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+
+  // header_action - computed: false, optional: true, required: false
+  private _headerAction = new GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference(this, "header_action");
+  public get headerAction() {
+    return this._headerAction;
+  }
+  public putHeaderAction(value: GoogleComputeUrlMapPathMatcherRouteRulesHeaderAction) {
+    this._headerAction.internalValue = value;
+  }
+  public resetHeaderAction() {
+    this._headerAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerActionInput() {
+    return this._headerAction.internalValue;
+  }
+
+  // match_rules - computed: false, optional: true, required: false
+  private _matchRules = new GoogleComputeUrlMapPathMatcherRouteRulesMatchRulesList(this, "match_rules", false);
+  public get matchRules() {
+    return this._matchRules;
+  }
+  public putMatchRules(value: GoogleComputeUrlMapPathMatcherRouteRulesMatchRules[] | cdktf.IResolvable) {
+    this._matchRules.internalValue = value;
+  }
+  public resetMatchRules() {
+    this._matchRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchRulesInput() {
+    return this._matchRules.internalValue;
+  }
+
+  // route_action - computed: false, optional: true, required: false
+  private _routeAction = new GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference(this, "route_action");
+  public get routeAction() {
+    return this._routeAction;
+  }
+  public putRouteAction(value: GoogleComputeUrlMapPathMatcherRouteRulesRouteAction) {
+    this._routeAction.internalValue = value;
+  }
+  public resetRouteAction() {
+    this._routeAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeActionInput() {
+    return this._routeAction.internalValue;
+  }
+
+  // url_redirect - computed: false, optional: true, required: false
+  private _urlRedirect = new GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirectOutputReference(this, "url_redirect");
+  public get urlRedirect() {
+    return this._urlRedirect;
+  }
+  public putUrlRedirect(value: GoogleComputeUrlMapPathMatcherRouteRulesUrlRedirect) {
+    this._urlRedirect.internalValue = value;
+  }
+  public resetUrlRedirect() {
+    this._urlRedirect.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlRedirectInput() {
+    return this._urlRedirect.internalValue;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherRouteRulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcherRouteRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherRouteRulesOutputReference {
+    return new GoogleComputeUrlMapPathMatcherRouteRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapPathMatcher {
   /**
   * The backend service or backend bucket to use when none of the given paths match.
@@ -8971,6 +12316,237 @@ export function googleComputeUrlMapPathMatcherToTerraform(struct?: GoogleCompute
   }
 }
 
+export class GoogleComputeUrlMapPathMatcherOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapPathMatcher | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._defaultService !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultService = this._defaultService;
+    }
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._defaultRouteAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultRouteAction = this._defaultRouteAction?.internalValue;
+    }
+    if (this._defaultUrlRedirect?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.defaultUrlRedirect = this._defaultUrlRedirect?.internalValue;
+    }
+    if (this._headerAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerAction = this._headerAction?.internalValue;
+    }
+    if (this._pathRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pathRule = this._pathRule?.internalValue;
+    }
+    if (this._routeRules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.routeRules = this._routeRules?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapPathMatcher | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._defaultService = undefined;
+      this._description = undefined;
+      this._name = undefined;
+      this._defaultRouteAction.internalValue = undefined;
+      this._defaultUrlRedirect.internalValue = undefined;
+      this._headerAction.internalValue = undefined;
+      this._pathRule.internalValue = undefined;
+      this._routeRules.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._defaultService = value.defaultService;
+      this._description = value.description;
+      this._name = value.name;
+      this._defaultRouteAction.internalValue = value.defaultRouteAction;
+      this._defaultUrlRedirect.internalValue = value.defaultUrlRedirect;
+      this._headerAction.internalValue = value.headerAction;
+      this._pathRule.internalValue = value.pathRule;
+      this._routeRules.internalValue = value.routeRules;
+    }
+  }
+
+  // default_service - computed: false, optional: true, required: false
+  private _defaultService?: string; 
+  public get defaultService() {
+    return this.getStringAttribute('default_service');
+  }
+  public set defaultService(value: string) {
+    this._defaultService = value;
+  }
+  public resetDefaultService() {
+    this._defaultService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultServiceInput() {
+    return this._defaultService;
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // default_route_action - computed: false, optional: true, required: false
+  private _defaultRouteAction = new GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference(this, "default_route_action");
+  public get defaultRouteAction() {
+    return this._defaultRouteAction;
+  }
+  public putDefaultRouteAction(value: GoogleComputeUrlMapPathMatcherDefaultRouteAction) {
+    this._defaultRouteAction.internalValue = value;
+  }
+  public resetDefaultRouteAction() {
+    this._defaultRouteAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultRouteActionInput() {
+    return this._defaultRouteAction.internalValue;
+  }
+
+  // default_url_redirect - computed: false, optional: true, required: false
+  private _defaultUrlRedirect = new GoogleComputeUrlMapPathMatcherDefaultUrlRedirectOutputReference(this, "default_url_redirect");
+  public get defaultUrlRedirect() {
+    return this._defaultUrlRedirect;
+  }
+  public putDefaultUrlRedirect(value: GoogleComputeUrlMapPathMatcherDefaultUrlRedirect) {
+    this._defaultUrlRedirect.internalValue = value;
+  }
+  public resetDefaultUrlRedirect() {
+    this._defaultUrlRedirect.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultUrlRedirectInput() {
+    return this._defaultUrlRedirect.internalValue;
+  }
+
+  // header_action - computed: false, optional: true, required: false
+  private _headerAction = new GoogleComputeUrlMapPathMatcherHeaderActionOutputReference(this, "header_action");
+  public get headerAction() {
+    return this._headerAction;
+  }
+  public putHeaderAction(value: GoogleComputeUrlMapPathMatcherHeaderAction) {
+    this._headerAction.internalValue = value;
+  }
+  public resetHeaderAction() {
+    this._headerAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerActionInput() {
+    return this._headerAction.internalValue;
+  }
+
+  // path_rule - computed: false, optional: true, required: false
+  private _pathRule = new GoogleComputeUrlMapPathMatcherPathRuleList(this, "path_rule", false);
+  public get pathRule() {
+    return this._pathRule;
+  }
+  public putPathRule(value: GoogleComputeUrlMapPathMatcherPathRule[] | cdktf.IResolvable) {
+    this._pathRule.internalValue = value;
+  }
+  public resetPathRule() {
+    this._pathRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathRuleInput() {
+    return this._pathRule.internalValue;
+  }
+
+  // route_rules - computed: false, optional: true, required: false
+  private _routeRules = new GoogleComputeUrlMapPathMatcherRouteRulesList(this, "route_rules", false);
+  public get routeRules() {
+    return this._routeRules;
+  }
+  public putRouteRules(value: GoogleComputeUrlMapPathMatcherRouteRules[] | cdktf.IResolvable) {
+    this._routeRules.internalValue = value;
+  }
+  public resetRouteRules() {
+    this._routeRules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get routeRulesInput() {
+    return this._routeRules.internalValue;
+  }
+}
+
+export class GoogleComputeUrlMapPathMatcherList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapPathMatcher[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapPathMatcherOutputReference {
+    return new GoogleComputeUrlMapPathMatcherOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapTest {
   /**
   * Description of this test case.
@@ -9011,6 +12587,143 @@ export function googleComputeUrlMapTestToTerraform(struct?: GoogleComputeUrlMapT
   }
 }
 
+export class GoogleComputeUrlMapTestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeUrlMapTest | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._host !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.host = this._host;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeUrlMapTest | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._host = undefined;
+      this._path = undefined;
+      this._service = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._host = value.host;
+      this._path = value.path;
+      this._service = value.service;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // host - computed: false, optional: false, required: true
+  private _host?: string; 
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+  public set host(value: string) {
+    this._host = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostInput() {
+    return this._host;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
+
+export class GoogleComputeUrlMapTestList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeUrlMapTest[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeUrlMapTestOutputReference {
+    return new GoogleComputeUrlMapTestOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeUrlMapTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_url_map#create GoogleComputeUrlMap#create}
@@ -9040,6 +12753,7 @@ export function googleComputeUrlMapTimeoutsToTerraform(struct?: GoogleComputeUrl
 
 export class GoogleComputeUrlMapTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9049,7 +12763,10 @@ export class GoogleComputeUrlMapTimeoutsOutputReference extends cdktf.ComplexObj
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeUrlMapTimeouts | undefined {
+  public get internalValue(): GoogleComputeUrlMapTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -9067,15 +12784,21 @@ export class GoogleComputeUrlMapTimeoutsOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeUrlMapTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeUrlMapTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -9167,14 +12890,15 @@ export class GoogleComputeUrlMap extends cdktf.TerraformResource {
     });
     this._defaultService = config.defaultService;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._project = config.project;
     this._defaultRouteAction.internalValue = config.defaultRouteAction;
     this._defaultUrlRedirect.internalValue = config.defaultUrlRedirect;
     this._headerAction.internalValue = config.headerAction;
-    this._hostRule = config.hostRule;
-    this._pathMatcher = config.pathMatcher;
-    this._test = config.test;
+    this._hostRule.internalValue = config.hostRule;
+    this._pathMatcher.internalValue = config.pathMatcher;
+    this._test.internalValue = config.test;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -9225,8 +12949,19 @@ export class GoogleComputeUrlMap extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // map_id - computed: true, optional: false, required: false
@@ -9317,54 +13052,51 @@ export class GoogleComputeUrlMap extends cdktf.TerraformResource {
   }
 
   // host_rule - computed: false, optional: true, required: false
-  private _hostRule?: GoogleComputeUrlMapHostRule[] | cdktf.IResolvable; 
+  private _hostRule = new GoogleComputeUrlMapHostRuleList(this, "host_rule", true);
   public get hostRule() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('host_rule')));
+    return this._hostRule;
   }
-  public set hostRule(value: GoogleComputeUrlMapHostRule[] | cdktf.IResolvable) {
-    this._hostRule = value;
+  public putHostRule(value: GoogleComputeUrlMapHostRule[] | cdktf.IResolvable) {
+    this._hostRule.internalValue = value;
   }
   public resetHostRule() {
-    this._hostRule = undefined;
+    this._hostRule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get hostRuleInput() {
-    return this._hostRule;
+    return this._hostRule.internalValue;
   }
 
   // path_matcher - computed: false, optional: true, required: false
-  private _pathMatcher?: GoogleComputeUrlMapPathMatcher[] | cdktf.IResolvable; 
+  private _pathMatcher = new GoogleComputeUrlMapPathMatcherList(this, "path_matcher", false);
   public get pathMatcher() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('path_matcher');
+    return this._pathMatcher;
   }
-  public set pathMatcher(value: GoogleComputeUrlMapPathMatcher[] | cdktf.IResolvable) {
-    this._pathMatcher = value;
+  public putPathMatcher(value: GoogleComputeUrlMapPathMatcher[] | cdktf.IResolvable) {
+    this._pathMatcher.internalValue = value;
   }
   public resetPathMatcher() {
-    this._pathMatcher = undefined;
+    this._pathMatcher.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get pathMatcherInput() {
-    return this._pathMatcher;
+    return this._pathMatcher.internalValue;
   }
 
   // test - computed: false, optional: true, required: false
-  private _test?: GoogleComputeUrlMapTest[] | cdktf.IResolvable; 
+  private _test = new GoogleComputeUrlMapTestList(this, "test", false);
   public get test() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('test');
+    return this._test;
   }
-  public set test(value: GoogleComputeUrlMapTest[] | cdktf.IResolvable) {
-    this._test = value;
+  public putTest(value: GoogleComputeUrlMapTest[] | cdktf.IResolvable) {
+    this._test.internalValue = value;
   }
   public resetTest() {
-    this._test = undefined;
+    this._test.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get testInput() {
-    return this._test;
+    return this._test.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -9391,14 +13123,15 @@ export class GoogleComputeUrlMap extends cdktf.TerraformResource {
     return {
       default_service: cdktf.stringToTerraform(this._defaultService),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       default_route_action: googleComputeUrlMapDefaultRouteActionToTerraform(this._defaultRouteAction.internalValue),
       default_url_redirect: googleComputeUrlMapDefaultUrlRedirectToTerraform(this._defaultUrlRedirect.internalValue),
       header_action: googleComputeUrlMapHeaderActionToTerraform(this._headerAction.internalValue),
-      host_rule: cdktf.listMapper(googleComputeUrlMapHostRuleToTerraform)(this._hostRule),
-      path_matcher: cdktf.listMapper(googleComputeUrlMapPathMatcherToTerraform)(this._pathMatcher),
-      test: cdktf.listMapper(googleComputeUrlMapTestToTerraform)(this._test),
+      host_rule: cdktf.listMapper(googleComputeUrlMapHostRuleToTerraform)(this._hostRule.internalValue),
+      path_matcher: cdktf.listMapper(googleComputeUrlMapPathMatcherToTerraform)(this._pathMatcher.internalValue),
+      test: cdktf.listMapper(googleComputeUrlMapTestToTerraform)(this._test.internalValue),
       timeouts: googleComputeUrlMapTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

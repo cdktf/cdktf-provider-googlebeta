@@ -24,6 +24,13 @@ export interface GoogleSqlDatabaseInstanceConfig extends cdktf.TerraformMetaArgu
   */
   readonly encryptionKeyName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#id GoogleSqlDatabaseInstance#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the instance that will act as the master in the replication setup. Note, this requires the master to have binary_log_enabled set, as well as existing backups.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#master_instance_name GoogleSqlDatabaseInstance#master_instance_name}
@@ -1267,6 +1274,102 @@ export function googleSqlDatabaseInstanceSettingsDatabaseFlagsToTerraform(struct
   }
 }
 
+export class GoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettingsDatabaseFlags | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettingsDatabaseFlags | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsDatabaseFlagsList extends cdktf.ComplexList {
+  public internalValue? : GoogleSqlDatabaseInstanceSettingsDatabaseFlags[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference {
+    return new GoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleSqlDatabaseInstanceSettingsInsightsConfig {
   /**
   * True if Query Insights feature is enabled.
@@ -1448,6 +1551,127 @@ export function googleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetwor
   }
 }
 
+export class GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._expirationTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expirationTime = this._expirationTime;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._expirationTime = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._expirationTime = value.expirationTime;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // expiration_time - computed: false, optional: true, required: false
+  private _expirationTime?: string; 
+  public get expirationTime() {
+    return this.getStringAttribute('expiration_time');
+  }
+  public set expirationTime(value: string) {
+    this._expirationTime = value;
+  }
+  public resetExpirationTime() {
+    this._expirationTime = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expirationTimeInput() {
+    return this._expirationTime;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList extends cdktf.ComplexList {
+  public internalValue? : GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference {
+    return new GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleSqlDatabaseInstanceSettingsIpConfiguration {
   /**
   * The name of the allocated ip range for the private ip CloudSQL instance. For example: "google-managed-services-default". If set, the instance ip will be created in the allocated range. The range name must comply with RFC 1035. Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])?.
@@ -1523,9 +1747,9 @@ export class GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference ext
       hasAnyValues = true;
       internalValueResult.requireSsl = this._requireSsl;
     }
-    if (this._authorizedNetworks !== undefined) {
+    if (this._authorizedNetworks?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.authorizedNetworks = this._authorizedNetworks;
+      internalValueResult.authorizedNetworks = this._authorizedNetworks?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1537,7 +1761,7 @@ export class GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference ext
       this._ipv4Enabled = undefined;
       this._privateNetwork = undefined;
       this._requireSsl = undefined;
-      this._authorizedNetworks = undefined;
+      this._authorizedNetworks.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1545,7 +1769,7 @@ export class GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference ext
       this._ipv4Enabled = value.ipv4Enabled;
       this._privateNetwork = value.privateNetwork;
       this._requireSsl = value.requireSsl;
-      this._authorizedNetworks = value.authorizedNetworks;
+      this._authorizedNetworks.internalValue = value.authorizedNetworks;
     }
   }
 
@@ -1614,20 +1838,19 @@ export class GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference ext
   }
 
   // authorized_networks - computed: false, optional: true, required: false
-  private _authorizedNetworks?: GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[] | cdktf.IResolvable; 
+  private _authorizedNetworks = new GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksList(this, "authorized_networks", true);
   public get authorizedNetworks() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('authorized_networks')));
+    return this._authorizedNetworks;
   }
-  public set authorizedNetworks(value: GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[] | cdktf.IResolvable) {
-    this._authorizedNetworks = value;
+  public putAuthorizedNetworks(value: GoogleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworks[] | cdktf.IResolvable) {
+    this._authorizedNetworks.internalValue = value;
   }
   public resetAuthorizedNetworks() {
-    this._authorizedNetworks = undefined;
+    this._authorizedNetworks.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get authorizedNetworksInput() {
-    return this._authorizedNetworks;
+    return this._authorizedNetworks.internalValue;
   }
 }
 export interface GoogleSqlDatabaseInstanceSettingsLocationPreference {
@@ -2049,9 +2272,9 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.backupConfiguration = this._backupConfiguration?.internalValue;
     }
-    if (this._databaseFlags !== undefined) {
+    if (this._databaseFlags?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.databaseFlags = this._databaseFlags;
+      internalValueResult.databaseFlags = this._databaseFlags?.internalValue;
     }
     if (this._insightsConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2087,7 +2310,7 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
       this._userLabels = undefined;
       this._activeDirectoryConfig.internalValue = undefined;
       this._backupConfiguration.internalValue = undefined;
-      this._databaseFlags = undefined;
+      this._databaseFlags.internalValue = undefined;
       this._insightsConfig.internalValue = undefined;
       this._ipConfiguration.internalValue = undefined;
       this._locationPreference.internalValue = undefined;
@@ -2107,7 +2330,7 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
       this._userLabels = value.userLabels;
       this._activeDirectoryConfig.internalValue = value.activeDirectoryConfig;
       this._backupConfiguration.internalValue = value.backupConfiguration;
-      this._databaseFlags = value.databaseFlags;
+      this._databaseFlags.internalValue = value.databaseFlags;
       this._insightsConfig.internalValue = value.insightsConfig;
       this._ipConfiguration.internalValue = value.ipConfiguration;
       this._locationPreference.internalValue = value.locationPreference;
@@ -2310,20 +2533,19 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
   }
 
   // database_flags - computed: false, optional: true, required: false
-  private _databaseFlags?: GoogleSqlDatabaseInstanceSettingsDatabaseFlags[] | cdktf.IResolvable; 
+  private _databaseFlags = new GoogleSqlDatabaseInstanceSettingsDatabaseFlagsList(this, "database_flags", false);
   public get databaseFlags() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('database_flags');
+    return this._databaseFlags;
   }
-  public set databaseFlags(value: GoogleSqlDatabaseInstanceSettingsDatabaseFlags[] | cdktf.IResolvable) {
-    this._databaseFlags = value;
+  public putDatabaseFlags(value: GoogleSqlDatabaseInstanceSettingsDatabaseFlags[] | cdktf.IResolvable) {
+    this._databaseFlags.internalValue = value;
   }
   public resetDatabaseFlags() {
-    this._databaseFlags = undefined;
+    this._databaseFlags.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get databaseFlagsInput() {
-    return this._databaseFlags;
+    return this._databaseFlags.internalValue;
   }
 
   // insights_config - computed: false, optional: true, required: false
@@ -2419,6 +2641,7 @@ export function googleSqlDatabaseInstanceTimeoutsToTerraform(struct?: GoogleSqlD
 
 export class GoogleSqlDatabaseInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2428,7 +2651,10 @@ export class GoogleSqlDatabaseInstanceTimeoutsOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleSqlDatabaseInstanceTimeouts | undefined {
+  public get internalValue(): GoogleSqlDatabaseInstanceTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -2446,15 +2672,21 @@ export class GoogleSqlDatabaseInstanceTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleSqlDatabaseInstanceTimeouts | undefined) {
+  public set internalValue(value: GoogleSqlDatabaseInstanceTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -2547,6 +2779,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
     this._databaseVersion = config.databaseVersion;
     this._deletionProtection = config.deletionProtection;
     this._encryptionKeyName = config.encryptionKeyName;
+    this._id = config.id;
     this._masterInstanceName = config.masterInstanceName;
     this._name = config.name;
     this._project = config.project;
@@ -2619,8 +2852,19 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip_address - computed: true, optional: false, required: false
@@ -2824,6 +3068,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       database_version: cdktf.stringToTerraform(this._databaseVersion),
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
       encryption_key_name: cdktf.stringToTerraform(this._encryptionKeyName),
+      id: cdktf.stringToTerraform(this._id),
       master_instance_name: cdktf.stringToTerraform(this._masterInstanceName),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),

@@ -39,6 +39,13 @@ client when the resource is created.
   */
   readonly enableCdn?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_bucket#id GoogleComputeBackendBucket#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Name of the resource. Provided by the client when the resource is
 created. The name must be 1-63 characters long, and comply with
 RFC1035.  Specifically, the name must be 1-63 characters long and
@@ -95,6 +102,108 @@ export function googleComputeBackendBucketCdnPolicyNegativeCachingPolicyToTerraf
   }
 }
 
+export class GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._code !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.code = this._code;
+    }
+    if (this._ttl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ttl = this._ttl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._code = undefined;
+      this._ttl = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._code = value.code;
+      this._ttl = value.ttl;
+    }
+  }
+
+  // code - computed: false, optional: true, required: false
+  private _code?: number; 
+  public get code() {
+    return this.getNumberAttribute('code');
+  }
+  public set code(value: number) {
+    this._code = value;
+  }
+  public resetCode() {
+    this._code = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get codeInput() {
+    return this._code;
+  }
+
+  // ttl - computed: false, optional: true, required: false
+  private _ttl?: number; 
+  public get ttl() {
+    return this.getNumberAttribute('ttl');
+  }
+  public set ttl(value: number) {
+    this._ttl = value;
+  }
+  public resetTtl() {
+    this._ttl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ttlInput() {
+    return this._ttl;
+  }
+}
+
+export class GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference {
+    return new GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeBackendBucketCdnPolicy {
   /**
   * Specifies the cache setting for all responses from this backend.
@@ -214,9 +323,9 @@ export class GoogleComputeBackendBucketCdnPolicyOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.signedUrlCacheMaxAgeSec = this._signedUrlCacheMaxAgeSec;
     }
-    if (this._negativeCachingPolicy !== undefined) {
+    if (this._negativeCachingPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.negativeCachingPolicy = this._negativeCachingPolicy;
+      internalValueResult.negativeCachingPolicy = this._negativeCachingPolicy?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -231,7 +340,7 @@ export class GoogleComputeBackendBucketCdnPolicyOutputReference extends cdktf.Co
       this._negativeCaching = undefined;
       this._serveWhileStale = undefined;
       this._signedUrlCacheMaxAgeSec = undefined;
-      this._negativeCachingPolicy = undefined;
+      this._negativeCachingPolicy.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -242,7 +351,7 @@ export class GoogleComputeBackendBucketCdnPolicyOutputReference extends cdktf.Co
       this._negativeCaching = value.negativeCaching;
       this._serveWhileStale = value.serveWhileStale;
       this._signedUrlCacheMaxAgeSec = value.signedUrlCacheMaxAgeSec;
-      this._negativeCachingPolicy = value.negativeCachingPolicy;
+      this._negativeCachingPolicy.internalValue = value.negativeCachingPolicy;
     }
   }
 
@@ -359,20 +468,19 @@ export class GoogleComputeBackendBucketCdnPolicyOutputReference extends cdktf.Co
   }
 
   // negative_caching_policy - computed: false, optional: true, required: false
-  private _negativeCachingPolicy?: GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicy[] | cdktf.IResolvable; 
+  private _negativeCachingPolicy = new GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicyList(this, "negative_caching_policy", false);
   public get negativeCachingPolicy() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('negative_caching_policy');
+    return this._negativeCachingPolicy;
   }
-  public set negativeCachingPolicy(value: GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicy[] | cdktf.IResolvable) {
-    this._negativeCachingPolicy = value;
+  public putNegativeCachingPolicy(value: GoogleComputeBackendBucketCdnPolicyNegativeCachingPolicy[] | cdktf.IResolvable) {
+    this._negativeCachingPolicy.internalValue = value;
   }
   public resetNegativeCachingPolicy() {
-    this._negativeCachingPolicy = undefined;
+    this._negativeCachingPolicy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get negativeCachingPolicyInput() {
-    return this._negativeCachingPolicy;
+    return this._negativeCachingPolicy.internalValue;
   }
 }
 export interface GoogleComputeBackendBucketTimeouts {
@@ -404,6 +512,7 @@ export function googleComputeBackendBucketTimeoutsToTerraform(struct?: GoogleCom
 
 export class GoogleComputeBackendBucketTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -413,7 +522,10 @@ export class GoogleComputeBackendBucketTimeoutsOutputReference extends cdktf.Com
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeBackendBucketTimeouts | undefined {
+  public get internalValue(): GoogleComputeBackendBucketTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -431,15 +543,21 @@ export class GoogleComputeBackendBucketTimeoutsOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeBackendBucketTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeBackendBucketTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -534,6 +652,7 @@ export class GoogleComputeBackendBucket extends cdktf.TerraformResource {
     this._description = config.description;
     this._edgeSecurityPolicy = config.edgeSecurityPolicy;
     this._enableCdn = config.enableCdn;
+    this._id = config.id;
     this._name = config.name;
     this._project = config.project;
     this._cdnPolicy.internalValue = config.cdnPolicy;
@@ -627,8 +746,19 @@ export class GoogleComputeBackendBucket extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -708,6 +838,7 @@ export class GoogleComputeBackendBucket extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       edge_security_policy: cdktf.stringToTerraform(this._edgeSecurityPolicy),
       enable_cdn: cdktf.booleanToTerraform(this._enableCdn),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       cdn_policy: googleComputeBackendBucketCdnPolicyToTerraform(this._cdnPolicy.internalValue),

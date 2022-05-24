@@ -21,6 +21,13 @@ Currently only supported on Windows instances using the Volume Shadow Copy Servi
   */
   readonly guestFlush?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_machine_image#id GoogleComputeMachineImage#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Name of the resource.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_machine_image#name GoogleComputeMachineImage#name}
@@ -205,6 +212,7 @@ export function googleComputeMachineImageTimeoutsToTerraform(struct?: GoogleComp
 
 export class GoogleComputeMachineImageTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -214,7 +222,10 @@ export class GoogleComputeMachineImageTimeoutsOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeMachineImageTimeouts | undefined {
+  public get internalValue(): GoogleComputeMachineImageTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -228,14 +239,20 @@ export class GoogleComputeMachineImageTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeMachineImageTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeMachineImageTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -310,6 +327,7 @@ export class GoogleComputeMachineImage extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._guestFlush = config.guestFlush;
+    this._id = config.id;
     this._name = config.name;
     this._project = config.project;
     this._sourceInstance = config.sourceInstance;
@@ -354,8 +372,19 @@ export class GoogleComputeMachineImage extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -450,6 +479,7 @@ export class GoogleComputeMachineImage extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       guest_flush: cdktf.booleanToTerraform(this._guestFlush),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       source_instance: cdktf.stringToTerraform(this._sourceInstance),

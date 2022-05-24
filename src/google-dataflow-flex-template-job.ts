@@ -12,6 +12,13 @@ export interface GoogleDataflowFlexTemplateJobConfig extends cdktf.TerraformMeta
   */
   readonly containerSpecGcsPath: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataflow_flex_template_job#id GoogleDataflowFlexTemplateJob#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataflow_flex_template_job#labels GoogleDataflowFlexTemplateJob#labels}
   */
   readonly labels?: { [key: string]: string };
@@ -80,6 +87,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._containerSpecGcsPath = config.containerSpecGcsPath;
+    this._id = config.id;
     this._labels = config.labels;
     this._name = config.name;
     this._onDelete = config.onDelete;
@@ -107,8 +115,19 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // job_id - computed: true, optional: false, required: false
@@ -237,6 +256,7 @@ export class GoogleDataflowFlexTemplateJob extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       container_spec_gcs_path: cdktf.stringToTerraform(this._containerSpecGcsPath),
+      id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
       on_delete: cdktf.stringToTerraform(this._onDelete),

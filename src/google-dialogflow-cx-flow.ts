@@ -20,6 +20,13 @@ export interface GoogleDialogflowCxFlowConfig extends cdktf.TerraformMetaArgumen
   */
   readonly displayName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_flow#id GoogleDialogflowCxFlow#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The language of the following fields in flow:
 Flow.event_handlers.trigger_fulfillment.messages
 Flow.event_handlers.trigger_fulfillment.conditional_cases
@@ -162,6 +169,86 @@ export function googleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesToT
   }
 }
 
+export class GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._text?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.text = this._text?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._text.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._text.internalValue = value.text;
+    }
+  }
+
+  // text - computed: false, optional: true, required: false
+  private _text = new GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTextOutputReference(this, "text");
+  public get text() {
+    return this._text;
+  }
+  public putText(value: GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText) {
+    this._text.internalValue = value;
+  }
+  public resetText() {
+    this._text.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get textInput() {
+    return this._text.internalValue;
+  }
+}
+
+export class GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference {
+    return new GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDialogflowCxFlowEventHandlersTriggerFulfillment {
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
@@ -228,9 +315,9 @@ export class GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
       hasAnyValues = true;
       internalValueResult.webhook = this._webhook;
     }
-    if (this._messages !== undefined) {
+    if (this._messages?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.messages = this._messages;
+      internalValueResult.messages = this._messages?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -241,14 +328,14 @@ export class GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
       this._returnPartialResponses = undefined;
       this._tag = undefined;
       this._webhook = undefined;
-      this._messages = undefined;
+      this._messages.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._returnPartialResponses = value.returnPartialResponses;
       this._tag = value.tag;
       this._webhook = value.webhook;
-      this._messages = value.messages;
+      this._messages.internalValue = value.messages;
     }
   }
 
@@ -301,20 +388,19 @@ export class GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReferenc
   }
 
   // messages - computed: false, optional: true, required: false
-  private _messages?: GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktf.IResolvable; 
+  private _messages = new GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesList(this, "messages", false);
   public get messages() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('messages');
+    return this._messages;
   }
-  public set messages(value: GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktf.IResolvable) {
-    this._messages = value;
+  public putMessages(value: GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktf.IResolvable) {
+    this._messages.internalValue = value;
   }
   public resetMessages() {
-    this._messages = undefined;
+    this._messages.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get messagesInput() {
-    return this._messages;
+    return this._messages.internalValue;
   }
 }
 export interface GoogleDialogflowCxFlowEventHandlers {
@@ -359,6 +445,157 @@ export function googleDialogflowCxFlowEventHandlersToTerraform(struct?: GoogleDi
   }
 }
 
+export class GoogleDialogflowCxFlowEventHandlersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDialogflowCxFlowEventHandlers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._event !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.event = this._event;
+    }
+    if (this._targetFlow !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetFlow = this._targetFlow;
+    }
+    if (this._targetPage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetPage = this._targetPage;
+    }
+    if (this._triggerFulfillment?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.triggerFulfillment = this._triggerFulfillment?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxFlowEventHandlers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._event = undefined;
+      this._targetFlow = undefined;
+      this._targetPage = undefined;
+      this._triggerFulfillment.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._event = value.event;
+      this._targetFlow = value.targetFlow;
+      this._targetPage = value.targetPage;
+      this._triggerFulfillment.internalValue = value.triggerFulfillment;
+    }
+  }
+
+  // event - computed: false, optional: true, required: false
+  private _event?: string; 
+  public get event() {
+    return this.getStringAttribute('event');
+  }
+  public set event(value: string) {
+    this._event = value;
+  }
+  public resetEvent() {
+    this._event = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventInput() {
+    return this._event;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // target_flow - computed: false, optional: true, required: false
+  private _targetFlow?: string; 
+  public get targetFlow() {
+    return this.getStringAttribute('target_flow');
+  }
+  public set targetFlow(value: string) {
+    this._targetFlow = value;
+  }
+  public resetTargetFlow() {
+    this._targetFlow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetFlowInput() {
+    return this._targetFlow;
+  }
+
+  // target_page - computed: false, optional: true, required: false
+  private _targetPage?: string; 
+  public get targetPage() {
+    return this.getStringAttribute('target_page');
+  }
+  public set targetPage(value: string) {
+    this._targetPage = value;
+  }
+  public resetTargetPage() {
+    this._targetPage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetPageInput() {
+    return this._targetPage;
+  }
+
+  // trigger_fulfillment - computed: false, optional: true, required: false
+  private _triggerFulfillment = new GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentOutputReference(this, "trigger_fulfillment");
+  public get triggerFulfillment() {
+    return this._triggerFulfillment;
+  }
+  public putTriggerFulfillment(value: GoogleDialogflowCxFlowEventHandlersTriggerFulfillment) {
+    this._triggerFulfillment.internalValue = value;
+  }
+  public resetTriggerFulfillment() {
+    this._triggerFulfillment.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggerFulfillmentInput() {
+    return this._triggerFulfillment.internalValue;
+  }
+}
+
+export class GoogleDialogflowCxFlowEventHandlersList extends cdktf.ComplexList {
+  public internalValue? : GoogleDialogflowCxFlowEventHandlers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDialogflowCxFlowEventHandlersOutputReference {
+    return new GoogleDialogflowCxFlowEventHandlersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDialogflowCxFlowNluSettings {
   /**
   * To filter out false positive results and still get variety in matched natural language inputs for your agent, you can tune the machine learning classification threshold. 
@@ -518,6 +755,7 @@ export function googleDialogflowCxFlowTimeoutsToTerraform(struct?: GoogleDialogf
 
 export class GoogleDialogflowCxFlowTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -527,7 +765,10 @@ export class GoogleDialogflowCxFlowTimeoutsOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDialogflowCxFlowTimeouts | undefined {
+  public get internalValue(): GoogleDialogflowCxFlowTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -545,15 +786,21 @@ export class GoogleDialogflowCxFlowTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDialogflowCxFlowTimeouts | undefined) {
+  public set internalValue(value: GoogleDialogflowCxFlowTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -699,6 +946,86 @@ export function googleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages
   }
 }
 
+export class GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._text?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.text = this._text?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._text.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._text.internalValue = value.text;
+    }
+  }
+
+  // text - computed: false, optional: true, required: false
+  private _text = new GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesTextOutputReference(this, "text");
+  public get text() {
+    return this._text;
+  }
+  public putText(value: GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText) {
+    this._text.internalValue = value;
+  }
+  public resetText() {
+    this._text.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get textInput() {
+    return this._text.internalValue;
+  }
+}
+
+export class GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference {
+    return new GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillment {
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
@@ -765,9 +1092,9 @@ export class GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputRefer
       hasAnyValues = true;
       internalValueResult.webhook = this._webhook;
     }
-    if (this._messages !== undefined) {
+    if (this._messages?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.messages = this._messages;
+      internalValueResult.messages = this._messages?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -778,14 +1105,14 @@ export class GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputRefer
       this._returnPartialResponses = undefined;
       this._tag = undefined;
       this._webhook = undefined;
-      this._messages = undefined;
+      this._messages.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._returnPartialResponses = value.returnPartialResponses;
       this._tag = value.tag;
       this._webhook = value.webhook;
-      this._messages = value.messages;
+      this._messages.internalValue = value.messages;
     }
   }
 
@@ -838,20 +1165,19 @@ export class GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputRefer
   }
 
   // messages - computed: false, optional: true, required: false
-  private _messages?: GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktf.IResolvable; 
+  private _messages = new GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesList(this, "messages", false);
   public get messages() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('messages');
+    return this._messages;
   }
-  public set messages(value: GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktf.IResolvable) {
-    this._messages = value;
+  public putMessages(value: GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktf.IResolvable) {
+    this._messages.internalValue = value;
   }
   public resetMessages() {
-    this._messages = undefined;
+    this._messages.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get messagesInput() {
-    return this._messages;
+    return this._messages.internalValue;
   }
 }
 export interface GoogleDialogflowCxFlowTransitionRoutes {
@@ -905,6 +1231,179 @@ export function googleDialogflowCxFlowTransitionRoutesToTerraform(struct?: Googl
   }
 }
 
+export class GoogleDialogflowCxFlowTransitionRoutesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDialogflowCxFlowTransitionRoutes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._condition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.condition = this._condition;
+    }
+    if (this._intent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.intent = this._intent;
+    }
+    if (this._targetFlow !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetFlow = this._targetFlow;
+    }
+    if (this._targetPage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetPage = this._targetPage;
+    }
+    if (this._triggerFulfillment?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.triggerFulfillment = this._triggerFulfillment?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxFlowTransitionRoutes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._condition = undefined;
+      this._intent = undefined;
+      this._targetFlow = undefined;
+      this._targetPage = undefined;
+      this._triggerFulfillment.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._condition = value.condition;
+      this._intent = value.intent;
+      this._targetFlow = value.targetFlow;
+      this._targetPage = value.targetPage;
+      this._triggerFulfillment.internalValue = value.triggerFulfillment;
+    }
+  }
+
+  // condition - computed: false, optional: true, required: false
+  private _condition?: string; 
+  public get condition() {
+    return this.getStringAttribute('condition');
+  }
+  public set condition(value: string) {
+    this._condition = value;
+  }
+  public resetCondition() {
+    this._condition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get conditionInput() {
+    return this._condition;
+  }
+
+  // intent - computed: false, optional: true, required: false
+  private _intent?: string; 
+  public get intent() {
+    return this.getStringAttribute('intent');
+  }
+  public set intent(value: string) {
+    this._intent = value;
+  }
+  public resetIntent() {
+    this._intent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get intentInput() {
+    return this._intent;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // target_flow - computed: false, optional: true, required: false
+  private _targetFlow?: string; 
+  public get targetFlow() {
+    return this.getStringAttribute('target_flow');
+  }
+  public set targetFlow(value: string) {
+    this._targetFlow = value;
+  }
+  public resetTargetFlow() {
+    this._targetFlow = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetFlowInput() {
+    return this._targetFlow;
+  }
+
+  // target_page - computed: false, optional: true, required: false
+  private _targetPage?: string; 
+  public get targetPage() {
+    return this.getStringAttribute('target_page');
+  }
+  public set targetPage(value: string) {
+    this._targetPage = value;
+  }
+  public resetTargetPage() {
+    this._targetPage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetPageInput() {
+    return this._targetPage;
+  }
+
+  // trigger_fulfillment - computed: false, optional: true, required: false
+  private _triggerFulfillment = new GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentOutputReference(this, "trigger_fulfillment");
+  public get triggerFulfillment() {
+    return this._triggerFulfillment;
+  }
+  public putTriggerFulfillment(value: GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillment) {
+    this._triggerFulfillment.internalValue = value;
+  }
+  public resetTriggerFulfillment() {
+    this._triggerFulfillment.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggerFulfillmentInput() {
+    return this._triggerFulfillment.internalValue;
+  }
+}
+
+export class GoogleDialogflowCxFlowTransitionRoutesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDialogflowCxFlowTransitionRoutes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDialogflowCxFlowTransitionRoutesOutputReference {
+    return new GoogleDialogflowCxFlowTransitionRoutesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_flow google_dialogflow_cx_flow}
@@ -942,13 +1441,14 @@ export class GoogleDialogflowCxFlow extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._displayName = config.displayName;
+    this._id = config.id;
     this._languageCode = config.languageCode;
     this._parent = config.parent;
     this._transitionRouteGroups = config.transitionRouteGroups;
-    this._eventHandlers = config.eventHandlers;
+    this._eventHandlers.internalValue = config.eventHandlers;
     this._nluSettings.internalValue = config.nluSettings;
     this._timeouts.internalValue = config.timeouts;
-    this._transitionRoutes = config.transitionRoutes;
+    this._transitionRoutes.internalValue = config.transitionRoutes;
   }
 
   // ==========
@@ -985,8 +1485,19 @@ export class GoogleDialogflowCxFlow extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // language_code - computed: false, optional: true, required: false
@@ -1043,20 +1554,19 @@ export class GoogleDialogflowCxFlow extends cdktf.TerraformResource {
   }
 
   // event_handlers - computed: false, optional: true, required: false
-  private _eventHandlers?: GoogleDialogflowCxFlowEventHandlers[] | cdktf.IResolvable; 
+  private _eventHandlers = new GoogleDialogflowCxFlowEventHandlersList(this, "event_handlers", false);
   public get eventHandlers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('event_handlers');
+    return this._eventHandlers;
   }
-  public set eventHandlers(value: GoogleDialogflowCxFlowEventHandlers[] | cdktf.IResolvable) {
-    this._eventHandlers = value;
+  public putEventHandlers(value: GoogleDialogflowCxFlowEventHandlers[] | cdktf.IResolvable) {
+    this._eventHandlers.internalValue = value;
   }
   public resetEventHandlers() {
-    this._eventHandlers = undefined;
+    this._eventHandlers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get eventHandlersInput() {
-    return this._eventHandlers;
+    return this._eventHandlers.internalValue;
   }
 
   // nlu_settings - computed: false, optional: true, required: false
@@ -1092,20 +1602,19 @@ export class GoogleDialogflowCxFlow extends cdktf.TerraformResource {
   }
 
   // transition_routes - computed: false, optional: true, required: false
-  private _transitionRoutes?: GoogleDialogflowCxFlowTransitionRoutes[] | cdktf.IResolvable; 
+  private _transitionRoutes = new GoogleDialogflowCxFlowTransitionRoutesList(this, "transition_routes", false);
   public get transitionRoutes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('transition_routes');
+    return this._transitionRoutes;
   }
-  public set transitionRoutes(value: GoogleDialogflowCxFlowTransitionRoutes[] | cdktf.IResolvable) {
-    this._transitionRoutes = value;
+  public putTransitionRoutes(value: GoogleDialogflowCxFlowTransitionRoutes[] | cdktf.IResolvable) {
+    this._transitionRoutes.internalValue = value;
   }
   public resetTransitionRoutes() {
-    this._transitionRoutes = undefined;
+    this._transitionRoutes.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get transitionRoutesInput() {
-    return this._transitionRoutes;
+    return this._transitionRoutes.internalValue;
   }
 
   // =========
@@ -1116,13 +1625,14 @@ export class GoogleDialogflowCxFlow extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
+      id: cdktf.stringToTerraform(this._id),
       language_code: cdktf.stringToTerraform(this._languageCode),
       parent: cdktf.stringToTerraform(this._parent),
       transition_route_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._transitionRouteGroups),
-      event_handlers: cdktf.listMapper(googleDialogflowCxFlowEventHandlersToTerraform)(this._eventHandlers),
+      event_handlers: cdktf.listMapper(googleDialogflowCxFlowEventHandlersToTerraform)(this._eventHandlers.internalValue),
       nlu_settings: googleDialogflowCxFlowNluSettingsToTerraform(this._nluSettings.internalValue),
       timeouts: googleDialogflowCxFlowTimeoutsToTerraform(this._timeouts.internalValue),
-      transition_routes: cdktf.listMapper(googleDialogflowCxFlowTransitionRoutesToTerraform)(this._transitionRoutes),
+      transition_routes: cdktf.listMapper(googleDialogflowCxFlowTransitionRoutesToTerraform)(this._transitionRoutes.internalValue),
     };
   }
 }

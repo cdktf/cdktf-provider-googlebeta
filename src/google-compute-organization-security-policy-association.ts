@@ -14,6 +14,13 @@ export interface GoogleComputeOrganizationSecurityPolicyAssociationConfig extend
   */
   readonly attachmentId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_organization_security_policy_association#id GoogleComputeOrganizationSecurityPolicyAssociation#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name for an association.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_organization_security_policy_association#name GoogleComputeOrganizationSecurityPolicyAssociation#name}
@@ -56,6 +63,7 @@ export function googleComputeOrganizationSecurityPolicyAssociationTimeoutsToTerr
 
 export class GoogleComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -65,7 +73,10 @@ export class GoogleComputeOrganizationSecurityPolicyAssociationTimeoutsOutputRef
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeOrganizationSecurityPolicyAssociationTimeouts | undefined {
+  public get internalValue(): GoogleComputeOrganizationSecurityPolicyAssociationTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -79,14 +90,20 @@ export class GoogleComputeOrganizationSecurityPolicyAssociationTimeoutsOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeOrganizationSecurityPolicyAssociationTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeOrganizationSecurityPolicyAssociationTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -160,6 +177,7 @@ export class GoogleComputeOrganizationSecurityPolicyAssociation extends cdktf.Te
       lifecycle: config.lifecycle
     });
     this._attachmentId = config.attachmentId;
+    this._id = config.id;
     this._name = config.name;
     this._policyId = config.policyId;
     this._timeouts.internalValue = config.timeouts;
@@ -188,8 +206,19 @@ export class GoogleComputeOrganizationSecurityPolicyAssociation extends cdktf.Te
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -241,6 +270,7 @@ export class GoogleComputeOrganizationSecurityPolicyAssociation extends cdktf.Te
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       attachment_id: cdktf.stringToTerraform(this._attachmentId),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       policy_id: cdktf.stringToTerraform(this._policyId),
       timeouts: googleComputeOrganizationSecurityPolicyAssociationTimeoutsToTerraform(this._timeouts.internalValue),
