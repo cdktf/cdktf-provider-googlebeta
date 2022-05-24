@@ -89,8 +89,8 @@
         }
       },
       "python": {
-        "distName": "cdktf-cdktf-provider-google-beta",
-        "module": "cdktf_cdktf_provider_google-beta"
+        "distName": "cdktf-cdktf-provider-google_beta",
+        "module": "cdktf_cdktf_provider_google_beta"
       },
       "dotnet": {
         "namespace": "HashiCorp.Cdktf.Providers.GoogleBeta",
