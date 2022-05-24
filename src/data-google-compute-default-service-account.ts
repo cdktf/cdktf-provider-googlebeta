@@ -39,7 +39,7 @@ export class DataGoogleComputeDefaultServiceAccount extends cdktf.TerraformDataS
       terraformResourceType: 'google_compute_default_service_account',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

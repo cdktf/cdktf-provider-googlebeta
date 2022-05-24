@@ -665,11 +665,17 @@ export interface GoogleComputeInstanceGroupManagerUpdatePolicy {
   */
   readonly minReadySec?: number;
   /**
-  * Minimal action to be taken on an instance. You can specify either RESTART to restart existing instances or REPLACE to delete and create new instances from the target template. If you specify a RESTART, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
+  * Minimal action to be taken on an instance. You can specify either REFRESH to update without stopping instances, RESTART to restart existing instances or REPLACE to delete and create new instances from the target template. If you specify a REFRESH, the Updater will attempt to perform that action only. However, if the Updater determines that the minimal action you specify is not enough to perform the update, it might perform a more disruptive action.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#minimal_action GoogleComputeInstanceGroupManager#minimal_action}
   */
   readonly minimalAction: string;
+  /**
+  * Most disruptive action that is allowed to be taken on an instance. You can specify either NONE to forbid any actions, REFRESH to allow actions that do not need instance restart, RESTART to allow actions that can be applied without instance replacing or REPLACE to allow all possible actions. If the Updater determines that the minimal update action needed is more disruptive than most disruptive allowed action you specify it will not perform the update at all.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#most_disruptive_allowed_action GoogleComputeInstanceGroupManager#most_disruptive_allowed_action}
+  */
+  readonly mostDisruptiveAllowedAction?: string;
   /**
   * The instance replacement method for managed instance groups. Valid values are: "RECREATE", "SUBSTITUTE". If SUBSTITUTE (default), the group replaces VM instances with new instances that have randomly generated names. If RECREATE, instance names are preserved.  You must also set max_unavailable_fixed or max_unavailable_percent to be greater than 0.
   * 
@@ -696,6 +702,7 @@ export function googleComputeInstanceGroupManagerUpdatePolicyToTerraform(struct?
     max_unavailable_percent: cdktf.numberToTerraform(struct!.maxUnavailablePercent),
     min_ready_sec: cdktf.numberToTerraform(struct!.minReadySec),
     minimal_action: cdktf.stringToTerraform(struct!.minimalAction),
+    most_disruptive_allowed_action: cdktf.stringToTerraform(struct!.mostDisruptiveAllowedAction),
     replacement_method: cdktf.stringToTerraform(struct!.replacementMethod),
     type: cdktf.stringToTerraform(struct!.type),
   }
@@ -739,6 +746,10 @@ export class GoogleComputeInstanceGroupManagerUpdatePolicyOutputReference extend
       hasAnyValues = true;
       internalValueResult.minimalAction = this._minimalAction;
     }
+    if (this._mostDisruptiveAllowedAction !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mostDisruptiveAllowedAction = this._mostDisruptiveAllowedAction;
+    }
     if (this._replacementMethod !== undefined) {
       hasAnyValues = true;
       internalValueResult.replacementMethod = this._replacementMethod;
@@ -759,6 +770,7 @@ export class GoogleComputeInstanceGroupManagerUpdatePolicyOutputReference extend
       this._maxUnavailablePercent = undefined;
       this._minReadySec = undefined;
       this._minimalAction = undefined;
+      this._mostDisruptiveAllowedAction = undefined;
       this._replacementMethod = undefined;
       this._type = undefined;
     }
@@ -770,6 +782,7 @@ export class GoogleComputeInstanceGroupManagerUpdatePolicyOutputReference extend
       this._maxUnavailablePercent = value.maxUnavailablePercent;
       this._minReadySec = value.minReadySec;
       this._minimalAction = value.minimalAction;
+      this._mostDisruptiveAllowedAction = value.mostDisruptiveAllowedAction;
       this._replacementMethod = value.replacementMethod;
       this._type = value.type;
     }
@@ -866,6 +879,22 @@ export class GoogleComputeInstanceGroupManagerUpdatePolicyOutputReference extend
   // Temporarily expose input value. Use with caution.
   public get minimalActionInput() {
     return this._minimalAction;
+  }
+
+  // most_disruptive_allowed_action - computed: false, optional: true, required: false
+  private _mostDisruptiveAllowedAction?: string; 
+  public get mostDisruptiveAllowedAction() {
+    return this.getStringAttribute('most_disruptive_allowed_action');
+  }
+  public set mostDisruptiveAllowedAction(value: string) {
+    this._mostDisruptiveAllowedAction = value;
+  }
+  public resetMostDisruptiveAllowedAction() {
+    this._mostDisruptiveAllowedAction = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mostDisruptiveAllowedActionInput() {
+    return this._mostDisruptiveAllowedAction;
   }
 
   // replacement_method - computed: false, optional: true, required: false
@@ -1053,7 +1082,7 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_group_manager',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

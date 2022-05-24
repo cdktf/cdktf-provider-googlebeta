@@ -843,6 +843,70 @@ export class GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference extend
     return this._project;
   }
 }
+export interface GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig {
+  /**
+  * Domain name of the Active Directory for SQL Server (e.g., mydomain.com).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#domain GoogleSqlDatabaseInstance#domain}
+  */
+  readonly domain: string;
+}
+
+export function googleSqlDatabaseInstanceSettingsActiveDirectoryConfigToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference | GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    domain: cdktf.stringToTerraform(struct!.domain),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._domain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.domain = this._domain;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._domain = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._domain = value.domain;
+    }
+  }
+
+  // domain - computed: false, optional: false, required: true
+  private _domain?: string; 
+  public get domain() {
+    return this.getStringAttribute('domain');
+  }
+  public set domain(value: string) {
+    this._domain = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get domainInput() {
+    return this._domain;
+  }
+}
 export interface GoogleSqlDatabaseInstanceSettingsBackupConfigurationBackupRetentionSettings {
   /**
   * Number of backups to retain.
@@ -1812,7 +1876,7 @@ is set to true.
   */
   readonly collation?: string;
   /**
-  * Configuration to increase storage size automatically.  Note that future terraform apply calls will attempt to resize the disk to the value specified in disk_size - if this is set, do not set disk_size.
+  * Enables auto-resizing of the storage size. Defaults to true. Set to false if you want to set disk_size.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#disk_autoresize GoogleSqlDatabaseInstance#disk_autoresize}
   */
@@ -1824,7 +1888,7 @@ is set to true.
   */
   readonly diskAutoresizeLimit?: number;
   /**
-  * The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased.
+  * The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased. If you want to set this field, set disk_autoresize to false.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#disk_size GoogleSqlDatabaseInstance#disk_size}
   */
@@ -1853,6 +1917,12 @@ is set to true.
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#user_labels GoogleSqlDatabaseInstance#user_labels}
   */
   readonly userLabels?: { [key: string]: string };
+  /**
+  * active_directory_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#active_directory_config GoogleSqlDatabaseInstance#active_directory_config}
+  */
+  readonly activeDirectoryConfig?: GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig;
   /**
   * backup_configuration block
   * 
@@ -1907,6 +1977,7 @@ export function googleSqlDatabaseInstanceSettingsToTerraform(struct?: GoogleSqlD
     pricing_plan: cdktf.stringToTerraform(struct!.pricingPlan),
     tier: cdktf.stringToTerraform(struct!.tier),
     user_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.userLabels),
+    active_directory_config: googleSqlDatabaseInstanceSettingsActiveDirectoryConfigToTerraform(struct!.activeDirectoryConfig),
     backup_configuration: googleSqlDatabaseInstanceSettingsBackupConfigurationToTerraform(struct!.backupConfiguration),
     database_flags: cdktf.listMapper(googleSqlDatabaseInstanceSettingsDatabaseFlagsToTerraform)(struct!.databaseFlags),
     insights_config: googleSqlDatabaseInstanceSettingsInsightsConfigToTerraform(struct!.insightsConfig),
@@ -1970,6 +2041,10 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.userLabels = this._userLabels;
     }
+    if (this._activeDirectoryConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.activeDirectoryConfig = this._activeDirectoryConfig?.internalValue;
+    }
     if (this._backupConfiguration?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.backupConfiguration = this._backupConfiguration?.internalValue;
@@ -2010,6 +2085,7 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
       this._pricingPlan = undefined;
       this._tier = undefined;
       this._userLabels = undefined;
+      this._activeDirectoryConfig.internalValue = undefined;
       this._backupConfiguration.internalValue = undefined;
       this._databaseFlags = undefined;
       this._insightsConfig.internalValue = undefined;
@@ -2029,6 +2105,7 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
       this._pricingPlan = value.pricingPlan;
       this._tier = value.tier;
       this._userLabels = value.userLabels;
+      this._activeDirectoryConfig.internalValue = value.activeDirectoryConfig;
       this._backupConfiguration.internalValue = value.backupConfiguration;
       this._databaseFlags = value.databaseFlags;
       this._insightsConfig.internalValue = value.insightsConfig;
@@ -2198,6 +2275,22 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
   // version - computed: true, optional: false, required: false
   public get version() {
     return this.getNumberAttribute('version');
+  }
+
+  // active_directory_config - computed: false, optional: true, required: false
+  private _activeDirectoryConfig = new GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfigOutputReference(this, "active_directory_config");
+  public get activeDirectoryConfig() {
+    return this._activeDirectoryConfig;
+  }
+  public putActiveDirectoryConfig(value: GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig) {
+    this._activeDirectoryConfig.internalValue = value;
+  }
+  public resetActiveDirectoryConfig() {
+    this._activeDirectoryConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeDirectoryConfigInput() {
+    return this._activeDirectoryConfig.internalValue;
   }
 
   // backup_configuration - computed: false, optional: true, required: false
@@ -2443,7 +2536,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_sql_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

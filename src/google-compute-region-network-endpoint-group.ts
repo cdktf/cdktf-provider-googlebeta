@@ -27,7 +27,7 @@ character, which cannot be a dash.
   */
   readonly name: string;
   /**
-  * Type of network endpoints in this network endpoint group. Defaults to SERVERLESS Default value: "SERVERLESS" Possible values: ["SERVERLESS"]
+  * Type of network endpoints in this network endpoint group. Defaults to SERVERLESS Default value: "SERVERLESS" Possible values: ["SERVERLESS", "PRIVATE_SERVICE_CONNECT"]
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_network_endpoint_group#network_endpoint_type GoogleComputeRegionNetworkEndpointGroup#network_endpoint_type}
   */
@@ -36,6 +36,13 @@ character, which cannot be a dash.
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_network_endpoint_group#project GoogleComputeRegionNetworkEndpointGroup#project}
   */
   readonly project?: string;
+  /**
+  * The target service url used to set up private service connection to
+a Google API or a PSC Producer Service Attachment.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_network_endpoint_group#psc_target_service GoogleComputeRegionNetworkEndpointGroup#psc_target_service}
+  */
+  readonly pscTargetService?: string;
   /**
   * A reference to the region where the Serverless NEGs Reside.
   * 
@@ -727,7 +734,7 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
       terraformResourceType: 'google_compute_region_network_endpoint_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -739,6 +746,7 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
     this._name = config.name;
     this._networkEndpointType = config.networkEndpointType;
     this._project = config.project;
+    this._pscTargetService = config.pscTargetService;
     this._region = config.region;
     this._appEngine.internalValue = config.appEngine;
     this._cloudFunction.internalValue = config.cloudFunction;
@@ -815,6 +823,22 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+
+  // psc_target_service - computed: false, optional: true, required: false
+  private _pscTargetService?: string; 
+  public get pscTargetService() {
+    return this.getStringAttribute('psc_target_service');
+  }
+  public set pscTargetService(value: string) {
+    this._pscTargetService = value;
+  }
+  public resetPscTargetService() {
+    this._pscTargetService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pscTargetServiceInput() {
+    return this._pscTargetService;
   }
 
   // region - computed: false, optional: false, required: true
@@ -925,6 +949,7 @@ export class GoogleComputeRegionNetworkEndpointGroup extends cdktf.TerraformReso
       name: cdktf.stringToTerraform(this._name),
       network_endpoint_type: cdktf.stringToTerraform(this._networkEndpointType),
       project: cdktf.stringToTerraform(this._project),
+      psc_target_service: cdktf.stringToTerraform(this._pscTargetService),
       region: cdktf.stringToTerraform(this._region),
       app_engine: googleComputeRegionNetworkEndpointGroupAppEngineToTerraform(this._appEngine.internalValue),
       cloud_function: googleComputeRegionNetworkEndpointGroupCloudFunctionToTerraform(this._cloudFunction.internalValue),

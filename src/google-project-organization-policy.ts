@@ -697,7 +697,7 @@ export class GoogleProjectOrganizationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_project_organization_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

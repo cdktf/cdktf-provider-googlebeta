@@ -39,17 +39,66 @@ Examples: US, EU, asia-northeast1, us-central1, europe-west1. The default value 
   */
   readonly project?: string;
   /**
+  * cloud_resource block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection#cloud_resource GoogleBigqueryConnection#cloud_resource}
+  */
+  readonly cloudResource?: GoogleBigqueryConnectionCloudResource;
+  /**
   * cloud_sql block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection#cloud_sql GoogleBigqueryConnection#cloud_sql}
   */
-  readonly cloudSql: GoogleBigqueryConnectionCloudSql;
+  readonly cloudSql?: GoogleBigqueryConnectionCloudSql;
   /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection#timeouts GoogleBigqueryConnection#timeouts}
   */
   readonly timeouts?: GoogleBigqueryConnectionTimeouts;
+}
+export interface GoogleBigqueryConnectionCloudResource {
+}
+
+export function googleBigqueryConnectionCloudResourceToTerraform(struct?: GoogleBigqueryConnectionCloudResourceOutputReference | GoogleBigqueryConnectionCloudResource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GoogleBigqueryConnectionCloudResourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryConnectionCloudResource | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryConnectionCloudResource | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // service_account_id - computed: true, optional: false, required: false
+  public get serviceAccountId() {
+    return this.getStringAttribute('service_account_id');
+  }
 }
 export interface GoogleBigqueryConnectionCloudSqlCredential {
   /**
@@ -422,14 +471,14 @@ export class GoogleBigqueryConnection extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options GoogleBigqueryConnectionConfig
+  * @param options GoogleBigqueryConnectionConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: GoogleBigqueryConnectionConfig) {
+  public constructor(scope: Construct, id: string, config: GoogleBigqueryConnectionConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'google_bigquery_connection',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -442,6 +491,7 @@ export class GoogleBigqueryConnection extends cdktf.TerraformResource {
     this._friendlyName = config.friendlyName;
     this._location = config.location;
     this._project = config.project;
+    this._cloudResource.internalValue = config.cloudResource;
     this._cloudSql.internalValue = config.cloudSql;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -545,13 +595,32 @@ export class GoogleBigqueryConnection extends cdktf.TerraformResource {
     return this._project;
   }
 
-  // cloud_sql - computed: false, optional: false, required: true
+  // cloud_resource - computed: false, optional: true, required: false
+  private _cloudResource = new GoogleBigqueryConnectionCloudResourceOutputReference(this, "cloud_resource");
+  public get cloudResource() {
+    return this._cloudResource;
+  }
+  public putCloudResource(value: GoogleBigqueryConnectionCloudResource) {
+    this._cloudResource.internalValue = value;
+  }
+  public resetCloudResource() {
+    this._cloudResource.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudResourceInput() {
+    return this._cloudResource.internalValue;
+  }
+
+  // cloud_sql - computed: false, optional: true, required: false
   private _cloudSql = new GoogleBigqueryConnectionCloudSqlOutputReference(this, "cloud_sql");
   public get cloudSql() {
     return this._cloudSql;
   }
   public putCloudSql(value: GoogleBigqueryConnectionCloudSql) {
     this._cloudSql.internalValue = value;
+  }
+  public resetCloudSql() {
+    this._cloudSql.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cloudSqlInput() {
@@ -585,6 +654,7 @@ export class GoogleBigqueryConnection extends cdktf.TerraformResource {
       friendly_name: cdktf.stringToTerraform(this._friendlyName),
       location: cdktf.stringToTerraform(this._location),
       project: cdktf.stringToTerraform(this._project),
+      cloud_resource: googleBigqueryConnectionCloudResourceToTerraform(this._cloudResource.internalValue),
       cloud_sql: googleBigqueryConnectionCloudSqlToTerraform(this._cloudSql.internalValue),
       timeouts: googleBigqueryConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
