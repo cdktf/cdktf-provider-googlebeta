@@ -2588,6 +2588,70 @@ export class GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutput
     return this._startTime;
   }
 }
+export interface GoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions {
+  /**
+  * The scope of automatic upgrades to restrict in the exclusion window.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#scope GoogleContainerCluster#scope}
+  */
+  readonly scope: string;
+}
+
+export function googleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsToTerraform(struct?: GoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference | GoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    scope: cdktf.stringToTerraform(struct!.scope),
+  }
+}
+
+export class GoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._scope !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scope = this._scope;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._scope = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._scope = value.scope;
+    }
+  }
+
+  // scope - computed: false, optional: false, required: true
+  private _scope?: string; 
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+  public set scope(value: string) {
+    this._scope = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope;
+  }
+}
 export interface GoogleContainerClusterMaintenancePolicyMaintenanceExclusion {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#end_time GoogleContainerCluster#end_time}
@@ -2601,6 +2665,12 @@ export interface GoogleContainerClusterMaintenancePolicyMaintenanceExclusion {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#start_time GoogleContainerCluster#start_time}
   */
   readonly startTime: string;
+  /**
+  * exclusion_options block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#exclusion_options GoogleContainerCluster#exclusion_options}
+  */
+  readonly exclusionOptions?: GoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions;
 }
 
 export function googleContainerClusterMaintenancePolicyMaintenanceExclusionToTerraform(struct?: GoogleContainerClusterMaintenancePolicyMaintenanceExclusion | cdktf.IResolvable): any {
@@ -2612,6 +2682,7 @@ export function googleContainerClusterMaintenancePolicyMaintenanceExclusionToTer
     end_time: cdktf.stringToTerraform(struct!.endTime),
     exclusion_name: cdktf.stringToTerraform(struct!.exclusionName),
     start_time: cdktf.stringToTerraform(struct!.startTime),
+    exclusion_options: googleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsToTerraform(struct!.exclusionOptions),
   }
 }
 
@@ -7056,7 +7127,7 @@ export class GoogleContainerClusterPrivateClusterConfigOutputReference extends c
     return this._enablePrivateNodes;
   }
 
-  // master_ipv4_cidr_block - computed: false, optional: true, required: false
+  // master_ipv4_cidr_block - computed: true, optional: true, required: false
   private _masterIpv4CidrBlock?: string; 
   public get masterIpv4CidrBlock() {
     return this.getStringAttribute('master_ipv4_cidr_block');
@@ -7661,7 +7732,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

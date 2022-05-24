@@ -63,7 +63,7 @@ export class GoogleLoggingOrganizationExclusion extends cdktf.TerraformResource 
       terraformResourceType: 'google_logging_organization_exclusion',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -2014,6 +2014,12 @@ false when RevisionName is non-empty.
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#revision_name GoogleCloudRunService#revision_name}
   */
   readonly revisionName?: string;
+  /**
+  * Tag is optionally used to expose a dedicated url for referencing this target exclusively.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#tag GoogleCloudRunService#tag}
+  */
+  readonly tag?: string;
 }
 
 export function googleCloudRunServiceTrafficToTerraform(struct?: GoogleCloudRunServiceTraffic | cdktf.IResolvable): any {
@@ -2025,6 +2031,7 @@ export function googleCloudRunServiceTrafficToTerraform(struct?: GoogleCloudRunS
     latest_revision: cdktf.booleanToTerraform(struct!.latestRevision),
     percent: cdktf.numberToTerraform(struct!.percent),
     revision_name: cdktf.stringToTerraform(struct!.revisionName),
+    tag: cdktf.stringToTerraform(struct!.tag),
   }
 }
 
@@ -2055,7 +2062,7 @@ export class GoogleCloudRunService extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_run_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

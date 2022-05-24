@@ -43,7 +43,7 @@ export class GoogleAccessContextManagerAccessPolicyIamPolicy extends cdktf.Terra
       terraformResourceType: 'google_access_context_manager_access_policy_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.21.0',
+        providerVersion: '4.22.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
