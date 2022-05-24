@@ -14,6 +14,13 @@ export interface GoogleDataprocWorkflowTemplateConfig extends cdktf.TerraformMet
   */
   readonly dagTimeout?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_workflow_template#id GoogleDataprocWorkflowTemplate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Optional. The labels to associate with this template. These labels will be propagated to all jobs and clusters created by the workflow instance. Label **keys** must contain 1 to 63 characters, and must conform to [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt). Label **values** may be empty, but, if present, must contain 1 to 63 characters, and must conform to [RFC 1035](https://www.ietf.org/rfc/rfc1035.txt). No more than 32 labels can be associated with a template.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_workflow_template#labels GoogleDataprocWorkflowTemplate#labels}
@@ -2907,6 +2914,325 @@ export function googleDataprocWorkflowTemplateJobsToTerraform(struct?: GoogleDat
   }
 }
 
+export class GoogleDataprocWorkflowTemplateJobsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocWorkflowTemplateJobs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._labels !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.labels = this._labels;
+    }
+    if (this._prerequisiteStepIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prerequisiteStepIds = this._prerequisiteStepIds;
+    }
+    if (this._stepId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stepId = this._stepId;
+    }
+    if (this._hadoopJob?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hadoopJob = this._hadoopJob?.internalValue;
+    }
+    if (this._hiveJob?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hiveJob = this._hiveJob?.internalValue;
+    }
+    if (this._pigJob?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pigJob = this._pigJob?.internalValue;
+    }
+    if (this._prestoJob?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.prestoJob = this._prestoJob?.internalValue;
+    }
+    if (this._pysparkJob?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pysparkJob = this._pysparkJob?.internalValue;
+    }
+    if (this._scheduling?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scheduling = this._scheduling?.internalValue;
+    }
+    if (this._sparkJob?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sparkJob = this._sparkJob?.internalValue;
+    }
+    if (this._sparkRJob?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sparkRJob = this._sparkRJob?.internalValue;
+    }
+    if (this._sparkSqlJob?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sparkSqlJob = this._sparkSqlJob?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocWorkflowTemplateJobs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._labels = undefined;
+      this._prerequisiteStepIds = undefined;
+      this._stepId = undefined;
+      this._hadoopJob.internalValue = undefined;
+      this._hiveJob.internalValue = undefined;
+      this._pigJob.internalValue = undefined;
+      this._prestoJob.internalValue = undefined;
+      this._pysparkJob.internalValue = undefined;
+      this._scheduling.internalValue = undefined;
+      this._sparkJob.internalValue = undefined;
+      this._sparkRJob.internalValue = undefined;
+      this._sparkSqlJob.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._labels = value.labels;
+      this._prerequisiteStepIds = value.prerequisiteStepIds;
+      this._stepId = value.stepId;
+      this._hadoopJob.internalValue = value.hadoopJob;
+      this._hiveJob.internalValue = value.hiveJob;
+      this._pigJob.internalValue = value.pigJob;
+      this._prestoJob.internalValue = value.prestoJob;
+      this._pysparkJob.internalValue = value.pysparkJob;
+      this._scheduling.internalValue = value.scheduling;
+      this._sparkJob.internalValue = value.sparkJob;
+      this._sparkRJob.internalValue = value.sparkRJob;
+      this._sparkSqlJob.internalValue = value.sparkSqlJob;
+    }
+  }
+
+  // labels - computed: false, optional: true, required: false
+  private _labels?: { [key: string]: string }; 
+  public get labels() {
+    return this.getStringMapAttribute('labels');
+  }
+  public set labels(value: { [key: string]: string }) {
+    this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelsInput() {
+    return this._labels;
+  }
+
+  // prerequisite_step_ids - computed: false, optional: true, required: false
+  private _prerequisiteStepIds?: string[]; 
+  public get prerequisiteStepIds() {
+    return this.getListAttribute('prerequisite_step_ids');
+  }
+  public set prerequisiteStepIds(value: string[]) {
+    this._prerequisiteStepIds = value;
+  }
+  public resetPrerequisiteStepIds() {
+    this._prerequisiteStepIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prerequisiteStepIdsInput() {
+    return this._prerequisiteStepIds;
+  }
+
+  // step_id - computed: false, optional: false, required: true
+  private _stepId?: string; 
+  public get stepId() {
+    return this.getStringAttribute('step_id');
+  }
+  public set stepId(value: string) {
+    this._stepId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stepIdInput() {
+    return this._stepId;
+  }
+
+  // hadoop_job - computed: false, optional: true, required: false
+  private _hadoopJob = new GoogleDataprocWorkflowTemplateJobsHadoopJobOutputReference(this, "hadoop_job");
+  public get hadoopJob() {
+    return this._hadoopJob;
+  }
+  public putHadoopJob(value: GoogleDataprocWorkflowTemplateJobsHadoopJob) {
+    this._hadoopJob.internalValue = value;
+  }
+  public resetHadoopJob() {
+    this._hadoopJob.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hadoopJobInput() {
+    return this._hadoopJob.internalValue;
+  }
+
+  // hive_job - computed: false, optional: true, required: false
+  private _hiveJob = new GoogleDataprocWorkflowTemplateJobsHiveJobOutputReference(this, "hive_job");
+  public get hiveJob() {
+    return this._hiveJob;
+  }
+  public putHiveJob(value: GoogleDataprocWorkflowTemplateJobsHiveJob) {
+    this._hiveJob.internalValue = value;
+  }
+  public resetHiveJob() {
+    this._hiveJob.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hiveJobInput() {
+    return this._hiveJob.internalValue;
+  }
+
+  // pig_job - computed: false, optional: true, required: false
+  private _pigJob = new GoogleDataprocWorkflowTemplateJobsPigJobOutputReference(this, "pig_job");
+  public get pigJob() {
+    return this._pigJob;
+  }
+  public putPigJob(value: GoogleDataprocWorkflowTemplateJobsPigJob) {
+    this._pigJob.internalValue = value;
+  }
+  public resetPigJob() {
+    this._pigJob.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pigJobInput() {
+    return this._pigJob.internalValue;
+  }
+
+  // presto_job - computed: false, optional: true, required: false
+  private _prestoJob = new GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference(this, "presto_job");
+  public get prestoJob() {
+    return this._prestoJob;
+  }
+  public putPrestoJob(value: GoogleDataprocWorkflowTemplateJobsPrestoJob) {
+    this._prestoJob.internalValue = value;
+  }
+  public resetPrestoJob() {
+    this._prestoJob.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prestoJobInput() {
+    return this._prestoJob.internalValue;
+  }
+
+  // pyspark_job - computed: false, optional: true, required: false
+  private _pysparkJob = new GoogleDataprocWorkflowTemplateJobsPysparkJobOutputReference(this, "pyspark_job");
+  public get pysparkJob() {
+    return this._pysparkJob;
+  }
+  public putPysparkJob(value: GoogleDataprocWorkflowTemplateJobsPysparkJob) {
+    this._pysparkJob.internalValue = value;
+  }
+  public resetPysparkJob() {
+    this._pysparkJob.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pysparkJobInput() {
+    return this._pysparkJob.internalValue;
+  }
+
+  // scheduling - computed: false, optional: true, required: false
+  private _scheduling = new GoogleDataprocWorkflowTemplateJobsSchedulingOutputReference(this, "scheduling");
+  public get scheduling() {
+    return this._scheduling;
+  }
+  public putScheduling(value: GoogleDataprocWorkflowTemplateJobsScheduling) {
+    this._scheduling.internalValue = value;
+  }
+  public resetScheduling() {
+    this._scheduling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schedulingInput() {
+    return this._scheduling.internalValue;
+  }
+
+  // spark_job - computed: false, optional: true, required: false
+  private _sparkJob = new GoogleDataprocWorkflowTemplateJobsSparkJobOutputReference(this, "spark_job");
+  public get sparkJob() {
+    return this._sparkJob;
+  }
+  public putSparkJob(value: GoogleDataprocWorkflowTemplateJobsSparkJob) {
+    this._sparkJob.internalValue = value;
+  }
+  public resetSparkJob() {
+    this._sparkJob.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkJobInput() {
+    return this._sparkJob.internalValue;
+  }
+
+  // spark_r_job - computed: false, optional: true, required: false
+  private _sparkRJob = new GoogleDataprocWorkflowTemplateJobsSparkRJobOutputReference(this, "spark_r_job");
+  public get sparkRJob() {
+    return this._sparkRJob;
+  }
+  public putSparkRJob(value: GoogleDataprocWorkflowTemplateJobsSparkRJob) {
+    this._sparkRJob.internalValue = value;
+  }
+  public resetSparkRJob() {
+    this._sparkRJob.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkRJobInput() {
+    return this._sparkRJob.internalValue;
+  }
+
+  // spark_sql_job - computed: false, optional: true, required: false
+  private _sparkSqlJob = new GoogleDataprocWorkflowTemplateJobsSparkSqlJobOutputReference(this, "spark_sql_job");
+  public get sparkSqlJob() {
+    return this._sparkSqlJob;
+  }
+  public putSparkSqlJob(value: GoogleDataprocWorkflowTemplateJobsSparkSqlJob) {
+    this._sparkSqlJob.internalValue = value;
+  }
+  public resetSparkSqlJob() {
+    this._sparkSqlJob.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkSqlJobInput() {
+    return this._sparkSqlJob.internalValue;
+  }
+}
+
+export class GoogleDataprocWorkflowTemplateJobsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocWorkflowTemplateJobs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocWorkflowTemplateJobsOutputReference {
+    return new GoogleDataprocWorkflowTemplateJobsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataprocWorkflowTemplateParametersValidationRegex {
   /**
   * Required. RE2 regular expressions used to validate the parameter's value. The value must match the regex in its entirety (substring matches are not sufficient).
@@ -3171,6 +3497,146 @@ export function googleDataprocWorkflowTemplateParametersToTerraform(struct?: Goo
   }
 }
 
+export class GoogleDataprocWorkflowTemplateParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocWorkflowTemplateParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._fields !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fields = this._fields;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._validation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.validation = this._validation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocWorkflowTemplateParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._fields = undefined;
+      this._name = undefined;
+      this._validation.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._fields = value.fields;
+      this._name = value.name;
+      this._validation.internalValue = value.validation;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // fields - computed: false, optional: false, required: true
+  private _fields?: string[]; 
+  public get fields() {
+    return this.getListAttribute('fields');
+  }
+  public set fields(value: string[]) {
+    this._fields = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldsInput() {
+    return this._fields;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // validation - computed: false, optional: true, required: false
+  private _validation = new GoogleDataprocWorkflowTemplateParametersValidationOutputReference(this, "validation");
+  public get validation() {
+    return this._validation;
+  }
+  public putValidation(value: GoogleDataprocWorkflowTemplateParametersValidation) {
+    this._validation.internalValue = value;
+  }
+  public resetValidation() {
+    this._validation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get validationInput() {
+    return this._validation.internalValue;
+  }
+}
+
+export class GoogleDataprocWorkflowTemplateParametersList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocWorkflowTemplateParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocWorkflowTemplateParametersOutputReference {
+    return new GoogleDataprocWorkflowTemplateParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataprocWorkflowTemplatePlacementClusterSelector {
   /**
   * Required. The cluster labels. Cluster must have all labels to match.
@@ -3466,8 +3932,9 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigEndpoint
   }
 
   // http_ports - computed: true, optional: false, required: false
-  public httpPorts(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'http_ports').lookup(key);
+  private _httpPorts = new cdktf.StringMap(this, "http_ports");
+  public get httpPorts() {
+    return this._httpPorts;
   }
 }
 export interface GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinity {
@@ -4205,6 +4672,108 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigIniti
   }
 }
 
+export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._executableFile !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.executableFile = this._executableFile;
+    }
+    if (this._executionTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.executionTimeout = this._executionTimeout;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._executableFile = undefined;
+      this._executionTimeout = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._executableFile = value.executableFile;
+      this._executionTimeout = value.executionTimeout;
+    }
+  }
+
+  // executable_file - computed: false, optional: true, required: false
+  private _executableFile?: string; 
+  public get executableFile() {
+    return this.getStringAttribute('executable_file');
+  }
+  public set executableFile(value: string) {
+    this._executableFile = value;
+  }
+  public resetExecutableFile() {
+    this._executableFile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executableFileInput() {
+    return this._executableFile;
+  }
+
+  // execution_timeout - computed: false, optional: true, required: false
+  private _executionTimeout?: string; 
+  public get executionTimeout() {
+    return this.getStringAttribute('execution_timeout');
+  }
+  public set executionTimeout(value: string) {
+    this._executionTimeout = value;
+  }
+  public resetExecutionTimeout() {
+    this._executionTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionTimeoutInput() {
+    return this._executionTimeout;
+  }
+}
+
+export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference {
+    return new GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfig {
   /**
   * Optional. The time when cluster will be auto-deleted (see JSON representation of [Timestamp](https://developers.google.com/protocol-buffers/docs/proto3#json)).
@@ -4430,6 +4999,108 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigMaste
   }
 }
 
+export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceleratorCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorCount = this._acceleratorCount;
+    }
+    if (this._acceleratorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorType = this._acceleratorType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = undefined;
+      this._acceleratorType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = value.acceleratorCount;
+      this._acceleratorType = value.acceleratorType;
+    }
+  }
+
+  // accelerator_count - computed: false, optional: true, required: false
+  private _acceleratorCount?: number; 
+  public get acceleratorCount() {
+    return this.getNumberAttribute('accelerator_count');
+  }
+  public set acceleratorCount(value: number) {
+    this._acceleratorCount = value;
+  }
+  public resetAcceleratorCount() {
+    this._acceleratorCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorCountInput() {
+    return this._acceleratorCount;
+  }
+
+  // accelerator_type - computed: false, optional: true, required: false
+  private _acceleratorType?: string; 
+  public get acceleratorType() {
+    return this.getStringAttribute('accelerator_type');
+  }
+  public set acceleratorType(value: string) {
+    this._acceleratorType = value;
+  }
+  public resetAcceleratorType() {
+    this._acceleratorType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypeInput() {
+    return this._acceleratorType;
+  }
+}
+
+export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference {
+    return new GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfig {
   /**
   * Optional. Size in GB of the boot disk (default is 500GB).
@@ -4638,6 +5309,26 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterCo
       hasAnyValues = true;
       internalValueResult.machineType = this._machineType;
     }
+    if (this._minCpuPlatform !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minCpuPlatform = this._minCpuPlatform;
+    }
+    if (this._numInstances !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numInstances = this._numInstances;
+    }
+    if (this._preemptibility !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preemptibility = this._preemptibility;
+    }
+    if (this._accelerators?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accelerators = this._accelerators?.internalValue;
+    }
+    if (this._diskConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskConfig = this._diskConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -4649,7 +5340,7 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterCo
       this._minCpuPlatform = undefined;
       this._numInstances = undefined;
       this._preemptibility = undefined;
-      this._accelerators = undefined;
+      this._accelerators.internalValue = undefined;
       this._diskConfig.internalValue = undefined;
     }
     else {
@@ -4659,7 +5350,7 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterCo
       this._minCpuPlatform = value.minCpuPlatform;
       this._numInstances = value.numInstances;
       this._preemptibility = value.preemptibility;
-      this._accelerators = value.accelerators;
+      this._accelerators.internalValue = value.accelerators;
       this._diskConfig.internalValue = value.diskConfig;
     }
   }
@@ -4761,20 +5452,19 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterCo
   }
 
   // accelerators - computed: false, optional: true, required: false
-  private _accelerators?: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators[] | cdktf.IResolvable; 
+  private _accelerators = new GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsList(this, "accelerators", false);
   public get accelerators() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('accelerators');
+    return this._accelerators;
   }
-  public set accelerators(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators[] | cdktf.IResolvable) {
-    this._accelerators = value;
+  public putAccelerators(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAccelerators[] | cdktf.IResolvable) {
+    this._accelerators.internalValue = value;
   }
   public resetAccelerators() {
-    this._accelerators = undefined;
+    this._accelerators.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get acceleratorsInput() {
-    return this._accelerators;
+    return this._accelerators.internalValue;
   }
 
   // disk_config - computed: false, optional: true, required: false
@@ -4952,6 +5642,108 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigSecon
   }
 }
 
+export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceleratorCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorCount = this._acceleratorCount;
+    }
+    if (this._acceleratorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorType = this._acceleratorType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = undefined;
+      this._acceleratorType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = value.acceleratorCount;
+      this._acceleratorType = value.acceleratorType;
+    }
+  }
+
+  // accelerator_count - computed: false, optional: true, required: false
+  private _acceleratorCount?: number; 
+  public get acceleratorCount() {
+    return this.getNumberAttribute('accelerator_count');
+  }
+  public set acceleratorCount(value: number) {
+    this._acceleratorCount = value;
+  }
+  public resetAcceleratorCount() {
+    this._acceleratorCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorCountInput() {
+    return this._acceleratorCount;
+  }
+
+  // accelerator_type - computed: false, optional: true, required: false
+  private _acceleratorType?: string; 
+  public get acceleratorType() {
+    return this.getStringAttribute('accelerator_type');
+  }
+  public set acceleratorType(value: string) {
+    this._acceleratorType = value;
+  }
+  public resetAcceleratorType() {
+    this._acceleratorType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypeInput() {
+    return this._acceleratorType;
+  }
+}
+
+export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference {
+    return new GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfig {
   /**
   * Optional. Size in GB of the boot disk (default is 500GB).
@@ -5160,6 +5952,26 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondar
       hasAnyValues = true;
       internalValueResult.machineType = this._machineType;
     }
+    if (this._minCpuPlatform !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minCpuPlatform = this._minCpuPlatform;
+    }
+    if (this._numInstances !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numInstances = this._numInstances;
+    }
+    if (this._preemptibility !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preemptibility = this._preemptibility;
+    }
+    if (this._accelerators?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accelerators = this._accelerators?.internalValue;
+    }
+    if (this._diskConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskConfig = this._diskConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -5171,7 +5983,7 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondar
       this._minCpuPlatform = undefined;
       this._numInstances = undefined;
       this._preemptibility = undefined;
-      this._accelerators = undefined;
+      this._accelerators.internalValue = undefined;
       this._diskConfig.internalValue = undefined;
     }
     else {
@@ -5181,7 +5993,7 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondar
       this._minCpuPlatform = value.minCpuPlatform;
       this._numInstances = value.numInstances;
       this._preemptibility = value.preemptibility;
-      this._accelerators = value.accelerators;
+      this._accelerators.internalValue = value.accelerators;
       this._diskConfig.internalValue = value.diskConfig;
     }
   }
@@ -5283,20 +6095,19 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondar
   }
 
   // accelerators - computed: false, optional: true, required: false
-  private _accelerators?: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators[] | cdktf.IResolvable; 
+  private _accelerators = new GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsList(this, "accelerators", false);
   public get accelerators() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('accelerators');
+    return this._accelerators;
   }
-  public set accelerators(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators[] | cdktf.IResolvable) {
-    this._accelerators = value;
+  public putAccelerators(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAccelerators[] | cdktf.IResolvable) {
+    this._accelerators.internalValue = value;
   }
   public resetAccelerators() {
-    this._accelerators = undefined;
+    this._accelerators.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get acceleratorsInput() {
-    return this._accelerators;
+    return this._accelerators.internalValue;
   }
 
   // disk_config - computed: false, optional: true, required: false
@@ -6075,6 +6886,108 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigWorke
   }
 }
 
+export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceleratorCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorCount = this._acceleratorCount;
+    }
+    if (this._acceleratorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorType = this._acceleratorType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = undefined;
+      this._acceleratorType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = value.acceleratorCount;
+      this._acceleratorType = value.acceleratorType;
+    }
+  }
+
+  // accelerator_count - computed: false, optional: true, required: false
+  private _acceleratorCount?: number; 
+  public get acceleratorCount() {
+    return this.getNumberAttribute('accelerator_count');
+  }
+  public set acceleratorCount(value: number) {
+    this._acceleratorCount = value;
+  }
+  public resetAcceleratorCount() {
+    this._acceleratorCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorCountInput() {
+    return this._acceleratorCount;
+  }
+
+  // accelerator_type - computed: false, optional: true, required: false
+  private _acceleratorType?: string; 
+  public get acceleratorType() {
+    return this.getStringAttribute('accelerator_type');
+  }
+  public set acceleratorType(value: string) {
+    this._acceleratorType = value;
+  }
+  public resetAcceleratorType() {
+    this._acceleratorType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypeInput() {
+    return this._acceleratorType;
+  }
+}
+
+export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference {
+    return new GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfig {
   /**
   * Optional. Size in GB of the boot disk (default is 500GB).
@@ -6283,6 +7196,26 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerCo
       hasAnyValues = true;
       internalValueResult.machineType = this._machineType;
     }
+    if (this._minCpuPlatform !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minCpuPlatform = this._minCpuPlatform;
+    }
+    if (this._numInstances !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.numInstances = this._numInstances;
+    }
+    if (this._preemptibility !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preemptibility = this._preemptibility;
+    }
+    if (this._accelerators?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accelerators = this._accelerators?.internalValue;
+    }
+    if (this._diskConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskConfig = this._diskConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -6294,7 +7227,7 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerCo
       this._minCpuPlatform = undefined;
       this._numInstances = undefined;
       this._preemptibility = undefined;
-      this._accelerators = undefined;
+      this._accelerators.internalValue = undefined;
       this._diskConfig.internalValue = undefined;
     }
     else {
@@ -6304,7 +7237,7 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerCo
       this._minCpuPlatform = value.minCpuPlatform;
       this._numInstances = value.numInstances;
       this._preemptibility = value.preemptibility;
-      this._accelerators = value.accelerators;
+      this._accelerators.internalValue = value.accelerators;
       this._diskConfig.internalValue = value.diskConfig;
     }
   }
@@ -6406,20 +7339,19 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerCo
   }
 
   // accelerators - computed: false, optional: true, required: false
-  private _accelerators?: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators[] | cdktf.IResolvable; 
+  private _accelerators = new GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsList(this, "accelerators", false);
   public get accelerators() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('accelerators');
+    return this._accelerators;
   }
-  public set accelerators(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators[] | cdktf.IResolvable) {
-    this._accelerators = value;
+  public putAccelerators(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAccelerators[] | cdktf.IResolvable) {
+    this._accelerators.internalValue = value;
   }
   public resetAccelerators() {
-    this._accelerators = undefined;
+    this._accelerators.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get acceleratorsInput() {
-    return this._accelerators;
+    return this._accelerators.internalValue;
   }
 
   // disk_config - computed: false, optional: true, required: false
@@ -6597,9 +7529,9 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigOutputRe
       hasAnyValues = true;
       internalValueResult.gkeClusterConfig = this._gkeClusterConfig?.internalValue;
     }
-    if (this._initializationActions !== undefined) {
+    if (this._initializationActions?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.initializationActions = this._initializationActions;
+      internalValueResult.initializationActions = this._initializationActions?.internalValue;
     }
     if (this._lifecycleConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -6642,7 +7574,7 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigOutputRe
       this._endpointConfig.internalValue = undefined;
       this._gceClusterConfig.internalValue = undefined;
       this._gkeClusterConfig.internalValue = undefined;
-      this._initializationActions = undefined;
+      this._initializationActions.internalValue = undefined;
       this._lifecycleConfig.internalValue = undefined;
       this._masterConfig.internalValue = undefined;
       this._metastoreConfig.internalValue = undefined;
@@ -6660,7 +7592,7 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigOutputRe
       this._endpointConfig.internalValue = value.endpointConfig;
       this._gceClusterConfig.internalValue = value.gceClusterConfig;
       this._gkeClusterConfig.internalValue = value.gkeClusterConfig;
-      this._initializationActions = value.initializationActions;
+      this._initializationActions.internalValue = value.initializationActions;
       this._lifecycleConfig.internalValue = value.lifecycleConfig;
       this._masterConfig.internalValue = value.masterConfig;
       this._metastoreConfig.internalValue = value.metastoreConfig;
@@ -6784,20 +7716,19 @@ export class GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigOutputRe
   }
 
   // initialization_actions - computed: false, optional: true, required: false
-  private _initializationActions?: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions[] | cdktf.IResolvable; 
+  private _initializationActions = new GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList(this, "initialization_actions", false);
   public get initializationActions() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('initialization_actions');
+    return this._initializationActions;
   }
-  public set initializationActions(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions[] | cdktf.IResolvable) {
-    this._initializationActions = value;
+  public putInitializationActions(value: GoogleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions[] | cdktf.IResolvable) {
+    this._initializationActions.internalValue = value;
   }
   public resetInitializationActions() {
-    this._initializationActions = undefined;
+    this._initializationActions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get initializationActionsInput() {
-    return this._initializationActions;
+    return this._initializationActions.internalValue;
   }
 
   // lifecycle_config - computed: false, optional: true, required: false
@@ -7151,6 +8082,7 @@ export function googleDataprocWorkflowTemplateTimeoutsToTerraform(struct?: Googl
 
 export class GoogleDataprocWorkflowTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7160,7 +8092,10 @@ export class GoogleDataprocWorkflowTemplateTimeoutsOutputReference extends cdktf
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataprocWorkflowTemplateTimeouts | undefined {
+  public get internalValue(): GoogleDataprocWorkflowTemplateTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -7174,14 +8109,20 @@ export class GoogleDataprocWorkflowTemplateTimeoutsOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataprocWorkflowTemplateTimeouts | undefined) {
+  public set internalValue(value: GoogleDataprocWorkflowTemplateTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -7255,13 +8196,14 @@ export class GoogleDataprocWorkflowTemplate extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._dagTimeout = config.dagTimeout;
+    this._id = config.id;
     this._labels = config.labels;
     this._location = config.location;
     this._name = config.name;
     this._project = config.project;
     this._version = config.version;
-    this._jobs = config.jobs;
-    this._parameters = config.parameters;
+    this._jobs.internalValue = config.jobs;
+    this._parameters.internalValue = config.parameters;
     this._placement.internalValue = config.placement;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -7292,8 +8234,19 @@ export class GoogleDataprocWorkflowTemplate extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // labels - computed: false, optional: true, required: false
@@ -7376,34 +8329,32 @@ export class GoogleDataprocWorkflowTemplate extends cdktf.TerraformResource {
   }
 
   // jobs - computed: false, optional: false, required: true
-  private _jobs?: GoogleDataprocWorkflowTemplateJobs[] | cdktf.IResolvable; 
+  private _jobs = new GoogleDataprocWorkflowTemplateJobsList(this, "jobs", false);
   public get jobs() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('jobs');
+    return this._jobs;
   }
-  public set jobs(value: GoogleDataprocWorkflowTemplateJobs[] | cdktf.IResolvable) {
-    this._jobs = value;
+  public putJobs(value: GoogleDataprocWorkflowTemplateJobs[] | cdktf.IResolvable) {
+    this._jobs.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get jobsInput() {
-    return this._jobs;
+    return this._jobs.internalValue;
   }
 
   // parameters - computed: false, optional: true, required: false
-  private _parameters?: GoogleDataprocWorkflowTemplateParameters[] | cdktf.IResolvable; 
+  private _parameters = new GoogleDataprocWorkflowTemplateParametersList(this, "parameters", false);
   public get parameters() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameters');
+    return this._parameters;
   }
-  public set parameters(value: GoogleDataprocWorkflowTemplateParameters[] | cdktf.IResolvable) {
-    this._parameters = value;
+  public putParameters(value: GoogleDataprocWorkflowTemplateParameters[] | cdktf.IResolvable) {
+    this._parameters.internalValue = value;
   }
   public resetParameters() {
-    this._parameters = undefined;
+    this._parameters.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parametersInput() {
-    return this._parameters;
+    return this._parameters.internalValue;
   }
 
   // placement - computed: false, optional: false, required: true
@@ -7442,13 +8393,14 @@ export class GoogleDataprocWorkflowTemplate extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       dag_timeout: cdktf.stringToTerraform(this._dagTimeout),
+      id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       version: cdktf.numberToTerraform(this._version),
-      jobs: cdktf.listMapper(googleDataprocWorkflowTemplateJobsToTerraform)(this._jobs),
-      parameters: cdktf.listMapper(googleDataprocWorkflowTemplateParametersToTerraform)(this._parameters),
+      jobs: cdktf.listMapper(googleDataprocWorkflowTemplateJobsToTerraform)(this._jobs.internalValue),
+      parameters: cdktf.listMapper(googleDataprocWorkflowTemplateParametersToTerraform)(this._parameters.internalValue),
       placement: googleDataprocWorkflowTemplatePlacementToTerraform(this._placement.internalValue),
       timeouts: googleDataprocWorkflowTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };

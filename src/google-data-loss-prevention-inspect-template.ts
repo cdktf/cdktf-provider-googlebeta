@@ -20,6 +20,13 @@ export interface GoogleDataLossPreventionInspectTemplateConfig extends cdktf.Ter
   */
   readonly displayName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_inspect_template#id GoogleDataLossPreventionInspectTemplate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The parent of the inspect template in any of the following formats:
 
 * 'projects/{{project}}'
@@ -547,6 +554,193 @@ export function googleDataLossPreventionInspectTemplateInspectConfigCustomInfoTy
   }
 }
 
+export class GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exclusionType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exclusionType = this._exclusionType;
+    }
+    if (this._likelihood !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.likelihood = this._likelihood;
+    }
+    if (this._dictionary?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dictionary = this._dictionary?.internalValue;
+    }
+    if (this._infoType?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.infoType = this._infoType?.internalValue;
+    }
+    if (this._regex?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.regex = this._regex?.internalValue;
+    }
+    if (this._storedType?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.storedType = this._storedType?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._exclusionType = undefined;
+      this._likelihood = undefined;
+      this._dictionary.internalValue = undefined;
+      this._infoType.internalValue = undefined;
+      this._regex.internalValue = undefined;
+      this._storedType.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._exclusionType = value.exclusionType;
+      this._likelihood = value.likelihood;
+      this._dictionary.internalValue = value.dictionary;
+      this._infoType.internalValue = value.infoType;
+      this._regex.internalValue = value.regex;
+      this._storedType.internalValue = value.storedType;
+    }
+  }
+
+  // exclusion_type - computed: false, optional: true, required: false
+  private _exclusionType?: string; 
+  public get exclusionType() {
+    return this.getStringAttribute('exclusion_type');
+  }
+  public set exclusionType(value: string) {
+    this._exclusionType = value;
+  }
+  public resetExclusionType() {
+    this._exclusionType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exclusionTypeInput() {
+    return this._exclusionType;
+  }
+
+  // likelihood - computed: false, optional: true, required: false
+  private _likelihood?: string; 
+  public get likelihood() {
+    return this.getStringAttribute('likelihood');
+  }
+  public set likelihood(value: string) {
+    this._likelihood = value;
+  }
+  public resetLikelihood() {
+    this._likelihood = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get likelihoodInput() {
+    return this._likelihood;
+  }
+
+  // dictionary - computed: false, optional: true, required: false
+  private _dictionary = new GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionaryOutputReference(this, "dictionary");
+  public get dictionary() {
+    return this._dictionary;
+  }
+  public putDictionary(value: GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesDictionary) {
+    this._dictionary.internalValue = value;
+  }
+  public resetDictionary() {
+    this._dictionary.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dictionaryInput() {
+    return this._dictionary.internalValue;
+  }
+
+  // info_type - computed: false, optional: false, required: true
+  private _infoType = new GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoTypeOutputReference(this, "info_type");
+  public get infoType() {
+    return this._infoType;
+  }
+  public putInfoType(value: GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoType) {
+    this._infoType.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get infoTypeInput() {
+    return this._infoType.internalValue;
+  }
+
+  // regex - computed: false, optional: true, required: false
+  private _regex = new GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegexOutputReference(this, "regex");
+  public get regex() {
+    return this._regex;
+  }
+  public putRegex(value: GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegex) {
+    this._regex.internalValue = value;
+  }
+  public resetRegex() {
+    this._regex.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regexInput() {
+    return this._regex.internalValue;
+  }
+
+  // stored_type - computed: false, optional: true, required: false
+  private _storedType = new GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredTypeOutputReference(this, "stored_type");
+  public get storedType() {
+    return this._storedType;
+  }
+  public putStoredType(value: GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredType) {
+    this._storedType.internalValue = value;
+  }
+  public resetStoredType() {
+    this._storedType.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get storedTypeInput() {
+    return this._storedType.internalValue;
+  }
+}
+
+export class GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference {
+    return new GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes {
   /**
   * Name of the information type. Either a name of your choosing when creating a CustomInfoType, or one of the names listed
@@ -567,6 +761,83 @@ export function googleDataLossPreventionInspectTemplateInspectConfigInfoTypesToT
   }
 }
 
+export class GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference {
+    return new GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoType {
   /**
   * Name of the information type. Either a name of your choosing when creating a CustomInfoType, or one of the names listed
@@ -658,6 +929,102 @@ export function googleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFin
   }
 }
 
+export class GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoType | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxFindings !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxFindings = this._maxFindings;
+    }
+    if (this._infoType?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.infoType = this._infoType?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoType | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._maxFindings = undefined;
+      this._infoType.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._maxFindings = value.maxFindings;
+      this._infoType.internalValue = value.infoType;
+    }
+  }
+
+  // max_findings - computed: false, optional: false, required: true
+  private _maxFindings?: number; 
+  public get maxFindings() {
+    return this.getNumberAttribute('max_findings');
+  }
+  public set maxFindings(value: number) {
+    this._maxFindings = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxFindingsInput() {
+    return this._maxFindings;
+  }
+
+  // info_type - computed: false, optional: false, required: true
+  private _infoType = new GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference(this, "info_type");
+  public get infoType() {
+    return this._infoType;
+  }
+  public putInfoType(value: GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoType) {
+    this._infoType.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get infoTypeInput() {
+    return this._infoType.internalValue;
+  }
+}
+
+export class GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoType[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeOutputReference {
+    return new GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionInspectTemplateInspectConfigLimits {
   /**
   * Max number of findings that will be returned for each item scanned. The maximum returned is 2000.
@@ -713,9 +1080,9 @@ export class GoogleDataLossPreventionInspectTemplateInspectConfigLimitsOutputRef
       hasAnyValues = true;
       internalValueResult.maxFindingsPerRequest = this._maxFindingsPerRequest;
     }
-    if (this._maxFindingsPerInfoType !== undefined) {
+    if (this._maxFindingsPerInfoType?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.maxFindingsPerInfoType = this._maxFindingsPerInfoType;
+      internalValueResult.maxFindingsPerInfoType = this._maxFindingsPerInfoType?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -725,13 +1092,13 @@ export class GoogleDataLossPreventionInspectTemplateInspectConfigLimitsOutputRef
       this.isEmptyObject = false;
       this._maxFindingsPerItem = undefined;
       this._maxFindingsPerRequest = undefined;
-      this._maxFindingsPerInfoType = undefined;
+      this._maxFindingsPerInfoType.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._maxFindingsPerItem = value.maxFindingsPerItem;
       this._maxFindingsPerRequest = value.maxFindingsPerRequest;
-      this._maxFindingsPerInfoType = value.maxFindingsPerInfoType;
+      this._maxFindingsPerInfoType.internalValue = value.maxFindingsPerInfoType;
     }
   }
 
@@ -762,20 +1129,19 @@ export class GoogleDataLossPreventionInspectTemplateInspectConfigLimitsOutputRef
   }
 
   // max_findings_per_info_type - computed: false, optional: true, required: false
-  private _maxFindingsPerInfoType?: GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoType[] | cdktf.IResolvable; 
+  private _maxFindingsPerInfoType = new GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeList(this, "max_findings_per_info_type", false);
   public get maxFindingsPerInfoType() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('max_findings_per_info_type');
+    return this._maxFindingsPerInfoType;
   }
-  public set maxFindingsPerInfoType(value: GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoType[] | cdktf.IResolvable) {
-    this._maxFindingsPerInfoType = value;
+  public putMaxFindingsPerInfoType(value: GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoType[] | cdktf.IResolvable) {
+    this._maxFindingsPerInfoType.internalValue = value;
   }
   public resetMaxFindingsPerInfoType() {
-    this._maxFindingsPerInfoType = undefined;
+    this._maxFindingsPerInfoType.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get maxFindingsPerInfoTypeInput() {
-    return this._maxFindingsPerInfoType;
+    return this._maxFindingsPerInfoType.internalValue;
   }
 }
 export interface GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypes {
@@ -798,6 +1164,83 @@ export function googleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoT
   }
 }
 
+export class GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesOutputReference {
+    return new GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath {
   /**
   * A url representing a file or path (no wildcards) in Cloud Storage. Example: 'gs://[BUCKET_NAME]/dictionary.txt'
@@ -1043,6 +1486,83 @@ export function googleDataLossPreventionInspectTemplateInspectConfigRuleSetRules
   }
 }
 
+export class GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesOutputReference {
+    return new GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes {
   /**
   * info_types block
@@ -1076,9 +1596,9 @@ export class GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExc
   public get internalValue(): GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._infoTypes !== undefined) {
+    if (this._infoTypes?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.infoTypes = this._infoTypes;
+      internalValueResult.infoTypes = this._infoTypes?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1086,26 +1606,25 @@ export class GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExc
   public set internalValue(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._infoTypes = undefined;
+      this._infoTypes.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._infoTypes = value.infoTypes;
+      this._infoTypes.internalValue = value.infoTypes;
     }
   }
 
   // info_types - computed: false, optional: false, required: true
-  private _infoTypes?: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktf.IResolvable; 
+  private _infoTypes = new GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesList(this, "info_types", false);
   public get infoTypes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('info_types');
+    return this._infoTypes;
   }
-  public set infoTypes(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktf.IResolvable) {
-    this._infoTypes = value;
+  public putInfoTypes(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktf.IResolvable) {
+    this._infoTypes.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get infoTypesInput() {
-    return this._infoTypes;
+    return this._infoTypes.internalValue;
   }
 }
 export interface GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleRegex {
@@ -1787,6 +2306,108 @@ export function googleDataLossPreventionInspectTemplateInspectConfigRuleSetRules
   }
 }
 
+export class GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRules | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exclusionRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exclusionRule = this._exclusionRule?.internalValue;
+    }
+    if (this._hotwordRule?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hotwordRule = this._hotwordRule?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRules | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._exclusionRule.internalValue = undefined;
+      this._hotwordRule.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._exclusionRule.internalValue = value.exclusionRule;
+      this._hotwordRule.internalValue = value.hotwordRule;
+    }
+  }
+
+  // exclusion_rule - computed: false, optional: true, required: false
+  private _exclusionRule = new GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference(this, "exclusion_rule");
+  public get exclusionRule() {
+    return this._exclusionRule;
+  }
+  public putExclusionRule(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRule) {
+    this._exclusionRule.internalValue = value;
+  }
+  public resetExclusionRule() {
+    this._exclusionRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exclusionRuleInput() {
+    return this._exclusionRule.internalValue;
+  }
+
+  // hotword_rule - computed: false, optional: true, required: false
+  private _hotwordRule = new GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRuleOutputReference(this, "hotword_rule");
+  public get hotwordRule() {
+    return this._hotwordRule;
+  }
+  public putHotwordRule(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesHotwordRule) {
+    this._hotwordRule.internalValue = value;
+  }
+  public resetHotwordRule() {
+    this._hotwordRule.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hotwordRuleInput() {
+    return this._hotwordRule.internalValue;
+  }
+}
+
+export class GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRules[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesOutputReference {
+    return new GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionInspectTemplateInspectConfigRuleSet {
   /**
   * info_types block
@@ -1813,6 +2434,102 @@ export function googleDataLossPreventionInspectTemplateInspectConfigRuleSetToTer
   }
 }
 
+export class GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionInspectTemplateInspectConfigRuleSet | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._infoTypes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.infoTypes = this._infoTypes?.internalValue;
+    }
+    if (this._rules?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rules = this._rules?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSet | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._infoTypes.internalValue = undefined;
+      this._rules.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._infoTypes.internalValue = value.infoTypes;
+      this._rules.internalValue = value.rules;
+    }
+  }
+
+  // info_types - computed: false, optional: false, required: true
+  private _infoTypes = new GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesList(this, "info_types", false);
+  public get infoTypes() {
+    return this._infoTypes;
+  }
+  public putInfoTypes(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypes[] | cdktf.IResolvable) {
+    this._infoTypes.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get infoTypesInput() {
+    return this._infoTypes.internalValue;
+  }
+
+  // rules - computed: false, optional: false, required: true
+  private _rules = new GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesList(this, "rules", false);
+  public get rules() {
+    return this._rules;
+  }
+  public putRules(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRules[] | cdktf.IResolvable) {
+    this._rules.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rulesInput() {
+    return this._rules.internalValue;
+  }
+}
+
+export class GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionInspectTemplateInspectConfigRuleSet[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference {
+    return new GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionInspectTemplateInspectConfig {
   /**
   * List of options defining data content to scan. If empty, text, images, and other content will be included. Possible values: ["CONTENT_TEXT", "CONTENT_IMAGE"]
@@ -1911,21 +2628,21 @@ export class GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference
       hasAnyValues = true;
       internalValueResult.minLikelihood = this._minLikelihood;
     }
-    if (this._customInfoTypes !== undefined) {
+    if (this._customInfoTypes?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.customInfoTypes = this._customInfoTypes;
+      internalValueResult.customInfoTypes = this._customInfoTypes?.internalValue;
     }
-    if (this._infoTypes !== undefined) {
+    if (this._infoTypes?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.infoTypes = this._infoTypes;
+      internalValueResult.infoTypes = this._infoTypes?.internalValue;
     }
     if (this._limits?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.limits = this._limits?.internalValue;
     }
-    if (this._ruleSet !== undefined) {
+    if (this._ruleSet?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.ruleSet = this._ruleSet;
+      internalValueResult.ruleSet = this._ruleSet?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1937,10 +2654,10 @@ export class GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference
       this._excludeInfoTypes = undefined;
       this._includeQuote = undefined;
       this._minLikelihood = undefined;
-      this._customInfoTypes = undefined;
-      this._infoTypes = undefined;
+      this._customInfoTypes.internalValue = undefined;
+      this._infoTypes.internalValue = undefined;
       this._limits.internalValue = undefined;
-      this._ruleSet = undefined;
+      this._ruleSet.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1948,10 +2665,10 @@ export class GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference
       this._excludeInfoTypes = value.excludeInfoTypes;
       this._includeQuote = value.includeQuote;
       this._minLikelihood = value.minLikelihood;
-      this._customInfoTypes = value.customInfoTypes;
-      this._infoTypes = value.infoTypes;
+      this._customInfoTypes.internalValue = value.customInfoTypes;
+      this._infoTypes.internalValue = value.infoTypes;
       this._limits.internalValue = value.limits;
-      this._ruleSet = value.ruleSet;
+      this._ruleSet.internalValue = value.ruleSet;
     }
   }
 
@@ -2020,37 +2737,35 @@ export class GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference
   }
 
   // custom_info_types - computed: false, optional: true, required: false
-  private _customInfoTypes?: GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypes[] | cdktf.IResolvable; 
+  private _customInfoTypes = new GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesList(this, "custom_info_types", false);
   public get customInfoTypes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('custom_info_types');
+    return this._customInfoTypes;
   }
-  public set customInfoTypes(value: GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypes[] | cdktf.IResolvable) {
-    this._customInfoTypes = value;
+  public putCustomInfoTypes(value: GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypes[] | cdktf.IResolvable) {
+    this._customInfoTypes.internalValue = value;
   }
   public resetCustomInfoTypes() {
-    this._customInfoTypes = undefined;
+    this._customInfoTypes.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get customInfoTypesInput() {
-    return this._customInfoTypes;
+    return this._customInfoTypes.internalValue;
   }
 
   // info_types - computed: false, optional: true, required: false
-  private _infoTypes?: GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes[] | cdktf.IResolvable; 
+  private _infoTypes = new GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesList(this, "info_types", false);
   public get infoTypes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('info_types');
+    return this._infoTypes;
   }
-  public set infoTypes(value: GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes[] | cdktf.IResolvable) {
-    this._infoTypes = value;
+  public putInfoTypes(value: GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes[] | cdktf.IResolvable) {
+    this._infoTypes.internalValue = value;
   }
   public resetInfoTypes() {
-    this._infoTypes = undefined;
+    this._infoTypes.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get infoTypesInput() {
-    return this._infoTypes;
+    return this._infoTypes.internalValue;
   }
 
   // limits - computed: false, optional: true, required: false
@@ -2070,20 +2785,19 @@ export class GoogleDataLossPreventionInspectTemplateInspectConfigOutputReference
   }
 
   // rule_set - computed: false, optional: true, required: false
-  private _ruleSet?: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSet[] | cdktf.IResolvable; 
+  private _ruleSet = new GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetList(this, "rule_set", false);
   public get ruleSet() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('rule_set');
+    return this._ruleSet;
   }
-  public set ruleSet(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSet[] | cdktf.IResolvable) {
-    this._ruleSet = value;
+  public putRuleSet(value: GoogleDataLossPreventionInspectTemplateInspectConfigRuleSet[] | cdktf.IResolvable) {
+    this._ruleSet.internalValue = value;
   }
   public resetRuleSet() {
-    this._ruleSet = undefined;
+    this._ruleSet.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ruleSetInput() {
-    return this._ruleSet;
+    return this._ruleSet.internalValue;
   }
 }
 export interface GoogleDataLossPreventionInspectTemplateTimeouts {
@@ -2115,6 +2829,7 @@ export function googleDataLossPreventionInspectTemplateTimeoutsToTerraform(struc
 
 export class GoogleDataLossPreventionInspectTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2124,7 +2839,10 @@ export class GoogleDataLossPreventionInspectTemplateTimeoutsOutputReference exte
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataLossPreventionInspectTemplateTimeouts | undefined {
+  public get internalValue(): GoogleDataLossPreventionInspectTemplateTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -2142,15 +2860,21 @@ export class GoogleDataLossPreventionInspectTemplateTimeoutsOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataLossPreventionInspectTemplateTimeouts | undefined) {
+  public set internalValue(value: GoogleDataLossPreventionInspectTemplateTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -2242,6 +2966,7 @@ export class GoogleDataLossPreventionInspectTemplate extends cdktf.TerraformReso
     });
     this._description = config.description;
     this._displayName = config.displayName;
+    this._id = config.id;
     this._parent = config.parent;
     this._inspectConfig.internalValue = config.inspectConfig;
     this._timeouts.internalValue = config.timeouts;
@@ -2284,8 +3009,19 @@ export class GoogleDataLossPreventionInspectTemplate extends cdktf.TerraformReso
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: false, required: false
@@ -2346,6 +3082,7 @@ export class GoogleDataLossPreventionInspectTemplate extends cdktf.TerraformReso
     return {
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
+      id: cdktf.stringToTerraform(this._id),
       parent: cdktf.stringToTerraform(this._parent),
       inspect_config: googleDataLossPreventionInspectTemplateInspectConfigToTerraform(this._inspectConfig.internalValue),
       timeouts: googleDataLossPreventionInspectTemplateTimeoutsToTerraform(this._timeouts.internalValue),

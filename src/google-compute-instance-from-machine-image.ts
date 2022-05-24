@@ -56,6 +56,13 @@ export interface GoogleComputeInstanceFromMachineImageConfig extends cdktf.Terra
   */
   readonly hostname?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_from_machine_image#id GoogleComputeInstanceFromMachineImage#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * A set of key/value label pairs assigned to the instance.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_from_machine_image#labels GoogleComputeInstanceFromMachineImage#labels}
@@ -311,8 +318,9 @@ export class GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutput
   }
 
   // labels - computed: true, optional: false, required: false
-  public labels(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'labels').lookup(key);
+  private _labels = new cdktf.StringMap(this, "labels");
+  public get labels() {
+    return this._labels;
   }
 
   // size - computed: true, optional: false, required: false
@@ -466,6 +474,108 @@ export function googleComputeInstanceFromMachineImageGuestAcceleratorToTerraform
   }
 }
 
+export class GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromMachineImageGuestAccelerator | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._count !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.count = this._count;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromMachineImageGuestAccelerator | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._count = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._count = value.count;
+      this._type = value.type;
+    }
+  }
+
+  // count - computed: true, optional: true, required: false
+  private _count?: number; 
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+  public set count(value: number) {
+    this._count = value;
+  }
+  public resetCount() {
+    this._count = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countInput() {
+    return this._count;
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class GoogleComputeInstanceFromMachineImageGuestAcceleratorList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromMachineImageGuestAccelerator[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference {
+    return new GoogleComputeInstanceFromMachineImageGuestAcceleratorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceFromMachineImageScratchDisk {
 }
 
@@ -552,6 +662,108 @@ export function googleComputeInstanceFromMachineImageServiceAccountToTerraform(s
   }
 }
 
+export class GoogleComputeInstanceFromMachineImageServiceAccountOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromMachineImageServiceAccount | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._email !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.email = this._email;
+    }
+    if (this._scopes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scopes = this._scopes;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromMachineImageServiceAccount | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._email = undefined;
+      this._scopes = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._email = value.email;
+      this._scopes = value.scopes;
+    }
+  }
+
+  // email - computed: true, optional: true, required: false
+  private _email?: string; 
+  public get email() {
+    return this.getStringAttribute('email');
+  }
+  public set email(value: string) {
+    this._email = value;
+  }
+  public resetEmail() {
+    this._email = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get emailInput() {
+    return this._email;
+  }
+
+  // scopes - computed: true, optional: true, required: false
+  private _scopes?: string[]; 
+  public get scopes() {
+    return cdktf.Fn.tolist(this.getListAttribute('scopes'));
+  }
+  public set scopes(value: string[]) {
+    this._scopes = value;
+  }
+  public resetScopes() {
+    this._scopes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopesInput() {
+    return this._scopes;
+  }
+}
+
+export class GoogleComputeInstanceFromMachineImageServiceAccountList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromMachineImageServiceAccount[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromMachineImageServiceAccountOutputReference {
+    return new GoogleComputeInstanceFromMachineImageServiceAccountOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceFromMachineImageAdvancedMachineFeatures {
   /**
   * Whether to enable nested virtualization or not.
@@ -739,6 +951,130 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceAccessConfi
   }
 }
 
+export class GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._natIp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.natIp = this._natIp;
+    }
+    if (this._networkTier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkTier = this._networkTier;
+    }
+    if (this._publicPtrDomainName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.publicPtrDomainName = this._publicPtrDomainName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._natIp = undefined;
+      this._networkTier = undefined;
+      this._publicPtrDomainName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._natIp = value.natIp;
+      this._networkTier = value.networkTier;
+      this._publicPtrDomainName = value.publicPtrDomainName;
+    }
+  }
+
+  // nat_ip - computed: true, optional: true, required: false
+  private _natIp?: string; 
+  public get natIp() {
+    return this.getStringAttribute('nat_ip');
+  }
+  public set natIp(value: string) {
+    this._natIp = value;
+  }
+  public resetNatIp() {
+    this._natIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get natIpInput() {
+    return this._natIp;
+  }
+
+  // network_tier - computed: true, optional: true, required: false
+  private _networkTier?: string; 
+  public get networkTier() {
+    return this.getStringAttribute('network_tier');
+  }
+  public set networkTier(value: string) {
+    this._networkTier = value;
+  }
+  public resetNetworkTier() {
+    this._networkTier = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkTierInput() {
+    return this._networkTier;
+  }
+
+  // public_ptr_domain_name - computed: true, optional: true, required: false
+  private _publicPtrDomainName?: string; 
+  public get publicPtrDomainName() {
+    return this.getStringAttribute('public_ptr_domain_name');
+  }
+  public set publicPtrDomainName(value: string) {
+    this._publicPtrDomainName = value;
+  }
+  public resetPublicPtrDomainName() {
+    this._publicPtrDomainName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicPtrDomainNameInput() {
+    return this._publicPtrDomainName;
+  }
+}
+
+export class GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference {
+    return new GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRange {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_from_machine_image#ip_cidr_range GoogleComputeInstanceFromMachineImage#ip_cidr_range}
@@ -761,6 +1097,108 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRang
   }
 }
 
+export class GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRange | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipCidrRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipCidrRange = this._ipCidrRange;
+    }
+    if (this._subnetworkRangeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetworkRangeName = this._subnetworkRangeName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRange | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipCidrRange = undefined;
+      this._subnetworkRangeName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipCidrRange = value.ipCidrRange;
+      this._subnetworkRangeName = value.subnetworkRangeName;
+    }
+  }
+
+  // ip_cidr_range - computed: true, optional: true, required: false
+  private _ipCidrRange?: string; 
+  public get ipCidrRange() {
+    return this.getStringAttribute('ip_cidr_range');
+  }
+  public set ipCidrRange(value: string) {
+    this._ipCidrRange = value;
+  }
+  public resetIpCidrRange() {
+    this._ipCidrRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipCidrRangeInput() {
+    return this._ipCidrRange;
+  }
+
+  // subnetwork_range_name - computed: true, optional: true, required: false
+  private _subnetworkRangeName?: string; 
+  public get subnetworkRangeName() {
+    return this.getStringAttribute('subnetwork_range_name');
+  }
+  public set subnetworkRangeName(value: string) {
+    this._subnetworkRangeName = value;
+  }
+  public resetSubnetworkRangeName() {
+    this._subnetworkRangeName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetworkRangeNameInput() {
+    return this._subnetworkRangeName;
+  }
+}
+
+export class GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRange[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOutputReference {
+    return new GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfig {
   /**
   * The service-level to be provided for IPv6 traffic when the subnet has an external subnet. Only PREMIUM tier is valid for IPv6
@@ -787,6 +1225,115 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessC
   }
 }
 
+export class GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfig | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._networkTier !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkTier = this._networkTier;
+    }
+    if (this._publicPtrDomainName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.publicPtrDomainName = this._publicPtrDomainName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfig | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._networkTier = undefined;
+      this._publicPtrDomainName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._networkTier = value.networkTier;
+      this._publicPtrDomainName = value.publicPtrDomainName;
+    }
+  }
+
+  // external_ipv6 - computed: true, optional: false, required: false
+  public get externalIpv6() {
+    return this.getStringAttribute('external_ipv6');
+  }
+
+  // external_ipv6_prefix_length - computed: true, optional: false, required: false
+  public get externalIpv6PrefixLength() {
+    return this.getStringAttribute('external_ipv6_prefix_length');
+  }
+
+  // network_tier - computed: false, optional: false, required: true
+  private _networkTier?: string; 
+  public get networkTier() {
+    return this.getStringAttribute('network_tier');
+  }
+  public set networkTier(value: string) {
+    this._networkTier = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkTierInput() {
+    return this._networkTier;
+  }
+
+  // public_ptr_domain_name - computed: true, optional: true, required: false
+  private _publicPtrDomainName?: string; 
+  public get publicPtrDomainName() {
+    return this.getStringAttribute('public_ptr_domain_name');
+  }
+  public set publicPtrDomainName(value: string) {
+    this._publicPtrDomainName = value;
+  }
+  public resetPublicPtrDomainName() {
+    this._publicPtrDomainName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicPtrDomainNameInput() {
+    return this._publicPtrDomainName;
+  }
+}
+
+export class GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfig[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigOutputReference {
+    return new GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceFromMachineImageNetworkInterface {
   /**
   * Access configurations, i.e. IPs via which this instance can be accessed via the Internet.
@@ -869,6 +1416,294 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceToTerraform
   }
 }
 
+export class GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromMachineImageNetworkInterface | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._accessConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.accessConfig = this._accessConfig?.internalValue;
+    }
+    if (this._aliasIpRange?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.aliasIpRange = this._aliasIpRange?.internalValue;
+    }
+    if (this._network !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.network = this._network;
+    }
+    if (this._networkIp !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkIp = this._networkIp;
+    }
+    if (this._nicType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nicType = this._nicType;
+    }
+    if (this._queueCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.queueCount = this._queueCount;
+    }
+    if (this._stackType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stackType = this._stackType;
+    }
+    if (this._subnetwork !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetwork = this._subnetwork;
+    }
+    if (this._subnetworkProject !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.subnetworkProject = this._subnetworkProject;
+    }
+    if (this._ipv6AccessConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipv6AccessConfig = this._ipv6AccessConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromMachineImageNetworkInterface | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._accessConfig.internalValue = undefined;
+      this._aliasIpRange.internalValue = undefined;
+      this._network = undefined;
+      this._networkIp = undefined;
+      this._nicType = undefined;
+      this._queueCount = undefined;
+      this._stackType = undefined;
+      this._subnetwork = undefined;
+      this._subnetworkProject = undefined;
+      this._ipv6AccessConfig.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._accessConfig.internalValue = value.accessConfig;
+      this._aliasIpRange.internalValue = value.aliasIpRange;
+      this._network = value.network;
+      this._networkIp = value.networkIp;
+      this._nicType = value.nicType;
+      this._queueCount = value.queueCount;
+      this._stackType = value.stackType;
+      this._subnetwork = value.subnetwork;
+      this._subnetworkProject = value.subnetworkProject;
+      this._ipv6AccessConfig.internalValue = value.ipv6AccessConfig;
+    }
+  }
+
+  // access_config - computed: true, optional: true, required: false
+  private _accessConfig = new GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigList(this, "access_config", false);
+  public get accessConfig() {
+    return this._accessConfig;
+  }
+  public putAccessConfig(value: GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfig[] | cdktf.IResolvable) {
+    this._accessConfig.internalValue = value;
+  }
+  public resetAccessConfig() {
+    this._accessConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessConfigInput() {
+    return this._accessConfig.internalValue;
+  }
+
+  // alias_ip_range - computed: true, optional: true, required: false
+  private _aliasIpRange = new GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeList(this, "alias_ip_range", false);
+  public get aliasIpRange() {
+    return this._aliasIpRange;
+  }
+  public putAliasIpRange(value: GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRange[] | cdktf.IResolvable) {
+    this._aliasIpRange.internalValue = value;
+  }
+  public resetAliasIpRange() {
+    this._aliasIpRange.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aliasIpRangeInput() {
+    return this._aliasIpRange.internalValue;
+  }
+
+  // ipv6_access_type - computed: true, optional: false, required: false
+  public get ipv6AccessType() {
+    return this.getStringAttribute('ipv6_access_type');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // network - computed: true, optional: true, required: false
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  public resetNetwork() {
+    this._network = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
+  }
+
+  // network_ip - computed: true, optional: true, required: false
+  private _networkIp?: string; 
+  public get networkIp() {
+    return this.getStringAttribute('network_ip');
+  }
+  public set networkIp(value: string) {
+    this._networkIp = value;
+  }
+  public resetNetworkIp() {
+    this._networkIp = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkIpInput() {
+    return this._networkIp;
+  }
+
+  // nic_type - computed: true, optional: true, required: false
+  private _nicType?: string; 
+  public get nicType() {
+    return this.getStringAttribute('nic_type');
+  }
+  public set nicType(value: string) {
+    this._nicType = value;
+  }
+  public resetNicType() {
+    this._nicType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nicTypeInput() {
+    return this._nicType;
+  }
+
+  // queue_count - computed: true, optional: true, required: false
+  private _queueCount?: number; 
+  public get queueCount() {
+    return this.getNumberAttribute('queue_count');
+  }
+  public set queueCount(value: number) {
+    this._queueCount = value;
+  }
+  public resetQueueCount() {
+    this._queueCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queueCountInput() {
+    return this._queueCount;
+  }
+
+  // stack_type - computed: true, optional: true, required: false
+  private _stackType?: string; 
+  public get stackType() {
+    return this.getStringAttribute('stack_type');
+  }
+  public set stackType(value: string) {
+    this._stackType = value;
+  }
+  public resetStackType() {
+    this._stackType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stackTypeInput() {
+    return this._stackType;
+  }
+
+  // subnetwork - computed: true, optional: true, required: false
+  private _subnetwork?: string; 
+  public get subnetwork() {
+    return this.getStringAttribute('subnetwork');
+  }
+  public set subnetwork(value: string) {
+    this._subnetwork = value;
+  }
+  public resetSubnetwork() {
+    this._subnetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetworkInput() {
+    return this._subnetwork;
+  }
+
+  // subnetwork_project - computed: true, optional: true, required: false
+  private _subnetworkProject?: string; 
+  public get subnetworkProject() {
+    return this.getStringAttribute('subnetwork_project');
+  }
+  public set subnetworkProject(value: string) {
+    this._subnetworkProject = value;
+  }
+  public resetSubnetworkProject() {
+    this._subnetworkProject = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetworkProjectInput() {
+    return this._subnetworkProject;
+  }
+
+  // ipv6_access_config - computed: false, optional: true, required: false
+  private _ipv6AccessConfig = new GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigList(this, "ipv6_access_config", false);
+  public get ipv6AccessConfig() {
+    return this._ipv6AccessConfig;
+  }
+  public putIpv6AccessConfig(value: GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfig[] | cdktf.IResolvable) {
+    this._ipv6AccessConfig.internalValue = value;
+  }
+  public resetIpv6AccessConfig() {
+    this._ipv6AccessConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipv6AccessConfigInput() {
+    return this._ipv6AccessConfig.internalValue;
+  }
+}
+
+export class GoogleComputeInstanceFromMachineImageNetworkInterfaceList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromMachineImageNetworkInterface[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference {
+    return new GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceFromMachineImageNetworkPerformanceConfig {
   /**
   * The egress bandwidth tier to enable. Possible values:TIER_1, DEFAULT
@@ -1143,6 +1978,121 @@ export function googleComputeInstanceFromMachineImageSchedulingNodeAffinitiesToT
   }
 }
 
+export class GoogleComputeInstanceFromMachineImageSchedulingNodeAffinitiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceFromMachineImageSchedulingNodeAffinities | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceFromMachineImageSchedulingNodeAffinities | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._key = undefined;
+      this._operator = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._key = value.key;
+      this._operator = value.operator;
+      this._values = value.values;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: string[]; 
+  public get values() {
+    return cdktf.Fn.tolist(this.getListAttribute('values'));
+  }
+  public set values(value: string[]) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class GoogleComputeInstanceFromMachineImageSchedulingNodeAffinitiesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceFromMachineImageSchedulingNodeAffinities[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceFromMachineImageSchedulingNodeAffinitiesOutputReference {
+    return new GoogleComputeInstanceFromMachineImageSchedulingNodeAffinitiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceFromMachineImageScheduling {
   /**
   * Specifies if the instance should be restarted if it was terminated by Compute Engine (not a user).
@@ -1229,9 +2179,9 @@ export class GoogleComputeInstanceFromMachineImageSchedulingOutputReference exte
       hasAnyValues = true;
       internalValueResult.provisioningModel = this._provisioningModel;
     }
-    if (this._nodeAffinities !== undefined) {
+    if (this._nodeAffinities?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.nodeAffinities = this._nodeAffinities;
+      internalValueResult.nodeAffinities = this._nodeAffinities?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1244,7 +2194,7 @@ export class GoogleComputeInstanceFromMachineImageSchedulingOutputReference exte
       this._onHostMaintenance = undefined;
       this._preemptible = undefined;
       this._provisioningModel = undefined;
-      this._nodeAffinities = undefined;
+      this._nodeAffinities.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1253,7 +2203,7 @@ export class GoogleComputeInstanceFromMachineImageSchedulingOutputReference exte
       this._onHostMaintenance = value.onHostMaintenance;
       this._preemptible = value.preemptible;
       this._provisioningModel = value.provisioningModel;
-      this._nodeAffinities = value.nodeAffinities;
+      this._nodeAffinities.internalValue = value.nodeAffinities;
     }
   }
 
@@ -1338,20 +2288,19 @@ export class GoogleComputeInstanceFromMachineImageSchedulingOutputReference exte
   }
 
   // node_affinities - computed: false, optional: true, required: false
-  private _nodeAffinities?: GoogleComputeInstanceFromMachineImageSchedulingNodeAffinities[] | cdktf.IResolvable; 
+  private _nodeAffinities = new GoogleComputeInstanceFromMachineImageSchedulingNodeAffinitiesList(this, "node_affinities", true);
   public get nodeAffinities() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('node_affinities')));
+    return this._nodeAffinities;
   }
-  public set nodeAffinities(value: GoogleComputeInstanceFromMachineImageSchedulingNodeAffinities[] | cdktf.IResolvable) {
-    this._nodeAffinities = value;
+  public putNodeAffinities(value: GoogleComputeInstanceFromMachineImageSchedulingNodeAffinities[] | cdktf.IResolvable) {
+    this._nodeAffinities.internalValue = value;
   }
   public resetNodeAffinities() {
-    this._nodeAffinities = undefined;
+    this._nodeAffinities.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nodeAffinitiesInput() {
-    return this._nodeAffinities;
+    return this._nodeAffinities.internalValue;
   }
 }
 export interface GoogleComputeInstanceFromMachineImageShieldedInstanceConfig {
@@ -1508,6 +2457,7 @@ export function googleComputeInstanceFromMachineImageTimeoutsToTerraform(struct?
 
 export class GoogleComputeInstanceFromMachineImageTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1517,7 +2467,10 @@ export class GoogleComputeInstanceFromMachineImageTimeoutsOutputReference extend
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeInstanceFromMachineImageTimeouts | undefined {
+  public get internalValue(): GoogleComputeInstanceFromMachineImageTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -1535,15 +2488,21 @@ export class GoogleComputeInstanceFromMachineImageTimeoutsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeInstanceFromMachineImageTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeInstanceFromMachineImageTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -1639,8 +2598,9 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
     this._description = config.description;
     this._desiredStatus = config.desiredStatus;
     this._enableDisplay = config.enableDisplay;
-    this._guestAccelerator = config.guestAccelerator;
+    this._guestAccelerator.internalValue = config.guestAccelerator;
     this._hostname = config.hostname;
+    this._id = config.id;
     this._labels = config.labels;
     this._machineType = config.machineType;
     this._metadata = config.metadata;
@@ -1649,13 +2609,13 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
     this._name = config.name;
     this._project = config.project;
     this._resourcePolicies = config.resourcePolicies;
-    this._serviceAccount = config.serviceAccount;
+    this._serviceAccount.internalValue = config.serviceAccount;
     this._sourceMachineImage = config.sourceMachineImage;
     this._tags = config.tags;
     this._zone = config.zone;
     this._advancedMachineFeatures.internalValue = config.advancedMachineFeatures;
     this._confidentialInstanceConfig.internalValue = config.confidentialInstanceConfig;
-    this._networkInterface = config.networkInterface;
+    this._networkInterface.internalValue = config.networkInterface;
     this._networkPerformanceConfig.internalValue = config.networkPerformanceConfig;
     this._reservationAffinity.internalValue = config.reservationAffinity;
     this._scheduling.internalValue = config.scheduling;
@@ -1786,20 +2746,19 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
   }
 
   // guest_accelerator - computed: true, optional: true, required: false
-  private _guestAccelerator?: GoogleComputeInstanceFromMachineImageGuestAccelerator[] | cdktf.IResolvable; 
+  private _guestAccelerator = new GoogleComputeInstanceFromMachineImageGuestAcceleratorList(this, "guest_accelerator", false);
   public get guestAccelerator() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('guest_accelerator');
+    return this._guestAccelerator;
   }
-  public set guestAccelerator(value: GoogleComputeInstanceFromMachineImageGuestAccelerator[] | cdktf.IResolvable) {
-    this._guestAccelerator = value;
+  public putGuestAccelerator(value: GoogleComputeInstanceFromMachineImageGuestAccelerator[] | cdktf.IResolvable) {
+    this._guestAccelerator.internalValue = value;
   }
   public resetGuestAccelerator() {
-    this._guestAccelerator = undefined;
+    this._guestAccelerator.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get guestAcceleratorInput() {
-    return this._guestAccelerator;
+    return this._guestAccelerator.internalValue;
   }
 
   // hostname - computed: true, optional: true, required: false
@@ -1819,8 +2778,19 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_id - computed: true, optional: false, required: false
@@ -1975,20 +2945,19 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
   }
 
   // service_account - computed: true, optional: true, required: false
-  private _serviceAccount?: GoogleComputeInstanceFromMachineImageServiceAccount[] | cdktf.IResolvable; 
+  private _serviceAccount = new GoogleComputeInstanceFromMachineImageServiceAccountList(this, "service_account", false);
   public get serviceAccount() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('service_account');
+    return this._serviceAccount;
   }
-  public set serviceAccount(value: GoogleComputeInstanceFromMachineImageServiceAccount[] | cdktf.IResolvable) {
-    this._serviceAccount = value;
+  public putServiceAccount(value: GoogleComputeInstanceFromMachineImageServiceAccount[] | cdktf.IResolvable) {
+    this._serviceAccount.internalValue = value;
   }
   public resetServiceAccount() {
-    this._serviceAccount = undefined;
+    this._serviceAccount.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get serviceAccountInput() {
-    return this._serviceAccount;
+    return this._serviceAccount.internalValue;
   }
 
   // source_machine_image - computed: false, optional: false, required: true
@@ -2074,20 +3043,19 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
   }
 
   // network_interface - computed: false, optional: true, required: false
-  private _networkInterface?: GoogleComputeInstanceFromMachineImageNetworkInterface[] | cdktf.IResolvable; 
+  private _networkInterface = new GoogleComputeInstanceFromMachineImageNetworkInterfaceList(this, "network_interface", false);
   public get networkInterface() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('network_interface');
+    return this._networkInterface;
   }
-  public set networkInterface(value: GoogleComputeInstanceFromMachineImageNetworkInterface[] | cdktf.IResolvable) {
-    this._networkInterface = value;
+  public putNetworkInterface(value: GoogleComputeInstanceFromMachineImageNetworkInterface[] | cdktf.IResolvable) {
+    this._networkInterface.internalValue = value;
   }
   public resetNetworkInterface() {
-    this._networkInterface = undefined;
+    this._networkInterface.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get networkInterfaceInput() {
-    return this._networkInterface;
+    return this._networkInterface.internalValue;
   }
 
   // network_performance_config - computed: false, optional: true, required: false
@@ -2182,8 +3150,9 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
       description: cdktf.stringToTerraform(this._description),
       desired_status: cdktf.stringToTerraform(this._desiredStatus),
       enable_display: cdktf.booleanToTerraform(this._enableDisplay),
-      guest_accelerator: cdktf.listMapper(googleComputeInstanceFromMachineImageGuestAcceleratorToTerraform)(this._guestAccelerator),
+      guest_accelerator: cdktf.listMapper(googleComputeInstanceFromMachineImageGuestAcceleratorToTerraform)(this._guestAccelerator.internalValue),
       hostname: cdktf.stringToTerraform(this._hostname),
+      id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       machine_type: cdktf.stringToTerraform(this._machineType),
       metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
@@ -2192,13 +3161,13 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       resource_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._resourcePolicies),
-      service_account: cdktf.listMapper(googleComputeInstanceFromMachineImageServiceAccountToTerraform)(this._serviceAccount),
+      service_account: cdktf.listMapper(googleComputeInstanceFromMachineImageServiceAccountToTerraform)(this._serviceAccount.internalValue),
       source_machine_image: cdktf.stringToTerraform(this._sourceMachineImage),
       tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
       zone: cdktf.stringToTerraform(this._zone),
       advanced_machine_features: googleComputeInstanceFromMachineImageAdvancedMachineFeaturesToTerraform(this._advancedMachineFeatures.internalValue),
       confidential_instance_config: googleComputeInstanceFromMachineImageConfidentialInstanceConfigToTerraform(this._confidentialInstanceConfig.internalValue),
-      network_interface: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceToTerraform)(this._networkInterface),
+      network_interface: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceToTerraform)(this._networkInterface.internalValue),
       network_performance_config: googleComputeInstanceFromMachineImageNetworkPerformanceConfigToTerraform(this._networkPerformanceConfig.internalValue),
       reservation_affinity: googleComputeInstanceFromMachineImageReservationAffinityToTerraform(this._reservationAffinity.internalValue),
       scheduling: googleComputeInstanceFromMachineImageSchedulingToTerraform(this._scheduling.internalValue),

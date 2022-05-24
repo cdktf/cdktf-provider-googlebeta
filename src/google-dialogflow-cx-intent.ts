@@ -20,6 +20,13 @@ export interface GoogleDialogflowCxIntentConfig extends cdktf.TerraformMetaArgum
   */
   readonly displayName: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_intent#id GoogleDialogflowCxIntent#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Indicates whether this is a fallback intent. Currently only default fallback intent is allowed in the agent, which is added upon agent creation. 
 Adding training phrases to fallback intent is useful in the case of requests that are mistakenly matched, since training phrases assigned to fallback intents act as negative examples that triggers no-match event.
   * 
@@ -88,6 +95,9 @@ Format: projects/-/locations/-/agents/-/entityTypes/<System Entity Type ID> for 
   * The unique identifier of the parameter. This field is used by training phrases to annotate their parts.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_intent#id GoogleDialogflowCxIntent#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -118,6 +128,146 @@ export function googleDialogflowCxIntentParametersToTerraform(struct?: GoogleDia
   }
 }
 
+export class GoogleDialogflowCxIntentParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDialogflowCxIntentParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._entityType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.entityType = this._entityType;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._isList !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.isList = this._isList;
+    }
+    if (this._redact !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.redact = this._redact;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxIntentParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._entityType = undefined;
+      this._id = undefined;
+      this._isList = undefined;
+      this._redact = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._entityType = value.entityType;
+      this._id = value.id;
+      this._isList = value.isList;
+      this._redact = value.redact;
+    }
+  }
+
+  // entity_type - computed: false, optional: false, required: true
+  private _entityType?: string; 
+  public get entityType() {
+    return this.getStringAttribute('entity_type');
+  }
+  public set entityType(value: string) {
+    this._entityType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get entityTypeInput() {
+    return this._entityType;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // is_list - computed: false, optional: true, required: false
+  private _isList?: boolean | cdktf.IResolvable; 
+  public get isList() {
+    return this.getBooleanAttribute('is_list');
+  }
+  public set isList(value: boolean | cdktf.IResolvable) {
+    this._isList = value;
+  }
+  public resetIsList() {
+    this._isList = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isListInput() {
+    return this._isList;
+  }
+
+  // redact - computed: false, optional: true, required: false
+  private _redact?: boolean | cdktf.IResolvable; 
+  public get redact() {
+    return this.getBooleanAttribute('redact');
+  }
+  public set redact(value: boolean | cdktf.IResolvable) {
+    this._redact = value;
+  }
+  public resetRedact() {
+    this._redact = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redactInput() {
+    return this._redact;
+  }
+}
+
+export class GoogleDialogflowCxIntentParametersList extends cdktf.ComplexList {
+  public internalValue? : GoogleDialogflowCxIntentParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDialogflowCxIntentParametersOutputReference {
+    return new GoogleDialogflowCxIntentParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDialogflowCxIntentTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_intent#create GoogleDialogflowCxIntent#create}
@@ -147,6 +297,7 @@ export function googleDialogflowCxIntentTimeoutsToTerraform(struct?: GoogleDialo
 
 export class GoogleDialogflowCxIntentTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -156,7 +307,10 @@ export class GoogleDialogflowCxIntentTimeoutsOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDialogflowCxIntentTimeouts | undefined {
+  public get internalValue(): GoogleDialogflowCxIntentTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -174,15 +328,21 @@ export class GoogleDialogflowCxIntentTimeoutsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDialogflowCxIntentTimeouts | undefined) {
+  public set internalValue(value: GoogleDialogflowCxIntentTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -263,6 +423,105 @@ export function googleDialogflowCxIntentTrainingPhrasesPartsToTerraform(struct?:
   }
 }
 
+export class GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDialogflowCxIntentTrainingPhrasesParts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._parameterId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parameterId = this._parameterId;
+    }
+    if (this._text !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.text = this._text;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxIntentTrainingPhrasesParts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._parameterId = undefined;
+      this._text = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._parameterId = value.parameterId;
+      this._text = value.text;
+    }
+  }
+
+  // parameter_id - computed: false, optional: true, required: false
+  private _parameterId?: string; 
+  public get parameterId() {
+    return this.getStringAttribute('parameter_id');
+  }
+  public set parameterId(value: string) {
+    this._parameterId = value;
+  }
+  public resetParameterId() {
+    this._parameterId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parameterIdInput() {
+    return this._parameterId;
+  }
+
+  // text - computed: false, optional: false, required: true
+  private _text?: string; 
+  public get text() {
+    return this.getStringAttribute('text');
+  }
+  public set text(value: string) {
+    this._text = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get textInput() {
+    return this._text;
+  }
+}
+
+export class GoogleDialogflowCxIntentTrainingPhrasesPartsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDialogflowCxIntentTrainingPhrasesParts[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference {
+    return new GoogleDialogflowCxIntentTrainingPhrasesPartsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDialogflowCxIntentTrainingPhrases {
   /**
   * Indicates how many times this example was added to the intent.
@@ -289,6 +548,110 @@ export function googleDialogflowCxIntentTrainingPhrasesToTerraform(struct?: Goog
   }
 }
 
+export class GoogleDialogflowCxIntentTrainingPhrasesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDialogflowCxIntentTrainingPhrases | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._repeatCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repeatCount = this._repeatCount;
+    }
+    if (this._parts?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.parts = this._parts?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDialogflowCxIntentTrainingPhrases | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._repeatCount = undefined;
+      this._parts.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._repeatCount = value.repeatCount;
+      this._parts.internalValue = value.parts;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // repeat_count - computed: false, optional: true, required: false
+  private _repeatCount?: number; 
+  public get repeatCount() {
+    return this.getNumberAttribute('repeat_count');
+  }
+  public set repeatCount(value: number) {
+    this._repeatCount = value;
+  }
+  public resetRepeatCount() {
+    this._repeatCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repeatCountInput() {
+    return this._repeatCount;
+  }
+
+  // parts - computed: false, optional: false, required: true
+  private _parts = new GoogleDialogflowCxIntentTrainingPhrasesPartsList(this, "parts", false);
+  public get parts() {
+    return this._parts;
+  }
+  public putParts(value: GoogleDialogflowCxIntentTrainingPhrasesParts[] | cdktf.IResolvable) {
+    this._parts.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partsInput() {
+    return this._parts.internalValue;
+  }
+}
+
+export class GoogleDialogflowCxIntentTrainingPhrasesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDialogflowCxIntentTrainingPhrases[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDialogflowCxIntentTrainingPhrasesOutputReference {
+    return new GoogleDialogflowCxIntentTrainingPhrasesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_intent google_dialogflow_cx_intent}
@@ -326,14 +689,15 @@ export class GoogleDialogflowCxIntent extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._displayName = config.displayName;
+    this._id = config.id;
     this._isFallback = config.isFallback;
     this._labels = config.labels;
     this._languageCode = config.languageCode;
     this._parent = config.parent;
     this._priority = config.priority;
-    this._parameters = config.parameters;
+    this._parameters.internalValue = config.parameters;
     this._timeouts.internalValue = config.timeouts;
-    this._trainingPhrases = config.trainingPhrases;
+    this._trainingPhrases.internalValue = config.trainingPhrases;
   }
 
   // ==========
@@ -370,8 +734,19 @@ export class GoogleDialogflowCxIntent extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // is_fallback - computed: false, optional: true, required: false
@@ -460,20 +835,19 @@ export class GoogleDialogflowCxIntent extends cdktf.TerraformResource {
   }
 
   // parameters - computed: false, optional: true, required: false
-  private _parameters?: GoogleDialogflowCxIntentParameters[] | cdktf.IResolvable; 
+  private _parameters = new GoogleDialogflowCxIntentParametersList(this, "parameters", false);
   public get parameters() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('parameters');
+    return this._parameters;
   }
-  public set parameters(value: GoogleDialogflowCxIntentParameters[] | cdktf.IResolvable) {
-    this._parameters = value;
+  public putParameters(value: GoogleDialogflowCxIntentParameters[] | cdktf.IResolvable) {
+    this._parameters.internalValue = value;
   }
   public resetParameters() {
-    this._parameters = undefined;
+    this._parameters.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get parametersInput() {
-    return this._parameters;
+    return this._parameters.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -493,20 +867,19 @@ export class GoogleDialogflowCxIntent extends cdktf.TerraformResource {
   }
 
   // training_phrases - computed: false, optional: true, required: false
-  private _trainingPhrases?: GoogleDialogflowCxIntentTrainingPhrases[] | cdktf.IResolvable; 
+  private _trainingPhrases = new GoogleDialogflowCxIntentTrainingPhrasesList(this, "training_phrases", false);
   public get trainingPhrases() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('training_phrases');
+    return this._trainingPhrases;
   }
-  public set trainingPhrases(value: GoogleDialogflowCxIntentTrainingPhrases[] | cdktf.IResolvable) {
-    this._trainingPhrases = value;
+  public putTrainingPhrases(value: GoogleDialogflowCxIntentTrainingPhrases[] | cdktf.IResolvable) {
+    this._trainingPhrases.internalValue = value;
   }
   public resetTrainingPhrases() {
-    this._trainingPhrases = undefined;
+    this._trainingPhrases.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get trainingPhrasesInput() {
-    return this._trainingPhrases;
+    return this._trainingPhrases.internalValue;
   }
 
   // =========
@@ -517,14 +890,15 @@ export class GoogleDialogflowCxIntent extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
+      id: cdktf.stringToTerraform(this._id),
       is_fallback: cdktf.booleanToTerraform(this._isFallback),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       language_code: cdktf.stringToTerraform(this._languageCode),
       parent: cdktf.stringToTerraform(this._parent),
       priority: cdktf.numberToTerraform(this._priority),
-      parameters: cdktf.listMapper(googleDialogflowCxIntentParametersToTerraform)(this._parameters),
+      parameters: cdktf.listMapper(googleDialogflowCxIntentParametersToTerraform)(this._parameters.internalValue),
       timeouts: googleDialogflowCxIntentTimeoutsToTerraform(this._timeouts.internalValue),
-      training_phrases: cdktf.listMapper(googleDialogflowCxIntentTrainingPhrasesToTerraform)(this._trainingPhrases),
+      training_phrases: cdktf.listMapper(googleDialogflowCxIntentTrainingPhrasesToTerraform)(this._trainingPhrases.internalValue),
     };
   }
 }

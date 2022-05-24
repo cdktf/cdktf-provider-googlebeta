@@ -14,6 +14,13 @@ export interface GoogleComputeGlobalForwardingRuleConfig extends cdktf.Terraform
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_global_forwarding_rule#id GoogleComputeGlobalForwardingRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * IP address that this forwarding rule serves. When a client sends traffic to this IP address, the forwarding rule directs the traffic to the target that you specify in the forwarding rule. If you don't specify a reserved IP address, an ephemeral IP address is assigned. Methods for specifying an IP address: * IPv4 dotted decimal, as in `100.1.2.3` * Full URL, as in `https://www.googleapis.com/compute/v1/projects/project_id/regions/region/addresses/address-name` * Partial URL or by name, as in: * `projects/project_id/regions/region/addresses/address-name` * `regions/region/addresses/address-name` * `global/addresses/address-name` * `address-name` The loadBalancingScheme and the forwarding rule's target determine the type of IP address that you can use. For detailed information, refer to [IP address specifications](/load-balancing/docs/forwarding-rule-concepts#ip_address_specifications).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_global_forwarding_rule#ip_address GoogleComputeGlobalForwardingRule#ip_address}
@@ -140,6 +147,102 @@ export function googleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsToTe
   }
 }
 
+export class GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference {
+    return new GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeGlobalForwardingRuleMetadataFilters {
   /**
   * Specifies how individual `filterLabel` matches within the list of `filterLabel`s contribute towards the overall `metadataFilter` match.
@@ -171,6 +274,102 @@ export function googleComputeGlobalForwardingRuleMetadataFiltersToTerraform(stru
   }
 }
 
+export class GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeGlobalForwardingRuleMetadataFilters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._filterMatchCriteria !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterMatchCriteria = this._filterMatchCriteria;
+    }
+    if (this._filterLabels?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filterLabels = this._filterLabels?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeGlobalForwardingRuleMetadataFilters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._filterMatchCriteria = undefined;
+      this._filterLabels.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._filterMatchCriteria = value.filterMatchCriteria;
+      this._filterLabels.internalValue = value.filterLabels;
+    }
+  }
+
+  // filter_match_criteria - computed: false, optional: false, required: true
+  private _filterMatchCriteria?: string; 
+  public get filterMatchCriteria() {
+    return this.getStringAttribute('filter_match_criteria');
+  }
+  public set filterMatchCriteria(value: string) {
+    this._filterMatchCriteria = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterMatchCriteriaInput() {
+    return this._filterMatchCriteria;
+  }
+
+  // filter_labels - computed: false, optional: false, required: true
+  private _filterLabels = new GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabelsList(this, "filter_labels", false);
+  public get filterLabels() {
+    return this._filterLabels;
+  }
+  public putFilterLabels(value: GoogleComputeGlobalForwardingRuleMetadataFiltersFilterLabels[] | cdktf.IResolvable) {
+    this._filterLabels.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterLabelsInput() {
+    return this._filterLabels.internalValue;
+  }
+}
+
+export class GoogleComputeGlobalForwardingRuleMetadataFiltersList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeGlobalForwardingRuleMetadataFilters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference {
+    return new GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeGlobalForwardingRuleTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_global_forwarding_rule#create GoogleComputeGlobalForwardingRule#create}
@@ -200,6 +399,7 @@ export function googleComputeGlobalForwardingRuleTimeoutsToTerraform(struct?: Go
 
 export class GoogleComputeGlobalForwardingRuleTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -209,7 +409,10 @@ export class GoogleComputeGlobalForwardingRuleTimeoutsOutputReference extends cd
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeGlobalForwardingRuleTimeouts | undefined {
+  public get internalValue(): GoogleComputeGlobalForwardingRuleTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -227,15 +430,21 @@ export class GoogleComputeGlobalForwardingRuleTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeGlobalForwardingRuleTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeGlobalForwardingRuleTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -326,6 +535,7 @@ export class GoogleComputeGlobalForwardingRule extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._ipAddress = config.ipAddress;
     this._ipProtocol = config.ipProtocol;
     this._ipVersion = config.ipVersion;
@@ -336,7 +546,7 @@ export class GoogleComputeGlobalForwardingRule extends cdktf.TerraformResource {
     this._portRange = config.portRange;
     this._project = config.project;
     this._target = config.target;
-    this._metadataFilters = config.metadataFilters;
+    this._metadataFilters.internalValue = config.metadataFilters;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -361,8 +571,19 @@ export class GoogleComputeGlobalForwardingRule extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip_address - computed: true, optional: true, required: false
@@ -530,20 +751,19 @@ export class GoogleComputeGlobalForwardingRule extends cdktf.TerraformResource {
   }
 
   // metadata_filters - computed: false, optional: true, required: false
-  private _metadataFilters?: GoogleComputeGlobalForwardingRuleMetadataFilters[] | cdktf.IResolvable; 
+  private _metadataFilters = new GoogleComputeGlobalForwardingRuleMetadataFiltersList(this, "metadata_filters", false);
   public get metadataFilters() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('metadata_filters');
+    return this._metadataFilters;
   }
-  public set metadataFilters(value: GoogleComputeGlobalForwardingRuleMetadataFilters[] | cdktf.IResolvable) {
-    this._metadataFilters = value;
+  public putMetadataFilters(value: GoogleComputeGlobalForwardingRuleMetadataFilters[] | cdktf.IResolvable) {
+    this._metadataFilters.internalValue = value;
   }
   public resetMetadataFilters() {
-    this._metadataFilters = undefined;
+    this._metadataFilters.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get metadataFiltersInput() {
-    return this._metadataFilters;
+    return this._metadataFilters.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -569,6 +789,7 @@ export class GoogleComputeGlobalForwardingRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       ip_address: cdktf.stringToTerraform(this._ipAddress),
       ip_protocol: cdktf.stringToTerraform(this._ipProtocol),
       ip_version: cdktf.stringToTerraform(this._ipVersion),
@@ -579,7 +800,7 @@ export class GoogleComputeGlobalForwardingRule extends cdktf.TerraformResource {
       port_range: cdktf.stringToTerraform(this._portRange),
       project: cdktf.stringToTerraform(this._project),
       target: cdktf.stringToTerraform(this._target),
-      metadata_filters: cdktf.listMapper(googleComputeGlobalForwardingRuleMetadataFiltersToTerraform)(this._metadataFilters),
+      metadata_filters: cdktf.listMapper(googleComputeGlobalForwardingRuleMetadataFiltersToTerraform)(this._metadataFilters.internalValue),
       timeouts: googleComputeGlobalForwardingRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

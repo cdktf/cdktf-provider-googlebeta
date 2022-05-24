@@ -20,6 +20,13 @@ export interface GoogleBigtableGcPolicyConfig extends cdktf.TerraformMetaArgumen
   */
   readonly gcRules?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_gc_policy#id GoogleBigtableGcPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the Bigtable instance.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_gc_policy#instance_name GoogleBigtableGcPolicy#instance_name}
@@ -171,6 +178,83 @@ export function googleBigtableGcPolicyMaxVersionToTerraform(struct?: GoogleBigta
   }
 }
 
+export class GoogleBigtableGcPolicyMaxVersionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleBigtableGcPolicyMaxVersion | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._number !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.number = this._number;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigtableGcPolicyMaxVersion | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._number = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._number = value.number;
+    }
+  }
+
+  // number - computed: false, optional: false, required: true
+  private _number?: number; 
+  public get number() {
+    return this.getNumberAttribute('number');
+  }
+  public set number(value: number) {
+    this._number = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get numberInput() {
+    return this._number;
+  }
+}
+
+export class GoogleBigtableGcPolicyMaxVersionList extends cdktf.ComplexList {
+  public internalValue? : GoogleBigtableGcPolicyMaxVersion[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleBigtableGcPolicyMaxVersionOutputReference {
+    return new GoogleBigtableGcPolicyMaxVersionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_gc_policy google_bigtable_gc_policy}
@@ -208,12 +292,13 @@ export class GoogleBigtableGcPolicy extends cdktf.TerraformResource {
     });
     this._columnFamily = config.columnFamily;
     this._gcRules = config.gcRules;
+    this._id = config.id;
     this._instanceName = config.instanceName;
     this._mode = config.mode;
     this._project = config.project;
     this._table = config.table;
     this._maxAge.internalValue = config.maxAge;
-    this._maxVersion = config.maxVersion;
+    this._maxVersion.internalValue = config.maxVersion;
   }
 
   // ==========
@@ -250,8 +335,19 @@ export class GoogleBigtableGcPolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_name - computed: false, optional: false, required: true
@@ -329,20 +425,19 @@ export class GoogleBigtableGcPolicy extends cdktf.TerraformResource {
   }
 
   // max_version - computed: false, optional: true, required: false
-  private _maxVersion?: GoogleBigtableGcPolicyMaxVersion[] | cdktf.IResolvable; 
+  private _maxVersion = new GoogleBigtableGcPolicyMaxVersionList(this, "max_version", false);
   public get maxVersion() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('max_version');
+    return this._maxVersion;
   }
-  public set maxVersion(value: GoogleBigtableGcPolicyMaxVersion[] | cdktf.IResolvable) {
-    this._maxVersion = value;
+  public putMaxVersion(value: GoogleBigtableGcPolicyMaxVersion[] | cdktf.IResolvable) {
+    this._maxVersion.internalValue = value;
   }
   public resetMaxVersion() {
-    this._maxVersion = undefined;
+    this._maxVersion.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get maxVersionInput() {
-    return this._maxVersion;
+    return this._maxVersion.internalValue;
   }
 
   // =========
@@ -353,12 +448,13 @@ export class GoogleBigtableGcPolicy extends cdktf.TerraformResource {
     return {
       column_family: cdktf.stringToTerraform(this._columnFamily),
       gc_rules: cdktf.stringToTerraform(this._gcRules),
+      id: cdktf.stringToTerraform(this._id),
       instance_name: cdktf.stringToTerraform(this._instanceName),
       mode: cdktf.stringToTerraform(this._mode),
       project: cdktf.stringToTerraform(this._project),
       table: cdktf.stringToTerraform(this._table),
       max_age: googleBigtableGcPolicyMaxAgeToTerraform(this._maxAge.internalValue),
-      max_version: cdktf.listMapper(googleBigtableGcPolicyMaxVersionToTerraform)(this._maxVersion),
+      max_version: cdktf.listMapper(googleBigtableGcPolicyMaxVersionToTerraform)(this._maxVersion.internalValue),
     };
   }
 }

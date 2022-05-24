@@ -20,6 +20,13 @@ export interface GoogleComputeInstanceGroupManagerConfig extends cdktf.Terraform
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#id GoogleComputeInstanceGroupManager#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the instance group manager. Must be 1-63 characters long and comply with RFC1035. Supported characters include lowercase letters, numbers, and hyphens.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#name GoogleComputeInstanceGroupManager#name}
@@ -488,6 +495,102 @@ export function googleComputeInstanceGroupManagerNamedPortToTerraform(struct?: G
   }
 }
 
+export class GoogleComputeInstanceGroupManagerNamedPortOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceGroupManagerNamedPort | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceGroupManagerNamedPort | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._port = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._port = value.port;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+}
+
+export class GoogleComputeInstanceGroupManagerNamedPortList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceGroupManagerNamedPort[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceGroupManagerNamedPortOutputReference {
+    return new GoogleComputeInstanceGroupManagerNamedPortOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceGroupManagerStatefulDisk {
   /**
   * A value that prescribes what should happen to the stateful disk when the VM instance is deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the disk when the VM is deleted, but do not delete the disk. ON_PERMANENT_INSTANCE_DELETION will delete the stateful disk when the VM is permanently deleted from the instance group. The default is NEVER.
@@ -514,6 +617,105 @@ export function googleComputeInstanceGroupManagerStatefulDiskToTerraform(struct?
   }
 }
 
+export class GoogleComputeInstanceGroupManagerStatefulDiskOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceGroupManagerStatefulDisk | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deleteRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteRule = this._deleteRule;
+    }
+    if (this._deviceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deviceName = this._deviceName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceGroupManagerStatefulDisk | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deleteRule = undefined;
+      this._deviceName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deleteRule = value.deleteRule;
+      this._deviceName = value.deviceName;
+    }
+  }
+
+  // delete_rule - computed: false, optional: true, required: false
+  private _deleteRule?: string; 
+  public get deleteRule() {
+    return this.getStringAttribute('delete_rule');
+  }
+  public set deleteRule(value: string) {
+    this._deleteRule = value;
+  }
+  public resetDeleteRule() {
+    this._deleteRule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteRuleInput() {
+    return this._deleteRule;
+  }
+
+  // device_name - computed: false, optional: false, required: true
+  private _deviceName?: string; 
+  public get deviceName() {
+    return this.getStringAttribute('device_name');
+  }
+  public set deviceName(value: string) {
+    this._deviceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deviceNameInput() {
+    return this._deviceName;
+  }
+}
+
+export class GoogleComputeInstanceGroupManagerStatefulDiskList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceGroupManagerStatefulDisk[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceGroupManagerStatefulDiskOutputReference {
+    return new GoogleComputeInstanceGroupManagerStatefulDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceGroupManagerTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#create GoogleComputeInstanceGroupManager#create}
@@ -543,6 +745,7 @@ export function googleComputeInstanceGroupManagerTimeoutsToTerraform(struct?: Go
 
 export class GoogleComputeInstanceGroupManagerTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -552,7 +755,10 @@ export class GoogleComputeInstanceGroupManagerTimeoutsOutputReference extends cd
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeInstanceGroupManagerTimeouts | undefined {
+  public get internalValue(): GoogleComputeInstanceGroupManagerTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -570,15 +776,21 @@ export class GoogleComputeInstanceGroupManagerTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeInstanceGroupManagerTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeInstanceGroupManagerTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -1055,6 +1267,127 @@ export function googleComputeInstanceGroupManagerVersionToTerraform(struct?: Goo
   }
 }
 
+export class GoogleComputeInstanceGroupManagerVersionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceGroupManagerVersion | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._instanceTemplate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.instanceTemplate = this._instanceTemplate;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._targetSize?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetSize = this._targetSize?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceGroupManagerVersion | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._instanceTemplate = undefined;
+      this._name = undefined;
+      this._targetSize.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._instanceTemplate = value.instanceTemplate;
+      this._name = value.name;
+      this._targetSize.internalValue = value.targetSize;
+    }
+  }
+
+  // instance_template - computed: false, optional: false, required: true
+  private _instanceTemplate?: string; 
+  public get instanceTemplate() {
+    return this.getStringAttribute('instance_template');
+  }
+  public set instanceTemplate(value: string) {
+    this._instanceTemplate = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTemplateInput() {
+    return this._instanceTemplate;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // target_size - computed: false, optional: true, required: false
+  private _targetSize = new GoogleComputeInstanceGroupManagerVersionTargetSizeOutputReference(this, "target_size");
+  public get targetSize() {
+    return this._targetSize;
+  }
+  public putTargetSize(value: GoogleComputeInstanceGroupManagerVersionTargetSize) {
+    this._targetSize.internalValue = value;
+  }
+  public resetTargetSize() {
+    this._targetSize.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetSizeInput() {
+    return this._targetSize.internalValue;
+  }
+}
+
+export class GoogleComputeInstanceGroupManagerVersionList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceGroupManagerVersion[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceGroupManagerVersionOutputReference {
+    return new GoogleComputeInstanceGroupManagerVersionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager google_compute_instance_group_manager}
@@ -1092,6 +1425,7 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
     });
     this._baseInstanceName = config.baseInstanceName;
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._project = config.project;
     this._targetPools = config.targetPools;
@@ -1100,11 +1434,11 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
     this._waitForInstancesStatus = config.waitForInstancesStatus;
     this._zone = config.zone;
     this._autoHealingPolicies.internalValue = config.autoHealingPolicies;
-    this._namedPort = config.namedPort;
-    this._statefulDisk = config.statefulDisk;
+    this._namedPort.internalValue = config.namedPort;
+    this._statefulDisk.internalValue = config.statefulDisk;
     this._timeouts.internalValue = config.timeouts;
     this._updatePolicy.internalValue = config.updatePolicy;
-    this._version = config.version;
+    this._version.internalValue = config.version;
   }
 
   // ==========
@@ -1146,8 +1480,19 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // instance_group - computed: true, optional: false, required: false
@@ -1297,37 +1642,35 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
   }
 
   // named_port - computed: false, optional: true, required: false
-  private _namedPort?: GoogleComputeInstanceGroupManagerNamedPort[] | cdktf.IResolvable; 
+  private _namedPort = new GoogleComputeInstanceGroupManagerNamedPortList(this, "named_port", true);
   public get namedPort() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('named_port')));
+    return this._namedPort;
   }
-  public set namedPort(value: GoogleComputeInstanceGroupManagerNamedPort[] | cdktf.IResolvable) {
-    this._namedPort = value;
+  public putNamedPort(value: GoogleComputeInstanceGroupManagerNamedPort[] | cdktf.IResolvable) {
+    this._namedPort.internalValue = value;
   }
   public resetNamedPort() {
-    this._namedPort = undefined;
+    this._namedPort.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get namedPortInput() {
-    return this._namedPort;
+    return this._namedPort.internalValue;
   }
 
   // stateful_disk - computed: false, optional: true, required: false
-  private _statefulDisk?: GoogleComputeInstanceGroupManagerStatefulDisk[] | cdktf.IResolvable; 
+  private _statefulDisk = new GoogleComputeInstanceGroupManagerStatefulDiskList(this, "stateful_disk", true);
   public get statefulDisk() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('stateful_disk')));
+    return this._statefulDisk;
   }
-  public set statefulDisk(value: GoogleComputeInstanceGroupManagerStatefulDisk[] | cdktf.IResolvable) {
-    this._statefulDisk = value;
+  public putStatefulDisk(value: GoogleComputeInstanceGroupManagerStatefulDisk[] | cdktf.IResolvable) {
+    this._statefulDisk.internalValue = value;
   }
   public resetStatefulDisk() {
-    this._statefulDisk = undefined;
+    this._statefulDisk.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get statefulDiskInput() {
-    return this._statefulDisk;
+    return this._statefulDisk.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1363,17 +1706,16 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
   }
 
   // version - computed: false, optional: false, required: true
-  private _version?: GoogleComputeInstanceGroupManagerVersion[] | cdktf.IResolvable; 
+  private _version = new GoogleComputeInstanceGroupManagerVersionList(this, "version", false);
   public get version() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('version');
+    return this._version;
   }
-  public set version(value: GoogleComputeInstanceGroupManagerVersion[] | cdktf.IResolvable) {
-    this._version = value;
+  public putVersion(value: GoogleComputeInstanceGroupManagerVersion[] | cdktf.IResolvable) {
+    this._version.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
-    return this._version;
+    return this._version.internalValue;
   }
 
   // =========
@@ -1384,6 +1726,7 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
     return {
       base_instance_name: cdktf.stringToTerraform(this._baseInstanceName),
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       target_pools: cdktf.listMapper(cdktf.stringToTerraform)(this._targetPools),
@@ -1392,11 +1735,11 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
       wait_for_instances_status: cdktf.stringToTerraform(this._waitForInstancesStatus),
       zone: cdktf.stringToTerraform(this._zone),
       auto_healing_policies: googleComputeInstanceGroupManagerAutoHealingPoliciesToTerraform(this._autoHealingPolicies.internalValue),
-      named_port: cdktf.listMapper(googleComputeInstanceGroupManagerNamedPortToTerraform)(this._namedPort),
-      stateful_disk: cdktf.listMapper(googleComputeInstanceGroupManagerStatefulDiskToTerraform)(this._statefulDisk),
+      named_port: cdktf.listMapper(googleComputeInstanceGroupManagerNamedPortToTerraform)(this._namedPort.internalValue),
+      stateful_disk: cdktf.listMapper(googleComputeInstanceGroupManagerStatefulDiskToTerraform)(this._statefulDisk.internalValue),
       timeouts: googleComputeInstanceGroupManagerTimeoutsToTerraform(this._timeouts.internalValue),
       update_policy: googleComputeInstanceGroupManagerUpdatePolicyToTerraform(this._updatePolicy.internalValue),
-      version: cdktf.listMapper(googleComputeInstanceGroupManagerVersionToTerraform)(this._version),
+      version: cdktf.listMapper(googleComputeInstanceGroupManagerVersionToTerraform)(this._version.internalValue),
     };
   }
 }

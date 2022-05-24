@@ -14,6 +14,13 @@ export interface GoogleComputeResourcePolicyConfig extends cdktf.TerraformMetaAr
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#id GoogleComputeResourcePolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The name of the resource, provided by the client when initially creating
 the resource. The resource name must be 1-63 characters long, and comply
 with RFC1035. Specifically, the name must be 1-63 characters long and
@@ -804,6 +811,102 @@ export function googleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyS
   }
 }
 
+export class GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._startTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._day = undefined;
+      this._startTime = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._day = value.day;
+      this._startTime = value.startTime;
+    }
+  }
+
+  // day - computed: false, optional: false, required: true
+  private _day?: string; 
+  public get day() {
+    return this.getStringAttribute('day');
+  }
+  public set day(value: string) {
+    this._day = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // start_time - computed: false, optional: false, required: true
+  private _startTime?: string; 
+  public get startTime() {
+    return this.getStringAttribute('start_time');
+  }
+  public set startTime(value: string) {
+    this._startTime = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeInput() {
+    return this._startTime;
+  }
+}
+
+export class GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference {
+    return new GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule {
   /**
   * day_of_weeks block
@@ -837,9 +940,9 @@ export class GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySche
   public get internalValue(): GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dayOfWeeks !== undefined) {
+    if (this._dayOfWeeks?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.dayOfWeeks = this._dayOfWeeks;
+      internalValueResult.dayOfWeeks = this._dayOfWeeks?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -847,26 +950,25 @@ export class GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySche
   public set internalValue(value: GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklySchedule | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._dayOfWeeks = undefined;
+      this._dayOfWeeks.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._dayOfWeeks = value.dayOfWeeks;
+      this._dayOfWeeks.internalValue = value.dayOfWeeks;
     }
   }
 
   // day_of_weeks - computed: false, optional: false, required: true
-  private _dayOfWeeks?: GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks[] | cdktf.IResolvable; 
+  private _dayOfWeeks = new GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeksList(this, "day_of_weeks", true);
   public get dayOfWeeks() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('day_of_weeks')));
+    return this._dayOfWeeks;
   }
-  public set dayOfWeeks(value: GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks[] | cdktf.IResolvable) {
-    this._dayOfWeeks = value;
+  public putDayOfWeeks(value: GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleWeeklyScheduleDayOfWeeks[] | cdktf.IResolvable) {
+    this._dayOfWeeks.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get dayOfWeeksInput() {
-    return this._dayOfWeeks;
+    return this._dayOfWeeks.internalValue;
   }
 }
 export interface GoogleComputeResourcePolicySnapshotSchedulePolicySchedule {
@@ -1266,6 +1368,7 @@ export function googleComputeResourcePolicyTimeoutsToTerraform(struct?: GoogleCo
 
 export class GoogleComputeResourcePolicyTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1275,7 +1378,10 @@ export class GoogleComputeResourcePolicyTimeoutsOutputReference extends cdktf.Co
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeResourcePolicyTimeouts | undefined {
+  public get internalValue(): GoogleComputeResourcePolicyTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -1289,14 +1395,20 @@ export class GoogleComputeResourcePolicyTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeResourcePolicyTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeResourcePolicyTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -1370,6 +1482,7 @@ export class GoogleComputeResourcePolicy extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._name = config.name;
     this._project = config.project;
     this._region = config.region;
@@ -1400,8 +1513,19 @@ export class GoogleComputeResourcePolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -1525,6 +1649,7 @@ export class GoogleComputeResourcePolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),

@@ -16,6 +16,13 @@ creation time.
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_subnetwork#id GoogleComputeSubnetwork#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The range of internal addresses that are owned by this subnetwork.
 Provide this property when you create the subnetwork. For example,
 10.0.0.0/8 or 192.168.0.0/16. Ranges must be unique and
@@ -151,6 +158,108 @@ export function googleComputeSubnetworkSecondaryIpRangeToTerraform(struct?: Goog
   }
 }
 
+export class GoogleComputeSubnetworkSecondaryIpRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeSubnetworkSecondaryIpRange | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipCidrRange !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipCidrRange = this._ipCidrRange;
+    }
+    if (this._rangeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rangeName = this._rangeName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSubnetworkSecondaryIpRange | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipCidrRange = undefined;
+      this._rangeName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipCidrRange = value.ipCidrRange;
+      this._rangeName = value.rangeName;
+    }
+  }
+
+  // ip_cidr_range - computed: true, optional: true, required: false
+  private _ipCidrRange?: string; 
+  public get ipCidrRange() {
+    return this.getStringAttribute('ip_cidr_range');
+  }
+  public set ipCidrRange(value: string) {
+    this._ipCidrRange = value;
+  }
+  public resetIpCidrRange() {
+    this._ipCidrRange = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipCidrRangeInput() {
+    return this._ipCidrRange;
+  }
+
+  // range_name - computed: true, optional: true, required: false
+  private _rangeName?: string; 
+  public get rangeName() {
+    return this.getStringAttribute('range_name');
+  }
+  public set rangeName(value: string) {
+    this._rangeName = value;
+  }
+  public resetRangeName() {
+    this._rangeName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rangeNameInput() {
+    return this._rangeName;
+  }
+}
+
+export class GoogleComputeSubnetworkSecondaryIpRangeList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeSubnetworkSecondaryIpRange[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeSubnetworkSecondaryIpRangeOutputReference {
+    return new GoogleComputeSubnetworkSecondaryIpRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeSubnetworkLogConfig {
   /**
   * Can only be specified if VPC flow logging for this subnetwork is enabled.
@@ -375,6 +484,7 @@ export function googleComputeSubnetworkTimeoutsToTerraform(struct?: GoogleComput
 
 export class GoogleComputeSubnetworkTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -384,7 +494,10 @@ export class GoogleComputeSubnetworkTimeoutsOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeSubnetworkTimeouts | undefined {
+  public get internalValue(): GoogleComputeSubnetworkTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -402,15 +515,21 @@ export class GoogleComputeSubnetworkTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeSubnetworkTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeSubnetworkTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -501,6 +620,7 @@ export class GoogleComputeSubnetwork extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._ipCidrRange = config.ipCidrRange;
     this._ipv6AccessType = config.ipv6AccessType;
     this._name = config.name;
@@ -511,7 +631,7 @@ export class GoogleComputeSubnetwork extends cdktf.TerraformResource {
     this._purpose = config.purpose;
     this._region = config.region;
     this._role = config.role;
-    this._secondaryIpRange = config.secondaryIpRange;
+    this._secondaryIpRange.internalValue = config.secondaryIpRange;
     this._stackType = config.stackType;
     this._logConfig.internalValue = config.logConfig;
     this._timeouts.internalValue = config.timeouts;
@@ -558,8 +678,19 @@ export class GoogleComputeSubnetwork extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ip_cidr_range - computed: false, optional: false, required: true
@@ -719,20 +850,19 @@ export class GoogleComputeSubnetwork extends cdktf.TerraformResource {
   }
 
   // secondary_ip_range - computed: true, optional: true, required: false
-  private _secondaryIpRange?: GoogleComputeSubnetworkSecondaryIpRange[] | cdktf.IResolvable; 
+  private _secondaryIpRange = new GoogleComputeSubnetworkSecondaryIpRangeList(this, "secondary_ip_range", false);
   public get secondaryIpRange() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('secondary_ip_range');
+    return this._secondaryIpRange;
   }
-  public set secondaryIpRange(value: GoogleComputeSubnetworkSecondaryIpRange[] | cdktf.IResolvable) {
-    this._secondaryIpRange = value;
+  public putSecondaryIpRange(value: GoogleComputeSubnetworkSecondaryIpRange[] | cdktf.IResolvable) {
+    this._secondaryIpRange.internalValue = value;
   }
   public resetSecondaryIpRange() {
-    this._secondaryIpRange = undefined;
+    this._secondaryIpRange.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get secondaryIpRangeInput() {
-    return this._secondaryIpRange;
+    return this._secondaryIpRange.internalValue;
   }
 
   // self_link - computed: true, optional: false, required: false
@@ -795,6 +925,7 @@ export class GoogleComputeSubnetwork extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       ip_cidr_range: cdktf.stringToTerraform(this._ipCidrRange),
       ipv6_access_type: cdktf.stringToTerraform(this._ipv6AccessType),
       name: cdktf.stringToTerraform(this._name),
@@ -805,7 +936,7 @@ export class GoogleComputeSubnetwork extends cdktf.TerraformResource {
       purpose: cdktf.stringToTerraform(this._purpose),
       region: cdktf.stringToTerraform(this._region),
       role: cdktf.stringToTerraform(this._role),
-      secondary_ip_range: cdktf.listMapper(googleComputeSubnetworkSecondaryIpRangeToTerraform)(this._secondaryIpRange),
+      secondary_ip_range: cdktf.listMapper(googleComputeSubnetworkSecondaryIpRangeToTerraform)(this._secondaryIpRange.internalValue),
       stack_type: cdktf.stringToTerraform(this._stackType),
       log_config: googleComputeSubnetworkLogConfigToTerraform(this._logConfig.internalValue),
       timeouts: googleComputeSubnetworkTimeoutsToTerraform(this._timeouts.internalValue),

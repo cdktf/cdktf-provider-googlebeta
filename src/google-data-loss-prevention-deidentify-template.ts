@@ -20,6 +20,13 @@ export interface GoogleDataLossPreventionDeidentifyTemplateConfig extends cdktf.
   */
   readonly displayName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#id GoogleDataLossPreventionDeidentifyTemplate#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The parent of the template in any of the following formats:
 
 * 'projects/{{project}}'
@@ -62,6 +69,83 @@ export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTy
   }
 }
 
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypesList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypesOutputReference {
+    return new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore {
   /**
   * Characters to not transform when masking.
@@ -88,6 +172,108 @@ export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTy
   }
 }
 
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._charactersToSkip !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.charactersToSkip = this._charactersToSkip;
+    }
+    if (this._commonCharactersToIgnore !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonCharactersToIgnore = this._commonCharactersToIgnore;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._charactersToSkip = undefined;
+      this._commonCharactersToIgnore = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._charactersToSkip = value.charactersToSkip;
+      this._commonCharactersToIgnore = value.commonCharactersToIgnore;
+    }
+  }
+
+  // characters_to_skip - computed: false, optional: true, required: false
+  private _charactersToSkip?: string; 
+  public get charactersToSkip() {
+    return this.getStringAttribute('characters_to_skip');
+  }
+  public set charactersToSkip(value: string) {
+    this._charactersToSkip = value;
+  }
+  public resetCharactersToSkip() {
+    this._charactersToSkip = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get charactersToSkipInput() {
+    return this._charactersToSkip;
+  }
+
+  // common_characters_to_ignore - computed: false, optional: true, required: false
+  private _commonCharactersToIgnore?: string; 
+  public get commonCharactersToIgnore() {
+    return this.getStringAttribute('common_characters_to_ignore');
+  }
+  public set commonCharactersToIgnore(value: string) {
+    this._commonCharactersToIgnore = value;
+  }
+  public resetCommonCharactersToIgnore() {
+    this._commonCharactersToIgnore = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonCharactersToIgnoreInput() {
+    return this._commonCharactersToIgnore;
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreOutputReference {
+    return new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfig {
   /**
   * Character to use to mask the sensitive values—for example, * for an alphabetic string such as a name, or 0 for a numeric string
@@ -157,9 +343,9 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
       hasAnyValues = true;
       internalValueResult.reverseOrder = this._reverseOrder;
     }
-    if (this._charactersToIgnore !== undefined) {
+    if (this._charactersToIgnore?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.charactersToIgnore = this._charactersToIgnore;
+      internalValueResult.charactersToIgnore = this._charactersToIgnore?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -170,14 +356,14 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
       this._maskingCharacter = undefined;
       this._numberToMask = undefined;
       this._reverseOrder = undefined;
-      this._charactersToIgnore = undefined;
+      this._charactersToIgnore.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._maskingCharacter = value.maskingCharacter;
       this._numberToMask = value.numberToMask;
       this._reverseOrder = value.reverseOrder;
-      this._charactersToIgnore = value.charactersToIgnore;
+      this._charactersToIgnore.internalValue = value.charactersToIgnore;
     }
   }
 
@@ -230,20 +416,19 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
   }
 
   // characters_to_ignore - computed: false, optional: true, required: false
-  private _charactersToIgnore?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore[] | cdktf.IResolvable; 
+  private _charactersToIgnore = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreList(this, "characters_to_ignore", false);
   public get charactersToIgnore() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('characters_to_ignore');
+    return this._charactersToIgnore;
   }
-  public set charactersToIgnore(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore[] | cdktf.IResolvable) {
-    this._charactersToIgnore = value;
+  public putCharactersToIgnore(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore[] | cdktf.IResolvable) {
+    this._charactersToIgnore.internalValue = value;
   }
   public resetCharactersToIgnore() {
-    this._charactersToIgnore = undefined;
+    this._charactersToIgnore.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get charactersToIgnoreInput() {
-    return this._charactersToIgnore;
+    return this._charactersToIgnore.internalValue;
   }
 }
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoDeterministicConfigContext {
@@ -2371,6 +2556,105 @@ export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTy
   }
 }
 
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformations | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._infoTypes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.infoTypes = this._infoTypes?.internalValue;
+    }
+    if (this._primitiveTransformation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.primitiveTransformation = this._primitiveTransformation?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformations | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._infoTypes.internalValue = undefined;
+      this._primitiveTransformation.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._infoTypes.internalValue = value.infoTypes;
+      this._primitiveTransformation.internalValue = value.primitiveTransformation;
+    }
+  }
+
+  // info_types - computed: false, optional: true, required: false
+  private _infoTypes = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypesList(this, "info_types", false);
+  public get infoTypes() {
+    return this._infoTypes;
+  }
+  public putInfoTypes(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypes[] | cdktf.IResolvable) {
+    this._infoTypes.internalValue = value;
+  }
+  public resetInfoTypes() {
+    this._infoTypes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get infoTypesInput() {
+    return this._infoTypes.internalValue;
+  }
+
+  // primitive_transformation - computed: false, optional: false, required: true
+  private _primitiveTransformation = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationOutputReference(this, "primitive_transformation");
+  public get primitiveTransformation() {
+    return this._primitiveTransformation;
+  }
+  public putPrimitiveTransformation(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformation) {
+    this._primitiveTransformation.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primitiveTransformationInput() {
+    return this._primitiveTransformation.internalValue;
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformations[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsOutputReference {
+    return new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations {
   /**
   * transformations block
@@ -2404,9 +2688,9 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
   public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._transformations !== undefined) {
+    if (this._transformations?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.transformations = this._transformations;
+      internalValueResult.transformations = this._transformations?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -2414,26 +2698,25 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
   public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._transformations = undefined;
+      this._transformations.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._transformations = value.transformations;
+      this._transformations.internalValue = value.transformations;
     }
   }
 
   // transformations - computed: false, optional: false, required: true
-  private _transformations?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformations[] | cdktf.IResolvable; 
+  private _transformations = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsList(this, "transformations", false);
   public get transformations() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('transformations');
+    return this._transformations;
   }
-  public set transformations(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformations[] | cdktf.IResolvable) {
-    this._transformations = value;
+  public putTransformations(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformations[] | cdktf.IResolvable) {
+    this._transformations.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get transformationsInput() {
-    return this._transformations;
+    return this._transformations.internalValue;
   }
 }
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfig {
@@ -2529,6 +2812,7 @@ export function googleDataLossPreventionDeidentifyTemplateTimeoutsToTerraform(st
 
 export class GoogleDataLossPreventionDeidentifyTemplateTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2538,7 +2822,10 @@ export class GoogleDataLossPreventionDeidentifyTemplateTimeoutsOutputReference e
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateTimeouts | undefined {
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -2556,15 +2843,21 @@ export class GoogleDataLossPreventionDeidentifyTemplateTimeoutsOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateTimeouts | undefined) {
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -2656,6 +2949,7 @@ export class GoogleDataLossPreventionDeidentifyTemplate extends cdktf.TerraformR
     });
     this._description = config.description;
     this._displayName = config.displayName;
+    this._id = config.id;
     this._parent = config.parent;
     this._deidentifyConfig.internalValue = config.deidentifyConfig;
     this._timeouts.internalValue = config.timeouts;
@@ -2698,8 +2992,19 @@ export class GoogleDataLossPreventionDeidentifyTemplate extends cdktf.TerraformR
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: false, required: false
@@ -2757,6 +3062,7 @@ export class GoogleDataLossPreventionDeidentifyTemplate extends cdktf.TerraformR
     return {
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
+      id: cdktf.stringToTerraform(this._id),
       parent: cdktf.stringToTerraform(this._parent),
       deidentify_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigToTerraform(this._deidentifyConfig.internalValue),
       timeouts: googleDataLossPreventionDeidentifyTemplateTimeoutsToTerraform(this._timeouts.internalValue),

@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleDataprocMetastoreServiceConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_dataproc_metastore_service#id DataGoogleDataprocMetastoreService#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The  location where the autoscaling policy should reside.
 The default value is 'global'.
   * 
@@ -271,8 +278,9 @@ export class DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReferenc
   }
 
   // config_overrides - computed: true, optional: false, required: false
-  public configOverrides(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'config_overrides').lookup(key);
+  private _configOverrides = new cdktf.StringMap(this, "config_overrides");
+  public get configOverrides() {
+    return this._configOverrides;
   }
 
   // kerberos_config - computed: true, optional: false, required: false
@@ -409,6 +417,7 @@ export class DataGoogleDataprocMetastoreService extends cdktf.TerraformDataSourc
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._location = config.location;
     this._project = config.project;
     this._serviceId = config.serviceId;
@@ -441,13 +450,25 @@ export class DataGoogleDataprocMetastoreService extends cdktf.TerraformDataSourc
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
   }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
 
   // labels - computed: true, optional: false, required: false
-  public labels(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'labels').lookup(key);
+  private _labels = new cdktf.StringMap(this, "labels");
+  public get labels() {
+    return this._labels;
   }
 
   // location - computed: false, optional: false, required: true
@@ -534,6 +555,7 @@ export class DataGoogleDataprocMetastoreService extends cdktf.TerraformDataSourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
       project: cdktf.stringToTerraform(this._project),
       service_id: cdktf.stringToTerraform(this._serviceId),

@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleComposerEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#id GoogleComposerEnvironment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * User-defined labels for this environment. The labels map can contain no more than 64 entries. Entries of the labels map are UTF8 strings that comply with the following restrictions: Label keys must be between 1 and 63 characters long and must conform to the following regular expression: [a-z]([-a-z0-9]*[a-z0-9])?. Label values must be between 0 and 63 characters long and must conform to the regular expression ([a-z]([-a-z0-9]*[a-z0-9])?)?. No more than 64 labels can be associated with a given environment. Both keys and values must be <= 128 bytes in size.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#labels GoogleComposerEnvironment#labels}
@@ -314,6 +321,105 @@ export function googleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCid
   }
 }
 
+export class GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cidrBlock !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cidrBlock = this._cidrBlock;
+    }
+    if (this._displayName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.displayName = this._displayName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cidrBlock = undefined;
+      this._displayName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cidrBlock = value.cidrBlock;
+      this._displayName = value.displayName;
+    }
+  }
+
+  // cidr_block - computed: false, optional: false, required: true
+  private _cidrBlock?: string; 
+  public get cidrBlock() {
+    return this.getStringAttribute('cidr_block');
+  }
+  public set cidrBlock(value: string) {
+    this._cidrBlock = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrBlockInput() {
+    return this._cidrBlock;
+  }
+
+  // display_name - computed: false, optional: true, required: false
+  private _displayName?: string; 
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+  public set displayName(value: string) {
+    this._displayName = value;
+  }
+  public resetDisplayName() {
+    this._displayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNameInput() {
+    return this._displayName;
+  }
+}
+
+export class GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList extends cdktf.ComplexList {
+  public internalValue? : GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference {
+    return new GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfig {
   /**
   * Whether or not master authorized networks is enabled.
@@ -358,9 +464,9 @@ export class GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutput
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
     }
-    if (this._cidrBlocks !== undefined) {
+    if (this._cidrBlocks?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.cidrBlocks = this._cidrBlocks;
+      internalValueResult.cidrBlocks = this._cidrBlocks?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -369,12 +475,12 @@ export class GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutput
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enabled = undefined;
-      this._cidrBlocks = undefined;
+      this._cidrBlocks.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
-      this._cidrBlocks = value.cidrBlocks;
+      this._cidrBlocks.internalValue = value.cidrBlocks;
     }
   }
 
@@ -392,20 +498,19 @@ export class GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigOutput
   }
 
   // cidr_blocks - computed: false, optional: true, required: false
-  private _cidrBlocks?: GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks[] | cdktf.IResolvable; 
+  private _cidrBlocks = new GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList(this, "cidr_blocks", true);
   public get cidrBlocks() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cidr_blocks')));
+    return this._cidrBlocks;
   }
-  public set cidrBlocks(value: GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks[] | cdktf.IResolvable) {
-    this._cidrBlocks = value;
+  public putCidrBlocks(value: GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocks[] | cdktf.IResolvable) {
+    this._cidrBlocks.internalValue = value;
   }
   public resetCidrBlocks() {
-    this._cidrBlocks = undefined;
+    this._cidrBlocks.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cidrBlocksInput() {
-    return this._cidrBlocks;
+    return this._cidrBlocks.internalValue;
   }
 }
 export interface GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy {
@@ -445,6 +550,174 @@ export function googleComposerEnvironmentConfigNodeConfigIpAllocationPolicyToTer
   }
 }
 
+export class GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._clusterIpv4CidrBlock !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusterIpv4CidrBlock = this._clusterIpv4CidrBlock;
+    }
+    if (this._clusterSecondaryRangeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.clusterSecondaryRangeName = this._clusterSecondaryRangeName;
+    }
+    if (this._servicesIpv4CidrBlock !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.servicesIpv4CidrBlock = this._servicesIpv4CidrBlock;
+    }
+    if (this._servicesSecondaryRangeName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.servicesSecondaryRangeName = this._servicesSecondaryRangeName;
+    }
+    if (this._useIpAliases !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useIpAliases = this._useIpAliases;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._clusterIpv4CidrBlock = undefined;
+      this._clusterSecondaryRangeName = undefined;
+      this._servicesIpv4CidrBlock = undefined;
+      this._servicesSecondaryRangeName = undefined;
+      this._useIpAliases = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._clusterIpv4CidrBlock = value.clusterIpv4CidrBlock;
+      this._clusterSecondaryRangeName = value.clusterSecondaryRangeName;
+      this._servicesIpv4CidrBlock = value.servicesIpv4CidrBlock;
+      this._servicesSecondaryRangeName = value.servicesSecondaryRangeName;
+      this._useIpAliases = value.useIpAliases;
+    }
+  }
+
+  // cluster_ipv4_cidr_block - computed: true, optional: true, required: false
+  private _clusterIpv4CidrBlock?: string; 
+  public get clusterIpv4CidrBlock() {
+    return this.getStringAttribute('cluster_ipv4_cidr_block');
+  }
+  public set clusterIpv4CidrBlock(value: string) {
+    this._clusterIpv4CidrBlock = value;
+  }
+  public resetClusterIpv4CidrBlock() {
+    this._clusterIpv4CidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterIpv4CidrBlockInput() {
+    return this._clusterIpv4CidrBlock;
+  }
+
+  // cluster_secondary_range_name - computed: true, optional: true, required: false
+  private _clusterSecondaryRangeName?: string; 
+  public get clusterSecondaryRangeName() {
+    return this.getStringAttribute('cluster_secondary_range_name');
+  }
+  public set clusterSecondaryRangeName(value: string) {
+    this._clusterSecondaryRangeName = value;
+  }
+  public resetClusterSecondaryRangeName() {
+    this._clusterSecondaryRangeName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get clusterSecondaryRangeNameInput() {
+    return this._clusterSecondaryRangeName;
+  }
+
+  // services_ipv4_cidr_block - computed: true, optional: true, required: false
+  private _servicesIpv4CidrBlock?: string; 
+  public get servicesIpv4CidrBlock() {
+    return this.getStringAttribute('services_ipv4_cidr_block');
+  }
+  public set servicesIpv4CidrBlock(value: string) {
+    this._servicesIpv4CidrBlock = value;
+  }
+  public resetServicesIpv4CidrBlock() {
+    this._servicesIpv4CidrBlock = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servicesIpv4CidrBlockInput() {
+    return this._servicesIpv4CidrBlock;
+  }
+
+  // services_secondary_range_name - computed: true, optional: true, required: false
+  private _servicesSecondaryRangeName?: string; 
+  public get servicesSecondaryRangeName() {
+    return this.getStringAttribute('services_secondary_range_name');
+  }
+  public set servicesSecondaryRangeName(value: string) {
+    this._servicesSecondaryRangeName = value;
+  }
+  public resetServicesSecondaryRangeName() {
+    this._servicesSecondaryRangeName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get servicesSecondaryRangeNameInput() {
+    return this._servicesSecondaryRangeName;
+  }
+
+  // use_ip_aliases - computed: true, optional: true, required: false
+  private _useIpAliases?: boolean | cdktf.IResolvable; 
+  public get useIpAliases() {
+    return this.getBooleanAttribute('use_ip_aliases');
+  }
+  public set useIpAliases(value: boolean | cdktf.IResolvable) {
+    this._useIpAliases = value;
+  }
+  public resetUseIpAliases() {
+    this._useIpAliases = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useIpAliasesInput() {
+    return this._useIpAliases;
+  }
+}
+
+export class GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList extends cdktf.ComplexList {
+  public internalValue? : GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference {
+    return new GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComposerEnvironmentConfigNodeConfig {
   /**
   * The disk size in GB used for node VMs. Minimum size is 20GB. If unspecified, defaults to 100GB. Cannot be updated. This field is supported for Cloud Composer environments in versions composer-1.*.*-airflow-*.*.*.
@@ -556,9 +829,9 @@ export class GoogleComposerEnvironmentConfigNodeConfigOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.enableIpMasqAgent = this._enableIpMasqAgent;
     }
-    if (this._ipAllocationPolicy !== undefined) {
+    if (this._ipAllocationPolicy?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.ipAllocationPolicy = this._ipAllocationPolicy;
+      internalValueResult.ipAllocationPolicy = this._ipAllocationPolicy?.internalValue;
     }
     if (this._machineType !== undefined) {
       hasAnyValues = true;
@@ -600,7 +873,7 @@ export class GoogleComposerEnvironmentConfigNodeConfigOutputReference extends cd
       this.isEmptyObject = false;
       this._diskSizeGb = undefined;
       this._enableIpMasqAgent = undefined;
-      this._ipAllocationPolicy = undefined;
+      this._ipAllocationPolicy.internalValue = undefined;
       this._machineType = undefined;
       this._maxPodsPerNode = undefined;
       this._network = undefined;
@@ -614,7 +887,7 @@ export class GoogleComposerEnvironmentConfigNodeConfigOutputReference extends cd
       this.isEmptyObject = Object.keys(value).length === 0;
       this._diskSizeGb = value.diskSizeGb;
       this._enableIpMasqAgent = value.enableIpMasqAgent;
-      this._ipAllocationPolicy = value.ipAllocationPolicy;
+      this._ipAllocationPolicy.internalValue = value.ipAllocationPolicy;
       this._machineType = value.machineType;
       this._maxPodsPerNode = value.maxPodsPerNode;
       this._network = value.network;
@@ -659,20 +932,19 @@ export class GoogleComposerEnvironmentConfigNodeConfigOutputReference extends cd
   }
 
   // ip_allocation_policy - computed: true, optional: true, required: false
-  private _ipAllocationPolicy?: GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy[] | cdktf.IResolvable; 
+  private _ipAllocationPolicy = new GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList(this, "ip_allocation_policy", false);
   public get ipAllocationPolicy() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('ip_allocation_policy');
+    return this._ipAllocationPolicy;
   }
-  public set ipAllocationPolicy(value: GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy[] | cdktf.IResolvable) {
-    this._ipAllocationPolicy = value;
+  public putIpAllocationPolicy(value: GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy[] | cdktf.IResolvable) {
+    this._ipAllocationPolicy.internalValue = value;
   }
   public resetIpAllocationPolicy() {
-    this._ipAllocationPolicy = undefined;
+    this._ipAllocationPolicy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get ipAllocationPolicyInput() {
-    return this._ipAllocationPolicy;
+    return this._ipAllocationPolicy.internalValue;
   }
 
   // machine_type - computed: true, optional: true, required: false
@@ -1346,6 +1618,105 @@ export function googleComposerEnvironmentConfigWebServerNetworkAccessControlAllo
   }
 }
 
+export class GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._description = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._description = value.description;
+      this._value = value.value;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList extends cdktf.ComplexList {
+  public internalValue? : GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference {
+    return new GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComposerEnvironmentConfigWebServerNetworkAccessControl {
   /**
   * allowed_ip_range block
@@ -1379,9 +1750,9 @@ export class GoogleComposerEnvironmentConfigWebServerNetworkAccessControlOutputR
   public get internalValue(): GoogleComposerEnvironmentConfigWebServerNetworkAccessControl | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._allowedIpRange !== undefined) {
+    if (this._allowedIpRange?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.allowedIpRange = this._allowedIpRange;
+      internalValueResult.allowedIpRange = this._allowedIpRange?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1389,29 +1760,28 @@ export class GoogleComposerEnvironmentConfigWebServerNetworkAccessControlOutputR
   public set internalValue(value: GoogleComposerEnvironmentConfigWebServerNetworkAccessControl | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._allowedIpRange = undefined;
+      this._allowedIpRange.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._allowedIpRange = value.allowedIpRange;
+      this._allowedIpRange.internalValue = value.allowedIpRange;
     }
   }
 
   // allowed_ip_range - computed: false, optional: true, required: false
-  private _allowedIpRange?: GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange[] | cdktf.IResolvable; 
+  private _allowedIpRange = new GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeList(this, "allowed_ip_range", true);
   public get allowedIpRange() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('allowed_ip_range')));
+    return this._allowedIpRange;
   }
-  public set allowedIpRange(value: GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange[] | cdktf.IResolvable) {
-    this._allowedIpRange = value;
+  public putAllowedIpRange(value: GoogleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRange[] | cdktf.IResolvable) {
+    this._allowedIpRange.internalValue = value;
   }
   public resetAllowedIpRange() {
-    this._allowedIpRange = undefined;
+    this._allowedIpRange.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get allowedIpRangeInput() {
-    return this._allowedIpRange;
+    return this._allowedIpRange.internalValue;
   }
 }
 export interface GoogleComposerEnvironmentConfigWorkloadsConfigScheduler {
@@ -2431,6 +2801,7 @@ export function googleComposerEnvironmentTimeoutsToTerraform(struct?: GoogleComp
 
 export class GoogleComposerEnvironmentTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2440,7 +2811,10 @@ export class GoogleComposerEnvironmentTimeoutsOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComposerEnvironmentTimeouts | undefined {
+  public get internalValue(): GoogleComposerEnvironmentTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -2458,15 +2832,21 @@ export class GoogleComposerEnvironmentTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComposerEnvironmentTimeouts | undefined) {
+  public set internalValue(value: GoogleComposerEnvironmentTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -2556,6 +2936,7 @@ export class GoogleComposerEnvironment extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._labels = config.labels;
     this._name = config.name;
     this._project = config.project;
@@ -2569,8 +2950,19 @@ export class GoogleComposerEnvironment extends cdktf.TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // labels - computed: false, optional: true, required: false
@@ -2672,6 +3064,7 @@ export class GoogleComposerEnvironment extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),

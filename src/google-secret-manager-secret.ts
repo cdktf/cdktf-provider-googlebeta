@@ -15,6 +15,13 @@ A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to n
   */
   readonly expireTime?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_secret_manager_secret#id GoogleSecretManagerSecret#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The labels assigned to this Secret.
 
 Label keys must be between 1 and 63 characters long, have a UTF-8 encoding of maximum 128 bytes,
@@ -163,6 +170,105 @@ export function googleSecretManagerSecretReplicationUserManagedReplicasToTerrafo
   }
 }
 
+export class GoogleSecretManagerSecretReplicationUserManagedReplicasOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleSecretManagerSecretReplicationUserManagedReplicas | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._location !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location;
+    }
+    if (this._customerManagedEncryption?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customerManagedEncryption = this._customerManagedEncryption?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSecretManagerSecretReplicationUserManagedReplicas | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._location = undefined;
+      this._customerManagedEncryption.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._location = value.location;
+      this._customerManagedEncryption.internalValue = value.customerManagedEncryption;
+    }
+  }
+
+  // location - computed: false, optional: false, required: true
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // customer_managed_encryption - computed: false, optional: true, required: false
+  private _customerManagedEncryption = new GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference(this, "customer_managed_encryption");
+  public get customerManagedEncryption() {
+    return this._customerManagedEncryption;
+  }
+  public putCustomerManagedEncryption(value: GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption) {
+    this._customerManagedEncryption.internalValue = value;
+  }
+  public resetCustomerManagedEncryption() {
+    this._customerManagedEncryption.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customerManagedEncryptionInput() {
+    return this._customerManagedEncryption.internalValue;
+  }
+}
+
+export class GoogleSecretManagerSecretReplicationUserManagedReplicasList extends cdktf.ComplexList {
+  public internalValue? : GoogleSecretManagerSecretReplicationUserManagedReplicas[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleSecretManagerSecretReplicationUserManagedReplicasOutputReference {
+    return new GoogleSecretManagerSecretReplicationUserManagedReplicasOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleSecretManagerSecretReplicationUserManaged {
   /**
   * replicas block
@@ -196,9 +302,9 @@ export class GoogleSecretManagerSecretReplicationUserManagedOutputReference exte
   public get internalValue(): GoogleSecretManagerSecretReplicationUserManaged | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._replicas !== undefined) {
+    if (this._replicas?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.replicas = this._replicas;
+      internalValueResult.replicas = this._replicas?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -206,26 +312,25 @@ export class GoogleSecretManagerSecretReplicationUserManagedOutputReference exte
   public set internalValue(value: GoogleSecretManagerSecretReplicationUserManaged | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._replicas = undefined;
+      this._replicas.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._replicas = value.replicas;
+      this._replicas.internalValue = value.replicas;
     }
   }
 
   // replicas - computed: false, optional: false, required: true
-  private _replicas?: GoogleSecretManagerSecretReplicationUserManagedReplicas[] | cdktf.IResolvable; 
+  private _replicas = new GoogleSecretManagerSecretReplicationUserManagedReplicasList(this, "replicas", false);
   public get replicas() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('replicas');
+    return this._replicas;
   }
-  public set replicas(value: GoogleSecretManagerSecretReplicationUserManagedReplicas[] | cdktf.IResolvable) {
-    this._replicas = value;
+  public putReplicas(value: GoogleSecretManagerSecretReplicationUserManagedReplicas[] | cdktf.IResolvable) {
+    this._replicas.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get replicasInput() {
-    return this._replicas;
+    return this._replicas.internalValue;
   }
 }
 export interface GoogleSecretManagerSecretReplication {
@@ -451,6 +556,7 @@ export function googleSecretManagerSecretTimeoutsToTerraform(struct?: GoogleSecr
 
 export class GoogleSecretManagerSecretTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -460,7 +566,10 @@ export class GoogleSecretManagerSecretTimeoutsOutputReference extends cdktf.Comp
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleSecretManagerSecretTimeouts | undefined {
+  public get internalValue(): GoogleSecretManagerSecretTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -478,15 +587,21 @@ export class GoogleSecretManagerSecretTimeoutsOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleSecretManagerSecretTimeouts | undefined) {
+  public set internalValue(value: GoogleSecretManagerSecretTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -561,6 +676,83 @@ export function googleSecretManagerSecretTopicsToTerraform(struct?: GoogleSecret
   }
 }
 
+export class GoogleSecretManagerSecretTopicsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleSecretManagerSecretTopics | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSecretManagerSecretTopics | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class GoogleSecretManagerSecretTopicsList extends cdktf.ComplexList {
+  public internalValue? : GoogleSecretManagerSecretTopics[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleSecretManagerSecretTopicsOutputReference {
+    return new GoogleSecretManagerSecretTopicsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_secret_manager_secret google_secret_manager_secret}
@@ -597,6 +789,7 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._expireTime = config.expireTime;
+    this._id = config.id;
     this._labels = config.labels;
     this._project = config.project;
     this._secretId = config.secretId;
@@ -604,7 +797,7 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
     this._replication.internalValue = config.replication;
     this._rotation.internalValue = config.rotation;
     this._timeouts.internalValue = config.timeouts;
-    this._topics = config.topics;
+    this._topics.internalValue = config.topics;
   }
 
   // ==========
@@ -633,8 +826,19 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // labels - computed: false, optional: true, required: false
@@ -749,20 +953,19 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
   }
 
   // topics - computed: false, optional: true, required: false
-  private _topics?: GoogleSecretManagerSecretTopics[] | cdktf.IResolvable; 
+  private _topics = new GoogleSecretManagerSecretTopicsList(this, "topics", false);
   public get topics() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('topics');
+    return this._topics;
   }
-  public set topics(value: GoogleSecretManagerSecretTopics[] | cdktf.IResolvable) {
-    this._topics = value;
+  public putTopics(value: GoogleSecretManagerSecretTopics[] | cdktf.IResolvable) {
+    this._topics.internalValue = value;
   }
   public resetTopics() {
-    this._topics = undefined;
+    this._topics.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get topicsInput() {
-    return this._topics;
+    return this._topics.internalValue;
   }
 
   // =========
@@ -772,6 +975,7 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       expire_time: cdktf.stringToTerraform(this._expireTime),
+      id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       project: cdktf.stringToTerraform(this._project),
       secret_id: cdktf.stringToTerraform(this._secretId),
@@ -779,7 +983,7 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
       replication: googleSecretManagerSecretReplicationToTerraform(this._replication.internalValue),
       rotation: googleSecretManagerSecretRotationToTerraform(this._rotation.internalValue),
       timeouts: googleSecretManagerSecretTimeoutsToTerraform(this._timeouts.internalValue),
-      topics: cdktf.listMapper(googleSecretManagerSecretTopicsToTerraform)(this._topics),
+      topics: cdktf.listMapper(googleSecretManagerSecretTopicsToTerraform)(this._topics.internalValue),
     };
   }
 }

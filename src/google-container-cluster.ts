@@ -80,6 +80,13 @@ export interface GoogleContainerClusterConfig extends cdktf.TerraformMetaArgumen
   */
   readonly enableTpu?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#id GoogleContainerCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The number of nodes to create in this cluster's default node pool. In regional or multi-zonal clusters, this is the number of nodes per zone. Must be set if node_pool is not set. If you're using google_container_node_pool objects with no default node pool, you'll need to set this to a value of at least 1, alongside setting remove_default_node_pool to true.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#initial_node_count GoogleContainerCluster#initial_node_count}
@@ -1674,6 +1681,127 @@ export function googleContainerClusterClusterAutoscalingResourceLimitsToTerrafor
   }
 }
 
+export class GoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleContainerClusterClusterAutoscalingResourceLimits | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maximum !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maximum = this._maximum;
+    }
+    if (this._minimum !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minimum = this._minimum;
+    }
+    if (this._resourceType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.resourceType = this._resourceType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterClusterAutoscalingResourceLimits | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._maximum = undefined;
+      this._minimum = undefined;
+      this._resourceType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._maximum = value.maximum;
+      this._minimum = value.minimum;
+      this._resourceType = value.resourceType;
+    }
+  }
+
+  // maximum - computed: false, optional: true, required: false
+  private _maximum?: number; 
+  public get maximum() {
+    return this.getNumberAttribute('maximum');
+  }
+  public set maximum(value: number) {
+    this._maximum = value;
+  }
+  public resetMaximum() {
+    this._maximum = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maximumInput() {
+    return this._maximum;
+  }
+
+  // minimum - computed: false, optional: true, required: false
+  private _minimum?: number; 
+  public get minimum() {
+    return this.getNumberAttribute('minimum');
+  }
+  public set minimum(value: number) {
+    this._minimum = value;
+  }
+  public resetMinimum() {
+    this._minimum = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minimumInput() {
+    return this._minimum;
+  }
+
+  // resource_type - computed: false, optional: false, required: true
+  private _resourceType?: string; 
+  public get resourceType() {
+    return this.getStringAttribute('resource_type');
+  }
+  public set resourceType(value: string) {
+    this._resourceType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resourceTypeInput() {
+    return this._resourceType;
+  }
+}
+
+export class GoogleContainerClusterClusterAutoscalingResourceLimitsList extends cdktf.ComplexList {
+  public internalValue? : GoogleContainerClusterClusterAutoscalingResourceLimits[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference {
+    return new GoogleContainerClusterClusterAutoscalingResourceLimitsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleContainerClusterClusterAutoscaling {
   /**
   * Configuration options for the Autoscaling profile feature, which lets you choose whether the cluster autoscaler should optimize for resource utilization or resource availability when deciding to remove nodes from a cluster. Can be BALANCED or OPTIMIZE_UTILIZATION. Defaults to BALANCED.
@@ -1740,9 +1868,9 @@ export class GoogleContainerClusterClusterAutoscalingOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.autoProvisioningDefaults = this._autoProvisioningDefaults?.internalValue;
     }
-    if (this._resourceLimits !== undefined) {
+    if (this._resourceLimits?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.resourceLimits = this._resourceLimits;
+      internalValueResult.resourceLimits = this._resourceLimits?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -1753,14 +1881,14 @@ export class GoogleContainerClusterClusterAutoscalingOutputReference extends cdk
       this._autoscalingProfile = undefined;
       this._enabled = undefined;
       this._autoProvisioningDefaults.internalValue = undefined;
-      this._resourceLimits = undefined;
+      this._resourceLimits.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._autoscalingProfile = value.autoscalingProfile;
       this._enabled = value.enabled;
       this._autoProvisioningDefaults.internalValue = value.autoProvisioningDefaults;
-      this._resourceLimits = value.resourceLimits;
+      this._resourceLimits.internalValue = value.resourceLimits;
     }
   }
 
@@ -1810,20 +1938,19 @@ export class GoogleContainerClusterClusterAutoscalingOutputReference extends cdk
   }
 
   // resource_limits - computed: false, optional: true, required: false
-  private _resourceLimits?: GoogleContainerClusterClusterAutoscalingResourceLimits[] | cdktf.IResolvable; 
+  private _resourceLimits = new GoogleContainerClusterClusterAutoscalingResourceLimitsList(this, "resource_limits", false);
   public get resourceLimits() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('resource_limits');
+    return this._resourceLimits;
   }
-  public set resourceLimits(value: GoogleContainerClusterClusterAutoscalingResourceLimits[] | cdktf.IResolvable) {
-    this._resourceLimits = value;
+  public putResourceLimits(value: GoogleContainerClusterClusterAutoscalingResourceLimits[] | cdktf.IResolvable) {
+    this._resourceLimits.internalValue = value;
   }
   public resetResourceLimits() {
-    this._resourceLimits = undefined;
+    this._resourceLimits.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get resourceLimitsInput() {
-    return this._resourceLimits;
+    return this._resourceLimits.internalValue;
   }
 }
 export interface GoogleContainerClusterClusterTelemetry {
@@ -2686,6 +2813,143 @@ export function googleContainerClusterMaintenancePolicyMaintenanceExclusionToTer
   }
 }
 
+export class GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleContainerClusterMaintenancePolicyMaintenanceExclusion | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._endTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endTime = this._endTime;
+    }
+    if (this._exclusionName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exclusionName = this._exclusionName;
+    }
+    if (this._startTime !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startTime = this._startTime;
+    }
+    if (this._exclusionOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exclusionOptions = this._exclusionOptions?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterMaintenancePolicyMaintenanceExclusion | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._endTime = undefined;
+      this._exclusionName = undefined;
+      this._startTime = undefined;
+      this._exclusionOptions.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._endTime = value.endTime;
+      this._exclusionName = value.exclusionName;
+      this._startTime = value.startTime;
+      this._exclusionOptions.internalValue = value.exclusionOptions;
+    }
+  }
+
+  // end_time - computed: false, optional: false, required: true
+  private _endTime?: string; 
+  public get endTime() {
+    return this.getStringAttribute('end_time');
+  }
+  public set endTime(value: string) {
+    this._endTime = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endTimeInput() {
+    return this._endTime;
+  }
+
+  // exclusion_name - computed: false, optional: false, required: true
+  private _exclusionName?: string; 
+  public get exclusionName() {
+    return this.getStringAttribute('exclusion_name');
+  }
+  public set exclusionName(value: string) {
+    this._exclusionName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exclusionNameInput() {
+    return this._exclusionName;
+  }
+
+  // start_time - computed: false, optional: false, required: true
+  private _startTime?: string; 
+  public get startTime() {
+    return this.getStringAttribute('start_time');
+  }
+  public set startTime(value: string) {
+    this._startTime = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startTimeInput() {
+    return this._startTime;
+  }
+
+  // exclusion_options - computed: false, optional: true, required: false
+  private _exclusionOptions = new GoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference(this, "exclusion_options");
+  public get exclusionOptions() {
+    return this._exclusionOptions;
+  }
+  public putExclusionOptions(value: GoogleContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptions) {
+    this._exclusionOptions.internalValue = value;
+  }
+  public resetExclusionOptions() {
+    this._exclusionOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exclusionOptionsInput() {
+    return this._exclusionOptions.internalValue;
+  }
+}
+
+export class GoogleContainerClusterMaintenancePolicyMaintenanceExclusionList extends cdktf.ComplexList {
+  public internalValue? : GoogleContainerClusterMaintenancePolicyMaintenanceExclusion[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference {
+    return new GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleContainerClusterMaintenancePolicyRecurringWindow {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#end_time GoogleContainerCluster#end_time}
@@ -2847,9 +3111,9 @@ export class GoogleContainerClusterMaintenancePolicyOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.dailyMaintenanceWindow = this._dailyMaintenanceWindow?.internalValue;
     }
-    if (this._maintenanceExclusion !== undefined) {
+    if (this._maintenanceExclusion?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.maintenanceExclusion = this._maintenanceExclusion;
+      internalValueResult.maintenanceExclusion = this._maintenanceExclusion?.internalValue;
     }
     if (this._recurringWindow?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2862,13 +3126,13 @@ export class GoogleContainerClusterMaintenancePolicyOutputReference extends cdkt
     if (value === undefined) {
       this.isEmptyObject = false;
       this._dailyMaintenanceWindow.internalValue = undefined;
-      this._maintenanceExclusion = undefined;
+      this._maintenanceExclusion.internalValue = undefined;
       this._recurringWindow.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._dailyMaintenanceWindow.internalValue = value.dailyMaintenanceWindow;
-      this._maintenanceExclusion = value.maintenanceExclusion;
+      this._maintenanceExclusion.internalValue = value.maintenanceExclusion;
       this._recurringWindow.internalValue = value.recurringWindow;
     }
   }
@@ -2890,20 +3154,19 @@ export class GoogleContainerClusterMaintenancePolicyOutputReference extends cdkt
   }
 
   // maintenance_exclusion - computed: false, optional: true, required: false
-  private _maintenanceExclusion?: GoogleContainerClusterMaintenancePolicyMaintenanceExclusion[] | cdktf.IResolvable; 
+  private _maintenanceExclusion = new GoogleContainerClusterMaintenancePolicyMaintenanceExclusionList(this, "maintenance_exclusion", true);
   public get maintenanceExclusion() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('maintenance_exclusion')));
+    return this._maintenanceExclusion;
   }
-  public set maintenanceExclusion(value: GoogleContainerClusterMaintenancePolicyMaintenanceExclusion[] | cdktf.IResolvable) {
-    this._maintenanceExclusion = value;
+  public putMaintenanceExclusion(value: GoogleContainerClusterMaintenancePolicyMaintenanceExclusion[] | cdktf.IResolvable) {
+    this._maintenanceExclusion.internalValue = value;
   }
   public resetMaintenanceExclusion() {
-    this._maintenanceExclusion = undefined;
+    this._maintenanceExclusion.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get maintenanceExclusionInput() {
-    return this._maintenanceExclusion;
+    return this._maintenanceExclusion.internalValue;
   }
 
   // recurring_window - computed: false, optional: true, required: false
@@ -3091,6 +3354,105 @@ export function googleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksTo
   }
 }
 
+export class GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cidrBlock !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cidrBlock = this._cidrBlock;
+    }
+    if (this._displayName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.displayName = this._displayName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cidrBlock = undefined;
+      this._displayName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cidrBlock = value.cidrBlock;
+      this._displayName = value.displayName;
+    }
+  }
+
+  // cidr_block - computed: false, optional: false, required: true
+  private _cidrBlock?: string; 
+  public get cidrBlock() {
+    return this.getStringAttribute('cidr_block');
+  }
+  public set cidrBlock(value: string) {
+    this._cidrBlock = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cidrBlockInput() {
+    return this._cidrBlock;
+  }
+
+  // display_name - computed: false, optional: true, required: false
+  private _displayName?: string; 
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+  public set displayName(value: string) {
+    this._displayName = value;
+  }
+  public resetDisplayName() {
+    this._displayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNameInput() {
+    return this._displayName;
+  }
+}
+
+export class GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList extends cdktf.ComplexList {
+  public internalValue? : GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference {
+    return new GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleContainerClusterMasterAuthorizedNetworksConfig {
   /**
   * cidr_blocks block
@@ -3124,9 +3486,9 @@ export class GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference
   public get internalValue(): GoogleContainerClusterMasterAuthorizedNetworksConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cidrBlocks !== undefined) {
+    if (this._cidrBlocks?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.cidrBlocks = this._cidrBlocks;
+      internalValueResult.cidrBlocks = this._cidrBlocks?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -3134,29 +3496,28 @@ export class GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference
   public set internalValue(value: GoogleContainerClusterMasterAuthorizedNetworksConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._cidrBlocks = undefined;
+      this._cidrBlocks.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._cidrBlocks = value.cidrBlocks;
+      this._cidrBlocks.internalValue = value.cidrBlocks;
     }
   }
 
   // cidr_blocks - computed: false, optional: true, required: false
-  private _cidrBlocks?: GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocks[] | cdktf.IResolvable; 
+  private _cidrBlocks = new GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList(this, "cidr_blocks", true);
   public get cidrBlocks() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('cidr_blocks')));
+    return this._cidrBlocks;
   }
-  public set cidrBlocks(value: GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocks[] | cdktf.IResolvable) {
-    this._cidrBlocks = value;
+  public putCidrBlocks(value: GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocks[] | cdktf.IResolvable) {
+    this._cidrBlocks.internalValue = value;
   }
   public resetCidrBlocks() {
-    this._cidrBlocks = undefined;
+    this._cidrBlocks.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get cidrBlocksInput() {
-    return this._cidrBlocks;
+    return this._cidrBlocks.internalValue;
   }
 }
 export interface GoogleContainerClusterMonitoringConfig {
@@ -3343,6 +3704,130 @@ export function googleContainerClusterNodeConfigGuestAcceleratorToTerraform(stru
   }
 }
 
+export class GoogleContainerClusterNodeConfigGuestAcceleratorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleContainerClusterNodeConfigGuestAccelerator | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._count !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.count = this._count;
+    }
+    if (this._gpuPartitionSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gpuPartitionSize = this._gpuPartitionSize;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNodeConfigGuestAccelerator | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._count = undefined;
+      this._gpuPartitionSize = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._count = value.count;
+      this._gpuPartitionSize = value.gpuPartitionSize;
+      this._type = value.type;
+    }
+  }
+
+  // count - computed: true, optional: true, required: false
+  private _count?: number; 
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+  public set count(value: number) {
+    this._count = value;
+  }
+  public resetCount() {
+    this._count = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countInput() {
+    return this._count;
+  }
+
+  // gpu_partition_size - computed: true, optional: true, required: false
+  private _gpuPartitionSize?: string; 
+  public get gpuPartitionSize() {
+    return this.getStringAttribute('gpu_partition_size');
+  }
+  public set gpuPartitionSize(value: string) {
+    this._gpuPartitionSize = value;
+  }
+  public resetGpuPartitionSize() {
+    this._gpuPartitionSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gpuPartitionSizeInput() {
+    return this._gpuPartitionSize;
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class GoogleContainerClusterNodeConfigGuestAcceleratorList extends cdktf.ComplexList {
+  public internalValue? : GoogleContainerClusterNodeConfigGuestAccelerator[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleContainerClusterNodeConfigGuestAcceleratorOutputReference {
+    return new GoogleContainerClusterNodeConfigGuestAcceleratorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleContainerClusterNodeConfigTaint {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#effect GoogleContainerCluster#effect}
@@ -3370,6 +3855,130 @@ export function googleContainerClusterNodeConfigTaintToTerraform(struct?: Google
   }
 }
 
+export class GoogleContainerClusterNodeConfigTaintOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleContainerClusterNodeConfigTaint | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._effect !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.effect = this._effect;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNodeConfigTaint | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._effect = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._effect = value.effect;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // effect - computed: true, optional: true, required: false
+  private _effect?: string; 
+  public get effect() {
+    return this.getStringAttribute('effect');
+  }
+  public set effect(value: string) {
+    this._effect = value;
+  }
+  public resetEffect() {
+    this._effect = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get effectInput() {
+    return this._effect;
+  }
+
+  // key - computed: true, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: true, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleContainerClusterNodeConfigTaintList extends cdktf.ComplexList {
+  public internalValue? : GoogleContainerClusterNodeConfigTaint[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleContainerClusterNodeConfigTaintOutputReference {
+    return new GoogleContainerClusterNodeConfigTaintOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleContainerClusterNodeConfigEphemeralStorageConfig {
   /**
   * Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD is 375 GB in size.
@@ -4185,9 +4794,9 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.diskType = this._diskType;
     }
-    if (this._guestAccelerator !== undefined) {
+    if (this._guestAccelerator?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.guestAccelerator = this._guestAccelerator;
+      internalValueResult.guestAccelerator = this._guestAccelerator?.internalValue;
     }
     if (this._imageType !== undefined) {
       hasAnyValues = true;
@@ -4237,9 +4846,9 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.tags = this._tags;
     }
-    if (this._taint !== undefined) {
+    if (this._taint?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.taint = this._taint;
+      internalValueResult.taint = this._taint?.internalValue;
     }
     if (this._ephemeralStorageConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -4282,7 +4891,7 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
       this._bootDiskKmsKey = undefined;
       this._diskSizeGb = undefined;
       this._diskType = undefined;
-      this._guestAccelerator = undefined;
+      this._guestAccelerator.internalValue = undefined;
       this._imageType = undefined;
       this._labels = undefined;
       this._localSsdCount = undefined;
@@ -4295,7 +4904,7 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
       this._serviceAccount = undefined;
       this._spot = undefined;
       this._tags = undefined;
-      this._taint = undefined;
+      this._taint.internalValue = undefined;
       this._ephemeralStorageConfig.internalValue = undefined;
       this._gcfsConfig.internalValue = undefined;
       this._gvnic.internalValue = undefined;
@@ -4310,7 +4919,7 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
       this._bootDiskKmsKey = value.bootDiskKmsKey;
       this._diskSizeGb = value.diskSizeGb;
       this._diskType = value.diskType;
-      this._guestAccelerator = value.guestAccelerator;
+      this._guestAccelerator.internalValue = value.guestAccelerator;
       this._imageType = value.imageType;
       this._labels = value.labels;
       this._localSsdCount = value.localSsdCount;
@@ -4323,7 +4932,7 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
       this._serviceAccount = value.serviceAccount;
       this._spot = value.spot;
       this._tags = value.tags;
-      this._taint = value.taint;
+      this._taint.internalValue = value.taint;
       this._ephemeralStorageConfig.internalValue = value.ephemeralStorageConfig;
       this._gcfsConfig.internalValue = value.gcfsConfig;
       this._gvnic.internalValue = value.gvnic;
@@ -4384,20 +4993,19 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
   }
 
   // guest_accelerator - computed: true, optional: true, required: false
-  private _guestAccelerator?: GoogleContainerClusterNodeConfigGuestAccelerator[] | cdktf.IResolvable; 
+  private _guestAccelerator = new GoogleContainerClusterNodeConfigGuestAcceleratorList(this, "guest_accelerator", false);
   public get guestAccelerator() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('guest_accelerator');
+    return this._guestAccelerator;
   }
-  public set guestAccelerator(value: GoogleContainerClusterNodeConfigGuestAccelerator[] | cdktf.IResolvable) {
-    this._guestAccelerator = value;
+  public putGuestAccelerator(value: GoogleContainerClusterNodeConfigGuestAccelerator[] | cdktf.IResolvable) {
+    this._guestAccelerator.internalValue = value;
   }
   public resetGuestAccelerator() {
-    this._guestAccelerator = undefined;
+    this._guestAccelerator.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get guestAcceleratorInput() {
-    return this._guestAccelerator;
+    return this._guestAccelerator.internalValue;
   }
 
   // image_type - computed: true, optional: true, required: false
@@ -4593,20 +5201,19 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
   }
 
   // taint - computed: true, optional: true, required: false
-  private _taint?: GoogleContainerClusterNodeConfigTaint[] | cdktf.IResolvable; 
+  private _taint = new GoogleContainerClusterNodeConfigTaintList(this, "taint", false);
   public get taint() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('taint');
+    return this._taint;
   }
-  public set taint(value: GoogleContainerClusterNodeConfigTaint[] | cdktf.IResolvable) {
-    this._taint = value;
+  public putTaint(value: GoogleContainerClusterNodeConfigTaint[] | cdktf.IResolvable) {
+    this._taint.internalValue = value;
   }
   public resetTaint() {
-    this._taint = undefined;
+    this._taint.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get taintInput() {
-    return this._taint;
+    return this._taint.internalValue;
   }
 
   // ephemeral_storage_config - computed: false, optional: true, required: false
@@ -5072,6 +5679,130 @@ export function googleContainerClusterNodePoolNodeConfigGuestAcceleratorToTerraf
   }
 }
 
+export class GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleContainerClusterNodePoolNodeConfigGuestAccelerator | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._count !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.count = this._count;
+    }
+    if (this._gpuPartitionSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gpuPartitionSize = this._gpuPartitionSize;
+    }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNodePoolNodeConfigGuestAccelerator | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._count = undefined;
+      this._gpuPartitionSize = undefined;
+      this._type = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._count = value.count;
+      this._gpuPartitionSize = value.gpuPartitionSize;
+      this._type = value.type;
+    }
+  }
+
+  // count - computed: true, optional: true, required: false
+  private _count?: number; 
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+  public set count(value: number) {
+    this._count = value;
+  }
+  public resetCount() {
+    this._count = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countInput() {
+    return this._count;
+  }
+
+  // gpu_partition_size - computed: true, optional: true, required: false
+  private _gpuPartitionSize?: string; 
+  public get gpuPartitionSize() {
+    return this.getStringAttribute('gpu_partition_size');
+  }
+  public set gpuPartitionSize(value: string) {
+    this._gpuPartitionSize = value;
+  }
+  public resetGpuPartitionSize() {
+    this._gpuPartitionSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gpuPartitionSizeInput() {
+    return this._gpuPartitionSize;
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
+}
+
+export class GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList extends cdktf.ComplexList {
+  public internalValue? : GoogleContainerClusterNodePoolNodeConfigGuestAccelerator[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference {
+    return new GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleContainerClusterNodePoolNodeConfigTaint {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#effect GoogleContainerCluster#effect}
@@ -5099,6 +5830,130 @@ export function googleContainerClusterNodePoolNodeConfigTaintToTerraform(struct?
   }
 }
 
+export class GoogleContainerClusterNodePoolNodeConfigTaintOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleContainerClusterNodePoolNodeConfigTaint | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._effect !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.effect = this._effect;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNodePoolNodeConfigTaint | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._effect = undefined;
+      this._key = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._effect = value.effect;
+      this._key = value.key;
+      this._value = value.value;
+    }
+  }
+
+  // effect - computed: true, optional: true, required: false
+  private _effect?: string; 
+  public get effect() {
+    return this.getStringAttribute('effect');
+  }
+  public set effect(value: string) {
+    this._effect = value;
+  }
+  public resetEffect() {
+    this._effect = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get effectInput() {
+    return this._effect;
+  }
+
+  // key - computed: true, optional: true, required: false
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  public resetKey() {
+    this._key = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // value - computed: true, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleContainerClusterNodePoolNodeConfigTaintList extends cdktf.ComplexList {
+  public internalValue? : GoogleContainerClusterNodePoolNodeConfigTaint[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleContainerClusterNodePoolNodeConfigTaintOutputReference {
+    return new GoogleContainerClusterNodePoolNodeConfigTaintOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig {
   /**
   * Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD is 375 GB in size.
@@ -5914,9 +6769,9 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.diskType = this._diskType;
     }
-    if (this._guestAccelerator !== undefined) {
+    if (this._guestAccelerator?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.guestAccelerator = this._guestAccelerator;
+      internalValueResult.guestAccelerator = this._guestAccelerator?.internalValue;
     }
     if (this._imageType !== undefined) {
       hasAnyValues = true;
@@ -5966,9 +6821,9 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.tags = this._tags;
     }
-    if (this._taint !== undefined) {
+    if (this._taint?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.taint = this._taint;
+      internalValueResult.taint = this._taint?.internalValue;
     }
     if (this._ephemeralStorageConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -6011,7 +6866,7 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
       this._bootDiskKmsKey = undefined;
       this._diskSizeGb = undefined;
       this._diskType = undefined;
-      this._guestAccelerator = undefined;
+      this._guestAccelerator.internalValue = undefined;
       this._imageType = undefined;
       this._labels = undefined;
       this._localSsdCount = undefined;
@@ -6024,7 +6879,7 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
       this._serviceAccount = undefined;
       this._spot = undefined;
       this._tags = undefined;
-      this._taint = undefined;
+      this._taint.internalValue = undefined;
       this._ephemeralStorageConfig.internalValue = undefined;
       this._gcfsConfig.internalValue = undefined;
       this._gvnic.internalValue = undefined;
@@ -6039,7 +6894,7 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
       this._bootDiskKmsKey = value.bootDiskKmsKey;
       this._diskSizeGb = value.diskSizeGb;
       this._diskType = value.diskType;
-      this._guestAccelerator = value.guestAccelerator;
+      this._guestAccelerator.internalValue = value.guestAccelerator;
       this._imageType = value.imageType;
       this._labels = value.labels;
       this._localSsdCount = value.localSsdCount;
@@ -6052,7 +6907,7 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
       this._serviceAccount = value.serviceAccount;
       this._spot = value.spot;
       this._tags = value.tags;
-      this._taint = value.taint;
+      this._taint.internalValue = value.taint;
       this._ephemeralStorageConfig.internalValue = value.ephemeralStorageConfig;
       this._gcfsConfig.internalValue = value.gcfsConfig;
       this._gvnic.internalValue = value.gvnic;
@@ -6113,20 +6968,19 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
   }
 
   // guest_accelerator - computed: true, optional: true, required: false
-  private _guestAccelerator?: GoogleContainerClusterNodePoolNodeConfigGuestAccelerator[] | cdktf.IResolvable; 
+  private _guestAccelerator = new GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList(this, "guest_accelerator", false);
   public get guestAccelerator() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('guest_accelerator');
+    return this._guestAccelerator;
   }
-  public set guestAccelerator(value: GoogleContainerClusterNodePoolNodeConfigGuestAccelerator[] | cdktf.IResolvable) {
-    this._guestAccelerator = value;
+  public putGuestAccelerator(value: GoogleContainerClusterNodePoolNodeConfigGuestAccelerator[] | cdktf.IResolvable) {
+    this._guestAccelerator.internalValue = value;
   }
   public resetGuestAccelerator() {
-    this._guestAccelerator = undefined;
+    this._guestAccelerator.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get guestAcceleratorInput() {
-    return this._guestAccelerator;
+    return this._guestAccelerator.internalValue;
   }
 
   // image_type - computed: true, optional: true, required: false
@@ -6322,20 +7176,19 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
   }
 
   // taint - computed: true, optional: true, required: false
-  private _taint?: GoogleContainerClusterNodePoolNodeConfigTaint[] | cdktf.IResolvable; 
+  private _taint = new GoogleContainerClusterNodePoolNodeConfigTaintList(this, "taint", false);
   public get taint() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('taint');
+    return this._taint;
   }
-  public set taint(value: GoogleContainerClusterNodePoolNodeConfigTaint[] | cdktf.IResolvable) {
-    this._taint = value;
+  public putTaint(value: GoogleContainerClusterNodePoolNodeConfigTaint[] | cdktf.IResolvable) {
+    this._taint.internalValue = value;
   }
   public resetTaint() {
-    this._taint = undefined;
+    this._taint.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get taintInput() {
-    return this._taint;
+    return this._taint.internalValue;
   }
 
   // ephemeral_storage_config - computed: false, optional: true, required: false
@@ -6723,6 +7576,360 @@ export function googleContainerClusterNodePoolToTerraform(struct?: GoogleContain
   }
 }
 
+export class GoogleContainerClusterNodePoolOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleContainerClusterNodePool | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._initialNodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialNodeCount = this._initialNodeCount;
+    }
+    if (this._maxPodsPerNode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxPodsPerNode = this._maxPodsPerNode;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._namePrefix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.namePrefix = this._namePrefix;
+    }
+    if (this._nodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeCount = this._nodeCount;
+    }
+    if (this._nodeLocations !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeLocations = this._nodeLocations;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    if (this._autoscaling?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscaling = this._autoscaling?.internalValue;
+    }
+    if (this._management?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.management = this._management?.internalValue;
+    }
+    if (this._networkConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkConfig = this._networkConfig?.internalValue;
+    }
+    if (this._nodeConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeConfig = this._nodeConfig?.internalValue;
+    }
+    if (this._placementPolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.placementPolicy = this._placementPolicy?.internalValue;
+    }
+    if (this._upgradeSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upgradeSettings = this._upgradeSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNodePool | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._initialNodeCount = undefined;
+      this._maxPodsPerNode = undefined;
+      this._name = undefined;
+      this._namePrefix = undefined;
+      this._nodeCount = undefined;
+      this._nodeLocations = undefined;
+      this._version = undefined;
+      this._autoscaling.internalValue = undefined;
+      this._management.internalValue = undefined;
+      this._networkConfig.internalValue = undefined;
+      this._nodeConfig.internalValue = undefined;
+      this._placementPolicy.internalValue = undefined;
+      this._upgradeSettings.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._initialNodeCount = value.initialNodeCount;
+      this._maxPodsPerNode = value.maxPodsPerNode;
+      this._name = value.name;
+      this._namePrefix = value.namePrefix;
+      this._nodeCount = value.nodeCount;
+      this._nodeLocations = value.nodeLocations;
+      this._version = value.version;
+      this._autoscaling.internalValue = value.autoscaling;
+      this._management.internalValue = value.management;
+      this._networkConfig.internalValue = value.networkConfig;
+      this._nodeConfig.internalValue = value.nodeConfig;
+      this._placementPolicy.internalValue = value.placementPolicy;
+      this._upgradeSettings.internalValue = value.upgradeSettings;
+    }
+  }
+
+  // initial_node_count - computed: true, optional: true, required: false
+  private _initialNodeCount?: number; 
+  public get initialNodeCount() {
+    return this.getNumberAttribute('initial_node_count');
+  }
+  public set initialNodeCount(value: number) {
+    this._initialNodeCount = value;
+  }
+  public resetInitialNodeCount() {
+    this._initialNodeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialNodeCountInput() {
+    return this._initialNodeCount;
+  }
+
+  // instance_group_urls - computed: true, optional: false, required: false
+  public get instanceGroupUrls() {
+    return this.getListAttribute('instance_group_urls');
+  }
+
+  // managed_instance_group_urls - computed: true, optional: false, required: false
+  public get managedInstanceGroupUrls() {
+    return this.getListAttribute('managed_instance_group_urls');
+  }
+
+  // max_pods_per_node - computed: true, optional: true, required: false
+  private _maxPodsPerNode?: number; 
+  public get maxPodsPerNode() {
+    return this.getNumberAttribute('max_pods_per_node');
+  }
+  public set maxPodsPerNode(value: number) {
+    this._maxPodsPerNode = value;
+  }
+  public resetMaxPodsPerNode() {
+    this._maxPodsPerNode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxPodsPerNodeInput() {
+    return this._maxPodsPerNode;
+  }
+
+  // name - computed: true, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // name_prefix - computed: true, optional: true, required: false
+  private _namePrefix?: string; 
+  public get namePrefix() {
+    return this.getStringAttribute('name_prefix');
+  }
+  public set namePrefix(value: string) {
+    this._namePrefix = value;
+  }
+  public resetNamePrefix() {
+    this._namePrefix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namePrefixInput() {
+    return this._namePrefix;
+  }
+
+  // node_count - computed: true, optional: true, required: false
+  private _nodeCount?: number; 
+  public get nodeCount() {
+    return this.getNumberAttribute('node_count');
+  }
+  public set nodeCount(value: number) {
+    this._nodeCount = value;
+  }
+  public resetNodeCount() {
+    this._nodeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeCountInput() {
+    return this._nodeCount;
+  }
+
+  // node_locations - computed: true, optional: true, required: false
+  private _nodeLocations?: string[]; 
+  public get nodeLocations() {
+    return cdktf.Fn.tolist(this.getListAttribute('node_locations'));
+  }
+  public set nodeLocations(value: string[]) {
+    this._nodeLocations = value;
+  }
+  public resetNodeLocations() {
+    this._nodeLocations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeLocationsInput() {
+    return this._nodeLocations;
+  }
+
+  // version - computed: true, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+
+  // autoscaling - computed: false, optional: true, required: false
+  private _autoscaling = new GoogleContainerClusterNodePoolAutoscalingOutputReference(this, "autoscaling");
+  public get autoscaling() {
+    return this._autoscaling;
+  }
+  public putAutoscaling(value: GoogleContainerClusterNodePoolAutoscaling) {
+    this._autoscaling.internalValue = value;
+  }
+  public resetAutoscaling() {
+    this._autoscaling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingInput() {
+    return this._autoscaling.internalValue;
+  }
+
+  // management - computed: false, optional: true, required: false
+  private _management = new GoogleContainerClusterNodePoolManagementOutputReference(this, "management");
+  public get management() {
+    return this._management;
+  }
+  public putManagement(value: GoogleContainerClusterNodePoolManagement) {
+    this._management.internalValue = value;
+  }
+  public resetManagement() {
+    this._management.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managementInput() {
+    return this._management.internalValue;
+  }
+
+  // network_config - computed: false, optional: true, required: false
+  private _networkConfig = new GoogleContainerClusterNodePoolNetworkConfigOutputReference(this, "network_config");
+  public get networkConfig() {
+    return this._networkConfig;
+  }
+  public putNetworkConfig(value: GoogleContainerClusterNodePoolNetworkConfig) {
+    this._networkConfig.internalValue = value;
+  }
+  public resetNetworkConfig() {
+    this._networkConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkConfigInput() {
+    return this._networkConfig.internalValue;
+  }
+
+  // node_config - computed: false, optional: true, required: false
+  private _nodeConfig = new GoogleContainerClusterNodePoolNodeConfigOutputReference(this, "node_config");
+  public get nodeConfig() {
+    return this._nodeConfig;
+  }
+  public putNodeConfig(value: GoogleContainerClusterNodePoolNodeConfig) {
+    this._nodeConfig.internalValue = value;
+  }
+  public resetNodeConfig() {
+    this._nodeConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeConfigInput() {
+    return this._nodeConfig.internalValue;
+  }
+
+  // placement_policy - computed: false, optional: true, required: false
+  private _placementPolicy = new GoogleContainerClusterNodePoolPlacementPolicyOutputReference(this, "placement_policy");
+  public get placementPolicy() {
+    return this._placementPolicy;
+  }
+  public putPlacementPolicy(value: GoogleContainerClusterNodePoolPlacementPolicy) {
+    this._placementPolicy.internalValue = value;
+  }
+  public resetPlacementPolicy() {
+    this._placementPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get placementPolicyInput() {
+    return this._placementPolicy.internalValue;
+  }
+
+  // upgrade_settings - computed: false, optional: true, required: false
+  private _upgradeSettings = new GoogleContainerClusterNodePoolUpgradeSettingsOutputReference(this, "upgrade_settings");
+  public get upgradeSettings() {
+    return this._upgradeSettings;
+  }
+  public putUpgradeSettings(value: GoogleContainerClusterNodePoolUpgradeSettings) {
+    this._upgradeSettings.internalValue = value;
+  }
+  public resetUpgradeSettings() {
+    this._upgradeSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get upgradeSettingsInput() {
+    return this._upgradeSettings.internalValue;
+  }
+}
+
+export class GoogleContainerClusterNodePoolList extends cdktf.ComplexList {
+  public internalValue? : GoogleContainerClusterNodePool[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleContainerClusterNodePoolOutputReference {
+    return new GoogleContainerClusterNodePoolOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleContainerClusterNotificationConfigPubsub {
   /**
   * Whether or not the notification config is enabled
@@ -7462,6 +8669,7 @@ export function googleContainerClusterTimeoutsToTerraform(struct?: GoogleContain
 
 export class GoogleContainerClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -7471,7 +8679,10 @@ export class GoogleContainerClusterTimeoutsOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleContainerClusterTimeouts | undefined {
+  public get internalValue(): GoogleContainerClusterTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -7493,16 +8704,22 @@ export class GoogleContainerClusterTimeoutsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleContainerClusterTimeouts | undefined) {
+  public set internalValue(value: GoogleContainerClusterTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._read = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._read = value.read;
@@ -7752,6 +8969,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     this._enableLegacyAbac = config.enableLegacyAbac;
     this._enableShieldedNodes = config.enableShieldedNodes;
     this._enableTpu = config.enableTpu;
+    this._id = config.id;
     this._initialNodeCount = config.initialNodeCount;
     this._location = config.location;
     this._loggingService = config.loggingService;
@@ -7784,7 +9002,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     this._monitoringConfig.internalValue = config.monitoringConfig;
     this._networkPolicy.internalValue = config.networkPolicy;
     this._nodeConfig.internalValue = config.nodeConfig;
-    this._nodePool = config.nodePool;
+    this._nodePool.internalValue = config.nodePool;
     this._notificationConfig.internalValue = config.notificationConfig;
     this._podSecurityPolicyConfig.internalValue = config.podSecurityPolicyConfig;
     this._privateClusterConfig.internalValue = config.privateClusterConfig;
@@ -7997,8 +9215,19 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // initial_node_count - computed: false, optional: true, required: false
@@ -8541,20 +9770,19 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
   }
 
   // node_pool - computed: false, optional: true, required: false
-  private _nodePool?: GoogleContainerClusterNodePool[] | cdktf.IResolvable; 
+  private _nodePool = new GoogleContainerClusterNodePoolList(this, "node_pool", false);
   public get nodePool() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('node_pool');
+    return this._nodePool;
   }
-  public set nodePool(value: GoogleContainerClusterNodePool[] | cdktf.IResolvable) {
-    this._nodePool = value;
+  public putNodePool(value: GoogleContainerClusterNodePool[] | cdktf.IResolvable) {
+    this._nodePool.internalValue = value;
   }
   public resetNodePool() {
-    this._nodePool = undefined;
+    this._nodePool.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get nodePoolInput() {
-    return this._nodePool;
+    return this._nodePool.internalValue;
   }
 
   // notification_config - computed: false, optional: true, required: false
@@ -8703,6 +9931,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       enable_legacy_abac: cdktf.booleanToTerraform(this._enableLegacyAbac),
       enable_shielded_nodes: cdktf.booleanToTerraform(this._enableShieldedNodes),
       enable_tpu: cdktf.booleanToTerraform(this._enableTpu),
+      id: cdktf.stringToTerraform(this._id),
       initial_node_count: cdktf.numberToTerraform(this._initialNodeCount),
       location: cdktf.stringToTerraform(this._location),
       logging_service: cdktf.stringToTerraform(this._loggingService),
@@ -8735,7 +9964,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       monitoring_config: googleContainerClusterMonitoringConfigToTerraform(this._monitoringConfig.internalValue),
       network_policy: googleContainerClusterNetworkPolicyToTerraform(this._networkPolicy.internalValue),
       node_config: googleContainerClusterNodeConfigToTerraform(this._nodeConfig.internalValue),
-      node_pool: cdktf.listMapper(googleContainerClusterNodePoolToTerraform)(this._nodePool),
+      node_pool: cdktf.listMapper(googleContainerClusterNodePoolToTerraform)(this._nodePool.internalValue),
       notification_config: googleContainerClusterNotificationConfigToTerraform(this._notificationConfig.internalValue),
       pod_security_policy_config: googleContainerClusterPodSecurityPolicyConfigToTerraform(this._podSecurityPolicyConfig.internalValue),
       private_cluster_config: googleContainerClusterPrivateClusterConfigToTerraform(this._privateClusterConfig.internalValue),

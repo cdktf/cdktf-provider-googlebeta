@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleContainerAnalysisOccurrenceConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_occurrence#id GoogleContainerAnalysisOccurrence#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The analysis note associated with this occurrence, in the form of
 projects/[PROJECT]/notes/[NOTE_ID]. This field can be used as a
 filter in list requests.
@@ -88,6 +95,105 @@ export function googleContainerAnalysisOccurrenceAttestationSignaturesToTerrafor
   }
 }
 
+export class GoogleContainerAnalysisOccurrenceAttestationSignaturesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleContainerAnalysisOccurrenceAttestationSignatures | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._publicKeyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.publicKeyId = this._publicKeyId;
+    }
+    if (this._signature !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.signature = this._signature;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerAnalysisOccurrenceAttestationSignatures | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._publicKeyId = undefined;
+      this._signature = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._publicKeyId = value.publicKeyId;
+      this._signature = value.signature;
+    }
+  }
+
+  // public_key_id - computed: false, optional: false, required: true
+  private _publicKeyId?: string; 
+  public get publicKeyId() {
+    return this.getStringAttribute('public_key_id');
+  }
+  public set publicKeyId(value: string) {
+    this._publicKeyId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicKeyIdInput() {
+    return this._publicKeyId;
+  }
+
+  // signature - computed: false, optional: true, required: false
+  private _signature?: string; 
+  public get signature() {
+    return this.getStringAttribute('signature');
+  }
+  public set signature(value: string) {
+    this._signature = value;
+  }
+  public resetSignature() {
+    this._signature = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get signatureInput() {
+    return this._signature;
+  }
+}
+
+export class GoogleContainerAnalysisOccurrenceAttestationSignaturesList extends cdktf.ComplexList {
+  public internalValue? : GoogleContainerAnalysisOccurrenceAttestationSignatures[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleContainerAnalysisOccurrenceAttestationSignaturesOutputReference {
+    return new GoogleContainerAnalysisOccurrenceAttestationSignaturesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleContainerAnalysisOccurrenceAttestation {
   /**
   * The serialized payload that is verified by one or
@@ -133,9 +239,9 @@ export class GoogleContainerAnalysisOccurrenceAttestationOutputReference extends
       hasAnyValues = true;
       internalValueResult.serializedPayload = this._serializedPayload;
     }
-    if (this._signatures !== undefined) {
+    if (this._signatures?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.signatures = this._signatures;
+      internalValueResult.signatures = this._signatures?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -144,12 +250,12 @@ export class GoogleContainerAnalysisOccurrenceAttestationOutputReference extends
     if (value === undefined) {
       this.isEmptyObject = false;
       this._serializedPayload = undefined;
-      this._signatures = undefined;
+      this._signatures.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._serializedPayload = value.serializedPayload;
-      this._signatures = value.signatures;
+      this._signatures.internalValue = value.signatures;
     }
   }
 
@@ -167,17 +273,16 @@ export class GoogleContainerAnalysisOccurrenceAttestationOutputReference extends
   }
 
   // signatures - computed: false, optional: false, required: true
-  private _signatures?: GoogleContainerAnalysisOccurrenceAttestationSignatures[] | cdktf.IResolvable; 
+  private _signatures = new GoogleContainerAnalysisOccurrenceAttestationSignaturesList(this, "signatures", true);
   public get signatures() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('signatures')));
+    return this._signatures;
   }
-  public set signatures(value: GoogleContainerAnalysisOccurrenceAttestationSignatures[] | cdktf.IResolvable) {
-    this._signatures = value;
+  public putSignatures(value: GoogleContainerAnalysisOccurrenceAttestationSignatures[] | cdktf.IResolvable) {
+    this._signatures.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get signaturesInput() {
-    return this._signatures;
+    return this._signatures.internalValue;
   }
 }
 export interface GoogleContainerAnalysisOccurrenceTimeouts {
@@ -209,6 +314,7 @@ export function googleContainerAnalysisOccurrenceTimeoutsToTerraform(struct?: Go
 
 export class GoogleContainerAnalysisOccurrenceTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -218,7 +324,10 @@ export class GoogleContainerAnalysisOccurrenceTimeoutsOutputReference extends cd
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleContainerAnalysisOccurrenceTimeouts | undefined {
+  public get internalValue(): GoogleContainerAnalysisOccurrenceTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -236,15 +345,21 @@ export class GoogleContainerAnalysisOccurrenceTimeoutsOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleContainerAnalysisOccurrenceTimeouts | undefined) {
+  public set internalValue(value: GoogleContainerAnalysisOccurrenceTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -334,6 +449,7 @@ export class GoogleContainerAnalysisOccurrence extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._noteName = config.noteName;
     this._project = config.project;
     this._remediation = config.remediation;
@@ -352,8 +468,19 @@ export class GoogleContainerAnalysisOccurrence extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // kind - computed: true, optional: false, required: false
@@ -464,6 +591,7 @@ export class GoogleContainerAnalysisOccurrence extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       note_name: cdktf.stringToTerraform(this._noteName),
       project: cdktf.stringToTerraform(this._project),
       remediation: cdktf.stringToTerraform(this._remediation),

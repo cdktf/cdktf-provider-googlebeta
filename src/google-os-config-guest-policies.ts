@@ -31,6 +31,13 @@ export interface GoogleOsConfigGuestPoliciesConfig extends cdktf.TerraformMetaAr
   */
   readonly guestPolicyId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_os_config_guest_policies#project GoogleOsConfigGuestPolicies#project}
   */
   readonly project?: string;
@@ -84,6 +91,83 @@ export function googleOsConfigGuestPoliciesAssignmentGroupLabelsToTerraform(stru
   }
 }
 
+export class GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleOsConfigGuestPoliciesAssignmentGroupLabels | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._labels !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.labels = this._labels;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOsConfigGuestPoliciesAssignmentGroupLabels | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._labels = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._labels = value.labels;
+    }
+  }
+
+  // labels - computed: false, optional: false, required: true
+  private _labels?: { [key: string]: string }; 
+  public get labels() {
+    return this.getStringMapAttribute('labels');
+  }
+  public set labels(value: { [key: string]: string }) {
+    this._labels = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelsInput() {
+    return this._labels;
+  }
+}
+
+export class GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList extends cdktf.ComplexList {
+  public internalValue? : GoogleOsConfigGuestPoliciesAssignmentGroupLabels[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference {
+    return new GoogleOsConfigGuestPoliciesAssignmentGroupLabelsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleOsConfigGuestPoliciesAssignmentOsTypes {
   /**
   * Targets VM instances with OS Inventory enabled and having the following OS architecture.
@@ -117,6 +201,130 @@ export function googleOsConfigGuestPoliciesAssignmentOsTypesToTerraform(struct?:
   }
 }
 
+export class GoogleOsConfigGuestPoliciesAssignmentOsTypesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleOsConfigGuestPoliciesAssignmentOsTypes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._osArchitecture !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.osArchitecture = this._osArchitecture;
+    }
+    if (this._osShortName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.osShortName = this._osShortName;
+    }
+    if (this._osVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.osVersion = this._osVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOsConfigGuestPoliciesAssignmentOsTypes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._osArchitecture = undefined;
+      this._osShortName = undefined;
+      this._osVersion = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._osArchitecture = value.osArchitecture;
+      this._osShortName = value.osShortName;
+      this._osVersion = value.osVersion;
+    }
+  }
+
+  // os_architecture - computed: false, optional: true, required: false
+  private _osArchitecture?: string; 
+  public get osArchitecture() {
+    return this.getStringAttribute('os_architecture');
+  }
+  public set osArchitecture(value: string) {
+    this._osArchitecture = value;
+  }
+  public resetOsArchitecture() {
+    this._osArchitecture = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get osArchitectureInput() {
+    return this._osArchitecture;
+  }
+
+  // os_short_name - computed: false, optional: true, required: false
+  private _osShortName?: string; 
+  public get osShortName() {
+    return this.getStringAttribute('os_short_name');
+  }
+  public set osShortName(value: string) {
+    this._osShortName = value;
+  }
+  public resetOsShortName() {
+    this._osShortName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get osShortNameInput() {
+    return this._osShortName;
+  }
+
+  // os_version - computed: false, optional: true, required: false
+  private _osVersion?: string; 
+  public get osVersion() {
+    return this.getStringAttribute('os_version');
+  }
+  public set osVersion(value: string) {
+    this._osVersion = value;
+  }
+  public resetOsVersion() {
+    this._osVersion = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get osVersionInput() {
+    return this._osVersion;
+  }
+}
+
+export class GoogleOsConfigGuestPoliciesAssignmentOsTypesList extends cdktf.ComplexList {
+  public internalValue? : GoogleOsConfigGuestPoliciesAssignmentOsTypes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleOsConfigGuestPoliciesAssignmentOsTypesOutputReference {
+    return new GoogleOsConfigGuestPoliciesAssignmentOsTypesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleOsConfigGuestPoliciesAssignment {
   /**
   * Targets VM instances whose name starts with one of these prefixes.
@@ -198,13 +406,13 @@ export class GoogleOsConfigGuestPoliciesAssignmentOutputReference extends cdktf.
       hasAnyValues = true;
       internalValueResult.zones = this._zones;
     }
-    if (this._groupLabels !== undefined) {
+    if (this._groupLabels?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.groupLabels = this._groupLabels;
+      internalValueResult.groupLabels = this._groupLabels?.internalValue;
     }
-    if (this._osTypes !== undefined) {
+    if (this._osTypes?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.osTypes = this._osTypes;
+      internalValueResult.osTypes = this._osTypes?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -215,16 +423,16 @@ export class GoogleOsConfigGuestPoliciesAssignmentOutputReference extends cdktf.
       this._instanceNamePrefixes = undefined;
       this._instances = undefined;
       this._zones = undefined;
-      this._groupLabels = undefined;
-      this._osTypes = undefined;
+      this._groupLabels.internalValue = undefined;
+      this._osTypes.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._instanceNamePrefixes = value.instanceNamePrefixes;
       this._instances = value.instances;
       this._zones = value.zones;
-      this._groupLabels = value.groupLabels;
-      this._osTypes = value.osTypes;
+      this._groupLabels.internalValue = value.groupLabels;
+      this._osTypes.internalValue = value.osTypes;
     }
   }
 
@@ -277,37 +485,35 @@ export class GoogleOsConfigGuestPoliciesAssignmentOutputReference extends cdktf.
   }
 
   // group_labels - computed: false, optional: true, required: false
-  private _groupLabels?: GoogleOsConfigGuestPoliciesAssignmentGroupLabels[] | cdktf.IResolvable; 
+  private _groupLabels = new GoogleOsConfigGuestPoliciesAssignmentGroupLabelsList(this, "group_labels", false);
   public get groupLabels() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group_labels');
+    return this._groupLabels;
   }
-  public set groupLabels(value: GoogleOsConfigGuestPoliciesAssignmentGroupLabels[] | cdktf.IResolvable) {
-    this._groupLabels = value;
+  public putGroupLabels(value: GoogleOsConfigGuestPoliciesAssignmentGroupLabels[] | cdktf.IResolvable) {
+    this._groupLabels.internalValue = value;
   }
   public resetGroupLabels() {
-    this._groupLabels = undefined;
+    this._groupLabels.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get groupLabelsInput() {
-    return this._groupLabels;
+    return this._groupLabels.internalValue;
   }
 
   // os_types - computed: false, optional: true, required: false
-  private _osTypes?: GoogleOsConfigGuestPoliciesAssignmentOsTypes[] | cdktf.IResolvable; 
+  private _osTypes = new GoogleOsConfigGuestPoliciesAssignmentOsTypesList(this, "os_types", false);
   public get osTypes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('os_types');
+    return this._osTypes;
   }
-  public set osTypes(value: GoogleOsConfigGuestPoliciesAssignmentOsTypes[] | cdktf.IResolvable) {
-    this._osTypes = value;
+  public putOsTypes(value: GoogleOsConfigGuestPoliciesAssignmentOsTypes[] | cdktf.IResolvable) {
+    this._osTypes.internalValue = value;
   }
   public resetOsTypes() {
-    this._osTypes = undefined;
+    this._osTypes.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get osTypesInput() {
-    return this._osTypes;
+    return this._osTypes.internalValue;
   }
 }
 export interface GoogleOsConfigGuestPoliciesPackageRepositoriesApt {
@@ -599,6 +805,9 @@ export interface GoogleOsConfigGuestPoliciesPackageRepositoriesYum {
 if displayName is omitted. This id is also used as the unique identifier when checking for guest policy conflicts.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
 }
@@ -748,6 +957,9 @@ export interface GoogleOsConfigGuestPoliciesPackageRepositoriesZypper {
 if displayName is omitted. This id is also used as the unique identifier when checking for guest policy conflicts.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
 }
@@ -913,6 +1125,152 @@ export function googleOsConfigGuestPoliciesPackageRepositoriesToTerraform(struct
   }
 }
 
+export class GoogleOsConfigGuestPoliciesPackageRepositoriesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleOsConfigGuestPoliciesPackageRepositories | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._apt?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.apt = this._apt?.internalValue;
+    }
+    if (this._goo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.goo = this._goo?.internalValue;
+    }
+    if (this._yum?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.yum = this._yum?.internalValue;
+    }
+    if (this._zypper?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.zypper = this._zypper?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOsConfigGuestPoliciesPackageRepositories | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._apt.internalValue = undefined;
+      this._goo.internalValue = undefined;
+      this._yum.internalValue = undefined;
+      this._zypper.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._apt.internalValue = value.apt;
+      this._goo.internalValue = value.goo;
+      this._yum.internalValue = value.yum;
+      this._zypper.internalValue = value.zypper;
+    }
+  }
+
+  // apt - computed: false, optional: true, required: false
+  private _apt = new GoogleOsConfigGuestPoliciesPackageRepositoriesAptOutputReference(this, "apt");
+  public get apt() {
+    return this._apt;
+  }
+  public putApt(value: GoogleOsConfigGuestPoliciesPackageRepositoriesApt) {
+    this._apt.internalValue = value;
+  }
+  public resetApt() {
+    this._apt.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aptInput() {
+    return this._apt.internalValue;
+  }
+
+  // goo - computed: false, optional: true, required: false
+  private _goo = new GoogleOsConfigGuestPoliciesPackageRepositoriesGooOutputReference(this, "goo");
+  public get goo() {
+    return this._goo;
+  }
+  public putGoo(value: GoogleOsConfigGuestPoliciesPackageRepositoriesGoo) {
+    this._goo.internalValue = value;
+  }
+  public resetGoo() {
+    this._goo.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gooInput() {
+    return this._goo.internalValue;
+  }
+
+  // yum - computed: false, optional: true, required: false
+  private _yum = new GoogleOsConfigGuestPoliciesPackageRepositoriesYumOutputReference(this, "yum");
+  public get yum() {
+    return this._yum;
+  }
+  public putYum(value: GoogleOsConfigGuestPoliciesPackageRepositoriesYum) {
+    this._yum.internalValue = value;
+  }
+  public resetYum() {
+    this._yum.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yumInput() {
+    return this._yum.internalValue;
+  }
+
+  // zypper - computed: false, optional: true, required: false
+  private _zypper = new GoogleOsConfigGuestPoliciesPackageRepositoriesZypperOutputReference(this, "zypper");
+  public get zypper() {
+    return this._zypper;
+  }
+  public putZypper(value: GoogleOsConfigGuestPoliciesPackageRepositoriesZypper) {
+    this._zypper.internalValue = value;
+  }
+  public resetZypper() {
+    this._zypper.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zypperInput() {
+    return this._zypper.internalValue;
+  }
+}
+
+export class GoogleOsConfigGuestPoliciesPackageRepositoriesList extends cdktf.ComplexList {
+  public internalValue? : GoogleOsConfigGuestPoliciesPackageRepositories[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleOsConfigGuestPoliciesPackageRepositoriesOutputReference {
+    return new GoogleOsConfigGuestPoliciesPackageRepositoriesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleOsConfigGuestPoliciesPackages {
   /**
   * The desiredState the agent should maintain for this package. The default is to ensure the package is installed. Possible values: ["INSTALLED", "UPDATED", "REMOVED"]
@@ -951,6 +1309,127 @@ export function googleOsConfigGuestPoliciesPackagesToTerraform(struct?: GoogleOs
   }
 }
 
+export class GoogleOsConfigGuestPoliciesPackagesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleOsConfigGuestPoliciesPackages | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._desiredState !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.desiredState = this._desiredState;
+    }
+    if (this._manager !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.manager = this._manager;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOsConfigGuestPoliciesPackages | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._desiredState = undefined;
+      this._manager = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._desiredState = value.desiredState;
+      this._manager = value.manager;
+      this._name = value.name;
+    }
+  }
+
+  // desired_state - computed: false, optional: true, required: false
+  private _desiredState?: string; 
+  public get desiredState() {
+    return this.getStringAttribute('desired_state');
+  }
+  public set desiredState(value: string) {
+    this._desiredState = value;
+  }
+  public resetDesiredState() {
+    this._desiredState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get desiredStateInput() {
+    return this._desiredState;
+  }
+
+  // manager - computed: false, optional: true, required: false
+  private _manager?: string; 
+  public get manager() {
+    return this.getStringAttribute('manager');
+  }
+  public set manager(value: string) {
+    this._manager = value;
+  }
+  public resetManager() {
+    this._manager = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managerInput() {
+    return this._manager;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class GoogleOsConfigGuestPoliciesPackagesList extends cdktf.ComplexList {
+  public internalValue? : GoogleOsConfigGuestPoliciesPackages[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleOsConfigGuestPoliciesPackagesOutputReference {
+    return new GoogleOsConfigGuestPoliciesPackagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleOsConfigGuestPoliciesRecipesArtifactsGcs {
   /**
   * Bucket of the Google Cloud Storage object. Given an example URL: https://storage.googleapis.com/my-bucket/foo/bar#1234567
@@ -1191,6 +1670,9 @@ GCS: An object generation number must be specified.
 Artifacts in a recipe cannot have the same id.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_os_config_guest_policies#id GoogleOsConfigGuestPolicies#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
@@ -1220,6 +1702,149 @@ export function googleOsConfigGuestPoliciesRecipesArtifactsToTerraform(struct?: 
   }
 }
 
+export class GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleOsConfigGuestPoliciesRecipesArtifacts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowInsecure !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowInsecure = this._allowInsecure;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._gcs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcs = this._gcs?.internalValue;
+    }
+    if (this._remote?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.remote = this._remote?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOsConfigGuestPoliciesRecipesArtifacts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._allowInsecure = undefined;
+      this._id = undefined;
+      this._gcs.internalValue = undefined;
+      this._remote.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._allowInsecure = value.allowInsecure;
+      this._id = value.id;
+      this._gcs.internalValue = value.gcs;
+      this._remote.internalValue = value.remote;
+    }
+  }
+
+  // allow_insecure - computed: false, optional: true, required: false
+  private _allowInsecure?: boolean | cdktf.IResolvable; 
+  public get allowInsecure() {
+    return this.getBooleanAttribute('allow_insecure');
+  }
+  public set allowInsecure(value: boolean | cdktf.IResolvable) {
+    this._allowInsecure = value;
+  }
+  public resetAllowInsecure() {
+    this._allowInsecure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowInsecureInput() {
+    return this._allowInsecure;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // gcs - computed: false, optional: true, required: false
+  private _gcs = new GoogleOsConfigGuestPoliciesRecipesArtifactsGcsOutputReference(this, "gcs");
+  public get gcs() {
+    return this._gcs;
+  }
+  public putGcs(value: GoogleOsConfigGuestPoliciesRecipesArtifactsGcs) {
+    this._gcs.internalValue = value;
+  }
+  public resetGcs() {
+    this._gcs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcsInput() {
+    return this._gcs.internalValue;
+  }
+
+  // remote - computed: false, optional: true, required: false
+  private _remote = new GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference(this, "remote");
+  public get remote() {
+    return this._remote;
+  }
+  public putRemote(value: GoogleOsConfigGuestPoliciesRecipesArtifactsRemote) {
+    this._remote.internalValue = value;
+  }
+  public resetRemote() {
+    this._remote.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteInput() {
+    return this._remote.internalValue;
+  }
+}
+
+export class GoogleOsConfigGuestPoliciesRecipesArtifactsList extends cdktf.ComplexList {
+  public internalValue? : GoogleOsConfigGuestPoliciesRecipesArtifacts[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference {
+    return new GoogleOsConfigGuestPoliciesRecipesArtifactsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtraction {
   /**
   * The id of the relevant artifact in the recipe.
@@ -2082,6 +2707,218 @@ export function googleOsConfigGuestPoliciesRecipesInstallStepsToTerraform(struct
   }
 }
 
+export class GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleOsConfigGuestPoliciesRecipesInstallSteps | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._archiveExtraction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.archiveExtraction = this._archiveExtraction?.internalValue;
+    }
+    if (this._dpkgInstallation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dpkgInstallation = this._dpkgInstallation?.internalValue;
+    }
+    if (this._fileCopy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileCopy = this._fileCopy?.internalValue;
+    }
+    if (this._fileExec?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileExec = this._fileExec?.internalValue;
+    }
+    if (this._msiInstallation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.msiInstallation = this._msiInstallation?.internalValue;
+    }
+    if (this._rpmInstallation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rpmInstallation = this._rpmInstallation?.internalValue;
+    }
+    if (this._scriptRun?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scriptRun = this._scriptRun?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOsConfigGuestPoliciesRecipesInstallSteps | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._archiveExtraction.internalValue = undefined;
+      this._dpkgInstallation.internalValue = undefined;
+      this._fileCopy.internalValue = undefined;
+      this._fileExec.internalValue = undefined;
+      this._msiInstallation.internalValue = undefined;
+      this._rpmInstallation.internalValue = undefined;
+      this._scriptRun.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._archiveExtraction.internalValue = value.archiveExtraction;
+      this._dpkgInstallation.internalValue = value.dpkgInstallation;
+      this._fileCopy.internalValue = value.fileCopy;
+      this._fileExec.internalValue = value.fileExec;
+      this._msiInstallation.internalValue = value.msiInstallation;
+      this._rpmInstallation.internalValue = value.rpmInstallation;
+      this._scriptRun.internalValue = value.scriptRun;
+    }
+  }
+
+  // archive_extraction - computed: false, optional: true, required: false
+  private _archiveExtraction = new GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtractionOutputReference(this, "archive_extraction");
+  public get archiveExtraction() {
+    return this._archiveExtraction;
+  }
+  public putArchiveExtraction(value: GoogleOsConfigGuestPoliciesRecipesInstallStepsArchiveExtraction) {
+    this._archiveExtraction.internalValue = value;
+  }
+  public resetArchiveExtraction() {
+    this._archiveExtraction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get archiveExtractionInput() {
+    return this._archiveExtraction.internalValue;
+  }
+
+  // dpkg_installation - computed: false, optional: true, required: false
+  private _dpkgInstallation = new GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallationOutputReference(this, "dpkg_installation");
+  public get dpkgInstallation() {
+    return this._dpkgInstallation;
+  }
+  public putDpkgInstallation(value: GoogleOsConfigGuestPoliciesRecipesInstallStepsDpkgInstallation) {
+    this._dpkgInstallation.internalValue = value;
+  }
+  public resetDpkgInstallation() {
+    this._dpkgInstallation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dpkgInstallationInput() {
+    return this._dpkgInstallation.internalValue;
+  }
+
+  // file_copy - computed: false, optional: true, required: false
+  private _fileCopy = new GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopyOutputReference(this, "file_copy");
+  public get fileCopy() {
+    return this._fileCopy;
+  }
+  public putFileCopy(value: GoogleOsConfigGuestPoliciesRecipesInstallStepsFileCopy) {
+    this._fileCopy.internalValue = value;
+  }
+  public resetFileCopy() {
+    this._fileCopy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileCopyInput() {
+    return this._fileCopy.internalValue;
+  }
+
+  // file_exec - computed: false, optional: true, required: false
+  private _fileExec = new GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExecOutputReference(this, "file_exec");
+  public get fileExec() {
+    return this._fileExec;
+  }
+  public putFileExec(value: GoogleOsConfigGuestPoliciesRecipesInstallStepsFileExec) {
+    this._fileExec.internalValue = value;
+  }
+  public resetFileExec() {
+    this._fileExec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileExecInput() {
+    return this._fileExec.internalValue;
+  }
+
+  // msi_installation - computed: false, optional: true, required: false
+  private _msiInstallation = new GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallationOutputReference(this, "msi_installation");
+  public get msiInstallation() {
+    return this._msiInstallation;
+  }
+  public putMsiInstallation(value: GoogleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallation) {
+    this._msiInstallation.internalValue = value;
+  }
+  public resetMsiInstallation() {
+    this._msiInstallation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get msiInstallationInput() {
+    return this._msiInstallation.internalValue;
+  }
+
+  // rpm_installation - computed: false, optional: true, required: false
+  private _rpmInstallation = new GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallationOutputReference(this, "rpm_installation");
+  public get rpmInstallation() {
+    return this._rpmInstallation;
+  }
+  public putRpmInstallation(value: GoogleOsConfigGuestPoliciesRecipesInstallStepsRpmInstallation) {
+    this._rpmInstallation.internalValue = value;
+  }
+  public resetRpmInstallation() {
+    this._rpmInstallation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rpmInstallationInput() {
+    return this._rpmInstallation.internalValue;
+  }
+
+  // script_run - computed: false, optional: true, required: false
+  private _scriptRun = new GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRunOutputReference(this, "script_run");
+  public get scriptRun() {
+    return this._scriptRun;
+  }
+  public putScriptRun(value: GoogleOsConfigGuestPoliciesRecipesInstallStepsScriptRun) {
+    this._scriptRun.internalValue = value;
+  }
+  public resetScriptRun() {
+    this._scriptRun.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scriptRunInput() {
+    return this._scriptRun.internalValue;
+  }
+}
+
+export class GoogleOsConfigGuestPoliciesRecipesInstallStepsList extends cdktf.ComplexList {
+  public internalValue? : GoogleOsConfigGuestPoliciesRecipesInstallSteps[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference {
+    return new GoogleOsConfigGuestPoliciesRecipesInstallStepsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtraction {
   /**
   * The id of the relevant artifact in the recipe.
@@ -2944,6 +3781,218 @@ export function googleOsConfigGuestPoliciesRecipesUpdateStepsToTerraform(struct?
   }
 }
 
+export class GoogleOsConfigGuestPoliciesRecipesUpdateStepsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleOsConfigGuestPoliciesRecipesUpdateSteps | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._archiveExtraction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.archiveExtraction = this._archiveExtraction?.internalValue;
+    }
+    if (this._dpkgInstallation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dpkgInstallation = this._dpkgInstallation?.internalValue;
+    }
+    if (this._fileCopy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileCopy = this._fileCopy?.internalValue;
+    }
+    if (this._fileExec?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileExec = this._fileExec?.internalValue;
+    }
+    if (this._msiInstallation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.msiInstallation = this._msiInstallation?.internalValue;
+    }
+    if (this._rpmInstallation?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rpmInstallation = this._rpmInstallation?.internalValue;
+    }
+    if (this._scriptRun?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scriptRun = this._scriptRun?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOsConfigGuestPoliciesRecipesUpdateSteps | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._archiveExtraction.internalValue = undefined;
+      this._dpkgInstallation.internalValue = undefined;
+      this._fileCopy.internalValue = undefined;
+      this._fileExec.internalValue = undefined;
+      this._msiInstallation.internalValue = undefined;
+      this._rpmInstallation.internalValue = undefined;
+      this._scriptRun.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._archiveExtraction.internalValue = value.archiveExtraction;
+      this._dpkgInstallation.internalValue = value.dpkgInstallation;
+      this._fileCopy.internalValue = value.fileCopy;
+      this._fileExec.internalValue = value.fileExec;
+      this._msiInstallation.internalValue = value.msiInstallation;
+      this._rpmInstallation.internalValue = value.rpmInstallation;
+      this._scriptRun.internalValue = value.scriptRun;
+    }
+  }
+
+  // archive_extraction - computed: false, optional: true, required: false
+  private _archiveExtraction = new GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtractionOutputReference(this, "archive_extraction");
+  public get archiveExtraction() {
+    return this._archiveExtraction;
+  }
+  public putArchiveExtraction(value: GoogleOsConfigGuestPoliciesRecipesUpdateStepsArchiveExtraction) {
+    this._archiveExtraction.internalValue = value;
+  }
+  public resetArchiveExtraction() {
+    this._archiveExtraction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get archiveExtractionInput() {
+    return this._archiveExtraction.internalValue;
+  }
+
+  // dpkg_installation - computed: false, optional: true, required: false
+  private _dpkgInstallation = new GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallationOutputReference(this, "dpkg_installation");
+  public get dpkgInstallation() {
+    return this._dpkgInstallation;
+  }
+  public putDpkgInstallation(value: GoogleOsConfigGuestPoliciesRecipesUpdateStepsDpkgInstallation) {
+    this._dpkgInstallation.internalValue = value;
+  }
+  public resetDpkgInstallation() {
+    this._dpkgInstallation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dpkgInstallationInput() {
+    return this._dpkgInstallation.internalValue;
+  }
+
+  // file_copy - computed: false, optional: true, required: false
+  private _fileCopy = new GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopyOutputReference(this, "file_copy");
+  public get fileCopy() {
+    return this._fileCopy;
+  }
+  public putFileCopy(value: GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileCopy) {
+    this._fileCopy.internalValue = value;
+  }
+  public resetFileCopy() {
+    this._fileCopy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileCopyInput() {
+    return this._fileCopy.internalValue;
+  }
+
+  // file_exec - computed: false, optional: true, required: false
+  private _fileExec = new GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExecOutputReference(this, "file_exec");
+  public get fileExec() {
+    return this._fileExec;
+  }
+  public putFileExec(value: GoogleOsConfigGuestPoliciesRecipesUpdateStepsFileExec) {
+    this._fileExec.internalValue = value;
+  }
+  public resetFileExec() {
+    this._fileExec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileExecInput() {
+    return this._fileExec.internalValue;
+  }
+
+  // msi_installation - computed: false, optional: true, required: false
+  private _msiInstallation = new GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationOutputReference(this, "msi_installation");
+  public get msiInstallation() {
+    return this._msiInstallation;
+  }
+  public putMsiInstallation(value: GoogleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallation) {
+    this._msiInstallation.internalValue = value;
+  }
+  public resetMsiInstallation() {
+    this._msiInstallation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get msiInstallationInput() {
+    return this._msiInstallation.internalValue;
+  }
+
+  // rpm_installation - computed: false, optional: true, required: false
+  private _rpmInstallation = new GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference(this, "rpm_installation");
+  public get rpmInstallation() {
+    return this._rpmInstallation;
+  }
+  public putRpmInstallation(value: GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallation) {
+    this._rpmInstallation.internalValue = value;
+  }
+  public resetRpmInstallation() {
+    this._rpmInstallation.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rpmInstallationInput() {
+    return this._rpmInstallation.internalValue;
+  }
+
+  // script_run - computed: false, optional: true, required: false
+  private _scriptRun = new GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference(this, "script_run");
+  public get scriptRun() {
+    return this._scriptRun;
+  }
+  public putScriptRun(value: GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRun) {
+    this._scriptRun.internalValue = value;
+  }
+  public resetScriptRun() {
+    this._scriptRun.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scriptRunInput() {
+    return this._scriptRun.internalValue;
+  }
+}
+
+export class GoogleOsConfigGuestPoliciesRecipesUpdateStepsList extends cdktf.ComplexList {
+  public internalValue? : GoogleOsConfigGuestPoliciesRecipesUpdateSteps[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleOsConfigGuestPoliciesRecipesUpdateStepsOutputReference {
+    return new GoogleOsConfigGuestPoliciesRecipesUpdateStepsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleOsConfigGuestPoliciesRecipes {
   /**
   * Default is INSTALLED. The desired state the agent should maintain for this recipe.
@@ -3006,6 +4055,193 @@ export function googleOsConfigGuestPoliciesRecipesToTerraform(struct?: GoogleOsC
   }
 }
 
+export class GoogleOsConfigGuestPoliciesRecipesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleOsConfigGuestPoliciesRecipes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._desiredState !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.desiredState = this._desiredState;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    if (this._artifacts?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.artifacts = this._artifacts?.internalValue;
+    }
+    if (this._installSteps?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.installSteps = this._installSteps?.internalValue;
+    }
+    if (this._updateSteps?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.updateSteps = this._updateSteps?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleOsConfigGuestPoliciesRecipes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._desiredState = undefined;
+      this._name = undefined;
+      this._version = undefined;
+      this._artifacts.internalValue = undefined;
+      this._installSteps.internalValue = undefined;
+      this._updateSteps.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._desiredState = value.desiredState;
+      this._name = value.name;
+      this._version = value.version;
+      this._artifacts.internalValue = value.artifacts;
+      this._installSteps.internalValue = value.installSteps;
+      this._updateSteps.internalValue = value.updateSteps;
+    }
+  }
+
+  // desired_state - computed: false, optional: true, required: false
+  private _desiredState?: string; 
+  public get desiredState() {
+    return this.getStringAttribute('desired_state');
+  }
+  public set desiredState(value: string) {
+    this._desiredState = value;
+  }
+  public resetDesiredState() {
+    this._desiredState = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get desiredStateInput() {
+    return this._desiredState;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // version - computed: false, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+
+  // artifacts - computed: false, optional: true, required: false
+  private _artifacts = new GoogleOsConfigGuestPoliciesRecipesArtifactsList(this, "artifacts", false);
+  public get artifacts() {
+    return this._artifacts;
+  }
+  public putArtifacts(value: GoogleOsConfigGuestPoliciesRecipesArtifacts[] | cdktf.IResolvable) {
+    this._artifacts.internalValue = value;
+  }
+  public resetArtifacts() {
+    this._artifacts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get artifactsInput() {
+    return this._artifacts.internalValue;
+  }
+
+  // install_steps - computed: false, optional: true, required: false
+  private _installSteps = new GoogleOsConfigGuestPoliciesRecipesInstallStepsList(this, "install_steps", false);
+  public get installSteps() {
+    return this._installSteps;
+  }
+  public putInstallSteps(value: GoogleOsConfigGuestPoliciesRecipesInstallSteps[] | cdktf.IResolvable) {
+    this._installSteps.internalValue = value;
+  }
+  public resetInstallSteps() {
+    this._installSteps.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get installStepsInput() {
+    return this._installSteps.internalValue;
+  }
+
+  // update_steps - computed: false, optional: true, required: false
+  private _updateSteps = new GoogleOsConfigGuestPoliciesRecipesUpdateStepsList(this, "update_steps", false);
+  public get updateSteps() {
+    return this._updateSteps;
+  }
+  public putUpdateSteps(value: GoogleOsConfigGuestPoliciesRecipesUpdateSteps[] | cdktf.IResolvable) {
+    this._updateSteps.internalValue = value;
+  }
+  public resetUpdateSteps() {
+    this._updateSteps.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateStepsInput() {
+    return this._updateSteps.internalValue;
+  }
+}
+
+export class GoogleOsConfigGuestPoliciesRecipesList extends cdktf.ComplexList {
+  public internalValue? : GoogleOsConfigGuestPoliciesRecipes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleOsConfigGuestPoliciesRecipesOutputReference {
+    return new GoogleOsConfigGuestPoliciesRecipesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleOsConfigGuestPoliciesTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_os_config_guest_policies#create GoogleOsConfigGuestPolicies#create}
@@ -3035,6 +4271,7 @@ export function googleOsConfigGuestPoliciesTimeoutsToTerraform(struct?: GoogleOs
 
 export class GoogleOsConfigGuestPoliciesTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3044,7 +4281,10 @@ export class GoogleOsConfigGuestPoliciesTimeoutsOutputReference extends cdktf.Co
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleOsConfigGuestPoliciesTimeouts | undefined {
+  public get internalValue(): GoogleOsConfigGuestPoliciesTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -3062,15 +4302,21 @@ export class GoogleOsConfigGuestPoliciesTimeoutsOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleOsConfigGuestPoliciesTimeouts | undefined) {
+  public set internalValue(value: GoogleOsConfigGuestPoliciesTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -3163,11 +4409,12 @@ export class GoogleOsConfigGuestPolicies extends cdktf.TerraformResource {
     this._description = config.description;
     this._etag = config.etag;
     this._guestPolicyId = config.guestPolicyId;
+    this._id = config.id;
     this._project = config.project;
     this._assignment.internalValue = config.assignment;
-    this._packageRepositories = config.packageRepositories;
-    this._packages = config.packages;
-    this._recipes = config.recipes;
+    this._packageRepositories.internalValue = config.packageRepositories;
+    this._packages.internalValue = config.packages;
+    this._recipes.internalValue = config.recipes;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -3226,8 +4473,19 @@ export class GoogleOsConfigGuestPolicies extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: true, optional: false, required: false
@@ -3270,54 +4528,51 @@ export class GoogleOsConfigGuestPolicies extends cdktf.TerraformResource {
   }
 
   // package_repositories - computed: false, optional: true, required: false
-  private _packageRepositories?: GoogleOsConfigGuestPoliciesPackageRepositories[] | cdktf.IResolvable; 
+  private _packageRepositories = new GoogleOsConfigGuestPoliciesPackageRepositoriesList(this, "package_repositories", false);
   public get packageRepositories() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('package_repositories');
+    return this._packageRepositories;
   }
-  public set packageRepositories(value: GoogleOsConfigGuestPoliciesPackageRepositories[] | cdktf.IResolvable) {
-    this._packageRepositories = value;
+  public putPackageRepositories(value: GoogleOsConfigGuestPoliciesPackageRepositories[] | cdktf.IResolvable) {
+    this._packageRepositories.internalValue = value;
   }
   public resetPackageRepositories() {
-    this._packageRepositories = undefined;
+    this._packageRepositories.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get packageRepositoriesInput() {
-    return this._packageRepositories;
+    return this._packageRepositories.internalValue;
   }
 
   // packages - computed: false, optional: true, required: false
-  private _packages?: GoogleOsConfigGuestPoliciesPackages[] | cdktf.IResolvable; 
+  private _packages = new GoogleOsConfigGuestPoliciesPackagesList(this, "packages", false);
   public get packages() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('packages');
+    return this._packages;
   }
-  public set packages(value: GoogleOsConfigGuestPoliciesPackages[] | cdktf.IResolvable) {
-    this._packages = value;
+  public putPackages(value: GoogleOsConfigGuestPoliciesPackages[] | cdktf.IResolvable) {
+    this._packages.internalValue = value;
   }
   public resetPackages() {
-    this._packages = undefined;
+    this._packages.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get packagesInput() {
-    return this._packages;
+    return this._packages.internalValue;
   }
 
   // recipes - computed: false, optional: true, required: false
-  private _recipes?: GoogleOsConfigGuestPoliciesRecipes[] | cdktf.IResolvable; 
+  private _recipes = new GoogleOsConfigGuestPoliciesRecipesList(this, "recipes", false);
   public get recipes() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('recipes');
+    return this._recipes;
   }
-  public set recipes(value: GoogleOsConfigGuestPoliciesRecipes[] | cdktf.IResolvable) {
-    this._recipes = value;
+  public putRecipes(value: GoogleOsConfigGuestPoliciesRecipes[] | cdktf.IResolvable) {
+    this._recipes.internalValue = value;
   }
   public resetRecipes() {
-    this._recipes = undefined;
+    this._recipes.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get recipesInput() {
-    return this._recipes;
+    return this._recipes.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -3345,11 +4600,12 @@ export class GoogleOsConfigGuestPolicies extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       etag: cdktf.stringToTerraform(this._etag),
       guest_policy_id: cdktf.stringToTerraform(this._guestPolicyId),
+      id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       assignment: googleOsConfigGuestPoliciesAssignmentToTerraform(this._assignment.internalValue),
-      package_repositories: cdktf.listMapper(googleOsConfigGuestPoliciesPackageRepositoriesToTerraform)(this._packageRepositories),
-      packages: cdktf.listMapper(googleOsConfigGuestPoliciesPackagesToTerraform)(this._packages),
-      recipes: cdktf.listMapper(googleOsConfigGuestPoliciesRecipesToTerraform)(this._recipes),
+      package_repositories: cdktf.listMapper(googleOsConfigGuestPoliciesPackageRepositoriesToTerraform)(this._packageRepositories.internalValue),
+      packages: cdktf.listMapper(googleOsConfigGuestPoliciesPackagesToTerraform)(this._packages.internalValue),
+      recipes: cdktf.listMapper(googleOsConfigGuestPoliciesRecipesToTerraform)(this._recipes.internalValue),
       timeouts: googleOsConfigGuestPoliciesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

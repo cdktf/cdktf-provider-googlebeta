@@ -35,6 +35,13 @@ configured export destination in Stackdriver.
   */
   readonly enableLogging?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_organization_security_policy_rule#id GoogleComputeOrganizationSecurityPolicyRule#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The ID of the OrganizationSecurityPolicy this rule applies to.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_organization_security_policy_rule#policy_id GoogleComputeOrganizationSecurityPolicyRule#policy_id}
@@ -119,6 +126,105 @@ export function googleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Conf
   }
 }
 
+export class GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Config | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipProtocol = this._ipProtocol;
+    }
+    if (this._ports !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ports = this._ports;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Config | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipProtocol = undefined;
+      this._ports = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipProtocol = value.ipProtocol;
+      this._ports = value.ports;
+    }
+  }
+
+  // ip_protocol - computed: false, optional: false, required: true
+  private _ipProtocol?: string; 
+  public get ipProtocol() {
+    return this.getStringAttribute('ip_protocol');
+  }
+  public set ipProtocol(value: string) {
+    this._ipProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipProtocolInput() {
+    return this._ipProtocol;
+  }
+
+  // ports - computed: false, optional: true, required: false
+  private _ports?: string[]; 
+  public get ports() {
+    return this.getListAttribute('ports');
+  }
+  public set ports(value: string[]) {
+    this._ports = value;
+  }
+  public resetPorts() {
+    this._ports = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portsInput() {
+    return this._ports;
+  }
+}
+
+export class GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Config[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutputReference {
+    return new GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeOrganizationSecurityPolicyRuleMatchConfig {
   /**
   * Destination IP address range in CIDR format. Required for
@@ -176,9 +282,9 @@ export class GoogleComputeOrganizationSecurityPolicyRuleMatchConfigOutputReferen
       hasAnyValues = true;
       internalValueResult.srcIpRanges = this._srcIpRanges;
     }
-    if (this._layer4Config !== undefined) {
+    if (this._layer4Config?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.layer4Config = this._layer4Config;
+      internalValueResult.layer4Config = this._layer4Config?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -188,13 +294,13 @@ export class GoogleComputeOrganizationSecurityPolicyRuleMatchConfigOutputReferen
       this.isEmptyObject = false;
       this._destIpRanges = undefined;
       this._srcIpRanges = undefined;
-      this._layer4Config = undefined;
+      this._layer4Config.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._destIpRanges = value.destIpRanges;
       this._srcIpRanges = value.srcIpRanges;
-      this._layer4Config = value.layer4Config;
+      this._layer4Config.internalValue = value.layer4Config;
     }
   }
 
@@ -231,17 +337,16 @@ export class GoogleComputeOrganizationSecurityPolicyRuleMatchConfigOutputReferen
   }
 
   // layer4_config - computed: false, optional: false, required: true
-  private _layer4Config?: GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Config[] | cdktf.IResolvable; 
+  private _layer4Config = new GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigList(this, "layer4_config", false);
   public get layer4Config() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('layer4_config');
+    return this._layer4Config;
   }
-  public set layer4Config(value: GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Config[] | cdktf.IResolvable) {
-    this._layer4Config = value;
+  public putLayer4Config(value: GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Config[] | cdktf.IResolvable) {
+    this._layer4Config.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
   public get layer4ConfigInput() {
-    return this._layer4Config;
+    return this._layer4Config.internalValue;
   }
 }
 export interface GoogleComputeOrganizationSecurityPolicyRuleMatch {
@@ -396,6 +501,7 @@ export function googleComputeOrganizationSecurityPolicyRuleTimeoutsToTerraform(s
 
 export class GoogleComputeOrganizationSecurityPolicyRuleTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -405,7 +511,10 @@ export class GoogleComputeOrganizationSecurityPolicyRuleTimeoutsOutputReference 
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleComputeOrganizationSecurityPolicyRuleTimeouts | undefined {
+  public get internalValue(): GoogleComputeOrganizationSecurityPolicyRuleTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -423,15 +532,21 @@ export class GoogleComputeOrganizationSecurityPolicyRuleTimeoutsOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleComputeOrganizationSecurityPolicyRuleTimeouts | undefined) {
+  public set internalValue(value: GoogleComputeOrganizationSecurityPolicyRuleTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -525,6 +640,7 @@ export class GoogleComputeOrganizationSecurityPolicyRule extends cdktf.Terraform
     this._description = config.description;
     this._direction = config.direction;
     this._enableLogging = config.enableLogging;
+    this._id = config.id;
     this._policyId = config.policyId;
     this._preview = config.preview;
     this._priority = config.priority;
@@ -600,8 +716,19 @@ export class GoogleComputeOrganizationSecurityPolicyRule extends cdktf.Terraform
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // policy_id - computed: false, optional: false, required: true
@@ -717,6 +844,7 @@ export class GoogleComputeOrganizationSecurityPolicyRule extends cdktf.Terraform
       description: cdktf.stringToTerraform(this._description),
       direction: cdktf.stringToTerraform(this._direction),
       enable_logging: cdktf.booleanToTerraform(this._enableLogging),
+      id: cdktf.stringToTerraform(this._id),
       policy_id: cdktf.stringToTerraform(this._policyId),
       preview: cdktf.booleanToTerraform(this._preview),
       priority: cdktf.numberToTerraform(this._priority),

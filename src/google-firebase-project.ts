@@ -8,6 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleFirebaseProjectConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project#id GoogleFirebaseProject#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project#project GoogleFirebaseProject#project}
   */
   readonly project?: string;
@@ -42,6 +49,7 @@ export function googleFirebaseProjectTimeoutsToTerraform(struct?: GoogleFirebase
 
 export class GoogleFirebaseProjectTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -51,7 +59,10 @@ export class GoogleFirebaseProjectTimeoutsOutputReference extends cdktf.ComplexO
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleFirebaseProjectTimeouts | undefined {
+  public get internalValue(): GoogleFirebaseProjectTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -65,14 +76,20 @@ export class GoogleFirebaseProjectTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleFirebaseProjectTimeouts | undefined) {
+  public set internalValue(value: GoogleFirebaseProjectTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
     }
@@ -145,6 +162,7 @@ export class GoogleFirebaseProject extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._id = config.id;
     this._project = config.project;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -159,8 +177,19 @@ export class GoogleFirebaseProject extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // project - computed: true, optional: true, required: false
@@ -206,6 +235,7 @@ export class GoogleFirebaseProject extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       timeouts: googleFirebaseProjectTimeoutsToTerraform(this._timeouts.internalValue),
     };

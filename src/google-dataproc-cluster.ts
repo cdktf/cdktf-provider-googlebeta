@@ -14,6 +14,13 @@ export interface GoogleDataprocClusterConfig extends cdktf.TerraformMetaArgument
   */
   readonly gracefulDecommissionTimeout?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#id GoogleDataprocCluster#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * The list of labels (key/value pairs) to be applied to instances in the cluster. GCP generates some itself including goog-dataproc-cluster-name which is the name of the cluster.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#labels GoogleDataprocCluster#labels}
@@ -243,8 +250,9 @@ export class GoogleDataprocClusterClusterConfigEndpointConfigOutputReference ext
   }
 
   // http_ports - computed: true, optional: false, required: false
-  public httpPorts(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'http_ports').lookup(key);
+  private _httpPorts = new cdktf.StringMap(this, "http_ports");
+  public get httpPorts() {
+    return this._httpPorts;
   }
 }
 export interface GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig {
@@ -697,6 +705,105 @@ export function googleDataprocClusterClusterConfigInitializationActionToTerrafor
   }
 }
 
+export class GoogleDataprocClusterClusterConfigInitializationActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocClusterClusterConfigInitializationAction | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._script !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.script = this._script;
+    }
+    if (this._timeoutSec !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutSec = this._timeoutSec;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterClusterConfigInitializationAction | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._script = undefined;
+      this._timeoutSec = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._script = value.script;
+      this._timeoutSec = value.timeoutSec;
+    }
+  }
+
+  // script - computed: false, optional: false, required: true
+  private _script?: string; 
+  public get script() {
+    return this.getStringAttribute('script');
+  }
+  public set script(value: string) {
+    this._script = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scriptInput() {
+    return this._script;
+  }
+
+  // timeout_sec - computed: false, optional: true, required: false
+  private _timeoutSec?: number; 
+  public get timeoutSec() {
+    return this.getNumberAttribute('timeout_sec');
+  }
+  public set timeoutSec(value: number) {
+    this._timeoutSec = value;
+  }
+  public resetTimeoutSec() {
+    this._timeoutSec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutSecInput() {
+    return this._timeoutSec;
+  }
+}
+
+export class GoogleDataprocClusterClusterConfigInitializationActionList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocClusterClusterConfigInitializationAction[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocClusterClusterConfigInitializationActionOutputReference {
+    return new GoogleDataprocClusterClusterConfigInitializationActionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataprocClusterClusterConfigLifecycleConfig {
   /**
   * The time when cluster will be auto-deleted. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
@@ -824,6 +931,102 @@ export function googleDataprocClusterClusterConfigMasterConfigAcceleratorsToTerr
   }
 }
 
+export class GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocClusterClusterConfigMasterConfigAccelerators | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceleratorCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorCount = this._acceleratorCount;
+    }
+    if (this._acceleratorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorType = this._acceleratorType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterClusterConfigMasterConfigAccelerators | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = undefined;
+      this._acceleratorType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = value.acceleratorCount;
+      this._acceleratorType = value.acceleratorType;
+    }
+  }
+
+  // accelerator_count - computed: false, optional: false, required: true
+  private _acceleratorCount?: number; 
+  public get acceleratorCount() {
+    return this.getNumberAttribute('accelerator_count');
+  }
+  public set acceleratorCount(value: number) {
+    this._acceleratorCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorCountInput() {
+    return this._acceleratorCount;
+  }
+
+  // accelerator_type - computed: false, optional: false, required: true
+  private _acceleratorType?: string; 
+  public get acceleratorType() {
+    return this.getStringAttribute('accelerator_type');
+  }
+  public set acceleratorType(value: string) {
+    this._acceleratorType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypeInput() {
+    return this._acceleratorType;
+  }
+}
+
+export class GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocClusterClusterConfigMasterConfigAccelerators[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference {
+    return new GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataprocClusterClusterConfigMasterConfigDiskConfig {
   /**
   * Size of the primary disk attached to each node, specified in GB. The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
@@ -1033,9 +1236,9 @@ export class GoogleDataprocClusterClusterConfigMasterConfigOutputReference exten
       hasAnyValues = true;
       internalValueResult.numInstances = this._numInstances;
     }
-    if (this._accelerators !== undefined) {
+    if (this._accelerators?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.accelerators = this._accelerators;
+      internalValueResult.accelerators = this._accelerators?.internalValue;
     }
     if (this._diskConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -1051,7 +1254,7 @@ export class GoogleDataprocClusterClusterConfigMasterConfigOutputReference exten
       this._machineType = undefined;
       this._minCpuPlatform = undefined;
       this._numInstances = undefined;
-      this._accelerators = undefined;
+      this._accelerators.internalValue = undefined;
       this._diskConfig.internalValue = undefined;
     }
     else {
@@ -1060,7 +1263,7 @@ export class GoogleDataprocClusterClusterConfigMasterConfigOutputReference exten
       this._machineType = value.machineType;
       this._minCpuPlatform = value.minCpuPlatform;
       this._numInstances = value.numInstances;
-      this._accelerators = value.accelerators;
+      this._accelerators.internalValue = value.accelerators;
       this._diskConfig.internalValue = value.diskConfig;
     }
   }
@@ -1135,20 +1338,19 @@ export class GoogleDataprocClusterClusterConfigMasterConfigOutputReference exten
   }
 
   // accelerators - computed: false, optional: true, required: false
-  private _accelerators?: GoogleDataprocClusterClusterConfigMasterConfigAccelerators[] | cdktf.IResolvable; 
+  private _accelerators = new GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList(this, "accelerators", true);
   public get accelerators() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('accelerators')));
+    return this._accelerators;
   }
-  public set accelerators(value: GoogleDataprocClusterClusterConfigMasterConfigAccelerators[] | cdktf.IResolvable) {
-    this._accelerators = value;
+  public putAccelerators(value: GoogleDataprocClusterClusterConfigMasterConfigAccelerators[] | cdktf.IResolvable) {
+    this._accelerators.internalValue = value;
   }
   public resetAccelerators() {
-    this._accelerators = undefined;
+    this._accelerators.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get acceleratorsInput() {
-    return this._accelerators;
+    return this._accelerators.internalValue;
   }
 
   // disk_config - computed: false, optional: true, required: false
@@ -2146,8 +2348,9 @@ export class GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference ext
   }
 
   // properties - computed: true, optional: false, required: false
-  public properties(key: string): string | cdktf.IResolvable {
-    return new cdktf.StringMap(this, 'properties').lookup(key);
+  private _properties = new cdktf.StringMap(this, "properties");
+  public get properties() {
+    return this._properties;
   }
 }
 export interface GoogleDataprocClusterClusterConfigWorkerConfigAccelerators {
@@ -2176,6 +2379,102 @@ export function googleDataprocClusterClusterConfigWorkerConfigAcceleratorsToTerr
   }
 }
 
+export class GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocClusterClusterConfigWorkerConfigAccelerators | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._acceleratorCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorCount = this._acceleratorCount;
+    }
+    if (this._acceleratorType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceleratorType = this._acceleratorType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterClusterConfigWorkerConfigAccelerators | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = undefined;
+      this._acceleratorType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._acceleratorCount = value.acceleratorCount;
+      this._acceleratorType = value.acceleratorType;
+    }
+  }
+
+  // accelerator_count - computed: false, optional: false, required: true
+  private _acceleratorCount?: number; 
+  public get acceleratorCount() {
+    return this.getNumberAttribute('accelerator_count');
+  }
+  public set acceleratorCount(value: number) {
+    this._acceleratorCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorCountInput() {
+    return this._acceleratorCount;
+  }
+
+  // accelerator_type - computed: false, optional: false, required: true
+  private _acceleratorType?: string; 
+  public get acceleratorType() {
+    return this.getStringAttribute('accelerator_type');
+  }
+  public set acceleratorType(value: string) {
+    this._acceleratorType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceleratorTypeInput() {
+    return this._acceleratorType;
+  }
+}
+
+export class GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocClusterClusterConfigWorkerConfigAccelerators[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference {
+    return new GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig {
   /**
   * Size of the primary disk attached to each node, specified in GB. The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
@@ -2385,9 +2684,9 @@ export class GoogleDataprocClusterClusterConfigWorkerConfigOutputReference exten
       hasAnyValues = true;
       internalValueResult.numInstances = this._numInstances;
     }
-    if (this._accelerators !== undefined) {
+    if (this._accelerators?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.accelerators = this._accelerators;
+      internalValueResult.accelerators = this._accelerators?.internalValue;
     }
     if (this._diskConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2403,7 +2702,7 @@ export class GoogleDataprocClusterClusterConfigWorkerConfigOutputReference exten
       this._machineType = undefined;
       this._minCpuPlatform = undefined;
       this._numInstances = undefined;
-      this._accelerators = undefined;
+      this._accelerators.internalValue = undefined;
       this._diskConfig.internalValue = undefined;
     }
     else {
@@ -2412,7 +2711,7 @@ export class GoogleDataprocClusterClusterConfigWorkerConfigOutputReference exten
       this._machineType = value.machineType;
       this._minCpuPlatform = value.minCpuPlatform;
       this._numInstances = value.numInstances;
-      this._accelerators = value.accelerators;
+      this._accelerators.internalValue = value.accelerators;
       this._diskConfig.internalValue = value.diskConfig;
     }
   }
@@ -2487,20 +2786,19 @@ export class GoogleDataprocClusterClusterConfigWorkerConfigOutputReference exten
   }
 
   // accelerators - computed: false, optional: true, required: false
-  private _accelerators?: GoogleDataprocClusterClusterConfigWorkerConfigAccelerators[] | cdktf.IResolvable; 
+  private _accelerators = new GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList(this, "accelerators", true);
   public get accelerators() {
-    // Getting the computed value is not yet implemented
-    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('accelerators')));
+    return this._accelerators;
   }
-  public set accelerators(value: GoogleDataprocClusterClusterConfigWorkerConfigAccelerators[] | cdktf.IResolvable) {
-    this._accelerators = value;
+  public putAccelerators(value: GoogleDataprocClusterClusterConfigWorkerConfigAccelerators[] | cdktf.IResolvable) {
+    this._accelerators.internalValue = value;
   }
   public resetAccelerators() {
-    this._accelerators = undefined;
+    this._accelerators.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get acceleratorsInput() {
-    return this._accelerators;
+    return this._accelerators.internalValue;
   }
 
   // disk_config - computed: false, optional: true, required: false
@@ -2667,9 +2965,9 @@ export class GoogleDataprocClusterClusterConfigOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.gceClusterConfig = this._gceClusterConfig?.internalValue;
     }
-    if (this._initializationAction !== undefined) {
+    if (this._initializationAction?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.initializationAction = this._initializationAction;
+      internalValueResult.initializationAction = this._initializationAction?.internalValue;
     }
     if (this._lifecycleConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -2711,7 +3009,7 @@ export class GoogleDataprocClusterClusterConfigOutputReference extends cdktf.Com
       this._encryptionConfig.internalValue = undefined;
       this._endpointConfig.internalValue = undefined;
       this._gceClusterConfig.internalValue = undefined;
-      this._initializationAction = undefined;
+      this._initializationAction.internalValue = undefined;
       this._lifecycleConfig.internalValue = undefined;
       this._masterConfig.internalValue = undefined;
       this._metastoreConfig.internalValue = undefined;
@@ -2728,7 +3026,7 @@ export class GoogleDataprocClusterClusterConfigOutputReference extends cdktf.Com
       this._encryptionConfig.internalValue = value.encryptionConfig;
       this._endpointConfig.internalValue = value.endpointConfig;
       this._gceClusterConfig.internalValue = value.gceClusterConfig;
-      this._initializationAction = value.initializationAction;
+      this._initializationAction.internalValue = value.initializationAction;
       this._lifecycleConfig.internalValue = value.lifecycleConfig;
       this._masterConfig.internalValue = value.masterConfig;
       this._metastoreConfig.internalValue = value.metastoreConfig;
@@ -2841,20 +3139,19 @@ export class GoogleDataprocClusterClusterConfigOutputReference extends cdktf.Com
   }
 
   // initialization_action - computed: false, optional: true, required: false
-  private _initializationAction?: GoogleDataprocClusterClusterConfigInitializationAction[] | cdktf.IResolvable; 
+  private _initializationAction = new GoogleDataprocClusterClusterConfigInitializationActionList(this, "initialization_action", false);
   public get initializationAction() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('initialization_action');
+    return this._initializationAction;
   }
-  public set initializationAction(value: GoogleDataprocClusterClusterConfigInitializationAction[] | cdktf.IResolvable) {
-    this._initializationAction = value;
+  public putInitializationAction(value: GoogleDataprocClusterClusterConfigInitializationAction[] | cdktf.IResolvable) {
+    this._initializationAction.internalValue = value;
   }
   public resetInitializationAction() {
-    this._initializationAction = undefined;
+    this._initializationAction.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get initializationActionInput() {
-    return this._initializationAction;
+    return this._initializationAction.internalValue;
   }
 
   // lifecycle_config - computed: false, optional: true, required: false
@@ -2998,6 +3295,7 @@ export function googleDataprocClusterTimeoutsToTerraform(struct?: GoogleDataproc
 
 export class GoogleDataprocClusterTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -3007,7 +3305,10 @@ export class GoogleDataprocClusterTimeoutsOutputReference extends cdktf.ComplexO
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataprocClusterTimeouts | undefined {
+  public get internalValue(): GoogleDataprocClusterTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -3025,15 +3326,21 @@ export class GoogleDataprocClusterTimeoutsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataprocClusterTimeouts | undefined) {
+  public set internalValue(value: GoogleDataprocClusterTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -3124,6 +3431,7 @@ export class GoogleDataprocCluster extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._gracefulDecommissionTimeout = config.gracefulDecommissionTimeout;
+    this._id = config.id;
     this._labels = config.labels;
     this._name = config.name;
     this._project = config.project;
@@ -3153,8 +3461,19 @@ export class GoogleDataprocCluster extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // labels - computed: true, optional: true, required: false
@@ -3257,6 +3576,7 @@ export class GoogleDataprocCluster extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       graceful_decommission_timeout: cdktf.stringToTerraform(this._gracefulDecommissionTimeout),
+      id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),

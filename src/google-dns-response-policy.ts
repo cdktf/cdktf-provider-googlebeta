@@ -14,6 +14,13 @@ export interface GoogleDnsResponsePolicyConfig extends cdktf.TerraformMetaArgume
   */
   readonly description?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy#id GoogleDnsResponsePolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy#project GoogleDnsResponsePolicy#project}
   */
   readonly project?: string;
@@ -57,6 +64,83 @@ export function googleDnsResponsePolicyNetworksToTerraform(struct?: GoogleDnsRes
   }
 }
 
+export class GoogleDnsResponsePolicyNetworksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDnsResponsePolicyNetworks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._networkUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkUrl = this._networkUrl;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsResponsePolicyNetworks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._networkUrl = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._networkUrl = value.networkUrl;
+    }
+  }
+
+  // network_url - computed: false, optional: false, required: true
+  private _networkUrl?: string; 
+  public get networkUrl() {
+    return this.getStringAttribute('network_url');
+  }
+  public set networkUrl(value: string) {
+    this._networkUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkUrlInput() {
+    return this._networkUrl;
+  }
+}
+
+export class GoogleDnsResponsePolicyNetworksList extends cdktf.ComplexList {
+  public internalValue? : GoogleDnsResponsePolicyNetworks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDnsResponsePolicyNetworksOutputReference {
+    return new GoogleDnsResponsePolicyNetworksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDnsResponsePolicyTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy#create GoogleDnsResponsePolicy#create}
@@ -86,6 +170,7 @@ export function googleDnsResponsePolicyTimeoutsToTerraform(struct?: GoogleDnsRes
 
 export class GoogleDnsResponsePolicyTimeoutsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -95,7 +180,10 @@ export class GoogleDnsResponsePolicyTimeoutsOutputReference extends cdktf.Comple
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDnsResponsePolicyTimeouts | undefined {
+  public get internalValue(): GoogleDnsResponsePolicyTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._create !== undefined) {
@@ -113,15 +201,21 @@ export class GoogleDnsResponsePolicyTimeoutsOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDnsResponsePolicyTimeouts | undefined) {
+  public set internalValue(value: GoogleDnsResponsePolicyTimeouts | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
       this._update = undefined;
     }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
       this._update = value.update;
@@ -212,9 +306,10 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._description = config.description;
+    this._id = config.id;
     this._project = config.project;
     this._responsePolicyName = config.responsePolicyName;
-    this._networks = config.networks;
+    this._networks.internalValue = config.networks;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -239,8 +334,19 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // project - computed: true, optional: true, required: false
@@ -273,20 +379,19 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
   }
 
   // networks - computed: false, optional: true, required: false
-  private _networks?: GoogleDnsResponsePolicyNetworks[] | cdktf.IResolvable; 
+  private _networks = new GoogleDnsResponsePolicyNetworksList(this, "networks", false);
   public get networks() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('networks');
+    return this._networks;
   }
-  public set networks(value: GoogleDnsResponsePolicyNetworks[] | cdktf.IResolvable) {
-    this._networks = value;
+  public putNetworks(value: GoogleDnsResponsePolicyNetworks[] | cdktf.IResolvable) {
+    this._networks.internalValue = value;
   }
   public resetNetworks() {
-    this._networks = undefined;
+    this._networks.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get networksInput() {
-    return this._networks;
+    return this._networks.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -312,9 +417,10 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       response_policy_name: cdktf.stringToTerraform(this._responsePolicyName),
-      networks: cdktf.listMapper(googleDnsResponsePolicyNetworksToTerraform)(this._networks),
+      networks: cdktf.listMapper(googleDnsResponsePolicyNetworksToTerraform)(this._networks.internalValue),
       timeouts: googleDnsResponsePolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
