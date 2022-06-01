@@ -254,6 +254,7 @@ export * from './google-data-loss-prevention-job-trigger';
 export * from './google-data-loss-prevention-stored-info-type';
 export * from './google-dataflow-flex-template-job';
 export * from './google-dataflow-job';
+export * from './google-dataplex-lake';
 export * from './google-dataproc-autoscaling-policy';
 export * from './google-dataproc-cluster';
 export * from './google-dataproc-cluster-iam-binding';
@@ -656,6 +657,8 @@ export * from './data-google-storage-bucket-object-content';
 export * from './data-google-storage-object-signed-url';
 export * from './data-google-storage-project-service-account';
 export * from './data-google-storage-transfer-project-service-account';
+export * from './data-google-tags-tag-key';
+export * from './data-google-tags-tag-value';
 export * from './data-google-tpu-tensorflow-versions';
 export * from './google-beta-provider';
 

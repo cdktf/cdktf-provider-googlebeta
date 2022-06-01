@@ -180,6 +180,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly dataflowCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#dataplex_custom_endpoint GoogleBetaProvider#dataplex_custom_endpoint}
+  */
+  readonly dataplexCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#dataproc_custom_endpoint GoogleBetaProvider#dataproc_custom_endpoint}
   */
   readonly dataprocCustomEndpoint?: string;
@@ -521,7 +525,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.22.0',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'
@@ -569,6 +573,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._dataFusionCustomEndpoint = config.dataFusionCustomEndpoint;
     this._dataLossPreventionCustomEndpoint = config.dataLossPreventionCustomEndpoint;
     this._dataflowCustomEndpoint = config.dataflowCustomEndpoint;
+    this._dataplexCustomEndpoint = config.dataplexCustomEndpoint;
     this._dataprocCustomEndpoint = config.dataprocCustomEndpoint;
     this._dataprocMetastoreCustomEndpoint = config.dataprocMetastoreCustomEndpoint;
     this._datastoreCustomEndpoint = config.datastoreCustomEndpoint;
@@ -1333,6 +1338,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get dataflowCustomEndpointInput() {
     return this._dataflowCustomEndpoint;
+  }
+
+  // dataplex_custom_endpoint - computed: false, optional: true, required: false
+  private _dataplexCustomEndpoint?: string; 
+  public get dataplexCustomEndpoint() {
+    return this._dataplexCustomEndpoint;
+  }
+  public set dataplexCustomEndpoint(value: string | undefined) {
+    this._dataplexCustomEndpoint = value;
+  }
+  public resetDataplexCustomEndpoint() {
+    this._dataplexCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataplexCustomEndpointInput() {
+    return this._dataplexCustomEndpoint;
   }
 
   // dataproc_custom_endpoint - computed: false, optional: true, required: false
@@ -2536,6 +2557,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       data_fusion_custom_endpoint: cdktf.stringToTerraform(this._dataFusionCustomEndpoint),
       data_loss_prevention_custom_endpoint: cdktf.stringToTerraform(this._dataLossPreventionCustomEndpoint),
       dataflow_custom_endpoint: cdktf.stringToTerraform(this._dataflowCustomEndpoint),
+      dataplex_custom_endpoint: cdktf.stringToTerraform(this._dataplexCustomEndpoint),
       dataproc_custom_endpoint: cdktf.stringToTerraform(this._dataprocCustomEndpoint),
       dataproc_metastore_custom_endpoint: cdktf.stringToTerraform(this._dataprocMetastoreCustomEndpoint),
       datastore_custom_endpoint: cdktf.stringToTerraform(this._datastoreCustomEndpoint),
