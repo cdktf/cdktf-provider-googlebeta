@@ -181,7 +181,7 @@ export class GooglePrivatecaCaPoolIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_privateca_ca_pool_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
