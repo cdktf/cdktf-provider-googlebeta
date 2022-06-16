@@ -190,6 +190,11 @@ export class DataGoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReferen
     return this.getBooleanAttribute('include_host');
   }
 
+  // include_named_cookies - computed: true, optional: false, required: false
+  public get includeNamedCookies() {
+    return this.getListAttribute('include_named_cookies');
+  }
+
   // include_protocol - computed: true, optional: false, required: false
   public get includeProtocol() {
     return this.getBooleanAttribute('include_protocol');
@@ -1275,7 +1280,7 @@ export class DataGoogleComputeBackendService extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_backend_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

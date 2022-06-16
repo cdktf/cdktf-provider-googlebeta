@@ -730,6 +730,12 @@ export interface GoogleComputeRegionBackendServiceCdnPolicyCacheKeyPolicy {
   */
   readonly includeHost?: boolean | cdktf.IResolvable;
   /**
+  * Names of cookies to include in cache keys.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_backend_service#include_named_cookies GoogleComputeRegionBackendService#include_named_cookies}
+  */
+  readonly includeNamedCookies?: string[];
+  /**
   * If true, http and https requests will be cached separately.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_backend_service#include_protocol GoogleComputeRegionBackendService#include_protocol}
@@ -778,6 +784,7 @@ export function googleComputeRegionBackendServiceCdnPolicyCacheKeyPolicyToTerraf
   }
   return {
     include_host: cdktf.booleanToTerraform(struct!.includeHost),
+    include_named_cookies: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includeNamedCookies),
     include_protocol: cdktf.booleanToTerraform(struct!.includeProtocol),
     include_query_string: cdktf.booleanToTerraform(struct!.includeQueryString),
     query_string_blacklist: cdktf.listMapper(cdktf.stringToTerraform)(struct!.queryStringBlacklist),
@@ -803,6 +810,10 @@ export class GoogleComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
       hasAnyValues = true;
       internalValueResult.includeHost = this._includeHost;
     }
+    if (this._includeNamedCookies !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeNamedCookies = this._includeNamedCookies;
+    }
     if (this._includeProtocol !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeProtocol = this._includeProtocol;
@@ -826,6 +837,7 @@ export class GoogleComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
     if (value === undefined) {
       this.isEmptyObject = false;
       this._includeHost = undefined;
+      this._includeNamedCookies = undefined;
       this._includeProtocol = undefined;
       this._includeQueryString = undefined;
       this._queryStringBlacklist = undefined;
@@ -834,6 +846,7 @@ export class GoogleComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._includeHost = value.includeHost;
+      this._includeNamedCookies = value.includeNamedCookies;
       this._includeProtocol = value.includeProtocol;
       this._includeQueryString = value.includeQueryString;
       this._queryStringBlacklist = value.queryStringBlacklist;
@@ -855,6 +868,22 @@ export class GoogleComputeRegionBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
   // Temporarily expose input value. Use with caution.
   public get includeHostInput() {
     return this._includeHost;
+  }
+
+  // include_named_cookies - computed: false, optional: true, required: false
+  private _includeNamedCookies?: string[]; 
+  public get includeNamedCookies() {
+    return this.getListAttribute('include_named_cookies');
+  }
+  public set includeNamedCookies(value: string[]) {
+    this._includeNamedCookies = value;
+  }
+  public resetIncludeNamedCookies() {
+    this._includeNamedCookies = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeNamedCookiesInput() {
+    return this._includeNamedCookies;
   }
 
   // include_protocol - computed: false, optional: true, required: false
@@ -3308,7 +3337,7 @@ export class GoogleComputeRegionBackendService extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_region_backend_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

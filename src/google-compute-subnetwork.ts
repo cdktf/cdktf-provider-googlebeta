@@ -34,7 +34,7 @@ non-overlapping within a network. Only IPv4 is supported.
   /**
   * The access type of IPv6 address this subnet holds. It's immutable and can only be specified during creation
 or the first time the subnet is updated into IPV4_IPV6 dual stack. If the ipv6_type is EXTERNAL then this subnet
-cannot enable direct path. Possible values: ["EXTERNAL"]
+cannot enable direct path. Possible values: ["EXTERNAL", "INTERNAL"]
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_subnetwork#ipv6_access_type GoogleComputeSubnetwork#ipv6_access_type}
   */
@@ -611,7 +611,7 @@ export class GoogleComputeSubnetwork extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_subnetwork',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
