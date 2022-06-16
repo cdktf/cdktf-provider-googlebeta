@@ -1604,7 +1604,7 @@ export class GoogleContainerAzureCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_azure_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

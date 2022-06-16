@@ -390,6 +390,12 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputRef
 }
 export interface GoogleGkeHubFeatureMembershipConfigmanagementConfigSync {
   /**
+  * Set to true to enable the Config Sync admission webhook to prevent drifts. If set to `false`, disables the Config Sync admission webhook and does not prevent drifts.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#prevent_drift GoogleGkeHubFeatureMembership#prevent_drift}
+  */
+  readonly preventDrift?: boolean | cdktf.IResolvable;
+  /**
   * Specifies whether the Config Sync Repo is in "hierarchical" or "unstructured" mode.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#source_format GoogleGkeHubFeatureMembership#source_format}
@@ -409,6 +415,7 @@ export function googleGkeHubFeatureMembershipConfigmanagementConfigSyncToTerrafo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    prevent_drift: cdktf.booleanToTerraform(struct!.preventDrift),
     source_format: cdktf.stringToTerraform(struct!.sourceFormat),
     git: googleGkeHubFeatureMembershipConfigmanagementConfigSyncGitToTerraform(struct!.git),
   }
@@ -428,6 +435,10 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
   public get internalValue(): GoogleGkeHubFeatureMembershipConfigmanagementConfigSync | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._preventDrift !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preventDrift = this._preventDrift;
+    }
     if (this._sourceFormat !== undefined) {
       hasAnyValues = true;
       internalValueResult.sourceFormat = this._sourceFormat;
@@ -442,14 +453,32 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
   public set internalValue(value: GoogleGkeHubFeatureMembershipConfigmanagementConfigSync | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._preventDrift = undefined;
       this._sourceFormat = undefined;
       this._git.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._preventDrift = value.preventDrift;
       this._sourceFormat = value.sourceFormat;
       this._git.internalValue = value.git;
     }
+  }
+
+  // prevent_drift - computed: true, optional: true, required: false
+  private _preventDrift?: boolean | cdktf.IResolvable; 
+  public get preventDrift() {
+    return this.getBooleanAttribute('prevent_drift');
+  }
+  public set preventDrift(value: boolean | cdktf.IResolvable) {
+    this._preventDrift = value;
+  }
+  public resetPreventDrift() {
+    this._preventDrift = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preventDriftInput() {
+    return this._preventDrift;
   }
 
   // source_format - computed: false, optional: true, required: false
@@ -1160,7 +1189,7 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_feature_membership',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

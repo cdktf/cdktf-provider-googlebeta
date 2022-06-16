@@ -1216,7 +1216,7 @@ export class GoogleDnsManagedZone extends cdktf.TerraformResource {
       terraformResourceType: 'google_dns_managed_zone',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1244,6 +1244,11 @@ export class GoogleDnsManagedZone extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // creation_time - computed: true, optional: false, required: false
+  public get creationTime() {
+    return this.getStringAttribute('creation_time');
+  }
 
   // description - computed: false, optional: true, required: false
   private _description?: string; 
@@ -1320,6 +1325,11 @@ export class GoogleDnsManagedZone extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get labelsInput() {
     return this._labels;
+  }
+
+  // managed_zone_id - computed: true, optional: false, required: false
+  public get managedZoneId() {
+    return this.getNumberAttribute('managed_zone_id');
   }
 
   // name - computed: false, optional: false, required: true
