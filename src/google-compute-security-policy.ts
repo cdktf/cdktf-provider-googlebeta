@@ -45,6 +45,12 @@ export interface GoogleComputeSecurityPolicyConfig extends cdktf.TerraformMetaAr
   */
   readonly adaptiveProtectionConfig?: GoogleComputeSecurityPolicyAdaptiveProtectionConfig;
   /**
+  * advanced_options_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#advanced_options_config GoogleComputeSecurityPolicy#advanced_options_config}
+  */
+  readonly advancedOptionsConfig?: GoogleComputeSecurityPolicyAdvancedOptionsConfig;
+  /**
   * rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#rule GoogleComputeSecurityPolicy#rule}
@@ -218,6 +224,102 @@ export class GoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference 
   // Temporarily expose input value. Use with caution.
   public get layer7DdosDefenseConfigInput() {
     return this._layer7DdosDefenseConfig.internalValue;
+  }
+}
+export interface GoogleComputeSecurityPolicyAdvancedOptionsConfig {
+  /**
+  * JSON body parsing. Supported values include: "DISABLED", "STANDARD".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#json_parsing GoogleComputeSecurityPolicy#json_parsing}
+  */
+  readonly jsonParsing?: string;
+  /**
+  * Logging level. Supported values include: "NORMAL", "VERBOSE".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#log_level GoogleComputeSecurityPolicy#log_level}
+  */
+  readonly logLevel?: string;
+}
+
+export function googleComputeSecurityPolicyAdvancedOptionsConfigToTerraform(struct?: GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference | GoogleComputeSecurityPolicyAdvancedOptionsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    json_parsing: cdktf.stringToTerraform(struct!.jsonParsing),
+    log_level: cdktf.stringToTerraform(struct!.logLevel),
+  }
+}
+
+export class GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyAdvancedOptionsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._jsonParsing !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.jsonParsing = this._jsonParsing;
+    }
+    if (this._logLevel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.logLevel = this._logLevel;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyAdvancedOptionsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._jsonParsing = undefined;
+      this._logLevel = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._jsonParsing = value.jsonParsing;
+      this._logLevel = value.logLevel;
+    }
+  }
+
+  // json_parsing - computed: true, optional: true, required: false
+  private _jsonParsing?: string; 
+  public get jsonParsing() {
+    return this.getStringAttribute('json_parsing');
+  }
+  public set jsonParsing(value: string) {
+    this._jsonParsing = value;
+  }
+  public resetJsonParsing() {
+    this._jsonParsing = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get jsonParsingInput() {
+    return this._jsonParsing;
+  }
+
+  // log_level - computed: true, optional: true, required: false
+  private _logLevel?: string; 
+  public get logLevel() {
+    return this.getStringAttribute('log_level');
+  }
+  public set logLevel(value: string) {
+    this._logLevel = value;
+  }
+  public resetLogLevel() {
+    this._logLevel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get logLevelInput() {
+    return this._logLevel;
   }
 }
 export interface GoogleComputeSecurityPolicyRuleMatchConfig {
@@ -1520,7 +1622,7 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1534,6 +1636,7 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
     this._project = config.project;
     this._type = config.type;
     this._adaptiveProtectionConfig.internalValue = config.adaptiveProtectionConfig;
+    this._advancedOptionsConfig.internalValue = config.advancedOptionsConfig;
     this._rule.internalValue = config.rule;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -1645,6 +1748,22 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
     return this._adaptiveProtectionConfig.internalValue;
   }
 
+  // advanced_options_config - computed: false, optional: true, required: false
+  private _advancedOptionsConfig = new GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference(this, "advanced_options_config");
+  public get advancedOptionsConfig() {
+    return this._advancedOptionsConfig;
+  }
+  public putAdvancedOptionsConfig(value: GoogleComputeSecurityPolicyAdvancedOptionsConfig) {
+    this._advancedOptionsConfig.internalValue = value;
+  }
+  public resetAdvancedOptionsConfig() {
+    this._advancedOptionsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get advancedOptionsConfigInput() {
+    return this._advancedOptionsConfig.internalValue;
+  }
+
   // rule - computed: false, optional: true, required: false
   private _rule = new GoogleComputeSecurityPolicyRuleList(this, "rule", true);
   public get rule() {
@@ -1689,6 +1808,7 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       type: cdktf.stringToTerraform(this._type),
       adaptive_protection_config: googleComputeSecurityPolicyAdaptiveProtectionConfigToTerraform(this._adaptiveProtectionConfig.internalValue),
+      advanced_options_config: googleComputeSecurityPolicyAdvancedOptionsConfigToTerraform(this._advancedOptionsConfig.internalValue),
       rule: cdktf.listMapper(googleComputeSecurityPolicyRuleToTerraform)(this._rule.internalValue),
       timeouts: googleComputeSecurityPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -3520,13 +3520,83 @@ export class GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference
     return this._cidrBlocks.internalValue;
   }
 }
+export interface GoogleContainerClusterMonitoringConfigManagedPrometheus {
+  /**
+  * Whether or not the managed collection is enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+}
+
+export function googleContainerClusterMonitoringConfigManagedPrometheusToTerraform(struct?: GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference | GoogleContainerClusterMonitoringConfigManagedPrometheus): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterMonitoringConfigManagedPrometheus | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterMonitoringConfigManagedPrometheus | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
 export interface GoogleContainerClusterMonitoringConfig {
   /**
   * GKE components exposing metrics. Valid values include SYSTEM_COMPONENTS and WORKLOADS.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enable_components GoogleContainerCluster#enable_components}
   */
-  readonly enableComponents: string[];
+  readonly enableComponents?: string[];
+  /**
+  * managed_prometheus block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#managed_prometheus GoogleContainerCluster#managed_prometheus}
+  */
+  readonly managedPrometheus?: GoogleContainerClusterMonitoringConfigManagedPrometheus;
 }
 
 export function googleContainerClusterMonitoringConfigToTerraform(struct?: GoogleContainerClusterMonitoringConfigOutputReference | GoogleContainerClusterMonitoringConfig): any {
@@ -3536,6 +3606,7 @@ export function googleContainerClusterMonitoringConfigToTerraform(struct?: Googl
   }
   return {
     enable_components: cdktf.listMapper(cdktf.stringToTerraform)(struct!.enableComponents),
+    managed_prometheus: googleContainerClusterMonitoringConfigManagedPrometheusToTerraform(struct!.managedPrometheus),
   }
 }
 
@@ -3557,6 +3628,10 @@ export class GoogleContainerClusterMonitoringConfigOutputReference extends cdktf
       hasAnyValues = true;
       internalValueResult.enableComponents = this._enableComponents;
     }
+    if (this._managedPrometheus?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.managedPrometheus = this._managedPrometheus?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -3564,14 +3639,16 @@ export class GoogleContainerClusterMonitoringConfigOutputReference extends cdktf
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enableComponents = undefined;
+      this._managedPrometheus.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enableComponents = value.enableComponents;
+      this._managedPrometheus.internalValue = value.managedPrometheus;
     }
   }
 
-  // enable_components - computed: false, optional: false, required: true
+  // enable_components - computed: true, optional: true, required: false
   private _enableComponents?: string[]; 
   public get enableComponents() {
     return this.getListAttribute('enable_components');
@@ -3579,9 +3656,28 @@ export class GoogleContainerClusterMonitoringConfigOutputReference extends cdktf
   public set enableComponents(value: string[]) {
     this._enableComponents = value;
   }
+  public resetEnableComponents() {
+    this._enableComponents = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get enableComponentsInput() {
     return this._enableComponents;
+  }
+
+  // managed_prometheus - computed: false, optional: true, required: false
+  private _managedPrometheus = new GoogleContainerClusterMonitoringConfigManagedPrometheusOutputReference(this, "managed_prometheus");
+  public get managedPrometheus() {
+    return this._managedPrometheus;
+  }
+  public putManagedPrometheus(value: GoogleContainerClusterMonitoringConfigManagedPrometheus) {
+    this._managedPrometheus.internalValue = value;
+  }
+  public resetManagedPrometheus() {
+    this._managedPrometheus.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedPrometheusInput() {
+    return this._managedPrometheus.internalValue;
   }
 }
 export interface GoogleContainerClusterNetworkPolicy {
@@ -8949,7 +9045,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

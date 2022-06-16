@@ -21,7 +21,7 @@ export interface GoogleComputeInstanceGroupConfig extends cdktf.TerraformMetaArg
   */
   readonly id?: string;
   /**
-  * List of instances in the group. They should be given as self_link URLs. When adding instances they must all be in the same network and zone as the instance group.
+  * The list of instances in the group, in self_link format. When adding instances they must all be in the same network and zone as the instance group.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group#instances GoogleComputeInstanceGroup#instances}
   */
@@ -341,7 +341,7 @@ export class GoogleComputeInstanceGroup extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

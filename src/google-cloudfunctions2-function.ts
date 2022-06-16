@@ -777,6 +777,12 @@ Retried execution is charged as any other execution. Possible values: ["RETRY_PO
   */
   readonly retryPolicy?: string;
   /**
+  * The email of the service account for this function.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudfunctions2_function#service_account_email GoogleCloudfunctions2Function#service_account_email}
+  */
+  readonly serviceAccountEmail?: string;
+  /**
   * The region that the trigger will be in. The trigger will only receive
 events originating in this region. It can be the same
 region as the function, a different region or multi-region, or the global
@@ -796,6 +802,7 @@ export function googleCloudfunctions2FunctionEventTriggerToTerraform(struct?: Go
     event_type: cdktf.stringToTerraform(struct!.eventType),
     pubsub_topic: cdktf.stringToTerraform(struct!.pubsubTopic),
     retry_policy: cdktf.stringToTerraform(struct!.retryPolicy),
+    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
     trigger_region: cdktf.stringToTerraform(struct!.triggerRegion),
   }
 }
@@ -826,6 +833,10 @@ export class GoogleCloudfunctions2FunctionEventTriggerOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.retryPolicy = this._retryPolicy;
     }
+    if (this._serviceAccountEmail !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceAccountEmail = this._serviceAccountEmail;
+    }
     if (this._triggerRegion !== undefined) {
       hasAnyValues = true;
       internalValueResult.triggerRegion = this._triggerRegion;
@@ -839,6 +850,7 @@ export class GoogleCloudfunctions2FunctionEventTriggerOutputReference extends cd
       this._eventType = undefined;
       this._pubsubTopic = undefined;
       this._retryPolicy = undefined;
+      this._serviceAccountEmail = undefined;
       this._triggerRegion = undefined;
     }
     else {
@@ -846,6 +858,7 @@ export class GoogleCloudfunctions2FunctionEventTriggerOutputReference extends cd
       this._eventType = value.eventType;
       this._pubsubTopic = value.pubsubTopic;
       this._retryPolicy = value.retryPolicy;
+      this._serviceAccountEmail = value.serviceAccountEmail;
       this._triggerRegion = value.triggerRegion;
     }
   }
@@ -898,9 +911,20 @@ export class GoogleCloudfunctions2FunctionEventTriggerOutputReference extends cd
     return this._retryPolicy;
   }
 
-  // service_account_email - computed: true, optional: false, required: false
+  // service_account_email - computed: true, optional: true, required: false
+  private _serviceAccountEmail?: string; 
   public get serviceAccountEmail() {
     return this.getStringAttribute('service_account_email');
+  }
+  public set serviceAccountEmail(value: string) {
+    this._serviceAccountEmail = value;
+  }
+  public resetServiceAccountEmail() {
+    this._serviceAccountEmail = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAccountEmailInput() {
+    return this._serviceAccountEmail;
   }
 
   // trigger - computed: true, optional: false, required: false
@@ -972,6 +996,12 @@ given time.
   */
   readonly service?: string;
   /**
+  * The email of the service account for this function.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudfunctions2_function#service_account_email GoogleCloudfunctions2Function#service_account_email}
+  */
+  readonly serviceAccountEmail?: string;
+  /**
   * The function execution timeout. Execution is considered failed and
 can be terminated if the function is not completed at the end of the
 timeout period. Defaults to 60 seconds.
@@ -1006,6 +1036,7 @@ export function googleCloudfunctions2FunctionServiceConfigToTerraform(struct?: G
     max_instance_count: cdktf.numberToTerraform(struct!.maxInstanceCount),
     min_instance_count: cdktf.numberToTerraform(struct!.minInstanceCount),
     service: cdktf.stringToTerraform(struct!.service),
+    service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
     timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
     vpc_connector: cdktf.stringToTerraform(struct!.vpcConnector),
     vpc_connector_egress_settings: cdktf.stringToTerraform(struct!.vpcConnectorEgressSettings),
@@ -1054,6 +1085,10 @@ export class GoogleCloudfunctions2FunctionServiceConfigOutputReference extends c
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
+    if (this._serviceAccountEmail !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceAccountEmail = this._serviceAccountEmail;
+    }
     if (this._timeoutSeconds !== undefined) {
       hasAnyValues = true;
       internalValueResult.timeoutSeconds = this._timeoutSeconds;
@@ -1079,6 +1114,7 @@ export class GoogleCloudfunctions2FunctionServiceConfigOutputReference extends c
       this._maxInstanceCount = undefined;
       this._minInstanceCount = undefined;
       this._service = undefined;
+      this._serviceAccountEmail = undefined;
       this._timeoutSeconds = undefined;
       this._vpcConnector = undefined;
       this._vpcConnectorEgressSettings = undefined;
@@ -1092,6 +1128,7 @@ export class GoogleCloudfunctions2FunctionServiceConfigOutputReference extends c
       this._maxInstanceCount = value.maxInstanceCount;
       this._minInstanceCount = value.minInstanceCount;
       this._service = value.service;
+      this._serviceAccountEmail = value.serviceAccountEmail;
       this._timeoutSeconds = value.timeoutSeconds;
       this._vpcConnector = value.vpcConnector;
       this._vpcConnectorEgressSettings = value.vpcConnectorEgressSettings;
@@ -1215,9 +1252,20 @@ export class GoogleCloudfunctions2FunctionServiceConfigOutputReference extends c
     return this._service;
   }
 
-  // service_account_email - computed: true, optional: false, required: false
+  // service_account_email - computed: true, optional: true, required: false
+  private _serviceAccountEmail?: string; 
   public get serviceAccountEmail() {
     return this.getStringAttribute('service_account_email');
+  }
+  public set serviceAccountEmail(value: string) {
+    this._serviceAccountEmail = value;
+  }
+  public resetServiceAccountEmail() {
+    this._serviceAccountEmail = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceAccountEmailInput() {
+    return this._serviceAccountEmail;
   }
 
   // timeout_seconds - computed: false, optional: true, required: false
@@ -1429,7 +1477,7 @@ export class GoogleCloudfunctions2Function extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudfunctions2_function',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.24.0',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
