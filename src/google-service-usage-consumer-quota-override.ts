@@ -218,7 +218,7 @@ export class GoogleServiceUsageConsumerQuotaOverride extends cdktf.TerraformReso
       terraformResourceType: 'google_service_usage_consumer_quota_override',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -321,6 +321,12 @@ export interface GoogleContainerClusterConfig extends cdktf.TerraformMetaArgumen
   */
   readonly timeouts?: GoogleContainerClusterTimeouts;
   /**
+  * tpu_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#tpu_config GoogleContainerCluster#tpu_config}
+  */
+  readonly tpuConfig?: GoogleContainerClusterTpuConfig;
+  /**
   * vertical_pod_autoscaling block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#vertical_pod_autoscaling GoogleContainerCluster#vertical_pod_autoscaling}
@@ -8887,6 +8893,104 @@ export class GoogleContainerClusterTimeoutsOutputReference extends cdktf.Complex
     return this._update;
   }
 }
+export interface GoogleContainerClusterTpuConfig {
+  /**
+  * Whether Cloud TPU integration is enabled or not
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+  /**
+  * Whether to use service networking for Cloud TPU or not
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#use_service_networking GoogleContainerCluster#use_service_networking}
+  */
+  readonly useServiceNetworking?: boolean | cdktf.IResolvable;
+}
+
+export function googleContainerClusterTpuConfigToTerraform(struct?: GoogleContainerClusterTpuConfigOutputReference | GoogleContainerClusterTpuConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    use_service_networking: cdktf.booleanToTerraform(struct!.useServiceNetworking),
+  }
+}
+
+export class GoogleContainerClusterTpuConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterTpuConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._useServiceNetworking !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useServiceNetworking = this._useServiceNetworking;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterTpuConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._useServiceNetworking = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._useServiceNetworking = value.useServiceNetworking;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // ipv4_cidr_block - computed: true, optional: false, required: false
+  public get ipv4CidrBlock() {
+    return this.getStringAttribute('ipv4_cidr_block');
+  }
+
+  // use_service_networking - computed: false, optional: true, required: false
+  private _useServiceNetworking?: boolean | cdktf.IResolvable; 
+  public get useServiceNetworking() {
+    return this.getBooleanAttribute('use_service_networking');
+  }
+  public set useServiceNetworking(value: boolean | cdktf.IResolvable) {
+    this._useServiceNetworking = value;
+  }
+  public resetUseServiceNetworking() {
+    this._useServiceNetworking = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useServiceNetworkingInput() {
+    return this._useServiceNetworking;
+  }
+}
 export interface GoogleContainerClusterVerticalPodAutoscaling {
   /**
   * Enables vertical pod autoscaling.
@@ -9045,7 +9149,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -9105,6 +9209,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     this._releaseChannel.internalValue = config.releaseChannel;
     this._resourceUsageExportConfig.internalValue = config.resourceUsageExportConfig;
     this._timeouts.internalValue = config.timeouts;
+    this._tpuConfig.internalValue = config.tpuConfig;
     this._verticalPodAutoscaling.internalValue = config.verticalPodAutoscaling;
     this._workloadIdentityConfig.internalValue = config.workloadIdentityConfig;
   }
@@ -9289,7 +9394,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     return this._enableShieldedNodes;
   }
 
-  // enable_tpu - computed: false, optional: true, required: false
+  // enable_tpu - computed: true, optional: true, required: false
   private _enableTpu?: boolean | cdktf.IResolvable; 
   public get enableTpu() {
     return this.getBooleanAttribute('enable_tpu');
@@ -9977,6 +10082,22 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // tpu_config - computed: false, optional: true, required: false
+  private _tpuConfig = new GoogleContainerClusterTpuConfigOutputReference(this, "tpu_config");
+  public get tpuConfig() {
+    return this._tpuConfig;
+  }
+  public putTpuConfig(value: GoogleContainerClusterTpuConfig) {
+    this._tpuConfig.internalValue = value;
+  }
+  public resetTpuConfig() {
+    this._tpuConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tpuConfigInput() {
+    return this._tpuConfig.internalValue;
+  }
+
   // vertical_pod_autoscaling - computed: false, optional: true, required: false
   private _verticalPodAutoscaling = new GoogleContainerClusterVerticalPodAutoscalingOutputReference(this, "vertical_pod_autoscaling");
   public get verticalPodAutoscaling() {
@@ -10067,6 +10188,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       release_channel: googleContainerClusterReleaseChannelToTerraform(this._releaseChannel.internalValue),
       resource_usage_export_config: googleContainerClusterResourceUsageExportConfigToTerraform(this._resourceUsageExportConfig.internalValue),
       timeouts: googleContainerClusterTimeoutsToTerraform(this._timeouts.internalValue),
+      tpu_config: googleContainerClusterTpuConfigToTerraform(this._tpuConfig.internalValue),
       vertical_pod_autoscaling: googleContainerClusterVerticalPodAutoscalingToTerraform(this._verticalPodAutoscaling.internalValue),
       workload_identity_config: googleContainerClusterWorkloadIdentityConfigToTerraform(this._workloadIdentityConfig.internalValue),
     };

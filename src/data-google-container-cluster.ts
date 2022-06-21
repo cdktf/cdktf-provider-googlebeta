@@ -5346,6 +5346,80 @@ export class DataGoogleContainerClusterResourceUsageExportConfigList extends cdk
     return new DataGoogleContainerClusterResourceUsageExportConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleContainerClusterTpuConfig {
+}
+
+export function dataGoogleContainerClusterTpuConfigToTerraform(struct?: DataGoogleContainerClusterTpuConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleContainerClusterTpuConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleContainerClusterTpuConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleContainerClusterTpuConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // ipv4_cidr_block - computed: true, optional: false, required: false
+  public get ipv4CidrBlock() {
+    return this.getStringAttribute('ipv4_cidr_block');
+  }
+
+  // use_service_networking - computed: true, optional: false, required: false
+  public get useServiceNetworking() {
+    return this.getBooleanAttribute('use_service_networking');
+  }
+}
+
+export class DataGoogleContainerClusterTpuConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleContainerClusterTpuConfigOutputReference {
+    return new DataGoogleContainerClusterTpuConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleContainerClusterVerticalPodAutoscaling {
 }
 
@@ -5501,7 +5575,7 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -5867,6 +5941,12 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
   // subnetwork - computed: true, optional: false, required: false
   public get subnetwork() {
     return this.getStringAttribute('subnetwork');
+  }
+
+  // tpu_config - computed: true, optional: false, required: false
+  private _tpuConfig = new DataGoogleContainerClusterTpuConfigList(this, "tpu_config", false);
+  public get tpuConfig() {
+    return this._tpuConfig;
   }
 
   // tpu_ipv4_cidr_block - computed: true, optional: false, required: false

@@ -55,11 +55,23 @@ export interface GoogleApiGatewayApiConfigAConfig extends cdktf.TerraformMetaArg
   */
   readonly gatewayConfig?: GoogleApiGatewayApiConfigGatewayConfig;
   /**
+  * grpc_services block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#grpc_services GoogleApiGatewayApiConfigA#grpc_services}
+  */
+  readonly grpcServices?: GoogleApiGatewayApiConfigGrpcServices[] | cdktf.IResolvable;
+  /**
+  * managed_service_configs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#managed_service_configs GoogleApiGatewayApiConfigA#managed_service_configs}
+  */
+  readonly managedServiceConfigs?: GoogleApiGatewayApiConfigManagedServiceConfigs[] | cdktf.IResolvable;
+  /**
   * openapi_documents block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#openapi_documents GoogleApiGatewayApiConfigA#openapi_documents}
   */
-  readonly openapiDocuments: GoogleApiGatewayApiConfigOpenapiDocuments[] | cdktf.IResolvable;
+  readonly openapiDocuments?: GoogleApiGatewayApiConfigOpenapiDocuments[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -194,6 +206,465 @@ export class GoogleApiGatewayApiConfigGatewayConfigOutputReference extends cdktf
   // Temporarily expose input value. Use with caution.
   public get backendConfigInput() {
     return this._backendConfig.internalValue;
+  }
+}
+export interface GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet {
+  /**
+  * Base64 encoded content of the file.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
+  */
+  readonly contents: string;
+  /**
+  * The file path (full or relative path). This is typically the path of the file when it is uploaded.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
+  */
+  readonly path: string;
+}
+
+export function googleApiGatewayApiConfigGrpcServicesFileDescriptorSetToTerraform(struct?: GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference | GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    contents: cdktf.stringToTerraform(struct!.contents),
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
+export class GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._contents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contents = this._contents;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._contents = undefined;
+      this._path = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._contents = value.contents;
+      this._path = value.path;
+    }
+  }
+
+  // contents - computed: false, optional: false, required: true
+  private _contents?: string; 
+  public get contents() {
+    return this.getStringAttribute('contents');
+  }
+  public set contents(value: string) {
+    this._contents = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentsInput() {
+    return this._contents;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+}
+export interface GoogleApiGatewayApiConfigGrpcServicesSource {
+  /**
+  * Base64 encoded content of the file.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
+  */
+  readonly contents: string;
+  /**
+  * The file path (full or relative path). This is typically the path of the file when it is uploaded.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
+  */
+  readonly path: string;
+}
+
+export function googleApiGatewayApiConfigGrpcServicesSourceToTerraform(struct?: GoogleApiGatewayApiConfigGrpcServicesSource | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    contents: cdktf.stringToTerraform(struct!.contents),
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
+export class GoogleApiGatewayApiConfigGrpcServicesSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleApiGatewayApiConfigGrpcServicesSource | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._contents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contents = this._contents;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleApiGatewayApiConfigGrpcServicesSource | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._contents = undefined;
+      this._path = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._contents = value.contents;
+      this._path = value.path;
+    }
+  }
+
+  // contents - computed: false, optional: false, required: true
+  private _contents?: string; 
+  public get contents() {
+    return this.getStringAttribute('contents');
+  }
+  public set contents(value: string) {
+    this._contents = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentsInput() {
+    return this._contents;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+}
+
+export class GoogleApiGatewayApiConfigGrpcServicesSourceList extends cdktf.ComplexList {
+  public internalValue? : GoogleApiGatewayApiConfigGrpcServicesSource[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleApiGatewayApiConfigGrpcServicesSourceOutputReference {
+    return new GoogleApiGatewayApiConfigGrpcServicesSourceOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleApiGatewayApiConfigGrpcServices {
+  /**
+  * file_descriptor_set block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#file_descriptor_set GoogleApiGatewayApiConfigA#file_descriptor_set}
+  */
+  readonly fileDescriptorSet: GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet;
+  /**
+  * source block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#source GoogleApiGatewayApiConfigA#source}
+  */
+  readonly source?: GoogleApiGatewayApiConfigGrpcServicesSource[] | cdktf.IResolvable;
+}
+
+export function googleApiGatewayApiConfigGrpcServicesToTerraform(struct?: GoogleApiGatewayApiConfigGrpcServices | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    file_descriptor_set: googleApiGatewayApiConfigGrpcServicesFileDescriptorSetToTerraform(struct!.fileDescriptorSet),
+    source: cdktf.listMapper(googleApiGatewayApiConfigGrpcServicesSourceToTerraform)(struct!.source),
+  }
+}
+
+export class GoogleApiGatewayApiConfigGrpcServicesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleApiGatewayApiConfigGrpcServices | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._fileDescriptorSet?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fileDescriptorSet = this._fileDescriptorSet?.internalValue;
+    }
+    if (this._source?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.source = this._source?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleApiGatewayApiConfigGrpcServices | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._fileDescriptorSet.internalValue = undefined;
+      this._source.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._fileDescriptorSet.internalValue = value.fileDescriptorSet;
+      this._source.internalValue = value.source;
+    }
+  }
+
+  // file_descriptor_set - computed: false, optional: false, required: true
+  private _fileDescriptorSet = new GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReference(this, "file_descriptor_set");
+  public get fileDescriptorSet() {
+    return this._fileDescriptorSet;
+  }
+  public putFileDescriptorSet(value: GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet) {
+    this._fileDescriptorSet.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fileDescriptorSetInput() {
+    return this._fileDescriptorSet.internalValue;
+  }
+
+  // source - computed: false, optional: true, required: false
+  private _source = new GoogleApiGatewayApiConfigGrpcServicesSourceList(this, "source", false);
+  public get source() {
+    return this._source;
+  }
+  public putSource(value: GoogleApiGatewayApiConfigGrpcServicesSource[] | cdktf.IResolvable) {
+    this._source.internalValue = value;
+  }
+  public resetSource() {
+    this._source.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceInput() {
+    return this._source.internalValue;
+  }
+}
+
+export class GoogleApiGatewayApiConfigGrpcServicesList extends cdktf.ComplexList {
+  public internalValue? : GoogleApiGatewayApiConfigGrpcServices[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleApiGatewayApiConfigGrpcServicesOutputReference {
+    return new GoogleApiGatewayApiConfigGrpcServicesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleApiGatewayApiConfigManagedServiceConfigs {
+  /**
+  * Base64 encoded content of the file.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
+  */
+  readonly contents: string;
+  /**
+  * The file path (full or relative path). This is typically the path of the file when it is uploaded.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
+  */
+  readonly path: string;
+}
+
+export function googleApiGatewayApiConfigManagedServiceConfigsToTerraform(struct?: GoogleApiGatewayApiConfigManagedServiceConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    contents: cdktf.stringToTerraform(struct!.contents),
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
+export class GoogleApiGatewayApiConfigManagedServiceConfigsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleApiGatewayApiConfigManagedServiceConfigs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._contents !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contents = this._contents;
+    }
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleApiGatewayApiConfigManagedServiceConfigs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._contents = undefined;
+      this._path = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._contents = value.contents;
+      this._path = value.path;
+    }
+  }
+
+  // contents - computed: false, optional: false, required: true
+  private _contents?: string; 
+  public get contents() {
+    return this.getStringAttribute('contents');
+  }
+  public set contents(value: string) {
+    this._contents = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentsInput() {
+    return this._contents;
+  }
+
+  // path - computed: false, optional: false, required: true
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+}
+
+export class GoogleApiGatewayApiConfigManagedServiceConfigsList extends cdktf.ComplexList {
+  public internalValue? : GoogleApiGatewayApiConfigManagedServiceConfigs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleApiGatewayApiConfigManagedServiceConfigsOutputReference {
+    return new GoogleApiGatewayApiConfigManagedServiceConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface GoogleApiGatewayApiConfigOpenapiDocumentsDocument {
@@ -538,7 +1009,7 @@ export class GoogleApiGatewayApiConfigA extends cdktf.TerraformResource {
       terraformResourceType: 'google_api_gateway_api_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -554,6 +1025,8 @@ export class GoogleApiGatewayApiConfigA extends cdktf.TerraformResource {
     this._labels = config.labels;
     this._project = config.project;
     this._gatewayConfig.internalValue = config.gatewayConfig;
+    this._grpcServices.internalValue = config.grpcServices;
+    this._managedServiceConfigs.internalValue = config.managedServiceConfigs;
     this._openapiDocuments.internalValue = config.openapiDocuments;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -697,13 +1170,48 @@ export class GoogleApiGatewayApiConfigA extends cdktf.TerraformResource {
     return this._gatewayConfig.internalValue;
   }
 
-  // openapi_documents - computed: false, optional: false, required: true
+  // grpc_services - computed: false, optional: true, required: false
+  private _grpcServices = new GoogleApiGatewayApiConfigGrpcServicesList(this, "grpc_services", false);
+  public get grpcServices() {
+    return this._grpcServices;
+  }
+  public putGrpcServices(value: GoogleApiGatewayApiConfigGrpcServices[] | cdktf.IResolvable) {
+    this._grpcServices.internalValue = value;
+  }
+  public resetGrpcServices() {
+    this._grpcServices.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grpcServicesInput() {
+    return this._grpcServices.internalValue;
+  }
+
+  // managed_service_configs - computed: false, optional: true, required: false
+  private _managedServiceConfigs = new GoogleApiGatewayApiConfigManagedServiceConfigsList(this, "managed_service_configs", false);
+  public get managedServiceConfigs() {
+    return this._managedServiceConfigs;
+  }
+  public putManagedServiceConfigs(value: GoogleApiGatewayApiConfigManagedServiceConfigs[] | cdktf.IResolvable) {
+    this._managedServiceConfigs.internalValue = value;
+  }
+  public resetManagedServiceConfigs() {
+    this._managedServiceConfigs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managedServiceConfigsInput() {
+    return this._managedServiceConfigs.internalValue;
+  }
+
+  // openapi_documents - computed: false, optional: true, required: false
   private _openapiDocuments = new GoogleApiGatewayApiConfigOpenapiDocumentsList(this, "openapi_documents", false);
   public get openapiDocuments() {
     return this._openapiDocuments;
   }
   public putOpenapiDocuments(value: GoogleApiGatewayApiConfigOpenapiDocuments[] | cdktf.IResolvable) {
     this._openapiDocuments.internalValue = value;
+  }
+  public resetOpenapiDocuments() {
+    this._openapiDocuments.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get openapiDocumentsInput() {
@@ -740,6 +1248,8 @@ export class GoogleApiGatewayApiConfigA extends cdktf.TerraformResource {
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       project: cdktf.stringToTerraform(this._project),
       gateway_config: googleApiGatewayApiConfigGatewayConfigToTerraform(this._gatewayConfig.internalValue),
+      grpc_services: cdktf.listMapper(googleApiGatewayApiConfigGrpcServicesToTerraform)(this._grpcServices.internalValue),
+      managed_service_configs: cdktf.listMapper(googleApiGatewayApiConfigManagedServiceConfigsToTerraform)(this._managedServiceConfigs.internalValue),
       openapi_documents: cdktf.listMapper(googleApiGatewayApiConfigOpenapiDocumentsToTerraform)(this._openapiDocuments.internalValue),
       timeouts: googleApiGatewayApiConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };

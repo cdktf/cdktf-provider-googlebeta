@@ -2768,7 +2768,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_sql_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -2830,7 +2830,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
     return this._deletionProtection;
   }
 
-  // encryption_key_name - computed: false, optional: true, required: false
+  // encryption_key_name - computed: true, optional: true, required: false
   private _encryptionKeyName?: string; 
   public get encryptionKeyName() {
     return this.getStringAttribute('encryption_key_name');
