@@ -261,7 +261,7 @@ export class GoogleMlEngineModel extends cdktf.TerraformResource {
       terraformResourceType: 'google_ml_engine_model',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -52,6 +52,14 @@ one SSL certificate must be specified.
   */
   readonly sslCertificates: string[];
   /**
+  * A reference to the Region SslPolicy resource that will be associated with
+the TargetHttpsProxy resource. If not set, the TargetHttpsProxy
+resource will not have any SSL policy configured.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_target_https_proxy#ssl_policy GoogleComputeRegionTargetHttpsProxy#ssl_policy}
+  */
+  readonly sslPolicy?: string;
+  /**
   * A reference to the RegionUrlMap resource that defines the mapping from URL
 to the RegionBackendService.
   * 
@@ -221,7 +229,7 @@ export class GoogleComputeRegionTargetHttpsProxy extends cdktf.TerraformResource
       terraformResourceType: 'google_compute_region_target_https_proxy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -235,6 +243,7 @@ export class GoogleComputeRegionTargetHttpsProxy extends cdktf.TerraformResource
     this._project = config.project;
     this._region = config.region;
     this._sslCertificates = config.sslCertificates;
+    this._sslPolicy = config.sslPolicy;
     this._urlMap = config.urlMap;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -348,6 +357,22 @@ export class GoogleComputeRegionTargetHttpsProxy extends cdktf.TerraformResource
     return this._sslCertificates;
   }
 
+  // ssl_policy - computed: false, optional: true, required: false
+  private _sslPolicy?: string; 
+  public get sslPolicy() {
+    return this.getStringAttribute('ssl_policy');
+  }
+  public set sslPolicy(value: string) {
+    this._sslPolicy = value;
+  }
+  public resetSslPolicy() {
+    this._sslPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslPolicyInput() {
+    return this._sslPolicy;
+  }
+
   // url_map - computed: false, optional: false, required: true
   private _urlMap?: string; 
   public get urlMap() {
@@ -389,6 +414,7 @@ export class GoogleComputeRegionTargetHttpsProxy extends cdktf.TerraformResource
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
       ssl_certificates: cdktf.listMapper(cdktf.stringToTerraform)(this._sslCertificates),
+      ssl_policy: cdktf.stringToTerraform(this._sslPolicy),
       url_map: cdktf.stringToTerraform(this._urlMap),
       timeouts: googleComputeRegionTargetHttpsProxyTimeoutsToTerraform(this._timeouts.internalValue),
     };
