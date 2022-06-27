@@ -50,7 +50,7 @@ export class GoogleTagsTagKeyIamPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_tags_tag_key_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
