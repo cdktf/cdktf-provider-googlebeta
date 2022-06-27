@@ -449,7 +449,7 @@ export class GoogleComputeForwardingRule extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_forwarding_rule',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -746,6 +746,16 @@ export class GoogleComputeForwardingRule extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+
+  // psc_connection_id - computed: true, optional: false, required: false
+  public get pscConnectionId() {
+    return this.getStringAttribute('psc_connection_id');
+  }
+
+  // psc_connection_status - computed: true, optional: false, required: false
+  public get pscConnectionStatus() {
+    return this.getStringAttribute('psc_connection_status');
   }
 
   // region - computed: true, optional: true, required: false

@@ -337,7 +337,7 @@ export class GoogleCloudIdentityGroup extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_identity_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.26.0',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
