@@ -239,7 +239,10 @@ export interface GoogleComputeBackendServiceBackend {
 
 For global HTTP(S) or TCP/SSL load balancing, the default is
 UTILIZATION. Valid values are UTILIZATION, RATE (for HTTP(S))
-and CONNECTION (for TCP/SSL). Default value: "UTILIZATION" Possible values: ["UTILIZATION", "RATE", "CONNECTION"]
+and CONNECTION (for TCP/SSL).
+
+See the [Backend Services Overview](https://cloud.google.com/load-balancing/docs/backend-service#balancing-mode)
+for an explanation of load balancing modes. Default value: "UTILIZATION" Possible values: ["UTILIZATION", "RATE", "CONNECTION"]
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#balancing_mode GoogleComputeBackendService#balancing_mode}
   */
@@ -3028,7 +3031,7 @@ export class GoogleComputeBackendService extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_backend_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

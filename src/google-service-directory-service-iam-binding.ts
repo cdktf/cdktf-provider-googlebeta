@@ -173,7 +173,7 @@ export class GoogleServiceDirectoryServiceIamBinding extends cdktf.TerraformReso
       terraformResourceType: 'google_service_directory_service_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

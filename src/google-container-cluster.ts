@@ -5190,7 +5190,7 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
     return this._metadata;
   }
 
-  // min_cpu_platform - computed: false, optional: true, required: false
+  // min_cpu_platform - computed: true, optional: true, required: false
   private _minCpuPlatform?: string; 
   public get minCpuPlatform() {
     return this.getStringAttribute('min_cpu_platform');
@@ -7165,7 +7165,7 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
     return this._metadata;
   }
 
-  // min_cpu_platform - computed: false, optional: true, required: false
+  // min_cpu_platform - computed: true, optional: true, required: false
   private _minCpuPlatform?: string; 
   public get minCpuPlatform() {
     return this.getStringAttribute('min_cpu_platform');
@@ -9149,7 +9149,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
