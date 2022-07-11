@@ -1861,6 +1861,12 @@ export interface GoogleSqlDatabaseInstanceSettingsLocationPreference {
   */
   readonly followGaeApplication?: string;
   /**
+  * The preferred Compute Engine zone for the secondary/failover
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#secondary_zone GoogleSqlDatabaseInstance#secondary_zone}
+  */
+  readonly secondaryZone?: string;
+  /**
   * The preferred compute engine zone.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#zone GoogleSqlDatabaseInstance#zone}
@@ -1875,6 +1881,7 @@ export function googleSqlDatabaseInstanceSettingsLocationPreferenceToTerraform(s
   }
   return {
     follow_gae_application: cdktf.stringToTerraform(struct!.followGaeApplication),
+    secondary_zone: cdktf.stringToTerraform(struct!.secondaryZone),
     zone: cdktf.stringToTerraform(struct!.zone),
   }
 }
@@ -1897,6 +1904,10 @@ export class GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference 
       hasAnyValues = true;
       internalValueResult.followGaeApplication = this._followGaeApplication;
     }
+    if (this._secondaryZone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secondaryZone = this._secondaryZone;
+    }
     if (this._zone !== undefined) {
       hasAnyValues = true;
       internalValueResult.zone = this._zone;
@@ -1908,11 +1919,13 @@ export class GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference 
     if (value === undefined) {
       this.isEmptyObject = false;
       this._followGaeApplication = undefined;
+      this._secondaryZone = undefined;
       this._zone = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._followGaeApplication = value.followGaeApplication;
+      this._secondaryZone = value.secondaryZone;
       this._zone = value.zone;
     }
   }
@@ -1931,6 +1944,22 @@ export class GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference 
   // Temporarily expose input value. Use with caution.
   public get followGaeApplicationInput() {
     return this._followGaeApplication;
+  }
+
+  // secondary_zone - computed: false, optional: true, required: false
+  private _secondaryZone?: string; 
+  public get secondaryZone() {
+    return this.getStringAttribute('secondary_zone');
+  }
+  public set secondaryZone(value: string) {
+    this._secondaryZone = value;
+  }
+  public resetSecondaryZone() {
+    this._secondaryZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondaryZoneInput() {
+    return this._secondaryZone;
   }
 
   // zone - computed: false, optional: true, required: false
@@ -2074,6 +2103,128 @@ export class GoogleSqlDatabaseInstanceSettingsMaintenanceWindowOutputReference e
     return this._updateTrack;
   }
 }
+export interface GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig {
+  /**
+  * The name of the destination bucket (e.g., gs://mybucket).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#bucket GoogleSqlDatabaseInstance#bucket}
+  */
+  readonly bucket: string;
+  /**
+  * How long to keep generated audit files. A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"..
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#retention_interval GoogleSqlDatabaseInstance#retention_interval}
+  */
+  readonly retentionInterval?: string;
+  /**
+  * How often to upload generated audit files. A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#upload_interval GoogleSqlDatabaseInstance#upload_interval}
+  */
+  readonly uploadInterval?: string;
+}
+
+export function googleSqlDatabaseInstanceSettingsSqlServerAuditConfigToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference | GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bucket: cdktf.stringToTerraform(struct!.bucket),
+    retention_interval: cdktf.stringToTerraform(struct!.retentionInterval),
+    upload_interval: cdktf.stringToTerraform(struct!.uploadInterval),
+  }
+}
+
+export class GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucket !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucket = this._bucket;
+    }
+    if (this._retentionInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.retentionInterval = this._retentionInterval;
+    }
+    if (this._uploadInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uploadInterval = this._uploadInterval;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bucket = undefined;
+      this._retentionInterval = undefined;
+      this._uploadInterval = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bucket = value.bucket;
+      this._retentionInterval = value.retentionInterval;
+      this._uploadInterval = value.uploadInterval;
+    }
+  }
+
+  // bucket - computed: false, optional: false, required: true
+  private _bucket?: string; 
+  public get bucket() {
+    return this.getStringAttribute('bucket');
+  }
+  public set bucket(value: string) {
+    this._bucket = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketInput() {
+    return this._bucket;
+  }
+
+  // retention_interval - computed: false, optional: true, required: false
+  private _retentionInterval?: string; 
+  public get retentionInterval() {
+    return this.getStringAttribute('retention_interval');
+  }
+  public set retentionInterval(value: string) {
+    this._retentionInterval = value;
+  }
+  public resetRetentionInterval() {
+    this._retentionInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get retentionIntervalInput() {
+    return this._retentionInterval;
+  }
+
+  // upload_interval - computed: false, optional: true, required: false
+  private _uploadInterval?: string; 
+  public get uploadInterval() {
+    return this.getStringAttribute('upload_interval');
+  }
+  public set uploadInterval(value: string) {
+    this._uploadInterval = value;
+  }
+  public resetUploadInterval() {
+    this._uploadInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uploadIntervalInput() {
+    return this._uploadInterval;
+  }
+}
 export interface GoogleSqlDatabaseInstanceSettings {
   /**
   * This specifies when the instance should be active. Can be either ALWAYS, NEVER or ON_DEMAND.
@@ -2182,6 +2333,12 @@ is set to true.
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#maintenance_window GoogleSqlDatabaseInstance#maintenance_window}
   */
   readonly maintenanceWindow?: GoogleSqlDatabaseInstanceSettingsMaintenanceWindow;
+  /**
+  * sql_server_audit_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#sql_server_audit_config GoogleSqlDatabaseInstance#sql_server_audit_config}
+  */
+  readonly sqlServerAuditConfig?: GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig;
 }
 
 export function googleSqlDatabaseInstanceSettingsToTerraform(struct?: GoogleSqlDatabaseInstanceSettingsOutputReference | GoogleSqlDatabaseInstanceSettings): any {
@@ -2207,6 +2364,7 @@ export function googleSqlDatabaseInstanceSettingsToTerraform(struct?: GoogleSqlD
     ip_configuration: googleSqlDatabaseInstanceSettingsIpConfigurationToTerraform(struct!.ipConfiguration),
     location_preference: googleSqlDatabaseInstanceSettingsLocationPreferenceToTerraform(struct!.locationPreference),
     maintenance_window: googleSqlDatabaseInstanceSettingsMaintenanceWindowToTerraform(struct!.maintenanceWindow),
+    sql_server_audit_config: googleSqlDatabaseInstanceSettingsSqlServerAuditConfigToTerraform(struct!.sqlServerAuditConfig),
   }
 }
 
@@ -2292,6 +2450,10 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.maintenanceWindow = this._maintenanceWindow?.internalValue;
     }
+    if (this._sqlServerAuditConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sqlServerAuditConfig = this._sqlServerAuditConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2315,6 +2477,7 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
       this._ipConfiguration.internalValue = undefined;
       this._locationPreference.internalValue = undefined;
       this._maintenanceWindow.internalValue = undefined;
+      this._sqlServerAuditConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -2335,6 +2498,7 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
       this._ipConfiguration.internalValue = value.ipConfiguration;
       this._locationPreference.internalValue = value.locationPreference;
       this._maintenanceWindow.internalValue = value.maintenanceWindow;
+      this._sqlServerAuditConfig.internalValue = value.sqlServerAuditConfig;
     }
   }
 
@@ -2611,6 +2775,22 @@ export class GoogleSqlDatabaseInstanceSettingsOutputReference extends cdktf.Comp
   public get maintenanceWindowInput() {
     return this._maintenanceWindow.internalValue;
   }
+
+  // sql_server_audit_config - computed: false, optional: true, required: false
+  private _sqlServerAuditConfig = new GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference(this, "sql_server_audit_config");
+  public get sqlServerAuditConfig() {
+    return this._sqlServerAuditConfig;
+  }
+  public putSqlServerAuditConfig(value: GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig) {
+    this._sqlServerAuditConfig.internalValue = value;
+  }
+  public resetSqlServerAuditConfig() {
+    this._sqlServerAuditConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sqlServerAuditConfigInput() {
+    return this._sqlServerAuditConfig.internalValue;
+  }
 }
 export interface GoogleSqlDatabaseInstanceTimeouts {
   /**
@@ -2768,7 +2948,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_sql_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

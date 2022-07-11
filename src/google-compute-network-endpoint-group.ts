@@ -54,7 +54,9 @@ endpoint groups (see https://cloud.google.com/load-balancing/docs/hybrid).
 Note that NON_GCP_PRIVATE_IP_PORT can only be used with Backend Services
 that 1) have the following load balancing schemes: EXTERNAL, EXTERNAL_MANAGED,
 INTERNAL_MANAGED, and INTERNAL_SELF_MANAGED and 2) support the RATE or
-CONNECTION balancing modes. Default value: "GCE_VM_IP_PORT" Possible values: ["GCE_VM_IP_PORT", "NON_GCP_PRIVATE_IP_PORT"]
+CONNECTION balancing modes.
+
+Possible values include: GCE_VM_IP, GCE_VM_IP_PORT, and NON_GCP_PRIVATE_IP_PORT. Default value: "GCE_VM_IP_PORT" Possible values: ["GCE_VM_IP", "GCE_VM_IP_PORT", "NON_GCP_PRIVATE_IP_PORT"]
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_network_endpoint_group#network_endpoint_type GoogleComputeNetworkEndpointGroup#network_endpoint_type}
   */
@@ -211,7 +213,7 @@ export class GoogleComputeNetworkEndpointGroup extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_network_endpoint_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

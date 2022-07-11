@@ -208,7 +208,7 @@ export class GoogleDataCatalogPolicyTag extends cdktf.TerraformResource {
       terraformResourceType: 'google_data_catalog_policy_tag',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.27.0',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
