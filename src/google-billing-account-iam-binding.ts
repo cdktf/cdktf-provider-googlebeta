@@ -173,7 +173,7 @@ export class GoogleBillingAccountIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_billing_account_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -731,7 +731,7 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_disk',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -925,7 +925,7 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
     return this._project;
   }
 
-  // provisioned_iops - computed: false, optional: true, required: false
+  // provisioned_iops - computed: true, optional: true, required: false
   private _provisionedIops?: number; 
   public get provisionedIops() {
     return this.getNumberAttribute('provisioned_iops');

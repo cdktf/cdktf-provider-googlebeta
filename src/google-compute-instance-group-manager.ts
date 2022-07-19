@@ -1415,7 +1415,7 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_group_manager',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

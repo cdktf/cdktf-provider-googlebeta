@@ -189,6 +189,12 @@ export interface GoogleContainerClusterConfig extends cdktf.TerraformMetaArgumen
   */
   readonly authenticatorGroupsConfig?: GoogleContainerClusterAuthenticatorGroupsConfig;
   /**
+  * binary_authorization block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#binary_authorization GoogleContainerCluster#binary_authorization}
+  */
+  readonly binaryAuthorization?: GoogleContainerClusterBinaryAuthorization;
+  /**
   * cluster_autoscaling block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#cluster_autoscaling GoogleContainerCluster#cluster_autoscaling}
@@ -1498,6 +1504,102 @@ export class GoogleContainerClusterAuthenticatorGroupsConfigOutputReference exte
   // Temporarily expose input value. Use with caution.
   public get securityGroupInput() {
     return this._securityGroup;
+  }
+}
+export interface GoogleContainerClusterBinaryAuthorization {
+  /**
+  * Enable Binary Authorization for this cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  */
+  readonly enabled?: boolean | cdktf.IResolvable;
+  /**
+  * Mode of operation for Binary Authorization policy evaluation.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#evaluation_mode GoogleContainerCluster#evaluation_mode}
+  */
+  readonly evaluationMode?: string;
+}
+
+export function googleContainerClusterBinaryAuthorizationToTerraform(struct?: GoogleContainerClusterBinaryAuthorizationOutputReference | GoogleContainerClusterBinaryAuthorization): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    evaluation_mode: cdktf.stringToTerraform(struct!.evaluationMode),
+  }
+}
+
+export class GoogleContainerClusterBinaryAuthorizationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterBinaryAuthorization | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._evaluationMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.evaluationMode = this._evaluationMode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterBinaryAuthorization | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._evaluationMode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._evaluationMode = value.evaluationMode;
+    }
+  }
+
+  // enabled - computed: false, optional: true, required: false
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // evaluation_mode - computed: false, optional: true, required: false
+  private _evaluationMode?: string; 
+  public get evaluationMode() {
+    return this.getStringAttribute('evaluation_mode');
+  }
+  public set evaluationMode(value: string) {
+    this._evaluationMode = value;
+  }
+  public resetEvaluationMode() {
+    this._evaluationMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get evaluationModeInput() {
+    return this._evaluationMode;
   }
 }
 export interface GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults {
@@ -9149,7 +9251,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -9187,6 +9289,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     this._subnetwork = config.subnetwork;
     this._addonsConfig.internalValue = config.addonsConfig;
     this._authenticatorGroupsConfig.internalValue = config.authenticatorGroupsConfig;
+    this._binaryAuthorization.internalValue = config.binaryAuthorization;
     this._clusterAutoscaling.internalValue = config.clusterAutoscaling;
     this._clusterTelemetry.internalValue = config.clusterTelemetry;
     this._confidentialNodes.internalValue = config.confidentialNodes;
@@ -9730,6 +9833,22 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     return this._authenticatorGroupsConfig.internalValue;
   }
 
+  // binary_authorization - computed: false, optional: true, required: false
+  private _binaryAuthorization = new GoogleContainerClusterBinaryAuthorizationOutputReference(this, "binary_authorization");
+  public get binaryAuthorization() {
+    return this._binaryAuthorization;
+  }
+  public putBinaryAuthorization(value: GoogleContainerClusterBinaryAuthorization) {
+    this._binaryAuthorization.internalValue = value;
+  }
+  public resetBinaryAuthorization() {
+    this._binaryAuthorization.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get binaryAuthorizationInput() {
+    return this._binaryAuthorization.internalValue;
+  }
+
   // cluster_autoscaling - computed: false, optional: true, required: false
   private _clusterAutoscaling = new GoogleContainerClusterClusterAutoscalingOutputReference(this, "cluster_autoscaling");
   public get clusterAutoscaling() {
@@ -10166,6 +10285,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       subnetwork: cdktf.stringToTerraform(this._subnetwork),
       addons_config: googleContainerClusterAddonsConfigToTerraform(this._addonsConfig.internalValue),
       authenticator_groups_config: googleContainerClusterAuthenticatorGroupsConfigToTerraform(this._authenticatorGroupsConfig.internalValue),
+      binary_authorization: googleContainerClusterBinaryAuthorizationToTerraform(this._binaryAuthorization.internalValue),
       cluster_autoscaling: googleContainerClusterClusterAutoscalingToTerraform(this._clusterAutoscaling.internalValue),
       cluster_telemetry: googleContainerClusterClusterTelemetryToTerraform(this._clusterTelemetry.internalValue),
       confidential_nodes: googleContainerClusterConfidentialNodesToTerraform(this._confidentialNodes.internalValue),

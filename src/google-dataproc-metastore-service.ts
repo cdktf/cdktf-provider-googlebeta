@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleDataprocMetastoreServiceConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The database type that the Metastore service stores its data. Default value: "MYSQL" Possible values: ["MYSQL", "SPANNER"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#database_type GoogleDataprocMetastoreService#database_type}
+  */
+  readonly databaseType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#id GoogleDataprocMetastoreService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -21,7 +27,7 @@ export interface GoogleDataprocMetastoreServiceConfig extends cdktf.TerraformMet
   */
   readonly labels?: { [key: string]: string };
   /**
-  * The  location where the autoscaling policy should reside.
+  * The location where the metastore service should reside.
 The default value is 'global'.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#location GoogleDataprocMetastoreService#location}
@@ -45,6 +51,12 @@ The default value is 'global'.
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#project GoogleDataprocMetastoreService#project}
   */
   readonly project?: string;
+  /**
+  * The release channel of the service. If unspecified, defaults to 'STABLE'. Default value: "STABLE" Possible values: ["CANARY", "STABLE"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#release_channel GoogleDataprocMetastoreService#release_channel}
+  */
+  readonly releaseChannel?: string;
   /**
   * The ID of the metastore service. The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
 and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
@@ -340,6 +352,12 @@ The mappings override system defaults (some keys cannot be overridden)
   */
   readonly configOverrides?: { [key: string]: string };
   /**
+  * The protocol to use for the metastore service endpoint. If unspecified, defaults to 'THRIFT'. Default value: "THRIFT" Possible values: ["THRIFT", "GRPC"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#endpoint_protocol GoogleDataprocMetastoreService#endpoint_protocol}
+  */
+  readonly endpointProtocol?: string;
+  /**
   * The Hive metastore schema version.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#version GoogleDataprocMetastoreService#version}
@@ -360,6 +378,7 @@ export function googleDataprocMetastoreServiceHiveMetastoreConfigToTerraform(str
   }
   return {
     config_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configOverrides),
+    endpoint_protocol: cdktf.stringToTerraform(struct!.endpointProtocol),
     version: cdktf.stringToTerraform(struct!.version),
     kerberos_config: googleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigToTerraform(struct!.kerberosConfig),
   }
@@ -383,6 +402,10 @@ export class GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference ex
       hasAnyValues = true;
       internalValueResult.configOverrides = this._configOverrides;
     }
+    if (this._endpointProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.endpointProtocol = this._endpointProtocol;
+    }
     if (this._version !== undefined) {
       hasAnyValues = true;
       internalValueResult.version = this._version;
@@ -398,12 +421,14 @@ export class GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference ex
     if (value === undefined) {
       this.isEmptyObject = false;
       this._configOverrides = undefined;
+      this._endpointProtocol = undefined;
       this._version = undefined;
       this._kerberosConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._configOverrides = value.configOverrides;
+      this._endpointProtocol = value.endpointProtocol;
       this._version = value.version;
       this._kerberosConfig.internalValue = value.kerberosConfig;
     }
@@ -423,6 +448,22 @@ export class GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference ex
   // Temporarily expose input value. Use with caution.
   public get configOverridesInput() {
     return this._configOverrides;
+  }
+
+  // endpoint_protocol - computed: false, optional: true, required: false
+  private _endpointProtocol?: string; 
+  public get endpointProtocol() {
+    return this.getStringAttribute('endpoint_protocol');
+  }
+  public set endpointProtocol(value: string) {
+    this._endpointProtocol = value;
+  }
+  public resetEndpointProtocol() {
+    this._endpointProtocol = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get endpointProtocolInput() {
+    return this._endpointProtocol;
   }
 
   // version - computed: false, optional: false, required: true
@@ -700,7 +741,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataproc_metastore_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -708,12 +749,14 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._databaseType = config.databaseType;
     this._id = config.id;
     this._labels = config.labels;
     this._location = config.location;
     this._network = config.network;
     this._port = config.port;
     this._project = config.project;
+    this._releaseChannel = config.releaseChannel;
     this._serviceId = config.serviceId;
     this._tier = config.tier;
     this._encryptionConfig.internalValue = config.encryptionConfig;
@@ -729,6 +772,22 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
   // artifact_gcs_uri - computed: true, optional: false, required: false
   public get artifactGcsUri() {
     return this.getStringAttribute('artifact_gcs_uri');
+  }
+
+  // database_type - computed: false, optional: true, required: false
+  private _databaseType?: string; 
+  public get databaseType() {
+    return this.getStringAttribute('database_type');
+  }
+  public set databaseType(value: string) {
+    this._databaseType = value;
+  }
+  public resetDatabaseType() {
+    this._databaseType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get databaseTypeInput() {
+    return this._databaseType;
   }
 
   // endpoint_uri - computed: true, optional: false, required: false
@@ -837,6 +896,22 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
     return this._project;
   }
 
+  // release_channel - computed: false, optional: true, required: false
+  private _releaseChannel?: string; 
+  public get releaseChannel() {
+    return this.getStringAttribute('release_channel');
+  }
+  public set releaseChannel(value: string) {
+    this._releaseChannel = value;
+  }
+  public resetReleaseChannel() {
+    this._releaseChannel = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get releaseChannelInput() {
+    return this._releaseChannel;
+  }
+
   // service_id - computed: false, optional: false, required: true
   private _serviceId?: string; 
   public get serviceId() {
@@ -874,6 +949,11 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get tierInput() {
     return this._tier;
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
   }
 
   // encryption_config - computed: false, optional: true, required: false
@@ -946,12 +1026,14 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      database_type: cdktf.stringToTerraform(this._databaseType),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       location: cdktf.stringToTerraform(this._location),
       network: cdktf.stringToTerraform(this._network),
       port: cdktf.numberToTerraform(this._port),
       project: cdktf.stringToTerraform(this._project),
+      release_channel: cdktf.stringToTerraform(this._releaseChannel),
       service_id: cdktf.stringToTerraform(this._serviceId),
       tier: cdktf.stringToTerraform(this._tier),
       encryption_config: googleDataprocMetastoreServiceEncryptionConfigToTerraform(this._encryptionConfig.internalValue),

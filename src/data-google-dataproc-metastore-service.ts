@@ -15,7 +15,7 @@ export interface DataGoogleDataprocMetastoreServiceConfig extends cdktf.Terrafor
   */
   readonly id?: string;
   /**
-  * The  location where the autoscaling policy should reside.
+  * The location where the metastore service should reside.
 The default value is 'global'.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_dataproc_metastore_service#location DataGoogleDataprocMetastoreService#location}
@@ -283,6 +283,11 @@ export class DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReferenc
     return this._configOverrides;
   }
 
+  // endpoint_protocol - computed: true, optional: false, required: false
+  public get endpointProtocol() {
+    return this.getStringAttribute('endpoint_protocol');
+  }
+
   // kerberos_config - computed: true, optional: false, required: false
   private _kerberosConfig = new DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigList(this, "kerberos_config", false);
   public get kerberosConfig() {
@@ -409,7 +414,7 @@ export class DataGoogleDataprocMetastoreService extends cdktf.TerraformDataSourc
       terraformResourceType: 'google_dataproc_metastore_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.28.0',
+        providerVersion: '4.29.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -430,6 +435,11 @@ export class DataGoogleDataprocMetastoreService extends cdktf.TerraformDataSourc
   // artifact_gcs_uri - computed: true, optional: false, required: false
   public get artifactGcsUri() {
     return this.getStringAttribute('artifact_gcs_uri');
+  }
+
+  // database_type - computed: true, optional: false, required: false
+  public get databaseType() {
+    return this.getStringAttribute('database_type');
   }
 
   // encryption_config - computed: true, optional: false, required: false
@@ -521,6 +531,11 @@ export class DataGoogleDataprocMetastoreService extends cdktf.TerraformDataSourc
     return this._project;
   }
 
+  // release_channel - computed: true, optional: false, required: false
+  public get releaseChannel() {
+    return this.getStringAttribute('release_channel');
+  }
+
   // service_id - computed: false, optional: false, required: true
   private _serviceId?: string; 
   public get serviceId() {
@@ -547,6 +562,11 @@ export class DataGoogleDataprocMetastoreService extends cdktf.TerraformDataSourc
   // tier - computed: true, optional: false, required: false
   public get tier() {
     return this.getStringAttribute('tier');
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
   }
 
   // =========
