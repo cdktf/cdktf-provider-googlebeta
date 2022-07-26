@@ -656,7 +656,7 @@ export function googleRedisInstanceMaintenancePolicyToTerraform(struct?: GoogleR
   }
   return {
     description: cdktf.stringToTerraform(struct!.description),
-    weekly_maintenance_window: cdktf.listMapper(googleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowToTerraform)(struct!.weeklyMaintenanceWindow),
+    weekly_maintenance_window: cdktf.listMapper(googleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowToTerraform, true)(struct!.weeklyMaintenanceWindow),
   }
 }
 
@@ -955,7 +955,10 @@ export class GoogleRedisInstance extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._alternativeLocationId = config.alternativeLocationId;
     this._authEnabled = config.authEnabled;

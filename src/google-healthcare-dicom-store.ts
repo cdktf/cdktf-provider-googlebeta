@@ -456,7 +456,10 @@ export class GoogleHealthcareDicomStore extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dataset = config.dataset;
     this._id = config.id;
@@ -593,7 +596,7 @@ export class GoogleHealthcareDicomStore extends cdktf.TerraformResource {
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
       notification_config: googleHealthcareDicomStoreNotificationConfigToTerraform(this._notificationConfig.internalValue),
-      stream_configs: cdktf.listMapper(googleHealthcareDicomStoreStreamConfigsToTerraform)(this._streamConfigs.internalValue),
+      stream_configs: cdktf.listMapper(googleHealthcareDicomStoreStreamConfigsToTerraform, true)(this._streamConfigs.internalValue),
       timeouts: googleHealthcareDicomStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

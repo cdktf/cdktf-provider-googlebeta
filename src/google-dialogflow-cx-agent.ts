@@ -326,7 +326,10 @@ export class GoogleDialogflowCxAgent extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._avatarUri = config.avatarUri;
     this._defaultLanguageCode = config.defaultLanguageCode;
@@ -586,7 +589,7 @@ export class GoogleDialogflowCxAgent extends cdktf.TerraformResource {
       location: cdktf.stringToTerraform(this._location),
       project: cdktf.stringToTerraform(this._project),
       security_settings: cdktf.stringToTerraform(this._securitySettings),
-      supported_language_codes: cdktf.listMapper(cdktf.stringToTerraform)(this._supportedLanguageCodes),
+      supported_language_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._supportedLanguageCodes),
       time_zone: cdktf.stringToTerraform(this._timeZone),
       speech_to_text_settings: googleDialogflowCxAgentSpeechToTextSettingsToTerraform(this._speechToTextSettings.internalValue),
       timeouts: googleDialogflowCxAgentTimeoutsToTerraform(this._timeouts.internalValue),

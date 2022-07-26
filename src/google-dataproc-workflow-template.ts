@@ -199,10 +199,10 @@ export function googleDataprocWorkflowTemplateJobsHadoopJobToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.archiveUris),
-    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.fileUris),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.jarFileUris),
+    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
+    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
+    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
+    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
     main_class: cdktf.stringToTerraform(struct!.mainClass),
     main_jar_file_uri: cdktf.stringToTerraform(struct!.mainJarFileUri),
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
@@ -427,7 +427,7 @@ export function googleDataprocWorkflowTemplateJobsHiveJobQueryListToTerraform(st
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    queries: cdktf.listMapper(cdktf.stringToTerraform)(struct!.queries),
+    queries: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queries),
   }
 }
 
@@ -522,7 +522,7 @@ export function googleDataprocWorkflowTemplateJobsHiveJobToTerraform(struct?: Go
   }
   return {
     continue_on_failure: cdktf.booleanToTerraform(struct!.continueOnFailure),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.jarFileUris),
+    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
     query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
     script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
@@ -770,7 +770,7 @@ export function googleDataprocWorkflowTemplateJobsPigJobQueryListToTerraform(str
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    queries: cdktf.listMapper(cdktf.stringToTerraform)(struct!.queries),
+    queries: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queries),
   }
 }
 
@@ -871,7 +871,7 @@ export function googleDataprocWorkflowTemplateJobsPigJobToTerraform(struct?: Goo
   }
   return {
     continue_on_failure: cdktf.booleanToTerraform(struct!.continueOnFailure),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.jarFileUris),
+    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
     query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
     script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
@@ -1142,7 +1142,7 @@ export function googleDataprocWorkflowTemplateJobsPrestoJobQueryListToTerraform(
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    queries: cdktf.listMapper(cdktf.stringToTerraform)(struct!.queries),
+    queries: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queries),
   }
 }
 
@@ -1242,7 +1242,7 @@ export function googleDataprocWorkflowTemplateJobsPrestoJobToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    client_tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.clientTags),
+    client_tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.clientTags),
     continue_on_failure: cdktf.booleanToTerraform(struct!.continueOnFailure),
     output_format: cdktf.stringToTerraform(struct!.outputFormat),
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
@@ -1556,13 +1556,13 @@ export function googleDataprocWorkflowTemplateJobsPysparkJobToTerraform(struct?:
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.archiveUris),
-    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.fileUris),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.jarFileUris),
+    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
+    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
+    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
+    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
     main_python_file_uri: cdktf.stringToTerraform(struct!.mainPythonFileUri),
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
-    python_file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.pythonFileUris),
+    python_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pythonFileUris),
     logging_config: googleDataprocWorkflowTemplateJobsPysparkJobLoggingConfigToTerraform(struct!.loggingConfig),
   }
 }
@@ -1986,10 +1986,10 @@ export function googleDataprocWorkflowTemplateJobsSparkJobToTerraform(struct?: G
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.archiveUris),
-    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.fileUris),
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.jarFileUris),
+    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
+    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
+    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
+    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
     main_class: cdktf.stringToTerraform(struct!.mainClass),
     main_jar_file_uri: cdktf.stringToTerraform(struct!.mainJarFileUri),
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
@@ -2311,9 +2311,9 @@ export function googleDataprocWorkflowTemplateJobsSparkRJobToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    archive_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.archiveUris),
-    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
-    file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.fileUris),
+    archive_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.archiveUris),
+    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
+    file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fileUris),
     main_r_file_uri: cdktf.stringToTerraform(struct!.mainRFileUri),
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
     logging_config: googleDataprocWorkflowTemplateJobsSparkRJobLoggingConfigToTerraform(struct!.loggingConfig),
@@ -2557,7 +2557,7 @@ export function googleDataprocWorkflowTemplateJobsSparkSqlJobQueryListToTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    queries: cdktf.listMapper(cdktf.stringToTerraform)(struct!.queries),
+    queries: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queries),
   }
 }
 
@@ -2651,7 +2651,7 @@ export function googleDataprocWorkflowTemplateJobsSparkSqlJobToTerraform(struct?
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.jarFileUris),
+    jar_file_uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jarFileUris),
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
     query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
     script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
@@ -2900,7 +2900,7 @@ export function googleDataprocWorkflowTemplateJobsToTerraform(struct?: GoogleDat
   }
   return {
     labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    prerequisite_step_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.prerequisiteStepIds),
+    prerequisite_step_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.prerequisiteStepIds),
     step_id: cdktf.stringToTerraform(struct!.stepId),
     hadoop_job: googleDataprocWorkflowTemplateJobsHadoopJobToTerraform(struct!.hadoopJob),
     hive_job: googleDataprocWorkflowTemplateJobsHiveJobToTerraform(struct!.hiveJob),
@@ -3248,7 +3248,7 @@ export function googleDataprocWorkflowTemplateParametersValidationRegexToTerrafo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    regexes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regexes),
+    regexes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regexes),
   }
 }
 
@@ -3312,7 +3312,7 @@ export function googleDataprocWorkflowTemplateParametersValidationValuesToTerraf
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -3491,7 +3491,7 @@ export function googleDataprocWorkflowTemplateParametersToTerraform(struct?: Goo
   }
   return {
     description: cdktf.stringToTerraform(struct!.description),
-    fields: cdktf.listMapper(cdktf.stringToTerraform)(struct!.fields),
+    fields: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.fields),
     name: cdktf.stringToTerraform(struct!.name),
     validation: googleDataprocWorkflowTemplateParametersValidationToTerraform(struct!.validation),
   }
@@ -4030,7 +4030,7 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigGceCl
   return {
     consume_reservation_type: cdktf.stringToTerraform(struct!.consumeReservationType),
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -4206,9 +4206,9 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigGceCl
     network: cdktf.stringToTerraform(struct!.network),
     private_ipv6_google_access: cdktf.stringToTerraform(struct!.privateIpv6GoogleAccess),
     service_account: cdktf.stringToTerraform(struct!.serviceAccount),
-    service_account_scopes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceAccountScopes),
+    service_account_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceAccountScopes),
     subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
-    tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tags),
+    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
     zone: cdktf.stringToTerraform(struct!.zone),
     node_group_affinity: googleDataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigNodeGroupAffinityToTerraform(struct!.nodeGroupAffinity),
     reservation_affinity: googleDataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigReservationAffinityToTerraform(struct!.reservationAffinity),
@@ -5282,7 +5282,7 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigMaste
     min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
     num_instances: cdktf.numberToTerraform(struct!.numInstances),
     preemptibility: cdktf.stringToTerraform(struct!.preemptibility),
-    accelerators: cdktf.listMapper(googleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsToTerraform)(struct!.accelerators),
+    accelerators: cdktf.listMapper(googleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigAcceleratorsToTerraform, true)(struct!.accelerators),
     disk_config: googleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigDiskConfigToTerraform(struct!.diskConfig),
   }
 }
@@ -5925,7 +5925,7 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigSecon
     min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
     num_instances: cdktf.numberToTerraform(struct!.numInstances),
     preemptibility: cdktf.stringToTerraform(struct!.preemptibility),
-    accelerators: cdktf.listMapper(googleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsToTerraform)(struct!.accelerators),
+    accelerators: cdktf.listMapper(googleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigAcceleratorsToTerraform, true)(struct!.accelerators),
     disk_config: googleDataprocWorkflowTemplatePlacementManagedClusterConfigSecondaryWorkerConfigDiskConfigToTerraform(struct!.diskConfig),
   }
 }
@@ -6694,7 +6694,7 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigSoftw
   }
   return {
     image_version: cdktf.stringToTerraform(struct!.imageVersion),
-    optional_components: cdktf.listMapper(cdktf.stringToTerraform)(struct!.optionalComponents),
+    optional_components: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.optionalComponents),
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
   }
 }
@@ -7169,7 +7169,7 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigWorke
     min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
     num_instances: cdktf.numberToTerraform(struct!.numInstances),
     preemptibility: cdktf.stringToTerraform(struct!.preemptibility),
-    accelerators: cdktf.listMapper(googleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsToTerraform)(struct!.accelerators),
+    accelerators: cdktf.listMapper(googleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigAcceleratorsToTerraform, true)(struct!.accelerators),
     disk_config: googleDataprocWorkflowTemplatePlacementManagedClusterConfigWorkerConfigDiskConfigToTerraform(struct!.diskConfig),
   }
 }
@@ -7476,7 +7476,7 @@ export function googleDataprocWorkflowTemplatePlacementManagedClusterConfigToTer
     endpoint_config: googleDataprocWorkflowTemplatePlacementManagedClusterConfigEndpointConfigToTerraform(struct!.endpointConfig),
     gce_cluster_config: googleDataprocWorkflowTemplatePlacementManagedClusterConfigGceClusterConfigToTerraform(struct!.gceClusterConfig),
     gke_cluster_config: googleDataprocWorkflowTemplatePlacementManagedClusterConfigGkeClusterConfigToTerraform(struct!.gkeClusterConfig),
-    initialization_actions: cdktf.listMapper(googleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsToTerraform)(struct!.initializationActions),
+    initialization_actions: cdktf.listMapper(googleDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsToTerraform, true)(struct!.initializationActions),
     lifecycle_config: googleDataprocWorkflowTemplatePlacementManagedClusterConfigLifecycleConfigToTerraform(struct!.lifecycleConfig),
     master_config: googleDataprocWorkflowTemplatePlacementManagedClusterConfigMasterConfigToTerraform(struct!.masterConfig),
     metastore_config: googleDataprocWorkflowTemplatePlacementManagedClusterConfigMetastoreConfigToTerraform(struct!.metastoreConfig),
@@ -8193,7 +8193,10 @@ export class GoogleDataprocWorkflowTemplate extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dagTimeout = config.dagTimeout;
     this._id = config.id;
@@ -8399,8 +8402,8 @@ export class GoogleDataprocWorkflowTemplate extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       version: cdktf.numberToTerraform(this._version),
-      jobs: cdktf.listMapper(googleDataprocWorkflowTemplateJobsToTerraform)(this._jobs.internalValue),
-      parameters: cdktf.listMapper(googleDataprocWorkflowTemplateParametersToTerraform)(this._parameters.internalValue),
+      jobs: cdktf.listMapper(googleDataprocWorkflowTemplateJobsToTerraform, true)(this._jobs.internalValue),
+      parameters: cdktf.listMapper(googleDataprocWorkflowTemplateParametersToTerraform, true)(this._parameters.internalValue),
       placement: googleDataprocWorkflowTemplatePlacementToTerraform(this._placement.internalValue),
       timeouts: googleDataprocWorkflowTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };

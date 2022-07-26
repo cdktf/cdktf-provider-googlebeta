@@ -102,7 +102,7 @@ export function googleBillingBudgetAllUpdatesRuleToTerraform(struct?: GoogleBill
   }
   return {
     disable_default_iam_recipients: cdktf.booleanToTerraform(struct!.disableDefaultIamRecipients),
-    monitoring_notification_channels: cdktf.listMapper(cdktf.stringToTerraform)(struct!.monitoringNotificationChannels),
+    monitoring_notification_channels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.monitoringNotificationChannels),
     pubsub_topic: cdktf.stringToTerraform(struct!.pubsubTopic),
     schema_version: cdktf.stringToTerraform(struct!.schemaVersion),
   }
@@ -858,12 +858,12 @@ export function googleBillingBudgetBudgetFilterToTerraform(struct?: GoogleBillin
   }
   return {
     calendar_period: cdktf.stringToTerraform(struct!.calendarPeriod),
-    credit_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.creditTypes),
+    credit_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.creditTypes),
     credit_types_treatment: cdktf.stringToTerraform(struct!.creditTypesTreatment),
     labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    projects: cdktf.listMapper(cdktf.stringToTerraform)(struct!.projects),
-    services: cdktf.listMapper(cdktf.stringToTerraform)(struct!.services),
-    subaccounts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subaccounts),
+    projects: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.projects),
+    services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.services),
+    subaccounts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subaccounts),
     custom_period: googleBillingBudgetBudgetFilterCustomPeriodToTerraform(struct!.customPeriod),
   }
 }
@@ -1359,7 +1359,10 @@ export class GoogleBillingBudget extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._billingAccount = config.billingAccount;
     this._displayName = config.displayName;
@@ -1514,7 +1517,7 @@ export class GoogleBillingBudget extends cdktf.TerraformResource {
       all_updates_rule: googleBillingBudgetAllUpdatesRuleToTerraform(this._allUpdatesRule.internalValue),
       amount: googleBillingBudgetAmountToTerraform(this._amount.internalValue),
       budget_filter: googleBillingBudgetBudgetFilterToTerraform(this._budgetFilter.internalValue),
-      threshold_rules: cdktf.listMapper(googleBillingBudgetThresholdRulesToTerraform)(this._thresholdRules.internalValue),
+      threshold_rules: cdktf.listMapper(googleBillingBudgetThresholdRulesToTerraform, true)(this._thresholdRules.internalValue),
       timeouts: googleBillingBudgetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

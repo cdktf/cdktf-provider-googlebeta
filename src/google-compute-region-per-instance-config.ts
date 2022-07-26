@@ -268,7 +268,7 @@ export function googleComputeRegionPerInstanceConfigPreservedStateToTerraform(st
   }
   return {
     metadata: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.metadata),
-    disk: cdktf.listMapper(googleComputeRegionPerInstanceConfigPreservedStateDiskToTerraform)(struct!.disk),
+    disk: cdktf.listMapper(googleComputeRegionPerInstanceConfigPreservedStateDiskToTerraform, true)(struct!.disk),
   }
 }
 
@@ -504,7 +504,10 @@ export class GoogleComputeRegionPerInstanceConfig extends cdktf.TerraformResourc
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._minimalAction = config.minimalAction;

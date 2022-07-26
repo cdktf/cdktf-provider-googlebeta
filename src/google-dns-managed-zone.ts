@@ -327,7 +327,7 @@ export function googleDnsManagedZoneDnssecConfigToTerraform(struct?: GoogleDnsMa
     kind: cdktf.stringToTerraform(struct!.kind),
     non_existence: cdktf.stringToTerraform(struct!.nonExistence),
     state: cdktf.stringToTerraform(struct!.state),
-    default_key_specs: cdktf.listMapper(googleDnsManagedZoneDnssecConfigDefaultKeySpecsToTerraform)(struct!.defaultKeySpecs),
+    default_key_specs: cdktf.listMapper(googleDnsManagedZoneDnssecConfigDefaultKeySpecsToTerraform, true)(struct!.defaultKeySpecs),
   }
 }
 
@@ -587,7 +587,7 @@ export function googleDnsManagedZoneForwardingConfigToTerraform(struct?: GoogleD
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_name_servers: cdktf.listMapper(googleDnsManagedZoneForwardingConfigTargetNameServersToTerraform)(struct!.targetNameServers),
+    target_name_servers: cdktf.listMapper(googleDnsManagedZoneForwardingConfigTargetNameServersToTerraform, true)(struct!.targetNameServers),
   }
 }
 
@@ -879,7 +879,7 @@ export function googleDnsManagedZonePrivateVisibilityConfigToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    networks: cdktf.listMapper(googleDnsManagedZonePrivateVisibilityConfigNetworksToTerraform)(struct!.networks),
+    networks: cdktf.listMapper(googleDnsManagedZonePrivateVisibilityConfigNetworksToTerraform, true)(struct!.networks),
   }
 }
 
@@ -1222,7 +1222,10 @@ export class GoogleDnsManagedZone extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._dnsName = config.dnsName;

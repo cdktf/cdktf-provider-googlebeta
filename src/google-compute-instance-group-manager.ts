@@ -1593,7 +1593,10 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._baseInstanceName = config.baseInstanceName;
     this._description = config.description;
@@ -1918,18 +1921,18 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
-      target_pools: cdktf.listMapper(cdktf.stringToTerraform)(this._targetPools),
+      target_pools: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetPools),
       target_size: cdktf.numberToTerraform(this._targetSize),
       wait_for_instances: cdktf.booleanToTerraform(this._waitForInstances),
       wait_for_instances_status: cdktf.stringToTerraform(this._waitForInstancesStatus),
       zone: cdktf.stringToTerraform(this._zone),
       all_instances_config: googleComputeInstanceGroupManagerAllInstancesConfigToTerraform(this._allInstancesConfig.internalValue),
       auto_healing_policies: googleComputeInstanceGroupManagerAutoHealingPoliciesToTerraform(this._autoHealingPolicies.internalValue),
-      named_port: cdktf.listMapper(googleComputeInstanceGroupManagerNamedPortToTerraform)(this._namedPort.internalValue),
-      stateful_disk: cdktf.listMapper(googleComputeInstanceGroupManagerStatefulDiskToTerraform)(this._statefulDisk.internalValue),
+      named_port: cdktf.listMapper(googleComputeInstanceGroupManagerNamedPortToTerraform, true)(this._namedPort.internalValue),
+      stateful_disk: cdktf.listMapper(googleComputeInstanceGroupManagerStatefulDiskToTerraform, true)(this._statefulDisk.internalValue),
       timeouts: googleComputeInstanceGroupManagerTimeoutsToTerraform(this._timeouts.internalValue),
       update_policy: googleComputeInstanceGroupManagerUpdatePolicyToTerraform(this._updatePolicy.internalValue),
-      version: cdktf.listMapper(googleComputeInstanceGroupManagerVersionToTerraform)(this._version.internalValue),
+      version: cdktf.listMapper(googleComputeInstanceGroupManagerVersionToTerraform, true)(this._version.internalValue),
     };
   }
 }

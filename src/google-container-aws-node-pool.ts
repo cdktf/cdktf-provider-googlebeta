@@ -843,14 +843,14 @@ export function googleContainerAwsNodePoolConfigAToTerraform(struct?: GoogleCont
     image_type: cdktf.stringToTerraform(struct!.imageType),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
     labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     config_encryption: googleContainerAwsNodePoolConfigConfigEncryptionToTerraform(struct!.configEncryption),
     instance_placement: googleContainerAwsNodePoolConfigInstancePlacementToTerraform(struct!.instancePlacement),
     proxy_config: googleContainerAwsNodePoolConfigProxyConfigToTerraform(struct!.proxyConfig),
     root_volume: googleContainerAwsNodePoolConfigRootVolumeToTerraform(struct!.rootVolume),
     ssh_config: googleContainerAwsNodePoolConfigSshConfigToTerraform(struct!.sshConfig),
-    taints: cdktf.listMapper(googleContainerAwsNodePoolConfigTaintsToTerraform)(struct!.taints),
+    taints: cdktf.listMapper(googleContainerAwsNodePoolConfigTaintsToTerraform, true)(struct!.taints),
   }
 }
 
@@ -1364,7 +1364,10 @@ export class GoogleContainerAwsNodePool extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._annotations = config.annotations;
     this._cluster = config.cluster;

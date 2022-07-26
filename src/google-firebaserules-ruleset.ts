@@ -270,7 +270,7 @@ export function googleFirebaserulesRulesetSourceToTerraform(struct?: GoogleFireb
   }
   return {
     language: cdktf.stringToTerraform(struct!.language),
-    files: cdktf.listMapper(googleFirebaserulesRulesetSourceFilesToTerraform)(struct!.files),
+    files: cdktf.listMapper(googleFirebaserulesRulesetSourceFilesToTerraform, true)(struct!.files),
   }
 }
 
@@ -476,7 +476,10 @@ export class GoogleFirebaserulesRuleset extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._project = config.project;

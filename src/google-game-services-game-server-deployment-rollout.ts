@@ -61,7 +61,7 @@ export function googleGameServicesGameServerDeploymentRolloutGameServerConfigOve
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    realms: cdktf.listMapper(cdktf.stringToTerraform)(struct!.realms),
+    realms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.realms),
   }
 }
 
@@ -403,7 +403,10 @@ export class GoogleGameServicesGameServerDeploymentRollout extends cdktf.Terrafo
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._defaultGameServerConfig = config.defaultGameServerConfig;
     this._deploymentId = config.deploymentId;
@@ -522,7 +525,7 @@ export class GoogleGameServicesGameServerDeploymentRollout extends cdktf.Terrafo
       deployment_id: cdktf.stringToTerraform(this._deploymentId),
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
-      game_server_config_overrides: cdktf.listMapper(googleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesToTerraform)(this._gameServerConfigOverrides.internalValue),
+      game_server_config_overrides: cdktf.listMapper(googleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesToTerraform, true)(this._gameServerConfigOverrides.internalValue),
       timeouts: googleGameServicesGameServerDeploymentRolloutTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -179,7 +179,10 @@ export class GoogleHealthcareDicomStoreIamBinding extends cdktf.TerraformResourc
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dicomStoreId = config.dicomStoreId;
     this._id = config.id;
@@ -276,7 +279,7 @@ export class GoogleHealthcareDicomStoreIamBinding extends cdktf.TerraformResourc
     return {
       dicom_store_id: cdktf.stringToTerraform(this._dicomStoreId),
       id: cdktf.stringToTerraform(this._id),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       role: cdktf.stringToTerraform(this._role),
       condition: googleHealthcareDicomStoreIamBindingConditionToTerraform(this._condition.internalValue),
     };

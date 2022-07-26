@@ -248,10 +248,10 @@ export function googleComputeRouterBgpToTerraform(struct?: GoogleComputeRouterBg
   }
   return {
     advertise_mode: cdktf.stringToTerraform(struct!.advertiseMode),
-    advertised_groups: cdktf.listMapper(cdktf.stringToTerraform)(struct!.advertisedGroups),
+    advertised_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.advertisedGroups),
     asn: cdktf.numberToTerraform(struct!.asn),
     keepalive_interval: cdktf.numberToTerraform(struct!.keepaliveInterval),
-    advertised_ip_ranges: cdktf.listMapper(googleComputeRouterBgpAdvertisedIpRangesToTerraform)(struct!.advertisedIpRanges),
+    advertised_ip_ranges: cdktf.listMapper(googleComputeRouterBgpAdvertisedIpRangesToTerraform, true)(struct!.advertisedIpRanges),
   }
 }
 
@@ -550,7 +550,10 @@ export class GoogleComputeRouter extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._encryptedInterconnectRouter = config.encryptedInterconnectRouter;

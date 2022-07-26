@@ -328,7 +328,10 @@ export class GoogleComputeExternalVpnGateway extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -468,7 +471,7 @@ export class GoogleComputeExternalVpnGateway extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       redundancy_type: cdktf.stringToTerraform(this._redundancyType),
-      interface: cdktf.listMapper(googleComputeExternalVpnGatewayInterfaceToTerraform)(this._interface.internalValue),
+      interface: cdktf.listMapper(googleComputeExternalVpnGatewayInterfaceToTerraform, true)(this._interface.internalValue),
       timeouts: googleComputeExternalVpnGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

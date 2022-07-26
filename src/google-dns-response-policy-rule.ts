@@ -84,7 +84,7 @@ export function googleDnsResponsePolicyRuleLocalDataLocalDatasToTerraform(struct
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
-    rrdatas: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rrdatas),
+    rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
     ttl: cdktf.numberToTerraform(struct!.ttl),
     type: cdktf.stringToTerraform(struct!.type),
   }
@@ -245,7 +245,7 @@ export function googleDnsResponsePolicyRuleLocalDataToTerraform(struct?: GoogleD
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    local_datas: cdktf.listMapper(googleDnsResponsePolicyRuleLocalDataLocalDatasToTerraform)(struct!.localDatas),
+    local_datas: cdktf.listMapper(googleDnsResponsePolicyRuleLocalDataLocalDatasToTerraform, true)(struct!.localDatas),
   }
 }
 
@@ -456,7 +456,10 @@ export class GoogleDnsResponsePolicyRule extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dnsName = config.dnsName;
     this._id = config.id;

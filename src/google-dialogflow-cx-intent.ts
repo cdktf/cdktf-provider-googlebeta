@@ -544,7 +544,7 @@ export function googleDialogflowCxIntentTrainingPhrasesToTerraform(struct?: Goog
   }
   return {
     repeat_count: cdktf.numberToTerraform(struct!.repeatCount),
-    parts: cdktf.listMapper(googleDialogflowCxIntentTrainingPhrasesPartsToTerraform)(struct!.parts),
+    parts: cdktf.listMapper(googleDialogflowCxIntentTrainingPhrasesPartsToTerraform, true)(struct!.parts),
   }
 }
 
@@ -685,7 +685,10 @@ export class GoogleDialogflowCxIntent extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._displayName = config.displayName;
@@ -896,9 +899,9 @@ export class GoogleDialogflowCxIntent extends cdktf.TerraformResource {
       language_code: cdktf.stringToTerraform(this._languageCode),
       parent: cdktf.stringToTerraform(this._parent),
       priority: cdktf.numberToTerraform(this._priority),
-      parameters: cdktf.listMapper(googleDialogflowCxIntentParametersToTerraform)(this._parameters.internalValue),
+      parameters: cdktf.listMapper(googleDialogflowCxIntentParametersToTerraform, true)(this._parameters.internalValue),
       timeouts: googleDialogflowCxIntentTimeoutsToTerraform(this._timeouts.internalValue),
-      training_phrases: cdktf.listMapper(googleDialogflowCxIntentTrainingPhrasesToTerraform)(this._trainingPhrases.internalValue),
+      training_phrases: cdktf.listMapper(googleDialogflowCxIntentTrainingPhrasesToTerraform, true)(this._trainingPhrases.internalValue),
     };
   }
 }

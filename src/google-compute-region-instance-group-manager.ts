@@ -1634,7 +1634,10 @@ export class GoogleComputeRegionInstanceGroupManager extends cdktf.TerraformReso
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._baseInstanceName = config.baseInstanceName;
     this._description = config.description;
@@ -1986,22 +1989,22 @@ export class GoogleComputeRegionInstanceGroupManager extends cdktf.TerraformReso
       base_instance_name: cdktf.stringToTerraform(this._baseInstanceName),
       description: cdktf.stringToTerraform(this._description),
       distribution_policy_target_shape: cdktf.stringToTerraform(this._distributionPolicyTargetShape),
-      distribution_policy_zones: cdktf.listMapper(cdktf.stringToTerraform)(this._distributionPolicyZones),
+      distribution_policy_zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._distributionPolicyZones),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
-      target_pools: cdktf.listMapper(cdktf.stringToTerraform)(this._targetPools),
+      target_pools: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetPools),
       target_size: cdktf.numberToTerraform(this._targetSize),
       wait_for_instances: cdktf.booleanToTerraform(this._waitForInstances),
       wait_for_instances_status: cdktf.stringToTerraform(this._waitForInstancesStatus),
       all_instances_config: googleComputeRegionInstanceGroupManagerAllInstancesConfigToTerraform(this._allInstancesConfig.internalValue),
       auto_healing_policies: googleComputeRegionInstanceGroupManagerAutoHealingPoliciesToTerraform(this._autoHealingPolicies.internalValue),
-      named_port: cdktf.listMapper(googleComputeRegionInstanceGroupManagerNamedPortToTerraform)(this._namedPort.internalValue),
-      stateful_disk: cdktf.listMapper(googleComputeRegionInstanceGroupManagerStatefulDiskToTerraform)(this._statefulDisk.internalValue),
+      named_port: cdktf.listMapper(googleComputeRegionInstanceGroupManagerNamedPortToTerraform, true)(this._namedPort.internalValue),
+      stateful_disk: cdktf.listMapper(googleComputeRegionInstanceGroupManagerStatefulDiskToTerraform, true)(this._statefulDisk.internalValue),
       timeouts: googleComputeRegionInstanceGroupManagerTimeoutsToTerraform(this._timeouts.internalValue),
       update_policy: googleComputeRegionInstanceGroupManagerUpdatePolicyToTerraform(this._updatePolicy.internalValue),
-      version: cdktf.listMapper(googleComputeRegionInstanceGroupManagerVersionToTerraform)(this._version.internalValue),
+      version: cdktf.listMapper(googleComputeRegionInstanceGroupManagerVersionToTerraform, true)(this._version.internalValue),
     };
   }
 }

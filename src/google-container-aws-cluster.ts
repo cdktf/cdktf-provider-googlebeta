@@ -272,7 +272,7 @@ export function googleContainerAwsClusterAuthorizationToTerraform(struct?: Googl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_users: cdktf.listMapper(googleContainerAwsClusterAuthorizationAdminUsersToTerraform)(struct!.adminUsers),
+    admin_users: cdktf.listMapper(googleContainerAwsClusterAuthorizationAdminUsersToTerraform, true)(struct!.adminUsers),
   }
 }
 
@@ -1166,8 +1166,8 @@ export function googleContainerAwsClusterControlPlaneToTerraform(struct?: Google
   return {
     iam_instance_profile: cdktf.stringToTerraform(struct!.iamInstanceProfile),
     instance_type: cdktf.stringToTerraform(struct!.instanceType),
-    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.securityGroupIds),
-    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform)(struct!.subnetIds),
+    security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
+    subnet_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnetIds),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
     version: cdktf.stringToTerraform(struct!.version),
     aws_services_authentication: googleContainerAwsClusterControlPlaneAwsServicesAuthenticationToTerraform(struct!.awsServicesAuthentication),
@@ -1584,7 +1584,7 @@ export function googleContainerAwsClusterLoggingConfigComponentConfigToTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_components: cdktf.listMapper(cdktf.stringToTerraform)(struct!.enableComponents),
+    enable_components: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enableComponents),
   }
 }
 
@@ -1730,8 +1730,8 @@ export function googleContainerAwsClusterNetworkingToTerraform(struct?: GoogleCo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pod_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.podAddressCidrBlocks),
-    service_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceAddressCidrBlocks),
+    pod_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.podAddressCidrBlocks),
+    service_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceAddressCidrBlocks),
     vpc_id: cdktf.stringToTerraform(struct!.vpcId),
   }
 }
@@ -1981,7 +1981,10 @@ export class GoogleContainerAwsCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._annotations = config.annotations;
     this._awsRegion = config.awsRegion;

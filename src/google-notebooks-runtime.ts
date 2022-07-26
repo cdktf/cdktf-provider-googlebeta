@@ -1587,9 +1587,9 @@ export function googleNotebooksRuntimeVirtualMachineVirtualMachineConfigToTerraf
     nic_type: cdktf.stringToTerraform(struct!.nicType),
     reserved_ip_range: cdktf.stringToTerraform(struct!.reservedIpRange),
     subnet: cdktf.stringToTerraform(struct!.subnet),
-    tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tags),
+    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
     accelerator_config: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigAcceleratorConfigToTerraform(struct!.acceleratorConfig),
-    container_images: cdktf.listMapper(googleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesToTerraform)(struct!.containerImages),
+    container_images: cdktf.listMapper(googleNotebooksRuntimeVirtualMachineVirtualMachineConfigContainerImagesToTerraform, true)(struct!.containerImages),
     data_disk: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskToTerraform(struct!.dataDisk),
     encryption_config: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfigToTerraform(struct!.encryptionConfig),
     shielded_instance_config: googleNotebooksRuntimeVirtualMachineVirtualMachineConfigShieldedInstanceConfigToTerraform(struct!.shieldedInstanceConfig),
@@ -2045,7 +2045,10 @@ export class GoogleNotebooksRuntime extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._location = config.location;

@@ -401,7 +401,7 @@ export function googleHealthcareFhirStoreStreamConfigsToTerraform(struct?: Googl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resource_types: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourceTypes),
+    resource_types: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourceTypes),
     bigquery_destination: googleHealthcareFhirStoreStreamConfigsBigqueryDestinationToTerraform(struct!.bigqueryDestination),
   }
 }
@@ -667,7 +667,10 @@ export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._dataset = config.dataset;
     this._disableReferentialIntegrity = config.disableReferentialIntegrity;
@@ -894,7 +897,7 @@ export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       version: cdktf.stringToTerraform(this._version),
       notification_config: googleHealthcareFhirStoreNotificationConfigToTerraform(this._notificationConfig.internalValue),
-      stream_configs: cdktf.listMapper(googleHealthcareFhirStoreStreamConfigsToTerraform)(this._streamConfigs.internalValue),
+      stream_configs: cdktf.listMapper(googleHealthcareFhirStoreStreamConfigsToTerraform, true)(this._streamConfigs.internalValue),
       timeouts: googleHealthcareFhirStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

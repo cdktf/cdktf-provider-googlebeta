@@ -465,7 +465,10 @@ export class GoogleCloudiotRegistry extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._httpConfig = config.httpConfig;
     this._id = config.id;
@@ -671,8 +674,8 @@ export class GoogleCloudiotRegistry extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
       state_notification_config: cdktf.hashMapper(cdktf.stringToTerraform)(this._stateNotificationConfig),
-      credentials: cdktf.listMapper(googleCloudiotRegistryCredentialsToTerraform)(this._credentials.internalValue),
-      event_notification_configs: cdktf.listMapper(googleCloudiotRegistryEventNotificationConfigsToTerraform)(this._eventNotificationConfigs.internalValue),
+      credentials: cdktf.listMapper(googleCloudiotRegistryCredentialsToTerraform, true)(this._credentials.internalValue),
+      event_notification_configs: cdktf.listMapper(googleCloudiotRegistryEventNotificationConfigsToTerraform, true)(this._eventNotificationConfigs.internalValue),
       timeouts: googleCloudiotRegistryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

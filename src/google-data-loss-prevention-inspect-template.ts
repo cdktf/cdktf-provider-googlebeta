@@ -130,7 +130,7 @@ export function googleDataLossPreventionInspectTemplateInspectConfigCustomInfoTy
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    words: cdktf.listMapper(cdktf.stringToTerraform)(struct!.words),
+    words: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.words),
   }
 }
 
@@ -362,7 +362,7 @@ export function googleDataLossPreventionInspectTemplateInspectConfigCustomInfoTy
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_indexes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.groupIndexes),
+    group_indexes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.groupIndexes),
     pattern: cdktf.stringToTerraform(struct!.pattern),
   }
 }
@@ -1054,7 +1054,7 @@ export function googleDataLossPreventionInspectTemplateInspectConfigLimitsToTerr
   return {
     max_findings_per_item: cdktf.numberToTerraform(struct!.maxFindingsPerItem),
     max_findings_per_request: cdktf.numberToTerraform(struct!.maxFindingsPerRequest),
-    max_findings_per_info_type: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeToTerraform)(struct!.maxFindingsPerInfoType),
+    max_findings_per_info_type: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeToTerraform, true)(struct!.maxFindingsPerInfoType),
   }
 }
 
@@ -1321,7 +1321,7 @@ export function googleDataLossPreventionInspectTemplateInspectConfigRuleSetRules
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    words: cdktf.listMapper(cdktf.stringToTerraform)(struct!.words),
+    words: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.words),
   }
 }
 
@@ -1578,7 +1578,7 @@ export function googleDataLossPreventionInspectTemplateInspectConfigRuleSetRules
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    info_types: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesToTerraform)(struct!.infoTypes),
+    info_types: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesToTerraform, true)(struct!.infoTypes),
   }
 }
 
@@ -1649,7 +1649,7 @@ export function googleDataLossPreventionInspectTemplateInspectConfigRuleSetRules
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_indexes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.groupIndexes),
+    group_indexes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.groupIndexes),
     pattern: cdktf.stringToTerraform(struct!.pattern),
   }
 }
@@ -1895,7 +1895,7 @@ export function googleDataLossPreventionInspectTemplateInspectConfigRuleSetRules
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    group_indexes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.groupIndexes),
+    group_indexes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.groupIndexes),
     pattern: cdktf.stringToTerraform(struct!.pattern),
   }
 }
@@ -2429,8 +2429,8 @@ export function googleDataLossPreventionInspectTemplateInspectConfigRuleSetToTer
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    info_types: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesToTerraform)(struct!.infoTypes),
-    rules: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesToTerraform)(struct!.rules),
+    info_types: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigRuleSetInfoTypesToTerraform, true)(struct!.infoTypes),
+    rules: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesToTerraform, true)(struct!.rules),
   }
 }
 
@@ -2587,14 +2587,14 @@ export function googleDataLossPreventionInspectTemplateInspectConfigToTerraform(
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content_options: cdktf.listMapper(cdktf.stringToTerraform)(struct!.contentOptions),
+    content_options: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contentOptions),
     exclude_info_types: cdktf.booleanToTerraform(struct!.excludeInfoTypes),
     include_quote: cdktf.booleanToTerraform(struct!.includeQuote),
     min_likelihood: cdktf.stringToTerraform(struct!.minLikelihood),
-    custom_info_types: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesToTerraform)(struct!.customInfoTypes),
-    info_types: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigInfoTypesToTerraform)(struct!.infoTypes),
+    custom_info_types: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesToTerraform, true)(struct!.customInfoTypes),
+    info_types: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigInfoTypesToTerraform, true)(struct!.infoTypes),
     limits: googleDataLossPreventionInspectTemplateInspectConfigLimitsToTerraform(struct!.limits),
-    rule_set: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigRuleSetToTerraform)(struct!.ruleSet),
+    rule_set: cdktf.listMapper(googleDataLossPreventionInspectTemplateInspectConfigRuleSetToTerraform, true)(struct!.ruleSet),
   }
 }
 
@@ -2962,7 +2962,10 @@ export class GoogleDataLossPreventionInspectTemplate extends cdktf.TerraformReso
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._displayName = config.displayName;

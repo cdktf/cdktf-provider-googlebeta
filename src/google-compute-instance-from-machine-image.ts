@@ -658,7 +658,7 @@ export function googleComputeInstanceFromMachineImageServiceAccountToTerraform(s
   }
   return {
     email: cdktf.stringToTerraform(struct!.email),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.scopes),
+    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
   }
 }
 
@@ -1403,8 +1403,8 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceToTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_config: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigToTerraform)(struct!.accessConfig),
-    alias_ip_range: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeToTerraform)(struct!.aliasIpRange),
+    access_config: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigToTerraform, false)(struct!.accessConfig),
+    alias_ip_range: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeToTerraform, false)(struct!.aliasIpRange),
     network: cdktf.stringToTerraform(struct!.network),
     network_ip: cdktf.stringToTerraform(struct!.networkIp),
     nic_type: cdktf.stringToTerraform(struct!.nicType),
@@ -1412,7 +1412,7 @@ export function googleComputeInstanceFromMachineImageNetworkInterfaceToTerraform
     stack_type: cdktf.stringToTerraform(struct!.stackType),
     subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
     subnetwork_project: cdktf.stringToTerraform(struct!.subnetworkProject),
-    ipv6_access_config: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigToTerraform)(struct!.ipv6AccessConfig),
+    ipv6_access_config: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigToTerraform, true)(struct!.ipv6AccessConfig),
   }
 }
 
@@ -1790,7 +1790,7 @@ export function googleComputeInstanceFromMachineImageReservationAffinitySpecific
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1974,7 +1974,7 @@ export function googleComputeInstanceFromMachineImageSchedulingNodeAffinitiesToT
   return {
     key: cdktf.stringToTerraform(struct!.key),
     operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -2148,7 +2148,7 @@ export function googleComputeInstanceFromMachineImageSchedulingToTerraform(struc
     on_host_maintenance: cdktf.stringToTerraform(struct!.onHostMaintenance),
     preemptible: cdktf.booleanToTerraform(struct!.preemptible),
     provisioning_model: cdktf.stringToTerraform(struct!.provisioningModel),
-    node_affinities: cdktf.listMapper(googleComputeInstanceFromMachineImageSchedulingNodeAffinitiesToTerraform)(struct!.nodeAffinities),
+    node_affinities: cdktf.listMapper(googleComputeInstanceFromMachineImageSchedulingNodeAffinitiesToTerraform, true)(struct!.nodeAffinities),
   }
 }
 
@@ -2619,7 +2619,10 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowStoppingForUpdate = config.allowStoppingForUpdate;
     this._canIpForward = config.canIpForward;
@@ -3179,7 +3182,7 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
       description: cdktf.stringToTerraform(this._description),
       desired_status: cdktf.stringToTerraform(this._desiredStatus),
       enable_display: cdktf.booleanToTerraform(this._enableDisplay),
-      guest_accelerator: cdktf.listMapper(googleComputeInstanceFromMachineImageGuestAcceleratorToTerraform)(this._guestAccelerator.internalValue),
+      guest_accelerator: cdktf.listMapper(googleComputeInstanceFromMachineImageGuestAcceleratorToTerraform, false)(this._guestAccelerator.internalValue),
       hostname: cdktf.stringToTerraform(this._hostname),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
@@ -3189,14 +3192,14 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
       min_cpu_platform: cdktf.stringToTerraform(this._minCpuPlatform),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
-      resource_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._resourcePolicies),
-      service_account: cdktf.listMapper(googleComputeInstanceFromMachineImageServiceAccountToTerraform)(this._serviceAccount.internalValue),
+      resource_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourcePolicies),
+      service_account: cdktf.listMapper(googleComputeInstanceFromMachineImageServiceAccountToTerraform, false)(this._serviceAccount.internalValue),
       source_machine_image: cdktf.stringToTerraform(this._sourceMachineImage),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       zone: cdktf.stringToTerraform(this._zone),
       advanced_machine_features: googleComputeInstanceFromMachineImageAdvancedMachineFeaturesToTerraform(this._advancedMachineFeatures.internalValue),
       confidential_instance_config: googleComputeInstanceFromMachineImageConfidentialInstanceConfigToTerraform(this._confidentialInstanceConfig.internalValue),
-      network_interface: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceToTerraform)(this._networkInterface.internalValue),
+      network_interface: cdktf.listMapper(googleComputeInstanceFromMachineImageNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
       network_performance_config: googleComputeInstanceFromMachineImageNetworkPerformanceConfigToTerraform(this._networkPerformanceConfig.internalValue),
       reservation_affinity: googleComputeInstanceFromMachineImageReservationAffinityToTerraform(this._reservationAffinity.internalValue),
       scheduling: googleComputeInstanceFromMachineImageSchedulingToTerraform(this._scheduling.internalValue),

@@ -861,7 +861,7 @@ export function googleAppEngineStandardAppVersionDeploymentToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    files: cdktf.listMapper(googleAppEngineStandardAppVersionDeploymentFilesToTerraform)(struct!.files),
+    files: cdktf.listMapper(googleAppEngineStandardAppVersionDeploymentFilesToTerraform, true)(struct!.files),
     zip: googleAppEngineStandardAppVersionDeploymentZipToTerraform(struct!.zip),
   }
 }
@@ -2005,7 +2005,10 @@ export class GoogleAppEngineStandardAppVersion extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deleteServiceOnDestroy = config.deleteServiceOnDestroy;
     this._envVariables = config.envVariables;
@@ -2372,7 +2375,7 @@ export class GoogleAppEngineStandardAppVersion extends cdktf.TerraformResource {
       delete_service_on_destroy: cdktf.booleanToTerraform(this._deleteServiceOnDestroy),
       env_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._envVariables),
       id: cdktf.stringToTerraform(this._id),
-      inbound_services: cdktf.listMapper(cdktf.stringToTerraform)(this._inboundServices),
+      inbound_services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._inboundServices),
       instance_class: cdktf.stringToTerraform(this._instanceClass),
       noop_on_destroy: cdktf.booleanToTerraform(this._noopOnDestroy),
       project: cdktf.stringToTerraform(this._project),
@@ -2385,8 +2388,8 @@ export class GoogleAppEngineStandardAppVersion extends cdktf.TerraformResource {
       basic_scaling: googleAppEngineStandardAppVersionBasicScalingToTerraform(this._basicScaling.internalValue),
       deployment: googleAppEngineStandardAppVersionDeploymentToTerraform(this._deployment.internalValue),
       entrypoint: googleAppEngineStandardAppVersionEntrypointToTerraform(this._entrypoint.internalValue),
-      handlers: cdktf.listMapper(googleAppEngineStandardAppVersionHandlersToTerraform)(this._handlers.internalValue),
-      libraries: cdktf.listMapper(googleAppEngineStandardAppVersionLibrariesToTerraform)(this._libraries.internalValue),
+      handlers: cdktf.listMapper(googleAppEngineStandardAppVersionHandlersToTerraform, true)(this._handlers.internalValue),
+      libraries: cdktf.listMapper(googleAppEngineStandardAppVersionLibrariesToTerraform, true)(this._libraries.internalValue),
       manual_scaling: googleAppEngineStandardAppVersionManualScalingToTerraform(this._manualScaling.internalValue),
       timeouts: googleAppEngineStandardAppVersionTimeoutsToTerraform(this._timeouts.internalValue),
       vpc_access_connector: googleAppEngineStandardAppVersionVpcAccessConnectorToTerraform(this._vpcAccessConnector.internalValue),

@@ -591,7 +591,7 @@ export function googleMemcacheInstanceMaintenancePolicyToTerraform(struct?: Goog
   }
   return {
     description: cdktf.stringToTerraform(struct!.description),
-    weekly_maintenance_window: cdktf.listMapper(googleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowToTerraform)(struct!.weeklyMaintenanceWindow),
+    weekly_maintenance_window: cdktf.listMapper(googleMemcacheInstanceMaintenancePolicyWeeklyMaintenanceWindowToTerraform, true)(struct!.weeklyMaintenanceWindow),
   }
 }
 
@@ -996,7 +996,10 @@ export class GoogleMemcacheInstance extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._authorizedNetwork = config.authorizedNetwork;
     this._displayName = config.displayName;
@@ -1275,7 +1278,7 @@ export class GoogleMemcacheInstance extends cdktf.TerraformResource {
       node_count: cdktf.numberToTerraform(this._nodeCount),
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
-      zones: cdktf.listMapper(cdktf.stringToTerraform)(this._zones),
+      zones: cdktf.listMapper(cdktf.stringToTerraform, false)(this._zones),
       maintenance_policy: googleMemcacheInstanceMaintenancePolicyToTerraform(this._maintenancePolicy.internalValue),
       memcache_parameters: googleMemcacheInstanceMemcacheParametersToTerraform(this._memcacheParameters.internalValue),
       node_config: googleMemcacheInstanceNodeConfigToTerraform(this._nodeConfig.internalValue),

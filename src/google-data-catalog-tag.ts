@@ -463,7 +463,10 @@ export class GoogleDataCatalogTag extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._column = config.column;
     this._id = config.id;
@@ -587,7 +590,7 @@ export class GoogleDataCatalogTag extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       parent: cdktf.stringToTerraform(this._parent),
       template: cdktf.stringToTerraform(this._template),
-      fields: cdktf.listMapper(googleDataCatalogTagFieldsToTerraform)(this._fields.internalValue),
+      fields: cdktf.listMapper(googleDataCatalogTagFieldsToTerraform, true)(this._fields.internalValue),
       timeouts: googleDataCatalogTagTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

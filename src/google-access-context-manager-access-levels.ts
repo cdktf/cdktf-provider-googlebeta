@@ -209,12 +209,12 @@ export function googleAccessContextManagerAccessLevelsAccessLevelsBasicCondition
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_device_management_levels: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedDeviceManagementLevels),
-    allowed_encryption_statuses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowedEncryptionStatuses),
+    allowed_device_management_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedDeviceManagementLevels),
+    allowed_encryption_statuses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedEncryptionStatuses),
     require_admin_approval: cdktf.booleanToTerraform(struct!.requireAdminApproval),
     require_corp_owned: cdktf.booleanToTerraform(struct!.requireCorpOwned),
     require_screen_lock: cdktf.booleanToTerraform(struct!.requireScreenLock),
-    os_constraints: cdktf.listMapper(googleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsDevicePolicyOsConstraintsToTerraform)(struct!.osConstraints),
+    os_constraints: cdktf.listMapper(googleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsDevicePolicyOsConstraintsToTerraform, true)(struct!.osConstraints),
   }
 }
 
@@ -445,11 +445,11 @@ export function googleAccessContextManagerAccessLevelsAccessLevelsBasicCondition
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip_subnetworks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipSubnetworks),
-    members: cdktf.listMapper(cdktf.stringToTerraform)(struct!.members),
+    ip_subnetworks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipSubnetworks),
+    members: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.members),
     negate: cdktf.booleanToTerraform(struct!.negate),
-    regions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.regions),
-    required_access_levels: cdktf.listMapper(cdktf.stringToTerraform)(struct!.requiredAccessLevels),
+    regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.regions),
+    required_access_levels: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requiredAccessLevels),
     device_policy: googleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsDevicePolicyToTerraform(struct!.devicePolicy),
   }
 }
@@ -670,7 +670,7 @@ export function googleAccessContextManagerAccessLevelsAccessLevelsBasicToTerrafo
   }
   return {
     combining_function: cdktf.stringToTerraform(struct!.combiningFunction),
-    conditions: cdktf.listMapper(googleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsToTerraform)(struct!.conditions),
+    conditions: cdktf.listMapper(googleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsToTerraform, true)(struct!.conditions),
   }
 }
 
@@ -1329,7 +1329,10 @@ export class GoogleAccessContextManagerAccessLevels extends cdktf.TerraformResou
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._parent = config.parent;
@@ -1410,7 +1413,7 @@ export class GoogleAccessContextManagerAccessLevels extends cdktf.TerraformResou
     return {
       id: cdktf.stringToTerraform(this._id),
       parent: cdktf.stringToTerraform(this._parent),
-      access_levels: cdktf.listMapper(googleAccessContextManagerAccessLevelsAccessLevelsToTerraform)(this._accessLevels.internalValue),
+      access_levels: cdktf.listMapper(googleAccessContextManagerAccessLevelsAccessLevelsToTerraform, true)(this._accessLevels.internalValue),
       timeouts: googleAccessContextManagerAccessLevelsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

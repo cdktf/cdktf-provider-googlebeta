@@ -510,7 +510,10 @@ export class GoogleMonitoringMetricDescriptor extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._displayName = config.displayName;
@@ -732,7 +735,7 @@ export class GoogleMonitoringMetricDescriptor extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       unit: cdktf.stringToTerraform(this._unit),
       value_type: cdktf.stringToTerraform(this._valueType),
-      labels: cdktf.listMapper(googleMonitoringMetricDescriptorLabelsToTerraform)(this._labels.internalValue),
+      labels: cdktf.listMapper(googleMonitoringMetricDescriptorLabelsToTerraform, true)(this._labels.internalValue),
       metadata: googleMonitoringMetricDescriptorMetadataToTerraform(this._metadata.internalValue),
       timeouts: googleMonitoringMetricDescriptorTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -97,7 +97,7 @@ export function googleNetworkConnectivitySpokeLinkedInterconnectAttachmentsToTer
   }
   return {
     site_to_site_data_transfer: cdktf.booleanToTerraform(struct!.siteToSiteDataTransfer),
-    uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.uris),
+    uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.uris),
   }
 }
 
@@ -315,7 +315,7 @@ export function googleNetworkConnectivitySpokeLinkedRouterApplianceInstancesToTe
   }
   return {
     site_to_site_data_transfer: cdktf.booleanToTerraform(struct!.siteToSiteDataTransfer),
-    instances: cdktf.listMapper(googleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesToTerraform)(struct!.instances),
+    instances: cdktf.listMapper(googleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesToTerraform, true)(struct!.instances),
   }
 }
 
@@ -405,7 +405,7 @@ export function googleNetworkConnectivitySpokeLinkedVpnTunnelsToTerraform(struct
   }
   return {
     site_to_site_data_transfer: cdktf.booleanToTerraform(struct!.siteToSiteDataTransfer),
-    uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.uris),
+    uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.uris),
   }
 }
 
@@ -635,7 +635,10 @@ export class GoogleNetworkConnectivitySpoke extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._hub = config.hub;

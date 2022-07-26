@@ -1637,7 +1637,7 @@ export function googleContainerClusterClusterAutoscalingAutoProvisioningDefaults
   return {
     image_type: cdktf.stringToTerraform(struct!.imageType),
     min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
-    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.oauthScopes),
+    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
     service_account: cdktf.stringToTerraform(struct!.serviceAccount),
   }
 }
@@ -1946,7 +1946,7 @@ export function googleContainerClusterClusterAutoscalingToTerraform(struct?: Goo
     autoscaling_profile: cdktf.stringToTerraform(struct!.autoscalingProfile),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     auto_provisioning_defaults: googleContainerClusterClusterAutoscalingAutoProvisioningDefaultsToTerraform(struct!.autoProvisioningDefaults),
-    resource_limits: cdktf.listMapper(googleContainerClusterClusterAutoscalingResourceLimitsToTerraform)(struct!.resourceLimits),
+    resource_limits: cdktf.listMapper(googleContainerClusterClusterAutoscalingResourceLimitsToTerraform, true)(struct!.resourceLimits),
   }
 }
 
@@ -2707,7 +2707,7 @@ export function googleContainerClusterLoggingConfigToTerraform(struct?: GoogleCo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_components: cdktf.listMapper(cdktf.stringToTerraform)(struct!.enableComponents),
+    enable_components: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enableComponents),
   }
 }
 
@@ -3196,7 +3196,7 @@ export function googleContainerClusterMaintenancePolicyToTerraform(struct?: Goog
   }
   return {
     daily_maintenance_window: googleContainerClusterMaintenancePolicyDailyMaintenanceWindowToTerraform(struct!.dailyMaintenanceWindow),
-    maintenance_exclusion: cdktf.listMapper(googleContainerClusterMaintenancePolicyMaintenanceExclusionToTerraform)(struct!.maintenanceExclusion),
+    maintenance_exclusion: cdktf.listMapper(googleContainerClusterMaintenancePolicyMaintenanceExclusionToTerraform, true)(struct!.maintenanceExclusion),
     recurring_window: googleContainerClusterMaintenancePolicyRecurringWindowToTerraform(struct!.recurringWindow),
   }
 }
@@ -3576,7 +3576,7 @@ export function googleContainerClusterMasterAuthorizedNetworksConfigToTerraform(
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_blocks: cdktf.listMapper(googleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksToTerraform)(struct!.cidrBlocks),
+    cidr_blocks: cdktf.listMapper(googleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksToTerraform, true)(struct!.cidrBlocks),
   }
 }
 
@@ -3713,7 +3713,7 @@ export function googleContainerClusterMonitoringConfigToTerraform(struct?: Googl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_components: cdktf.listMapper(cdktf.stringToTerraform)(struct!.enableComponents),
+    enable_components: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enableComponents),
     managed_prometheus: googleContainerClusterMonitoringConfigManagedPrometheusToTerraform(struct!.managedPrometheus),
   }
 }
@@ -4947,7 +4947,7 @@ export function googleContainerClusterNodeConfigToTerraform(struct?: GoogleConta
     boot_disk_kms_key: cdktf.stringToTerraform(struct!.bootDiskKmsKey),
     disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
     disk_type: cdktf.stringToTerraform(struct!.diskType),
-    guest_accelerator: cdktf.listMapper(googleContainerClusterNodeConfigGuestAcceleratorToTerraform)(struct!.guestAccelerator),
+    guest_accelerator: cdktf.listMapper(googleContainerClusterNodeConfigGuestAcceleratorToTerraform, false)(struct!.guestAccelerator),
     image_type: cdktf.stringToTerraform(struct!.imageType),
     labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
     local_ssd_count: cdktf.numberToTerraform(struct!.localSsdCount),
@@ -4955,12 +4955,12 @@ export function googleContainerClusterNodeConfigToTerraform(struct?: GoogleConta
     metadata: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.metadata),
     min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
     node_group: cdktf.stringToTerraform(struct!.nodeGroup),
-    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.oauthScopes),
+    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
     preemptible: cdktf.booleanToTerraform(struct!.preemptible),
     service_account: cdktf.stringToTerraform(struct!.serviceAccount),
     spot: cdktf.booleanToTerraform(struct!.spot),
-    tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tags),
-    taint: cdktf.listMapper(googleContainerClusterNodeConfigTaintToTerraform)(struct!.taint),
+    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
+    taint: cdktf.listMapper(googleContainerClusterNodeConfigTaintToTerraform, false)(struct!.taint),
     ephemeral_storage_config: googleContainerClusterNodeConfigEphemeralStorageConfigToTerraform(struct!.ephemeralStorageConfig),
     gcfs_config: googleContainerClusterNodeConfigGcfsConfigToTerraform(struct!.gcfsConfig),
     gvnic: googleContainerClusterNodeConfigGvnicToTerraform(struct!.gvnic),
@@ -6922,7 +6922,7 @@ export function googleContainerClusterNodePoolNodeConfigToTerraform(struct?: Goo
     boot_disk_kms_key: cdktf.stringToTerraform(struct!.bootDiskKmsKey),
     disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
     disk_type: cdktf.stringToTerraform(struct!.diskType),
-    guest_accelerator: cdktf.listMapper(googleContainerClusterNodePoolNodeConfigGuestAcceleratorToTerraform)(struct!.guestAccelerator),
+    guest_accelerator: cdktf.listMapper(googleContainerClusterNodePoolNodeConfigGuestAcceleratorToTerraform, false)(struct!.guestAccelerator),
     image_type: cdktf.stringToTerraform(struct!.imageType),
     labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
     local_ssd_count: cdktf.numberToTerraform(struct!.localSsdCount),
@@ -6930,12 +6930,12 @@ export function googleContainerClusterNodePoolNodeConfigToTerraform(struct?: Goo
     metadata: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.metadata),
     min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
     node_group: cdktf.stringToTerraform(struct!.nodeGroup),
-    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.oauthScopes),
+    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
     preemptible: cdktf.booleanToTerraform(struct!.preemptible),
     service_account: cdktf.stringToTerraform(struct!.serviceAccount),
     spot: cdktf.booleanToTerraform(struct!.spot),
-    tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tags),
-    taint: cdktf.listMapper(googleContainerClusterNodePoolNodeConfigTaintToTerraform)(struct!.taint),
+    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
+    taint: cdktf.listMapper(googleContainerClusterNodePoolNodeConfigTaintToTerraform, false)(struct!.taint),
     ephemeral_storage_config: googleContainerClusterNodePoolNodeConfigEphemeralStorageConfigToTerraform(struct!.ephemeralStorageConfig),
     gcfs_config: googleContainerClusterNodePoolNodeConfigGcfsConfigToTerraform(struct!.gcfsConfig),
     gvnic: googleContainerClusterNodePoolNodeConfigGvnicToTerraform(struct!.gvnic),
@@ -7769,7 +7769,7 @@ export function googleContainerClusterNodePoolToTerraform(struct?: GoogleContain
     name: cdktf.stringToTerraform(struct!.name),
     name_prefix: cdktf.stringToTerraform(struct!.namePrefix),
     node_count: cdktf.numberToTerraform(struct!.nodeCount),
-    node_locations: cdktf.listMapper(cdktf.stringToTerraform)(struct!.nodeLocations),
+    node_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.nodeLocations),
     version: cdktf.stringToTerraform(struct!.version),
     autoscaling: googleContainerClusterNodePoolAutoscalingToTerraform(struct!.autoscaling),
     management: googleContainerClusterNodePoolManagementToTerraform(struct!.management),
@@ -9257,7 +9257,10 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._clusterIpv4Cidr = config.clusterIpv4Cidr;
     this._datapathProvider = config.datapathProvider;
@@ -10276,7 +10279,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       network: cdktf.stringToTerraform(this._network),
       networking_mode: cdktf.stringToTerraform(this._networkingMode),
-      node_locations: cdktf.listMapper(cdktf.stringToTerraform)(this._nodeLocations),
+      node_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(this._nodeLocations),
       node_version: cdktf.stringToTerraform(this._nodeVersion),
       private_ipv6_google_access: cdktf.stringToTerraform(this._privateIpv6GoogleAccess),
       project: cdktf.stringToTerraform(this._project),
@@ -10301,7 +10304,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       monitoring_config: googleContainerClusterMonitoringConfigToTerraform(this._monitoringConfig.internalValue),
       network_policy: googleContainerClusterNetworkPolicyToTerraform(this._networkPolicy.internalValue),
       node_config: googleContainerClusterNodeConfigToTerraform(this._nodeConfig.internalValue),
-      node_pool: cdktf.listMapper(googleContainerClusterNodePoolToTerraform)(this._nodePool.internalValue),
+      node_pool: cdktf.listMapper(googleContainerClusterNodePoolToTerraform, true)(this._nodePool.internalValue),
       notification_config: googleContainerClusterNotificationConfigToTerraform(this._notificationConfig.internalValue),
       pod_security_policy_config: googleContainerClusterPodSecurityPolicyConfigToTerraform(this._podSecurityPolicyConfig.internalValue),
       private_cluster_config: googleContainerClusterPrivateClusterConfigToTerraform(this._privateClusterConfig.internalValue),

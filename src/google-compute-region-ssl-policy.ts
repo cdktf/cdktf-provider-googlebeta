@@ -244,7 +244,10 @@ export class GoogleComputeRegionSslPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._customFeatures = config.customFeatures;
     this._description = config.description;
@@ -425,7 +428,7 @@ export class GoogleComputeRegionSslPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_features: cdktf.listMapper(cdktf.stringToTerraform)(this._customFeatures),
+      custom_features: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customFeatures),
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       min_tls_version: cdktf.stringToTerraform(this._minTlsVersion),

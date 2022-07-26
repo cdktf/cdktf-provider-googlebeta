@@ -1713,7 +1713,7 @@ export function googleSqlDatabaseInstanceSettingsIpConfigurationToTerraform(stru
     ipv4_enabled: cdktf.booleanToTerraform(struct!.ipv4Enabled),
     private_network: cdktf.stringToTerraform(struct!.privateNetwork),
     require_ssl: cdktf.booleanToTerraform(struct!.requireSsl),
-    authorized_networks: cdktf.listMapper(googleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksToTerraform)(struct!.authorizedNetworks),
+    authorized_networks: cdktf.listMapper(googleSqlDatabaseInstanceSettingsIpConfigurationAuthorizedNetworksToTerraform, true)(struct!.authorizedNetworks),
   }
 }
 
@@ -2359,7 +2359,7 @@ export function googleSqlDatabaseInstanceSettingsToTerraform(struct?: GoogleSqlD
     user_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.userLabels),
     active_directory_config: googleSqlDatabaseInstanceSettingsActiveDirectoryConfigToTerraform(struct!.activeDirectoryConfig),
     backup_configuration: googleSqlDatabaseInstanceSettingsBackupConfigurationToTerraform(struct!.backupConfiguration),
-    database_flags: cdktf.listMapper(googleSqlDatabaseInstanceSettingsDatabaseFlagsToTerraform)(struct!.databaseFlags),
+    database_flags: cdktf.listMapper(googleSqlDatabaseInstanceSettingsDatabaseFlagsToTerraform, true)(struct!.databaseFlags),
     insights_config: googleSqlDatabaseInstanceSettingsInsightsConfigToTerraform(struct!.insightsConfig),
     ip_configuration: googleSqlDatabaseInstanceSettingsIpConfigurationToTerraform(struct!.ipConfiguration),
     location_preference: googleSqlDatabaseInstanceSettingsLocationPreferenceToTerraform(struct!.locationPreference),
@@ -2954,7 +2954,10 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._databaseVersion = config.databaseVersion;
     this._deletionProtection = config.deletionProtection;

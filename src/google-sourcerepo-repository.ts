@@ -354,7 +354,10 @@ export class GoogleSourcerepoRepository extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._name = config.name;
@@ -463,7 +466,7 @@ export class GoogleSourcerepoRepository extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
-      pubsub_configs: cdktf.listMapper(googleSourcerepoRepositoryPubsubConfigsToTerraform)(this._pubsubConfigs.internalValue),
+      pubsub_configs: cdktf.listMapper(googleSourcerepoRepositoryPubsubConfigsToTerraform, true)(this._pubsubConfigs.internalValue),
       timeouts: googleSourcerepoRepositoryTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

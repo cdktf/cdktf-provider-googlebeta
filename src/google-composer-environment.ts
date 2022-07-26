@@ -442,7 +442,7 @@ export function googleComposerEnvironmentConfigMasterAuthorizedNetworksConfigToT
   }
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    cidr_blocks: cdktf.listMapper(googleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksToTerraform)(struct!.cidrBlocks),
+    cidr_blocks: cdktf.listMapper(googleComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksToTerraform, true)(struct!.cidrBlocks),
   }
 }
 
@@ -795,14 +795,14 @@ export function googleComposerEnvironmentConfigNodeConfigToTerraform(struct?: Go
   return {
     disk_size_gb: cdktf.numberToTerraform(struct!.diskSizeGb),
     enable_ip_masq_agent: cdktf.booleanToTerraform(struct!.enableIpMasqAgent),
-    ip_allocation_policy: cdktf.listMapper(googleComposerEnvironmentConfigNodeConfigIpAllocationPolicyToTerraform)(struct!.ipAllocationPolicy),
+    ip_allocation_policy: cdktf.listMapper(googleComposerEnvironmentConfigNodeConfigIpAllocationPolicyToTerraform, false)(struct!.ipAllocationPolicy),
     machine_type: cdktf.stringToTerraform(struct!.machineType),
     max_pods_per_node: cdktf.numberToTerraform(struct!.maxPodsPerNode),
     network: cdktf.stringToTerraform(struct!.network),
-    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.oauthScopes),
+    oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
     service_account: cdktf.stringToTerraform(struct!.serviceAccount),
     subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
-    tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tags),
+    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
     zone: cdktf.stringToTerraform(struct!.zone),
   }
 }
@@ -1732,7 +1732,7 @@ export function googleComposerEnvironmentConfigWebServerNetworkAccessControlToTe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_ip_range: cdktf.listMapper(googleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeToTerraform)(struct!.allowedIpRange),
+    allowed_ip_range: cdktf.listMapper(googleComposerEnvironmentConfigWebServerNetworkAccessControlAllowedIpRangeToTerraform, true)(struct!.allowedIpRange),
   }
 }
 
@@ -2934,7 +2934,10 @@ export class GoogleComposerEnvironment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._labels = config.labels;

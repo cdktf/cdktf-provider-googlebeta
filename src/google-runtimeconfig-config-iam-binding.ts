@@ -183,7 +183,10 @@ export class GoogleRuntimeconfigConfigIamBinding extends cdktf.TerraformResource
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._config = config.config;
     this._id = config.id;
@@ -297,7 +300,7 @@ export class GoogleRuntimeconfigConfigIamBinding extends cdktf.TerraformResource
     return {
       config: cdktf.stringToTerraform(this._config),
       id: cdktf.stringToTerraform(this._id),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       project: cdktf.stringToTerraform(this._project),
       role: cdktf.stringToTerraform(this._role),
       condition: googleRuntimeconfigConfigIamBindingConditionToTerraform(this._condition.internalValue),

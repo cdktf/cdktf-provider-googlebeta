@@ -1243,10 +1243,10 @@ export function googleComputeRegionAutoscalerAutoscalingPolicyToTerraform(struct
     mode: cdktf.stringToTerraform(struct!.mode),
     cpu_utilization: googleComputeRegionAutoscalerAutoscalingPolicyCpuUtilizationToTerraform(struct!.cpuUtilization),
     load_balancing_utilization: googleComputeRegionAutoscalerAutoscalingPolicyLoadBalancingUtilizationToTerraform(struct!.loadBalancingUtilization),
-    metric: cdktf.listMapper(googleComputeRegionAutoscalerAutoscalingPolicyMetricToTerraform)(struct!.metric),
+    metric: cdktf.listMapper(googleComputeRegionAutoscalerAutoscalingPolicyMetricToTerraform, true)(struct!.metric),
     scale_down_control: googleComputeRegionAutoscalerAutoscalingPolicyScaleDownControlToTerraform(struct!.scaleDownControl),
     scale_in_control: googleComputeRegionAutoscalerAutoscalingPolicyScaleInControlToTerraform(struct!.scaleInControl),
-    scaling_schedules: cdktf.listMapper(googleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesToTerraform)(struct!.scalingSchedules),
+    scaling_schedules: cdktf.listMapper(googleComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesToTerraform, true)(struct!.scalingSchedules),
   }
 }
 
@@ -1652,7 +1652,10 @@ export class GoogleComputeRegionAutoscaler extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;

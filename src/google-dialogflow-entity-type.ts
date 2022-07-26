@@ -82,7 +82,7 @@ export function googleDialogflowEntityTypeEntitiesToTerraform(struct?: GoogleDia
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    synonyms: cdktf.listMapper(cdktf.stringToTerraform)(struct!.synonyms),
+    synonyms: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.synonyms),
     value: cdktf.stringToTerraform(struct!.value),
   }
 }
@@ -345,7 +345,10 @@ export class GoogleDialogflowEntityType extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._displayName = config.displayName;
     this._enableFuzzyExtraction = config.enableFuzzyExtraction;
@@ -482,7 +485,7 @@ export class GoogleDialogflowEntityType extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       kind: cdktf.stringToTerraform(this._kind),
       project: cdktf.stringToTerraform(this._project),
-      entities: cdktf.listMapper(googleDialogflowEntityTypeEntitiesToTerraform)(this._entities.internalValue),
+      entities: cdktf.listMapper(googleDialogflowEntityTypeEntitiesToTerraform, true)(this._entities.internalValue),
       timeouts: googleDialogflowEntityTypeTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

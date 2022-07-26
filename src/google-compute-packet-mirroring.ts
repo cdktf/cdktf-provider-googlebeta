@@ -168,9 +168,9 @@ export function googleComputePacketMirroringFilterToTerraform(struct?: GoogleCom
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cidr_ranges: cdktf.listMapper(cdktf.stringToTerraform)(struct!.cidrRanges),
+    cidr_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.cidrRanges),
     direction: cdktf.stringToTerraform(struct!.direction),
-    ip_protocols: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipProtocols),
+    ip_protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipProtocols),
   }
 }
 
@@ -485,9 +485,9 @@ export function googleComputePacketMirroringMirroredResourcesToTerraform(struct?
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tags),
-    instances: cdktf.listMapper(googleComputePacketMirroringMirroredResourcesInstancesToTerraform)(struct!.instances),
-    subnetworks: cdktf.listMapper(googleComputePacketMirroringMirroredResourcesSubnetworksToTerraform)(struct!.subnetworks),
+    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
+    instances: cdktf.listMapper(googleComputePacketMirroringMirroredResourcesInstancesToTerraform, true)(struct!.instances),
+    subnetworks: cdktf.listMapper(googleComputePacketMirroringMirroredResourcesSubnetworksToTerraform, true)(struct!.subnetworks),
   }
 }
 
@@ -809,7 +809,10 @@ export class GoogleComputePacketMirroring extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;

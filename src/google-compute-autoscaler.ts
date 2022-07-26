@@ -1243,10 +1243,10 @@ export function googleComputeAutoscalerAutoscalingPolicyToTerraform(struct?: Goo
     mode: cdktf.stringToTerraform(struct!.mode),
     cpu_utilization: googleComputeAutoscalerAutoscalingPolicyCpuUtilizationToTerraform(struct!.cpuUtilization),
     load_balancing_utilization: googleComputeAutoscalerAutoscalingPolicyLoadBalancingUtilizationToTerraform(struct!.loadBalancingUtilization),
-    metric: cdktf.listMapper(googleComputeAutoscalerAutoscalingPolicyMetricToTerraform)(struct!.metric),
+    metric: cdktf.listMapper(googleComputeAutoscalerAutoscalingPolicyMetricToTerraform, true)(struct!.metric),
     scale_down_control: googleComputeAutoscalerAutoscalingPolicyScaleDownControlToTerraform(struct!.scaleDownControl),
     scale_in_control: googleComputeAutoscalerAutoscalingPolicyScaleInControlToTerraform(struct!.scaleInControl),
-    scaling_schedules: cdktf.listMapper(googleComputeAutoscalerAutoscalingPolicyScalingSchedulesToTerraform)(struct!.scalingSchedules),
+    scaling_schedules: cdktf.listMapper(googleComputeAutoscalerAutoscalingPolicyScalingSchedulesToTerraform, true)(struct!.scalingSchedules),
   }
 }
 
@@ -1652,7 +1652,10 @@ export class GoogleComputeAutoscaler extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;

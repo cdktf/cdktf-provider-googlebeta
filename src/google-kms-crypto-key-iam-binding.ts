@@ -179,7 +179,10 @@ export class GoogleKmsCryptoKeyIamBinding extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cryptoKeyId = config.cryptoKeyId;
     this._id = config.id;
@@ -276,7 +279,7 @@ export class GoogleKmsCryptoKeyIamBinding extends cdktf.TerraformResource {
     return {
       crypto_key_id: cdktf.stringToTerraform(this._cryptoKeyId),
       id: cdktf.stringToTerraform(this._id),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       role: cdktf.stringToTerraform(this._role),
       condition: googleKmsCryptoKeyIamBindingConditionToTerraform(this._condition.internalValue),
     };

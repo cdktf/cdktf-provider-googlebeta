@@ -54,7 +54,7 @@ export function googleOrganizationIamAuditConfigAuditLogConfigToTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exempted_members: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exemptedMembers),
+    exempted_members: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exemptedMembers),
     log_type: cdktf.stringToTerraform(struct!.logType),
   }
 }
@@ -191,7 +191,10 @@ export class GoogleOrganizationIamAuditConfig extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._orgId = config.orgId;
@@ -272,7 +275,7 @@ export class GoogleOrganizationIamAuditConfig extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       org_id: cdktf.stringToTerraform(this._orgId),
       service: cdktf.stringToTerraform(this._service),
-      audit_log_config: cdktf.listMapper(googleOrganizationIamAuditConfigAuditLogConfigToTerraform)(this._auditLogConfig.internalValue),
+      audit_log_config: cdktf.listMapper(googleOrganizationIamAuditConfigAuditLogConfigToTerraform, true)(this._auditLogConfig.internalValue),
     };
   }
 }

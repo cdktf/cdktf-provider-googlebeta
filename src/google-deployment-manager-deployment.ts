@@ -426,7 +426,7 @@ export function googleDeploymentManagerDeploymentTargetToTerraform(struct?: Goog
   }
   return {
     config: googleDeploymentManagerDeploymentTargetConfigToTerraform(struct!.config),
-    imports: cdktf.listMapper(googleDeploymentManagerDeploymentTargetImportsToTerraform)(struct!.imports),
+    imports: cdktf.listMapper(googleDeploymentManagerDeploymentTargetImportsToTerraform, true)(struct!.imports),
   }
 }
 
@@ -659,7 +659,10 @@ export class GoogleDeploymentManagerDeployment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._createPolicy = config.createPolicy;
     this._deletePolicy = config.deletePolicy;
@@ -859,7 +862,7 @@ export class GoogleDeploymentManagerDeployment extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       preview: cdktf.booleanToTerraform(this._preview),
       project: cdktf.stringToTerraform(this._project),
-      labels: cdktf.listMapper(googleDeploymentManagerDeploymentLabelsToTerraform)(this._labels.internalValue),
+      labels: cdktf.listMapper(googleDeploymentManagerDeploymentLabelsToTerraform, true)(this._labels.internalValue),
       target: googleDeploymentManagerDeploymentTargetToTerraform(this._target.internalValue),
       timeouts: googleDeploymentManagerDeploymentTimeoutsToTerraform(this._timeouts.internalValue),
     };
