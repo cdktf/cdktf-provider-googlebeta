@@ -49,7 +49,7 @@ export interface GoogleBillingBudgetConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_budget#threshold_rules GoogleBillingBudget#threshold_rules}
   */
-  readonly thresholdRules: GoogleBillingBudgetThresholdRules[] | cdktf.IResolvable;
+  readonly thresholdRules?: GoogleBillingBudgetThresholdRules[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
@@ -1353,7 +1353,7 @@ export class GoogleBillingBudget extends cdktf.TerraformResource {
       terraformResourceType: 'google_billing_budget',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1470,13 +1470,16 @@ export class GoogleBillingBudget extends cdktf.TerraformResource {
     return this._budgetFilter.internalValue;
   }
 
-  // threshold_rules - computed: false, optional: false, required: true
+  // threshold_rules - computed: false, optional: true, required: false
   private _thresholdRules = new GoogleBillingBudgetThresholdRulesList(this, "threshold_rules", false);
   public get thresholdRules() {
     return this._thresholdRules;
   }
   public putThresholdRules(value: GoogleBillingBudgetThresholdRules[] | cdktf.IResolvable) {
     this._thresholdRules.internalValue = value;
+  }
+  public resetThresholdRules() {
+    this._thresholdRules.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get thresholdRulesInput() {

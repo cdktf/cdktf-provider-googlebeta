@@ -138,7 +138,7 @@ export interface GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncGit {
   */
   readonly policyDir?: string;
   /**
-  * Type of secret configured for access to the Git repo.
+  * Type of secret configured for access to the Git repo. Must be one of ssh, cookiefile, gcenode, token, gcpserviceaccount or none. The validation of this is case-sensitive.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#secret_type GoogleGkeHubFeatureMembership#secret_type}
   */
@@ -638,6 +638,73 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOut
     return this._enabled;
   }
 }
+export interface GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring {
+  /**
+  *  Specifies the list of backends Policy Controller will export to. Specifying an empty value `[]` disables metrics export.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#backends GoogleGkeHubFeatureMembership#backends}
+  */
+  readonly backends?: string[];
+}
+
+export function googleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringToTerraform(struct?: GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringOutputReference | GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    backends: cdktf.listMapper(cdktf.stringToTerraform)(struct!.backends),
+  }
+}
+
+export class GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._backends !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backends = this._backends;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._backends = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._backends = value.backends;
+    }
+  }
+
+  // backends - computed: true, optional: true, required: false
+  private _backends?: string[]; 
+  public get backends() {
+    return this.getListAttribute('backends');
+  }
+  public set backends(value: string[]) {
+    this._backends = value;
+  }
+  public resetBackends() {
+    this._backends = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backendsInput() {
+    return this._backends;
+  }
+}
 export interface GoogleGkeHubFeatureMembershipConfigmanagementPolicyController {
   /**
   * Sets the interval for Policy Controller Audit Scans (in seconds). When set to 0, this disables audit functionality altogether.
@@ -664,6 +731,12 @@ export interface GoogleGkeHubFeatureMembershipConfigmanagementPolicyController {
   */
   readonly logDeniesEnabled?: boolean | cdktf.IResolvable;
   /**
+  * Enable or disable mutation in policy controller. If true, mutation CRDs, webhook and controller deployment will be deployed to the cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#mutation_enabled GoogleGkeHubFeatureMembership#mutation_enabled}
+  */
+  readonly mutationEnabled?: boolean | cdktf.IResolvable;
+  /**
   * Enables the ability to use Constraint Templates that reference to objects other than the object currently being evaluated.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#referential_rules_enabled GoogleGkeHubFeatureMembership#referential_rules_enabled}
@@ -675,6 +748,12 @@ export interface GoogleGkeHubFeatureMembershipConfigmanagementPolicyController {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#template_library_installed GoogleGkeHubFeatureMembership#template_library_installed}
   */
   readonly templateLibraryInstalled?: boolean | cdktf.IResolvable;
+  /**
+  * monitoring block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#monitoring GoogleGkeHubFeatureMembership#monitoring}
+  */
+  readonly monitoring?: GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring;
 }
 
 export function googleGkeHubFeatureMembershipConfigmanagementPolicyControllerToTerraform(struct?: GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutputReference | GoogleGkeHubFeatureMembershipConfigmanagementPolicyController): any {
@@ -687,8 +766,10 @@ export function googleGkeHubFeatureMembershipConfigmanagementPolicyControllerToT
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     exemptable_namespaces: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exemptableNamespaces),
     log_denies_enabled: cdktf.booleanToTerraform(struct!.logDeniesEnabled),
+    mutation_enabled: cdktf.booleanToTerraform(struct!.mutationEnabled),
     referential_rules_enabled: cdktf.booleanToTerraform(struct!.referentialRulesEnabled),
     template_library_installed: cdktf.booleanToTerraform(struct!.templateLibraryInstalled),
+    monitoring: googleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringToTerraform(struct!.monitoring),
   }
 }
 
@@ -722,6 +803,10 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
       hasAnyValues = true;
       internalValueResult.logDeniesEnabled = this._logDeniesEnabled;
     }
+    if (this._mutationEnabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mutationEnabled = this._mutationEnabled;
+    }
     if (this._referentialRulesEnabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.referentialRulesEnabled = this._referentialRulesEnabled;
@@ -729,6 +814,10 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
     if (this._templateLibraryInstalled !== undefined) {
       hasAnyValues = true;
       internalValueResult.templateLibraryInstalled = this._templateLibraryInstalled;
+    }
+    if (this._monitoring?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.monitoring = this._monitoring?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -740,8 +829,10 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
       this._enabled = undefined;
       this._exemptableNamespaces = undefined;
       this._logDeniesEnabled = undefined;
+      this._mutationEnabled = undefined;
       this._referentialRulesEnabled = undefined;
       this._templateLibraryInstalled = undefined;
+      this._monitoring.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -749,8 +840,10 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
       this._enabled = value.enabled;
       this._exemptableNamespaces = value.exemptableNamespaces;
       this._logDeniesEnabled = value.logDeniesEnabled;
+      this._mutationEnabled = value.mutationEnabled;
       this._referentialRulesEnabled = value.referentialRulesEnabled;
       this._templateLibraryInstalled = value.templateLibraryInstalled;
+      this._monitoring.internalValue = value.monitoring;
     }
   }
 
@@ -818,6 +911,22 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
     return this._logDeniesEnabled;
   }
 
+  // mutation_enabled - computed: false, optional: true, required: false
+  private _mutationEnabled?: boolean | cdktf.IResolvable; 
+  public get mutationEnabled() {
+    return this.getBooleanAttribute('mutation_enabled');
+  }
+  public set mutationEnabled(value: boolean | cdktf.IResolvable) {
+    this._mutationEnabled = value;
+  }
+  public resetMutationEnabled() {
+    this._mutationEnabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mutationEnabledInput() {
+    return this._mutationEnabled;
+  }
+
   // referential_rules_enabled - computed: false, optional: true, required: false
   private _referentialRulesEnabled?: boolean | cdktf.IResolvable; 
   public get referentialRulesEnabled() {
@@ -848,6 +957,22 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerOutput
   // Temporarily expose input value. Use with caution.
   public get templateLibraryInstalledInput() {
     return this._templateLibraryInstalled;
+  }
+
+  // monitoring - computed: false, optional: true, required: false
+  private _monitoring = new GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoringOutputReference(this, "monitoring");
+  public get monitoring() {
+    return this._monitoring;
+  }
+  public putMonitoring(value: GoogleGkeHubFeatureMembershipConfigmanagementPolicyControllerMonitoring) {
+    this._monitoring.internalValue = value;
+  }
+  public resetMonitoring() {
+    this._monitoring.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monitoringInput() {
+    return this._monitoring.internalValue;
   }
 }
 export interface GoogleGkeHubFeatureMembershipConfigmanagement {
@@ -1189,7 +1314,7 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_feature_membership',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
