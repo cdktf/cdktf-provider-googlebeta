@@ -198,7 +198,7 @@ export function googleBinaryAuthorizationPolicyClusterAdmissionRulesToTerraform(
     cluster: cdktf.stringToTerraform(struct!.cluster),
     enforcement_mode: cdktf.stringToTerraform(struct!.enforcementMode),
     evaluation_mode: cdktf.stringToTerraform(struct!.evaluationMode),
-    require_attestations_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.requireAttestationsBy),
+    require_attestations_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requireAttestationsBy),
   }
 }
 
@@ -376,7 +376,7 @@ export function googleBinaryAuthorizationPolicyDefaultAdmissionRuleToTerraform(s
   return {
     enforcement_mode: cdktf.stringToTerraform(struct!.enforcementMode),
     evaluation_mode: cdktf.stringToTerraform(struct!.evaluationMode),
-    require_attestations_by: cdktf.listMapper(cdktf.stringToTerraform)(struct!.requireAttestationsBy),
+    require_attestations_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requireAttestationsBy),
   }
 }
 
@@ -628,7 +628,10 @@ export class GoogleBinaryAuthorizationPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._globalPolicyEvaluationMode = config.globalPolicyEvaluationMode;
@@ -779,8 +782,8 @@ export class GoogleBinaryAuthorizationPolicy extends cdktf.TerraformResource {
       global_policy_evaluation_mode: cdktf.stringToTerraform(this._globalPolicyEvaluationMode),
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
-      admission_whitelist_patterns: cdktf.listMapper(googleBinaryAuthorizationPolicyAdmissionWhitelistPatternsToTerraform)(this._admissionWhitelistPatterns.internalValue),
-      cluster_admission_rules: cdktf.listMapper(googleBinaryAuthorizationPolicyClusterAdmissionRulesToTerraform)(this._clusterAdmissionRules.internalValue),
+      admission_whitelist_patterns: cdktf.listMapper(googleBinaryAuthorizationPolicyAdmissionWhitelistPatternsToTerraform, true)(this._admissionWhitelistPatterns.internalValue),
+      cluster_admission_rules: cdktf.listMapper(googleBinaryAuthorizationPolicyClusterAdmissionRulesToTerraform, true)(this._clusterAdmissionRules.internalValue),
       default_admission_rule: googleBinaryAuthorizationPolicyDefaultAdmissionRuleToTerraform(this._defaultAdmissionRule.internalValue),
       timeouts: googleBinaryAuthorizationPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };

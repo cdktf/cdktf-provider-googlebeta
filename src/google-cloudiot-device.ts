@@ -769,7 +769,10 @@ export class GoogleCloudiotDevice extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._blocked = config.blocked;
     this._id = config.id;
@@ -989,7 +992,7 @@ export class GoogleCloudiotDevice extends cdktf.TerraformResource {
       metadata: cdktf.hashMapper(cdktf.stringToTerraform)(this._metadata),
       name: cdktf.stringToTerraform(this._name),
       registry: cdktf.stringToTerraform(this._registry),
-      credentials: cdktf.listMapper(googleCloudiotDeviceCredentialsToTerraform)(this._credentials.internalValue),
+      credentials: cdktf.listMapper(googleCloudiotDeviceCredentialsToTerraform, true)(this._credentials.internalValue),
       gateway_config: googleCloudiotDeviceGatewayConfigToTerraform(this._gatewayConfig.internalValue),
       timeouts: googleCloudiotDeviceTimeoutsToTerraform(this._timeouts.internalValue),
     };

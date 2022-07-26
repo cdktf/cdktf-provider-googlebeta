@@ -1691,7 +1691,7 @@ export function googleAppEngineFlexibleAppVersionDeploymentToTerraform(struct?: 
   return {
     cloud_build_options: googleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsToTerraform(struct!.cloudBuildOptions),
     container: googleAppEngineFlexibleAppVersionDeploymentContainerToTerraform(struct!.container),
-    files: cdktf.listMapper(googleAppEngineFlexibleAppVersionDeploymentFilesToTerraform)(struct!.files),
+    files: cdktf.listMapper(googleAppEngineFlexibleAppVersionDeploymentFilesToTerraform, true)(struct!.files),
     zip: googleAppEngineFlexibleAppVersionDeploymentZipToTerraform(struct!.zip),
   }
 }
@@ -2968,7 +2968,7 @@ export function googleAppEngineFlexibleAppVersionNetworkToTerraform(struct?: Goo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    forwarded_ports: cdktf.listMapper(cdktf.stringToTerraform)(struct!.forwardedPorts),
+    forwarded_ports: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.forwardedPorts),
     instance_tag: cdktf.stringToTerraform(struct!.instanceTag),
     name: cdktf.stringToTerraform(struct!.name),
     session_affinity: cdktf.booleanToTerraform(struct!.sessionAffinity),
@@ -3532,7 +3532,7 @@ export function googleAppEngineFlexibleAppVersionResourcesToTerraform(struct?: G
     cpu: cdktf.numberToTerraform(struct!.cpu),
     disk_gb: cdktf.numberToTerraform(struct!.diskGb),
     memory_gb: cdktf.numberToTerraform(struct!.memoryGb),
-    volumes: cdktf.listMapper(googleAppEngineFlexibleAppVersionResourcesVolumesToTerraform)(struct!.volumes),
+    volumes: cdktf.listMapper(googleAppEngineFlexibleAppVersionResourcesVolumesToTerraform, true)(struct!.volumes),
   }
 }
 
@@ -3876,7 +3876,10 @@ export class GoogleAppEngineFlexibleAppVersion extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._betaSettings = config.betaSettings;
     this._defaultExpiration = config.defaultExpiration;
@@ -4398,7 +4401,7 @@ export class GoogleAppEngineFlexibleAppVersion extends cdktf.TerraformResource {
       delete_service_on_destroy: cdktf.booleanToTerraform(this._deleteServiceOnDestroy),
       env_variables: cdktf.hashMapper(cdktf.stringToTerraform)(this._envVariables),
       id: cdktf.stringToTerraform(this._id),
-      inbound_services: cdktf.listMapper(cdktf.stringToTerraform)(this._inboundServices),
+      inbound_services: cdktf.listMapper(cdktf.stringToTerraform, false)(this._inboundServices),
       instance_class: cdktf.stringToTerraform(this._instanceClass),
       nobuild_files_regex: cdktf.stringToTerraform(this._nobuildFilesRegex),
       noop_on_destroy: cdktf.booleanToTerraform(this._noopOnDestroy),
@@ -4415,7 +4418,7 @@ export class GoogleAppEngineFlexibleAppVersion extends cdktf.TerraformResource {
       deployment: googleAppEngineFlexibleAppVersionDeploymentToTerraform(this._deployment.internalValue),
       endpoints_api_service: googleAppEngineFlexibleAppVersionEndpointsApiServiceToTerraform(this._endpointsApiService.internalValue),
       entrypoint: googleAppEngineFlexibleAppVersionEntrypointToTerraform(this._entrypoint.internalValue),
-      handlers: cdktf.listMapper(googleAppEngineFlexibleAppVersionHandlersToTerraform)(this._handlers.internalValue),
+      handlers: cdktf.listMapper(googleAppEngineFlexibleAppVersionHandlersToTerraform, true)(this._handlers.internalValue),
       liveness_check: googleAppEngineFlexibleAppVersionLivenessCheckToTerraform(this._livenessCheck.internalValue),
       manual_scaling: googleAppEngineFlexibleAppVersionManualScalingToTerraform(this._manualScaling.internalValue),
       network: googleAppEngineFlexibleAppVersionNetworkToTerraform(this._network.internalValue),

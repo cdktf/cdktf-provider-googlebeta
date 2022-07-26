@@ -304,7 +304,10 @@ export class GoogleDialogflowCxEnvironment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._displayName = config.displayName;
@@ -429,7 +432,7 @@ export class GoogleDialogflowCxEnvironment extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       parent: cdktf.stringToTerraform(this._parent),
       timeouts: googleDialogflowCxEnvironmentTimeoutsToTerraform(this._timeouts.internalValue),
-      version_configs: cdktf.listMapper(googleDialogflowCxEnvironmentVersionConfigsToTerraform)(this._versionConfigs.internalValue),
+      version_configs: cdktf.listMapper(googleDialogflowCxEnvironmentVersionConfigsToTerraform, true)(this._versionConfigs.internalValue),
     };
   }
 }

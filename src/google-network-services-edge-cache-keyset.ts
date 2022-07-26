@@ -341,7 +341,10 @@ export class GoogleNetworkServicesEdgeCacheKeyset extends cdktf.TerraformResourc
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -473,7 +476,7 @@ export class GoogleNetworkServicesEdgeCacheKeyset extends cdktf.TerraformResourc
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
-      public_key: cdktf.listMapper(googleNetworkServicesEdgeCacheKeysetPublicKeyToTerraform)(this._publicKey.internalValue),
+      public_key: cdktf.listMapper(googleNetworkServicesEdgeCacheKeysetPublicKeyToTerraform, true)(this._publicKey.internalValue),
       timeouts: googleNetworkServicesEdgeCacheKeysetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

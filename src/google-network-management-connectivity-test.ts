@@ -649,7 +649,10 @@ export class GoogleNetworkManagementConnectivityTest extends cdktf.TerraformReso
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -830,7 +833,7 @@ export class GoogleNetworkManagementConnectivityTest extends cdktf.TerraformReso
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       protocol: cdktf.stringToTerraform(this._protocol),
-      related_projects: cdktf.listMapper(cdktf.stringToTerraform)(this._relatedProjects),
+      related_projects: cdktf.listMapper(cdktf.stringToTerraform, false)(this._relatedProjects),
       destination: googleNetworkManagementConnectivityTestDestinationToTerraform(this._destination.internalValue),
       source: googleNetworkManagementConnectivityTestSourceToTerraform(this._source.internalValue),
       timeouts: googleNetworkManagementConnectivityTestTimeoutsToTerraform(this._timeouts.internalValue),

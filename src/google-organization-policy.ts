@@ -141,7 +141,7 @@ export function googleOrganizationPolicyListPolicyAllowToTerraform(struct?: Goog
   }
   return {
     all: cdktf.booleanToTerraform(struct!.all),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -237,7 +237,7 @@ export function googleOrganizationPolicyListPolicyDenyToTerraform(struct?: Googl
   }
   return {
     all: cdktf.booleanToTerraform(struct!.all),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -718,7 +718,10 @@ export class GoogleOrganizationPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._constraint = config.constraint;
     this._id = config.id;

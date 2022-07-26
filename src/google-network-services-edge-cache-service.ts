@@ -247,7 +247,7 @@ export function googleNetworkServicesEdgeCacheServiceRoutingHostRuleToTerraform(
   }
   return {
     description: cdktf.stringToTerraform(struct!.description),
-    hosts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.hosts),
+    hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.hosts),
     path_matcher: cdktf.stringToTerraform(struct!.pathMatcher),
   }
 }
@@ -899,10 +899,10 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    request_header_to_add: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToAddToTerraform)(struct!.requestHeaderToAdd),
-    request_header_to_remove: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToRemoveToTerraform)(struct!.requestHeaderToRemove),
-    response_header_to_add: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAddToTerraform)(struct!.responseHeaderToAdd),
-    response_header_to_remove: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveToTerraform)(struct!.responseHeaderToRemove),
+    request_header_to_add: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToAddToTerraform, true)(struct!.requestHeaderToAdd),
+    request_header_to_remove: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionRequestHeaderToRemoveToTerraform, true)(struct!.requestHeaderToRemove),
+    response_header_to_add: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToAddToTerraform, true)(struct!.responseHeaderToAdd),
+    response_header_to_remove: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionResponseHeaderToRemoveToTerraform, true)(struct!.responseHeaderToRemove),
   }
 }
 
@@ -1473,8 +1473,8 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     ignore_case: cdktf.booleanToTerraform(struct!.ignoreCase),
     path_template_match: cdktf.stringToTerraform(struct!.pathTemplateMatch),
     prefix_match: cdktf.stringToTerraform(struct!.prefixMatch),
-    header_match: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatchToTerraform)(struct!.headerMatch),
-    query_parameter_match: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchToTerraform)(struct!.queryParameterMatch),
+    header_match: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleHeaderMatchToTerraform, true)(struct!.headerMatch),
+    query_parameter_match: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleQueryParameterMatchToTerraform, true)(struct!.queryParameterMatch),
   }
 }
 
@@ -1748,11 +1748,11 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
   return {
     exclude_host: cdktf.booleanToTerraform(struct!.excludeHost),
     exclude_query_string: cdktf.booleanToTerraform(struct!.excludeQueryString),
-    excluded_query_parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludedQueryParameters),
+    excluded_query_parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludedQueryParameters),
     include_protocol: cdktf.booleanToTerraform(struct!.includeProtocol),
-    included_cookie_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedCookieNames),
-    included_header_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedHeaderNames),
-    included_query_parameters: cdktf.listMapper(cdktf.stringToTerraform)(struct!.includedQueryParameters),
+    included_cookie_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedCookieNames),
+    included_header_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedHeaderNames),
+    included_query_parameters: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.includedQueryParameters),
   }
 }
 
@@ -2352,11 +2352,11 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
   }
   return {
     allow_credentials: cdktf.booleanToTerraform(struct!.allowCredentials),
-    allow_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowHeaders),
-    allow_methods: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowMethods),
-    allow_origins: cdktf.listMapper(cdktf.stringToTerraform)(struct!.allowOrigins),
+    allow_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowHeaders),
+    allow_methods: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowMethods),
+    allow_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowOrigins),
     disabled: cdktf.booleanToTerraform(struct!.disabled),
-    expose_headers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exposeHeaders),
+    expose_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exposeHeaders),
     max_age: cdktf.stringToTerraform(struct!.maxAge),
   }
 }
@@ -3091,7 +3091,7 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRule
     origin: cdktf.stringToTerraform(struct!.origin),
     priority: cdktf.stringToTerraform(struct!.priority),
     header_action: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleHeaderActionToTerraform(struct!.headerAction),
-    match_rule: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleToTerraform)(struct!.matchRule),
+    match_rule: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleMatchRuleToTerraform, true)(struct!.matchRule),
     route_action: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionToTerraform(struct!.routeAction),
     url_redirect: googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirectToTerraform(struct!.urlRedirect),
   }
@@ -3332,7 +3332,7 @@ export function googleNetworkServicesEdgeCacheServiceRoutingPathMatcherToTerrafo
   return {
     description: cdktf.stringToTerraform(struct!.description),
     name: cdktf.stringToTerraform(struct!.name),
-    route_rule: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleToTerraform)(struct!.routeRule),
+    route_rule: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleToTerraform, true)(struct!.routeRule),
   }
 }
 
@@ -3475,8 +3475,8 @@ export function googleNetworkServicesEdgeCacheServiceRoutingToTerraform(struct?:
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host_rule: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingHostRuleToTerraform)(struct!.hostRule),
-    path_matcher: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherToTerraform)(struct!.pathMatcher),
+    host_rule: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingHostRuleToTerraform, true)(struct!.hostRule),
+    path_matcher: cdktf.listMapper(googleNetworkServicesEdgeCacheServiceRoutingPathMatcherToTerraform, true)(struct!.pathMatcher),
   }
 }
 
@@ -3706,7 +3706,10 @@ export class GoogleNetworkServicesEdgeCacheService extends cdktf.TerraformResour
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._disableHttp2 = config.disableHttp2;
@@ -3966,7 +3969,7 @@ export class GoogleNetworkServicesEdgeCacheService extends cdktf.TerraformResour
       disable_http2: cdktf.booleanToTerraform(this._disableHttp2),
       disable_quic: cdktf.booleanToTerraform(this._disableQuic),
       edge_security_policy: cdktf.stringToTerraform(this._edgeSecurityPolicy),
-      edge_ssl_certificates: cdktf.listMapper(cdktf.stringToTerraform)(this._edgeSslCertificates),
+      edge_ssl_certificates: cdktf.listMapper(cdktf.stringToTerraform, false)(this._edgeSslCertificates),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),

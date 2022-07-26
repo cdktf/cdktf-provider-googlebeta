@@ -242,10 +242,10 @@ export function googleIamDenyPolicyRulesDenyRuleToTerraform(struct?: GoogleIamDe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    denied_permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.deniedPermissions),
-    denied_principals: cdktf.listMapper(cdktf.stringToTerraform)(struct!.deniedPrincipals),
-    exception_permissions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exceptionPermissions),
-    exception_principals: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exceptionPrincipals),
+    denied_permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deniedPermissions),
+    denied_principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deniedPrincipals),
+    exception_permissions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exceptionPermissions),
+    exception_principals: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exceptionPrincipals),
     denial_condition: googleIamDenyPolicyRulesDenyRuleDenialConditionToTerraform(struct!.denialCondition),
   }
 }
@@ -673,7 +673,10 @@ export class GoogleIamDenyPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._displayName = config.displayName;
     this._id = config.id;
@@ -789,7 +792,7 @@ export class GoogleIamDenyPolicy extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       parent: cdktf.stringToTerraform(this._parent),
-      rules: cdktf.listMapper(googleIamDenyPolicyRulesToTerraform)(this._rules.internalValue),
+      rules: cdktf.listMapper(googleIamDenyPolicyRulesToTerraform, true)(this._rules.internalValue),
       timeouts: googleIamDenyPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

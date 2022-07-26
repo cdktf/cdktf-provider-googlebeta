@@ -313,7 +313,7 @@ export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTy
     masking_character: cdktf.stringToTerraform(struct!.maskingCharacter),
     number_to_mask: cdktf.numberToTerraform(struct!.numberToMask),
     reverse_order: cdktf.booleanToTerraform(struct!.reverseOrder),
-    characters_to_ignore: cdktf.listMapper(googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreToTerraform)(struct!.charactersToIgnore),
+    characters_to_ignore: cdktf.listMapper(googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnoreToTerraform, true)(struct!.charactersToIgnore),
   }
 }
 
@@ -2551,7 +2551,7 @@ export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTy
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    info_types: cdktf.listMapper(googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypesToTerraform)(struct!.infoTypes),
+    info_types: cdktf.listMapper(googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypesToTerraform, true)(struct!.infoTypes),
     primitive_transformation: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationToTerraform(struct!.primitiveTransformation),
   }
 }
@@ -2670,7 +2670,7 @@ export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTy
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    transformations: cdktf.listMapper(googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsToTerraform)(struct!.transformations),
+    transformations: cdktf.listMapper(googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsToTerraform, true)(struct!.transformations),
   }
 }
 
@@ -2945,7 +2945,10 @@ export class GoogleDataLossPreventionDeidentifyTemplate extends cdktf.TerraformR
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._displayName = config.displayName;

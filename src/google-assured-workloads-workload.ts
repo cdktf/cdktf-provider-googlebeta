@@ -524,7 +524,10 @@ export class GoogleAssuredWorkloadsWorkload extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._billingAccount = config.billingAccount;
     this._complianceRegime = config.complianceRegime;
@@ -735,7 +738,7 @@ export class GoogleAssuredWorkloadsWorkload extends cdktf.TerraformResource {
       organization: cdktf.stringToTerraform(this._organization),
       provisioned_resources_parent: cdktf.stringToTerraform(this._provisionedResourcesParent),
       kms_settings: googleAssuredWorkloadsWorkloadKmsSettingsToTerraform(this._kmsSettings.internalValue),
-      resource_settings: cdktf.listMapper(googleAssuredWorkloadsWorkloadResourceSettingsToTerraform)(this._resourceSettings.internalValue),
+      resource_settings: cdktf.listMapper(googleAssuredWorkloadsWorkloadResourceSettingsToTerraform, true)(this._resourceSettings.internalValue),
       timeouts: googleAssuredWorkloadsWorkloadTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -1842,15 +1842,15 @@ export function googleCloudRunServiceTemplateSpecContainersToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
-    command: cdktf.listMapper(cdktf.stringToTerraform)(struct!.command),
+    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
+    command: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.command),
     image: cdktf.stringToTerraform(struct!.image),
     working_dir: cdktf.stringToTerraform(struct!.workingDir),
-    env: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersEnvToTerraform)(struct!.env),
-    env_from: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersEnvFromToTerraform)(struct!.envFrom),
-    ports: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersPortsToTerraform)(struct!.ports),
+    env: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersEnvToTerraform, true)(struct!.env),
+    env_from: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersEnvFromToTerraform, true)(struct!.envFrom),
+    ports: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersPortsToTerraform, true)(struct!.ports),
     resources: googleCloudRunServiceTemplateSpecContainersResourcesToTerraform(struct!.resources),
-    volume_mounts: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersVolumeMountsToTerraform)(struct!.volumeMounts),
+    volume_mounts: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersVolumeMountsToTerraform, true)(struct!.volumeMounts),
   }
 }
 
@@ -2305,7 +2305,7 @@ export function googleCloudRunServiceTemplateSpecVolumesSecretToTerraform(struct
   return {
     default_mode: cdktf.numberToTerraform(struct!.defaultMode),
     secret_name: cdktf.stringToTerraform(struct!.secretName),
-    items: cdktf.listMapper(googleCloudRunServiceTemplateSpecVolumesSecretItemsToTerraform)(struct!.items),
+    items: cdktf.listMapper(googleCloudRunServiceTemplateSpecVolumesSecretItemsToTerraform, true)(struct!.items),
   }
 }
 
@@ -2570,8 +2570,8 @@ export function googleCloudRunServiceTemplateSpecToTerraform(struct?: GoogleClou
     container_concurrency: cdktf.numberToTerraform(struct!.containerConcurrency),
     service_account_name: cdktf.stringToTerraform(struct!.serviceAccountName),
     timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
-    containers: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersToTerraform)(struct!.containers),
-    volumes: cdktf.listMapper(googleCloudRunServiceTemplateSpecVolumesToTerraform)(struct!.volumes),
+    containers: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersToTerraform, true)(struct!.containers),
+    volumes: cdktf.listMapper(googleCloudRunServiceTemplateSpecVolumesToTerraform, true)(struct!.volumes),
   }
 }
 
@@ -3165,7 +3165,10 @@ export class GoogleCloudRunService extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._autogenerateRevisionName = config.autogenerateRevisionName;
     this._id = config.id;
@@ -3340,7 +3343,7 @@ export class GoogleCloudRunService extends cdktf.TerraformResource {
       metadata: googleCloudRunServiceMetadataToTerraform(this._metadata.internalValue),
       template: googleCloudRunServiceTemplateToTerraform(this._template.internalValue),
       timeouts: googleCloudRunServiceTimeoutsToTerraform(this._timeouts.internalValue),
-      traffic: cdktf.listMapper(googleCloudRunServiceTrafficToTerraform)(this._traffic.internalValue),
+      traffic: cdktf.listMapper(googleCloudRunServiceTrafficToTerraform, true)(this._traffic.internalValue),
     };
   }
 }

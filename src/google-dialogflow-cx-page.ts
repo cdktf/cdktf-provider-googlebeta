@@ -100,7 +100,7 @@ export function googleDialogflowCxPageEntryFulfillmentMessagesTextToTerraform(st
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text: cdktf.listMapper(cdktf.stringToTerraform)(struct!.text),
+    text: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.text),
   }
 }
 
@@ -292,7 +292,7 @@ export function googleDialogflowCxPageEntryFulfillmentToTerraform(struct?: Googl
     return_partial_responses: cdktf.booleanToTerraform(struct!.returnPartialResponses),
     tag: cdktf.stringToTerraform(struct!.tag),
     webhook: cdktf.stringToTerraform(struct!.webhook),
-    messages: cdktf.listMapper(googleDialogflowCxPageEntryFulfillmentMessagesToTerraform)(struct!.messages),
+    messages: cdktf.listMapper(googleDialogflowCxPageEntryFulfillmentMessagesToTerraform, true)(struct!.messages),
   }
 }
 
@@ -425,7 +425,7 @@ export function googleDialogflowCxPageEventHandlersTriggerFulfillmentMessagesTex
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text: cdktf.listMapper(cdktf.stringToTerraform)(struct!.text),
+    text: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.text),
   }
 }
 
@@ -617,7 +617,7 @@ export function googleDialogflowCxPageEventHandlersTriggerFulfillmentToTerraform
     return_partial_responses: cdktf.booleanToTerraform(struct!.returnPartialResponses),
     tag: cdktf.stringToTerraform(struct!.tag),
     webhook: cdktf.stringToTerraform(struct!.webhook),
-    messages: cdktf.listMapper(googleDialogflowCxPageEventHandlersTriggerFulfillmentMessagesToTerraform)(struct!.messages),
+    messages: cdktf.listMapper(googleDialogflowCxPageEventHandlersTriggerFulfillmentMessagesToTerraform, true)(struct!.messages),
   }
 }
 
@@ -943,7 +943,7 @@ export function googleDialogflowCxPageFormParametersFillBehaviorInitialPromptFul
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text: cdktf.listMapper(cdktf.stringToTerraform)(struct!.text),
+    text: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.text),
   }
 }
 
@@ -1135,7 +1135,7 @@ export function googleDialogflowCxPageFormParametersFillBehaviorInitialPromptFul
     return_partial_responses: cdktf.booleanToTerraform(struct!.returnPartialResponses),
     tag: cdktf.stringToTerraform(struct!.tag),
     webhook: cdktf.stringToTerraform(struct!.webhook),
-    messages: cdktf.listMapper(googleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesToTerraform)(struct!.messages),
+    messages: cdktf.listMapper(googleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesToTerraform, true)(struct!.messages),
   }
 }
 
@@ -1582,7 +1582,7 @@ export function googleDialogflowCxPageFormToTerraform(struct?: GoogleDialogflowC
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    parameters: cdktf.listMapper(googleDialogflowCxPageFormParametersToTerraform)(struct!.parameters),
+    parameters: cdktf.listMapper(googleDialogflowCxPageFormParametersToTerraform, true)(struct!.parameters),
   }
 }
 
@@ -1778,7 +1778,7 @@ export function googleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessages
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    text: cdktf.listMapper(cdktf.stringToTerraform)(struct!.text),
+    text: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.text),
   }
 }
 
@@ -1970,7 +1970,7 @@ export function googleDialogflowCxPageTransitionRoutesTriggerFulfillmentToTerraf
     return_partial_responses: cdktf.booleanToTerraform(struct!.returnPartialResponses),
     tag: cdktf.stringToTerraform(struct!.tag),
     webhook: cdktf.stringToTerraform(struct!.webhook),
-    messages: cdktf.listMapper(googleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesToTerraform)(struct!.messages),
+    messages: cdktf.listMapper(googleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesToTerraform, true)(struct!.messages),
   }
 }
 
@@ -2345,7 +2345,10 @@ export class GoogleDialogflowCxPage extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._displayName = config.displayName;
     this._id = config.id;
@@ -2535,12 +2538,12 @@ export class GoogleDialogflowCxPage extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       language_code: cdktf.stringToTerraform(this._languageCode),
       parent: cdktf.stringToTerraform(this._parent),
-      transition_route_groups: cdktf.listMapper(cdktf.stringToTerraform)(this._transitionRouteGroups),
+      transition_route_groups: cdktf.listMapper(cdktf.stringToTerraform, false)(this._transitionRouteGroups),
       entry_fulfillment: googleDialogflowCxPageEntryFulfillmentToTerraform(this._entryFulfillment.internalValue),
-      event_handlers: cdktf.listMapper(googleDialogflowCxPageEventHandlersToTerraform)(this._eventHandlers.internalValue),
+      event_handlers: cdktf.listMapper(googleDialogflowCxPageEventHandlersToTerraform, true)(this._eventHandlers.internalValue),
       form: googleDialogflowCxPageFormToTerraform(this._form.internalValue),
       timeouts: googleDialogflowCxPageTimeoutsToTerraform(this._timeouts.internalValue),
-      transition_routes: cdktf.listMapper(googleDialogflowCxPageTransitionRoutesToTerraform)(this._transitionRoutes.internalValue),
+      transition_routes: cdktf.listMapper(googleDialogflowCxPageTransitionRoutesToTerraform, true)(this._transitionRoutes.internalValue),
     };
   }
 }

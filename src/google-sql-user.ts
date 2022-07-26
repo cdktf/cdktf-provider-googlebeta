@@ -95,7 +95,7 @@ export function googleSqlUserSqlServerUserDetailsToTerraform(struct?: GoogleSqlU
   }
   return {
     disabled: cdktf.booleanToTerraform(struct!.disabled),
-    server_roles: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serverRoles),
+    server_roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serverRoles),
   }
 }
 
@@ -331,7 +331,10 @@ export class GoogleSqlUser extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._deletionPolicy = config.deletionPolicy;
     this._host = config.host;

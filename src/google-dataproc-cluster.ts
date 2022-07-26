@@ -447,9 +447,9 @@ export function googleDataprocClusterClusterConfigGceClusterConfigToTerraform(st
     metadata: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.metadata),
     network: cdktf.stringToTerraform(struct!.network),
     service_account: cdktf.stringToTerraform(struct!.serviceAccount),
-    service_account_scopes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceAccountScopes),
+    service_account_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceAccountScopes),
     subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
-    tags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.tags),
+    tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
     zone: cdktf.stringToTerraform(struct!.zone),
     shielded_instance_config: googleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigToTerraform(struct!.shieldedInstanceConfig),
   }
@@ -1201,7 +1201,7 @@ export function googleDataprocClusterClusterConfigMasterConfigToTerraform(struct
     machine_type: cdktf.stringToTerraform(struct!.machineType),
     min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
     num_instances: cdktf.numberToTerraform(struct!.numInstances),
-    accelerators: cdktf.listMapper(googleDataprocClusterClusterConfigMasterConfigAcceleratorsToTerraform)(struct!.accelerators),
+    accelerators: cdktf.listMapper(googleDataprocClusterClusterConfigMasterConfigAcceleratorsToTerraform, true)(struct!.accelerators),
     disk_config: googleDataprocClusterClusterConfigMasterConfigDiskConfigToTerraform(struct!.diskConfig),
   }
 }
@@ -2250,7 +2250,7 @@ export function googleDataprocClusterClusterConfigSoftwareConfigToTerraform(stru
   }
   return {
     image_version: cdktf.stringToTerraform(struct!.imageVersion),
-    optional_components: cdktf.listMapper(cdktf.stringToTerraform)(struct!.optionalComponents),
+    optional_components: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.optionalComponents),
     override_properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.overrideProperties),
   }
 }
@@ -2649,7 +2649,7 @@ export function googleDataprocClusterClusterConfigWorkerConfigToTerraform(struct
     machine_type: cdktf.stringToTerraform(struct!.machineType),
     min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
     num_instances: cdktf.numberToTerraform(struct!.numInstances),
-    accelerators: cdktf.listMapper(googleDataprocClusterClusterConfigWorkerConfigAcceleratorsToTerraform)(struct!.accelerators),
+    accelerators: cdktf.listMapper(googleDataprocClusterClusterConfigWorkerConfigAcceleratorsToTerraform, true)(struct!.accelerators),
     disk_config: googleDataprocClusterClusterConfigWorkerConfigDiskConfigToTerraform(struct!.diskConfig),
   }
 }
@@ -2916,7 +2916,7 @@ export function googleDataprocClusterClusterConfigToTerraform(struct?: GoogleDat
     encryption_config: googleDataprocClusterClusterConfigEncryptionConfigToTerraform(struct!.encryptionConfig),
     endpoint_config: googleDataprocClusterClusterConfigEndpointConfigToTerraform(struct!.endpointConfig),
     gce_cluster_config: googleDataprocClusterClusterConfigGceClusterConfigToTerraform(struct!.gceClusterConfig),
-    initialization_action: cdktf.listMapper(googleDataprocClusterClusterConfigInitializationActionToTerraform)(struct!.initializationAction),
+    initialization_action: cdktf.listMapper(googleDataprocClusterClusterConfigInitializationActionToTerraform, true)(struct!.initializationAction),
     lifecycle_config: googleDataprocClusterClusterConfigLifecycleConfigToTerraform(struct!.lifecycleConfig),
     master_config: googleDataprocClusterClusterConfigMasterConfigToTerraform(struct!.masterConfig),
     metastore_config: googleDataprocClusterClusterConfigMetastoreConfigToTerraform(struct!.metastoreConfig),
@@ -3428,7 +3428,10 @@ export class GoogleDataprocCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._gracefulDecommissionTimeout = config.gracefulDecommissionTimeout;
     this._id = config.id;

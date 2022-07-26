@@ -187,7 +187,10 @@ export class GoogleApiGatewayApiConfigIamBinding extends cdktf.TerraformResource
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._api = config.api;
     this._apiConfig = config.apiConfig;
@@ -316,7 +319,7 @@ export class GoogleApiGatewayApiConfigIamBinding extends cdktf.TerraformResource
       api: cdktf.stringToTerraform(this._api),
       api_config: cdktf.stringToTerraform(this._apiConfig),
       id: cdktf.stringToTerraform(this._id),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       project: cdktf.stringToTerraform(this._project),
       role: cdktf.stringToTerraform(this._role),
       condition: googleApiGatewayApiConfigIamBindingConditionToTerraform(this._condition.internalValue),

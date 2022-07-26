@@ -207,7 +207,7 @@ export function googleDnsPolicyAlternativeNameServerConfigToTerraform(struct?: G
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target_name_servers: cdktf.listMapper(googleDnsPolicyAlternativeNameServerConfigTargetNameServersToTerraform)(struct!.targetNameServers),
+    target_name_servers: cdktf.listMapper(googleDnsPolicyAlternativeNameServerConfigTargetNameServersToTerraform, true)(struct!.targetNameServers),
   }
 }
 
@@ -516,7 +516,10 @@ export class GoogleDnsPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._enableInboundForwarding = config.enableInboundForwarding;
@@ -687,7 +690,7 @@ export class GoogleDnsPolicy extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       alternative_name_server_config: googleDnsPolicyAlternativeNameServerConfigToTerraform(this._alternativeNameServerConfig.internalValue),
-      networks: cdktf.listMapper(googleDnsPolicyNetworksToTerraform)(this._networks.internalValue),
+      networks: cdktf.listMapper(googleDnsPolicyNetworksToTerraform, true)(this._networks.internalValue),
       timeouts: googleDnsPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

@@ -1162,7 +1162,10 @@ export class GoogleMonitoringUptimeCheckConfig extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._checkerType = config.checkerType;
     this._displayName = config.displayName;
@@ -1406,9 +1409,9 @@ export class GoogleMonitoringUptimeCheckConfig extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       period: cdktf.stringToTerraform(this._period),
       project: cdktf.stringToTerraform(this._project),
-      selected_regions: cdktf.listMapper(cdktf.stringToTerraform)(this._selectedRegions),
+      selected_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._selectedRegions),
       timeout: cdktf.stringToTerraform(this._timeout),
-      content_matchers: cdktf.listMapper(googleMonitoringUptimeCheckConfigContentMatchersToTerraform)(this._contentMatchers.internalValue),
+      content_matchers: cdktf.listMapper(googleMonitoringUptimeCheckConfigContentMatchersToTerraform, true)(this._contentMatchers.internalValue),
       http_check: googleMonitoringUptimeCheckConfigHttpCheckToTerraform(this._httpCheck.internalValue),
       monitored_resource: googleMonitoringUptimeCheckConfigMonitoredResourceToTerraform(this._monitoredResource.internalValue),
       resource_group: googleMonitoringUptimeCheckConfigResourceGroupToTerraform(this._resourceGroup.internalValue),

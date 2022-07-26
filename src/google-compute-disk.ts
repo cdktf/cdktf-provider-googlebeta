@@ -737,7 +737,10 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -1121,7 +1124,7 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
       physical_block_size_bytes: cdktf.numberToTerraform(this._physicalBlockSizeBytes),
       project: cdktf.stringToTerraform(this._project),
       provisioned_iops: cdktf.numberToTerraform(this._provisionedIops),
-      resource_policies: cdktf.listMapper(cdktf.stringToTerraform)(this._resourcePolicies),
+      resource_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourcePolicies),
       size: cdktf.numberToTerraform(this._size),
       snapshot: cdktf.stringToTerraform(this._snapshot),
       type: cdktf.stringToTerraform(this._type),

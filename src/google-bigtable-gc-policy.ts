@@ -288,7 +288,10 @@ export class GoogleBigtableGcPolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._columnFamily = config.columnFamily;
     this._gcRules = config.gcRules;
@@ -454,7 +457,7 @@ export class GoogleBigtableGcPolicy extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       table: cdktf.stringToTerraform(this._table),
       max_age: googleBigtableGcPolicyMaxAgeToTerraform(this._maxAge.internalValue),
-      max_version: cdktf.listMapper(googleBigtableGcPolicyMaxVersionToTerraform)(this._maxVersion.internalValue),
+      max_version: cdktf.listMapper(googleBigtableGcPolicyMaxVersionToTerraform, true)(this._maxVersion.internalValue),
     };
   }
 }

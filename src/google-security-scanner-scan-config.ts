@@ -642,7 +642,10 @@ export class GoogleSecurityScannerScanConfig extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._blacklistPatterns = config.blacklistPatterns;
     this._displayName = config.displayName;
@@ -859,14 +862,14 @@ export class GoogleSecurityScannerScanConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      blacklist_patterns: cdktf.listMapper(cdktf.stringToTerraform)(this._blacklistPatterns),
+      blacklist_patterns: cdktf.listMapper(cdktf.stringToTerraform, false)(this._blacklistPatterns),
       display_name: cdktf.stringToTerraform(this._displayName),
       export_to_security_command_center: cdktf.stringToTerraform(this._exportToSecurityCommandCenter),
       id: cdktf.stringToTerraform(this._id),
       max_qps: cdktf.numberToTerraform(this._maxQps),
       project: cdktf.stringToTerraform(this._project),
-      starting_urls: cdktf.listMapper(cdktf.stringToTerraform)(this._startingUrls),
-      target_platforms: cdktf.listMapper(cdktf.stringToTerraform)(this._targetPlatforms),
+      starting_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._startingUrls),
+      target_platforms: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetPlatforms),
       user_agent: cdktf.stringToTerraform(this._userAgent),
       authentication: googleSecurityScannerScanConfigAuthenticationToTerraform(this._authentication.internalValue),
       schedule: googleSecurityScannerScanConfigScheduleToTerraform(this._schedule.internalValue),

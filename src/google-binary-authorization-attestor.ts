@@ -375,7 +375,7 @@ export function googleBinaryAuthorizationAttestorAttestationAuthorityNoteToTerra
   }
   return {
     note_reference: cdktf.stringToTerraform(struct!.noteReference),
-    public_keys: cdktf.listMapper(googleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToTerraform)(struct!.publicKeys),
+    public_keys: cdktf.listMapper(googleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysToTerraform, true)(struct!.publicKeys),
   }
 }
 
@@ -613,7 +613,10 @@ export class GoogleBinaryAuthorizationAttestor extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;

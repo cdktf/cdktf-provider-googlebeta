@@ -217,7 +217,10 @@ export class GoogleDataCatalogTaxonomy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._activatedPolicyTypes = config.activatedPolicyTypes;
     this._description = config.description;
@@ -352,7 +355,7 @@ export class GoogleDataCatalogTaxonomy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      activated_policy_types: cdktf.listMapper(cdktf.stringToTerraform)(this._activatedPolicyTypes),
+      activated_policy_types: cdktf.listMapper(cdktf.stringToTerraform, false)(this._activatedPolicyTypes),
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),

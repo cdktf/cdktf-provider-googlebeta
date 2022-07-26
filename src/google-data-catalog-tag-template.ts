@@ -166,7 +166,7 @@ export function googleDataCatalogTagTemplateFieldsTypeEnumTypeToTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_values: cdktf.listMapper(googleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesToTerraform)(struct!.allowedValues),
+    allowed_values: cdktf.listMapper(googleDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesToTerraform, true)(struct!.allowedValues),
   }
 }
 
@@ -717,7 +717,10 @@ export class GoogleDataCatalogTagTemplate extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._displayName = config.displayName;
     this._forceDelete = config.forceDelete;
@@ -872,7 +875,7 @@ export class GoogleDataCatalogTagTemplate extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
       tag_template_id: cdktf.stringToTerraform(this._tagTemplateId),
-      fields: cdktf.listMapper(googleDataCatalogTagTemplateFieldsToTerraform)(this._fields.internalValue),
+      fields: cdktf.listMapper(googleDataCatalogTagTemplateFieldsToTerraform, true)(this._fields.internalValue),
       timeouts: googleDataCatalogTagTemplateTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

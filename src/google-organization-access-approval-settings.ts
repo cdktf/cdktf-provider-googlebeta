@@ -345,7 +345,10 @@ export class GoogleOrganizationAccessApprovalSettings extends cdktf.TerraformRes
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._activeKeyVersion = config.activeKeyVersion;
     this._id = config.id;
@@ -477,9 +480,9 @@ export class GoogleOrganizationAccessApprovalSettings extends cdktf.TerraformRes
     return {
       active_key_version: cdktf.stringToTerraform(this._activeKeyVersion),
       id: cdktf.stringToTerraform(this._id),
-      notification_emails: cdktf.listMapper(cdktf.stringToTerraform)(this._notificationEmails),
+      notification_emails: cdktf.listMapper(cdktf.stringToTerraform, false)(this._notificationEmails),
       organization_id: cdktf.stringToTerraform(this._organizationId),
-      enrolled_services: cdktf.listMapper(googleOrganizationAccessApprovalSettingsEnrolledServicesToTerraform)(this._enrolledServices.internalValue),
+      enrolled_services: cdktf.listMapper(googleOrganizationAccessApprovalSettingsEnrolledServicesToTerraform, true)(this._enrolledServices.internalValue),
       timeouts: googleOrganizationAccessApprovalSettingsTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

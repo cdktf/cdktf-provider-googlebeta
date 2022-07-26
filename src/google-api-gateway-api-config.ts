@@ -442,7 +442,7 @@ export function googleApiGatewayApiConfigGrpcServicesToTerraform(struct?: Google
   }
   return {
     file_descriptor_set: googleApiGatewayApiConfigGrpcServicesFileDescriptorSetToTerraform(struct!.fileDescriptorSet),
-    source: cdktf.listMapper(googleApiGatewayApiConfigGrpcServicesSourceToTerraform)(struct!.source),
+    source: cdktf.listMapper(googleApiGatewayApiConfigGrpcServicesSourceToTerraform, true)(struct!.source),
   }
 }
 
@@ -1015,7 +1015,10 @@ export class GoogleApiGatewayApiConfigA extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._api = config.api;
     this._apiConfigId = config.apiConfigId;
@@ -1248,9 +1251,9 @@ export class GoogleApiGatewayApiConfigA extends cdktf.TerraformResource {
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       project: cdktf.stringToTerraform(this._project),
       gateway_config: googleApiGatewayApiConfigGatewayConfigToTerraform(this._gatewayConfig.internalValue),
-      grpc_services: cdktf.listMapper(googleApiGatewayApiConfigGrpcServicesToTerraform)(this._grpcServices.internalValue),
-      managed_service_configs: cdktf.listMapper(googleApiGatewayApiConfigManagedServiceConfigsToTerraform)(this._managedServiceConfigs.internalValue),
-      openapi_documents: cdktf.listMapper(googleApiGatewayApiConfigOpenapiDocumentsToTerraform)(this._openapiDocuments.internalValue),
+      grpc_services: cdktf.listMapper(googleApiGatewayApiConfigGrpcServicesToTerraform, true)(this._grpcServices.internalValue),
+      managed_service_configs: cdktf.listMapper(googleApiGatewayApiConfigManagedServiceConfigsToTerraform, true)(this._managedServiceConfigs.internalValue),
+      openapi_documents: cdktf.listMapper(googleApiGatewayApiConfigOpenapiDocumentsToTerraform, true)(this._openapiDocuments.internalValue),
       timeouts: googleApiGatewayApiConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

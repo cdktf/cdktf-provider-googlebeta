@@ -653,7 +653,7 @@ export function googleGkeHubFeatureMembershipConfigmanagementPolicyControllerMon
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    backends: cdktf.listMapper(cdktf.stringToTerraform)(struct!.backends),
+    backends: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.backends),
   }
 }
 
@@ -764,7 +764,7 @@ export function googleGkeHubFeatureMembershipConfigmanagementPolicyControllerToT
   return {
     audit_interval_seconds: cdktf.stringToTerraform(struct!.auditIntervalSeconds),
     enabled: cdktf.booleanToTerraform(struct!.enabled),
-    exemptable_namespaces: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exemptableNamespaces),
+    exemptable_namespaces: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exemptableNamespaces),
     log_denies_enabled: cdktf.booleanToTerraform(struct!.logDeniesEnabled),
     mutation_enabled: cdktf.booleanToTerraform(struct!.mutationEnabled),
     referential_rules_enabled: cdktf.booleanToTerraform(struct!.referentialRulesEnabled),
@@ -1320,7 +1320,10 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._feature = config.feature;
     this._id = config.id;

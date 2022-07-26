@@ -77,7 +77,7 @@ export function googleDnsRecordSetRoutingPolicyGeoToTerraform(struct?: GoogleDns
   }
   return {
     location: cdktf.stringToTerraform(struct!.location),
-    rrdatas: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rrdatas),
+    rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
   }
 }
 
@@ -196,7 +196,7 @@ export function googleDnsRecordSetRoutingPolicyWrrToTerraform(struct?: GoogleDns
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    rrdatas: cdktf.listMapper(cdktf.stringToTerraform)(struct!.rrdatas),
+    rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
     weight: cdktf.numberToTerraform(struct!.weight),
   }
 }
@@ -318,8 +318,8 @@ export function googleDnsRecordSetRoutingPolicyToTerraform(struct?: GoogleDnsRec
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    geo: cdktf.listMapper(googleDnsRecordSetRoutingPolicyGeoToTerraform)(struct!.geo),
-    wrr: cdktf.listMapper(googleDnsRecordSetRoutingPolicyWrrToTerraform)(struct!.wrr),
+    geo: cdktf.listMapper(googleDnsRecordSetRoutingPolicyGeoToTerraform, true)(struct!.geo),
+    wrr: cdktf.listMapper(googleDnsRecordSetRoutingPolicyWrrToTerraform, true)(struct!.wrr),
   }
 }
 
@@ -426,7 +426,10 @@ export class GoogleDnsRecordSet extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._managedZone = config.managedZone;
@@ -571,7 +574,7 @@ export class GoogleDnsRecordSet extends cdktf.TerraformResource {
       managed_zone: cdktf.stringToTerraform(this._managedZone),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
-      rrdatas: cdktf.listMapper(cdktf.stringToTerraform)(this._rrdatas),
+      rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(this._rrdatas),
       ttl: cdktf.numberToTerraform(this._ttl),
       type: cdktf.stringToTerraform(this._type),
       routing_policy: googleDnsRecordSetRoutingPolicyToTerraform(this._routingPolicy.internalValue),

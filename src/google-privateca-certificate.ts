@@ -2557,10 +2557,10 @@ export function googlePrivatecaCertificateConfigSubjectConfigSubjectAltNameToTer
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dns_names: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dnsNames),
-    email_addresses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.emailAddresses),
-    ip_addresses: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ipAddresses),
-    uris: cdktf.listMapper(cdktf.stringToTerraform)(struct!.uris),
+    dns_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsNames),
+    email_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.emailAddresses),
+    ip_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ipAddresses),
+    uris: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.uris),
   }
 }
 
@@ -2786,7 +2786,7 @@ export function googlePrivatecaCertificateConfigX509ConfigAdditionalExtensionsOb
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id_path: cdktf.listMapper(cdktf.numberToTerraform)(struct!.objectIdPath),
+    object_id_path: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.objectIdPath),
   }
 }
 
@@ -3668,7 +3668,7 @@ export function googlePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtende
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id_path: cdktf.listMapper(cdktf.numberToTerraform)(struct!.objectIdPath),
+    object_id_path: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.objectIdPath),
   }
 }
 
@@ -3778,7 +3778,7 @@ export function googlePrivatecaCertificateConfigX509ConfigKeyUsageToTerraform(st
   return {
     base_key_usage: googlePrivatecaCertificateConfigX509ConfigKeyUsageBaseKeyUsageToTerraform(struct!.baseKeyUsage),
     extended_key_usage: googlePrivatecaCertificateConfigX509ConfigKeyUsageExtendedKeyUsageToTerraform(struct!.extendedKeyUsage),
-    unknown_extended_key_usages: cdktf.listMapper(googlePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesToTerraform)(struct!.unknownExtendedKeyUsages),
+    unknown_extended_key_usages: cdktf.listMapper(googlePrivatecaCertificateConfigX509ConfigKeyUsageUnknownExtendedKeyUsagesToTerraform, true)(struct!.unknownExtendedKeyUsages),
   }
 }
 
@@ -3883,7 +3883,7 @@ export function googlePrivatecaCertificateConfigX509ConfigPolicyIdsToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id_path: cdktf.listMapper(cdktf.numberToTerraform)(struct!.objectIdPath),
+    object_id_path: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.objectIdPath),
   }
 }
 
@@ -4004,11 +4004,11 @@ export function googlePrivatecaCertificateConfigX509ConfigToTerraform(struct?: G
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aia_ocsp_servers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.aiaOcspServers),
-    additional_extensions: cdktf.listMapper(googlePrivatecaCertificateConfigX509ConfigAdditionalExtensionsToTerraform)(struct!.additionalExtensions),
+    aia_ocsp_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.aiaOcspServers),
+    additional_extensions: cdktf.listMapper(googlePrivatecaCertificateConfigX509ConfigAdditionalExtensionsToTerraform, true)(struct!.additionalExtensions),
     ca_options: googlePrivatecaCertificateConfigX509ConfigCaOptionsToTerraform(struct!.caOptions),
     key_usage: googlePrivatecaCertificateConfigX509ConfigKeyUsageToTerraform(struct!.keyUsage),
-    policy_ids: cdktf.listMapper(googlePrivatecaCertificateConfigX509ConfigPolicyIdsToTerraform)(struct!.policyIds),
+    policy_ids: cdktf.listMapper(googlePrivatecaCertificateConfigX509ConfigPolicyIdsToTerraform, true)(struct!.policyIds),
   }
 }
 
@@ -4423,7 +4423,10 @@ export class GooglePrivatecaCertificate extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._certificateAuthority = config.certificateAuthority;
     this._certificateTemplate = config.certificateTemplate;

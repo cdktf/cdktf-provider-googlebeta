@@ -303,7 +303,10 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._id = config.id;
@@ -420,7 +423,7 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       response_policy_name: cdktf.stringToTerraform(this._responsePolicyName),
-      networks: cdktf.listMapper(googleDnsResponsePolicyNetworksToTerraform)(this._networks.internalValue),
+      networks: cdktf.listMapper(googleDnsResponsePolicyNetworksToTerraform, true)(this._networks.internalValue),
       timeouts: googleDnsResponsePolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

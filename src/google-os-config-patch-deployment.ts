@@ -218,10 +218,10 @@ export function googleOsConfigPatchDeploymentInstanceFilterToTerraform(struct?: 
   }
   return {
     all: cdktf.booleanToTerraform(struct!.all),
-    instance_name_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instanceNamePrefixes),
-    instances: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instances),
-    zones: cdktf.listMapper(cdktf.stringToTerraform)(struct!.zones),
-    group_labels: cdktf.listMapper(googleOsConfigPatchDeploymentInstanceFilterGroupLabelsToTerraform)(struct!.groupLabels),
+    instance_name_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.instanceNamePrefixes),
+    instances: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.instances),
+    zones: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.zones),
+    group_labels: cdktf.listMapper(googleOsConfigPatchDeploymentInstanceFilterGroupLabelsToTerraform, true)(struct!.groupLabels),
   }
 }
 
@@ -455,8 +455,8 @@ export function googleOsConfigPatchDeploymentPatchConfigAptToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excludes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludes),
-    exclusive_packages: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusivePackages),
+    excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludes),
+    exclusive_packages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusivePackages),
     type: cdktf.stringToTerraform(struct!.type),
   }
 }
@@ -767,7 +767,7 @@ export function googleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepCon
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_success_codes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.allowedSuccessCodes),
+    allowed_success_codes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.allowedSuccessCodes),
     interpreter: cdktf.stringToTerraform(struct!.interpreter),
     local_path: cdktf.stringToTerraform(struct!.localPath),
     gcs_object: googleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObjectToTerraform(struct!.gcsObject),
@@ -1038,7 +1038,7 @@ export function googleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepC
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_success_codes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.allowedSuccessCodes),
+    allowed_success_codes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.allowedSuccessCodes),
     interpreter: cdktf.stringToTerraform(struct!.interpreter),
     local_path: cdktf.stringToTerraform(struct!.localPath),
     gcs_object: googleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObjectToTerraform(struct!.gcsObject),
@@ -1405,7 +1405,7 @@ export function googleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConf
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_success_codes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.allowedSuccessCodes),
+    allowed_success_codes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.allowedSuccessCodes),
     interpreter: cdktf.stringToTerraform(struct!.interpreter),
     local_path: cdktf.stringToTerraform(struct!.localPath),
     gcs_object: googleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObjectToTerraform(struct!.gcsObject),
@@ -1676,7 +1676,7 @@ export function googleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepCo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_success_codes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.allowedSuccessCodes),
+    allowed_success_codes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.allowedSuccessCodes),
     interpreter: cdktf.stringToTerraform(struct!.interpreter),
     local_path: cdktf.stringToTerraform(struct!.localPath),
     gcs_object: googleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObjectToTerraform(struct!.gcsObject),
@@ -1921,9 +1921,9 @@ export function googleOsConfigPatchDeploymentPatchConfigWindowsUpdateToTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    classifications: cdktf.listMapper(cdktf.stringToTerraform)(struct!.classifications),
-    excludes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludes),
-    exclusive_patches: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusivePatches),
+    classifications: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.classifications),
+    excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludes),
+    exclusive_patches: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusivePatches),
   }
 }
 
@@ -2054,8 +2054,8 @@ export function googleOsConfigPatchDeploymentPatchConfigYumToTerraform(struct?: 
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    excludes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludes),
-    exclusive_packages: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusivePackages),
+    excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludes),
+    exclusive_packages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusivePackages),
     minimal: cdktf.booleanToTerraform(struct!.minimal),
     security: cdktf.booleanToTerraform(struct!.security),
   }
@@ -2221,10 +2221,10 @@ export function googleOsConfigPatchDeploymentPatchConfigZypperToTerraform(struct
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    categories: cdktf.listMapper(cdktf.stringToTerraform)(struct!.categories),
-    excludes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.excludes),
-    exclusive_patches: cdktf.listMapper(cdktf.stringToTerraform)(struct!.exclusivePatches),
-    severities: cdktf.listMapper(cdktf.stringToTerraform)(struct!.severities),
+    categories: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.categories),
+    excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludes),
+    exclusive_patches: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclusivePatches),
+    severities: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.severities),
     with_optional: cdktf.booleanToTerraform(struct!.withOptional),
     with_update: cdktf.booleanToTerraform(struct!.withUpdate),
   }
@@ -3729,7 +3729,10 @@ export class GoogleOsConfigPatchDeployment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._duration = config.duration;

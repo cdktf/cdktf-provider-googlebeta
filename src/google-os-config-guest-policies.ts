@@ -372,11 +372,11 @@ export function googleOsConfigGuestPoliciesAssignmentToTerraform(struct?: Google
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    instance_name_prefixes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instanceNamePrefixes),
-    instances: cdktf.listMapper(cdktf.stringToTerraform)(struct!.instances),
-    zones: cdktf.listMapper(cdktf.stringToTerraform)(struct!.zones),
-    group_labels: cdktf.listMapper(googleOsConfigGuestPoliciesAssignmentGroupLabelsToTerraform)(struct!.groupLabels),
-    os_types: cdktf.listMapper(googleOsConfigGuestPoliciesAssignmentOsTypesToTerraform)(struct!.osTypes),
+    instance_name_prefixes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.instanceNamePrefixes),
+    instances: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.instances),
+    zones: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.zones),
+    group_labels: cdktf.listMapper(googleOsConfigGuestPoliciesAssignmentGroupLabelsToTerraform, true)(struct!.groupLabels),
+    os_types: cdktf.listMapper(googleOsConfigGuestPoliciesAssignmentOsTypesToTerraform, true)(struct!.osTypes),
   }
 }
 
@@ -557,7 +557,7 @@ export function googleOsConfigGuestPoliciesPackageRepositoriesAptToTerraform(str
   }
   return {
     archive_type: cdktf.stringToTerraform(struct!.archiveType),
-    components: cdktf.listMapper(cdktf.stringToTerraform)(struct!.components),
+    components: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.components),
     distribution: cdktf.stringToTerraform(struct!.distribution),
     gpg_key: cdktf.stringToTerraform(struct!.gpgKey),
     uri: cdktf.stringToTerraform(struct!.uri),
@@ -820,7 +820,7 @@ export function googleOsConfigGuestPoliciesPackageRepositoriesYumToTerraform(str
   return {
     base_url: cdktf.stringToTerraform(struct!.baseUrl),
     display_name: cdktf.stringToTerraform(struct!.displayName),
-    gpg_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.gpgKeys),
+    gpg_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.gpgKeys),
     id: cdktf.stringToTerraform(struct!.id),
   }
 }
@@ -972,7 +972,7 @@ export function googleOsConfigGuestPoliciesPackageRepositoriesZypperToTerraform(
   return {
     base_url: cdktf.stringToTerraform(struct!.baseUrl),
     display_name: cdktf.stringToTerraform(struct!.displayName),
-    gpg_keys: cdktf.listMapper(cdktf.stringToTerraform)(struct!.gpgKeys),
+    gpg_keys: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.gpgKeys),
     id: cdktf.stringToTerraform(struct!.id),
   }
 }
@@ -2217,7 +2217,7 @@ export function googleOsConfigGuestPoliciesRecipesInstallStepsFileExecToTerrafor
   }
   return {
     allowed_exit_codes: cdktf.stringToTerraform(struct!.allowedExitCodes),
-    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
+    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
     artifact_id: cdktf.stringToTerraform(struct!.artifactId),
     local_path: cdktf.stringToTerraform(struct!.localPath),
   }
@@ -2364,9 +2364,9 @@ export function googleOsConfigGuestPoliciesRecipesInstallStepsMsiInstallationToT
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_exit_codes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.allowedExitCodes),
+    allowed_exit_codes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.allowedExitCodes),
     artifact_id: cdktf.stringToTerraform(struct!.artifactId),
-    flags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.flags),
+    flags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.flags),
   }
 }
 
@@ -2551,7 +2551,7 @@ export function googleOsConfigGuestPoliciesRecipesInstallStepsScriptRunToTerrafo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_exit_codes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.allowedExitCodes),
+    allowed_exit_codes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.allowedExitCodes),
     interpreter: cdktf.stringToTerraform(struct!.interpreter),
     script: cdktf.stringToTerraform(struct!.script),
   }
@@ -3290,8 +3290,8 @@ export function googleOsConfigGuestPoliciesRecipesUpdateStepsFileExecToTerraform
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_exit_codes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.allowedExitCodes),
-    args: cdktf.listMapper(cdktf.stringToTerraform)(struct!.args),
+    allowed_exit_codes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.allowedExitCodes),
+    args: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.args),
     artifact_id: cdktf.stringToTerraform(struct!.artifactId),
     local_path: cdktf.stringToTerraform(struct!.localPath),
   }
@@ -3438,9 +3438,9 @@ export function googleOsConfigGuestPoliciesRecipesUpdateStepsMsiInstallationToTe
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_exit_codes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.allowedExitCodes),
+    allowed_exit_codes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.allowedExitCodes),
     artifact_id: cdktf.stringToTerraform(struct!.artifactId),
-    flags: cdktf.listMapper(cdktf.stringToTerraform)(struct!.flags),
+    flags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.flags),
   }
 }
 
@@ -3625,7 +3625,7 @@ export function googleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunToTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_exit_codes: cdktf.listMapper(cdktf.numberToTerraform)(struct!.allowedExitCodes),
+    allowed_exit_codes: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.allowedExitCodes),
     interpreter: cdktf.stringToTerraform(struct!.interpreter),
     script: cdktf.stringToTerraform(struct!.script),
   }
@@ -4049,9 +4049,9 @@ export function googleOsConfigGuestPoliciesRecipesToTerraform(struct?: GoogleOsC
     desired_state: cdktf.stringToTerraform(struct!.desiredState),
     name: cdktf.stringToTerraform(struct!.name),
     version: cdktf.stringToTerraform(struct!.version),
-    artifacts: cdktf.listMapper(googleOsConfigGuestPoliciesRecipesArtifactsToTerraform)(struct!.artifacts),
-    install_steps: cdktf.listMapper(googleOsConfigGuestPoliciesRecipesInstallStepsToTerraform)(struct!.installSteps),
-    update_steps: cdktf.listMapper(googleOsConfigGuestPoliciesRecipesUpdateStepsToTerraform)(struct!.updateSteps),
+    artifacts: cdktf.listMapper(googleOsConfigGuestPoliciesRecipesArtifactsToTerraform, true)(struct!.artifacts),
+    install_steps: cdktf.listMapper(googleOsConfigGuestPoliciesRecipesInstallStepsToTerraform, true)(struct!.installSteps),
+    update_steps: cdktf.listMapper(googleOsConfigGuestPoliciesRecipesUpdateStepsToTerraform, true)(struct!.updateSteps),
   }
 }
 
@@ -4404,7 +4404,10 @@ export class GoogleOsConfigGuestPolicies extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._description = config.description;
     this._etag = config.etag;
@@ -4603,9 +4606,9 @@ export class GoogleOsConfigGuestPolicies extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       assignment: googleOsConfigGuestPoliciesAssignmentToTerraform(this._assignment.internalValue),
-      package_repositories: cdktf.listMapper(googleOsConfigGuestPoliciesPackageRepositoriesToTerraform)(this._packageRepositories.internalValue),
-      packages: cdktf.listMapper(googleOsConfigGuestPoliciesPackagesToTerraform)(this._packages.internalValue),
-      recipes: cdktf.listMapper(googleOsConfigGuestPoliciesRecipesToTerraform)(this._recipes.internalValue),
+      package_repositories: cdktf.listMapper(googleOsConfigGuestPoliciesPackageRepositoriesToTerraform, true)(this._packageRepositories.internalValue),
+      packages: cdktf.listMapper(googleOsConfigGuestPoliciesPackagesToTerraform, true)(this._packages.internalValue),
+      recipes: cdktf.listMapper(googleOsConfigGuestPoliciesRecipesToTerraform, true)(this._recipes.internalValue),
       timeouts: googleOsConfigGuestPoliciesTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

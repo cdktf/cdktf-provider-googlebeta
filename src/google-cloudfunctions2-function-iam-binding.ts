@@ -187,7 +187,10 @@ export class GoogleCloudfunctions2FunctionIamBinding extends cdktf.TerraformReso
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._cloudFunction = config.cloudFunction;
     this._id = config.id;
@@ -319,7 +322,7 @@ export class GoogleCloudfunctions2FunctionIamBinding extends cdktf.TerraformReso
       cloud_function: cdktf.stringToTerraform(this._cloudFunction),
       id: cdktf.stringToTerraform(this._id),
       location: cdktf.stringToTerraform(this._location),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       project: cdktf.stringToTerraform(this._project),
       role: cdktf.stringToTerraform(this._role),
       condition: googleCloudfunctions2FunctionIamBindingConditionToTerraform(this._condition.internalValue),

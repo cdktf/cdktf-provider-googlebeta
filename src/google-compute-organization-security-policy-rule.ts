@@ -122,7 +122,7 @@ export function googleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Conf
   }
   return {
     ip_protocol: cdktf.stringToTerraform(struct!.ipProtocol),
-    ports: cdktf.listMapper(cdktf.stringToTerraform)(struct!.ports),
+    ports: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ports),
   }
 }
 
@@ -254,9 +254,9 @@ export function googleComputeOrganizationSecurityPolicyRuleMatchConfigToTerrafor
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dest_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform)(struct!.destIpRanges),
-    src_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform)(struct!.srcIpRanges),
-    layer4_config: cdktf.listMapper(googleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigToTerraform)(struct!.layer4Config),
+    dest_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destIpRanges),
+    src_ip_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.srcIpRanges),
+    layer4_config: cdktf.listMapper(googleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4ConfigToTerraform, true)(struct!.layer4Config),
   }
 }
 
@@ -634,7 +634,10 @@ export class GoogleComputeOrganizationSecurityPolicyRule extends cdktf.Terraform
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._action = config.action;
     this._description = config.description;
@@ -848,8 +851,8 @@ export class GoogleComputeOrganizationSecurityPolicyRule extends cdktf.Terraform
       policy_id: cdktf.stringToTerraform(this._policyId),
       preview: cdktf.booleanToTerraform(this._preview),
       priority: cdktf.numberToTerraform(this._priority),
-      target_resources: cdktf.listMapper(cdktf.stringToTerraform)(this._targetResources),
-      target_service_accounts: cdktf.listMapper(cdktf.stringToTerraform)(this._targetServiceAccounts),
+      target_resources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetResources),
+      target_service_accounts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._targetServiceAccounts),
       match: googleComputeOrganizationSecurityPolicyRuleMatchToTerraform(this._match.internalValue),
       timeouts: googleComputeOrganizationSecurityPolicyRuleTimeoutsToTerraform(this._timeouts.internalValue),
     };

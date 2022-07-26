@@ -460,7 +460,7 @@ export function googlePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExten
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id_path: cdktf.listMapper(cdktf.numberToTerraform)(struct!.objectIdPath),
+    object_id_path: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.objectIdPath),
   }
 }
 
@@ -1342,7 +1342,7 @@ export function googlePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknown
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id_path: cdktf.listMapper(cdktf.numberToTerraform)(struct!.objectIdPath),
+    object_id_path: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.objectIdPath),
   }
 }
 
@@ -1452,7 +1452,7 @@ export function googlePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageToTerra
   return {
     base_key_usage: googlePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageBaseKeyUsageToTerraform(struct!.baseKeyUsage),
     extended_key_usage: googlePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageExtendedKeyUsageToTerraform(struct!.extendedKeyUsage),
-    unknown_extended_key_usages: cdktf.listMapper(googlePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesToTerraform)(struct!.unknownExtendedKeyUsages),
+    unknown_extended_key_usages: cdktf.listMapper(googlePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageUnknownExtendedKeyUsagesToTerraform, true)(struct!.unknownExtendedKeyUsages),
   }
 }
 
@@ -1557,7 +1557,7 @@ export function googlePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToTerr
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    object_id_path: cdktf.listMapper(cdktf.numberToTerraform)(struct!.objectIdPath),
+    object_id_path: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.objectIdPath),
   }
 }
 
@@ -1678,11 +1678,11 @@ export function googlePrivatecaCaPoolIssuancePolicyBaselineValuesToTerraform(str
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aia_ocsp_servers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.aiaOcspServers),
-    additional_extensions: cdktf.listMapper(googlePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsToTerraform)(struct!.additionalExtensions),
+    aia_ocsp_servers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.aiaOcspServers),
+    additional_extensions: cdktf.listMapper(googlePrivatecaCaPoolIssuancePolicyBaselineValuesAdditionalExtensionsToTerraform, true)(struct!.additionalExtensions),
     ca_options: googlePrivatecaCaPoolIssuancePolicyBaselineValuesCaOptionsToTerraform(struct!.caOptions),
     key_usage: googlePrivatecaCaPoolIssuancePolicyBaselineValuesKeyUsageToTerraform(struct!.keyUsage),
-    policy_ids: cdktf.listMapper(googlePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToTerraform)(struct!.policyIds),
+    policy_ids: cdktf.listMapper(googlePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsToTerraform, true)(struct!.policyIds),
   }
 }
 
@@ -2130,7 +2130,7 @@ export function googlePrivatecaCaPoolIssuancePolicyToTerraform(struct?: GooglePr
   return {
     maximum_lifetime: cdktf.stringToTerraform(struct!.maximumLifetime),
     allowed_issuance_modes: googlePrivatecaCaPoolIssuancePolicyAllowedIssuanceModesToTerraform(struct!.allowedIssuanceModes),
-    allowed_key_types: cdktf.listMapper(googlePrivatecaCaPoolIssuancePolicyAllowedKeyTypesToTerraform)(struct!.allowedKeyTypes),
+    allowed_key_types: cdktf.listMapper(googlePrivatecaCaPoolIssuancePolicyAllowedKeyTypesToTerraform, true)(struct!.allowedKeyTypes),
     baseline_values: googlePrivatecaCaPoolIssuancePolicyBaselineValuesToTerraform(struct!.baselineValues),
     identity_constraints: googlePrivatecaCaPoolIssuancePolicyIdentityConstraintsToTerraform(struct!.identityConstraints),
   }
@@ -2529,7 +2529,10 @@ export class GooglePrivatecaCaPool extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._labels = config.labels;

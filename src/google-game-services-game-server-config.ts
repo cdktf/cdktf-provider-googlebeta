@@ -532,8 +532,8 @@ export function googleGameServicesGameServerConfigScalingConfigsToTerraform(stru
   return {
     fleet_autoscaler_spec: cdktf.stringToTerraform(struct!.fleetAutoscalerSpec),
     name: cdktf.stringToTerraform(struct!.name),
-    schedules: cdktf.listMapper(googleGameServicesGameServerConfigScalingConfigsSchedulesToTerraform)(struct!.schedules),
-    selectors: cdktf.listMapper(googleGameServicesGameServerConfigScalingConfigsSelectorsToTerraform)(struct!.selectors),
+    schedules: cdktf.listMapper(googleGameServicesGameServerConfigScalingConfigsSchedulesToTerraform, true)(struct!.schedules),
+    selectors: cdktf.listMapper(googleGameServicesGameServerConfigScalingConfigsSelectorsToTerraform, true)(struct!.selectors),
   }
 }
 
@@ -812,7 +812,10 @@ export class GoogleGameServicesGameServerConfig extends cdktf.TerraformResource 
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._configId = config.configId;
     this._deploymentId = config.deploymentId;
@@ -999,8 +1002,8 @@ export class GoogleGameServicesGameServerConfig extends cdktf.TerraformResource 
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       location: cdktf.stringToTerraform(this._location),
       project: cdktf.stringToTerraform(this._project),
-      fleet_configs: cdktf.listMapper(googleGameServicesGameServerConfigFleetConfigsToTerraform)(this._fleetConfigs.internalValue),
-      scaling_configs: cdktf.listMapper(googleGameServicesGameServerConfigScalingConfigsToTerraform)(this._scalingConfigs.internalValue),
+      fleet_configs: cdktf.listMapper(googleGameServicesGameServerConfigFleetConfigsToTerraform, true)(this._fleetConfigs.internalValue),
+      scaling_configs: cdktf.listMapper(googleGameServicesGameServerConfigScalingConfigsToTerraform, true)(this._scalingConfigs.internalValue),
       timeouts: googleGameServicesGameServerConfigTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

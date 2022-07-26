@@ -183,7 +183,10 @@ export class GoogleBinaryAuthorizationAttestorIamBinding extends cdktf.Terraform
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._attestor = config.attestor;
     this._id = config.id;
@@ -297,7 +300,7 @@ export class GoogleBinaryAuthorizationAttestorIamBinding extends cdktf.Terraform
     return {
       attestor: cdktf.stringToTerraform(this._attestor),
       id: cdktf.stringToTerraform(this._id),
-      members: cdktf.listMapper(cdktf.stringToTerraform)(this._members),
+      members: cdktf.listMapper(cdktf.stringToTerraform, false)(this._members),
       project: cdktf.stringToTerraform(this._project),
       role: cdktf.stringToTerraform(this._role),
       condition: googleBinaryAuthorizationAttestorIamBindingConditionToTerraform(this._condition.internalValue),

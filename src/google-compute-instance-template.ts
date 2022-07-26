@@ -491,7 +491,7 @@ export function googleComputeInstanceTemplateDiskToTerraform(struct?: GoogleComp
     interface: cdktf.stringToTerraform(struct!.interface),
     labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
     mode: cdktf.stringToTerraform(struct!.mode),
-    resource_policies: cdktf.listMapper(cdktf.stringToTerraform)(struct!.resourcePolicies),
+    resource_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.resourcePolicies),
     source: cdktf.stringToTerraform(struct!.source),
     source_image: cdktf.stringToTerraform(struct!.sourceImage),
     type: cdktf.stringToTerraform(struct!.type),
@@ -1432,9 +1432,9 @@ export function googleComputeInstanceTemplateNetworkInterfaceToTerraform(struct?
     stack_type: cdktf.stringToTerraform(struct!.stackType),
     subnetwork: cdktf.stringToTerraform(struct!.subnetwork),
     subnetwork_project: cdktf.stringToTerraform(struct!.subnetworkProject),
-    access_config: cdktf.listMapper(googleComputeInstanceTemplateNetworkInterfaceAccessConfigToTerraform)(struct!.accessConfig),
-    alias_ip_range: cdktf.listMapper(googleComputeInstanceTemplateNetworkInterfaceAliasIpRangeToTerraform)(struct!.aliasIpRange),
-    ipv6_access_config: cdktf.listMapper(googleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigToTerraform)(struct!.ipv6AccessConfig),
+    access_config: cdktf.listMapper(googleComputeInstanceTemplateNetworkInterfaceAccessConfigToTerraform, true)(struct!.accessConfig),
+    alias_ip_range: cdktf.listMapper(googleComputeInstanceTemplateNetworkInterfaceAliasIpRangeToTerraform, true)(struct!.aliasIpRange),
+    ipv6_access_config: cdktf.listMapper(googleComputeInstanceTemplateNetworkInterfaceIpv6AccessConfigToTerraform, true)(struct!.ipv6AccessConfig),
   }
 }
 
@@ -1812,7 +1812,7 @@ export function googleComputeInstanceTemplateReservationAffinitySpecificReservat
   }
   return {
     key: cdktf.stringToTerraform(struct!.key),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -1996,7 +1996,7 @@ export function googleComputeInstanceTemplateSchedulingNodeAffinitiesToTerraform
   return {
     key: cdktf.stringToTerraform(struct!.key),
     operator: cdktf.stringToTerraform(struct!.operator),
-    values: cdktf.listMapper(cdktf.stringToTerraform)(struct!.values),
+    values: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.values),
   }
 }
 
@@ -2172,7 +2172,7 @@ export function googleComputeInstanceTemplateSchedulingToTerraform(struct?: Goog
     on_host_maintenance: cdktf.stringToTerraform(struct!.onHostMaintenance),
     preemptible: cdktf.booleanToTerraform(struct!.preemptible),
     provisioning_model: cdktf.stringToTerraform(struct!.provisioningModel),
-    node_affinities: cdktf.listMapper(googleComputeInstanceTemplateSchedulingNodeAffinitiesToTerraform)(struct!.nodeAffinities),
+    node_affinities: cdktf.listMapper(googleComputeInstanceTemplateSchedulingNodeAffinitiesToTerraform, true)(struct!.nodeAffinities),
   }
 }
 
@@ -2378,7 +2378,7 @@ export function googleComputeInstanceTemplateServiceAccountToTerraform(struct?: 
   }
   return {
     email: cdktf.stringToTerraform(struct!.email),
-    scopes: cdktf.listMapper(cdktf.stringToTerraform)(struct!.scopes),
+    scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.scopes),
   }
 }
 
@@ -2709,7 +2709,10 @@ export class GoogleComputeInstanceTemplate extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._canIpForward = config.canIpForward;
     this._description = config.description;
@@ -3188,12 +3191,12 @@ export class GoogleComputeInstanceTemplate extends cdktf.TerraformResource {
       name_prefix: cdktf.stringToTerraform(this._namePrefix),
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
-      tags: cdktf.listMapper(cdktf.stringToTerraform)(this._tags),
+      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       advanced_machine_features: googleComputeInstanceTemplateAdvancedMachineFeaturesToTerraform(this._advancedMachineFeatures.internalValue),
       confidential_instance_config: googleComputeInstanceTemplateConfidentialInstanceConfigToTerraform(this._confidentialInstanceConfig.internalValue),
-      disk: cdktf.listMapper(googleComputeInstanceTemplateDiskToTerraform)(this._disk.internalValue),
-      guest_accelerator: cdktf.listMapper(googleComputeInstanceTemplateGuestAcceleratorToTerraform)(this._guestAccelerator.internalValue),
-      network_interface: cdktf.listMapper(googleComputeInstanceTemplateNetworkInterfaceToTerraform)(this._networkInterface.internalValue),
+      disk: cdktf.listMapper(googleComputeInstanceTemplateDiskToTerraform, true)(this._disk.internalValue),
+      guest_accelerator: cdktf.listMapper(googleComputeInstanceTemplateGuestAcceleratorToTerraform, true)(this._guestAccelerator.internalValue),
+      network_interface: cdktf.listMapper(googleComputeInstanceTemplateNetworkInterfaceToTerraform, true)(this._networkInterface.internalValue),
       network_performance_config: googleComputeInstanceTemplateNetworkPerformanceConfigToTerraform(this._networkPerformanceConfig.internalValue),
       reservation_affinity: googleComputeInstanceTemplateReservationAffinityToTerraform(this._reservationAffinity.internalValue),
       scheduling: googleComputeInstanceTemplateSchedulingToTerraform(this._scheduling.internalValue),

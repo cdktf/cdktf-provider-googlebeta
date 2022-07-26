@@ -284,7 +284,7 @@ export function googleContainerAzureClusterAuthorizationToTerraform(struct?: Goo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    admin_users: cdktf.listMapper(googleContainerAzureClusterAuthorizationAdminUsersToTerraform)(struct!.adminUsers),
+    admin_users: cdktf.listMapper(googleContainerAzureClusterAuthorizationAdminUsersToTerraform, true)(struct!.adminUsers),
   }
 }
 
@@ -883,7 +883,7 @@ export function googleContainerAzureClusterControlPlaneToTerraform(struct?: Goog
     database_encryption: googleContainerAzureClusterControlPlaneDatabaseEncryptionToTerraform(struct!.databaseEncryption),
     main_volume: googleContainerAzureClusterControlPlaneMainVolumeToTerraform(struct!.mainVolume),
     proxy_config: googleContainerAzureClusterControlPlaneProxyConfigToTerraform(struct!.proxyConfig),
-    replica_placements: cdktf.listMapper(googleContainerAzureClusterControlPlaneReplicaPlacementsToTerraform)(struct!.replicaPlacements),
+    replica_placements: cdktf.listMapper(googleContainerAzureClusterControlPlaneReplicaPlacementsToTerraform, true)(struct!.replicaPlacements),
     root_volume: googleContainerAzureClusterControlPlaneRootVolumeToTerraform(struct!.rootVolume),
     ssh_config: googleContainerAzureClusterControlPlaneSshConfigToTerraform(struct!.sshConfig),
   }
@@ -1213,7 +1213,7 @@ export function googleContainerAzureClusterLoggingConfigComponentConfigToTerrafo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enable_components: cdktf.listMapper(cdktf.stringToTerraform)(struct!.enableComponents),
+    enable_components: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enableComponents),
   }
 }
 
@@ -1359,8 +1359,8 @@ export function googleContainerAzureClusterNetworkingToTerraform(struct?: Google
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    pod_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.podAddressCidrBlocks),
-    service_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform)(struct!.serviceAddressCidrBlocks),
+    pod_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.podAddressCidrBlocks),
+    service_address_cidr_blocks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.serviceAddressCidrBlocks),
     virtual_network_id: cdktf.stringToTerraform(struct!.virtualNetworkId),
   }
 }
@@ -1610,7 +1610,10 @@ export class GoogleContainerAzureCluster extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._annotations = config.annotations;
     this._azureRegion = config.azureRegion;
