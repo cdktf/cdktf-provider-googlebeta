@@ -887,7 +887,7 @@ export class GoogleApikeysKey extends cdktf.TerraformResource {
       terraformResourceType: 'google_apikeys_key',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -971,6 +971,11 @@ export class GoogleApikeysKey extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
   }
 
   // restrictions - computed: false, optional: true, required: false

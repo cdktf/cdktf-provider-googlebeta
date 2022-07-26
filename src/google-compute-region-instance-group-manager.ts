@@ -75,11 +75,17 @@ export interface GoogleComputeRegionInstanceGroupManagerConfig extends cdktf.Ter
   */
   readonly waitForInstances?: boolean | cdktf.IResolvable;
   /**
-  * When used with wait_for_instances specifies the status to wait for. When STABLE is specified this resource will wait until the instances are stable before returning. When UPDATED is set, it will wait for the version target to be reached and any per instance configs to be effective as well as all instances to be stable before returning.
+  * When used with wait_for_instances specifies the status to wait for. When STABLE is specified this resource will wait until the instances are stable before returning. When UPDATED is set, it will wait for the version target to be reached and any per instance configs to be effective and all instances configs to be effective as well as all instances to be stable before returning.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_instance_group_manager#wait_for_instances_status GoogleComputeRegionInstanceGroupManager#wait_for_instances_status}
   */
   readonly waitForInstancesStatus?: string;
+  /**
+  * all_instances_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_instance_group_manager#all_instances_config GoogleComputeRegionInstanceGroupManager#all_instances_config}
+  */
+  readonly allInstancesConfig?: GoogleComputeRegionInstanceGroupManagerAllInstancesConfig;
   /**
   * auto_healing_policies block
   * 
@@ -116,6 +122,70 @@ export interface GoogleComputeRegionInstanceGroupManagerConfig extends cdktf.Ter
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_instance_group_manager#version GoogleComputeRegionInstanceGroupManager#version}
   */
   readonly version: GoogleComputeRegionInstanceGroupManagerVersion[] | cdktf.IResolvable;
+}
+export interface GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfig {
+}
+
+export function googleComputeRegionInstanceGroupManagerStatusAllInstancesConfigToTerraform(struct?: GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // effective - computed: true, optional: false, required: false
+  public get effective() {
+    return this.getBooleanAttribute('effective');
+  }
+}
+
+export class GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference {
+    return new GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface GoogleComputeRegionInstanceGroupManagerStatusStatefulPerInstanceConfigs {
 }
@@ -355,6 +425,12 @@ export class GoogleComputeRegionInstanceGroupManagerStatusOutputReference extend
     }
   }
 
+  // all_instances_config - computed: true, optional: false, required: false
+  private _allInstancesConfig = new GoogleComputeRegionInstanceGroupManagerStatusAllInstancesConfigList(this, "all_instances_config", false);
+  public get allInstancesConfig() {
+    return this._allInstancesConfig;
+  }
+
   // is_stable - computed: true, optional: false, required: false
   public get isStable() {
     return this.getBooleanAttribute('is_stable');
@@ -389,6 +465,102 @@ export class GoogleComputeRegionInstanceGroupManagerStatusList extends cdktf.Com
   */
   public get(index: number): GoogleComputeRegionInstanceGroupManagerStatusOutputReference {
     return new GoogleComputeRegionInstanceGroupManagerStatusOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeRegionInstanceGroupManagerAllInstancesConfig {
+  /**
+  * The label key-value pairs that you want to patch onto the instance,
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_instance_group_manager#labels GoogleComputeRegionInstanceGroupManager#labels}
+  */
+  readonly labels?: { [key: string]: string };
+  /**
+  * The metadata key-value pairs that you want to patch onto the instance. For more information, see Project and instance metadata,
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_instance_group_manager#metadata GoogleComputeRegionInstanceGroupManager#metadata}
+  */
+  readonly metadata?: { [key: string]: string };
+}
+
+export function googleComputeRegionInstanceGroupManagerAllInstancesConfigToTerraform(struct?: GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference | GoogleComputeRegionInstanceGroupManagerAllInstancesConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
+    metadata: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.metadata),
+  }
+}
+
+export class GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeRegionInstanceGroupManagerAllInstancesConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._labels !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.labels = this._labels;
+    }
+    if (this._metadata !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metadata = this._metadata;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionInstanceGroupManagerAllInstancesConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._labels = undefined;
+      this._metadata = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._labels = value.labels;
+      this._metadata = value.metadata;
+    }
+  }
+
+  // labels - computed: false, optional: true, required: false
+  private _labels?: { [key: string]: string }; 
+  public get labels() {
+    return this.getStringMapAttribute('labels');
+  }
+  public set labels(value: { [key: string]: string }) {
+    this._labels = value;
+  }
+  public resetLabels() {
+    this._labels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get labelsInput() {
+    return this._labels;
+  }
+
+  // metadata - computed: false, optional: true, required: false
+  private _metadata?: { [key: string]: string }; 
+  public get metadata() {
+    return this.getStringMapAttribute('metadata');
+  }
+  public set metadata(value: { [key: string]: string }) {
+    this._metadata = value;
+  }
+  public resetMetadata() {
+    this._metadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataInput() {
+    return this._metadata;
   }
 }
 export interface GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies {
@@ -1456,7 +1628,7 @@ export class GoogleComputeRegionInstanceGroupManager extends cdktf.TerraformReso
       terraformResourceType: 'google_compute_region_instance_group_manager',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1476,6 +1648,7 @@ export class GoogleComputeRegionInstanceGroupManager extends cdktf.TerraformReso
     this._targetSize = config.targetSize;
     this._waitForInstances = config.waitForInstances;
     this._waitForInstancesStatus = config.waitForInstancesStatus;
+    this._allInstancesConfig.internalValue = config.allInstancesConfig;
     this._autoHealingPolicies.internalValue = config.autoHealingPolicies;
     this._namedPort.internalValue = config.namedPort;
     this._statefulDisk.internalValue = config.statefulDisk;
@@ -1695,6 +1868,22 @@ export class GoogleComputeRegionInstanceGroupManager extends cdktf.TerraformReso
     return this._waitForInstancesStatus;
   }
 
+  // all_instances_config - computed: false, optional: true, required: false
+  private _allInstancesConfig = new GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference(this, "all_instances_config");
+  public get allInstancesConfig() {
+    return this._allInstancesConfig;
+  }
+  public putAllInstancesConfig(value: GoogleComputeRegionInstanceGroupManagerAllInstancesConfig) {
+    this._allInstancesConfig.internalValue = value;
+  }
+  public resetAllInstancesConfig() {
+    this._allInstancesConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allInstancesConfigInput() {
+    return this._allInstancesConfig.internalValue;
+  }
+
   // auto_healing_policies - computed: false, optional: true, required: false
   private _autoHealingPolicies = new GoogleComputeRegionInstanceGroupManagerAutoHealingPoliciesOutputReference(this, "auto_healing_policies");
   public get autoHealingPolicies() {
@@ -1806,6 +1995,7 @@ export class GoogleComputeRegionInstanceGroupManager extends cdktf.TerraformReso
       target_size: cdktf.numberToTerraform(this._targetSize),
       wait_for_instances: cdktf.booleanToTerraform(this._waitForInstances),
       wait_for_instances_status: cdktf.stringToTerraform(this._waitForInstancesStatus),
+      all_instances_config: googleComputeRegionInstanceGroupManagerAllInstancesConfigToTerraform(this._allInstancesConfig.internalValue),
       auto_healing_policies: googleComputeRegionInstanceGroupManagerAutoHealingPoliciesToTerraform(this._autoHealingPolicies.internalValue),
       named_port: cdktf.listMapper(googleComputeRegionInstanceGroupManagerNamedPortToTerraform)(this._namedPort.internalValue),
       stateful_disk: cdktf.listMapper(googleComputeRegionInstanceGroupManagerStatefulDiskToTerraform)(this._statefulDisk.internalValue),
