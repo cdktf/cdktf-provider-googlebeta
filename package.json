@@ -98,7 +98,7 @@
         "packageId": "HashiCorp.Cdktf.Providers.GoogleBeta"
       },
       "go": {
-        "moduleName": "github.com/hashicorp/cdktf-provider-google-beta-go",
+        "moduleName": "github.com/hashicorp/cdktf-provider-googlebeta-go",
         "packageName": "google-beta"
       }
     },
