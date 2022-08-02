@@ -16,7 +16,7 @@ If not specified, this defaults to 100.
   */
   readonly bootDiskSizeGb?: number;
   /**
-  * Possible disk types for notebook instances. Possible values: ["DISK_TYPE_UNSPECIFIED", "PD_STANDARD", "PD_SSD", "PD_BALANCED"]
+  * Possible disk types for notebook instances. Possible values: ["DISK_TYPE_UNSPECIFIED", "PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"]
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_instance#boot_disk_type GoogleNotebooksInstance#boot_disk_type}
   */
@@ -44,7 +44,7 @@ If not specified, this defaults to 100.
   */
   readonly dataDiskSizeGb?: number;
   /**
-  * Possible disk types for notebook instances. Possible values: ["DISK_TYPE_UNSPECIFIED", "PD_STANDARD", "PD_SSD", "PD_BALANCED"]
+  * Possible disk types for notebook instances. Possible values: ["DISK_TYPE_UNSPECIFIED", "PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"]
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_instance#data_disk_type GoogleNotebooksInstance#data_disk_type}
   */
@@ -954,7 +954,7 @@ export class GoogleNotebooksInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_notebooks_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
