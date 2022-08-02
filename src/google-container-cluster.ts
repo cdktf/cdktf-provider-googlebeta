@@ -1604,6 +1604,12 @@ export class GoogleContainerClusterBinaryAuthorizationOutputReference extends cd
 }
 export interface GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults {
   /**
+  * The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#boot_disk_kms_key GoogleContainerCluster#boot_disk_kms_key}
+  */
+  readonly bootDiskKmsKey?: string;
+  /**
   * The default image type used by NAP once a new node pool is being created.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#image_type GoogleContainerCluster#image_type}
@@ -1635,6 +1641,7 @@ export function googleContainerClusterClusterAutoscalingAutoProvisioningDefaults
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    boot_disk_kms_key: cdktf.stringToTerraform(struct!.bootDiskKmsKey),
     image_type: cdktf.stringToTerraform(struct!.imageType),
     min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
     oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
@@ -1656,6 +1663,10 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
   public get internalValue(): GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._bootDiskKmsKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bootDiskKmsKey = this._bootDiskKmsKey;
+    }
     if (this._imageType !== undefined) {
       hasAnyValues = true;
       internalValueResult.imageType = this._imageType;
@@ -1678,6 +1689,7 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
   public set internalValue(value: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._bootDiskKmsKey = undefined;
       this._imageType = undefined;
       this._minCpuPlatform = undefined;
       this._oauthScopes = undefined;
@@ -1685,11 +1697,28 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._bootDiskKmsKey = value.bootDiskKmsKey;
       this._imageType = value.imageType;
       this._minCpuPlatform = value.minCpuPlatform;
       this._oauthScopes = value.oauthScopes;
       this._serviceAccount = value.serviceAccount;
     }
+  }
+
+  // boot_disk_kms_key - computed: false, optional: true, required: false
+  private _bootDiskKmsKey?: string; 
+  public get bootDiskKmsKey() {
+    return this.getStringAttribute('boot_disk_kms_key');
+  }
+  public set bootDiskKmsKey(value: string) {
+    this._bootDiskKmsKey = value;
+  }
+  public resetBootDiskKmsKey() {
+    this._bootDiskKmsKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bootDiskKmsKeyInput() {
+    return this._bootDiskKmsKey;
   }
 
   // image_type - computed: false, optional: true, required: false
@@ -8421,13 +8450,13 @@ export class GoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigO
 }
 export interface GoogleContainerClusterPrivateClusterConfig {
   /**
-  * Enables the private cluster feature, creating a private endpoint on the cluster. In a private cluster, nodes only have RFC 1918 private addresses and communicate with the master's private endpoint via private networking.
+  * When true, the cluster's private endpoint is used as the cluster endpoint and access through the public endpoint is disabled. When false, either endpoint can be used. This field only applies to private clusters, when enable_private_nodes is true.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enable_private_endpoint GoogleContainerCluster#enable_private_endpoint}
   */
   readonly enablePrivateEndpoint: boolean | cdktf.IResolvable;
   /**
-  * When true, the cluster's private endpoint is used as the cluster endpoint and access through the public endpoint is disabled. When false, either endpoint can be used. This field only applies to private clusters, when enable_private_nodes is true.
+  * Enables the private cluster feature, creating a private endpoint on the cluster. In a private cluster, nodes only have RFC 1918 private addresses and communicate with the master's private endpoint via private networking.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enable_private_nodes GoogleContainerCluster#enable_private_nodes}
   */
@@ -9251,7 +9280,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -276,6 +276,7 @@ export * from './google-data-loss-prevention-stored-info-type';
 export * from './google-dataflow-flex-template-job';
 export * from './google-dataflow-job';
 export * from './google-dataplex-lake';
+export * from './google-dataplex-zone';
 export * from './google-dataproc-autoscaling-policy';
 export * from './google-dataproc-autoscaling-policy-iam-binding';
 export * from './google-dataproc-autoscaling-policy-iam-member';

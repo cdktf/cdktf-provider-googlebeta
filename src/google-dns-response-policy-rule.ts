@@ -450,7 +450,7 @@ export class GoogleDnsResponsePolicyRule extends cdktf.TerraformResource {
       terraformResourceType: 'google_dns_response_policy_rule',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
