@@ -755,6 +755,164 @@ export class GoogleCloudfunctions2FunctionBuildConfigOutputReference extends cdk
     return this._source.internalValue;
   }
 }
+export interface GoogleCloudfunctions2FunctionEventTriggerEventFilters {
+  /**
+  * 'Required. The name of a CloudEvents attribute.
+Currently, only a subset of attributes are supported for filtering. Use the 'gcloud eventarc providers describe' command to learn more about events and their attributes.
+Do not filter for the 'type' attribute here, as this is already achieved by the resource's 'event_type' attribute.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudfunctions2_function#attribute GoogleCloudfunctions2Function#attribute}
+  */
+  readonly attribute: string;
+  /**
+  * Optional. The operator used for matching the events with the value of
+the filter. If not specified, only events that have an exact key-value
+pair specified in the filter are matched.
+The only allowed value is 'match-path-pattern'.
+[See documentation on path patterns here](https://cloud.google.com/eventarc/docs/path-patterns)'
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudfunctions2_function#operator GoogleCloudfunctions2Function#operator}
+  */
+  readonly operator?: string;
+  /**
+  * Required. The value for the attribute.
+If the operator field is set as 'match-path-pattern', this value can be a path pattern instead of an exact value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudfunctions2_function#value GoogleCloudfunctions2Function#value}
+  */
+  readonly value: string;
+}
+
+export function googleCloudfunctions2FunctionEventTriggerEventFiltersToTerraform(struct?: GoogleCloudfunctions2FunctionEventTriggerEventFilters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    attribute: cdktf.stringToTerraform(struct!.attribute),
+    operator: cdktf.stringToTerraform(struct!.operator),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class GoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudfunctions2FunctionEventTriggerEventFilters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._attribute !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.attribute = this._attribute;
+    }
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudfunctions2FunctionEventTriggerEventFilters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._attribute = undefined;
+      this._operator = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._attribute = value.attribute;
+      this._operator = value.operator;
+      this._value = value.value;
+    }
+  }
+
+  // attribute - computed: false, optional: false, required: true
+  private _attribute?: string; 
+  public get attribute() {
+    return this.getStringAttribute('attribute');
+  }
+  public set attribute(value: string) {
+    this._attribute = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get attributeInput() {
+    return this._attribute;
+  }
+
+  // operator - computed: false, optional: true, required: false
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  public resetOperator() {
+    this._operator = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // value - computed: false, optional: false, required: true
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleCloudfunctions2FunctionEventTriggerEventFiltersList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudfunctions2FunctionEventTriggerEventFilters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference {
+    return new GoogleCloudfunctions2FunctionEventTriggerEventFiltersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleCloudfunctions2FunctionEventTrigger {
   /**
   * Required. The type of event to observe.
@@ -791,6 +949,12 @@ region. If not provided, defaults to the same region as the function.
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudfunctions2_function#trigger_region GoogleCloudfunctions2Function#trigger_region}
   */
   readonly triggerRegion?: string;
+  /**
+  * event_filters block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudfunctions2_function#event_filters GoogleCloudfunctions2Function#event_filters}
+  */
+  readonly eventFilters?: GoogleCloudfunctions2FunctionEventTriggerEventFilters[] | cdktf.IResolvable;
 }
 
 export function googleCloudfunctions2FunctionEventTriggerToTerraform(struct?: GoogleCloudfunctions2FunctionEventTriggerOutputReference | GoogleCloudfunctions2FunctionEventTrigger): any {
@@ -804,6 +968,7 @@ export function googleCloudfunctions2FunctionEventTriggerToTerraform(struct?: Go
     retry_policy: cdktf.stringToTerraform(struct!.retryPolicy),
     service_account_email: cdktf.stringToTerraform(struct!.serviceAccountEmail),
     trigger_region: cdktf.stringToTerraform(struct!.triggerRegion),
+    event_filters: cdktf.listMapper(googleCloudfunctions2FunctionEventTriggerEventFiltersToTerraform, true)(struct!.eventFilters),
   }
 }
 
@@ -841,6 +1006,10 @@ export class GoogleCloudfunctions2FunctionEventTriggerOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.triggerRegion = this._triggerRegion;
     }
+    if (this._eventFilters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventFilters = this._eventFilters?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -852,6 +1021,7 @@ export class GoogleCloudfunctions2FunctionEventTriggerOutputReference extends cd
       this._retryPolicy = undefined;
       this._serviceAccountEmail = undefined;
       this._triggerRegion = undefined;
+      this._eventFilters.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -860,6 +1030,7 @@ export class GoogleCloudfunctions2FunctionEventTriggerOutputReference extends cd
       this._retryPolicy = value.retryPolicy;
       this._serviceAccountEmail = value.serviceAccountEmail;
       this._triggerRegion = value.triggerRegion;
+      this._eventFilters.internalValue = value.eventFilters;
     }
   }
 
@@ -879,7 +1050,7 @@ export class GoogleCloudfunctions2FunctionEventTriggerOutputReference extends cd
     return this._eventType;
   }
 
-  // pubsub_topic - computed: false, optional: true, required: false
+  // pubsub_topic - computed: true, optional: true, required: false
   private _pubsubTopic?: string; 
   public get pubsubTopic() {
     return this.getStringAttribute('pubsub_topic');
@@ -946,6 +1117,22 @@ export class GoogleCloudfunctions2FunctionEventTriggerOutputReference extends cd
   // Temporarily expose input value. Use with caution.
   public get triggerRegionInput() {
     return this._triggerRegion;
+  }
+
+  // event_filters - computed: false, optional: true, required: false
+  private _eventFilters = new GoogleCloudfunctions2FunctionEventTriggerEventFiltersList(this, "event_filters", true);
+  public get eventFilters() {
+    return this._eventFilters;
+  }
+  public putEventFilters(value: GoogleCloudfunctions2FunctionEventTriggerEventFilters[] | cdktf.IResolvable) {
+    this._eventFilters.internalValue = value;
+  }
+  public resetEventFilters() {
+    this._eventFilters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventFiltersInput() {
+    return this._eventFilters.internalValue;
   }
 }
 export interface GoogleCloudfunctions2FunctionServiceConfig {
@@ -1477,7 +1664,7 @@ export class GoogleCloudfunctions2Function extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudfunctions2_function',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

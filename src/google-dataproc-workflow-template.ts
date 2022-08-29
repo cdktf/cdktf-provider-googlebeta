@@ -414,7 +414,7 @@ export class GoogleDataprocWorkflowTemplateJobsHadoopJobOutputReference extends 
 }
 export interface GoogleDataprocWorkflowTemplateJobsHiveJobQueryList {
   /**
-  * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob": { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
+  * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob" { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_workflow_template#queries GoogleDataprocWorkflowTemplate#queries}
   */
@@ -757,7 +757,7 @@ export class GoogleDataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReferenc
 }
 export interface GoogleDataprocWorkflowTemplateJobsPigJobQueryList {
   /**
-  * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob": { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
+  * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob" { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_workflow_template#queries GoogleDataprocWorkflowTemplate#queries}
   */
@@ -1129,7 +1129,7 @@ export class GoogleDataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputRefer
 }
 export interface GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList {
   /**
-  * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob": { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
+  * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob" { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_workflow_template#queries GoogleDataprocWorkflowTemplate#queries}
   */
@@ -2544,7 +2544,7 @@ export class GoogleDataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputRef
 }
 export interface GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList {
   /**
-  * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob": { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
+  * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob" { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_workflow_template#queries GoogleDataprocWorkflowTemplate#queries}
   */
@@ -8187,7 +8187,7 @@ export class GoogleDataprocWorkflowTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataproc_workflow_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleCertificateManagerCertificateMapConfig extends cdktf.TerraformMetaArguments {
   /**
-  * One or more paragraphs of text description of a certificate map entry.
+  * A human-readable description of the resource.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_certificate_manager_certificate_map#description GoogleCertificateManagerCertificateMap#description}
   */
@@ -344,7 +344,7 @@ export class GoogleCertificateManagerCertificateMap extends cdktf.TerraformResou
       terraformResourceType: 'google_certificate_manager_certificate_map',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
