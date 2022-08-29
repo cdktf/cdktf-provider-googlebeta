@@ -529,7 +529,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'

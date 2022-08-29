@@ -778,7 +778,7 @@ export interface GoogleContainerAwsNodePoolConfigA {
   */
   readonly instanceType?: string;
   /**
-  * Optional. The initial labels assigned to nodes of this node pool. An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+  * Optional. The initial labels assigned to nodes of this node pool. An object containing a list of "key": value pairs. Example { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#labels GoogleContainerAwsNodePool#labels}
   */
@@ -1358,7 +1358,7 @@ export class GoogleContainerAwsNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_aws_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.33.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
