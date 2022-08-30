@@ -233,7 +233,7 @@ For example, you could add a Google group to the deniedPrincipals, then exclude 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iam_deny_policy#denial_condition GoogleIamDenyPolicy#denial_condition}
   */
-  readonly denialCondition: GoogleIamDenyPolicyRulesDenyRuleDenialCondition;
+  readonly denialCondition?: GoogleIamDenyPolicyRulesDenyRuleDenialCondition;
 }
 
 export function googleIamDenyPolicyRulesDenyRuleToTerraform(struct?: GoogleIamDenyPolicyRulesDenyRuleOutputReference | GoogleIamDenyPolicyRulesDenyRule): any {
@@ -370,13 +370,16 @@ export class GoogleIamDenyPolicyRulesDenyRuleOutputReference extends cdktf.Compl
     return this._exceptionPrincipals;
   }
 
-  // denial_condition - computed: false, optional: false, required: true
+  // denial_condition - computed: false, optional: true, required: false
   private _denialCondition = new GoogleIamDenyPolicyRulesDenyRuleDenialConditionOutputReference(this, "denial_condition");
   public get denialCondition() {
     return this._denialCondition;
   }
   public putDenialCondition(value: GoogleIamDenyPolicyRulesDenyRuleDenialCondition) {
     this._denialCondition.internalValue = value;
+  }
+  public resetDenialCondition() {
+    this._denialCondition.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get denialConditionInput() {
@@ -667,7 +670,7 @@ export class GoogleIamDenyPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_iam_deny_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

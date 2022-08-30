@@ -687,7 +687,7 @@ export class GoogleRecaptchaEnterpriseKey extends cdktf.TerraformResource {
       terraformResourceType: 'google_recaptcha_enterprise_key',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
