@@ -41,7 +41,7 @@ range).
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_network_endpoint#port GoogleComputeNetworkEndpoint#port}
   */
-  readonly port: number;
+  readonly port?: number;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_network_endpoint#project GoogleComputeNetworkEndpoint#project}
   */
@@ -188,7 +188,7 @@ export class GoogleComputeNetworkEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_network_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -271,13 +271,16 @@ export class GoogleComputeNetworkEndpoint extends cdktf.TerraformResource {
     return this._networkEndpointGroup;
   }
 
-  // port - computed: false, optional: false, required: true
+  // port - computed: false, optional: true, required: false
   private _port?: number; 
   public get port() {
     return this.getNumberAttribute('port');
   }
   public set port(value: number) {
     this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get portInput() {

@@ -29,6 +29,9 @@ If 'force' is 'true', that safety check is ignored.
   readonly id?: string;
   /**
   * The limit on the metric, e.g. '/project/region'.
+
+~> Make sure that 'limit' is in a format that doesn't start with '1/' or contain curly braces.
+E.g. use '/project/user' instead of '1/{project}/{user}'.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_usage_consumer_quota_override#limit GoogleServiceUsageConsumerQuotaOverride#limit}
   */
@@ -218,7 +221,7 @@ export class GoogleServiceUsageConsumerQuotaOverride extends cdktf.TerraformReso
       terraformResourceType: 'google_service_usage_consumer_quota_override',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

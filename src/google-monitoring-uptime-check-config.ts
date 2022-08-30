@@ -332,6 +332,134 @@ export class GoogleMonitoringUptimeCheckConfigContentMatchersList extends cdktf.
     return new GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes {
+  /**
+  * A class of status codes to accept. Possible values: ["STATUS_CLASS_1XX", "STATUS_CLASS_2XX", "STATUS_CLASS_3XX", "STATUS_CLASS_4XX", "STATUS_CLASS_5XX", "STATUS_CLASS_ANY"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_uptime_check_config#status_class GoogleMonitoringUptimeCheckConfig#status_class}
+  */
+  readonly statusClass?: string;
+  /**
+  * A status code to accept.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_uptime_check_config#status_value GoogleMonitoringUptimeCheckConfig#status_value}
+  */
+  readonly statusValue?: number;
+}
+
+export function googleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesToTerraform(struct?: GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    status_class: cdktf.stringToTerraform(struct!.statusClass),
+    status_value: cdktf.numberToTerraform(struct!.statusValue),
+  }
+}
+
+export class GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._statusClass !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statusClass = this._statusClass;
+    }
+    if (this._statusValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.statusValue = this._statusValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._statusClass = undefined;
+      this._statusValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._statusClass = value.statusClass;
+      this._statusValue = value.statusValue;
+    }
+  }
+
+  // status_class - computed: false, optional: true, required: false
+  private _statusClass?: string; 
+  public get statusClass() {
+    return this.getStringAttribute('status_class');
+  }
+  public set statusClass(value: string) {
+    this._statusClass = value;
+  }
+  public resetStatusClass() {
+    this._statusClass = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusClassInput() {
+    return this._statusClass;
+  }
+
+  // status_value - computed: false, optional: true, required: false
+  private _statusValue?: number; 
+  public get statusValue() {
+    return this.getNumberAttribute('status_value');
+  }
+  public set statusValue(value: number) {
+    this._statusValue = value;
+  }
+  public resetStatusValue() {
+    this._statusValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusValueInput() {
+    return this._statusValue;
+  }
+}
+
+export class GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList extends cdktf.ComplexList {
+  public internalValue? : GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference {
+    return new GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleMonitoringUptimeCheckConfigHttpCheckAuthInfo {
   /**
   * The password to authenticate.
@@ -478,6 +606,12 @@ export interface GoogleMonitoringUptimeCheckConfigHttpCheck {
   */
   readonly validateSsl?: boolean | cdktf.IResolvable;
   /**
+  * accepted_response_status_codes block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_uptime_check_config#accepted_response_status_codes GoogleMonitoringUptimeCheckConfig#accepted_response_status_codes}
+  */
+  readonly acceptedResponseStatusCodes?: GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes[] | cdktf.IResolvable;
+  /**
   * auth_info block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_uptime_check_config#auth_info GoogleMonitoringUptimeCheckConfig#auth_info}
@@ -500,6 +634,7 @@ export function googleMonitoringUptimeCheckConfigHttpCheckToTerraform(struct?: G
     request_method: cdktf.stringToTerraform(struct!.requestMethod),
     use_ssl: cdktf.booleanToTerraform(struct!.useSsl),
     validate_ssl: cdktf.booleanToTerraform(struct!.validateSsl),
+    accepted_response_status_codes: cdktf.listMapper(googleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesToTerraform, true)(struct!.acceptedResponseStatusCodes),
     auth_info: googleMonitoringUptimeCheckConfigHttpCheckAuthInfoToTerraform(struct!.authInfo),
   }
 }
@@ -554,6 +689,10 @@ export class GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference extends c
       hasAnyValues = true;
       internalValueResult.validateSsl = this._validateSsl;
     }
+    if (this._acceptedResponseStatusCodes?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.acceptedResponseStatusCodes = this._acceptedResponseStatusCodes?.internalValue;
+    }
     if (this._authInfo?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.authInfo = this._authInfo?.internalValue;
@@ -573,6 +712,7 @@ export class GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference extends c
       this._requestMethod = undefined;
       this._useSsl = undefined;
       this._validateSsl = undefined;
+      this._acceptedResponseStatusCodes.internalValue = undefined;
       this._authInfo.internalValue = undefined;
     }
     else {
@@ -586,6 +726,7 @@ export class GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference extends c
       this._requestMethod = value.requestMethod;
       this._useSsl = value.useSsl;
       this._validateSsl = value.validateSsl;
+      this._acceptedResponseStatusCodes.internalValue = value.acceptedResponseStatusCodes;
       this._authInfo.internalValue = value.authInfo;
     }
   }
@@ -732,6 +873,22 @@ export class GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference extends c
   // Temporarily expose input value. Use with caution.
   public get validateSslInput() {
     return this._validateSsl;
+  }
+
+  // accepted_response_status_codes - computed: false, optional: true, required: false
+  private _acceptedResponseStatusCodes = new GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList(this, "accepted_response_status_codes", false);
+  public get acceptedResponseStatusCodes() {
+    return this._acceptedResponseStatusCodes;
+  }
+  public putAcceptedResponseStatusCodes(value: GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodes[] | cdktf.IResolvable) {
+    this._acceptedResponseStatusCodes.internalValue = value;
+  }
+  public resetAcceptedResponseStatusCodes() {
+    this._acceptedResponseStatusCodes.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get acceptedResponseStatusCodesInput() {
+    return this._acceptedResponseStatusCodes.internalValue;
   }
 
   // auth_info - computed: false, optional: true, required: false
@@ -1156,7 +1313,7 @@ export class GoogleMonitoringUptimeCheckConfig extends cdktf.TerraformResource {
       terraformResourceType: 'google_monitoring_uptime_check_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

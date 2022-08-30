@@ -29,7 +29,7 @@ be used to issue certificates for "example.com" and "*.example.com".
   */
   readonly id?: string;
   /**
-  * Set of label tags associated with the EdgeCache resource.
+  * Set of label tags associated with the DNS Authorization resource.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_certificate_manager_dns_authorization#labels GoogleCertificateManagerDnsAuthorization#labels}
   */
@@ -283,7 +283,7 @@ export class GoogleCertificateManagerDnsAuthorization extends cdktf.TerraformRes
       terraformResourceType: 'google_certificate_manager_dns_authorization',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
