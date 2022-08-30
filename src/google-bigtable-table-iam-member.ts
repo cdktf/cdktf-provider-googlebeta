@@ -181,7 +181,7 @@ export class GoogleBigtableTableIamMember extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigtable_table_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

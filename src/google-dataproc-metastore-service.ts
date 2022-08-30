@@ -90,6 +90,12 @@ and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of 
   */
   readonly maintenanceWindow?: GoogleDataprocMetastoreServiceMaintenanceWindow;
   /**
+  * metadata_integration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#metadata_integration GoogleDataprocMetastoreService#metadata_integration}
+  */
+  readonly metadataIntegration?: GoogleDataprocMetastoreServiceMetadataIntegration;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#timeouts GoogleDataprocMetastoreService#timeouts}
@@ -159,6 +165,156 @@ export class GoogleDataprocMetastoreServiceEncryptionConfigOutputReference exten
   // Temporarily expose input value. Use with caution.
   public get kmsKeyInput() {
     return this._kmsKey;
+  }
+}
+export interface GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions {
+  /**
+  * A mapping of Hive metastore configuration key-value pairs to apply to the auxiliary Hive metastore (configured in hive-site.xml) in addition to the primary version's overrides.
+If keys are present in both the auxiliary version's overrides and the primary version's overrides, the value from the auxiliary version's overrides takes precedence.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#config_overrides GoogleDataprocMetastoreService#config_overrides}
+  */
+  readonly configOverrides?: { [key: string]: string };
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#key GoogleDataprocMetastoreService#key}
+  */
+  readonly key: string;
+  /**
+  * The Hive metastore version of the auxiliary service. It must be less than the primary Hive metastore service's version.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#version GoogleDataprocMetastoreService#version}
+  */
+  readonly version: string;
+}
+
+export function googleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToTerraform(struct?: GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    config_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configOverrides),
+    key: cdktf.stringToTerraform(struct!.key),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
+export class GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._configOverrides !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.configOverrides = this._configOverrides;
+    }
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._configOverrides = undefined;
+      this._key = undefined;
+      this._version = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._configOverrides = value.configOverrides;
+      this._key = value.key;
+      this._version = value.version;
+    }
+  }
+
+  // config_overrides - computed: false, optional: true, required: false
+  private _configOverrides?: { [key: string]: string }; 
+  public get configOverrides() {
+    return this.getStringMapAttribute('config_overrides');
+  }
+  public set configOverrides(value: { [key: string]: string }) {
+    this._configOverrides = value;
+  }
+  public resetConfigOverrides() {
+    this._configOverrides = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configOverridesInput() {
+    return this._configOverrides;
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+
+  // version - computed: false, optional: false, required: true
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+}
+
+export class GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference {
+    return new GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab {
@@ -364,6 +520,12 @@ The mappings override system defaults (some keys cannot be overridden)
   */
   readonly version: string;
   /**
+  * auxiliary_versions block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#auxiliary_versions GoogleDataprocMetastoreService#auxiliary_versions}
+  */
+  readonly auxiliaryVersions?: GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions[] | cdktf.IResolvable;
+  /**
   * kerberos_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#kerberos_config GoogleDataprocMetastoreService#kerberos_config}
@@ -380,6 +542,7 @@ export function googleDataprocMetastoreServiceHiveMetastoreConfigToTerraform(str
     config_overrides: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.configOverrides),
     endpoint_protocol: cdktf.stringToTerraform(struct!.endpointProtocol),
     version: cdktf.stringToTerraform(struct!.version),
+    auxiliary_versions: cdktf.listMapper(googleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsToTerraform, true)(struct!.auxiliaryVersions),
     kerberos_config: googleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigToTerraform(struct!.kerberosConfig),
   }
 }
@@ -410,6 +573,10 @@ export class GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference ex
       hasAnyValues = true;
       internalValueResult.version = this._version;
     }
+    if (this._auxiliaryVersions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.auxiliaryVersions = this._auxiliaryVersions?.internalValue;
+    }
     if (this._kerberosConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.kerberosConfig = this._kerberosConfig?.internalValue;
@@ -423,6 +590,7 @@ export class GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference ex
       this._configOverrides = undefined;
       this._endpointProtocol = undefined;
       this._version = undefined;
+      this._auxiliaryVersions.internalValue = undefined;
       this._kerberosConfig.internalValue = undefined;
     }
     else {
@@ -430,6 +598,7 @@ export class GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference ex
       this._configOverrides = value.configOverrides;
       this._endpointProtocol = value.endpointProtocol;
       this._version = value.version;
+      this._auxiliaryVersions.internalValue = value.auxiliaryVersions;
       this._kerberosConfig.internalValue = value.kerberosConfig;
     }
   }
@@ -477,6 +646,22 @@ export class GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference ex
   // Temporarily expose input value. Use with caution.
   public get versionInput() {
     return this._version;
+  }
+
+  // auxiliary_versions - computed: false, optional: true, required: false
+  private _auxiliaryVersions = new GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList(this, "auxiliary_versions", true);
+  public get auxiliaryVersions() {
+    return this._auxiliaryVersions;
+  }
+  public putAuxiliaryVersions(value: GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions[] | cdktf.IResolvable) {
+    this._auxiliaryVersions.internalValue = value;
+  }
+  public resetAuxiliaryVersions() {
+    this._auxiliaryVersions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auxiliaryVersionsInput() {
+    return this._auxiliaryVersions.internalValue;
   }
 
   // kerberos_config - computed: false, optional: true, required: false
@@ -583,6 +768,134 @@ export class GoogleDataprocMetastoreServiceMaintenanceWindowOutputReference exte
   // Temporarily expose input value. Use with caution.
   public get hourOfDayInput() {
     return this._hourOfDay;
+  }
+}
+export interface GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig {
+  /**
+  * Defines whether the metastore metadata should be synced to Data Catalog. The default value is to disable syncing metastore metadata to Data Catalog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#enabled GoogleDataprocMetastoreService#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+}
+
+export function googleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigToTerraform(struct?: GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference | GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
+export interface GoogleDataprocMetastoreServiceMetadataIntegration {
+  /**
+  * data_catalog_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_service#data_catalog_config GoogleDataprocMetastoreService#data_catalog_config}
+  */
+  readonly dataCatalogConfig: GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig;
+}
+
+export function googleDataprocMetastoreServiceMetadataIntegrationToTerraform(struct?: GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference | GoogleDataprocMetastoreServiceMetadataIntegration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data_catalog_config: googleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigToTerraform(struct!.dataCatalogConfig),
+  }
+}
+
+export class GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocMetastoreServiceMetadataIntegration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataCatalogConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataCatalogConfig = this._dataCatalogConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocMetastoreServiceMetadataIntegration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dataCatalogConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dataCatalogConfig.internalValue = value.dataCatalogConfig;
+    }
+  }
+
+  // data_catalog_config - computed: false, optional: false, required: true
+  private _dataCatalogConfig = new GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference(this, "data_catalog_config");
+  public get dataCatalogConfig() {
+    return this._dataCatalogConfig;
+  }
+  public putDataCatalogConfig(value: GoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig) {
+    this._dataCatalogConfig.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataCatalogConfigInput() {
+    return this._dataCatalogConfig.internalValue;
   }
 }
 export interface GoogleDataprocMetastoreServiceTimeouts {
@@ -741,7 +1054,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataproc_metastore_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -765,6 +1078,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
     this._encryptionConfig.internalValue = config.encryptionConfig;
     this._hiveMetastoreConfig.internalValue = config.hiveMetastoreConfig;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
+    this._metadataIntegration.internalValue = config.metadataIntegration;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1007,6 +1321,22 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
     return this._maintenanceWindow.internalValue;
   }
 
+  // metadata_integration - computed: false, optional: true, required: false
+  private _metadataIntegration = new GoogleDataprocMetastoreServiceMetadataIntegrationOutputReference(this, "metadata_integration");
+  public get metadataIntegration() {
+    return this._metadataIntegration;
+  }
+  public putMetadataIntegration(value: GoogleDataprocMetastoreServiceMetadataIntegration) {
+    this._metadataIntegration.internalValue = value;
+  }
+  public resetMetadataIntegration() {
+    this._metadataIntegration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metadataIntegrationInput() {
+    return this._metadataIntegration.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleDataprocMetastoreServiceTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1042,6 +1372,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
       encryption_config: googleDataprocMetastoreServiceEncryptionConfigToTerraform(this._encryptionConfig.internalValue),
       hive_metastore_config: googleDataprocMetastoreServiceHiveMetastoreConfigToTerraform(this._hiveMetastoreConfig.internalValue),
       maintenance_window: googleDataprocMetastoreServiceMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
+      metadata_integration: googleDataprocMetastoreServiceMetadataIntegrationToTerraform(this._metadataIntegration.internalValue),
       timeouts: googleDataprocMetastoreServiceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

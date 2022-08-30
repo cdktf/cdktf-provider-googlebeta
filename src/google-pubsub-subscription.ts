@@ -114,6 +114,12 @@ messageRetentionDuration window.
   */
   readonly topic: string;
   /**
+  * bigquery_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_subscription#bigquery_config GooglePubsubSubscription#bigquery_config}
+  */
+  readonly bigqueryConfig?: GooglePubsubSubscriptionBigqueryConfig;
+  /**
   * dead_letter_policy block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_subscription#dead_letter_policy GooglePubsubSubscription#dead_letter_policy}
@@ -143,6 +149,159 @@ messageRetentionDuration window.
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_subscription#timeouts GooglePubsubSubscription#timeouts}
   */
   readonly timeouts?: GooglePubsubSubscriptionTimeouts;
+}
+export interface GooglePubsubSubscriptionBigqueryConfig {
+  /**
+  * When true and useTopicSchema is true, any fields that are a part of the topic schema that are not part of the BigQuery table schema are dropped when writing to BigQuery.
+Otherwise, the schemas must be kept in sync and any messages with extra fields are not written and remain in the subscription's backlog.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_subscription#drop_unknown_fields GooglePubsubSubscription#drop_unknown_fields}
+  */
+  readonly dropUnknownFields?: boolean | cdktf.IResolvable;
+  /**
+  * The name of the table to which to write data, of the form {projectId}:{datasetId}.{tableId}
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_subscription#table GooglePubsubSubscription#table}
+  */
+  readonly table: string;
+  /**
+  * When true, use the topic's schema as the columns to write to in BigQuery, if it exists.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_subscription#use_topic_schema GooglePubsubSubscription#use_topic_schema}
+  */
+  readonly useTopicSchema?: boolean | cdktf.IResolvable;
+  /**
+  * When true, write the subscription name, messageId, publishTime, attributes, and orderingKey to additional columns in the table.
+The subscription name, messageId, and publishTime fields are put in their own columns while all other message properties (other than data) are written to a JSON object in the attributes column.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_subscription#write_metadata GooglePubsubSubscription#write_metadata}
+  */
+  readonly writeMetadata?: boolean | cdktf.IResolvable;
+}
+
+export function googlePubsubSubscriptionBigqueryConfigToTerraform(struct?: GooglePubsubSubscriptionBigqueryConfigOutputReference | GooglePubsubSubscriptionBigqueryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    drop_unknown_fields: cdktf.booleanToTerraform(struct!.dropUnknownFields),
+    table: cdktf.stringToTerraform(struct!.table),
+    use_topic_schema: cdktf.booleanToTerraform(struct!.useTopicSchema),
+    write_metadata: cdktf.booleanToTerraform(struct!.writeMetadata),
+  }
+}
+
+export class GooglePubsubSubscriptionBigqueryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GooglePubsubSubscriptionBigqueryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dropUnknownFields !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dropUnknownFields = this._dropUnknownFields;
+    }
+    if (this._table !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.table = this._table;
+    }
+    if (this._useTopicSchema !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.useTopicSchema = this._useTopicSchema;
+    }
+    if (this._writeMetadata !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.writeMetadata = this._writeMetadata;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GooglePubsubSubscriptionBigqueryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dropUnknownFields = undefined;
+      this._table = undefined;
+      this._useTopicSchema = undefined;
+      this._writeMetadata = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dropUnknownFields = value.dropUnknownFields;
+      this._table = value.table;
+      this._useTopicSchema = value.useTopicSchema;
+      this._writeMetadata = value.writeMetadata;
+    }
+  }
+
+  // drop_unknown_fields - computed: false, optional: true, required: false
+  private _dropUnknownFields?: boolean | cdktf.IResolvable; 
+  public get dropUnknownFields() {
+    return this.getBooleanAttribute('drop_unknown_fields');
+  }
+  public set dropUnknownFields(value: boolean | cdktf.IResolvable) {
+    this._dropUnknownFields = value;
+  }
+  public resetDropUnknownFields() {
+    this._dropUnknownFields = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dropUnknownFieldsInput() {
+    return this._dropUnknownFields;
+  }
+
+  // table - computed: false, optional: false, required: true
+  private _table?: string; 
+  public get table() {
+    return this.getStringAttribute('table');
+  }
+  public set table(value: string) {
+    this._table = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableInput() {
+    return this._table;
+  }
+
+  // use_topic_schema - computed: false, optional: true, required: false
+  private _useTopicSchema?: boolean | cdktf.IResolvable; 
+  public get useTopicSchema() {
+    return this.getBooleanAttribute('use_topic_schema');
+  }
+  public set useTopicSchema(value: boolean | cdktf.IResolvable) {
+    this._useTopicSchema = value;
+  }
+  public resetUseTopicSchema() {
+    this._useTopicSchema = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get useTopicSchemaInput() {
+    return this._useTopicSchema;
+  }
+
+  // write_metadata - computed: false, optional: true, required: false
+  private _writeMetadata?: boolean | cdktf.IResolvable; 
+  public get writeMetadata() {
+    return this.getBooleanAttribute('write_metadata');
+  }
+  public set writeMetadata(value: boolean | cdktf.IResolvable) {
+    this._writeMetadata = value;
+  }
+  public resetWriteMetadata() {
+    this._writeMetadata = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get writeMetadataInput() {
+    return this._writeMetadata;
+  }
 }
 export interface GooglePubsubSubscriptionDeadLetterPolicy {
   /**
@@ -830,7 +989,7 @@ export class GooglePubsubSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'google_pubsub_subscription',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -852,6 +1011,7 @@ export class GooglePubsubSubscription extends cdktf.TerraformResource {
     this._project = config.project;
     this._retainAckedMessages = config.retainAckedMessages;
     this._topic = config.topic;
+    this._bigqueryConfig.internalValue = config.bigqueryConfig;
     this._deadLetterPolicy.internalValue = config.deadLetterPolicy;
     this._expirationPolicy.internalValue = config.expirationPolicy;
     this._pushConfig.internalValue = config.pushConfig;
@@ -1033,6 +1193,22 @@ export class GooglePubsubSubscription extends cdktf.TerraformResource {
     return this._topic;
   }
 
+  // bigquery_config - computed: false, optional: true, required: false
+  private _bigqueryConfig = new GooglePubsubSubscriptionBigqueryConfigOutputReference(this, "bigquery_config");
+  public get bigqueryConfig() {
+    return this._bigqueryConfig;
+  }
+  public putBigqueryConfig(value: GooglePubsubSubscriptionBigqueryConfig) {
+    this._bigqueryConfig.internalValue = value;
+  }
+  public resetBigqueryConfig() {
+    this._bigqueryConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bigqueryConfigInput() {
+    return this._bigqueryConfig.internalValue;
+  }
+
   // dead_letter_policy - computed: false, optional: true, required: false
   private _deadLetterPolicy = new GooglePubsubSubscriptionDeadLetterPolicyOutputReference(this, "dead_letter_policy");
   public get deadLetterPolicy() {
@@ -1130,6 +1306,7 @@ export class GooglePubsubSubscription extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       retain_acked_messages: cdktf.booleanToTerraform(this._retainAckedMessages),
       topic: cdktf.stringToTerraform(this._topic),
+      bigquery_config: googlePubsubSubscriptionBigqueryConfigToTerraform(this._bigqueryConfig.internalValue),
       dead_letter_policy: googlePubsubSubscriptionDeadLetterPolicyToTerraform(this._deadLetterPolicy.internalValue),
       expiration_policy: googlePubsubSubscriptionExpirationPolicyToTerraform(this._expirationPolicy.internalValue),
       push_config: googlePubsubSubscriptionPushConfigToTerraform(this._pushConfig.internalValue),

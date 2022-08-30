@@ -213,7 +213,7 @@ export class GoogleComputeRegionTargetHttpProxy extends cdktf.TerraformResource 
       terraformResourceType: 'google_compute_region_target_http_proxy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.31.0',
+        providerVersion: '4.34.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
