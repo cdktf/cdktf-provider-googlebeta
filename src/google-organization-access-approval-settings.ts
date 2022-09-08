@@ -339,7 +339,7 @@ export class GoogleOrganizationAccessApprovalSettings extends cdktf.TerraformRes
       terraformResourceType: 'google_organization_access_approval_settings',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

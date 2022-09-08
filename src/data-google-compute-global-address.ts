@@ -50,7 +50,7 @@ export class DataGoogleComputeGlobalAddress extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_global_address',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

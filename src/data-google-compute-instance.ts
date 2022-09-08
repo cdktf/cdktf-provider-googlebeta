@@ -88,6 +88,11 @@ export class DataGoogleComputeInstanceAdvancedMachineFeaturesOutputReference ext
   public get threadsPerCore() {
     return this.getNumberAttribute('threads_per_core');
   }
+
+  // visible_core_count - computed: true, optional: false, required: false
+  public get visibleCoreCount() {
+    return this.getNumberAttribute('visible_core_count');
+  }
 }
 
 export class DataGoogleComputeInstanceAdvancedMachineFeaturesList extends cdktf.ComplexList {
@@ -1460,7 +1465,7 @@ export class DataGoogleComputeInstance extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
