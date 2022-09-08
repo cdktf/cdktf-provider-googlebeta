@@ -201,7 +201,7 @@ export class GoogleEssentialContactsContact extends cdktf.TerraformResource {
       terraformResourceType: 'google_essential_contacts_contact',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

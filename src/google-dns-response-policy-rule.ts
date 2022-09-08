@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleDnsResponsePolicyRuleConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Answer this query with a behavior rather than DNS data. Acceptable values are 'behaviorUnspecified', and 'bypassResponsePolicy'
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy_rule#behavior GoogleDnsResponsePolicyRule#behavior}
+  */
+  readonly behavior?: string;
+  /**
   * The DNS name (wildcard or exact) to apply this rule to. Must be unique within the Response Policy Rule.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy_rule#dns_name GoogleDnsResponsePolicyRule#dns_name}
@@ -450,7 +456,7 @@ export class GoogleDnsResponsePolicyRule extends cdktf.TerraformResource {
       terraformResourceType: 'google_dns_response_policy_rule',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -461,6 +467,7 @@ export class GoogleDnsResponsePolicyRule extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._behavior = config.behavior;
     this._dnsName = config.dnsName;
     this._id = config.id;
     this._project = config.project;
@@ -473,6 +480,22 @@ export class GoogleDnsResponsePolicyRule extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // behavior - computed: false, optional: true, required: false
+  private _behavior?: string; 
+  public get behavior() {
+    return this.getStringAttribute('behavior');
+  }
+  public set behavior(value: string) {
+    this._behavior = value;
+  }
+  public resetBehavior() {
+    this._behavior = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get behaviorInput() {
+    return this._behavior;
+  }
 
   // dns_name - computed: false, optional: false, required: true
   private _dnsName?: string; 
@@ -583,6 +606,7 @@ export class GoogleDnsResponsePolicyRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      behavior: cdktf.stringToTerraform(this._behavior),
       dns_name: cdktf.stringToTerraform(this._dnsName),
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),

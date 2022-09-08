@@ -57,7 +57,7 @@ export interface GoogleVertexAiDatasetConfig extends cdktf.TerraformMetaArgument
 }
 export interface GoogleVertexAiDatasetEncryptionSpec {
   /**
-  * Required. The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. 
+  * Required. The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource.
 Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the resource is created.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_dataset#kms_key_name GoogleVertexAiDataset#kms_key_name}
@@ -279,7 +279,7 @@ export class GoogleVertexAiDataset extends cdktf.TerraformResource {
       terraformResourceType: 'google_vertex_ai_dataset',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

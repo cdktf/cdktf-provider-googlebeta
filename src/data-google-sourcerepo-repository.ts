@@ -127,7 +127,7 @@ export class DataGoogleSourcerepoRepository extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_sourcerepo_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

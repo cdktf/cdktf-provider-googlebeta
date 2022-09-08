@@ -2005,7 +2005,7 @@ export class GoogleAppEngineStandardAppVersion extends cdktf.TerraformResource {
       terraformResourceType: 'google_app_engine_standard_app_version',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

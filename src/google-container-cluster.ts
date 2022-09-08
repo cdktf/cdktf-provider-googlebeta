@@ -213,6 +213,12 @@ export interface GoogleContainerClusterConfig extends cdktf.TerraformMetaArgumen
   */
   readonly confidentialNodes?: GoogleContainerClusterConfidentialNodes;
   /**
+  * cost_management_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#cost_management_config GoogleContainerCluster#cost_management_config}
+  */
+  readonly costManagementConfig?: GoogleContainerClusterCostManagementConfig;
+  /**
   * database_encryption block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#database_encryption GoogleContainerCluster#database_encryption}
@@ -332,6 +338,12 @@ export interface GoogleContainerClusterConfig extends cdktf.TerraformMetaArgumen
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#resource_usage_export_config GoogleContainerCluster#resource_usage_export_config}
   */
   readonly resourceUsageExportConfig?: GoogleContainerClusterResourceUsageExportConfig;
+  /**
+  * service_external_ips_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#service_external_ips_config GoogleContainerCluster#service_external_ips_config}
+  */
+  readonly serviceExternalIpsConfig?: GoogleContainerClusterServiceExternalIpsConfig;
   /**
   * timeouts block
   * 
@@ -2207,6 +2219,70 @@ export class GoogleContainerClusterConfidentialNodesOutputReference extends cdkt
   }
 
   public set internalValue(value: GoogleContainerClusterConfidentialNodes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
+export interface GoogleContainerClusterCostManagementConfig {
+  /**
+  * Whether to enable GKE cost allocation. When you enable GKE cost allocation, the cluster name and namespace of your GKE workloads appear in the labels field of the billing export to BigQuery. Defaults to false.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+}
+
+export function googleContainerClusterCostManagementConfigToTerraform(struct?: GoogleContainerClusterCostManagementConfigOutputReference | GoogleContainerClusterCostManagementConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class GoogleContainerClusterCostManagementConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterCostManagementConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterCostManagementConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._enabled = undefined;
@@ -9380,6 +9456,70 @@ export class GoogleContainerClusterResourceUsageExportConfigOutputReference exte
     return this._bigqueryDestination.internalValue;
   }
 }
+export interface GoogleContainerClusterServiceExternalIpsConfig {
+  /**
+  * When enabled, services with exterenal ips specified will be allowed.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+}
+
+export function googleContainerClusterServiceExternalIpsConfigToTerraform(struct?: GoogleContainerClusterServiceExternalIpsConfigOutputReference | GoogleContainerClusterServiceExternalIpsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class GoogleContainerClusterServiceExternalIpsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterServiceExternalIpsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterServiceExternalIpsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
 export interface GoogleContainerClusterTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#create GoogleContainerCluster#create}
@@ -9792,7 +9932,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -9837,6 +9977,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     this._clusterAutoscaling.internalValue = config.clusterAutoscaling;
     this._clusterTelemetry.internalValue = config.clusterTelemetry;
     this._confidentialNodes.internalValue = config.confidentialNodes;
+    this._costManagementConfig.internalValue = config.costManagementConfig;
     this._databaseEncryption.internalValue = config.databaseEncryption;
     this._defaultSnatStatus.internalValue = config.defaultSnatStatus;
     this._dnsConfig.internalValue = config.dnsConfig;
@@ -9857,6 +9998,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     this._privateClusterConfig.internalValue = config.privateClusterConfig;
     this._releaseChannel.internalValue = config.releaseChannel;
     this._resourceUsageExportConfig.internalValue = config.resourceUsageExportConfig;
+    this._serviceExternalIpsConfig.internalValue = config.serviceExternalIpsConfig;
     this._timeouts.internalValue = config.timeouts;
     this._tpuConfig.internalValue = config.tpuConfig;
     this._verticalPodAutoscaling.internalValue = config.verticalPodAutoscaling;
@@ -10443,6 +10585,22 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     return this._confidentialNodes.internalValue;
   }
 
+  // cost_management_config - computed: false, optional: true, required: false
+  private _costManagementConfig = new GoogleContainerClusterCostManagementConfigOutputReference(this, "cost_management_config");
+  public get costManagementConfig() {
+    return this._costManagementConfig;
+  }
+  public putCostManagementConfig(value: GoogleContainerClusterCostManagementConfig) {
+    this._costManagementConfig.internalValue = value;
+  }
+  public resetCostManagementConfig() {
+    this._costManagementConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get costManagementConfigInput() {
+    return this._costManagementConfig.internalValue;
+  }
+
   // database_encryption - computed: false, optional: true, required: false
   private _databaseEncryption = new GoogleContainerClusterDatabaseEncryptionOutputReference(this, "database_encryption");
   public get databaseEncryption() {
@@ -10763,6 +10921,22 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     return this._resourceUsageExportConfig.internalValue;
   }
 
+  // service_external_ips_config - computed: false, optional: true, required: false
+  private _serviceExternalIpsConfig = new GoogleContainerClusterServiceExternalIpsConfigOutputReference(this, "service_external_ips_config");
+  public get serviceExternalIpsConfig() {
+    return this._serviceExternalIpsConfig;
+  }
+  public putServiceExternalIpsConfig(value: GoogleContainerClusterServiceExternalIpsConfig) {
+    this._serviceExternalIpsConfig.internalValue = value;
+  }
+  public resetServiceExternalIpsConfig() {
+    this._serviceExternalIpsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceExternalIpsConfigInput() {
+    return this._serviceExternalIpsConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleContainerClusterTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -10867,6 +11041,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       cluster_autoscaling: googleContainerClusterClusterAutoscalingToTerraform(this._clusterAutoscaling.internalValue),
       cluster_telemetry: googleContainerClusterClusterTelemetryToTerraform(this._clusterTelemetry.internalValue),
       confidential_nodes: googleContainerClusterConfidentialNodesToTerraform(this._confidentialNodes.internalValue),
+      cost_management_config: googleContainerClusterCostManagementConfigToTerraform(this._costManagementConfig.internalValue),
       database_encryption: googleContainerClusterDatabaseEncryptionToTerraform(this._databaseEncryption.internalValue),
       default_snat_status: googleContainerClusterDefaultSnatStatusToTerraform(this._defaultSnatStatus.internalValue),
       dns_config: googleContainerClusterDnsConfigToTerraform(this._dnsConfig.internalValue),
@@ -10887,6 +11062,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       private_cluster_config: googleContainerClusterPrivateClusterConfigToTerraform(this._privateClusterConfig.internalValue),
       release_channel: googleContainerClusterReleaseChannelToTerraform(this._releaseChannel.internalValue),
       resource_usage_export_config: googleContainerClusterResourceUsageExportConfigToTerraform(this._resourceUsageExportConfig.internalValue),
+      service_external_ips_config: googleContainerClusterServiceExternalIpsConfigToTerraform(this._serviceExternalIpsConfig.internalValue),
       timeouts: googleContainerClusterTimeoutsToTerraform(this._timeouts.internalValue),
       tpu_config: googleContainerClusterTpuConfigToTerraform(this._tpuConfig.internalValue),
       vertical_pod_autoscaling: googleContainerClusterVerticalPodAutoscalingToTerraform(this._verticalPodAutoscaling.internalValue),

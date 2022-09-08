@@ -41,6 +41,12 @@ export interface GoogleVertexAiFeaturestoreConfig extends cdktf.TerraformMetaArg
   */
   readonly region?: string;
   /**
+  * encryption_spec block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#encryption_spec GoogleVertexAiFeaturestore#encryption_spec}
+  */
+  readonly encryptionSpec?: GoogleVertexAiFeaturestoreEncryptionSpec;
+  /**
   * online_serving_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#online_serving_config GoogleVertexAiFeaturestore#online_serving_config}
@@ -52,6 +58,70 @@ export interface GoogleVertexAiFeaturestoreConfig extends cdktf.TerraformMetaArg
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#timeouts GoogleVertexAiFeaturestore#timeouts}
   */
   readonly timeouts?: GoogleVertexAiFeaturestoreTimeouts;
+}
+export interface GoogleVertexAiFeaturestoreEncryptionSpec {
+  /**
+  * The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the compute resource is created.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#kms_key_name GoogleVertexAiFeaturestore#kms_key_name}
+  */
+  readonly kmsKeyName: string;
+}
+
+export function googleVertexAiFeaturestoreEncryptionSpecToTerraform(struct?: GoogleVertexAiFeaturestoreEncryptionSpecOutputReference | GoogleVertexAiFeaturestoreEncryptionSpec): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_key_name: cdktf.stringToTerraform(struct!.kmsKeyName),
+  }
+}
+
+export class GoogleVertexAiFeaturestoreEncryptionSpecOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleVertexAiFeaturestoreEncryptionSpec | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKeyName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyName = this._kmsKeyName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleVertexAiFeaturestoreEncryptionSpec | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsKeyName = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsKeyName = value.kmsKeyName;
+    }
+  }
+
+  // kms_key_name - computed: false, optional: false, required: true
+  private _kmsKeyName?: string; 
+  public get kmsKeyName() {
+    return this.getStringAttribute('kms_key_name');
+  }
+  public set kmsKeyName(value: string) {
+    this._kmsKeyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyNameInput() {
+    return this._kmsKeyName;
+  }
 }
 export interface GoogleVertexAiFeaturestoreOnlineServingConfig {
   /**
@@ -273,7 +343,7 @@ export class GoogleVertexAiFeaturestore extends cdktf.TerraformResource {
       terraformResourceType: 'google_vertex_ai_featurestore',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.34.0',
+        providerVersion: '4.35.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -290,6 +360,7 @@ export class GoogleVertexAiFeaturestore extends cdktf.TerraformResource {
     this._name = config.name;
     this._project = config.project;
     this._region = config.region;
+    this._encryptionSpec.internalValue = config.encryptionSpec;
     this._onlineServingConfig.internalValue = config.onlineServingConfig;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -409,6 +480,22 @@ export class GoogleVertexAiFeaturestore extends cdktf.TerraformResource {
     return this.getStringAttribute('update_time');
   }
 
+  // encryption_spec - computed: false, optional: true, required: false
+  private _encryptionSpec = new GoogleVertexAiFeaturestoreEncryptionSpecOutputReference(this, "encryption_spec");
+  public get encryptionSpec() {
+    return this._encryptionSpec;
+  }
+  public putEncryptionSpec(value: GoogleVertexAiFeaturestoreEncryptionSpec) {
+    this._encryptionSpec.internalValue = value;
+  }
+  public resetEncryptionSpec() {
+    this._encryptionSpec.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get encryptionSpecInput() {
+    return this._encryptionSpec.internalValue;
+  }
+
   // online_serving_config - computed: false, optional: true, required: false
   private _onlineServingConfig = new GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference(this, "online_serving_config");
   public get onlineServingConfig() {
@@ -453,6 +540,7 @@ export class GoogleVertexAiFeaturestore extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
+      encryption_spec: googleVertexAiFeaturestoreEncryptionSpecToTerraform(this._encryptionSpec.internalValue),
       online_serving_config: googleVertexAiFeaturestoreOnlineServingConfigToTerraform(this._onlineServingConfig.internalValue),
       timeouts: googleVertexAiFeaturestoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
