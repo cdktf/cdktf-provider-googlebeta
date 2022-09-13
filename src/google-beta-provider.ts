@@ -52,6 +52,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly bigQueryCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_analytics_hub_custom_endpoint GoogleBetaProvider#bigquery_analytics_hub_custom_endpoint}
+  */
+  readonly bigqueryAnalyticsHubCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_connection_custom_endpoint GoogleBetaProvider#bigquery_connection_custom_endpoint}
   */
   readonly bigqueryConnectionCustomEndpoint?: string;
@@ -195,6 +199,10 @@ export interface GoogleBetaProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#datastore_custom_endpoint GoogleBetaProvider#datastore_custom_endpoint}
   */
   readonly datastoreCustomEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#datastream_custom_endpoint GoogleBetaProvider#datastream_custom_endpoint}
+  */
+  readonly datastreamCustomEndpoint?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#deployment_manager_custom_endpoint GoogleBetaProvider#deployment_manager_custom_endpoint}
   */
@@ -529,7 +537,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.35.0',
+        providerVersion: '4.36.0',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'
@@ -545,6 +553,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._artifactRegistryCustomEndpoint = config.artifactRegistryCustomEndpoint;
     this._assuredWorkloadsCustomEndpoint = config.assuredWorkloadsCustomEndpoint;
     this._bigQueryCustomEndpoint = config.bigQueryCustomEndpoint;
+    this._bigqueryAnalyticsHubCustomEndpoint = config.bigqueryAnalyticsHubCustomEndpoint;
     this._bigqueryConnectionCustomEndpoint = config.bigqueryConnectionCustomEndpoint;
     this._bigqueryDataTransferCustomEndpoint = config.bigqueryDataTransferCustomEndpoint;
     this._bigqueryReservationCustomEndpoint = config.bigqueryReservationCustomEndpoint;
@@ -581,6 +590,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._dataprocCustomEndpoint = config.dataprocCustomEndpoint;
     this._dataprocMetastoreCustomEndpoint = config.dataprocMetastoreCustomEndpoint;
     this._datastoreCustomEndpoint = config.datastoreCustomEndpoint;
+    this._datastreamCustomEndpoint = config.datastreamCustomEndpoint;
     this._deploymentManagerCustomEndpoint = config.deploymentManagerCustomEndpoint;
     this._dialogflowCustomEndpoint = config.dialogflowCustomEndpoint;
     this._dialogflowCxCustomEndpoint = config.dialogflowCxCustomEndpoint;
@@ -831,6 +841,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get bigQueryCustomEndpointInput() {
     return this._bigQueryCustomEndpoint;
+  }
+
+  // bigquery_analytics_hub_custom_endpoint - computed: false, optional: true, required: false
+  private _bigqueryAnalyticsHubCustomEndpoint?: string; 
+  public get bigqueryAnalyticsHubCustomEndpoint() {
+    return this._bigqueryAnalyticsHubCustomEndpoint;
+  }
+  public set bigqueryAnalyticsHubCustomEndpoint(value: string | undefined) {
+    this._bigqueryAnalyticsHubCustomEndpoint = value;
+  }
+  public resetBigqueryAnalyticsHubCustomEndpoint() {
+    this._bigqueryAnalyticsHubCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bigqueryAnalyticsHubCustomEndpointInput() {
+    return this._bigqueryAnalyticsHubCustomEndpoint;
   }
 
   // bigquery_connection_custom_endpoint - computed: false, optional: true, required: false
@@ -1407,6 +1433,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get datastoreCustomEndpointInput() {
     return this._datastoreCustomEndpoint;
+  }
+
+  // datastream_custom_endpoint - computed: false, optional: true, required: false
+  private _datastreamCustomEndpoint?: string; 
+  public get datastreamCustomEndpoint() {
+    return this._datastreamCustomEndpoint;
+  }
+  public set datastreamCustomEndpoint(value: string | undefined) {
+    this._datastreamCustomEndpoint = value;
+  }
+  public resetDatastreamCustomEndpoint() {
+    this._datastreamCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datastreamCustomEndpointInput() {
+    return this._datastreamCustomEndpoint;
   }
 
   // deployment_manager_custom_endpoint - computed: false, optional: true, required: false
@@ -2546,6 +2588,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       artifact_registry_custom_endpoint: cdktf.stringToTerraform(this._artifactRegistryCustomEndpoint),
       assured_workloads_custom_endpoint: cdktf.stringToTerraform(this._assuredWorkloadsCustomEndpoint),
       big_query_custom_endpoint: cdktf.stringToTerraform(this._bigQueryCustomEndpoint),
+      bigquery_analytics_hub_custom_endpoint: cdktf.stringToTerraform(this._bigqueryAnalyticsHubCustomEndpoint),
       bigquery_connection_custom_endpoint: cdktf.stringToTerraform(this._bigqueryConnectionCustomEndpoint),
       bigquery_data_transfer_custom_endpoint: cdktf.stringToTerraform(this._bigqueryDataTransferCustomEndpoint),
       bigquery_reservation_custom_endpoint: cdktf.stringToTerraform(this._bigqueryReservationCustomEndpoint),
@@ -2582,6 +2625,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       dataproc_custom_endpoint: cdktf.stringToTerraform(this._dataprocCustomEndpoint),
       dataproc_metastore_custom_endpoint: cdktf.stringToTerraform(this._dataprocMetastoreCustomEndpoint),
       datastore_custom_endpoint: cdktf.stringToTerraform(this._datastoreCustomEndpoint),
+      datastream_custom_endpoint: cdktf.stringToTerraform(this._datastreamCustomEndpoint),
       deployment_manager_custom_endpoint: cdktf.stringToTerraform(this._deploymentManagerCustomEndpoint),
       dialogflow_custom_endpoint: cdktf.stringToTerraform(this._dialogflowCustomEndpoint),
       dialogflow_cx_custom_endpoint: cdktf.stringToTerraform(this._dialogflowCxCustomEndpoint),

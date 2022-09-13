@@ -309,6 +309,12 @@ export interface GoogleContainerClusterConfig extends cdktf.TerraformMetaArgumen
   */
   readonly nodePoolAutoConfig?: GoogleContainerClusterNodePoolAutoConfig;
   /**
+  * node_pool_defaults block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#node_pool_defaults GoogleContainerCluster#node_pool_defaults}
+  */
+  readonly nodePoolDefaults?: GoogleContainerClusterNodePoolDefaults;
+  /**
   * notification_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#notification_config GoogleContainerCluster#notification_config}
@@ -5882,17 +5888,35 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
 }
 export interface GoogleContainerClusterNodePoolAutoscaling {
   /**
-  * Maximum number of nodes in the NodePool. Must be >= min_node_count.
+  * Location policy specifies the algorithm used when scaling-up the node pool. "BALANCED" - Is a best effort policy that aims to balance the sizes of available zones. "ANY" - Instructs the cluster autoscaler to prioritize utilization of unused reservations, and reduces preemption risk for Spot VMs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#location_policy GoogleContainerCluster#location_policy}
+  */
+  readonly locationPolicy?: string;
+  /**
+  * Maximum number of nodes per zone in the node pool. Must be >= min_node_count. Cannot be used with total limits.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#max_node_count GoogleContainerCluster#max_node_count}
   */
-  readonly maxNodeCount: number;
+  readonly maxNodeCount?: number;
   /**
-  * Minimum number of nodes in the NodePool. Must be >=0 and <= max_node_count.
+  * Minimum number of nodes per zone in the node pool. Must be >=0 and <= max_node_count. Cannot be used with total limits.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#min_node_count GoogleContainerCluster#min_node_count}
   */
-  readonly minNodeCount: number;
+  readonly minNodeCount?: number;
+  /**
+  * Maximum number of all nodes in the node pool. Must be >= total_min_node_count. Cannot be used with per zone limits.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#total_max_node_count GoogleContainerCluster#total_max_node_count}
+  */
+  readonly totalMaxNodeCount?: number;
+  /**
+  * Minimum number of all nodes in the node pool. Must be >=0 and <= total_max_node_count. Cannot be used with per zone limits.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#total_min_node_count GoogleContainerCluster#total_min_node_count}
+  */
+  readonly totalMinNodeCount?: number;
 }
 
 export function googleContainerClusterNodePoolAutoscalingToTerraform(struct?: GoogleContainerClusterNodePoolAutoscalingOutputReference | GoogleContainerClusterNodePoolAutoscaling): any {
@@ -5901,8 +5925,11 @@ export function googleContainerClusterNodePoolAutoscalingToTerraform(struct?: Go
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    location_policy: cdktf.stringToTerraform(struct!.locationPolicy),
     max_node_count: cdktf.numberToTerraform(struct!.maxNodeCount),
     min_node_count: cdktf.numberToTerraform(struct!.minNodeCount),
+    total_max_node_count: cdktf.numberToTerraform(struct!.totalMaxNodeCount),
+    total_min_node_count: cdktf.numberToTerraform(struct!.totalMinNodeCount),
   }
 }
 
@@ -5920,6 +5947,10 @@ export class GoogleContainerClusterNodePoolAutoscalingOutputReference extends cd
   public get internalValue(): GoogleContainerClusterNodePoolAutoscaling | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._locationPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.locationPolicy = this._locationPolicy;
+    }
     if (this._maxNodeCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.maxNodeCount = this._maxNodeCount;
@@ -5928,23 +5959,53 @@ export class GoogleContainerClusterNodePoolAutoscalingOutputReference extends cd
       hasAnyValues = true;
       internalValueResult.minNodeCount = this._minNodeCount;
     }
+    if (this._totalMaxNodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.totalMaxNodeCount = this._totalMaxNodeCount;
+    }
+    if (this._totalMinNodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.totalMinNodeCount = this._totalMinNodeCount;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: GoogleContainerClusterNodePoolAutoscaling | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._locationPolicy = undefined;
       this._maxNodeCount = undefined;
       this._minNodeCount = undefined;
+      this._totalMaxNodeCount = undefined;
+      this._totalMinNodeCount = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._locationPolicy = value.locationPolicy;
       this._maxNodeCount = value.maxNodeCount;
       this._minNodeCount = value.minNodeCount;
+      this._totalMaxNodeCount = value.totalMaxNodeCount;
+      this._totalMinNodeCount = value.totalMinNodeCount;
     }
   }
 
-  // max_node_count - computed: false, optional: false, required: true
+  // location_policy - computed: false, optional: true, required: false
+  private _locationPolicy?: string; 
+  public get locationPolicy() {
+    return this.getStringAttribute('location_policy');
+  }
+  public set locationPolicy(value: string) {
+    this._locationPolicy = value;
+  }
+  public resetLocationPolicy() {
+    this._locationPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationPolicyInput() {
+    return this._locationPolicy;
+  }
+
+  // max_node_count - computed: false, optional: true, required: false
   private _maxNodeCount?: number; 
   public get maxNodeCount() {
     return this.getNumberAttribute('max_node_count');
@@ -5952,12 +6013,15 @@ export class GoogleContainerClusterNodePoolAutoscalingOutputReference extends cd
   public set maxNodeCount(value: number) {
     this._maxNodeCount = value;
   }
+  public resetMaxNodeCount() {
+    this._maxNodeCount = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get maxNodeCountInput() {
     return this._maxNodeCount;
   }
 
-  // min_node_count - computed: false, optional: false, required: true
+  // min_node_count - computed: false, optional: true, required: false
   private _minNodeCount?: number; 
   public get minNodeCount() {
     return this.getNumberAttribute('min_node_count');
@@ -5965,9 +6029,44 @@ export class GoogleContainerClusterNodePoolAutoscalingOutputReference extends cd
   public set minNodeCount(value: number) {
     this._minNodeCount = value;
   }
+  public resetMinNodeCount() {
+    this._minNodeCount = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get minNodeCountInput() {
     return this._minNodeCount;
+  }
+
+  // total_max_node_count - computed: false, optional: true, required: false
+  private _totalMaxNodeCount?: number; 
+  public get totalMaxNodeCount() {
+    return this.getNumberAttribute('total_max_node_count');
+  }
+  public set totalMaxNodeCount(value: number) {
+    this._totalMaxNodeCount = value;
+  }
+  public resetTotalMaxNodeCount() {
+    this._totalMaxNodeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get totalMaxNodeCountInput() {
+    return this._totalMaxNodeCount;
+  }
+
+  // total_min_node_count - computed: false, optional: true, required: false
+  private _totalMinNodeCount?: number; 
+  public get totalMinNodeCount() {
+    return this.getNumberAttribute('total_min_node_count');
+  }
+  public set totalMinNodeCount(value: number) {
+    this._totalMinNodeCount = value;
+  }
+  public resetTotalMinNodeCount() {
+    this._totalMinNodeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get totalMinNodeCountInput() {
+    return this._totalMinNodeCount;
   }
 }
 export interface GoogleContainerClusterNodePoolManagement {
@@ -8751,6 +8850,204 @@ export class GoogleContainerClusterNodePoolAutoConfigOutputReference extends cdk
     return this._networkTags.internalValue;
   }
 }
+export interface GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig {
+  /**
+  * Whether or not GCFS is enabled
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enabled GoogleContainerCluster#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+}
+
+export function googleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigToTerraform(struct?: GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference | GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
+export interface GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults {
+  /**
+  * gcfs_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#gcfs_config GoogleContainerCluster#gcfs_config}
+  */
+  readonly gcfsConfig?: GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig;
+}
+
+export function googleContainerClusterNodePoolDefaultsNodeConfigDefaultsToTerraform(struct?: GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference | GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    gcfs_config: googleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigToTerraform(struct!.gcfsConfig),
+  }
+}
+
+export class GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._gcfsConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcfsConfig = this._gcfsConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._gcfsConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._gcfsConfig.internalValue = value.gcfsConfig;
+    }
+  }
+
+  // gcfs_config - computed: false, optional: true, required: false
+  private _gcfsConfig = new GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference(this, "gcfs_config");
+  public get gcfsConfig() {
+    return this._gcfsConfig;
+  }
+  public putGcfsConfig(value: GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig) {
+    this._gcfsConfig.internalValue = value;
+  }
+  public resetGcfsConfig() {
+    this._gcfsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcfsConfigInput() {
+    return this._gcfsConfig.internalValue;
+  }
+}
+export interface GoogleContainerClusterNodePoolDefaults {
+  /**
+  * node_config_defaults block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#node_config_defaults GoogleContainerCluster#node_config_defaults}
+  */
+  readonly nodeConfigDefaults?: GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults;
+}
+
+export function googleContainerClusterNodePoolDefaultsToTerraform(struct?: GoogleContainerClusterNodePoolDefaultsOutputReference | GoogleContainerClusterNodePoolDefaults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    node_config_defaults: googleContainerClusterNodePoolDefaultsNodeConfigDefaultsToTerraform(struct!.nodeConfigDefaults),
+  }
+}
+
+export class GoogleContainerClusterNodePoolDefaultsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterNodePoolDefaults | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._nodeConfigDefaults?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodeConfigDefaults = this._nodeConfigDefaults?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNodePoolDefaults | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._nodeConfigDefaults.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._nodeConfigDefaults.internalValue = value.nodeConfigDefaults;
+    }
+  }
+
+  // node_config_defaults - computed: false, optional: true, required: false
+  private _nodeConfigDefaults = new GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference(this, "node_config_defaults");
+  public get nodeConfigDefaults() {
+    return this._nodeConfigDefaults;
+  }
+  public putNodeConfigDefaults(value: GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults) {
+    this._nodeConfigDefaults.internalValue = value;
+  }
+  public resetNodeConfigDefaults() {
+    this._nodeConfigDefaults.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodeConfigDefaultsInput() {
+    return this._nodeConfigDefaults.internalValue;
+  }
+}
 export interface GoogleContainerClusterNotificationConfigPubsub {
   /**
   * Whether or not the notification config is enabled
@@ -9932,7 +10229,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.35.0',
+        providerVersion: '4.36.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -9993,6 +10290,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     this._nodeConfig.internalValue = config.nodeConfig;
     this._nodePool.internalValue = config.nodePool;
     this._nodePoolAutoConfig.internalValue = config.nodePoolAutoConfig;
+    this._nodePoolDefaults.internalValue = config.nodePoolDefaults;
     this._notificationConfig.internalValue = config.notificationConfig;
     this._podSecurityPolicyConfig.internalValue = config.podSecurityPolicyConfig;
     this._privateClusterConfig.internalValue = config.privateClusterConfig;
@@ -10841,6 +11139,22 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     return this._nodePoolAutoConfig.internalValue;
   }
 
+  // node_pool_defaults - computed: false, optional: true, required: false
+  private _nodePoolDefaults = new GoogleContainerClusterNodePoolDefaultsOutputReference(this, "node_pool_defaults");
+  public get nodePoolDefaults() {
+    return this._nodePoolDefaults;
+  }
+  public putNodePoolDefaults(value: GoogleContainerClusterNodePoolDefaults) {
+    this._nodePoolDefaults.internalValue = value;
+  }
+  public resetNodePoolDefaults() {
+    this._nodePoolDefaults.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodePoolDefaultsInput() {
+    return this._nodePoolDefaults.internalValue;
+  }
+
   // notification_config - computed: false, optional: true, required: false
   private _notificationConfig = new GoogleContainerClusterNotificationConfigOutputReference(this, "notification_config");
   public get notificationConfig() {
@@ -11057,6 +11371,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       node_config: googleContainerClusterNodeConfigToTerraform(this._nodeConfig.internalValue),
       node_pool: cdktf.listMapper(googleContainerClusterNodePoolToTerraform, true)(this._nodePool.internalValue),
       node_pool_auto_config: googleContainerClusterNodePoolAutoConfigToTerraform(this._nodePoolAutoConfig.internalValue),
+      node_pool_defaults: googleContainerClusterNodePoolDefaultsToTerraform(this._nodePoolDefaults.internalValue),
       notification_config: googleContainerClusterNotificationConfigToTerraform(this._notificationConfig.internalValue),
       pod_security_policy_config: googleContainerClusterPodSecurityPolicyConfigToTerraform(this._podSecurityPolicyConfig.internalValue),
       private_cluster_config: googleContainerClusterPrivateClusterConfigToTerraform(this._privateClusterConfig.internalValue),
