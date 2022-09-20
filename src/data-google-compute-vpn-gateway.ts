@@ -54,7 +54,7 @@ export class DataGoogleComputeVpnGateway extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_vpn_gateway',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.36.0',
+        providerVersion: '4.37.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
