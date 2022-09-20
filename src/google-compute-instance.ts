@@ -105,7 +105,7 @@ export interface GoogleComputeInstanceConfig extends cdktf.TerraformMetaArgument
   */
   readonly project?: string;
   /**
-  * A list of short names or self_links of resource policies to attach to the instance. Currently a max of 1 resource policy is supported.
+  * A list of self_links of resource policies to attach to the instance. Currently a max of 1 resource policy is supported.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance#resource_policies GoogleComputeInstance#resource_policies}
   */
@@ -3010,7 +3010,7 @@ export class GoogleComputeInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.36.0',
+        providerVersion: '4.37.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
