@@ -210,7 +210,7 @@ export class GoogleAppEngineFirewallRule extends cdktf.TerraformResource {
       terraformResourceType: 'google_app_engine_firewall_rule',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.37.0',
+        providerVersion: '4.38.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

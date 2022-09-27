@@ -307,6 +307,7 @@ export * from './google-dataproc-metastore-service-iam-policy';
 export * from './google-dataproc-workflow-template';
 export * from './google-datastore-index';
 export * from './google-datastream-connection-profile';
+export * from './google-datastream-private-connection';
 export * from './google-deployment-manager-deployment';
 export * from './google-dialogflow-agent';
 export * from './google-dialogflow-cx-agent';
@@ -708,5 +709,6 @@ export * from './data-google-storage-transfer-project-service-account';
 export * from './data-google-tags-tag-key';
 export * from './data-google-tags-tag-value';
 export * from './data-google-tpu-tensorflow-versions';
+export * from './data-google-vpc-access-connector';
 export * from './google-beta-provider';
 
