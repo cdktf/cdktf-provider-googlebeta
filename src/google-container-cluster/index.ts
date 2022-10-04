@@ -9048,6 +9048,70 @@ export class GoogleContainerClusterNodePoolDefaultsOutputReference extends cdktf
     return this._nodeConfigDefaults.internalValue;
   }
 }
+export interface GoogleContainerClusterNotificationConfigPubsubFilter {
+  /**
+  * Can be used to filter what notifications are sent. Valid values include include UPGRADE_AVAILABLE_EVENT, UPGRADE_EVENT and SECURITY_BULLETIN_EVENT
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#event_type GoogleContainerCluster#event_type}
+  */
+  readonly eventType: string[];
+}
+
+export function googleContainerClusterNotificationConfigPubsubFilterToTerraform(struct?: GoogleContainerClusterNotificationConfigPubsubFilterOutputReference | GoogleContainerClusterNotificationConfigPubsubFilter): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    event_type: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eventType),
+  }
+}
+
+export class GoogleContainerClusterNotificationConfigPubsubFilterOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterNotificationConfigPubsubFilter | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._eventType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.eventType = this._eventType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNotificationConfigPubsubFilter | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._eventType = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._eventType = value.eventType;
+    }
+  }
+
+  // event_type - computed: false, optional: false, required: true
+  private _eventType?: string[]; 
+  public get eventType() {
+    return this.getListAttribute('event_type');
+  }
+  public set eventType(value: string[]) {
+    this._eventType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get eventTypeInput() {
+    return this._eventType;
+  }
+}
 export interface GoogleContainerClusterNotificationConfigPubsub {
   /**
   * Whether or not the notification config is enabled
@@ -9061,6 +9125,12 @@ export interface GoogleContainerClusterNotificationConfigPubsub {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#topic GoogleContainerCluster#topic}
   */
   readonly topic?: string;
+  /**
+  * filter block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#filter GoogleContainerCluster#filter}
+  */
+  readonly filter?: GoogleContainerClusterNotificationConfigPubsubFilter;
 }
 
 export function googleContainerClusterNotificationConfigPubsubToTerraform(struct?: GoogleContainerClusterNotificationConfigPubsubOutputReference | GoogleContainerClusterNotificationConfigPubsub): any {
@@ -9071,6 +9141,7 @@ export function googleContainerClusterNotificationConfigPubsubToTerraform(struct
   return {
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     topic: cdktf.stringToTerraform(struct!.topic),
+    filter: googleContainerClusterNotificationConfigPubsubFilterToTerraform(struct!.filter),
   }
 }
 
@@ -9096,6 +9167,10 @@ export class GoogleContainerClusterNotificationConfigPubsubOutputReference exten
       hasAnyValues = true;
       internalValueResult.topic = this._topic;
     }
+    if (this._filter?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -9104,11 +9179,13 @@ export class GoogleContainerClusterNotificationConfigPubsubOutputReference exten
       this.isEmptyObject = false;
       this._enabled = undefined;
       this._topic = undefined;
+      this._filter.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._enabled = value.enabled;
       this._topic = value.topic;
+      this._filter.internalValue = value.filter;
     }
   }
 
@@ -9139,6 +9216,22 @@ export class GoogleContainerClusterNotificationConfigPubsubOutputReference exten
   // Temporarily expose input value. Use with caution.
   public get topicInput() {
     return this._topic;
+  }
+
+  // filter - computed: false, optional: true, required: false
+  private _filter = new GoogleContainerClusterNotificationConfigPubsubFilterOutputReference(this, "filter");
+  public get filter() {
+    return this._filter;
+  }
+  public putFilter(value: GoogleContainerClusterNotificationConfigPubsubFilter) {
+    this._filter.internalValue = value;
+  }
+  public resetFilter() {
+    this._filter.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter.internalValue;
   }
 }
 export interface GoogleContainerClusterNotificationConfig {
@@ -10229,7 +10322,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.38.0',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

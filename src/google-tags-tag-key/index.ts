@@ -27,6 +27,22 @@ export interface GoogleTagsTagKeyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly parent: string;
   /**
+  * Optional. A purpose cannot be changed once set.
+
+A purpose denotes that this Tag is intended for use in policies of a specific policy engine, and will involve that policy engine in management operations involving this Tag. Possible values: ["GCE_FIREWALL"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_tags_tag_key#purpose GoogleTagsTagKey#purpose}
+  */
+  readonly purpose?: string;
+  /**
+  * Optional. Purpose data cannot be changed once set.
+
+Purpose data corresponds to the policy system that the tag is intended for. For example, the GCE_FIREWALL purpose expects data in the following format: 'network = "<project-name>/<vpc-name>"'.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_tags_tag_key#purpose_data GoogleTagsTagKey#purpose_data}
+  */
+  readonly purposeData?: { [key: string]: string };
+  /**
   * Input only. The user friendly name for a TagKey. The short name should be unique for TagKeys within the same tag namespace.
 
 The short name must be 1-63 characters, beginning and ending with an alphanumeric character ([a-z0-9A-Z]) with dashes (-), underscores (_), dots (.), and alphanumerics between.
@@ -197,7 +213,7 @@ export class GoogleTagsTagKey extends cdktf.TerraformResource {
       terraformResourceType: 'google_tags_tag_key',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.38.0',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -211,6 +227,8 @@ export class GoogleTagsTagKey extends cdktf.TerraformResource {
     this._description = config.description;
     this._id = config.id;
     this._parent = config.parent;
+    this._purpose = config.purpose;
+    this._purposeData = config.purposeData;
     this._shortName = config.shortName;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -279,6 +297,38 @@ export class GoogleTagsTagKey extends cdktf.TerraformResource {
     return this._parent;
   }
 
+  // purpose - computed: false, optional: true, required: false
+  private _purpose?: string; 
+  public get purpose() {
+    return this.getStringAttribute('purpose');
+  }
+  public set purpose(value: string) {
+    this._purpose = value;
+  }
+  public resetPurpose() {
+    this._purpose = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get purposeInput() {
+    return this._purpose;
+  }
+
+  // purpose_data - computed: false, optional: true, required: false
+  private _purposeData?: { [key: string]: string }; 
+  public get purposeData() {
+    return this.getStringMapAttribute('purpose_data');
+  }
+  public set purposeData(value: { [key: string]: string }) {
+    this._purposeData = value;
+  }
+  public resetPurposeData() {
+    this._purposeData = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get purposeDataInput() {
+    return this._purposeData;
+  }
+
   // short_name - computed: false, optional: false, required: true
   private _shortName?: string; 
   public get shortName() {
@@ -322,6 +372,8 @@ export class GoogleTagsTagKey extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       parent: cdktf.stringToTerraform(this._parent),
+      purpose: cdktf.stringToTerraform(this._purpose),
+      purpose_data: cdktf.hashMapper(cdktf.stringToTerraform)(this._purposeData),
       short_name: cdktf.stringToTerraform(this._shortName),
       timeouts: googleTagsTagKeyTimeoutsToTerraform(this._timeouts.internalValue),
     };

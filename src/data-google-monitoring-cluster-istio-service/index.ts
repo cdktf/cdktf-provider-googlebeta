@@ -138,7 +138,7 @@ export class DataGoogleMonitoringClusterIstioService extends cdktf.TerraformData
       terraformResourceType: 'google_monitoring_cluster_istio_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.38.0',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

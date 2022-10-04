@@ -413,6 +413,7 @@ export * as googleIapWebTypeAppEngineIamPolicy from './google-iap-web-type-app-e
 export * as googleIapWebTypeComputeIamBinding from './google-iap-web-type-compute-iam-binding';
 export * as googleIapWebTypeComputeIamMember from './google-iap-web-type-compute-iam-member';
 export * as googleIapWebTypeComputeIamPolicy from './google-iap-web-type-compute-iam-policy';
+export * as googleIdentityPlatformConfig from './google-identity-platform-config';
 export * as googleIdentityPlatformDefaultSupportedIdpConfig from './google-identity-platform-default-supported-idp-config';
 export * as googleIdentityPlatformInboundSamlConfig from './google-identity-platform-inbound-saml-config';
 export * as googleIdentityPlatformOauthIdpConfig from './google-identity-platform-oauth-idp-config';
@@ -602,6 +603,7 @@ export * as dataGoogleAccessApprovalOrganizationServiceAccount from './data-goog
 export * as dataGoogleAccessApprovalProjectServiceAccount from './data-google-access-approval-project-service-account';
 export * as dataGoogleActiveFolder from './data-google-active-folder';
 export * as dataGoogleAppEngineDefaultServiceAccount from './data-google-app-engine-default-service-account';
+export * as dataGoogleArtifactRegistryRepository from './data-google-artifact-registry-repository';
 export * as dataGoogleBigqueryDefaultServiceAccount from './data-google-bigquery-default-service-account';
 export * as dataGoogleBillingAccount from './data-google-billing-account';
 export * as dataGoogleClientConfig from './data-google-client-config';

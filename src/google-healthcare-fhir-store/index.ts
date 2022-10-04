@@ -107,6 +107,12 @@ Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   */
   readonly notificationConfig?: GoogleHealthcareFhirStoreNotificationConfig;
   /**
+  * notification_configs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_fhir_store#notification_configs GoogleHealthcareFhirStore#notification_configs}
+  */
+  readonly notificationConfigs?: GoogleHealthcareFhirStoreNotificationConfigs[] | cdktf.IResolvable;
+  /**
   * stream_configs block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_fhir_store#stream_configs GoogleHealthcareFhirStore#stream_configs}
@@ -186,6 +192,140 @@ export class GoogleHealthcareFhirStoreNotificationConfigOutputReference extends 
   // Temporarily expose input value. Use with caution.
   public get pubsubTopicInput() {
     return this._pubsubTopic;
+  }
+}
+export interface GoogleHealthcareFhirStoreNotificationConfigs {
+  /**
+  * The Cloud Pub/Sub topic that notifications of changes are published on. Supplied by the client.
+PubsubMessage.Data will contain the resource name. PubsubMessage.MessageId is the ID of this message.
+It is guaranteed to be unique within the topic. PubsubMessage.PublishTime is the time at which the message
+was published. Notifications are only sent if the topic is non-empty. Topic names must be scoped to a
+project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
+Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_fhir_store#pubsub_topic GoogleHealthcareFhirStore#pubsub_topic}
+  */
+  readonly pubsubTopic: string;
+  /**
+  * Whether to send full FHIR resource to this Pub/Sub topic for Create and Update operation.
+Note that setting this to true does not guarantee that all resources will be sent in the format of 
+full FHIR resource. When a resource change is too large or during heavy traffic, only the resource name will be
+sent. Clients should always check the "payloadType" label from a Pub/Sub message to determine whether 
+it needs to fetch the full resource as a separate operation.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_fhir_store#send_full_resource GoogleHealthcareFhirStore#send_full_resource}
+  */
+  readonly sendFullResource?: boolean | cdktf.IResolvable;
+}
+
+export function googleHealthcareFhirStoreNotificationConfigsToTerraform(struct?: GoogleHealthcareFhirStoreNotificationConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    pubsub_topic: cdktf.stringToTerraform(struct!.pubsubTopic),
+    send_full_resource: cdktf.booleanToTerraform(struct!.sendFullResource),
+  }
+}
+
+export class GoogleHealthcareFhirStoreNotificationConfigsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleHealthcareFhirStoreNotificationConfigs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._pubsubTopic !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pubsubTopic = this._pubsubTopic;
+    }
+    if (this._sendFullResource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sendFullResource = this._sendFullResource;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleHealthcareFhirStoreNotificationConfigs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._pubsubTopic = undefined;
+      this._sendFullResource = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._pubsubTopic = value.pubsubTopic;
+      this._sendFullResource = value.sendFullResource;
+    }
+  }
+
+  // pubsub_topic - computed: false, optional: false, required: true
+  private _pubsubTopic?: string; 
+  public get pubsubTopic() {
+    return this.getStringAttribute('pubsub_topic');
+  }
+  public set pubsubTopic(value: string) {
+    this._pubsubTopic = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pubsubTopicInput() {
+    return this._pubsubTopic;
+  }
+
+  // send_full_resource - computed: false, optional: true, required: false
+  private _sendFullResource?: boolean | cdktf.IResolvable; 
+  public get sendFullResource() {
+    return this.getBooleanAttribute('send_full_resource');
+  }
+  public set sendFullResource(value: boolean | cdktf.IResolvable) {
+    this._sendFullResource = value;
+  }
+  public resetSendFullResource() {
+    this._sendFullResource = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sendFullResourceInput() {
+    return this._sendFullResource;
+  }
+}
+
+export class GoogleHealthcareFhirStoreNotificationConfigsList extends cdktf.ComplexList {
+  public internalValue? : GoogleHealthcareFhirStoreNotificationConfigs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleHealthcareFhirStoreNotificationConfigsOutputReference {
+    return new GoogleHealthcareFhirStoreNotificationConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig {
@@ -661,7 +801,7 @@ export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
       terraformResourceType: 'google_healthcare_fhir_store',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.38.0',
+        providerVersion: '4.39.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -682,6 +822,7 @@ export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
     this._name = config.name;
     this._version = config.version;
     this._notificationConfig.internalValue = config.notificationConfig;
+    this._notificationConfigs.internalValue = config.notificationConfigs;
     this._streamConfigs.internalValue = config.streamConfigs;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -849,6 +990,22 @@ export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
     return this._notificationConfig.internalValue;
   }
 
+  // notification_configs - computed: false, optional: true, required: false
+  private _notificationConfigs = new GoogleHealthcareFhirStoreNotificationConfigsList(this, "notification_configs", false);
+  public get notificationConfigs() {
+    return this._notificationConfigs;
+  }
+  public putNotificationConfigs(value: GoogleHealthcareFhirStoreNotificationConfigs[] | cdktf.IResolvable) {
+    this._notificationConfigs.internalValue = value;
+  }
+  public resetNotificationConfigs() {
+    this._notificationConfigs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationConfigsInput() {
+    return this._notificationConfigs.internalValue;
+  }
+
   // stream_configs - computed: false, optional: true, required: false
   private _streamConfigs = new GoogleHealthcareFhirStoreStreamConfigsList(this, "stream_configs", false);
   public get streamConfigs() {
@@ -897,6 +1054,7 @@ export class GoogleHealthcareFhirStore extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       version: cdktf.stringToTerraform(this._version),
       notification_config: googleHealthcareFhirStoreNotificationConfigToTerraform(this._notificationConfig.internalValue),
+      notification_configs: cdktf.listMapper(googleHealthcareFhirStoreNotificationConfigsToTerraform, true)(this._notificationConfigs.internalValue),
       stream_configs: cdktf.listMapper(googleHealthcareFhirStoreStreamConfigsToTerraform, true)(this._streamConfigs.internalValue),
       timeouts: googleHealthcareFhirStoreTimeoutsToTerraform(this._timeouts.internalValue),
     };
