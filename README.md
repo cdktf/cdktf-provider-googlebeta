@@ -38,9 +38,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/hashicorp/cdktf-provider-google-beta-go`](https://github.com/hashicorp/cdktf-provider-google-beta-go) package.
+The go package is generated into the [`github.com/cdktf/cdktf-provider-google-beta-go`](https://github.com/cdktf/cdktf-provider-google-beta-go) package.
 
-`go get github.com/hashicorp/cdktf-provider-google-beta-go/google-beta`
+`go get github.com/cdktf/cdktf-provider-google-beta-go/google-beta`
 
 ## Docs
 
