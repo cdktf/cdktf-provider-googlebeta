@@ -59,13 +59,13 @@ and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of 
 }
 export interface GoogleDataprocMetastoreFederationBackendMetastores {
   /**
-  * The type of the backend metastore. Possible values: ["METASTORE_TYPE_UNSPECIFIED", "DATAPROC_METASTORE"]
+  * The type of the backend metastore. Possible values: ["METASTORE_TYPE_UNSPECIFIED", "DATAPROC_METASTORE", "BIGQUERY"]
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_federation#metastore_type GoogleDataprocMetastoreFederation#metastore_type}
   */
   readonly metastoreType: string;
   /**
-  * The relative resource name of the metastore that is being federated.
+  * The relative resource name of the metastore that is being federated. The formats of the relative resource names for the currently supported metastores are listed below: Dataplex: projects/{projectId}/locations/{location}/lakes/{lake_id} BigQuery: projects/{projectId} Dataproc Metastore: projects/{projectId}/locations/{location}/services/{serviceId}
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_metastore_federation#name GoogleDataprocMetastoreFederation#name}
   */
@@ -359,7 +359,7 @@ export class GoogleDataprocMetastoreFederation extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataproc_metastore_federation',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

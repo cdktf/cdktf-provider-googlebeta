@@ -518,7 +518,7 @@ export class GoogleAssuredWorkloadsWorkload extends cdktf.TerraformResource {
       terraformResourceType: 'google_assured_workloads_workload',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
