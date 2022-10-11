@@ -1280,7 +1280,7 @@ export class DataGoogleComputeBackendService extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_backend_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1321,6 +1321,11 @@ export class DataGoogleComputeBackendService extends cdktf.TerraformDataSource {
   private _circuitBreakers = new DataGoogleComputeBackendServiceCircuitBreakersList(this, "circuit_breakers", false);
   public get circuitBreakers() {
     return this._circuitBreakers;
+  }
+
+  // compression_mode - computed: true, optional: false, required: false
+  public get compressionMode() {
+    return this.getStringAttribute('compression_mode');
   }
 
   // connection_draining_timeout_sec - computed: true, optional: false, required: false

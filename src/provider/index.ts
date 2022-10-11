@@ -64,6 +64,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly bigqueryDataTransferCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_datapolicy_custom_endpoint GoogleBetaProvider#bigquery_datapolicy_custom_endpoint}
+  */
+  readonly bigqueryDatapolicyCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_reservation_custom_endpoint GoogleBetaProvider#bigquery_reservation_custom_endpoint}
   */
   readonly bigqueryReservationCustomEndpoint?: string;
@@ -537,7 +541,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.39.0',
+        providerVersion: '4.40.0',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'
@@ -556,6 +560,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._bigqueryAnalyticsHubCustomEndpoint = config.bigqueryAnalyticsHubCustomEndpoint;
     this._bigqueryConnectionCustomEndpoint = config.bigqueryConnectionCustomEndpoint;
     this._bigqueryDataTransferCustomEndpoint = config.bigqueryDataTransferCustomEndpoint;
+    this._bigqueryDatapolicyCustomEndpoint = config.bigqueryDatapolicyCustomEndpoint;
     this._bigqueryReservationCustomEndpoint = config.bigqueryReservationCustomEndpoint;
     this._bigtableCustomEndpoint = config.bigtableCustomEndpoint;
     this._billingCustomEndpoint = config.billingCustomEndpoint;
@@ -889,6 +894,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get bigqueryDataTransferCustomEndpointInput() {
     return this._bigqueryDataTransferCustomEndpoint;
+  }
+
+  // bigquery_datapolicy_custom_endpoint - computed: false, optional: true, required: false
+  private _bigqueryDatapolicyCustomEndpoint?: string; 
+  public get bigqueryDatapolicyCustomEndpoint() {
+    return this._bigqueryDatapolicyCustomEndpoint;
+  }
+  public set bigqueryDatapolicyCustomEndpoint(value: string | undefined) {
+    this._bigqueryDatapolicyCustomEndpoint = value;
+  }
+  public resetBigqueryDatapolicyCustomEndpoint() {
+    this._bigqueryDatapolicyCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bigqueryDatapolicyCustomEndpointInput() {
+    return this._bigqueryDatapolicyCustomEndpoint;
   }
 
   // bigquery_reservation_custom_endpoint - computed: false, optional: true, required: false
@@ -2591,6 +2612,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       bigquery_analytics_hub_custom_endpoint: cdktf.stringToTerraform(this._bigqueryAnalyticsHubCustomEndpoint),
       bigquery_connection_custom_endpoint: cdktf.stringToTerraform(this._bigqueryConnectionCustomEndpoint),
       bigquery_data_transfer_custom_endpoint: cdktf.stringToTerraform(this._bigqueryDataTransferCustomEndpoint),
+      bigquery_datapolicy_custom_endpoint: cdktf.stringToTerraform(this._bigqueryDatapolicyCustomEndpoint),
       bigquery_reservation_custom_endpoint: cdktf.stringToTerraform(this._bigqueryReservationCustomEndpoint),
       bigtable_custom_endpoint: cdktf.stringToTerraform(this._bigtableCustomEndpoint),
       billing_custom_endpoint: cdktf.stringToTerraform(this._billingCustomEndpoint),
