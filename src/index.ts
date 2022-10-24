@@ -54,6 +54,10 @@ export * as googleBigqueryAnalyticsHubDataExchange from './google-bigquery-analy
 export * as googleBigqueryAnalyticsHubDataExchangeIamBinding from './google-bigquery-analytics-hub-data-exchange-iam-binding';
 export * as googleBigqueryAnalyticsHubDataExchangeIamMember from './google-bigquery-analytics-hub-data-exchange-iam-member';
 export * as googleBigqueryAnalyticsHubDataExchangeIamPolicy from './google-bigquery-analytics-hub-data-exchange-iam-policy';
+export * as googleBigqueryAnalyticsHubListing from './google-bigquery-analytics-hub-listing';
+export * as googleBigqueryAnalyticsHubListingIamBinding from './google-bigquery-analytics-hub-listing-iam-binding';
+export * as googleBigqueryAnalyticsHubListingIamMember from './google-bigquery-analytics-hub-listing-iam-member';
+export * as googleBigqueryAnalyticsHubListingIamPolicy from './google-bigquery-analytics-hub-listing-iam-policy';
 export * as googleBigqueryConnection from './google-bigquery-connection';
 export * as googleBigqueryConnectionIamBinding from './google-bigquery-connection-iam-binding';
 export * as googleBigqueryConnectionIamMember from './google-bigquery-connection-iam-member';
@@ -105,6 +109,7 @@ export * as googleCloudAssetOrganizationFeed from './google-cloud-asset-organiza
 export * as googleCloudAssetProjectFeed from './google-cloud-asset-project-feed';
 export * as googleCloudIdentityGroup from './google-cloud-identity-group';
 export * as googleCloudIdentityGroupMembership from './google-cloud-identity-group-membership';
+export * as googleCloudIdsEndpoint from './google-cloud-ids-endpoint';
 export * as googleCloudRunDomainMapping from './google-cloud-run-domain-mapping';
 export * as googleCloudRunService from './google-cloud-run-service';
 export * as googleCloudRunServiceIamBinding from './google-cloud-run-service-iam-binding';

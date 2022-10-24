@@ -1636,6 +1636,512 @@ export class GoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference
     return this._requests;
   }
 }
+export interface GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders {
+  /**
+  * The header field name.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#name GoogleCloudRunService#name}
+  */
+  readonly name: string;
+  /**
+  * The header field value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#value GoogleCloudRunService#value}
+  */
+  readonly value?: string;
+}
+
+export function googleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersToTerraform(struct?: GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._value = value.value;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList extends cdktf.ComplexList {
+  public internalValue? : GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference {
+    return new GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet {
+  /**
+  * Path to access on the HTTP server. If set, it should not be empty string.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#path GoogleCloudRunService#path}
+  */
+  readonly path?: string;
+  /**
+  * http_headers block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#http_headers GoogleCloudRunService#http_headers}
+  */
+  readonly httpHeaders?: GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders[] | cdktf.IResolvable;
+}
+
+export function googleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetToTerraform(struct?: GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference | GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    path: cdktf.stringToTerraform(struct!.path),
+    http_headers: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersToTerraform, true)(struct!.httpHeaders),
+  }
+}
+
+export class GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._path !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.path = this._path;
+    }
+    if (this._httpHeaders?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpHeaders = this._httpHeaders?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._path = undefined;
+      this._httpHeaders.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._path = value.path;
+      this._httpHeaders.internalValue = value.httpHeaders;
+    }
+  }
+
+  // path - computed: false, optional: true, required: false
+  private _path?: string; 
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+  public set path(value: string) {
+    this._path = value;
+  }
+  public resetPath() {
+    this._path = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pathInput() {
+    return this._path;
+  }
+
+  // http_headers - computed: false, optional: true, required: false
+  private _httpHeaders = new GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList(this, "http_headers", false);
+  public get httpHeaders() {
+    return this._httpHeaders;
+  }
+  public putHttpHeaders(value: GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders[] | cdktf.IResolvable) {
+    this._httpHeaders.internalValue = value;
+  }
+  public resetHttpHeaders() {
+    this._httpHeaders.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpHeadersInput() {
+    return this._httpHeaders.internalValue;
+  }
+}
+export interface GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket {
+  /**
+  * Port number to access on the container. Number must be in the range 1 to 65535.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#port GoogleCloudRunService#port}
+  */
+  readonly port?: number;
+}
+
+export function googleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketToTerraform(struct?: GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference | GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktf.numberToTerraform(struct!.port),
+  }
+}
+
+export class GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+    }
+  }
+
+  // port - computed: true, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+}
+export interface GoogleCloudRunServiceTemplateSpecContainersStartupProbe {
+  /**
+  * Minimum consecutive failures for the probe to be considered failed after
+having succeeded. Defaults to 3. Minimum value is 1.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#failure_threshold GoogleCloudRunService#failure_threshold}
+  */
+  readonly failureThreshold?: number;
+  /**
+  * Number of seconds after the container has started before the probe is
+initiated.
+Defaults to 0 seconds. Minimum value is 0. Maximum value is 240.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#initial_delay_seconds GoogleCloudRunService#initial_delay_seconds}
+  */
+  readonly initialDelaySeconds?: number;
+  /**
+  * How often (in seconds) to perform the probe.
+Default to 10 seconds. Minimum value is 1. Maximum value is 240.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#period_seconds GoogleCloudRunService#period_seconds}
+  */
+  readonly periodSeconds?: number;
+  /**
+  * Number of seconds after which the probe times out.
+Defaults to 1 second. Minimum value is 1. Maximum value is 3600.
+Must be smaller than periodSeconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#timeout_seconds GoogleCloudRunService#timeout_seconds}
+  */
+  readonly timeoutSeconds?: number;
+  /**
+  * http_get block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#http_get GoogleCloudRunService#http_get}
+  */
+  readonly httpGet?: GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet;
+  /**
+  * tcp_socket block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#tcp_socket GoogleCloudRunService#tcp_socket}
+  */
+  readonly tcpSocket?: GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket;
+}
+
+export function googleCloudRunServiceTemplateSpecContainersStartupProbeToTerraform(struct?: GoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference | GoogleCloudRunServiceTemplateSpecContainersStartupProbe): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    failure_threshold: cdktf.numberToTerraform(struct!.failureThreshold),
+    initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
+    period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
+    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    http_get: googleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetToTerraform(struct!.httpGet),
+    tcp_socket: googleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketToTerraform(struct!.tcpSocket),
+  }
+}
+
+export class GoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudRunServiceTemplateSpecContainersStartupProbe | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._failureThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.failureThreshold = this._failureThreshold;
+    }
+    if (this._initialDelaySeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.initialDelaySeconds = this._initialDelaySeconds;
+    }
+    if (this._periodSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.periodSeconds = this._periodSeconds;
+    }
+    if (this._timeoutSeconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeoutSeconds = this._timeoutSeconds;
+    }
+    if (this._httpGet?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.httpGet = this._httpGet?.internalValue;
+    }
+    if (this._tcpSocket?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tcpSocket = this._tcpSocket?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudRunServiceTemplateSpecContainersStartupProbe | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._failureThreshold = undefined;
+      this._initialDelaySeconds = undefined;
+      this._periodSeconds = undefined;
+      this._timeoutSeconds = undefined;
+      this._httpGet.internalValue = undefined;
+      this._tcpSocket.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._failureThreshold = value.failureThreshold;
+      this._initialDelaySeconds = value.initialDelaySeconds;
+      this._periodSeconds = value.periodSeconds;
+      this._timeoutSeconds = value.timeoutSeconds;
+      this._httpGet.internalValue = value.httpGet;
+      this._tcpSocket.internalValue = value.tcpSocket;
+    }
+  }
+
+  // failure_threshold - computed: false, optional: true, required: false
+  private _failureThreshold?: number; 
+  public get failureThreshold() {
+    return this.getNumberAttribute('failure_threshold');
+  }
+  public set failureThreshold(value: number) {
+    this._failureThreshold = value;
+  }
+  public resetFailureThreshold() {
+    this._failureThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get failureThresholdInput() {
+    return this._failureThreshold;
+  }
+
+  // initial_delay_seconds - computed: false, optional: true, required: false
+  private _initialDelaySeconds?: number; 
+  public get initialDelaySeconds() {
+    return this.getNumberAttribute('initial_delay_seconds');
+  }
+  public set initialDelaySeconds(value: number) {
+    this._initialDelaySeconds = value;
+  }
+  public resetInitialDelaySeconds() {
+    this._initialDelaySeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get initialDelaySecondsInput() {
+    return this._initialDelaySeconds;
+  }
+
+  // period_seconds - computed: false, optional: true, required: false
+  private _periodSeconds?: number; 
+  public get periodSeconds() {
+    return this.getNumberAttribute('period_seconds');
+  }
+  public set periodSeconds(value: number) {
+    this._periodSeconds = value;
+  }
+  public resetPeriodSeconds() {
+    this._periodSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get periodSecondsInput() {
+    return this._periodSeconds;
+  }
+
+  // timeout_seconds - computed: false, optional: true, required: false
+  private _timeoutSeconds?: number; 
+  public get timeoutSeconds() {
+    return this.getNumberAttribute('timeout_seconds');
+  }
+  public set timeoutSeconds(value: number) {
+    this._timeoutSeconds = value;
+  }
+  public resetTimeoutSeconds() {
+    this._timeoutSeconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutSecondsInput() {
+    return this._timeoutSeconds;
+  }
+
+  // http_get - computed: false, optional: true, required: false
+  private _httpGet = new GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference(this, "http_get");
+  public get httpGet() {
+    return this._httpGet;
+  }
+  public putHttpGet(value: GoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet) {
+    this._httpGet.internalValue = value;
+  }
+  public resetHttpGet() {
+    this._httpGet.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpGetInput() {
+    return this._httpGet.internalValue;
+  }
+
+  // tcp_socket - computed: false, optional: true, required: false
+  private _tcpSocket = new GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference(this, "tcp_socket");
+  public get tcpSocket() {
+    return this._tcpSocket;
+  }
+  public putTcpSocket(value: GoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket) {
+    this._tcpSocket.internalValue = value;
+  }
+  public resetTcpSocket() {
+    this._tcpSocket.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tcpSocketInput() {
+    return this._tcpSocket.internalValue;
+  }
+}
 export interface GoogleCloudRunServiceTemplateSpecContainersVolumeMounts {
   /**
   * Path within the container at which the volume should be mounted.  Must
@@ -1829,6 +2335,12 @@ might be configured in the container image.
   */
   readonly resources?: GoogleCloudRunServiceTemplateSpecContainersResources;
   /**
+  * startup_probe block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#startup_probe GoogleCloudRunService#startup_probe}
+  */
+  readonly startupProbe?: GoogleCloudRunServiceTemplateSpecContainersStartupProbe;
+  /**
   * volume_mounts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#volume_mounts GoogleCloudRunService#volume_mounts}
@@ -1850,6 +2362,7 @@ export function googleCloudRunServiceTemplateSpecContainersToTerraform(struct?: 
     env_from: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersEnvFromToTerraform, true)(struct!.envFrom),
     ports: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersPortsToTerraform, true)(struct!.ports),
     resources: googleCloudRunServiceTemplateSpecContainersResourcesToTerraform(struct!.resources),
+    startup_probe: googleCloudRunServiceTemplateSpecContainersStartupProbeToTerraform(struct!.startupProbe),
     volume_mounts: cdktf.listMapper(googleCloudRunServiceTemplateSpecContainersVolumeMountsToTerraform, true)(struct!.volumeMounts),
   }
 }
@@ -1906,6 +2419,10 @@ export class GoogleCloudRunServiceTemplateSpecContainersOutputReference extends 
       hasAnyValues = true;
       internalValueResult.resources = this._resources?.internalValue;
     }
+    if (this._startupProbe?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.startupProbe = this._startupProbe?.internalValue;
+    }
     if (this._volumeMounts?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.volumeMounts = this._volumeMounts?.internalValue;
@@ -1925,6 +2442,7 @@ export class GoogleCloudRunServiceTemplateSpecContainersOutputReference extends 
       this._envFrom.internalValue = undefined;
       this._ports.internalValue = undefined;
       this._resources.internalValue = undefined;
+      this._startupProbe.internalValue = undefined;
       this._volumeMounts.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -1942,6 +2460,7 @@ export class GoogleCloudRunServiceTemplateSpecContainersOutputReference extends 
       this._envFrom.internalValue = value.envFrom;
       this._ports.internalValue = value.ports;
       this._resources.internalValue = value.resources;
+      this._startupProbe.internalValue = value.startupProbe;
       this._volumeMounts.internalValue = value.volumeMounts;
     }
   }
@@ -2069,6 +2588,22 @@ export class GoogleCloudRunServiceTemplateSpecContainersOutputReference extends 
   // Temporarily expose input value. Use with caution.
   public get resourcesInput() {
     return this._resources.internalValue;
+  }
+
+  // startup_probe - computed: false, optional: true, required: false
+  private _startupProbe = new GoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference(this, "startup_probe");
+  public get startupProbe() {
+    return this._startupProbe;
+  }
+  public putStartupProbe(value: GoogleCloudRunServiceTemplateSpecContainersStartupProbe) {
+    this._startupProbe.internalValue = value;
+  }
+  public resetStartupProbe() {
+    this._startupProbe.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get startupProbeInput() {
+    return this._startupProbe.internalValue;
   }
 
   // volume_mounts - computed: false, optional: true, required: false
@@ -3159,7 +3694,7 @@ export class GoogleCloudRunService extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_run_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.40.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
