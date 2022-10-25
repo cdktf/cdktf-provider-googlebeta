@@ -1093,6 +1093,300 @@ export class DataGoogleCloudRunServiceTemplateSpecContainersResourcesList extend
     return new DataGoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders {
+}
+
+export function dataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersToTerraform(struct?: DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeaders | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference {
+    return new DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet {
+}
+
+export function dataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetToTerraform(struct?: DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // http_headers - computed: true, optional: false, required: false
+  private _httpHeaders = new DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetHttpHeadersList(this, "http_headers", false);
+  public get httpHeaders() {
+    return this._httpHeaders;
+  }
+
+  // path - computed: true, optional: false, required: false
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+}
+
+export class DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference {
+    return new DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket {
+}
+
+export function dataGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketToTerraform(struct?: DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocket | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // port - computed: true, optional: false, required: false
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+}
+
+export class DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference {
+    return new DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleCloudRunServiceTemplateSpecContainersStartupProbe {
+}
+
+export function dataGoogleCloudRunServiceTemplateSpecContainersStartupProbeToTerraform(struct?: DataGoogleCloudRunServiceTemplateSpecContainersStartupProbe): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudRunServiceTemplateSpecContainersStartupProbe | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudRunServiceTemplateSpecContainersStartupProbe | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // failure_threshold - computed: true, optional: false, required: false
+  public get failureThreshold() {
+    return this.getNumberAttribute('failure_threshold');
+  }
+
+  // http_get - computed: true, optional: false, required: false
+  private _httpGet = new DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetList(this, "http_get", false);
+  public get httpGet() {
+    return this._httpGet;
+  }
+
+  // initial_delay_seconds - computed: true, optional: false, required: false
+  public get initialDelaySeconds() {
+    return this.getNumberAttribute('initial_delay_seconds');
+  }
+
+  // period_seconds - computed: true, optional: false, required: false
+  public get periodSeconds() {
+    return this.getNumberAttribute('period_seconds');
+  }
+
+  // tcp_socket - computed: true, optional: false, required: false
+  private _tcpSocket = new DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeTcpSocketList(this, "tcp_socket", false);
+  public get tcpSocket() {
+    return this._tcpSocket;
+  }
+
+  // timeout_seconds - computed: true, optional: false, required: false
+  public get timeoutSeconds() {
+    return this.getNumberAttribute('timeout_seconds');
+  }
+}
+
+export class DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference {
+    return new DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleCloudRunServiceTemplateSpecContainersVolumeMounts {
 }
 
@@ -1239,6 +1533,12 @@ export class DataGoogleCloudRunServiceTemplateSpecContainersOutputReference exte
   private _resources = new DataGoogleCloudRunServiceTemplateSpecContainersResourcesList(this, "resources", false);
   public get resources() {
     return this._resources;
+  }
+
+  // startup_probe - computed: true, optional: false, required: false
+  private _startupProbe = new DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList(this, "startup_probe", false);
+  public get startupProbe() {
+    return this._startupProbe;
   }
 
   // volume_mounts - computed: true, optional: false, required: false
@@ -1763,7 +2063,7 @@ export class DataGoogleCloudRunService extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_cloud_run_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.40.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
