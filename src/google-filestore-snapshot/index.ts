@@ -218,7 +218,7 @@ export class GoogleFilestoreSnapshot extends cdktf.TerraformResource {
       terraformResourceType: 'google_filestore_snapshot',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.40.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

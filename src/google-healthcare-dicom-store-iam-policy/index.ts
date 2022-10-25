@@ -50,7 +50,7 @@ export class GoogleHealthcareDicomStoreIamPolicy extends cdktf.TerraformResource
       terraformResourceType: 'google_healthcare_dicom_store_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.40.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

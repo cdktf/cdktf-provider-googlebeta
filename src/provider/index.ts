@@ -116,6 +116,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly cloudIdentityCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#cloud_ids_custom_endpoint GoogleBetaProvider#cloud_ids_custom_endpoint}
+  */
+  readonly cloudIdsCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#cloud_iot_custom_endpoint GoogleBetaProvider#cloud_iot_custom_endpoint}
   */
   readonly cloudIotCustomEndpoint?: string;
@@ -541,7 +545,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.40.0',
+        providerVersion: '4.41.0',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'
@@ -573,6 +577,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._cloudBuildWorkerPoolCustomEndpoint = config.cloudBuildWorkerPoolCustomEndpoint;
     this._cloudFunctionsCustomEndpoint = config.cloudFunctionsCustomEndpoint;
     this._cloudIdentityCustomEndpoint = config.cloudIdentityCustomEndpoint;
+    this._cloudIdsCustomEndpoint = config.cloudIdsCustomEndpoint;
     this._cloudIotCustomEndpoint = config.cloudIotCustomEndpoint;
     this._cloudResourceManagerCustomEndpoint = config.cloudResourceManagerCustomEndpoint;
     this._cloudRunCustomEndpoint = config.cloudRunCustomEndpoint;
@@ -1102,6 +1107,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get cloudIdentityCustomEndpointInput() {
     return this._cloudIdentityCustomEndpoint;
+  }
+
+  // cloud_ids_custom_endpoint - computed: false, optional: true, required: false
+  private _cloudIdsCustomEndpoint?: string; 
+  public get cloudIdsCustomEndpoint() {
+    return this._cloudIdsCustomEndpoint;
+  }
+  public set cloudIdsCustomEndpoint(value: string | undefined) {
+    this._cloudIdsCustomEndpoint = value;
+  }
+  public resetCloudIdsCustomEndpoint() {
+    this._cloudIdsCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudIdsCustomEndpointInput() {
+    return this._cloudIdsCustomEndpoint;
   }
 
   // cloud_iot_custom_endpoint - computed: false, optional: true, required: false
@@ -2625,6 +2646,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       cloud_build_worker_pool_custom_endpoint: cdktf.stringToTerraform(this._cloudBuildWorkerPoolCustomEndpoint),
       cloud_functions_custom_endpoint: cdktf.stringToTerraform(this._cloudFunctionsCustomEndpoint),
       cloud_identity_custom_endpoint: cdktf.stringToTerraform(this._cloudIdentityCustomEndpoint),
+      cloud_ids_custom_endpoint: cdktf.stringToTerraform(this._cloudIdsCustomEndpoint),
       cloud_iot_custom_endpoint: cdktf.stringToTerraform(this._cloudIotCustomEndpoint),
       cloud_resource_manager_custom_endpoint: cdktf.stringToTerraform(this._cloudResourceManagerCustomEndpoint),
       cloud_run_custom_endpoint: cdktf.stringToTerraform(this._cloudRunCustomEndpoint),
