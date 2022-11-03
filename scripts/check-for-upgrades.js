@@ -11,7 +11,7 @@ const actions = require("@actions/core");
 
 // set by the projen file that generates this script
 const CONSTRAINT = "~> 4.17";
-const FQ_PROVIDER_NAME = "google-beta";
+const FQ_PROVIDER_NAME = "hashicorp/google-beta";
 
 (async function main() {
   if (await newerMatchingProviderVersionExists()) {
