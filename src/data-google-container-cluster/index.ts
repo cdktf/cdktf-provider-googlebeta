@@ -1050,6 +1050,16 @@ export class DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefault
     return this.getStringAttribute('boot_disk_kms_key');
   }
 
+  // disk_size - computed: true, optional: false, required: false
+  public get diskSize() {
+    return this.getNumberAttribute('disk_size');
+  }
+
+  // disk_type - computed: true, optional: false, required: false
+  public get diskType() {
+    return this.getStringAttribute('disk_type');
+  }
+
   // image_type - computed: true, optional: false, required: false
   public get imageType() {
     return this.getStringAttribute('image_type');
@@ -6559,7 +6569,7 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

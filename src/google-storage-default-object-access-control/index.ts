@@ -278,7 +278,7 @@ export class GoogleStorageDefaultObjectAccessControl extends cdktf.TerraformReso
       terraformResourceType: 'google_storage_default_object_access_control',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

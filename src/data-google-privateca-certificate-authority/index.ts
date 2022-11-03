@@ -1361,7 +1361,7 @@ export class DataGooglePrivatecaCertificateAuthority extends cdktf.TerraformData
       terraformResourceType: 'google_privateca_certificate_authority',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1535,6 +1535,11 @@ export class DataGooglePrivatecaCertificateAuthority extends cdktf.TerraformData
   // Temporarily expose input value. Use with caution.
   public get projectInput() {
     return this._project;
+  }
+
+  // skip_grace_period - computed: true, optional: false, required: false
+  public get skipGracePeriod() {
+    return this.getBooleanAttribute('skip_grace_period');
   }
 
   // state - computed: true, optional: false, required: false

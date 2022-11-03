@@ -819,7 +819,7 @@ export interface GoogleRedisInstancePersistenceConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_redis_instance#rdb_snapshot_period GoogleRedisInstance#rdb_snapshot_period}
   */
-  readonly rdbSnapshotPeriod: string;
+  readonly rdbSnapshotPeriod?: string;
   /**
   * Optional. Date and time that the first snapshot was/will be attempted,
 and to which future snapshots will be aligned. If not provided,
@@ -910,13 +910,16 @@ export class GoogleRedisInstancePersistenceConfigOutputReference extends cdktf.C
     return this.getStringAttribute('rdb_next_snapshot_time');
   }
 
-  // rdb_snapshot_period - computed: false, optional: false, required: true
+  // rdb_snapshot_period - computed: false, optional: true, required: false
   private _rdbSnapshotPeriod?: string; 
   public get rdbSnapshotPeriod() {
     return this.getStringAttribute('rdb_snapshot_period');
   }
   public set rdbSnapshotPeriod(value: string) {
     this._rdbSnapshotPeriod = value;
+  }
+  public resetRdbSnapshotPeriod() {
+    this._rdbSnapshotPeriod = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get rdbSnapshotPeriodInput() {
@@ -1095,7 +1098,7 @@ export class GoogleRedisInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_redis_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

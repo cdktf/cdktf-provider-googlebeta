@@ -50,7 +50,7 @@ export class DataGoogleFirebaseWebApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_firebase_web_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -80,6 +80,16 @@ export class DataGoogleFirebaseWebApp extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get appIdInput() {
     return this._appId;
+  }
+
+  // app_urls - computed: true, optional: false, required: false
+  public get appUrls() {
+    return this.getListAttribute('app_urls');
+  }
+
+  // deletion_policy - computed: true, optional: false, required: false
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
   }
 
   // display_name - computed: true, optional: false, required: false

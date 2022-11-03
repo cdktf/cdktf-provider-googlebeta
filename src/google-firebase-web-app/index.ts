@@ -8,6 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleFirebaseWebAppConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Set to 'ABANDON' to allow the WebApp to be untracked from terraform state
+rather than deleted upon 'terraform destroy'. This is useful becaue the WebApp may be
+serving traffic. Set to 'DELETE' to delete the WebApp. Default to 'ABANDON'
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_web_app#deletion_policy GoogleFirebaseWebApp#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * The user-assigned display name of the App.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_web_app#display_name GoogleFirebaseWebApp#display_name}
@@ -187,7 +195,7 @@ export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_web_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -198,6 +206,7 @@ export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._id = config.id;
     this._project = config.project;
@@ -211,6 +220,27 @@ export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
   // app_id - computed: true, optional: false, required: false
   public get appId() {
     return this.getStringAttribute('app_id');
+  }
+
+  // app_urls - computed: true, optional: false, required: false
+  public get appUrls() {
+    return this.getListAttribute('app_urls');
+  }
+
+  // deletion_policy - computed: false, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // display_name - computed: false, optional: false, required: true
@@ -285,6 +315,7 @@ export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),

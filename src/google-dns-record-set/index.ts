@@ -57,6 +57,325 @@ export interface GoogleDnsRecordSetConfig extends cdktf.TerraformMetaArguments {
   */
   readonly routingPolicy?: GoogleDnsRecordSetRoutingPolicy;
 }
+export interface GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers {
+  /**
+  * The frontend IP address of the load balancer.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
+  */
+  readonly ipAddress: string;
+  /**
+  * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
+  */
+  readonly ipProtocol: string;
+  /**
+  * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
+  */
+  readonly loadBalancerType: string;
+  /**
+  * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
+  */
+  readonly networkUrl: string;
+  /**
+  * The configured port of the load balancer.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#port GoogleDnsRecordSet#port}
+  */
+  readonly port: string;
+  /**
+  * The ID of the project in which the load balancer belongs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#project GoogleDnsRecordSet#project}
+  */
+  readonly project: string;
+  /**
+  * The region of the load balancer. Only needed for regional load balancers.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#region GoogleDnsRecordSet#region}
+  */
+  readonly region?: string;
+}
+
+export function googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
+    ip_protocol: cdktf.stringToTerraform(struct!.ipProtocol),
+    load_balancer_type: cdktf.stringToTerraform(struct!.loadBalancerType),
+    network_url: cdktf.stringToTerraform(struct!.networkUrl),
+    port: cdktf.stringToTerraform(struct!.port),
+    project: cdktf.stringToTerraform(struct!.project),
+    region: cdktf.stringToTerraform(struct!.region),
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress;
+    }
+    if (this._ipProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipProtocol = this._ipProtocol;
+    }
+    if (this._loadBalancerType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loadBalancerType = this._loadBalancerType;
+    }
+    if (this._networkUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkUrl = this._networkUrl;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._project !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.project = this._project;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipAddress = undefined;
+      this._ipProtocol = undefined;
+      this._loadBalancerType = undefined;
+      this._networkUrl = undefined;
+      this._port = undefined;
+      this._project = undefined;
+      this._region = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipAddress = value.ipAddress;
+      this._ipProtocol = value.ipProtocol;
+      this._loadBalancerType = value.loadBalancerType;
+      this._networkUrl = value.networkUrl;
+      this._port = value.port;
+      this._project = value.project;
+      this._region = value.region;
+    }
+  }
+
+  // ip_address - computed: false, optional: false, required: true
+  private _ipAddress?: string; 
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+  public set ipAddress(value: string) {
+    this._ipAddress = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress;
+  }
+
+  // ip_protocol - computed: false, optional: false, required: true
+  private _ipProtocol?: string; 
+  public get ipProtocol() {
+    return this.getStringAttribute('ip_protocol');
+  }
+  public set ipProtocol(value: string) {
+    this._ipProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipProtocolInput() {
+    return this._ipProtocol;
+  }
+
+  // load_balancer_type - computed: false, optional: false, required: true
+  private _loadBalancerType?: string; 
+  public get loadBalancerType() {
+    return this.getStringAttribute('load_balancer_type');
+  }
+  public set loadBalancerType(value: string) {
+    this._loadBalancerType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerTypeInput() {
+    return this._loadBalancerType;
+  }
+
+  // network_url - computed: false, optional: false, required: true
+  private _networkUrl?: string; 
+  public get networkUrl() {
+    return this.getStringAttribute('network_url');
+  }
+  public set networkUrl(value: string) {
+    this._networkUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkUrlInput() {
+    return this._networkUrl;
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: string; 
+  public get port() {
+    return this.getStringAttribute('port');
+  }
+  public set port(value: string) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // project - computed: false, optional: false, required: true
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList extends cdktf.ComplexList {
+  public internalValue? : GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference {
+    return new GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets {
+  /**
+  * internal_load_balancers block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
+  */
+  readonly internalLoadBalancers: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
+}
+
+export function googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference | GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    internal_load_balancers: cdktf.listMapper(googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._internalLoadBalancers?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.internalLoadBalancers = this._internalLoadBalancers?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._internalLoadBalancers.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._internalLoadBalancers.internalValue = value.internalLoadBalancers;
+    }
+  }
+
+  // internal_load_balancers - computed: false, optional: false, required: true
+  private _internalLoadBalancers = new GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancersList(this, "internal_load_balancers", false);
+  public get internalLoadBalancers() {
+    return this._internalLoadBalancers;
+  }
+  public putInternalLoadBalancers(value: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable) {
+    this._internalLoadBalancers.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get internalLoadBalancersInput() {
+    return this._internalLoadBalancers.internalValue;
+  }
+}
 export interface GoogleDnsRecordSetRoutingPolicyGeo {
   /**
   * The location name defined in Google Cloud.
@@ -67,7 +386,13 @@ export interface GoogleDnsRecordSetRoutingPolicyGeo {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
   */
-  readonly rrdatas: string[];
+  readonly rrdatas?: string[];
+  /**
+  * health_checked_targets block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#health_checked_targets GoogleDnsRecordSet#health_checked_targets}
+  */
+  readonly healthCheckedTargets?: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets;
 }
 
 export function googleDnsRecordSetRoutingPolicyGeoToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyGeo | cdktf.IResolvable): any {
@@ -78,6 +403,7 @@ export function googleDnsRecordSetRoutingPolicyGeoToTerraform(struct?: GoogleDns
   return {
     location: cdktf.stringToTerraform(struct!.location),
     rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
+    health_checked_targets: googleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsToTerraform(struct!.healthCheckedTargets),
   }
 }
 
@@ -109,6 +435,10 @@ export class GoogleDnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.rrdatas = this._rrdatas;
     }
+    if (this._healthCheckedTargets?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.healthCheckedTargets = this._healthCheckedTargets?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -118,6 +448,7 @@ export class GoogleDnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.Com
       this.resolvableValue = undefined;
       this._location = undefined;
       this._rrdatas = undefined;
+      this._healthCheckedTargets.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -128,6 +459,7 @@ export class GoogleDnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.Com
       this.resolvableValue = undefined;
       this._location = value.location;
       this._rrdatas = value.rrdatas;
+      this._healthCheckedTargets.internalValue = value.healthCheckedTargets;
     }
   }
 
@@ -144,7 +476,7 @@ export class GoogleDnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.Com
     return this._location;
   }
 
-  // rrdatas - computed: false, optional: false, required: true
+  // rrdatas - computed: false, optional: true, required: false
   private _rrdatas?: string[]; 
   public get rrdatas() {
     return this.getListAttribute('rrdatas');
@@ -152,9 +484,28 @@ export class GoogleDnsRecordSetRoutingPolicyGeoOutputReference extends cdktf.Com
   public set rrdatas(value: string[]) {
     this._rrdatas = value;
   }
+  public resetRrdatas() {
+    this._rrdatas = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get rrdatasInput() {
     return this._rrdatas;
+  }
+
+  // health_checked_targets - computed: false, optional: true, required: false
+  private _healthCheckedTargets = new GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference(this, "health_checked_targets");
+  public get healthCheckedTargets() {
+    return this._healthCheckedTargets;
+  }
+  public putHealthCheckedTargets(value: GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets) {
+    this._healthCheckedTargets.internalValue = value;
+  }
+  public resetHealthCheckedTargets() {
+    this._healthCheckedTargets.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckedTargetsInput() {
+    return this._healthCheckedTargets.internalValue;
   }
 }
 
@@ -177,17 +528,1280 @@ export class GoogleDnsRecordSetRoutingPolicyGeoList extends cdktf.ComplexList {
     return new GoogleDnsRecordSetRoutingPolicyGeoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers {
+  /**
+  * The frontend IP address of the load balancer.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
+  */
+  readonly ipAddress: string;
+  /**
+  * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
+  */
+  readonly ipProtocol: string;
+  /**
+  * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
+  */
+  readonly loadBalancerType: string;
+  /**
+  * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
+  */
+  readonly networkUrl: string;
+  /**
+  * The configured port of the load balancer.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#port GoogleDnsRecordSet#port}
+  */
+  readonly port: string;
+  /**
+  * The ID of the project in which the load balancer belongs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#project GoogleDnsRecordSet#project}
+  */
+  readonly project: string;
+  /**
+  * The region of the load balancer. Only needed for regional load balancers.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#region GoogleDnsRecordSet#region}
+  */
+  readonly region?: string;
+}
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
+    ip_protocol: cdktf.stringToTerraform(struct!.ipProtocol),
+    load_balancer_type: cdktf.stringToTerraform(struct!.loadBalancerType),
+    network_url: cdktf.stringToTerraform(struct!.networkUrl),
+    port: cdktf.stringToTerraform(struct!.port),
+    project: cdktf.stringToTerraform(struct!.project),
+    region: cdktf.stringToTerraform(struct!.region),
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress;
+    }
+    if (this._ipProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipProtocol = this._ipProtocol;
+    }
+    if (this._loadBalancerType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loadBalancerType = this._loadBalancerType;
+    }
+    if (this._networkUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkUrl = this._networkUrl;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._project !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.project = this._project;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipAddress = undefined;
+      this._ipProtocol = undefined;
+      this._loadBalancerType = undefined;
+      this._networkUrl = undefined;
+      this._port = undefined;
+      this._project = undefined;
+      this._region = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipAddress = value.ipAddress;
+      this._ipProtocol = value.ipProtocol;
+      this._loadBalancerType = value.loadBalancerType;
+      this._networkUrl = value.networkUrl;
+      this._port = value.port;
+      this._project = value.project;
+      this._region = value.region;
+    }
+  }
+
+  // ip_address - computed: false, optional: false, required: true
+  private _ipAddress?: string; 
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+  public set ipAddress(value: string) {
+    this._ipAddress = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress;
+  }
+
+  // ip_protocol - computed: false, optional: false, required: true
+  private _ipProtocol?: string; 
+  public get ipProtocol() {
+    return this.getStringAttribute('ip_protocol');
+  }
+  public set ipProtocol(value: string) {
+    this._ipProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipProtocolInput() {
+    return this._ipProtocol;
+  }
+
+  // load_balancer_type - computed: false, optional: false, required: true
+  private _loadBalancerType?: string; 
+  public get loadBalancerType() {
+    return this.getStringAttribute('load_balancer_type');
+  }
+  public set loadBalancerType(value: string) {
+    this._loadBalancerType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerTypeInput() {
+    return this._loadBalancerType;
+  }
+
+  // network_url - computed: false, optional: false, required: true
+  private _networkUrl?: string; 
+  public get networkUrl() {
+    return this.getStringAttribute('network_url');
+  }
+  public set networkUrl(value: string) {
+    this._networkUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkUrlInput() {
+    return this._networkUrl;
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: string; 
+  public get port() {
+    return this.getStringAttribute('port');
+  }
+  public set port(value: string) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // project - computed: false, optional: false, required: true
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList extends cdktf.ComplexList {
+  public internalValue? : GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference {
+    return new GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets {
+  /**
+  * internal_load_balancers block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
+  */
+  readonly internalLoadBalancers: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
+}
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference | GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    internal_load_balancers: cdktf.listMapper(googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._internalLoadBalancers?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.internalLoadBalancers = this._internalLoadBalancers?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._internalLoadBalancers.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._internalLoadBalancers.internalValue = value.internalLoadBalancers;
+    }
+  }
+
+  // internal_load_balancers - computed: false, optional: false, required: true
+  private _internalLoadBalancers = new GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancersList(this, "internal_load_balancers", false);
+  public get internalLoadBalancers() {
+    return this._internalLoadBalancers;
+  }
+  public putInternalLoadBalancers(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable) {
+    this._internalLoadBalancers.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get internalLoadBalancersInput() {
+    return this._internalLoadBalancers.internalValue;
+  }
+}
+export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo {
+  /**
+  * The location name defined in Google Cloud.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#location GoogleDnsRecordSet#location}
+  */
+  readonly location: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
+  */
+  readonly rrdatas?: string[];
+  /**
+  * health_checked_targets block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#health_checked_targets GoogleDnsRecordSet#health_checked_targets}
+  */
+  readonly healthCheckedTargets?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets;
+}
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    location: cdktf.stringToTerraform(struct!.location),
+    rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
+    health_checked_targets: googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsToTerraform(struct!.healthCheckedTargets),
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._location !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location;
+    }
+    if (this._rrdatas !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rrdatas = this._rrdatas;
+    }
+    if (this._healthCheckedTargets?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.healthCheckedTargets = this._healthCheckedTargets?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._location = undefined;
+      this._rrdatas = undefined;
+      this._healthCheckedTargets.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._location = value.location;
+      this._rrdatas = value.rrdatas;
+      this._healthCheckedTargets.internalValue = value.healthCheckedTargets;
+    }
+  }
+
+  // location - computed: false, optional: false, required: true
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+
+  // rrdatas - computed: false, optional: true, required: false
+  private _rrdatas?: string[]; 
+  public get rrdatas() {
+    return this.getListAttribute('rrdatas');
+  }
+  public set rrdatas(value: string[]) {
+    this._rrdatas = value;
+  }
+  public resetRrdatas() {
+    this._rrdatas = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rrdatasInput() {
+    return this._rrdatas;
+  }
+
+  // health_checked_targets - computed: false, optional: true, required: false
+  private _healthCheckedTargets = new GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargetsOutputReference(this, "health_checked_targets");
+  public get healthCheckedTargets() {
+    return this._healthCheckedTargets;
+  }
+  public putHealthCheckedTargets(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoHealthCheckedTargets) {
+    this._healthCheckedTargets.internalValue = value;
+  }
+  public resetHealthCheckedTargets() {
+    this._healthCheckedTargets.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckedTargetsInput() {
+    return this._healthCheckedTargets.internalValue;
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList extends cdktf.ComplexList {
+  public internalValue? : GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference {
+    return new GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers {
+  /**
+  * The frontend IP address of the load balancer.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
+  */
+  readonly ipAddress: string;
+  /**
+  * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
+  */
+  readonly ipProtocol: string;
+  /**
+  * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
+  */
+  readonly loadBalancerType: string;
+  /**
+  * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
+  */
+  readonly networkUrl: string;
+  /**
+  * The configured port of the load balancer.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#port GoogleDnsRecordSet#port}
+  */
+  readonly port: string;
+  /**
+  * The ID of the project in which the load balancer belongs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#project GoogleDnsRecordSet#project}
+  */
+  readonly project: string;
+  /**
+  * The region of the load balancer. Only needed for regional load balancers.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#region GoogleDnsRecordSet#region}
+  */
+  readonly region?: string;
+}
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
+    ip_protocol: cdktf.stringToTerraform(struct!.ipProtocol),
+    load_balancer_type: cdktf.stringToTerraform(struct!.loadBalancerType),
+    network_url: cdktf.stringToTerraform(struct!.networkUrl),
+    port: cdktf.stringToTerraform(struct!.port),
+    project: cdktf.stringToTerraform(struct!.project),
+    region: cdktf.stringToTerraform(struct!.region),
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress;
+    }
+    if (this._ipProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipProtocol = this._ipProtocol;
+    }
+    if (this._loadBalancerType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loadBalancerType = this._loadBalancerType;
+    }
+    if (this._networkUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkUrl = this._networkUrl;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._project !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.project = this._project;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipAddress = undefined;
+      this._ipProtocol = undefined;
+      this._loadBalancerType = undefined;
+      this._networkUrl = undefined;
+      this._port = undefined;
+      this._project = undefined;
+      this._region = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipAddress = value.ipAddress;
+      this._ipProtocol = value.ipProtocol;
+      this._loadBalancerType = value.loadBalancerType;
+      this._networkUrl = value.networkUrl;
+      this._port = value.port;
+      this._project = value.project;
+      this._region = value.region;
+    }
+  }
+
+  // ip_address - computed: false, optional: false, required: true
+  private _ipAddress?: string; 
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+  public set ipAddress(value: string) {
+    this._ipAddress = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress;
+  }
+
+  // ip_protocol - computed: false, optional: false, required: true
+  private _ipProtocol?: string; 
+  public get ipProtocol() {
+    return this.getStringAttribute('ip_protocol');
+  }
+  public set ipProtocol(value: string) {
+    this._ipProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipProtocolInput() {
+    return this._ipProtocol;
+  }
+
+  // load_balancer_type - computed: false, optional: false, required: true
+  private _loadBalancerType?: string; 
+  public get loadBalancerType() {
+    return this.getStringAttribute('load_balancer_type');
+  }
+  public set loadBalancerType(value: string) {
+    this._loadBalancerType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerTypeInput() {
+    return this._loadBalancerType;
+  }
+
+  // network_url - computed: false, optional: false, required: true
+  private _networkUrl?: string; 
+  public get networkUrl() {
+    return this.getStringAttribute('network_url');
+  }
+  public set networkUrl(value: string) {
+    this._networkUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkUrlInput() {
+    return this._networkUrl;
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: string; 
+  public get port() {
+    return this.getStringAttribute('port');
+  }
+  public set port(value: string) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // project - computed: false, optional: false, required: true
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList extends cdktf.ComplexList {
+  public internalValue? : GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference {
+    return new GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary {
+  /**
+  * internal_load_balancers block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
+  */
+  readonly internalLoadBalancers: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktf.IResolvable;
+}
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference | GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    internal_load_balancers: cdktf.listMapper(googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._internalLoadBalancers?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.internalLoadBalancers = this._internalLoadBalancers?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._internalLoadBalancers.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._internalLoadBalancers.internalValue = value.internalLoadBalancers;
+    }
+  }
+
+  // internal_load_balancers - computed: false, optional: false, required: true
+  private _internalLoadBalancers = new GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancersList(this, "internal_load_balancers", false);
+  public get internalLoadBalancers() {
+    return this._internalLoadBalancers;
+  }
+  public putInternalLoadBalancers(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryInternalLoadBalancers[] | cdktf.IResolvable) {
+    this._internalLoadBalancers.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get internalLoadBalancersInput() {
+    return this._internalLoadBalancers.internalValue;
+  }
+}
+export interface GoogleDnsRecordSetRoutingPolicyPrimaryBackup {
+  /**
+  * Specifies whether to enable fencing for backup geo queries.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#enable_geo_fencing_for_backups GoogleDnsRecordSet#enable_geo_fencing_for_backups}
+  */
+  readonly enableGeoFencingForBackups?: boolean | cdktf.IResolvable;
+  /**
+  * Specifies the percentage of traffic to send to the backup targets even when the primary targets are healthy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#trickle_ratio GoogleDnsRecordSet#trickle_ratio}
+  */
+  readonly trickleRatio?: number;
+  /**
+  * backup_geo block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#backup_geo GoogleDnsRecordSet#backup_geo}
+  */
+  readonly backupGeo: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktf.IResolvable;
+  /**
+  * primary block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#primary GoogleDnsRecordSet#primary}
+  */
+  readonly primary: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary;
+}
+
+export function googleDnsRecordSetRoutingPolicyPrimaryBackupToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference | GoogleDnsRecordSetRoutingPolicyPrimaryBackup): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enable_geo_fencing_for_backups: cdktf.booleanToTerraform(struct!.enableGeoFencingForBackups),
+    trickle_ratio: cdktf.numberToTerraform(struct!.trickleRatio),
+    backup_geo: cdktf.listMapper(googleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoToTerraform, true)(struct!.backupGeo),
+    primary: googleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryToTerraform(struct!.primary),
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDnsRecordSetRoutingPolicyPrimaryBackup | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enableGeoFencingForBackups !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableGeoFencingForBackups = this._enableGeoFencingForBackups;
+    }
+    if (this._trickleRatio !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.trickleRatio = this._trickleRatio;
+    }
+    if (this._backupGeo?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.backupGeo = this._backupGeo?.internalValue;
+    }
+    if (this._primary?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.primary = this._primary?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackup | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enableGeoFencingForBackups = undefined;
+      this._trickleRatio = undefined;
+      this._backupGeo.internalValue = undefined;
+      this._primary.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableGeoFencingForBackups = value.enableGeoFencingForBackups;
+      this._trickleRatio = value.trickleRatio;
+      this._backupGeo.internalValue = value.backupGeo;
+      this._primary.internalValue = value.primary;
+    }
+  }
+
+  // enable_geo_fencing_for_backups - computed: false, optional: true, required: false
+  private _enableGeoFencingForBackups?: boolean | cdktf.IResolvable; 
+  public get enableGeoFencingForBackups() {
+    return this.getBooleanAttribute('enable_geo_fencing_for_backups');
+  }
+  public set enableGeoFencingForBackups(value: boolean | cdktf.IResolvable) {
+    this._enableGeoFencingForBackups = value;
+  }
+  public resetEnableGeoFencingForBackups() {
+    this._enableGeoFencingForBackups = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableGeoFencingForBackupsInput() {
+    return this._enableGeoFencingForBackups;
+  }
+
+  // trickle_ratio - computed: false, optional: true, required: false
+  private _trickleRatio?: number; 
+  public get trickleRatio() {
+    return this.getNumberAttribute('trickle_ratio');
+  }
+  public set trickleRatio(value: number) {
+    this._trickleRatio = value;
+  }
+  public resetTrickleRatio() {
+    this._trickleRatio = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get trickleRatioInput() {
+    return this._trickleRatio;
+  }
+
+  // backup_geo - computed: false, optional: false, required: true
+  private _backupGeo = new GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList(this, "backup_geo", false);
+  public get backupGeo() {
+    return this._backupGeo;
+  }
+  public putBackupGeo(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupBackupGeo[] | cdktf.IResolvable) {
+    this._backupGeo.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get backupGeoInput() {
+    return this._backupGeo.internalValue;
+  }
+
+  // primary - computed: false, optional: false, required: true
+  private _primary = new GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimaryOutputReference(this, "primary");
+  public get primary() {
+    return this._primary;
+  }
+  public putPrimary(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackupPrimary) {
+    this._primary.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryInput() {
+    return this._primary.internalValue;
+  }
+}
+export interface GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers {
+  /**
+  * The frontend IP address of the load balancer.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#ip_address GoogleDnsRecordSet#ip_address}
+  */
+  readonly ipAddress: string;
+  /**
+  * The configured IP protocol of the load balancer. This value is case-sensitive. Possible values: ["tcp", "udp"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#ip_protocol GoogleDnsRecordSet#ip_protocol}
+  */
+  readonly ipProtocol: string;
+  /**
+  * The type of load balancer. This value is case-sensitive. Possible values: ["regionalL4ilb"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#load_balancer_type GoogleDnsRecordSet#load_balancer_type}
+  */
+  readonly loadBalancerType: string;
+  /**
+  * The fully qualified url of the network in which the load balancer belongs. This should be formatted like `https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#network_url GoogleDnsRecordSet#network_url}
+  */
+  readonly networkUrl: string;
+  /**
+  * The configured port of the load balancer.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#port GoogleDnsRecordSet#port}
+  */
+  readonly port: string;
+  /**
+  * The ID of the project in which the load balancer belongs.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#project GoogleDnsRecordSet#project}
+  */
+  readonly project: string;
+  /**
+  * The region of the load balancer. Only needed for regional load balancers.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#region GoogleDnsRecordSet#region}
+  */
+  readonly region?: string;
+}
+
+export function googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    ip_address: cdktf.stringToTerraform(struct!.ipAddress),
+    ip_protocol: cdktf.stringToTerraform(struct!.ipProtocol),
+    load_balancer_type: cdktf.stringToTerraform(struct!.loadBalancerType),
+    network_url: cdktf.stringToTerraform(struct!.networkUrl),
+    port: cdktf.stringToTerraform(struct!.port),
+    project: cdktf.stringToTerraform(struct!.project),
+    region: cdktf.stringToTerraform(struct!.region),
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._ipAddress !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress;
+    }
+    if (this._ipProtocol !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipProtocol = this._ipProtocol;
+    }
+    if (this._loadBalancerType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loadBalancerType = this._loadBalancerType;
+    }
+    if (this._networkUrl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.networkUrl = this._networkUrl;
+    }
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._project !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.project = this._project;
+    }
+    if (this._region !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.region = this._region;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._ipAddress = undefined;
+      this._ipProtocol = undefined;
+      this._loadBalancerType = undefined;
+      this._networkUrl = undefined;
+      this._port = undefined;
+      this._project = undefined;
+      this._region = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._ipAddress = value.ipAddress;
+      this._ipProtocol = value.ipProtocol;
+      this._loadBalancerType = value.loadBalancerType;
+      this._networkUrl = value.networkUrl;
+      this._port = value.port;
+      this._project = value.project;
+      this._region = value.region;
+    }
+  }
+
+  // ip_address - computed: false, optional: false, required: true
+  private _ipAddress?: string; 
+  public get ipAddress() {
+    return this.getStringAttribute('ip_address');
+  }
+  public set ipAddress(value: string) {
+    this._ipAddress = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress;
+  }
+
+  // ip_protocol - computed: false, optional: false, required: true
+  private _ipProtocol?: string; 
+  public get ipProtocol() {
+    return this.getStringAttribute('ip_protocol');
+  }
+  public set ipProtocol(value: string) {
+    this._ipProtocol = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipProtocolInput() {
+    return this._ipProtocol;
+  }
+
+  // load_balancer_type - computed: false, optional: false, required: true
+  private _loadBalancerType?: string; 
+  public get loadBalancerType() {
+    return this.getStringAttribute('load_balancer_type');
+  }
+  public set loadBalancerType(value: string) {
+    this._loadBalancerType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadBalancerTypeInput() {
+    return this._loadBalancerType;
+  }
+
+  // network_url - computed: false, optional: false, required: true
+  private _networkUrl?: string; 
+  public get networkUrl() {
+    return this.getStringAttribute('network_url');
+  }
+  public set networkUrl(value: string) {
+    this._networkUrl = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkUrlInput() {
+    return this._networkUrl;
+  }
+
+  // port - computed: false, optional: false, required: true
+  private _port?: string; 
+  public get port() {
+    return this.getStringAttribute('port');
+  }
+  public set port(value: string) {
+    this._port = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // project - computed: false, optional: false, required: true
+  private _project?: string; 
+  public get project() {
+    return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
+  }
+
+  // region - computed: false, optional: true, required: false
+  private _region?: string; 
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList extends cdktf.ComplexList {
+  public internalValue? : GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference {
+    return new GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets {
+  /**
+  * internal_load_balancers block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#internal_load_balancers GoogleDnsRecordSet#internal_load_balancers}
+  */
+  readonly internalLoadBalancers: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable;
+}
+
+export function googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference | GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    internal_load_balancers: cdktf.listMapper(googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersToTerraform, true)(struct!.internalLoadBalancers),
+  }
+}
+
+export class GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._internalLoadBalancers?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.internalLoadBalancers = this._internalLoadBalancers?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._internalLoadBalancers.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._internalLoadBalancers.internalValue = value.internalLoadBalancers;
+    }
+  }
+
+  // internal_load_balancers - computed: false, optional: false, required: true
+  private _internalLoadBalancers = new GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancersList(this, "internal_load_balancers", false);
+  public get internalLoadBalancers() {
+    return this._internalLoadBalancers;
+  }
+  public putInternalLoadBalancers(value: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsInternalLoadBalancers[] | cdktf.IResolvable) {
+    this._internalLoadBalancers.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get internalLoadBalancersInput() {
+    return this._internalLoadBalancers.internalValue;
+  }
+}
 export interface GoogleDnsRecordSetRoutingPolicyWrr {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#rrdatas GoogleDnsRecordSet#rrdatas}
   */
-  readonly rrdatas: string[];
+  readonly rrdatas?: string[];
   /**
   * The ratio of traffic routed to the target.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#weight GoogleDnsRecordSet#weight}
   */
   readonly weight: number;
+  /**
+  * health_checked_targets block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#health_checked_targets GoogleDnsRecordSet#health_checked_targets}
+  */
+  readonly healthCheckedTargets?: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets;
 }
 
 export function googleDnsRecordSetRoutingPolicyWrrToTerraform(struct?: GoogleDnsRecordSetRoutingPolicyWrr | cdktf.IResolvable): any {
@@ -198,6 +1812,7 @@ export function googleDnsRecordSetRoutingPolicyWrrToTerraform(struct?: GoogleDns
   return {
     rrdatas: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.rrdatas),
     weight: cdktf.numberToTerraform(struct!.weight),
+    health_checked_targets: googleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsToTerraform(struct!.healthCheckedTargets),
   }
 }
 
@@ -229,6 +1844,10 @@ export class GoogleDnsRecordSetRoutingPolicyWrrOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.weight = this._weight;
     }
+    if (this._healthCheckedTargets?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.healthCheckedTargets = this._healthCheckedTargets?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -238,6 +1857,7 @@ export class GoogleDnsRecordSetRoutingPolicyWrrOutputReference extends cdktf.Com
       this.resolvableValue = undefined;
       this._rrdatas = undefined;
       this._weight = undefined;
+      this._healthCheckedTargets.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -248,16 +1868,20 @@ export class GoogleDnsRecordSetRoutingPolicyWrrOutputReference extends cdktf.Com
       this.resolvableValue = undefined;
       this._rrdatas = value.rrdatas;
       this._weight = value.weight;
+      this._healthCheckedTargets.internalValue = value.healthCheckedTargets;
     }
   }
 
-  // rrdatas - computed: false, optional: false, required: true
+  // rrdatas - computed: false, optional: true, required: false
   private _rrdatas?: string[]; 
   public get rrdatas() {
     return this.getListAttribute('rrdatas');
   }
   public set rrdatas(value: string[]) {
     this._rrdatas = value;
+  }
+  public resetRrdatas() {
+    this._rrdatas = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get rrdatasInput() {
@@ -275,6 +1899,22 @@ export class GoogleDnsRecordSetRoutingPolicyWrrOutputReference extends cdktf.Com
   // Temporarily expose input value. Use with caution.
   public get weightInput() {
     return this._weight;
+  }
+
+  // health_checked_targets - computed: false, optional: true, required: false
+  private _healthCheckedTargets = new GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference(this, "health_checked_targets");
+  public get healthCheckedTargets() {
+    return this._healthCheckedTargets;
+  }
+  public putHealthCheckedTargets(value: GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets) {
+    this._healthCheckedTargets.internalValue = value;
+  }
+  public resetHealthCheckedTargets() {
+    this._healthCheckedTargets.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get healthCheckedTargetsInput() {
+    return this._healthCheckedTargets.internalValue;
   }
 }
 
@@ -299,11 +1939,23 @@ export class GoogleDnsRecordSetRoutingPolicyWrrList extends cdktf.ComplexList {
 }
 export interface GoogleDnsRecordSetRoutingPolicy {
   /**
+  * Specifies whether to enable fencing for geo queries.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#enable_geo_fencing GoogleDnsRecordSet#enable_geo_fencing}
+  */
+  readonly enableGeoFencing?: boolean | cdktf.IResolvable;
+  /**
   * geo block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#geo GoogleDnsRecordSet#geo}
   */
   readonly geo?: GoogleDnsRecordSetRoutingPolicyGeo[] | cdktf.IResolvable;
+  /**
+  * primary_backup block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_record_set#primary_backup GoogleDnsRecordSet#primary_backup}
+  */
+  readonly primaryBackup?: GoogleDnsRecordSetRoutingPolicyPrimaryBackup;
   /**
   * wrr block
   * 
@@ -318,7 +1970,9 @@ export function googleDnsRecordSetRoutingPolicyToTerraform(struct?: GoogleDnsRec
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    enable_geo_fencing: cdktf.booleanToTerraform(struct!.enableGeoFencing),
     geo: cdktf.listMapper(googleDnsRecordSetRoutingPolicyGeoToTerraform, true)(struct!.geo),
+    primary_backup: googleDnsRecordSetRoutingPolicyPrimaryBackupToTerraform(struct!.primaryBackup),
     wrr: cdktf.listMapper(googleDnsRecordSetRoutingPolicyWrrToTerraform, true)(struct!.wrr),
   }
 }
@@ -337,9 +1991,17 @@ export class GoogleDnsRecordSetRoutingPolicyOutputReference extends cdktf.Comple
   public get internalValue(): GoogleDnsRecordSetRoutingPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._enableGeoFencing !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enableGeoFencing = this._enableGeoFencing;
+    }
     if (this._geo?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.geo = this._geo?.internalValue;
+    }
+    if (this._primaryBackup?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.primaryBackup = this._primaryBackup?.internalValue;
     }
     if (this._wrr?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -351,14 +2013,34 @@ export class GoogleDnsRecordSetRoutingPolicyOutputReference extends cdktf.Comple
   public set internalValue(value: GoogleDnsRecordSetRoutingPolicy | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._enableGeoFencing = undefined;
       this._geo.internalValue = undefined;
+      this._primaryBackup.internalValue = undefined;
       this._wrr.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._enableGeoFencing = value.enableGeoFencing;
       this._geo.internalValue = value.geo;
+      this._primaryBackup.internalValue = value.primaryBackup;
       this._wrr.internalValue = value.wrr;
     }
+  }
+
+  // enable_geo_fencing - computed: false, optional: true, required: false
+  private _enableGeoFencing?: boolean | cdktf.IResolvable; 
+  public get enableGeoFencing() {
+    return this.getBooleanAttribute('enable_geo_fencing');
+  }
+  public set enableGeoFencing(value: boolean | cdktf.IResolvable) {
+    this._enableGeoFencing = value;
+  }
+  public resetEnableGeoFencing() {
+    this._enableGeoFencing = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enableGeoFencingInput() {
+    return this._enableGeoFencing;
   }
 
   // geo - computed: false, optional: true, required: false
@@ -375,6 +2057,22 @@ export class GoogleDnsRecordSetRoutingPolicyOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get geoInput() {
     return this._geo.internalValue;
+  }
+
+  // primary_backup - computed: false, optional: true, required: false
+  private _primaryBackup = new GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference(this, "primary_backup");
+  public get primaryBackup() {
+    return this._primaryBackup;
+  }
+  public putPrimaryBackup(value: GoogleDnsRecordSetRoutingPolicyPrimaryBackup) {
+    this._primaryBackup.internalValue = value;
+  }
+  public resetPrimaryBackup() {
+    this._primaryBackup.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryBackupInput() {
+    return this._primaryBackup.internalValue;
   }
 
   // wrr - computed: false, optional: true, required: false
@@ -420,7 +2118,7 @@ export class GoogleDnsRecordSet extends cdktf.TerraformResource {
       terraformResourceType: 'google_dns_record_set',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

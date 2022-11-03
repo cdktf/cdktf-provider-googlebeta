@@ -14,6 +14,8 @@ export interface GoogleAppEngineStandardAppVersionConfig extends cdktf.Terraform
   */
   readonly appEngineApis?: boolean | cdktf.IResolvable;
   /**
+  * If set to 'true', the service will be deleted if it is the last version.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_standard_app_version#delete_service_on_destroy GoogleAppEngineStandardAppVersion#delete_service_on_destroy}
   */
   readonly deleteServiceOnDestroy?: boolean | cdktf.IResolvable;
@@ -46,6 +48,8 @@ Defaults to F1 for AutomaticScaling and B2 for ManualScaling and BasicScaling. I
   */
   readonly instanceClass?: string;
   /**
+  * If set to 'true', the application version will not be deleted.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_standard_app_version#noop_on_destroy GoogleAppEngineStandardAppVersion#noop_on_destroy}
   */
   readonly noopOnDestroy?: boolean | cdktf.IResolvable;
@@ -2040,7 +2044,7 @@ export class GoogleAppEngineStandardAppVersion extends cdktf.TerraformResource {
       terraformResourceType: 'google_app_engine_standard_app_version',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

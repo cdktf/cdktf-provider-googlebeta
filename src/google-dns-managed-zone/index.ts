@@ -20,6 +20,8 @@ export interface GoogleDnsManagedZoneConfig extends cdktf.TerraformMetaArguments
   */
   readonly dnsName: string;
   /**
+  * Set this true to delete all records in the zone.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_managed_zone#force_destroy GoogleDnsManagedZone#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
@@ -1286,7 +1288,7 @@ export class GoogleDnsManagedZone extends cdktf.TerraformResource {
       terraformResourceType: 'google_dns_managed_zone',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
