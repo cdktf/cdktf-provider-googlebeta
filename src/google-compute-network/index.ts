@@ -19,6 +19,9 @@ the user can explicitly connect subnetwork resources.
   */
   readonly autoCreateSubnetworks?: boolean | cdktf.IResolvable;
   /**
+  * If set to 'true', default routes ('0.0.0.0/0') will be deleted
+immediately after network creation. Defaults to 'false'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_network#delete_default_routes_on_create GoogleComputeNetwork#delete_default_routes_on_create}
   */
   readonly deleteDefaultRoutesOnCreate?: boolean | cdktf.IResolvable;
@@ -249,7 +252,7 @@ export class GoogleComputeNetwork extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_network',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

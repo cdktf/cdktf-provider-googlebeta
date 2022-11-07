@@ -79,6 +79,12 @@ export interface GoogleDatastreamConnectionProfileConfig extends cdktf.Terraform
   */
   readonly postgresqlProfile?: GoogleDatastreamConnectionProfilePostgresqlProfile;
   /**
+  * private_connectivity block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_connection_profile#private_connectivity GoogleDatastreamConnectionProfile#private_connectivity}
+  */
+  readonly privateConnectivity?: GoogleDatastreamConnectionProfilePrivateConnectivity;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_connection_profile#timeouts GoogleDatastreamConnectionProfile#timeouts}
@@ -1084,6 +1090,70 @@ export class GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference e
     return this._username;
   }
 }
+export interface GoogleDatastreamConnectionProfilePrivateConnectivity {
+  /**
+  * A reference to a private connection resource. Format: 'projects/{project}/locations/{location}/privateConnections/{name}'
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_connection_profile#private_connection GoogleDatastreamConnectionProfile#private_connection}
+  */
+  readonly privateConnection: string;
+}
+
+export function googleDatastreamConnectionProfilePrivateConnectivityToTerraform(struct?: GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference | GoogleDatastreamConnectionProfilePrivateConnectivity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    private_connection: cdktf.stringToTerraform(struct!.privateConnection),
+  }
+}
+
+export class GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDatastreamConnectionProfilePrivateConnectivity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._privateConnection !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateConnection = this._privateConnection;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDatastreamConnectionProfilePrivateConnectivity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._privateConnection = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._privateConnection = value.privateConnection;
+    }
+  }
+
+  // private_connection - computed: false, optional: false, required: true
+  private _privateConnection?: string; 
+  public get privateConnection() {
+    return this.getStringAttribute('private_connection');
+  }
+  public set privateConnection(value: string) {
+    this._privateConnection = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateConnectionInput() {
+    return this._privateConnection;
+  }
+}
 export interface GoogleDatastreamConnectionProfileTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_connection_profile#create GoogleDatastreamConnectionProfile#create}
@@ -1240,7 +1310,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
       terraformResourceType: 'google_datastream_connection_profile',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1263,6 +1333,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
     this._mysqlProfile.internalValue = config.mysqlProfile;
     this._oracleProfile.internalValue = config.oracleProfile;
     this._postgresqlProfile.internalValue = config.postgresqlProfile;
+    this._privateConnectivity.internalValue = config.privateConnectivity;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1458,6 +1529,22 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
     return this._postgresqlProfile.internalValue;
   }
 
+  // private_connectivity - computed: false, optional: true, required: false
+  private _privateConnectivity = new GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference(this, "private_connectivity");
+  public get privateConnectivity() {
+    return this._privateConnectivity;
+  }
+  public putPrivateConnectivity(value: GoogleDatastreamConnectionProfilePrivateConnectivity) {
+    this._privateConnectivity.internalValue = value;
+  }
+  public resetPrivateConnectivity() {
+    this._privateConnectivity.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateConnectivityInput() {
+    return this._privateConnectivity.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleDatastreamConnectionProfileTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1492,6 +1579,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
       mysql_profile: googleDatastreamConnectionProfileMysqlProfileToTerraform(this._mysqlProfile.internalValue),
       oracle_profile: googleDatastreamConnectionProfileOracleProfileToTerraform(this._oracleProfile.internalValue),
       postgresql_profile: googleDatastreamConnectionProfilePostgresqlProfileToTerraform(this._postgresqlProfile.internalValue),
+      private_connectivity: googleDatastreamConnectionProfilePrivateConnectivityToTerraform(this._privateConnectivity.internalValue),
       timeouts: googleDatastreamConnectionProfileTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

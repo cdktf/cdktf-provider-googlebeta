@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleVertexAiFeaturestoreConfig extends cdktf.TerraformMetaArguments {
   /**
+  * If set to true, any EntityTypes and Features for this Featurestore will also be deleted
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#force_destroy GoogleVertexAiFeaturestore#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
@@ -343,7 +345,7 @@ export class GoogleVertexAiFeaturestore extends cdktf.TerraformResource {
       terraformResourceType: 'google_vertex_ai_featurestore',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -24,6 +24,9 @@ error in any statement, the database is not created.
   */
   readonly ddl?: string[];
   /**
+  * Whether or not to allow Terraform to destroy the instance. Unless this field is set to false
+in Terraform state, a 'terraform destroy' or 'terraform apply' that would delete the instance will fail.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_spanner_database#deletion_protection GoogleSpannerDatabase#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
@@ -295,7 +298,7 @@ export class GoogleSpannerDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'google_spanner_database',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

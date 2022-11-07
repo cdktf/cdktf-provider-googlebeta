@@ -1640,6 +1640,18 @@ export interface GoogleContainerClusterClusterAutoscalingAutoProvisioningDefault
   */
   readonly bootDiskKmsKey?: string;
   /**
+  * Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#disk_size GoogleContainerCluster#disk_size}
+  */
+  readonly diskSize?: number;
+  /**
+  * Type of the disk attached to each node.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#disk_type GoogleContainerCluster#disk_type}
+  */
+  readonly diskType?: string;
+  /**
   * The default image type used by NAP once a new node pool is being created.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#image_type GoogleContainerCluster#image_type}
@@ -1672,6 +1684,8 @@ export function googleContainerClusterClusterAutoscalingAutoProvisioningDefaults
   }
   return {
     boot_disk_kms_key: cdktf.stringToTerraform(struct!.bootDiskKmsKey),
+    disk_size: cdktf.numberToTerraform(struct!.diskSize),
+    disk_type: cdktf.stringToTerraform(struct!.diskType),
     image_type: cdktf.stringToTerraform(struct!.imageType),
     min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
     oauth_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oauthScopes),
@@ -1697,6 +1711,14 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
       hasAnyValues = true;
       internalValueResult.bootDiskKmsKey = this._bootDiskKmsKey;
     }
+    if (this._diskSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskSize = this._diskSize;
+    }
+    if (this._diskType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.diskType = this._diskType;
+    }
     if (this._imageType !== undefined) {
       hasAnyValues = true;
       internalValueResult.imageType = this._imageType;
@@ -1720,6 +1742,8 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
     if (value === undefined) {
       this.isEmptyObject = false;
       this._bootDiskKmsKey = undefined;
+      this._diskSize = undefined;
+      this._diskType = undefined;
       this._imageType = undefined;
       this._minCpuPlatform = undefined;
       this._oauthScopes = undefined;
@@ -1728,6 +1752,8 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._bootDiskKmsKey = value.bootDiskKmsKey;
+      this._diskSize = value.diskSize;
+      this._diskType = value.diskType;
       this._imageType = value.imageType;
       this._minCpuPlatform = value.minCpuPlatform;
       this._oauthScopes = value.oauthScopes;
@@ -1749,6 +1775,38 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
   // Temporarily expose input value. Use with caution.
   public get bootDiskKmsKeyInput() {
     return this._bootDiskKmsKey;
+  }
+
+  // disk_size - computed: false, optional: true, required: false
+  private _diskSize?: number; 
+  public get diskSize() {
+    return this.getNumberAttribute('disk_size');
+  }
+  public set diskSize(value: number) {
+    this._diskSize = value;
+  }
+  public resetDiskSize() {
+    this._diskSize = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskSizeInput() {
+    return this._diskSize;
+  }
+
+  // disk_type - computed: false, optional: true, required: false
+  private _diskType?: string; 
+  public get diskType() {
+    return this.getStringAttribute('disk_type');
+  }
+  public set diskType(value: string) {
+    this._diskType = value;
+  }
+  public resetDiskType() {
+    this._diskType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get diskTypeInput() {
+    return this._diskType;
   }
 
   // image_type - computed: false, optional: true, required: false
@@ -10624,7 +10682,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

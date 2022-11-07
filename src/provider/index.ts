@@ -24,6 +24,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly activeDirectoryCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#alloydb_custom_endpoint GoogleBetaProvider#alloydb_custom_endpoint}
+  */
+  readonly alloydbCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#api_gateway_custom_endpoint GoogleBetaProvider#api_gateway_custom_endpoint}
   */
   readonly apiGatewayCustomEndpoint?: string;
@@ -192,6 +196,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly dataflowCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#dataform_custom_endpoint GoogleBetaProvider#dataform_custom_endpoint}
+  */
+  readonly dataformCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#dataplex_custom_endpoint GoogleBetaProvider#dataplex_custom_endpoint}
   */
   readonly dataplexCustomEndpoint?: string;
@@ -287,6 +295,10 @@ export interface GoogleBetaProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#iam_custom_endpoint GoogleBetaProvider#iam_custom_endpoint}
   */
   readonly iamCustomEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#iam_workforce_pool_custom_endpoint GoogleBetaProvider#iam_workforce_pool_custom_endpoint}
+  */
+  readonly iamWorkforcePoolCustomEndpoint?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#iap_custom_endpoint GoogleBetaProvider#iap_custom_endpoint}
   */
@@ -545,7 +557,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'
@@ -554,6 +566,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._accessContextManagerCustomEndpoint = config.accessContextManagerCustomEndpoint;
     this._accessToken = config.accessToken;
     this._activeDirectoryCustomEndpoint = config.activeDirectoryCustomEndpoint;
+    this._alloydbCustomEndpoint = config.alloydbCustomEndpoint;
     this._apiGatewayCustomEndpoint = config.apiGatewayCustomEndpoint;
     this._apigeeCustomEndpoint = config.apigeeCustomEndpoint;
     this._apikeysCustomEndpoint = config.apikeysCustomEndpoint;
@@ -596,6 +609,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._dataFusionCustomEndpoint = config.dataFusionCustomEndpoint;
     this._dataLossPreventionCustomEndpoint = config.dataLossPreventionCustomEndpoint;
     this._dataflowCustomEndpoint = config.dataflowCustomEndpoint;
+    this._dataformCustomEndpoint = config.dataformCustomEndpoint;
     this._dataplexCustomEndpoint = config.dataplexCustomEndpoint;
     this._dataprocCustomEndpoint = config.dataprocCustomEndpoint;
     this._dataprocMetastoreCustomEndpoint = config.dataprocMetastoreCustomEndpoint;
@@ -620,6 +634,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._iamBetaCustomEndpoint = config.iamBetaCustomEndpoint;
     this._iamCredentialsCustomEndpoint = config.iamCredentialsCustomEndpoint;
     this._iamCustomEndpoint = config.iamCustomEndpoint;
+    this._iamWorkforcePoolCustomEndpoint = config.iamWorkforcePoolCustomEndpoint;
     this._iapCustomEndpoint = config.iapCustomEndpoint;
     this._identityPlatformCustomEndpoint = config.identityPlatformCustomEndpoint;
     this._impersonateServiceAccount = config.impersonateServiceAccount;
@@ -739,6 +754,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get activeDirectoryCustomEndpointInput() {
     return this._activeDirectoryCustomEndpoint;
+  }
+
+  // alloydb_custom_endpoint - computed: false, optional: true, required: false
+  private _alloydbCustomEndpoint?: string; 
+  public get alloydbCustomEndpoint() {
+    return this._alloydbCustomEndpoint;
+  }
+  public set alloydbCustomEndpoint(value: string | undefined) {
+    this._alloydbCustomEndpoint = value;
+  }
+  public resetAlloydbCustomEndpoint() {
+    this._alloydbCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alloydbCustomEndpointInput() {
+    return this._alloydbCustomEndpoint;
   }
 
   // api_gateway_custom_endpoint - computed: false, optional: true, required: false
@@ -1413,6 +1444,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     return this._dataflowCustomEndpoint;
   }
 
+  // dataform_custom_endpoint - computed: false, optional: true, required: false
+  private _dataformCustomEndpoint?: string; 
+  public get dataformCustomEndpoint() {
+    return this._dataformCustomEndpoint;
+  }
+  public set dataformCustomEndpoint(value: string | undefined) {
+    this._dataformCustomEndpoint = value;
+  }
+  public resetDataformCustomEndpoint() {
+    this._dataformCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataformCustomEndpointInput() {
+    return this._dataformCustomEndpoint;
+  }
+
   // dataplex_custom_endpoint - computed: false, optional: true, required: false
   private _dataplexCustomEndpoint?: string; 
   public get dataplexCustomEndpoint() {
@@ -1795,6 +1842,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get iamCustomEndpointInput() {
     return this._iamCustomEndpoint;
+  }
+
+  // iam_workforce_pool_custom_endpoint - computed: false, optional: true, required: false
+  private _iamWorkforcePoolCustomEndpoint?: string; 
+  public get iamWorkforcePoolCustomEndpoint() {
+    return this._iamWorkforcePoolCustomEndpoint;
+  }
+  public set iamWorkforcePoolCustomEndpoint(value: string | undefined) {
+    this._iamWorkforcePoolCustomEndpoint = value;
+  }
+  public resetIamWorkforcePoolCustomEndpoint() {
+    this._iamWorkforcePoolCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get iamWorkforcePoolCustomEndpointInput() {
+    return this._iamWorkforcePoolCustomEndpoint;
   }
 
   // iap_custom_endpoint - computed: false, optional: true, required: false
@@ -2623,6 +2686,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       access_context_manager_custom_endpoint: cdktf.stringToTerraform(this._accessContextManagerCustomEndpoint),
       access_token: cdktf.stringToTerraform(this._accessToken),
       active_directory_custom_endpoint: cdktf.stringToTerraform(this._activeDirectoryCustomEndpoint),
+      alloydb_custom_endpoint: cdktf.stringToTerraform(this._alloydbCustomEndpoint),
       api_gateway_custom_endpoint: cdktf.stringToTerraform(this._apiGatewayCustomEndpoint),
       apigee_custom_endpoint: cdktf.stringToTerraform(this._apigeeCustomEndpoint),
       apikeys_custom_endpoint: cdktf.stringToTerraform(this._apikeysCustomEndpoint),
@@ -2665,6 +2729,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       data_fusion_custom_endpoint: cdktf.stringToTerraform(this._dataFusionCustomEndpoint),
       data_loss_prevention_custom_endpoint: cdktf.stringToTerraform(this._dataLossPreventionCustomEndpoint),
       dataflow_custom_endpoint: cdktf.stringToTerraform(this._dataflowCustomEndpoint),
+      dataform_custom_endpoint: cdktf.stringToTerraform(this._dataformCustomEndpoint),
       dataplex_custom_endpoint: cdktf.stringToTerraform(this._dataplexCustomEndpoint),
       dataproc_custom_endpoint: cdktf.stringToTerraform(this._dataprocCustomEndpoint),
       dataproc_metastore_custom_endpoint: cdktf.stringToTerraform(this._dataprocMetastoreCustomEndpoint),
@@ -2689,6 +2754,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       iam_beta_custom_endpoint: cdktf.stringToTerraform(this._iamBetaCustomEndpoint),
       iam_credentials_custom_endpoint: cdktf.stringToTerraform(this._iamCredentialsCustomEndpoint),
       iam_custom_endpoint: cdktf.stringToTerraform(this._iamCustomEndpoint),
+      iam_workforce_pool_custom_endpoint: cdktf.stringToTerraform(this._iamWorkforcePoolCustomEndpoint),
       iap_custom_endpoint: cdktf.stringToTerraform(this._iapCustomEndpoint),
       identity_platform_custom_endpoint: cdktf.stringToTerraform(this._identityPlatformCustomEndpoint),
       impersonate_service_account: cdktf.stringToTerraform(this._impersonateServiceAccount),

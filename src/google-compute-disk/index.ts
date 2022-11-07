@@ -130,6 +130,20 @@ following are valid values:
   */
   readonly snapshot?: string;
   /**
+  * The source disk used to create this disk. You can provide this as a partial or full URL to the resource.
+For example, the following are valid values:
+
+* https://www.googleapis.com/compute/v1/projects/{project}/zones/{zone}/disks/{disk}
+* https://www.googleapis.com/compute/v1/projects/{project}/regions/{region}/disks/{disk}
+* projects/{project}/zones/{zone}/disks/{disk}
+* projects/{project}/regions/{region}/disks/{disk}
+* zones/{zone}/disks/{disk}
+* regions/{region}/disks/{disk}
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_disk#source_disk GoogleComputeDisk#source_disk}
+  */
+  readonly sourceDisk?: string;
+  /**
   * URL of the disk type resource describing which disk type to use to
 create the disk. Provide this when creating the disk.
   * 
@@ -731,7 +745,7 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_disk',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.41.0',
+        providerVersion: '4.42.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -755,6 +769,7 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
     this._resourcePolicies = config.resourcePolicies;
     this._size = config.size;
     this._snapshot = config.snapshot;
+    this._sourceDisk = config.sourceDisk;
     this._type = config.type;
     this._zone = config.zone;
     this._diskEncryptionKey.internalValue = config.diskEncryptionKey;
@@ -997,6 +1012,27 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
     return this._snapshot;
   }
 
+  // source_disk - computed: false, optional: true, required: false
+  private _sourceDisk?: string; 
+  public get sourceDisk() {
+    return this.getStringAttribute('source_disk');
+  }
+  public set sourceDisk(value: string) {
+    this._sourceDisk = value;
+  }
+  public resetSourceDisk() {
+    this._sourceDisk = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceDiskInput() {
+    return this._sourceDisk;
+  }
+
+  // source_disk_id - computed: true, optional: false, required: false
+  public get sourceDiskId() {
+    return this.getStringAttribute('source_disk_id');
+  }
+
   // source_image_id - computed: true, optional: false, required: false
   public get sourceImageId() {
     return this.getStringAttribute('source_image_id');
@@ -1127,6 +1163,7 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
       resource_policies: cdktf.listMapper(cdktf.stringToTerraform, false)(this._resourcePolicies),
       size: cdktf.numberToTerraform(this._size),
       snapshot: cdktf.stringToTerraform(this._snapshot),
+      source_disk: cdktf.stringToTerraform(this._sourceDisk),
       type: cdktf.stringToTerraform(this._type),
       zone: cdktf.stringToTerraform(this._zone),
       disk_encryption_key: googleComputeDiskDiskEncryptionKeyToTerraform(this._diskEncryptionKey.internalValue),
