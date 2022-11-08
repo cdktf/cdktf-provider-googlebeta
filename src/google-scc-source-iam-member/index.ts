@@ -177,7 +177,7 @@ export class GoogleSccSourceIamMember extends cdktf.TerraformResource {
       terraformResourceType: 'google_scc_source_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.42.1',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
