@@ -50,7 +50,7 @@ export class GoogleServiceDirectoryServiceIamPolicy extends cdktf.TerraformResou
       terraformResourceType: 'google_service_directory_service_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.42.1',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

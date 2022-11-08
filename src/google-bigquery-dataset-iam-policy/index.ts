@@ -54,7 +54,7 @@ export class GoogleBigqueryDatasetIamPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_dataset_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.42.1',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

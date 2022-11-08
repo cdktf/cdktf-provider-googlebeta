@@ -283,7 +283,7 @@ export class GoogleCertificateManagerDnsAuthorization extends cdktf.TerraformRes
       terraformResourceType: 'google_certificate_manager_dns_authorization',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.42.1',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

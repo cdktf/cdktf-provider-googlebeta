@@ -185,7 +185,7 @@ export class GoogleBigqueryAnalyticsHubListingIamBinding extends cdktf.Terraform
       terraformResourceType: 'google_bigquery_analytics_hub_listing_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.42.1',
+        providerVersion: '4.43.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

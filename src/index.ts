@@ -439,6 +439,7 @@ export * as googleKmsCryptoKey from './google-kms-crypto-key';
 export * as googleKmsCryptoKeyIamBinding from './google-kms-crypto-key-iam-binding';
 export * as googleKmsCryptoKeyIamMember from './google-kms-crypto-key-iam-member';
 export * as googleKmsCryptoKeyIamPolicy from './google-kms-crypto-key-iam-policy';
+export * as googleKmsCryptoKeyVersion from './google-kms-crypto-key-version';
 export * as googleKmsKeyRing from './google-kms-key-ring';
 export * as googleKmsKeyRingIamBinding from './google-kms-key-ring-iam-binding';
 export * as googleKmsKeyRingIamMember from './google-kms-key-ring-iam-member';
