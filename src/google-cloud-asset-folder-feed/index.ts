@@ -516,7 +516,7 @@ export class GoogleCloudAssetFolderFeed extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_asset_folder_feed',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.43.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

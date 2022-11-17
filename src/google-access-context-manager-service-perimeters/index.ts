@@ -3905,7 +3905,7 @@ export class GoogleAccessContextManagerServicePerimeters extends cdktf.Terraform
       terraformResourceType: 'google_access_context_manager_service_perimeters',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.43.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

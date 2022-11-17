@@ -826,7 +826,7 @@ export class GoogleBigqueryConnection extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_connection',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.43.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
