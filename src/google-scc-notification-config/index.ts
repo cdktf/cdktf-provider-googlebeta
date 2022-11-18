@@ -297,7 +297,7 @@ export class GoogleSccNotificationConfig extends cdktf.TerraformResource {
       terraformResourceType: 'google_scc_notification_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.43.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

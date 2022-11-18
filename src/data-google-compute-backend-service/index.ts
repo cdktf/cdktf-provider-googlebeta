@@ -1280,7 +1280,7 @@ export class DataGoogleComputeBackendService extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_backend_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.43.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

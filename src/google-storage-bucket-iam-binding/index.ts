@@ -173,7 +173,7 @@ export class GoogleStorageBucketIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_storage_bucket_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.43.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
