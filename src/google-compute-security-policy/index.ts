@@ -668,6 +668,814 @@ export class GoogleComputeSecurityPolicyRuleMatchOutputReference extends cdktf.C
     return this._expr.internalValue;
   }
 }
+export interface GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie {
+  /**
+  * You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#operator GoogleComputeSecurityPolicy#operator}
+  */
+  readonly operator: string;
+  /**
+  * A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#value GoogleComputeSecurityPolicy#value}
+  */
+  readonly value?: string;
+}
+
+export function googleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToTerraform(struct?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    operator: cdktf.stringToTerraform(struct!.operator),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._value = value.value;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference {
+    return new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader {
+  /**
+  * You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#operator GoogleComputeSecurityPolicy#operator}
+  */
+  readonly operator: string;
+  /**
+  * A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#value GoogleComputeSecurityPolicy#value}
+  */
+  readonly value?: string;
+}
+
+export function googleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToTerraform(struct?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    operator: cdktf.stringToTerraform(struct!.operator),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._value = value.value;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference {
+    return new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam {
+  /**
+  * You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#operator GoogleComputeSecurityPolicy#operator}
+  */
+  readonly operator: string;
+  /**
+  * A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#value GoogleComputeSecurityPolicy#value}
+  */
+  readonly value?: string;
+}
+
+export function googleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToTerraform(struct?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    operator: cdktf.stringToTerraform(struct!.operator),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._value = value.value;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference {
+    return new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri {
+  /**
+  * You can specify an exact match or a partial match by using a field operator and a field value. Available options: EQUALS: The operator matches if the field value equals the specified value. STARTS_WITH: The operator matches if the field value starts with the specified value. ENDS_WITH: The operator matches if the field value ends with the specified value. CONTAINS: The operator matches if the field value contains the specified value. EQUALS_ANY: The operator matches if the field value is any value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#operator GoogleComputeSecurityPolicy#operator}
+  */
+  readonly operator: string;
+  /**
+  * A request field matching the specified value will be excluded from inspection during preconfigured WAF evaluation. The field value must be given if the field operator is not EQUALS_ANY, and cannot be given if the field operator is EQUALS_ANY.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#value GoogleComputeSecurityPolicy#value}
+  */
+  readonly value?: string;
+}
+
+export function googleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToTerraform(struct?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    operator: cdktf.stringToTerraform(struct!.operator),
+    value: cdktf.stringToTerraform(struct!.value),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._operator !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.operator = this._operator;
+    }
+    if (this._value !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.value = this._value;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._operator = undefined;
+      this._value = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._operator = value.operator;
+      this._value = value.value;
+    }
+  }
+
+  // operator - computed: false, optional: false, required: true
+  private _operator?: string; 
+  public get operator() {
+    return this.getStringAttribute('operator');
+  }
+  public set operator(value: string) {
+    this._operator = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get operatorInput() {
+    return this._operator;
+  }
+
+  // value - computed: false, optional: true, required: false
+  private _value?: string; 
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+  public set value(value: string) {
+    this._value = value;
+  }
+  public resetValue() {
+    this._value = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valueInput() {
+    return this._value;
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference {
+    return new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusion {
+  /**
+  * A list of target rule IDs under the WAF rule set to apply the preconfigured WAF exclusion. If omitted, it refers to all the rule IDs under the WAF rule set.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#target_rule_ids GoogleComputeSecurityPolicy#target_rule_ids}
+  */
+  readonly targetRuleIds?: string[];
+  /**
+  * Target WAF rule set to apply the preconfigured WAF exclusion.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#target_rule_set GoogleComputeSecurityPolicy#target_rule_set}
+  */
+  readonly targetRuleSet: string;
+  /**
+  * request_cookie block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#request_cookie GoogleComputeSecurityPolicy#request_cookie}
+  */
+  readonly requestCookie?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie[] | cdktf.IResolvable;
+  /**
+  * request_header block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#request_header GoogleComputeSecurityPolicy#request_header}
+  */
+  readonly requestHeader?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader[] | cdktf.IResolvable;
+  /**
+  * request_query_param block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#request_query_param GoogleComputeSecurityPolicy#request_query_param}
+  */
+  readonly requestQueryParam?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam[] | cdktf.IResolvable;
+  /**
+  * request_uri block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#request_uri GoogleComputeSecurityPolicy#request_uri}
+  */
+  readonly requestUri?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri[] | cdktf.IResolvable;
+}
+
+export function googleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionToTerraform(struct?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    target_rule_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetRuleIds),
+    target_rule_set: cdktf.stringToTerraform(struct!.targetRuleSet),
+    request_cookie: cdktf.listMapper(googleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieToTerraform, true)(struct!.requestCookie),
+    request_header: cdktf.listMapper(googleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderToTerraform, true)(struct!.requestHeader),
+    request_query_param: cdktf.listMapper(googleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamToTerraform, true)(struct!.requestQueryParam),
+    request_uri: cdktf.listMapper(googleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriToTerraform, true)(struct!.requestUri),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._targetRuleIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetRuleIds = this._targetRuleIds;
+    }
+    if (this._targetRuleSet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetRuleSet = this._targetRuleSet;
+    }
+    if (this._requestCookie?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestCookie = this._requestCookie?.internalValue;
+    }
+    if (this._requestHeader?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestHeader = this._requestHeader?.internalValue;
+    }
+    if (this._requestQueryParam?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestQueryParam = this._requestQueryParam?.internalValue;
+    }
+    if (this._requestUri?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestUri = this._requestUri?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusion | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._targetRuleIds = undefined;
+      this._targetRuleSet = undefined;
+      this._requestCookie.internalValue = undefined;
+      this._requestHeader.internalValue = undefined;
+      this._requestQueryParam.internalValue = undefined;
+      this._requestUri.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._targetRuleIds = value.targetRuleIds;
+      this._targetRuleSet = value.targetRuleSet;
+      this._requestCookie.internalValue = value.requestCookie;
+      this._requestHeader.internalValue = value.requestHeader;
+      this._requestQueryParam.internalValue = value.requestQueryParam;
+      this._requestUri.internalValue = value.requestUri;
+    }
+  }
+
+  // target_rule_ids - computed: false, optional: true, required: false
+  private _targetRuleIds?: string[]; 
+  public get targetRuleIds() {
+    return cdktf.Fn.tolist(this.getListAttribute('target_rule_ids'));
+  }
+  public set targetRuleIds(value: string[]) {
+    this._targetRuleIds = value;
+  }
+  public resetTargetRuleIds() {
+    this._targetRuleIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetRuleIdsInput() {
+    return this._targetRuleIds;
+  }
+
+  // target_rule_set - computed: false, optional: false, required: true
+  private _targetRuleSet?: string; 
+  public get targetRuleSet() {
+    return this.getStringAttribute('target_rule_set');
+  }
+  public set targetRuleSet(value: string) {
+    this._targetRuleSet = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetRuleSetInput() {
+    return this._targetRuleSet;
+  }
+
+  // request_cookie - computed: false, optional: true, required: false
+  private _requestCookie = new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookieList(this, "request_cookie", false);
+  public get requestCookie() {
+    return this._requestCookie;
+  }
+  public putRequestCookie(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestCookie[] | cdktf.IResolvable) {
+    this._requestCookie.internalValue = value;
+  }
+  public resetRequestCookie() {
+    this._requestCookie.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestCookieInput() {
+    return this._requestCookie.internalValue;
+  }
+
+  // request_header - computed: false, optional: true, required: false
+  private _requestHeader = new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList(this, "request_header", false);
+  public get requestHeader() {
+    return this._requestHeader;
+  }
+  public putRequestHeader(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeader[] | cdktf.IResolvable) {
+    this._requestHeader.internalValue = value;
+  }
+  public resetRequestHeader() {
+    this._requestHeader.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestHeaderInput() {
+    return this._requestHeader.internalValue;
+  }
+
+  // request_query_param - computed: false, optional: true, required: false
+  private _requestQueryParam = new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParamList(this, "request_query_param", false);
+  public get requestQueryParam() {
+    return this._requestQueryParam;
+  }
+  public putRequestQueryParam(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestQueryParam[] | cdktf.IResolvable) {
+    this._requestQueryParam.internalValue = value;
+  }
+  public resetRequestQueryParam() {
+    this._requestQueryParam.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestQueryParamInput() {
+    return this._requestQueryParam.internalValue;
+  }
+
+  // request_uri - computed: false, optional: true, required: false
+  private _requestUri = new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUriList(this, "request_uri", false);
+  public get requestUri() {
+    return this._requestUri;
+  }
+  public putRequestUri(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionRequestUri[] | cdktf.IResolvable) {
+    this._requestUri.internalValue = value;
+  }
+  public resetRequestUri() {
+    this._requestUri.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestUriInput() {
+    return this._requestUri.internalValue;
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusion[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference {
+    return new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeSecurityPolicyRulePreconfiguredWafConfig {
+  /**
+  * exclusion block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#exclusion GoogleComputeSecurityPolicy#exclusion}
+  */
+  readonly exclusion?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusion[] | cdktf.IResolvable;
+}
+
+export function googleComputeSecurityPolicyRulePreconfiguredWafConfigToTerraform(struct?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference | GoogleComputeSecurityPolicyRulePreconfiguredWafConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exclusion: cdktf.listMapper(googleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionToTerraform, true)(struct!.exclusion),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRulePreconfiguredWafConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._exclusion?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.exclusion = this._exclusion?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._exclusion.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._exclusion.internalValue = value.exclusion;
+    }
+  }
+
+  // exclusion - computed: false, optional: true, required: false
+  private _exclusion = new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusionList(this, "exclusion", false);
+  public get exclusion() {
+    return this._exclusion;
+  }
+  public putExclusion(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfigExclusion[] | cdktf.IResolvable) {
+    this._exclusion.internalValue = value;
+  }
+  public resetExclusion() {
+    this._exclusion.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get exclusionInput() {
+    return this._exclusion.internalValue;
+  }
+}
 export interface GoogleComputeSecurityPolicyRuleRateLimitOptionsBanThreshold {
   /**
   * Number of HTTP(S) requests for calculating the threshold.
@@ -1327,6 +2135,12 @@ export interface GoogleComputeSecurityPolicyRule {
   */
   readonly match: GoogleComputeSecurityPolicyRuleMatch;
   /**
+  * preconfigured_waf_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#preconfigured_waf_config GoogleComputeSecurityPolicy#preconfigured_waf_config}
+  */
+  readonly preconfiguredWafConfig?: GoogleComputeSecurityPolicyRulePreconfiguredWafConfig;
+  /**
   * rate_limit_options block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#rate_limit_options GoogleComputeSecurityPolicy#rate_limit_options}
@@ -1351,6 +2165,7 @@ export function googleComputeSecurityPolicyRuleToTerraform(struct?: GoogleComput
     preview: cdktf.booleanToTerraform(struct!.preview),
     priority: cdktf.numberToTerraform(struct!.priority),
     match: googleComputeSecurityPolicyRuleMatchToTerraform(struct!.match),
+    preconfigured_waf_config: googleComputeSecurityPolicyRulePreconfiguredWafConfigToTerraform(struct!.preconfiguredWafConfig),
     rate_limit_options: googleComputeSecurityPolicyRuleRateLimitOptionsToTerraform(struct!.rateLimitOptions),
     redirect_options: googleComputeSecurityPolicyRuleRedirectOptionsToTerraform(struct!.redirectOptions),
   }
@@ -1396,6 +2211,10 @@ export class GoogleComputeSecurityPolicyRuleOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
     }
+    if (this._preconfiguredWafConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preconfiguredWafConfig = this._preconfiguredWafConfig?.internalValue;
+    }
     if (this._rateLimitOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.rateLimitOptions = this._rateLimitOptions?.internalValue;
@@ -1416,6 +2235,7 @@ export class GoogleComputeSecurityPolicyRuleOutputReference extends cdktf.Comple
       this._preview = undefined;
       this._priority = undefined;
       this._match.internalValue = undefined;
+      this._preconfiguredWafConfig.internalValue = undefined;
       this._rateLimitOptions.internalValue = undefined;
       this._redirectOptions.internalValue = undefined;
     }
@@ -1431,6 +2251,7 @@ export class GoogleComputeSecurityPolicyRuleOutputReference extends cdktf.Comple
       this._preview = value.preview;
       this._priority = value.priority;
       this._match.internalValue = value.match;
+      this._preconfiguredWafConfig.internalValue = value.preconfiguredWafConfig;
       this._rateLimitOptions.internalValue = value.rateLimitOptions;
       this._redirectOptions.internalValue = value.redirectOptions;
     }
@@ -1505,6 +2326,22 @@ export class GoogleComputeSecurityPolicyRuleOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get matchInput() {
     return this._match.internalValue;
+  }
+
+  // preconfigured_waf_config - computed: false, optional: true, required: false
+  private _preconfiguredWafConfig = new GoogleComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference(this, "preconfigured_waf_config");
+  public get preconfiguredWafConfig() {
+    return this._preconfiguredWafConfig;
+  }
+  public putPreconfiguredWafConfig(value: GoogleComputeSecurityPolicyRulePreconfiguredWafConfig) {
+    this._preconfiguredWafConfig.internalValue = value;
+  }
+  public resetPreconfiguredWafConfig() {
+    this._preconfiguredWafConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preconfiguredWafConfigInput() {
+    return this._preconfiguredWafConfig.internalValue;
   }
 
   // rate_limit_options - computed: false, optional: true, required: false
@@ -1715,7 +2552,7 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

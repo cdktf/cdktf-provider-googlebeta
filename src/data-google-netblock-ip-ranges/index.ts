@@ -46,7 +46,7 @@ export class DataGoogleNetblockIpRanges extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_netblock_ip_ranges',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

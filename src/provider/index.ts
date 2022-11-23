@@ -52,6 +52,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly assuredWorkloadsCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#beyondcorp_custom_endpoint GoogleBetaProvider#beyondcorp_custom_endpoint}
+  */
+  readonly beyondcorpCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#big_query_custom_endpoint GoogleBetaProvider#big_query_custom_endpoint}
   */
   readonly bigQueryCustomEndpoint?: string;
@@ -255,6 +259,10 @@ export interface GoogleBetaProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebase_custom_endpoint GoogleBetaProvider#firebase_custom_endpoint}
   */
   readonly firebaseCustomEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebase_hosting_custom_endpoint GoogleBetaProvider#firebase_hosting_custom_endpoint}
+  */
+  readonly firebaseHostingCustomEndpoint?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebaserules_custom_endpoint GoogleBetaProvider#firebaserules_custom_endpoint}
   */
@@ -557,7 +565,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'
@@ -573,6 +581,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._appEngineCustomEndpoint = config.appEngineCustomEndpoint;
     this._artifactRegistryCustomEndpoint = config.artifactRegistryCustomEndpoint;
     this._assuredWorkloadsCustomEndpoint = config.assuredWorkloadsCustomEndpoint;
+    this._beyondcorpCustomEndpoint = config.beyondcorpCustomEndpoint;
     this._bigQueryCustomEndpoint = config.bigQueryCustomEndpoint;
     this._bigqueryAnalyticsHubCustomEndpoint = config.bigqueryAnalyticsHubCustomEndpoint;
     this._bigqueryConnectionCustomEndpoint = config.bigqueryConnectionCustomEndpoint;
@@ -624,6 +633,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._eventarcCustomEndpoint = config.eventarcCustomEndpoint;
     this._filestoreCustomEndpoint = config.filestoreCustomEndpoint;
     this._firebaseCustomEndpoint = config.firebaseCustomEndpoint;
+    this._firebaseHostingCustomEndpoint = config.firebaseHostingCustomEndpoint;
     this._firebaserulesCustomEndpoint = config.firebaserulesCustomEndpoint;
     this._firestoreCustomEndpoint = config.firestoreCustomEndpoint;
     this._gameServicesCustomEndpoint = config.gameServicesCustomEndpoint;
@@ -866,6 +876,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get assuredWorkloadsCustomEndpointInput() {
     return this._assuredWorkloadsCustomEndpoint;
+  }
+
+  // beyondcorp_custom_endpoint - computed: false, optional: true, required: false
+  private _beyondcorpCustomEndpoint?: string; 
+  public get beyondcorpCustomEndpoint() {
+    return this._beyondcorpCustomEndpoint;
+  }
+  public set beyondcorpCustomEndpoint(value: string | undefined) {
+    this._beyondcorpCustomEndpoint = value;
+  }
+  public resetBeyondcorpCustomEndpoint() {
+    this._beyondcorpCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get beyondcorpCustomEndpointInput() {
+    return this._beyondcorpCustomEndpoint;
   }
 
   // big_query_custom_endpoint - computed: false, optional: true, required: false
@@ -1682,6 +1708,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get firebaseCustomEndpointInput() {
     return this._firebaseCustomEndpoint;
+  }
+
+  // firebase_hosting_custom_endpoint - computed: false, optional: true, required: false
+  private _firebaseHostingCustomEndpoint?: string; 
+  public get firebaseHostingCustomEndpoint() {
+    return this._firebaseHostingCustomEndpoint;
+  }
+  public set firebaseHostingCustomEndpoint(value: string | undefined) {
+    this._firebaseHostingCustomEndpoint = value;
+  }
+  public resetFirebaseHostingCustomEndpoint() {
+    this._firebaseHostingCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firebaseHostingCustomEndpointInput() {
+    return this._firebaseHostingCustomEndpoint;
   }
 
   // firebaserules_custom_endpoint - computed: false, optional: true, required: false
@@ -2693,6 +2735,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       app_engine_custom_endpoint: cdktf.stringToTerraform(this._appEngineCustomEndpoint),
       artifact_registry_custom_endpoint: cdktf.stringToTerraform(this._artifactRegistryCustomEndpoint),
       assured_workloads_custom_endpoint: cdktf.stringToTerraform(this._assuredWorkloadsCustomEndpoint),
+      beyondcorp_custom_endpoint: cdktf.stringToTerraform(this._beyondcorpCustomEndpoint),
       big_query_custom_endpoint: cdktf.stringToTerraform(this._bigQueryCustomEndpoint),
       bigquery_analytics_hub_custom_endpoint: cdktf.stringToTerraform(this._bigqueryAnalyticsHubCustomEndpoint),
       bigquery_connection_custom_endpoint: cdktf.stringToTerraform(this._bigqueryConnectionCustomEndpoint),
@@ -2744,6 +2787,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       eventarc_custom_endpoint: cdktf.stringToTerraform(this._eventarcCustomEndpoint),
       filestore_custom_endpoint: cdktf.stringToTerraform(this._filestoreCustomEndpoint),
       firebase_custom_endpoint: cdktf.stringToTerraform(this._firebaseCustomEndpoint),
+      firebase_hosting_custom_endpoint: cdktf.stringToTerraform(this._firebaseHostingCustomEndpoint),
       firebaserules_custom_endpoint: cdktf.stringToTerraform(this._firebaserulesCustomEndpoint),
       firestore_custom_endpoint: cdktf.stringToTerraform(this._firestoreCustomEndpoint),
       game_services_custom_endpoint: cdktf.stringToTerraform(this._gameServicesCustomEndpoint),

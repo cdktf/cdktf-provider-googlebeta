@@ -195,7 +195,7 @@ export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_web_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

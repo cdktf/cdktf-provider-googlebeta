@@ -54,7 +54,7 @@ export class GoogleBinaryAuthorizationAttestorIamPolicy extends cdktf.TerraformR
       terraformResourceType: 'google_binary_authorization_attestor_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

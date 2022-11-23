@@ -3881,7 +3881,7 @@ export class GoogleAppEngineFlexibleAppVersion extends cdktf.TerraformResource {
       terraformResourceType: 'google_app_engine_flexible_app_version',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -4168,7 +4168,7 @@ export class GoogleAppEngineFlexibleAppVersion extends cdktf.TerraformResource {
     return this._service;
   }
 
-  // service_account - computed: false, optional: true, required: false
+  // service_account - computed: true, optional: true, required: false
   private _serviceAccount?: string; 
   public get serviceAccount() {
     return this.getStringAttribute('service_account');

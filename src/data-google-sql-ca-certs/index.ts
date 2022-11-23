@@ -134,7 +134,7 @@ export class DataGoogleSqlCaCerts extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_sql_ca_certs',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

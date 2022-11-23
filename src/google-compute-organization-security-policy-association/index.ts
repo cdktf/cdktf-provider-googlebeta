@@ -168,7 +168,7 @@ export class GoogleComputeOrganizationSecurityPolicyAssociation extends cdktf.Te
       terraformResourceType: 'google_compute_organization_security_policy_association',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
