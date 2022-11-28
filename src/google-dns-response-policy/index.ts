@@ -31,6 +31,12 @@ export interface GoogleDnsResponsePolicyConfig extends cdktf.TerraformMetaArgume
   */
   readonly responsePolicyName: string;
   /**
+  * gke_clusters block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy#gke_clusters GoogleDnsResponsePolicy#gke_clusters}
+  */
+  readonly gkeClusters?: GoogleDnsResponsePolicyGkeClusters[] | cdktf.IResolvable;
+  /**
   * networks block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy#networks GoogleDnsResponsePolicy#networks}
@@ -42,6 +48,104 @@ export interface GoogleDnsResponsePolicyConfig extends cdktf.TerraformMetaArgume
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy#timeouts GoogleDnsResponsePolicy#timeouts}
   */
   readonly timeouts?: GoogleDnsResponsePolicyTimeouts;
+}
+export interface GoogleDnsResponsePolicyGkeClusters {
+  /**
+  * The resource name of the cluster to bind this ManagedZone to.  
+This should be specified in the format like  
+'projects/*\/locations/*\/clusters/*'
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy#gke_cluster_name GoogleDnsResponsePolicy#gke_cluster_name}
+  */
+  readonly gkeClusterName: string;
+}
+
+export function googleDnsResponsePolicyGkeClustersToTerraform(struct?: GoogleDnsResponsePolicyGkeClusters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    gke_cluster_name: cdktf.stringToTerraform(struct!.gkeClusterName),
+  }
+}
+
+export class GoogleDnsResponsePolicyGkeClustersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDnsResponsePolicyGkeClusters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._gkeClusterName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gkeClusterName = this._gkeClusterName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDnsResponsePolicyGkeClusters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._gkeClusterName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._gkeClusterName = value.gkeClusterName;
+    }
+  }
+
+  // gke_cluster_name - computed: false, optional: false, required: true
+  private _gkeClusterName?: string; 
+  public get gkeClusterName() {
+    return this.getStringAttribute('gke_cluster_name');
+  }
+  public set gkeClusterName(value: string) {
+    this._gkeClusterName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gkeClusterNameInput() {
+    return this._gkeClusterName;
+  }
+}
+
+export class GoogleDnsResponsePolicyGkeClustersList extends cdktf.ComplexList {
+  public internalValue? : GoogleDnsResponsePolicyGkeClusters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDnsResponsePolicyGkeClustersOutputReference {
+    return new GoogleDnsResponsePolicyGkeClustersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface GoogleDnsResponsePolicyNetworks {
   /**
@@ -297,7 +401,7 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_dns_response_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -312,6 +416,7 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
     this._id = config.id;
     this._project = config.project;
     this._responsePolicyName = config.responsePolicyName;
+    this._gkeClusters.internalValue = config.gkeClusters;
     this._networks.internalValue = config.networks;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -381,6 +486,22 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
     return this._responsePolicyName;
   }
 
+  // gke_clusters - computed: false, optional: true, required: false
+  private _gkeClusters = new GoogleDnsResponsePolicyGkeClustersList(this, "gke_clusters", false);
+  public get gkeClusters() {
+    return this._gkeClusters;
+  }
+  public putGkeClusters(value: GoogleDnsResponsePolicyGkeClusters[] | cdktf.IResolvable) {
+    this._gkeClusters.internalValue = value;
+  }
+  public resetGkeClusters() {
+    this._gkeClusters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gkeClustersInput() {
+    return this._gkeClusters.internalValue;
+  }
+
   // networks - computed: false, optional: true, required: false
   private _networks = new GoogleDnsResponsePolicyNetworksList(this, "networks", false);
   public get networks() {
@@ -423,6 +544,7 @@ export class GoogleDnsResponsePolicy extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       response_policy_name: cdktf.stringToTerraform(this._responsePolicyName),
+      gke_clusters: cdktf.listMapper(googleDnsResponsePolicyGkeClustersToTerraform, true)(this._gkeClusters.internalValue),
       networks: cdktf.listMapper(googleDnsResponsePolicyNetworksToTerraform, true)(this._networks.internalValue),
       timeouts: googleDnsResponsePolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };

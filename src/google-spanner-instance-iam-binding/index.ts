@@ -177,7 +177,7 @@ export class GoogleSpannerInstanceIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_spanner_instance_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

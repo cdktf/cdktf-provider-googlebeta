@@ -129,7 +129,7 @@ export class DataGoogleComputeForwardingRule extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_forwarding_rule',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

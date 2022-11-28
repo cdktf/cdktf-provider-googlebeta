@@ -222,7 +222,7 @@ export class GoogleComputeTargetGrpcProxy extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_target_grpc_proxy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
