@@ -181,7 +181,7 @@ export class GoogleDataprocAutoscalingPolicyIamBinding extends cdktf.TerraformRe
       terraformResourceType: 'google_dataproc_autoscaling_policy_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

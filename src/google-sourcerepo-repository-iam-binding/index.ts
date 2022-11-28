@@ -177,7 +177,7 @@ export class GoogleSourcerepoRepositoryIamBinding extends cdktf.TerraformResourc
       terraformResourceType: 'google_sourcerepo_repository_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

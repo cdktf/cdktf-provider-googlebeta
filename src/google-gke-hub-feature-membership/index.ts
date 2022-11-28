@@ -43,7 +43,13 @@ export interface GoogleGkeHubFeatureMembershipConfig extends cdktf.TerraformMeta
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#configmanagement GoogleGkeHubFeatureMembership#configmanagement}
   */
-  readonly configmanagement: GoogleGkeHubFeatureMembershipConfigmanagement;
+  readonly configmanagement?: GoogleGkeHubFeatureMembershipConfigmanagement;
+  /**
+  * mesh block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#mesh GoogleGkeHubFeatureMembership#mesh}
+  */
+  readonly mesh?: GoogleGkeHubFeatureMembershipMesh;
   /**
   * timeouts block
   * 
@@ -1158,6 +1164,73 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementOutputReference extend
     return this._policyController.internalValue;
   }
 }
+export interface GoogleGkeHubFeatureMembershipMesh {
+  /**
+  * Whether to automatically manage Service Mesh. Possible values: MANAGEMENT_UNSPECIFIED, MANAGEMENT_AUTOMATIC, MANAGEMENT_MANUAL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#management GoogleGkeHubFeatureMembership#management}
+  */
+  readonly management?: string;
+}
+
+export function googleGkeHubFeatureMembershipMeshToTerraform(struct?: GoogleGkeHubFeatureMembershipMeshOutputReference | GoogleGkeHubFeatureMembershipMesh): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    management: cdktf.stringToTerraform(struct!.management),
+  }
+}
+
+export class GoogleGkeHubFeatureMembershipMeshOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleGkeHubFeatureMembershipMesh | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._management !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.management = this._management;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleGkeHubFeatureMembershipMesh | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._management = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._management = value.management;
+    }
+  }
+
+  // management - computed: false, optional: true, required: false
+  private _management?: string; 
+  public get management() {
+    return this.getStringAttribute('management');
+  }
+  public set management(value: string) {
+    this._management = value;
+  }
+  public resetManagement() {
+    this._management = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get managementInput() {
+    return this._management;
+  }
+}
 export interface GoogleGkeHubFeatureMembershipTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#create GoogleGkeHubFeatureMembership#create}
@@ -1314,7 +1387,7 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_feature_membership',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1331,6 +1404,7 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
     this._membership = config.membership;
     this._project = config.project;
     this._configmanagement.internalValue = config.configmanagement;
+    this._mesh.internalValue = config.mesh;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -1409,7 +1483,7 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
     return this._project;
   }
 
-  // configmanagement - computed: false, optional: false, required: true
+  // configmanagement - computed: false, optional: true, required: false
   private _configmanagement = new GoogleGkeHubFeatureMembershipConfigmanagementOutputReference(this, "configmanagement");
   public get configmanagement() {
     return this._configmanagement;
@@ -1417,9 +1491,28 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
   public putConfigmanagement(value: GoogleGkeHubFeatureMembershipConfigmanagement) {
     this._configmanagement.internalValue = value;
   }
+  public resetConfigmanagement() {
+    this._configmanagement.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get configmanagementInput() {
     return this._configmanagement.internalValue;
+  }
+
+  // mesh - computed: false, optional: true, required: false
+  private _mesh = new GoogleGkeHubFeatureMembershipMeshOutputReference(this, "mesh");
+  public get mesh() {
+    return this._mesh;
+  }
+  public putMesh(value: GoogleGkeHubFeatureMembershipMesh) {
+    this._mesh.internalValue = value;
+  }
+  public resetMesh() {
+    this._mesh.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get meshInput() {
+    return this._mesh.internalValue;
   }
 
   // timeouts - computed: false, optional: true, required: false
@@ -1450,6 +1543,7 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
       membership: cdktf.stringToTerraform(this._membership),
       project: cdktf.stringToTerraform(this._project),
       configmanagement: googleGkeHubFeatureMembershipConfigmanagementToTerraform(this._configmanagement.internalValue),
+      mesh: googleGkeHubFeatureMembershipMeshToTerraform(this._mesh.internalValue),
       timeouts: googleGkeHubFeatureMembershipTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

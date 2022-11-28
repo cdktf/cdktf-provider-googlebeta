@@ -75,6 +75,12 @@ export interface GoogleClouddeployTargetConfig extends cdktf.TerraformMetaArgume
   */
   readonly gke?: GoogleClouddeployTargetGke;
   /**
+  * run block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#run GoogleClouddeployTarget#run}
+  */
+  readonly run?: GoogleClouddeployTargetRun;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#timeouts GoogleClouddeployTarget#timeouts}
@@ -156,6 +162,12 @@ export interface GoogleClouddeployTargetExecutionConfigs {
   */
   readonly artifactStorage?: string;
   /**
+  * Optional. Execution timeout for a Cloud Build Execution. This must be between 10m and 24h in seconds format. If unspecified, a default timeout of 1h is used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#execution_timeout GoogleClouddeployTarget#execution_timeout}
+  */
+  readonly executionTimeout?: string;
+  /**
   * Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) is used.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#service_account GoogleClouddeployTarget#service_account}
@@ -182,6 +194,7 @@ export function googleClouddeployTargetExecutionConfigsToTerraform(struct?: Goog
   }
   return {
     artifact_storage: cdktf.stringToTerraform(struct!.artifactStorage),
+    execution_timeout: cdktf.stringToTerraform(struct!.executionTimeout),
     service_account: cdktf.stringToTerraform(struct!.serviceAccount),
     usages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.usages),
     worker_pool: cdktf.stringToTerraform(struct!.workerPool),
@@ -212,6 +225,10 @@ export class GoogleClouddeployTargetExecutionConfigsOutputReference extends cdkt
       hasAnyValues = true;
       internalValueResult.artifactStorage = this._artifactStorage;
     }
+    if (this._executionTimeout !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.executionTimeout = this._executionTimeout;
+    }
     if (this._serviceAccount !== undefined) {
       hasAnyValues = true;
       internalValueResult.serviceAccount = this._serviceAccount;
@@ -232,6 +249,7 @@ export class GoogleClouddeployTargetExecutionConfigsOutputReference extends cdkt
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._artifactStorage = undefined;
+      this._executionTimeout = undefined;
       this._serviceAccount = undefined;
       this._usages = undefined;
       this._workerPool = undefined;
@@ -244,6 +262,7 @@ export class GoogleClouddeployTargetExecutionConfigsOutputReference extends cdkt
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._artifactStorage = value.artifactStorage;
+      this._executionTimeout = value.executionTimeout;
       this._serviceAccount = value.serviceAccount;
       this._usages = value.usages;
       this._workerPool = value.workerPool;
@@ -264,6 +283,22 @@ export class GoogleClouddeployTargetExecutionConfigsOutputReference extends cdkt
   // Temporarily expose input value. Use with caution.
   public get artifactStorageInput() {
     return this._artifactStorage;
+  }
+
+  // execution_timeout - computed: true, optional: true, required: false
+  private _executionTimeout?: string; 
+  public get executionTimeout() {
+    return this.getStringAttribute('execution_timeout');
+  }
+  public set executionTimeout(value: string) {
+    this._executionTimeout = value;
+  }
+  public resetExecutionTimeout() {
+    this._executionTimeout = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get executionTimeoutInput() {
+    return this._executionTimeout;
   }
 
   // service_account - computed: true, optional: true, required: false
@@ -427,6 +462,70 @@ export class GoogleClouddeployTargetGkeOutputReference extends cdktf.ComplexObje
     return this._internalIp;
   }
 }
+export interface GoogleClouddeployTargetRun {
+  /**
+  * Required. The location where the Cloud Run Service should be located. Format is `projects/{project}/locations/{location}`.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#location GoogleClouddeployTarget#location}
+  */
+  readonly location: string;
+}
+
+export function googleClouddeployTargetRunToTerraform(struct?: GoogleClouddeployTargetRunOutputReference | GoogleClouddeployTargetRun): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    location: cdktf.stringToTerraform(struct!.location),
+  }
+}
+
+export class GoogleClouddeployTargetRunOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleClouddeployTargetRun | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._location !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.location = this._location;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleClouddeployTargetRun | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._location = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._location = value.location;
+    }
+  }
+
+  // location - computed: false, optional: false, required: true
+  private _location?: string; 
+  public get location() {
+    return this.getStringAttribute('location');
+  }
+  public set location(value: string) {
+    this._location = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationInput() {
+    return this._location;
+  }
+}
 export interface GoogleClouddeployTargetTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#create GoogleClouddeployTarget#create}
@@ -583,7 +682,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
       terraformResourceType: 'google_clouddeploy_target',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -605,6 +704,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
     this._anthosCluster.internalValue = config.anthosCluster;
     this._executionConfigs.internalValue = config.executionConfigs;
     this._gke.internalValue = config.gke;
+    this._run.internalValue = config.run;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -807,6 +907,22 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
     return this._gke.internalValue;
   }
 
+  // run - computed: false, optional: true, required: false
+  private _run = new GoogleClouddeployTargetRunOutputReference(this, "run");
+  public get run() {
+    return this._run;
+  }
+  public putRun(value: GoogleClouddeployTargetRun) {
+    this._run.internalValue = value;
+  }
+  public resetRun() {
+    this._run.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get runInput() {
+    return this._run.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleClouddeployTargetTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -840,6 +956,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
       anthos_cluster: googleClouddeployTargetAnthosClusterToTerraform(this._anthosCluster.internalValue),
       execution_configs: cdktf.listMapper(googleClouddeployTargetExecutionConfigsToTerraform, true)(this._executionConfigs.internalValue),
       gke: googleClouddeployTargetGkeToTerraform(this._gke.internalValue),
+      run: googleClouddeployTargetRunToTerraform(this._run.internalValue),
       timeouts: googleClouddeployTargetTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
