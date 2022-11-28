@@ -58,6 +58,70 @@ or 'projects/{{project}}/locations/{{location}}'
   */
   readonly triggers: GoogleDataLossPreventionJobTriggerTriggers[] | cdktf.IResolvable;
 }
+export interface GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub {
+  /**
+  * Cloud Pub/Sub topic to send notifications to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_job_trigger#topic GoogleDataLossPreventionJobTrigger#topic}
+  */
+  readonly topic: string;
+}
+
+export function googleDataLossPreventionJobTriggerInspectJobActionsPubSubToTerraform(struct?: GoogleDataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference | GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    topic: cdktf.stringToTerraform(struct!.topic),
+  }
+}
+
+export class GoogleDataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._topic !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.topic = this._topic;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._topic = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._topic = value.topic;
+    }
+  }
+
+  // topic - computed: false, optional: false, required: true
+  private _topic?: string; 
+  public get topic() {
+    return this.getStringAttribute('topic');
+  }
+  public set topic(value: string) {
+    this._topic = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicInput() {
+    return this._topic;
+  }
+}
 export interface GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable {
   /**
   * Dataset ID of the table.
@@ -344,11 +408,17 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutp
 }
 export interface GoogleDataLossPreventionJobTriggerInspectJobActions {
   /**
+  * pub_sub block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_job_trigger#pub_sub GoogleDataLossPreventionJobTrigger#pub_sub}
+  */
+  readonly pubSub?: GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub;
+  /**
   * save_findings block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_job_trigger#save_findings GoogleDataLossPreventionJobTrigger#save_findings}
   */
-  readonly saveFindings: GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings;
+  readonly saveFindings?: GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings;
 }
 
 export function googleDataLossPreventionJobTriggerInspectJobActionsToTerraform(struct?: GoogleDataLossPreventionJobTriggerInspectJobActions | cdktf.IResolvable): any {
@@ -357,6 +427,7 @@ export function googleDataLossPreventionJobTriggerInspectJobActionsToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    pub_sub: googleDataLossPreventionJobTriggerInspectJobActionsPubSubToTerraform(struct!.pubSub),
     save_findings: googleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsToTerraform(struct!.saveFindings),
   }
 }
@@ -381,6 +452,10 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference 
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._pubSub?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pubSub = this._pubSub?.internalValue;
+    }
     if (this._saveFindings?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.saveFindings = this._saveFindings?.internalValue;
@@ -392,6 +467,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference 
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._pubSub.internalValue = undefined;
       this._saveFindings.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -401,17 +477,37 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference 
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._pubSub.internalValue = value.pubSub;
       this._saveFindings.internalValue = value.saveFindings;
     }
   }
 
-  // save_findings - computed: false, optional: false, required: true
+  // pub_sub - computed: false, optional: true, required: false
+  private _pubSub = new GoogleDataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference(this, "pub_sub");
+  public get pubSub() {
+    return this._pubSub;
+  }
+  public putPubSub(value: GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub) {
+    this._pubSub.internalValue = value;
+  }
+  public resetPubSub() {
+    this._pubSub.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pubSubInput() {
+    return this._pubSub.internalValue;
+  }
+
+  // save_findings - computed: false, optional: true, required: false
   private _saveFindings = new GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference(this, "save_findings");
   public get saveFindings() {
     return this._saveFindings;
   }
   public putSaveFindings(value: GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings) {
     this._saveFindings.internalValue = value;
+  }
+  public resetSaveFindings() {
+    this._saveFindings.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get saveFindingsInput() {
@@ -556,6 +652,29 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 }
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions {
   /**
+  * Max number of rows to scan. If the table has more rows than this value, the rest of the rows are omitted. 
+If not set, or if set to 0, all rows will be scanned. Only one of rowsLimit and rowsLimitPercent can be 
+specified. Cannot be used in conjunction with TimespanConfig.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_job_trigger#rows_limit GoogleDataLossPreventionJobTrigger#rows_limit}
+  */
+  readonly rowsLimit?: number;
+  /**
+  * Max percentage of rows to scan. The rest are omitted. The number of rows scanned is rounded down. 
+Must be between 0 and 100, inclusively. Both 0 and 100 means no limit. Defaults to 0. Only one of 
+rowsLimit and rowsLimitPercent can be specified. Cannot be used in conjunction with TimespanConfig.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_job_trigger#rows_limit_percent GoogleDataLossPreventionJobTrigger#rows_limit_percent}
+  */
+  readonly rowsLimitPercent?: number;
+  /**
+  * How to sample rows if not all rows are scanned. Meaningful only when used in conjunction with either 
+rowsLimit or rowsLimitPercent. If not specified, rows are scanned in the order BigQuery reads them. Default value: "TOP" Possible values: ["TOP", "RANDOM_START"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_job_trigger#sample_method GoogleDataLossPreventionJobTrigger#sample_method}
+  */
+  readonly sampleMethod?: string;
+  /**
   * table_reference block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_job_trigger#table_reference GoogleDataLossPreventionJobTrigger#table_reference}
@@ -569,6 +688,9 @@ export function googleDataLossPreventionJobTriggerInspectJobStorageConfigBigQuer
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    rows_limit: cdktf.numberToTerraform(struct!.rowsLimit),
+    rows_limit_percent: cdktf.numberToTerraform(struct!.rowsLimitPercent),
+    sample_method: cdktf.stringToTerraform(struct!.sampleMethod),
     table_reference: googleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceToTerraform(struct!.tableReference),
   }
 }
@@ -587,6 +709,18 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
   public get internalValue(): GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._rowsLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rowsLimit = this._rowsLimit;
+    }
+    if (this._rowsLimitPercent !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rowsLimitPercent = this._rowsLimitPercent;
+    }
+    if (this._sampleMethod !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sampleMethod = this._sampleMethod;
+    }
     if (this._tableReference?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tableReference = this._tableReference?.internalValue;
@@ -597,12 +731,66 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
   public set internalValue(value: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._rowsLimit = undefined;
+      this._rowsLimitPercent = undefined;
+      this._sampleMethod = undefined;
       this._tableReference.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._rowsLimit = value.rowsLimit;
+      this._rowsLimitPercent = value.rowsLimitPercent;
+      this._sampleMethod = value.sampleMethod;
       this._tableReference.internalValue = value.tableReference;
     }
+  }
+
+  // rows_limit - computed: false, optional: true, required: false
+  private _rowsLimit?: number; 
+  public get rowsLimit() {
+    return this.getNumberAttribute('rows_limit');
+  }
+  public set rowsLimit(value: number) {
+    this._rowsLimit = value;
+  }
+  public resetRowsLimit() {
+    this._rowsLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rowsLimitInput() {
+    return this._rowsLimit;
+  }
+
+  // rows_limit_percent - computed: false, optional: true, required: false
+  private _rowsLimitPercent?: number; 
+  public get rowsLimitPercent() {
+    return this.getNumberAttribute('rows_limit_percent');
+  }
+  public set rowsLimitPercent(value: number) {
+    this._rowsLimitPercent = value;
+  }
+  public resetRowsLimitPercent() {
+    this._rowsLimitPercent = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rowsLimitPercentInput() {
+    return this._rowsLimitPercent;
+  }
+
+  // sample_method - computed: false, optional: true, required: false
+  private _sampleMethod?: string; 
+  public get sampleMethod() {
+    return this.getStringAttribute('sample_method');
+  }
+  public set sampleMethod(value: string) {
+    this._sampleMethod = value;
+  }
+  public resetSampleMethod() {
+    this._sampleMethod = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sampleMethodInput() {
+    return this._sampleMethod;
   }
 
   // table_reference - computed: false, optional: false, required: true
@@ -2129,7 +2317,7 @@ export class GoogleDataLossPreventionJobTrigger extends cdktf.TerraformResource 
       terraformResourceType: 'google_data_loss_prevention_job_trigger',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

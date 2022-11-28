@@ -542,7 +542,7 @@ export class GoogleBigqueryDataTransferConfig extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_data_transfer_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

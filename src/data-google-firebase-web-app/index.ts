@@ -8,8 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleFirebaseWebAppConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Immutable. The globally unique, Firebase-assigned identifier of the App.
-
+  * The globally unique, Firebase-assigned identifier of the App.
 This identifier should be treated as an opaque token, as the data format is not specified.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_web_app#app_id DataGoogleFirebaseWebApp#app_id}
@@ -50,7 +49,7 @@ export class DataGoogleFirebaseWebApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_firebase_web_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.43.0',
+        providerVersion: '4.44.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
