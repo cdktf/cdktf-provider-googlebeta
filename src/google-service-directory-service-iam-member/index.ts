@@ -173,7 +173,7 @@ export class GoogleServiceDirectoryServiceIamMember extends cdktf.TerraformResou
       terraformResourceType: 'google_service_directory_service_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.44.1',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

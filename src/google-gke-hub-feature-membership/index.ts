@@ -1166,6 +1166,12 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementOutputReference extend
 }
 export interface GoogleGkeHubFeatureMembershipMesh {
   /**
+  * Whether to automatically manage Service Mesh control planes. Possible values: CONTROL_PLANE_MANAGEMENT_UNSPECIFIED, AUTOMATIC, MANUAL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#control_plane GoogleGkeHubFeatureMembership#control_plane}
+  */
+  readonly controlPlane?: string;
+  /**
   * Whether to automatically manage Service Mesh. Possible values: MANAGEMENT_UNSPECIFIED, MANAGEMENT_AUTOMATIC, MANAGEMENT_MANUAL
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#management GoogleGkeHubFeatureMembership#management}
@@ -1179,6 +1185,7 @@ export function googleGkeHubFeatureMembershipMeshToTerraform(struct?: GoogleGkeH
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    control_plane: cdktf.stringToTerraform(struct!.controlPlane),
     management: cdktf.stringToTerraform(struct!.management),
   }
 }
@@ -1197,6 +1204,10 @@ export class GoogleGkeHubFeatureMembershipMeshOutputReference extends cdktf.Comp
   public get internalValue(): GoogleGkeHubFeatureMembershipMesh | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._controlPlane !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.controlPlane = this._controlPlane;
+    }
     if (this._management !== undefined) {
       hasAnyValues = true;
       internalValueResult.management = this._management;
@@ -1207,12 +1218,30 @@ export class GoogleGkeHubFeatureMembershipMeshOutputReference extends cdktf.Comp
   public set internalValue(value: GoogleGkeHubFeatureMembershipMesh | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._controlPlane = undefined;
       this._management = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._controlPlane = value.controlPlane;
       this._management = value.management;
     }
+  }
+
+  // control_plane - computed: false, optional: true, required: false
+  private _controlPlane?: string; 
+  public get controlPlane() {
+    return this.getStringAttribute('control_plane');
+  }
+  public set controlPlane(value: string) {
+    this._controlPlane = value;
+  }
+  public resetControlPlane() {
+    this._controlPlane = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get controlPlaneInput() {
+    return this._controlPlane;
   }
 
   // management - computed: false, optional: true, required: false
@@ -1387,7 +1416,7 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_feature_membership',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.44.1',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

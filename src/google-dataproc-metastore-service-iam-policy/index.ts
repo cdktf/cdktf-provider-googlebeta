@@ -58,7 +58,7 @@ export class GoogleDataprocMetastoreServiceIamPolicy extends cdktf.TerraformReso
       terraformResourceType: 'google_dataproc_metastore_service_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.44.1',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

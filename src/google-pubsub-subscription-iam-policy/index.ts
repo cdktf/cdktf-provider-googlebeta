@@ -54,7 +54,7 @@ export class GooglePubsubSubscriptionIamPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_pubsub_subscription_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.44.1',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
