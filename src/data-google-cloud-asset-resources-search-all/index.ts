@@ -159,7 +159,7 @@ export class DataGoogleCloudAssetResourcesSearchAll extends cdktf.TerraformDataS
       terraformResourceType: 'google_cloud_asset_resources_search_all',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.44.1',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

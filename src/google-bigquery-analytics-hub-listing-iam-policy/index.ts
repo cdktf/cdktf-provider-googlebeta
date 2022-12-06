@@ -62,7 +62,7 @@ export class GoogleBigqueryAnalyticsHubListingIamPolicy extends cdktf.TerraformR
       terraformResourceType: 'google_bigquery_analytics_hub_listing_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.44.1',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

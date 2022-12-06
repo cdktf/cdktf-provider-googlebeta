@@ -2707,6 +2707,11 @@ export class DataGoogleContainerClusterMasterAuthorizedNetworksConfigOutputRefer
   public get cidrBlocks() {
     return this._cidrBlocks;
   }
+
+  // gcp_public_cidrs_access_enabled - computed: true, optional: false, required: false
+  public get gcpPublicCidrsAccessEnabled() {
+    return this.getBooleanAttribute('gcp_public_cidrs_access_enabled');
+  }
 }
 
 export class DataGoogleContainerClusterMasterAuthorizedNetworksConfigList extends cdktf.ComplexList {
@@ -3968,6 +3973,12 @@ export class DataGoogleContainerClusterNodeConfigOutputReference extends cdktf.C
     return this._reservationAffinity;
   }
 
+  // resource_labels - computed: true, optional: false, required: false
+  private _resourceLabels = new cdktf.StringMap(this, "resource_labels");
+  public get resourceLabels() {
+    return this._resourceLabels;
+  }
+
   // sandbox_config - computed: true, optional: false, required: false
   private _sandboxConfig = new DataGoogleContainerClusterNodeConfigSandboxConfigList(this, "sandbox_config", false);
   public get sandboxConfig() {
@@ -4222,6 +4233,11 @@ export class DataGoogleContainerClusterNodePoolNetworkConfigOutputReference exte
   // create_pod_range - computed: true, optional: false, required: false
   public get createPodRange() {
     return this.getBooleanAttribute('create_pod_range');
+  }
+
+  // enable_private_nodes - computed: true, optional: false, required: false
+  public get enablePrivateNodes() {
+    return this.getBooleanAttribute('enable_private_nodes');
   }
 
   // pod_ipv4_cidr_block - computed: true, optional: false, required: false
@@ -5225,6 +5241,12 @@ export class DataGoogleContainerClusterNodePoolNodeConfigOutputReference extends
   private _reservationAffinity = new DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList(this, "reservation_affinity", false);
   public get reservationAffinity() {
     return this._reservationAffinity;
+  }
+
+  // resource_labels - computed: true, optional: false, required: false
+  private _resourceLabels = new cdktf.StringMap(this, "resource_labels");
+  public get resourceLabels() {
+    return this._resourceLabels;
   }
 
   // sandbox_config - computed: true, optional: false, required: false
@@ -6444,6 +6466,11 @@ export class DataGoogleContainerClusterPrivateClusterConfigOutputReference exten
     return this.getStringAttribute('private_endpoint');
   }
 
+  // private_endpoint_subnetwork - computed: true, optional: false, required: false
+  public get privateEndpointSubnetwork() {
+    return this.getStringAttribute('private_endpoint_subnetwork');
+  }
+
   // public_endpoint - computed: true, optional: false, required: false
   public get publicEndpoint() {
     return this.getStringAttribute('public_endpoint');
@@ -6964,7 +6991,7 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.44.1',
+        providerVersion: '4.45.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
