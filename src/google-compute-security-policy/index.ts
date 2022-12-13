@@ -51,6 +51,12 @@ export interface GoogleComputeSecurityPolicyConfig extends cdktf.TerraformMetaAr
   */
   readonly advancedOptionsConfig?: GoogleComputeSecurityPolicyAdvancedOptionsConfig;
   /**
+  * recaptcha_options_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#recaptcha_options_config GoogleComputeSecurityPolicy#recaptcha_options_config}
+  */
+  readonly recaptchaOptionsConfig?: GoogleComputeSecurityPolicyRecaptchaOptionsConfig;
+  /**
   * rule block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#rule GoogleComputeSecurityPolicy#rule}
@@ -413,6 +419,259 @@ export class GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference ext
   // Temporarily expose input value. Use with caution.
   public get jsonCustomConfigInput() {
     return this._jsonCustomConfig.internalValue;
+  }
+}
+export interface GoogleComputeSecurityPolicyRecaptchaOptionsConfig {
+  /**
+  * A field to supply a reCAPTCHA site key to be used for all the rules using the redirect action with the type of GOOGLE_RECAPTCHA under the security policy. The specified site key needs to be created from the reCAPTCHA API. The user is responsible for the validity of the specified site key. If not specified, a Google-managed site key is used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#redirect_site_key GoogleComputeSecurityPolicy#redirect_site_key}
+  */
+  readonly redirectSiteKey: string;
+}
+
+export function googleComputeSecurityPolicyRecaptchaOptionsConfigToTerraform(struct?: GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference | GoogleComputeSecurityPolicyRecaptchaOptionsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    redirect_site_key: cdktf.stringToTerraform(struct!.redirectSiteKey),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRecaptchaOptionsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._redirectSiteKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.redirectSiteKey = this._redirectSiteKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRecaptchaOptionsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._redirectSiteKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._redirectSiteKey = value.redirectSiteKey;
+    }
+  }
+
+  // redirect_site_key - computed: false, optional: false, required: true
+  private _redirectSiteKey?: string; 
+  public get redirectSiteKey() {
+    return this.getStringAttribute('redirect_site_key');
+  }
+  public set redirectSiteKey(value: string) {
+    this._redirectSiteKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get redirectSiteKeyInput() {
+    return this._redirectSiteKey;
+  }
+}
+export interface GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds {
+  /**
+  * The name of the header to set.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#header_name GoogleComputeSecurityPolicy#header_name}
+  */
+  readonly headerName: string;
+  /**
+  * The value to set the named header to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#header_value GoogleComputeSecurityPolicy#header_value}
+  */
+  readonly headerValue?: string;
+}
+
+export function googleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsToTerraform(struct?: GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    header_name: cdktf.stringToTerraform(struct!.headerName),
+    header_value: cdktf.stringToTerraform(struct!.headerValue),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._headerName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerName = this._headerName;
+    }
+    if (this._headerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerValue = this._headerValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._headerName = undefined;
+      this._headerValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._headerName = value.headerName;
+      this._headerValue = value.headerValue;
+    }
+  }
+
+  // header_name - computed: false, optional: false, required: true
+  private _headerName?: string; 
+  public get headerName() {
+    return this.getStringAttribute('header_name');
+  }
+  public set headerName(value: string) {
+    this._headerName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerNameInput() {
+    return this._headerName;
+  }
+
+  // header_value - computed: false, optional: true, required: false
+  private _headerValue?: string; 
+  public get headerValue() {
+    return this.getStringAttribute('header_value');
+  }
+  public set headerValue(value: string) {
+    this._headerValue = value;
+  }
+  public resetHeaderValue() {
+    this._headerValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerValueInput() {
+    return this._headerValue;
+  }
+}
+
+export class GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference {
+    return new GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeSecurityPolicyRuleHeaderAction {
+  /**
+  * request_headers_to_adds block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#request_headers_to_adds GoogleComputeSecurityPolicy#request_headers_to_adds}
+  */
+  readonly requestHeadersToAdds: GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds[] | cdktf.IResolvable;
+}
+
+export function googleComputeSecurityPolicyRuleHeaderActionToTerraform(struct?: GoogleComputeSecurityPolicyRuleHeaderActionOutputReference | GoogleComputeSecurityPolicyRuleHeaderAction): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    request_headers_to_adds: cdktf.listMapper(googleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsToTerraform, true)(struct!.requestHeadersToAdds),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRuleHeaderActionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRuleHeaderAction | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._requestHeadersToAdds?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requestHeadersToAdds = this._requestHeadersToAdds?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRuleHeaderAction | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._requestHeadersToAdds.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._requestHeadersToAdds.internalValue = value.requestHeadersToAdds;
+    }
+  }
+
+  // request_headers_to_adds - computed: false, optional: false, required: true
+  private _requestHeadersToAdds = new GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsList(this, "request_headers_to_adds", false);
+  public get requestHeadersToAdds() {
+    return this._requestHeadersToAdds;
+  }
+  public putRequestHeadersToAdds(value: GoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAdds[] | cdktf.IResolvable) {
+    this._requestHeadersToAdds.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requestHeadersToAddsInput() {
+    return this._requestHeadersToAdds.internalValue;
   }
 }
 export interface GoogleComputeSecurityPolicyRuleMatchConfig {
@@ -2129,6 +2388,12 @@ export interface GoogleComputeSecurityPolicyRule {
   */
   readonly priority: number;
   /**
+  * header_action block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#header_action GoogleComputeSecurityPolicy#header_action}
+  */
+  readonly headerAction?: GoogleComputeSecurityPolicyRuleHeaderAction;
+  /**
   * match block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#match GoogleComputeSecurityPolicy#match}
@@ -2164,6 +2429,7 @@ export function googleComputeSecurityPolicyRuleToTerraform(struct?: GoogleComput
     description: cdktf.stringToTerraform(struct!.description),
     preview: cdktf.booleanToTerraform(struct!.preview),
     priority: cdktf.numberToTerraform(struct!.priority),
+    header_action: googleComputeSecurityPolicyRuleHeaderActionToTerraform(struct!.headerAction),
     match: googleComputeSecurityPolicyRuleMatchToTerraform(struct!.match),
     preconfigured_waf_config: googleComputeSecurityPolicyRulePreconfiguredWafConfigToTerraform(struct!.preconfiguredWafConfig),
     rate_limit_options: googleComputeSecurityPolicyRuleRateLimitOptionsToTerraform(struct!.rateLimitOptions),
@@ -2207,6 +2473,10 @@ export class GoogleComputeSecurityPolicyRuleOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.priority = this._priority;
     }
+    if (this._headerAction?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headerAction = this._headerAction?.internalValue;
+    }
     if (this._match?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.match = this._match?.internalValue;
@@ -2234,6 +2504,7 @@ export class GoogleComputeSecurityPolicyRuleOutputReference extends cdktf.Comple
       this._description = undefined;
       this._preview = undefined;
       this._priority = undefined;
+      this._headerAction.internalValue = undefined;
       this._match.internalValue = undefined;
       this._preconfiguredWafConfig.internalValue = undefined;
       this._rateLimitOptions.internalValue = undefined;
@@ -2250,6 +2521,7 @@ export class GoogleComputeSecurityPolicyRuleOutputReference extends cdktf.Comple
       this._description = value.description;
       this._preview = value.preview;
       this._priority = value.priority;
+      this._headerAction.internalValue = value.headerAction;
       this._match.internalValue = value.match;
       this._preconfiguredWafConfig.internalValue = value.preconfiguredWafConfig;
       this._rateLimitOptions.internalValue = value.rateLimitOptions;
@@ -2313,6 +2585,22 @@ export class GoogleComputeSecurityPolicyRuleOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get priorityInput() {
     return this._priority;
+  }
+
+  // header_action - computed: false, optional: true, required: false
+  private _headerAction = new GoogleComputeSecurityPolicyRuleHeaderActionOutputReference(this, "header_action");
+  public get headerAction() {
+    return this._headerAction;
+  }
+  public putHeaderAction(value: GoogleComputeSecurityPolicyRuleHeaderAction) {
+    this._headerAction.internalValue = value;
+  }
+  public resetHeaderAction() {
+    this._headerAction.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headerActionInput() {
+    return this._headerAction.internalValue;
   }
 
   // match - computed: false, optional: false, required: true
@@ -2552,7 +2840,7 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.45.0',
+        providerVersion: '4.46.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -2570,6 +2858,7 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
     this._type = config.type;
     this._adaptiveProtectionConfig.internalValue = config.adaptiveProtectionConfig;
     this._advancedOptionsConfig.internalValue = config.advancedOptionsConfig;
+    this._recaptchaOptionsConfig.internalValue = config.recaptchaOptionsConfig;
     this._rule.internalValue = config.rule;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -2697,6 +2986,22 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
     return this._advancedOptionsConfig.internalValue;
   }
 
+  // recaptcha_options_config - computed: false, optional: true, required: false
+  private _recaptchaOptionsConfig = new GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference(this, "recaptcha_options_config");
+  public get recaptchaOptionsConfig() {
+    return this._recaptchaOptionsConfig;
+  }
+  public putRecaptchaOptionsConfig(value: GoogleComputeSecurityPolicyRecaptchaOptionsConfig) {
+    this._recaptchaOptionsConfig.internalValue = value;
+  }
+  public resetRecaptchaOptionsConfig() {
+    this._recaptchaOptionsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recaptchaOptionsConfigInput() {
+    return this._recaptchaOptionsConfig.internalValue;
+  }
+
   // rule - computed: false, optional: true, required: false
   private _rule = new GoogleComputeSecurityPolicyRuleList(this, "rule", true);
   public get rule() {
@@ -2742,6 +3047,7 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       adaptive_protection_config: googleComputeSecurityPolicyAdaptiveProtectionConfigToTerraform(this._adaptiveProtectionConfig.internalValue),
       advanced_options_config: googleComputeSecurityPolicyAdvancedOptionsConfigToTerraform(this._advancedOptionsConfig.internalValue),
+      recaptcha_options_config: googleComputeSecurityPolicyRecaptchaOptionsConfigToTerraform(this._recaptchaOptionsConfig.internalValue),
       rule: cdktf.listMapper(googleComputeSecurityPolicyRuleToTerraform, true)(this._rule.internalValue),
       timeouts: googleComputeSecurityPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };

@@ -2489,7 +2489,7 @@ export class GoogleMonitoringSlo extends cdktf.TerraformResource {
       terraformResourceType: 'google_monitoring_slo',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.45.0',
+        providerVersion: '4.46.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
