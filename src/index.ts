@@ -119,6 +119,8 @@ export * as googleCloudRunService from './google-cloud-run-service';
 export * as googleCloudRunServiceIamBinding from './google-cloud-run-service-iam-binding';
 export * as googleCloudRunServiceIamMember from './google-cloud-run-service-iam-member';
 export * as googleCloudRunServiceIamPolicy from './google-cloud-run-service-iam-policy';
+export * as googleCloudRunV2Job from './google-cloud-run-v2-job';
+export * as googleCloudRunV2Service from './google-cloud-run-v2-service';
 export * as googleCloudSchedulerJob from './google-cloud-scheduler-job';
 export * as googleCloudTasksQueue from './google-cloud-tasks-queue';
 export * as googleCloudTasksQueueIamBinding from './google-cloud-tasks-queue-iam-binding';
@@ -371,6 +373,7 @@ export * as googleFirebaseHostingChannel from './google-firebase-hosting-channel
 export * as googleFirebaseHostingSite from './google-firebase-hosting-site';
 export * as googleFirebaseProject from './google-firebase-project';
 export * as googleFirebaseProjectLocation from './google-firebase-project-location';
+export * as googleFirebaseStorageBucket from './google-firebase-storage-bucket';
 export * as googleFirebaseWebApp from './google-firebase-web-app';
 export * as googleFirebaserulesRelease from './google-firebaserules-release';
 export * as googleFirebaserulesRuleset from './google-firebaserules-ruleset';
@@ -388,6 +391,7 @@ export * as googleGameServicesGameServerConfig from './google-game-services-game
 export * as googleGameServicesGameServerDeployment from './google-game-services-game-server-deployment';
 export * as googleGameServicesGameServerDeploymentRollout from './google-game-services-game-server-deployment-rollout';
 export * as googleGameServicesRealm from './google-game-services-realm';
+export * as googleGkeBackupBackupPlan from './google-gke-backup-backup-plan';
 export * as googleGkeHubFeature from './google-gke-hub-feature';
 export * as googleGkeHubFeatureMembership from './google-gke-hub-feature-membership';
 export * as googleGkeHubMembership from './google-gke-hub-membership';
@@ -710,6 +714,7 @@ export * as dataGoogleDataprocMetastoreService from './data-google-dataproc-meta
 export * as dataGoogleDnsKeys from './data-google-dns-keys';
 export * as dataGoogleDnsManagedZone from './data-google-dns-managed-zone';
 export * as dataGoogleDnsRecordSet from './data-google-dns-record-set';
+export * as dataGoogleFirebaseAndroidApp from './data-google-firebase-android-app';
 export * as dataGoogleFirebaseWebApp from './data-google-firebase-web-app';
 export * as dataGoogleFirebaseWebAppConfig from './data-google-firebase-web-app-config';
 export * as dataGoogleFolder from './data-google-folder';
