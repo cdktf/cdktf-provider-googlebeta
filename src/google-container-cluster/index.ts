@@ -237,6 +237,12 @@ export interface GoogleContainerClusterConfig extends cdktf.TerraformMetaArgumen
   */
   readonly dnsConfig?: GoogleContainerClusterDnsConfig;
   /**
+  * gateway_api_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#gateway_api_config GoogleContainerCluster#gateway_api_config}
+  */
+  readonly gatewayApiConfig?: GoogleContainerClusterGatewayApiConfig;
+  /**
   * identity_service_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#identity_service_config GoogleContainerCluster#identity_service_config}
@@ -1899,6 +1905,385 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShi
     return this._enableSecureBoot;
   }
 }
+export interface GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy {
+  /**
+  * Number of blue nodes to drain in a batch.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#batch_node_count GoogleContainerCluster#batch_node_count}
+  */
+  readonly batchNodeCount?: number;
+  /**
+  * Percentage of the bool pool nodes to drain in a batch. The range of this field should be (0.0, 1.0].
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#batch_percentage GoogleContainerCluster#batch_percentage}
+  */
+  readonly batchPercentage?: number;
+  /**
+  * Soak time after each batch gets drained.
+
+																			A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#batch_soak_duration GoogleContainerCluster#batch_soak_duration}
+  */
+  readonly batchSoakDuration?: string;
+}
+
+export function googleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyToTerraform(struct?: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference | GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    batch_node_count: cdktf.numberToTerraform(struct!.batchNodeCount),
+    batch_percentage: cdktf.numberToTerraform(struct!.batchPercentage),
+    batch_soak_duration: cdktf.stringToTerraform(struct!.batchSoakDuration),
+  }
+}
+
+export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._batchNodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.batchNodeCount = this._batchNodeCount;
+    }
+    if (this._batchPercentage !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.batchPercentage = this._batchPercentage;
+    }
+    if (this._batchSoakDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.batchSoakDuration = this._batchSoakDuration;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._batchNodeCount = undefined;
+      this._batchPercentage = undefined;
+      this._batchSoakDuration = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._batchNodeCount = value.batchNodeCount;
+      this._batchPercentage = value.batchPercentage;
+      this._batchSoakDuration = value.batchSoakDuration;
+    }
+  }
+
+  // batch_node_count - computed: true, optional: true, required: false
+  private _batchNodeCount?: number; 
+  public get batchNodeCount() {
+    return this.getNumberAttribute('batch_node_count');
+  }
+  public set batchNodeCount(value: number) {
+    this._batchNodeCount = value;
+  }
+  public resetBatchNodeCount() {
+    this._batchNodeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get batchNodeCountInput() {
+    return this._batchNodeCount;
+  }
+
+  // batch_percentage - computed: true, optional: true, required: false
+  private _batchPercentage?: number; 
+  public get batchPercentage() {
+    return this.getNumberAttribute('batch_percentage');
+  }
+  public set batchPercentage(value: number) {
+    this._batchPercentage = value;
+  }
+  public resetBatchPercentage() {
+    this._batchPercentage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get batchPercentageInput() {
+    return this._batchPercentage;
+  }
+
+  // batch_soak_duration - computed: false, optional: true, required: false
+  private _batchSoakDuration?: string; 
+  public get batchSoakDuration() {
+    return this.getStringAttribute('batch_soak_duration');
+  }
+  public set batchSoakDuration(value: string) {
+    this._batchSoakDuration = value;
+  }
+  public resetBatchSoakDuration() {
+    this._batchSoakDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get batchSoakDurationInput() {
+    return this._batchSoakDuration;
+  }
+}
+export interface GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings {
+  /**
+  * Time needed after draining entire blue pool. After this period, blue pool will be cleaned up.
+
+																A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#node_pool_soak_duration GoogleContainerCluster#node_pool_soak_duration}
+  */
+  readonly nodePoolSoakDuration?: string;
+  /**
+  * standard_rollout_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#standard_rollout_policy GoogleContainerCluster#standard_rollout_policy}
+  */
+  readonly standardRolloutPolicy?: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy;
+}
+
+export function googleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsToTerraform(struct?: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference | GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    node_pool_soak_duration: cdktf.stringToTerraform(struct!.nodePoolSoakDuration),
+    standard_rollout_policy: googleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyToTerraform(struct!.standardRolloutPolicy),
+  }
+}
+
+export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._nodePoolSoakDuration !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodePoolSoakDuration = this._nodePoolSoakDuration;
+    }
+    if (this._standardRolloutPolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.standardRolloutPolicy = this._standardRolloutPolicy?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._nodePoolSoakDuration = undefined;
+      this._standardRolloutPolicy.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._nodePoolSoakDuration = value.nodePoolSoakDuration;
+      this._standardRolloutPolicy.internalValue = value.standardRolloutPolicy;
+    }
+  }
+
+  // node_pool_soak_duration - computed: true, optional: true, required: false
+  private _nodePoolSoakDuration?: string; 
+  public get nodePoolSoakDuration() {
+    return this.getStringAttribute('node_pool_soak_duration');
+  }
+  public set nodePoolSoakDuration(value: string) {
+    this._nodePoolSoakDuration = value;
+  }
+  public resetNodePoolSoakDuration() {
+    this._nodePoolSoakDuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodePoolSoakDurationInput() {
+    return this._nodePoolSoakDuration;
+  }
+
+  // standard_rollout_policy - computed: false, optional: true, required: false
+  private _standardRolloutPolicy = new GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference(this, "standard_rollout_policy");
+  public get standardRolloutPolicy() {
+    return this._standardRolloutPolicy;
+  }
+  public putStandardRolloutPolicy(value: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy) {
+    this._standardRolloutPolicy.internalValue = value;
+  }
+  public resetStandardRolloutPolicy() {
+    this._standardRolloutPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get standardRolloutPolicyInput() {
+    return this._standardRolloutPolicy.internalValue;
+  }
+}
+export interface GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings {
+  /**
+  * The maximum number of nodes that can be created beyond the current size of the node pool during the upgrade process.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#max_surge GoogleContainerCluster#max_surge}
+  */
+  readonly maxSurge?: number;
+  /**
+  * The maximum number of nodes that can be simultaneously unavailable during the upgrade process.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#max_unavailable GoogleContainerCluster#max_unavailable}
+  */
+  readonly maxUnavailable?: number;
+  /**
+  * Update strategy of the node pool.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#strategy GoogleContainerCluster#strategy}
+  */
+  readonly strategy?: string;
+  /**
+  * blue_green_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#blue_green_settings GoogleContainerCluster#blue_green_settings}
+  */
+  readonly blueGreenSettings?: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings;
+}
+
+export function googleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsToTerraform(struct?: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference | GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_surge: cdktf.numberToTerraform(struct!.maxSurge),
+    max_unavailable: cdktf.numberToTerraform(struct!.maxUnavailable),
+    strategy: cdktf.stringToTerraform(struct!.strategy),
+    blue_green_settings: googleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsToTerraform(struct!.blueGreenSettings),
+  }
+}
+
+export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxSurge !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxSurge = this._maxSurge;
+    }
+    if (this._maxUnavailable !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxUnavailable = this._maxUnavailable;
+    }
+    if (this._strategy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.strategy = this._strategy;
+    }
+    if (this._blueGreenSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.blueGreenSettings = this._blueGreenSettings?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxSurge = undefined;
+      this._maxUnavailable = undefined;
+      this._strategy = undefined;
+      this._blueGreenSettings.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxSurge = value.maxSurge;
+      this._maxUnavailable = value.maxUnavailable;
+      this._strategy = value.strategy;
+      this._blueGreenSettings.internalValue = value.blueGreenSettings;
+    }
+  }
+
+  // max_surge - computed: false, optional: true, required: false
+  private _maxSurge?: number; 
+  public get maxSurge() {
+    return this.getNumberAttribute('max_surge');
+  }
+  public set maxSurge(value: number) {
+    this._maxSurge = value;
+  }
+  public resetMaxSurge() {
+    this._maxSurge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxSurgeInput() {
+    return this._maxSurge;
+  }
+
+  // max_unavailable - computed: false, optional: true, required: false
+  private _maxUnavailable?: number; 
+  public get maxUnavailable() {
+    return this.getNumberAttribute('max_unavailable');
+  }
+  public set maxUnavailable(value: number) {
+    this._maxUnavailable = value;
+  }
+  public resetMaxUnavailable() {
+    this._maxUnavailable = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxUnavailableInput() {
+    return this._maxUnavailable;
+  }
+
+  // strategy - computed: true, optional: true, required: false
+  private _strategy?: string; 
+  public get strategy() {
+    return this.getStringAttribute('strategy');
+  }
+  public set strategy(value: string) {
+    this._strategy = value;
+  }
+  public resetStrategy() {
+    this._strategy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get strategyInput() {
+    return this._strategy;
+  }
+
+  // blue_green_settings - computed: false, optional: true, required: false
+  private _blueGreenSettings = new GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference(this, "blue_green_settings");
+  public get blueGreenSettings() {
+    return this._blueGreenSettings;
+  }
+  public putBlueGreenSettings(value: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettings) {
+    this._blueGreenSettings.internalValue = value;
+  }
+  public resetBlueGreenSettings() {
+    this._blueGreenSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blueGreenSettingsInput() {
+    return this._blueGreenSettings.internalValue;
+  }
+}
 export interface GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults {
   /**
   * The Customer Managed Encryption Key used to encrypt the boot disk attached to each node in the node pool.
@@ -1954,6 +2339,12 @@ export interface GoogleContainerClusterClusterAutoscalingAutoProvisioningDefault
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#shielded_instance_config GoogleContainerCluster#shielded_instance_config}
   */
   readonly shieldedInstanceConfig?: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig;
+  /**
+  * upgrade_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#upgrade_settings GoogleContainerCluster#upgrade_settings}
+  */
+  readonly upgradeSettings?: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings;
 }
 
 export function googleContainerClusterClusterAutoscalingAutoProvisioningDefaultsToTerraform(struct?: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference | GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults): any {
@@ -1971,6 +2362,7 @@ export function googleContainerClusterClusterAutoscalingAutoProvisioningDefaults
     service_account: cdktf.stringToTerraform(struct!.serviceAccount),
     management: googleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementToTerraform(struct!.management),
     shielded_instance_config: googleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigToTerraform(struct!.shieldedInstanceConfig),
+    upgrade_settings: googleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsToTerraform(struct!.upgradeSettings),
   }
 }
 
@@ -2024,6 +2416,10 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
       hasAnyValues = true;
       internalValueResult.shieldedInstanceConfig = this._shieldedInstanceConfig?.internalValue;
     }
+    if (this._upgradeSettings?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upgradeSettings = this._upgradeSettings?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -2039,6 +2435,7 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
       this._serviceAccount = undefined;
       this._management.internalValue = undefined;
       this._shieldedInstanceConfig.internalValue = undefined;
+      this._upgradeSettings.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -2051,6 +2448,7 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
       this._serviceAccount = value.serviceAccount;
       this._management.internalValue = value.management;
       this._shieldedInstanceConfig.internalValue = value.shieldedInstanceConfig;
+      this._upgradeSettings.internalValue = value.upgradeSettings;
     }
   }
 
@@ -2196,6 +2594,22 @@ export class GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOut
   // Temporarily expose input value. Use with caution.
   public get shieldedInstanceConfigInput() {
     return this._shieldedInstanceConfig.internalValue;
+  }
+
+  // upgrade_settings - computed: false, optional: true, required: false
+  private _upgradeSettings = new GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference(this, "upgrade_settings");
+  public get upgradeSettings() {
+    return this._upgradeSettings;
+  }
+  public putUpgradeSettings(value: GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings) {
+    this._upgradeSettings.internalValue = value;
+  }
+  public resetUpgradeSettings() {
+    this._upgradeSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get upgradeSettingsInput() {
+    return this._upgradeSettings.internalValue;
   }
 }
 export interface GoogleContainerClusterClusterAutoscalingResourceLimits {
@@ -2978,6 +3392,70 @@ export class GoogleContainerClusterDnsConfigOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get clusterDnsScopeInput() {
     return this._clusterDnsScope;
+  }
+}
+export interface GoogleContainerClusterGatewayApiConfig {
+  /**
+  * The Gateway API release channel to use for Gateway API.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#channel GoogleContainerCluster#channel}
+  */
+  readonly channel: string;
+}
+
+export function googleContainerClusterGatewayApiConfigToTerraform(struct?: GoogleContainerClusterGatewayApiConfigOutputReference | GoogleContainerClusterGatewayApiConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    channel: cdktf.stringToTerraform(struct!.channel),
+  }
+}
+
+export class GoogleContainerClusterGatewayApiConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterGatewayApiConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._channel !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.channel = this._channel;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterGatewayApiConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._channel = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._channel = value.channel;
+    }
+  }
+
+  // channel - computed: false, optional: false, required: true
+  private _channel?: string; 
+  public get channel() {
+    return this.getStringAttribute('channel');
+  }
+  public set channel(value: string) {
+    this._channel = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get channelInput() {
+    return this._channel;
   }
 }
 export interface GoogleContainerClusterIdentityServiceConfig {
@@ -11530,7 +12008,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -11579,6 +12057,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     this._databaseEncryption.internalValue = config.databaseEncryption;
     this._defaultSnatStatus.internalValue = config.defaultSnatStatus;
     this._dnsConfig.internalValue = config.dnsConfig;
+    this._gatewayApiConfig.internalValue = config.gatewayApiConfig;
     this._identityServiceConfig.internalValue = config.identityServiceConfig;
     this._ipAllocationPolicy.internalValue = config.ipAllocationPolicy;
     this._loggingConfig.internalValue = config.loggingConfig;
@@ -12248,6 +12727,22 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     return this._dnsConfig.internalValue;
   }
 
+  // gateway_api_config - computed: false, optional: true, required: false
+  private _gatewayApiConfig = new GoogleContainerClusterGatewayApiConfigOutputReference(this, "gateway_api_config");
+  public get gatewayApiConfig() {
+    return this._gatewayApiConfig;
+  }
+  public putGatewayApiConfig(value: GoogleContainerClusterGatewayApiConfig) {
+    this._gatewayApiConfig.internalValue = value;
+  }
+  public resetGatewayApiConfig() {
+    this._gatewayApiConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewayApiConfigInput() {
+    return this._gatewayApiConfig.internalValue;
+  }
+
   // identity_service_config - computed: false, optional: true, required: false
   private _identityServiceConfig = new GoogleContainerClusterIdentityServiceConfigOutputReference(this, "identity_service_config");
   public get identityServiceConfig() {
@@ -12660,6 +13155,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       database_encryption: googleContainerClusterDatabaseEncryptionToTerraform(this._databaseEncryption.internalValue),
       default_snat_status: googleContainerClusterDefaultSnatStatusToTerraform(this._defaultSnatStatus.internalValue),
       dns_config: googleContainerClusterDnsConfigToTerraform(this._dnsConfig.internalValue),
+      gateway_api_config: googleContainerClusterGatewayApiConfigToTerraform(this._gatewayApiConfig.internalValue),
       identity_service_config: googleContainerClusterIdentityServiceConfigToTerraform(this._identityServiceConfig.internalValue),
       ip_allocation_policy: googleContainerClusterIpAllocationPolicyToTerraform(this._ipAllocationPolicy.internalValue),
       logging_config: googleContainerClusterLoggingConfigToTerraform(this._loggingConfig.internalValue),
