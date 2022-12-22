@@ -450,7 +450,7 @@ export class GoogleAppEngineApplication extends cdktf.TerraformResource {
       terraformResourceType: 'google_app_engine_application',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -13,6 +13,7 @@ export * as googleAccessContextManagerServicePerimeters from './google-access-co
 export * as googleActiveDirectoryDomain from './google-active-directory-domain';
 export * as googleActiveDirectoryDomainTrust from './google-active-directory-domain-trust';
 export * as googleActiveDirectoryPeering from './google-active-directory-peering';
+export * as googleAlloydbBackup from './google-alloydb-backup';
 export * as googleAlloydbCluster from './google-alloydb-cluster';
 export * as googleAlloydbInstance from './google-alloydb-instance';
 export * as googleApiGatewayApi from './google-api-gateway-api';
@@ -365,6 +366,7 @@ export * as googleEssentialContactsContact from './google-essential-contacts-con
 export * as googleEventarcChannel from './google-eventarc-channel';
 export * as googleEventarcGoogleChannelConfig from './google-eventarc-google-channel-config';
 export * as googleEventarcTrigger from './google-eventarc-trigger';
+export * as googleFilestoreBackup from './google-filestore-backup';
 export * as googleFilestoreInstance from './google-filestore-instance';
 export * as googleFilestoreSnapshot from './google-filestore-snapshot';
 export * as googleFirebaseAndroidApp from './google-firebase-android-app';

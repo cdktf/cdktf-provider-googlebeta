@@ -183,7 +183,7 @@ export class GoogleFolderIamAuditConfig extends cdktf.TerraformResource {
       terraformResourceType: 'google_folder_iam_audit_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.46.0',
+        providerVersion: '4.47.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
