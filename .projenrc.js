@@ -8,4 +8,8 @@ const project = new CdktfProviderProject({
   jsiiVersion: "^1.53.0",
 });
 
+// This is a temporary workaround since the API.md file is growing too large
+// and the GitHub Action fails to upload it as an artifact.
+project.gitignore.addPatterns("API.md");
+
 project.synth();
