@@ -1092,7 +1092,7 @@ export class GoogleBigqueryDataset extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_dataset',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1242,7 +1242,7 @@ export class GoogleBigqueryDataset extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // labels - computed: false, optional: true, required: false
+  // labels - computed: true, optional: true, required: false
   private _labels?: { [key: string]: string }; 
   public get labels() {
     return this.getStringMapAttribute('labels');

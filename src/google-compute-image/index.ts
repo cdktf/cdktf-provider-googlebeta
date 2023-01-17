@@ -106,6 +106,12 @@ In order to create an image, you must provide the full or partial URL of one of 
   */
   readonly guestOsFeatures?: GoogleComputeImageGuestOsFeatures[] | cdktf.IResolvable;
   /**
+  * image_encryption_key block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_image#image_encryption_key GoogleComputeImage#image_encryption_key}
+  */
+  readonly imageEncryptionKey?: GoogleComputeImageImageEncryptionKey;
+  /**
   * raw_disk block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_image#raw_disk GoogleComputeImage#raw_disk}
@@ -212,6 +218,105 @@ export class GoogleComputeImageGuestOsFeaturesList extends cdktf.ComplexList {
   */
   public get(index: number): GoogleComputeImageGuestOsFeaturesOutputReference {
     return new GoogleComputeImageGuestOsFeaturesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeImageImageEncryptionKey {
+  /**
+  * The self link of the encryption key that is stored in Google Cloud
+KMS.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_image#kms_key_self_link GoogleComputeImage#kms_key_self_link}
+  */
+  readonly kmsKeySelfLink?: string;
+  /**
+  * The service account being used for the encryption request for the
+given KMS key. If absent, the Compute Engine default service
+account is used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_image#kms_key_service_account GoogleComputeImage#kms_key_service_account}
+  */
+  readonly kmsKeyServiceAccount?: string;
+}
+
+export function googleComputeImageImageEncryptionKeyToTerraform(struct?: GoogleComputeImageImageEncryptionKeyOutputReference | GoogleComputeImageImageEncryptionKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_key_self_link: cdktf.stringToTerraform(struct!.kmsKeySelfLink),
+    kms_key_service_account: cdktf.stringToTerraform(struct!.kmsKeyServiceAccount),
+  }
+}
+
+export class GoogleComputeImageImageEncryptionKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeImageImageEncryptionKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsKeySelfLink !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeySelfLink = this._kmsKeySelfLink;
+    }
+    if (this._kmsKeyServiceAccount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsKeyServiceAccount = this._kmsKeyServiceAccount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeImageImageEncryptionKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsKeySelfLink = undefined;
+      this._kmsKeyServiceAccount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsKeySelfLink = value.kmsKeySelfLink;
+      this._kmsKeyServiceAccount = value.kmsKeyServiceAccount;
+    }
+  }
+
+  // kms_key_self_link - computed: false, optional: true, required: false
+  private _kmsKeySelfLink?: string; 
+  public get kmsKeySelfLink() {
+    return this.getStringAttribute('kms_key_self_link');
+  }
+  public set kmsKeySelfLink(value: string) {
+    this._kmsKeySelfLink = value;
+  }
+  public resetKmsKeySelfLink() {
+    this._kmsKeySelfLink = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeySelfLinkInput() {
+    return this._kmsKeySelfLink;
+  }
+
+  // kms_key_service_account - computed: false, optional: true, required: false
+  private _kmsKeyServiceAccount?: string; 
+  public get kmsKeyServiceAccount() {
+    return this.getStringAttribute('kms_key_service_account');
+  }
+  public set kmsKeyServiceAccount(value: string) {
+    this._kmsKeyServiceAccount = value;
+  }
+  public resetKmsKeyServiceAccount() {
+    this._kmsKeyServiceAccount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsKeyServiceAccountInput() {
+    return this._kmsKeyServiceAccount;
   }
 }
 export interface GoogleComputeImageRawDisk {
@@ -498,7 +603,7 @@ export class GoogleComputeImage extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_image',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -521,6 +626,7 @@ export class GoogleComputeImage extends cdktf.TerraformResource {
     this._sourceImage = config.sourceImage;
     this._sourceSnapshot = config.sourceSnapshot;
     this._guestOsFeatures.internalValue = config.guestOsFeatures;
+    this._imageEncryptionKey.internalValue = config.imageEncryptionKey;
     this._rawDisk.internalValue = config.rawDisk;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -738,6 +844,22 @@ export class GoogleComputeImage extends cdktf.TerraformResource {
     return this._guestOsFeatures.internalValue;
   }
 
+  // image_encryption_key - computed: false, optional: true, required: false
+  private _imageEncryptionKey = new GoogleComputeImageImageEncryptionKeyOutputReference(this, "image_encryption_key");
+  public get imageEncryptionKey() {
+    return this._imageEncryptionKey;
+  }
+  public putImageEncryptionKey(value: GoogleComputeImageImageEncryptionKey) {
+    this._imageEncryptionKey.internalValue = value;
+  }
+  public resetImageEncryptionKey() {
+    this._imageEncryptionKey.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get imageEncryptionKeyInput() {
+    return this._imageEncryptionKey.internalValue;
+  }
+
   // raw_disk - computed: false, optional: true, required: false
   private _rawDisk = new GoogleComputeImageRawDiskOutputReference(this, "raw_disk");
   public get rawDisk() {
@@ -788,6 +910,7 @@ export class GoogleComputeImage extends cdktf.TerraformResource {
       source_image: cdktf.stringToTerraform(this._sourceImage),
       source_snapshot: cdktf.stringToTerraform(this._sourceSnapshot),
       guest_os_features: cdktf.listMapper(googleComputeImageGuestOsFeaturesToTerraform, true)(this._guestOsFeatures.internalValue),
+      image_encryption_key: googleComputeImageImageEncryptionKeyToTerraform(this._imageEncryptionKey.internalValue),
       raw_disk: googleComputeImageRawDiskToTerraform(this._rawDisk.internalValue),
       timeouts: googleComputeImageTimeoutsToTerraform(this._timeouts.internalValue),
     };

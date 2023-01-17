@@ -172,6 +172,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly containerAnalysisCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#container_attached_custom_endpoint GoogleBetaProvider#container_attached_custom_endpoint}
+  */
+  readonly containerAttachedCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#container_aws_custom_endpoint GoogleBetaProvider#container_aws_custom_endpoint}
   */
   readonly containerAwsCustomEndpoint?: string;
@@ -263,6 +267,10 @@ export interface GoogleBetaProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebase_custom_endpoint GoogleBetaProvider#firebase_custom_endpoint}
   */
   readonly firebaseCustomEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebase_database_custom_endpoint GoogleBetaProvider#firebase_database_custom_endpoint}
+  */
+  readonly firebaseDatabaseCustomEndpoint?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebase_hosting_custom_endpoint GoogleBetaProvider#firebase_hosting_custom_endpoint}
   */
@@ -577,7 +585,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'
@@ -623,6 +631,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._composerCustomEndpoint = config.composerCustomEndpoint;
     this._computeCustomEndpoint = config.computeCustomEndpoint;
     this._containerAnalysisCustomEndpoint = config.containerAnalysisCustomEndpoint;
+    this._containerAttachedCustomEndpoint = config.containerAttachedCustomEndpoint;
     this._containerAwsCustomEndpoint = config.containerAwsCustomEndpoint;
     this._containerAzureCustomEndpoint = config.containerAzureCustomEndpoint;
     this._containerCustomEndpoint = config.containerCustomEndpoint;
@@ -646,6 +655,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._eventarcCustomEndpoint = config.eventarcCustomEndpoint;
     this._filestoreCustomEndpoint = config.filestoreCustomEndpoint;
     this._firebaseCustomEndpoint = config.firebaseCustomEndpoint;
+    this._firebaseDatabaseCustomEndpoint = config.firebaseDatabaseCustomEndpoint;
     this._firebaseHostingCustomEndpoint = config.firebaseHostingCustomEndpoint;
     this._firebaseStorageCustomEndpoint = config.firebaseStorageCustomEndpoint;
     this._firebaserulesCustomEndpoint = config.firebaserulesCustomEndpoint;
@@ -1373,6 +1383,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     return this._containerAnalysisCustomEndpoint;
   }
 
+  // container_attached_custom_endpoint - computed: false, optional: true, required: false
+  private _containerAttachedCustomEndpoint?: string; 
+  public get containerAttachedCustomEndpoint() {
+    return this._containerAttachedCustomEndpoint;
+  }
+  public set containerAttachedCustomEndpoint(value: string | undefined) {
+    this._containerAttachedCustomEndpoint = value;
+  }
+  public resetContainerAttachedCustomEndpoint() {
+    this._containerAttachedCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containerAttachedCustomEndpointInput() {
+    return this._containerAttachedCustomEndpoint;
+  }
+
   // container_aws_custom_endpoint - computed: false, optional: true, required: false
   private _containerAwsCustomEndpoint?: string; 
   public get containerAwsCustomEndpoint() {
@@ -1739,6 +1765,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get firebaseCustomEndpointInput() {
     return this._firebaseCustomEndpoint;
+  }
+
+  // firebase_database_custom_endpoint - computed: false, optional: true, required: false
+  private _firebaseDatabaseCustomEndpoint?: string; 
+  public get firebaseDatabaseCustomEndpoint() {
+    return this._firebaseDatabaseCustomEndpoint;
+  }
+  public set firebaseDatabaseCustomEndpoint(value: string | undefined) {
+    this._firebaseDatabaseCustomEndpoint = value;
+  }
+  public resetFirebaseDatabaseCustomEndpoint() {
+    this._firebaseDatabaseCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get firebaseDatabaseCustomEndpointInput() {
+    return this._firebaseDatabaseCustomEndpoint;
   }
 
   // firebase_hosting_custom_endpoint - computed: false, optional: true, required: false
@@ -2828,6 +2870,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       composer_custom_endpoint: cdktf.stringToTerraform(this._composerCustomEndpoint),
       compute_custom_endpoint: cdktf.stringToTerraform(this._computeCustomEndpoint),
       container_analysis_custom_endpoint: cdktf.stringToTerraform(this._containerAnalysisCustomEndpoint),
+      container_attached_custom_endpoint: cdktf.stringToTerraform(this._containerAttachedCustomEndpoint),
       container_aws_custom_endpoint: cdktf.stringToTerraform(this._containerAwsCustomEndpoint),
       container_azure_custom_endpoint: cdktf.stringToTerraform(this._containerAzureCustomEndpoint),
       container_custom_endpoint: cdktf.stringToTerraform(this._containerCustomEndpoint),
@@ -2851,6 +2894,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       eventarc_custom_endpoint: cdktf.stringToTerraform(this._eventarcCustomEndpoint),
       filestore_custom_endpoint: cdktf.stringToTerraform(this._filestoreCustomEndpoint),
       firebase_custom_endpoint: cdktf.stringToTerraform(this._firebaseCustomEndpoint),
+      firebase_database_custom_endpoint: cdktf.stringToTerraform(this._firebaseDatabaseCustomEndpoint),
       firebase_hosting_custom_endpoint: cdktf.stringToTerraform(this._firebaseHostingCustomEndpoint),
       firebase_storage_custom_endpoint: cdktf.stringToTerraform(this._firebaseStorageCustomEndpoint),
       firebaserules_custom_endpoint: cdktf.stringToTerraform(this._firebaserulesCustomEndpoint),

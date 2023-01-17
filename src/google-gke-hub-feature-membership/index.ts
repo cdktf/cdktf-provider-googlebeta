@@ -394,6 +394,189 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncGitOutputRef
     return this._syncWaitSecs;
   }
 }
+export interface GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci {
+  /**
+  * The GCP Service Account Email used for auth when secret_type is gcpserviceaccount. 
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#gcp_service_account_email GoogleGkeHubFeatureMembership#gcp_service_account_email}
+  */
+  readonly gcpServiceAccountEmail?: string;
+  /**
+  * The absolute path of the directory that contains the local resources. Default: the root directory of the image.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#policy_dir GoogleGkeHubFeatureMembership#policy_dir}
+  */
+  readonly policyDir?: string;
+  /**
+  * Type of secret configured for access to the OCI Image. Must be one of gcenode, gcpserviceaccount or none. The validation of this is case-sensitive.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#secret_type GoogleGkeHubFeatureMembership#secret_type}
+  */
+  readonly secretType?: string;
+  /**
+  * The OCI image repository URL for the package to sync from. e.g. LOCATION-docker.pkg.dev/PROJECT_ID/REPOSITORY_NAME/PACKAGE_NAME.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#sync_repo GoogleGkeHubFeatureMembership#sync_repo}
+  */
+  readonly syncRepo?: string;
+  /**
+  * Period in seconds(int64 format) between consecutive syncs. Default: 15.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#sync_wait_secs GoogleGkeHubFeatureMembership#sync_wait_secs}
+  */
+  readonly syncWaitSecs?: string;
+}
+
+export function googleGkeHubFeatureMembershipConfigmanagementConfigSyncOciToTerraform(struct?: GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference | GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    gcp_service_account_email: cdktf.stringToTerraform(struct!.gcpServiceAccountEmail),
+    policy_dir: cdktf.stringToTerraform(struct!.policyDir),
+    secret_type: cdktf.stringToTerraform(struct!.secretType),
+    sync_repo: cdktf.stringToTerraform(struct!.syncRepo),
+    sync_wait_secs: cdktf.stringToTerraform(struct!.syncWaitSecs),
+  }
+}
+
+export class GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._gcpServiceAccountEmail !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gcpServiceAccountEmail = this._gcpServiceAccountEmail;
+    }
+    if (this._policyDir !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policyDir = this._policyDir;
+    }
+    if (this._secretType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretType = this._secretType;
+    }
+    if (this._syncRepo !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.syncRepo = this._syncRepo;
+    }
+    if (this._syncWaitSecs !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.syncWaitSecs = this._syncWaitSecs;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._gcpServiceAccountEmail = undefined;
+      this._policyDir = undefined;
+      this._secretType = undefined;
+      this._syncRepo = undefined;
+      this._syncWaitSecs = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._gcpServiceAccountEmail = value.gcpServiceAccountEmail;
+      this._policyDir = value.policyDir;
+      this._secretType = value.secretType;
+      this._syncRepo = value.syncRepo;
+      this._syncWaitSecs = value.syncWaitSecs;
+    }
+  }
+
+  // gcp_service_account_email - computed: false, optional: true, required: false
+  private _gcpServiceAccountEmail?: string; 
+  public get gcpServiceAccountEmail() {
+    return this.getStringAttribute('gcp_service_account_email');
+  }
+  public set gcpServiceAccountEmail(value: string) {
+    this._gcpServiceAccountEmail = value;
+  }
+  public resetGcpServiceAccountEmail() {
+    this._gcpServiceAccountEmail = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gcpServiceAccountEmailInput() {
+    return this._gcpServiceAccountEmail;
+  }
+
+  // policy_dir - computed: false, optional: true, required: false
+  private _policyDir?: string; 
+  public get policyDir() {
+    return this.getStringAttribute('policy_dir');
+  }
+  public set policyDir(value: string) {
+    this._policyDir = value;
+  }
+  public resetPolicyDir() {
+    this._policyDir = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyDirInput() {
+    return this._policyDir;
+  }
+
+  // secret_type - computed: false, optional: true, required: false
+  private _secretType?: string; 
+  public get secretType() {
+    return this.getStringAttribute('secret_type');
+  }
+  public set secretType(value: string) {
+    this._secretType = value;
+  }
+  public resetSecretType() {
+    this._secretType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretTypeInput() {
+    return this._secretType;
+  }
+
+  // sync_repo - computed: false, optional: true, required: false
+  private _syncRepo?: string; 
+  public get syncRepo() {
+    return this.getStringAttribute('sync_repo');
+  }
+  public set syncRepo(value: string) {
+    this._syncRepo = value;
+  }
+  public resetSyncRepo() {
+    this._syncRepo = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get syncRepoInput() {
+    return this._syncRepo;
+  }
+
+  // sync_wait_secs - computed: false, optional: true, required: false
+  private _syncWaitSecs?: string; 
+  public get syncWaitSecs() {
+    return this.getStringAttribute('sync_wait_secs');
+  }
+  public set syncWaitSecs(value: string) {
+    this._syncWaitSecs = value;
+  }
+  public resetSyncWaitSecs() {
+    this._syncWaitSecs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get syncWaitSecsInput() {
+    return this._syncWaitSecs;
+  }
+}
 export interface GoogleGkeHubFeatureMembershipConfigmanagementConfigSync {
   /**
   * Set to true to enable the Config Sync admission webhook to prevent drifts. If set to `false`, disables the Config Sync admission webhook and does not prevent drifts.
@@ -413,6 +596,12 @@ export interface GoogleGkeHubFeatureMembershipConfigmanagementConfigSync {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#git GoogleGkeHubFeatureMembership#git}
   */
   readonly git?: GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncGit;
+  /**
+  * oci block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#oci GoogleGkeHubFeatureMembership#oci}
+  */
+  readonly oci?: GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci;
 }
 
 export function googleGkeHubFeatureMembershipConfigmanagementConfigSyncToTerraform(struct?: GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference | GoogleGkeHubFeatureMembershipConfigmanagementConfigSync): any {
@@ -424,6 +613,7 @@ export function googleGkeHubFeatureMembershipConfigmanagementConfigSyncToTerrafo
     prevent_drift: cdktf.booleanToTerraform(struct!.preventDrift),
     source_format: cdktf.stringToTerraform(struct!.sourceFormat),
     git: googleGkeHubFeatureMembershipConfigmanagementConfigSyncGitToTerraform(struct!.git),
+    oci: googleGkeHubFeatureMembershipConfigmanagementConfigSyncOciToTerraform(struct!.oci),
   }
 }
 
@@ -453,6 +643,10 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
       hasAnyValues = true;
       internalValueResult.git = this._git?.internalValue;
     }
+    if (this._oci?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oci = this._oci?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -462,12 +656,14 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
       this._preventDrift = undefined;
       this._sourceFormat = undefined;
       this._git.internalValue = undefined;
+      this._oci.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._preventDrift = value.preventDrift;
       this._sourceFormat = value.sourceFormat;
       this._git.internalValue = value.git;
+      this._oci.internalValue = value.oci;
     }
   }
 
@@ -517,6 +713,22 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputRefere
   // Temporarily expose input value. Use with caution.
   public get gitInput() {
     return this._git.internalValue;
+  }
+
+  // oci - computed: false, optional: true, required: false
+  private _oci = new GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference(this, "oci");
+  public get oci() {
+    return this._oci;
+  }
+  public putOci(value: GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci) {
+    this._oci.internalValue = value;
+  }
+  public resetOci() {
+    this._oci.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ociInput() {
+    return this._oci.internalValue;
   }
 }
 export interface GoogleGkeHubFeatureMembershipConfigmanagementHierarchyController {
@@ -1416,7 +1628,7 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_feature_membership',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -99,6 +99,18 @@ export interface GoogleComputeInstanceGroupManagerConfig extends cdktf.Terraform
   */
   readonly statefulDisk?: GoogleComputeInstanceGroupManagerStatefulDisk[] | cdktf.IResolvable;
   /**
+  * stateful_external_ip block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#stateful_external_ip GoogleComputeInstanceGroupManager#stateful_external_ip}
+  */
+  readonly statefulExternalIp?: GoogleComputeInstanceGroupManagerStatefulExternalIp[] | cdktf.IResolvable;
+  /**
+  * stateful_internal_ip block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#stateful_internal_ip GoogleComputeInstanceGroupManager#stateful_internal_ip}
+  */
+  readonly statefulInternalIp?: GoogleComputeInstanceGroupManagerStatefulInternalIp[] | cdktf.IResolvable;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#timeouts GoogleComputeInstanceGroupManager#timeouts}
@@ -894,6 +906,262 @@ export class GoogleComputeInstanceGroupManagerStatefulDiskList extends cdktf.Com
     return new GoogleComputeInstanceGroupManagerStatefulDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleComputeInstanceGroupManagerStatefulExternalIp {
+  /**
+  * A value that prescribes what should happen to an associated static Address resource when a VM instance is permanently deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the IP when the VM is deleted, but do not delete the address resource. ON_PERMANENT_INSTANCE_DELETION will delete the stateful address when the VM is permanently deleted from the instance group. The default is NEVER.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#delete_rule GoogleComputeInstanceGroupManager#delete_rule}
+  */
+  readonly deleteRule?: string;
+  /**
+  * The network interface name
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#interface_name GoogleComputeInstanceGroupManager#interface_name}
+  */
+  readonly interfaceName?: string;
+}
+
+export function googleComputeInstanceGroupManagerStatefulExternalIpToTerraform(struct?: GoogleComputeInstanceGroupManagerStatefulExternalIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    delete_rule: cdktf.stringToTerraform(struct!.deleteRule),
+    interface_name: cdktf.stringToTerraform(struct!.interfaceName),
+  }
+}
+
+export class GoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceGroupManagerStatefulExternalIp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deleteRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteRule = this._deleteRule;
+    }
+    if (this._interfaceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interfaceName = this._interfaceName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceGroupManagerStatefulExternalIp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deleteRule = undefined;
+      this._interfaceName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deleteRule = value.deleteRule;
+      this._interfaceName = value.interfaceName;
+    }
+  }
+
+  // delete_rule - computed: false, optional: true, required: false
+  private _deleteRule?: string; 
+  public get deleteRule() {
+    return this.getStringAttribute('delete_rule');
+  }
+  public set deleteRule(value: string) {
+    this._deleteRule = value;
+  }
+  public resetDeleteRule() {
+    this._deleteRule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteRuleInput() {
+    return this._deleteRule;
+  }
+
+  // interface_name - computed: false, optional: true, required: false
+  private _interfaceName?: string; 
+  public get interfaceName() {
+    return this.getStringAttribute('interface_name');
+  }
+  public set interfaceName(value: string) {
+    this._interfaceName = value;
+  }
+  public resetInterfaceName() {
+    this._interfaceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get interfaceNameInput() {
+    return this._interfaceName;
+  }
+}
+
+export class GoogleComputeInstanceGroupManagerStatefulExternalIpList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceGroupManagerStatefulExternalIp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference {
+    return new GoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeInstanceGroupManagerStatefulInternalIp {
+  /**
+  * A value that prescribes what should happen to an associated static Address resource when a VM instance is permanently deleted. The available options are NEVER and ON_PERMANENT_INSTANCE_DELETION. NEVER - detach the IP when the VM is deleted, but do not delete the address resource. ON_PERMANENT_INSTANCE_DELETION will delete the stateful address when the VM is permanently deleted from the instance group. The default is NEVER.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#delete_rule GoogleComputeInstanceGroupManager#delete_rule}
+  */
+  readonly deleteRule?: string;
+  /**
+  * The network interface name
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#interface_name GoogleComputeInstanceGroupManager#interface_name}
+  */
+  readonly interfaceName?: string;
+}
+
+export function googleComputeInstanceGroupManagerStatefulInternalIpToTerraform(struct?: GoogleComputeInstanceGroupManagerStatefulInternalIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    delete_rule: cdktf.stringToTerraform(struct!.deleteRule),
+    interface_name: cdktf.stringToTerraform(struct!.interfaceName),
+  }
+}
+
+export class GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeInstanceGroupManagerStatefulInternalIp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._deleteRule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deleteRule = this._deleteRule;
+    }
+    if (this._interfaceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interfaceName = this._interfaceName;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceGroupManagerStatefulInternalIp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._deleteRule = undefined;
+      this._interfaceName = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._deleteRule = value.deleteRule;
+      this._interfaceName = value.interfaceName;
+    }
+  }
+
+  // delete_rule - computed: false, optional: true, required: false
+  private _deleteRule?: string; 
+  public get deleteRule() {
+    return this.getStringAttribute('delete_rule');
+  }
+  public set deleteRule(value: string) {
+    this._deleteRule = value;
+  }
+  public resetDeleteRule() {
+    this._deleteRule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteRuleInput() {
+    return this._deleteRule;
+  }
+
+  // interface_name - computed: false, optional: true, required: false
+  private _interfaceName?: string; 
+  public get interfaceName() {
+    return this.getStringAttribute('interface_name');
+  }
+  public set interfaceName(value: string) {
+    this._interfaceName = value;
+  }
+  public resetInterfaceName() {
+    this._interfaceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get interfaceNameInput() {
+    return this._interfaceName;
+  }
+}
+
+export class GoogleComputeInstanceGroupManagerStatefulInternalIpList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeInstanceGroupManagerStatefulInternalIp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference {
+    return new GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeInstanceGroupManagerTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#create GoogleComputeInstanceGroupManager#create}
@@ -1593,7 +1861,7 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_group_manager',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1619,6 +1887,8 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
     this._autoHealingPolicies.internalValue = config.autoHealingPolicies;
     this._namedPort.internalValue = config.namedPort;
     this._statefulDisk.internalValue = config.statefulDisk;
+    this._statefulExternalIp.internalValue = config.statefulExternalIp;
+    this._statefulInternalIp.internalValue = config.statefulInternalIp;
     this._timeouts.internalValue = config.timeouts;
     this._updatePolicy.internalValue = config.updatePolicy;
     this._version.internalValue = config.version;
@@ -1888,6 +2158,38 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
     return this._statefulDisk.internalValue;
   }
 
+  // stateful_external_ip - computed: false, optional: true, required: false
+  private _statefulExternalIp = new GoogleComputeInstanceGroupManagerStatefulExternalIpList(this, "stateful_external_ip", false);
+  public get statefulExternalIp() {
+    return this._statefulExternalIp;
+  }
+  public putStatefulExternalIp(value: GoogleComputeInstanceGroupManagerStatefulExternalIp[] | cdktf.IResolvable) {
+    this._statefulExternalIp.internalValue = value;
+  }
+  public resetStatefulExternalIp() {
+    this._statefulExternalIp.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statefulExternalIpInput() {
+    return this._statefulExternalIp.internalValue;
+  }
+
+  // stateful_internal_ip - computed: false, optional: true, required: false
+  private _statefulInternalIp = new GoogleComputeInstanceGroupManagerStatefulInternalIpList(this, "stateful_internal_ip", false);
+  public get statefulInternalIp() {
+    return this._statefulInternalIp;
+  }
+  public putStatefulInternalIp(value: GoogleComputeInstanceGroupManagerStatefulInternalIp[] | cdktf.IResolvable) {
+    this._statefulInternalIp.internalValue = value;
+  }
+  public resetStatefulInternalIp() {
+    this._statefulInternalIp.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statefulInternalIpInput() {
+    return this._statefulInternalIp.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleComputeInstanceGroupManagerTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1954,6 +2256,8 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
       auto_healing_policies: googleComputeInstanceGroupManagerAutoHealingPoliciesToTerraform(this._autoHealingPolicies.internalValue),
       named_port: cdktf.listMapper(googleComputeInstanceGroupManagerNamedPortToTerraform, true)(this._namedPort.internalValue),
       stateful_disk: cdktf.listMapper(googleComputeInstanceGroupManagerStatefulDiskToTerraform, true)(this._statefulDisk.internalValue),
+      stateful_external_ip: cdktf.listMapper(googleComputeInstanceGroupManagerStatefulExternalIpToTerraform, true)(this._statefulExternalIp.internalValue),
+      stateful_internal_ip: cdktf.listMapper(googleComputeInstanceGroupManagerStatefulInternalIpToTerraform, true)(this._statefulInternalIp.internalValue),
       timeouts: googleComputeInstanceGroupManagerTimeoutsToTerraform(this._timeouts.internalValue),
       update_policy: googleComputeInstanceGroupManagerUpdatePolicyToTerraform(this._updatePolicy.internalValue),
       version: cdktf.listMapper(googleComputeInstanceGroupManagerVersionToTerraform, true)(this._version.internalValue),
