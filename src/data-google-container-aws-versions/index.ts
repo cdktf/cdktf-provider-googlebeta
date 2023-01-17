@@ -50,7 +50,7 @@ export class DataGoogleContainerAwsVersions extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_container_aws_versions',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
