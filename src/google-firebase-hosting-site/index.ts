@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleFirebaseHostingSiteConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Optional. The [ID of a Web App](https://firebase.google.com/docs/projects/api/reference/rest/v1beta1/projects.webApps#WebApp.FIELDS.app_id)
+  * Optional. The [ID of a Web App](https://firebase.google.com/docs/reference/firebase-management/rest/v1beta1/projects.webApps#WebApp.FIELDS.app_id)
 associated with the Hosting site.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site#app_id GoogleFirebaseHostingSite#app_id}
@@ -196,7 +196,7 @@ export class GoogleFirebaseHostingSite extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_hosting_site',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

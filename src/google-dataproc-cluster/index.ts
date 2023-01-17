@@ -56,6 +56,12 @@ export interface GoogleDataprocClusterConfig extends cdktf.TerraformMetaArgument
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#timeouts GoogleDataprocCluster#timeouts}
   */
   readonly timeouts?: GoogleDataprocClusterTimeouts;
+  /**
+  * virtual_cluster_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#virtual_cluster_config GoogleDataprocCluster#virtual_cluster_config}
+  */
+  readonly virtualClusterConfig?: GoogleDataprocClusterVirtualClusterConfig;
 }
 export interface GoogleDataprocClusterClusterConfigAutoscalingConfig {
   /**
@@ -3395,6 +3401,1221 @@ export class GoogleDataprocClusterTimeoutsOutputReference extends cdktf.ComplexO
     return this._update;
   }
 }
+export interface GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig {
+  /**
+  * The Hive Metastore configuration for this workload.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
+  */
+  readonly dataprocMetastoreService?: string;
+}
+
+export function googleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference | GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dataproc_metastore_service: cdktf.stringToTerraform(struct!.dataprocMetastoreService),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataprocMetastoreService !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataprocMetastoreService = this._dataprocMetastoreService;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dataprocMetastoreService = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dataprocMetastoreService = value.dataprocMetastoreService;
+    }
+  }
+
+  // dataproc_metastore_service - computed: false, optional: true, required: false
+  private _dataprocMetastoreService?: string; 
+  public get dataprocMetastoreService() {
+    return this.getStringAttribute('dataproc_metastore_service');
+  }
+  public set dataprocMetastoreService(value: string) {
+    this._dataprocMetastoreService = value;
+  }
+  public resetDataprocMetastoreService() {
+    this._dataprocMetastoreService = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataprocMetastoreServiceInput() {
+    return this._dataprocMetastoreService;
+  }
+}
+export interface GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig {
+  /**
+  * Resource name of an existing Dataproc Cluster to act as a Spark History Server for the workload.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#dataproc_cluster GoogleDataprocCluster#dataproc_cluster}
+  */
+  readonly dataprocCluster?: string;
+}
+
+export function googleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference | GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dataproc_cluster: cdktf.stringToTerraform(struct!.dataprocCluster),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dataprocCluster !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dataprocCluster = this._dataprocCluster;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._dataprocCluster = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._dataprocCluster = value.dataprocCluster;
+    }
+  }
+
+  // dataproc_cluster - computed: false, optional: true, required: false
+  private _dataprocCluster?: string; 
+  public get dataprocCluster() {
+    return this.getStringAttribute('dataproc_cluster');
+  }
+  public set dataprocCluster(value: string) {
+    this._dataprocCluster = value;
+  }
+  public resetDataprocCluster() {
+    this._dataprocCluster = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataprocClusterInput() {
+    return this._dataprocCluster;
+  }
+}
+export interface GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig {
+  /**
+  * metastore_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
+  */
+  readonly metastoreConfig?: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig;
+  /**
+  * spark_history_server_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#spark_history_server_config GoogleDataprocCluster#spark_history_server_config}
+  */
+  readonly sparkHistoryServerConfig?: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig;
+}
+
+export function googleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference | GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    metastore_config: googleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigToTerraform(struct!.metastoreConfig),
+    spark_history_server_config: googleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigToTerraform(struct!.sparkHistoryServerConfig),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._metastoreConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metastoreConfig = this._metastoreConfig?.internalValue;
+    }
+    if (this._sparkHistoryServerConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sparkHistoryServerConfig = this._sparkHistoryServerConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._metastoreConfig.internalValue = undefined;
+      this._sparkHistoryServerConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._metastoreConfig.internalValue = value.metastoreConfig;
+      this._sparkHistoryServerConfig.internalValue = value.sparkHistoryServerConfig;
+    }
+  }
+
+  // metastore_config - computed: false, optional: true, required: false
+  private _metastoreConfig = new GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference(this, "metastore_config");
+  public get metastoreConfig() {
+    return this._metastoreConfig;
+  }
+  public putMetastoreConfig(value: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig) {
+    this._metastoreConfig.internalValue = value;
+  }
+  public resetMetastoreConfig() {
+    this._metastoreConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metastoreConfigInput() {
+    return this._metastoreConfig.internalValue;
+  }
+
+  // spark_history_server_config - computed: false, optional: true, required: false
+  private _sparkHistoryServerConfig = new GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference(this, "spark_history_server_config");
+  public get sparkHistoryServerConfig() {
+    return this._sparkHistoryServerConfig;
+  }
+  public putSparkHistoryServerConfig(value: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig) {
+    this._sparkHistoryServerConfig.internalValue = value;
+  }
+  public resetSparkHistoryServerConfig() {
+    this._sparkHistoryServerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sparkHistoryServerConfigInput() {
+    return this._sparkHistoryServerConfig.internalValue;
+  }
+}
+export interface GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling {
+  /**
+  * The maximum number of nodes in the node pool. Must be >= minNodeCount, and must be > 0.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#max_node_count GoogleDataprocCluster#max_node_count}
+  */
+  readonly maxNodeCount?: number;
+  /**
+  * The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#min_node_count GoogleDataprocCluster#min_node_count}
+  */
+  readonly minNodeCount?: number;
+}
+
+export function googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference | GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max_node_count: cdktf.numberToTerraform(struct!.maxNodeCount),
+    min_node_count: cdktf.numberToTerraform(struct!.minNodeCount),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._maxNodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxNodeCount = this._maxNodeCount;
+    }
+    if (this._minNodeCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minNodeCount = this._minNodeCount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._maxNodeCount = undefined;
+      this._minNodeCount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._maxNodeCount = value.maxNodeCount;
+      this._minNodeCount = value.minNodeCount;
+    }
+  }
+
+  // max_node_count - computed: false, optional: true, required: false
+  private _maxNodeCount?: number; 
+  public get maxNodeCount() {
+    return this.getNumberAttribute('max_node_count');
+  }
+  public set maxNodeCount(value: number) {
+    this._maxNodeCount = value;
+  }
+  public resetMaxNodeCount() {
+    this._maxNodeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxNodeCountInput() {
+    return this._maxNodeCount;
+  }
+
+  // min_node_count - computed: false, optional: true, required: false
+  private _minNodeCount?: number; 
+  public get minNodeCount() {
+    return this.getNumberAttribute('min_node_count');
+  }
+  public set minNodeCount(value: number) {
+    this._minNodeCount = value;
+  }
+  public resetMinNodeCount() {
+    this._minNodeCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minNodeCountInput() {
+    return this._minNodeCount;
+  }
+}
+export interface GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig {
+  /**
+  * The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#local_ssd_count GoogleDataprocCluster#local_ssd_count}
+  */
+  readonly localSsdCount?: number;
+  /**
+  * The name of a Compute Engine machine type.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+  */
+  readonly machineType?: string;
+  /**
+  * Minimum CPU platform to be used by this instance. The instance may be scheduled on the specified or a newer CPU platform. Specify the friendly names of CPU platforms, such as "Intel Haswell" or "Intel Sandy Bridge".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+  */
+  readonly minCpuPlatform?: string;
+  /**
+  * Whether the nodes are created as preemptible VM instances. Preemptible nodes cannot be used in a node pool with the CONTROLLER role or in the DEFAULT node pool if the CONTROLLER role is not assigned (the DEFAULT node pool will assume the CONTROLLER role).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#preemptible GoogleDataprocCluster#preemptible}
+  */
+  readonly preemptible?: boolean | cdktf.IResolvable;
+  /**
+  * Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#spot GoogleDataprocCluster#spot}
+  */
+  readonly spot?: boolean | cdktf.IResolvable;
+}
+
+export function googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference | GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    local_ssd_count: cdktf.numberToTerraform(struct!.localSsdCount),
+    machine_type: cdktf.stringToTerraform(struct!.machineType),
+    min_cpu_platform: cdktf.stringToTerraform(struct!.minCpuPlatform),
+    preemptible: cdktf.booleanToTerraform(struct!.preemptible),
+    spot: cdktf.booleanToTerraform(struct!.spot),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._localSsdCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.localSsdCount = this._localSsdCount;
+    }
+    if (this._machineType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.machineType = this._machineType;
+    }
+    if (this._minCpuPlatform !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minCpuPlatform = this._minCpuPlatform;
+    }
+    if (this._preemptible !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.preemptible = this._preemptible;
+    }
+    if (this._spot !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.spot = this._spot;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._localSsdCount = undefined;
+      this._machineType = undefined;
+      this._minCpuPlatform = undefined;
+      this._preemptible = undefined;
+      this._spot = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._localSsdCount = value.localSsdCount;
+      this._machineType = value.machineType;
+      this._minCpuPlatform = value.minCpuPlatform;
+      this._preemptible = value.preemptible;
+      this._spot = value.spot;
+    }
+  }
+
+  // local_ssd_count - computed: false, optional: true, required: false
+  private _localSsdCount?: number; 
+  public get localSsdCount() {
+    return this.getNumberAttribute('local_ssd_count');
+  }
+  public set localSsdCount(value: number) {
+    this._localSsdCount = value;
+  }
+  public resetLocalSsdCount() {
+    this._localSsdCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localSsdCountInput() {
+    return this._localSsdCount;
+  }
+
+  // machine_type - computed: false, optional: true, required: false
+  private _machineType?: string; 
+  public get machineType() {
+    return this.getStringAttribute('machine_type');
+  }
+  public set machineType(value: string) {
+    this._machineType = value;
+  }
+  public resetMachineType() {
+    this._machineType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get machineTypeInput() {
+    return this._machineType;
+  }
+
+  // min_cpu_platform - computed: false, optional: true, required: false
+  private _minCpuPlatform?: string; 
+  public get minCpuPlatform() {
+    return this.getStringAttribute('min_cpu_platform');
+  }
+  public set minCpuPlatform(value: string) {
+    this._minCpuPlatform = value;
+  }
+  public resetMinCpuPlatform() {
+    this._minCpuPlatform = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minCpuPlatformInput() {
+    return this._minCpuPlatform;
+  }
+
+  // preemptible - computed: false, optional: true, required: false
+  private _preemptible?: boolean | cdktf.IResolvable; 
+  public get preemptible() {
+    return this.getBooleanAttribute('preemptible');
+  }
+  public set preemptible(value: boolean | cdktf.IResolvable) {
+    this._preemptible = value;
+  }
+  public resetPreemptible() {
+    this._preemptible = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get preemptibleInput() {
+    return this._preemptible;
+  }
+
+  // spot - computed: false, optional: true, required: false
+  private _spot?: boolean | cdktf.IResolvable; 
+  public get spot() {
+    return this.getBooleanAttribute('spot');
+  }
+  public set spot(value: boolean | cdktf.IResolvable) {
+    this._spot = value;
+  }
+  public resetSpot() {
+    this._spot = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get spotInput() {
+    return this._spot;
+  }
+}
+export interface GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig {
+  /**
+  * The list of Compute Engine zones where node pool nodes associated with a Dataproc on GKE virtual cluster will be located.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#locations GoogleDataprocCluster#locations}
+  */
+  readonly locations: string[];
+  /**
+  * autoscaling block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#autoscaling GoogleDataprocCluster#autoscaling}
+  */
+  readonly autoscaling?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling;
+  /**
+  * config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#config GoogleDataprocCluster#config}
+  */
+  readonly config?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig;
+}
+
+export function googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference | GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.locations),
+    autoscaling: googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingToTerraform(struct!.autoscaling),
+    config: googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigToTerraform(struct!.config),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._locations !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.locations = this._locations;
+    }
+    if (this._autoscaling?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscaling = this._autoscaling?.internalValue;
+    }
+    if (this._config?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.config = this._config?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._locations = undefined;
+      this._autoscaling.internalValue = undefined;
+      this._config.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._locations = value.locations;
+      this._autoscaling.internalValue = value.autoscaling;
+      this._config.internalValue = value.config;
+    }
+  }
+
+  // locations - computed: false, optional: false, required: true
+  private _locations?: string[]; 
+  public get locations() {
+    return cdktf.Fn.tolist(this.getListAttribute('locations'));
+  }
+  public set locations(value: string[]) {
+    this._locations = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get locationsInput() {
+    return this._locations;
+  }
+
+  // autoscaling - computed: false, optional: true, required: false
+  private _autoscaling = new GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference(this, "autoscaling");
+  public get autoscaling() {
+    return this._autoscaling;
+  }
+  public putAutoscaling(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling) {
+    this._autoscaling.internalValue = value;
+  }
+  public resetAutoscaling() {
+    this._autoscaling.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingInput() {
+    return this._autoscaling.internalValue;
+  }
+
+  // config - computed: false, optional: true, required: false
+  private _config = new GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference(this, "config");
+  public get config() {
+    return this._config;
+  }
+  public putConfig(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig) {
+    this._config.internalValue = value;
+  }
+  public resetConfig() {
+    this._config.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configInput() {
+    return this._config.internalValue;
+  }
+}
+export interface GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget {
+  /**
+  * The target GKE node pool. Format: 'projects/{project}/locations/{location}/clusters/{cluster}/nodePools/{nodePool}'
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#node_pool GoogleDataprocCluster#node_pool}
+  */
+  readonly nodePool: string;
+  /**
+  * The roles associated with the GKE node pool.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#roles GoogleDataprocCluster#roles}
+  */
+  readonly roles: string[];
+  /**
+  * node_pool_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#node_pool_config GoogleDataprocCluster#node_pool_config}
+  */
+  readonly nodePoolConfig?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig;
+}
+
+export function googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    node_pool: cdktf.stringToTerraform(struct!.nodePool),
+    roles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.roles),
+    node_pool_config: googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigToTerraform(struct!.nodePoolConfig),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._nodePool !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodePool = this._nodePool;
+    }
+    if (this._roles !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.roles = this._roles;
+    }
+    if (this._nodePoolConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodePoolConfig = this._nodePoolConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._nodePool = undefined;
+      this._roles = undefined;
+      this._nodePoolConfig.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._nodePool = value.nodePool;
+      this._roles = value.roles;
+      this._nodePoolConfig.internalValue = value.nodePoolConfig;
+    }
+  }
+
+  // node_pool - computed: false, optional: false, required: true
+  private _nodePool?: string; 
+  public get nodePool() {
+    return this.getStringAttribute('node_pool');
+  }
+  public set nodePool(value: string) {
+    this._nodePool = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodePoolInput() {
+    return this._nodePool;
+  }
+
+  // roles - computed: false, optional: false, required: true
+  private _roles?: string[]; 
+  public get roles() {
+    return cdktf.Fn.tolist(this.getListAttribute('roles'));
+  }
+  public set roles(value: string[]) {
+    this._roles = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rolesInput() {
+    return this._roles;
+  }
+
+  // node_pool_config - computed: false, optional: true, required: false
+  private _nodePoolConfig = new GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference(this, "node_pool_config");
+  public get nodePoolConfig() {
+    return this._nodePoolConfig;
+  }
+  public putNodePoolConfig(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig) {
+    this._nodePoolConfig.internalValue = value;
+  }
+  public resetNodePoolConfig() {
+    this._nodePoolConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodePoolConfigInput() {
+    return this._nodePoolConfig.internalValue;
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference {
+    return new GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig {
+  /**
+  * A target GKE cluster to deploy to. It must be in the same project and region as the Dataproc cluster (the GKE cluster can be zonal or regional). Format: 'projects/{project}/locations/{location}/clusters/{cluster_id}'
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#gke_cluster_target GoogleDataprocCluster#gke_cluster_target}
+  */
+  readonly gkeClusterTarget?: string;
+  /**
+  * node_pool_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#node_pool_target GoogleDataprocCluster#node_pool_target}
+  */
+  readonly nodePoolTarget?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget[] | cdktf.IResolvable;
+}
+
+export function googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference | GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    gke_cluster_target: cdktf.stringToTerraform(struct!.gkeClusterTarget),
+    node_pool_target: cdktf.listMapper(googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetToTerraform, true)(struct!.nodePoolTarget),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._gkeClusterTarget !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gkeClusterTarget = this._gkeClusterTarget;
+    }
+    if (this._nodePoolTarget?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nodePoolTarget = this._nodePoolTarget?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._gkeClusterTarget = undefined;
+      this._nodePoolTarget.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._gkeClusterTarget = value.gkeClusterTarget;
+      this._nodePoolTarget.internalValue = value.nodePoolTarget;
+    }
+  }
+
+  // gke_cluster_target - computed: false, optional: true, required: false
+  private _gkeClusterTarget?: string; 
+  public get gkeClusterTarget() {
+    return this.getStringAttribute('gke_cluster_target');
+  }
+  public set gkeClusterTarget(value: string) {
+    this._gkeClusterTarget = value;
+  }
+  public resetGkeClusterTarget() {
+    this._gkeClusterTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gkeClusterTargetInput() {
+    return this._gkeClusterTarget;
+  }
+
+  // node_pool_target - computed: false, optional: true, required: false
+  private _nodePoolTarget = new GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList(this, "node_pool_target", false);
+  public get nodePoolTarget() {
+    return this._nodePoolTarget;
+  }
+  public putNodePoolTarget(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget[] | cdktf.IResolvable) {
+    this._nodePoolTarget.internalValue = value;
+  }
+  public resetNodePoolTarget() {
+    this._nodePoolTarget.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodePoolTargetInput() {
+    return this._nodePoolTarget.internalValue;
+  }
+}
+export interface GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig {
+  /**
+  * The components that should be installed in this Dataproc cluster. The key must be a string from the KubernetesComponent enumeration. The value is the version of the software to be installed.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#component_version GoogleDataprocCluster#component_version}
+  */
+  readonly componentVersion: { [key: string]: string };
+  /**
+  * The properties to set on daemon config files. Property keys are specified in prefix:property format, for example spark:spark.kubernetes.container.image.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#properties GoogleDataprocCluster#properties}
+  */
+  readonly properties?: { [key: string]: string };
+}
+
+export function googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference | GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    component_version: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.componentVersion),
+    properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._componentVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.componentVersion = this._componentVersion;
+    }
+    if (this._properties !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.properties = this._properties;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._componentVersion = undefined;
+      this._properties = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._componentVersion = value.componentVersion;
+      this._properties = value.properties;
+    }
+  }
+
+  // component_version - computed: false, optional: false, required: true
+  private _componentVersion?: { [key: string]: string }; 
+  public get componentVersion() {
+    return this.getStringMapAttribute('component_version');
+  }
+  public set componentVersion(value: { [key: string]: string }) {
+    this._componentVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get componentVersionInput() {
+    return this._componentVersion;
+  }
+
+  // properties - computed: true, optional: true, required: false
+  private _properties?: { [key: string]: string }; 
+  public get properties() {
+    return this.getStringMapAttribute('properties');
+  }
+  public set properties(value: { [key: string]: string }) {
+    this._properties = value;
+  }
+  public resetProperties() {
+    this._properties = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propertiesInput() {
+    return this._properties;
+  }
+}
+export interface GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig {
+  /**
+  * A namespace within the Kubernetes cluster to deploy into. If this namespace does not exist, it is created. If it exists, Dataproc verifies that another Dataproc VirtualCluster is not installed into it. If not specified, the name of the Dataproc Cluster is used.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#kubernetes_namespace GoogleDataprocCluster#kubernetes_namespace}
+  */
+  readonly kubernetesNamespace?: string;
+  /**
+  * gke_cluster_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#gke_cluster_config GoogleDataprocCluster#gke_cluster_config}
+  */
+  readonly gkeClusterConfig: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig;
+  /**
+  * kubernetes_software_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#kubernetes_software_config GoogleDataprocCluster#kubernetes_software_config}
+  */
+  readonly kubernetesSoftwareConfig: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig;
+}
+
+export function googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference | GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kubernetes_namespace: cdktf.stringToTerraform(struct!.kubernetesNamespace),
+    gke_cluster_config: googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigToTerraform(struct!.gkeClusterConfig),
+    kubernetes_software_config: googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigToTerraform(struct!.kubernetesSoftwareConfig),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kubernetesNamespace !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kubernetesNamespace = this._kubernetesNamespace;
+    }
+    if (this._gkeClusterConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.gkeClusterConfig = this._gkeClusterConfig?.internalValue;
+    }
+    if (this._kubernetesSoftwareConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kubernetesSoftwareConfig = this._kubernetesSoftwareConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kubernetesNamespace = undefined;
+      this._gkeClusterConfig.internalValue = undefined;
+      this._kubernetesSoftwareConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kubernetesNamespace = value.kubernetesNamespace;
+      this._gkeClusterConfig.internalValue = value.gkeClusterConfig;
+      this._kubernetesSoftwareConfig.internalValue = value.kubernetesSoftwareConfig;
+    }
+  }
+
+  // kubernetes_namespace - computed: false, optional: true, required: false
+  private _kubernetesNamespace?: string; 
+  public get kubernetesNamespace() {
+    return this.getStringAttribute('kubernetes_namespace');
+  }
+  public set kubernetesNamespace(value: string) {
+    this._kubernetesNamespace = value;
+  }
+  public resetKubernetesNamespace() {
+    this._kubernetesNamespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubernetesNamespaceInput() {
+    return this._kubernetesNamespace;
+  }
+
+  // gke_cluster_config - computed: false, optional: false, required: true
+  private _gkeClusterConfig = new GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference(this, "gke_cluster_config");
+  public get gkeClusterConfig() {
+    return this._gkeClusterConfig;
+  }
+  public putGkeClusterConfig(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig) {
+    this._gkeClusterConfig.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gkeClusterConfigInput() {
+    return this._gkeClusterConfig.internalValue;
+  }
+
+  // kubernetes_software_config - computed: false, optional: false, required: true
+  private _kubernetesSoftwareConfig = new GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference(this, "kubernetes_software_config");
+  public get kubernetesSoftwareConfig() {
+    return this._kubernetesSoftwareConfig;
+  }
+  public putKubernetesSoftwareConfig(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig) {
+    this._kubernetesSoftwareConfig.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubernetesSoftwareConfigInput() {
+    return this._kubernetesSoftwareConfig.internalValue;
+  }
+}
+export interface GoogleDataprocClusterVirtualClusterConfig {
+  /**
+  * A Cloud Storage bucket used to stage job dependencies, config files, and job driver console output. If you do not specify a staging bucket, Cloud Dataproc will determine a Cloud Storage location (US, ASIA, or EU) for your cluster's staging bucket according to the Compute Engine zone where your cluster is deployed, and then create and manage this project-level, per-location bucket.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
+  */
+  readonly stagingBucket?: string;
+  /**
+  * auxiliary_services_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#auxiliary_services_config GoogleDataprocCluster#auxiliary_services_config}
+  */
+  readonly auxiliaryServicesConfig?: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig;
+  /**
+  * kubernetes_cluster_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#kubernetes_cluster_config GoogleDataprocCluster#kubernetes_cluster_config}
+  */
+  readonly kubernetesClusterConfig?: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig;
+}
+
+export function googleDataprocClusterVirtualClusterConfigToTerraform(struct?: GoogleDataprocClusterVirtualClusterConfigOutputReference | GoogleDataprocClusterVirtualClusterConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    staging_bucket: cdktf.stringToTerraform(struct!.stagingBucket),
+    auxiliary_services_config: googleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigToTerraform(struct!.auxiliaryServicesConfig),
+    kubernetes_cluster_config: googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigToTerraform(struct!.kubernetesClusterConfig),
+  }
+}
+
+export class GoogleDataprocClusterVirtualClusterConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataprocClusterVirtualClusterConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._stagingBucket !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stagingBucket = this._stagingBucket;
+    }
+    if (this._auxiliaryServicesConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.auxiliaryServicesConfig = this._auxiliaryServicesConfig?.internalValue;
+    }
+    if (this._kubernetesClusterConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kubernetesClusterConfig = this._kubernetesClusterConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataprocClusterVirtualClusterConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._stagingBucket = undefined;
+      this._auxiliaryServicesConfig.internalValue = undefined;
+      this._kubernetesClusterConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._stagingBucket = value.stagingBucket;
+      this._auxiliaryServicesConfig.internalValue = value.auxiliaryServicesConfig;
+      this._kubernetesClusterConfig.internalValue = value.kubernetesClusterConfig;
+    }
+  }
+
+  // staging_bucket - computed: false, optional: true, required: false
+  private _stagingBucket?: string; 
+  public get stagingBucket() {
+    return this.getStringAttribute('staging_bucket');
+  }
+  public set stagingBucket(value: string) {
+    this._stagingBucket = value;
+  }
+  public resetStagingBucket() {
+    this._stagingBucket = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stagingBucketInput() {
+    return this._stagingBucket;
+  }
+
+  // auxiliary_services_config - computed: false, optional: true, required: false
+  private _auxiliaryServicesConfig = new GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference(this, "auxiliary_services_config");
+  public get auxiliaryServicesConfig() {
+    return this._auxiliaryServicesConfig;
+  }
+  public putAuxiliaryServicesConfig(value: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig) {
+    this._auxiliaryServicesConfig.internalValue = value;
+  }
+  public resetAuxiliaryServicesConfig() {
+    this._auxiliaryServicesConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auxiliaryServicesConfigInput() {
+    return this._auxiliaryServicesConfig.internalValue;
+  }
+
+  // kubernetes_cluster_config - computed: false, optional: true, required: false
+  private _kubernetesClusterConfig = new GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference(this, "kubernetes_cluster_config");
+  public get kubernetesClusterConfig() {
+    return this._kubernetesClusterConfig;
+  }
+  public putKubernetesClusterConfig(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig) {
+    this._kubernetesClusterConfig.internalValue = value;
+  }
+  public resetKubernetesClusterConfig() {
+    this._kubernetesClusterConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kubernetesClusterConfigInput() {
+    return this._kubernetesClusterConfig.internalValue;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster google_dataproc_cluster}
@@ -3422,7 +4643,7 @@ export class GoogleDataprocCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataproc_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.47.0',
+        providerVersion: '4.48.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -3441,6 +4662,7 @@ export class GoogleDataprocCluster extends cdktf.TerraformResource {
     this._region = config.region;
     this._clusterConfig.internalValue = config.clusterConfig;
     this._timeouts.internalValue = config.timeouts;
+    this._virtualClusterConfig.internalValue = config.virtualClusterConfig;
   }
 
   // ==========
@@ -3572,6 +4794,22 @@ export class GoogleDataprocCluster extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // virtual_cluster_config - computed: false, optional: true, required: false
+  private _virtualClusterConfig = new GoogleDataprocClusterVirtualClusterConfigOutputReference(this, "virtual_cluster_config");
+  public get virtualClusterConfig() {
+    return this._virtualClusterConfig;
+  }
+  public putVirtualClusterConfig(value: GoogleDataprocClusterVirtualClusterConfig) {
+    this._virtualClusterConfig.internalValue = value;
+  }
+  public resetVirtualClusterConfig() {
+    this._virtualClusterConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualClusterConfigInput() {
+    return this._virtualClusterConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -3586,6 +4824,7 @@ export class GoogleDataprocCluster extends cdktf.TerraformResource {
       region: cdktf.stringToTerraform(this._region),
       cluster_config: googleDataprocClusterClusterConfigToTerraform(this._clusterConfig.internalValue),
       timeouts: googleDataprocClusterTimeoutsToTerraform(this._timeouts.internalValue),
+      virtual_cluster_config: googleDataprocClusterVirtualClusterConfigToTerraform(this._virtualClusterConfig.internalValue),
     };
   }
 }
