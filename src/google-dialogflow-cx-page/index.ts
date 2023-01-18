@@ -2339,7 +2339,7 @@ export class GoogleDialogflowCxPage extends cdktf.TerraformResource {
       terraformResourceType: 'google_dialogflow_cx_page',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

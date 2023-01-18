@@ -534,6 +534,102 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsList extends cdk
     return new GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields {
+  /**
+  * Name of a BigQuery field to be returned with the findings.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
+  */
+  readonly name: string;
+}
+
+export function googleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsToTerraform(struct?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+
+export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsOutputReference {
+    return new GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference {
   /**
   * The dataset ID of the table.
@@ -675,6 +771,12 @@ rowsLimit or rowsLimitPercent. If not specified, rows are scanned in the order B
   */
   readonly sampleMethod?: string;
   /**
+  * identifying_fields block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_job_trigger#identifying_fields GoogleDataLossPreventionJobTrigger#identifying_fields}
+  */
+  readonly identifyingFields?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields[] | cdktf.IResolvable;
+  /**
   * table_reference block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_job_trigger#table_reference GoogleDataLossPreventionJobTrigger#table_reference}
@@ -691,6 +793,7 @@ export function googleDataLossPreventionJobTriggerInspectJobStorageConfigBigQuer
     rows_limit: cdktf.numberToTerraform(struct!.rowsLimit),
     rows_limit_percent: cdktf.numberToTerraform(struct!.rowsLimitPercent),
     sample_method: cdktf.stringToTerraform(struct!.sampleMethod),
+    identifying_fields: cdktf.listMapper(googleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsToTerraform, true)(struct!.identifyingFields),
     table_reference: googleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReferenceToTerraform(struct!.tableReference),
   }
 }
@@ -721,6 +824,10 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
       hasAnyValues = true;
       internalValueResult.sampleMethod = this._sampleMethod;
     }
+    if (this._identifyingFields?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.identifyingFields = this._identifyingFields?.internalValue;
+    }
     if (this._tableReference?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.tableReference = this._tableReference?.internalValue;
@@ -734,6 +841,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
       this._rowsLimit = undefined;
       this._rowsLimitPercent = undefined;
       this._sampleMethod = undefined;
+      this._identifyingFields.internalValue = undefined;
       this._tableReference.internalValue = undefined;
     }
     else {
@@ -741,6 +849,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
       this._rowsLimit = value.rowsLimit;
       this._rowsLimitPercent = value.rowsLimitPercent;
       this._sampleMethod = value.sampleMethod;
+      this._identifyingFields.internalValue = value.identifyingFields;
       this._tableReference.internalValue = value.tableReference;
     }
   }
@@ -791,6 +900,22 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
   // Temporarily expose input value. Use with caution.
   public get sampleMethodInput() {
     return this._sampleMethod;
+  }
+
+  // identifying_fields - computed: false, optional: true, required: false
+  private _identifyingFields = new GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsList(this, "identifying_fields", false);
+  public get identifyingFields() {
+    return this._identifyingFields;
+  }
+  public putIdentifyingFields(value: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields[] | cdktf.IResolvable) {
+    this._identifyingFields.internalValue = value;
+  }
+  public resetIdentifyingFields() {
+    this._identifyingFields.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get identifyingFieldsInput() {
+    return this._identifyingFields.internalValue;
   }
 
   // table_reference - computed: false, optional: false, required: true
@@ -2317,7 +2442,7 @@ export class GoogleDataLossPreventionJobTrigger extends cdktf.TerraformResource 
       terraformResourceType: 'google_data_loss_prevention_job_trigger',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
