@@ -195,7 +195,7 @@ export class GoogleComputeSslCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_ssl_certificate',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -257,6 +257,11 @@ export class GoogleComputeSslCertificate extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // expire_time - computed: true, optional: false, required: false
+  public get expireTime() {
+    return this.getStringAttribute('expire_time');
   }
 
   // id - computed: true, optional: true, required: false

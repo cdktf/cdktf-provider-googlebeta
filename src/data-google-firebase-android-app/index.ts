@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleFirebaseAndroidAppConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The globally unique, Firebase-assigned identifier of the App.
+  * The globally unique, Firebase-assigned identifier of the AndroidApp.
 This identifier should be treated as an opaque token, as the data format is not specified.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#app_id DataGoogleFirebaseAndroidApp#app_id}
@@ -49,7 +49,7 @@ export class DataGoogleFirebaseAndroidApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_firebase_android_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -91,6 +91,11 @@ export class DataGoogleFirebaseAndroidApp extends cdktf.TerraformDataSource {
     return this.getStringAttribute('display_name');
   }
 
+  // etag - computed: true, optional: false, required: false
+  public get etag() {
+    return this.getStringAttribute('etag');
+  }
+
   // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
@@ -120,6 +125,16 @@ export class DataGoogleFirebaseAndroidApp extends cdktf.TerraformDataSource {
   // project - computed: true, optional: false, required: false
   public get project() {
     return this.getStringAttribute('project');
+  }
+
+  // sha1_hashes - computed: true, optional: false, required: false
+  public get sha1Hashes() {
+    return this.getListAttribute('sha1_hashes');
+  }
+
+  // sha256_hashes - computed: true, optional: false, required: false
+  public get sha256Hashes() {
+    return this.getListAttribute('sha256_hashes');
   }
 
   // =========

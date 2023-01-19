@@ -50,7 +50,7 @@ export class DataGoogleTpuTensorflowVersions extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_tpu_tensorflow_versions',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

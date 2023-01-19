@@ -4100,7 +4100,7 @@ export class GoogleCloudbuildTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudbuild_trigger',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

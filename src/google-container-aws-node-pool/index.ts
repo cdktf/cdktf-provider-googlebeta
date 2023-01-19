@@ -171,6 +171,99 @@ export class GoogleContainerAwsNodePoolAutoscalingOutputReference extends cdktf.
     return this._minNodeCount;
   }
 }
+export interface GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection {
+  /**
+  * The frequency at which EC2 Auto Scaling sends aggregated data to AWS CloudWatch. The only valid value is "1Minute".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#granularity GoogleContainerAwsNodePool#granularity}
+  */
+  readonly granularity: string;
+  /**
+  * The metrics to enable. For a list of valid metrics, see https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_EnableMetricsCollection.html. If you specify granularity and don't specify any metrics, all metrics are enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#metrics GoogleContainerAwsNodePool#metrics}
+  */
+  readonly metrics?: string[];
+}
+
+export function googleContainerAwsNodePoolConfigAutoscalingMetricsCollectionToTerraform(struct?: GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference | GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    granularity: cdktf.stringToTerraform(struct!.granularity),
+    metrics: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.metrics),
+  }
+}
+
+export class GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._granularity !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.granularity = this._granularity;
+    }
+    if (this._metrics !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.metrics = this._metrics;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._granularity = undefined;
+      this._metrics = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._granularity = value.granularity;
+      this._metrics = value.metrics;
+    }
+  }
+
+  // granularity - computed: false, optional: false, required: true
+  private _granularity?: string; 
+  public get granularity() {
+    return this.getStringAttribute('granularity');
+  }
+  public set granularity(value: string) {
+    this._granularity = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get granularityInput() {
+    return this._granularity;
+  }
+
+  // metrics - computed: false, optional: true, required: false
+  private _metrics?: string[]; 
+  public get metrics() {
+    return this.getListAttribute('metrics');
+  }
+  public set metrics(value: string[]) {
+    this._metrics = value;
+  }
+  public resetMetrics() {
+    this._metrics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metricsInput() {
+    return this._metrics;
+  }
+}
 export interface GoogleContainerAwsNodePoolConfigConfigEncryption {
   /**
   * The ARN of the AWS KMS key used to encrypt node pool configuration.
@@ -796,6 +889,12 @@ export interface GoogleContainerAwsNodePoolConfigA {
   */
   readonly tags?: { [key: string]: string };
   /**
+  * autoscaling_metrics_collection block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#autoscaling_metrics_collection GoogleContainerAwsNodePool#autoscaling_metrics_collection}
+  */
+  readonly autoscalingMetricsCollection?: GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection;
+  /**
   * config_encryption block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#config_encryption GoogleContainerAwsNodePool#config_encryption}
@@ -845,6 +944,7 @@ export function googleContainerAwsNodePoolConfigAToTerraform(struct?: GoogleCont
     labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.labels),
     security_group_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.securityGroupIds),
     tags: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.tags),
+    autoscaling_metrics_collection: googleContainerAwsNodePoolConfigAutoscalingMetricsCollectionToTerraform(struct!.autoscalingMetricsCollection),
     config_encryption: googleContainerAwsNodePoolConfigConfigEncryptionToTerraform(struct!.configEncryption),
     instance_placement: googleContainerAwsNodePoolConfigInstancePlacementToTerraform(struct!.instancePlacement),
     proxy_config: googleContainerAwsNodePoolConfigProxyConfigToTerraform(struct!.proxyConfig),
@@ -892,6 +992,10 @@ export class GoogleContainerAwsNodePoolConfigAOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.tags = this._tags;
     }
+    if (this._autoscalingMetricsCollection?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoscalingMetricsCollection = this._autoscalingMetricsCollection?.internalValue;
+    }
     if (this._configEncryption?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.configEncryption = this._configEncryption?.internalValue;
@@ -928,6 +1032,7 @@ export class GoogleContainerAwsNodePoolConfigAOutputReference extends cdktf.Comp
       this._labels = undefined;
       this._securityGroupIds = undefined;
       this._tags = undefined;
+      this._autoscalingMetricsCollection.internalValue = undefined;
       this._configEncryption.internalValue = undefined;
       this._instancePlacement.internalValue = undefined;
       this._proxyConfig.internalValue = undefined;
@@ -943,6 +1048,7 @@ export class GoogleContainerAwsNodePoolConfigAOutputReference extends cdktf.Comp
       this._labels = value.labels;
       this._securityGroupIds = value.securityGroupIds;
       this._tags = value.tags;
+      this._autoscalingMetricsCollection.internalValue = value.autoscalingMetricsCollection;
       this._configEncryption.internalValue = value.configEncryption;
       this._instancePlacement.internalValue = value.instancePlacement;
       this._proxyConfig.internalValue = value.proxyConfig;
@@ -1043,6 +1149,22 @@ export class GoogleContainerAwsNodePoolConfigAOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get tagsInput() {
     return this._tags;
+  }
+
+  // autoscaling_metrics_collection - computed: false, optional: true, required: false
+  private _autoscalingMetricsCollection = new GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference(this, "autoscaling_metrics_collection");
+  public get autoscalingMetricsCollection() {
+    return this._autoscalingMetricsCollection;
+  }
+  public putAutoscalingMetricsCollection(value: GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection) {
+    this._autoscalingMetricsCollection.internalValue = value;
+  }
+  public resetAutoscalingMetricsCollection() {
+    this._autoscalingMetricsCollection.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoscalingMetricsCollectionInput() {
+    return this._autoscalingMetricsCollection.internalValue;
   }
 
   // config_encryption - computed: false, optional: false, required: true
@@ -1358,7 +1480,7 @@ export class GoogleContainerAwsNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_aws_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
