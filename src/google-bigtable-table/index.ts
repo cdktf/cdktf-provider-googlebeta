@@ -27,7 +27,7 @@ export interface GoogleBigtableTableConfig extends cdktf.TerraformMetaArguments 
   */
   readonly instanceName: string;
   /**
-  * The name of the table.
+  * The name of the table. Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_table#name GoogleBigtableTable#name}
   */
@@ -255,7 +255,7 @@ export class GoogleBigtableTable extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigtable_table',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -16,7 +16,7 @@ serving traffic. Set to 'DELETE' to delete the AndroidApp. Default to 'DELETE'.
   */
   readonly deletionPolicy?: string;
   /**
-  * The user-assigned display name of the App.
+  * The user-assigned display name of the AndroidApp.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app#display_name GoogleFirebaseAndroidApp#display_name}
   */
@@ -39,6 +39,18 @@ Developer Console.
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app#project GoogleFirebaseAndroidApp#project}
   */
   readonly project?: string;
+  /**
+  * The SHA1 certificate hashes for the AndroidApp.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app#sha1_hashes GoogleFirebaseAndroidApp#sha1_hashes}
+  */
+  readonly sha1Hashes?: string[];
+  /**
+  * The SHA256 certificate hashes for the AndroidApp.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app#sha256_hashes GoogleFirebaseAndroidApp#sha256_hashes}
+  */
+  readonly sha256Hashes?: string[];
   /**
   * timeouts block
   * 
@@ -202,7 +214,7 @@ export class GoogleFirebaseAndroidApp extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_android_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -218,6 +230,8 @@ export class GoogleFirebaseAndroidApp extends cdktf.TerraformResource {
     this._id = config.id;
     this._packageName = config.packageName;
     this._project = config.project;
+    this._sha1Hashes = config.sha1Hashes;
+    this._sha256Hashes = config.sha256Hashes;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -257,6 +271,11 @@ export class GoogleFirebaseAndroidApp extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get displayNameInput() {
     return this._displayName;
+  }
+
+  // etag - computed: true, optional: false, required: false
+  public get etag() {
+    return this.getStringAttribute('etag');
   }
 
   // id - computed: true, optional: true, required: false
@@ -312,6 +331,38 @@ export class GoogleFirebaseAndroidApp extends cdktf.TerraformResource {
     return this._project;
   }
 
+  // sha1_hashes - computed: false, optional: true, required: false
+  private _sha1Hashes?: string[]; 
+  public get sha1Hashes() {
+    return this.getListAttribute('sha1_hashes');
+  }
+  public set sha1Hashes(value: string[]) {
+    this._sha1Hashes = value;
+  }
+  public resetSha1Hashes() {
+    this._sha1Hashes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sha1HashesInput() {
+    return this._sha1Hashes;
+  }
+
+  // sha256_hashes - computed: false, optional: true, required: false
+  private _sha256Hashes?: string[]; 
+  public get sha256Hashes() {
+    return this.getListAttribute('sha256_hashes');
+  }
+  public set sha256Hashes(value: string[]) {
+    this._sha256Hashes = value;
+  }
+  public resetSha256Hashes() {
+    this._sha256Hashes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sha256HashesInput() {
+    return this._sha256Hashes;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleFirebaseAndroidAppTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -339,6 +390,8 @@ export class GoogleFirebaseAndroidApp extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       package_name: cdktf.stringToTerraform(this._packageName),
       project: cdktf.stringToTerraform(this._project),
+      sha1_hashes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sha1Hashes),
+      sha256_hashes: cdktf.listMapper(cdktf.stringToTerraform, false)(this._sha256Hashes),
       timeouts: googleFirebaseAndroidAppTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
