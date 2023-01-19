@@ -1938,6 +1938,122 @@ export class GoogleComposerEnvironmentConfigWorkloadsConfigSchedulerOutputRefere
     return this._storageGb;
   }
 }
+export interface GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer {
+  /**
+  * The number of triggerers.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#count GoogleComposerEnvironment#count}
+  */
+  readonly count: number;
+  /**
+  * CPU request and limit for a single Airflow triggerer replica.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#cpu GoogleComposerEnvironment#cpu}
+  */
+  readonly cpu: number;
+  /**
+  * Memory (GB) request and limit for a single Airflow triggerer replica.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#memory_gb GoogleComposerEnvironment#memory_gb}
+  */
+  readonly memoryGb: number;
+}
+
+export function googleComposerEnvironmentConfigWorkloadsConfigTriggererToTerraform(struct?: GoogleComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference | GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    count: cdktf.numberToTerraform(struct!.count),
+    cpu: cdktf.numberToTerraform(struct!.cpu),
+    memory_gb: cdktf.numberToTerraform(struct!.memoryGb),
+  }
+}
+
+export class GoogleComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._count !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.count = this._count;
+    }
+    if (this._cpu !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cpu = this._cpu;
+    }
+    if (this._memoryGb !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.memoryGb = this._memoryGb;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._count = undefined;
+      this._cpu = undefined;
+      this._memoryGb = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._count = value.count;
+      this._cpu = value.cpu;
+      this._memoryGb = value.memoryGb;
+    }
+  }
+
+  // count - computed: false, optional: false, required: true
+  private _count?: number; 
+  public get count() {
+    return this.getNumberAttribute('count');
+  }
+  public set count(value: number) {
+    this._count = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get countInput() {
+    return this._count;
+  }
+
+  // cpu - computed: false, optional: false, required: true
+  private _cpu?: number; 
+  public get cpu() {
+    return this.getNumberAttribute('cpu');
+  }
+  public set cpu(value: number) {
+    this._cpu = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cpuInput() {
+    return this._cpu;
+  }
+
+  // memory_gb - computed: false, optional: false, required: true
+  private _memoryGb?: number; 
+  public get memoryGb() {
+    return this.getNumberAttribute('memory_gb');
+  }
+  public set memoryGb(value: number) {
+    this._memoryGb = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get memoryGbInput() {
+    return this._memoryGb;
+  }
+}
 export interface GoogleComposerEnvironmentConfigWorkloadsConfigWebServer {
   /**
   * CPU request and limit for Airflow web server.
@@ -2254,6 +2370,12 @@ export interface GoogleComposerEnvironmentConfigWorkloadsConfig {
   */
   readonly scheduler?: GoogleComposerEnvironmentConfigWorkloadsConfigScheduler;
   /**
+  * triggerer block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#triggerer GoogleComposerEnvironment#triggerer}
+  */
+  readonly triggerer?: GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer;
+  /**
   * web_server block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#web_server GoogleComposerEnvironment#web_server}
@@ -2274,6 +2396,7 @@ export function googleComposerEnvironmentConfigWorkloadsConfigToTerraform(struct
   }
   return {
     scheduler: googleComposerEnvironmentConfigWorkloadsConfigSchedulerToTerraform(struct!.scheduler),
+    triggerer: googleComposerEnvironmentConfigWorkloadsConfigTriggererToTerraform(struct!.triggerer),
     web_server: googleComposerEnvironmentConfigWorkloadsConfigWebServerToTerraform(struct!.webServer),
     worker: googleComposerEnvironmentConfigWorkloadsConfigWorkerToTerraform(struct!.worker),
   }
@@ -2297,6 +2420,10 @@ export class GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference exten
       hasAnyValues = true;
       internalValueResult.scheduler = this._scheduler?.internalValue;
     }
+    if (this._triggerer?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.triggerer = this._triggerer?.internalValue;
+    }
     if (this._webServer?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.webServer = this._webServer?.internalValue;
@@ -2312,12 +2439,14 @@ export class GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference exten
     if (value === undefined) {
       this.isEmptyObject = false;
       this._scheduler.internalValue = undefined;
+      this._triggerer.internalValue = undefined;
       this._webServer.internalValue = undefined;
       this._worker.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._scheduler.internalValue = value.scheduler;
+      this._triggerer.internalValue = value.triggerer;
       this._webServer.internalValue = value.webServer;
       this._worker.internalValue = value.worker;
     }
@@ -2337,6 +2466,22 @@ export class GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference exten
   // Temporarily expose input value. Use with caution.
   public get schedulerInput() {
     return this._scheduler.internalValue;
+  }
+
+  // triggerer - computed: false, optional: true, required: false
+  private _triggerer = new GoogleComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference(this, "triggerer");
+  public get triggerer() {
+    return this._triggerer;
+  }
+  public putTriggerer(value: GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer) {
+    this._triggerer.internalValue = value;
+  }
+  public resetTriggerer() {
+    this._triggerer.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get triggererInput() {
+    return this._triggerer.internalValue;
   }
 
   // web_server - computed: false, optional: true, required: false
@@ -2928,7 +3073,7 @@ export class GoogleComposerEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'google_composer_environment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

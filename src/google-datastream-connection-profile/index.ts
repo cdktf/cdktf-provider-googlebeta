@@ -33,7 +33,7 @@ export interface GoogleDatastreamConnectionProfileConfig extends cdktf.Terraform
   */
   readonly labels?: { [key: string]: string };
   /**
-  * The name of the location this repository is located in.
+  * The name of the location this connection profile is located in.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_connection_profile#location GoogleDatastreamConnectionProfile#location}
   */
@@ -1310,7 +1310,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
       terraformResourceType: 'google_datastream_connection_profile',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.48.0',
+        providerVersion: '4.49.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
