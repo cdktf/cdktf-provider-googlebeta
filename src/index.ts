@@ -123,7 +123,13 @@ export * as googleCloudRunServiceIamBinding from './google-cloud-run-service-iam
 export * as googleCloudRunServiceIamMember from './google-cloud-run-service-iam-member';
 export * as googleCloudRunServiceIamPolicy from './google-cloud-run-service-iam-policy';
 export * as googleCloudRunV2Job from './google-cloud-run-v2-job';
+export * as googleCloudRunV2JobIamBinding from './google-cloud-run-v2-job-iam-binding';
+export * as googleCloudRunV2JobIamMember from './google-cloud-run-v2-job-iam-member';
+export * as googleCloudRunV2JobIamPolicy from './google-cloud-run-v2-job-iam-policy';
 export * as googleCloudRunV2Service from './google-cloud-run-v2-service';
+export * as googleCloudRunV2ServiceIamBinding from './google-cloud-run-v2-service-iam-binding';
+export * as googleCloudRunV2ServiceIamMember from './google-cloud-run-v2-service-iam-member';
+export * as googleCloudRunV2ServiceIamPolicy from './google-cloud-run-v2-service-iam-policy';
 export * as googleCloudSchedulerJob from './google-cloud-scheduler-job';
 export * as googleCloudTasksQueue from './google-cloud-tasks-queue';
 export * as googleCloudTasksQueueIamBinding from './google-cloud-tasks-queue-iam-binding';
@@ -402,6 +408,9 @@ export * as googleGameServicesGameServerDeployment from './google-game-services-
 export * as googleGameServicesGameServerDeploymentRollout from './google-game-services-game-server-deployment-rollout';
 export * as googleGameServicesRealm from './google-game-services-realm';
 export * as googleGkeBackupBackupPlan from './google-gke-backup-backup-plan';
+export * as googleGkeBackupBackupPlanIamBinding from './google-gke-backup-backup-plan-iam-binding';
+export * as googleGkeBackupBackupPlanIamMember from './google-gke-backup-backup-plan-iam-member';
+export * as googleGkeBackupBackupPlanIamPolicy from './google-gke-backup-backup-plan-iam-policy';
 export * as googleGkeHubFeature from './google-gke-hub-feature';
 export * as googleGkeHubFeatureMembership from './google-gke-hub-feature-membership';
 export * as googleGkeHubMembership from './google-gke-hub-membership';
@@ -705,6 +714,7 @@ export * as dataGoogleComputeInstanceTemplate from './data-google-compute-instan
 export * as dataGoogleComputeLbIpRanges from './data-google-compute-lb-ip-ranges';
 export * as dataGoogleComputeNetwork from './data-google-compute-network';
 export * as dataGoogleComputeNetworkEndpointGroup from './data-google-compute-network-endpoint-group';
+export * as dataGoogleComputeNetworkPeering from './data-google-compute-network-peering';
 export * as dataGoogleComputeNodeTypes from './data-google-compute-node-types';
 export * as dataGoogleComputeRegionInstanceGroup from './data-google-compute-region-instance-group';
 export * as dataGoogleComputeRegionNetworkEndpointGroup from './data-google-compute-region-network-endpoint-group';
@@ -712,6 +722,7 @@ export * as dataGoogleComputeRegionSslCertificate from './data-google-compute-re
 export * as dataGoogleComputeRegions from './data-google-compute-regions';
 export * as dataGoogleComputeResourcePolicy from './data-google-compute-resource-policy';
 export * as dataGoogleComputeRouter from './data-google-compute-router';
+export * as dataGoogleComputeRouterNat from './data-google-compute-router-nat';
 export * as dataGoogleComputeRouterStatus from './data-google-compute-router-status';
 export * as dataGoogleComputeSnapshot from './data-google-compute-snapshot';
 export * as dataGoogleComputeSslCertificate from './data-google-compute-ssl-certificate';
