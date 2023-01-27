@@ -339,7 +339,7 @@ export class GoogleBeyondcorpAppConnector extends cdktf.TerraformResource {
       terraformResourceType: 'google_beyondcorp_app_connector',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
