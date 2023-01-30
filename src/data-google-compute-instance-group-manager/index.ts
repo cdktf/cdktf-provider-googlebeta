@@ -1074,7 +1074,7 @@ export class DataGoogleComputeInstanceGroupManager extends cdktf.TerraformDataSo
       terraformResourceType: 'google_compute_instance_group_manager',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.50.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
