@@ -7285,7 +7285,7 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

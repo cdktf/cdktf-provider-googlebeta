@@ -500,6 +500,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly tagsCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#tags_location_custom_endpoint GoogleBetaProvider#tags_location_custom_endpoint}
+  */
+  readonly tagsLocationCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#tpu_custom_endpoint GoogleBetaProvider#tpu_custom_endpoint}
   */
   readonly tpuCustomEndpoint?: string;
@@ -585,7 +589,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.51.0',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'
@@ -713,6 +717,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._storageCustomEndpoint = config.storageCustomEndpoint;
     this._storageTransferCustomEndpoint = config.storageTransferCustomEndpoint;
     this._tagsCustomEndpoint = config.tagsCustomEndpoint;
+    this._tagsLocationCustomEndpoint = config.tagsLocationCustomEndpoint;
     this._tpuCustomEndpoint = config.tpuCustomEndpoint;
     this._userProjectOverride = config.userProjectOverride;
     this._vertexAiCustomEndpoint = config.vertexAiCustomEndpoint;
@@ -2695,6 +2700,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     return this._tagsCustomEndpoint;
   }
 
+  // tags_location_custom_endpoint - computed: false, optional: true, required: false
+  private _tagsLocationCustomEndpoint?: string; 
+  public get tagsLocationCustomEndpoint() {
+    return this._tagsLocationCustomEndpoint;
+  }
+  public set tagsLocationCustomEndpoint(value: string | undefined) {
+    this._tagsLocationCustomEndpoint = value;
+  }
+  public resetTagsLocationCustomEndpoint() {
+    this._tagsLocationCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsLocationCustomEndpointInput() {
+    return this._tagsLocationCustomEndpoint;
+  }
+
   // tpu_custom_endpoint - computed: false, optional: true, required: false
   private _tpuCustomEndpoint?: string; 
   public get tpuCustomEndpoint() {
@@ -2952,6 +2973,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       storage_custom_endpoint: cdktf.stringToTerraform(this._storageCustomEndpoint),
       storage_transfer_custom_endpoint: cdktf.stringToTerraform(this._storageTransferCustomEndpoint),
       tags_custom_endpoint: cdktf.stringToTerraform(this._tagsCustomEndpoint),
+      tags_location_custom_endpoint: cdktf.stringToTerraform(this._tagsLocationCustomEndpoint),
       tpu_custom_endpoint: cdktf.stringToTerraform(this._tpuCustomEndpoint),
       user_project_override: cdktf.booleanToTerraform(this._userProjectOverride),
       vertex_ai_custom_endpoint: cdktf.stringToTerraform(this._vertexAiCustomEndpoint),
