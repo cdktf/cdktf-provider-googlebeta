@@ -123,7 +123,13 @@ export * as googleCloudRunServiceIamBinding from './google-cloud-run-service-iam
 export * as googleCloudRunServiceIamMember from './google-cloud-run-service-iam-member';
 export * as googleCloudRunServiceIamPolicy from './google-cloud-run-service-iam-policy';
 export * as googleCloudRunV2Job from './google-cloud-run-v2-job';
+export * as googleCloudRunV2JobIamBinding from './google-cloud-run-v2-job-iam-binding';
+export * as googleCloudRunV2JobIamMember from './google-cloud-run-v2-job-iam-member';
+export * as googleCloudRunV2JobIamPolicy from './google-cloud-run-v2-job-iam-policy';
 export * as googleCloudRunV2Service from './google-cloud-run-v2-service';
+export * as googleCloudRunV2ServiceIamBinding from './google-cloud-run-v2-service-iam-binding';
+export * as googleCloudRunV2ServiceIamMember from './google-cloud-run-v2-service-iam-member';
+export * as googleCloudRunV2ServiceIamPolicy from './google-cloud-run-v2-service-iam-policy';
 export * as googleCloudSchedulerJob from './google-cloud-scheduler-job';
 export * as googleCloudTasksQueue from './google-cloud-tasks-queue';
 export * as googleCloudTasksQueueIamBinding from './google-cloud-tasks-queue-iam-binding';
@@ -131,6 +137,8 @@ export * as googleCloudTasksQueueIamMember from './google-cloud-tasks-queue-iam-
 export * as googleCloudTasksQueueIamPolicy from './google-cloud-tasks-queue-iam-policy';
 export * as googleCloudbuildTrigger from './google-cloudbuild-trigger';
 export * as googleCloudbuildWorkerPool from './google-cloudbuild-worker-pool';
+export * as googleCloudbuildv2Connection from './google-cloudbuildv2-connection';
+export * as googleCloudbuildv2Repository from './google-cloudbuildv2-repository';
 export * as googleClouddeployDeliveryPipeline from './google-clouddeploy-delivery-pipeline';
 export * as googleClouddeployTarget from './google-clouddeploy-target';
 export * as googleCloudfunctions2Function from './google-cloudfunctions2-function';
@@ -402,6 +410,9 @@ export * as googleGameServicesGameServerDeployment from './google-game-services-
 export * as googleGameServicesGameServerDeploymentRollout from './google-game-services-game-server-deployment-rollout';
 export * as googleGameServicesRealm from './google-game-services-realm';
 export * as googleGkeBackupBackupPlan from './google-gke-backup-backup-plan';
+export * as googleGkeBackupBackupPlanIamBinding from './google-gke-backup-backup-plan-iam-binding';
+export * as googleGkeBackupBackupPlanIamMember from './google-gke-backup-backup-plan-iam-member';
+export * as googleGkeBackupBackupPlanIamPolicy from './google-gke-backup-backup-plan-iam-policy';
 export * as googleGkeHubFeature from './google-gke-hub-feature';
 export * as googleGkeHubFeatureMembership from './google-gke-hub-feature-membership';
 export * as googleGkeHubMembership from './google-gke-hub-membership';
@@ -428,6 +439,7 @@ export * as googleHealthcareHl7V2Store from './google-healthcare-hl7-v2-store';
 export * as googleHealthcareHl7V2StoreIamBinding from './google-healthcare-hl7-v2-store-iam-binding';
 export * as googleHealthcareHl7V2StoreIamMember from './google-healthcare-hl7-v2-store-iam-member';
 export * as googleHealthcareHl7V2StoreIamPolicy from './google-healthcare-hl7-v2-store-iam-policy';
+export * as googleIamAccessBoundaryPolicy from './google-iam-access-boundary-policy';
 export * as googleIamDenyPolicy from './google-iam-deny-policy';
 export * as googleIamWorkforcePool from './google-iam-workforce-pool';
 export * as googleIamWorkforcePoolProvider from './google-iam-workforce-pool-provider';
@@ -636,6 +648,7 @@ export * as googleStorageObjectAccessControl from './google-storage-object-acces
 export * as googleStorageObjectAcl from './google-storage-object-acl';
 export * as googleStorageTransferAgentPool from './google-storage-transfer-agent-pool';
 export * as googleStorageTransferJob from './google-storage-transfer-job';
+export * as googleTagsLocationTagBinding from './google-tags-location-tag-binding';
 export * as googleTagsTagBinding from './google-tags-tag-binding';
 export * as googleTagsTagKey from './google-tags-tag-key';
 export * as googleTagsTagKeyIamBinding from './google-tags-tag-key-iam-binding';
@@ -662,6 +675,7 @@ export * as googleVertexAiMetadataStore from './google-vertex-ai-metadata-store'
 export * as googleVertexAiTensorboard from './google-vertex-ai-tensorboard';
 export * as googleVpcAccessConnector from './google-vpc-access-connector';
 export * as googleWorkflowsWorkflow from './google-workflows-workflow';
+export * as googleWorkstationsWorkstationCluster from './google-workstations-workstation-cluster';
 export * as dataGoogleAccessApprovalFolderServiceAccount from './data-google-access-approval-folder-service-account';
 export * as dataGoogleAccessApprovalOrganizationServiceAccount from './data-google-access-approval-organization-service-account';
 export * as dataGoogleAccessApprovalProjectServiceAccount from './data-google-access-approval-project-service-account';
@@ -705,6 +719,7 @@ export * as dataGoogleComputeInstanceTemplate from './data-google-compute-instan
 export * as dataGoogleComputeLbIpRanges from './data-google-compute-lb-ip-ranges';
 export * as dataGoogleComputeNetwork from './data-google-compute-network';
 export * as dataGoogleComputeNetworkEndpointGroup from './data-google-compute-network-endpoint-group';
+export * as dataGoogleComputeNetworkPeering from './data-google-compute-network-peering';
 export * as dataGoogleComputeNodeTypes from './data-google-compute-node-types';
 export * as dataGoogleComputeRegionInstanceGroup from './data-google-compute-region-instance-group';
 export * as dataGoogleComputeRegionNetworkEndpointGroup from './data-google-compute-region-network-endpoint-group';
@@ -712,6 +727,7 @@ export * as dataGoogleComputeRegionSslCertificate from './data-google-compute-re
 export * as dataGoogleComputeRegions from './data-google-compute-regions';
 export * as dataGoogleComputeResourcePolicy from './data-google-compute-resource-policy';
 export * as dataGoogleComputeRouter from './data-google-compute-router';
+export * as dataGoogleComputeRouterNat from './data-google-compute-router-nat';
 export * as dataGoogleComputeRouterStatus from './data-google-compute-router-status';
 export * as dataGoogleComputeSnapshot from './data-google-compute-snapshot';
 export * as dataGoogleComputeSslCertificate from './data-google-compute-ssl-certificate';
@@ -773,6 +789,7 @@ export * as dataGoogleRuntimeconfigConfig from './data-google-runtimeconfig-conf
 export * as dataGoogleRuntimeconfigVariable from './data-google-runtimeconfig-variable';
 export * as dataGoogleSecretManagerSecret from './data-google-secret-manager-secret';
 export * as dataGoogleSecretManagerSecretVersion from './data-google-secret-manager-secret-version';
+export * as dataGoogleSecretManagerSecretVersionAccess from './data-google-secret-manager-secret-version-access';
 export * as dataGoogleServiceAccount from './data-google-service-account';
 export * as dataGoogleServiceAccountAccessToken from './data-google-service-account-access-token';
 export * as dataGoogleServiceAccountIdToken from './data-google-service-account-id-token';

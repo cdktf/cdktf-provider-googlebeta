@@ -1303,6 +1303,11 @@ export class DataGoogleCloudbuildTriggerGitFileSourceOutputReference extends cdk
     }
   }
 
+  // github_enterprise_config - computed: true, optional: false, required: false
+  public get githubEnterpriseConfig() {
+    return this.getStringAttribute('github_enterprise_config');
+  }
+
   // path - computed: true, optional: false, required: false
   public get path() {
     return this.getStringAttribute('path');
@@ -1650,6 +1655,230 @@ export class DataGoogleCloudbuildTriggerPubsubConfigList extends cdktf.ComplexLi
     return new DataGoogleCloudbuildTriggerPubsubConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequest {
+}
+
+export function dataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestToTerraform(struct?: DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequest | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequest | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // branch - computed: true, optional: false, required: false
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+
+  // comment_control - computed: true, optional: false, required: false
+  public get commentControl() {
+    return this.getStringAttribute('comment_control');
+  }
+
+  // invert_regex - computed: true, optional: false, required: false
+  public get invertRegex() {
+    return this.getBooleanAttribute('invert_regex');
+  }
+}
+
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestOutputReference {
+    return new DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleCloudbuildTriggerRepositoryEventConfigPush {
+}
+
+export function dataGoogleCloudbuildTriggerRepositoryEventConfigPushToTerraform(struct?: DataGoogleCloudbuildTriggerRepositoryEventConfigPush): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigPushOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudbuildTriggerRepositoryEventConfigPush | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudbuildTriggerRepositoryEventConfigPush | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // branch - computed: true, optional: false, required: false
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+
+  // invert_regex - computed: true, optional: false, required: false
+  public get invertRegex() {
+    return this.getBooleanAttribute('invert_regex');
+  }
+
+  // tag - computed: true, optional: false, required: false
+  public get tag() {
+    return this.getStringAttribute('tag');
+  }
+}
+
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigPushList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudbuildTriggerRepositoryEventConfigPushOutputReference {
+    return new DataGoogleCloudbuildTriggerRepositoryEventConfigPushOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleCloudbuildTriggerRepositoryEventConfig {
+}
+
+export function dataGoogleCloudbuildTriggerRepositoryEventConfigToTerraform(struct?: DataGoogleCloudbuildTriggerRepositoryEventConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudbuildTriggerRepositoryEventConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudbuildTriggerRepositoryEventConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // pull_request - computed: true, optional: false, required: false
+  private _pullRequest = new DataGoogleCloudbuildTriggerRepositoryEventConfigPullRequestList(this, "pull_request", false);
+  public get pullRequest() {
+    return this._pullRequest;
+  }
+
+  // push - computed: true, optional: false, required: false
+  private _push = new DataGoogleCloudbuildTriggerRepositoryEventConfigPushList(this, "push", false);
+  public get push() {
+    return this._push;
+  }
+
+  // repository - computed: true, optional: false, required: false
+  public get repository() {
+    return this.getStringAttribute('repository');
+  }
+}
+
+export class DataGoogleCloudbuildTriggerRepositoryEventConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudbuildTriggerRepositoryEventConfigOutputReference {
+    return new DataGoogleCloudbuildTriggerRepositoryEventConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleCloudbuildTriggerSourceToBuild {
 }
 
@@ -1688,6 +1917,11 @@ export class DataGoogleCloudbuildTriggerSourceToBuildOutputReference extends cdk
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // github_enterprise_config - computed: true, optional: false, required: false
+  public get githubEnterpriseConfig() {
+    return this.getStringAttribute('github_enterprise_config');
   }
 
   // ref - computed: true, optional: false, required: false
@@ -1914,7 +2148,7 @@ export class DataGoogleCloudbuildTrigger extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_cloudbuild_trigger',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.52.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -2053,6 +2287,12 @@ export class DataGoogleCloudbuildTrigger extends cdktf.TerraformDataSource {
   private _pubsubConfig = new DataGoogleCloudbuildTriggerPubsubConfigList(this, "pubsub_config", false);
   public get pubsubConfig() {
     return this._pubsubConfig;
+  }
+
+  // repository_event_config - computed: true, optional: false, required: false
+  private _repositoryEventConfig = new DataGoogleCloudbuildTriggerRepositoryEventConfigList(this, "repository_event_config", false);
+  public get repositoryEventConfig() {
+    return this._repositoryEventConfig;
   }
 
   // service_account - computed: true, optional: false, required: false
