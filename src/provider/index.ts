@@ -152,6 +152,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly cloudTasksCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#cloudbuildv2_custom_endpoint GoogleBetaProvider#cloudbuildv2_custom_endpoint}
+  */
+  readonly cloudbuildv2CustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#clouddeploy_custom_endpoint GoogleBetaProvider#clouddeploy_custom_endpoint}
   */
   readonly clouddeployCustomEndpoint?: string;
@@ -500,6 +504,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly tagsCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#tags_location_custom_endpoint GoogleBetaProvider#tags_location_custom_endpoint}
+  */
+  readonly tagsLocationCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#tpu_custom_endpoint GoogleBetaProvider#tpu_custom_endpoint}
   */
   readonly tpuCustomEndpoint?: string;
@@ -519,6 +527,10 @@ export interface GoogleBetaProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#workflows_custom_endpoint GoogleBetaProvider#workflows_custom_endpoint}
   */
   readonly workflowsCustomEndpoint?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#workstations_custom_endpoint GoogleBetaProvider#workstations_custom_endpoint}
+  */
+  readonly workstationsCustomEndpoint?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#zone GoogleBetaProvider#zone}
   */
@@ -585,7 +597,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'
@@ -626,6 +638,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._cloudRunV2CustomEndpoint = config.cloudRunV2CustomEndpoint;
     this._cloudSchedulerCustomEndpoint = config.cloudSchedulerCustomEndpoint;
     this._cloudTasksCustomEndpoint = config.cloudTasksCustomEndpoint;
+    this._cloudbuildv2CustomEndpoint = config.cloudbuildv2CustomEndpoint;
     this._clouddeployCustomEndpoint = config.clouddeployCustomEndpoint;
     this._cloudfunctions2CustomEndpoint = config.cloudfunctions2CustomEndpoint;
     this._composerCustomEndpoint = config.composerCustomEndpoint;
@@ -713,11 +726,13 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._storageCustomEndpoint = config.storageCustomEndpoint;
     this._storageTransferCustomEndpoint = config.storageTransferCustomEndpoint;
     this._tagsCustomEndpoint = config.tagsCustomEndpoint;
+    this._tagsLocationCustomEndpoint = config.tagsLocationCustomEndpoint;
     this._tpuCustomEndpoint = config.tpuCustomEndpoint;
     this._userProjectOverride = config.userProjectOverride;
     this._vertexAiCustomEndpoint = config.vertexAiCustomEndpoint;
     this._vpcAccessCustomEndpoint = config.vpcAccessCustomEndpoint;
     this._workflowsCustomEndpoint = config.workflowsCustomEndpoint;
+    this._workstationsCustomEndpoint = config.workstationsCustomEndpoint;
     this._zone = config.zone;
     this._alias = config.alias;
     this._batching = config.batching;
@@ -1301,6 +1316,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get cloudTasksCustomEndpointInput() {
     return this._cloudTasksCustomEndpoint;
+  }
+
+  // cloudbuildv2_custom_endpoint - computed: false, optional: true, required: false
+  private _cloudbuildv2CustomEndpoint?: string; 
+  public get cloudbuildv2CustomEndpoint() {
+    return this._cloudbuildv2CustomEndpoint;
+  }
+  public set cloudbuildv2CustomEndpoint(value: string | undefined) {
+    this._cloudbuildv2CustomEndpoint = value;
+  }
+  public resetCloudbuildv2CustomEndpoint() {
+    this._cloudbuildv2CustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudbuildv2CustomEndpointInput() {
+    return this._cloudbuildv2CustomEndpoint;
   }
 
   // clouddeploy_custom_endpoint - computed: false, optional: true, required: false
@@ -2695,6 +2726,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     return this._tagsCustomEndpoint;
   }
 
+  // tags_location_custom_endpoint - computed: false, optional: true, required: false
+  private _tagsLocationCustomEndpoint?: string; 
+  public get tagsLocationCustomEndpoint() {
+    return this._tagsLocationCustomEndpoint;
+  }
+  public set tagsLocationCustomEndpoint(value: string | undefined) {
+    this._tagsLocationCustomEndpoint = value;
+  }
+  public resetTagsLocationCustomEndpoint() {
+    this._tagsLocationCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagsLocationCustomEndpointInput() {
+    return this._tagsLocationCustomEndpoint;
+  }
+
   // tpu_custom_endpoint - computed: false, optional: true, required: false
   private _tpuCustomEndpoint?: string; 
   public get tpuCustomEndpoint() {
@@ -2773,6 +2820,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get workflowsCustomEndpointInput() {
     return this._workflowsCustomEndpoint;
+  }
+
+  // workstations_custom_endpoint - computed: false, optional: true, required: false
+  private _workstationsCustomEndpoint?: string; 
+  public get workstationsCustomEndpoint() {
+    return this._workstationsCustomEndpoint;
+  }
+  public set workstationsCustomEndpoint(value: string | undefined) {
+    this._workstationsCustomEndpoint = value;
+  }
+  public resetWorkstationsCustomEndpoint() {
+    this._workstationsCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workstationsCustomEndpointInput() {
+    return this._workstationsCustomEndpoint;
   }
 
   // zone - computed: false, optional: true, required: false
@@ -2865,6 +2928,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       cloud_run_v2_custom_endpoint: cdktf.stringToTerraform(this._cloudRunV2CustomEndpoint),
       cloud_scheduler_custom_endpoint: cdktf.stringToTerraform(this._cloudSchedulerCustomEndpoint),
       cloud_tasks_custom_endpoint: cdktf.stringToTerraform(this._cloudTasksCustomEndpoint),
+      cloudbuildv2_custom_endpoint: cdktf.stringToTerraform(this._cloudbuildv2CustomEndpoint),
       clouddeploy_custom_endpoint: cdktf.stringToTerraform(this._clouddeployCustomEndpoint),
       cloudfunctions2_custom_endpoint: cdktf.stringToTerraform(this._cloudfunctions2CustomEndpoint),
       composer_custom_endpoint: cdktf.stringToTerraform(this._composerCustomEndpoint),
@@ -2952,11 +3016,13 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       storage_custom_endpoint: cdktf.stringToTerraform(this._storageCustomEndpoint),
       storage_transfer_custom_endpoint: cdktf.stringToTerraform(this._storageTransferCustomEndpoint),
       tags_custom_endpoint: cdktf.stringToTerraform(this._tagsCustomEndpoint),
+      tags_location_custom_endpoint: cdktf.stringToTerraform(this._tagsLocationCustomEndpoint),
       tpu_custom_endpoint: cdktf.stringToTerraform(this._tpuCustomEndpoint),
       user_project_override: cdktf.booleanToTerraform(this._userProjectOverride),
       vertex_ai_custom_endpoint: cdktf.stringToTerraform(this._vertexAiCustomEndpoint),
       vpc_access_custom_endpoint: cdktf.stringToTerraform(this._vpcAccessCustomEndpoint),
       workflows_custom_endpoint: cdktf.stringToTerraform(this._workflowsCustomEndpoint),
+      workstations_custom_endpoint: cdktf.stringToTerraform(this._workstationsCustomEndpoint),
       zone: cdktf.stringToTerraform(this._zone),
       alias: cdktf.stringToTerraform(this._alias),
       batching: googleBetaProviderBatchingToTerraform(this._batching),

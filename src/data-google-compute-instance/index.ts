@@ -1062,6 +1062,75 @@ export class DataGoogleComputeInstanceReservationAffinityList extends cdktf.Comp
     return new DataGoogleComputeInstanceReservationAffinityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleComputeInstanceSchedulingMaxRunDuration {
+}
+
+export function dataGoogleComputeInstanceSchedulingMaxRunDurationToTerraform(struct?: DataGoogleComputeInstanceSchedulingMaxRunDuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleComputeInstanceSchedulingMaxRunDurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleComputeInstanceSchedulingMaxRunDuration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleComputeInstanceSchedulingMaxRunDuration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // nanos - computed: true, optional: false, required: false
+  public get nanos() {
+    return this.getNumberAttribute('nanos');
+  }
+
+  // seconds - computed: true, optional: false, required: false
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+}
+
+export class DataGoogleComputeInstanceSchedulingMaxRunDurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleComputeInstanceSchedulingMaxRunDurationOutputReference {
+    return new DataGoogleComputeInstanceSchedulingMaxRunDurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleComputeInstanceSchedulingNodeAffinities {
 }
 
@@ -1184,6 +1253,12 @@ export class DataGoogleComputeInstanceSchedulingOutputReference extends cdktf.Co
   // instance_termination_action - computed: true, optional: false, required: false
   public get instanceTerminationAction() {
     return this.getStringAttribute('instance_termination_action');
+  }
+
+  // max_run_duration - computed: true, optional: false, required: false
+  private _maxRunDuration = new DataGoogleComputeInstanceSchedulingMaxRunDurationList(this, "max_run_duration", false);
+  public get maxRunDuration() {
+    return this._maxRunDuration;
   }
 
   // min_node_cpus - computed: true, optional: false, required: false
@@ -1465,7 +1540,7 @@ export class DataGoogleComputeInstance extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

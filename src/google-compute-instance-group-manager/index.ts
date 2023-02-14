@@ -87,6 +87,12 @@ export interface GoogleComputeInstanceGroupManagerConfig extends cdktf.Terraform
   */
   readonly autoHealingPolicies?: GoogleComputeInstanceGroupManagerAutoHealingPolicies;
   /**
+  * instance_lifecycle_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#instance_lifecycle_policy GoogleComputeInstanceGroupManager#instance_lifecycle_policy}
+  */
+  readonly instanceLifecyclePolicy?: GoogleComputeInstanceGroupManagerInstanceLifecyclePolicy;
+  /**
   * named_port block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#named_port GoogleComputeInstanceGroupManager#named_port}
@@ -657,6 +663,73 @@ export class GoogleComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
   // Temporarily expose input value. Use with caution.
   public get initialDelaySecInput() {
     return this._initialDelaySec;
+  }
+}
+export interface GoogleComputeInstanceGroupManagerInstanceLifecyclePolicy {
+  /**
+  * Specifies whether to apply the group's latest configuration when repairing a VM. Valid options are: YES, NO. If YES and you updated the group's instance template or per-instance configurations after the VM was created, then these changes are applied when VM is repaired. If NO (default), then updates are applied in accordance with the group's update policy type.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#force_update_on_repair GoogleComputeInstanceGroupManager#force_update_on_repair}
+  */
+  readonly forceUpdateOnRepair?: string;
+}
+
+export function googleComputeInstanceGroupManagerInstanceLifecyclePolicyToTerraform(struct?: GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference | GoogleComputeInstanceGroupManagerInstanceLifecyclePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    force_update_on_repair: cdktf.stringToTerraform(struct!.forceUpdateOnRepair),
+  }
+}
+
+export class GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeInstanceGroupManagerInstanceLifecyclePolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._forceUpdateOnRepair !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forceUpdateOnRepair = this._forceUpdateOnRepair;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceGroupManagerInstanceLifecyclePolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._forceUpdateOnRepair = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._forceUpdateOnRepair = value.forceUpdateOnRepair;
+    }
+  }
+
+  // force_update_on_repair - computed: false, optional: true, required: false
+  private _forceUpdateOnRepair?: string; 
+  public get forceUpdateOnRepair() {
+    return this.getStringAttribute('force_update_on_repair');
+  }
+  public set forceUpdateOnRepair(value: string) {
+    this._forceUpdateOnRepair = value;
+  }
+  public resetForceUpdateOnRepair() {
+    this._forceUpdateOnRepair = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forceUpdateOnRepairInput() {
+    return this._forceUpdateOnRepair;
   }
 }
 export interface GoogleComputeInstanceGroupManagerNamedPort {
@@ -1861,7 +1934,7 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_group_manager',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1885,6 +1958,7 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
     this._zone = config.zone;
     this._allInstancesConfig.internalValue = config.allInstancesConfig;
     this._autoHealingPolicies.internalValue = config.autoHealingPolicies;
+    this._instanceLifecyclePolicy.internalValue = config.instanceLifecyclePolicy;
     this._namedPort.internalValue = config.namedPort;
     this._statefulDisk.internalValue = config.statefulDisk;
     this._statefulExternalIp.internalValue = config.statefulExternalIp;
@@ -2126,6 +2200,22 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
     return this._autoHealingPolicies.internalValue;
   }
 
+  // instance_lifecycle_policy - computed: false, optional: true, required: false
+  private _instanceLifecyclePolicy = new GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference(this, "instance_lifecycle_policy");
+  public get instanceLifecyclePolicy() {
+    return this._instanceLifecyclePolicy;
+  }
+  public putInstanceLifecyclePolicy(value: GoogleComputeInstanceGroupManagerInstanceLifecyclePolicy) {
+    this._instanceLifecyclePolicy.internalValue = value;
+  }
+  public resetInstanceLifecyclePolicy() {
+    this._instanceLifecyclePolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceLifecyclePolicyInput() {
+    return this._instanceLifecyclePolicy.internalValue;
+  }
+
   // named_port - computed: false, optional: true, required: false
   private _namedPort = new GoogleComputeInstanceGroupManagerNamedPortList(this, "named_port", true);
   public get namedPort() {
@@ -2254,6 +2344,7 @@ export class GoogleComputeInstanceGroupManager extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       all_instances_config: googleComputeInstanceGroupManagerAllInstancesConfigToTerraform(this._allInstancesConfig.internalValue),
       auto_healing_policies: googleComputeInstanceGroupManagerAutoHealingPoliciesToTerraform(this._autoHealingPolicies.internalValue),
+      instance_lifecycle_policy: googleComputeInstanceGroupManagerInstanceLifecyclePolicyToTerraform(this._instanceLifecyclePolicy.internalValue),
       named_port: cdktf.listMapper(googleComputeInstanceGroupManagerNamedPortToTerraform, true)(this._namedPort.internalValue),
       stateful_disk: cdktf.listMapper(googleComputeInstanceGroupManagerStatefulDiskToTerraform, true)(this._statefulDisk.internalValue),
       stateful_external_ip: cdktf.listMapper(googleComputeInstanceGroupManagerStatefulExternalIpToTerraform, true)(this._statefulExternalIp.internalValue),

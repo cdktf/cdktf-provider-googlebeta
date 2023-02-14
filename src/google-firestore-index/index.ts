@@ -337,7 +337,7 @@ export class GoogleFirestoreIndex extends cdktf.TerraformResource {
       terraformResourceType: 'google_firestore_index',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

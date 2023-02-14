@@ -33,6 +33,7 @@ Instance IDs cannot be reused after deletion.
   readonly project?: string;
   /**
   * A reference to the region where the Firebase Realtime database resides.
+Check all [available regions](https://firebase.google.com/docs/projects/locations#rtdb-locations)
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_database_instance#region GoogleFirebaseDatabaseInstance#region}
   */
@@ -209,7 +210,7 @@ export class GoogleFirebaseDatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

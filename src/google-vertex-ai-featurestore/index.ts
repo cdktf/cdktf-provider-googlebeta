@@ -33,6 +33,12 @@ export interface GoogleVertexAiFeaturestoreConfig extends cdktf.TerraformMetaArg
   */
   readonly name?: string;
   /**
+  * TTL in days for feature values that will be stored in online serving storage. The Feature Store online storage periodically removes obsolete feature values older than onlineStorageTtlDays since the feature generation time. Note that onlineStorageTtlDays should be less than or equal to offlineStorageTtlDays for each EntityType under a featurestore. If not set, default to 4000 days
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#online_storage_ttl_days GoogleVertexAiFeaturestore#online_storage_ttl_days}
+  */
+  readonly onlineStorageTtlDays?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#project GoogleVertexAiFeaturestore#project}
   */
   readonly project?: string;
@@ -467,7 +473,7 @@ export class GoogleVertexAiFeaturestore extends cdktf.TerraformResource {
       terraformResourceType: 'google_vertex_ai_featurestore',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -482,6 +488,7 @@ export class GoogleVertexAiFeaturestore extends cdktf.TerraformResource {
     this._id = config.id;
     this._labels = config.labels;
     this._name = config.name;
+    this._onlineStorageTtlDays = config.onlineStorageTtlDays;
     this._project = config.project;
     this._region = config.region;
     this._encryptionSpec.internalValue = config.encryptionSpec;
@@ -565,6 +572,22 @@ export class GoogleVertexAiFeaturestore extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // online_storage_ttl_days - computed: false, optional: true, required: false
+  private _onlineStorageTtlDays?: number; 
+  public get onlineStorageTtlDays() {
+    return this.getNumberAttribute('online_storage_ttl_days');
+  }
+  public set onlineStorageTtlDays(value: number) {
+    this._onlineStorageTtlDays = value;
+  }
+  public resetOnlineStorageTtlDays() {
+    this._onlineStorageTtlDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onlineStorageTtlDaysInput() {
+    return this._onlineStorageTtlDays;
   }
 
   // project - computed: true, optional: true, required: false
@@ -662,6 +685,7 @@ export class GoogleVertexAiFeaturestore extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
+      online_storage_ttl_days: cdktf.numberToTerraform(this._onlineStorageTtlDays),
       project: cdktf.stringToTerraform(this._project),
       region: cdktf.stringToTerraform(this._region),
       encryption_spec: googleVertexAiFeaturestoreEncryptionSpecToTerraform(this._encryptionSpec.internalValue),
