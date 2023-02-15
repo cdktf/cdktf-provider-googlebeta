@@ -2159,6 +2159,103 @@ export class GoogleComputeInstanceReservationAffinityOutputReference extends cdk
     return this._specificReservation.internalValue;
   }
 }
+export interface GoogleComputeInstanceSchedulingMaxRunDuration {
+  /**
+  * Span of time that's a fraction of a second at nanosecond
+resolution. Durations less than one second are represented
+with a 0 seconds field and a positive nanos field. Must
+be from 0 to 999,999,999 inclusive.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance#nanos GoogleComputeInstance#nanos}
+  */
+  readonly nanos?: number;
+  /**
+  * Span of time at a resolution of a second.
+Must be from 0 to 315,576,000,000 inclusive.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance#seconds GoogleComputeInstance#seconds}
+  */
+  readonly seconds: number;
+}
+
+export function googleComputeInstanceSchedulingMaxRunDurationToTerraform(struct?: GoogleComputeInstanceSchedulingMaxRunDurationOutputReference | GoogleComputeInstanceSchedulingMaxRunDuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    nanos: cdktf.numberToTerraform(struct!.nanos),
+    seconds: cdktf.numberToTerraform(struct!.seconds),
+  }
+}
+
+export class GoogleComputeInstanceSchedulingMaxRunDurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeInstanceSchedulingMaxRunDuration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._nanos !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nanos = this._nanos;
+    }
+    if (this._seconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.seconds = this._seconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeInstanceSchedulingMaxRunDuration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._nanos = undefined;
+      this._seconds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._nanos = value.nanos;
+      this._seconds = value.seconds;
+    }
+  }
+
+  // nanos - computed: false, optional: true, required: false
+  private _nanos?: number; 
+  public get nanos() {
+    return this.getNumberAttribute('nanos');
+  }
+  public set nanos(value: number) {
+    this._nanos = value;
+  }
+  public resetNanos() {
+    this._nanos = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nanosInput() {
+    return this._nanos;
+  }
+
+  // seconds - computed: false, optional: false, required: true
+  private _seconds?: number; 
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+  public set seconds(value: number) {
+    this._seconds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondsInput() {
+    return this._seconds;
+  }
+}
 export interface GoogleComputeInstanceSchedulingNodeAffinities {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance#key GoogleComputeInstance#key}
@@ -2337,6 +2434,12 @@ export interface GoogleComputeInstanceScheduling {
   */
   readonly provisioningModel?: string;
   /**
+  * max_run_duration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance#max_run_duration GoogleComputeInstance#max_run_duration}
+  */
+  readonly maxRunDuration?: GoogleComputeInstanceSchedulingMaxRunDuration;
+  /**
   * node_affinities block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance#node_affinities GoogleComputeInstance#node_affinities}
@@ -2356,6 +2459,7 @@ export function googleComputeInstanceSchedulingToTerraform(struct?: GoogleComput
     on_host_maintenance: cdktf.stringToTerraform(struct!.onHostMaintenance),
     preemptible: cdktf.booleanToTerraform(struct!.preemptible),
     provisioning_model: cdktf.stringToTerraform(struct!.provisioningModel),
+    max_run_duration: googleComputeInstanceSchedulingMaxRunDurationToTerraform(struct!.maxRunDuration),
     node_affinities: cdktf.listMapper(googleComputeInstanceSchedulingNodeAffinitiesToTerraform, true)(struct!.nodeAffinities),
   }
 }
@@ -2398,6 +2502,10 @@ export class GoogleComputeInstanceSchedulingOutputReference extends cdktf.Comple
       hasAnyValues = true;
       internalValueResult.provisioningModel = this._provisioningModel;
     }
+    if (this._maxRunDuration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxRunDuration = this._maxRunDuration?.internalValue;
+    }
     if (this._nodeAffinities?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.nodeAffinities = this._nodeAffinities?.internalValue;
@@ -2414,6 +2522,7 @@ export class GoogleComputeInstanceSchedulingOutputReference extends cdktf.Comple
       this._onHostMaintenance = undefined;
       this._preemptible = undefined;
       this._provisioningModel = undefined;
+      this._maxRunDuration.internalValue = undefined;
       this._nodeAffinities.internalValue = undefined;
     }
     else {
@@ -2424,6 +2533,7 @@ export class GoogleComputeInstanceSchedulingOutputReference extends cdktf.Comple
       this._onHostMaintenance = value.onHostMaintenance;
       this._preemptible = value.preemptible;
       this._provisioningModel = value.provisioningModel;
+      this._maxRunDuration.internalValue = value.maxRunDuration;
       this._nodeAffinities.internalValue = value.nodeAffinities;
     }
   }
@@ -2522,6 +2632,22 @@ export class GoogleComputeInstanceSchedulingOutputReference extends cdktf.Comple
   // Temporarily expose input value. Use with caution.
   public get provisioningModelInput() {
     return this._provisioningModel;
+  }
+
+  // max_run_duration - computed: false, optional: true, required: false
+  private _maxRunDuration = new GoogleComputeInstanceSchedulingMaxRunDurationOutputReference(this, "max_run_duration");
+  public get maxRunDuration() {
+    return this._maxRunDuration;
+  }
+  public putMaxRunDuration(value: GoogleComputeInstanceSchedulingMaxRunDuration) {
+    this._maxRunDuration.internalValue = value;
+  }
+  public resetMaxRunDuration() {
+    this._maxRunDuration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxRunDurationInput() {
+    return this._maxRunDuration.internalValue;
   }
 
   // node_affinities - computed: false, optional: true, required: false
@@ -3010,7 +3136,7 @@ export class GoogleComputeInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -73,6 +73,12 @@ export interface GoogleComputeNodeGroupConfig extends cdktf.TerraformMetaArgumen
   */
   readonly maintenanceWindow?: GoogleComputeNodeGroupMaintenanceWindow;
   /**
+  * share_settings block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_node_group#share_settings GoogleComputeNodeGroup#share_settings}
+  */
+  readonly shareSettings?: GoogleComputeNodeGroupShareSettings;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_node_group#timeouts GoogleComputeNodeGroup#timeouts}
@@ -275,6 +281,222 @@ export class GoogleComputeNodeGroupMaintenanceWindowOutputReference extends cdkt
     return this._startTime;
   }
 }
+export interface GoogleComputeNodeGroupShareSettingsProjectMap {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_node_group#id GoogleComputeNodeGroup#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+  /**
+  * The project id/number should be the same as the key of this project config in the project map.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_node_group#project_id GoogleComputeNodeGroup#project_id}
+  */
+  readonly projectId: string;
+}
+
+export function googleComputeNodeGroupShareSettingsProjectMapToTerraform(struct?: GoogleComputeNodeGroupShareSettingsProjectMap | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    project_id: cdktf.stringToTerraform(struct!.projectId),
+  }
+}
+
+export class GoogleComputeNodeGroupShareSettingsProjectMapOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeNodeGroupShareSettingsProjectMap | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._projectId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectId = this._projectId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeNodeGroupShareSettingsProjectMap | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._projectId = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._projectId = value.projectId;
+    }
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // project_id - computed: false, optional: false, required: true
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+}
+
+export class GoogleComputeNodeGroupShareSettingsProjectMapList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeNodeGroupShareSettingsProjectMap[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeNodeGroupShareSettingsProjectMapOutputReference {
+    return new GoogleComputeNodeGroupShareSettingsProjectMapOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeNodeGroupShareSettings {
+  /**
+  * Node group sharing type. Possible values: ["ORGANIZATION", "SPECIFIC_PROJECTS", "LOCAL"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_node_group#share_type GoogleComputeNodeGroup#share_type}
+  */
+  readonly shareType: string;
+  /**
+  * project_map block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_node_group#project_map GoogleComputeNodeGroup#project_map}
+  */
+  readonly projectMap?: GoogleComputeNodeGroupShareSettingsProjectMap[] | cdktf.IResolvable;
+}
+
+export function googleComputeNodeGroupShareSettingsToTerraform(struct?: GoogleComputeNodeGroupShareSettingsOutputReference | GoogleComputeNodeGroupShareSettings): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    share_type: cdktf.stringToTerraform(struct!.shareType),
+    project_map: cdktf.listMapper(googleComputeNodeGroupShareSettingsProjectMapToTerraform, true)(struct!.projectMap),
+  }
+}
+
+export class GoogleComputeNodeGroupShareSettingsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeNodeGroupShareSettings | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._shareType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.shareType = this._shareType;
+    }
+    if (this._projectMap?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectMap = this._projectMap?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeNodeGroupShareSettings | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._shareType = undefined;
+      this._projectMap.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._shareType = value.shareType;
+      this._projectMap.internalValue = value.projectMap;
+    }
+  }
+
+  // share_type - computed: false, optional: false, required: true
+  private _shareType?: string; 
+  public get shareType() {
+    return this.getStringAttribute('share_type');
+  }
+  public set shareType(value: string) {
+    this._shareType = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shareTypeInput() {
+    return this._shareType;
+  }
+
+  // project_map - computed: false, optional: true, required: false
+  private _projectMap = new GoogleComputeNodeGroupShareSettingsProjectMapList(this, "project_map", true);
+  public get projectMap() {
+    return this._projectMap;
+  }
+  public putProjectMap(value: GoogleComputeNodeGroupShareSettingsProjectMap[] | cdktf.IResolvable) {
+    this._projectMap.internalValue = value;
+  }
+  public resetProjectMap() {
+    this._projectMap.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectMapInput() {
+    return this._projectMap.internalValue;
+  }
+}
 export interface GoogleComputeNodeGroupTimeouts {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_node_group#create GoogleComputeNodeGroup#create}
@@ -431,7 +653,7 @@ export class GoogleComputeNodeGroup extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_node_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -453,6 +675,7 @@ export class GoogleComputeNodeGroup extends cdktf.TerraformResource {
     this._zone = config.zone;
     this._autoscalingPolicy.internalValue = config.autoscalingPolicy;
     this._maintenanceWindow.internalValue = config.maintenanceWindow;
+    this._shareSettings.internalValue = config.shareSettings;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -643,6 +866,22 @@ export class GoogleComputeNodeGroup extends cdktf.TerraformResource {
     return this._maintenanceWindow.internalValue;
   }
 
+  // share_settings - computed: false, optional: true, required: false
+  private _shareSettings = new GoogleComputeNodeGroupShareSettingsOutputReference(this, "share_settings");
+  public get shareSettings() {
+    return this._shareSettings;
+  }
+  public putShareSettings(value: GoogleComputeNodeGroupShareSettings) {
+    this._shareSettings.internalValue = value;
+  }
+  public resetShareSettings() {
+    this._shareSettings.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get shareSettingsInput() {
+    return this._shareSettings.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleComputeNodeGroupTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -676,6 +915,7 @@ export class GoogleComputeNodeGroup extends cdktf.TerraformResource {
       zone: cdktf.stringToTerraform(this._zone),
       autoscaling_policy: googleComputeNodeGroupAutoscalingPolicyToTerraform(this._autoscalingPolicy.internalValue),
       maintenance_window: googleComputeNodeGroupMaintenanceWindowToTerraform(this._maintenanceWindow.internalValue),
+      share_settings: googleComputeNodeGroupShareSettingsToTerraform(this._shareSettings.internalValue),
       timeouts: googleComputeNodeGroupTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
