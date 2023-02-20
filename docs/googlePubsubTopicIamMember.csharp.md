@@ -1,0 +1,1261 @@
+# `googlePubsubTopicIamMember` Submodule <a name="`googlePubsubTopicIamMember` Submodule" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### GooglePubsubTopicIamMember <a name="GooglePubsubTopicIamMember" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member google_pubsub_topic_iam_member}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GooglePubsubTopicIamMember(Construct Scope, string Id, GooglePubsubTopicIamMemberConfig Config);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.Initializer.parameter.scope">Scope</a></code> | <code>Constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.Initializer.parameter.id">Id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.Initializer.parameter.config">Config</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig">GooglePubsubTopicIamMemberConfig</a></code> | *No description.* |
+
+---
+
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.Initializer.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig">GooglePubsubTopicIamMemberConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.putCondition">PutCondition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.resetCondition">ResetCondition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.resetProject">ResetProject</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Returns a string representation of this construct.
+
+##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.addOverride"></a>
+
+```csharp
+private void AddOverride(string Path, object Value)
+```
+
+###### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.addOverride.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.overrideLogicalId"></a>
+
+```csharp
+private void OverrideLogicalId(string NewLogicalId)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `NewLogicalId`<sup>Required</sup> <a name="NewLogicalId" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.resetOverrideLogicalId"></a>
+
+```csharp
+private void ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.toMetadata"></a>
+
+```csharp
+private object ToMetadata()
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.toTerraform"></a>
+
+```csharp
+private object ToTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `PutCondition` <a name="PutCondition" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.putCondition"></a>
+
+```csharp
+private void PutCondition(GooglePubsubTopicIamMemberCondition Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.putCondition.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition">GooglePubsubTopicIamMemberCondition</a>
+
+---
+
+##### `ResetCondition` <a name="ResetCondition" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.resetCondition"></a>
+
+```csharp
+private void ResetCondition()
+```
+
+##### `ResetId` <a name="ResetId" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.resetId"></a>
+
+```csharp
+private void ResetId()
+```
+
+##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.resetProject"></a>
+
+```csharp
+private void ResetProject()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isConstruct"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+GooglePubsubTopicIamMember.IsConstruct(object X);
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isConstruct.parameter.x"></a>
+
+- *Type:* object
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isTerraformElement"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+GooglePubsubTopicIamMember.IsTerraformElement(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isTerraformElement.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isTerraformResource"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+GooglePubsubTopicIamMember.IsTerraformResource(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.isTerraformResource.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.node">Node</a></code> | <code>Constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.cdktfStack">CdktfStack</a></code> | <code>HashiCorp.Cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference">GooglePubsubTopicIamMemberConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.conditionInput">ConditionInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition">GooglePubsubTopicIamMemberCondition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.memberInput">MemberInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.roleInput">RoleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.topicInput">TopicInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.member">Member</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.project">Project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.role">Role</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.topic">Topic</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.node"></a>
+
+```csharp
+public Node Node { get; }
+```
+
+- *Type:* Constructs.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.cdktfStack"></a>
+
+```csharp
+public TerraformStack CdktfStack { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.friendlyUniqueId"></a>
+
+```csharp
+public string FriendlyUniqueId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.terraformMetaArguments"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, object> TerraformMetaArguments { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, object>
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.terraformResourceType"></a>
+
+```csharp
+public string TerraformResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.terraformGeneratorMetadata"></a>
+
+```csharp
+public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.connection"></a>
+
+```csharp
+public object Connection { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.count"></a>
+
+```csharp
+public double Count { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.dependsOn"></a>
+
+```csharp
+public string[] DependsOn { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.provisioners"></a>
+
+```csharp
+public object[] Provisioners { get; }
+```
+
+- *Type:* object[]
+
+---
+
+##### `Condition`<sup>Required</sup> <a name="Condition" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.condition"></a>
+
+```csharp
+public GooglePubsubTopicIamMemberConditionOutputReference Condition { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference">GooglePubsubTopicIamMemberConditionOutputReference</a>
+
+---
+
+##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.etag"></a>
+
+```csharp
+public string Etag { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ConditionInput`<sup>Optional</sup> <a name="ConditionInput" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.conditionInput"></a>
+
+```csharp
+public GooglePubsubTopicIamMemberCondition ConditionInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition">GooglePubsubTopicIamMemberCondition</a>
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `MemberInput`<sup>Optional</sup> <a name="MemberInput" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.memberInput"></a>
+
+```csharp
+public string MemberInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.projectInput"></a>
+
+```csharp
+public string ProjectInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RoleInput`<sup>Optional</sup> <a name="RoleInput" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.roleInput"></a>
+
+```csharp
+public string RoleInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TopicInput`<sup>Optional</sup> <a name="TopicInput" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.topicInput"></a>
+
+```csharp
+public string TopicInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Member`<sup>Required</sup> <a name="Member" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.member"></a>
+
+```csharp
+public string Member { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.project"></a>
+
+```csharp
+public string Project { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Role`<sup>Required</sup> <a name="Role" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.role"></a>
+
+```csharp
+public string Role { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Topic`<sup>Required</sup> <a name="Topic" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.topic"></a>
+
+```csharp
+public string Topic { get; }
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.tfResourceType">TfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMember.property.tfResourceType"></a>
+
+```csharp
+public string TfResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### GooglePubsubTopicIamMemberCondition <a name="GooglePubsubTopicIamMemberCondition" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GooglePubsubTopicIamMemberCondition {
+    string Expression,
+    string Title,
+    string Description = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#expression GooglePubsubTopicIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#title GooglePubsubTopicIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#description GooglePubsubTopicIamMember#description}. |
+
+---
+
+##### `Expression`<sup>Required</sup> <a name="Expression" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition.property.expression"></a>
+
+```csharp
+public string Expression { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#expression GooglePubsubTopicIamMember#expression}.
+
+---
+
+##### `Title`<sup>Required</sup> <a name="Title" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition.property.title"></a>
+
+```csharp
+public string Title { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#title GooglePubsubTopicIamMember#title}.
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition.property.description"></a>
+
+```csharp
+public string Description { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#description GooglePubsubTopicIamMember#description}.
+
+---
+
+### GooglePubsubTopicIamMemberConfig <a name="GooglePubsubTopicIamMemberConfig" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GooglePubsubTopicIamMemberConfig {
+    object Connection = null,
+    double Count = null,
+    ITerraformDependable[] DependsOn = null,
+    ITerraformIterator ForEach = null,
+    TerraformResourceLifecycle Lifecycle = null,
+    TerraformProvider Provider = null,
+    object[] Provisioners = null,
+    string Member,
+    string Role,
+    string Topic,
+    GooglePubsubTopicIamMemberCondition Condition = null,
+    string Id = null,
+    string Project = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#member GooglePubsubTopicIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#role GooglePubsubTopicIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.topic">Topic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#topic GooglePubsubTopicIamMember#topic}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition">GooglePubsubTopicIamMemberCondition</a></code> | condition block. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#id GooglePubsubTopicIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#project GooglePubsubTopicIamMember#project}. |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.connection"></a>
+
+```csharp
+public object Connection { get; set; }
+```
+
+- *Type:* object
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.count"></a>
+
+```csharp
+public double Count { get; set; }
+```
+
+- *Type:* double
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.dependsOn"></a>
+
+```csharp
+public ITerraformDependable[] DependsOn { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformDependable[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.provisioners"></a>
+
+```csharp
+public object[] Provisioners { get; set; }
+```
+
+- *Type:* object[]
+
+---
+
+##### `Member`<sup>Required</sup> <a name="Member" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.member"></a>
+
+```csharp
+public string Member { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#member GooglePubsubTopicIamMember#member}.
+
+---
+
+##### `Role`<sup>Required</sup> <a name="Role" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.role"></a>
+
+```csharp
+public string Role { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#role GooglePubsubTopicIamMember#role}.
+
+---
+
+##### `Topic`<sup>Required</sup> <a name="Topic" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.topic"></a>
+
+```csharp
+public string Topic { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#topic GooglePubsubTopicIamMember#topic}.
+
+---
+
+##### `Condition`<sup>Optional</sup> <a name="Condition" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.condition"></a>
+
+```csharp
+public GooglePubsubTopicIamMemberCondition Condition { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition">GooglePubsubTopicIamMemberCondition</a>
+
+condition block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#condition GooglePubsubTopicIamMember#condition}
+
+---
+
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#id GooglePubsubTopicIamMember#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConfig.property.project"></a>
+
+```csharp
+public string Project { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member#project GooglePubsubTopicIamMember#project}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GooglePubsubTopicIamMemberConditionOutputReference <a name="GooglePubsubTopicIamMemberConditionOutputReference" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GooglePubsubTopicIamMemberConditionOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.resetDescription">ResetDescription</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.resetDescription"></a>
+
+```csharp
+private void ResetDescription()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.expressionInput">ExpressionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.titleInput">TitleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.title">Title</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition">GooglePubsubTopicIamMemberCondition</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.descriptionInput"></a>
+
+```csharp
+public string DescriptionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExpressionInput`<sup>Optional</sup> <a name="ExpressionInput" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.expressionInput"></a>
+
+```csharp
+public string ExpressionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TitleInput`<sup>Optional</sup> <a name="TitleInput" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.titleInput"></a>
+
+```csharp
+public string TitleInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Expression`<sup>Required</sup> <a name="Expression" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.expression"></a>
+
+```csharp
+public string Expression { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Title`<sup>Required</sup> <a name="Title" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.title"></a>
+
+```csharp
+public string Title { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberConditionOutputReference.property.internalValue"></a>
+
+```csharp
+public GooglePubsubTopicIamMemberCondition InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googlePubsubTopicIamMember.GooglePubsubTopicIamMemberCondition">GooglePubsubTopicIamMemberCondition</a>
+
+---
+
+
+

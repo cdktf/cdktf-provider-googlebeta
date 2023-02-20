@@ -1,0 +1,1379 @@
+# `googleMonitoringDashboard` Submodule <a name="`googleMonitoringDashboard` Submodule" id="@cdktf/provider-google-beta.googleMonitoringDashboard"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### GoogleMonitoringDashboard <a name="GoogleMonitoringDashboard" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard google_monitoring_dashboard}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_monitoring_dashboard
+
+googleMonitoringDashboard.GoogleMonitoringDashboard(
+  scope: Construct,
+  id: str,
+  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
+  count: typing.Union[int, float] = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  dashboard_json: str,
+  id: str = None,
+  project: str = None,
+  timeouts: GoogleMonitoringDashboardTimeouts = None
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.dashboardJson">dashboard_json</a></code> | <code>str</code> | The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#id GoogleMonitoringDashboard#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts">GoogleMonitoringDashboardTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.connection"></a>
+
+- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.count"></a>
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.dependsOn"></a>
+
+- *Type:* typing.List[cdktf.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.forEach"></a>
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `dashboard_json`<sup>Required</sup> <a name="dashboard_json" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.dashboardJson"></a>
+
+- *Type:* str
+
+The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#dashboard_json GoogleMonitoringDashboard#dashboard_json}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#id GoogleMonitoringDashboard#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.project"></a>
+
+- *Type:* str
+
+The ID of the project in which the resource belongs.
+
+If it is not provided, the provider project is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#project GoogleMonitoringDashboard#project}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts">GoogleMonitoringDashboardTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#timeouts GoogleMonitoringDashboard#timeouts}
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Returns a string representation of this construct.
+
+##### `add_override` <a name="add_override" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.addOverride"></a>
+
+```python
+def add_override(
+  path: str,
+  value: typing.Any
+) -> None
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.addOverride.parameter.path"></a>
+
+- *Type:* str
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.addOverride.parameter.value"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.overrideLogicalId"></a>
+
+```python
+def override_logical_id(
+  new_logical_id: str
+) -> None
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* str
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.resetOverrideLogicalId"></a>
+
+```python
+def reset_override_logical_id() -> None
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.toMetadata"></a>
+
+```python
+def to_metadata() -> typing.Any
+```
+
+##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.toTerraform"></a>
+
+```python
+def to_terraform() -> typing.Any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  create: str = None,
+  delete: str = None,
+  update: str = None
+) -> None
+```
+
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.putTimeouts.parameter.create"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#create GoogleMonitoringDashboard#create}.
+
+---
+
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.putTimeouts.parameter.delete"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#delete GoogleMonitoringDashboard#delete}.
+
+---
+
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.putTimeouts.parameter.update"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#update GoogleMonitoringDashboard#update}.
+
+---
+
+##### `reset_id` <a name="reset_id" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.resetId"></a>
+
+```python
+def reset_id() -> None
+```
+
+##### `reset_project` <a name="reset_project" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.resetProject"></a>
+
+```python
+def reset_project() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+
+---
+
+##### `is_construct` <a name="is_construct" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isConstruct"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_monitoring_dashboard
+
+googleMonitoringDashboard.GoogleMonitoringDashboard.is_construct(
+  x: typing.Any
+)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isConstruct.parameter.x"></a>
+
+- *Type:* typing.Any
+
+Any object.
+
+---
+
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isTerraformElement"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_monitoring_dashboard
+
+googleMonitoringDashboard.GoogleMonitoringDashboard.is_terraform_element(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isTerraformElement.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isTerraformResource"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_monitoring_dashboard
+
+googleMonitoringDashboard.GoogleMonitoringDashboard.is_terraform_resource(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isTerraformResource.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference">GoogleMonitoringDashboardTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.dashboardJsonInput">dashboard_json_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts">GoogleMonitoringDashboardTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.dashboardJson">dashboard_json</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.project">project</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.node"></a>
+
+```python
+node: Node
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.cdktfStack"></a>
+
+```python
+cdktf_stack: TerraformStack
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.friendlyUniqueId"></a>
+
+```python
+friendly_unique_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.terraformMetaArguments"></a>
+
+```python
+terraform_meta_arguments: typing.Mapping[typing.Any]
+```
+
+- *Type:* typing.Mapping[typing.Any]
+
+---
+
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.terraformResourceType"></a>
+
+```python
+terraform_resource_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.terraformGeneratorMetadata"></a>
+
+```python
+terraform_generator_metadata: TerraformProviderGeneratorMetadata
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.connection"></a>
+
+```python
+connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+```
+
+- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.count"></a>
+
+```python
+count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.provisioners"></a>
+
+```python
+provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+```
+
+- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.timeouts"></a>
+
+```python
+timeouts: GoogleMonitoringDashboardTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference">GoogleMonitoringDashboardTimeoutsOutputReference</a>
+
+---
+
+##### `dashboard_json_input`<sup>Optional</sup> <a name="dashboard_json_input" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.dashboardJsonInput"></a>
+
+```python
+dashboard_json_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.projectInput"></a>
+
+```python
+project_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.timeoutsInput"></a>
+
+```python
+timeouts_input: typing.Union[GoogleMonitoringDashboardTimeouts, IResolvable]
+```
+
+- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts">GoogleMonitoringDashboardTimeouts</a>, cdktf.IResolvable]
+
+---
+
+##### `dashboard_json`<sup>Required</sup> <a name="dashboard_json" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.dashboardJson"></a>
+
+```python
+dashboard_json: str
+```
+
+- *Type:* str
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.project"></a>
+
+```python
+project: str
+```
+
+- *Type:* str
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.property.tfResourceType"></a>
+
+```python
+tfResourceType: str
+```
+
+- *Type:* str
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### GoogleMonitoringDashboardConfig <a name="GoogleMonitoringDashboardConfig" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_monitoring_dashboard
+
+googleMonitoringDashboard.GoogleMonitoringDashboardConfig(
+  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
+  count: typing.Union[int, float] = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  dashboard_json: str,
+  id: str = None,
+  project: str = None,
+  timeouts: GoogleMonitoringDashboardTimeouts = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.dashboardJson">dashboard_json</a></code> | <code>str</code> | The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#id GoogleMonitoringDashboard#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts">GoogleMonitoringDashboardTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.connection"></a>
+
+```python
+connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+```
+
+- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.count"></a>
+
+```python
+count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[ITerraformDependable]
+```
+
+- *Type:* typing.List[cdktf.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.provisioners"></a>
+
+```python
+provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+```
+
+- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `dashboard_json`<sup>Required</sup> <a name="dashboard_json" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.dashboardJson"></a>
+
+```python
+dashboard_json: str
+```
+
+- *Type:* str
+
+The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#dashboard_json GoogleMonitoringDashboard#dashboard_json}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#id GoogleMonitoringDashboard#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.project"></a>
+
+```python
+project: str
+```
+
+- *Type:* str
+
+The ID of the project in which the resource belongs.
+
+If it is not provided, the provider project is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#project GoogleMonitoringDashboard#project}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.timeouts"></a>
+
+```python
+timeouts: GoogleMonitoringDashboardTimeouts
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts">GoogleMonitoringDashboardTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#timeouts GoogleMonitoringDashboard#timeouts}
+
+---
+
+### GoogleMonitoringDashboardTimeouts <a name="GoogleMonitoringDashboardTimeouts" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_monitoring_dashboard
+
+googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts(
+  create: str = None,
+  delete: str = None,
+  update: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#create GoogleMonitoringDashboard#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#delete GoogleMonitoringDashboard#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#update GoogleMonitoringDashboard#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#create GoogleMonitoringDashboard#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#delete GoogleMonitoringDashboard#delete}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_dashboard#update GoogleMonitoringDashboard#update}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GoogleMonitoringDashboardTimeoutsOutputReference <a name="GoogleMonitoringDashboardTimeoutsOutputReference" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_monitoring_dashboard
+
+googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_create` <a name="reset_create" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.resetCreate"></a>
+
+```python
+def reset_create() -> None
+```
+
+##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.resetDelete"></a>
+
+```python
+def reset_delete() -> None
+```
+
+##### `reset_update` <a name="reset_update" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.resetUpdate"></a>
+
+```python
+def reset_update() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts">GoogleMonitoringDashboardTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.createInput"></a>
+
+```python
+create_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.deleteInput"></a>
+
+```python
+delete_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.updateInput"></a>
+
+```python
+update_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[GoogleMonitoringDashboardTimeouts, IResolvable]
+```
+
+- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts">GoogleMonitoringDashboardTimeouts</a>, cdktf.IResolvable]
+
+---
+
+
+

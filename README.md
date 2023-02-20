@@ -1,4 +1,3 @@
-
 # Terraform CDK google-beta Provider ~> 4.17
 
 This repo builds and publishes the Terraform google-beta Provider bindings for [CDK for Terraform](https://cdk.tf).
@@ -35,7 +34,6 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 </dependency>
 ```
 
-
 ### Go
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-googlebeta-go`](https://github.com/cdktf/cdktf-provider-googlebeta-go) package.
@@ -44,7 +42,14 @@ The go package is generated into the [`github.com/cdktf/cdktf-provider-googlebet
 
 ## Docs
 
-Find auto-generated docs for this provider here: [./API.md](./API.md)
+Find auto-generated docs for this provider here:
+
+- [Typescript](./docs/API.typescript.md)
+- [Python](./docs/API.python.md)
+- [Java](./docs/API.java.md)
+- [C#](./docs/API.csharp.md)
+- [Go](./docs/API.go.md)
+
 You can also visit a hosted version of the documentation on [constructs.dev](https://constructs.dev/packages/@cdktf/provider-google-beta).
 
 ## Versioning

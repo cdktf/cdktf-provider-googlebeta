@@ -1,0 +1,16276 @@
+# `googleDataprocCluster` Submodule <a name="`googleDataprocCluster` Submodule" id="@cdktf/provider-google-beta.googleDataprocCluster"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### GoogleDataprocCluster <a name="GoogleDataprocCluster" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster google_dataproc_cluster}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocCluster(scope: Construct, id: string, config: GoogleDataprocClusterConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig">GoogleDataprocClusterConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig">GoogleDataprocClusterConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.putClusterConfig">putClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.putVirtualClusterConfig">putVirtualClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetClusterConfig">resetClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetGracefulDecommissionTimeout">resetGracefulDecommissionTimeout</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetLabels">resetLabels</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetVirtualClusterConfig">resetVirtualClusterConfig</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `putClusterConfig` <a name="putClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.putClusterConfig"></a>
+
+```typescript
+public putClusterConfig(value: GoogleDataprocClusterClusterConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.putClusterConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig">GoogleDataprocClusterClusterConfig</a>
+
+---
+
+##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.putTimeouts"></a>
+
+```typescript
+public putTimeouts(value: GoogleDataprocClusterTimeouts): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.putTimeouts.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts">GoogleDataprocClusterTimeouts</a>
+
+---
+
+##### `putVirtualClusterConfig` <a name="putVirtualClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.putVirtualClusterConfig"></a>
+
+```typescript
+public putVirtualClusterConfig(value: GoogleDataprocClusterVirtualClusterConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.putVirtualClusterConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig">GoogleDataprocClusterVirtualClusterConfig</a>
+
+---
+
+##### `resetClusterConfig` <a name="resetClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetClusterConfig"></a>
+
+```typescript
+public resetClusterConfig(): void
+```
+
+##### `resetGracefulDecommissionTimeout` <a name="resetGracefulDecommissionTimeout" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetGracefulDecommissionTimeout"></a>
+
+```typescript
+public resetGracefulDecommissionTimeout(): void
+```
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetLabels"></a>
+
+```typescript
+public resetLabels(): void
+```
+
+##### `resetProject` <a name="resetProject" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetProject"></a>
+
+```typescript
+public resetProject(): void
+```
+
+##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetTimeouts"></a>
+
+```typescript
+public resetTimeouts(): void
+```
+
+##### `resetVirtualClusterConfig` <a name="resetVirtualClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.resetVirtualClusterConfig"></a>
+
+```typescript
+public resetVirtualClusterConfig(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.isConstruct"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+googleDataprocCluster.GoogleDataprocCluster.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.isTerraformElement"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+googleDataprocCluster.GoogleDataprocCluster.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.isTerraformResource"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+googleDataprocCluster.GoogleDataprocCluster.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.clusterConfig">clusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference">GoogleDataprocClusterClusterConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference">GoogleDataprocClusterTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.virtualClusterConfig">virtualClusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.clusterConfigInput">clusterConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig">GoogleDataprocClusterClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.gracefulDecommissionTimeoutInput">gracefulDecommissionTimeoutInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts">GoogleDataprocClusterTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.virtualClusterConfigInput">virtualClusterConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig">GoogleDataprocClusterVirtualClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.gracefulDecommissionTimeout">gracefulDecommissionTimeout</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.region">region</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `clusterConfig`<sup>Required</sup> <a name="clusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.clusterConfig"></a>
+
+```typescript
+public readonly clusterConfig: GoogleDataprocClusterClusterConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference">GoogleDataprocClusterClusterConfigOutputReference</a>
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: GoogleDataprocClusterTimeoutsOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference">GoogleDataprocClusterTimeoutsOutputReference</a>
+
+---
+
+##### `virtualClusterConfig`<sup>Required</sup> <a name="virtualClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.virtualClusterConfig"></a>
+
+```typescript
+public readonly virtualClusterConfig: GoogleDataprocClusterVirtualClusterConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigOutputReference</a>
+
+---
+
+##### `clusterConfigInput`<sup>Optional</sup> <a name="clusterConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.clusterConfigInput"></a>
+
+```typescript
+public readonly clusterConfigInput: GoogleDataprocClusterClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig">GoogleDataprocClusterClusterConfig</a>
+
+---
+
+##### `gracefulDecommissionTimeoutInput`<sup>Optional</sup> <a name="gracefulDecommissionTimeoutInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.gracefulDecommissionTimeoutInput"></a>
+
+```typescript
+public readonly gracefulDecommissionTimeoutInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.labelsInput"></a>
+
+```typescript
+public readonly labelsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.timeoutsInput"></a>
+
+```typescript
+public readonly timeoutsInput: GoogleDataprocClusterTimeouts | IResolvable;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts">GoogleDataprocClusterTimeouts</a> | cdktf.IResolvable
+
+---
+
+##### `virtualClusterConfigInput`<sup>Optional</sup> <a name="virtualClusterConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.virtualClusterConfigInput"></a>
+
+```typescript
+public readonly virtualClusterConfigInput: GoogleDataprocClusterVirtualClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig">GoogleDataprocClusterVirtualClusterConfig</a>
+
+---
+
+##### `gracefulDecommissionTimeout`<sup>Required</sup> <a name="gracefulDecommissionTimeout" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.gracefulDecommissionTimeout"></a>
+
+```typescript
+public readonly gracefulDecommissionTimeout: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocCluster.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### GoogleDataprocClusterClusterConfig <a name="GoogleDataprocClusterClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.autoscalingConfig">autoscalingConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig">GoogleDataprocClusterClusterConfigAutoscalingConfig</a></code> | autoscaling_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig">GoogleDataprocClusterClusterConfigEncryptionConfig</a></code> | encryption_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.endpointConfig">endpointConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig">GoogleDataprocClusterClusterConfigEndpointConfig</a></code> | endpoint_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.gceClusterConfig">gceClusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig">GoogleDataprocClusterClusterConfigGceClusterConfig</a></code> | gce_cluster_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.initializationAction">initializationAction</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction">GoogleDataprocClusterClusterConfigInitializationAction</a>[]</code> | initialization_action block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.lifecycleConfig">lifecycleConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig">GoogleDataprocClusterClusterConfigLifecycleConfig</a></code> | lifecycle_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.masterConfig">masterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig">GoogleDataprocClusterClusterConfigMasterConfig</a></code> | master_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.metastoreConfig">metastoreConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig">GoogleDataprocClusterClusterConfigMetastoreConfig</a></code> | metastore_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.preemptibleWorkerConfig">preemptibleWorkerConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig</a></code> | preemptible_worker_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.securityConfig">securityConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig">GoogleDataprocClusterClusterConfigSecurityConfig</a></code> | security_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.softwareConfig">softwareConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig">GoogleDataprocClusterClusterConfigSoftwareConfig</a></code> | software_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.stagingBucket">stagingBucket</a></code> | <code>string</code> | The Cloud Storage staging bucket used to stage files, such as Hadoop jars, between client machines and the cluster. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.tempBucket">tempBucket</a></code> | <code>string</code> | The Cloud Storage temp bucket used to store ephemeral cluster and jobs data, such as Spark and MapReduce history files. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.workerConfig">workerConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig">GoogleDataprocClusterClusterConfigWorkerConfig</a></code> | worker_config block. |
+
+---
+
+##### `autoscalingConfig`<sup>Optional</sup> <a name="autoscalingConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.autoscalingConfig"></a>
+
+```typescript
+public readonly autoscalingConfig: GoogleDataprocClusterClusterConfigAutoscalingConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig">GoogleDataprocClusterClusterConfigAutoscalingConfig</a>
+
+autoscaling_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#autoscaling_config GoogleDataprocCluster#autoscaling_config}
+
+---
+
+##### `encryptionConfig`<sup>Optional</sup> <a name="encryptionConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.encryptionConfig"></a>
+
+```typescript
+public readonly encryptionConfig: GoogleDataprocClusterClusterConfigEncryptionConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig">GoogleDataprocClusterClusterConfigEncryptionConfig</a>
+
+encryption_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#encryption_config GoogleDataprocCluster#encryption_config}
+
+---
+
+##### `endpointConfig`<sup>Optional</sup> <a name="endpointConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.endpointConfig"></a>
+
+```typescript
+public readonly endpointConfig: GoogleDataprocClusterClusterConfigEndpointConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig">GoogleDataprocClusterClusterConfigEndpointConfig</a>
+
+endpoint_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#endpoint_config GoogleDataprocCluster#endpoint_config}
+
+---
+
+##### `gceClusterConfig`<sup>Optional</sup> <a name="gceClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.gceClusterConfig"></a>
+
+```typescript
+public readonly gceClusterConfig: GoogleDataprocClusterClusterConfigGceClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig">GoogleDataprocClusterClusterConfigGceClusterConfig</a>
+
+gce_cluster_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#gce_cluster_config GoogleDataprocCluster#gce_cluster_config}
+
+---
+
+##### `initializationAction`<sup>Optional</sup> <a name="initializationAction" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.initializationAction"></a>
+
+```typescript
+public readonly initializationAction: IResolvable | GoogleDataprocClusterClusterConfigInitializationAction[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction">GoogleDataprocClusterClusterConfigInitializationAction</a>[]
+
+initialization_action block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#initialization_action GoogleDataprocCluster#initialization_action}
+
+---
+
+##### `lifecycleConfig`<sup>Optional</sup> <a name="lifecycleConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.lifecycleConfig"></a>
+
+```typescript
+public readonly lifecycleConfig: GoogleDataprocClusterClusterConfigLifecycleConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig">GoogleDataprocClusterClusterConfigLifecycleConfig</a>
+
+lifecycle_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#lifecycle_config GoogleDataprocCluster#lifecycle_config}
+
+---
+
+##### `masterConfig`<sup>Optional</sup> <a name="masterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.masterConfig"></a>
+
+```typescript
+public readonly masterConfig: GoogleDataprocClusterClusterConfigMasterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig">GoogleDataprocClusterClusterConfigMasterConfig</a>
+
+master_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#master_config GoogleDataprocCluster#master_config}
+
+---
+
+##### `metastoreConfig`<sup>Optional</sup> <a name="metastoreConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.metastoreConfig"></a>
+
+```typescript
+public readonly metastoreConfig: GoogleDataprocClusterClusterConfigMetastoreConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig">GoogleDataprocClusterClusterConfigMetastoreConfig</a>
+
+metastore_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
+
+---
+
+##### `preemptibleWorkerConfig`<sup>Optional</sup> <a name="preemptibleWorkerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.preemptibleWorkerConfig"></a>
+
+```typescript
+public readonly preemptibleWorkerConfig: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig</a>
+
+preemptible_worker_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#preemptible_worker_config GoogleDataprocCluster#preemptible_worker_config}
+
+---
+
+##### `securityConfig`<sup>Optional</sup> <a name="securityConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.securityConfig"></a>
+
+```typescript
+public readonly securityConfig: GoogleDataprocClusterClusterConfigSecurityConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig">GoogleDataprocClusterClusterConfigSecurityConfig</a>
+
+security_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#security_config GoogleDataprocCluster#security_config}
+
+---
+
+##### `softwareConfig`<sup>Optional</sup> <a name="softwareConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.softwareConfig"></a>
+
+```typescript
+public readonly softwareConfig: GoogleDataprocClusterClusterConfigSoftwareConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig">GoogleDataprocClusterClusterConfigSoftwareConfig</a>
+
+software_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#software_config GoogleDataprocCluster#software_config}
+
+---
+
+##### `stagingBucket`<sup>Optional</sup> <a name="stagingBucket" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.stagingBucket"></a>
+
+```typescript
+public readonly stagingBucket: string;
+```
+
+- *Type:* string
+
+The Cloud Storage staging bucket used to stage files, such as Hadoop jars, between client machines and the cluster.
+
+Note: If you don't explicitly specify a staging_bucket then GCP will auto create / assign one for you. However, you are not guaranteed an auto generated bucket which is solely dedicated to your cluster; it may be shared with other clusters in the same region/zone also choosing to use the auto generation option.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
+
+---
+
+##### `tempBucket`<sup>Optional</sup> <a name="tempBucket" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.tempBucket"></a>
+
+```typescript
+public readonly tempBucket: string;
+```
+
+- *Type:* string
+
+The Cloud Storage temp bucket used to store ephemeral cluster and jobs data, such as Spark and MapReduce history files.
+
+Note: If you don't explicitly specify a temp_bucket then GCP will auto create / assign one for you.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#temp_bucket GoogleDataprocCluster#temp_bucket}
+
+---
+
+##### `workerConfig`<sup>Optional</sup> <a name="workerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig.property.workerConfig"></a>
+
+```typescript
+public readonly workerConfig: GoogleDataprocClusterClusterConfigWorkerConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig">GoogleDataprocClusterClusterConfigWorkerConfig</a>
+
+worker_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#worker_config GoogleDataprocCluster#worker_config}
+
+---
+
+### GoogleDataprocClusterClusterConfigAutoscalingConfig <a name="GoogleDataprocClusterClusterConfigAutoscalingConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigAutoscalingConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig.property.policyUri">policyUri</a></code> | <code>string</code> | The autoscaling policy used by the cluster. |
+
+---
+
+##### `policyUri`<sup>Required</sup> <a name="policyUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig.property.policyUri"></a>
+
+```typescript
+public readonly policyUri: string;
+```
+
+- *Type:* string
+
+The autoscaling policy used by the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#policy_uri GoogleDataprocCluster#policy_uri}
+
+---
+
+### GoogleDataprocClusterClusterConfigEncryptionConfig <a name="GoogleDataprocClusterClusterConfigEncryptionConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigEncryptionConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig.property.kmsKeyName">kmsKeyName</a></code> | <code>string</code> | The Cloud KMS key name to use for PD disk encryption for all instances in the cluster. |
+
+---
+
+##### `kmsKeyName`<sup>Required</sup> <a name="kmsKeyName" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig.property.kmsKeyName"></a>
+
+```typescript
+public readonly kmsKeyName: string;
+```
+
+- *Type:* string
+
+The Cloud KMS key name to use for PD disk encryption for all instances in the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#kms_key_name GoogleDataprocCluster#kms_key_name}
+
+---
+
+### GoogleDataprocClusterClusterConfigEndpointConfig <a name="GoogleDataprocClusterClusterConfigEndpointConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigEndpointConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig.property.enableHttpPortAccess">enableHttpPortAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | The flag to enable http access to specific ports on the cluster from external sources (aka Component Gateway). |
+
+---
+
+##### `enableHttpPortAccess`<sup>Required</sup> <a name="enableHttpPortAccess" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig.property.enableHttpPortAccess"></a>
+
+```typescript
+public readonly enableHttpPortAccess: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+The flag to enable http access to specific ports on the cluster from external sources (aka Component Gateway).
+
+Defaults to false.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#enable_http_port_access GoogleDataprocCluster#enable_http_port_access}
+
+---
+
+### GoogleDataprocClusterClusterConfigGceClusterConfig <a name="GoogleDataprocClusterClusterConfigGceClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigGceClusterConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.internalIpOnly">internalIpOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | A map of the Compute Engine metadata entries to add to all instances. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.network">network</a></code> | <code>string</code> | The name or self_link of the Google Compute Engine network to the cluster will be part of. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.nodeGroupAffinity">nodeGroupAffinity</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity</a></code> | node_group_affinity block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.reservationAffinity">reservationAffinity</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity</a></code> | reservation_affinity block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | The service account to be used by the Node VMs. If not specified, the "default" service account is used. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.serviceAccountScopes">serviceAccountScopes</a></code> | <code>string[]</code> | The set of Google API scopes to be made available on all of the node VMs under the service_account specified. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.shieldedInstanceConfig">shieldedInstanceConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig">GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig</a></code> | shielded_instance_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.subnetwork">subnetwork</a></code> | <code>string</code> | The name or self_link of the Google Compute Engine subnetwork the cluster will be part of. Conflicts with network. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.tags">tags</a></code> | <code>string[]</code> | The list of instance tags applied to instances in the cluster. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.zone">zone</a></code> | <code>string</code> | The GCP zone where your data is stored and used (i.e. where the master and the worker nodes will be created in). If region is set to 'global' (default) then zone is mandatory, otherwise GCP is able to make use of Auto Zone Placement to determine this automatically for you. Note: This setting additionally determines and restricts which computing resources are available for use with other configs such as cluster_config.master_config.machine_type and cluster_config.worker_config.machine_type. |
+
+---
+
+##### `internalIpOnly`<sup>Optional</sup> <a name="internalIpOnly" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.internalIpOnly"></a>
+
+```typescript
+public readonly internalIpOnly: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+By default, clusters are not restricted to internal IP addresses, and will have ephemeral external IP addresses assigned to each instance.
+
+If set to true, all instances in the cluster will only have internal IP addresses. Note: Private Google Access (also known as privateIpGoogleAccess) must be enabled on the subnetwork that the cluster will be launched in.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#internal_ip_only GoogleDataprocCluster#internal_ip_only}
+
+---
+
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.metadata"></a>
+
+```typescript
+public readonly metadata: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+A map of the Compute Engine metadata entries to add to all instances.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#metadata GoogleDataprocCluster#metadata}
+
+---
+
+##### `network`<sup>Optional</sup> <a name="network" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.network"></a>
+
+```typescript
+public readonly network: string;
+```
+
+- *Type:* string
+
+The name or self_link of the Google Compute Engine network to the cluster will be part of.
+
+Conflicts with subnetwork. If neither is specified, this defaults to the "default" network.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#network GoogleDataprocCluster#network}
+
+---
+
+##### `nodeGroupAffinity`<sup>Optional</sup> <a name="nodeGroupAffinity" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.nodeGroupAffinity"></a>
+
+```typescript
+public readonly nodeGroupAffinity: GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity</a>
+
+node_group_affinity block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#node_group_affinity GoogleDataprocCluster#node_group_affinity}
+
+---
+
+##### `reservationAffinity`<sup>Optional</sup> <a name="reservationAffinity" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.reservationAffinity"></a>
+
+```typescript
+public readonly reservationAffinity: GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity</a>
+
+reservation_affinity block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#reservation_affinity GoogleDataprocCluster#reservation_affinity}
+
+---
+
+##### `serviceAccount`<sup>Optional</sup> <a name="serviceAccount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: string;
+```
+
+- *Type:* string
+
+The service account to be used by the Node VMs. If not specified, the "default" service account is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#service_account GoogleDataprocCluster#service_account}
+
+---
+
+##### `serviceAccountScopes`<sup>Optional</sup> <a name="serviceAccountScopes" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.serviceAccountScopes"></a>
+
+```typescript
+public readonly serviceAccountScopes: string[];
+```
+
+- *Type:* string[]
+
+The set of Google API scopes to be made available on all of the node VMs under the service_account specified.
+
+These can be either FQDNs, or scope aliases.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#service_account_scopes GoogleDataprocCluster#service_account_scopes}
+
+---
+
+##### `shieldedInstanceConfig`<sup>Optional</sup> <a name="shieldedInstanceConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.shieldedInstanceConfig"></a>
+
+```typescript
+public readonly shieldedInstanceConfig: GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig">GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig</a>
+
+shielded_instance_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#shielded_instance_config GoogleDataprocCluster#shielded_instance_config}
+
+---
+
+##### `subnetwork`<sup>Optional</sup> <a name="subnetwork" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.subnetwork"></a>
+
+```typescript
+public readonly subnetwork: string;
+```
+
+- *Type:* string
+
+The name or self_link of the Google Compute Engine subnetwork the cluster will be part of. Conflicts with network.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#subnetwork GoogleDataprocCluster#subnetwork}
+
+---
+
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.tags"></a>
+
+```typescript
+public readonly tags: string[];
+```
+
+- *Type:* string[]
+
+The list of instance tags applied to instances in the cluster.
+
+Tags are used to identify valid sources or targets for network firewalls.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#tags GoogleDataprocCluster#tags}
+
+---
+
+##### `zone`<sup>Optional</sup> <a name="zone" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig.property.zone"></a>
+
+```typescript
+public readonly zone: string;
+```
+
+- *Type:* string
+
+The GCP zone where your data is stored and used (i.e. where the master and the worker nodes will be created in). If region is set to 'global' (default) then zone is mandatory, otherwise GCP is able to make use of Auto Zone Placement to determine this automatically for you. Note: This setting additionally determines and restricts which computing resources are available for use with other configs such as cluster_config.master_config.machine_type and cluster_config.worker_config.machine_type.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#zone GoogleDataprocCluster#zone}
+
+---
+
+### GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity <a name="GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity: googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity.property.nodeGroupUri">nodeGroupUri</a></code> | <code>string</code> | The URI of a sole-tenant that the cluster will be created on. |
+
+---
+
+##### `nodeGroupUri`<sup>Required</sup> <a name="nodeGroupUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity.property.nodeGroupUri"></a>
+
+```typescript
+public readonly nodeGroupUri: string;
+```
+
+- *Type:* string
+
+The URI of a sole-tenant that the cluster will be created on.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#node_group_uri GoogleDataprocCluster#node_group_uri}
+
+---
+
+### GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity <a name="GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigGceClusterConfigReservationAffinity: googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity.property.consumeReservationType">consumeReservationType</a></code> | <code>string</code> | Type of reservation to consume. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity.property.key">key</a></code> | <code>string</code> | Corresponds to the label key of reservation resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity.property.values">values</a></code> | <code>string[]</code> | Corresponds to the label values of reservation resource. |
+
+---
+
+##### `consumeReservationType`<sup>Optional</sup> <a name="consumeReservationType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity.property.consumeReservationType"></a>
+
+```typescript
+public readonly consumeReservationType: string;
+```
+
+- *Type:* string
+
+Type of reservation to consume.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#consume_reservation_type GoogleDataprocCluster#consume_reservation_type}
+
+---
+
+##### `key`<sup>Optional</sup> <a name="key" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+Corresponds to the label key of reservation resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#key GoogleDataprocCluster#key}
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity.property.values"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* string[]
+
+Corresponds to the label values of reservation resource.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#values GoogleDataprocCluster#values}
+
+---
+
+### GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig <a name="GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether instances have integrity monitoring enabled. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether instances have Secure Boot enabled. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableVtpm">enableVtpm</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether instances have the vTPM enabled. |
+
+---
+
+##### `enableIntegrityMonitoring`<sup>Optional</sup> <a name="enableIntegrityMonitoring" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableIntegrityMonitoring"></a>
+
+```typescript
+public readonly enableIntegrityMonitoring: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Defines whether instances have integrity monitoring enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#enable_integrity_monitoring GoogleDataprocCluster#enable_integrity_monitoring}
+
+---
+
+##### `enableSecureBoot`<sup>Optional</sup> <a name="enableSecureBoot" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableSecureBoot"></a>
+
+```typescript
+public readonly enableSecureBoot: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Defines whether instances have Secure Boot enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#enable_secure_boot GoogleDataprocCluster#enable_secure_boot}
+
+---
+
+##### `enableVtpm`<sup>Optional</sup> <a name="enableVtpm" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig.property.enableVtpm"></a>
+
+```typescript
+public readonly enableVtpm: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Defines whether instances have the vTPM enabled.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#enable_vtpm GoogleDataprocCluster#enable_vtpm}
+
+---
+
+### GoogleDataprocClusterClusterConfigInitializationAction <a name="GoogleDataprocClusterClusterConfigInitializationAction" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigInitializationAction: googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction.property.script">script</a></code> | <code>string</code> | The script to be executed during initialization of the cluster. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction.property.timeoutSec">timeoutSec</a></code> | <code>number</code> | The maximum duration (in seconds) which script is allowed to take to execute its action. |
+
+---
+
+##### `script`<sup>Required</sup> <a name="script" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction.property.script"></a>
+
+```typescript
+public readonly script: string;
+```
+
+- *Type:* string
+
+The script to be executed during initialization of the cluster.
+
+The script must be a GCS file with a gs:// prefix.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#script GoogleDataprocCluster#script}
+
+---
+
+##### `timeoutSec`<sup>Optional</sup> <a name="timeoutSec" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction.property.timeoutSec"></a>
+
+```typescript
+public readonly timeoutSec: number;
+```
+
+- *Type:* number
+
+The maximum duration (in seconds) which script is allowed to take to execute its action.
+
+GCP will default to a predetermined computed value if not set (currently 300).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#timeout_sec GoogleDataprocCluster#timeout_sec}
+
+---
+
+### GoogleDataprocClusterClusterConfigLifecycleConfig <a name="GoogleDataprocClusterClusterConfigLifecycleConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigLifecycleConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig.property.autoDeleteTime">autoDeleteTime</a></code> | <code>string</code> | The time when cluster will be auto-deleted. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z". |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig.property.idleDeleteTtl">idleDeleteTtl</a></code> | <code>string</code> | The duration to keep the cluster alive while idling (no jobs running). |
+
+---
+
+##### `autoDeleteTime`<sup>Optional</sup> <a name="autoDeleteTime" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig.property.autoDeleteTime"></a>
+
+```typescript
+public readonly autoDeleteTime: string;
+```
+
+- *Type:* string
+
+The time when cluster will be auto-deleted. A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#auto_delete_time GoogleDataprocCluster#auto_delete_time}
+
+---
+
+##### `idleDeleteTtl`<sup>Optional</sup> <a name="idleDeleteTtl" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig.property.idleDeleteTtl"></a>
+
+```typescript
+public readonly idleDeleteTtl: string;
+```
+
+- *Type:* string
+
+The duration to keep the cluster alive while idling (no jobs running).
+
+After this TTL, the cluster will be deleted. Valid range: [10m, 14d].
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#idle_delete_ttl GoogleDataprocCluster#idle_delete_ttl}
+
+---
+
+### GoogleDataprocClusterClusterConfigMasterConfig <a name="GoogleDataprocClusterClusterConfigMasterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigMasterConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.accelerators">accelerators</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators">GoogleDataprocClusterClusterConfigMasterConfigAccelerators</a>[]</code> | accelerators block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig">GoogleDataprocClusterClusterConfigMasterConfigDiskConfig</a></code> | disk_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.imageUri">imageUri</a></code> | <code>string</code> | The URI for the image to use for this master/worker. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.machineType">machineType</a></code> | <code>string</code> | The name of a Google Compute Engine machine type to create for the master/worker. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | The name of a minimum generation of CPU family for the master/worker. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.numInstances">numInstances</a></code> | <code>number</code> | Specifies the number of master/worker nodes to create. If not specified, GCP will default to a predetermined computed value. |
+
+---
+
+##### `accelerators`<sup>Optional</sup> <a name="accelerators" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.accelerators"></a>
+
+```typescript
+public readonly accelerators: IResolvable | GoogleDataprocClusterClusterConfigMasterConfigAccelerators[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators">GoogleDataprocClusterClusterConfigMasterConfigAccelerators</a>[]
+
+accelerators block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
+
+---
+
+##### `diskConfig`<sup>Optional</sup> <a name="diskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.diskConfig"></a>
+
+```typescript
+public readonly diskConfig: GoogleDataprocClusterClusterConfigMasterConfigDiskConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig">GoogleDataprocClusterClusterConfigMasterConfigDiskConfig</a>
+
+disk_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+
+---
+
+##### `imageUri`<sup>Optional</sup> <a name="imageUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.imageUri"></a>
+
+```typescript
+public readonly imageUri: string;
+```
+
+- *Type:* string
+
+The URI for the image to use for this master/worker.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#image_uri GoogleDataprocCluster#image_uri}
+
+---
+
+##### `machineType`<sup>Optional</sup> <a name="machineType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.machineType"></a>
+
+```typescript
+public readonly machineType: string;
+```
+
+- *Type:* string
+
+The name of a Google Compute Engine machine type to create for the master/worker.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+
+---
+
+##### `minCpuPlatform`<sup>Optional</sup> <a name="minCpuPlatform" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.minCpuPlatform"></a>
+
+```typescript
+public readonly minCpuPlatform: string;
+```
+
+- *Type:* string
+
+The name of a minimum generation of CPU family for the master/worker.
+
+If not specified, GCP will default to a predetermined computed value for each zone.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+
+---
+
+##### `numInstances`<sup>Optional</sup> <a name="numInstances" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig.property.numInstances"></a>
+
+```typescript
+public readonly numInstances: number;
+```
+
+- *Type:* number
+
+Specifies the number of master/worker nodes to create. If not specified, GCP will default to a predetermined computed value.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+
+---
+
+### GoogleDataprocClusterClusterConfigMasterConfigAccelerators <a name="GoogleDataprocClusterClusterConfigMasterConfigAccelerators" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigMasterConfigAccelerators: googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators.property.acceleratorCount">acceleratorCount</a></code> | <code>number</code> | The number of the accelerator cards of this type exposed to this instance. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators.property.acceleratorType">acceleratorType</a></code> | <code>string</code> | The short name of the accelerator type to expose to this instance. For example, nvidia-tesla-k80. |
+
+---
+
+##### `acceleratorCount`<sup>Required</sup> <a name="acceleratorCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators.property.acceleratorCount"></a>
+
+```typescript
+public readonly acceleratorCount: number;
+```
+
+- *Type:* number
+
+The number of the accelerator cards of this type exposed to this instance.
+
+Often restricted to one of 1, 2, 4, or 8.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#accelerator_count GoogleDataprocCluster#accelerator_count}
+
+---
+
+##### `acceleratorType`<sup>Required</sup> <a name="acceleratorType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators.property.acceleratorType"></a>
+
+```typescript
+public readonly acceleratorType: string;
+```
+
+- *Type:* string
+
+The short name of the accelerator type to expose to this instance. For example, nvidia-tesla-k80.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#accelerator_type GoogleDataprocCluster#accelerator_type}
+
+---
+
+### GoogleDataprocClusterClusterConfigMasterConfigDiskConfig <a name="GoogleDataprocClusterClusterConfigMasterConfigDiskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigMasterConfigDiskConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig.property.bootDiskSizeGb">bootDiskSizeGb</a></code> | <code>number</code> | Size of the primary disk attached to each node, specified in GB. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig.property.bootDiskType">bootDiskType</a></code> | <code>string</code> | The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard". |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig.property.numLocalSsds">numLocalSsds</a></code> | <code>number</code> | The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0. |
+
+---
+
+##### `bootDiskSizeGb`<sup>Optional</sup> <a name="bootDiskSizeGb" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig.property.bootDiskSizeGb"></a>
+
+```typescript
+public readonly bootDiskSizeGb: number;
+```
+
+- *Type:* number
+
+Size of the primary disk attached to each node, specified in GB.
+
+The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+
+---
+
+##### `bootDiskType`<sup>Optional</sup> <a name="bootDiskType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig.property.bootDiskType"></a>
+
+```typescript
+public readonly bootDiskType: string;
+```
+
+- *Type:* string
+
+The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+
+---
+
+##### `numLocalSsds`<sup>Optional</sup> <a name="numLocalSsds" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig.property.numLocalSsds"></a>
+
+```typescript
+public readonly numLocalSsds: number;
+```
+
+- *Type:* number
+
+The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+
+---
+
+### GoogleDataprocClusterClusterConfigMetastoreConfig <a name="GoogleDataprocClusterClusterConfigMetastoreConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigMetastoreConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig.property.dataprocMetastoreService">dataprocMetastoreService</a></code> | <code>string</code> | Resource name of an existing Dataproc Metastore service. |
+
+---
+
+##### `dataprocMetastoreService`<sup>Required</sup> <a name="dataprocMetastoreService" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig.property.dataprocMetastoreService"></a>
+
+```typescript
+public readonly dataprocMetastoreService: string;
+```
+
+- *Type:* string
+
+Resource name of an existing Dataproc Metastore service.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
+
+---
+
+### GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig <a name="GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigPreemptibleWorkerConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig</a></code> | disk_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig.property.numInstances">numInstances</a></code> | <code>number</code> | Specifies the number of preemptible nodes to create. Defaults to 0. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig.property.preemptibility">preemptibility</a></code> | <code>string</code> | Specifies the preemptibility of the secondary nodes. Defaults to PREEMPTIBLE. |
+
+---
+
+##### `diskConfig`<sup>Optional</sup> <a name="diskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig.property.diskConfig"></a>
+
+```typescript
+public readonly diskConfig: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig</a>
+
+disk_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+
+---
+
+##### `numInstances`<sup>Optional</sup> <a name="numInstances" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig.property.numInstances"></a>
+
+```typescript
+public readonly numInstances: number;
+```
+
+- *Type:* number
+
+Specifies the number of preemptible nodes to create. Defaults to 0.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+
+---
+
+##### `preemptibility`<sup>Optional</sup> <a name="preemptibility" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig.property.preemptibility"></a>
+
+```typescript
+public readonly preemptibility: string;
+```
+
+- *Type:* string
+
+Specifies the preemptibility of the secondary nodes. Defaults to PREEMPTIBLE.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#preemptibility GoogleDataprocCluster#preemptibility}
+
+---
+
+### GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig <a name="GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig.property.bootDiskSizeGb">bootDiskSizeGb</a></code> | <code>number</code> | Size of the primary disk attached to each preemptible worker node, specified in GB. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig.property.bootDiskType">bootDiskType</a></code> | <code>string</code> | The disk type of the primary disk attached to each preemptible worker node. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig.property.numLocalSsds">numLocalSsds</a></code> | <code>number</code> | The amount of local SSD disks that will be attached to each preemptible worker node. Defaults to 0. |
+
+---
+
+##### `bootDiskSizeGb`<sup>Optional</sup> <a name="bootDiskSizeGb" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig.property.bootDiskSizeGb"></a>
+
+```typescript
+public readonly bootDiskSizeGb: number;
+```
+
+- *Type:* number
+
+Size of the primary disk attached to each preemptible worker node, specified in GB.
+
+The smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+
+---
+
+##### `bootDiskType`<sup>Optional</sup> <a name="bootDiskType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig.property.bootDiskType"></a>
+
+```typescript
+public readonly bootDiskType: string;
+```
+
+- *Type:* string
+
+The disk type of the primary disk attached to each preemptible worker node.
+
+Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+
+---
+
+##### `numLocalSsds`<sup>Optional</sup> <a name="numLocalSsds" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig.property.numLocalSsds"></a>
+
+```typescript
+public readonly numLocalSsds: number;
+```
+
+- *Type:* number
+
+The amount of local SSD disks that will be attached to each preemptible worker node. Defaults to 0.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+
+---
+
+### GoogleDataprocClusterClusterConfigSecurityConfig <a name="GoogleDataprocClusterClusterConfigSecurityConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigSecurityConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig.property.kerberosConfig">kerberosConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig">GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig</a></code> | kerberos_config block. |
+
+---
+
+##### `kerberosConfig`<sup>Required</sup> <a name="kerberosConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig.property.kerberosConfig"></a>
+
+```typescript
+public readonly kerberosConfig: GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig">GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig</a>
+
+kerberos_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#kerberos_config GoogleDataprocCluster#kerberos_config}
+
+---
+
+### GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig <a name="GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigSecurityConfigKerberosConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.kmsKeyUri">kmsKeyUri</a></code> | <code>string</code> | The uri of the KMS key used to encrypt various sensitive files. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.rootPrincipalPasswordUri">rootPrincipalPasswordUri</a></code> | <code>string</code> | The cloud Storage URI of a KMS encrypted file containing the root principal password. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustAdminServer">crossRealmTrustAdminServer</a></code> | <code>string</code> | The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustKdc">crossRealmTrustKdc</a></code> | <code>string</code> | The KDC (IP or hostname) for the remote trusted realm in a cross realm trust relationship. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustRealm">crossRealmTrustRealm</a></code> | <code>string</code> | The remote realm the Dataproc on-cluster KDC will trust, should the user enable cross realm trust. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustSharedPasswordUri">crossRealmTrustSharedPasswordUri</a></code> | <code>string</code> | The Cloud Storage URI of a KMS encrypted file containing the shared password between the on-cluster Kerberos realm and the remote trusted realm, in a cross realm trust relationship. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.enableKerberos">enableKerberos</a></code> | <code>boolean \| cdktf.IResolvable</code> | Flag to indicate whether to Kerberize the cluster. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.kdcDbKeyUri">kdcDbKeyUri</a></code> | <code>string</code> | The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.keyPasswordUri">keyPasswordUri</a></code> | <code>string</code> | The Cloud Storage URI of a KMS encrypted file containing the password to the user provided key. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.keystorePasswordUri">keystorePasswordUri</a></code> | <code>string</code> | The Cloud Storage URI of a KMS encrypted file containing the password to the user provided keystore. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.keystoreUri">keystoreUri</a></code> | <code>string</code> | The Cloud Storage URI of the keystore file used for SSL encryption. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.realm">realm</a></code> | <code>string</code> | The name of the on-cluster Kerberos realm. If not specified, the uppercased domain of hostnames will be the realm. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.tgtLifetimeHours">tgtLifetimeHours</a></code> | <code>number</code> | The lifetime of the ticket granting ticket, in hours. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.truststorePasswordUri">truststorePasswordUri</a></code> | <code>string</code> | The Cloud Storage URI of a KMS encrypted file containing the password to the user provided truststore. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.truststoreUri">truststoreUri</a></code> | <code>string</code> | The Cloud Storage URI of the truststore file used for SSL encryption. |
+
+---
+
+##### `kmsKeyUri`<sup>Required</sup> <a name="kmsKeyUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.kmsKeyUri"></a>
+
+```typescript
+public readonly kmsKeyUri: string;
+```
+
+- *Type:* string
+
+The uri of the KMS key used to encrypt various sensitive files.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#kms_key_uri GoogleDataprocCluster#kms_key_uri}
+
+---
+
+##### `rootPrincipalPasswordUri`<sup>Required</sup> <a name="rootPrincipalPasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.rootPrincipalPasswordUri"></a>
+
+```typescript
+public readonly rootPrincipalPasswordUri: string;
+```
+
+- *Type:* string
+
+The cloud Storage URI of a KMS encrypted file containing the root principal password.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#root_principal_password_uri GoogleDataprocCluster#root_principal_password_uri}
+
+---
+
+##### `crossRealmTrustAdminServer`<sup>Optional</sup> <a name="crossRealmTrustAdminServer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustAdminServer"></a>
+
+```typescript
+public readonly crossRealmTrustAdminServer: string;
+```
+
+- *Type:* string
+
+The admin server (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#cross_realm_trust_admin_server GoogleDataprocCluster#cross_realm_trust_admin_server}
+
+---
+
+##### `crossRealmTrustKdc`<sup>Optional</sup> <a name="crossRealmTrustKdc" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustKdc"></a>
+
+```typescript
+public readonly crossRealmTrustKdc: string;
+```
+
+- *Type:* string
+
+The KDC (IP or hostname) for the remote trusted realm in a cross realm trust relationship.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#cross_realm_trust_kdc GoogleDataprocCluster#cross_realm_trust_kdc}
+
+---
+
+##### `crossRealmTrustRealm`<sup>Optional</sup> <a name="crossRealmTrustRealm" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustRealm"></a>
+
+```typescript
+public readonly crossRealmTrustRealm: string;
+```
+
+- *Type:* string
+
+The remote realm the Dataproc on-cluster KDC will trust, should the user enable cross realm trust.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#cross_realm_trust_realm GoogleDataprocCluster#cross_realm_trust_realm}
+
+---
+
+##### `crossRealmTrustSharedPasswordUri`<sup>Optional</sup> <a name="crossRealmTrustSharedPasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.crossRealmTrustSharedPasswordUri"></a>
+
+```typescript
+public readonly crossRealmTrustSharedPasswordUri: string;
+```
+
+- *Type:* string
+
+The Cloud Storage URI of a KMS encrypted file containing the shared password between the on-cluster Kerberos realm and the remote trusted realm, in a cross realm trust relationship.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#cross_realm_trust_shared_password_uri GoogleDataprocCluster#cross_realm_trust_shared_password_uri}
+
+---
+
+##### `enableKerberos`<sup>Optional</sup> <a name="enableKerberos" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.enableKerberos"></a>
+
+```typescript
+public readonly enableKerberos: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Flag to indicate whether to Kerberize the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#enable_kerberos GoogleDataprocCluster#enable_kerberos}
+
+---
+
+##### `kdcDbKeyUri`<sup>Optional</sup> <a name="kdcDbKeyUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.kdcDbKeyUri"></a>
+
+```typescript
+public readonly kdcDbKeyUri: string;
+```
+
+- *Type:* string
+
+The Cloud Storage URI of a KMS encrypted file containing the master key of the KDC database.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#kdc_db_key_uri GoogleDataprocCluster#kdc_db_key_uri}
+
+---
+
+##### `keyPasswordUri`<sup>Optional</sup> <a name="keyPasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.keyPasswordUri"></a>
+
+```typescript
+public readonly keyPasswordUri: string;
+```
+
+- *Type:* string
+
+The Cloud Storage URI of a KMS encrypted file containing the password to the user provided key.
+
+For the self-signed certificate, this password is generated by Dataproc.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#key_password_uri GoogleDataprocCluster#key_password_uri}
+
+---
+
+##### `keystorePasswordUri`<sup>Optional</sup> <a name="keystorePasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.keystorePasswordUri"></a>
+
+```typescript
+public readonly keystorePasswordUri: string;
+```
+
+- *Type:* string
+
+The Cloud Storage URI of a KMS encrypted file containing the password to the user provided keystore.
+
+For the self-signed certificate, this password is generated
+by Dataproc
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#keystore_password_uri GoogleDataprocCluster#keystore_password_uri}
+
+---
+
+##### `keystoreUri`<sup>Optional</sup> <a name="keystoreUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.keystoreUri"></a>
+
+```typescript
+public readonly keystoreUri: string;
+```
+
+- *Type:* string
+
+The Cloud Storage URI of the keystore file used for SSL encryption.
+
+If not provided, Dataproc will provide a self-signed certificate.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#keystore_uri GoogleDataprocCluster#keystore_uri}
+
+---
+
+##### `realm`<sup>Optional</sup> <a name="realm" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.realm"></a>
+
+```typescript
+public readonly realm: string;
+```
+
+- *Type:* string
+
+The name of the on-cluster Kerberos realm. If not specified, the uppercased domain of hostnames will be the realm.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#realm GoogleDataprocCluster#realm}
+
+---
+
+##### `tgtLifetimeHours`<sup>Optional</sup> <a name="tgtLifetimeHours" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.tgtLifetimeHours"></a>
+
+```typescript
+public readonly tgtLifetimeHours: number;
+```
+
+- *Type:* number
+
+The lifetime of the ticket granting ticket, in hours.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#tgt_lifetime_hours GoogleDataprocCluster#tgt_lifetime_hours}
+
+---
+
+##### `truststorePasswordUri`<sup>Optional</sup> <a name="truststorePasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.truststorePasswordUri"></a>
+
+```typescript
+public readonly truststorePasswordUri: string;
+```
+
+- *Type:* string
+
+The Cloud Storage URI of a KMS encrypted file containing the password to the user provided truststore.
+
+For the self-signed certificate, this password is generated by Dataproc.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#truststore_password_uri GoogleDataprocCluster#truststore_password_uri}
+
+---
+
+##### `truststoreUri`<sup>Optional</sup> <a name="truststoreUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig.property.truststoreUri"></a>
+
+```typescript
+public readonly truststoreUri: string;
+```
+
+- *Type:* string
+
+The Cloud Storage URI of the truststore file used for SSL encryption.
+
+If not provided, Dataproc will provide a self-signed certificate.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#truststore_uri GoogleDataprocCluster#truststore_uri}
+
+---
+
+### GoogleDataprocClusterClusterConfigSoftwareConfig <a name="GoogleDataprocClusterClusterConfigSoftwareConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigSoftwareConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig.property.imageVersion">imageVersion</a></code> | <code>string</code> | The Cloud Dataproc image version to use for the cluster - this controls the sets of software versions installed onto the nodes when you create clusters. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig.property.optionalComponents">optionalComponents</a></code> | <code>string[]</code> | The set of optional components to activate on the cluster. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig.property.overrideProperties">overrideProperties</a></code> | <code>{[ key: string ]: string}</code> | A list of override and additional properties (key/value pairs) used to modify various aspects of the common configuration files used when creating a cluster. |
+
+---
+
+##### `imageVersion`<sup>Optional</sup> <a name="imageVersion" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig.property.imageVersion"></a>
+
+```typescript
+public readonly imageVersion: string;
+```
+
+- *Type:* string
+
+The Cloud Dataproc image version to use for the cluster - this controls the sets of software versions installed onto the nodes when you create clusters.
+
+If not specified, defaults to the latest version.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#image_version GoogleDataprocCluster#image_version}
+
+---
+
+##### `optionalComponents`<sup>Optional</sup> <a name="optionalComponents" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig.property.optionalComponents"></a>
+
+```typescript
+public readonly optionalComponents: string[];
+```
+
+- *Type:* string[]
+
+The set of optional components to activate on the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#optional_components GoogleDataprocCluster#optional_components}
+
+---
+
+##### `overrideProperties`<sup>Optional</sup> <a name="overrideProperties" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig.property.overrideProperties"></a>
+
+```typescript
+public readonly overrideProperties: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+A list of override and additional properties (key/value pairs) used to modify various aspects of the common configuration files used when creating a cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#override_properties GoogleDataprocCluster#override_properties}
+
+---
+
+### GoogleDataprocClusterClusterConfigWorkerConfig <a name="GoogleDataprocClusterClusterConfigWorkerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigWorkerConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.accelerators">accelerators</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators">GoogleDataprocClusterClusterConfigWorkerConfigAccelerators</a>[]</code> | accelerators block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig</a></code> | disk_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.imageUri">imageUri</a></code> | <code>string</code> | The URI for the image to use for this master/worker. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.machineType">machineType</a></code> | <code>string</code> | The name of a Google Compute Engine machine type to create for the master/worker. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | The name of a minimum generation of CPU family for the master/worker. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.numInstances">numInstances</a></code> | <code>number</code> | Specifies the number of master/worker nodes to create. If not specified, GCP will default to a predetermined computed value. |
+
+---
+
+##### `accelerators`<sup>Optional</sup> <a name="accelerators" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.accelerators"></a>
+
+```typescript
+public readonly accelerators: IResolvable | GoogleDataprocClusterClusterConfigWorkerConfigAccelerators[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators">GoogleDataprocClusterClusterConfigWorkerConfigAccelerators</a>[]
+
+accelerators block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#accelerators GoogleDataprocCluster#accelerators}
+
+---
+
+##### `diskConfig`<sup>Optional</sup> <a name="diskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.diskConfig"></a>
+
+```typescript
+public readonly diskConfig: GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig</a>
+
+disk_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#disk_config GoogleDataprocCluster#disk_config}
+
+---
+
+##### `imageUri`<sup>Optional</sup> <a name="imageUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.imageUri"></a>
+
+```typescript
+public readonly imageUri: string;
+```
+
+- *Type:* string
+
+The URI for the image to use for this master/worker.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#image_uri GoogleDataprocCluster#image_uri}
+
+---
+
+##### `machineType`<sup>Optional</sup> <a name="machineType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.machineType"></a>
+
+```typescript
+public readonly machineType: string;
+```
+
+- *Type:* string
+
+The name of a Google Compute Engine machine type to create for the master/worker.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+
+---
+
+##### `minCpuPlatform`<sup>Optional</sup> <a name="minCpuPlatform" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.minCpuPlatform"></a>
+
+```typescript
+public readonly minCpuPlatform: string;
+```
+
+- *Type:* string
+
+The name of a minimum generation of CPU family for the master/worker.
+
+If not specified, GCP will default to a predetermined computed value for each zone.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+
+---
+
+##### `numInstances`<sup>Optional</sup> <a name="numInstances" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig.property.numInstances"></a>
+
+```typescript
+public readonly numInstances: number;
+```
+
+- *Type:* number
+
+Specifies the number of master/worker nodes to create. If not specified, GCP will default to a predetermined computed value.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#num_instances GoogleDataprocCluster#num_instances}
+
+---
+
+### GoogleDataprocClusterClusterConfigWorkerConfigAccelerators <a name="GoogleDataprocClusterClusterConfigWorkerConfigAccelerators" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigWorkerConfigAccelerators: googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators.property.acceleratorCount">acceleratorCount</a></code> | <code>number</code> | The number of the accelerator cards of this type exposed to this instance. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators.property.acceleratorType">acceleratorType</a></code> | <code>string</code> | The short name of the accelerator type to expose to this instance. For example, nvidia-tesla-k80. |
+
+---
+
+##### `acceleratorCount`<sup>Required</sup> <a name="acceleratorCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators.property.acceleratorCount"></a>
+
+```typescript
+public readonly acceleratorCount: number;
+```
+
+- *Type:* number
+
+The number of the accelerator cards of this type exposed to this instance.
+
+Often restricted to one of 1, 2, 4, or 8.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#accelerator_count GoogleDataprocCluster#accelerator_count}
+
+---
+
+##### `acceleratorType`<sup>Required</sup> <a name="acceleratorType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators.property.acceleratorType"></a>
+
+```typescript
+public readonly acceleratorType: string;
+```
+
+- *Type:* string
+
+The short name of the accelerator type to expose to this instance. For example, nvidia-tesla-k80.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#accelerator_type GoogleDataprocCluster#accelerator_type}
+
+---
+
+### GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig <a name="GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterClusterConfigWorkerConfigDiskConfig: googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig.property.bootDiskSizeGb">bootDiskSizeGb</a></code> | <code>number</code> | Size of the primary disk attached to each node, specified in GB. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig.property.bootDiskType">bootDiskType</a></code> | <code>string</code> | The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard". |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig.property.numLocalSsds">numLocalSsds</a></code> | <code>number</code> | The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0. |
+
+---
+
+##### `bootDiskSizeGb`<sup>Optional</sup> <a name="bootDiskSizeGb" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig.property.bootDiskSizeGb"></a>
+
+```typescript
+public readonly bootDiskSizeGb: number;
+```
+
+- *Type:* number
+
+Size of the primary disk attached to each node, specified in GB.
+
+The primary disk contains the boot volume and system libraries, and the smallest allowed disk size is 10GB. GCP will default to a predetermined computed value if not set (currently 500GB). Note: If SSDs are not attached, it also contains the HDFS data blocks and Hadoop working directories.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#boot_disk_size_gb GoogleDataprocCluster#boot_disk_size_gb}
+
+---
+
+##### `bootDiskType`<sup>Optional</sup> <a name="bootDiskType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig.property.bootDiskType"></a>
+
+```typescript
+public readonly bootDiskType: string;
+```
+
+- *Type:* string
+
+The disk type of the primary disk attached to each node. Such as "pd-ssd" or "pd-standard". Defaults to "pd-standard".
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#boot_disk_type GoogleDataprocCluster#boot_disk_type}
+
+---
+
+##### `numLocalSsds`<sup>Optional</sup> <a name="numLocalSsds" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig.property.numLocalSsds"></a>
+
+```typescript
+public readonly numLocalSsds: number;
+```
+
+- *Type:* number
+
+The amount of local SSD disks that will be attached to each master cluster node. Defaults to 0.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#num_local_ssds GoogleDataprocCluster#num_local_ssds}
+
+---
+
+### GoogleDataprocClusterConfig <a name="GoogleDataprocClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterConfig: googleDataprocCluster.GoogleDataprocClusterConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.name">name</a></code> | <code>string</code> | The name of the cluster, unique within the project and zone. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.clusterConfig">clusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig">GoogleDataprocClusterClusterConfig</a></code> | cluster_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.gracefulDecommissionTimeout">gracefulDecommissionTimeout</a></code> | <code>string</code> | The timeout duration which allows graceful decomissioning when you change the number of worker nodes directly through a terraform apply. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#id GoogleDataprocCluster#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | The list of labels (key/value pairs) to be applied to instances in the cluster. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.project">project</a></code> | <code>string</code> | The ID of the project in which the cluster will exist. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.region">region</a></code> | <code>string</code> | The region in which the cluster and associated nodes will be created in. Defaults to global. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts">GoogleDataprocClusterTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.virtualClusterConfig">virtualClusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig">GoogleDataprocClusterVirtualClusterConfig</a></code> | virtual_cluster_config block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The name of the cluster, unique within the project and zone.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#name GoogleDataprocCluster#name}
+
+---
+
+##### `clusterConfig`<sup>Optional</sup> <a name="clusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.clusterConfig"></a>
+
+```typescript
+public readonly clusterConfig: GoogleDataprocClusterClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig">GoogleDataprocClusterClusterConfig</a>
+
+cluster_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#cluster_config GoogleDataprocCluster#cluster_config}
+
+---
+
+##### `gracefulDecommissionTimeout`<sup>Optional</sup> <a name="gracefulDecommissionTimeout" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.gracefulDecommissionTimeout"></a>
+
+```typescript
+public readonly gracefulDecommissionTimeout: string;
+```
+
+- *Type:* string
+
+The timeout duration which allows graceful decomissioning when you change the number of worker nodes directly through a terraform apply.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#graceful_decommission_timeout GoogleDataprocCluster#graceful_decommission_timeout}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#id GoogleDataprocCluster#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+The list of labels (key/value pairs) to be applied to instances in the cluster.
+
+GCP generates some itself including goog-dataproc-cluster-name which is the name of the cluster.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#labels GoogleDataprocCluster#labels}
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+The ID of the project in which the cluster will exist.
+
+If it is not provided, the provider project is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#project GoogleDataprocCluster#project}
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+The region in which the cluster and associated nodes will be created in. Defaults to global.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#region GoogleDataprocCluster#region}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.timeouts"></a>
+
+```typescript
+public readonly timeouts: GoogleDataprocClusterTimeouts;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts">GoogleDataprocClusterTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#timeouts GoogleDataprocCluster#timeouts}
+
+---
+
+##### `virtualClusterConfig`<sup>Optional</sup> <a name="virtualClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterConfig.property.virtualClusterConfig"></a>
+
+```typescript
+public readonly virtualClusterConfig: GoogleDataprocClusterVirtualClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig">GoogleDataprocClusterVirtualClusterConfig</a>
+
+virtual_cluster_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#virtual_cluster_config GoogleDataprocCluster#virtual_cluster_config}
+
+---
+
+### GoogleDataprocClusterTimeouts <a name="GoogleDataprocClusterTimeouts" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterTimeouts: googleDataprocCluster.GoogleDataprocClusterTimeouts = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#create GoogleDataprocCluster#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#delete GoogleDataprocCluster#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#update GoogleDataprocCluster#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#create GoogleDataprocCluster#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#delete GoogleDataprocCluster#delete}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#update GoogleDataprocCluster#update}.
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfig <a name="GoogleDataprocClusterVirtualClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfig: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig.property.auxiliaryServicesConfig">auxiliaryServicesConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig</a></code> | auxiliary_services_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig.property.kubernetesClusterConfig">kubernetesClusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig</a></code> | kubernetes_cluster_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig.property.stagingBucket">stagingBucket</a></code> | <code>string</code> | A Cloud Storage bucket used to stage job dependencies, config files, and job driver console output. |
+
+---
+
+##### `auxiliaryServicesConfig`<sup>Optional</sup> <a name="auxiliaryServicesConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig.property.auxiliaryServicesConfig"></a>
+
+```typescript
+public readonly auxiliaryServicesConfig: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig</a>
+
+auxiliary_services_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#auxiliary_services_config GoogleDataprocCluster#auxiliary_services_config}
+
+---
+
+##### `kubernetesClusterConfig`<sup>Optional</sup> <a name="kubernetesClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig.property.kubernetesClusterConfig"></a>
+
+```typescript
+public readonly kubernetesClusterConfig: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig</a>
+
+kubernetes_cluster_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#kubernetes_cluster_config GoogleDataprocCluster#kubernetes_cluster_config}
+
+---
+
+##### `stagingBucket`<sup>Optional</sup> <a name="stagingBucket" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig.property.stagingBucket"></a>
+
+```typescript
+public readonly stagingBucket: string;
+```
+
+- *Type:* string
+
+A Cloud Storage bucket used to stage job dependencies, config files, and job driver console output.
+
+If you do not specify a staging bucket, Cloud Dataproc will determine a Cloud Storage location (US, ASIA, or EU) for your cluster's staging bucket according to the Compute Engine zone where your cluster is deployed, and then create and manage this project-level, per-location bucket.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#staging_bucket GoogleDataprocCluster#staging_bucket}
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig <a name="GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig.property.metastoreConfig">metastoreConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig</a></code> | metastore_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig.property.sparkHistoryServerConfig">sparkHistoryServerConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig</a></code> | spark_history_server_config block. |
+
+---
+
+##### `metastoreConfig`<sup>Optional</sup> <a name="metastoreConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig.property.metastoreConfig"></a>
+
+```typescript
+public readonly metastoreConfig: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig</a>
+
+metastore_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#metastore_config GoogleDataprocCluster#metastore_config}
+
+---
+
+##### `sparkHistoryServerConfig`<sup>Optional</sup> <a name="sparkHistoryServerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig.property.sparkHistoryServerConfig"></a>
+
+```typescript
+public readonly sparkHistoryServerConfig: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig</a>
+
+spark_history_server_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#spark_history_server_config GoogleDataprocCluster#spark_history_server_config}
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig <a name="GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig.property.dataprocMetastoreService">dataprocMetastoreService</a></code> | <code>string</code> | The Hive Metastore configuration for this workload. |
+
+---
+
+##### `dataprocMetastoreService`<sup>Optional</sup> <a name="dataprocMetastoreService" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig.property.dataprocMetastoreService"></a>
+
+```typescript
+public readonly dataprocMetastoreService: string;
+```
+
+- *Type:* string
+
+The Hive Metastore configuration for this workload.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#dataproc_metastore_service GoogleDataprocCluster#dataproc_metastore_service}
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig <a name="GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig.property.dataprocCluster">dataprocCluster</a></code> | <code>string</code> | Resource name of an existing Dataproc Cluster to act as a Spark History Server for the workload. |
+
+---
+
+##### `dataprocCluster`<sup>Optional</sup> <a name="dataprocCluster" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig.property.dataprocCluster"></a>
+
+```typescript
+public readonly dataprocCluster: string;
+```
+
+- *Type:* string
+
+Resource name of an existing Dataproc Cluster to act as a Spark History Server for the workload.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#dataproc_cluster GoogleDataprocCluster#dataproc_cluster}
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfigKubernetesClusterConfig: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig.property.gkeClusterConfig">gkeClusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig</a></code> | gke_cluster_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig.property.kubernetesSoftwareConfig">kubernetesSoftwareConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig</a></code> | kubernetes_software_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig.property.kubernetesNamespace">kubernetesNamespace</a></code> | <code>string</code> | A namespace within the Kubernetes cluster to deploy into. |
+
+---
+
+##### `gkeClusterConfig`<sup>Required</sup> <a name="gkeClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig.property.gkeClusterConfig"></a>
+
+```typescript
+public readonly gkeClusterConfig: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig</a>
+
+gke_cluster_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#gke_cluster_config GoogleDataprocCluster#gke_cluster_config}
+
+---
+
+##### `kubernetesSoftwareConfig`<sup>Required</sup> <a name="kubernetesSoftwareConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig.property.kubernetesSoftwareConfig"></a>
+
+```typescript
+public readonly kubernetesSoftwareConfig: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig</a>
+
+kubernetes_software_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#kubernetes_software_config GoogleDataprocCluster#kubernetes_software_config}
+
+---
+
+##### `kubernetesNamespace`<sup>Optional</sup> <a name="kubernetesNamespace" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig.property.kubernetesNamespace"></a>
+
+```typescript
+public readonly kubernetesNamespace: string;
+```
+
+- *Type:* string
+
+A namespace within the Kubernetes cluster to deploy into.
+
+If this namespace does not exist, it is created. If it exists, Dataproc verifies that another Dataproc VirtualCluster is not installed into it. If not specified, the name of the Dataproc Cluster is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#kubernetes_namespace GoogleDataprocCluster#kubernetes_namespace}
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig.property.gkeClusterTarget">gkeClusterTarget</a></code> | <code>string</code> | A target GKE cluster to deploy to. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig.property.nodePoolTarget">nodePoolTarget</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>[]</code> | node_pool_target block. |
+
+---
+
+##### `gkeClusterTarget`<sup>Optional</sup> <a name="gkeClusterTarget" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig.property.gkeClusterTarget"></a>
+
+```typescript
+public readonly gkeClusterTarget: string;
+```
+
+- *Type:* string
+
+A target GKE cluster to deploy to.
+
+It must be in the same project and region as the Dataproc cluster (the GKE cluster can be zonal or regional). Format: 'projects/{project}/locations/{location}/clusters/{cluster_id}'
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#gke_cluster_target GoogleDataprocCluster#gke_cluster_target}
+
+---
+
+##### `nodePoolTarget`<sup>Optional</sup> <a name="nodePoolTarget" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig.property.nodePoolTarget"></a>
+
+```typescript
+public readonly nodePoolTarget: IResolvable | GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>[]
+
+node_pool_target block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#node_pool_target GoogleDataprocCluster#node_pool_target}
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget.property.nodePool">nodePool</a></code> | <code>string</code> | The target GKE node pool. Format: 'projects/{project}/locations/{location}/clusters/{cluster}/nodePools/{nodePool}'. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget.property.roles">roles</a></code> | <code>string[]</code> | The roles associated with the GKE node pool. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget.property.nodePoolConfig">nodePoolConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig</a></code> | node_pool_config block. |
+
+---
+
+##### `nodePool`<sup>Required</sup> <a name="nodePool" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget.property.nodePool"></a>
+
+```typescript
+public readonly nodePool: string;
+```
+
+- *Type:* string
+
+The target GKE node pool. Format: 'projects/{project}/locations/{location}/clusters/{cluster}/nodePools/{nodePool}'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#node_pool GoogleDataprocCluster#node_pool}
+
+---
+
+##### `roles`<sup>Required</sup> <a name="roles" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget.property.roles"></a>
+
+```typescript
+public readonly roles: string[];
+```
+
+- *Type:* string[]
+
+The roles associated with the GKE node pool.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#roles GoogleDataprocCluster#roles}
+
+---
+
+##### `nodePoolConfig`<sup>Optional</sup> <a name="nodePoolConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget.property.nodePoolConfig"></a>
+
+```typescript
+public readonly nodePoolConfig: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig</a>
+
+node_pool_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#node_pool_config GoogleDataprocCluster#node_pool_config}
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig.property.locations">locations</a></code> | <code>string[]</code> | The list of Compute Engine zones where node pool nodes associated with a Dataproc on GKE virtual cluster will be located. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig.property.autoscaling">autoscaling</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling</a></code> | autoscaling block. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig.property.config">config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig</a></code> | config block. |
+
+---
+
+##### `locations`<sup>Required</sup> <a name="locations" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig.property.locations"></a>
+
+```typescript
+public readonly locations: string[];
+```
+
+- *Type:* string[]
+
+The list of Compute Engine zones where node pool nodes associated with a Dataproc on GKE virtual cluster will be located.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#locations GoogleDataprocCluster#locations}
+
+---
+
+##### `autoscaling`<sup>Optional</sup> <a name="autoscaling" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig.property.autoscaling"></a>
+
+```typescript
+public readonly autoscaling: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling</a>
+
+autoscaling block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#autoscaling GoogleDataprocCluster#autoscaling}
+
+---
+
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig.property.config"></a>
+
+```typescript
+public readonly config: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig</a>
+
+config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#config GoogleDataprocCluster#config}
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling.property.maxNodeCount">maxNodeCount</a></code> | <code>number</code> | The maximum number of nodes in the node pool. Must be >= minNodeCount, and must be > 0. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling.property.minNodeCount">minNodeCount</a></code> | <code>number</code> | The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount. |
+
+---
+
+##### `maxNodeCount`<sup>Optional</sup> <a name="maxNodeCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling.property.maxNodeCount"></a>
+
+```typescript
+public readonly maxNodeCount: number;
+```
+
+- *Type:* number
+
+The maximum number of nodes in the node pool. Must be >= minNodeCount, and must be > 0.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#max_node_count GoogleDataprocCluster#max_node_count}
+
+---
+
+##### `minNodeCount`<sup>Optional</sup> <a name="minNodeCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling.property.minNodeCount"></a>
+
+```typescript
+public readonly minNodeCount: number;
+```
+
+- *Type:* number
+
+The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#min_node_count GoogleDataprocCluster#min_node_count}
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.localSsdCount">localSsdCount</a></code> | <code>number</code> | The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.machineType">machineType</a></code> | <code>string</code> | The name of a Compute Engine machine type. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | Minimum CPU platform to be used by this instance. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.preemptible">preemptible</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the nodes are created as preemptible VM instances. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.spot">spot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag. |
+
+---
+
+##### `localSsdCount`<sup>Optional</sup> <a name="localSsdCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.localSsdCount"></a>
+
+```typescript
+public readonly localSsdCount: number;
+```
+
+- *Type:* number
+
+The minimum number of nodes in the node pool. Must be >= 0 and <= maxNodeCount.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#local_ssd_count GoogleDataprocCluster#local_ssd_count}
+
+---
+
+##### `machineType`<sup>Optional</sup> <a name="machineType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.machineType"></a>
+
+```typescript
+public readonly machineType: string;
+```
+
+- *Type:* string
+
+The name of a Compute Engine machine type.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#machine_type GoogleDataprocCluster#machine_type}
+
+---
+
+##### `minCpuPlatform`<sup>Optional</sup> <a name="minCpuPlatform" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.minCpuPlatform"></a>
+
+```typescript
+public readonly minCpuPlatform: string;
+```
+
+- *Type:* string
+
+Minimum CPU platform to be used by this instance.
+
+The instance may be scheduled on the specified or a newer CPU platform. Specify the friendly names of CPU platforms, such as "Intel Haswell" or "Intel Sandy Bridge".
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#min_cpu_platform GoogleDataprocCluster#min_cpu_platform}
+
+---
+
+##### `preemptible`<sup>Optional</sup> <a name="preemptible" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.preemptible"></a>
+
+```typescript
+public readonly preemptible: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Whether the nodes are created as preemptible VM instances.
+
+Preemptible nodes cannot be used in a node pool with the CONTROLLER role or in the DEFAULT node pool if the CONTROLLER role is not assigned (the DEFAULT node pool will assume the CONTROLLER role).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#preemptible GoogleDataprocCluster#preemptible}
+
+---
+
+##### `spot`<sup>Optional</sup> <a name="spot" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig.property.spot"></a>
+
+```typescript
+public readonly spot: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Spot flag for enabling Spot VM, which is a rebrand of the existing preemptible flag.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#spot GoogleDataprocCluster#spot}
+
+---
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+const googleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig: googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig.property.componentVersion">componentVersion</a></code> | <code>{[ key: string ]: string}</code> | The components that should be installed in this Dataproc cluster. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | The properties to set on daemon config files. Property keys are specified in prefix:property format, for example spark:spark.kubernetes.container.image. |
+
+---
+
+##### `componentVersion`<sup>Required</sup> <a name="componentVersion" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig.property.componentVersion"></a>
+
+```typescript
+public readonly componentVersion: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+The components that should be installed in this Dataproc cluster.
+
+The key must be a string from the KubernetesComponent enumeration. The value is the version of the software to be installed.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#component_version GoogleDataprocCluster#component_version}
+
+---
+
+##### `properties`<sup>Optional</sup> <a name="properties" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig.property.properties"></a>
+
+```typescript
+public readonly properties: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+The properties to set on daemon config files. Property keys are specified in prefix:property format, for example spark:spark.kubernetes.container.image.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#properties GoogleDataprocCluster#properties}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference <a name="GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.property.policyUriInput">policyUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.property.policyUri">policyUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig">GoogleDataprocClusterClusterConfigAutoscalingConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `policyUriInput`<sup>Optional</sup> <a name="policyUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.property.policyUriInput"></a>
+
+```typescript
+public readonly policyUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `policyUri`<sup>Required</sup> <a name="policyUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.property.policyUri"></a>
+
+```typescript
+public readonly policyUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigAutoscalingConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig">GoogleDataprocClusterClusterConfigAutoscalingConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference <a name="GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.property.kmsKeyNameInput">kmsKeyNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.property.kmsKeyName">kmsKeyName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig">GoogleDataprocClusterClusterConfigEncryptionConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `kmsKeyNameInput`<sup>Optional</sup> <a name="kmsKeyNameInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.property.kmsKeyNameInput"></a>
+
+```typescript
+public readonly kmsKeyNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `kmsKeyName`<sup>Required</sup> <a name="kmsKeyName" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.property.kmsKeyName"></a>
+
+```typescript
+public readonly kmsKeyName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigEncryptionConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig">GoogleDataprocClusterClusterConfigEncryptionConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigEndpointConfigOutputReference <a name="GoogleDataprocClusterClusterConfigEndpointConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.httpPorts">httpPorts</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccessInput">enableHttpPortAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccess">enableHttpPortAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig">GoogleDataprocClusterClusterConfigEndpointConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `httpPorts`<sup>Required</sup> <a name="httpPorts" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.httpPorts"></a>
+
+```typescript
+public readonly httpPorts: StringMap;
+```
+
+- *Type:* cdktf.StringMap
+
+---
+
+##### `enableHttpPortAccessInput`<sup>Optional</sup> <a name="enableHttpPortAccessInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccessInput"></a>
+
+```typescript
+public readonly enableHttpPortAccessInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `enableHttpPortAccess`<sup>Required</sup> <a name="enableHttpPortAccess" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.enableHttpPortAccess"></a>
+
+```typescript
+public readonly enableHttpPortAccess: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigEndpointConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig">GoogleDataprocClusterClusterConfigEndpointConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference <a name="GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.property.nodeGroupUriInput">nodeGroupUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.property.nodeGroupUri">nodeGroupUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nodeGroupUriInput`<sup>Optional</sup> <a name="nodeGroupUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.property.nodeGroupUriInput"></a>
+
+```typescript
+public readonly nodeGroupUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nodeGroupUri`<sup>Required</sup> <a name="nodeGroupUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.property.nodeGroupUri"></a>
+
+```typescript
+public readonly nodeGroupUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference <a name="GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.putNodeGroupAffinity">putNodeGroupAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.putReservationAffinity">putReservationAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.putShieldedInstanceConfig">putShieldedInstanceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetInternalIpOnly">resetInternalIpOnly</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetMetadata">resetMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetNetwork">resetNetwork</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetNodeGroupAffinity">resetNodeGroupAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetReservationAffinity">resetReservationAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetServiceAccount">resetServiceAccount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetServiceAccountScopes">resetServiceAccountScopes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetShieldedInstanceConfig">resetShieldedInstanceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetSubnetwork">resetSubnetwork</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetZone">resetZone</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putNodeGroupAffinity` <a name="putNodeGroupAffinity" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.putNodeGroupAffinity"></a>
+
+```typescript
+public putNodeGroupAffinity(value: GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.putNodeGroupAffinity.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity</a>
+
+---
+
+##### `putReservationAffinity` <a name="putReservationAffinity" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.putReservationAffinity"></a>
+
+```typescript
+public putReservationAffinity(value: GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.putReservationAffinity.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity</a>
+
+---
+
+##### `putShieldedInstanceConfig` <a name="putShieldedInstanceConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.putShieldedInstanceConfig"></a>
+
+```typescript
+public putShieldedInstanceConfig(value: GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.putShieldedInstanceConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig">GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig</a>
+
+---
+
+##### `resetInternalIpOnly` <a name="resetInternalIpOnly" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetInternalIpOnly"></a>
+
+```typescript
+public resetInternalIpOnly(): void
+```
+
+##### `resetMetadata` <a name="resetMetadata" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetMetadata"></a>
+
+```typescript
+public resetMetadata(): void
+```
+
+##### `resetNetwork` <a name="resetNetwork" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetNetwork"></a>
+
+```typescript
+public resetNetwork(): void
+```
+
+##### `resetNodeGroupAffinity` <a name="resetNodeGroupAffinity" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetNodeGroupAffinity"></a>
+
+```typescript
+public resetNodeGroupAffinity(): void
+```
+
+##### `resetReservationAffinity` <a name="resetReservationAffinity" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetReservationAffinity"></a>
+
+```typescript
+public resetReservationAffinity(): void
+```
+
+##### `resetServiceAccount` <a name="resetServiceAccount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetServiceAccount"></a>
+
+```typescript
+public resetServiceAccount(): void
+```
+
+##### `resetServiceAccountScopes` <a name="resetServiceAccountScopes" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetServiceAccountScopes"></a>
+
+```typescript
+public resetServiceAccountScopes(): void
+```
+
+##### `resetShieldedInstanceConfig` <a name="resetShieldedInstanceConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetShieldedInstanceConfig"></a>
+
+```typescript
+public resetShieldedInstanceConfig(): void
+```
+
+##### `resetSubnetwork` <a name="resetSubnetwork" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetSubnetwork"></a>
+
+```typescript
+public resetSubnetwork(): void
+```
+
+##### `resetTags` <a name="resetTags" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetTags"></a>
+
+```typescript
+public resetTags(): void
+```
+
+##### `resetZone` <a name="resetZone" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.resetZone"></a>
+
+```typescript
+public resetZone(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.nodeGroupAffinity">nodeGroupAffinity</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference">GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.reservationAffinity">reservationAffinity</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference">GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.shieldedInstanceConfig">shieldedInstanceConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference">GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.internalIpOnlyInput">internalIpOnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.metadataInput">metadataInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.nodeGroupAffinityInput">nodeGroupAffinityInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.reservationAffinityInput">reservationAffinityInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.serviceAccountInput">serviceAccountInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.serviceAccountScopesInput">serviceAccountScopesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.shieldedInstanceConfigInput">shieldedInstanceConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig">GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.subnetworkInput">subnetworkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.zoneInput">zoneInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.internalIpOnly">internalIpOnly</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.metadata">metadata</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.network">network</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.serviceAccountScopes">serviceAccountScopes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.zone">zone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig">GoogleDataprocClusterClusterConfigGceClusterConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nodeGroupAffinity`<sup>Required</sup> <a name="nodeGroupAffinity" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.nodeGroupAffinity"></a>
+
+```typescript
+public readonly nodeGroupAffinity: GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference">GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference</a>
+
+---
+
+##### `reservationAffinity`<sup>Required</sup> <a name="reservationAffinity" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.reservationAffinity"></a>
+
+```typescript
+public readonly reservationAffinity: GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference">GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference</a>
+
+---
+
+##### `shieldedInstanceConfig`<sup>Required</sup> <a name="shieldedInstanceConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.shieldedInstanceConfig"></a>
+
+```typescript
+public readonly shieldedInstanceConfig: GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference">GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference</a>
+
+---
+
+##### `internalIpOnlyInput`<sup>Optional</sup> <a name="internalIpOnlyInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.internalIpOnlyInput"></a>
+
+```typescript
+public readonly internalIpOnlyInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `metadataInput`<sup>Optional</sup> <a name="metadataInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.metadataInput"></a>
+
+```typescript
+public readonly metadataInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `networkInput`<sup>Optional</sup> <a name="networkInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.networkInput"></a>
+
+```typescript
+public readonly networkInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nodeGroupAffinityInput`<sup>Optional</sup> <a name="nodeGroupAffinityInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.nodeGroupAffinityInput"></a>
+
+```typescript
+public readonly nodeGroupAffinityInput: GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity</a>
+
+---
+
+##### `reservationAffinityInput`<sup>Optional</sup> <a name="reservationAffinityInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.reservationAffinityInput"></a>
+
+```typescript
+public readonly reservationAffinityInput: GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity</a>
+
+---
+
+##### `serviceAccountInput`<sup>Optional</sup> <a name="serviceAccountInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.serviceAccountInput"></a>
+
+```typescript
+public readonly serviceAccountInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccountScopesInput`<sup>Optional</sup> <a name="serviceAccountScopesInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.serviceAccountScopesInput"></a>
+
+```typescript
+public readonly serviceAccountScopesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `shieldedInstanceConfigInput`<sup>Optional</sup> <a name="shieldedInstanceConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.shieldedInstanceConfigInput"></a>
+
+```typescript
+public readonly shieldedInstanceConfigInput: GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig">GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig</a>
+
+---
+
+##### `subnetworkInput`<sup>Optional</sup> <a name="subnetworkInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.subnetworkInput"></a>
+
+```typescript
+public readonly subnetworkInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.tagsInput"></a>
+
+```typescript
+public readonly tagsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `zoneInput`<sup>Optional</sup> <a name="zoneInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.zoneInput"></a>
+
+```typescript
+public readonly zoneInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalIpOnly`<sup>Required</sup> <a name="internalIpOnly" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.internalIpOnly"></a>
+
+```typescript
+public readonly internalIpOnly: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.metadata"></a>
+
+```typescript
+public readonly metadata: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.network"></a>
+
+```typescript
+public readonly network: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccount`<sup>Required</sup> <a name="serviceAccount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.serviceAccount"></a>
+
+```typescript
+public readonly serviceAccount: string;
+```
+
+- *Type:* string
+
+---
+
+##### `serviceAccountScopes`<sup>Required</sup> <a name="serviceAccountScopes" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.serviceAccountScopes"></a>
+
+```typescript
+public readonly serviceAccountScopes: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `subnetwork`<sup>Required</sup> <a name="subnetwork" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.subnetwork"></a>
+
+```typescript
+public readonly subnetwork: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.tags"></a>
+
+```typescript
+public readonly tags: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `zone`<sup>Required</sup> <a name="zone" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.zone"></a>
+
+```typescript
+public readonly zone: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigGceClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig">GoogleDataprocClusterClusterConfigGceClusterConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference <a name="GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.resetConsumeReservationType">resetConsumeReservationType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.resetKey">resetKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.resetValues">resetValues</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetConsumeReservationType` <a name="resetConsumeReservationType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.resetConsumeReservationType"></a>
+
+```typescript
+public resetConsumeReservationType(): void
+```
+
+##### `resetKey` <a name="resetKey" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.resetKey"></a>
+
+```typescript
+public resetKey(): void
+```
+
+##### `resetValues` <a name="resetValues" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.resetValues"></a>
+
+```typescript
+public resetValues(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.consumeReservationTypeInput">consumeReservationTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.keyInput">keyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.valuesInput">valuesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.consumeReservationType">consumeReservationType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `consumeReservationTypeInput`<sup>Optional</sup> <a name="consumeReservationTypeInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.consumeReservationTypeInput"></a>
+
+```typescript
+public readonly consumeReservationTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyInput`<sup>Optional</sup> <a name="keyInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.keyInput"></a>
+
+```typescript
+public readonly keyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `valuesInput`<sup>Optional</sup> <a name="valuesInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.valuesInput"></a>
+
+```typescript
+public readonly valuesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `consumeReservationType`<sup>Required</sup> <a name="consumeReservationType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.consumeReservationType"></a>
+
+```typescript
+public readonly consumeReservationType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `key`<sup>Required</sup> <a name="key" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.key"></a>
+
+```typescript
+public readonly key: string;
+```
+
+- *Type:* string
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.values"></a>
+
+```typescript
+public readonly values: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity">GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference <a name="GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resetEnableIntegrityMonitoring">resetEnableIntegrityMonitoring</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resetEnableSecureBoot">resetEnableSecureBoot</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resetEnableVtpm">resetEnableVtpm</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetEnableIntegrityMonitoring` <a name="resetEnableIntegrityMonitoring" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resetEnableIntegrityMonitoring"></a>
+
+```typescript
+public resetEnableIntegrityMonitoring(): void
+```
+
+##### `resetEnableSecureBoot` <a name="resetEnableSecureBoot" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resetEnableSecureBoot"></a>
+
+```typescript
+public resetEnableSecureBoot(): void
+```
+
+##### `resetEnableVtpm` <a name="resetEnableVtpm" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.resetEnableVtpm"></a>
+
+```typescript
+public resetEnableVtpm(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enableIntegrityMonitoringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enableSecureBootInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpmInput">enableVtpmInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpm">enableVtpm</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig">GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enableIntegrityMonitoringInput`<sup>Optional</sup> <a name="enableIntegrityMonitoringInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput"></a>
+
+```typescript
+public readonly enableIntegrityMonitoringInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `enableSecureBootInput`<sup>Optional</sup> <a name="enableSecureBootInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBootInput"></a>
+
+```typescript
+public readonly enableSecureBootInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `enableVtpmInput`<sup>Optional</sup> <a name="enableVtpmInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpmInput"></a>
+
+```typescript
+public readonly enableVtpmInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `enableIntegrityMonitoring`<sup>Required</sup> <a name="enableIntegrityMonitoring" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring"></a>
+
+```typescript
+public readonly enableIntegrityMonitoring: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `enableSecureBoot`<sup>Required</sup> <a name="enableSecureBoot" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot"></a>
+
+```typescript
+public readonly enableSecureBoot: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `enableVtpm`<sup>Required</sup> <a name="enableVtpm" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.enableVtpm"></a>
+
+```typescript
+public readonly enableVtpm: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig">GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigInitializationActionList <a name="GoogleDataprocClusterClusterConfigInitializationActionList" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.get"></a>
+
+```typescript
+public get(index: number): GoogleDataprocClusterClusterConfigInitializationActionOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction">GoogleDataprocClusterClusterConfigInitializationAction</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | GoogleDataprocClusterClusterConfigInitializationAction[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction">GoogleDataprocClusterClusterConfigInitializationAction</a>[]
+
+---
+
+
+### GoogleDataprocClusterClusterConfigInitializationActionOutputReference <a name="GoogleDataprocClusterClusterConfigInitializationActionOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.resetTimeoutSec">resetTimeoutSec</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetTimeoutSec` <a name="resetTimeoutSec" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.resetTimeoutSec"></a>
+
+```typescript
+public resetTimeoutSec(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.scriptInput">scriptInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.timeoutSecInput">timeoutSecInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.script">script</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.timeoutSec">timeoutSec</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction">GoogleDataprocClusterClusterConfigInitializationAction</a> \| cdktf.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `scriptInput`<sup>Optional</sup> <a name="scriptInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.scriptInput"></a>
+
+```typescript
+public readonly scriptInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timeoutSecInput`<sup>Optional</sup> <a name="timeoutSecInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.timeoutSecInput"></a>
+
+```typescript
+public readonly timeoutSecInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `script`<sup>Required</sup> <a name="script" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.script"></a>
+
+```typescript
+public readonly script: string;
+```
+
+- *Type:* string
+
+---
+
+##### `timeoutSec`<sup>Required</sup> <a name="timeoutSec" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.timeoutSec"></a>
+
+```typescript
+public readonly timeoutSec: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigInitializationAction | IResolvable;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction">GoogleDataprocClusterClusterConfigInitializationAction</a> | cdktf.IResolvable
+
+---
+
+
+### GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference <a name="GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.resetAutoDeleteTime">resetAutoDeleteTime</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.resetIdleDeleteTtl">resetIdleDeleteTtl</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetAutoDeleteTime` <a name="resetAutoDeleteTime" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.resetAutoDeleteTime"></a>
+
+```typescript
+public resetAutoDeleteTime(): void
+```
+
+##### `resetIdleDeleteTtl` <a name="resetIdleDeleteTtl" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.resetIdleDeleteTtl"></a>
+
+```typescript
+public resetIdleDeleteTtl(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.idleStartTime">idleStartTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.autoDeleteTimeInput">autoDeleteTimeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.idleDeleteTtlInput">idleDeleteTtlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.autoDeleteTime">autoDeleteTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.idleDeleteTtl">idleDeleteTtl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig">GoogleDataprocClusterClusterConfigLifecycleConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idleStartTime`<sup>Required</sup> <a name="idleStartTime" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.idleStartTime"></a>
+
+```typescript
+public readonly idleStartTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `autoDeleteTimeInput`<sup>Optional</sup> <a name="autoDeleteTimeInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.autoDeleteTimeInput"></a>
+
+```typescript
+public readonly autoDeleteTimeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idleDeleteTtlInput`<sup>Optional</sup> <a name="idleDeleteTtlInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.idleDeleteTtlInput"></a>
+
+```typescript
+public readonly idleDeleteTtlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `autoDeleteTime`<sup>Required</sup> <a name="autoDeleteTime" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.autoDeleteTime"></a>
+
+```typescript
+public readonly autoDeleteTime: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idleDeleteTtl`<sup>Required</sup> <a name="idleDeleteTtl" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.idleDeleteTtl"></a>
+
+```typescript
+public readonly idleDeleteTtl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigLifecycleConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig">GoogleDataprocClusterClusterConfigLifecycleConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList <a name="GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.get"></a>
+
+```typescript
+public get(index: number): GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators">GoogleDataprocClusterClusterConfigMasterConfigAccelerators</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | GoogleDataprocClusterClusterConfigMasterConfigAccelerators[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators">GoogleDataprocClusterClusterConfigMasterConfigAccelerators</a>[]
+
+---
+
+
+### GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference <a name="GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorCountInput">acceleratorCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorTypeInput">acceleratorTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorCount">acceleratorCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorType">acceleratorType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators">GoogleDataprocClusterClusterConfigMasterConfigAccelerators</a> \| cdktf.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `acceleratorCountInput`<sup>Optional</sup> <a name="acceleratorCountInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorCountInput"></a>
+
+```typescript
+public readonly acceleratorCountInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `acceleratorTypeInput`<sup>Optional</sup> <a name="acceleratorTypeInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorTypeInput"></a>
+
+```typescript
+public readonly acceleratorTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `acceleratorCount`<sup>Required</sup> <a name="acceleratorCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorCount"></a>
+
+```typescript
+public readonly acceleratorCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `acceleratorType`<sup>Required</sup> <a name="acceleratorType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.acceleratorType"></a>
+
+```typescript
+public readonly acceleratorType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigMasterConfigAccelerators | IResolvable;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators">GoogleDataprocClusterClusterConfigMasterConfigAccelerators</a> | cdktf.IResolvable
+
+---
+
+
+### GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference <a name="GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.resetBootDiskSizeGb">resetBootDiskSizeGb</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.resetBootDiskType">resetBootDiskType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.resetNumLocalSsds">resetNumLocalSsds</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetBootDiskSizeGb` <a name="resetBootDiskSizeGb" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.resetBootDiskSizeGb"></a>
+
+```typescript
+public resetBootDiskSizeGb(): void
+```
+
+##### `resetBootDiskType` <a name="resetBootDiskType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.resetBootDiskType"></a>
+
+```typescript
+public resetBootDiskType(): void
+```
+
+##### `resetNumLocalSsds` <a name="resetNumLocalSsds" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.resetNumLocalSsds"></a>
+
+```typescript
+public resetNumLocalSsds(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.bootDiskSizeGbInput">bootDiskSizeGbInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.bootDiskTypeInput">bootDiskTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.numLocalSsdsInput">numLocalSsdsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.bootDiskSizeGb">bootDiskSizeGb</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.bootDiskType">bootDiskType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.numLocalSsds">numLocalSsds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig">GoogleDataprocClusterClusterConfigMasterConfigDiskConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `bootDiskSizeGbInput`<sup>Optional</sup> <a name="bootDiskSizeGbInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.bootDiskSizeGbInput"></a>
+
+```typescript
+public readonly bootDiskSizeGbInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `bootDiskTypeInput`<sup>Optional</sup> <a name="bootDiskTypeInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.bootDiskTypeInput"></a>
+
+```typescript
+public readonly bootDiskTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numLocalSsdsInput`<sup>Optional</sup> <a name="numLocalSsdsInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.numLocalSsdsInput"></a>
+
+```typescript
+public readonly numLocalSsdsInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `bootDiskSizeGb`<sup>Required</sup> <a name="bootDiskSizeGb" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.bootDiskSizeGb"></a>
+
+```typescript
+public readonly bootDiskSizeGb: number;
+```
+
+- *Type:* number
+
+---
+
+##### `bootDiskType`<sup>Required</sup> <a name="bootDiskType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.bootDiskType"></a>
+
+```typescript
+public readonly bootDiskType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numLocalSsds`<sup>Required</sup> <a name="numLocalSsds" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.numLocalSsds"></a>
+
+```typescript
+public readonly numLocalSsds: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigMasterConfigDiskConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig">GoogleDataprocClusterClusterConfigMasterConfigDiskConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigMasterConfigOutputReference <a name="GoogleDataprocClusterClusterConfigMasterConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.putAccelerators">putAccelerators</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.putDiskConfig">putDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetAccelerators">resetAccelerators</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetDiskConfig">resetDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetImageUri">resetImageUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetMachineType">resetMachineType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetMinCpuPlatform">resetMinCpuPlatform</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetNumInstances">resetNumInstances</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAccelerators` <a name="putAccelerators" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.putAccelerators"></a>
+
+```typescript
+public putAccelerators(value: IResolvable | GoogleDataprocClusterClusterConfigMasterConfigAccelerators[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.putAccelerators.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators">GoogleDataprocClusterClusterConfigMasterConfigAccelerators</a>[]
+
+---
+
+##### `putDiskConfig` <a name="putDiskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.putDiskConfig"></a>
+
+```typescript
+public putDiskConfig(value: GoogleDataprocClusterClusterConfigMasterConfigDiskConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.putDiskConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig">GoogleDataprocClusterClusterConfigMasterConfigDiskConfig</a>
+
+---
+
+##### `resetAccelerators` <a name="resetAccelerators" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetAccelerators"></a>
+
+```typescript
+public resetAccelerators(): void
+```
+
+##### `resetDiskConfig` <a name="resetDiskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetDiskConfig"></a>
+
+```typescript
+public resetDiskConfig(): void
+```
+
+##### `resetImageUri` <a name="resetImageUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetImageUri"></a>
+
+```typescript
+public resetImageUri(): void
+```
+
+##### `resetMachineType` <a name="resetMachineType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetMachineType"></a>
+
+```typescript
+public resetMachineType(): void
+```
+
+##### `resetMinCpuPlatform` <a name="resetMinCpuPlatform" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetMinCpuPlatform"></a>
+
+```typescript
+public resetMinCpuPlatform(): void
+```
+
+##### `resetNumInstances` <a name="resetNumInstances" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.resetNumInstances"></a>
+
+```typescript
+public resetNumInstances(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.accelerators">accelerators</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList">GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference">GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.instanceNames">instanceNames</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.acceleratorsInput">acceleratorsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators">GoogleDataprocClusterClusterConfigMasterConfigAccelerators</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.diskConfigInput">diskConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig">GoogleDataprocClusterClusterConfigMasterConfigDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.imageUriInput">imageUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.machineTypeInput">machineTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.minCpuPlatformInput">minCpuPlatformInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.numInstancesInput">numInstancesInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.imageUri">imageUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.machineType">machineType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.numInstances">numInstances</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig">GoogleDataprocClusterClusterConfigMasterConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accelerators`<sup>Required</sup> <a name="accelerators" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.accelerators"></a>
+
+```typescript
+public readonly accelerators: GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList">GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsList</a>
+
+---
+
+##### `diskConfig`<sup>Required</sup> <a name="diskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.diskConfig"></a>
+
+```typescript
+public readonly diskConfig: GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference">GoogleDataprocClusterClusterConfigMasterConfigDiskConfigOutputReference</a>
+
+---
+
+##### `instanceNames`<sup>Required</sup> <a name="instanceNames" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.instanceNames"></a>
+
+```typescript
+public readonly instanceNames: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `acceleratorsInput`<sup>Optional</sup> <a name="acceleratorsInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.acceleratorsInput"></a>
+
+```typescript
+public readonly acceleratorsInput: IResolvable | GoogleDataprocClusterClusterConfigMasterConfigAccelerators[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigAccelerators">GoogleDataprocClusterClusterConfigMasterConfigAccelerators</a>[]
+
+---
+
+##### `diskConfigInput`<sup>Optional</sup> <a name="diskConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.diskConfigInput"></a>
+
+```typescript
+public readonly diskConfigInput: GoogleDataprocClusterClusterConfigMasterConfigDiskConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigDiskConfig">GoogleDataprocClusterClusterConfigMasterConfigDiskConfig</a>
+
+---
+
+##### `imageUriInput`<sup>Optional</sup> <a name="imageUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.imageUriInput"></a>
+
+```typescript
+public readonly imageUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `machineTypeInput`<sup>Optional</sup> <a name="machineTypeInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.machineTypeInput"></a>
+
+```typescript
+public readonly machineTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minCpuPlatformInput`<sup>Optional</sup> <a name="minCpuPlatformInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.minCpuPlatformInput"></a>
+
+```typescript
+public readonly minCpuPlatformInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numInstancesInput`<sup>Optional</sup> <a name="numInstancesInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.numInstancesInput"></a>
+
+```typescript
+public readonly numInstancesInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `imageUri`<sup>Required</sup> <a name="imageUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.imageUri"></a>
+
+```typescript
+public readonly imageUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `machineType`<sup>Required</sup> <a name="machineType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.machineType"></a>
+
+```typescript
+public readonly machineType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minCpuPlatform`<sup>Required</sup> <a name="minCpuPlatform" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.minCpuPlatform"></a>
+
+```typescript
+public readonly minCpuPlatform: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numInstances`<sup>Required</sup> <a name="numInstances" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.numInstances"></a>
+
+```typescript
+public readonly numInstances: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigMasterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig">GoogleDataprocClusterClusterConfigMasterConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference <a name="GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.property.dataprocMetastoreServiceInput">dataprocMetastoreServiceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.property.dataprocMetastoreService">dataprocMetastoreService</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig">GoogleDataprocClusterClusterConfigMetastoreConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dataprocMetastoreServiceInput`<sup>Optional</sup> <a name="dataprocMetastoreServiceInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.property.dataprocMetastoreServiceInput"></a>
+
+```typescript
+public readonly dataprocMetastoreServiceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dataprocMetastoreService`<sup>Required</sup> <a name="dataprocMetastoreService" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.property.dataprocMetastoreService"></a>
+
+```typescript
+public readonly dataprocMetastoreService: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigMetastoreConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig">GoogleDataprocClusterClusterConfigMetastoreConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigOutputReference <a name="GoogleDataprocClusterClusterConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putAutoscalingConfig">putAutoscalingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putEncryptionConfig">putEncryptionConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putEndpointConfig">putEndpointConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putGceClusterConfig">putGceClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putInitializationAction">putInitializationAction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putLifecycleConfig">putLifecycleConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putMasterConfig">putMasterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putMetastoreConfig">putMetastoreConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putPreemptibleWorkerConfig">putPreemptibleWorkerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putSecurityConfig">putSecurityConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putSoftwareConfig">putSoftwareConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putWorkerConfig">putWorkerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetAutoscalingConfig">resetAutoscalingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetEncryptionConfig">resetEncryptionConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetEndpointConfig">resetEndpointConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetGceClusterConfig">resetGceClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetInitializationAction">resetInitializationAction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetLifecycleConfig">resetLifecycleConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetMasterConfig">resetMasterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetMetastoreConfig">resetMetastoreConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetPreemptibleWorkerConfig">resetPreemptibleWorkerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetSecurityConfig">resetSecurityConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetSoftwareConfig">resetSoftwareConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetStagingBucket">resetStagingBucket</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetTempBucket">resetTempBucket</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetWorkerConfig">resetWorkerConfig</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAutoscalingConfig` <a name="putAutoscalingConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putAutoscalingConfig"></a>
+
+```typescript
+public putAutoscalingConfig(value: GoogleDataprocClusterClusterConfigAutoscalingConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putAutoscalingConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig">GoogleDataprocClusterClusterConfigAutoscalingConfig</a>
+
+---
+
+##### `putEncryptionConfig` <a name="putEncryptionConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putEncryptionConfig"></a>
+
+```typescript
+public putEncryptionConfig(value: GoogleDataprocClusterClusterConfigEncryptionConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putEncryptionConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig">GoogleDataprocClusterClusterConfigEncryptionConfig</a>
+
+---
+
+##### `putEndpointConfig` <a name="putEndpointConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putEndpointConfig"></a>
+
+```typescript
+public putEndpointConfig(value: GoogleDataprocClusterClusterConfigEndpointConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putEndpointConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig">GoogleDataprocClusterClusterConfigEndpointConfig</a>
+
+---
+
+##### `putGceClusterConfig` <a name="putGceClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putGceClusterConfig"></a>
+
+```typescript
+public putGceClusterConfig(value: GoogleDataprocClusterClusterConfigGceClusterConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putGceClusterConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig">GoogleDataprocClusterClusterConfigGceClusterConfig</a>
+
+---
+
+##### `putInitializationAction` <a name="putInitializationAction" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putInitializationAction"></a>
+
+```typescript
+public putInitializationAction(value: IResolvable | GoogleDataprocClusterClusterConfigInitializationAction[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putInitializationAction.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction">GoogleDataprocClusterClusterConfigInitializationAction</a>[]
+
+---
+
+##### `putLifecycleConfig` <a name="putLifecycleConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putLifecycleConfig"></a>
+
+```typescript
+public putLifecycleConfig(value: GoogleDataprocClusterClusterConfigLifecycleConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putLifecycleConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig">GoogleDataprocClusterClusterConfigLifecycleConfig</a>
+
+---
+
+##### `putMasterConfig` <a name="putMasterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putMasterConfig"></a>
+
+```typescript
+public putMasterConfig(value: GoogleDataprocClusterClusterConfigMasterConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putMasterConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig">GoogleDataprocClusterClusterConfigMasterConfig</a>
+
+---
+
+##### `putMetastoreConfig` <a name="putMetastoreConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putMetastoreConfig"></a>
+
+```typescript
+public putMetastoreConfig(value: GoogleDataprocClusterClusterConfigMetastoreConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putMetastoreConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig">GoogleDataprocClusterClusterConfigMetastoreConfig</a>
+
+---
+
+##### `putPreemptibleWorkerConfig` <a name="putPreemptibleWorkerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putPreemptibleWorkerConfig"></a>
+
+```typescript
+public putPreemptibleWorkerConfig(value: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putPreemptibleWorkerConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig</a>
+
+---
+
+##### `putSecurityConfig` <a name="putSecurityConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putSecurityConfig"></a>
+
+```typescript
+public putSecurityConfig(value: GoogleDataprocClusterClusterConfigSecurityConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putSecurityConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig">GoogleDataprocClusterClusterConfigSecurityConfig</a>
+
+---
+
+##### `putSoftwareConfig` <a name="putSoftwareConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putSoftwareConfig"></a>
+
+```typescript
+public putSoftwareConfig(value: GoogleDataprocClusterClusterConfigSoftwareConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putSoftwareConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig">GoogleDataprocClusterClusterConfigSoftwareConfig</a>
+
+---
+
+##### `putWorkerConfig` <a name="putWorkerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putWorkerConfig"></a>
+
+```typescript
+public putWorkerConfig(value: GoogleDataprocClusterClusterConfigWorkerConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.putWorkerConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig">GoogleDataprocClusterClusterConfigWorkerConfig</a>
+
+---
+
+##### `resetAutoscalingConfig` <a name="resetAutoscalingConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetAutoscalingConfig"></a>
+
+```typescript
+public resetAutoscalingConfig(): void
+```
+
+##### `resetEncryptionConfig` <a name="resetEncryptionConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetEncryptionConfig"></a>
+
+```typescript
+public resetEncryptionConfig(): void
+```
+
+##### `resetEndpointConfig` <a name="resetEndpointConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetEndpointConfig"></a>
+
+```typescript
+public resetEndpointConfig(): void
+```
+
+##### `resetGceClusterConfig` <a name="resetGceClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetGceClusterConfig"></a>
+
+```typescript
+public resetGceClusterConfig(): void
+```
+
+##### `resetInitializationAction` <a name="resetInitializationAction" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetInitializationAction"></a>
+
+```typescript
+public resetInitializationAction(): void
+```
+
+##### `resetLifecycleConfig` <a name="resetLifecycleConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetLifecycleConfig"></a>
+
+```typescript
+public resetLifecycleConfig(): void
+```
+
+##### `resetMasterConfig` <a name="resetMasterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetMasterConfig"></a>
+
+```typescript
+public resetMasterConfig(): void
+```
+
+##### `resetMetastoreConfig` <a name="resetMetastoreConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetMetastoreConfig"></a>
+
+```typescript
+public resetMetastoreConfig(): void
+```
+
+##### `resetPreemptibleWorkerConfig` <a name="resetPreemptibleWorkerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetPreemptibleWorkerConfig"></a>
+
+```typescript
+public resetPreemptibleWorkerConfig(): void
+```
+
+##### `resetSecurityConfig` <a name="resetSecurityConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetSecurityConfig"></a>
+
+```typescript
+public resetSecurityConfig(): void
+```
+
+##### `resetSoftwareConfig` <a name="resetSoftwareConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetSoftwareConfig"></a>
+
+```typescript
+public resetSoftwareConfig(): void
+```
+
+##### `resetStagingBucket` <a name="resetStagingBucket" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetStagingBucket"></a>
+
+```typescript
+public resetStagingBucket(): void
+```
+
+##### `resetTempBucket` <a name="resetTempBucket" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetTempBucket"></a>
+
+```typescript
+public resetTempBucket(): void
+```
+
+##### `resetWorkerConfig` <a name="resetWorkerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.resetWorkerConfig"></a>
+
+```typescript
+public resetWorkerConfig(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.autoscalingConfig">autoscalingConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference">GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.bucket">bucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.encryptionConfig">encryptionConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference">GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.endpointConfig">endpointConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference">GoogleDataprocClusterClusterConfigEndpointConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.gceClusterConfig">gceClusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference">GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.initializationAction">initializationAction</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList">GoogleDataprocClusterClusterConfigInitializationActionList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.lifecycleConfig">lifecycleConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference">GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.masterConfig">masterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference">GoogleDataprocClusterClusterConfigMasterConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.metastoreConfig">metastoreConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference">GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.preemptibleWorkerConfig">preemptibleWorkerConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.securityConfig">securityConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference">GoogleDataprocClusterClusterConfigSecurityConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.softwareConfig">softwareConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference">GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.workerConfig">workerConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference">GoogleDataprocClusterClusterConfigWorkerConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.autoscalingConfigInput">autoscalingConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig">GoogleDataprocClusterClusterConfigAutoscalingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.encryptionConfigInput">encryptionConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig">GoogleDataprocClusterClusterConfigEncryptionConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.endpointConfigInput">endpointConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig">GoogleDataprocClusterClusterConfigEndpointConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.gceClusterConfigInput">gceClusterConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig">GoogleDataprocClusterClusterConfigGceClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.initializationActionInput">initializationActionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction">GoogleDataprocClusterClusterConfigInitializationAction</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.lifecycleConfigInput">lifecycleConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig">GoogleDataprocClusterClusterConfigLifecycleConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.masterConfigInput">masterConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig">GoogleDataprocClusterClusterConfigMasterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.metastoreConfigInput">metastoreConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig">GoogleDataprocClusterClusterConfigMetastoreConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.preemptibleWorkerConfigInput">preemptibleWorkerConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.securityConfigInput">securityConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig">GoogleDataprocClusterClusterConfigSecurityConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.softwareConfigInput">softwareConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig">GoogleDataprocClusterClusterConfigSoftwareConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.stagingBucketInput">stagingBucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.tempBucketInput">tempBucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.workerConfigInput">workerConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig">GoogleDataprocClusterClusterConfigWorkerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.stagingBucket">stagingBucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.tempBucket">tempBucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig">GoogleDataprocClusterClusterConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `autoscalingConfig`<sup>Required</sup> <a name="autoscalingConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.autoscalingConfig"></a>
+
+```typescript
+public readonly autoscalingConfig: GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference">GoogleDataprocClusterClusterConfigAutoscalingConfigOutputReference</a>
+
+---
+
+##### `bucket`<sup>Required</sup> <a name="bucket" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.bucket"></a>
+
+```typescript
+public readonly bucket: string;
+```
+
+- *Type:* string
+
+---
+
+##### `encryptionConfig`<sup>Required</sup> <a name="encryptionConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.encryptionConfig"></a>
+
+```typescript
+public readonly encryptionConfig: GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference">GoogleDataprocClusterClusterConfigEncryptionConfigOutputReference</a>
+
+---
+
+##### `endpointConfig`<sup>Required</sup> <a name="endpointConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.endpointConfig"></a>
+
+```typescript
+public readonly endpointConfig: GoogleDataprocClusterClusterConfigEndpointConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfigOutputReference">GoogleDataprocClusterClusterConfigEndpointConfigOutputReference</a>
+
+---
+
+##### `gceClusterConfig`<sup>Required</sup> <a name="gceClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.gceClusterConfig"></a>
+
+```typescript
+public readonly gceClusterConfig: GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference">GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference</a>
+
+---
+
+##### `initializationAction`<sup>Required</sup> <a name="initializationAction" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.initializationAction"></a>
+
+```typescript
+public readonly initializationAction: GoogleDataprocClusterClusterConfigInitializationActionList;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationActionList">GoogleDataprocClusterClusterConfigInitializationActionList</a>
+
+---
+
+##### `lifecycleConfig`<sup>Required</sup> <a name="lifecycleConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.lifecycleConfig"></a>
+
+```typescript
+public readonly lifecycleConfig: GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference">GoogleDataprocClusterClusterConfigLifecycleConfigOutputReference</a>
+
+---
+
+##### `masterConfig`<sup>Required</sup> <a name="masterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.masterConfig"></a>
+
+```typescript
+public readonly masterConfig: GoogleDataprocClusterClusterConfigMasterConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfigOutputReference">GoogleDataprocClusterClusterConfigMasterConfigOutputReference</a>
+
+---
+
+##### `metastoreConfig`<sup>Required</sup> <a name="metastoreConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.metastoreConfig"></a>
+
+```typescript
+public readonly metastoreConfig: GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference">GoogleDataprocClusterClusterConfigMetastoreConfigOutputReference</a>
+
+---
+
+##### `preemptibleWorkerConfig`<sup>Required</sup> <a name="preemptibleWorkerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.preemptibleWorkerConfig"></a>
+
+```typescript
+public readonly preemptibleWorkerConfig: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference</a>
+
+---
+
+##### `securityConfig`<sup>Required</sup> <a name="securityConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.securityConfig"></a>
+
+```typescript
+public readonly securityConfig: GoogleDataprocClusterClusterConfigSecurityConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference">GoogleDataprocClusterClusterConfigSecurityConfigOutputReference</a>
+
+---
+
+##### `softwareConfig`<sup>Required</sup> <a name="softwareConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.softwareConfig"></a>
+
+```typescript
+public readonly softwareConfig: GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference">GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference</a>
+
+---
+
+##### `workerConfig`<sup>Required</sup> <a name="workerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.workerConfig"></a>
+
+```typescript
+public readonly workerConfig: GoogleDataprocClusterClusterConfigWorkerConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference">GoogleDataprocClusterClusterConfigWorkerConfigOutputReference</a>
+
+---
+
+##### `autoscalingConfigInput`<sup>Optional</sup> <a name="autoscalingConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.autoscalingConfigInput"></a>
+
+```typescript
+public readonly autoscalingConfigInput: GoogleDataprocClusterClusterConfigAutoscalingConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigAutoscalingConfig">GoogleDataprocClusterClusterConfigAutoscalingConfig</a>
+
+---
+
+##### `encryptionConfigInput`<sup>Optional</sup> <a name="encryptionConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.encryptionConfigInput"></a>
+
+```typescript
+public readonly encryptionConfigInput: GoogleDataprocClusterClusterConfigEncryptionConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEncryptionConfig">GoogleDataprocClusterClusterConfigEncryptionConfig</a>
+
+---
+
+##### `endpointConfigInput`<sup>Optional</sup> <a name="endpointConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.endpointConfigInput"></a>
+
+```typescript
+public readonly endpointConfigInput: GoogleDataprocClusterClusterConfigEndpointConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigEndpointConfig">GoogleDataprocClusterClusterConfigEndpointConfig</a>
+
+---
+
+##### `gceClusterConfigInput`<sup>Optional</sup> <a name="gceClusterConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.gceClusterConfigInput"></a>
+
+```typescript
+public readonly gceClusterConfigInput: GoogleDataprocClusterClusterConfigGceClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigGceClusterConfig">GoogleDataprocClusterClusterConfigGceClusterConfig</a>
+
+---
+
+##### `initializationActionInput`<sup>Optional</sup> <a name="initializationActionInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.initializationActionInput"></a>
+
+```typescript
+public readonly initializationActionInput: IResolvable | GoogleDataprocClusterClusterConfigInitializationAction[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigInitializationAction">GoogleDataprocClusterClusterConfigInitializationAction</a>[]
+
+---
+
+##### `lifecycleConfigInput`<sup>Optional</sup> <a name="lifecycleConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.lifecycleConfigInput"></a>
+
+```typescript
+public readonly lifecycleConfigInput: GoogleDataprocClusterClusterConfigLifecycleConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigLifecycleConfig">GoogleDataprocClusterClusterConfigLifecycleConfig</a>
+
+---
+
+##### `masterConfigInput`<sup>Optional</sup> <a name="masterConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.masterConfigInput"></a>
+
+```typescript
+public readonly masterConfigInput: GoogleDataprocClusterClusterConfigMasterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMasterConfig">GoogleDataprocClusterClusterConfigMasterConfig</a>
+
+---
+
+##### `metastoreConfigInput`<sup>Optional</sup> <a name="metastoreConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.metastoreConfigInput"></a>
+
+```typescript
+public readonly metastoreConfigInput: GoogleDataprocClusterClusterConfigMetastoreConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigMetastoreConfig">GoogleDataprocClusterClusterConfigMetastoreConfig</a>
+
+---
+
+##### `preemptibleWorkerConfigInput`<sup>Optional</sup> <a name="preemptibleWorkerConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.preemptibleWorkerConfigInput"></a>
+
+```typescript
+public readonly preemptibleWorkerConfigInput: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig</a>
+
+---
+
+##### `securityConfigInput`<sup>Optional</sup> <a name="securityConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.securityConfigInput"></a>
+
+```typescript
+public readonly securityConfigInput: GoogleDataprocClusterClusterConfigSecurityConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig">GoogleDataprocClusterClusterConfigSecurityConfig</a>
+
+---
+
+##### `softwareConfigInput`<sup>Optional</sup> <a name="softwareConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.softwareConfigInput"></a>
+
+```typescript
+public readonly softwareConfigInput: GoogleDataprocClusterClusterConfigSoftwareConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig">GoogleDataprocClusterClusterConfigSoftwareConfig</a>
+
+---
+
+##### `stagingBucketInput`<sup>Optional</sup> <a name="stagingBucketInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.stagingBucketInput"></a>
+
+```typescript
+public readonly stagingBucketInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tempBucketInput`<sup>Optional</sup> <a name="tempBucketInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.tempBucketInput"></a>
+
+```typescript
+public readonly tempBucketInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `workerConfigInput`<sup>Optional</sup> <a name="workerConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.workerConfigInput"></a>
+
+```typescript
+public readonly workerConfigInput: GoogleDataprocClusterClusterConfigWorkerConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig">GoogleDataprocClusterClusterConfigWorkerConfig</a>
+
+---
+
+##### `stagingBucket`<sup>Required</sup> <a name="stagingBucket" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.stagingBucket"></a>
+
+```typescript
+public readonly stagingBucket: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tempBucket`<sup>Required</sup> <a name="tempBucket" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.tempBucket"></a>
+
+```typescript
+public readonly tempBucket: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfig">GoogleDataprocClusterClusterConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference <a name="GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.resetBootDiskSizeGb">resetBootDiskSizeGb</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.resetBootDiskType">resetBootDiskType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.resetNumLocalSsds">resetNumLocalSsds</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetBootDiskSizeGb` <a name="resetBootDiskSizeGb" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.resetBootDiskSizeGb"></a>
+
+```typescript
+public resetBootDiskSizeGb(): void
+```
+
+##### `resetBootDiskType` <a name="resetBootDiskType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.resetBootDiskType"></a>
+
+```typescript
+public resetBootDiskType(): void
+```
+
+##### `resetNumLocalSsds` <a name="resetNumLocalSsds" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.resetNumLocalSsds"></a>
+
+```typescript
+public resetNumLocalSsds(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.bootDiskSizeGbInput">bootDiskSizeGbInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.bootDiskTypeInput">bootDiskTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.numLocalSsdsInput">numLocalSsdsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.bootDiskSizeGb">bootDiskSizeGb</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.bootDiskType">bootDiskType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.numLocalSsds">numLocalSsds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `bootDiskSizeGbInput`<sup>Optional</sup> <a name="bootDiskSizeGbInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.bootDiskSizeGbInput"></a>
+
+```typescript
+public readonly bootDiskSizeGbInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `bootDiskTypeInput`<sup>Optional</sup> <a name="bootDiskTypeInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.bootDiskTypeInput"></a>
+
+```typescript
+public readonly bootDiskTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numLocalSsdsInput`<sup>Optional</sup> <a name="numLocalSsdsInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.numLocalSsdsInput"></a>
+
+```typescript
+public readonly numLocalSsdsInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `bootDiskSizeGb`<sup>Required</sup> <a name="bootDiskSizeGb" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.bootDiskSizeGb"></a>
+
+```typescript
+public readonly bootDiskSizeGb: number;
+```
+
+- *Type:* number
+
+---
+
+##### `bootDiskType`<sup>Required</sup> <a name="bootDiskType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.bootDiskType"></a>
+
+```typescript
+public readonly bootDiskType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numLocalSsds`<sup>Required</sup> <a name="numLocalSsds" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.numLocalSsds"></a>
+
+```typescript
+public readonly numLocalSsds: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference <a name="GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.putDiskConfig">putDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.resetDiskConfig">resetDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.resetNumInstances">resetNumInstances</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.resetPreemptibility">resetPreemptibility</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putDiskConfig` <a name="putDiskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.putDiskConfig"></a>
+
+```typescript
+public putDiskConfig(value: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.putDiskConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig</a>
+
+---
+
+##### `resetDiskConfig` <a name="resetDiskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.resetDiskConfig"></a>
+
+```typescript
+public resetDiskConfig(): void
+```
+
+##### `resetNumInstances` <a name="resetNumInstances" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.resetNumInstances"></a>
+
+```typescript
+public resetNumInstances(): void
+```
+
+##### `resetPreemptibility` <a name="resetPreemptibility" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.resetPreemptibility"></a>
+
+```typescript
+public resetPreemptibility(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.instanceNames">instanceNames</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.diskConfigInput">diskConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.numInstancesInput">numInstancesInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.preemptibilityInput">preemptibilityInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.numInstances">numInstances</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.preemptibility">preemptibility</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `diskConfig`<sup>Required</sup> <a name="diskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.diskConfig"></a>
+
+```typescript
+public readonly diskConfig: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfigOutputReference</a>
+
+---
+
+##### `instanceNames`<sup>Required</sup> <a name="instanceNames" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.instanceNames"></a>
+
+```typescript
+public readonly instanceNames: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `diskConfigInput`<sup>Optional</sup> <a name="diskConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.diskConfigInput"></a>
+
+```typescript
+public readonly diskConfigInput: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigDiskConfig</a>
+
+---
+
+##### `numInstancesInput`<sup>Optional</sup> <a name="numInstancesInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.numInstancesInput"></a>
+
+```typescript
+public readonly numInstancesInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `preemptibilityInput`<sup>Optional</sup> <a name="preemptibilityInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.preemptibilityInput"></a>
+
+```typescript
+public readonly preemptibilityInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numInstances`<sup>Required</sup> <a name="numInstances" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.numInstances"></a>
+
+```typescript
+public readonly numInstances: number;
+```
+
+- *Type:* number
+
+---
+
+##### `preemptibility`<sup>Required</sup> <a name="preemptibility" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.preemptibility"></a>
+
+```typescript
+public readonly preemptibility: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig">GoogleDataprocClusterClusterConfigPreemptibleWorkerConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference <a name="GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetCrossRealmTrustAdminServer">resetCrossRealmTrustAdminServer</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetCrossRealmTrustKdc">resetCrossRealmTrustKdc</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetCrossRealmTrustRealm">resetCrossRealmTrustRealm</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetCrossRealmTrustSharedPasswordUri">resetCrossRealmTrustSharedPasswordUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetEnableKerberos">resetEnableKerberos</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetKdcDbKeyUri">resetKdcDbKeyUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetKeyPasswordUri">resetKeyPasswordUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetKeystorePasswordUri">resetKeystorePasswordUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetKeystoreUri">resetKeystoreUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetRealm">resetRealm</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetTgtLifetimeHours">resetTgtLifetimeHours</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetTruststorePasswordUri">resetTruststorePasswordUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetTruststoreUri">resetTruststoreUri</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCrossRealmTrustAdminServer` <a name="resetCrossRealmTrustAdminServer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetCrossRealmTrustAdminServer"></a>
+
+```typescript
+public resetCrossRealmTrustAdminServer(): void
+```
+
+##### `resetCrossRealmTrustKdc` <a name="resetCrossRealmTrustKdc" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetCrossRealmTrustKdc"></a>
+
+```typescript
+public resetCrossRealmTrustKdc(): void
+```
+
+##### `resetCrossRealmTrustRealm` <a name="resetCrossRealmTrustRealm" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetCrossRealmTrustRealm"></a>
+
+```typescript
+public resetCrossRealmTrustRealm(): void
+```
+
+##### `resetCrossRealmTrustSharedPasswordUri` <a name="resetCrossRealmTrustSharedPasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetCrossRealmTrustSharedPasswordUri"></a>
+
+```typescript
+public resetCrossRealmTrustSharedPasswordUri(): void
+```
+
+##### `resetEnableKerberos` <a name="resetEnableKerberos" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetEnableKerberos"></a>
+
+```typescript
+public resetEnableKerberos(): void
+```
+
+##### `resetKdcDbKeyUri` <a name="resetKdcDbKeyUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetKdcDbKeyUri"></a>
+
+```typescript
+public resetKdcDbKeyUri(): void
+```
+
+##### `resetKeyPasswordUri` <a name="resetKeyPasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetKeyPasswordUri"></a>
+
+```typescript
+public resetKeyPasswordUri(): void
+```
+
+##### `resetKeystorePasswordUri` <a name="resetKeystorePasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetKeystorePasswordUri"></a>
+
+```typescript
+public resetKeystorePasswordUri(): void
+```
+
+##### `resetKeystoreUri` <a name="resetKeystoreUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetKeystoreUri"></a>
+
+```typescript
+public resetKeystoreUri(): void
+```
+
+##### `resetRealm` <a name="resetRealm" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetRealm"></a>
+
+```typescript
+public resetRealm(): void
+```
+
+##### `resetTgtLifetimeHours` <a name="resetTgtLifetimeHours" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetTgtLifetimeHours"></a>
+
+```typescript
+public resetTgtLifetimeHours(): void
+```
+
+##### `resetTruststorePasswordUri` <a name="resetTruststorePasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetTruststorePasswordUri"></a>
+
+```typescript
+public resetTruststorePasswordUri(): void
+```
+
+##### `resetTruststoreUri` <a name="resetTruststoreUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.resetTruststoreUri"></a>
+
+```typescript
+public resetTruststoreUri(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustAdminServerInput">crossRealmTrustAdminServerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustKdcInput">crossRealmTrustKdcInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustRealmInput">crossRealmTrustRealmInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustSharedPasswordUriInput">crossRealmTrustSharedPasswordUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberosInput">enableKerberosInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.kdcDbKeyUriInput">kdcDbKeyUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keyPasswordUriInput">keyPasswordUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystorePasswordUriInput">keystorePasswordUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystoreUriInput">keystoreUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.kmsKeyUriInput">kmsKeyUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.realmInput">realmInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.rootPrincipalPasswordUriInput">rootPrincipalPasswordUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.tgtLifetimeHoursInput">tgtLifetimeHoursInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.truststorePasswordUriInput">truststorePasswordUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.truststoreUriInput">truststoreUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustAdminServer">crossRealmTrustAdminServer</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustKdc">crossRealmTrustKdc</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustRealm">crossRealmTrustRealm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustSharedPasswordUri">crossRealmTrustSharedPasswordUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberos">enableKerberos</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.kdcDbKeyUri">kdcDbKeyUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keyPasswordUri">keyPasswordUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystorePasswordUri">keystorePasswordUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystoreUri">keystoreUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.kmsKeyUri">kmsKeyUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.realm">realm</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.rootPrincipalPasswordUri">rootPrincipalPasswordUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.tgtLifetimeHours">tgtLifetimeHours</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.truststorePasswordUri">truststorePasswordUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.truststoreUri">truststoreUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig">GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `crossRealmTrustAdminServerInput`<sup>Optional</sup> <a name="crossRealmTrustAdminServerInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustAdminServerInput"></a>
+
+```typescript
+public readonly crossRealmTrustAdminServerInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `crossRealmTrustKdcInput`<sup>Optional</sup> <a name="crossRealmTrustKdcInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustKdcInput"></a>
+
+```typescript
+public readonly crossRealmTrustKdcInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `crossRealmTrustRealmInput`<sup>Optional</sup> <a name="crossRealmTrustRealmInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustRealmInput"></a>
+
+```typescript
+public readonly crossRealmTrustRealmInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `crossRealmTrustSharedPasswordUriInput`<sup>Optional</sup> <a name="crossRealmTrustSharedPasswordUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustSharedPasswordUriInput"></a>
+
+```typescript
+public readonly crossRealmTrustSharedPasswordUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enableKerberosInput`<sup>Optional</sup> <a name="enableKerberosInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberosInput"></a>
+
+```typescript
+public readonly enableKerberosInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `kdcDbKeyUriInput`<sup>Optional</sup> <a name="kdcDbKeyUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.kdcDbKeyUriInput"></a>
+
+```typescript
+public readonly kdcDbKeyUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyPasswordUriInput`<sup>Optional</sup> <a name="keyPasswordUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keyPasswordUriInput"></a>
+
+```typescript
+public readonly keyPasswordUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keystorePasswordUriInput`<sup>Optional</sup> <a name="keystorePasswordUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystorePasswordUriInput"></a>
+
+```typescript
+public readonly keystorePasswordUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keystoreUriInput`<sup>Optional</sup> <a name="keystoreUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystoreUriInput"></a>
+
+```typescript
+public readonly keystoreUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `kmsKeyUriInput`<sup>Optional</sup> <a name="kmsKeyUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.kmsKeyUriInput"></a>
+
+```typescript
+public readonly kmsKeyUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `realmInput`<sup>Optional</sup> <a name="realmInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.realmInput"></a>
+
+```typescript
+public readonly realmInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rootPrincipalPasswordUriInput`<sup>Optional</sup> <a name="rootPrincipalPasswordUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.rootPrincipalPasswordUriInput"></a>
+
+```typescript
+public readonly rootPrincipalPasswordUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tgtLifetimeHoursInput`<sup>Optional</sup> <a name="tgtLifetimeHoursInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.tgtLifetimeHoursInput"></a>
+
+```typescript
+public readonly tgtLifetimeHoursInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `truststorePasswordUriInput`<sup>Optional</sup> <a name="truststorePasswordUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.truststorePasswordUriInput"></a>
+
+```typescript
+public readonly truststorePasswordUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `truststoreUriInput`<sup>Optional</sup> <a name="truststoreUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.truststoreUriInput"></a>
+
+```typescript
+public readonly truststoreUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `crossRealmTrustAdminServer`<sup>Required</sup> <a name="crossRealmTrustAdminServer" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustAdminServer"></a>
+
+```typescript
+public readonly crossRealmTrustAdminServer: string;
+```
+
+- *Type:* string
+
+---
+
+##### `crossRealmTrustKdc`<sup>Required</sup> <a name="crossRealmTrustKdc" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustKdc"></a>
+
+```typescript
+public readonly crossRealmTrustKdc: string;
+```
+
+- *Type:* string
+
+---
+
+##### `crossRealmTrustRealm`<sup>Required</sup> <a name="crossRealmTrustRealm" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustRealm"></a>
+
+```typescript
+public readonly crossRealmTrustRealm: string;
+```
+
+- *Type:* string
+
+---
+
+##### `crossRealmTrustSharedPasswordUri`<sup>Required</sup> <a name="crossRealmTrustSharedPasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.crossRealmTrustSharedPasswordUri"></a>
+
+```typescript
+public readonly crossRealmTrustSharedPasswordUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `enableKerberos`<sup>Required</sup> <a name="enableKerberos" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.enableKerberos"></a>
+
+```typescript
+public readonly enableKerberos: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `kdcDbKeyUri`<sup>Required</sup> <a name="kdcDbKeyUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.kdcDbKeyUri"></a>
+
+```typescript
+public readonly kdcDbKeyUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keyPasswordUri`<sup>Required</sup> <a name="keyPasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keyPasswordUri"></a>
+
+```typescript
+public readonly keyPasswordUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keystorePasswordUri`<sup>Required</sup> <a name="keystorePasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystorePasswordUri"></a>
+
+```typescript
+public readonly keystorePasswordUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `keystoreUri`<sup>Required</sup> <a name="keystoreUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.keystoreUri"></a>
+
+```typescript
+public readonly keystoreUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `kmsKeyUri`<sup>Required</sup> <a name="kmsKeyUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.kmsKeyUri"></a>
+
+```typescript
+public readonly kmsKeyUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `realm`<sup>Required</sup> <a name="realm" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.realm"></a>
+
+```typescript
+public readonly realm: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rootPrincipalPasswordUri`<sup>Required</sup> <a name="rootPrincipalPasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.rootPrincipalPasswordUri"></a>
+
+```typescript
+public readonly rootPrincipalPasswordUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tgtLifetimeHours`<sup>Required</sup> <a name="tgtLifetimeHours" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.tgtLifetimeHours"></a>
+
+```typescript
+public readonly tgtLifetimeHours: number;
+```
+
+- *Type:* number
+
+---
+
+##### `truststorePasswordUri`<sup>Required</sup> <a name="truststorePasswordUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.truststorePasswordUri"></a>
+
+```typescript
+public readonly truststorePasswordUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `truststoreUri`<sup>Required</sup> <a name="truststoreUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.truststoreUri"></a>
+
+```typescript
+public readonly truststoreUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig">GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigSecurityConfigOutputReference <a name="GoogleDataprocClusterClusterConfigSecurityConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.putKerberosConfig">putKerberosConfig</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putKerberosConfig` <a name="putKerberosConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.putKerberosConfig"></a>
+
+```typescript
+public putKerberosConfig(value: GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.putKerberosConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig">GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig</a>
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.property.kerberosConfig">kerberosConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference">GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.property.kerberosConfigInput">kerberosConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig">GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig">GoogleDataprocClusterClusterConfigSecurityConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `kerberosConfig`<sup>Required</sup> <a name="kerberosConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.property.kerberosConfig"></a>
+
+```typescript
+public readonly kerberosConfig: GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference">GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfigOutputReference</a>
+
+---
+
+##### `kerberosConfigInput`<sup>Optional</sup> <a name="kerberosConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.property.kerberosConfigInput"></a>
+
+```typescript
+public readonly kerberosConfigInput: GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig">GoogleDataprocClusterClusterConfigSecurityConfigKerberosConfig</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigSecurityConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSecurityConfig">GoogleDataprocClusterClusterConfigSecurityConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference <a name="GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.resetImageVersion">resetImageVersion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.resetOptionalComponents">resetOptionalComponents</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.resetOverrideProperties">resetOverrideProperties</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetImageVersion` <a name="resetImageVersion" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.resetImageVersion"></a>
+
+```typescript
+public resetImageVersion(): void
+```
+
+##### `resetOptionalComponents` <a name="resetOptionalComponents" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.resetOptionalComponents"></a>
+
+```typescript
+public resetOptionalComponents(): void
+```
+
+##### `resetOverrideProperties` <a name="resetOverrideProperties" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.resetOverrideProperties"></a>
+
+```typescript
+public resetOverrideProperties(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.properties">properties</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.imageVersionInput">imageVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.optionalComponentsInput">optionalComponentsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.overridePropertiesInput">overridePropertiesInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.imageVersion">imageVersion</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.optionalComponents">optionalComponents</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.overrideProperties">overrideProperties</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig">GoogleDataprocClusterClusterConfigSoftwareConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `properties`<sup>Required</sup> <a name="properties" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.properties"></a>
+
+```typescript
+public readonly properties: StringMap;
+```
+
+- *Type:* cdktf.StringMap
+
+---
+
+##### `imageVersionInput`<sup>Optional</sup> <a name="imageVersionInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.imageVersionInput"></a>
+
+```typescript
+public readonly imageVersionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `optionalComponentsInput`<sup>Optional</sup> <a name="optionalComponentsInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.optionalComponentsInput"></a>
+
+```typescript
+public readonly optionalComponentsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `overridePropertiesInput`<sup>Optional</sup> <a name="overridePropertiesInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.overridePropertiesInput"></a>
+
+```typescript
+public readonly overridePropertiesInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `imageVersion`<sup>Required</sup> <a name="imageVersion" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.imageVersion"></a>
+
+```typescript
+public readonly imageVersion: string;
+```
+
+- *Type:* string
+
+---
+
+##### `optionalComponents`<sup>Required</sup> <a name="optionalComponents" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.optionalComponents"></a>
+
+```typescript
+public readonly optionalComponents: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `overrideProperties`<sup>Required</sup> <a name="overrideProperties" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.overrideProperties"></a>
+
+```typescript
+public readonly overrideProperties: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigSoftwareConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigSoftwareConfig">GoogleDataprocClusterClusterConfigSoftwareConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList <a name="GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.get"></a>
+
+```typescript
+public get(index: number): GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators">GoogleDataprocClusterClusterConfigWorkerConfigAccelerators</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | GoogleDataprocClusterClusterConfigWorkerConfigAccelerators[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators">GoogleDataprocClusterClusterConfigWorkerConfigAccelerators</a>[]
+
+---
+
+
+### GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference <a name="GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorCountInput">acceleratorCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorTypeInput">acceleratorTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorCount">acceleratorCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorType">acceleratorType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators">GoogleDataprocClusterClusterConfigWorkerConfigAccelerators</a> \| cdktf.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `acceleratorCountInput`<sup>Optional</sup> <a name="acceleratorCountInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorCountInput"></a>
+
+```typescript
+public readonly acceleratorCountInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `acceleratorTypeInput`<sup>Optional</sup> <a name="acceleratorTypeInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorTypeInput"></a>
+
+```typescript
+public readonly acceleratorTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `acceleratorCount`<sup>Required</sup> <a name="acceleratorCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorCount"></a>
+
+```typescript
+public readonly acceleratorCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `acceleratorType`<sup>Required</sup> <a name="acceleratorType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.acceleratorType"></a>
+
+```typescript
+public readonly acceleratorType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigWorkerConfigAccelerators | IResolvable;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators">GoogleDataprocClusterClusterConfigWorkerConfigAccelerators</a> | cdktf.IResolvable
+
+---
+
+
+### GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference <a name="GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.resetBootDiskSizeGb">resetBootDiskSizeGb</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.resetBootDiskType">resetBootDiskType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.resetNumLocalSsds">resetNumLocalSsds</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetBootDiskSizeGb` <a name="resetBootDiskSizeGb" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.resetBootDiskSizeGb"></a>
+
+```typescript
+public resetBootDiskSizeGb(): void
+```
+
+##### `resetBootDiskType` <a name="resetBootDiskType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.resetBootDiskType"></a>
+
+```typescript
+public resetBootDiskType(): void
+```
+
+##### `resetNumLocalSsds` <a name="resetNumLocalSsds" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.resetNumLocalSsds"></a>
+
+```typescript
+public resetNumLocalSsds(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.bootDiskSizeGbInput">bootDiskSizeGbInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.bootDiskTypeInput">bootDiskTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.numLocalSsdsInput">numLocalSsdsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.bootDiskSizeGb">bootDiskSizeGb</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.bootDiskType">bootDiskType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.numLocalSsds">numLocalSsds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `bootDiskSizeGbInput`<sup>Optional</sup> <a name="bootDiskSizeGbInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.bootDiskSizeGbInput"></a>
+
+```typescript
+public readonly bootDiskSizeGbInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `bootDiskTypeInput`<sup>Optional</sup> <a name="bootDiskTypeInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.bootDiskTypeInput"></a>
+
+```typescript
+public readonly bootDiskTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numLocalSsdsInput`<sup>Optional</sup> <a name="numLocalSsdsInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.numLocalSsdsInput"></a>
+
+```typescript
+public readonly numLocalSsdsInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `bootDiskSizeGb`<sup>Required</sup> <a name="bootDiskSizeGb" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.bootDiskSizeGb"></a>
+
+```typescript
+public readonly bootDiskSizeGb: number;
+```
+
+- *Type:* number
+
+---
+
+##### `bootDiskType`<sup>Required</sup> <a name="bootDiskType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.bootDiskType"></a>
+
+```typescript
+public readonly bootDiskType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numLocalSsds`<sup>Required</sup> <a name="numLocalSsds" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.numLocalSsds"></a>
+
+```typescript
+public readonly numLocalSsds: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig</a>
+
+---
+
+
+### GoogleDataprocClusterClusterConfigWorkerConfigOutputReference <a name="GoogleDataprocClusterClusterConfigWorkerConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.putAccelerators">putAccelerators</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.putDiskConfig">putDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetAccelerators">resetAccelerators</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetDiskConfig">resetDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetImageUri">resetImageUri</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetMachineType">resetMachineType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetMinCpuPlatform">resetMinCpuPlatform</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetNumInstances">resetNumInstances</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAccelerators` <a name="putAccelerators" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.putAccelerators"></a>
+
+```typescript
+public putAccelerators(value: IResolvable | GoogleDataprocClusterClusterConfigWorkerConfigAccelerators[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.putAccelerators.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators">GoogleDataprocClusterClusterConfigWorkerConfigAccelerators</a>[]
+
+---
+
+##### `putDiskConfig` <a name="putDiskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.putDiskConfig"></a>
+
+```typescript
+public putDiskConfig(value: GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.putDiskConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig</a>
+
+---
+
+##### `resetAccelerators` <a name="resetAccelerators" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetAccelerators"></a>
+
+```typescript
+public resetAccelerators(): void
+```
+
+##### `resetDiskConfig` <a name="resetDiskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetDiskConfig"></a>
+
+```typescript
+public resetDiskConfig(): void
+```
+
+##### `resetImageUri` <a name="resetImageUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetImageUri"></a>
+
+```typescript
+public resetImageUri(): void
+```
+
+##### `resetMachineType` <a name="resetMachineType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetMachineType"></a>
+
+```typescript
+public resetMachineType(): void
+```
+
+##### `resetMinCpuPlatform` <a name="resetMinCpuPlatform" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetMinCpuPlatform"></a>
+
+```typescript
+public resetMinCpuPlatform(): void
+```
+
+##### `resetNumInstances` <a name="resetNumInstances" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.resetNumInstances"></a>
+
+```typescript
+public resetNumInstances(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.accelerators">accelerators</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList">GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.diskConfig">diskConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference">GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.instanceNames">instanceNames</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.acceleratorsInput">acceleratorsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators">GoogleDataprocClusterClusterConfigWorkerConfigAccelerators</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.diskConfigInput">diskConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.imageUriInput">imageUriInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.machineTypeInput">machineTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.minCpuPlatformInput">minCpuPlatformInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.numInstancesInput">numInstancesInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.imageUri">imageUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.machineType">machineType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.numInstances">numInstances</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig">GoogleDataprocClusterClusterConfigWorkerConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accelerators`<sup>Required</sup> <a name="accelerators" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.accelerators"></a>
+
+```typescript
+public readonly accelerators: GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList">GoogleDataprocClusterClusterConfigWorkerConfigAcceleratorsList</a>
+
+---
+
+##### `diskConfig`<sup>Required</sup> <a name="diskConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.diskConfig"></a>
+
+```typescript
+public readonly diskConfig: GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference">GoogleDataprocClusterClusterConfigWorkerConfigDiskConfigOutputReference</a>
+
+---
+
+##### `instanceNames`<sup>Required</sup> <a name="instanceNames" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.instanceNames"></a>
+
+```typescript
+public readonly instanceNames: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `acceleratorsInput`<sup>Optional</sup> <a name="acceleratorsInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.acceleratorsInput"></a>
+
+```typescript
+public readonly acceleratorsInput: IResolvable | GoogleDataprocClusterClusterConfigWorkerConfigAccelerators[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigAccelerators">GoogleDataprocClusterClusterConfigWorkerConfigAccelerators</a>[]
+
+---
+
+##### `diskConfigInput`<sup>Optional</sup> <a name="diskConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.diskConfigInput"></a>
+
+```typescript
+public readonly diskConfigInput: GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig">GoogleDataprocClusterClusterConfigWorkerConfigDiskConfig</a>
+
+---
+
+##### `imageUriInput`<sup>Optional</sup> <a name="imageUriInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.imageUriInput"></a>
+
+```typescript
+public readonly imageUriInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `machineTypeInput`<sup>Optional</sup> <a name="machineTypeInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.machineTypeInput"></a>
+
+```typescript
+public readonly machineTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minCpuPlatformInput`<sup>Optional</sup> <a name="minCpuPlatformInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.minCpuPlatformInput"></a>
+
+```typescript
+public readonly minCpuPlatformInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numInstancesInput`<sup>Optional</sup> <a name="numInstancesInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.numInstancesInput"></a>
+
+```typescript
+public readonly numInstancesInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `imageUri`<sup>Required</sup> <a name="imageUri" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.imageUri"></a>
+
+```typescript
+public readonly imageUri: string;
+```
+
+- *Type:* string
+
+---
+
+##### `machineType`<sup>Required</sup> <a name="machineType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.machineType"></a>
+
+```typescript
+public readonly machineType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minCpuPlatform`<sup>Required</sup> <a name="minCpuPlatform" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.minCpuPlatform"></a>
+
+```typescript
+public readonly minCpuPlatform: string;
+```
+
+- *Type:* string
+
+---
+
+##### `numInstances`<sup>Required</sup> <a name="numInstances" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.numInstances"></a>
+
+```typescript
+public readonly numInstances: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterClusterConfigWorkerConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterClusterConfigWorkerConfig">GoogleDataprocClusterClusterConfigWorkerConfig</a>
+
+---
+
+
+### GoogleDataprocClusterTimeoutsOutputReference <a name="GoogleDataprocClusterTimeoutsOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.resetCreate"></a>
+
+```typescript
+public resetCreate(): void
+```
+
+##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.resetDelete"></a>
+
+```typescript
+public resetDelete(): void
+```
+
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts">GoogleDataprocClusterTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.createInput"></a>
+
+```typescript
+public readonly createInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.deleteInput"></a>
+
+```typescript
+public readonly deleteInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.create"></a>
+
+```typescript
+public readonly create: string;
+```
+
+- *Type:* string
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.delete"></a>
+
+```typescript
+public readonly delete: string;
+```
+
+- *Type:* string
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeoutsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterTimeouts | IResolvable;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterTimeouts">GoogleDataprocClusterTimeouts</a> | cdktf.IResolvable
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.resetDataprocMetastoreService">resetDataprocMetastoreService</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDataprocMetastoreService` <a name="resetDataprocMetastoreService" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.resetDataprocMetastoreService"></a>
+
+```typescript
+public resetDataprocMetastoreService(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.property.dataprocMetastoreServiceInput">dataprocMetastoreServiceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.property.dataprocMetastoreService">dataprocMetastoreService</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dataprocMetastoreServiceInput`<sup>Optional</sup> <a name="dataprocMetastoreServiceInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.property.dataprocMetastoreServiceInput"></a>
+
+```typescript
+public readonly dataprocMetastoreServiceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dataprocMetastoreService`<sup>Required</sup> <a name="dataprocMetastoreService" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.property.dataprocMetastoreService"></a>
+
+```typescript
+public readonly dataprocMetastoreService: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig</a>
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.putMetastoreConfig">putMetastoreConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.putSparkHistoryServerConfig">putSparkHistoryServerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.resetMetastoreConfig">resetMetastoreConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.resetSparkHistoryServerConfig">resetSparkHistoryServerConfig</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putMetastoreConfig` <a name="putMetastoreConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.putMetastoreConfig"></a>
+
+```typescript
+public putMetastoreConfig(value: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.putMetastoreConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig</a>
+
+---
+
+##### `putSparkHistoryServerConfig` <a name="putSparkHistoryServerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.putSparkHistoryServerConfig"></a>
+
+```typescript
+public putSparkHistoryServerConfig(value: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.putSparkHistoryServerConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig</a>
+
+---
+
+##### `resetMetastoreConfig` <a name="resetMetastoreConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.resetMetastoreConfig"></a>
+
+```typescript
+public resetMetastoreConfig(): void
+```
+
+##### `resetSparkHistoryServerConfig` <a name="resetSparkHistoryServerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.resetSparkHistoryServerConfig"></a>
+
+```typescript
+public resetSparkHistoryServerConfig(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.metastoreConfig">metastoreConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.sparkHistoryServerConfig">sparkHistoryServerConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.metastoreConfigInput">metastoreConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.sparkHistoryServerConfigInput">sparkHistoryServerConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `metastoreConfig`<sup>Required</sup> <a name="metastoreConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.metastoreConfig"></a>
+
+```typescript
+public readonly metastoreConfig: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfigOutputReference</a>
+
+---
+
+##### `sparkHistoryServerConfig`<sup>Required</sup> <a name="sparkHistoryServerConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.sparkHistoryServerConfig"></a>
+
+```typescript
+public readonly sparkHistoryServerConfig: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference</a>
+
+---
+
+##### `metastoreConfigInput`<sup>Optional</sup> <a name="metastoreConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.metastoreConfigInput"></a>
+
+```typescript
+public readonly metastoreConfigInput: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigMetastoreConfig</a>
+
+---
+
+##### `sparkHistoryServerConfigInput`<sup>Optional</sup> <a name="sparkHistoryServerConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.sparkHistoryServerConfigInput"></a>
+
+```typescript
+public readonly sparkHistoryServerConfigInput: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig</a>
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.resetDataprocCluster">resetDataprocCluster</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDataprocCluster` <a name="resetDataprocCluster" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.resetDataprocCluster"></a>
+
+```typescript
+public resetDataprocCluster(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.property.dataprocClusterInput">dataprocClusterInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.property.dataprocCluster">dataprocCluster</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dataprocClusterInput`<sup>Optional</sup> <a name="dataprocClusterInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.property.dataprocClusterInput"></a>
+
+```typescript
+public readonly dataprocClusterInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dataprocCluster`<sup>Required</sup> <a name="dataprocCluster" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.property.dataprocCluster"></a>
+
+```typescript
+public readonly dataprocCluster: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigSparkHistoryServerConfig</a>
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.get"></a>
+
+```typescript
+public get(index: number): GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>[]
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.resetMaxNodeCount">resetMaxNodeCount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.resetMinNodeCount">resetMinNodeCount</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetMaxNodeCount` <a name="resetMaxNodeCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.resetMaxNodeCount"></a>
+
+```typescript
+public resetMaxNodeCount(): void
+```
+
+##### `resetMinNodeCount` <a name="resetMinNodeCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.resetMinNodeCount"></a>
+
+```typescript
+public resetMinNodeCount(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.maxNodeCountInput">maxNodeCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.minNodeCountInput">minNodeCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.maxNodeCount">maxNodeCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.minNodeCount">minNodeCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `maxNodeCountInput`<sup>Optional</sup> <a name="maxNodeCountInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.maxNodeCountInput"></a>
+
+```typescript
+public readonly maxNodeCountInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `minNodeCountInput`<sup>Optional</sup> <a name="minNodeCountInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.minNodeCountInput"></a>
+
+```typescript
+public readonly minNodeCountInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxNodeCount`<sup>Required</sup> <a name="maxNodeCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.maxNodeCount"></a>
+
+```typescript
+public readonly maxNodeCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `minNodeCount`<sup>Required</sup> <a name="minNodeCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.minNodeCount"></a>
+
+```typescript
+public readonly minNodeCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling</a>
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resetLocalSsdCount">resetLocalSsdCount</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resetMachineType">resetMachineType</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resetMinCpuPlatform">resetMinCpuPlatform</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resetPreemptible">resetPreemptible</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resetSpot">resetSpot</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetLocalSsdCount` <a name="resetLocalSsdCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resetLocalSsdCount"></a>
+
+```typescript
+public resetLocalSsdCount(): void
+```
+
+##### `resetMachineType` <a name="resetMachineType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resetMachineType"></a>
+
+```typescript
+public resetMachineType(): void
+```
+
+##### `resetMinCpuPlatform` <a name="resetMinCpuPlatform" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resetMinCpuPlatform"></a>
+
+```typescript
+public resetMinCpuPlatform(): void
+```
+
+##### `resetPreemptible` <a name="resetPreemptible" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resetPreemptible"></a>
+
+```typescript
+public resetPreemptible(): void
+```
+
+##### `resetSpot` <a name="resetSpot" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.resetSpot"></a>
+
+```typescript
+public resetSpot(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.localSsdCountInput">localSsdCountInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.machineTypeInput">machineTypeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.minCpuPlatformInput">minCpuPlatformInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.preemptibleInput">preemptibleInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.spotInput">spotInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.localSsdCount">localSsdCount</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.machineType">machineType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.preemptible">preemptible</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.spot">spot</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `localSsdCountInput`<sup>Optional</sup> <a name="localSsdCountInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.localSsdCountInput"></a>
+
+```typescript
+public readonly localSsdCountInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `machineTypeInput`<sup>Optional</sup> <a name="machineTypeInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.machineTypeInput"></a>
+
+```typescript
+public readonly machineTypeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minCpuPlatformInput`<sup>Optional</sup> <a name="minCpuPlatformInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.minCpuPlatformInput"></a>
+
+```typescript
+public readonly minCpuPlatformInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `preemptibleInput`<sup>Optional</sup> <a name="preemptibleInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.preemptibleInput"></a>
+
+```typescript
+public readonly preemptibleInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `spotInput`<sup>Optional</sup> <a name="spotInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.spotInput"></a>
+
+```typescript
+public readonly spotInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `localSsdCount`<sup>Required</sup> <a name="localSsdCount" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.localSsdCount"></a>
+
+```typescript
+public readonly localSsdCount: number;
+```
+
+- *Type:* number
+
+---
+
+##### `machineType`<sup>Required</sup> <a name="machineType" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.machineType"></a>
+
+```typescript
+public readonly machineType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `minCpuPlatform`<sup>Required</sup> <a name="minCpuPlatform" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.minCpuPlatform"></a>
+
+```typescript
+public readonly minCpuPlatform: string;
+```
+
+- *Type:* string
+
+---
+
+##### `preemptible`<sup>Required</sup> <a name="preemptible" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.preemptible"></a>
+
+```typescript
+public readonly preemptible: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `spot`<sup>Required</sup> <a name="spot" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.spot"></a>
+
+```typescript
+public readonly spot: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig</a>
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.putAutoscaling">putAutoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.putConfig">putConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.resetAutoscaling">resetAutoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.resetConfig">resetConfig</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAutoscaling` <a name="putAutoscaling" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.putAutoscaling"></a>
+
+```typescript
+public putAutoscaling(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.putAutoscaling.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling</a>
+
+---
+
+##### `putConfig` <a name="putConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.putConfig"></a>
+
+```typescript
+public putConfig(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.putConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig</a>
+
+---
+
+##### `resetAutoscaling` <a name="resetAutoscaling" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.resetAutoscaling"></a>
+
+```typescript
+public resetAutoscaling(): void
+```
+
+##### `resetConfig` <a name="resetConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.resetConfig"></a>
+
+```typescript
+public resetConfig(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.autoscaling">autoscaling</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.config">config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.autoscalingInput">autoscalingInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.configInput">configInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.locationsInput">locationsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.locations">locations</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `autoscaling`<sup>Required</sup> <a name="autoscaling" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.autoscaling"></a>
+
+```typescript
+public readonly autoscaling: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscalingOutputReference</a>
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.config"></a>
+
+```typescript
+public readonly config: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfigOutputReference</a>
+
+---
+
+##### `autoscalingInput`<sup>Optional</sup> <a name="autoscalingInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.autoscalingInput"></a>
+
+```typescript
+public readonly autoscalingInput: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigAutoscaling</a>
+
+---
+
+##### `configInput`<sup>Optional</sup> <a name="configInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.configInput"></a>
+
+```typescript
+public readonly configInput: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigConfig</a>
+
+---
+
+##### `locationsInput`<sup>Optional</sup> <a name="locationsInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.locationsInput"></a>
+
+```typescript
+public readonly locationsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `locations`<sup>Required</sup> <a name="locations" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.locations"></a>
+
+```typescript
+public readonly locations: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig</a>
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.putNodePoolConfig">putNodePoolConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.resetNodePoolConfig">resetNodePoolConfig</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putNodePoolConfig` <a name="putNodePoolConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.putNodePoolConfig"></a>
+
+```typescript
+public putNodePoolConfig(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.putNodePoolConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig</a>
+
+---
+
+##### `resetNodePoolConfig` <a name="resetNodePoolConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.resetNodePoolConfig"></a>
+
+```typescript
+public resetNodePoolConfig(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.nodePoolConfig">nodePoolConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.nodePoolConfigInput">nodePoolConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.nodePoolInput">nodePoolInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.rolesInput">rolesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.nodePool">nodePool</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.roles">roles</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a> \| cdktf.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nodePoolConfig`<sup>Required</sup> <a name="nodePoolConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.nodePoolConfig"></a>
+
+```typescript
+public readonly nodePoolConfig: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfigOutputReference</a>
+
+---
+
+##### `nodePoolConfigInput`<sup>Optional</sup> <a name="nodePoolConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.nodePoolConfigInput"></a>
+
+```typescript
+public readonly nodePoolConfigInput: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetNodePoolConfig</a>
+
+---
+
+##### `nodePoolInput`<sup>Optional</sup> <a name="nodePoolInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.nodePoolInput"></a>
+
+```typescript
+public readonly nodePoolInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `rolesInput`<sup>Optional</sup> <a name="rolesInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.rolesInput"></a>
+
+```typescript
+public readonly rolesInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `nodePool`<sup>Required</sup> <a name="nodePool" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.nodePool"></a>
+
+```typescript
+public readonly nodePool: string;
+```
+
+- *Type:* string
+
+---
+
+##### `roles`<sup>Required</sup> <a name="roles" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.roles"></a>
+
+```typescript
+public readonly roles: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget | IResolvable;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a> | cdktf.IResolvable
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.putNodePoolTarget">putNodePoolTarget</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.resetGkeClusterTarget">resetGkeClusterTarget</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.resetNodePoolTarget">resetNodePoolTarget</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putNodePoolTarget` <a name="putNodePoolTarget" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.putNodePoolTarget"></a>
+
+```typescript
+public putNodePoolTarget(value: IResolvable | GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.putNodePoolTarget.parameter.value"></a>
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>[]
+
+---
+
+##### `resetGkeClusterTarget` <a name="resetGkeClusterTarget" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.resetGkeClusterTarget"></a>
+
+```typescript
+public resetGkeClusterTarget(): void
+```
+
+##### `resetNodePoolTarget` <a name="resetNodePoolTarget" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.resetNodePoolTarget"></a>
+
+```typescript
+public resetNodePoolTarget(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.nodePoolTarget">nodePoolTarget</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.gkeClusterTargetInput">gkeClusterTargetInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.nodePoolTargetInput">nodePoolTargetInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.gkeClusterTarget">gkeClusterTarget</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nodePoolTarget`<sup>Required</sup> <a name="nodePoolTarget" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.nodePoolTarget"></a>
+
+```typescript
+public readonly nodePoolTarget: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTargetList</a>
+
+---
+
+##### `gkeClusterTargetInput`<sup>Optional</sup> <a name="gkeClusterTargetInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.gkeClusterTargetInput"></a>
+
+```typescript
+public readonly gkeClusterTargetInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nodePoolTargetInput`<sup>Optional</sup> <a name="nodePoolTargetInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.nodePoolTargetInput"></a>
+
+```typescript
+public readonly nodePoolTargetInput: IResolvable | GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget[];
+```
+
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigNodePoolTarget</a>[]
+
+---
+
+##### `gkeClusterTarget`<sup>Required</sup> <a name="gkeClusterTarget" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.gkeClusterTarget"></a>
+
+```typescript
+public readonly gkeClusterTarget: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig</a>
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.resetProperties">resetProperties</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetProperties` <a name="resetProperties" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.resetProperties"></a>
+
+```typescript
+public resetProperties(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.componentVersionInput">componentVersionInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.propertiesInput">propertiesInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.componentVersion">componentVersion</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.properties">properties</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `componentVersionInput`<sup>Optional</sup> <a name="componentVersionInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.componentVersionInput"></a>
+
+```typescript
+public readonly componentVersionInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `propertiesInput`<sup>Optional</sup> <a name="propertiesInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.propertiesInput"></a>
+
+```typescript
+public readonly propertiesInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `componentVersion`<sup>Required</sup> <a name="componentVersion" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.componentVersion"></a>
+
+```typescript
+public readonly componentVersion: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `properties`<sup>Required</sup> <a name="properties" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.properties"></a>
+
+```typescript
+public readonly properties: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig</a>
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.putGkeClusterConfig">putGkeClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.putKubernetesSoftwareConfig">putKubernetesSoftwareConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.resetKubernetesNamespace">resetKubernetesNamespace</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putGkeClusterConfig` <a name="putGkeClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.putGkeClusterConfig"></a>
+
+```typescript
+public putGkeClusterConfig(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.putGkeClusterConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig</a>
+
+---
+
+##### `putKubernetesSoftwareConfig` <a name="putKubernetesSoftwareConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.putKubernetesSoftwareConfig"></a>
+
+```typescript
+public putKubernetesSoftwareConfig(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.putKubernetesSoftwareConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig</a>
+
+---
+
+##### `resetKubernetesNamespace` <a name="resetKubernetesNamespace" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.resetKubernetesNamespace"></a>
+
+```typescript
+public resetKubernetesNamespace(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.gkeClusterConfig">gkeClusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.kubernetesSoftwareConfig">kubernetesSoftwareConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.gkeClusterConfigInput">gkeClusterConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.kubernetesNamespaceInput">kubernetesNamespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.kubernetesSoftwareConfigInput">kubernetesSoftwareConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.kubernetesNamespace">kubernetesNamespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `gkeClusterConfig`<sup>Required</sup> <a name="gkeClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.gkeClusterConfig"></a>
+
+```typescript
+public readonly gkeClusterConfig: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfigOutputReference</a>
+
+---
+
+##### `kubernetesSoftwareConfig`<sup>Required</sup> <a name="kubernetesSoftwareConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.kubernetesSoftwareConfig"></a>
+
+```typescript
+public readonly kubernetesSoftwareConfig: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfigOutputReference</a>
+
+---
+
+##### `gkeClusterConfigInput`<sup>Optional</sup> <a name="gkeClusterConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.gkeClusterConfigInput"></a>
+
+```typescript
+public readonly gkeClusterConfigInput: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigGkeClusterConfig</a>
+
+---
+
+##### `kubernetesNamespaceInput`<sup>Optional</sup> <a name="kubernetesNamespaceInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.kubernetesNamespaceInput"></a>
+
+```typescript
+public readonly kubernetesNamespaceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `kubernetesSoftwareConfigInput`<sup>Optional</sup> <a name="kubernetesSoftwareConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.kubernetesSoftwareConfigInput"></a>
+
+```typescript
+public readonly kubernetesSoftwareConfigInput: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigKubernetesSoftwareConfig</a>
+
+---
+
+##### `kubernetesNamespace`<sup>Required</sup> <a name="kubernetesNamespace" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.kubernetesNamespace"></a>
+
+```typescript
+public readonly kubernetesNamespace: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig</a>
+
+---
+
+
+### GoogleDataprocClusterVirtualClusterConfigOutputReference <a name="GoogleDataprocClusterVirtualClusterConfigOutputReference" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleDataprocCluster } from '@cdktf/provider-google-beta'
+
+new googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.putAuxiliaryServicesConfig">putAuxiliaryServicesConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.putKubernetesClusterConfig">putKubernetesClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.resetAuxiliaryServicesConfig">resetAuxiliaryServicesConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.resetKubernetesClusterConfig">resetKubernetesClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.resetStagingBucket">resetStagingBucket</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putAuxiliaryServicesConfig` <a name="putAuxiliaryServicesConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.putAuxiliaryServicesConfig"></a>
+
+```typescript
+public putAuxiliaryServicesConfig(value: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.putAuxiliaryServicesConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig</a>
+
+---
+
+##### `putKubernetesClusterConfig` <a name="putKubernetesClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.putKubernetesClusterConfig"></a>
+
+```typescript
+public putKubernetesClusterConfig(value: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.putKubernetesClusterConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig</a>
+
+---
+
+##### `resetAuxiliaryServicesConfig` <a name="resetAuxiliaryServicesConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.resetAuxiliaryServicesConfig"></a>
+
+```typescript
+public resetAuxiliaryServicesConfig(): void
+```
+
+##### `resetKubernetesClusterConfig` <a name="resetKubernetesClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.resetKubernetesClusterConfig"></a>
+
+```typescript
+public resetKubernetesClusterConfig(): void
+```
+
+##### `resetStagingBucket` <a name="resetStagingBucket" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.resetStagingBucket"></a>
+
+```typescript
+public resetStagingBucket(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.auxiliaryServicesConfig">auxiliaryServicesConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.kubernetesClusterConfig">kubernetesClusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.auxiliaryServicesConfigInput">auxiliaryServicesConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.kubernetesClusterConfigInput">kubernetesClusterConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.stagingBucketInput">stagingBucketInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.stagingBucket">stagingBucket</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig">GoogleDataprocClusterVirtualClusterConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `auxiliaryServicesConfig`<sup>Required</sup> <a name="auxiliaryServicesConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.auxiliaryServicesConfig"></a>
+
+```typescript
+public readonly auxiliaryServicesConfig: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfigOutputReference</a>
+
+---
+
+##### `kubernetesClusterConfig`<sup>Required</sup> <a name="kubernetesClusterConfig" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.kubernetesClusterConfig"></a>
+
+```typescript
+public readonly kubernetesClusterConfig: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfigOutputReference</a>
+
+---
+
+##### `auxiliaryServicesConfigInput`<sup>Optional</sup> <a name="auxiliaryServicesConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.auxiliaryServicesConfigInput"></a>
+
+```typescript
+public readonly auxiliaryServicesConfigInput: GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig">GoogleDataprocClusterVirtualClusterConfigAuxiliaryServicesConfig</a>
+
+---
+
+##### `kubernetesClusterConfigInput`<sup>Optional</sup> <a name="kubernetesClusterConfigInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.kubernetesClusterConfigInput"></a>
+
+```typescript
+public readonly kubernetesClusterConfigInput: GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig">GoogleDataprocClusterVirtualClusterConfigKubernetesClusterConfig</a>
+
+---
+
+##### `stagingBucketInput`<sup>Optional</sup> <a name="stagingBucketInput" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.stagingBucketInput"></a>
+
+```typescript
+public readonly stagingBucketInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `stagingBucket`<sup>Required</sup> <a name="stagingBucket" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.stagingBucket"></a>
+
+```typescript
+public readonly stagingBucket: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleDataprocClusterVirtualClusterConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocCluster.GoogleDataprocClusterVirtualClusterConfig">GoogleDataprocClusterVirtualClusterConfig</a>
+
+---
+
+
+
