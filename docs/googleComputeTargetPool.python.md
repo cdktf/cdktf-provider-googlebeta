@@ -1,0 +1,1797 @@
+# `googleComputeTargetPool` Submodule <a name="`googleComputeTargetPool` Submodule" id="@cdktf/provider-google-beta.googleComputeTargetPool"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### GoogleComputeTargetPool <a name="GoogleComputeTargetPool" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool google_compute_target_pool}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_compute_target_pool
+
+googleComputeTargetPool.GoogleComputeTargetPool(
+  scope: Construct,
+  id: str,
+  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
+  count: typing.Union[int, float] = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  name: str,
+  backup_pool: str = None,
+  description: str = None,
+  failover_ratio: typing.Union[int, float] = None,
+  health_checks: typing.List[str] = None,
+  id: str = None,
+  instances: typing.List[str] = None,
+  project: str = None,
+  region: str = None,
+  session_affinity: str = None,
+  timeouts: GoogleComputeTargetPoolTimeouts = None
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.name">name</a></code> | <code>str</code> | A unique name for the resource, required by GCE. Changing this forces a new resource to be created. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.backupPool">backup_pool</a></code> | <code>str</code> | URL to the backup target pool. Must also set failover_ratio. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.description">description</a></code> | <code>str</code> | Textual description field. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.failoverRatio">failover_ratio</a></code> | <code>typing.Union[int, float]</code> | Ratio (0 to 1) of failed nodes before using the backup pool (which must also be set). |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.healthChecks">health_checks</a></code> | <code>typing.List[str]</code> | List of zero or one health check name or self_link. Only legacy google_compute_http_health_check is supported. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#id GoogleComputeTargetPool#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.instances">instances</a></code> | <code>typing.List[str]</code> | List of instances in the pool. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.region">region</a></code> | <code>str</code> | Where the target pool resides. Defaults to project region. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.sessionAffinity">session_affinity</a></code> | <code>str</code> | How to distribute load. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts">GoogleComputeTargetPoolTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.connection"></a>
+
+- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.count"></a>
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.dependsOn"></a>
+
+- *Type:* typing.List[cdktf.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.forEach"></a>
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.lifecycle"></a>
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.provisioners"></a>
+
+- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.name"></a>
+
+- *Type:* str
+
+A unique name for the resource, required by GCE. Changing this forces a new resource to be created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#name GoogleComputeTargetPool#name}
+
+---
+
+##### `backup_pool`<sup>Optional</sup> <a name="backup_pool" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.backupPool"></a>
+
+- *Type:* str
+
+URL to the backup target pool. Must also set failover_ratio.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#backup_pool GoogleComputeTargetPool#backup_pool}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.description"></a>
+
+- *Type:* str
+
+Textual description field.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#description GoogleComputeTargetPool#description}
+
+---
+
+##### `failover_ratio`<sup>Optional</sup> <a name="failover_ratio" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.failoverRatio"></a>
+
+- *Type:* typing.Union[int, float]
+
+Ratio (0 to 1) of failed nodes before using the backup pool (which must also be set).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#failover_ratio GoogleComputeTargetPool#failover_ratio}
+
+---
+
+##### `health_checks`<sup>Optional</sup> <a name="health_checks" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.healthChecks"></a>
+
+- *Type:* typing.List[str]
+
+List of zero or one health check name or self_link. Only legacy google_compute_http_health_check is supported.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#health_checks GoogleComputeTargetPool#health_checks}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.id"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#id GoogleComputeTargetPool#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `instances`<sup>Optional</sup> <a name="instances" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.instances"></a>
+
+- *Type:* typing.List[str]
+
+List of instances in the pool.
+
+They can be given as URLs, or in the form of "zone/name". Note that the instances need not exist at the time of target pool creation, so there is no need to use the Terraform interpolators to create a dependency on the instances from the target pool.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#instances GoogleComputeTargetPool#instances}
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.project"></a>
+
+- *Type:* str
+
+The ID of the project in which the resource belongs.
+
+If it is not provided, the provider project is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#project GoogleComputeTargetPool#project}
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.region"></a>
+
+- *Type:* str
+
+Where the target pool resides. Defaults to project region.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#region GoogleComputeTargetPool#region}
+
+---
+
+##### `session_affinity`<sup>Optional</sup> <a name="session_affinity" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.sessionAffinity"></a>
+
+- *Type:* str
+
+How to distribute load.
+
+Options are "NONE" (no affinity). "CLIENT_IP" (hash of the source/dest addresses / ports), and "CLIENT_IP_PROTO" also includes the protocol (default "NONE").
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#session_affinity GoogleComputeTargetPool#session_affinity}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer.parameter.timeouts"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts">GoogleComputeTargetPoolTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#timeouts GoogleComputeTargetPool#timeouts}
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetBackupPool">reset_backup_pool</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetFailoverRatio">reset_failover_ratio</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetHealthChecks">reset_health_checks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetInstances">reset_instances</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetSessionAffinity">reset_session_affinity</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Returns a string representation of this construct.
+
+##### `add_override` <a name="add_override" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.addOverride"></a>
+
+```python
+def add_override(
+  path: str,
+  value: typing.Any
+) -> None
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.addOverride.parameter.path"></a>
+
+- *Type:* str
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.addOverride.parameter.value"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.overrideLogicalId"></a>
+
+```python
+def override_logical_id(
+  new_logical_id: str
+) -> None
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* str
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetOverrideLogicalId"></a>
+
+```python
+def reset_override_logical_id() -> None
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.toMetadata"></a>
+
+```python
+def to_metadata() -> typing.Any
+```
+
+##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.toTerraform"></a>
+
+```python
+def to_terraform() -> typing.Any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.putTimeouts"></a>
+
+```python
+def put_timeouts(
+  create: str = None,
+  delete: str = None,
+  update: str = None
+) -> None
+```
+
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.putTimeouts.parameter.create"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#create GoogleComputeTargetPool#create}.
+
+---
+
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.putTimeouts.parameter.delete"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#delete GoogleComputeTargetPool#delete}.
+
+---
+
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.putTimeouts.parameter.update"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#update GoogleComputeTargetPool#update}.
+
+---
+
+##### `reset_backup_pool` <a name="reset_backup_pool" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetBackupPool"></a>
+
+```python
+def reset_backup_pool() -> None
+```
+
+##### `reset_description` <a name="reset_description" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetDescription"></a>
+
+```python
+def reset_description() -> None
+```
+
+##### `reset_failover_ratio` <a name="reset_failover_ratio" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetFailoverRatio"></a>
+
+```python
+def reset_failover_ratio() -> None
+```
+
+##### `reset_health_checks` <a name="reset_health_checks" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetHealthChecks"></a>
+
+```python
+def reset_health_checks() -> None
+```
+
+##### `reset_id` <a name="reset_id" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetId"></a>
+
+```python
+def reset_id() -> None
+```
+
+##### `reset_instances` <a name="reset_instances" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetInstances"></a>
+
+```python
+def reset_instances() -> None
+```
+
+##### `reset_project` <a name="reset_project" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetProject"></a>
+
+```python
+def reset_project() -> None
+```
+
+##### `reset_region` <a name="reset_region" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetRegion"></a>
+
+```python
+def reset_region() -> None
+```
+
+##### `reset_session_affinity` <a name="reset_session_affinity" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetSessionAffinity"></a>
+
+```python
+def reset_session_affinity() -> None
+```
+
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetTimeouts"></a>
+
+```python
+def reset_timeouts() -> None
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+
+---
+
+##### `is_construct` <a name="is_construct" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isConstruct"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_compute_target_pool
+
+googleComputeTargetPool.GoogleComputeTargetPool.is_construct(
+  x: typing.Any
+)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isConstruct.parameter.x"></a>
+
+- *Type:* typing.Any
+
+Any object.
+
+---
+
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isTerraformElement"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_compute_target_pool
+
+googleComputeTargetPool.GoogleComputeTargetPool.is_terraform_element(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isTerraformElement.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isTerraformResource"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_compute_target_pool
+
+googleComputeTargetPool.GoogleComputeTargetPool.is_terraform_resource(
+  x: typing.Any
+)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.isTerraformResource.parameter.x"></a>
+
+- *Type:* typing.Any
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference">GoogleComputeTargetPoolTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.backupPoolInput">backup_pool_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.failoverRatioInput">failover_ratio_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.healthChecksInput">health_checks_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.instancesInput">instances_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.sessionAffinityInput">session_affinity_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts">GoogleComputeTargetPoolTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.backupPool">backup_pool</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.failoverRatio">failover_ratio</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.healthChecks">health_checks</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.instances">instances</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.sessionAffinity">session_affinity</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.node"></a>
+
+```python
+node: Node
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.cdktfStack"></a>
+
+```python
+cdktf_stack: TerraformStack
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.friendlyUniqueId"></a>
+
+```python
+friendly_unique_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.terraformMetaArguments"></a>
+
+```python
+terraform_meta_arguments: typing.Mapping[typing.Any]
+```
+
+- *Type:* typing.Mapping[typing.Any]
+
+---
+
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.terraformResourceType"></a>
+
+```python
+terraform_resource_type: str
+```
+
+- *Type:* str
+
+---
+
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.terraformGeneratorMetadata"></a>
+
+```python
+terraform_generator_metadata: TerraformProviderGeneratorMetadata
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.connection"></a>
+
+```python
+connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+```
+
+- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.count"></a>
+
+```python
+count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.provisioners"></a>
+
+```python
+provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+```
+
+- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `self_link`<sup>Required</sup> <a name="self_link" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.selfLink"></a>
+
+```python
+self_link: str
+```
+
+- *Type:* str
+
+---
+
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.timeouts"></a>
+
+```python
+timeouts: GoogleComputeTargetPoolTimeoutsOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference">GoogleComputeTargetPoolTimeoutsOutputReference</a>
+
+---
+
+##### `backup_pool_input`<sup>Optional</sup> <a name="backup_pool_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.backupPoolInput"></a>
+
+```python
+backup_pool_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.descriptionInput"></a>
+
+```python
+description_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `failover_ratio_input`<sup>Optional</sup> <a name="failover_ratio_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.failoverRatioInput"></a>
+
+```python
+failover_ratio_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `health_checks_input`<sup>Optional</sup> <a name="health_checks_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.healthChecksInput"></a>
+
+```python
+health_checks_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.idInput"></a>
+
+```python
+id_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `instances_input`<sup>Optional</sup> <a name="instances_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.instancesInput"></a>
+
+```python
+instances_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.nameInput"></a>
+
+```python
+name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.projectInput"></a>
+
+```python
+project_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.regionInput"></a>
+
+```python
+region_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `session_affinity_input`<sup>Optional</sup> <a name="session_affinity_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.sessionAffinityInput"></a>
+
+```python
+session_affinity_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.timeoutsInput"></a>
+
+```python
+timeouts_input: typing.Union[GoogleComputeTargetPoolTimeouts, IResolvable]
+```
+
+- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts">GoogleComputeTargetPoolTimeouts</a>, cdktf.IResolvable]
+
+---
+
+##### `backup_pool`<sup>Required</sup> <a name="backup_pool" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.backupPool"></a>
+
+```python
+backup_pool: str
+```
+
+- *Type:* str
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+---
+
+##### `failover_ratio`<sup>Required</sup> <a name="failover_ratio" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.failoverRatio"></a>
+
+```python
+failover_ratio: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `health_checks`<sup>Required</sup> <a name="health_checks" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.healthChecks"></a>
+
+```python
+health_checks: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
+##### `instances`<sup>Required</sup> <a name="instances" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.instances"></a>
+
+```python
+instances: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.project"></a>
+
+```python
+project: str
+```
+
+- *Type:* str
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+---
+
+##### `session_affinity`<sup>Required</sup> <a name="session_affinity" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.sessionAffinity"></a>
+
+```python
+session_affinity: str
+```
+
+- *Type:* str
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.tfResourceType"></a>
+
+```python
+tfResourceType: str
+```
+
+- *Type:* str
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### GoogleComputeTargetPoolConfig <a name="GoogleComputeTargetPoolConfig" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_compute_target_pool
+
+googleComputeTargetPool.GoogleComputeTargetPoolConfig(
+  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
+  count: typing.Union[int, float] = None,
+  depends_on: typing.List[ITerraformDependable] = None,
+  for_each: ITerraformIterator = None,
+  lifecycle: TerraformResourceLifecycle = None,
+  provider: TerraformProvider = None,
+  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  name: str,
+  backup_pool: str = None,
+  description: str = None,
+  failover_ratio: typing.Union[int, float] = None,
+  health_checks: typing.List[str] = None,
+  id: str = None,
+  instances: typing.List[str] = None,
+  project: str = None,
+  region: str = None,
+  session_affinity: str = None,
+  timeouts: GoogleComputeTargetPoolTimeouts = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.name">name</a></code> | <code>str</code> | A unique name for the resource, required by GCE. Changing this forces a new resource to be created. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.backupPool">backup_pool</a></code> | <code>str</code> | URL to the backup target pool. Must also set failover_ratio. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.description">description</a></code> | <code>str</code> | Textual description field. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.failoverRatio">failover_ratio</a></code> | <code>typing.Union[int, float]</code> | Ratio (0 to 1) of failed nodes before using the backup pool (which must also be set). |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.healthChecks">health_checks</a></code> | <code>typing.List[str]</code> | List of zero or one health check name or self_link. Only legacy google_compute_http_health_check is supported. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#id GoogleComputeTargetPool#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.instances">instances</a></code> | <code>typing.List[str]</code> | List of instances in the pool. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.region">region</a></code> | <code>str</code> | Where the target pool resides. Defaults to project region. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.sessionAffinity">session_affinity</a></code> | <code>str</code> | How to distribute load. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts">GoogleComputeTargetPoolTimeouts</a></code> | timeouts block. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.connection"></a>
+
+```python
+connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+```
+
+- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.count"></a>
+
+```python
+count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.dependsOn"></a>
+
+```python
+depends_on: typing.List[ITerraformDependable]
+```
+
+- *Type:* typing.List[cdktf.ITerraformDependable]
+
+---
+
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.forEach"></a>
+
+```python
+for_each: ITerraformIterator
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.lifecycle"></a>
+
+```python
+lifecycle: TerraformResourceLifecycle
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.provider"></a>
+
+```python
+provider: TerraformProvider
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.provisioners"></a>
+
+```python
+provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+```
+
+- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.name"></a>
+
+```python
+name: str
+```
+
+- *Type:* str
+
+A unique name for the resource, required by GCE. Changing this forces a new resource to be created.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#name GoogleComputeTargetPool#name}
+
+---
+
+##### `backup_pool`<sup>Optional</sup> <a name="backup_pool" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.backupPool"></a>
+
+```python
+backup_pool: str
+```
+
+- *Type:* str
+
+URL to the backup target pool. Must also set failover_ratio.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#backup_pool GoogleComputeTargetPool#backup_pool}
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.description"></a>
+
+```python
+description: str
+```
+
+- *Type:* str
+
+Textual description field.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#description GoogleComputeTargetPool#description}
+
+---
+
+##### `failover_ratio`<sup>Optional</sup> <a name="failover_ratio" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.failoverRatio"></a>
+
+```python
+failover_ratio: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Ratio (0 to 1) of failed nodes before using the backup pool (which must also be set).
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#failover_ratio GoogleComputeTargetPool#failover_ratio}
+
+---
+
+##### `health_checks`<sup>Optional</sup> <a name="health_checks" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.healthChecks"></a>
+
+```python
+health_checks: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of zero or one health check name or self_link. Only legacy google_compute_http_health_check is supported.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#health_checks GoogleComputeTargetPool#health_checks}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#id GoogleComputeTargetPool#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `instances`<sup>Optional</sup> <a name="instances" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.instances"></a>
+
+```python
+instances: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of instances in the pool.
+
+They can be given as URLs, or in the form of "zone/name". Note that the instances need not exist at the time of target pool creation, so there is no need to use the Terraform interpolators to create a dependency on the instances from the target pool.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#instances GoogleComputeTargetPool#instances}
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.project"></a>
+
+```python
+project: str
+```
+
+- *Type:* str
+
+The ID of the project in which the resource belongs.
+
+If it is not provided, the provider project is used.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#project GoogleComputeTargetPool#project}
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.region"></a>
+
+```python
+region: str
+```
+
+- *Type:* str
+
+Where the target pool resides. Defaults to project region.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#region GoogleComputeTargetPool#region}
+
+---
+
+##### `session_affinity`<sup>Optional</sup> <a name="session_affinity" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.sessionAffinity"></a>
+
+```python
+session_affinity: str
+```
+
+- *Type:* str
+
+How to distribute load.
+
+Options are "NONE" (no affinity). "CLIENT_IP" (hash of the source/dest addresses / ports), and "CLIENT_IP_PROTO" also includes the protocol (default "NONE").
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#session_affinity GoogleComputeTargetPool#session_affinity}
+
+---
+
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.timeouts"></a>
+
+```python
+timeouts: GoogleComputeTargetPoolTimeouts
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts">GoogleComputeTargetPoolTimeouts</a>
+
+timeouts block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#timeouts GoogleComputeTargetPool#timeouts}
+
+---
+
+### GoogleComputeTargetPoolTimeouts <a name="GoogleComputeTargetPoolTimeouts" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_compute_target_pool
+
+googleComputeTargetPool.GoogleComputeTargetPoolTimeouts(
+  create: str = None,
+  delete: str = None,
+  update: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#create GoogleComputeTargetPool#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#delete GoogleComputeTargetPool#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#update GoogleComputeTargetPool#update}. |
+
+---
+
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#create GoogleComputeTargetPool#create}.
+
+---
+
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#delete GoogleComputeTargetPool#delete}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool#update GoogleComputeTargetPool#update}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GoogleComputeTargetPoolTimeoutsOutputReference <a name="GoogleComputeTargetPoolTimeoutsOutputReference" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.Initializer"></a>
+
+```python
+from cdktf_cdktf_provider_google_beta import google_compute_target_pool
+
+googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_create` <a name="reset_create" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.resetCreate"></a>
+
+```python
+def reset_create() -> None
+```
+
+##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.resetDelete"></a>
+
+```python
+def reset_delete() -> None
+```
+
+##### `reset_update` <a name="reset_update" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.resetUpdate"></a>
+
+```python
+def reset_update() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts">GoogleComputeTargetPoolTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.createInput"></a>
+
+```python
+create_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.deleteInput"></a>
+
+```python
+delete_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.updateInput"></a>
+
+```python
+update_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.create"></a>
+
+```python
+create: str
+```
+
+- *Type:* str
+
+---
+
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.delete"></a>
+
+```python
+delete: str
+```
+
+- *Type:* str
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.update"></a>
+
+```python
+update: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeoutsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: typing.Union[GoogleComputeTargetPoolTimeouts, IResolvable]
+```
+
+- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts">GoogleComputeTargetPoolTimeouts</a>, cdktf.IResolvable]
+
+---
+
+
+

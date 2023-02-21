@@ -1,0 +1,1201 @@
+# `googleFolderIamBinding` Submodule <a name="`googleFolderIamBinding` Submodule" id="@cdktf/provider-google-beta.googleFolderIamBinding"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### GoogleFolderIamBinding <a name="GoogleFolderIamBinding" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding google_folder_iam_binding}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.Initializer"></a>
+
+```typescript
+import { googleFolderIamBinding } from '@cdktf/provider-google-beta'
+
+new googleFolderIamBinding.GoogleFolderIamBinding(scope: Construct, id: string, config: GoogleFolderIamBindingConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig">GoogleFolderIamBindingConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig">GoogleFolderIamBindingConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.putCondition">putCondition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.resetCondition">resetCondition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.resetId">resetId</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `addOverride` <a name="addOverride" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `putCondition` <a name="putCondition" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.putCondition"></a>
+
+```typescript
+public putCondition(value: GoogleFolderIamBindingCondition): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.putCondition.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition">GoogleFolderIamBindingCondition</a>
+
+---
+
+##### `resetCondition` <a name="resetCondition" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.resetCondition"></a>
+
+```typescript
+public resetCondition(): void
+```
+
+##### `resetId` <a name="resetId" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isConstruct"></a>
+
+```typescript
+import { googleFolderIamBinding } from '@cdktf/provider-google-beta'
+
+googleFolderIamBinding.GoogleFolderIamBinding.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isTerraformElement"></a>
+
+```typescript
+import { googleFolderIamBinding } from '@cdktf/provider-google-beta'
+
+googleFolderIamBinding.GoogleFolderIamBinding.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isTerraformResource"></a>
+
+```typescript
+import { googleFolderIamBinding } from '@cdktf/provider-google-beta'
+
+googleFolderIamBinding.GoogleFolderIamBinding.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference">GoogleFolderIamBindingConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.etag">etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.conditionInput">conditionInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition">GoogleFolderIamBindingCondition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.folderInput">folderInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.membersInput">membersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.roleInput">roleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.folder">folder</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.members">members</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.role">role</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktf.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `condition`<sup>Required</sup> <a name="condition" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.condition"></a>
+
+```typescript
+public readonly condition: GoogleFolderIamBindingConditionOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference">GoogleFolderIamBindingConditionOutputReference</a>
+
+---
+
+##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.etag"></a>
+
+```typescript
+public readonly etag: string;
+```
+
+- *Type:* string
+
+---
+
+##### `conditionInput`<sup>Optional</sup> <a name="conditionInput" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.conditionInput"></a>
+
+```typescript
+public readonly conditionInput: GoogleFolderIamBindingCondition;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition">GoogleFolderIamBindingCondition</a>
+
+---
+
+##### `folderInput`<sup>Optional</sup> <a name="folderInput" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.folderInput"></a>
+
+```typescript
+public readonly folderInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `membersInput`<sup>Optional</sup> <a name="membersInput" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.membersInput"></a>
+
+```typescript
+public readonly membersInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `roleInput`<sup>Optional</sup> <a name="roleInput" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.roleInput"></a>
+
+```typescript
+public readonly roleInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `folder`<sup>Required</sup> <a name="folder" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.folder"></a>
+
+```typescript
+public readonly folder: string;
+```
+
+- *Type:* string
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `members`<sup>Required</sup> <a name="members" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.members"></a>
+
+```typescript
+public readonly members: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.role"></a>
+
+```typescript
+public readonly role: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBinding.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### GoogleFolderIamBindingCondition <a name="GoogleFolderIamBindingCondition" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.Initializer"></a>
+
+```typescript
+import { googleFolderIamBinding } from '@cdktf/provider-google-beta'
+
+const googleFolderIamBindingCondition: googleFolderIamBinding.GoogleFolderIamBindingCondition = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#expression GoogleFolderIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#title GoogleFolderIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#description GoogleFolderIamBinding#description}. |
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.expression"></a>
+
+```typescript
+public readonly expression: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#expression GoogleFolderIamBinding#expression}.
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#title GoogleFolderIamBinding#title}.
+
+---
+
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#description GoogleFolderIamBinding#description}.
+
+---
+
+### GoogleFolderIamBindingConfig <a name="GoogleFolderIamBindingConfig" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.Initializer"></a>
+
+```typescript
+import { googleFolderIamBinding } from '@cdktf/provider-google-beta'
+
+const googleFolderIamBindingConfig: googleFolderIamBinding.GoogleFolderIamBindingConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.folder">folder</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#folder GoogleFolderIamBinding#folder}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#members GoogleFolderIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#role GoogleFolderIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition">GoogleFolderIamBindingCondition</a></code> | condition block. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#id GoogleFolderIamBinding#id}. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.count"></a>
+
+```typescript
+public readonly count: number;
+```
+
+- *Type:* number
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktf.ITerraformDependable[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktf.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktf.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktf.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner[];
+```
+
+- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `folder`<sup>Required</sup> <a name="folder" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.folder"></a>
+
+```typescript
+public readonly folder: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#folder GoogleFolderIamBinding#folder}.
+
+---
+
+##### `members`<sup>Required</sup> <a name="members" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.members"></a>
+
+```typescript
+public readonly members: string[];
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#members GoogleFolderIamBinding#members}.
+
+---
+
+##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.role"></a>
+
+```typescript
+public readonly role: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#role GoogleFolderIamBinding#role}.
+
+---
+
+##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.condition"></a>
+
+```typescript
+public readonly condition: GoogleFolderIamBindingCondition;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition">GoogleFolderIamBindingCondition</a>
+
+condition block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#condition GoogleFolderIamBinding#condition}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_folder_iam_binding#id GoogleFolderIamBinding#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GoogleFolderIamBindingConditionOutputReference <a name="GoogleFolderIamBindingConditionOutputReference" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.Initializer"></a>
+
+```typescript
+import { googleFolderIamBinding } from '@cdktf/provider-google-beta'
+
+new googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.resetDescription">resetDescription</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.resetDescription"></a>
+
+```typescript
+public resetDescription(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.expressionInput">expressionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.titleInput">titleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.expression">expression</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.title">title</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition">GoogleFolderIamBindingCondition</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `expressionInput`<sup>Optional</sup> <a name="expressionInput" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.expressionInput"></a>
+
+```typescript
+public readonly expressionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `titleInput`<sup>Optional</sup> <a name="titleInput" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.titleInput"></a>
+
+```typescript
+public readonly titleInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.expression"></a>
+
+```typescript
+public readonly expression: string;
+```
+
+- *Type:* string
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingConditionOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleFolderIamBindingCondition;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleFolderIamBinding.GoogleFolderIamBindingCondition">GoogleFolderIamBindingCondition</a>
+
+---
+
+
+

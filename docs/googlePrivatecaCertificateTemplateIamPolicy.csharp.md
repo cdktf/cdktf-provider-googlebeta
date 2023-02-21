@@ -1,0 +1,827 @@
+# `googlePrivatecaCertificateTemplateIamPolicy` Submodule <a name="`googlePrivatecaCertificateTemplateIamPolicy` Submodule" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### GooglePrivatecaCertificateTemplateIamPolicy <a name="GooglePrivatecaCertificateTemplateIamPolicy" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy google_privateca_certificate_template_iam_policy}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GooglePrivatecaCertificateTemplateIamPolicy(Construct Scope, string Id, GooglePrivatecaCertificateTemplateIamPolicyConfig Config);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.Initializer.parameter.scope">Scope</a></code> | <code>Constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.Initializer.parameter.id">Id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.Initializer.parameter.config">Config</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig">GooglePrivatecaCertificateTemplateIamPolicyConfig</a></code> | *No description.* |
+
+---
+
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.Initializer.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig">GooglePrivatecaCertificateTemplateIamPolicyConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.resetLocation">ResetLocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.resetProject">ResetProject</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Returns a string representation of this construct.
+
+##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.addOverride"></a>
+
+```csharp
+private void AddOverride(string Path, object Value)
+```
+
+###### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.addOverride.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.overrideLogicalId"></a>
+
+```csharp
+private void OverrideLogicalId(string NewLogicalId)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `NewLogicalId`<sup>Required</sup> <a name="NewLogicalId" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.resetOverrideLogicalId"></a>
+
+```csharp
+private void ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.toMetadata"></a>
+
+```csharp
+private object ToMetadata()
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.toTerraform"></a>
+
+```csharp
+private object ToTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `ResetId` <a name="ResetId" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.resetId"></a>
+
+```csharp
+private void ResetId()
+```
+
+##### `ResetLocation` <a name="ResetLocation" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.resetLocation"></a>
+
+```csharp
+private void ResetLocation()
+```
+
+##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.resetProject"></a>
+
+```csharp
+private void ResetProject()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.isConstruct"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+GooglePrivatecaCertificateTemplateIamPolicy.IsConstruct(object X);
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.isConstruct.parameter.x"></a>
+
+- *Type:* object
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.isTerraformElement"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+GooglePrivatecaCertificateTemplateIamPolicy.IsTerraformElement(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.isTerraformElement.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.isTerraformResource"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+GooglePrivatecaCertificateTemplateIamPolicy.IsTerraformResource(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.isTerraformResource.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.node">Node</a></code> | <code>Constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.cdktfStack">CdktfStack</a></code> | <code>HashiCorp.Cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.certificateTemplateInput">CertificateTemplateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.locationInput">LocationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.policyDataInput">PolicyDataInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.certificateTemplate">CertificateTemplate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.location">Location</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.policyData">PolicyData</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.project">Project</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.node"></a>
+
+```csharp
+public Node Node { get; }
+```
+
+- *Type:* Constructs.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.cdktfStack"></a>
+
+```csharp
+public TerraformStack CdktfStack { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.friendlyUniqueId"></a>
+
+```csharp
+public string FriendlyUniqueId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.terraformMetaArguments"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, object> TerraformMetaArguments { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, object>
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.terraformResourceType"></a>
+
+```csharp
+public string TerraformResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.terraformGeneratorMetadata"></a>
+
+```csharp
+public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.connection"></a>
+
+```csharp
+public object Connection { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.count"></a>
+
+```csharp
+public double Count { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.dependsOn"></a>
+
+```csharp
+public string[] DependsOn { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.provisioners"></a>
+
+```csharp
+public object[] Provisioners { get; }
+```
+
+- *Type:* object[]
+
+---
+
+##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.etag"></a>
+
+```csharp
+public string Etag { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CertificateTemplateInput`<sup>Optional</sup> <a name="CertificateTemplateInput" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.certificateTemplateInput"></a>
+
+```csharp
+public string CertificateTemplateInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.locationInput"></a>
+
+```csharp
+public string LocationInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PolicyDataInput`<sup>Optional</sup> <a name="PolicyDataInput" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.policyDataInput"></a>
+
+```csharp
+public string PolicyDataInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.projectInput"></a>
+
+```csharp
+public string ProjectInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `CertificateTemplate`<sup>Required</sup> <a name="CertificateTemplate" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.certificateTemplate"></a>
+
+```csharp
+public string CertificateTemplate { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.location"></a>
+
+```csharp
+public string Location { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PolicyData`<sup>Required</sup> <a name="PolicyData" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.policyData"></a>
+
+```csharp
+public string PolicyData { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.project"></a>
+
+```csharp
+public string Project { get; }
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.tfResourceType">TfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicy.property.tfResourceType"></a>
+
+```csharp
+public string TfResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### GooglePrivatecaCertificateTemplateIamPolicyConfig <a name="GooglePrivatecaCertificateTemplateIamPolicyConfig" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GooglePrivatecaCertificateTemplateIamPolicyConfig {
+    object Connection = null,
+    double Count = null,
+    ITerraformDependable[] DependsOn = null,
+    ITerraformIterator ForEach = null,
+    TerraformResourceLifecycle Lifecycle = null,
+    TerraformProvider Provider = null,
+    object[] Provisioners = null,
+    string CertificateTemplate,
+    string PolicyData,
+    string Id = null,
+    string Location = null,
+    string Project = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.certificateTemplate">CertificateTemplate</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy#certificate_template GooglePrivatecaCertificateTemplateIamPolicy#certificate_template}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy#policy_data GooglePrivatecaCertificateTemplateIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy#id GooglePrivatecaCertificateTemplateIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy#location GooglePrivatecaCertificateTemplateIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy#project GooglePrivatecaCertificateTemplateIamPolicy#project}. |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.connection"></a>
+
+```csharp
+public object Connection { get; set; }
+```
+
+- *Type:* object
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.count"></a>
+
+```csharp
+public double Count { get; set; }
+```
+
+- *Type:* double
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.dependsOn"></a>
+
+```csharp
+public ITerraformDependable[] DependsOn { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformDependable[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.provisioners"></a>
+
+```csharp
+public object[] Provisioners { get; set; }
+```
+
+- *Type:* object[]
+
+---
+
+##### `CertificateTemplate`<sup>Required</sup> <a name="CertificateTemplate" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.certificateTemplate"></a>
+
+```csharp
+public string CertificateTemplate { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy#certificate_template GooglePrivatecaCertificateTemplateIamPolicy#certificate_template}.
+
+---
+
+##### `PolicyData`<sup>Required</sup> <a name="PolicyData" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.policyData"></a>
+
+```csharp
+public string PolicyData { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy#policy_data GooglePrivatecaCertificateTemplateIamPolicy#policy_data}.
+
+---
+
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy#id GooglePrivatecaCertificateTemplateIamPolicy#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Location`<sup>Optional</sup> <a name="Location" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.location"></a>
+
+```csharp
+public string Location { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy#location GooglePrivatecaCertificateTemplateIamPolicy#location}.
+
+---
+
+##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamPolicy.GooglePrivatecaCertificateTemplateIamPolicyConfig.property.project"></a>
+
+```csharp
+public string Project { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_policy#project GooglePrivatecaCertificateTemplateIamPolicy#project}.
+
+---
+
+
+

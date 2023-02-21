@@ -1115,7 +1115,7 @@ export class GoogleCloudfunctionsFunction extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudfunctions_function',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1388,7 +1388,7 @@ export class GoogleCloudfunctionsFunction extends cdktf.TerraformResource {
     return this._labels;
   }
 
-  // max_instances - computed: false, optional: true, required: false
+  // max_instances - computed: true, optional: true, required: false
   private _maxInstances?: number; 
   public get maxInstances() {
     return this.getNumberAttribute('max_instances');

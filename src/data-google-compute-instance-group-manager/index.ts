@@ -179,6 +179,70 @@ export class DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList extend
     return new DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicy {
+}
+
+export function dataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyToTerraform(struct?: DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // force_update_on_repair - computed: true, optional: false, required: false
+  public get forceUpdateOnRepair() {
+    return this.getStringAttribute('force_update_on_repair');
+  }
+}
+
+export class DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference {
+    return new DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleComputeInstanceGroupManagerNamedPort {
 }
 
@@ -1074,7 +1138,7 @@ export class DataGoogleComputeInstanceGroupManager extends cdktf.TerraformDataSo
       terraformResourceType: 'google_compute_instance_group_manager',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1142,6 +1206,12 @@ export class DataGoogleComputeInstanceGroupManager extends cdktf.TerraformDataSo
   // instance_group - computed: true, optional: false, required: false
   public get instanceGroup() {
     return this.getStringAttribute('instance_group');
+  }
+
+  // instance_lifecycle_policy - computed: true, optional: false, required: false
+  private _instanceLifecyclePolicy = new DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList(this, "instance_lifecycle_policy", false);
+  public get instanceLifecyclePolicy() {
+    return this._instanceLifecyclePolicy;
   }
 
   // list_managed_instances_results - computed: true, optional: false, required: false

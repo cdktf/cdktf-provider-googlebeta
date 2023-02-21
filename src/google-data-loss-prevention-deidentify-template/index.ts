@@ -852,6 +852,12 @@ export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoT
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
   */
   readonly name?: string;
+  /**
+  * Optional version name for this InfoType.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#version GoogleDataLossPreventionDeidentifyTemplate#version}
+  */
+  readonly version?: string;
 }
 
 export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoType): any {
@@ -861,6 +867,7 @@ export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTy
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
+    version: cdktf.stringToTerraform(struct!.version),
   }
 }
 
@@ -882,6 +889,10 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -889,10 +900,12 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
+      this._version = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
+      this._version = value.version;
     }
   }
 
@@ -910,6 +923,22 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // version - computed: false, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
   }
 }
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoDeterministicConfig {
@@ -1458,6 +1487,12 @@ export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoT
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
   */
   readonly name?: string;
+  /**
+  * Optional version name for this InfoType.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#version GoogleDataLossPreventionDeidentifyTemplate#version}
+  */
+  readonly version?: string;
 }
 
 export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoType): any {
@@ -1467,6 +1502,7 @@ export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTy
   }
   return {
     name: cdktf.stringToTerraform(struct!.name),
+    version: cdktf.stringToTerraform(struct!.version),
   }
 }
 
@@ -1488,6 +1524,10 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
       hasAnyValues = true;
       internalValueResult.name = this._name;
     }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1495,10 +1535,12 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
     if (value === undefined) {
       this.isEmptyObject = false;
       this._name = undefined;
+      this._version = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._name = value.name;
+      this._version = value.version;
     }
   }
 
@@ -1516,6 +1558,22 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeT
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // version - computed: false, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
   }
 }
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfig {
@@ -3815,6 +3873,1874 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTra
     return new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValue {
+  /**
+  * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#day GoogleDataLossPreventionDeidentifyTemplate#day}
+  */
+  readonly day?: number;
+  /**
+  * Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#month GoogleDataLossPreventionDeidentifyTemplate#month}
+  */
+  readonly month?: number;
+  /**
+  * Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#year GoogleDataLossPreventionDeidentifyTemplate#year}
+  */
+  readonly year?: number;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day: cdktf.numberToTerraform(struct!.day),
+    month: cdktf.numberToTerraform(struct!.month),
+    year: cdktf.numberToTerraform(struct!.year),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._month !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.month = this._month;
+    }
+    if (this._year !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.year = this._year;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._day = undefined;
+      this._month = undefined;
+      this._year = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._day = value.day;
+      this._month = value.month;
+      this._year = value.year;
+    }
+  }
+
+  // day - computed: false, optional: true, required: false
+  private _day?: number; 
+  public get day() {
+    return this.getNumberAttribute('day');
+  }
+  public set day(value: number) {
+    this._day = value;
+  }
+  public resetDay() {
+    this._day = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // month - computed: false, optional: true, required: false
+  private _month?: number; 
+  public get month() {
+    return this.getNumberAttribute('month');
+  }
+  public set month(value: number) {
+    this._month = value;
+  }
+  public resetMonth() {
+    this._month = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monthInput() {
+    return this._month;
+  }
+
+  // year - computed: false, optional: true, required: false
+  private _year?: number; 
+  public get year() {
+    return this.getNumberAttribute('year');
+  }
+  public set year(value: number) {
+    this._year = value;
+  }
+  public resetYear() {
+    this._year = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yearInput() {
+    return this._year;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValue {
+  /**
+  * Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#hours GoogleDataLossPreventionDeidentifyTemplate#hours}
+  */
+  readonly hours?: number;
+  /**
+  * Minutes of hour of day. Must be from 0 to 59.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#minutes GoogleDataLossPreventionDeidentifyTemplate#minutes}
+  */
+  readonly minutes?: number;
+  /**
+  * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#nanos GoogleDataLossPreventionDeidentifyTemplate#nanos}
+  */
+  readonly nanos?: number;
+  /**
+  * Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#seconds GoogleDataLossPreventionDeidentifyTemplate#seconds}
+  */
+  readonly seconds?: number;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hours: cdktf.numberToTerraform(struct!.hours),
+    minutes: cdktf.numberToTerraform(struct!.minutes),
+    nanos: cdktf.numberToTerraform(struct!.nanos),
+    seconds: cdktf.numberToTerraform(struct!.seconds),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hours = this._hours;
+    }
+    if (this._minutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minutes = this._minutes;
+    }
+    if (this._nanos !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nanos = this._nanos;
+    }
+    if (this._seconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.seconds = this._seconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hours = undefined;
+      this._minutes = undefined;
+      this._nanos = undefined;
+      this._seconds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hours = value.hours;
+      this._minutes = value.minutes;
+      this._nanos = value.nanos;
+      this._seconds = value.seconds;
+    }
+  }
+
+  // hours - computed: false, optional: true, required: false
+  private _hours?: number; 
+  public get hours() {
+    return this.getNumberAttribute('hours');
+  }
+  public set hours(value: number) {
+    this._hours = value;
+  }
+  public resetHours() {
+    this._hours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hoursInput() {
+    return this._hours;
+  }
+
+  // minutes - computed: false, optional: true, required: false
+  private _minutes?: number; 
+  public get minutes() {
+    return this.getNumberAttribute('minutes');
+  }
+  public set minutes(value: number) {
+    this._minutes = value;
+  }
+  public resetMinutes() {
+    this._minutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minutesInput() {
+    return this._minutes;
+  }
+
+  // nanos - computed: false, optional: true, required: false
+  private _nanos?: number; 
+  public get nanos() {
+    return this.getNumberAttribute('nanos');
+  }
+  public set nanos(value: number) {
+    this._nanos = value;
+  }
+  public resetNanos() {
+    this._nanos = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nanosInput() {
+    return this._nanos;
+  }
+
+  // seconds - computed: false, optional: true, required: false
+  private _seconds?: number; 
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+  public set seconds(value: number) {
+    this._seconds = value;
+  }
+  public resetSeconds() {
+    this._seconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondsInput() {
+    return this._seconds;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMax {
+  /**
+  * A boolean value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#boolean_value GoogleDataLossPreventionDeidentifyTemplate#boolean_value}
+  */
+  readonly booleanValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a day of the week. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#day_of_week_value GoogleDataLossPreventionDeidentifyTemplate#day_of_week_value}
+  */
+  readonly dayOfWeekValue?: string;
+  /**
+  * A float value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#float_value GoogleDataLossPreventionDeidentifyTemplate#float_value}
+  */
+  readonly floatValue?: number;
+  /**
+  * An integer value (int64 format)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#integer_value GoogleDataLossPreventionDeidentifyTemplate#integer_value}
+  */
+  readonly integerValue?: string;
+  /**
+  * A string value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#string_value GoogleDataLossPreventionDeidentifyTemplate#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#timestamp_value GoogleDataLossPreventionDeidentifyTemplate#timestamp_value}
+  */
+  readonly timestampValue?: string;
+  /**
+  * date_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#date_value GoogleDataLossPreventionDeidentifyTemplate#date_value}
+  */
+  readonly dateValue?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValue;
+  /**
+  * time_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#time_value GoogleDataLossPreventionDeidentifyTemplate#time_value}
+  */
+  readonly timeValue?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValue;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMax): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    boolean_value: cdktf.booleanToTerraform(struct!.booleanValue),
+    day_of_week_value: cdktf.stringToTerraform(struct!.dayOfWeekValue),
+    float_value: cdktf.numberToTerraform(struct!.floatValue),
+    integer_value: cdktf.stringToTerraform(struct!.integerValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    timestamp_value: cdktf.stringToTerraform(struct!.timestampValue),
+    date_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValueToTerraform(struct!.dateValue),
+    time_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValueToTerraform(struct!.timeValue),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMax | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._booleanValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.booleanValue = this._booleanValue;
+    }
+    if (this._dayOfWeekValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfWeekValue = this._dayOfWeekValue;
+    }
+    if (this._floatValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.floatValue = this._floatValue;
+    }
+    if (this._integerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integerValue = this._integerValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._timestampValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timestampValue = this._timestampValue;
+    }
+    if (this._dateValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dateValue = this._dateValue?.internalValue;
+    }
+    if (this._timeValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeValue = this._timeValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMax | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._booleanValue = undefined;
+      this._dayOfWeekValue = undefined;
+      this._floatValue = undefined;
+      this._integerValue = undefined;
+      this._stringValue = undefined;
+      this._timestampValue = undefined;
+      this._dateValue.internalValue = undefined;
+      this._timeValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._booleanValue = value.booleanValue;
+      this._dayOfWeekValue = value.dayOfWeekValue;
+      this._floatValue = value.floatValue;
+      this._integerValue = value.integerValue;
+      this._stringValue = value.stringValue;
+      this._timestampValue = value.timestampValue;
+      this._dateValue.internalValue = value.dateValue;
+      this._timeValue.internalValue = value.timeValue;
+    }
+  }
+
+  // boolean_value - computed: false, optional: true, required: false
+  private _booleanValue?: boolean | cdktf.IResolvable; 
+  public get booleanValue() {
+    return this.getBooleanAttribute('boolean_value');
+  }
+  public set booleanValue(value: boolean | cdktf.IResolvable) {
+    this._booleanValue = value;
+  }
+  public resetBooleanValue() {
+    this._booleanValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get booleanValueInput() {
+    return this._booleanValue;
+  }
+
+  // day_of_week_value - computed: false, optional: true, required: false
+  private _dayOfWeekValue?: string; 
+  public get dayOfWeekValue() {
+    return this.getStringAttribute('day_of_week_value');
+  }
+  public set dayOfWeekValue(value: string) {
+    this._dayOfWeekValue = value;
+  }
+  public resetDayOfWeekValue() {
+    this._dayOfWeekValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfWeekValueInput() {
+    return this._dayOfWeekValue;
+  }
+
+  // float_value - computed: false, optional: true, required: false
+  private _floatValue?: number; 
+  public get floatValue() {
+    return this.getNumberAttribute('float_value');
+  }
+  public set floatValue(value: number) {
+    this._floatValue = value;
+  }
+  public resetFloatValue() {
+    this._floatValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get floatValueInput() {
+    return this._floatValue;
+  }
+
+  // integer_value - computed: false, optional: true, required: false
+  private _integerValue?: string; 
+  public get integerValue() {
+    return this.getStringAttribute('integer_value');
+  }
+  public set integerValue(value: string) {
+    this._integerValue = value;
+  }
+  public resetIntegerValue() {
+    this._integerValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integerValueInput() {
+    return this._integerValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // timestamp_value - computed: false, optional: true, required: false
+  private _timestampValue?: string; 
+  public get timestampValue() {
+    return this.getStringAttribute('timestamp_value');
+  }
+  public set timestampValue(value: string) {
+    this._timestampValue = value;
+  }
+  public resetTimestampValue() {
+    this._timestampValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timestampValueInput() {
+    return this._timestampValue;
+  }
+
+  // date_value - computed: false, optional: true, required: false
+  private _dateValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValueOutputReference(this, "date_value");
+  public get dateValue() {
+    return this._dateValue;
+  }
+  public putDateValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxDateValue) {
+    this._dateValue.internalValue = value;
+  }
+  public resetDateValue() {
+    this._dateValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateValueInput() {
+    return this._dateValue.internalValue;
+  }
+
+  // time_value - computed: false, optional: true, required: false
+  private _timeValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValueOutputReference(this, "time_value");
+  public get timeValue() {
+    return this._timeValue;
+  }
+  public putTimeValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxTimeValue) {
+    this._timeValue.internalValue = value;
+  }
+  public resetTimeValue() {
+    this._timeValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeValueInput() {
+    return this._timeValue.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValue {
+  /**
+  * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#day GoogleDataLossPreventionDeidentifyTemplate#day}
+  */
+  readonly day?: number;
+  /**
+  * Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#month GoogleDataLossPreventionDeidentifyTemplate#month}
+  */
+  readonly month?: number;
+  /**
+  * Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#year GoogleDataLossPreventionDeidentifyTemplate#year}
+  */
+  readonly year?: number;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day: cdktf.numberToTerraform(struct!.day),
+    month: cdktf.numberToTerraform(struct!.month),
+    year: cdktf.numberToTerraform(struct!.year),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._month !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.month = this._month;
+    }
+    if (this._year !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.year = this._year;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._day = undefined;
+      this._month = undefined;
+      this._year = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._day = value.day;
+      this._month = value.month;
+      this._year = value.year;
+    }
+  }
+
+  // day - computed: false, optional: true, required: false
+  private _day?: number; 
+  public get day() {
+    return this.getNumberAttribute('day');
+  }
+  public set day(value: number) {
+    this._day = value;
+  }
+  public resetDay() {
+    this._day = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // month - computed: false, optional: true, required: false
+  private _month?: number; 
+  public get month() {
+    return this.getNumberAttribute('month');
+  }
+  public set month(value: number) {
+    this._month = value;
+  }
+  public resetMonth() {
+    this._month = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monthInput() {
+    return this._month;
+  }
+
+  // year - computed: false, optional: true, required: false
+  private _year?: number; 
+  public get year() {
+    return this.getNumberAttribute('year');
+  }
+  public set year(value: number) {
+    this._year = value;
+  }
+  public resetYear() {
+    this._year = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yearInput() {
+    return this._year;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValue {
+  /**
+  * Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#hours GoogleDataLossPreventionDeidentifyTemplate#hours}
+  */
+  readonly hours?: number;
+  /**
+  * Minutes of hour of day. Must be from 0 to 59.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#minutes GoogleDataLossPreventionDeidentifyTemplate#minutes}
+  */
+  readonly minutes?: number;
+  /**
+  * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#nanos GoogleDataLossPreventionDeidentifyTemplate#nanos}
+  */
+  readonly nanos?: number;
+  /**
+  * Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#seconds GoogleDataLossPreventionDeidentifyTemplate#seconds}
+  */
+  readonly seconds?: number;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hours: cdktf.numberToTerraform(struct!.hours),
+    minutes: cdktf.numberToTerraform(struct!.minutes),
+    nanos: cdktf.numberToTerraform(struct!.nanos),
+    seconds: cdktf.numberToTerraform(struct!.seconds),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hours = this._hours;
+    }
+    if (this._minutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minutes = this._minutes;
+    }
+    if (this._nanos !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nanos = this._nanos;
+    }
+    if (this._seconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.seconds = this._seconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hours = undefined;
+      this._minutes = undefined;
+      this._nanos = undefined;
+      this._seconds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hours = value.hours;
+      this._minutes = value.minutes;
+      this._nanos = value.nanos;
+      this._seconds = value.seconds;
+    }
+  }
+
+  // hours - computed: false, optional: true, required: false
+  private _hours?: number; 
+  public get hours() {
+    return this.getNumberAttribute('hours');
+  }
+  public set hours(value: number) {
+    this._hours = value;
+  }
+  public resetHours() {
+    this._hours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hoursInput() {
+    return this._hours;
+  }
+
+  // minutes - computed: false, optional: true, required: false
+  private _minutes?: number; 
+  public get minutes() {
+    return this.getNumberAttribute('minutes');
+  }
+  public set minutes(value: number) {
+    this._minutes = value;
+  }
+  public resetMinutes() {
+    this._minutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minutesInput() {
+    return this._minutes;
+  }
+
+  // nanos - computed: false, optional: true, required: false
+  private _nanos?: number; 
+  public get nanos() {
+    return this.getNumberAttribute('nanos');
+  }
+  public set nanos(value: number) {
+    this._nanos = value;
+  }
+  public resetNanos() {
+    this._nanos = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nanosInput() {
+    return this._nanos;
+  }
+
+  // seconds - computed: false, optional: true, required: false
+  private _seconds?: number; 
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+  public set seconds(value: number) {
+    this._seconds = value;
+  }
+  public resetSeconds() {
+    this._seconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondsInput() {
+    return this._seconds;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMin {
+  /**
+  * A boolean value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#boolean_value GoogleDataLossPreventionDeidentifyTemplate#boolean_value}
+  */
+  readonly booleanValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a day of the week. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#day_of_week_value GoogleDataLossPreventionDeidentifyTemplate#day_of_week_value}
+  */
+  readonly dayOfWeekValue?: string;
+  /**
+  * A float value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#float_value GoogleDataLossPreventionDeidentifyTemplate#float_value}
+  */
+  readonly floatValue?: number;
+  /**
+  * An integer value (int64 format)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#integer_value GoogleDataLossPreventionDeidentifyTemplate#integer_value}
+  */
+  readonly integerValue?: string;
+  /**
+  * A string value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#string_value GoogleDataLossPreventionDeidentifyTemplate#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#timestamp_value GoogleDataLossPreventionDeidentifyTemplate#timestamp_value}
+  */
+  readonly timestampValue?: string;
+  /**
+  * date_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#date_value GoogleDataLossPreventionDeidentifyTemplate#date_value}
+  */
+  readonly dateValue?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValue;
+  /**
+  * time_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#time_value GoogleDataLossPreventionDeidentifyTemplate#time_value}
+  */
+  readonly timeValue?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValue;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMin): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    boolean_value: cdktf.booleanToTerraform(struct!.booleanValue),
+    day_of_week_value: cdktf.stringToTerraform(struct!.dayOfWeekValue),
+    float_value: cdktf.numberToTerraform(struct!.floatValue),
+    integer_value: cdktf.stringToTerraform(struct!.integerValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    timestamp_value: cdktf.stringToTerraform(struct!.timestampValue),
+    date_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValueToTerraform(struct!.dateValue),
+    time_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValueToTerraform(struct!.timeValue),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMin | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._booleanValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.booleanValue = this._booleanValue;
+    }
+    if (this._dayOfWeekValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfWeekValue = this._dayOfWeekValue;
+    }
+    if (this._floatValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.floatValue = this._floatValue;
+    }
+    if (this._integerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integerValue = this._integerValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._timestampValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timestampValue = this._timestampValue;
+    }
+    if (this._dateValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dateValue = this._dateValue?.internalValue;
+    }
+    if (this._timeValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeValue = this._timeValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMin | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._booleanValue = undefined;
+      this._dayOfWeekValue = undefined;
+      this._floatValue = undefined;
+      this._integerValue = undefined;
+      this._stringValue = undefined;
+      this._timestampValue = undefined;
+      this._dateValue.internalValue = undefined;
+      this._timeValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._booleanValue = value.booleanValue;
+      this._dayOfWeekValue = value.dayOfWeekValue;
+      this._floatValue = value.floatValue;
+      this._integerValue = value.integerValue;
+      this._stringValue = value.stringValue;
+      this._timestampValue = value.timestampValue;
+      this._dateValue.internalValue = value.dateValue;
+      this._timeValue.internalValue = value.timeValue;
+    }
+  }
+
+  // boolean_value - computed: false, optional: true, required: false
+  private _booleanValue?: boolean | cdktf.IResolvable; 
+  public get booleanValue() {
+    return this.getBooleanAttribute('boolean_value');
+  }
+  public set booleanValue(value: boolean | cdktf.IResolvable) {
+    this._booleanValue = value;
+  }
+  public resetBooleanValue() {
+    this._booleanValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get booleanValueInput() {
+    return this._booleanValue;
+  }
+
+  // day_of_week_value - computed: false, optional: true, required: false
+  private _dayOfWeekValue?: string; 
+  public get dayOfWeekValue() {
+    return this.getStringAttribute('day_of_week_value');
+  }
+  public set dayOfWeekValue(value: string) {
+    this._dayOfWeekValue = value;
+  }
+  public resetDayOfWeekValue() {
+    this._dayOfWeekValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfWeekValueInput() {
+    return this._dayOfWeekValue;
+  }
+
+  // float_value - computed: false, optional: true, required: false
+  private _floatValue?: number; 
+  public get floatValue() {
+    return this.getNumberAttribute('float_value');
+  }
+  public set floatValue(value: number) {
+    this._floatValue = value;
+  }
+  public resetFloatValue() {
+    this._floatValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get floatValueInput() {
+    return this._floatValue;
+  }
+
+  // integer_value - computed: false, optional: true, required: false
+  private _integerValue?: string; 
+  public get integerValue() {
+    return this.getStringAttribute('integer_value');
+  }
+  public set integerValue(value: string) {
+    this._integerValue = value;
+  }
+  public resetIntegerValue() {
+    this._integerValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integerValueInput() {
+    return this._integerValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // timestamp_value - computed: false, optional: true, required: false
+  private _timestampValue?: string; 
+  public get timestampValue() {
+    return this.getStringAttribute('timestamp_value');
+  }
+  public set timestampValue(value: string) {
+    this._timestampValue = value;
+  }
+  public resetTimestampValue() {
+    this._timestampValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timestampValueInput() {
+    return this._timestampValue;
+  }
+
+  // date_value - computed: false, optional: true, required: false
+  private _dateValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValueOutputReference(this, "date_value");
+  public get dateValue() {
+    return this._dateValue;
+  }
+  public putDateValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinDateValue) {
+    this._dateValue.internalValue = value;
+  }
+  public resetDateValue() {
+    this._dateValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateValueInput() {
+    return this._dateValue.internalValue;
+  }
+
+  // time_value - computed: false, optional: true, required: false
+  private _timeValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValueOutputReference(this, "time_value");
+  public get timeValue() {
+    return this._timeValue;
+  }
+  public putTimeValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinTimeValue) {
+    this._timeValue.internalValue = value;
+  }
+  public resetTimeValue() {
+    this._timeValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeValueInput() {
+    return this._timeValue.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValue {
+  /**
+  * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#day GoogleDataLossPreventionDeidentifyTemplate#day}
+  */
+  readonly day?: number;
+  /**
+  * Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#month GoogleDataLossPreventionDeidentifyTemplate#month}
+  */
+  readonly month?: number;
+  /**
+  * Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#year GoogleDataLossPreventionDeidentifyTemplate#year}
+  */
+  readonly year?: number;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day: cdktf.numberToTerraform(struct!.day),
+    month: cdktf.numberToTerraform(struct!.month),
+    year: cdktf.numberToTerraform(struct!.year),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._month !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.month = this._month;
+    }
+    if (this._year !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.year = this._year;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._day = undefined;
+      this._month = undefined;
+      this._year = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._day = value.day;
+      this._month = value.month;
+      this._year = value.year;
+    }
+  }
+
+  // day - computed: false, optional: true, required: false
+  private _day?: number; 
+  public get day() {
+    return this.getNumberAttribute('day');
+  }
+  public set day(value: number) {
+    this._day = value;
+  }
+  public resetDay() {
+    this._day = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // month - computed: false, optional: true, required: false
+  private _month?: number; 
+  public get month() {
+    return this.getNumberAttribute('month');
+  }
+  public set month(value: number) {
+    this._month = value;
+  }
+  public resetMonth() {
+    this._month = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monthInput() {
+    return this._month;
+  }
+
+  // year - computed: false, optional: true, required: false
+  private _year?: number; 
+  public get year() {
+    return this.getNumberAttribute('year');
+  }
+  public set year(value: number) {
+    this._year = value;
+  }
+  public resetYear() {
+    this._year = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yearInput() {
+    return this._year;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValue {
+  /**
+  * Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#hours GoogleDataLossPreventionDeidentifyTemplate#hours}
+  */
+  readonly hours?: number;
+  /**
+  * Minutes of hour of day. Must be from 0 to 59.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#minutes GoogleDataLossPreventionDeidentifyTemplate#minutes}
+  */
+  readonly minutes?: number;
+  /**
+  * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#nanos GoogleDataLossPreventionDeidentifyTemplate#nanos}
+  */
+  readonly nanos?: number;
+  /**
+  * Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#seconds GoogleDataLossPreventionDeidentifyTemplate#seconds}
+  */
+  readonly seconds?: number;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hours: cdktf.numberToTerraform(struct!.hours),
+    minutes: cdktf.numberToTerraform(struct!.minutes),
+    nanos: cdktf.numberToTerraform(struct!.nanos),
+    seconds: cdktf.numberToTerraform(struct!.seconds),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hours = this._hours;
+    }
+    if (this._minutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minutes = this._minutes;
+    }
+    if (this._nanos !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nanos = this._nanos;
+    }
+    if (this._seconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.seconds = this._seconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hours = undefined;
+      this._minutes = undefined;
+      this._nanos = undefined;
+      this._seconds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hours = value.hours;
+      this._minutes = value.minutes;
+      this._nanos = value.nanos;
+      this._seconds = value.seconds;
+    }
+  }
+
+  // hours - computed: false, optional: true, required: false
+  private _hours?: number; 
+  public get hours() {
+    return this.getNumberAttribute('hours');
+  }
+  public set hours(value: number) {
+    this._hours = value;
+  }
+  public resetHours() {
+    this._hours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hoursInput() {
+    return this._hours;
+  }
+
+  // minutes - computed: false, optional: true, required: false
+  private _minutes?: number; 
+  public get minutes() {
+    return this.getNumberAttribute('minutes');
+  }
+  public set minutes(value: number) {
+    this._minutes = value;
+  }
+  public resetMinutes() {
+    this._minutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minutesInput() {
+    return this._minutes;
+  }
+
+  // nanos - computed: false, optional: true, required: false
+  private _nanos?: number; 
+  public get nanos() {
+    return this.getNumberAttribute('nanos');
+  }
+  public set nanos(value: number) {
+    this._nanos = value;
+  }
+  public resetNanos() {
+    this._nanos = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nanosInput() {
+    return this._nanos;
+  }
+
+  // seconds - computed: false, optional: true, required: false
+  private _seconds?: number; 
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+  public set seconds(value: number) {
+    this._seconds = value;
+  }
+  public resetSeconds() {
+    this._seconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondsInput() {
+    return this._seconds;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValue {
+  /**
+  * A boolean value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#boolean_value GoogleDataLossPreventionDeidentifyTemplate#boolean_value}
+  */
+  readonly booleanValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a day of the week. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#day_of_week_value GoogleDataLossPreventionDeidentifyTemplate#day_of_week_value}
+  */
+  readonly dayOfWeekValue?: string;
+  /**
+  * A float value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#float_value GoogleDataLossPreventionDeidentifyTemplate#float_value}
+  */
+  readonly floatValue?: number;
+  /**
+  * An integer value (int64 format)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#integer_value GoogleDataLossPreventionDeidentifyTemplate#integer_value}
+  */
+  readonly integerValue?: string;
+  /**
+  * A string value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#string_value GoogleDataLossPreventionDeidentifyTemplate#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#timestamp_value GoogleDataLossPreventionDeidentifyTemplate#timestamp_value}
+  */
+  readonly timestampValue?: string;
+  /**
+  * date_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#date_value GoogleDataLossPreventionDeidentifyTemplate#date_value}
+  */
+  readonly dateValue?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValue;
+  /**
+  * time_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#time_value GoogleDataLossPreventionDeidentifyTemplate#time_value}
+  */
+  readonly timeValue?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValue;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    boolean_value: cdktf.booleanToTerraform(struct!.booleanValue),
+    day_of_week_value: cdktf.stringToTerraform(struct!.dayOfWeekValue),
+    float_value: cdktf.numberToTerraform(struct!.floatValue),
+    integer_value: cdktf.stringToTerraform(struct!.integerValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    timestamp_value: cdktf.stringToTerraform(struct!.timestampValue),
+    date_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValueToTerraform(struct!.dateValue),
+    time_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValueToTerraform(struct!.timeValue),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._booleanValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.booleanValue = this._booleanValue;
+    }
+    if (this._dayOfWeekValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfWeekValue = this._dayOfWeekValue;
+    }
+    if (this._floatValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.floatValue = this._floatValue;
+    }
+    if (this._integerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integerValue = this._integerValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._timestampValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timestampValue = this._timestampValue;
+    }
+    if (this._dateValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dateValue = this._dateValue?.internalValue;
+    }
+    if (this._timeValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeValue = this._timeValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._booleanValue = undefined;
+      this._dayOfWeekValue = undefined;
+      this._floatValue = undefined;
+      this._integerValue = undefined;
+      this._stringValue = undefined;
+      this._timestampValue = undefined;
+      this._dateValue.internalValue = undefined;
+      this._timeValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._booleanValue = value.booleanValue;
+      this._dayOfWeekValue = value.dayOfWeekValue;
+      this._floatValue = value.floatValue;
+      this._integerValue = value.integerValue;
+      this._stringValue = value.stringValue;
+      this._timestampValue = value.timestampValue;
+      this._dateValue.internalValue = value.dateValue;
+      this._timeValue.internalValue = value.timeValue;
+    }
+  }
+
+  // boolean_value - computed: false, optional: true, required: false
+  private _booleanValue?: boolean | cdktf.IResolvable; 
+  public get booleanValue() {
+    return this.getBooleanAttribute('boolean_value');
+  }
+  public set booleanValue(value: boolean | cdktf.IResolvable) {
+    this._booleanValue = value;
+  }
+  public resetBooleanValue() {
+    this._booleanValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get booleanValueInput() {
+    return this._booleanValue;
+  }
+
+  // day_of_week_value - computed: false, optional: true, required: false
+  private _dayOfWeekValue?: string; 
+  public get dayOfWeekValue() {
+    return this.getStringAttribute('day_of_week_value');
+  }
+  public set dayOfWeekValue(value: string) {
+    this._dayOfWeekValue = value;
+  }
+  public resetDayOfWeekValue() {
+    this._dayOfWeekValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfWeekValueInput() {
+    return this._dayOfWeekValue;
+  }
+
+  // float_value - computed: false, optional: true, required: false
+  private _floatValue?: number; 
+  public get floatValue() {
+    return this.getNumberAttribute('float_value');
+  }
+  public set floatValue(value: number) {
+    this._floatValue = value;
+  }
+  public resetFloatValue() {
+    this._floatValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get floatValueInput() {
+    return this._floatValue;
+  }
+
+  // integer_value - computed: false, optional: true, required: false
+  private _integerValue?: string; 
+  public get integerValue() {
+    return this.getStringAttribute('integer_value');
+  }
+  public set integerValue(value: string) {
+    this._integerValue = value;
+  }
+  public resetIntegerValue() {
+    this._integerValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integerValueInput() {
+    return this._integerValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // timestamp_value - computed: false, optional: true, required: false
+  private _timestampValue?: string; 
+  public get timestampValue() {
+    return this.getStringAttribute('timestamp_value');
+  }
+  public set timestampValue(value: string) {
+    this._timestampValue = value;
+  }
+  public resetTimestampValue() {
+    this._timestampValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timestampValueInput() {
+    return this._timestampValue;
+  }
+
+  // date_value - computed: false, optional: true, required: false
+  private _dateValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValueOutputReference(this, "date_value");
+  public get dateValue() {
+    return this._dateValue;
+  }
+  public putDateValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueDateValue) {
+    this._dateValue.internalValue = value;
+  }
+  public resetDateValue() {
+    this._dateValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateValueInput() {
+    return this._dateValue.internalValue;
+  }
+
+  // time_value - computed: false, optional: true, required: false
+  private _timeValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValueOutputReference(this, "time_value");
+  public get timeValue() {
+    return this._timeValue;
+  }
+  public putTimeValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueTimeValue) {
+    this._timeValue.internalValue = value;
+  }
+  public resetTimeValue() {
+    this._timeValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeValueInput() {
+    return this._timeValue.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBuckets {
+  /**
+  * max block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#max GoogleDataLossPreventionDeidentifyTemplate#max}
+  */
+  readonly max?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMax;
+  /**
+  * min block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#min GoogleDataLossPreventionDeidentifyTemplate#min}
+  */
+  readonly min?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMin;
+  /**
+  * replacement_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#replacement_value GoogleDataLossPreventionDeidentifyTemplate#replacement_value}
+  */
+  readonly replacementValue: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValue;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBuckets | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    max: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxToTerraform(struct!.max),
+    min: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinToTerraform(struct!.min),
+    replacement_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueToTerraform(struct!.replacementValue),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBuckets | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._max?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.max = this._max?.internalValue;
+    }
+    if (this._min?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.min = this._min?.internalValue;
+    }
+    if (this._replacementValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replacementValue = this._replacementValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBuckets | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._max.internalValue = undefined;
+      this._min.internalValue = undefined;
+      this._replacementValue.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._max.internalValue = value.max;
+      this._min.internalValue = value.min;
+      this._replacementValue.internalValue = value.replacementValue;
+    }
+  }
+
+  // max - computed: false, optional: true, required: false
+  private _max = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMaxOutputReference(this, "max");
+  public get max() {
+    return this._max;
+  }
+  public putMax(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMax) {
+    this._max.internalValue = value;
+  }
+  public resetMax() {
+    this._max.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxInput() {
+    return this._max.internalValue;
+  }
+
+  // min - computed: false, optional: true, required: false
+  private _min = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMinOutputReference(this, "min");
+  public get min() {
+    return this._min;
+  }
+  public putMin(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsMin) {
+    this._min.internalValue = value;
+  }
+  public resetMin() {
+    this._min.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minInput() {
+    return this._min.internalValue;
+  }
+
+  // replacement_value - computed: false, optional: false, required: true
+  private _replacementValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValueOutputReference(this, "replacement_value");
+  public get replacementValue() {
+    return this._replacementValue;
+  }
+  public putReplacementValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsReplacementValue) {
+    this._replacementValue.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replacementValueInput() {
+    return this._replacementValue.internalValue;
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsList extends cdktf.ComplexList {
+  public internalValue? : GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBuckets[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsOutputReference {
+    return new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfig {
+  /**
+  * buckets block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#buckets GoogleDataLossPreventionDeidentifyTemplate#buckets}
+  */
+  readonly buckets?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBuckets[] | cdktf.IResolvable;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    buckets: cdktf.listMapper(googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsToTerraform, true)(struct!.buckets),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._buckets?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.buckets = this._buckets?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._buckets.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._buckets.internalValue = value.buckets;
+    }
+  }
+
+  // buckets - computed: false, optional: true, required: false
+  private _buckets = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBucketsList(this, "buckets", false);
+  public get buckets() {
+    return this._buckets;
+  }
+  public putBuckets(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigBuckets[] | cdktf.IResolvable) {
+    this._buckets.internalValue = value;
+  }
+  public resetBuckets() {
+    this._buckets.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketsInput() {
+    return this._buckets.internalValue;
+  }
+}
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore {
   /**
   * Characters to not transform when masking.
@@ -4106,6 +6032,3559 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTra
   // Temporarily expose input value. Use with caution.
   public get charactersToIgnoreInput() {
     return this._charactersToIgnore.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContext {
+  /**
+  * Name describing the field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
+  */
+  readonly name?: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContextToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContextOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContext): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContextOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContext | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContext | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrapped {
+  /**
+  * The resource name of the KMS CryptoKey to use for unwrapping.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_key_name GoogleDataLossPreventionDeidentifyTemplate#crypto_key_name}
+  */
+  readonly cryptoKeyName: string;
+  /**
+  * The wrapped data crypto key.
+
+A base64-encoded string.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#wrapped_key GoogleDataLossPreventionDeidentifyTemplate#wrapped_key}
+  */
+  readonly wrappedKey: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrapped): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    crypto_key_name: cdktf.stringToTerraform(struct!.cryptoKeyName),
+    wrapped_key: cdktf.stringToTerraform(struct!.wrappedKey),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrapped | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cryptoKeyName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoKeyName = this._cryptoKeyName;
+    }
+    if (this._wrappedKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wrappedKey = this._wrappedKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrapped | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cryptoKeyName = undefined;
+      this._wrappedKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cryptoKeyName = value.cryptoKeyName;
+      this._wrappedKey = value.wrappedKey;
+    }
+  }
+
+  // crypto_key_name - computed: false, optional: false, required: true
+  private _cryptoKeyName?: string; 
+  public get cryptoKeyName() {
+    return this.getStringAttribute('crypto_key_name');
+  }
+  public set cryptoKeyName(value: string) {
+    this._cryptoKeyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoKeyNameInput() {
+    return this._cryptoKeyName;
+  }
+
+  // wrapped_key - computed: false, optional: false, required: true
+  private _wrappedKey?: string; 
+  public get wrappedKey() {
+    return this.getStringAttribute('wrapped_key');
+  }
+  public set wrappedKey(value: string) {
+    this._wrappedKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wrappedKeyInput() {
+    return this._wrappedKey;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransient {
+  /**
+  * Name of the key. This is an arbitrary string used to differentiate different keys. A unique key is generated per name: two separate 'TransientCryptoKey' protos share the same generated key if their names are the same. When the data crypto key is generated, this name is not used in any way (repeating the api call will result in a different key being generated).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
+  */
+  readonly name: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransient): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransient | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransient | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrapped {
+  /**
+  * A 128/192/256 bit key.
+
+A base64-encoded string.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#key GoogleDataLossPreventionDeidentifyTemplate#key}
+  */
+  readonly key: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrapped): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrapped | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrapped | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKey {
+  /**
+  * kms_wrapped block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#kms_wrapped GoogleDataLossPreventionDeidentifyTemplate#kms_wrapped}
+  */
+  readonly kmsWrapped?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrapped;
+  /**
+  * transient block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#transient GoogleDataLossPreventionDeidentifyTemplate#transient}
+  */
+  readonly transient?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransient;
+  /**
+  * unwrapped block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#unwrapped GoogleDataLossPreventionDeidentifyTemplate#unwrapped}
+  */
+  readonly unwrapped?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrapped;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_wrapped: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedToTerraform(struct!.kmsWrapped),
+    transient: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientToTerraform(struct!.transient),
+    unwrapped: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedToTerraform(struct!.unwrapped),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsWrapped?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsWrapped = this._kmsWrapped?.internalValue;
+    }
+    if (this._transient?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transient = this._transient?.internalValue;
+    }
+    if (this._unwrapped?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.unwrapped = this._unwrapped?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsWrapped.internalValue = undefined;
+      this._transient.internalValue = undefined;
+      this._unwrapped.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsWrapped.internalValue = value.kmsWrapped;
+      this._transient.internalValue = value.transient;
+      this._unwrapped.internalValue = value.unwrapped;
+    }
+  }
+
+  // kms_wrapped - computed: false, optional: true, required: false
+  private _kmsWrapped = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrappedOutputReference(this, "kms_wrapped");
+  public get kmsWrapped() {
+    return this._kmsWrapped;
+  }
+  public putKmsWrapped(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyKmsWrapped) {
+    this._kmsWrapped.internalValue = value;
+  }
+  public resetKmsWrapped() {
+    this._kmsWrapped.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsWrappedInput() {
+    return this._kmsWrapped.internalValue;
+  }
+
+  // transient - computed: false, optional: true, required: false
+  private _transient = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransientOutputReference(this, "transient");
+  public get transient() {
+    return this._transient;
+  }
+  public putTransient(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyTransient) {
+    this._transient.internalValue = value;
+  }
+  public resetTransient() {
+    this._transient.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transientInput() {
+    return this._transient.internalValue;
+  }
+
+  // unwrapped - computed: false, optional: true, required: false
+  private _unwrapped = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrappedOutputReference(this, "unwrapped");
+  public get unwrapped() {
+    return this._unwrapped;
+  }
+  public putUnwrapped(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyUnwrapped) {
+    this._unwrapped.internalValue = value;
+  }
+  public resetUnwrapped() {
+    this._unwrapped.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unwrappedInput() {
+    return this._unwrapped.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoType {
+  /**
+  * Name of the information type. Either a name of your choosing when creating a CustomInfoType, or one of the names listed at [https://cloud.google.com/dlp/docs/infotypes-reference](https://cloud.google.com/dlp/docs/infotypes-reference) when specifying a built-in type. When sending Cloud DLP results to Data Catalog, infoType names should conform to the pattern '[A-Za-z0-9$-_]{1,64}'.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
+  */
+  readonly name?: string;
+  /**
+  * Optional version name for this InfoType.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#version GoogleDataLossPreventionDeidentifyTemplate#version}
+  */
+  readonly version?: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoType): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoType | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoType | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._version = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._version = value.version;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // version - computed: false, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfig {
+  /**
+  * context block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#context GoogleDataLossPreventionDeidentifyTemplate#context}
+  */
+  readonly context?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContext;
+  /**
+  * crypto_key block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_key GoogleDataLossPreventionDeidentifyTemplate#crypto_key}
+  */
+  readonly cryptoKey?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKey;
+  /**
+  * surrogate_info_type block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#surrogate_info_type GoogleDataLossPreventionDeidentifyTemplate#surrogate_info_type}
+  */
+  readonly surrogateInfoType?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoType;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    context: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContextToTerraform(struct!.context),
+    crypto_key: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyToTerraform(struct!.cryptoKey),
+    surrogate_info_type: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeToTerraform(struct!.surrogateInfoType),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._context?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.context = this._context?.internalValue;
+    }
+    if (this._cryptoKey?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoKey = this._cryptoKey?.internalValue;
+    }
+    if (this._surrogateInfoType?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.surrogateInfoType = this._surrogateInfoType?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._context.internalValue = undefined;
+      this._cryptoKey.internalValue = undefined;
+      this._surrogateInfoType.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._context.internalValue = value.context;
+      this._cryptoKey.internalValue = value.cryptoKey;
+      this._surrogateInfoType.internalValue = value.surrogateInfoType;
+    }
+  }
+
+  // context - computed: false, optional: true, required: false
+  private _context = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContextOutputReference(this, "context");
+  public get context() {
+    return this._context;
+  }
+  public putContext(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigContext) {
+    this._context.internalValue = value;
+  }
+  public resetContext() {
+    this._context.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextInput() {
+    return this._context.internalValue;
+  }
+
+  // crypto_key - computed: false, optional: true, required: false
+  private _cryptoKey = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKeyOutputReference(this, "crypto_key");
+  public get cryptoKey() {
+    return this._cryptoKey;
+  }
+  public putCryptoKey(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigCryptoKey) {
+    this._cryptoKey.internalValue = value;
+  }
+  public resetCryptoKey() {
+    this._cryptoKey.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoKeyInput() {
+    return this._cryptoKey.internalValue;
+  }
+
+  // surrogate_info_type - computed: false, optional: true, required: false
+  private _surrogateInfoType = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoTypeOutputReference(this, "surrogate_info_type");
+  public get surrogateInfoType() {
+    return this._surrogateInfoType;
+  }
+  public putSurrogateInfoType(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigSurrogateInfoType) {
+    this._surrogateInfoType.internalValue = value;
+  }
+  public resetSurrogateInfoType() {
+    this._surrogateInfoType.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get surrogateInfoTypeInput() {
+    return this._surrogateInfoType.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrapped {
+  /**
+  * The resource name of the KMS CryptoKey to use for unwrapping.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_key_name GoogleDataLossPreventionDeidentifyTemplate#crypto_key_name}
+  */
+  readonly cryptoKeyName: string;
+  /**
+  * The wrapped data crypto key.
+
+A base64-encoded string.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#wrapped_key GoogleDataLossPreventionDeidentifyTemplate#wrapped_key}
+  */
+  readonly wrappedKey: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrapped): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    crypto_key_name: cdktf.stringToTerraform(struct!.cryptoKeyName),
+    wrapped_key: cdktf.stringToTerraform(struct!.wrappedKey),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrapped | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cryptoKeyName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoKeyName = this._cryptoKeyName;
+    }
+    if (this._wrappedKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wrappedKey = this._wrappedKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrapped | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cryptoKeyName = undefined;
+      this._wrappedKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cryptoKeyName = value.cryptoKeyName;
+      this._wrappedKey = value.wrappedKey;
+    }
+  }
+
+  // crypto_key_name - computed: false, optional: false, required: true
+  private _cryptoKeyName?: string; 
+  public get cryptoKeyName() {
+    return this.getStringAttribute('crypto_key_name');
+  }
+  public set cryptoKeyName(value: string) {
+    this._cryptoKeyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoKeyNameInput() {
+    return this._cryptoKeyName;
+  }
+
+  // wrapped_key - computed: false, optional: false, required: true
+  private _wrappedKey?: string; 
+  public get wrappedKey() {
+    return this.getStringAttribute('wrapped_key');
+  }
+  public set wrappedKey(value: string) {
+    this._wrappedKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wrappedKeyInput() {
+    return this._wrappedKey;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransient {
+  /**
+  * Name of the key. This is an arbitrary string used to differentiate different keys. A unique key is generated per name: two separate 'TransientCryptoKey' protos share the same generated key if their names are the same. When the data crypto key is generated, this name is not used in any way (repeating the api call will result in a different key being generated).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
+  */
+  readonly name: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransientToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransientOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransient): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransientOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransient | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransient | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrapped {
+  /**
+  * A 128/192/256 bit key.
+
+A base64-encoded string.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#key GoogleDataLossPreventionDeidentifyTemplate#key}
+  */
+  readonly key: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrapped): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrapped | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrapped | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKey {
+  /**
+  * kms_wrapped block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#kms_wrapped GoogleDataLossPreventionDeidentifyTemplate#kms_wrapped}
+  */
+  readonly kmsWrapped?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrapped;
+  /**
+  * transient block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#transient GoogleDataLossPreventionDeidentifyTemplate#transient}
+  */
+  readonly transient?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransient;
+  /**
+  * unwrapped block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#unwrapped GoogleDataLossPreventionDeidentifyTemplate#unwrapped}
+  */
+  readonly unwrapped?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrapped;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_wrapped: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedToTerraform(struct!.kmsWrapped),
+    transient: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransientToTerraform(struct!.transient),
+    unwrapped: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedToTerraform(struct!.unwrapped),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsWrapped?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsWrapped = this._kmsWrapped?.internalValue;
+    }
+    if (this._transient?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transient = this._transient?.internalValue;
+    }
+    if (this._unwrapped?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.unwrapped = this._unwrapped?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsWrapped.internalValue = undefined;
+      this._transient.internalValue = undefined;
+      this._unwrapped.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsWrapped.internalValue = value.kmsWrapped;
+      this._transient.internalValue = value.transient;
+      this._unwrapped.internalValue = value.unwrapped;
+    }
+  }
+
+  // kms_wrapped - computed: false, optional: true, required: false
+  private _kmsWrapped = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrappedOutputReference(this, "kms_wrapped");
+  public get kmsWrapped() {
+    return this._kmsWrapped;
+  }
+  public putKmsWrapped(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyKmsWrapped) {
+    this._kmsWrapped.internalValue = value;
+  }
+  public resetKmsWrapped() {
+    this._kmsWrapped.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsWrappedInput() {
+    return this._kmsWrapped.internalValue;
+  }
+
+  // transient - computed: false, optional: true, required: false
+  private _transient = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransientOutputReference(this, "transient");
+  public get transient() {
+    return this._transient;
+  }
+  public putTransient(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyTransient) {
+    this._transient.internalValue = value;
+  }
+  public resetTransient() {
+    this._transient.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transientInput() {
+    return this._transient.internalValue;
+  }
+
+  // unwrapped - computed: false, optional: true, required: false
+  private _unwrapped = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrappedOutputReference(this, "unwrapped");
+  public get unwrapped() {
+    return this._unwrapped;
+  }
+  public putUnwrapped(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyUnwrapped) {
+    this._unwrapped.internalValue = value;
+  }
+  public resetUnwrapped() {
+    this._unwrapped.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unwrappedInput() {
+    return this._unwrapped.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfig {
+  /**
+  * crypto_key block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_key GoogleDataLossPreventionDeidentifyTemplate#crypto_key}
+  */
+  readonly cryptoKey?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKey;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    crypto_key: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyToTerraform(struct!.cryptoKey),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cryptoKey?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoKey = this._cryptoKey?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cryptoKey.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cryptoKey.internalValue = value.cryptoKey;
+    }
+  }
+
+  // crypto_key - computed: false, optional: true, required: false
+  private _cryptoKey = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKeyOutputReference(this, "crypto_key");
+  public get cryptoKey() {
+    return this._cryptoKey;
+  }
+  public putCryptoKey(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigCryptoKey) {
+    this._cryptoKey.internalValue = value;
+  }
+  public resetCryptoKey() {
+    this._cryptoKey.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoKeyInput() {
+    return this._cryptoKey.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContext {
+  /**
+  * Name describing the field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
+  */
+  readonly name?: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContextToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContextOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContext): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContextOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContext | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContext | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrapped {
+  /**
+  * The resource name of the KMS CryptoKey to use for unwrapping.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_key_name GoogleDataLossPreventionDeidentifyTemplate#crypto_key_name}
+  */
+  readonly cryptoKeyName: string;
+  /**
+  * The wrapped data crypto key.
+
+A base64-encoded string.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#wrapped_key GoogleDataLossPreventionDeidentifyTemplate#wrapped_key}
+  */
+  readonly wrappedKey: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrapped): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    crypto_key_name: cdktf.stringToTerraform(struct!.cryptoKeyName),
+    wrapped_key: cdktf.stringToTerraform(struct!.wrappedKey),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrapped | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cryptoKeyName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoKeyName = this._cryptoKeyName;
+    }
+    if (this._wrappedKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wrappedKey = this._wrappedKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrapped | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cryptoKeyName = undefined;
+      this._wrappedKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cryptoKeyName = value.cryptoKeyName;
+      this._wrappedKey = value.wrappedKey;
+    }
+  }
+
+  // crypto_key_name - computed: false, optional: false, required: true
+  private _cryptoKeyName?: string; 
+  public get cryptoKeyName() {
+    return this.getStringAttribute('crypto_key_name');
+  }
+  public set cryptoKeyName(value: string) {
+    this._cryptoKeyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoKeyNameInput() {
+    return this._cryptoKeyName;
+  }
+
+  // wrapped_key - computed: false, optional: false, required: true
+  private _wrappedKey?: string; 
+  public get wrappedKey() {
+    return this.getStringAttribute('wrapped_key');
+  }
+  public set wrappedKey(value: string) {
+    this._wrappedKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wrappedKeyInput() {
+    return this._wrappedKey;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransient {
+  /**
+  * Name of the key. This is an arbitrary string used to differentiate different keys. A unique key is generated per name: two separate 'TransientCryptoKey' protos share the same generated key if their names are the same. When the data crypto key is generated, this name is not used in any way (repeating the api call will result in a different key being generated).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
+  */
+  readonly name: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransient): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransient | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransient | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrapped {
+  /**
+  * A 128/192/256 bit key.
+
+A base64-encoded string.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#key GoogleDataLossPreventionDeidentifyTemplate#key}
+  */
+  readonly key: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrapped): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrapped | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrapped | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKey {
+  /**
+  * kms_wrapped block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#kms_wrapped GoogleDataLossPreventionDeidentifyTemplate#kms_wrapped}
+  */
+  readonly kmsWrapped?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrapped;
+  /**
+  * transient block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#transient GoogleDataLossPreventionDeidentifyTemplate#transient}
+  */
+  readonly transient?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransient;
+  /**
+  * unwrapped block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#unwrapped GoogleDataLossPreventionDeidentifyTemplate#unwrapped}
+  */
+  readonly unwrapped?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrapped;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_wrapped: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedToTerraform(struct!.kmsWrapped),
+    transient: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientToTerraform(struct!.transient),
+    unwrapped: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedToTerraform(struct!.unwrapped),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsWrapped?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsWrapped = this._kmsWrapped?.internalValue;
+    }
+    if (this._transient?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transient = this._transient?.internalValue;
+    }
+    if (this._unwrapped?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.unwrapped = this._unwrapped?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsWrapped.internalValue = undefined;
+      this._transient.internalValue = undefined;
+      this._unwrapped.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsWrapped.internalValue = value.kmsWrapped;
+      this._transient.internalValue = value.transient;
+      this._unwrapped.internalValue = value.unwrapped;
+    }
+  }
+
+  // kms_wrapped - computed: false, optional: true, required: false
+  private _kmsWrapped = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrappedOutputReference(this, "kms_wrapped");
+  public get kmsWrapped() {
+    return this._kmsWrapped;
+  }
+  public putKmsWrapped(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyKmsWrapped) {
+    this._kmsWrapped.internalValue = value;
+  }
+  public resetKmsWrapped() {
+    this._kmsWrapped.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsWrappedInput() {
+    return this._kmsWrapped.internalValue;
+  }
+
+  // transient - computed: false, optional: true, required: false
+  private _transient = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransientOutputReference(this, "transient");
+  public get transient() {
+    return this._transient;
+  }
+  public putTransient(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyTransient) {
+    this._transient.internalValue = value;
+  }
+  public resetTransient() {
+    this._transient.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transientInput() {
+    return this._transient.internalValue;
+  }
+
+  // unwrapped - computed: false, optional: true, required: false
+  private _unwrapped = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrappedOutputReference(this, "unwrapped");
+  public get unwrapped() {
+    return this._unwrapped;
+  }
+  public putUnwrapped(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyUnwrapped) {
+    this._unwrapped.internalValue = value;
+  }
+  public resetUnwrapped() {
+    this._unwrapped.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unwrappedInput() {
+    return this._unwrapped.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoType {
+  /**
+  * Name of the information type. Either a name of your choosing when creating a CustomInfoType, or one of the names listed at [https://cloud.google.com/dlp/docs/infotypes-reference](https://cloud.google.com/dlp/docs/infotypes-reference) when specifying a built-in type. When sending Cloud DLP results to Data Catalog, infoType names should conform to the pattern '[A-Za-z0-9$-_]{1,64}'.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
+  */
+  readonly name?: string;
+  /**
+  * Optional version name for this InfoType.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#version GoogleDataLossPreventionDeidentifyTemplate#version}
+  */
+  readonly version?: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoType): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    version: cdktf.stringToTerraform(struct!.version),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoType | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._version !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.version = this._version;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoType | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+      this._version = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+      this._version = value.version;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // version - computed: false, optional: true, required: false
+  private _version?: string; 
+  public get version() {
+    return this.getStringAttribute('version');
+  }
+  public set version(value: string) {
+    this._version = value;
+  }
+  public resetVersion() {
+    this._version = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get versionInput() {
+    return this._version;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfig {
+  /**
+  * Common alphabets. Possible values: ["FFX_COMMON_NATIVE_ALPHABET_UNSPECIFIED", "NUMERIC", "HEXADECIMAL", "UPPER_CASE_ALPHA_NUMERIC", "ALPHA_NUMERIC"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#common_alphabet GoogleDataLossPreventionDeidentifyTemplate#common_alphabet}
+  */
+  readonly commonAlphabet?: string;
+  /**
+  * This is supported by mapping these to the alphanumeric characters that the FFX mode natively supports. This happens before/after encryption/decryption. Each character listed must appear only once. Number of characters must be in the range \[2, 95\]. This must be encoded as ASCII. The order of characters does not matter. The full list of allowed characters is:
+
+''0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ~'!@#$%^&*()_-+={[}]|:;"'<,>.?/''
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#custom_alphabet GoogleDataLossPreventionDeidentifyTemplate#custom_alphabet}
+  */
+  readonly customAlphabet?: string;
+  /**
+  * The native way to select the alphabet. Must be in the range \[2, 95\].
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#radix GoogleDataLossPreventionDeidentifyTemplate#radix}
+  */
+  readonly radix?: number;
+  /**
+  * context block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#context GoogleDataLossPreventionDeidentifyTemplate#context}
+  */
+  readonly context?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContext;
+  /**
+  * crypto_key block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_key GoogleDataLossPreventionDeidentifyTemplate#crypto_key}
+  */
+  readonly cryptoKey?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKey;
+  /**
+  * surrogate_info_type block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#surrogate_info_type GoogleDataLossPreventionDeidentifyTemplate#surrogate_info_type}
+  */
+  readonly surrogateInfoType?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoType;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    common_alphabet: cdktf.stringToTerraform(struct!.commonAlphabet),
+    custom_alphabet: cdktf.stringToTerraform(struct!.customAlphabet),
+    radix: cdktf.numberToTerraform(struct!.radix),
+    context: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContextToTerraform(struct!.context),
+    crypto_key: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyToTerraform(struct!.cryptoKey),
+    surrogate_info_type: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeToTerraform(struct!.surrogateInfoType),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._commonAlphabet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commonAlphabet = this._commonAlphabet;
+    }
+    if (this._customAlphabet !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customAlphabet = this._customAlphabet;
+    }
+    if (this._radix !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.radix = this._radix;
+    }
+    if (this._context?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.context = this._context?.internalValue;
+    }
+    if (this._cryptoKey?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoKey = this._cryptoKey?.internalValue;
+    }
+    if (this._surrogateInfoType?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.surrogateInfoType = this._surrogateInfoType?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._commonAlphabet = undefined;
+      this._customAlphabet = undefined;
+      this._radix = undefined;
+      this._context.internalValue = undefined;
+      this._cryptoKey.internalValue = undefined;
+      this._surrogateInfoType.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._commonAlphabet = value.commonAlphabet;
+      this._customAlphabet = value.customAlphabet;
+      this._radix = value.radix;
+      this._context.internalValue = value.context;
+      this._cryptoKey.internalValue = value.cryptoKey;
+      this._surrogateInfoType.internalValue = value.surrogateInfoType;
+    }
+  }
+
+  // common_alphabet - computed: false, optional: true, required: false
+  private _commonAlphabet?: string; 
+  public get commonAlphabet() {
+    return this.getStringAttribute('common_alphabet');
+  }
+  public set commonAlphabet(value: string) {
+    this._commonAlphabet = value;
+  }
+  public resetCommonAlphabet() {
+    this._commonAlphabet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commonAlphabetInput() {
+    return this._commonAlphabet;
+  }
+
+  // custom_alphabet - computed: false, optional: true, required: false
+  private _customAlphabet?: string; 
+  public get customAlphabet() {
+    return this.getStringAttribute('custom_alphabet');
+  }
+  public set customAlphabet(value: string) {
+    this._customAlphabet = value;
+  }
+  public resetCustomAlphabet() {
+    this._customAlphabet = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customAlphabetInput() {
+    return this._customAlphabet;
+  }
+
+  // radix - computed: false, optional: true, required: false
+  private _radix?: number; 
+  public get radix() {
+    return this.getNumberAttribute('radix');
+  }
+  public set radix(value: number) {
+    this._radix = value;
+  }
+  public resetRadix() {
+    this._radix = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get radixInput() {
+    return this._radix;
+  }
+
+  // context - computed: false, optional: true, required: false
+  private _context = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContextOutputReference(this, "context");
+  public get context() {
+    return this._context;
+  }
+  public putContext(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigContext) {
+    this._context.internalValue = value;
+  }
+  public resetContext() {
+    this._context.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextInput() {
+    return this._context.internalValue;
+  }
+
+  // crypto_key - computed: false, optional: true, required: false
+  private _cryptoKey = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKeyOutputReference(this, "crypto_key");
+  public get cryptoKey() {
+    return this._cryptoKey;
+  }
+  public putCryptoKey(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigCryptoKey) {
+    this._cryptoKey.internalValue = value;
+  }
+  public resetCryptoKey() {
+    this._cryptoKey.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoKeyInput() {
+    return this._cryptoKey.internalValue;
+  }
+
+  // surrogate_info_type - computed: false, optional: true, required: false
+  private _surrogateInfoType = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoTypeOutputReference(this, "surrogate_info_type");
+  public get surrogateInfoType() {
+    return this._surrogateInfoType;
+  }
+  public putSurrogateInfoType(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigSurrogateInfoType) {
+    this._surrogateInfoType.internalValue = value;
+  }
+  public resetSurrogateInfoType() {
+    this._surrogateInfoType.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get surrogateInfoTypeInput() {
+    return this._surrogateInfoType.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContext {
+  /**
+  * Name describing the field.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
+  */
+  readonly name?: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContextToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContextOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContext): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContextOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContext | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContext | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrapped {
+  /**
+  * The resource name of the KMS CryptoKey to use for unwrapping.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_key_name GoogleDataLossPreventionDeidentifyTemplate#crypto_key_name}
+  */
+  readonly cryptoKeyName: string;
+  /**
+  * The wrapped data crypto key.
+
+A base64-encoded string.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#wrapped_key GoogleDataLossPreventionDeidentifyTemplate#wrapped_key}
+  */
+  readonly wrappedKey: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrapped): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    crypto_key_name: cdktf.stringToTerraform(struct!.cryptoKeyName),
+    wrapped_key: cdktf.stringToTerraform(struct!.wrappedKey),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrapped | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cryptoKeyName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoKeyName = this._cryptoKeyName;
+    }
+    if (this._wrappedKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wrappedKey = this._wrappedKey;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrapped | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._cryptoKeyName = undefined;
+      this._wrappedKey = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._cryptoKeyName = value.cryptoKeyName;
+      this._wrappedKey = value.wrappedKey;
+    }
+  }
+
+  // crypto_key_name - computed: false, optional: false, required: true
+  private _cryptoKeyName?: string; 
+  public get cryptoKeyName() {
+    return this.getStringAttribute('crypto_key_name');
+  }
+  public set cryptoKeyName(value: string) {
+    this._cryptoKeyName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoKeyNameInput() {
+    return this._cryptoKeyName;
+  }
+
+  // wrapped_key - computed: false, optional: false, required: true
+  private _wrappedKey?: string; 
+  public get wrappedKey() {
+    return this.getStringAttribute('wrapped_key');
+  }
+  public set wrappedKey(value: string) {
+    this._wrappedKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wrappedKeyInput() {
+    return this._wrappedKey;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransient {
+  /**
+  * Name of the key. This is an arbitrary string used to differentiate different keys. A unique key is generated per name: two separate 'TransientCryptoKey' protos share the same generated key if their names are the same. When the data crypto key is generated, this name is not used in any way (repeating the api call will result in a different key being generated).
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#name GoogleDataLossPreventionDeidentifyTemplate#name}
+  */
+  readonly name: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransientToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransientOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransient): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransientOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransient | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransient | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrapped {
+  /**
+  * A 128/192/256 bit key.
+
+A base64-encoded string.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#key GoogleDataLossPreventionDeidentifyTemplate#key}
+  */
+  readonly key: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrapped): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key: cdktf.stringToTerraform(struct!.key),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrapped | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._key !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.key = this._key;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrapped | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._key = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._key = value.key;
+    }
+  }
+
+  // key - computed: false, optional: false, required: true
+  private _key?: string; 
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+  public set key(value: string) {
+    this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKey {
+  /**
+  * kms_wrapped block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#kms_wrapped GoogleDataLossPreventionDeidentifyTemplate#kms_wrapped}
+  */
+  readonly kmsWrapped?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrapped;
+  /**
+  * transient block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#transient GoogleDataLossPreventionDeidentifyTemplate#transient}
+  */
+  readonly transient?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransient;
+  /**
+  * unwrapped block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#unwrapped GoogleDataLossPreventionDeidentifyTemplate#unwrapped}
+  */
+  readonly unwrapped?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrapped;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    kms_wrapped: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedToTerraform(struct!.kmsWrapped),
+    transient: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransientToTerraform(struct!.transient),
+    unwrapped: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedToTerraform(struct!.unwrapped),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._kmsWrapped?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.kmsWrapped = this._kmsWrapped?.internalValue;
+    }
+    if (this._transient?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.transient = this._transient?.internalValue;
+    }
+    if (this._unwrapped?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.unwrapped = this._unwrapped?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._kmsWrapped.internalValue = undefined;
+      this._transient.internalValue = undefined;
+      this._unwrapped.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._kmsWrapped.internalValue = value.kmsWrapped;
+      this._transient.internalValue = value.transient;
+      this._unwrapped.internalValue = value.unwrapped;
+    }
+  }
+
+  // kms_wrapped - computed: false, optional: true, required: false
+  private _kmsWrapped = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrappedOutputReference(this, "kms_wrapped");
+  public get kmsWrapped() {
+    return this._kmsWrapped;
+  }
+  public putKmsWrapped(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyKmsWrapped) {
+    this._kmsWrapped.internalValue = value;
+  }
+  public resetKmsWrapped() {
+    this._kmsWrapped.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get kmsWrappedInput() {
+    return this._kmsWrapped.internalValue;
+  }
+
+  // transient - computed: false, optional: true, required: false
+  private _transient = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransientOutputReference(this, "transient");
+  public get transient() {
+    return this._transient;
+  }
+  public putTransient(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyTransient) {
+    this._transient.internalValue = value;
+  }
+  public resetTransient() {
+    this._transient.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get transientInput() {
+    return this._transient.internalValue;
+  }
+
+  // unwrapped - computed: false, optional: true, required: false
+  private _unwrapped = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrappedOutputReference(this, "unwrapped");
+  public get unwrapped() {
+    return this._unwrapped;
+  }
+  public putUnwrapped(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyUnwrapped) {
+    this._unwrapped.internalValue = value;
+  }
+  public resetUnwrapped() {
+    this._unwrapped.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get unwrappedInput() {
+    return this._unwrapped.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfig {
+  /**
+  * For example, -5 means shift date to at most 5 days back in the past.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#lower_bound_days GoogleDataLossPreventionDeidentifyTemplate#lower_bound_days}
+  */
+  readonly lowerBoundDays: number;
+  /**
+  * Range of shift in days. Actual shift will be selected at random within this range (inclusive ends). Negative means shift to earlier in time. Must not be more than 365250 days (1000 years) each direction.
+
+For example, 3 means shift date to at most 3 days into the future.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#upper_bound_days GoogleDataLossPreventionDeidentifyTemplate#upper_bound_days}
+  */
+  readonly upperBoundDays: number;
+  /**
+  * context block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#context GoogleDataLossPreventionDeidentifyTemplate#context}
+  */
+  readonly context?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContext;
+  /**
+  * crypto_key block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_key GoogleDataLossPreventionDeidentifyTemplate#crypto_key}
+  */
+  readonly cryptoKey?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKey;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    lower_bound_days: cdktf.numberToTerraform(struct!.lowerBoundDays),
+    upper_bound_days: cdktf.numberToTerraform(struct!.upperBoundDays),
+    context: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContextToTerraform(struct!.context),
+    crypto_key: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyToTerraform(struct!.cryptoKey),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._lowerBoundDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lowerBoundDays = this._lowerBoundDays;
+    }
+    if (this._upperBoundDays !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upperBoundDays = this._upperBoundDays;
+    }
+    if (this._context?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.context = this._context?.internalValue;
+    }
+    if (this._cryptoKey?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoKey = this._cryptoKey?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._lowerBoundDays = undefined;
+      this._upperBoundDays = undefined;
+      this._context.internalValue = undefined;
+      this._cryptoKey.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._lowerBoundDays = value.lowerBoundDays;
+      this._upperBoundDays = value.upperBoundDays;
+      this._context.internalValue = value.context;
+      this._cryptoKey.internalValue = value.cryptoKey;
+    }
+  }
+
+  // lower_bound_days - computed: false, optional: false, required: true
+  private _lowerBoundDays?: number; 
+  public get lowerBoundDays() {
+    return this.getNumberAttribute('lower_bound_days');
+  }
+  public set lowerBoundDays(value: number) {
+    this._lowerBoundDays = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lowerBoundDaysInput() {
+    return this._lowerBoundDays;
+  }
+
+  // upper_bound_days - computed: false, optional: false, required: true
+  private _upperBoundDays?: number; 
+  public get upperBoundDays() {
+    return this.getNumberAttribute('upper_bound_days');
+  }
+  public set upperBoundDays(value: number) {
+    this._upperBoundDays = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get upperBoundDaysInput() {
+    return this._upperBoundDays;
+  }
+
+  // context - computed: false, optional: true, required: false
+  private _context = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContextOutputReference(this, "context");
+  public get context() {
+    return this._context;
+  }
+  public putContext(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigContext) {
+    this._context.internalValue = value;
+  }
+  public resetContext() {
+    this._context.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextInput() {
+    return this._context.internalValue;
+  }
+
+  // crypto_key - computed: false, optional: true, required: false
+  private _cryptoKey = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKeyOutputReference(this, "crypto_key");
+  public get cryptoKey() {
+    return this._cryptoKey;
+  }
+  public putCryptoKey(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigCryptoKey) {
+    this._cryptoKey.internalValue = value;
+  }
+  public resetCryptoKey() {
+    this._cryptoKey.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoKeyInput() {
+    return this._cryptoKey.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValue {
+  /**
+  * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#day GoogleDataLossPreventionDeidentifyTemplate#day}
+  */
+  readonly day?: number;
+  /**
+  * Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#month GoogleDataLossPreventionDeidentifyTemplate#month}
+  */
+  readonly month?: number;
+  /**
+  * Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#year GoogleDataLossPreventionDeidentifyTemplate#year}
+  */
+  readonly year?: number;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day: cdktf.numberToTerraform(struct!.day),
+    month: cdktf.numberToTerraform(struct!.month),
+    year: cdktf.numberToTerraform(struct!.year),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._month !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.month = this._month;
+    }
+    if (this._year !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.year = this._year;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._day = undefined;
+      this._month = undefined;
+      this._year = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._day = value.day;
+      this._month = value.month;
+      this._year = value.year;
+    }
+  }
+
+  // day - computed: false, optional: true, required: false
+  private _day?: number; 
+  public get day() {
+    return this.getNumberAttribute('day');
+  }
+  public set day(value: number) {
+    this._day = value;
+  }
+  public resetDay() {
+    this._day = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // month - computed: false, optional: true, required: false
+  private _month?: number; 
+  public get month() {
+    return this.getNumberAttribute('month');
+  }
+  public set month(value: number) {
+    this._month = value;
+  }
+  public resetMonth() {
+    this._month = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monthInput() {
+    return this._month;
+  }
+
+  // year - computed: false, optional: true, required: false
+  private _year?: number; 
+  public get year() {
+    return this.getNumberAttribute('year');
+  }
+  public set year(value: number) {
+    this._year = value;
+  }
+  public resetYear() {
+    this._year = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yearInput() {
+    return this._year;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValue {
+  /**
+  * Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#hours GoogleDataLossPreventionDeidentifyTemplate#hours}
+  */
+  readonly hours?: number;
+  /**
+  * Minutes of hour of day. Must be from 0 to 59.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#minutes GoogleDataLossPreventionDeidentifyTemplate#minutes}
+  */
+  readonly minutes?: number;
+  /**
+  * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#nanos GoogleDataLossPreventionDeidentifyTemplate#nanos}
+  */
+  readonly nanos?: number;
+  /**
+  * Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#seconds GoogleDataLossPreventionDeidentifyTemplate#seconds}
+  */
+  readonly seconds?: number;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hours: cdktf.numberToTerraform(struct!.hours),
+    minutes: cdktf.numberToTerraform(struct!.minutes),
+    nanos: cdktf.numberToTerraform(struct!.nanos),
+    seconds: cdktf.numberToTerraform(struct!.seconds),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hours = this._hours;
+    }
+    if (this._minutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minutes = this._minutes;
+    }
+    if (this._nanos !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nanos = this._nanos;
+    }
+    if (this._seconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.seconds = this._seconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hours = undefined;
+      this._minutes = undefined;
+      this._nanos = undefined;
+      this._seconds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hours = value.hours;
+      this._minutes = value.minutes;
+      this._nanos = value.nanos;
+      this._seconds = value.seconds;
+    }
+  }
+
+  // hours - computed: false, optional: true, required: false
+  private _hours?: number; 
+  public get hours() {
+    return this.getNumberAttribute('hours');
+  }
+  public set hours(value: number) {
+    this._hours = value;
+  }
+  public resetHours() {
+    this._hours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hoursInput() {
+    return this._hours;
+  }
+
+  // minutes - computed: false, optional: true, required: false
+  private _minutes?: number; 
+  public get minutes() {
+    return this.getNumberAttribute('minutes');
+  }
+  public set minutes(value: number) {
+    this._minutes = value;
+  }
+  public resetMinutes() {
+    this._minutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minutesInput() {
+    return this._minutes;
+  }
+
+  // nanos - computed: false, optional: true, required: false
+  private _nanos?: number; 
+  public get nanos() {
+    return this.getNumberAttribute('nanos');
+  }
+  public set nanos(value: number) {
+    this._nanos = value;
+  }
+  public resetNanos() {
+    this._nanos = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nanosInput() {
+    return this._nanos;
+  }
+
+  // seconds - computed: false, optional: true, required: false
+  private _seconds?: number; 
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+  public set seconds(value: number) {
+    this._seconds = value;
+  }
+  public resetSeconds() {
+    this._seconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondsInput() {
+    return this._seconds;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBound {
+  /**
+  * A boolean value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#boolean_value GoogleDataLossPreventionDeidentifyTemplate#boolean_value}
+  */
+  readonly booleanValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a day of the week. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#day_of_week_value GoogleDataLossPreventionDeidentifyTemplate#day_of_week_value}
+  */
+  readonly dayOfWeekValue?: string;
+  /**
+  * A float value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#float_value GoogleDataLossPreventionDeidentifyTemplate#float_value}
+  */
+  readonly floatValue?: number;
+  /**
+  * An integer value (int64 format)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#integer_value GoogleDataLossPreventionDeidentifyTemplate#integer_value}
+  */
+  readonly integerValue?: string;
+  /**
+  * A string value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#string_value GoogleDataLossPreventionDeidentifyTemplate#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#timestamp_value GoogleDataLossPreventionDeidentifyTemplate#timestamp_value}
+  */
+  readonly timestampValue?: string;
+  /**
+  * date_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#date_value GoogleDataLossPreventionDeidentifyTemplate#date_value}
+  */
+  readonly dateValue?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValue;
+  /**
+  * time_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#time_value GoogleDataLossPreventionDeidentifyTemplate#time_value}
+  */
+  readonly timeValue?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValue;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBound): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    boolean_value: cdktf.booleanToTerraform(struct!.booleanValue),
+    day_of_week_value: cdktf.stringToTerraform(struct!.dayOfWeekValue),
+    float_value: cdktf.numberToTerraform(struct!.floatValue),
+    integer_value: cdktf.stringToTerraform(struct!.integerValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    timestamp_value: cdktf.stringToTerraform(struct!.timestampValue),
+    date_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValueToTerraform(struct!.dateValue),
+    time_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValueToTerraform(struct!.timeValue),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBound | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._booleanValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.booleanValue = this._booleanValue;
+    }
+    if (this._dayOfWeekValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfWeekValue = this._dayOfWeekValue;
+    }
+    if (this._floatValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.floatValue = this._floatValue;
+    }
+    if (this._integerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integerValue = this._integerValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._timestampValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timestampValue = this._timestampValue;
+    }
+    if (this._dateValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dateValue = this._dateValue?.internalValue;
+    }
+    if (this._timeValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeValue = this._timeValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBound | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._booleanValue = undefined;
+      this._dayOfWeekValue = undefined;
+      this._floatValue = undefined;
+      this._integerValue = undefined;
+      this._stringValue = undefined;
+      this._timestampValue = undefined;
+      this._dateValue.internalValue = undefined;
+      this._timeValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._booleanValue = value.booleanValue;
+      this._dayOfWeekValue = value.dayOfWeekValue;
+      this._floatValue = value.floatValue;
+      this._integerValue = value.integerValue;
+      this._stringValue = value.stringValue;
+      this._timestampValue = value.timestampValue;
+      this._dateValue.internalValue = value.dateValue;
+      this._timeValue.internalValue = value.timeValue;
+    }
+  }
+
+  // boolean_value - computed: false, optional: true, required: false
+  private _booleanValue?: boolean | cdktf.IResolvable; 
+  public get booleanValue() {
+    return this.getBooleanAttribute('boolean_value');
+  }
+  public set booleanValue(value: boolean | cdktf.IResolvable) {
+    this._booleanValue = value;
+  }
+  public resetBooleanValue() {
+    this._booleanValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get booleanValueInput() {
+    return this._booleanValue;
+  }
+
+  // day_of_week_value - computed: false, optional: true, required: false
+  private _dayOfWeekValue?: string; 
+  public get dayOfWeekValue() {
+    return this.getStringAttribute('day_of_week_value');
+  }
+  public set dayOfWeekValue(value: string) {
+    this._dayOfWeekValue = value;
+  }
+  public resetDayOfWeekValue() {
+    this._dayOfWeekValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfWeekValueInput() {
+    return this._dayOfWeekValue;
+  }
+
+  // float_value - computed: false, optional: true, required: false
+  private _floatValue?: number; 
+  public get floatValue() {
+    return this.getNumberAttribute('float_value');
+  }
+  public set floatValue(value: number) {
+    this._floatValue = value;
+  }
+  public resetFloatValue() {
+    this._floatValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get floatValueInput() {
+    return this._floatValue;
+  }
+
+  // integer_value - computed: false, optional: true, required: false
+  private _integerValue?: string; 
+  public get integerValue() {
+    return this.getStringAttribute('integer_value');
+  }
+  public set integerValue(value: string) {
+    this._integerValue = value;
+  }
+  public resetIntegerValue() {
+    this._integerValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integerValueInput() {
+    return this._integerValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // timestamp_value - computed: false, optional: true, required: false
+  private _timestampValue?: string; 
+  public get timestampValue() {
+    return this.getStringAttribute('timestamp_value');
+  }
+  public set timestampValue(value: string) {
+    this._timestampValue = value;
+  }
+  public resetTimestampValue() {
+    this._timestampValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timestampValueInput() {
+    return this._timestampValue;
+  }
+
+  // date_value - computed: false, optional: true, required: false
+  private _dateValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValueOutputReference(this, "date_value");
+  public get dateValue() {
+    return this._dateValue;
+  }
+  public putDateValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundDateValue) {
+    this._dateValue.internalValue = value;
+  }
+  public resetDateValue() {
+    this._dateValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateValueInput() {
+    return this._dateValue.internalValue;
+  }
+
+  // time_value - computed: false, optional: true, required: false
+  private _timeValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValueOutputReference(this, "time_value");
+  public get timeValue() {
+    return this._timeValue;
+  }
+  public putTimeValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundTimeValue) {
+    this._timeValue.internalValue = value;
+  }
+  public resetTimeValue() {
+    this._timeValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeValueInput() {
+    return this._timeValue.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValue {
+  /**
+  * Day of a month. Must be from 1 to 31 and valid for the year and month, or 0 to specify a year by itself or a year and month where the day isn't significant.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#day GoogleDataLossPreventionDeidentifyTemplate#day}
+  */
+  readonly day?: number;
+  /**
+  * Month of a year. Must be from 1 to 12, or 0 to specify a year without a month and day.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#month GoogleDataLossPreventionDeidentifyTemplate#month}
+  */
+  readonly month?: number;
+  /**
+  * Year of the date. Must be from 1 to 9999, or 0 to specify a date without a year.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#year GoogleDataLossPreventionDeidentifyTemplate#year}
+  */
+  readonly year?: number;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    day: cdktf.numberToTerraform(struct!.day),
+    month: cdktf.numberToTerraform(struct!.month),
+    year: cdktf.numberToTerraform(struct!.year),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._day !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.day = this._day;
+    }
+    if (this._month !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.month = this._month;
+    }
+    if (this._year !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.year = this._year;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._day = undefined;
+      this._month = undefined;
+      this._year = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._day = value.day;
+      this._month = value.month;
+      this._year = value.year;
+    }
+  }
+
+  // day - computed: false, optional: true, required: false
+  private _day?: number; 
+  public get day() {
+    return this.getNumberAttribute('day');
+  }
+  public set day(value: number) {
+    this._day = value;
+  }
+  public resetDay() {
+    this._day = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayInput() {
+    return this._day;
+  }
+
+  // month - computed: false, optional: true, required: false
+  private _month?: number; 
+  public get month() {
+    return this.getNumberAttribute('month');
+  }
+  public set month(value: number) {
+    this._month = value;
+  }
+  public resetMonth() {
+    this._month = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get monthInput() {
+    return this._month;
+  }
+
+  // year - computed: false, optional: true, required: false
+  private _year?: number; 
+  public get year() {
+    return this.getNumberAttribute('year');
+  }
+  public set year(value: number) {
+    this._year = value;
+  }
+  public resetYear() {
+    this._year = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get yearInput() {
+    return this._year;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValue {
+  /**
+  * Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#hours GoogleDataLossPreventionDeidentifyTemplate#hours}
+  */
+  readonly hours?: number;
+  /**
+  * Minutes of hour of day. Must be from 0 to 59.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#minutes GoogleDataLossPreventionDeidentifyTemplate#minutes}
+  */
+  readonly minutes?: number;
+  /**
+  * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#nanos GoogleDataLossPreventionDeidentifyTemplate#nanos}
+  */
+  readonly nanos?: number;
+  /**
+  * Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#seconds GoogleDataLossPreventionDeidentifyTemplate#seconds}
+  */
+  readonly seconds?: number;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValueToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValueOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValue): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    hours: cdktf.numberToTerraform(struct!.hours),
+    minutes: cdktf.numberToTerraform(struct!.minutes),
+    nanos: cdktf.numberToTerraform(struct!.nanos),
+    seconds: cdktf.numberToTerraform(struct!.seconds),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValueOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValue | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hours !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hours = this._hours;
+    }
+    if (this._minutes !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.minutes = this._minutes;
+    }
+    if (this._nanos !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.nanos = this._nanos;
+    }
+    if (this._seconds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.seconds = this._seconds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValue | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hours = undefined;
+      this._minutes = undefined;
+      this._nanos = undefined;
+      this._seconds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hours = value.hours;
+      this._minutes = value.minutes;
+      this._nanos = value.nanos;
+      this._seconds = value.seconds;
+    }
+  }
+
+  // hours - computed: false, optional: true, required: false
+  private _hours?: number; 
+  public get hours() {
+    return this.getNumberAttribute('hours');
+  }
+  public set hours(value: number) {
+    this._hours = value;
+  }
+  public resetHours() {
+    this._hours = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hoursInput() {
+    return this._hours;
+  }
+
+  // minutes - computed: false, optional: true, required: false
+  private _minutes?: number; 
+  public get minutes() {
+    return this.getNumberAttribute('minutes');
+  }
+  public set minutes(value: number) {
+    this._minutes = value;
+  }
+  public resetMinutes() {
+    this._minutes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get minutesInput() {
+    return this._minutes;
+  }
+
+  // nanos - computed: false, optional: true, required: false
+  private _nanos?: number; 
+  public get nanos() {
+    return this.getNumberAttribute('nanos');
+  }
+  public set nanos(value: number) {
+    this._nanos = value;
+  }
+  public resetNanos() {
+    this._nanos = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nanosInput() {
+    return this._nanos;
+  }
+
+  // seconds - computed: false, optional: true, required: false
+  private _seconds?: number; 
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+  public set seconds(value: number) {
+    this._seconds = value;
+  }
+  public resetSeconds() {
+    this._seconds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secondsInput() {
+    return this._seconds;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBound {
+  /**
+  * A boolean value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#boolean_value GoogleDataLossPreventionDeidentifyTemplate#boolean_value}
+  */
+  readonly booleanValue?: boolean | cdktf.IResolvable;
+  /**
+  * Represents a day of the week. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#day_of_week_value GoogleDataLossPreventionDeidentifyTemplate#day_of_week_value}
+  */
+  readonly dayOfWeekValue?: string;
+  /**
+  * A float value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#float_value GoogleDataLossPreventionDeidentifyTemplate#float_value}
+  */
+  readonly floatValue?: number;
+  /**
+  * An integer value (int64 format)
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#integer_value GoogleDataLossPreventionDeidentifyTemplate#integer_value}
+  */
+  readonly integerValue?: string;
+  /**
+  * A string value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#string_value GoogleDataLossPreventionDeidentifyTemplate#string_value}
+  */
+  readonly stringValue?: string;
+  /**
+  * A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#timestamp_value GoogleDataLossPreventionDeidentifyTemplate#timestamp_value}
+  */
+  readonly timestampValue?: string;
+  /**
+  * date_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#date_value GoogleDataLossPreventionDeidentifyTemplate#date_value}
+  */
+  readonly dateValue?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValue;
+  /**
+  * time_value block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#time_value GoogleDataLossPreventionDeidentifyTemplate#time_value}
+  */
+  readonly timeValue?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValue;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBound): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    boolean_value: cdktf.booleanToTerraform(struct!.booleanValue),
+    day_of_week_value: cdktf.stringToTerraform(struct!.dayOfWeekValue),
+    float_value: cdktf.numberToTerraform(struct!.floatValue),
+    integer_value: cdktf.stringToTerraform(struct!.integerValue),
+    string_value: cdktf.stringToTerraform(struct!.stringValue),
+    timestamp_value: cdktf.stringToTerraform(struct!.timestampValue),
+    date_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValueToTerraform(struct!.dateValue),
+    time_value: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValueToTerraform(struct!.timeValue),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBound | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._booleanValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.booleanValue = this._booleanValue;
+    }
+    if (this._dayOfWeekValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dayOfWeekValue = this._dayOfWeekValue;
+    }
+    if (this._floatValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.floatValue = this._floatValue;
+    }
+    if (this._integerValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.integerValue = this._integerValue;
+    }
+    if (this._stringValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stringValue = this._stringValue;
+    }
+    if (this._timestampValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timestampValue = this._timestampValue;
+    }
+    if (this._dateValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dateValue = this._dateValue?.internalValue;
+    }
+    if (this._timeValue?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeValue = this._timeValue?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBound | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._booleanValue = undefined;
+      this._dayOfWeekValue = undefined;
+      this._floatValue = undefined;
+      this._integerValue = undefined;
+      this._stringValue = undefined;
+      this._timestampValue = undefined;
+      this._dateValue.internalValue = undefined;
+      this._timeValue.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._booleanValue = value.booleanValue;
+      this._dayOfWeekValue = value.dayOfWeekValue;
+      this._floatValue = value.floatValue;
+      this._integerValue = value.integerValue;
+      this._stringValue = value.stringValue;
+      this._timestampValue = value.timestampValue;
+      this._dateValue.internalValue = value.dateValue;
+      this._timeValue.internalValue = value.timeValue;
+    }
+  }
+
+  // boolean_value - computed: false, optional: true, required: false
+  private _booleanValue?: boolean | cdktf.IResolvable; 
+  public get booleanValue() {
+    return this.getBooleanAttribute('boolean_value');
+  }
+  public set booleanValue(value: boolean | cdktf.IResolvable) {
+    this._booleanValue = value;
+  }
+  public resetBooleanValue() {
+    this._booleanValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get booleanValueInput() {
+    return this._booleanValue;
+  }
+
+  // day_of_week_value - computed: false, optional: true, required: false
+  private _dayOfWeekValue?: string; 
+  public get dayOfWeekValue() {
+    return this.getStringAttribute('day_of_week_value');
+  }
+  public set dayOfWeekValue(value: string) {
+    this._dayOfWeekValue = value;
+  }
+  public resetDayOfWeekValue() {
+    this._dayOfWeekValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dayOfWeekValueInput() {
+    return this._dayOfWeekValue;
+  }
+
+  // float_value - computed: false, optional: true, required: false
+  private _floatValue?: number; 
+  public get floatValue() {
+    return this.getNumberAttribute('float_value');
+  }
+  public set floatValue(value: number) {
+    this._floatValue = value;
+  }
+  public resetFloatValue() {
+    this._floatValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get floatValueInput() {
+    return this._floatValue;
+  }
+
+  // integer_value - computed: false, optional: true, required: false
+  private _integerValue?: string; 
+  public get integerValue() {
+    return this.getStringAttribute('integer_value');
+  }
+  public set integerValue(value: string) {
+    this._integerValue = value;
+  }
+  public resetIntegerValue() {
+    this._integerValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get integerValueInput() {
+    return this._integerValue;
+  }
+
+  // string_value - computed: false, optional: true, required: false
+  private _stringValue?: string; 
+  public get stringValue() {
+    return this.getStringAttribute('string_value');
+  }
+  public set stringValue(value: string) {
+    this._stringValue = value;
+  }
+  public resetStringValue() {
+    this._stringValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stringValueInput() {
+    return this._stringValue;
+  }
+
+  // timestamp_value - computed: false, optional: true, required: false
+  private _timestampValue?: string; 
+  public get timestampValue() {
+    return this.getStringAttribute('timestamp_value');
+  }
+  public set timestampValue(value: string) {
+    this._timestampValue = value;
+  }
+  public resetTimestampValue() {
+    this._timestampValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timestampValueInput() {
+    return this._timestampValue;
+  }
+
+  // date_value - computed: false, optional: true, required: false
+  private _dateValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValueOutputReference(this, "date_value");
+  public get dateValue() {
+    return this._dateValue;
+  }
+  public putDateValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundDateValue) {
+    this._dateValue.internalValue = value;
+  }
+  public resetDateValue() {
+    this._dateValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateValueInput() {
+    return this._dateValue.internalValue;
+  }
+
+  // time_value - computed: false, optional: true, required: false
+  private _timeValue = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValueOutputReference(this, "time_value");
+  public get timeValue() {
+    return this._timeValue;
+  }
+  public putTimeValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundTimeValue) {
+    this._timeValue.internalValue = value;
+  }
+  public resetTimeValue() {
+    this._timeValue.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeValueInput() {
+    return this._timeValue.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfig {
+  /**
+  * Size of each bucket (except for minimum and maximum buckets).
+So if lower_bound = 10, upper_bound = 89, and bucketSize = 10, then the following buckets would be used: -10, 10-20, 20-30, 30-40, 40-50, 50-60, 60-70, 70-80, 80-89, 89+.
+Precision up to 2 decimals works.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#bucket_size GoogleDataLossPreventionDeidentifyTemplate#bucket_size}
+  */
+  readonly bucketSize: number;
+  /**
+  * lower_bound block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#lower_bound GoogleDataLossPreventionDeidentifyTemplate#lower_bound}
+  */
+  readonly lowerBound: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBound;
+  /**
+  * upper_bound block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#upper_bound GoogleDataLossPreventionDeidentifyTemplate#upper_bound}
+  */
+  readonly upperBound: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBound;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bucket_size: cdktf.numberToTerraform(struct!.bucketSize),
+    lower_bound: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundToTerraform(struct!.lowerBound),
+    upper_bound: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundToTerraform(struct!.upperBound),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bucketSize !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucketSize = this._bucketSize;
+    }
+    if (this._lowerBound?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.lowerBound = this._lowerBound?.internalValue;
+    }
+    if (this._upperBound?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upperBound = this._upperBound?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bucketSize = undefined;
+      this._lowerBound.internalValue = undefined;
+      this._upperBound.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bucketSize = value.bucketSize;
+      this._lowerBound.internalValue = value.lowerBound;
+      this._upperBound.internalValue = value.upperBound;
+    }
+  }
+
+  // bucket_size - computed: false, optional: false, required: true
+  private _bucketSize?: number; 
+  public get bucketSize() {
+    return this.getNumberAttribute('bucket_size');
+  }
+  public set bucketSize(value: number) {
+    this._bucketSize = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketSizeInput() {
+    return this._bucketSize;
+  }
+
+  // lower_bound - computed: false, optional: false, required: true
+  private _lowerBound = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBoundOutputReference(this, "lower_bound");
+  public get lowerBound() {
+    return this._lowerBound;
+  }
+  public putLowerBound(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigLowerBound) {
+    this._lowerBound.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lowerBoundInput() {
+    return this._lowerBound.internalValue;
+  }
+
+  // upper_bound - computed: false, optional: false, required: true
+  private _upperBound = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBoundOutputReference(this, "upper_bound");
+  public get upperBound() {
+    return this._upperBound;
+  }
+  public putUpperBound(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigUpperBound) {
+    this._upperBound.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get upperBoundInput() {
+    return this._upperBound.internalValue;
   }
 }
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationRedactConfig {
@@ -4759,13 +10238,247 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTra
     return this._newValue.internalValue;
   }
 }
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordList {
+  /**
+  * Words or phrases defining the dictionary. The dictionary must contain at least one phrase and every phrase must contain at least 2 characters that are letters or digits.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#words GoogleDataLossPreventionDeidentifyTemplate#words}
+  */
+  readonly words: string[];
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordListToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordListOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordList): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    words: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.words),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordListOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordList | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._words !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.words = this._words;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordList | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._words = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._words = value.words;
+    }
+  }
+
+  // words - computed: false, optional: false, required: true
+  private _words?: string[]; 
+  public get words() {
+    return this.getListAttribute('words');
+  }
+  public set words(value: string[]) {
+    this._words = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wordsInput() {
+    return this._words;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfig {
+  /**
+  * word_list block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#word_list GoogleDataLossPreventionDeidentifyTemplate#word_list}
+  */
+  readonly wordList?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordList;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    word_list: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordListToTerraform(struct!.wordList),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._wordList?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wordList = this._wordList?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._wordList.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._wordList.internalValue = value.wordList;
+    }
+  }
+
+  // word_list - computed: false, optional: true, required: false
+  private _wordList = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordListOutputReference(this, "word_list");
+  public get wordList() {
+    return this._wordList;
+  }
+  public putWordList(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigWordList) {
+    this._wordList.internalValue = value;
+  }
+  public resetWordList() {
+    this._wordList.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wordListInput() {
+    return this._wordList.internalValue;
+  }
+}
+export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfig {
+  /**
+  * The part of the time to keep. Possible values: ["YEAR", "MONTH", "DAY_OF_MONTH", "DAY_OF_WEEK", "WEEK_OF_YEAR", "HOUR_OF_DAY"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#part_to_extract GoogleDataLossPreventionDeidentifyTemplate#part_to_extract}
+  */
+  readonly partToExtract?: string;
+}
+
+export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfigToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfigOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    part_to_extract: cdktf.stringToTerraform(struct!.partToExtract),
+  }
+}
+
+export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._partToExtract !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.partToExtract = this._partToExtract;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._partToExtract = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._partToExtract = value.partToExtract;
+    }
+  }
+
+  // part_to_extract - computed: false, optional: true, required: false
+  private _partToExtract?: string; 
+  public get partToExtract() {
+    return this.getStringAttribute('part_to_extract');
+  }
+  public set partToExtract(value: string) {
+    this._partToExtract = value;
+  }
+  public resetPartToExtract() {
+    this._partToExtract = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get partToExtractInput() {
+    return this._partToExtract;
+  }
+}
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformation {
+  /**
+  * bucketing_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#bucketing_config GoogleDataLossPreventionDeidentifyTemplate#bucketing_config}
+  */
+  readonly bucketingConfig?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfig;
   /**
   * character_mask_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#character_mask_config GoogleDataLossPreventionDeidentifyTemplate#character_mask_config}
   */
   readonly characterMaskConfig?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCharacterMaskConfig;
+  /**
+  * crypto_deterministic_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_deterministic_config GoogleDataLossPreventionDeidentifyTemplate#crypto_deterministic_config}
+  */
+  readonly cryptoDeterministicConfig?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfig;
+  /**
+  * crypto_hash_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_hash_config GoogleDataLossPreventionDeidentifyTemplate#crypto_hash_config}
+  */
+  readonly cryptoHashConfig?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfig;
+  /**
+  * crypto_replace_ffx_fpe_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#crypto_replace_ffx_fpe_config GoogleDataLossPreventionDeidentifyTemplate#crypto_replace_ffx_fpe_config}
+  */
+  readonly cryptoReplaceFfxFpeConfig?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfig;
+  /**
+  * date_shift_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#date_shift_config GoogleDataLossPreventionDeidentifyTemplate#date_shift_config}
+  */
+  readonly dateShiftConfig?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfig;
+  /**
+  * fixed_size_bucketing_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#fixed_size_bucketing_config GoogleDataLossPreventionDeidentifyTemplate#fixed_size_bucketing_config}
+  */
+  readonly fixedSizeBucketingConfig?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfig;
   /**
   * redact_config block
   * 
@@ -4778,6 +10491,18 @@ export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecor
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#replace_config GoogleDataLossPreventionDeidentifyTemplate#replace_config}
   */
   readonly replaceConfig?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceConfig;
+  /**
+  * replace_dictionary_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#replace_dictionary_config GoogleDataLossPreventionDeidentifyTemplate#replace_dictionary_config}
+  */
+  readonly replaceDictionaryConfig?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfig;
+  /**
+  * time_part_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_loss_prevention_deidentify_template#time_part_config GoogleDataLossPreventionDeidentifyTemplate#time_part_config}
+  */
+  readonly timePartConfig?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfig;
 }
 
 export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationToTerraform(struct?: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationOutputReference | GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformation): any {
@@ -4786,9 +10511,17 @@ export function googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecord
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    bucketing_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigToTerraform(struct!.bucketingConfig),
     character_mask_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCharacterMaskConfigToTerraform(struct!.characterMaskConfig),
+    crypto_deterministic_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigToTerraform(struct!.cryptoDeterministicConfig),
+    crypto_hash_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigToTerraform(struct!.cryptoHashConfig),
+    crypto_replace_ffx_fpe_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigToTerraform(struct!.cryptoReplaceFfxFpeConfig),
+    date_shift_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigToTerraform(struct!.dateShiftConfig),
+    fixed_size_bucketing_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigToTerraform(struct!.fixedSizeBucketingConfig),
     redact_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationRedactConfigToTerraform(struct!.redactConfig),
     replace_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceConfigToTerraform(struct!.replaceConfig),
+    replace_dictionary_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigToTerraform(struct!.replaceDictionaryConfig),
+    time_part_config: googleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfigToTerraform(struct!.timePartConfig),
   }
 }
 
@@ -4806,9 +10539,33 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTra
   public get internalValue(): GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformation | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._bucketingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bucketingConfig = this._bucketingConfig?.internalValue;
+    }
     if (this._characterMaskConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.characterMaskConfig = this._characterMaskConfig?.internalValue;
+    }
+    if (this._cryptoDeterministicConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoDeterministicConfig = this._cryptoDeterministicConfig?.internalValue;
+    }
+    if (this._cryptoHashConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoHashConfig = this._cryptoHashConfig?.internalValue;
+    }
+    if (this._cryptoReplaceFfxFpeConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cryptoReplaceFfxFpeConfig = this._cryptoReplaceFfxFpeConfig?.internalValue;
+    }
+    if (this._dateShiftConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dateShiftConfig = this._dateShiftConfig?.internalValue;
+    }
+    if (this._fixedSizeBucketingConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.fixedSizeBucketingConfig = this._fixedSizeBucketingConfig?.internalValue;
     }
     if (this._redactConfig?.internalValue !== undefined) {
       hasAnyValues = true;
@@ -4818,22 +10575,62 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTra
       hasAnyValues = true;
       internalValueResult.replaceConfig = this._replaceConfig?.internalValue;
     }
+    if (this._replaceDictionaryConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.replaceDictionaryConfig = this._replaceDictionaryConfig?.internalValue;
+    }
+    if (this._timePartConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timePartConfig = this._timePartConfig?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
   public set internalValue(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformation | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._bucketingConfig.internalValue = undefined;
       this._characterMaskConfig.internalValue = undefined;
+      this._cryptoDeterministicConfig.internalValue = undefined;
+      this._cryptoHashConfig.internalValue = undefined;
+      this._cryptoReplaceFfxFpeConfig.internalValue = undefined;
+      this._dateShiftConfig.internalValue = undefined;
+      this._fixedSizeBucketingConfig.internalValue = undefined;
       this._redactConfig.internalValue = undefined;
       this._replaceConfig.internalValue = undefined;
+      this._replaceDictionaryConfig.internalValue = undefined;
+      this._timePartConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._bucketingConfig.internalValue = value.bucketingConfig;
       this._characterMaskConfig.internalValue = value.characterMaskConfig;
+      this._cryptoDeterministicConfig.internalValue = value.cryptoDeterministicConfig;
+      this._cryptoHashConfig.internalValue = value.cryptoHashConfig;
+      this._cryptoReplaceFfxFpeConfig.internalValue = value.cryptoReplaceFfxFpeConfig;
+      this._dateShiftConfig.internalValue = value.dateShiftConfig;
+      this._fixedSizeBucketingConfig.internalValue = value.fixedSizeBucketingConfig;
       this._redactConfig.internalValue = value.redactConfig;
       this._replaceConfig.internalValue = value.replaceConfig;
+      this._replaceDictionaryConfig.internalValue = value.replaceDictionaryConfig;
+      this._timePartConfig.internalValue = value.timePartConfig;
     }
+  }
+
+  // bucketing_config - computed: false, optional: true, required: false
+  private _bucketingConfig = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfigOutputReference(this, "bucketing_config");
+  public get bucketingConfig() {
+    return this._bucketingConfig;
+  }
+  public putBucketingConfig(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationBucketingConfig) {
+    this._bucketingConfig.internalValue = value;
+  }
+  public resetBucketingConfig() {
+    this._bucketingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bucketingConfigInput() {
+    return this._bucketingConfig.internalValue;
   }
 
   // character_mask_config - computed: false, optional: true, required: false
@@ -4850,6 +10647,86 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTra
   // Temporarily expose input value. Use with caution.
   public get characterMaskConfigInput() {
     return this._characterMaskConfig.internalValue;
+  }
+
+  // crypto_deterministic_config - computed: false, optional: true, required: false
+  private _cryptoDeterministicConfig = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfigOutputReference(this, "crypto_deterministic_config");
+  public get cryptoDeterministicConfig() {
+    return this._cryptoDeterministicConfig;
+  }
+  public putCryptoDeterministicConfig(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoDeterministicConfig) {
+    this._cryptoDeterministicConfig.internalValue = value;
+  }
+  public resetCryptoDeterministicConfig() {
+    this._cryptoDeterministicConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoDeterministicConfigInput() {
+    return this._cryptoDeterministicConfig.internalValue;
+  }
+
+  // crypto_hash_config - computed: false, optional: true, required: false
+  private _cryptoHashConfig = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfigOutputReference(this, "crypto_hash_config");
+  public get cryptoHashConfig() {
+    return this._cryptoHashConfig;
+  }
+  public putCryptoHashConfig(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoHashConfig) {
+    this._cryptoHashConfig.internalValue = value;
+  }
+  public resetCryptoHashConfig() {
+    this._cryptoHashConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoHashConfigInput() {
+    return this._cryptoHashConfig.internalValue;
+  }
+
+  // crypto_replace_ffx_fpe_config - computed: false, optional: true, required: false
+  private _cryptoReplaceFfxFpeConfig = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfigOutputReference(this, "crypto_replace_ffx_fpe_config");
+  public get cryptoReplaceFfxFpeConfig() {
+    return this._cryptoReplaceFfxFpeConfig;
+  }
+  public putCryptoReplaceFfxFpeConfig(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfig) {
+    this._cryptoReplaceFfxFpeConfig.internalValue = value;
+  }
+  public resetCryptoReplaceFfxFpeConfig() {
+    this._cryptoReplaceFfxFpeConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cryptoReplaceFfxFpeConfigInput() {
+    return this._cryptoReplaceFfxFpeConfig.internalValue;
+  }
+
+  // date_shift_config - computed: false, optional: true, required: false
+  private _dateShiftConfig = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfigOutputReference(this, "date_shift_config");
+  public get dateShiftConfig() {
+    return this._dateShiftConfig;
+  }
+  public putDateShiftConfig(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationDateShiftConfig) {
+    this._dateShiftConfig.internalValue = value;
+  }
+  public resetDateShiftConfig() {
+    this._dateShiftConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dateShiftConfigInput() {
+    return this._dateShiftConfig.internalValue;
+  }
+
+  // fixed_size_bucketing_config - computed: false, optional: true, required: false
+  private _fixedSizeBucketingConfig = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfigOutputReference(this, "fixed_size_bucketing_config");
+  public get fixedSizeBucketingConfig() {
+    return this._fixedSizeBucketingConfig;
+  }
+  public putFixedSizeBucketingConfig(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationFixedSizeBucketingConfig) {
+    this._fixedSizeBucketingConfig.internalValue = value;
+  }
+  public resetFixedSizeBucketingConfig() {
+    this._fixedSizeBucketingConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fixedSizeBucketingConfigInput() {
+    return this._fixedSizeBucketingConfig.internalValue;
   }
 
   // redact_config - computed: false, optional: true, required: false
@@ -4882,6 +10759,38 @@ export class GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTra
   // Temporarily expose input value. Use with caution.
   public get replaceConfigInput() {
     return this._replaceConfig.internalValue;
+  }
+
+  // replace_dictionary_config - computed: false, optional: true, required: false
+  private _replaceDictionaryConfig = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfigOutputReference(this, "replace_dictionary_config");
+  public get replaceDictionaryConfig() {
+    return this._replaceDictionaryConfig;
+  }
+  public putReplaceDictionaryConfig(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationReplaceDictionaryConfig) {
+    this._replaceDictionaryConfig.internalValue = value;
+  }
+  public resetReplaceDictionaryConfig() {
+    this._replaceDictionaryConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get replaceDictionaryConfigInput() {
+    return this._replaceDictionaryConfig.internalValue;
+  }
+
+  // time_part_config - computed: false, optional: true, required: false
+  private _timePartConfig = new GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfigOutputReference(this, "time_part_config");
+  public get timePartConfig() {
+    return this._timePartConfig;
+  }
+  public putTimePartConfig(value: GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformationsPrimitiveTransformationTimePartConfig) {
+    this._timePartConfig.internalValue = value;
+  }
+  public resetTimePartConfig() {
+    this._timePartConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timePartConfigInput() {
+    return this._timePartConfig.internalValue;
   }
 }
 export interface GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsFieldTransformations {
@@ -6479,7 +12388,7 @@ export class GoogleDataLossPreventionDeidentifyTemplate extends cdktf.TerraformR
       terraformResourceType: 'google_data_loss_prevention_deidentify_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
