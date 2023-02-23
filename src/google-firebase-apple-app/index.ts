@@ -20,9 +20,9 @@ export interface GoogleFirebaseAppleAppConfig extends cdktf.TerraformMetaArgumen
   */
   readonly bundleId?: string;
   /**
-  * (Optional) Set to 'ABANDON' to allow the AppleApp to be untracked from terraform state
-rather than deleted upon 'terraform destroy'. This is useful because the AppleApp may be
-serving traffic. Set to 'DELETE' to delete the AppleApp. Default to 'DELETE'.
+  * (Optional) Set to 'ABANDON' to allow the Apple to be untracked from terraform state
+rather than deleted upon 'terraform destroy'. This is useful because the Apple may be
+serving traffic. Set to 'DELETE' to delete the Apple. Defaults to 'DELETE'.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_apple_app#deletion_policy GoogleFirebaseAppleApp#deletion_policy}
   */
@@ -213,7 +213,7 @@ export class GoogleFirebaseAppleApp extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_apple_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.53.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
