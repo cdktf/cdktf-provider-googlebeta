@@ -10,7 +10,7 @@ export interface GoogleFirebaseAndroidAppConfig extends cdktf.TerraformMetaArgum
   /**
   * (Optional) Set to 'ABANDON' to allow the AndroidApp to be untracked from terraform state
 rather than deleted upon 'terraform destroy'. This is useful because the AndroidApp may be
-serving traffic. Set to 'DELETE' to delete the AndroidApp. Default to 'DELETE'.
+serving traffic. Set to 'DELETE' to delete the AndroidApp. Defaults to 'DELETE'.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app#deletion_policy GoogleFirebaseAndroidApp#deletion_policy}
   */
@@ -214,7 +214,7 @@ export class GoogleFirebaseAndroidApp extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_android_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

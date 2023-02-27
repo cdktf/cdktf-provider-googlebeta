@@ -689,7 +689,7 @@ export class GoogleIdentityPlatformProjectDefaultConfig extends cdktf.TerraformR
       terraformResourceType: 'google_identity_platform_project_default_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

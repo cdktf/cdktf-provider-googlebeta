@@ -1214,6 +1214,12 @@ export interface GoogleContainerNodePoolNodeConfigKubeletConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#cpu_manager_policy GoogleContainerNodePool#cpu_manager_policy}
   */
   readonly cpuManagerPolicy: string;
+  /**
+  * Controls the maximum number of processes allowed to run in a pod.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#pod_pids_limit GoogleContainerNodePool#pod_pids_limit}
+  */
+  readonly podPidsLimit?: number;
 }
 
 export function googleContainerNodePoolNodeConfigKubeletConfigToTerraform(struct?: GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference | GoogleContainerNodePoolNodeConfigKubeletConfig): any {
@@ -1225,6 +1231,7 @@ export function googleContainerNodePoolNodeConfigKubeletConfigToTerraform(struct
     cpu_cfs_quota: cdktf.booleanToTerraform(struct!.cpuCfsQuota),
     cpu_cfs_quota_period: cdktf.stringToTerraform(struct!.cpuCfsQuotaPeriod),
     cpu_manager_policy: cdktf.stringToTerraform(struct!.cpuManagerPolicy),
+    pod_pids_limit: cdktf.numberToTerraform(struct!.podPidsLimit),
   }
 }
 
@@ -1254,6 +1261,10 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
       hasAnyValues = true;
       internalValueResult.cpuManagerPolicy = this._cpuManagerPolicy;
     }
+    if (this._podPidsLimit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.podPidsLimit = this._podPidsLimit;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1263,12 +1274,14 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
       this._cpuCfsQuota = undefined;
       this._cpuCfsQuotaPeriod = undefined;
       this._cpuManagerPolicy = undefined;
+      this._podPidsLimit = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._cpuCfsQuota = value.cpuCfsQuota;
       this._cpuCfsQuotaPeriod = value.cpuCfsQuotaPeriod;
       this._cpuManagerPolicy = value.cpuManagerPolicy;
+      this._podPidsLimit = value.podPidsLimit;
     }
   }
 
@@ -1315,6 +1328,22 @@ export class GoogleContainerNodePoolNodeConfigKubeletConfigOutputReference exten
   // Temporarily expose input value. Use with caution.
   public get cpuManagerPolicyInput() {
     return this._cpuManagerPolicy;
+  }
+
+  // pod_pids_limit - computed: false, optional: true, required: false
+  private _podPidsLimit?: number; 
+  public get podPidsLimit() {
+    return this.getNumberAttribute('pod_pids_limit');
+  }
+  public set podPidsLimit(value: number) {
+    this._podPidsLimit = value;
+  }
+  public resetPodPidsLimit() {
+    this._podPidsLimit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get podPidsLimitInput() {
+    return this._podPidsLimit;
   }
 }
 export interface GoogleContainerNodePoolNodeConfigLinuxNodeConfig {
@@ -3169,7 +3198,7 @@ export class GoogleContainerNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

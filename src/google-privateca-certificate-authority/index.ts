@@ -2592,7 +2592,7 @@ export class GooglePrivatecaCertificateAuthority extends cdktf.TerraformResource
       terraformResourceType: 'google_privateca_certificate_authority',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

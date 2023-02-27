@@ -1092,7 +1092,7 @@ export class GoogleBigqueryDataset extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_dataset',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1279,7 +1279,7 @@ export class GoogleBigqueryDataset extends cdktf.TerraformResource {
     return this._location;
   }
 
-  // max_time_travel_hours - computed: false, optional: true, required: false
+  // max_time_travel_hours - computed: true, optional: true, required: false
   private _maxTimeTravelHours?: string; 
   public get maxTimeTravelHours() {
     return this.getStringAttribute('max_time_travel_hours');
