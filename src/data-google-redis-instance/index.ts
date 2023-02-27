@@ -598,7 +598,7 @@ export class DataGoogleRedisInstance extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_redis_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

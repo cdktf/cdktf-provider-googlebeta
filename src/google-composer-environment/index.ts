@@ -774,7 +774,7 @@ export interface GoogleComposerEnvironmentConfigNodeConfig {
   */
   readonly subnetwork?: string;
   /**
-  * The list of instance tags applied to all node VMs. Tags are used to identify valid sources or targets for network firewalls. Each tag within the list must comply with RFC1035. Cannot be updated. This field is supported for Cloud Composer environments in versions composer-1.*.*-airflow-*.*.*.
+  * The list of instance tags applied to all node VMs. Tags are used to identify valid sources or targets for network firewalls. Each tag within the list must comply with RFC1035. Cannot be updated.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#tags GoogleComposerEnvironment#tags}
   */
@@ -1316,6 +1316,288 @@ export class GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputRefere
     return this._webServerIpv4CidrBlock;
   }
 }
+export interface GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig {
+  /**
+  * When enabled, Cloud Composer periodically saves snapshots of your environment to a Cloud Storage bucket.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#enabled GoogleComposerEnvironment#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+  /**
+  * Snapshot schedule, in the unix-cron format.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#snapshot_creation_schedule GoogleComposerEnvironment#snapshot_creation_schedule}
+  */
+  readonly snapshotCreationSchedule?: string;
+  /**
+  * the URI of a bucket folder where to save the snapshot.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#snapshot_location GoogleComposerEnvironment#snapshot_location}
+  */
+  readonly snapshotLocation?: string;
+  /**
+  * A time zone for the schedule. This value is a time offset and does not take into account daylight saving time changes. Valid values are from UTC-12 to UTC+12. Examples: UTC, UTC-01, UTC+03.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#time_zone GoogleComposerEnvironment#time_zone}
+  */
+  readonly timeZone?: string;
+}
+
+export function googleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigToTerraform(struct?: GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference | GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    snapshot_creation_schedule: cdktf.stringToTerraform(struct!.snapshotCreationSchedule),
+    snapshot_location: cdktf.stringToTerraform(struct!.snapshotLocation),
+    time_zone: cdktf.stringToTerraform(struct!.timeZone),
+  }
+}
+
+export class GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._snapshotCreationSchedule !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.snapshotCreationSchedule = this._snapshotCreationSchedule;
+    }
+    if (this._snapshotLocation !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.snapshotLocation = this._snapshotLocation;
+    }
+    if (this._timeZone !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.timeZone = this._timeZone;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+      this._snapshotCreationSchedule = undefined;
+      this._snapshotLocation = undefined;
+      this._timeZone = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+      this._snapshotCreationSchedule = value.snapshotCreationSchedule;
+      this._snapshotLocation = value.snapshotLocation;
+      this._timeZone = value.timeZone;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // snapshot_creation_schedule - computed: false, optional: true, required: false
+  private _snapshotCreationSchedule?: string; 
+  public get snapshotCreationSchedule() {
+    return this.getStringAttribute('snapshot_creation_schedule');
+  }
+  public set snapshotCreationSchedule(value: string) {
+    this._snapshotCreationSchedule = value;
+  }
+  public resetSnapshotCreationSchedule() {
+    this._snapshotCreationSchedule = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotCreationScheduleInput() {
+    return this._snapshotCreationSchedule;
+  }
+
+  // snapshot_location - computed: false, optional: true, required: false
+  private _snapshotLocation?: string; 
+  public get snapshotLocation() {
+    return this.getStringAttribute('snapshot_location');
+  }
+  public set snapshotLocation(value: string) {
+    this._snapshotLocation = value;
+  }
+  public resetSnapshotLocation() {
+    this._snapshotLocation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get snapshotLocationInput() {
+    return this._snapshotLocation;
+  }
+
+  // time_zone - computed: false, optional: true, required: false
+  private _timeZone?: string; 
+  public get timeZone() {
+    return this.getStringAttribute('time_zone');
+  }
+  public set timeZone(value: string) {
+    this._timeZone = value;
+  }
+  public resetTimeZone() {
+    this._timeZone = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeZoneInput() {
+    return this._timeZone;
+  }
+}
+export interface GoogleComposerEnvironmentConfigRecoveryConfig {
+  /**
+  * scheduled_snapshots_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#scheduled_snapshots_config GoogleComposerEnvironment#scheduled_snapshots_config}
+  */
+  readonly scheduledSnapshotsConfig?: GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig;
+}
+
+export function googleComposerEnvironmentConfigRecoveryConfigToTerraform(struct?: GoogleComposerEnvironmentConfigRecoveryConfigOutputReference | GoogleComposerEnvironmentConfigRecoveryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    scheduled_snapshots_config: googleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigToTerraform(struct!.scheduledSnapshotsConfig),
+  }
+}
+
+export class GoogleComposerEnvironmentConfigRecoveryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComposerEnvironmentConfigRecoveryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._scheduledSnapshotsConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.scheduledSnapshotsConfig = this._scheduledSnapshotsConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComposerEnvironmentConfigRecoveryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._scheduledSnapshotsConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._scheduledSnapshotsConfig.internalValue = value.scheduledSnapshotsConfig;
+    }
+  }
+
+  // scheduled_snapshots_config - computed: false, optional: true, required: false
+  private _scheduledSnapshotsConfig = new GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference(this, "scheduled_snapshots_config");
+  public get scheduledSnapshotsConfig() {
+    return this._scheduledSnapshotsConfig;
+  }
+  public putScheduledSnapshotsConfig(value: GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfig) {
+    this._scheduledSnapshotsConfig.internalValue = value;
+  }
+  public resetScheduledSnapshotsConfig() {
+    this._scheduledSnapshotsConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scheduledSnapshotsConfigInput() {
+    return this._scheduledSnapshotsConfig.internalValue;
+  }
+}
+export interface GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration {
+  /**
+  * Whether or not Cloud Data Lineage integration is enabled.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#enabled GoogleComposerEnvironment#enabled}
+  */
+  readonly enabled: boolean | cdktf.IResolvable;
+}
+
+export function googleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationToTerraform(struct?: GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference | GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enabled: cdktf.booleanToTerraform(struct!.enabled),
+  }
+}
+
+export class GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._enabled = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._enabled = value.enabled;
+    }
+  }
+
+  // enabled - computed: false, optional: false, required: true
+  private _enabled?: boolean | cdktf.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktf.IResolvable) {
+    this._enabled = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+}
 export interface GoogleComposerEnvironmentConfigSoftwareConfig {
   /**
   * Apache Airflow configuration properties to override. Property keys contain the section and property names, separated by a hyphen, for example "core-dags_are_paused_at_creation". Section names must not contain hyphens ("-"), opening square brackets ("["), or closing square brackets ("]"). The property name must not be empty and cannot contain "=" or ";". Section and property names cannot contain characters: "." Apache Airflow configuration property names must be written in snake_case. Property values can contain any character, and can be written in any lower/upper case format. Certain Apache Airflow configuration property values are blacklisted, and cannot be overridden.
@@ -1353,6 +1635,12 @@ export interface GoogleComposerEnvironmentConfigSoftwareConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#scheduler_count GoogleComposerEnvironment#scheduler_count}
   */
   readonly schedulerCount?: number;
+  /**
+  * cloud_data_lineage_integration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#cloud_data_lineage_integration GoogleComposerEnvironment#cloud_data_lineage_integration}
+  */
+  readonly cloudDataLineageIntegration?: GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration;
 }
 
 export function googleComposerEnvironmentConfigSoftwareConfigToTerraform(struct?: GoogleComposerEnvironmentConfigSoftwareConfigOutputReference | GoogleComposerEnvironmentConfigSoftwareConfig): any {
@@ -1367,6 +1655,7 @@ export function googleComposerEnvironmentConfigSoftwareConfigToTerraform(struct?
     pypi_packages: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.pypiPackages),
     python_version: cdktf.stringToTerraform(struct!.pythonVersion),
     scheduler_count: cdktf.numberToTerraform(struct!.schedulerCount),
+    cloud_data_lineage_integration: googleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationToTerraform(struct!.cloudDataLineageIntegration),
   }
 }
 
@@ -1408,6 +1697,10 @@ export class GoogleComposerEnvironmentConfigSoftwareConfigOutputReference extend
       hasAnyValues = true;
       internalValueResult.schedulerCount = this._schedulerCount;
     }
+    if (this._cloudDataLineageIntegration?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cloudDataLineageIntegration = this._cloudDataLineageIntegration?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -1420,6 +1713,7 @@ export class GoogleComposerEnvironmentConfigSoftwareConfigOutputReference extend
       this._pypiPackages = undefined;
       this._pythonVersion = undefined;
       this._schedulerCount = undefined;
+      this._cloudDataLineageIntegration.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -1429,6 +1723,7 @@ export class GoogleComposerEnvironmentConfigSoftwareConfigOutputReference extend
       this._pypiPackages = value.pypiPackages;
       this._pythonVersion = value.pythonVersion;
       this._schedulerCount = value.schedulerCount;
+      this._cloudDataLineageIntegration.internalValue = value.cloudDataLineageIntegration;
     }
   }
 
@@ -1526,6 +1821,22 @@ export class GoogleComposerEnvironmentConfigSoftwareConfigOutputReference extend
   // Temporarily expose input value. Use with caution.
   public get schedulerCountInput() {
     return this._schedulerCount;
+  }
+
+  // cloud_data_lineage_integration - computed: false, optional: true, required: false
+  private _cloudDataLineageIntegration = new GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference(this, "cloud_data_lineage_integration");
+  public get cloudDataLineageIntegration() {
+    return this._cloudDataLineageIntegration;
+  }
+  public putCloudDataLineageIntegration(value: GoogleComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegration) {
+    this._cloudDataLineageIntegration.internalValue = value;
+  }
+  public resetCloudDataLineageIntegration() {
+    this._cloudDataLineageIntegration.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cloudDataLineageIntegrationInput() {
+    return this._cloudDataLineageIntegration.internalValue;
   }
 }
 export interface GoogleComposerEnvironmentConfigWebServerConfig {
@@ -2566,6 +2877,12 @@ export interface GoogleComposerEnvironmentConfigA {
   */
   readonly privateEnvironmentConfig?: GoogleComposerEnvironmentConfigPrivateEnvironmentConfig;
   /**
+  * recovery_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#recovery_config GoogleComposerEnvironment#recovery_config}
+  */
+  readonly recoveryConfig?: GoogleComposerEnvironmentConfigRecoveryConfig;
+  /**
   * software_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment#software_config GoogleComposerEnvironment#software_config}
@@ -2605,6 +2922,7 @@ export function googleComposerEnvironmentConfigAToTerraform(struct?: GoogleCompo
     master_authorized_networks_config: googleComposerEnvironmentConfigMasterAuthorizedNetworksConfigToTerraform(struct!.masterAuthorizedNetworksConfig),
     node_config: googleComposerEnvironmentConfigNodeConfigToTerraform(struct!.nodeConfig),
     private_environment_config: googleComposerEnvironmentConfigPrivateEnvironmentConfigToTerraform(struct!.privateEnvironmentConfig),
+    recovery_config: googleComposerEnvironmentConfigRecoveryConfigToTerraform(struct!.recoveryConfig),
     software_config: googleComposerEnvironmentConfigSoftwareConfigToTerraform(struct!.softwareConfig),
     web_server_config: googleComposerEnvironmentConfigWebServerConfigToTerraform(struct!.webServerConfig),
     web_server_network_access_control: googleComposerEnvironmentConfigWebServerNetworkAccessControlToTerraform(struct!.webServerNetworkAccessControl),
@@ -2658,6 +2976,10 @@ export class GoogleComposerEnvironmentConfigAOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.privateEnvironmentConfig = this._privateEnvironmentConfig?.internalValue;
     }
+    if (this._recoveryConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.recoveryConfig = this._recoveryConfig?.internalValue;
+    }
     if (this._softwareConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.softwareConfig = this._softwareConfig?.internalValue;
@@ -2688,6 +3010,7 @@ export class GoogleComposerEnvironmentConfigAOutputReference extends cdktf.Compl
       this._masterAuthorizedNetworksConfig.internalValue = undefined;
       this._nodeConfig.internalValue = undefined;
       this._privateEnvironmentConfig.internalValue = undefined;
+      this._recoveryConfig.internalValue = undefined;
       this._softwareConfig.internalValue = undefined;
       this._webServerConfig.internalValue = undefined;
       this._webServerNetworkAccessControl.internalValue = undefined;
@@ -2703,6 +3026,7 @@ export class GoogleComposerEnvironmentConfigAOutputReference extends cdktf.Compl
       this._masterAuthorizedNetworksConfig.internalValue = value.masterAuthorizedNetworksConfig;
       this._nodeConfig.internalValue = value.nodeConfig;
       this._privateEnvironmentConfig.internalValue = value.privateEnvironmentConfig;
+      this._recoveryConfig.internalValue = value.recoveryConfig;
       this._softwareConfig.internalValue = value.softwareConfig;
       this._webServerConfig.internalValue = value.webServerConfig;
       this._webServerNetworkAccessControl.internalValue = value.webServerNetworkAccessControl;
@@ -2851,6 +3175,22 @@ export class GoogleComposerEnvironmentConfigAOutputReference extends cdktf.Compl
   // Temporarily expose input value. Use with caution.
   public get privateEnvironmentConfigInput() {
     return this._privateEnvironmentConfig.internalValue;
+  }
+
+  // recovery_config - computed: false, optional: true, required: false
+  private _recoveryConfig = new GoogleComposerEnvironmentConfigRecoveryConfigOutputReference(this, "recovery_config");
+  public get recoveryConfig() {
+    return this._recoveryConfig;
+  }
+  public putRecoveryConfig(value: GoogleComposerEnvironmentConfigRecoveryConfig) {
+    this._recoveryConfig.internalValue = value;
+  }
+  public resetRecoveryConfig() {
+    this._recoveryConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get recoveryConfigInput() {
+    return this._recoveryConfig.internalValue;
   }
 
   // software_config - computed: false, optional: true, required: false
@@ -3073,7 +3413,7 @@ export class GoogleComposerEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'google_composer_environment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

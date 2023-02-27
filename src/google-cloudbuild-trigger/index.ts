@@ -126,6 +126,12 @@ Format: projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT_ID_OR_EMAIL}
   */
   readonly approvalConfig?: GoogleCloudbuildTriggerApprovalConfig;
   /**
+  * bitbucket_server_trigger_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#bitbucket_server_trigger_config GoogleCloudbuildTrigger#bitbucket_server_trigger_config}
+  */
+  readonly bitbucketServerTriggerConfig?: GoogleCloudbuildTriggerBitbucketServerTriggerConfig;
+  /**
   * build block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#build GoogleCloudbuildTrigger#build}
@@ -149,6 +155,12 @@ Format: projects/{PROJECT_ID}/serviceAccounts/{ACCOUNT_ID_OR_EMAIL}
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#pubsub_config GoogleCloudbuildTrigger#pubsub_config}
   */
   readonly pubsubConfig?: GoogleCloudbuildTriggerPubsubConfig;
+  /**
+  * repository_event_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#repository_event_config GoogleCloudbuildTrigger#repository_event_config}
+  */
+  readonly repositoryEventConfig?: GoogleCloudbuildTriggerRepositoryEventConfig;
   /**
   * source_to_build block
   * 
@@ -240,6 +252,429 @@ export class GoogleCloudbuildTriggerApprovalConfigOutputReference extends cdktf.
   // Temporarily expose input value. Use with caution.
   public get approvalRequiredInput() {
     return this._approvalRequired;
+  }
+}
+export interface GoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequest {
+  /**
+  * Regex of branches to match.
+The syntax of the regular expressions accepted is the syntax accepted by RE2 and described at https://github.com/google/re2/wiki/Syntax
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#branch GoogleCloudbuildTrigger#branch}
+  */
+  readonly branch: string;
+  /**
+  * Configure builds to run whether a repository owner or collaborator need to comment /gcbrun. Possible values: ["COMMENTS_DISABLED", "COMMENTS_ENABLED", "COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#comment_control GoogleCloudbuildTrigger#comment_control}
+  */
+  readonly commentControl?: string;
+  /**
+  * If true, branches that do NOT match the git_ref will trigger a build.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#invert_regex GoogleCloudbuildTrigger#invert_regex}
+  */
+  readonly invertRegex?: boolean | cdktf.IResolvable;
+}
+
+export function googleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestToTerraform(struct?: GoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference | GoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    branch: cdktf.stringToTerraform(struct!.branch),
+    comment_control: cdktf.stringToTerraform(struct!.commentControl),
+    invert_regex: cdktf.booleanToTerraform(struct!.invertRegex),
+  }
+}
+
+export class GoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequest | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._branch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.branch = this._branch;
+    }
+    if (this._commentControl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commentControl = this._commentControl;
+    }
+    if (this._invertRegex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invertRegex = this._invertRegex;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequest | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._branch = undefined;
+      this._commentControl = undefined;
+      this._invertRegex = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._branch = value.branch;
+      this._commentControl = value.commentControl;
+      this._invertRegex = value.invertRegex;
+    }
+  }
+
+  // branch - computed: false, optional: false, required: true
+  private _branch?: string; 
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+  public set branch(value: string) {
+    this._branch = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch;
+  }
+
+  // comment_control - computed: false, optional: true, required: false
+  private _commentControl?: string; 
+  public get commentControl() {
+    return this.getStringAttribute('comment_control');
+  }
+  public set commentControl(value: string) {
+    this._commentControl = value;
+  }
+  public resetCommentControl() {
+    this._commentControl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentControlInput() {
+    return this._commentControl;
+  }
+
+  // invert_regex - computed: false, optional: true, required: false
+  private _invertRegex?: boolean | cdktf.IResolvable; 
+  public get invertRegex() {
+    return this.getBooleanAttribute('invert_regex');
+  }
+  public set invertRegex(value: boolean | cdktf.IResolvable) {
+    this._invertRegex = value;
+  }
+  public resetInvertRegex() {
+    this._invertRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invertRegexInput() {
+    return this._invertRegex;
+  }
+}
+export interface GoogleCloudbuildTriggerBitbucketServerTriggerConfigPush {
+  /**
+  * Regex of branches to match.  Specify only one of branch or tag.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#branch GoogleCloudbuildTrigger#branch}
+  */
+  readonly branch?: string;
+  /**
+  * When true, only trigger a build if the revision regex does NOT match the gitRef regex.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#invert_regex GoogleCloudbuildTrigger#invert_regex}
+  */
+  readonly invertRegex?: boolean | cdktf.IResolvable;
+  /**
+  * Regex of tags to match.  Specify only one of branch or tag.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#tag GoogleCloudbuildTrigger#tag}
+  */
+  readonly tag?: string;
+}
+
+export function googleCloudbuildTriggerBitbucketServerTriggerConfigPushToTerraform(struct?: GoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference | GoogleCloudbuildTriggerBitbucketServerTriggerConfigPush): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    branch: cdktf.stringToTerraform(struct!.branch),
+    invert_regex: cdktf.booleanToTerraform(struct!.invertRegex),
+    tag: cdktf.stringToTerraform(struct!.tag),
+  }
+}
+
+export class GoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildTriggerBitbucketServerTriggerConfigPush | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._branch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.branch = this._branch;
+    }
+    if (this._invertRegex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invertRegex = this._invertRegex;
+    }
+    if (this._tag !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tag = this._tag;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildTriggerBitbucketServerTriggerConfigPush | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._branch = undefined;
+      this._invertRegex = undefined;
+      this._tag = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._branch = value.branch;
+      this._invertRegex = value.invertRegex;
+      this._tag = value.tag;
+    }
+  }
+
+  // branch - computed: false, optional: true, required: false
+  private _branch?: string; 
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+  public set branch(value: string) {
+    this._branch = value;
+  }
+  public resetBranch() {
+    this._branch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch;
+  }
+
+  // invert_regex - computed: false, optional: true, required: false
+  private _invertRegex?: boolean | cdktf.IResolvable; 
+  public get invertRegex() {
+    return this.getBooleanAttribute('invert_regex');
+  }
+  public set invertRegex(value: boolean | cdktf.IResolvable) {
+    this._invertRegex = value;
+  }
+  public resetInvertRegex() {
+    this._invertRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invertRegexInput() {
+    return this._invertRegex;
+  }
+
+  // tag - computed: false, optional: true, required: false
+  private _tag?: string; 
+  public get tag() {
+    return this.getStringAttribute('tag');
+  }
+  public set tag(value: string) {
+    this._tag = value;
+  }
+  public resetTag() {
+    this._tag = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagInput() {
+    return this._tag;
+  }
+}
+export interface GoogleCloudbuildTriggerBitbucketServerTriggerConfig {
+  /**
+  * The Bitbucket server config resource that this trigger config maps to.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#bitbucket_server_config_resource GoogleCloudbuildTrigger#bitbucket_server_config_resource}
+  */
+  readonly bitbucketServerConfigResource: string;
+  /**
+  * Key of the project that the repo is in. For example: The key for https://mybitbucket.server/projects/TEST/repos/test-repo is "TEST".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#project_key GoogleCloudbuildTrigger#project_key}
+  */
+  readonly projectKey: string;
+  /**
+  * Slug of the repository. A repository slug is a URL-friendly version of a repository name, automatically generated by Bitbucket for use in the URL.
+For example, if the repository name is 'test repo', in the URL it would become 'test-repo' as in https://mybitbucket.server/projects/TEST/repos/test-repo.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#repo_slug GoogleCloudbuildTrigger#repo_slug}
+  */
+  readonly repoSlug: string;
+  /**
+  * pull_request block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#pull_request GoogleCloudbuildTrigger#pull_request}
+  */
+  readonly pullRequest?: GoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequest;
+  /**
+  * push block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#push GoogleCloudbuildTrigger#push}
+  */
+  readonly push?: GoogleCloudbuildTriggerBitbucketServerTriggerConfigPush;
+}
+
+export function googleCloudbuildTriggerBitbucketServerTriggerConfigToTerraform(struct?: GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference | GoogleCloudbuildTriggerBitbucketServerTriggerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    bitbucket_server_config_resource: cdktf.stringToTerraform(struct!.bitbucketServerConfigResource),
+    project_key: cdktf.stringToTerraform(struct!.projectKey),
+    repo_slug: cdktf.stringToTerraform(struct!.repoSlug),
+    pull_request: googleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestToTerraform(struct!.pullRequest),
+    push: googleCloudbuildTriggerBitbucketServerTriggerConfigPushToTerraform(struct!.push),
+  }
+}
+
+export class GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildTriggerBitbucketServerTriggerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._bitbucketServerConfigResource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bitbucketServerConfigResource = this._bitbucketServerConfigResource;
+    }
+    if (this._projectKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectKey = this._projectKey;
+    }
+    if (this._repoSlug !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repoSlug = this._repoSlug;
+    }
+    if (this._pullRequest?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pullRequest = this._pullRequest?.internalValue;
+    }
+    if (this._push?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.push = this._push?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildTriggerBitbucketServerTriggerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._bitbucketServerConfigResource = undefined;
+      this._projectKey = undefined;
+      this._repoSlug = undefined;
+      this._pullRequest.internalValue = undefined;
+      this._push.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._bitbucketServerConfigResource = value.bitbucketServerConfigResource;
+      this._projectKey = value.projectKey;
+      this._repoSlug = value.repoSlug;
+      this._pullRequest.internalValue = value.pullRequest;
+      this._push.internalValue = value.push;
+    }
+  }
+
+  // bitbucket_server_config_resource - computed: false, optional: false, required: true
+  private _bitbucketServerConfigResource?: string; 
+  public get bitbucketServerConfigResource() {
+    return this.getStringAttribute('bitbucket_server_config_resource');
+  }
+  public set bitbucketServerConfigResource(value: string) {
+    this._bitbucketServerConfigResource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bitbucketServerConfigResourceInput() {
+    return this._bitbucketServerConfigResource;
+  }
+
+  // project_key - computed: false, optional: false, required: true
+  private _projectKey?: string; 
+  public get projectKey() {
+    return this.getStringAttribute('project_key');
+  }
+  public set projectKey(value: string) {
+    this._projectKey = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectKeyInput() {
+    return this._projectKey;
+  }
+
+  // repo_slug - computed: false, optional: false, required: true
+  private _repoSlug?: string; 
+  public get repoSlug() {
+    return this.getStringAttribute('repo_slug');
+  }
+  public set repoSlug(value: string) {
+    this._repoSlug = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repoSlugInput() {
+    return this._repoSlug;
+  }
+
+  // pull_request - computed: false, optional: true, required: false
+  private _pullRequest = new GoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference(this, "pull_request");
+  public get pullRequest() {
+    return this._pullRequest;
+  }
+  public putPullRequest(value: GoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequest) {
+    this._pullRequest.internalValue = value;
+  }
+  public resetPullRequest() {
+    this._pullRequest.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pullRequestInput() {
+    return this._pullRequest.internalValue;
+  }
+
+  // push - computed: false, optional: true, required: false
+  private _push = new GoogleCloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference(this, "push");
+  public get push() {
+    return this._push;
+  }
+  public putPush(value: GoogleCloudbuildTriggerBitbucketServerTriggerConfigPush) {
+    this._push.internalValue = value;
+  }
+  public resetPush() {
+    this._push.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pushInput() {
+    return this._push.internalValue;
   }
 }
 export interface GoogleCloudbuildTriggerBuildArtifactsObjectsTiming {
@@ -2854,6 +3289,13 @@ export class GoogleCloudbuildTriggerBuildOutputReference extends cdktf.ComplexOb
 }
 export interface GoogleCloudbuildTriggerGitFileSource {
   /**
+  * The full resource name of the github enterprise config.
+Format: projects/{project}/locations/{location}/githubEnterpriseConfigs/{id}. projects/{project}/githubEnterpriseConfigs/{id}.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#github_enterprise_config GoogleCloudbuildTrigger#github_enterprise_config}
+  */
+  readonly githubEnterpriseConfig?: string;
+  /**
   * The path of the file, with the repo root as the root of the path.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#path GoogleCloudbuildTrigger#path}
@@ -2889,6 +3331,7 @@ export function googleCloudbuildTriggerGitFileSourceToTerraform(struct?: GoogleC
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    github_enterprise_config: cdktf.stringToTerraform(struct!.githubEnterpriseConfig),
     path: cdktf.stringToTerraform(struct!.path),
     repo_type: cdktf.stringToTerraform(struct!.repoType),
     revision: cdktf.stringToTerraform(struct!.revision),
@@ -2910,6 +3353,10 @@ export class GoogleCloudbuildTriggerGitFileSourceOutputReference extends cdktf.C
   public get internalValue(): GoogleCloudbuildTriggerGitFileSource | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._githubEnterpriseConfig !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.githubEnterpriseConfig = this._githubEnterpriseConfig;
+    }
     if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
@@ -2932,6 +3379,7 @@ export class GoogleCloudbuildTriggerGitFileSourceOutputReference extends cdktf.C
   public set internalValue(value: GoogleCloudbuildTriggerGitFileSource | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._githubEnterpriseConfig = undefined;
       this._path = undefined;
       this._repoType = undefined;
       this._revision = undefined;
@@ -2939,11 +3387,28 @@ export class GoogleCloudbuildTriggerGitFileSourceOutputReference extends cdktf.C
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._githubEnterpriseConfig = value.githubEnterpriseConfig;
       this._path = value.path;
       this._repoType = value.repoType;
       this._revision = value.revision;
       this._uri = value.uri;
     }
+  }
+
+  // github_enterprise_config - computed: false, optional: true, required: false
+  private _githubEnterpriseConfig?: string; 
+  public get githubEnterpriseConfig() {
+    return this.getStringAttribute('github_enterprise_config');
+  }
+  public set githubEnterpriseConfig(value: string) {
+    this._githubEnterpriseConfig = value;
+  }
+  public resetGithubEnterpriseConfig() {
+    this._githubEnterpriseConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubEnterpriseConfigInput() {
+    return this._githubEnterpriseConfig;
   }
 
   // path - computed: false, optional: false, required: true
@@ -3253,6 +3718,13 @@ export class GoogleCloudbuildTriggerGithubPushOutputReference extends cdktf.Comp
 }
 export interface GoogleCloudbuildTriggerGithub {
   /**
+  * The resource name of the github enterprise config that should be applied to this installation.
+For example: "projects/{$projectId}/locations/{$locationId}/githubEnterpriseConfigs/{$configId}"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#enterprise_config_resource_name GoogleCloudbuildTrigger#enterprise_config_resource_name}
+  */
+  readonly enterpriseConfigResourceName?: string;
+  /**
   * Name of the repository. For example: The name for
 https://github.com/googlecloudplatform/cloud-builders is "cloud-builders".
   * 
@@ -3286,6 +3758,7 @@ export function googleCloudbuildTriggerGithubToTerraform(struct?: GoogleCloudbui
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    enterprise_config_resource_name: cdktf.stringToTerraform(struct!.enterpriseConfigResourceName),
     name: cdktf.stringToTerraform(struct!.name),
     owner: cdktf.stringToTerraform(struct!.owner),
     pull_request: googleCloudbuildTriggerGithubPullRequestToTerraform(struct!.pullRequest),
@@ -3307,6 +3780,10 @@ export class GoogleCloudbuildTriggerGithubOutputReference extends cdktf.ComplexO
   public get internalValue(): GoogleCloudbuildTriggerGithub | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._enterpriseConfigResourceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enterpriseConfigResourceName = this._enterpriseConfigResourceName;
+    }
     if (this._name !== undefined) {
       hasAnyValues = true;
       internalValueResult.name = this._name;
@@ -3329,6 +3806,7 @@ export class GoogleCloudbuildTriggerGithubOutputReference extends cdktf.ComplexO
   public set internalValue(value: GoogleCloudbuildTriggerGithub | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._enterpriseConfigResourceName = undefined;
       this._name = undefined;
       this._owner = undefined;
       this._pullRequest.internalValue = undefined;
@@ -3336,11 +3814,28 @@ export class GoogleCloudbuildTriggerGithubOutputReference extends cdktf.ComplexO
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._enterpriseConfigResourceName = value.enterpriseConfigResourceName;
       this._name = value.name;
       this._owner = value.owner;
       this._pullRequest.internalValue = value.pullRequest;
       this._push.internalValue = value.push;
     }
+  }
+
+  // enterprise_config_resource_name - computed: false, optional: true, required: false
+  private _enterpriseConfigResourceName?: string; 
+  public get enterpriseConfigResourceName() {
+    return this.getStringAttribute('enterprise_config_resource_name');
+  }
+  public set enterpriseConfigResourceName(value: string) {
+    this._enterpriseConfigResourceName = value;
+  }
+  public resetEnterpriseConfigResourceName() {
+    this._enterpriseConfigResourceName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enterpriseConfigResourceNameInput() {
+    return this._enterpriseConfigResourceName;
   }
 
   // name - computed: false, optional: true, required: false
@@ -3510,7 +4005,398 @@ export class GoogleCloudbuildTriggerPubsubConfigOutputReference extends cdktf.Co
     return this._topic;
   }
 }
+export interface GoogleCloudbuildTriggerRepositoryEventConfigPullRequest {
+  /**
+  * Regex of branches to match.
+
+The syntax of the regular expressions accepted is the syntax accepted by
+RE2 and described at https://github.com/google/re2/wiki/Syntax
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#branch GoogleCloudbuildTrigger#branch}
+  */
+  readonly branch?: string;
+  /**
+  * Configure builds to run whether a repository owner or collaborator need to comment '/gcbrun'. Possible values: ["COMMENTS_DISABLED", "COMMENTS_ENABLED", "COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#comment_control GoogleCloudbuildTrigger#comment_control}
+  */
+  readonly commentControl?: string;
+  /**
+  * If true, branches that do NOT match the git_ref will trigger a build.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#invert_regex GoogleCloudbuildTrigger#invert_regex}
+  */
+  readonly invertRegex?: boolean | cdktf.IResolvable;
+}
+
+export function googleCloudbuildTriggerRepositoryEventConfigPullRequestToTerraform(struct?: GoogleCloudbuildTriggerRepositoryEventConfigPullRequestOutputReference | GoogleCloudbuildTriggerRepositoryEventConfigPullRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    branch: cdktf.stringToTerraform(struct!.branch),
+    comment_control: cdktf.stringToTerraform(struct!.commentControl),
+    invert_regex: cdktf.booleanToTerraform(struct!.invertRegex),
+  }
+}
+
+export class GoogleCloudbuildTriggerRepositoryEventConfigPullRequestOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildTriggerRepositoryEventConfigPullRequest | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._branch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.branch = this._branch;
+    }
+    if (this._commentControl !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.commentControl = this._commentControl;
+    }
+    if (this._invertRegex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invertRegex = this._invertRegex;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildTriggerRepositoryEventConfigPullRequest | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._branch = undefined;
+      this._commentControl = undefined;
+      this._invertRegex = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._branch = value.branch;
+      this._commentControl = value.commentControl;
+      this._invertRegex = value.invertRegex;
+    }
+  }
+
+  // branch - computed: false, optional: true, required: false
+  private _branch?: string; 
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+  public set branch(value: string) {
+    this._branch = value;
+  }
+  public resetBranch() {
+    this._branch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch;
+  }
+
+  // comment_control - computed: false, optional: true, required: false
+  private _commentControl?: string; 
+  public get commentControl() {
+    return this.getStringAttribute('comment_control');
+  }
+  public set commentControl(value: string) {
+    this._commentControl = value;
+  }
+  public resetCommentControl() {
+    this._commentControl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentControlInput() {
+    return this._commentControl;
+  }
+
+  // invert_regex - computed: false, optional: true, required: false
+  private _invertRegex?: boolean | cdktf.IResolvable; 
+  public get invertRegex() {
+    return this.getBooleanAttribute('invert_regex');
+  }
+  public set invertRegex(value: boolean | cdktf.IResolvable) {
+    this._invertRegex = value;
+  }
+  public resetInvertRegex() {
+    this._invertRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invertRegexInput() {
+    return this._invertRegex;
+  }
+}
+export interface GoogleCloudbuildTriggerRepositoryEventConfigPush {
+  /**
+  * Regex of branches to match.
+
+The syntax of the regular expressions accepted is the syntax accepted by
+RE2 and described at https://github.com/google/re2/wiki/Syntax
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#branch GoogleCloudbuildTrigger#branch}
+  */
+  readonly branch?: string;
+  /**
+  * If true, only trigger a build if the revision regex does NOT match the git_ref regex.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#invert_regex GoogleCloudbuildTrigger#invert_regex}
+  */
+  readonly invertRegex?: boolean | cdktf.IResolvable;
+  /**
+  * Regex of tags to match.
+
+The syntax of the regular expressions accepted is the syntax accepted by
+RE2 and described at https://github.com/google/re2/wiki/Syntax
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#tag GoogleCloudbuildTrigger#tag}
+  */
+  readonly tag?: string;
+}
+
+export function googleCloudbuildTriggerRepositoryEventConfigPushToTerraform(struct?: GoogleCloudbuildTriggerRepositoryEventConfigPushOutputReference | GoogleCloudbuildTriggerRepositoryEventConfigPush): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    branch: cdktf.stringToTerraform(struct!.branch),
+    invert_regex: cdktf.booleanToTerraform(struct!.invertRegex),
+    tag: cdktf.stringToTerraform(struct!.tag),
+  }
+}
+
+export class GoogleCloudbuildTriggerRepositoryEventConfigPushOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildTriggerRepositoryEventConfigPush | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._branch !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.branch = this._branch;
+    }
+    if (this._invertRegex !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.invertRegex = this._invertRegex;
+    }
+    if (this._tag !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tag = this._tag;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildTriggerRepositoryEventConfigPush | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._branch = undefined;
+      this._invertRegex = undefined;
+      this._tag = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._branch = value.branch;
+      this._invertRegex = value.invertRegex;
+      this._tag = value.tag;
+    }
+  }
+
+  // branch - computed: false, optional: true, required: false
+  private _branch?: string; 
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+  public set branch(value: string) {
+    this._branch = value;
+  }
+  public resetBranch() {
+    this._branch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch;
+  }
+
+  // invert_regex - computed: false, optional: true, required: false
+  private _invertRegex?: boolean | cdktf.IResolvable; 
+  public get invertRegex() {
+    return this.getBooleanAttribute('invert_regex');
+  }
+  public set invertRegex(value: boolean | cdktf.IResolvable) {
+    this._invertRegex = value;
+  }
+  public resetInvertRegex() {
+    this._invertRegex = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invertRegexInput() {
+    return this._invertRegex;
+  }
+
+  // tag - computed: false, optional: true, required: false
+  private _tag?: string; 
+  public get tag() {
+    return this.getStringAttribute('tag');
+  }
+  public set tag(value: string) {
+    this._tag = value;
+  }
+  public resetTag() {
+    this._tag = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagInput() {
+    return this._tag;
+  }
+}
+export interface GoogleCloudbuildTriggerRepositoryEventConfig {
+  /**
+  * The resource name of the Repo API resource.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#repository GoogleCloudbuildTrigger#repository}
+  */
+  readonly repository?: string;
+  /**
+  * pull_request block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#pull_request GoogleCloudbuildTrigger#pull_request}
+  */
+  readonly pullRequest?: GoogleCloudbuildTriggerRepositoryEventConfigPullRequest;
+  /**
+  * push block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#push GoogleCloudbuildTrigger#push}
+  */
+  readonly push?: GoogleCloudbuildTriggerRepositoryEventConfigPush;
+}
+
+export function googleCloudbuildTriggerRepositoryEventConfigToTerraform(struct?: GoogleCloudbuildTriggerRepositoryEventConfigOutputReference | GoogleCloudbuildTriggerRepositoryEventConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    repository: cdktf.stringToTerraform(struct!.repository),
+    pull_request: googleCloudbuildTriggerRepositoryEventConfigPullRequestToTerraform(struct!.pullRequest),
+    push: googleCloudbuildTriggerRepositoryEventConfigPushToTerraform(struct!.push),
+  }
+}
+
+export class GoogleCloudbuildTriggerRepositoryEventConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildTriggerRepositoryEventConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._repository !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repository = this._repository;
+    }
+    if (this._pullRequest?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pullRequest = this._pullRequest?.internalValue;
+    }
+    if (this._push?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.push = this._push?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildTriggerRepositoryEventConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._repository = undefined;
+      this._pullRequest.internalValue = undefined;
+      this._push.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._repository = value.repository;
+      this._pullRequest.internalValue = value.pullRequest;
+      this._push.internalValue = value.push;
+    }
+  }
+
+  // repository - computed: false, optional: true, required: false
+  private _repository?: string; 
+  public get repository() {
+    return this.getStringAttribute('repository');
+  }
+  public set repository(value: string) {
+    this._repository = value;
+  }
+  public resetRepository() {
+    this._repository = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository;
+  }
+
+  // pull_request - computed: false, optional: true, required: false
+  private _pullRequest = new GoogleCloudbuildTriggerRepositoryEventConfigPullRequestOutputReference(this, "pull_request");
+  public get pullRequest() {
+    return this._pullRequest;
+  }
+  public putPullRequest(value: GoogleCloudbuildTriggerRepositoryEventConfigPullRequest) {
+    this._pullRequest.internalValue = value;
+  }
+  public resetPullRequest() {
+    this._pullRequest.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pullRequestInput() {
+    return this._pullRequest.internalValue;
+  }
+
+  // push - computed: false, optional: true, required: false
+  private _push = new GoogleCloudbuildTriggerRepositoryEventConfigPushOutputReference(this, "push");
+  public get push() {
+    return this._push;
+  }
+  public putPush(value: GoogleCloudbuildTriggerRepositoryEventConfigPush) {
+    this._push.internalValue = value;
+  }
+  public resetPush() {
+    this._push.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pushInput() {
+    return this._push.internalValue;
+  }
+}
 export interface GoogleCloudbuildTriggerSourceToBuild {
+  /**
+  * The full resource name of the github enterprise config.
+Format: projects/{project}/locations/{location}/githubEnterpriseConfigs/{id}. projects/{project}/githubEnterpriseConfigs/{id}.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#github_enterprise_config GoogleCloudbuildTrigger#github_enterprise_config}
+  */
+  readonly githubEnterpriseConfig?: string;
   /**
   * The branch or tag to use. Must start with "refs/" (required).
   * 
@@ -3538,6 +4424,7 @@ export function googleCloudbuildTriggerSourceToBuildToTerraform(struct?: GoogleC
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    github_enterprise_config: cdktf.stringToTerraform(struct!.githubEnterpriseConfig),
     ref: cdktf.stringToTerraform(struct!.ref),
     repo_type: cdktf.stringToTerraform(struct!.repoType),
     uri: cdktf.stringToTerraform(struct!.uri),
@@ -3558,6 +4445,10 @@ export class GoogleCloudbuildTriggerSourceToBuildOutputReference extends cdktf.C
   public get internalValue(): GoogleCloudbuildTriggerSourceToBuild | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._githubEnterpriseConfig !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.githubEnterpriseConfig = this._githubEnterpriseConfig;
+    }
     if (this._ref !== undefined) {
       hasAnyValues = true;
       internalValueResult.ref = this._ref;
@@ -3576,16 +4467,34 @@ export class GoogleCloudbuildTriggerSourceToBuildOutputReference extends cdktf.C
   public set internalValue(value: GoogleCloudbuildTriggerSourceToBuild | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._githubEnterpriseConfig = undefined;
       this._ref = undefined;
       this._repoType = undefined;
       this._uri = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._githubEnterpriseConfig = value.githubEnterpriseConfig;
       this._ref = value.ref;
       this._repoType = value.repoType;
       this._uri = value.uri;
     }
+  }
+
+  // github_enterprise_config - computed: false, optional: true, required: false
+  private _githubEnterpriseConfig?: string; 
+  public get githubEnterpriseConfig() {
+    return this.getStringAttribute('github_enterprise_config');
+  }
+  public set githubEnterpriseConfig(value: string) {
+    this._githubEnterpriseConfig = value;
+  }
+  public resetGithubEnterpriseConfig() {
+    this._githubEnterpriseConfig = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get githubEnterpriseConfigInput() {
+    return this._githubEnterpriseConfig;
   }
 
   // ref - computed: false, optional: false, required: true
@@ -4100,7 +5009,7 @@ export class GoogleCloudbuildTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudbuild_trigger',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -4126,10 +5035,12 @@ export class GoogleCloudbuildTrigger extends cdktf.TerraformResource {
     this._substitutions = config.substitutions;
     this._tags = config.tags;
     this._approvalConfig.internalValue = config.approvalConfig;
+    this._bitbucketServerTriggerConfig.internalValue = config.bitbucketServerTriggerConfig;
     this._build.internalValue = config.buildAttribute;
     this._gitFileSource.internalValue = config.gitFileSource;
     this._github.internalValue = config.github;
     this._pubsubConfig.internalValue = config.pubsubConfig;
+    this._repositoryEventConfig.internalValue = config.repositoryEventConfig;
     this._sourceToBuild.internalValue = config.sourceToBuild;
     this._timeouts.internalValue = config.timeouts;
     this._triggerTemplate.internalValue = config.triggerTemplate;
@@ -4390,6 +5301,22 @@ export class GoogleCloudbuildTrigger extends cdktf.TerraformResource {
     return this._approvalConfig.internalValue;
   }
 
+  // bitbucket_server_trigger_config - computed: false, optional: true, required: false
+  private _bitbucketServerTriggerConfig = new GoogleCloudbuildTriggerBitbucketServerTriggerConfigOutputReference(this, "bitbucket_server_trigger_config");
+  public get bitbucketServerTriggerConfig() {
+    return this._bitbucketServerTriggerConfig;
+  }
+  public putBitbucketServerTriggerConfig(value: GoogleCloudbuildTriggerBitbucketServerTriggerConfig) {
+    this._bitbucketServerTriggerConfig.internalValue = value;
+  }
+  public resetBitbucketServerTriggerConfig() {
+    this._bitbucketServerTriggerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bitbucketServerTriggerConfigInput() {
+    return this._bitbucketServerTriggerConfig.internalValue;
+  }
+
   // build - computed: false, optional: true, required: false
   private _build = new GoogleCloudbuildTriggerBuildOutputReference(this, "build");
   public get buildAttribute() {
@@ -4452,6 +5379,22 @@ export class GoogleCloudbuildTrigger extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get pubsubConfigInput() {
     return this._pubsubConfig.internalValue;
+  }
+
+  // repository_event_config - computed: false, optional: true, required: false
+  private _repositoryEventConfig = new GoogleCloudbuildTriggerRepositoryEventConfigOutputReference(this, "repository_event_config");
+  public get repositoryEventConfig() {
+    return this._repositoryEventConfig;
+  }
+  public putRepositoryEventConfig(value: GoogleCloudbuildTriggerRepositoryEventConfig) {
+    this._repositoryEventConfig.internalValue = value;
+  }
+  public resetRepositoryEventConfig() {
+    this._repositoryEventConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryEventConfigInput() {
+    return this._repositoryEventConfig.internalValue;
   }
 
   // source_to_build - computed: false, optional: true, required: false
@@ -4539,10 +5482,12 @@ export class GoogleCloudbuildTrigger extends cdktf.TerraformResource {
       substitutions: cdktf.hashMapper(cdktf.stringToTerraform)(this._substitutions),
       tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
       approval_config: googleCloudbuildTriggerApprovalConfigToTerraform(this._approvalConfig.internalValue),
+      bitbucket_server_trigger_config: googleCloudbuildTriggerBitbucketServerTriggerConfigToTerraform(this._bitbucketServerTriggerConfig.internalValue),
       build: googleCloudbuildTriggerBuildToTerraform(this._build.internalValue),
       git_file_source: googleCloudbuildTriggerGitFileSourceToTerraform(this._gitFileSource.internalValue),
       github: googleCloudbuildTriggerGithubToTerraform(this._github.internalValue),
       pubsub_config: googleCloudbuildTriggerPubsubConfigToTerraform(this._pubsubConfig.internalValue),
+      repository_event_config: googleCloudbuildTriggerRepositoryEventConfigToTerraform(this._repositoryEventConfig.internalValue),
       source_to_build: googleCloudbuildTriggerSourceToBuildToTerraform(this._sourceToBuild.internalValue),
       timeouts: googleCloudbuildTriggerTimeoutsToTerraform(this._timeouts.internalValue),
       trigger_template: googleCloudbuildTriggerTriggerTemplateToTerraform(this._triggerTemplate.internalValue),

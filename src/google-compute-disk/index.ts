@@ -206,6 +206,14 @@ RFC 4648 base64 to either encrypt or decrypt this resource.
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
   */
   readonly rawKey?: string;
+  /**
+  * Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit 
+customer-supplied encryption key to either encrypt or decrypt 
+this resource. You can provide either the rawKey or the rsaEncryptedKey.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_disk#rsa_encrypted_key GoogleComputeDisk#rsa_encrypted_key}
+  */
+  readonly rsaEncryptedKey?: string;
 }
 
 export function googleComputeDiskDiskEncryptionKeyToTerraform(struct?: GoogleComputeDiskDiskEncryptionKeyOutputReference | GoogleComputeDiskDiskEncryptionKey): any {
@@ -217,6 +225,7 @@ export function googleComputeDiskDiskEncryptionKeyToTerraform(struct?: GoogleCom
     kms_key_self_link: cdktf.stringToTerraform(struct!.kmsKeySelfLink),
     kms_key_service_account: cdktf.stringToTerraform(struct!.kmsKeyServiceAccount),
     raw_key: cdktf.stringToTerraform(struct!.rawKey),
+    rsa_encrypted_key: cdktf.stringToTerraform(struct!.rsaEncryptedKey),
   }
 }
 
@@ -246,6 +255,10 @@ export class GoogleComputeDiskDiskEncryptionKeyOutputReference extends cdktf.Com
       hasAnyValues = true;
       internalValueResult.rawKey = this._rawKey;
     }
+    if (this._rsaEncryptedKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.rsaEncryptedKey = this._rsaEncryptedKey;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -255,12 +268,14 @@ export class GoogleComputeDiskDiskEncryptionKeyOutputReference extends cdktf.Com
       this._kmsKeySelfLink = undefined;
       this._kmsKeyServiceAccount = undefined;
       this._rawKey = undefined;
+      this._rsaEncryptedKey = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._kmsKeySelfLink = value.kmsKeySelfLink;
       this._kmsKeyServiceAccount = value.kmsKeyServiceAccount;
       this._rawKey = value.rawKey;
+      this._rsaEncryptedKey = value.rsaEncryptedKey;
     }
   }
 
@@ -310,6 +325,22 @@ export class GoogleComputeDiskDiskEncryptionKeyOutputReference extends cdktf.Com
   // Temporarily expose input value. Use with caution.
   public get rawKeyInput() {
     return this._rawKey;
+  }
+
+  // rsa_encrypted_key - computed: false, optional: true, required: false
+  private _rsaEncryptedKey?: string; 
+  public get rsaEncryptedKey() {
+    return this.getStringAttribute('rsa_encrypted_key');
+  }
+  public set rsaEncryptedKey(value: string) {
+    this._rsaEncryptedKey = value;
+  }
+  public resetRsaEncryptedKey() {
+    this._rsaEncryptedKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get rsaEncryptedKeyInput() {
+    return this._rsaEncryptedKey;
   }
 
   // sha256 - computed: true, optional: false, required: false
@@ -745,7 +776,7 @@ export class GoogleComputeDisk extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_disk',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

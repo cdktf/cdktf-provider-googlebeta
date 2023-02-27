@@ -8,6 +8,12 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleVertexAiFeaturestoreEntitytypeConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Optional. Description of the EntityType.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore_entitytype#description GoogleVertexAiFeaturestoreEntitytype#description}
+  */
+  readonly description?: string;
+  /**
   * The name of the Featurestore to use, in the format projects/{project}/locations/{location}/featurestores/{featurestore}.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore_entitytype#featurestore GoogleVertexAiFeaturestoreEntitytype#featurestore}
@@ -32,6 +38,12 @@ export interface GoogleVertexAiFeaturestoreEntitytypeConfig extends cdktf.Terraf
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore_entitytype#name GoogleVertexAiFeaturestoreEntitytype#name}
   */
   readonly name?: string;
+  /**
+  * Config for data retention policy in offline storage. TTL in days for feature values that will be stored in offline storage. The Feature Store offline storage periodically removes obsolete feature values older than offlineStorageTtlDays since the feature generation time. If unset (or explicitly set to 0), default to 4000 days TTL.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore_entitytype#offline_storage_ttl_days GoogleVertexAiFeaturestoreEntitytype#offline_storage_ttl_days}
+  */
+  readonly offlineStorageTtlDays?: number;
   /**
   * monitoring_config block
   * 
@@ -742,7 +754,7 @@ export class GoogleVertexAiFeaturestoreEntitytype extends cdktf.TerraformResourc
       terraformResourceType: 'google_vertex_ai_featurestore_entitytype',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -753,10 +765,12 @@ export class GoogleVertexAiFeaturestoreEntitytype extends cdktf.TerraformResourc
       connection: config.connection,
       forEach: config.forEach
     });
+    this._description = config.description;
     this._featurestore = config.featurestore;
     this._id = config.id;
     this._labels = config.labels;
     this._name = config.name;
+    this._offlineStorageTtlDays = config.offlineStorageTtlDays;
     this._monitoringConfig.internalValue = config.monitoringConfig;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -768,6 +782,22 @@ export class GoogleVertexAiFeaturestoreEntitytype extends cdktf.TerraformResourc
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -836,6 +866,22 @@ export class GoogleVertexAiFeaturestoreEntitytype extends cdktf.TerraformResourc
     return this._name;
   }
 
+  // offline_storage_ttl_days - computed: false, optional: true, required: false
+  private _offlineStorageTtlDays?: number; 
+  public get offlineStorageTtlDays() {
+    return this.getNumberAttribute('offline_storage_ttl_days');
+  }
+  public set offlineStorageTtlDays(value: number) {
+    this._offlineStorageTtlDays = value;
+  }
+  public resetOfflineStorageTtlDays() {
+    this._offlineStorageTtlDays = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get offlineStorageTtlDaysInput() {
+    return this._offlineStorageTtlDays;
+  }
+
   // region - computed: true, optional: false, required: false
   public get region() {
     return this.getStringAttribute('region');
@@ -884,10 +930,12 @@ export class GoogleVertexAiFeaturestoreEntitytype extends cdktf.TerraformResourc
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      description: cdktf.stringToTerraform(this._description),
       featurestore: cdktf.stringToTerraform(this._featurestore),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       name: cdktf.stringToTerraform(this._name),
+      offline_storage_ttl_days: cdktf.numberToTerraform(this._offlineStorageTtlDays),
       monitoring_config: googleVertexAiFeaturestoreEntitytypeMonitoringConfigToTerraform(this._monitoringConfig.internalValue),
       timeouts: googleVertexAiFeaturestoreEntitytypeTimeoutsToTerraform(this._timeouts.internalValue),
     };

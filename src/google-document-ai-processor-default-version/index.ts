@@ -162,7 +162,7 @@ export class GoogleDocumentAiProcessorDefaultVersion extends cdktf.TerraformReso
       terraformResourceType: 'google_document_ai_processor_default_version',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

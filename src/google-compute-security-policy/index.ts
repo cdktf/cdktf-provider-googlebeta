@@ -69,6 +69,160 @@ export interface GoogleComputeSecurityPolicyConfig extends cdktf.TerraformMetaAr
   */
   readonly timeouts?: GoogleComputeSecurityPolicyTimeouts;
 }
+export interface GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfig {
+  /**
+  * Rules are only automatically deployed for alerts on potential attacks with confidence scores greater than this threshold.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#confidence_threshold GoogleComputeSecurityPolicy#confidence_threshold}
+  */
+  readonly confidenceThreshold?: number;
+  /**
+  * Google Cloud Armor stops applying the action in the automatically deployed rule to an identified attacker after this duration. The rule continues to operate against new requests.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#expiration_sec GoogleComputeSecurityPolicy#expiration_sec}
+  */
+  readonly expirationSec?: number;
+  /**
+  * Rules are only automatically deployed when the estimated impact to baseline traffic from the suggested mitigation is below this threshold.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#impacted_baseline_threshold GoogleComputeSecurityPolicy#impacted_baseline_threshold}
+  */
+  readonly impactedBaselineThreshold?: number;
+  /**
+  * Identifies new attackers only when the load to the backend service that is under attack exceeds this threshold.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#load_threshold GoogleComputeSecurityPolicy#load_threshold}
+  */
+  readonly loadThreshold?: number;
+}
+
+export function googleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigToTerraform(struct?: GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference | GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    confidence_threshold: cdktf.numberToTerraform(struct!.confidenceThreshold),
+    expiration_sec: cdktf.numberToTerraform(struct!.expirationSec),
+    impacted_baseline_threshold: cdktf.numberToTerraform(struct!.impactedBaselineThreshold),
+    load_threshold: cdktf.numberToTerraform(struct!.loadThreshold),
+  }
+}
+
+export class GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._confidenceThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.confidenceThreshold = this._confidenceThreshold;
+    }
+    if (this._expirationSec !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.expirationSec = this._expirationSec;
+    }
+    if (this._impactedBaselineThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.impactedBaselineThreshold = this._impactedBaselineThreshold;
+    }
+    if (this._loadThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.loadThreshold = this._loadThreshold;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._confidenceThreshold = undefined;
+      this._expirationSec = undefined;
+      this._impactedBaselineThreshold = undefined;
+      this._loadThreshold = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._confidenceThreshold = value.confidenceThreshold;
+      this._expirationSec = value.expirationSec;
+      this._impactedBaselineThreshold = value.impactedBaselineThreshold;
+      this._loadThreshold = value.loadThreshold;
+    }
+  }
+
+  // confidence_threshold - computed: false, optional: true, required: false
+  private _confidenceThreshold?: number; 
+  public get confidenceThreshold() {
+    return this.getNumberAttribute('confidence_threshold');
+  }
+  public set confidenceThreshold(value: number) {
+    this._confidenceThreshold = value;
+  }
+  public resetConfidenceThreshold() {
+    this._confidenceThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get confidenceThresholdInput() {
+    return this._confidenceThreshold;
+  }
+
+  // expiration_sec - computed: false, optional: true, required: false
+  private _expirationSec?: number; 
+  public get expirationSec() {
+    return this.getNumberAttribute('expiration_sec');
+  }
+  public set expirationSec(value: number) {
+    this._expirationSec = value;
+  }
+  public resetExpirationSec() {
+    this._expirationSec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get expirationSecInput() {
+    return this._expirationSec;
+  }
+
+  // impacted_baseline_threshold - computed: false, optional: true, required: false
+  private _impactedBaselineThreshold?: number; 
+  public get impactedBaselineThreshold() {
+    return this.getNumberAttribute('impacted_baseline_threshold');
+  }
+  public set impactedBaselineThreshold(value: number) {
+    this._impactedBaselineThreshold = value;
+  }
+  public resetImpactedBaselineThreshold() {
+    this._impactedBaselineThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get impactedBaselineThresholdInput() {
+    return this._impactedBaselineThreshold;
+  }
+
+  // load_threshold - computed: false, optional: true, required: false
+  private _loadThreshold?: number; 
+  public get loadThreshold() {
+    return this.getNumberAttribute('load_threshold');
+  }
+  public set loadThreshold(value: number) {
+    this._loadThreshold = value;
+  }
+  public resetLoadThreshold() {
+    this._loadThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get loadThresholdInput() {
+    return this._loadThreshold;
+  }
+}
 export interface GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfig {
   /**
   * If set to true, enables CAAP for L7 DDoS detection.
@@ -167,6 +321,12 @@ export class GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefens
 }
 export interface GoogleComputeSecurityPolicyAdaptiveProtectionConfig {
   /**
+  * auto_deploy_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#auto_deploy_config GoogleComputeSecurityPolicy#auto_deploy_config}
+  */
+  readonly autoDeployConfig?: GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfig;
+  /**
   * layer_7_ddos_defense_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#layer_7_ddos_defense_config GoogleComputeSecurityPolicy#layer_7_ddos_defense_config}
@@ -180,6 +340,7 @@ export function googleComputeSecurityPolicyAdaptiveProtectionConfigToTerraform(s
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    auto_deploy_config: googleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigToTerraform(struct!.autoDeployConfig),
     layer_7_ddos_defense_config: googleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigToTerraform(struct!.layer7DdosDefenseConfig),
   }
 }
@@ -198,6 +359,10 @@ export class GoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference 
   public get internalValue(): GoogleComputeSecurityPolicyAdaptiveProtectionConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._autoDeployConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoDeployConfig = this._autoDeployConfig?.internalValue;
+    }
     if (this._layer7DdosDefenseConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.layer7DdosDefenseConfig = this._layer7DdosDefenseConfig?.internalValue;
@@ -208,12 +373,30 @@ export class GoogleComputeSecurityPolicyAdaptiveProtectionConfigOutputReference 
   public set internalValue(value: GoogleComputeSecurityPolicyAdaptiveProtectionConfig | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._autoDeployConfig.internalValue = undefined;
       this._layer7DdosDefenseConfig.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._autoDeployConfig.internalValue = value.autoDeployConfig;
       this._layer7DdosDefenseConfig.internalValue = value.layer7DdosDefenseConfig;
     }
+  }
+
+  // auto_deploy_config - computed: false, optional: true, required: false
+  private _autoDeployConfig = new GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference(this, "auto_deploy_config");
+  public get autoDeployConfig() {
+    return this._autoDeployConfig;
+  }
+  public putAutoDeployConfig(value: GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfig) {
+    this._autoDeployConfig.internalValue = value;
+  }
+  public resetAutoDeployConfig() {
+    this._autoDeployConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoDeployConfigInput() {
+    return this._autoDeployConfig.internalValue;
   }
 
   // layer_7_ddos_defense_config - computed: false, optional: true, required: false
@@ -1825,6 +2008,134 @@ export class GoogleComputeSecurityPolicyRuleRateLimitOptionsBanThresholdOutputRe
     return this._intervalSec;
   }
 }
+export interface GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs {
+  /**
+  * Rate limit key name applicable only for the following key types: HTTP_HEADER -- Name of the HTTP header whose value is taken as the key value. HTTP_COOKIE -- Name of the HTTP cookie whose value is taken as the key value.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#enforce_on_key_name GoogleComputeSecurityPolicy#enforce_on_key_name}
+  */
+  readonly enforceOnKeyName?: string;
+  /**
+  * Determines the key to enforce the rate_limit_threshold on
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#enforce_on_key_type GoogleComputeSecurityPolicy#enforce_on_key_type}
+  */
+  readonly enforceOnKeyType?: string;
+}
+
+export function googleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToTerraform(struct?: GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    enforce_on_key_name: cdktf.stringToTerraform(struct!.enforceOnKeyName),
+    enforce_on_key_type: cdktf.stringToTerraform(struct!.enforceOnKeyType),
+  }
+}
+
+export class GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._enforceOnKeyName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enforceOnKeyName = this._enforceOnKeyName;
+    }
+    if (this._enforceOnKeyType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enforceOnKeyType = this._enforceOnKeyType;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._enforceOnKeyName = undefined;
+      this._enforceOnKeyType = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._enforceOnKeyName = value.enforceOnKeyName;
+      this._enforceOnKeyType = value.enforceOnKeyType;
+    }
+  }
+
+  // enforce_on_key_name - computed: false, optional: true, required: false
+  private _enforceOnKeyName?: string; 
+  public get enforceOnKeyName() {
+    return this.getStringAttribute('enforce_on_key_name');
+  }
+  public set enforceOnKeyName(value: string) {
+    this._enforceOnKeyName = value;
+  }
+  public resetEnforceOnKeyName() {
+    this._enforceOnKeyName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforceOnKeyNameInput() {
+    return this._enforceOnKeyName;
+  }
+
+  // enforce_on_key_type - computed: false, optional: true, required: false
+  private _enforceOnKeyType?: string; 
+  public get enforceOnKeyType() {
+    return this.getStringAttribute('enforce_on_key_type');
+  }
+  public set enforceOnKeyType(value: string) {
+    this._enforceOnKeyType = value;
+  }
+  public resetEnforceOnKeyType() {
+    this._enforceOnKeyType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforceOnKeyTypeInput() {
+    return this._enforceOnKeyType;
+  }
+}
+
+export class GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference {
+    return new GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptions {
   /**
   * Target for the redirect action. This is required if the type is EXTERNAL_302 and cannot be specified for GOOGLE_RECAPTCHA.
@@ -2046,6 +2357,12 @@ export interface GoogleComputeSecurityPolicyRuleRateLimitOptions {
   */
   readonly banThreshold?: GoogleComputeSecurityPolicyRuleRateLimitOptionsBanThreshold;
   /**
+  * enforce_on_key_configs block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#enforce_on_key_configs GoogleComputeSecurityPolicy#enforce_on_key_configs}
+  */
+  readonly enforceOnKeyConfigs?: GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs[] | cdktf.IResolvable;
+  /**
   * exceed_redirect_options block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#exceed_redirect_options GoogleComputeSecurityPolicy#exceed_redirect_options}
@@ -2071,6 +2388,7 @@ export function googleComputeSecurityPolicyRuleRateLimitOptionsToTerraform(struc
     enforce_on_key_name: cdktf.stringToTerraform(struct!.enforceOnKeyName),
     exceed_action: cdktf.stringToTerraform(struct!.exceedAction),
     ban_threshold: googleComputeSecurityPolicyRuleRateLimitOptionsBanThresholdToTerraform(struct!.banThreshold),
+    enforce_on_key_configs: cdktf.listMapper(googleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsToTerraform, true)(struct!.enforceOnKeyConfigs),
     exceed_redirect_options: googleComputeSecurityPolicyRuleRateLimitOptionsExceedRedirectOptionsToTerraform(struct!.exceedRedirectOptions),
     rate_limit_threshold: googleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdToTerraform(struct!.rateLimitThreshold),
   }
@@ -2114,6 +2432,10 @@ export class GoogleComputeSecurityPolicyRuleRateLimitOptionsOutputReference exte
       hasAnyValues = true;
       internalValueResult.banThreshold = this._banThreshold?.internalValue;
     }
+    if (this._enforceOnKeyConfigs?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enforceOnKeyConfigs = this._enforceOnKeyConfigs?.internalValue;
+    }
     if (this._exceedRedirectOptions?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.exceedRedirectOptions = this._exceedRedirectOptions?.internalValue;
@@ -2134,6 +2456,7 @@ export class GoogleComputeSecurityPolicyRuleRateLimitOptionsOutputReference exte
       this._enforceOnKeyName = undefined;
       this._exceedAction = undefined;
       this._banThreshold.internalValue = undefined;
+      this._enforceOnKeyConfigs.internalValue = undefined;
       this._exceedRedirectOptions.internalValue = undefined;
       this._rateLimitThreshold.internalValue = undefined;
     }
@@ -2145,6 +2468,7 @@ export class GoogleComputeSecurityPolicyRuleRateLimitOptionsOutputReference exte
       this._enforceOnKeyName = value.enforceOnKeyName;
       this._exceedAction = value.exceedAction;
       this._banThreshold.internalValue = value.banThreshold;
+      this._enforceOnKeyConfigs.internalValue = value.enforceOnKeyConfigs;
       this._exceedRedirectOptions.internalValue = value.exceedRedirectOptions;
       this._rateLimitThreshold.internalValue = value.rateLimitThreshold;
     }
@@ -2238,6 +2562,22 @@ export class GoogleComputeSecurityPolicyRuleRateLimitOptionsOutputReference exte
   // Temporarily expose input value. Use with caution.
   public get banThresholdInput() {
     return this._banThreshold.internalValue;
+  }
+
+  // enforce_on_key_configs - computed: false, optional: true, required: false
+  private _enforceOnKeyConfigs = new GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigsList(this, "enforce_on_key_configs", false);
+  public get enforceOnKeyConfigs() {
+    return this._enforceOnKeyConfigs;
+  }
+  public putEnforceOnKeyConfigs(value: GoogleComputeSecurityPolicyRuleRateLimitOptionsEnforceOnKeyConfigs[] | cdktf.IResolvable) {
+    this._enforceOnKeyConfigs.internalValue = value;
+  }
+  public resetEnforceOnKeyConfigs() {
+    this._enforceOnKeyConfigs.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforceOnKeyConfigsInput() {
+    return this._enforceOnKeyConfigs.internalValue;
   }
 
   // exceed_redirect_options - computed: false, optional: true, required: false
@@ -2840,7 +3180,7 @@ export class GoogleComputeSecurityPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

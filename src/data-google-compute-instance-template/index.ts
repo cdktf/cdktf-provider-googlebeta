@@ -1139,6 +1139,75 @@ export class DataGoogleComputeInstanceTemplateReservationAffinityList extends cd
     return new DataGoogleComputeInstanceTemplateReservationAffinityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGoogleComputeInstanceTemplateSchedulingMaxRunDuration {
+}
+
+export function dataGoogleComputeInstanceTemplateSchedulingMaxRunDurationToTerraform(struct?: DataGoogleComputeInstanceTemplateSchedulingMaxRunDuration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleComputeInstanceTemplateSchedulingMaxRunDuration | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleComputeInstanceTemplateSchedulingMaxRunDuration | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // nanos - computed: true, optional: false, required: false
+  public get nanos() {
+    return this.getNumberAttribute('nanos');
+  }
+
+  // seconds - computed: true, optional: false, required: false
+  public get seconds() {
+    return this.getNumberAttribute('seconds');
+  }
+}
+
+export class DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationOutputReference {
+    return new DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleComputeInstanceTemplateSchedulingNodeAffinities {
 }
 
@@ -1261,6 +1330,12 @@ export class DataGoogleComputeInstanceTemplateSchedulingOutputReference extends 
   // instance_termination_action - computed: true, optional: false, required: false
   public get instanceTerminationAction() {
     return this.getStringAttribute('instance_termination_action');
+  }
+
+  // max_run_duration - computed: true, optional: false, required: false
+  private _maxRunDuration = new DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationList(this, "max_run_duration", false);
+  public get maxRunDuration() {
+    return this._maxRunDuration;
   }
 
   // min_node_cpus - computed: true, optional: false, required: false
@@ -1478,7 +1553,7 @@ export class DataGoogleComputeInstanceTemplate extends cdktf.TerraformDataSource
       terraformResourceType: 'google_compute_instance_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1682,6 +1757,11 @@ export class DataGoogleComputeInstanceTemplate extends cdktf.TerraformDataSource
   private _reservationAffinity = new DataGoogleComputeInstanceTemplateReservationAffinityList(this, "reservation_affinity", false);
   public get reservationAffinity() {
     return this._reservationAffinity;
+  }
+
+  // resource_policies - computed: true, optional: false, required: false
+  public get resourcePolicies() {
+    return this.getListAttribute('resource_policies');
   }
 
   // scheduling - computed: true, optional: false, required: false

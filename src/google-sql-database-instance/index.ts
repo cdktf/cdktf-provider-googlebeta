@@ -31,6 +31,12 @@ export interface GoogleSqlDatabaseInstanceConfig extends cdktf.TerraformMetaArgu
   */
   readonly id?: string;
   /**
+  * The type of the instance. The valid values are:- 'SQL_INSTANCE_TYPE_UNSPECIFIED', 'CLOUD_SQL_INSTANCE', 'ON_PREMISES_INSTANCE' and 'READ_REPLICA_INSTANCE'.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#instance_type GoogleSqlDatabaseInstance#instance_type}
+  */
+  readonly instanceType?: string;
+  /**
   * Maintenance version.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#maintenance_version GoogleSqlDatabaseInstance#maintenance_version}
@@ -1831,6 +1837,12 @@ export interface GoogleSqlDatabaseInstanceSettingsIpConfiguration {
   */
   readonly allocatedIpRange?: string;
   /**
+  * Whether Google Cloud services such as BigQuery are allowed to access data in this Cloud SQL instance over a private IP connection. SQLSERVER database type is not supported.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#enable_private_path_for_google_cloud_services GoogleSqlDatabaseInstance#enable_private_path_for_google_cloud_services}
+  */
+  readonly enablePrivatePathForGoogleCloudServices?: boolean | cdktf.IResolvable;
+  /**
   * Whether this Cloud SQL instance should be assigned a public IPV4 address. At least ipv4_enabled must be enabled or a private_network must be configured.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#ipv4_enabled GoogleSqlDatabaseInstance#ipv4_enabled}
@@ -1861,6 +1873,7 @@ export function googleSqlDatabaseInstanceSettingsIpConfigurationToTerraform(stru
   }
   return {
     allocated_ip_range: cdktf.stringToTerraform(struct!.allocatedIpRange),
+    enable_private_path_for_google_cloud_services: cdktf.booleanToTerraform(struct!.enablePrivatePathForGoogleCloudServices),
     ipv4_enabled: cdktf.booleanToTerraform(struct!.ipv4Enabled),
     private_network: cdktf.stringToTerraform(struct!.privateNetwork),
     require_ssl: cdktf.booleanToTerraform(struct!.requireSsl),
@@ -1886,6 +1899,10 @@ export class GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference ext
       hasAnyValues = true;
       internalValueResult.allocatedIpRange = this._allocatedIpRange;
     }
+    if (this._enablePrivatePathForGoogleCloudServices !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enablePrivatePathForGoogleCloudServices = this._enablePrivatePathForGoogleCloudServices;
+    }
     if (this._ipv4Enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.ipv4Enabled = this._ipv4Enabled;
@@ -1909,6 +1926,7 @@ export class GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference ext
     if (value === undefined) {
       this.isEmptyObject = false;
       this._allocatedIpRange = undefined;
+      this._enablePrivatePathForGoogleCloudServices = undefined;
       this._ipv4Enabled = undefined;
       this._privateNetwork = undefined;
       this._requireSsl = undefined;
@@ -1917,6 +1935,7 @@ export class GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference ext
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allocatedIpRange = value.allocatedIpRange;
+      this._enablePrivatePathForGoogleCloudServices = value.enablePrivatePathForGoogleCloudServices;
       this._ipv4Enabled = value.ipv4Enabled;
       this._privateNetwork = value.privateNetwork;
       this._requireSsl = value.requireSsl;
@@ -1938,6 +1957,22 @@ export class GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference ext
   // Temporarily expose input value. Use with caution.
   public get allocatedIpRangeInput() {
     return this._allocatedIpRange;
+  }
+
+  // enable_private_path_for_google_cloud_services - computed: false, optional: true, required: false
+  private _enablePrivatePathForGoogleCloudServices?: boolean | cdktf.IResolvable; 
+  public get enablePrivatePathForGoogleCloudServices() {
+    return this.getBooleanAttribute('enable_private_path_for_google_cloud_services');
+  }
+  public set enablePrivatePathForGoogleCloudServices(value: boolean | cdktf.IResolvable) {
+    this._enablePrivatePathForGoogleCloudServices = value;
+  }
+  public resetEnablePrivatePathForGoogleCloudServices() {
+    this._enablePrivatePathForGoogleCloudServices = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enablePrivatePathForGoogleCloudServicesInput() {
+    return this._enablePrivatePathForGoogleCloudServices;
   }
 
   // ipv4_enabled - computed: false, optional: true, required: false
@@ -3456,7 +3491,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_sql_database_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -3471,6 +3506,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
     this._deletionProtection = config.deletionProtection;
     this._encryptionKeyName = config.encryptionKeyName;
     this._id = config.id;
+    this._instanceType = config.instanceType;
     this._maintenanceVersion = config.maintenanceVersion;
     this._masterInstanceName = config.masterInstanceName;
     this._name = config.name;
@@ -3564,9 +3600,20 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // instance_type - computed: true, optional: false, required: false
+  // instance_type - computed: true, optional: true, required: false
+  private _instanceType?: string; 
   public get instanceType() {
     return this.getStringAttribute('instance_type');
+  }
+  public set instanceType(value: string) {
+    this._instanceType = value;
+  }
+  public resetInstanceType() {
+    this._instanceType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get instanceTypeInput() {
+    return this._instanceType;
   }
 
   // ip_address - computed: true, optional: false, required: false
@@ -3787,6 +3834,7 @@ export class GoogleSqlDatabaseInstance extends cdktf.TerraformResource {
       deletion_protection: cdktf.booleanToTerraform(this._deletionProtection),
       encryption_key_name: cdktf.stringToTerraform(this._encryptionKeyName),
       id: cdktf.stringToTerraform(this._id),
+      instance_type: cdktf.stringToTerraform(this._instanceType),
       maintenance_version: cdktf.stringToTerraform(this._maintenanceVersion),
       master_instance_name: cdktf.stringToTerraform(this._masterInstanceName),
       name: cdktf.stringToTerraform(this._name),

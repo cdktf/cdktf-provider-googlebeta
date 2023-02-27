@@ -181,7 +181,7 @@ export class GoogleBigqueryAnalyticsHubDataExchangeIamBinding extends cdktf.Terr
       terraformResourceType: 'google_bigquery_analytics_hub_data_exchange_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

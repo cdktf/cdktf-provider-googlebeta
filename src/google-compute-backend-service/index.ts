@@ -52,6 +52,12 @@ responses.
   */
   readonly description?: string;
   /**
+  * The resource URL for the edge security policy associated with this backend service.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#edge_security_policy GoogleComputeBackendService#edge_security_policy}
+  */
+  readonly edgeSecurityPolicy?: string;
+  /**
   * If true, enable Cloud CDN for this BackendService.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#enable_cdn GoogleComputeBackendService#enable_cdn}
@@ -214,6 +220,12 @@ failed request. Default is 30 seconds. Valid range is [1, 86400].
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#iap GoogleComputeBackendService#iap}
   */
   readonly iap?: GoogleComputeBackendServiceIap;
+  /**
+  * locality_lb_policies block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#locality_lb_policies GoogleComputeBackendService#locality_lb_policies}
+  */
+  readonly localityLbPolicies?: GoogleComputeBackendServiceLocalityLbPolicies[] | cdktf.IResolvable;
   /**
   * log_config block
   * 
@@ -2146,6 +2158,334 @@ export class GoogleComputeBackendServiceIapOutputReference extends cdktf.Complex
     return this.getStringAttribute('oauth2_client_secret_sha256');
   }
 }
+export interface GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicy {
+  /**
+  * An optional, arbitrary JSON object with configuration data, understood
+by a locally installed custom policy implementation.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#data GoogleComputeBackendService#data}
+  */
+  readonly data?: string;
+  /**
+  * Identifies the custom policy.
+
+The value should match the type the custom implementation is registered
+with on the gRPC clients. It should follow protocol buffer
+message naming conventions and include the full path (e.g.
+myorg.CustomLbPolicy). The maximum length is 256 characters.
+
+Note that specifying the same custom policy more than once for a
+backend is not a valid configuration and will be rejected.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#name GoogleComputeBackendService#name}
+  */
+  readonly name: string;
+}
+
+export function googleComputeBackendServiceLocalityLbPoliciesCustomPolicyToTerraform(struct?: GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference | GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    data: cdktf.stringToTerraform(struct!.data),
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._data !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.data = this._data;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._data = undefined;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._data = value.data;
+      this._name = value.name;
+    }
+  }
+
+  // data - computed: false, optional: true, required: false
+  private _data?: string; 
+  public get data() {
+    return this.getStringAttribute('data');
+  }
+  public set data(value: string) {
+    this._data = value;
+  }
+  public resetData() {
+    this._data = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dataInput() {
+    return this._data;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface GoogleComputeBackendServiceLocalityLbPoliciesPolicy {
+  /**
+  * The name of a locality load balancer policy to be used. The value
+should be one of the predefined ones as supported by localityLbPolicy,
+although at the moment only ROUND_ROBIN is supported.
+
+This field should only be populated when the customPolicy field is not
+used.
+
+Note that specifying the same policy more than once for a backend is
+not a valid configuration and will be rejected.
+
+The possible values are:
+
+* 'ROUND_ROBIN': This is a simple policy in which each healthy backend
+                is selected in round robin order.
+
+* 'LEAST_REQUEST': An O(1) algorithm which selects two random healthy
+                  hosts and picks the host which has fewer active requests.
+
+* 'RING_HASH': The ring/modulo hash load balancer implements consistent
+              hashing to backends. The algorithm has the property that the
+              addition/removal of a host from a set of N hosts only affects
+              1/N of the requests.
+
+* 'RANDOM': The load balancer selects a random healthy host.
+
+* 'ORIGINAL_DESTINATION': Backend host is selected based on the client
+                          connection metadata, i.e., connections are opened
+                          to the same address as the destination address of
+                          the incoming connection before the connection
+                          was redirected to the load balancer.
+
+* 'MAGLEV': used as a drop in replacement for the ring hash load balancer.
+            Maglev is not as stable as ring hash but has faster table lookup
+            build times and host selection times. For more information about
+            Maglev, refer to https://ai.google/research/pubs/pub44824 Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#name GoogleComputeBackendService#name}
+  */
+  readonly name: string;
+}
+
+export function googleComputeBackendServiceLocalityLbPoliciesPolicyToTerraform(struct?: GoogleComputeBackendServiceLocalityLbPoliciesPolicyOutputReference | GoogleComputeBackendServiceLocalityLbPoliciesPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+  }
+}
+
+export class GoogleComputeBackendServiceLocalityLbPoliciesPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeBackendServiceLocalityLbPoliciesPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeBackendServiceLocalityLbPoliciesPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._name = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._name = value.name;
+    }
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+}
+export interface GoogleComputeBackendServiceLocalityLbPolicies {
+  /**
+  * custom_policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#custom_policy GoogleComputeBackendService#custom_policy}
+  */
+  readonly customPolicy?: GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicy;
+  /**
+  * policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#policy GoogleComputeBackendService#policy}
+  */
+  readonly policy?: GoogleComputeBackendServiceLocalityLbPoliciesPolicy;
+}
+
+export function googleComputeBackendServiceLocalityLbPoliciesToTerraform(struct?: GoogleComputeBackendServiceLocalityLbPolicies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    custom_policy: googleComputeBackendServiceLocalityLbPoliciesCustomPolicyToTerraform(struct!.customPolicy),
+    policy: googleComputeBackendServiceLocalityLbPoliciesPolicyToTerraform(struct!.policy),
+  }
+}
+
+export class GoogleComputeBackendServiceLocalityLbPoliciesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeBackendServiceLocalityLbPolicies | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._customPolicy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customPolicy = this._customPolicy?.internalValue;
+    }
+    if (this._policy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.policy = this._policy?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeBackendServiceLocalityLbPolicies | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._customPolicy.internalValue = undefined;
+      this._policy.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._customPolicy.internalValue = value.customPolicy;
+      this._policy.internalValue = value.policy;
+    }
+  }
+
+  // custom_policy - computed: false, optional: true, required: false
+  private _customPolicy = new GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference(this, "custom_policy");
+  public get customPolicy() {
+    return this._customPolicy;
+  }
+  public putCustomPolicy(value: GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicy) {
+    this._customPolicy.internalValue = value;
+  }
+  public resetCustomPolicy() {
+    this._customPolicy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customPolicyInput() {
+    return this._customPolicy.internalValue;
+  }
+
+  // policy - computed: false, optional: true, required: false
+  private _policy = new GoogleComputeBackendServiceLocalityLbPoliciesPolicyOutputReference(this, "policy");
+  public get policy() {
+    return this._policy;
+  }
+  public putPolicy(value: GoogleComputeBackendServiceLocalityLbPoliciesPolicy) {
+    this._policy.internalValue = value;
+  }
+  public resetPolicy() {
+    this._policy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy.internalValue;
+  }
+}
+
+export class GoogleComputeBackendServiceLocalityLbPoliciesList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeBackendServiceLocalityLbPolicies[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeBackendServiceLocalityLbPoliciesOutputReference {
+    return new GoogleComputeBackendServiceLocalityLbPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeBackendServiceLogConfig {
   /**
   * Whether to enable logging for the load balancer traffic served by this backend service.
@@ -3067,7 +3407,7 @@ export class GoogleComputeBackendService extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_backend_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.54.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -3084,6 +3424,7 @@ export class GoogleComputeBackendService extends cdktf.TerraformResource {
     this._customRequestHeaders = config.customRequestHeaders;
     this._customResponseHeaders = config.customResponseHeaders;
     this._description = config.description;
+    this._edgeSecurityPolicy = config.edgeSecurityPolicy;
     this._enableCdn = config.enableCdn;
     this._healthChecks = config.healthChecks;
     this._id = config.id;
@@ -3101,6 +3442,7 @@ export class GoogleComputeBackendService extends cdktf.TerraformResource {
     this._circuitBreakers.internalValue = config.circuitBreakers;
     this._consistentHash.internalValue = config.consistentHash;
     this._iap.internalValue = config.iap;
+    this._localityLbPolicies.internalValue = config.localityLbPolicies;
     this._logConfig.internalValue = config.logConfig;
     this._outlierDetection.internalValue = config.outlierDetection;
     this._securitySettings.internalValue = config.securitySettings;
@@ -3210,6 +3552,22 @@ export class GoogleComputeBackendService extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // edge_security_policy - computed: false, optional: true, required: false
+  private _edgeSecurityPolicy?: string; 
+  public get edgeSecurityPolicy() {
+    return this.getStringAttribute('edge_security_policy');
+  }
+  public set edgeSecurityPolicy(value: string) {
+    this._edgeSecurityPolicy = value;
+  }
+  public resetEdgeSecurityPolicy() {
+    this._edgeSecurityPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get edgeSecurityPolicyInput() {
+    return this._edgeSecurityPolicy;
   }
 
   // enable_cdn - computed: false, optional: true, required: false
@@ -3496,6 +3854,22 @@ export class GoogleComputeBackendService extends cdktf.TerraformResource {
     return this._iap.internalValue;
   }
 
+  // locality_lb_policies - computed: false, optional: true, required: false
+  private _localityLbPolicies = new GoogleComputeBackendServiceLocalityLbPoliciesList(this, "locality_lb_policies", false);
+  public get localityLbPolicies() {
+    return this._localityLbPolicies;
+  }
+  public putLocalityLbPolicies(value: GoogleComputeBackendServiceLocalityLbPolicies[] | cdktf.IResolvable) {
+    this._localityLbPolicies.internalValue = value;
+  }
+  public resetLocalityLbPolicies() {
+    this._localityLbPolicies.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localityLbPoliciesInput() {
+    return this._localityLbPolicies.internalValue;
+  }
+
   // log_config - computed: false, optional: true, required: false
   private _logConfig = new GoogleComputeBackendServiceLogConfigOutputReference(this, "log_config");
   public get logConfig() {
@@ -3572,6 +3946,7 @@ export class GoogleComputeBackendService extends cdktf.TerraformResource {
       custom_request_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customRequestHeaders),
       custom_response_headers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._customResponseHeaders),
       description: cdktf.stringToTerraform(this._description),
+      edge_security_policy: cdktf.stringToTerraform(this._edgeSecurityPolicy),
       enable_cdn: cdktf.booleanToTerraform(this._enableCdn),
       health_checks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._healthChecks),
       id: cdktf.stringToTerraform(this._id),
@@ -3589,6 +3964,7 @@ export class GoogleComputeBackendService extends cdktf.TerraformResource {
       circuit_breakers: googleComputeBackendServiceCircuitBreakersToTerraform(this._circuitBreakers.internalValue),
       consistent_hash: googleComputeBackendServiceConsistentHashToTerraform(this._consistentHash.internalValue),
       iap: googleComputeBackendServiceIapToTerraform(this._iap.internalValue),
+      locality_lb_policies: cdktf.listMapper(googleComputeBackendServiceLocalityLbPoliciesToTerraform, true)(this._localityLbPolicies.internalValue),
       log_config: googleComputeBackendServiceLogConfigToTerraform(this._logConfig.internalValue),
       outlier_detection: googleComputeBackendServiceOutlierDetectionToTerraform(this._outlierDetection.internalValue),
       security_settings: googleComputeBackendServiceSecuritySettingsToTerraform(this._securitySettings.internalValue),
