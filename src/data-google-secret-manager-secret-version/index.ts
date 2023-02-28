@@ -54,7 +54,7 @@ export class DataGoogleSecretManagerSecretVersion extends cdktf.TerraformDataSou
       terraformResourceType: 'google_secret_manager_secret_version',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

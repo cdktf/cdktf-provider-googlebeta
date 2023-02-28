@@ -8,10 +8,6 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleProjectServiceIdentityConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_service_identity#email GoogleProjectServiceIdentity#email}
-  */
-  readonly email?: string;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_service_identity#id GoogleProjectServiceIdentity#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -189,7 +185,7 @@ export class GoogleProjectServiceIdentity extends cdktf.TerraformResource {
       terraformResourceType: 'google_project_service_identity',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -200,7 +196,6 @@ export class GoogleProjectServiceIdentity extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._email = config.email;
     this._id = config.id;
     this._project = config.project;
     this._service = config.service;
@@ -211,20 +206,9 @@ export class GoogleProjectServiceIdentity extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // email - computed: true, optional: true, required: false
-  private _email?: string; 
+  // email - computed: true, optional: false, required: false
   public get email() {
     return this.getStringAttribute('email');
-  }
-  public set email(value: string) {
-    this._email = value;
-  }
-  public resetEmail() {
-    this._email = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get emailInput() {
-    return this._email;
   }
 
   // id - computed: true, optional: true, required: false
@@ -294,7 +278,6 @@ export class GoogleProjectServiceIdentity extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      email: cdktf.stringToTerraform(this._email),
       id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       service: cdktf.stringToTerraform(this._service),

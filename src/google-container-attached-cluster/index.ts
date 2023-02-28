@@ -19,6 +19,12 @@ with dashes (-), underscores (_), dots (.), and alphanumerics between.
   */
   readonly annotations?: { [key: string]: string };
   /**
+  * Policy to determine what flags to send on delete.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_attached_cluster#deletion_policy GoogleContainerAttachedCluster#deletion_policy}
+  */
+  readonly deletionPolicy?: string;
+  /**
   * A human readable description of this attached cluster. Cannot be longer
 than 255 UTF-8 encoded bytes.
   * 
@@ -894,7 +900,7 @@ export class GoogleContainerAttachedCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_attached_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -906,6 +912,7 @@ export class GoogleContainerAttachedCluster extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._annotations = config.annotations;
+    this._deletionPolicy = config.deletionPolicy;
     this._description = config.description;
     this._distribution = config.distribution;
     this._id = config.id;
@@ -949,6 +956,22 @@ export class GoogleContainerAttachedCluster extends cdktf.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // deletion_policy - computed: false, optional: true, required: false
+  private _deletionPolicy?: string; 
+  public get deletionPolicy() {
+    return this.getStringAttribute('deletion_policy');
+  }
+  public set deletionPolicy(value: string) {
+    this._deletionPolicy = value;
+  }
+  public resetDeletionPolicy() {
+    this._deletionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deletionPolicyInput() {
+    return this._deletionPolicy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -1185,6 +1208,7 @@ export class GoogleContainerAttachedCluster extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
+      deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
       description: cdktf.stringToTerraform(this._description),
       distribution: cdktf.stringToTerraform(this._distribution),
       id: cdktf.stringToTerraform(this._id),

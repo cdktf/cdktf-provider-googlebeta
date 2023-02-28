@@ -3688,6 +3688,11 @@ export class DataGoogleContainerClusterNodeConfigKubeletConfigOutputReference ex
   public get cpuManagerPolicy() {
     return this.getStringAttribute('cpu_manager_policy');
   }
+
+  // pod_pids_limit - computed: true, optional: false, required: false
+  public get podPidsLimit() {
+    return this.getNumberAttribute('pod_pids_limit');
+  }
 }
 
 export class DataGoogleContainerClusterNodeConfigKubeletConfigList extends cdktf.ComplexList {
@@ -4957,6 +4962,11 @@ export class DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputRefe
   // cpu_manager_policy - computed: true, optional: false, required: false
   public get cpuManagerPolicy() {
     return this.getStringAttribute('cpu_manager_policy');
+  }
+
+  // pod_pids_limit - computed: true, optional: false, required: false
+  public get podPidsLimit() {
+    return this.getNumberAttribute('pod_pids_limit');
   }
 }
 
@@ -7285,7 +7295,7 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

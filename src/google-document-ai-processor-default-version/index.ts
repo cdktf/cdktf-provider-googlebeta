@@ -21,7 +21,8 @@ export interface GoogleDocumentAiProcessorDefaultVersionConfig extends cdktf.Ter
   */
   readonly processor: string;
   /**
-  * The version to set
+  * The version to set. Using 'stable' or 'rc' will cause the API to return the latest version in that release channel.
+Apply 'lifecycle.ignore_changes' to the 'version' field to suppress this diff.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_document_ai_processor_default_version#version GoogleDocumentAiProcessorDefaultVersion#version}
   */
@@ -162,7 +163,7 @@ export class GoogleDocumentAiProcessorDefaultVersion extends cdktf.TerraformReso
       terraformResourceType: 'google_document_ai_processor_default_version',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.49.0',
+        providerVersion: '4.55.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
