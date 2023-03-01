@@ -1,0 +1,1304 @@
+# `googleApiGatewayGatewayIamBinding` Submodule <a name="`googleApiGatewayGatewayIamBinding` Submodule" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### GoogleApiGatewayGatewayIamBinding <a name="GoogleApiGatewayGatewayIamBinding" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding google_api_gateway_gateway_iam_binding}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GoogleApiGatewayGatewayIamBinding(Construct Scope, string Id, GoogleApiGatewayGatewayIamBindingConfig Config);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.Initializer.parameter.scope">Scope</a></code> | <code>Constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.Initializer.parameter.id">Id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.Initializer.parameter.config">Config</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig">GoogleApiGatewayGatewayIamBindingConfig</a></code> | *No description.* |
+
+---
+
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.Initializer.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig">GoogleApiGatewayGatewayIamBindingConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.putCondition">PutCondition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.resetCondition">ResetCondition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.resetRegion">ResetRegion</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Returns a string representation of this construct.
+
+##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.addOverride"></a>
+
+```csharp
+private void AddOverride(string Path, object Value)
+```
+
+###### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.addOverride.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.overrideLogicalId"></a>
+
+```csharp
+private void OverrideLogicalId(string NewLogicalId)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `NewLogicalId`<sup>Required</sup> <a name="NewLogicalId" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.resetOverrideLogicalId"></a>
+
+```csharp
+private void ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.toMetadata"></a>
+
+```csharp
+private object ToMetadata()
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.toTerraform"></a>
+
+```csharp
+private object ToTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `PutCondition` <a name="PutCondition" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.putCondition"></a>
+
+```csharp
+private void PutCondition(GoogleApiGatewayGatewayIamBindingCondition Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.putCondition.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition">GoogleApiGatewayGatewayIamBindingCondition</a>
+
+---
+
+##### `ResetCondition` <a name="ResetCondition" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.resetCondition"></a>
+
+```csharp
+private void ResetCondition()
+```
+
+##### `ResetId` <a name="ResetId" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.resetId"></a>
+
+```csharp
+private void ResetId()
+```
+
+##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.resetProject"></a>
+
+```csharp
+private void ResetProject()
+```
+
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.isConstruct"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+GoogleApiGatewayGatewayIamBinding.IsConstruct(object X);
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.isConstruct.parameter.x"></a>
+
+- *Type:* object
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.isTerraformElement"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+GoogleApiGatewayGatewayIamBinding.IsTerraformElement(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.isTerraformElement.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.isTerraformResource"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+GoogleApiGatewayGatewayIamBinding.IsTerraformResource(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.isTerraformResource.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.node">Node</a></code> | <code>Constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.cdktfStack">CdktfStack</a></code> | <code>HashiCorp.Cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference">GoogleApiGatewayGatewayIamBindingConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.conditionInput">ConditionInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition">GoogleApiGatewayGatewayIamBindingCondition</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.gatewayInput">GatewayInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.membersInput">MembersInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.roleInput">RoleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.gateway">Gateway</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.members">Members</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.project">Project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.region">Region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.role">Role</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.node"></a>
+
+```csharp
+public Node Node { get; }
+```
+
+- *Type:* Constructs.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.cdktfStack"></a>
+
+```csharp
+public TerraformStack CdktfStack { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.friendlyUniqueId"></a>
+
+```csharp
+public string FriendlyUniqueId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.terraformMetaArguments"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, object> TerraformMetaArguments { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, object>
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.terraformResourceType"></a>
+
+```csharp
+public string TerraformResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.terraformGeneratorMetadata"></a>
+
+```csharp
+public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.connection"></a>
+
+```csharp
+public object Connection { get; }
+```
+
+- *Type:* object
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.count"></a>
+
+```csharp
+public double Count { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.dependsOn"></a>
+
+```csharp
+public string[] DependsOn { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.provisioners"></a>
+
+```csharp
+public object[] Provisioners { get; }
+```
+
+- *Type:* object[]
+
+---
+
+##### `Condition`<sup>Required</sup> <a name="Condition" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.condition"></a>
+
+```csharp
+public GoogleApiGatewayGatewayIamBindingConditionOutputReference Condition { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference">GoogleApiGatewayGatewayIamBindingConditionOutputReference</a>
+
+---
+
+##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.etag"></a>
+
+```csharp
+public string Etag { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ConditionInput`<sup>Optional</sup> <a name="ConditionInput" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.conditionInput"></a>
+
+```csharp
+public GoogleApiGatewayGatewayIamBindingCondition ConditionInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition">GoogleApiGatewayGatewayIamBindingCondition</a>
+
+---
+
+##### `GatewayInput`<sup>Optional</sup> <a name="GatewayInput" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.gatewayInput"></a>
+
+```csharp
+public string GatewayInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `MembersInput`<sup>Optional</sup> <a name="MembersInput" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.membersInput"></a>
+
+```csharp
+public string[] MembersInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.projectInput"></a>
+
+```csharp
+public string ProjectInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RoleInput`<sup>Optional</sup> <a name="RoleInput" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.roleInput"></a>
+
+```csharp
+public string RoleInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Gateway`<sup>Required</sup> <a name="Gateway" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.gateway"></a>
+
+```csharp
+public string Gateway { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Members`<sup>Required</sup> <a name="Members" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.members"></a>
+
+```csharp
+public string[] Members { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.project"></a>
+
+```csharp
+public string Project { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Role`<sup>Required</sup> <a name="Role" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.role"></a>
+
+```csharp
+public string Role { get; }
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.tfResourceType">TfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBinding.property.tfResourceType"></a>
+
+```csharp
+public string TfResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### GoogleApiGatewayGatewayIamBindingCondition <a name="GoogleApiGatewayGatewayIamBindingCondition" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GoogleApiGatewayGatewayIamBindingCondition {
+    string Expression,
+    string Title,
+    string Description = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#expression GoogleApiGatewayGatewayIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#title GoogleApiGatewayGatewayIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#description GoogleApiGatewayGatewayIamBinding#description}. |
+
+---
+
+##### `Expression`<sup>Required</sup> <a name="Expression" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.expression"></a>
+
+```csharp
+public string Expression { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#expression GoogleApiGatewayGatewayIamBinding#expression}.
+
+---
+
+##### `Title`<sup>Required</sup> <a name="Title" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.title"></a>
+
+```csharp
+public string Title { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#title GoogleApiGatewayGatewayIamBinding#title}.
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition.property.description"></a>
+
+```csharp
+public string Description { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#description GoogleApiGatewayGatewayIamBinding#description}.
+
+---
+
+### GoogleApiGatewayGatewayIamBindingConfig <a name="GoogleApiGatewayGatewayIamBindingConfig" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GoogleApiGatewayGatewayIamBindingConfig {
+    object Connection = null,
+    double Count = null,
+    ITerraformDependable[] DependsOn = null,
+    ITerraformIterator ForEach = null,
+    TerraformResourceLifecycle Lifecycle = null,
+    TerraformProvider Provider = null,
+    object[] Provisioners = null,
+    string Gateway,
+    string[] Members,
+    string Role,
+    GoogleApiGatewayGatewayIamBindingCondition Condition = null,
+    string Id = null,
+    string Project = null,
+    string Region = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.gateway">Gateway</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#gateway GoogleApiGatewayGatewayIamBinding#gateway}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#members GoogleApiGatewayGatewayIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#role GoogleApiGatewayGatewayIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition">GoogleApiGatewayGatewayIamBindingCondition</a></code> | condition block. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#id GoogleApiGatewayGatewayIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#project GoogleApiGatewayGatewayIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#region GoogleApiGatewayGatewayIamBinding#region}. |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.connection"></a>
+
+```csharp
+public object Connection { get; set; }
+```
+
+- *Type:* object
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.count"></a>
+
+```csharp
+public double Count { get; set; }
+```
+
+- *Type:* double
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.dependsOn"></a>
+
+```csharp
+public ITerraformDependable[] DependsOn { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformDependable[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.provisioners"></a>
+
+```csharp
+public object[] Provisioners { get; set; }
+```
+
+- *Type:* object[]
+
+---
+
+##### `Gateway`<sup>Required</sup> <a name="Gateway" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.gateway"></a>
+
+```csharp
+public string Gateway { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#gateway GoogleApiGatewayGatewayIamBinding#gateway}.
+
+---
+
+##### `Members`<sup>Required</sup> <a name="Members" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.members"></a>
+
+```csharp
+public string[] Members { get; set; }
+```
+
+- *Type:* string[]
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#members GoogleApiGatewayGatewayIamBinding#members}.
+
+---
+
+##### `Role`<sup>Required</sup> <a name="Role" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.role"></a>
+
+```csharp
+public string Role { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#role GoogleApiGatewayGatewayIamBinding#role}.
+
+---
+
+##### `Condition`<sup>Optional</sup> <a name="Condition" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.condition"></a>
+
+```csharp
+public GoogleApiGatewayGatewayIamBindingCondition Condition { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition">GoogleApiGatewayGatewayIamBindingCondition</a>
+
+condition block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#condition GoogleApiGatewayGatewayIamBinding#condition}
+
+---
+
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#id GoogleApiGatewayGatewayIamBinding#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.project"></a>
+
+```csharp
+public string Project { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#project GoogleApiGatewayGatewayIamBinding#project}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConfig.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_binding#region GoogleApiGatewayGatewayIamBinding#region}.
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### GoogleApiGatewayGatewayIamBindingConditionOutputReference <a name="GoogleApiGatewayGatewayIamBindingConditionOutputReference" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GoogleApiGatewayGatewayIamBindingConditionOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.resetDescription">ResetDescription</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.resetDescription"></a>
+
+```csharp
+private void ResetDescription()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.expressionInput">ExpressionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.titleInput">TitleInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.expression">Expression</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.title">Title</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition">GoogleApiGatewayGatewayIamBindingCondition</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.descriptionInput"></a>
+
+```csharp
+public string DescriptionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ExpressionInput`<sup>Optional</sup> <a name="ExpressionInput" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.expressionInput"></a>
+
+```csharp
+public string ExpressionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TitleInput`<sup>Optional</sup> <a name="TitleInput" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.titleInput"></a>
+
+```csharp
+public string TitleInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.description"></a>
+
+```csharp
+public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Expression`<sup>Required</sup> <a name="Expression" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.expression"></a>
+
+```csharp
+public string Expression { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Title`<sup>Required</sup> <a name="Title" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.title"></a>
+
+```csharp
+public string Title { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingConditionOutputReference.property.internalValue"></a>
+
+```csharp
+public GoogleApiGatewayGatewayIamBindingCondition InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleApiGatewayGatewayIamBinding.GoogleApiGatewayGatewayIamBindingCondition">GoogleApiGatewayGatewayIamBindingCondition</a>
+
+---
+
+
+
