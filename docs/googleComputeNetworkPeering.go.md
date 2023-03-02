@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetworkpeering"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetworkpeering"
 
 googlecomputenetworkpeering.NewGoogleComputeNetworkPeering(scope Construct, id *string, config GoogleComputeNetworkPeeringConfig) GoogleComputeNetworkPeering
 ```
@@ -321,7 +321,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetworkpeering"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetworkpeering"
 
 googlecomputenetworkpeering.GoogleComputeNetworkPeering_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetworkpeering"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetworkpeering"
 
 googlecomputenetworkpeering.GoogleComputeNetworkPeering_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ googlecomputenetworkpeering.GoogleComputeNetworkPeering_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeering.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetworkpeering"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetworkpeering"
 
 googlecomputenetworkpeering.GoogleComputeNetworkPeering_IsTerraformResource(x interface{}) *bool
 ```
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeeringConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetworkpeering"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetworkpeering"
 
 &googlecomputenetworkpeering.GoogleComputeNetworkPeeringConfig {
 	Connection: interface{},
@@ -804,7 +804,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputene
 	Id: *string,
 	ImportCustomRoutes: interface{},
 	ImportSubnetRoutesWithPublicIp: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeNetworkPeering.GoogleComputeNetworkPeeringTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeNetworkPeering.GoogleComputeNetworkPeeringTimeouts,
 }
 ```
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeeringTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetworkpeering"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetworkpeering"
 
 &googlecomputenetworkpeering.GoogleComputeNetworkPeeringTimeouts {
 	Create: *string,
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeNetworkPeering.GoogleComputeNetworkPeeringTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetworkpeering"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetworkpeering"
 
 googlecomputenetworkpeering.NewGoogleComputeNetworkPeeringTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeNetworkPeeringTimeoutsOutputReference
 ```

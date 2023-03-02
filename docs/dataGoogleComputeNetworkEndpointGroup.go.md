@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeNetworkEndpointGroup.DataGoogleComputeNetworkEndpointGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputenetworkendpointgroup"
 
 datagooglecomputenetworkendpointgroup.NewDataGoogleComputeNetworkEndpointGroup(scope Construct, id *string, config DataGoogleComputeNetworkEndpointGroupConfig) DataGoogleComputeNetworkEndpointGroup
 ```
@@ -301,7 +301,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeNetworkEndpointGroup.DataGoogleComputeNetworkEndpointGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputenetworkendpointgroup"
 
 datagooglecomputenetworkendpointgroup.DataGoogleComputeNetworkEndpointGroup_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeNetworkEndpointGroup.DataGoogleComputeNetworkEndpointGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputenetworkendpointgroup"
 
 datagooglecomputenetworkendpointgroup.DataGoogleComputeNetworkEndpointGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ datagooglecomputenetworkendpointgroup.DataGoogleComputeNetworkEndpointGroup_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeNetworkEndpointGroup.DataGoogleComputeNetworkEndpointGroup.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputenetworkendpointgroup"
 
 datagooglecomputenetworkendpointgroup.DataGoogleComputeNetworkEndpointGroup_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -700,7 +700,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeNetworkEndpointGroup.DataGoogleComputeNetworkEndpointGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputenetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputenetworkendpointgroup"
 
 &datagooglecomputenetworkendpointgroup.DataGoogleComputeNetworkEndpointGroupConfig {
 	Connection: interface{},
