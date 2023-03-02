@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudtasksqueueiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudtasksqueueiammember"
 
 googlecloudtasksqueueiammember.NewGoogleCloudTasksQueueIamMember(scope Construct, id *string, config GoogleCloudTasksQueueIamMemberConfig) GoogleCloudTasksQueueIamMember
 ```
@@ -307,7 +307,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudtasksqueueiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudtasksqueueiammember"
 
 googlecloudtasksqueueiammember.GoogleCloudTasksQueueIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudtasksqueueiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudtasksqueueiammember"
 
 googlecloudtasksqueueiammember.GoogleCloudTasksQueueIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googlecloudtasksqueueiammember.GoogleCloudTasksQueueIamMember_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudtasksqueueiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudtasksqueueiammember"
 
 googlecloudtasksqueueiammember.GoogleCloudTasksQueueIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudtasksqueueiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudtasksqueueiammember"
 
 &googlecloudtasksqueueiammember.GoogleCloudTasksQueueIamMemberCondition {
 	Expression: *string,
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudtasksqueueiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudtasksqueueiammember"
 
 &googlecloudtasksqueueiammember.GoogleCloudTasksQueueIamMemberConfig {
 	Connection: interface{},
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudtask
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudtasksqueueiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudtasksqueueiammember"
 
 googlecloudtasksqueueiammember.NewGoogleCloudTasksQueueIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudTasksQueueIamMemberConditionOutputReference
 ```
