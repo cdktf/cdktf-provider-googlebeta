@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewayapiiammember"
 
 googleapigatewayapiiammember.NewGoogleApiGatewayApiIamMember(scope Construct, id *string, config GoogleApiGatewayApiIamMemberConfig) GoogleApiGatewayApiIamMember
 ```
@@ -300,7 +300,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewayapiiammember"
 
 googleapigatewayapiiammember.GoogleApiGatewayApiIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewayapiiammember"
 
 googleapigatewayapiiammember.GoogleApiGatewayApiIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ googleapigatewayapiiammember.GoogleApiGatewayApiIamMember_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewayapiiammember"
 
 googleapigatewayapiiammember.GoogleApiGatewayApiIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -688,7 +688,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewayapiiammember"
 
 &googleapigatewayapiiammember.GoogleApiGatewayApiIamMemberCondition {
 	Expression: *string,
@@ -748,7 +748,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewayapiiammember"
 
 &googleapigatewayapiiammember.GoogleApiGatewayApiIamMemberConfig {
 	Connection: interface{},
@@ -761,7 +761,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewa
 	Api: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiIamMember.GoogleApiGatewayApiIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewayapiiammember"
 
 googleapigatewayapiiammember.NewGoogleApiGatewayApiIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApiGatewayApiIamMemberConditionOutputReference
 ```

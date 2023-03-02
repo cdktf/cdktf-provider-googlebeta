@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.NewDataGoogleMonitoringIstioCanonicalService(scope Construct, id *string, config DataGoogleMonitoringIstioCanonicalServiceConfig) DataGoogleMonitoringIstioCanonicalService
 ```
@@ -280,7 +280,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalService_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalService_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalServ
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglemonitoringistiocanonicalservice"
 
 &datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalServiceConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglemonitoringistiocanonicalservice"
 
 &datagooglemonitoringistiocanonicalservice.DataGoogleMonitoringIstioCanonicalServiceTelemetry {
 
@@ -868,7 +868,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonit
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.NewDataGoogleMonitoringIstioCanonicalServiceTelemetryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleMonitoringIstioCanonicalServiceTelemetryList
 ```
@@ -1000,7 +1000,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleMonitoringIstioCanonicalService.DataGoogleMonitoringIstioCanonicalServiceTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglemonitoringistiocanonicalservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglemonitoringistiocanonicalservice"
 
 datagooglemonitoringistiocanonicalservice.NewDataGoogleMonitoringIstioCanonicalServiceTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleMonitoringIstioCanonicalServiceTelemetryOutputReference
 ```
