@@ -738,6 +738,7 @@ The following submodules are available:
 - [googleRuntimeconfigConfigIamMember](./googleRuntimeconfigConfigIamMember.go.md)
 - [googleRuntimeconfigConfigIamPolicy](./googleRuntimeconfigConfigIamPolicy.go.md)
 - [googleRuntimeconfigVariable](./googleRuntimeconfigVariable.go.md)
+- [googleSccMuteConfig](./googleSccMuteConfig.go.md)
 - [googleSccNotificationConfig](./googleSccNotificationConfig.go.md)
 - [googleSccSource](./googleSccSource.go.md)
 - [googleSccSourceIamBinding](./googleSccSourceIamBinding.go.md)
@@ -826,4 +827,5 @@ The following submodules are available:
 - [googleVpcAccessConnector](./googleVpcAccessConnector.go.md)
 - [googleWorkflowsWorkflow](./googleWorkflowsWorkflow.go.md)
 - [googleWorkstationsWorkstationCluster](./googleWorkstationsWorkstationCluster.go.md)
+- [googleWorkstationsWorkstationConfig](./googleWorkstationsWorkstationConfig.go.md)
 - [provider](./provider.go.md)

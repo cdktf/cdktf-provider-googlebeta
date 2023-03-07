@@ -85,6 +85,12 @@ attached. Possible values: ["COLLOCATED"]
   */
   readonly collocation?: string;
   /**
+  * Specifies the number of max logical switches.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#max_distance GoogleComputeResourcePolicy#max_distance}
+  */
+  readonly maxDistance?: number;
+  /**
   * Number of VMs in this placement group. Google does not recommend that you use this field
 unless you use a compact policy and you want your policy to work only if it contains this
 exact number of VMs.
@@ -102,6 +108,7 @@ export function googleComputeResourcePolicyGroupPlacementPolicyToTerraform(struc
   return {
     availability_domain_count: cdktf.numberToTerraform(struct!.availabilityDomainCount),
     collocation: cdktf.stringToTerraform(struct!.collocation),
+    max_distance: cdktf.numberToTerraform(struct!.maxDistance),
     vm_count: cdktf.numberToTerraform(struct!.vmCount),
   }
 }
@@ -128,6 +135,10 @@ export class GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference exte
       hasAnyValues = true;
       internalValueResult.collocation = this._collocation;
     }
+    if (this._maxDistance !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maxDistance = this._maxDistance;
+    }
     if (this._vmCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.vmCount = this._vmCount;
@@ -140,12 +151,14 @@ export class GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference exte
       this.isEmptyObject = false;
       this._availabilityDomainCount = undefined;
       this._collocation = undefined;
+      this._maxDistance = undefined;
       this._vmCount = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._availabilityDomainCount = value.availabilityDomainCount;
       this._collocation = value.collocation;
+      this._maxDistance = value.maxDistance;
       this._vmCount = value.vmCount;
     }
   }
@@ -180,6 +193,22 @@ export class GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference exte
   // Temporarily expose input value. Use with caution.
   public get collocationInput() {
     return this._collocation;
+  }
+
+  // max_distance - computed: false, optional: true, required: false
+  private _maxDistance?: number; 
+  public get maxDistance() {
+    return this.getNumberAttribute('max_distance');
+  }
+  public set maxDistance(value: number) {
+    this._maxDistance = value;
+  }
+  public resetMaxDistance() {
+    this._maxDistance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maxDistanceInput() {
+    return this._maxDistance;
   }
 
   // vm_count - computed: false, optional: true, required: false
@@ -1506,7 +1535,7 @@ export class GoogleComputeResourcePolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

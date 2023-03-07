@@ -596,6 +596,7 @@ export * as googleRuntimeconfigConfigIamBinding from './google-runtimeconfig-con
 export * as googleRuntimeconfigConfigIamMember from './google-runtimeconfig-config-iam-member';
 export * as googleRuntimeconfigConfigIamPolicy from './google-runtimeconfig-config-iam-policy';
 export * as googleRuntimeconfigVariable from './google-runtimeconfig-variable';
+export * as googleSccMuteConfig from './google-scc-mute-config';
 export * as googleSccNotificationConfig from './google-scc-notification-config';
 export * as googleSccSource from './google-scc-source';
 export * as googleSccSourceIamBinding from './google-scc-source-iam-binding';
@@ -684,6 +685,7 @@ export * as googleVertexAiTensorboard from './google-vertex-ai-tensorboard';
 export * as googleVpcAccessConnector from './google-vpc-access-connector';
 export * as googleWorkflowsWorkflow from './google-workflows-workflow';
 export * as googleWorkstationsWorkstationCluster from './google-workstations-workstation-cluster';
+export * as googleWorkstationsWorkstationConfig from './google-workstations-workstation-config';
 export * as dataGoogleAccessApprovalFolderServiceAccount from './data-google-access-approval-folder-service-account';
 export * as dataGoogleAccessApprovalOrganizationServiceAccount from './data-google-access-approval-organization-service-account';
 export * as dataGoogleAccessApprovalProjectServiceAccount from './data-google-access-approval-project-service-account';

@@ -339,6 +339,12 @@ export interface GoogleContainerClusterConfig extends cdktf.TerraformMetaArgumen
   */
   readonly privateClusterConfig?: GoogleContainerClusterPrivateClusterConfig;
   /**
+  * protect_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#protect_config GoogleContainerCluster#protect_config}
+  */
+  readonly protectConfig?: GoogleContainerClusterProtectConfig;
+  /**
   * release_channel block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#release_channel GoogleContainerCluster#release_channel}
@@ -11336,6 +11342,166 @@ export class GoogleContainerClusterPrivateClusterConfigOutputReference extends c
     return this._masterGlobalAccessConfig.internalValue;
   }
 }
+export interface GoogleContainerClusterProtectConfigWorkloadConfig {
+  /**
+  * Mode defines how to audit the workload configs. Accepted values are MODE_UNSPECIFIED, DISABLED, BASIC.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#audit_mode GoogleContainerCluster#audit_mode}
+  */
+  readonly auditMode: string;
+}
+
+export function googleContainerClusterProtectConfigWorkloadConfigToTerraform(struct?: GoogleContainerClusterProtectConfigWorkloadConfigOutputReference | GoogleContainerClusterProtectConfigWorkloadConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    audit_mode: cdktf.stringToTerraform(struct!.auditMode),
+  }
+}
+
+export class GoogleContainerClusterProtectConfigWorkloadConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterProtectConfigWorkloadConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._auditMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.auditMode = this._auditMode;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterProtectConfigWorkloadConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._auditMode = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._auditMode = value.auditMode;
+    }
+  }
+
+  // audit_mode - computed: false, optional: false, required: true
+  private _auditMode?: string; 
+  public get auditMode() {
+    return this.getStringAttribute('audit_mode');
+  }
+  public set auditMode(value: string) {
+    this._auditMode = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get auditModeInput() {
+    return this._auditMode;
+  }
+}
+export interface GoogleContainerClusterProtectConfig {
+  /**
+  * WorkloadVulnerabilityMode defines mode to perform vulnerability scanning. Accepted values are WORKLOAD_VULNERABILITY_MODE_UNSPECIFIED, DISABLED, BASIC.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#workload_vulnerability_mode GoogleContainerCluster#workload_vulnerability_mode}
+  */
+  readonly workloadVulnerabilityMode?: string;
+  /**
+  * workload_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#workload_config GoogleContainerCluster#workload_config}
+  */
+  readonly workloadConfig?: GoogleContainerClusterProtectConfigWorkloadConfig;
+}
+
+export function googleContainerClusterProtectConfigToTerraform(struct?: GoogleContainerClusterProtectConfigOutputReference | GoogleContainerClusterProtectConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    workload_vulnerability_mode: cdktf.stringToTerraform(struct!.workloadVulnerabilityMode),
+    workload_config: googleContainerClusterProtectConfigWorkloadConfigToTerraform(struct!.workloadConfig),
+  }
+}
+
+export class GoogleContainerClusterProtectConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterProtectConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._workloadVulnerabilityMode !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workloadVulnerabilityMode = this._workloadVulnerabilityMode;
+    }
+    if (this._workloadConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.workloadConfig = this._workloadConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterProtectConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._workloadVulnerabilityMode = undefined;
+      this._workloadConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._workloadVulnerabilityMode = value.workloadVulnerabilityMode;
+      this._workloadConfig.internalValue = value.workloadConfig;
+    }
+  }
+
+  // workload_vulnerability_mode - computed: true, optional: true, required: false
+  private _workloadVulnerabilityMode?: string; 
+  public get workloadVulnerabilityMode() {
+    return this.getStringAttribute('workload_vulnerability_mode');
+  }
+  public set workloadVulnerabilityMode(value: string) {
+    this._workloadVulnerabilityMode = value;
+  }
+  public resetWorkloadVulnerabilityMode() {
+    this._workloadVulnerabilityMode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workloadVulnerabilityModeInput() {
+    return this._workloadVulnerabilityMode;
+  }
+
+  // workload_config - computed: false, optional: true, required: false
+  private _workloadConfig = new GoogleContainerClusterProtectConfigWorkloadConfigOutputReference(this, "workload_config");
+  public get workloadConfig() {
+    return this._workloadConfig;
+  }
+  public putWorkloadConfig(value: GoogleContainerClusterProtectConfigWorkloadConfig) {
+    this._workloadConfig.internalValue = value;
+  }
+  public resetWorkloadConfig() {
+    this._workloadConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get workloadConfigInput() {
+    return this._workloadConfig.internalValue;
+  }
+}
 export interface GoogleContainerClusterReleaseChannel {
   /**
   * The selected release channel. Accepted values are:
@@ -12066,7 +12232,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -12132,6 +12298,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     this._notificationConfig.internalValue = config.notificationConfig;
     this._podSecurityPolicyConfig.internalValue = config.podSecurityPolicyConfig;
     this._privateClusterConfig.internalValue = config.privateClusterConfig;
+    this._protectConfig.internalValue = config.protectConfig;
     this._releaseChannel.internalValue = config.releaseChannel;
     this._resourceUsageExportConfig.internalValue = config.resourceUsageExportConfig;
     this._serviceExternalIpsConfig.internalValue = config.serviceExternalIpsConfig;
@@ -13057,6 +13224,22 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
     return this._privateClusterConfig.internalValue;
   }
 
+  // protect_config - computed: false, optional: true, required: false
+  private _protectConfig = new GoogleContainerClusterProtectConfigOutputReference(this, "protect_config");
+  public get protectConfig() {
+    return this._protectConfig;
+  }
+  public putProtectConfig(value: GoogleContainerClusterProtectConfig) {
+    this._protectConfig.internalValue = value;
+  }
+  public resetProtectConfig() {
+    this._protectConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get protectConfigInput() {
+    return this._protectConfig.internalValue;
+  }
+
   // release_channel - computed: false, optional: true, required: false
   private _releaseChannel = new GoogleContainerClusterReleaseChannelOutputReference(this, "release_channel");
   public get releaseChannel() {
@@ -13230,6 +13413,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       notification_config: googleContainerClusterNotificationConfigToTerraform(this._notificationConfig.internalValue),
       pod_security_policy_config: googleContainerClusterPodSecurityPolicyConfigToTerraform(this._podSecurityPolicyConfig.internalValue),
       private_cluster_config: googleContainerClusterPrivateClusterConfigToTerraform(this._privateClusterConfig.internalValue),
+      protect_config: googleContainerClusterProtectConfigToTerraform(this._protectConfig.internalValue),
       release_channel: googleContainerClusterReleaseChannelToTerraform(this._releaseChannel.internalValue),
       resource_usage_export_config: googleContainerClusterResourceUsageExportConfigToTerraform(this._resourceUsageExportConfig.internalValue),
       service_external_ips_config: googleContainerClusterServiceExternalIpsConfigToTerraform(this._serviceExternalIpsConfig.internalValue),
