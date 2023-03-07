@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 googlemonitoringservice.NewGoogleMonitoringService(scope Construct, id *string, config GoogleMonitoringServiceConfig) GoogleMonitoringService
 ```
@@ -334,7 +334,7 @@ func ResetUserLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 googlemonitoringservice.GoogleMonitoringService_IsConstruct(x interface{}) *bool
 ```
@@ -366,7 +366,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 googlemonitoringservice.GoogleMonitoringService_IsTerraformElement(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ googlemonitoringservice.GoogleMonitoringService_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 googlemonitoringservice.GoogleMonitoringService_IsTerraformResource(x interface{}) *bool
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceBasicService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 &googlemonitoringservice.GoogleMonitoringServiceBasicService {
 	ServiceLabels: *map[string]*string,
@@ -805,7 +805,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 &googlemonitoringservice.GoogleMonitoringServiceConfig {
 	Connection: interface{},
@@ -816,11 +816,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitorin
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ServiceId: *string,
-	BasicService: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringService.GoogleMonitoringServiceBasicService,
+	BasicService: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleMonitoringService.GoogleMonitoringServiceBasicService,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringService.GoogleMonitoringServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleMonitoringService.GoogleMonitoringServiceTimeouts,
 	UserLabels: *map[string]*string,
 }
 ```
@@ -1025,7 +1025,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 &googlemonitoringservice.GoogleMonitoringServiceTelemetry {
 
@@ -1038,7 +1038,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitorin
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 &googlemonitoringservice.GoogleMonitoringServiceTimeouts {
 	Create: *string,
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceBasicServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 googlemonitoringservice.NewGoogleMonitoringServiceBasicServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringServiceBasicServiceOutputReference
 ```
@@ -1407,7 +1407,7 @@ func InternalValue() GoogleMonitoringServiceBasicService
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 googlemonitoringservice.NewGoogleMonitoringServiceTelemetryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMonitoringServiceTelemetryList
 ```
@@ -1539,7 +1539,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 googlemonitoringservice.NewGoogleMonitoringServiceTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMonitoringServiceTelemetryOutputReference
 ```
@@ -1817,7 +1817,7 @@ func InternalValue() GoogleMonitoringServiceTelemetry
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemonitoringservice"
 
 googlemonitoringservice.NewGoogleMonitoringServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringServiceTimeoutsOutputReference
 ```
