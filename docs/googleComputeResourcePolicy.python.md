@@ -462,6 +462,7 @@ def interpolation_for_attribute(
 def put_group_placement_policy(
   availability_domain_count: typing.Union[int, float] = None,
   collocation: str = None,
+  max_distance: typing.Union[int, float] = None,
   vm_count: typing.Union[int, float] = None
 ) -> None
 ```
@@ -490,6 +491,16 @@ with a COLLOCATED policy, then exactly 'vm_count' instances must be created at t
 attached. Possible values: ["COLLOCATED"]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#collocation GoogleComputeResourcePolicy#collocation}
+
+---
+
+###### `max_distance`<sup>Optional</sup> <a name="max_distance" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicy.putGroupPlacementPolicy.parameter.maxDistance"></a>
+
+- *Type:* typing.Union[int, float]
+
+Specifies the number of max logical switches.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#max_distance GoogleComputeResourcePolicy#max_distance}
 
 ---
 
@@ -1415,6 +1426,7 @@ from cdktf_cdktf_provider_google_beta import google_compute_resource_policy
 googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy(
   availability_domain_count: typing.Union[int, float] = None,
   collocation: str = None,
+  max_distance: typing.Union[int, float] = None,
   vm_count: typing.Union[int, float] = None
 )
 ```
@@ -1425,6 +1437,7 @@ googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.availabilityDomainCount">availability_domain_count</a></code> | <code>typing.Union[int, float]</code> | The number of availability domains instances will be spread across. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.collocation">collocation</a></code> | <code>str</code> | Collocation specifies whether to place VMs inside the same availability domain on the same low-latency network. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.maxDistance">max_distance</a></code> | <code>typing.Union[int, float]</code> | Specifies the number of max logical switches. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.vmCount">vm_count</a></code> | <code>typing.Union[int, float]</code> | Number of VMs in this placement group. |
 
 ---
@@ -1461,6 +1474,20 @@ with a COLLOCATED policy, then exactly 'vm_count' instances must be created at t
 attached. Possible values: ["COLLOCATED"]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#collocation GoogleComputeResourcePolicy#collocation}
+
+---
+
+##### `max_distance`<sup>Optional</sup> <a name="max_distance" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.maxDistance"></a>
+
+```python
+max_distance: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+Specifies the number of max logical switches.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#max_distance GoogleComputeResourcePolicy#max_distance}
 
 ---
 
@@ -2218,6 +2245,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetAvailabilityDomainCount">reset_availability_domain_count</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetCollocation">reset_collocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetMaxDistance">reset_max_distance</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetVmCount">reset_vm_count</a></code> | *No description.* |
 
 ---
@@ -2406,6 +2434,12 @@ def reset_availability_domain_count() -> None
 def reset_collocation() -> None
 ```
 
+##### `reset_max_distance` <a name="reset_max_distance" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetMaxDistance"></a>
+
+```python
+def reset_max_distance() -> None
+```
+
 ##### `reset_vm_count` <a name="reset_vm_count" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetVmCount"></a>
 
 ```python
@@ -2421,9 +2455,11 @@ def reset_vm_count() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.availabilityDomainCountInput">availability_domain_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.collocationInput">collocation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistanceInput">max_distance_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.vmCountInput">vm_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.availabilityDomainCount">availability_domain_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.collocation">collocation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistance">max_distance</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.vmCount">vm_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy">GoogleComputeResourcePolicyGroupPlacementPolicy</a></code> | *No description.* |
 
@@ -2473,6 +2509,16 @@ collocation_input: str
 
 ---
 
+##### `max_distance_input`<sup>Optional</sup> <a name="max_distance_input" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistanceInput"></a>
+
+```python
+max_distance_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `vm_count_input`<sup>Optional</sup> <a name="vm_count_input" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.vmCountInput"></a>
 
 ```python
@@ -2500,6 +2546,16 @@ collocation: str
 ```
 
 - *Type:* str
+
+---
+
+##### `max_distance`<sup>Required</sup> <a name="max_distance" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistance"></a>
+
+```python
+max_distance: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 

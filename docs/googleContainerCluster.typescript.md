@@ -93,6 +93,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.putNotificationConfig">putNotificationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.putPodSecurityPolicyConfig">putPodSecurityPolicyConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.putPrivateClusterConfig">putPrivateClusterConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.putProtectConfig">putProtectConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.putReleaseChannel">putReleaseChannel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.putResourceUsageExportConfig">putResourceUsageExportConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.putServiceExternalIpsConfig">putServiceExternalIpsConfig</a></code> | *No description.* |
@@ -151,6 +152,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.resetPrivateClusterConfig">resetPrivateClusterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.resetPrivateIpv6GoogleAccess">resetPrivateIpv6GoogleAccess</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.resetProtectConfig">resetProtectConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.resetReleaseChannel">resetReleaseChannel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.resetRemoveDefaultNodePool">resetRemoveDefaultNodePool</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.resetResourceLabels">resetResourceLabels</a></code> | *No description.* |
@@ -672,6 +674,18 @@ public putPrivateClusterConfig(value: GoogleContainerClusterPrivateClusterConfig
 
 ---
 
+##### `putProtectConfig` <a name="putProtectConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.putProtectConfig"></a>
+
+```typescript
+public putProtectConfig(value: GoogleContainerClusterProtectConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.putProtectConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig">GoogleContainerClusterProtectConfig</a>
+
+---
+
 ##### `putReleaseChannel` <a name="putReleaseChannel" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.putReleaseChannel"></a>
 
 ```typescript
@@ -1062,6 +1076,12 @@ public resetPrivateIpv6GoogleAccess(): void
 public resetProject(): void
 ```
 
+##### `resetProtectConfig` <a name="resetProtectConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.resetProtectConfig"></a>
+
+```typescript
+public resetProtectConfig(): void
+```
+
 ##### `resetReleaseChannel` <a name="resetReleaseChannel" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.resetReleaseChannel"></a>
 
 ```typescript
@@ -1241,6 +1261,7 @@ googleContainerCluster.GoogleContainerCluster.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.operation">operation</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.podSecurityPolicyConfig">podSecurityPolicyConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterPodSecurityPolicyConfigOutputReference">GoogleContainerClusterPodSecurityPolicyConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.privateClusterConfig">privateClusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterPrivateClusterConfigOutputReference">GoogleContainerClusterPrivateClusterConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.protectConfig">protectConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference">GoogleContainerClusterProtectConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.releaseChannel">releaseChannel</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterReleaseChannelOutputReference">GoogleContainerClusterReleaseChannelOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.resourceUsageExportConfig">resourceUsageExportConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterResourceUsageExportConfigOutputReference">GoogleContainerClusterResourceUsageExportConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
@@ -1303,6 +1324,7 @@ googleContainerCluster.GoogleContainerCluster.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.privateClusterConfigInput">privateClusterConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterPrivateClusterConfig">GoogleContainerClusterPrivateClusterConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.privateIpv6GoogleAccessInput">privateIpv6GoogleAccessInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.protectConfigInput">protectConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig">GoogleContainerClusterProtectConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.releaseChannelInput">releaseChannelInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterReleaseChannel">GoogleContainerClusterReleaseChannel</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.removeDefaultNodePoolInput">removeDefaultNodePoolInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.resourceLabelsInput">resourceLabelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
@@ -1793,6 +1815,16 @@ public readonly privateClusterConfig: GoogleContainerClusterPrivateClusterConfig
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterPrivateClusterConfigOutputReference">GoogleContainerClusterPrivateClusterConfigOutputReference</a>
+
+---
+
+##### `protectConfig`<sup>Required</sup> <a name="protectConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.protectConfig"></a>
+
+```typescript
+public readonly protectConfig: GoogleContainerClusterProtectConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference">GoogleContainerClusterProtectConfigOutputReference</a>
 
 ---
 
@@ -2413,6 +2445,16 @@ public readonly projectInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `protectConfigInput`<sup>Optional</sup> <a name="protectConfigInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster.property.protectConfigInput"></a>
+
+```typescript
+public readonly protectConfigInput: GoogleContainerClusterProtectConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig">GoogleContainerClusterProtectConfig</a>
 
 ---
 
@@ -4191,6 +4233,7 @@ const googleContainerClusterConfig: googleContainerCluster.GoogleContainerCluste
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterConfig.property.privateClusterConfig">privateClusterConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterPrivateClusterConfig">GoogleContainerClusterPrivateClusterConfig</a></code> | private_cluster_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterConfig.property.privateIpv6GoogleAccess">privateIpv6GoogleAccess</a></code> | <code>string</code> | The desired state of IPv6 connectivity to Google Services. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterConfig.property.project">project</a></code> | <code>string</code> | The ID of the project in which the resource belongs. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterConfig.property.protectConfig">protectConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig">GoogleContainerClusterProtectConfig</a></code> | protect_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterConfig.property.releaseChannel">releaseChannel</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterReleaseChannel">GoogleContainerClusterReleaseChannel</a></code> | release_channel block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterConfig.property.removeDefaultNodePool">removeDefaultNodePool</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, deletes the default node pool upon cluster creation. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterConfig.property.resourceLabels">resourceLabels</a></code> | <code>{[ key: string ]: string}</code> | The GCE resource labels (a map of key/value pairs) to be applied to the cluster. |
@@ -5028,6 +5071,20 @@ The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#project GoogleContainerCluster#project}
+
+---
+
+##### `protectConfig`<sup>Optional</sup> <a name="protectConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterConfig.property.protectConfig"></a>
+
+```typescript
+public readonly protectConfig: GoogleContainerClusterProtectConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig">GoogleContainerClusterProtectConfig</a>
+
+protect_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#protect_config GoogleContainerCluster#protect_config}
 
 ---
 
@@ -9226,6 +9283,85 @@ public readonly enabled: boolean | IResolvable;
 Whether the cluster master is accessible globally or not.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enabled GoogleContainerCluster#enabled}
+
+---
+
+### GoogleContainerClusterProtectConfig <a name="GoogleContainerClusterProtectConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig.Initializer"></a>
+
+```typescript
+import { googleContainerCluster } from '@cdktf/provider-google-beta'
+
+const googleContainerClusterProtectConfig: googleContainerCluster.GoogleContainerClusterProtectConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig.property.workloadConfig">workloadConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig">GoogleContainerClusterProtectConfigWorkloadConfig</a></code> | workload_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig.property.workloadVulnerabilityMode">workloadVulnerabilityMode</a></code> | <code>string</code> | WorkloadVulnerabilityMode defines mode to perform vulnerability scanning. Accepted values are WORKLOAD_VULNERABILITY_MODE_UNSPECIFIED, DISABLED, BASIC. |
+
+---
+
+##### `workloadConfig`<sup>Optional</sup> <a name="workloadConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig.property.workloadConfig"></a>
+
+```typescript
+public readonly workloadConfig: GoogleContainerClusterProtectConfigWorkloadConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig">GoogleContainerClusterProtectConfigWorkloadConfig</a>
+
+workload_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#workload_config GoogleContainerCluster#workload_config}
+
+---
+
+##### `workloadVulnerabilityMode`<sup>Optional</sup> <a name="workloadVulnerabilityMode" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig.property.workloadVulnerabilityMode"></a>
+
+```typescript
+public readonly workloadVulnerabilityMode: string;
+```
+
+- *Type:* string
+
+WorkloadVulnerabilityMode defines mode to perform vulnerability scanning. Accepted values are WORKLOAD_VULNERABILITY_MODE_UNSPECIFIED, DISABLED, BASIC.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#workload_vulnerability_mode GoogleContainerCluster#workload_vulnerability_mode}
+
+---
+
+### GoogleContainerClusterProtectConfigWorkloadConfig <a name="GoogleContainerClusterProtectConfigWorkloadConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig.Initializer"></a>
+
+```typescript
+import { googleContainerCluster } from '@cdktf/provider-google-beta'
+
+const googleContainerClusterProtectConfigWorkloadConfig: googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig.property.auditMode">auditMode</a></code> | <code>string</code> | Mode defines how to audit the workload configs. Accepted values are MODE_UNSPECIFIED, DISABLED, BASIC. |
+
+---
+
+##### `auditMode`<sup>Required</sup> <a name="auditMode" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig.property.auditMode"></a>
+
+```typescript
+public readonly auditMode: string;
+```
+
+- *Type:* string
+
+Mode defines how to audit the workload configs. Accepted values are MODE_UNSPECIFIED, DISABLED, BASIC.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#audit_mode GoogleContainerCluster#audit_mode}
 
 ---
 
@@ -41876,6 +42012,597 @@ public readonly internalValue: GoogleContainerClusterPrivateClusterConfig;
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterPrivateClusterConfig">GoogleContainerClusterPrivateClusterConfig</a>
+
+---
+
+
+### GoogleContainerClusterProtectConfigOutputReference <a name="GoogleContainerClusterProtectConfigOutputReference" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleContainerCluster } from '@cdktf/provider-google-beta'
+
+new googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.putWorkloadConfig">putWorkloadConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.resetWorkloadConfig">resetWorkloadConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.resetWorkloadVulnerabilityMode">resetWorkloadVulnerabilityMode</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `putWorkloadConfig` <a name="putWorkloadConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.putWorkloadConfig"></a>
+
+```typescript
+public putWorkloadConfig(value: GoogleContainerClusterProtectConfigWorkloadConfig): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.putWorkloadConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig">GoogleContainerClusterProtectConfigWorkloadConfig</a>
+
+---
+
+##### `resetWorkloadConfig` <a name="resetWorkloadConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.resetWorkloadConfig"></a>
+
+```typescript
+public resetWorkloadConfig(): void
+```
+
+##### `resetWorkloadVulnerabilityMode` <a name="resetWorkloadVulnerabilityMode" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.resetWorkloadVulnerabilityMode"></a>
+
+```typescript
+public resetWorkloadVulnerabilityMode(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.workloadConfig">workloadConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference">GoogleContainerClusterProtectConfigWorkloadConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.workloadConfigInput">workloadConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig">GoogleContainerClusterProtectConfigWorkloadConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.workloadVulnerabilityModeInput">workloadVulnerabilityModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.workloadVulnerabilityMode">workloadVulnerabilityMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig">GoogleContainerClusterProtectConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `workloadConfig`<sup>Required</sup> <a name="workloadConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.workloadConfig"></a>
+
+```typescript
+public readonly workloadConfig: GoogleContainerClusterProtectConfigWorkloadConfigOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference">GoogleContainerClusterProtectConfigWorkloadConfigOutputReference</a>
+
+---
+
+##### `workloadConfigInput`<sup>Optional</sup> <a name="workloadConfigInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.workloadConfigInput"></a>
+
+```typescript
+public readonly workloadConfigInput: GoogleContainerClusterProtectConfigWorkloadConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig">GoogleContainerClusterProtectConfigWorkloadConfig</a>
+
+---
+
+##### `workloadVulnerabilityModeInput`<sup>Optional</sup> <a name="workloadVulnerabilityModeInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.workloadVulnerabilityModeInput"></a>
+
+```typescript
+public readonly workloadVulnerabilityModeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `workloadVulnerabilityMode`<sup>Required</sup> <a name="workloadVulnerabilityMode" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.workloadVulnerabilityMode"></a>
+
+```typescript
+public readonly workloadVulnerabilityMode: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleContainerClusterProtectConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig">GoogleContainerClusterProtectConfig</a>
+
+---
+
+
+### GoogleContainerClusterProtectConfigWorkloadConfigOutputReference <a name="GoogleContainerClusterProtectConfigWorkloadConfigOutputReference" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.Initializer"></a>
+
+```typescript
+import { googleContainerCluster } from '@cdktf/provider-google-beta'
+
+new googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.property.auditModeInput">auditModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.property.auditMode">auditMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig">GoogleContainerClusterProtectConfigWorkloadConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `auditModeInput`<sup>Optional</sup> <a name="auditModeInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.property.auditModeInput"></a>
+
+```typescript
+public readonly auditModeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `auditMode`<sup>Required</sup> <a name="auditMode" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.property.auditMode"></a>
+
+```typescript
+public readonly auditMode: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfigOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: GoogleContainerClusterProtectConfigWorkloadConfig;
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig">GoogleContainerClusterProtectConfigWorkloadConfig</a>
 
 ---
 

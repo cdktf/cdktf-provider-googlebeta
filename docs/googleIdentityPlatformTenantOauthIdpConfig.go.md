@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleidentityplatformtenantoauthidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformtenantoauthidpconfig"
 
 googleidentityplatformtenantoauthidpconfig.NewGoogleIdentityPlatformTenantOauthIdpConfig(scope Construct, id *string, config GoogleIdentityPlatformTenantOauthIdpConfigConfig) GoogleIdentityPlatformTenantOauthIdpConfig
 ```
@@ -314,7 +314,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleidentityplatformtenantoauthidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformtenantoauthidpconfig"
 
 googleidentityplatformtenantoauthidpconfig.GoogleIdentityPlatformTenantOauthIdpConfig_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleidentityplatformtenantoauthidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformtenantoauthidpconfig"
 
 googleidentityplatformtenantoauthidpconfig.GoogleIdentityPlatformTenantOauthIdpConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ googleidentityplatformtenantoauthidpconfig.GoogleIdentityPlatformTenantOauthIdpC
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleidentityplatformtenantoauthidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformtenantoauthidpconfig"
 
 googleidentityplatformtenantoauthidpconfig.GoogleIdentityPlatformTenantOauthIdpConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -779,7 +779,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleidentityplatformtenantoauthidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformtenantoauthidpconfig"
 
 &googleidentityplatformtenantoauthidpconfig.GoogleIdentityPlatformTenantOauthIdpConfigConfig {
 	Connection: interface{},
@@ -798,7 +798,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleidenti
 	Enabled: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfigTimeouts,
 }
 ```
 
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleidentityplatformtenantoauthidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformtenantoauthidpconfig"
 
 &googleidentityplatformtenantoauthidpconfig.GoogleIdentityPlatformTenantOauthIdpConfigTimeouts {
 	Create: *string,
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIdentityPlatformTenantOauthIdpConfig.GoogleIdentityPlatformTenantOauthIdpConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleidentityplatformtenantoauthidpconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleidentityplatformtenantoauthidpconfig"
 
 googleidentityplatformtenantoauthidpconfig.NewGoogleIdentityPlatformTenantOauthIdpConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIdentityPlatformTenantOauthIdpConfigTimeoutsOutputReference
 ```

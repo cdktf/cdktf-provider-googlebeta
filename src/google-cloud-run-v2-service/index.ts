@@ -789,6 +789,104 @@ export class GoogleCloudRunV2ServiceTemplateContainersEnvList extends cdktf.Comp
     return new GoogleCloudRunV2ServiceTemplateContainersEnvOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc {
+  /**
+  * Port number to access on the container. Number must be in the range 1 to 65535. If not specified, defaults to the same value as container.ports[0].containerPort.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#port GoogleCloudRunV2Service#port}
+  */
+  readonly port?: number;
+  /**
+  * The name of the service to place in the gRPC HealthCheckRequest
+(see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+If this is not specified, the default behavior is defined by gRPC.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#service GoogleCloudRunV2Service#service}
+  */
+  readonly service?: string;
+}
+
+export function googleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcToTerraform(struct?: GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference | GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktf.numberToTerraform(struct!.port),
+    service: cdktf.stringToTerraform(struct!.service),
+  }
+}
+
+export class GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+      this._service = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+      this._service = value.service;
+    }
+  }
+
+  // port - computed: true, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // service - computed: false, optional: true, required: false
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  public resetService() {
+    this._service = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
 export interface GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders {
   /**
   * The header field name
@@ -1103,6 +1201,12 @@ export interface GoogleCloudRunV2ServiceTemplateContainersLivenessProbe {
   */
   readonly timeoutSeconds?: number;
   /**
+  * grpc block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#grpc GoogleCloudRunV2Service#grpc}
+  */
+  readonly grpc?: GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc;
+  /**
   * http_get block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#http_get GoogleCloudRunV2Service#http_get}
@@ -1126,6 +1230,7 @@ export function googleCloudRunV2ServiceTemplateContainersLivenessProbeToTerrafor
     initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
     period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
     timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    grpc: googleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcToTerraform(struct!.grpc),
     http_get: googleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetToTerraform(struct!.httpGet),
     tcp_socket: googleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketToTerraform(struct!.tcpSocket),
   }
@@ -1161,6 +1266,10 @@ export class GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReferen
       hasAnyValues = true;
       internalValueResult.timeoutSeconds = this._timeoutSeconds;
     }
+    if (this._grpc?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.grpc = this._grpc?.internalValue;
+    }
     if (this._httpGet?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpGet = this._httpGet?.internalValue;
@@ -1179,6 +1288,7 @@ export class GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReferen
       this._initialDelaySeconds = undefined;
       this._periodSeconds = undefined;
       this._timeoutSeconds = undefined;
+      this._grpc.internalValue = undefined;
       this._httpGet.internalValue = undefined;
       this._tcpSocket.internalValue = undefined;
     }
@@ -1188,6 +1298,7 @@ export class GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReferen
       this._initialDelaySeconds = value.initialDelaySeconds;
       this._periodSeconds = value.periodSeconds;
       this._timeoutSeconds = value.timeoutSeconds;
+      this._grpc.internalValue = value.grpc;
       this._httpGet.internalValue = value.httpGet;
       this._tcpSocket.internalValue = value.tcpSocket;
     }
@@ -1255,6 +1366,22 @@ export class GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReferen
   // Temporarily expose input value. Use with caution.
   public get timeoutSecondsInput() {
     return this._timeoutSeconds;
+  }
+
+  // grpc - computed: false, optional: true, required: false
+  private _grpc = new GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference(this, "grpc");
+  public get grpc() {
+    return this._grpc;
+  }
+  public putGrpc(value: GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc) {
+    this._grpc.internalValue = value;
+  }
+  public resetGrpc() {
+    this._grpc.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grpcInput() {
+    return this._grpc.internalValue;
   }
 
   // http_get - computed: false, optional: true, required: false
@@ -1511,6 +1638,104 @@ export class GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference e
   // Temporarily expose input value. Use with caution.
   public get limitsInput() {
     return this._limits;
+  }
+}
+export interface GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc {
+  /**
+  * Port number to access on the container. Number must be in the range 1 to 65535. If not specified, defaults to the same value as container.ports[0].containerPort.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#port GoogleCloudRunV2Service#port}
+  */
+  readonly port?: number;
+  /**
+  * The name of the service to place in the gRPC HealthCheckRequest
+(see https://github.com/grpc/grpc/blob/master/doc/health-checking.md).
+If this is not specified, the default behavior is defined by gRPC.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#service GoogleCloudRunV2Service#service}
+  */
+  readonly service?: string;
+}
+
+export function googleCloudRunV2ServiceTemplateContainersStartupProbeGrpcToTerraform(struct?: GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference | GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    port: cdktf.numberToTerraform(struct!.port),
+    service: cdktf.stringToTerraform(struct!.service),
+  }
+}
+
+export class GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._port !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.port = this._port;
+    }
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._port = undefined;
+      this._service = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._port = value.port;
+      this._service = value.service;
+    }
+  }
+
+  // port - computed: true, optional: true, required: false
+  private _port?: number; 
+  public get port() {
+    return this.getNumberAttribute('port');
+  }
+  public set port(value: number) {
+    this._port = value;
+  }
+  public resetPort() {
+    this._port = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get portInput() {
+    return this._port;
+  }
+
+  // service - computed: false, optional: true, required: false
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  public resetService() {
+    this._service = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
   }
 }
 export interface GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders {
@@ -1827,6 +2052,12 @@ export interface GoogleCloudRunV2ServiceTemplateContainersStartupProbe {
   */
   readonly timeoutSeconds?: number;
   /**
+  * grpc block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#grpc GoogleCloudRunV2Service#grpc}
+  */
+  readonly grpc?: GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc;
+  /**
   * http_get block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#http_get GoogleCloudRunV2Service#http_get}
@@ -1850,6 +2081,7 @@ export function googleCloudRunV2ServiceTemplateContainersStartupProbeToTerraform
     initial_delay_seconds: cdktf.numberToTerraform(struct!.initialDelaySeconds),
     period_seconds: cdktf.numberToTerraform(struct!.periodSeconds),
     timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    grpc: googleCloudRunV2ServiceTemplateContainersStartupProbeGrpcToTerraform(struct!.grpc),
     http_get: googleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetToTerraform(struct!.httpGet),
     tcp_socket: googleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketToTerraform(struct!.tcpSocket),
   }
@@ -1885,6 +2117,10 @@ export class GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReferenc
       hasAnyValues = true;
       internalValueResult.timeoutSeconds = this._timeoutSeconds;
     }
+    if (this._grpc?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.grpc = this._grpc?.internalValue;
+    }
     if (this._httpGet?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.httpGet = this._httpGet?.internalValue;
@@ -1903,6 +2139,7 @@ export class GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReferenc
       this._initialDelaySeconds = undefined;
       this._periodSeconds = undefined;
       this._timeoutSeconds = undefined;
+      this._grpc.internalValue = undefined;
       this._httpGet.internalValue = undefined;
       this._tcpSocket.internalValue = undefined;
     }
@@ -1912,6 +2149,7 @@ export class GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReferenc
       this._initialDelaySeconds = value.initialDelaySeconds;
       this._periodSeconds = value.periodSeconds;
       this._timeoutSeconds = value.timeoutSeconds;
+      this._grpc.internalValue = value.grpc;
       this._httpGet.internalValue = value.httpGet;
       this._tcpSocket.internalValue = value.tcpSocket;
     }
@@ -1979,6 +2217,22 @@ export class GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReferenc
   // Temporarily expose input value. Use with caution.
   public get timeoutSecondsInput() {
     return this._timeoutSeconds;
+  }
+
+  // grpc - computed: false, optional: true, required: false
+  private _grpc = new GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference(this, "grpc");
+  public get grpc() {
+    return this._grpc;
+  }
+  public putGrpc(value: GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc) {
+    this._grpc.internalValue = value;
+  }
+  public resetGrpc() {
+    this._grpc.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get grpcInput() {
+    return this._grpc.internalValue;
   }
 
   // http_get - computed: false, optional: true, required: false
@@ -3937,7 +4191,7 @@ export class GoogleCloudRunV2Service extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_run_v2_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

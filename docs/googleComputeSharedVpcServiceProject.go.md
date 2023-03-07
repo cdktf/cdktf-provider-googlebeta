@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesharedvpcserviceproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpcserviceproject"
 
 googlecomputesharedvpcserviceproject.NewGoogleComputeSharedVpcServiceProject(scope Construct, id *string, config GoogleComputeSharedVpcServiceProjectConfig) GoogleComputeSharedVpcServiceProject
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.resetDeletionPolicy">ResetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
@@ -268,6 +269,12 @@ func PutTimeouts(value GoogleComputeSharedVpcServiceProjectTimeouts)
 
 ---
 
+##### `ResetDeletionPolicy` <a name="ResetDeletionPolicy" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.resetDeletionPolicy"></a>
+
+```go
+func ResetDeletionPolicy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.resetId"></a>
 
 ```go
@@ -293,7 +300,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesharedvpcserviceproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpcserviceproject"
 
 googlecomputesharedvpcserviceproject.GoogleComputeSharedVpcServiceProject_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesharedvpcserviceproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpcserviceproject"
 
 googlecomputesharedvpcserviceproject.GoogleComputeSharedVpcServiceProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +346,7 @@ googlecomputesharedvpcserviceproject.GoogleComputeSharedVpcServiceProject_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesharedvpcserviceproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpcserviceproject"
 
 googlecomputesharedvpcserviceproject.GoogleComputeSharedVpcServiceProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -369,10 +376,12 @@ googlecomputesharedvpcserviceproject.GoogleComputeSharedVpcServiceProject_IsTerr
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeoutsOutputReference">GoogleComputeSharedVpcServiceProjectTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.deletionPolicyInput">DeletionPolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.hostProjectInput">HostProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.serviceProjectInput">ServiceProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.hostProject">HostProject</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.serviceProject">ServiceProject</a></code> | <code>*string</code> | *No description.* |
@@ -531,6 +540,16 @@ func Timeouts() GoogleComputeSharedVpcServiceProjectTimeoutsOutputReference
 
 ---
 
+##### `DeletionPolicyInput`<sup>Optional</sup> <a name="DeletionPolicyInput" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.deletionPolicyInput"></a>
+
+```go
+func DeletionPolicyInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `HostProjectInput`<sup>Optional</sup> <a name="HostProjectInput" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.hostProjectInput"></a>
 
 ```go
@@ -568,6 +587,16 @@ func TimeoutsInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProject.property.deletionPolicy"></a>
+
+```go
+func DeletionPolicy() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -626,7 +655,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesharedvpcserviceproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpcserviceproject"
 
 &googlecomputesharedvpcserviceproject.GoogleComputeSharedVpcServiceProjectConfig {
 	Connection: interface{},
@@ -638,8 +667,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomput
 	Provisioners: *[]interface{},
 	HostProject: *string,
 	ServiceProject: *string,
+	DeletionPolicy: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeouts,
 }
 ```
 
@@ -656,6 +686,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomput
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.hostProject">HostProject</a></code> | <code>*string</code> | The ID of a host project to associate. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.serviceProject">ServiceProject</a></code> | <code>*string</code> | The ID of the project that will serve as a Shared VPC service project. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | The deletion policy for the shared VPC service. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_shared_vpc_service_project#id GoogleComputeSharedVpcServiceProject#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeouts">GoogleComputeSharedVpcServiceProjectTimeouts</a></code> | timeouts block. |
 
@@ -759,6 +790,23 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 ---
 
+##### `DeletionPolicy`<sup>Optional</sup> <a name="DeletionPolicy" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.deletionPolicy"></a>
+
+```go
+DeletionPolicy *string
+```
+
+- *Type:* *string
+
+The deletion policy for the shared VPC service.
+
+Setting ABANDON allows the resource
+to be abandoned rather than deleted. Possible values are: "ABANDON".
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_shared_vpc_service_project#deletion_policy GoogleComputeSharedVpcServiceProject#deletion_policy}
+
+---
+
 ##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectConfig.property.id"></a>
 
 ```go
@@ -793,7 +841,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesharedvpcserviceproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpcserviceproject"
 
 &googlecomputesharedvpcserviceproject.GoogleComputeSharedVpcServiceProjectTimeouts {
 	Create: *string,
@@ -841,7 +889,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSharedVpcServiceProject.GoogleComputeSharedVpcServiceProjectTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesharedvpcserviceproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesharedvpcserviceproject"
 
 googlecomputesharedvpcserviceproject.NewGoogleComputeSharedVpcServiceProjectTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSharedVpcServiceProjectTimeoutsOutputReference
 ```

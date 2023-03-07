@@ -2985,7 +2985,7 @@ export class GoogleDataLossPreventionInspectTemplate extends cdktf.TerraformReso
       terraformResourceType: 'google_data_loss_prevention_inspect_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

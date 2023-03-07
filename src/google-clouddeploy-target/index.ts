@@ -75,6 +75,12 @@ export interface GoogleClouddeployTargetConfig extends cdktf.TerraformMetaArgume
   */
   readonly gke?: GoogleClouddeployTargetGke;
   /**
+  * multi_target block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#multi_target GoogleClouddeployTarget#multi_target}
+  */
+  readonly multiTarget?: GoogleClouddeployTargetMultiTarget;
+  /**
   * run block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#run GoogleClouddeployTarget#run}
@@ -462,6 +468,70 @@ export class GoogleClouddeployTargetGkeOutputReference extends cdktf.ComplexObje
     return this._internalIp;
   }
 }
+export interface GoogleClouddeployTargetMultiTarget {
+  /**
+  * Required. The target_ids of this multiTarget.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#target_ids GoogleClouddeployTarget#target_ids}
+  */
+  readonly targetIds: string[];
+}
+
+export function googleClouddeployTargetMultiTargetToTerraform(struct?: GoogleClouddeployTargetMultiTargetOutputReference | GoogleClouddeployTargetMultiTarget): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    target_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetIds),
+  }
+}
+
+export class GoogleClouddeployTargetMultiTargetOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleClouddeployTargetMultiTarget | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._targetIds !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.targetIds = this._targetIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleClouddeployTargetMultiTarget | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._targetIds = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._targetIds = value.targetIds;
+    }
+  }
+
+  // target_ids - computed: false, optional: false, required: true
+  private _targetIds?: string[]; 
+  public get targetIds() {
+    return this.getListAttribute('target_ids');
+  }
+  public set targetIds(value: string[]) {
+    this._targetIds = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get targetIdsInput() {
+    return this._targetIds;
+  }
+}
 export interface GoogleClouddeployTargetRun {
   /**
   * Required. The location where the Cloud Run Service should be located. Format is `projects/{project}/locations/{location}`.
@@ -682,7 +752,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
       terraformResourceType: 'google_clouddeploy_target',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -704,6 +774,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
     this._anthosCluster.internalValue = config.anthosCluster;
     this._executionConfigs.internalValue = config.executionConfigs;
     this._gke.internalValue = config.gke;
+    this._multiTarget.internalValue = config.multiTarget;
     this._run.internalValue = config.run;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -907,6 +978,22 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
     return this._gke.internalValue;
   }
 
+  // multi_target - computed: false, optional: true, required: false
+  private _multiTarget = new GoogleClouddeployTargetMultiTargetOutputReference(this, "multi_target");
+  public get multiTarget() {
+    return this._multiTarget;
+  }
+  public putMultiTarget(value: GoogleClouddeployTargetMultiTarget) {
+    this._multiTarget.internalValue = value;
+  }
+  public resetMultiTarget() {
+    this._multiTarget.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get multiTargetInput() {
+    return this._multiTarget.internalValue;
+  }
+
   // run - computed: false, optional: true, required: false
   private _run = new GoogleClouddeployTargetRunOutputReference(this, "run");
   public get run() {
@@ -956,6 +1043,7 @@ export class GoogleClouddeployTarget extends cdktf.TerraformResource {
       anthos_cluster: googleClouddeployTargetAnthosClusterToTerraform(this._anthosCluster.internalValue),
       execution_configs: cdktf.listMapper(googleClouddeployTargetExecutionConfigsToTerraform, true)(this._executionConfigs.internalValue),
       gke: googleClouddeployTargetGkeToTerraform(this._gke.internalValue),
+      multi_target: googleClouddeployTargetMultiTargetToTerraform(this._multiTarget.internalValue),
       run: googleClouddeployTargetRunToTerraform(this._run.internalValue),
       timeouts: googleClouddeployTargetTimeoutsToTerraform(this._timeouts.internalValue),
     };

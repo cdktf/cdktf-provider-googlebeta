@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2Service(scope Construct, id *string, config GoogleCloudRunV2ServiceConfig) GoogleCloudRunV2Service
 ```
@@ -409,7 +409,7 @@ func ResetTraffic()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.GoogleCloudRunV2Service_IsConstruct(x interface{}) *bool
 ```
@@ -441,7 +441,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.GoogleCloudRunV2Service_IsTerraformElement(x interface{}) *bool
 ```
@@ -455,7 +455,7 @@ googlecloudrunv2service.GoogleCloudRunV2Service_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2Service.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.GoogleCloudRunV2Service_IsTerraformResource(x interface{}) *bool
 ```
@@ -1105,7 +1105,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceBinaryAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceBinaryAuthorization {
 	BreakglassJustification: *string,
@@ -1157,7 +1157,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceConditions {
 
@@ -1170,7 +1170,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudr
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceConfig {
 	Connection: interface{},
@@ -1181,9 +1181,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudr
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Template: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplate,
+	Template: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplate,
 	Annotations: *map[string]*string,
-	BinaryAuthorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceBinaryAuthorization,
+	BinaryAuthorization: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceBinaryAuthorization,
 	Client: *string,
 	ClientVersion: *string,
 	Description: *string,
@@ -1193,7 +1193,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudr
 	LaunchStage: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTimeouts,
 	Traffic: interface{},
 }
 ```
@@ -1519,7 +1519,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplate {
 	Annotations: *map[string]*string,
@@ -1529,11 +1529,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudr
 	Labels: *map[string]*string,
 	MaxInstanceRequestConcurrency: *f64,
 	Revision: *string,
-	Scaling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateScaling,
+	Scaling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateScaling,
 	ServiceAccount: *string,
 	Timeout: *string,
 	Volumes: interface{},
-	VpcAccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVpcAccess,
+	VpcAccess: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVpcAccess,
 }
 ```
 
@@ -1737,18 +1737,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainers {
 	Image: *string,
 	Args: *[]*string,
 	Command: *[]*string,
 	Env: interface{},
-	LivenessProbe: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbe,
+	LivenessProbe: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbe,
 	Name: *string,
 	Ports: interface{},
-	Resources: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersResources,
-	StartupProbe: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbe,
+	Resources: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersResources,
+	StartupProbe: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbe,
 	VolumeMounts: interface{},
 	WorkingDir: *string,
 }
@@ -1937,12 +1937,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersEnv {
 	Name: *string,
 	Value: *string,
-	ValueSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnvValueSource,
+	ValueSource: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnvValueSource,
 }
 ```
 
@@ -2005,10 +2005,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnvValueSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersEnvValueSource {
-	SecretKeyRef: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef,
+	SecretKeyRef: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef,
 }
 ```
 
@@ -2039,7 +2039,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRef {
 	Secret: *string,
@@ -2093,14 +2093,15 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbe {
 	FailureThreshold: *f64,
-	HttpGet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet,
+	Grpc: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc,
+	HttpGet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
-	TcpSocket: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket,
+	TcpSocket: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket,
 	TimeoutSeconds: *f64,
 }
 ```
@@ -2110,6 +2111,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudr
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbe.property.failureThreshold">FailureThreshold</a></code> | <code>*f64</code> | Minimum consecutive failures for the probe to be considered failed after having succeeded. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbe.property.grpc">Grpc</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc</a></code> | grpc block. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbe.property.httpGet">HttpGet</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet</a></code> | http_get block. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbe.property.initialDelaySeconds">InitialDelaySeconds</a></code> | <code>*f64</code> | Number of seconds after the container has started before the probe is initiated. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbe.property.periodSeconds">PeriodSeconds</a></code> | <code>*f64</code> | How often (in seconds) to perform the probe. |
@@ -2131,6 +2133,20 @@ Minimum consecutive failures for the probe to be considered failed after having 
 Defaults to 3. Minimum value is 1.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#failure_threshold GoogleCloudRunV2Service#failure_threshold}
+
+---
+
+##### `Grpc`<sup>Optional</sup> <a name="Grpc" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbe.property.grpc"></a>
+
+```go
+Grpc GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc</a>
+
+grpc block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#grpc GoogleCloudRunV2Service#grpc}
 
 ---
 
@@ -2210,12 +2226,64 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 ---
 
+### GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc <a name="GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
+
+&googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc {
+	Port: *f64,
+	Service: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc.property.port">Port</a></code> | <code>*f64</code> | Port number to access on the container. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc.property.service">Service</a></code> | <code>*string</code> | The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC. |
+
+---
+
+##### `Port`<sup>Optional</sup> <a name="Port" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc.property.port"></a>
+
+```go
+Port *f64
+```
+
+- *Type:* *f64
+
+Port number to access on the container.
+
+Number must be in the range 1 to 65535. If not specified, defaults to the same value as container.ports[0].containerPort.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#port GoogleCloudRunV2Service#port}
+
+---
+
+##### `Service`<sup>Optional</sup> <a name="Service" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc.property.service"></a>
+
+```go
+Service *string
+```
+
+- *Type:* *string
+
+The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#service GoogleCloudRunV2Service#service}
+
+---
+
 ### GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet <a name="GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet {
 	HttpHeaders: interface{},
@@ -2265,7 +2333,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeaders {
 	Name: *string,
@@ -2315,7 +2383,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocket {
 	Port: *f64,
@@ -2351,7 +2419,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersPorts {
 	ContainerPort: *f64,
@@ -2401,7 +2469,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersResources {
 	CpuIdle: interface{},
@@ -2453,14 +2521,15 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersStartupProbe {
 	FailureThreshold: *f64,
-	HttpGet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet,
+	Grpc: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc,
+	HttpGet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
-	TcpSocket: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocket,
+	TcpSocket: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocket,
 	TimeoutSeconds: *f64,
 }
 ```
@@ -2470,6 +2539,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudr
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbe.property.failureThreshold">FailureThreshold</a></code> | <code>*f64</code> | Minimum consecutive failures for the probe to be considered failed after having succeeded. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbe.property.grpc">Grpc</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc</a></code> | grpc block. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbe.property.httpGet">HttpGet</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet">GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet</a></code> | http_get block. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbe.property.initialDelaySeconds">InitialDelaySeconds</a></code> | <code>*f64</code> | Number of seconds after the container has started before the probe is initiated. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbe.property.periodSeconds">PeriodSeconds</a></code> | <code>*f64</code> | How often (in seconds) to perform the probe. |
@@ -2491,6 +2561,20 @@ Minimum consecutive failures for the probe to be considered failed after having 
 Defaults to 3. Minimum value is 1.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#failure_threshold GoogleCloudRunV2Service#failure_threshold}
+
+---
+
+##### `Grpc`<sup>Optional</sup> <a name="Grpc" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbe.property.grpc"></a>
+
+```go
+Grpc GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc</a>
+
+grpc block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#grpc GoogleCloudRunV2Service#grpc}
 
 ---
 
@@ -2570,12 +2654,64 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 ---
 
+### GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc <a name="GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
+
+&googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc {
+	Port: *f64,
+	Service: *string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc.property.port">Port</a></code> | <code>*f64</code> | Port number to access on the container. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc.property.service">Service</a></code> | <code>*string</code> | The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC. |
+
+---
+
+##### `Port`<sup>Optional</sup> <a name="Port" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc.property.port"></a>
+
+```go
+Port *f64
+```
+
+- *Type:* *f64
+
+Port number to access on the container.
+
+Number must be in the range 1 to 65535. If not specified, defaults to the same value as container.ports[0].containerPort.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#port GoogleCloudRunV2Service#port}
+
+---
+
+##### `Service`<sup>Optional</sup> <a name="Service" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc.property.service"></a>
+
+```go
+Service *string
+```
+
+- *Type:* *string
+
+The name of the service to place in the gRPC HealthCheckRequest (see https://github.com/grpc/grpc/blob/master/doc/health-checking.md). If this is not specified, the default behavior is defined by gRPC.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#service GoogleCloudRunV2Service#service}
+
+---
+
 ### GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet <a name="GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet {
 	HttpHeaders: interface{},
@@ -2625,7 +2761,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeaders {
 	Name: *string,
@@ -2675,7 +2811,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocket {
 	Port: *f64,
@@ -2711,7 +2847,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateContainersVolumeMounts {
 	MountPath: *string,
@@ -2763,7 +2899,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateScaling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateScaling {
 	MaxInstanceCount: *f64,
@@ -2813,12 +2949,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateVolumes {
 	Name: *string,
-	CloudSqlInstance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstance,
-	Secret: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecret,
+	CloudSqlInstance: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstance,
+	Secret: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecret,
 }
 ```
 
@@ -2879,7 +3015,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstance {
 	Instances: *[]*string,
@@ -2913,7 +3049,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateVolumesSecret {
 	Secret: *string,
@@ -2983,7 +3119,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecretItems.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateVolumesSecretItems {
 	Mode: *f64,
@@ -3053,7 +3189,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVpcAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTemplateVpcAccess {
 	Connector: *string,
@@ -3103,7 +3239,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTerminalCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTerminalCondition {
 
@@ -3116,7 +3252,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudr
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTimeouts {
 	Create: *string,
@@ -3176,7 +3312,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTraffic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTraffic {
 	Percent: *f64,
@@ -3258,7 +3394,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficStatuses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 &googlecloudrunv2service.GoogleCloudRunV2ServiceTrafficStatuses {
 
@@ -3273,7 +3409,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceBinaryAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceBinaryAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceBinaryAuthorizationOutputReference
 ```
@@ -3580,7 +3716,7 @@ func InternalValue() GoogleCloudRunV2ServiceBinaryAuthorization
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceConditionsList
 ```
@@ -3712,7 +3848,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceConditionsOutputReference
 ```
@@ -4067,7 +4203,7 @@ func InternalValue() GoogleCloudRunV2ServiceConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTemplateContainersEnvList
 ```
@@ -4210,7 +4346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTemplateContainersEnvOutputReference
 ```
@@ -4570,7 +4706,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersEnvValueSourceOutputReference
 ```
@@ -4861,7 +4997,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateContainersEnvValueSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecretKeyRefOutputReference
 ```
@@ -5161,7 +5297,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateContainersEnvValueSourceSecr
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTemplateContainersList
 ```
@@ -5299,12 +5435,319 @@ func InternalValue() interface{}
 ---
 
 
+### GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference <a name="GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
+
+googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.resetPort">ResetPort</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.resetService">ResetService</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPort` <a name="ResetPort" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.resetPort"></a>
+
+```go
+func ResetPort()
+```
+
+##### `ResetService` <a name="ResetService" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.resetService"></a>
+
+```go
+func ResetService()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.serviceInput">ServiceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.service">Service</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PortInput`<sup>Optional</sup> <a name="PortInput" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.portInput"></a>
+
+```go
+func PortInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ServiceInput`<sup>Optional</sup> <a name="ServiceInput" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.serviceInput"></a>
+
+```go
+func ServiceInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Port`<sup>Required</sup> <a name="Port" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.port"></a>
+
+```go
+func Port() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Service`<sup>Required</sup> <a name="Service" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.service"></a>
+
+```go
+func Service() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc</a>
+
+---
+
+
 ### GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList <a name="GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersList
 ```
@@ -5447,7 +5890,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetHttpHeadersOutputReference
 ```
@@ -5765,7 +6208,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference
 ```
@@ -6085,7 +6528,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpG
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference
 ```
@@ -6130,9 +6573,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.putGrpc">PutGrpc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.putHttpGet">PutHttpGet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.putTcpSocket">PutTcpSocket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.resetFailureThreshold">ResetFailureThreshold</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.resetGrpc">ResetGrpc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.resetHttpGet">ResetHttpGet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.resetInitialDelaySeconds">ResetInitialDelaySeconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.resetPeriodSeconds">ResetPeriodSeconds</a></code> | *No description.* |
@@ -6291,6 +6736,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutGrpc` <a name="PutGrpc" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.putGrpc"></a>
+
+```go
+func PutGrpc(value GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.putGrpc.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc</a>
+
+---
+
 ##### `PutHttpGet` <a name="PutHttpGet" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.putHttpGet"></a>
 
 ```go
@@ -6319,6 +6776,12 @@ func PutTcpSocket(value GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTc
 
 ```go
 func ResetFailureThreshold()
+```
+
+##### `ResetGrpc` <a name="ResetGrpc" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.resetGrpc"></a>
+
+```go
+func ResetGrpc()
 ```
 
 ##### `ResetHttpGet` <a name="ResetHttpGet" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.resetHttpGet"></a>
@@ -6358,9 +6821,11 @@ func ResetTimeoutSeconds()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.grpc">Grpc</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.httpGet">HttpGet</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGetOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.tcpSocket">TcpSocket</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.failureThresholdInput">FailureThresholdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.grpcInput">GrpcInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.httpGetInput">HttpGetInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeHttpGet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.initialDelaySecondsInput">InitialDelaySecondsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.periodSecondsInput">PeriodSecondsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -6398,6 +6863,16 @@ func Fqn() *string
 
 ---
 
+##### `Grpc`<sup>Required</sup> <a name="Grpc" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.grpc"></a>
+
+```go
+func Grpc() GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference</a>
+
+---
+
 ##### `HttpGet`<sup>Required</sup> <a name="HttpGet" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.httpGet"></a>
 
 ```go
@@ -6425,6 +6900,16 @@ func FailureThresholdInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `GrpcInput`<sup>Optional</sup> <a name="GrpcInput" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeOutputReference.property.grpcInput"></a>
+
+```go
+func GrpcInput() GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc</a>
 
 ---
 
@@ -6534,7 +7019,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateContainersLivenessProbe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSocketOutputReference
 ```
@@ -6812,7 +7297,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateContainersLivenessProbeTcpSo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTemplateContainersOutputReference
 ```
@@ -7469,7 +7954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersPortsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersPortsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTemplateContainersPortsList
 ```
@@ -7612,7 +8097,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersPortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersPortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTemplateContainersPortsOutputReference
 ```
@@ -7937,7 +8422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersResourcesOutputReference
 ```
@@ -8239,12 +8724,319 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateContainersResources
 ---
 
 
+### GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference <a name="GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
+
+googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.resetPort">ResetPort</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.resetService">ResetService</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPort` <a name="ResetPort" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.resetPort"></a>
+
+```go
+func ResetPort()
+```
+
+##### `ResetService` <a name="ResetService" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.resetService"></a>
+
+```go
+func ResetService()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.serviceInput">ServiceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.service">Service</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `PortInput`<sup>Optional</sup> <a name="PortInput" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.portInput"></a>
+
+```go
+func PortInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `ServiceInput`<sup>Optional</sup> <a name="ServiceInput" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.serviceInput"></a>
+
+```go
+func ServiceInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Port`<sup>Required</sup> <a name="Port" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.port"></a>
+
+```go
+func Port() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Service`<sup>Required</sup> <a name="Service" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.service"></a>
+
+```go
+func Service() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc</a>
+
+---
+
+
 ### GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList <a name="GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersList
 ```
@@ -8387,7 +9179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference
 ```
@@ -8705,7 +9497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference
 ```
@@ -9025,7 +9817,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference
 ```
@@ -9070,9 +9862,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.putGrpc">PutGrpc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.putHttpGet">PutHttpGet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.putTcpSocket">PutTcpSocket</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.resetFailureThreshold">ResetFailureThreshold</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.resetGrpc">ResetGrpc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.resetHttpGet">ResetHttpGet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.resetInitialDelaySeconds">ResetInitialDelaySeconds</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.resetPeriodSeconds">ResetPeriodSeconds</a></code> | *No description.* |
@@ -9231,6 +10025,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `PutGrpc` <a name="PutGrpc" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.putGrpc"></a>
+
+```go
+func PutGrpc(value GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.putGrpc.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc</a>
+
+---
+
 ##### `PutHttpGet` <a name="PutHttpGet" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.putHttpGet"></a>
 
 ```go
@@ -9259,6 +10065,12 @@ func PutTcpSocket(value GoogleCloudRunV2ServiceTemplateContainersStartupProbeTcp
 
 ```go
 func ResetFailureThreshold()
+```
+
+##### `ResetGrpc` <a name="ResetGrpc" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.resetGrpc"></a>
+
+```go
+func ResetGrpc()
 ```
 
 ##### `ResetHttpGet` <a name="ResetHttpGet" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.resetHttpGet"></a>
@@ -9298,9 +10110,11 @@ func ResetTimeoutSeconds()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.grpc">Grpc</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference">GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.httpGet">HttpGet</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference">GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.tcpSocket">TcpSocket</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference">GoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.failureThresholdInput">FailureThresholdInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.grpcInput">GrpcInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.httpGetInput">HttpGetInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet">GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGet</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.initialDelaySecondsInput">InitialDelaySecondsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.periodSecondsInput">PeriodSecondsInput</a></code> | <code>*f64</code> | *No description.* |
@@ -9338,6 +10152,16 @@ func Fqn() *string
 
 ---
 
+##### `Grpc`<sup>Required</sup> <a name="Grpc" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.grpc"></a>
+
+```go
+func Grpc() GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference">GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpcOutputReference</a>
+
+---
+
 ##### `HttpGet`<sup>Required</sup> <a name="HttpGet" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.httpGet"></a>
 
 ```go
@@ -9365,6 +10189,16 @@ func FailureThresholdInput() *f64
 ```
 
 - *Type:* *f64
+
+---
+
+##### `GrpcInput`<sup>Optional</sup> <a name="GrpcInput" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeOutputReference.property.grpcInput"></a>
+
+```go
+func GrpcInput() GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc">GoogleCloudRunV2ServiceTemplateContainersStartupProbeGrpc</a>
 
 ---
 
@@ -9474,7 +10308,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateContainersStartupProbe
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSocketOutputReference
 ```
@@ -9752,7 +10586,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateContainersStartupProbeTcpSoc
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTemplateContainersVolumeMountsList
 ```
@@ -9895,7 +10729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference
 ```
@@ -10206,7 +11040,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateOutputReference
 ```
@@ -10855,7 +11689,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateScalingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateScalingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateScalingOutputReference
 ```
@@ -11162,7 +11996,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateScaling
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstanceOutputReference
 ```
@@ -11440,7 +12274,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateVolumesCloudSqlInstance
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTemplateVolumesList
 ```
@@ -11583,7 +12417,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTemplateVolumesOutputReference
 ```
@@ -11956,7 +12790,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecretItemsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTemplateVolumesSecretItemsList
 ```
@@ -12099,7 +12933,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference
 ```
@@ -12439,7 +13273,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateVolumesSecretOutputReference
 ```
@@ -12781,7 +13615,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateVolumesSecret
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTemplateVpcAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference
 ```
@@ -13088,7 +13922,7 @@ func InternalValue() GoogleCloudRunV2ServiceTemplateVpcAccess
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTerminalConditionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTerminalConditionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTerminalConditionList
 ```
@@ -13220,7 +14054,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTerminalConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTerminalConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTerminalConditionOutputReference
 ```
@@ -13575,7 +14409,7 @@ func InternalValue() GoogleCloudRunV2ServiceTerminalCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTimeoutsOutputReference
 ```
@@ -13911,7 +14745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTrafficList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTrafficList
 ```
@@ -14054,7 +14888,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTrafficOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTrafficOutputReference
 ```
@@ -14437,7 +15271,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficStatusesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTrafficStatusesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudRunV2ServiceTrafficStatusesList
 ```
@@ -14569,7 +15403,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTrafficStatusesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudrunv2service"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2service"
 
 googlecloudrunv2service.NewGoogleCloudRunV2ServiceTrafficStatusesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTrafficStatusesOutputReference
 ```

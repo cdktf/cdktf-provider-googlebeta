@@ -633,7 +633,7 @@ A duration in seconds with up to nine fractional digits, terminated by 's'. Exam
   */
   readonly backupWindow?: string;
   /**
-  * Whether automated automated backups are enabled.
+  * Whether automated backups are enabled.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_alloydb_cluster#enabled GoogleAlloydbCluster#enabled}
   */
@@ -1112,7 +1112,7 @@ export class GoogleAlloydbCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_alloydb_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

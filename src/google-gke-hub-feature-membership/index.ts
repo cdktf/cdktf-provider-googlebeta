@@ -1378,7 +1378,7 @@ export class GoogleGkeHubFeatureMembershipConfigmanagementOutputReference extend
 }
 export interface GoogleGkeHubFeatureMembershipMesh {
   /**
-  * Whether to automatically manage Service Mesh control planes. Possible values: CONTROL_PLANE_MANAGEMENT_UNSPECIFIED, AUTOMATIC, MANUAL
+  * **DEPRECATED** Whether to automatically manage Service Mesh control planes. Possible values: CONTROL_PLANE_MANAGEMENT_UNSPECIFIED, AUTOMATIC, MANUAL
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#control_plane GoogleGkeHubFeatureMembership#control_plane}
   */
@@ -1628,7 +1628,7 @@ export class GoogleGkeHubFeatureMembership extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_feature_membership',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

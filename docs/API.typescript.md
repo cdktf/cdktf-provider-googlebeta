@@ -738,6 +738,7 @@ The following submodules are available:
 - [googleRuntimeconfigConfigIamMember](./googleRuntimeconfigConfigIamMember.typescript.md)
 - [googleRuntimeconfigConfigIamPolicy](./googleRuntimeconfigConfigIamPolicy.typescript.md)
 - [googleRuntimeconfigVariable](./googleRuntimeconfigVariable.typescript.md)
+- [googleSccMuteConfig](./googleSccMuteConfig.typescript.md)
 - [googleSccNotificationConfig](./googleSccNotificationConfig.typescript.md)
 - [googleSccSource](./googleSccSource.typescript.md)
 - [googleSccSourceIamBinding](./googleSccSourceIamBinding.typescript.md)
@@ -826,4 +827,5 @@ The following submodules are available:
 - [googleVpcAccessConnector](./googleVpcAccessConnector.typescript.md)
 - [googleWorkflowsWorkflow](./googleWorkflowsWorkflow.typescript.md)
 - [googleWorkstationsWorkstationCluster](./googleWorkstationsWorkstationCluster.typescript.md)
+- [googleWorkstationsWorkstationConfig](./googleWorkstationsWorkstationConfig.typescript.md)
 - [provider](./provider.typescript.md)

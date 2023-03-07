@@ -1301,7 +1301,7 @@ export class GoogleDataprocMetastoreService extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataproc_metastore_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

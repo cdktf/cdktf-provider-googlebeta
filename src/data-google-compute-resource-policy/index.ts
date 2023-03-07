@@ -87,6 +87,11 @@ export class DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference 
     return this.getStringAttribute('collocation');
   }
 
+  // max_distance - computed: true, optional: false, required: false
+  public get maxDistance() {
+    return this.getNumberAttribute('max_distance');
+  }
+
   // vm_count - computed: true, optional: false, required: false
   public get vmCount() {
     return this.getNumberAttribute('vm_count');
@@ -927,7 +932,7 @@ export class DataGoogleComputeResourcePolicy extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_resource_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

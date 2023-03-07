@@ -1255,6 +1255,7 @@ import com.hashicorp.cdktf.providers.google_beta.google_compute_resource_policy.
 GoogleComputeResourcePolicyGroupPlacementPolicy.builder()
 //  .availabilityDomainCount(java.lang.Number)
 //  .collocation(java.lang.String)
+//  .maxDistance(java.lang.Number)
 //  .vmCount(java.lang.Number)
     .build();
 ```
@@ -1265,6 +1266,7 @@ GoogleComputeResourcePolicyGroupPlacementPolicy.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.availabilityDomainCount">availabilityDomainCount</a></code> | <code>java.lang.Number</code> | The number of availability domains instances will be spread across. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.collocation">collocation</a></code> | <code>java.lang.String</code> | Collocation specifies whether to place VMs inside the same availability domain on the same low-latency network. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.maxDistance">maxDistance</a></code> | <code>java.lang.Number</code> | Specifies the number of max logical switches. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.vmCount">vmCount</a></code> | <code>java.lang.Number</code> | Number of VMs in this placement group. |
 
 ---
@@ -1301,6 +1303,20 @@ with a COLLOCATED policy, then exactly 'vm_count' instances must be created at t
 attached. Possible values: ["COLLOCATED"]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#collocation GoogleComputeResourcePolicy#collocation}
+
+---
+
+##### `maxDistance`<sup>Optional</sup> <a name="maxDistance" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.maxDistance"></a>
+
+```java
+public java.lang.Number getMaxDistance();
+```
+
+- *Type:* java.lang.Number
+
+Specifies the number of max logical switches.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#max_distance GoogleComputeResourcePolicy#max_distance}
 
 ---
 
@@ -2057,6 +2073,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetAvailabilityDomainCount">resetAvailabilityDomainCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetCollocation">resetCollocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetMaxDistance">resetMaxDistance</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetVmCount">resetVmCount</a></code> | *No description.* |
 
 ---
@@ -2223,6 +2240,12 @@ public void resetAvailabilityDomainCount()
 public void resetCollocation()
 ```
 
+##### `resetMaxDistance` <a name="resetMaxDistance" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetMaxDistance"></a>
+
+```java
+public void resetMaxDistance()
+```
+
 ##### `resetVmCount` <a name="resetVmCount" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetVmCount"></a>
 
 ```java
@@ -2238,9 +2261,11 @@ public void resetVmCount()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.availabilityDomainCountInput">availabilityDomainCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.collocationInput">collocationInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistanceInput">maxDistanceInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.vmCountInput">vmCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.availabilityDomainCount">availabilityDomainCount</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.collocation">collocation</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistance">maxDistance</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.vmCount">vmCount</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy">GoogleComputeResourcePolicyGroupPlacementPolicy</a></code> | *No description.* |
 
@@ -2290,6 +2315,16 @@ public java.lang.String getCollocationInput();
 
 ---
 
+##### `maxDistanceInput`<sup>Optional</sup> <a name="maxDistanceInput" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistanceInput"></a>
+
+```java
+public java.lang.Number getMaxDistanceInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `vmCountInput`<sup>Optional</sup> <a name="vmCountInput" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.vmCountInput"></a>
 
 ```java
@@ -2317,6 +2352,16 @@ public java.lang.String getCollocation();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `maxDistance`<sup>Required</sup> <a name="maxDistance" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistance"></a>
+
+```java
+public java.lang.Number getMaxDistance();
+```
+
+- *Type:* java.lang.Number
 
 ---
 

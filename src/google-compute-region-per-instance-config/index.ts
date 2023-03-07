@@ -264,6 +264,444 @@ export class GoogleComputeRegionPerInstanceConfigPreservedStateDiskList extends 
     return new GoogleComputeRegionPerInstanceConfigPreservedStateDiskOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress {
+  /**
+  * The URL of the reservation for this IP address.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#address GoogleComputeRegionPerInstanceConfig#address}
+  */
+  readonly address?: string;
+}
+
+export function googleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressToTerraform(struct?: GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference | GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    address: cdktf.stringToTerraform(struct!.address),
+  }
+}
+
+export class GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.address = this._address;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._address = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._address = value.address;
+    }
+  }
+
+  // address - computed: false, optional: true, required: false
+  private _address?: string; 
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string) {
+    this._address = value;
+  }
+  public resetAddress() {
+    this._address = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address;
+  }
+}
+export interface GoogleComputeRegionPerInstanceConfigPreservedStateExternalIp {
+  /**
+  * These stateful IPs will never be released during autohealing, update or VM instance recreate operations. This flag is used to configure if the IP reservation should be deleted after it is no longer used by the group, e.g. when the given instance or the whole group is deleted. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#auto_delete GoogleComputeRegionPerInstanceConfig#auto_delete}
+  */
+  readonly autoDelete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#interface_name GoogleComputeRegionPerInstanceConfig#interface_name}
+  */
+  readonly interfaceName: string;
+  /**
+  * ip_address block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#ip_address GoogleComputeRegionPerInstanceConfig#ip_address}
+  */
+  readonly ipAddress?: GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress;
+}
+
+export function googleComputeRegionPerInstanceConfigPreservedStateExternalIpToTerraform(struct?: GoogleComputeRegionPerInstanceConfigPreservedStateExternalIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    auto_delete: cdktf.stringToTerraform(struct!.autoDelete),
+    interface_name: cdktf.stringToTerraform(struct!.interfaceName),
+    ip_address: googleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressToTerraform(struct!.ipAddress),
+  }
+}
+
+export class GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeRegionPerInstanceConfigPreservedStateExternalIp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._autoDelete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoDelete = this._autoDelete;
+    }
+    if (this._interfaceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interfaceName = this._interfaceName;
+    }
+    if (this._ipAddress?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionPerInstanceConfigPreservedStateExternalIp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._autoDelete = undefined;
+      this._interfaceName = undefined;
+      this._ipAddress.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._autoDelete = value.autoDelete;
+      this._interfaceName = value.interfaceName;
+      this._ipAddress.internalValue = value.ipAddress;
+    }
+  }
+
+  // auto_delete - computed: false, optional: true, required: false
+  private _autoDelete?: string; 
+  public get autoDelete() {
+    return this.getStringAttribute('auto_delete');
+  }
+  public set autoDelete(value: string) {
+    this._autoDelete = value;
+  }
+  public resetAutoDelete() {
+    this._autoDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoDeleteInput() {
+    return this._autoDelete;
+  }
+
+  // interface_name - computed: false, optional: false, required: true
+  private _interfaceName?: string; 
+  public get interfaceName() {
+    return this.getStringAttribute('interface_name');
+  }
+  public set interfaceName(value: string) {
+    this._interfaceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get interfaceNameInput() {
+    return this._interfaceName;
+  }
+
+  // ip_address - computed: false, optional: true, required: false
+  private _ipAddress = new GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddressOutputReference(this, "ip_address");
+  public get ipAddress() {
+    return this._ipAddress;
+  }
+  public putIpAddress(value: GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpIpAddress) {
+    this._ipAddress.internalValue = value;
+  }
+  public resetIpAddress() {
+    this._ipAddress.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress.internalValue;
+  }
+}
+
+export class GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeRegionPerInstanceConfigPreservedStateExternalIp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference {
+    return new GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress {
+  /**
+  * The URL of the reservation for this IP address.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#address GoogleComputeRegionPerInstanceConfig#address}
+  */
+  readonly address?: string;
+}
+
+export function googleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressToTerraform(struct?: GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference | GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    address: cdktf.stringToTerraform(struct!.address),
+  }
+}
+
+export class GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._address !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.address = this._address;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._address = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._address = value.address;
+    }
+  }
+
+  // address - computed: false, optional: true, required: false
+  private _address?: string; 
+  public get address() {
+    return this.getStringAttribute('address');
+  }
+  public set address(value: string) {
+    this._address = value;
+  }
+  public resetAddress() {
+    this._address = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressInput() {
+    return this._address;
+  }
+}
+export interface GoogleComputeRegionPerInstanceConfigPreservedStateInternalIp {
+  /**
+  * These stateful IPs will never be released during autohealing, update or VM instance recreate operations. This flag is used to configure if the IP reservation should be deleted after it is no longer used by the group, e.g. when the given instance or the whole group is deleted. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#auto_delete GoogleComputeRegionPerInstanceConfig#auto_delete}
+  */
+  readonly autoDelete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#interface_name GoogleComputeRegionPerInstanceConfig#interface_name}
+  */
+  readonly interfaceName: string;
+  /**
+  * ip_address block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#ip_address GoogleComputeRegionPerInstanceConfig#ip_address}
+  */
+  readonly ipAddress?: GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress;
+}
+
+export function googleComputeRegionPerInstanceConfigPreservedStateInternalIpToTerraform(struct?: GoogleComputeRegionPerInstanceConfigPreservedStateInternalIp | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    auto_delete: cdktf.stringToTerraform(struct!.autoDelete),
+    interface_name: cdktf.stringToTerraform(struct!.interfaceName),
+    ip_address: googleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressToTerraform(struct!.ipAddress),
+  }
+}
+
+export class GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeRegionPerInstanceConfigPreservedStateInternalIp | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._autoDelete !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.autoDelete = this._autoDelete;
+    }
+    if (this._interfaceName !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.interfaceName = this._interfaceName;
+    }
+    if (this._ipAddress?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ipAddress = this._ipAddress?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionPerInstanceConfigPreservedStateInternalIp | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._autoDelete = undefined;
+      this._interfaceName = undefined;
+      this._ipAddress.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._autoDelete = value.autoDelete;
+      this._interfaceName = value.interfaceName;
+      this._ipAddress.internalValue = value.ipAddress;
+    }
+  }
+
+  // auto_delete - computed: false, optional: true, required: false
+  private _autoDelete?: string; 
+  public get autoDelete() {
+    return this.getStringAttribute('auto_delete');
+  }
+  public set autoDelete(value: string) {
+    this._autoDelete = value;
+  }
+  public resetAutoDelete() {
+    this._autoDelete = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoDeleteInput() {
+    return this._autoDelete;
+  }
+
+  // interface_name - computed: false, optional: false, required: true
+  private _interfaceName?: string; 
+  public get interfaceName() {
+    return this.getStringAttribute('interface_name');
+  }
+  public set interfaceName(value: string) {
+    this._interfaceName = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get interfaceNameInput() {
+    return this._interfaceName;
+  }
+
+  // ip_address - computed: false, optional: true, required: false
+  private _ipAddress = new GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddressOutputReference(this, "ip_address");
+  public get ipAddress() {
+    return this._ipAddress;
+  }
+  public putIpAddress(value: GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpIpAddress) {
+    this._ipAddress.internalValue = value;
+  }
+  public resetIpAddress() {
+    this._ipAddress.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ipAddressInput() {
+    return this._ipAddress.internalValue;
+  }
+}
+
+export class GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeRegionPerInstanceConfigPreservedStateInternalIp[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference {
+    return new GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleComputeRegionPerInstanceConfigPreservedState {
   /**
   * Preserved metadata defined for this instance. This is a list of key->value pairs.
@@ -277,6 +715,18 @@ export interface GoogleComputeRegionPerInstanceConfigPreservedState {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#disk GoogleComputeRegionPerInstanceConfig#disk}
   */
   readonly disk?: GoogleComputeRegionPerInstanceConfigPreservedStateDisk[] | cdktf.IResolvable;
+  /**
+  * external_ip block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#external_ip GoogleComputeRegionPerInstanceConfig#external_ip}
+  */
+  readonly externalIp?: GoogleComputeRegionPerInstanceConfigPreservedStateExternalIp[] | cdktf.IResolvable;
+  /**
+  * internal_ip block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config#internal_ip GoogleComputeRegionPerInstanceConfig#internal_ip}
+  */
+  readonly internalIp?: GoogleComputeRegionPerInstanceConfigPreservedStateInternalIp[] | cdktf.IResolvable;
 }
 
 export function googleComputeRegionPerInstanceConfigPreservedStateToTerraform(struct?: GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference | GoogleComputeRegionPerInstanceConfigPreservedState): any {
@@ -287,6 +737,8 @@ export function googleComputeRegionPerInstanceConfigPreservedStateToTerraform(st
   return {
     metadata: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.metadata),
     disk: cdktf.listMapper(googleComputeRegionPerInstanceConfigPreservedStateDiskToTerraform, true)(struct!.disk),
+    external_ip: cdktf.listMapper(googleComputeRegionPerInstanceConfigPreservedStateExternalIpToTerraform, true)(struct!.externalIp),
+    internal_ip: cdktf.listMapper(googleComputeRegionPerInstanceConfigPreservedStateInternalIpToTerraform, true)(struct!.internalIp),
   }
 }
 
@@ -312,6 +764,14 @@ export class GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference e
       hasAnyValues = true;
       internalValueResult.disk = this._disk?.internalValue;
     }
+    if (this._externalIp?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.externalIp = this._externalIp?.internalValue;
+    }
+    if (this._internalIp?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.internalIp = this._internalIp?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -320,11 +780,15 @@ export class GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference e
       this.isEmptyObject = false;
       this._metadata = undefined;
       this._disk.internalValue = undefined;
+      this._externalIp.internalValue = undefined;
+      this._internalIp.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._metadata = value.metadata;
       this._disk.internalValue = value.disk;
+      this._externalIp.internalValue = value.externalIp;
+      this._internalIp.internalValue = value.internalIp;
     }
   }
 
@@ -358,6 +822,38 @@ export class GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference e
   // Temporarily expose input value. Use with caution.
   public get diskInput() {
     return this._disk.internalValue;
+  }
+
+  // external_ip - computed: false, optional: true, required: false
+  private _externalIp = new GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList(this, "external_ip", true);
+  public get externalIp() {
+    return this._externalIp;
+  }
+  public putExternalIp(value: GoogleComputeRegionPerInstanceConfigPreservedStateExternalIp[] | cdktf.IResolvable) {
+    this._externalIp.internalValue = value;
+  }
+  public resetExternalIp() {
+    this._externalIp.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalIpInput() {
+    return this._externalIp.internalValue;
+  }
+
+  // internal_ip - computed: false, optional: true, required: false
+  private _internalIp = new GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpList(this, "internal_ip", true);
+  public get internalIp() {
+    return this._internalIp;
+  }
+  public putInternalIp(value: GoogleComputeRegionPerInstanceConfigPreservedStateInternalIp[] | cdktf.IResolvable) {
+    this._internalIp.internalValue = value;
+  }
+  public resetInternalIp() {
+    this._internalIp.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get internalIpInput() {
+    return this._internalIp.internalValue;
   }
 }
 export interface GoogleComputeRegionPerInstanceConfigTimeouts {
@@ -516,7 +1012,7 @@ export class GoogleComputeRegionPerInstanceConfig extends cdktf.TerraformResourc
       terraformResourceType: 'google_compute_region_per_instance_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.55.0',
+        providerVersion: '4.56.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -1085,6 +1085,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 new GoogleComputeResourcePolicyGroupPlacementPolicy {
     double AvailabilityDomainCount = null,
     string Collocation = null,
+    double MaxDistance = null,
     double VmCount = null
 };
 ```
@@ -1095,6 +1096,7 @@ new GoogleComputeResourcePolicyGroupPlacementPolicy {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.availabilityDomainCount">AvailabilityDomainCount</a></code> | <code>double</code> | The number of availability domains instances will be spread across. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.collocation">Collocation</a></code> | <code>string</code> | Collocation specifies whether to place VMs inside the same availability domain on the same low-latency network. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.maxDistance">MaxDistance</a></code> | <code>double</code> | Specifies the number of max logical switches. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.vmCount">VmCount</a></code> | <code>double</code> | Number of VMs in this placement group. |
 
 ---
@@ -1131,6 +1133,20 @@ with a COLLOCATED policy, then exactly 'vm_count' instances must be created at t
 attached. Possible values: ["COLLOCATED"]
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#collocation GoogleComputeResourcePolicy#collocation}
+
+---
+
+##### `MaxDistance`<sup>Optional</sup> <a name="MaxDistance" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy.property.maxDistance"></a>
+
+```csharp
+public double MaxDistance { get; set; }
+```
+
+- *Type:* double
+
+Specifies the number of max logical switches.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#max_distance GoogleComputeResourcePolicy#max_distance}
 
 ---
 
@@ -1885,6 +1901,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetAvailabilityDomainCount">ResetAvailabilityDomainCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetCollocation">ResetCollocation</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetMaxDistance">ResetMaxDistance</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetVmCount">ResetVmCount</a></code> | *No description.* |
 
 ---
@@ -2051,6 +2068,12 @@ private void ResetAvailabilityDomainCount()
 private void ResetCollocation()
 ```
 
+##### `ResetMaxDistance` <a name="ResetMaxDistance" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetMaxDistance"></a>
+
+```csharp
+private void ResetMaxDistance()
+```
+
 ##### `ResetVmCount` <a name="ResetVmCount" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.resetVmCount"></a>
 
 ```csharp
@@ -2066,9 +2089,11 @@ private void ResetVmCount()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.availabilityDomainCountInput">AvailabilityDomainCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.collocationInput">CollocationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistanceInput">MaxDistanceInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.vmCountInput">VmCountInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.availabilityDomainCount">AvailabilityDomainCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.collocation">Collocation</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistance">MaxDistance</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.vmCount">VmCount</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicy">GoogleComputeResourcePolicyGroupPlacementPolicy</a></code> | *No description.* |
 
@@ -2118,6 +2143,16 @@ public string CollocationInput { get; }
 
 ---
 
+##### `MaxDistanceInput`<sup>Optional</sup> <a name="MaxDistanceInput" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistanceInput"></a>
+
+```csharp
+public double MaxDistanceInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `VmCountInput`<sup>Optional</sup> <a name="VmCountInput" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.vmCountInput"></a>
 
 ```csharp
@@ -2145,6 +2180,16 @@ public string Collocation { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `MaxDistance`<sup>Required</sup> <a name="MaxDistance" id="@cdktf/provider-google-beta.googleComputeResourcePolicy.GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference.property.maxDistance"></a>
+
+```csharp
+public double MaxDistance { get; }
+```
+
+- *Type:* double
 
 ---
 
