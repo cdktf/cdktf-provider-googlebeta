@@ -6,6 +6,7 @@ export * as googleAccessContextManagerAccessPolicy from './google-access-context
 export * as googleAccessContextManagerAccessPolicyIamBinding from './google-access-context-manager-access-policy-iam-binding';
 export * as googleAccessContextManagerAccessPolicyIamMember from './google-access-context-manager-access-policy-iam-member';
 export * as googleAccessContextManagerAccessPolicyIamPolicy from './google-access-context-manager-access-policy-iam-policy';
+export * as googleAccessContextManagerAuthorizedOrgsDesc from './google-access-context-manager-authorized-orgs-desc';
 export * as googleAccessContextManagerGcpUserAccessBinding from './google-access-context-manager-gcp-user-access-binding';
 export * as googleAccessContextManagerServicePerimeter from './google-access-context-manager-service-perimeter';
 export * as googleAccessContextManagerServicePerimeterResource from './google-access-context-manager-service-perimeter-resource';
@@ -30,6 +31,8 @@ export * as googleApiGatewayGatewayIamMember from './google-api-gateway-gateway-
 export * as googleApiGatewayGatewayIamPolicy from './google-api-gateway-gateway-iam-policy';
 export * as googleApigeeAddonsConfig from './google-apigee-addons-config';
 export * as googleApigeeEndpointAttachment from './google-apigee-endpoint-attachment';
+export * as googleApigeeEnvKeystore from './google-apigee-env-keystore';
+export * as googleApigeeEnvReferences from './google-apigee-env-references';
 export * as googleApigeeEnvgroup from './google-apigee-envgroup';
 export * as googleApigeeEnvgroupAttachment from './google-apigee-envgroup-attachment';
 export * as googleApigeeEnvironment from './google-apigee-environment';
@@ -66,6 +69,7 @@ export * as googleBigqueryAnalyticsHubListing from './google-bigquery-analytics-
 export * as googleBigqueryAnalyticsHubListingIamBinding from './google-bigquery-analytics-hub-listing-iam-binding';
 export * as googleBigqueryAnalyticsHubListingIamMember from './google-bigquery-analytics-hub-listing-iam-member';
 export * as googleBigqueryAnalyticsHubListingIamPolicy from './google-bigquery-analytics-hub-listing-iam-policy';
+export * as googleBigqueryCapacityCommitment from './google-bigquery-capacity-commitment';
 export * as googleBigqueryConnection from './google-bigquery-connection';
 export * as googleBigqueryConnectionIamBinding from './google-bigquery-connection-iam-binding';
 export * as googleBigqueryConnectionIamMember from './google-bigquery-connection-iam-member';
@@ -684,6 +688,7 @@ export * as googleVertexAiMetadataStore from './google-vertex-ai-metadata-store'
 export * as googleVertexAiTensorboard from './google-vertex-ai-tensorboard';
 export * as googleVpcAccessConnector from './google-vpc-access-connector';
 export * as googleWorkflowsWorkflow from './google-workflows-workflow';
+export * as googleWorkstationsWorkstation from './google-workstations-workstation';
 export * as googleWorkstationsWorkstationCluster from './google-workstations-workstation-cluster';
 export * as googleWorkstationsWorkstationConfig from './google-workstations-workstation-config';
 export * as dataGoogleAccessApprovalFolderServiceAccount from './data-google-access-approval-folder-service-account';

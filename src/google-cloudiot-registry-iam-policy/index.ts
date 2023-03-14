@@ -58,7 +58,7 @@ export class GoogleCloudiotRegistryIamPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudiot_registry_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

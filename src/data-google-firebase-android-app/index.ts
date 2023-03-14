@@ -21,6 +21,10 @@ This identifier should be treated as an opaque token, as the data format is not 
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#project DataGoogleFirebaseAndroidApp#project}
+  */
+  readonly project?: string;
 }
 
 /**
@@ -49,7 +53,7 @@ export class DataGoogleFirebaseAndroidApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_firebase_android_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -62,6 +66,7 @@ export class DataGoogleFirebaseAndroidApp extends cdktf.TerraformDataSource {
     });
     this._appId = config.appId;
     this._id = config.id;
+    this._project = config.project;
   }
 
   // ==========
@@ -122,9 +127,20 @@ export class DataGoogleFirebaseAndroidApp extends cdktf.TerraformDataSource {
     return this.getStringAttribute('package_name');
   }
 
-  // project - computed: true, optional: false, required: false
+  // project - computed: false, optional: true, required: false
+  private _project?: string; 
   public get project() {
     return this.getStringAttribute('project');
+  }
+  public set project(value: string) {
+    this._project = value;
+  }
+  public resetProject() {
+    this._project = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectInput() {
+    return this._project;
   }
 
   // sha1_hashes - computed: true, optional: false, required: false
@@ -145,6 +161,7 @@ export class DataGoogleFirebaseAndroidApp extends cdktf.TerraformDataSource {
     return {
       app_id: cdktf.stringToTerraform(this._appId),
       id: cdktf.stringToTerraform(this._id),
+      project: cdktf.stringToTerraform(this._project),
     };
   }
 }

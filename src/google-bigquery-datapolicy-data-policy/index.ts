@@ -57,7 +57,7 @@ export interface GoogleBigqueryDatapolicyDataPolicyConfig extends cdktf.Terrafor
 }
 export interface GoogleBigqueryDatapolicyDataPolicyDataMaskingPolicy {
   /**
-  * The available masking rules. Learn more here: https://cloud.google.com/bigquery/docs/column-data-masking-intro#masking_options. Possible values: ["SHA256", "ALWAYS_NULL", "DEFAULT_MASKING_VALUE"]
+  * The available masking rules. Learn more here: https://cloud.google.com/bigquery/docs/column-data-masking-intro#masking_options. Possible values: ["SHA256", "ALWAYS_NULL", "DEFAULT_MASKING_VALUE", "LAST_FOUR_CHARACTERS", "FIRST_FOUR_CHARACTERS", "EMAIL_MASK", "DATE_YEAR_MASK"]
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_datapolicy_data_policy#predefined_expression GoogleBigqueryDatapolicyDataPolicy#predefined_expression}
   */
@@ -275,7 +275,7 @@ export class GoogleBigqueryDatapolicyDataPolicy extends cdktf.TerraformResource 
       terraformResourceType: 'google_bigquery_datapolicy_data_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

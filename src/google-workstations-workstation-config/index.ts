@@ -6,21 +6,21 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface GoogleWorkstationsWorkstationConfigConfig extends cdktf.TerraformMetaArguments {
+export interface GoogleWorkstationsWorkstationConfigAConfig extends cdktf.TerraformMetaArguments {
   /**
   * Client-specified annotations. This is distinct from labels.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#annotations GoogleWorkstationsWorkstationConfig#annotations}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#annotations GoogleWorkstationsWorkstationConfigA#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Human-readable name for this resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#display_name GoogleWorkstationsWorkstationConfig#display_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#display_name GoogleWorkstationsWorkstationConfigA#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#id GoogleWorkstationsWorkstationConfig#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#id GoogleWorkstationsWorkstationConfigA#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,59 +29,59 @@ export interface GoogleWorkstationsWorkstationConfigConfig extends cdktf.Terrafo
   /**
   * Client-specified labels that are applied to the resource and that are also propagated to the underlying Compute Engine resources.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#labels GoogleWorkstationsWorkstationConfig#labels}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#labels GoogleWorkstationsWorkstationConfigA#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the workstation cluster config should reside.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#location GoogleWorkstationsWorkstationConfig#location}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#location GoogleWorkstationsWorkstationConfigA#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#project GoogleWorkstationsWorkstationConfig#project}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#project GoogleWorkstationsWorkstationConfigA#project}
   */
   readonly project?: string;
   /**
   * The name of the workstation cluster.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#workstation_cluster_id GoogleWorkstationsWorkstationConfig#workstation_cluster_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#workstation_cluster_id GoogleWorkstationsWorkstationConfigA#workstation_cluster_id}
   */
   readonly workstationClusterId: string;
   /**
   * The ID of the workstation cluster config.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#workstation_config_id GoogleWorkstationsWorkstationConfig#workstation_config_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#workstation_config_id GoogleWorkstationsWorkstationConfigA#workstation_config_id}
   */
   readonly workstationConfigId: string;
   /**
   * container block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#container GoogleWorkstationsWorkstationConfig#container}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#container GoogleWorkstationsWorkstationConfigA#container}
   */
   readonly container?: GoogleWorkstationsWorkstationConfigContainer;
   /**
   * encryption_key block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#encryption_key GoogleWorkstationsWorkstationConfig#encryption_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#encryption_key GoogleWorkstationsWorkstationConfigA#encryption_key}
   */
   readonly encryptionKey?: GoogleWorkstationsWorkstationConfigEncryptionKey;
   /**
   * host block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#host GoogleWorkstationsWorkstationConfig#host}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#host GoogleWorkstationsWorkstationConfigA#host}
   */
   readonly host?: GoogleWorkstationsWorkstationConfigHost;
   /**
   * persistent_directories block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#persistent_directories GoogleWorkstationsWorkstationConfig#persistent_directories}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#persistent_directories GoogleWorkstationsWorkstationConfigA#persistent_directories}
   */
   readonly persistentDirectories?: GoogleWorkstationsWorkstationConfigPersistentDirectories[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#timeouts GoogleWorkstationsWorkstationConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#timeouts GoogleWorkstationsWorkstationConfigA#timeouts}
   */
   readonly timeouts?: GoogleWorkstationsWorkstationConfigTimeouts;
 }
@@ -164,38 +164,38 @@ export interface GoogleWorkstationsWorkstationConfigContainer {
   /**
   * Arguments passed to the entrypoint.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#args GoogleWorkstationsWorkstationConfig#args}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#args GoogleWorkstationsWorkstationConfigA#args}
   */
   readonly args?: string[];
   /**
   * If set, overrides the default ENTRYPOINT specified by the image.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#command GoogleWorkstationsWorkstationConfig#command}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#command GoogleWorkstationsWorkstationConfigA#command}
   */
   readonly command?: string[];
   /**
   * Environment variables passed to the container.
 The elements are of the form "KEY=VALUE" for the environment variable "KEY" being given the value "VALUE".
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#env GoogleWorkstationsWorkstationConfig#env}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#env GoogleWorkstationsWorkstationConfigA#env}
   */
   readonly env?: { [key: string]: string };
   /**
   * Docker image defining the container. This image must be accessible by the config"s service account.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#image GoogleWorkstationsWorkstationConfig#image}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#image GoogleWorkstationsWorkstationConfigA#image}
   */
   readonly image?: string;
   /**
   * If set, overrides the USER specified in the image with the given uid.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#run_as_user GoogleWorkstationsWorkstationConfig#run_as_user}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#run_as_user GoogleWorkstationsWorkstationConfigA#run_as_user}
   */
   readonly runAsUser?: number;
   /**
   * If set, overrides the default DIR specified by the image.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#working_dir GoogleWorkstationsWorkstationConfig#working_dir}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#working_dir GoogleWorkstationsWorkstationConfigA#working_dir}
   */
   readonly workingDir?: string;
 }
@@ -377,13 +377,13 @@ export interface GoogleWorkstationsWorkstationConfigEncryptionKey {
   /**
   * The name of the Google Cloud KMS encryption key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#kms_key GoogleWorkstationsWorkstationConfig#kms_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#kms_key GoogleWorkstationsWorkstationConfigA#kms_key}
   */
   readonly kmsKey: string;
   /**
   * The service account to use with the specified KMS key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#kms_key_service_account GoogleWorkstationsWorkstationConfig#kms_key_service_account}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#kms_key_service_account GoogleWorkstationsWorkstationConfigA#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount: string;
 }
@@ -467,7 +467,7 @@ export interface GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialI
   /**
   * Whether the instance has confidential compute enabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#enable_confidential_compute GoogleWorkstationsWorkstationConfig#enable_confidential_compute}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#enable_confidential_compute GoogleWorkstationsWorkstationConfigA#enable_confidential_compute}
   */
   readonly enableConfidentialCompute?: boolean | cdktf.IResolvable;
 }
@@ -534,19 +534,19 @@ export interface GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInsta
   /**
   * Whether the instance has integrity monitoring enabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#enable_integrity_monitoring GoogleWorkstationsWorkstationConfig#enable_integrity_monitoring}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#enable_integrity_monitoring GoogleWorkstationsWorkstationConfigA#enable_integrity_monitoring}
   */
   readonly enableIntegrityMonitoring?: boolean | cdktf.IResolvable;
   /**
   * Whether the instance has Secure Boot enabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#enable_secure_boot GoogleWorkstationsWorkstationConfig#enable_secure_boot}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#enable_secure_boot GoogleWorkstationsWorkstationConfigA#enable_secure_boot}
   */
   readonly enableSecureBoot?: boolean | cdktf.IResolvable;
   /**
   * Whether the instance has the vTPM enabled.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#enable_vtpm GoogleWorkstationsWorkstationConfig#enable_vtpm}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#enable_vtpm GoogleWorkstationsWorkstationConfigA#enable_vtpm}
   */
   readonly enableVtpm?: boolean | cdktf.IResolvable;
 }
@@ -659,49 +659,49 @@ export interface GoogleWorkstationsWorkstationConfigHostGceInstance {
   /**
   * Size of the boot disk in GB.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#boot_disk_size_gb GoogleWorkstationsWorkstationConfig#boot_disk_size_gb}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#boot_disk_size_gb GoogleWorkstationsWorkstationConfigA#boot_disk_size_gb}
   */
   readonly bootDiskSizeGb?: number;
   /**
   * Whether instances have no public IP address.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#disable_public_ip_addresses GoogleWorkstationsWorkstationConfig#disable_public_ip_addresses}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#disable_public_ip_addresses GoogleWorkstationsWorkstationConfigA#disable_public_ip_addresses}
   */
   readonly disablePublicIpAddresses?: boolean | cdktf.IResolvable;
   /**
   * The name of a Compute Engine machine type.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#machine_type GoogleWorkstationsWorkstationConfig#machine_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#machine_type GoogleWorkstationsWorkstationConfigA#machine_type}
   */
   readonly machineType?: string;
   /**
   * Number of instances to pool for faster workstation startup.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#pool_size GoogleWorkstationsWorkstationConfig#pool_size}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#pool_size GoogleWorkstationsWorkstationConfigA#pool_size}
   */
   readonly poolSize?: number;
   /**
   * Email address of the service account that will be used on VM instances used to support this config. This service account must have permission to pull the specified container image. If not set, VMs will run without a service account, in which case the image must be publicly accessible.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#service_account GoogleWorkstationsWorkstationConfig#service_account}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#service_account GoogleWorkstationsWorkstationConfigA#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Network tags to add to the Compute Engine machines backing the Workstations.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#tags GoogleWorkstationsWorkstationConfig#tags}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#tags GoogleWorkstationsWorkstationConfigA#tags}
   */
   readonly tags?: string[];
   /**
   * confidential_instance_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#confidential_instance_config GoogleWorkstationsWorkstationConfig#confidential_instance_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#confidential_instance_config GoogleWorkstationsWorkstationConfigA#confidential_instance_config}
   */
   readonly confidentialInstanceConfig?: GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig;
   /**
   * shielded_instance_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#shielded_instance_config GoogleWorkstationsWorkstationConfig#shielded_instance_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#shielded_instance_config GoogleWorkstationsWorkstationConfigA#shielded_instance_config}
   */
   readonly shieldedInstanceConfig?: GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig;
 }
@@ -929,7 +929,7 @@ export interface GoogleWorkstationsWorkstationConfigHost {
   /**
   * gce_instance block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#gce_instance GoogleWorkstationsWorkstationConfig#gce_instance}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#gce_instance GoogleWorkstationsWorkstationConfigA#gce_instance}
   */
   readonly gceInstance?: GoogleWorkstationsWorkstationConfigHostGceInstance;
 }
@@ -996,25 +996,25 @@ export interface GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd {
   /**
   * Type of the disk to use.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#disk_type GoogleWorkstationsWorkstationConfig#disk_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#disk_type GoogleWorkstationsWorkstationConfigA#disk_type}
   */
   readonly diskType?: string;
   /**
   * Type of file system that the disk should be formatted with. The workstation image must support this file system type. Must be empty if sourceSnapshot is set.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#fs_type GoogleWorkstationsWorkstationConfig#fs_type}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#fs_type GoogleWorkstationsWorkstationConfigA#fs_type}
   */
   readonly fsType?: string;
   /**
   * What should happen to the disk after the workstation is deleted. Defaults to DELETE. Possible values: ["RECLAIM_POLICY_UNSPECIFIED", "DELETE", "RETAIN"]
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#reclaim_policy GoogleWorkstationsWorkstationConfig#reclaim_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#reclaim_policy GoogleWorkstationsWorkstationConfigA#reclaim_policy}
   */
   readonly reclaimPolicy?: string;
   /**
   * Size of the disk in GB. Must be empty if sourceSnapshot is set.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#size_gb GoogleWorkstationsWorkstationConfig#size_gb}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#size_gb GoogleWorkstationsWorkstationConfigA#size_gb}
   */
   readonly sizeGb?: number;
 }
@@ -1150,13 +1150,13 @@ export interface GoogleWorkstationsWorkstationConfigPersistentDirectories {
   /**
   * Location of this directory in the running workstation.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#mount_path GoogleWorkstationsWorkstationConfig#mount_path}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#mount_path GoogleWorkstationsWorkstationConfigA#mount_path}
   */
   readonly mountPath?: string;
   /**
   * gce_pd block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#gce_pd GoogleWorkstationsWorkstationConfig#gce_pd}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#gce_pd GoogleWorkstationsWorkstationConfigA#gce_pd}
   */
   readonly gcePd?: GoogleWorkstationsWorkstationConfigPersistentDirectoriesGcePd;
 }
@@ -1276,15 +1276,15 @@ export class GoogleWorkstationsWorkstationConfigPersistentDirectoriesList extend
 }
 export interface GoogleWorkstationsWorkstationConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#create GoogleWorkstationsWorkstationConfig#create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#create GoogleWorkstationsWorkstationConfigA#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#delete GoogleWorkstationsWorkstationConfig#delete}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#delete GoogleWorkstationsWorkstationConfigA#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#update GoogleWorkstationsWorkstationConfig#update}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config#update GoogleWorkstationsWorkstationConfigA#update}
   */
   readonly update?: string;
 }
@@ -1407,7 +1407,7 @@ export class GoogleWorkstationsWorkstationConfigTimeoutsOutputReference extends 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_workstations_workstation_config google_workstations_workstation_config}
 */
-export class GoogleWorkstationsWorkstationConfig extends cdktf.TerraformResource {
+export class GoogleWorkstationsWorkstationConfigA extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1423,14 +1423,14 @@ export class GoogleWorkstationsWorkstationConfig extends cdktf.TerraformResource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options GoogleWorkstationsWorkstationConfigConfig
+  * @param options GoogleWorkstationsWorkstationConfigAConfig
   */
-  public constructor(scope: Construct, id: string, config: GoogleWorkstationsWorkstationConfigConfig) {
+  public constructor(scope: Construct, id: string, config: GoogleWorkstationsWorkstationConfigAConfig) {
     super(scope, id, {
       terraformResourceType: 'google_workstations_workstation_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

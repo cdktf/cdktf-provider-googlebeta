@@ -2647,6 +2647,12 @@ export interface GoogleComputeInstanceFromTemplateScheduling {
   */
   readonly instanceTerminationAction?: string;
   /**
+  * Specifies the frequency of planned maintenance events. The accepted values are: PERIODIC
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_from_template#maintenance_interval GoogleComputeInstanceFromTemplate#maintenance_interval}
+  */
+  readonly maintenanceInterval?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_from_template#min_node_cpus GoogleComputeInstanceFromTemplate#min_node_cpus}
   */
   readonly minNodeCpus?: number;
@@ -2690,6 +2696,7 @@ export function googleComputeInstanceFromTemplateSchedulingToTerraform(struct?: 
   return {
     automatic_restart: cdktf.booleanToTerraform(struct!.automaticRestart),
     instance_termination_action: cdktf.stringToTerraform(struct!.instanceTerminationAction),
+    maintenance_interval: cdktf.stringToTerraform(struct!.maintenanceInterval),
     min_node_cpus: cdktf.numberToTerraform(struct!.minNodeCpus),
     on_host_maintenance: cdktf.stringToTerraform(struct!.onHostMaintenance),
     preemptible: cdktf.booleanToTerraform(struct!.preemptible),
@@ -2720,6 +2727,10 @@ export class GoogleComputeInstanceFromTemplateSchedulingOutputReference extends 
     if (this._instanceTerminationAction !== undefined) {
       hasAnyValues = true;
       internalValueResult.instanceTerminationAction = this._instanceTerminationAction;
+    }
+    if (this._maintenanceInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.maintenanceInterval = this._maintenanceInterval;
     }
     if (this._minNodeCpus !== undefined) {
       hasAnyValues = true;
@@ -2753,6 +2764,7 @@ export class GoogleComputeInstanceFromTemplateSchedulingOutputReference extends 
       this.isEmptyObject = false;
       this._automaticRestart = undefined;
       this._instanceTerminationAction = undefined;
+      this._maintenanceInterval = undefined;
       this._minNodeCpus = undefined;
       this._onHostMaintenance = undefined;
       this._preemptible = undefined;
@@ -2764,6 +2776,7 @@ export class GoogleComputeInstanceFromTemplateSchedulingOutputReference extends 
       this.isEmptyObject = Object.keys(value).length === 0;
       this._automaticRestart = value.automaticRestart;
       this._instanceTerminationAction = value.instanceTerminationAction;
+      this._maintenanceInterval = value.maintenanceInterval;
       this._minNodeCpus = value.minNodeCpus;
       this._onHostMaintenance = value.onHostMaintenance;
       this._preemptible = value.preemptible;
@@ -2803,6 +2816,22 @@ export class GoogleComputeInstanceFromTemplateSchedulingOutputReference extends 
   // Temporarily expose input value. Use with caution.
   public get instanceTerminationActionInput() {
     return this._instanceTerminationAction;
+  }
+
+  // maintenance_interval - computed: true, optional: true, required: false
+  private _maintenanceInterval?: string; 
+  public get maintenanceInterval() {
+    return this.getStringAttribute('maintenance_interval');
+  }
+  public set maintenanceInterval(value: string) {
+    this._maintenanceInterval = value;
+  }
+  public resetMaintenanceInterval() {
+    this._maintenanceInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maintenanceIntervalInput() {
+    return this._maintenanceInterval;
   }
 
   // min_node_cpus - computed: true, optional: true, required: false
@@ -3182,7 +3211,7 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_from_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
