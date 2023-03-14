@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.NewDataGoogleClientOpenidUserinfo(scope Construct, id *string, config DataGoogleClientOpenidUserinfoConfig) DataGoogleClientOpenidUserinfo
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfo.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleclientopeniduserinfo"
 
 datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfo_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleClientOpenidUserinfo.DataGoogleClientOpenidUserinfoConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientopeniduserinfo"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleclientopeniduserinfo"
 
 &datagoogleclientopeniduserinfo.DataGoogleClientOpenidUserinfoConfig {
 	Connection: interface{},

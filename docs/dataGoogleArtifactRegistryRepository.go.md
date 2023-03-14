@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepository(scope Construct, id *string, config DataGoogleArtifactRegistryRepositoryConfig) DataGoogleArtifactRegistryRepository
 ```
@@ -280,7 +280,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepository_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepository_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepository.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepository_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -712,7 +712,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 &datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepositoryConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryMavenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 &datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepositoryMavenConfig {
 
@@ -890,7 +890,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartif
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 &datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfig {
 
@@ -903,7 +903,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartif
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 &datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository {
 
@@ -916,7 +916,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartif
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 &datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository {
 
@@ -929,7 +929,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartif
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 &datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository {
 
@@ -942,7 +942,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartif
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 &datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository {
 
@@ -955,7 +955,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartif
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 &datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfig {
 
@@ -968,7 +968,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartif
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 &datagoogleartifactregistryrepository.DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies {
 
@@ -983,7 +983,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartif
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryMavenConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryMavenConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryRepositoryMavenConfigList
 ```
@@ -1115,7 +1115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryMavenConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryMavenConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleArtifactRegistryRepositoryMavenConfigOutputReference
 ```
@@ -1404,7 +1404,7 @@ func InternalValue() DataGoogleArtifactRegistryRepositoryMavenConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryList
 ```
@@ -1536,7 +1536,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference
 ```
@@ -1814,7 +1814,7 @@ func InternalValue() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigD
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigList
 ```
@@ -1946,7 +1946,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryList
 ```
@@ -2078,7 +2078,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference
 ```
@@ -2356,7 +2356,7 @@ func InternalValue() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigM
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryList
 ```
@@ -2488,7 +2488,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference
 ```
@@ -2766,7 +2766,7 @@ func InternalValue() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigN
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference
 ```
@@ -3088,7 +3088,7 @@ func InternalValue() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryList
 ```
@@ -3220,7 +3220,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference
 ```
@@ -3498,7 +3498,7 @@ func InternalValue() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigP
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigList
 ```
@@ -3630,7 +3630,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference
 ```
@@ -3908,7 +3908,7 @@ func InternalValue() DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList
 ```
@@ -4040,7 +4040,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleartifactregistryrepository"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleartifactregistryrepository"
 
 datagoogleartifactregistryrepository.NewDataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference
 ```
