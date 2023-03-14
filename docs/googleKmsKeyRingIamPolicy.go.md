@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiampolicy"
 
 googlekmskeyringiampolicy.NewGoogleKmsKeyRingIamPolicy(scope Construct, id *string, config GoogleKmsKeyRingIamPolicyConfig) GoogleKmsKeyRingIamPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiampolicy"
 
 googlekmskeyringiampolicy.GoogleKmsKeyRingIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiampolicy"
 
 googlekmskeyringiampolicy.GoogleKmsKeyRingIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ googlekmskeyringiampolicy.GoogleKmsKeyRingIamPolicy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiampolicy"
 
 googlekmskeyringiampolicy.GoogleKmsKeyRingIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingIamPolicy.GoogleKmsKeyRingIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiampolicy"
 
 &googlekmskeyringiampolicy.GoogleKmsKeyRingIamPolicyConfig {
 	Connection: interface{},

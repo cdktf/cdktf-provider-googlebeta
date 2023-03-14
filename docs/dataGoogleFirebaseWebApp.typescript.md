@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.resetProject">resetProject</a></code> | *No description.* |
 
 ---
 
@@ -260,6 +261,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetId(): void
 ```
 
+##### `resetProject` <a name="resetProject" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.resetProject"></a>
+
+```typescript
+public resetProject(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -350,11 +357,12 @@ dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.deletionPolicy">deletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.appIdInput">appIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.appId">appId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.project">project</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -520,16 +528,6 @@ public readonly name: string;
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.project"></a>
-
-```typescript
-public readonly project: string;
-```
-
-- *Type:* string
-
----
-
 ##### `appIdInput`<sup>Optional</sup> <a name="appIdInput" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.appIdInput"></a>
 
 ```typescript
@@ -550,6 +548,16 @@ public readonly idInput: string;
 
 ---
 
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.projectInput"></a>
+
+```typescript
+public readonly projectInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `appId`<sup>Required</sup> <a name="appId" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.appId"></a>
 
 ```typescript
@@ -564,6 +572,16 @@ public readonly appId: string;
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebApp.property.project"></a>
+
+```typescript
+public readonly project: string;
 ```
 
 - *Type:* string
@@ -613,6 +631,7 @@ const dataGoogleFirebaseWebAppConfig: dataGoogleFirebaseWebApp.DataGoogleFirebas
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebAppConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebAppConfig.property.appId">appId</a></code> | <code>string</code> | The globally unique, Firebase-assigned identifier of the App. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebAppConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_web_app#id DataGoogleFirebaseWebApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebAppConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_web_app#project DataGoogleFirebaseWebApp#project}. |
 
 ---
 
@@ -714,6 +733,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebApp.DataGoogleFirebaseWebAppConfig.property.project"></a>
+
+```typescript
+public readonly project: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_web_app#project DataGoogleFirebaseWebApp#project}.
 
 ---
 

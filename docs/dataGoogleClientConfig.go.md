@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleClientConfig.DataGoogleClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleclientconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientconfig"
 
 datagoogleclientconfig.NewDataGoogleClientConfig(scope Construct, id *string, config DataGoogleClientConfigConfig) DataGoogleClientConfig
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleClientConfig.DataGoogleClientConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleclientconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientconfig"
 
 datagoogleclientconfig.DataGoogleClientConfig_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleClientConfig.DataGoogleClientConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleclientconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientconfig"
 
 datagoogleclientconfig.DataGoogleClientConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagoogleclientconfig.DataGoogleClientConfig_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleClientConfig.DataGoogleClientConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleclientconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientconfig"
 
 datagoogleclientconfig.DataGoogleClientConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleClientConfig.DataGoogleClientConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleclientconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleclientconfig"
 
 &datagoogleclientconfig.DataGoogleClientConfigConfig {
 	Connection: interface{},

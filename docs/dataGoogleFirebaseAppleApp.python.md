@@ -22,7 +22,8 @@ dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   app_id: str,
-  id: str = None
+  id: str = None,
+  project: str = None
 )
 ```
 
@@ -39,6 +40,7 @@ dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp(
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.Initializer.parameter.appId">app_id</a></code> | <code>str</code> | The globally unique, Firebase-assigned identifier of the App. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_apple_app#id DataGoogleFirebaseAppleApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}. |
 
 ---
 
@@ -125,6 +127,14 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.Initializer.parameter.project"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}.
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -146,6 +156,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.resetProject">reset_project</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +375,12 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_project` <a name="reset_project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.resetProject"></a>
+
+```python
+def reset_project() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -461,12 +478,13 @@ dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.deletionPolicy">deletion_policy</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.teamId">team_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.appIdInput">app_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.appId">app_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.project">project</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -642,16 +660,6 @@ name: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.project"></a>
-
-```python
-project: str
-```
-
-- *Type:* str
-
----
-
 ##### `team_id`<sup>Required</sup> <a name="team_id" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.teamId"></a>
 
 ```python
@@ -682,6 +690,16 @@ id_input: str
 
 ---
 
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.projectInput"></a>
+
+```python
+project_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `app_id`<sup>Required</sup> <a name="app_id" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.appId"></a>
 
 ```python
@@ -696,6 +714,16 @@ app_id: str
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.project"></a>
+
+```python
+project: str
 ```
 
 - *Type:* str
@@ -738,7 +766,8 @@ dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   app_id: str,
-  id: str = None
+  id: str = None,
+  project: str = None
 )
 ```
 
@@ -755,6 +784,7 @@ dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig(
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.appId">app_id</a></code> | <code>str</code> | The globally unique, Firebase-assigned identifier of the App. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_apple_app#id DataGoogleFirebaseAppleApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}. |
 
 ---
 
@@ -856,6 +886,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.project"></a>
+
+```python
+project: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}.
 
 ---
 

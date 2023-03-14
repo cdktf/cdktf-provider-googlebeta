@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefirebaseandroidapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseandroidapp"
 
 datagooglefirebaseandroidapp.NewDataGoogleFirebaseAndroidApp(scope Construct, id *string, config DataGoogleFirebaseAndroidAppConfig) DataGoogleFirebaseAndroidApp
 ```
@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.resetProject">ResetProject</a></code> | *No description.* |
 
 ---
 
@@ -260,6 +261,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 func ResetId()
 ```
 
+##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.resetProject"></a>
+
+```go
+func ResetProject()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -273,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefirebaseandroidapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseandroidapp"
 
 datagooglefirebaseandroidapp.DataGoogleFirebaseAndroidApp_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefirebaseandroidapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseandroidapp"
 
 datagooglefirebaseandroidapp.DataGoogleFirebaseAndroidApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +326,7 @@ datagooglefirebaseandroidapp.DataGoogleFirebaseAndroidApp_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefirebaseandroidapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseandroidapp"
 
 datagooglefirebaseandroidapp.DataGoogleFirebaseAndroidApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -351,13 +358,14 @@ datagooglefirebaseandroidapp.DataGoogleFirebaseAndroidApp_IsTerraformDataSource(
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.packageName">PackageName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.sha1Hashes">Sha1Hashes</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.sha256Hashes">Sha256Hashes</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.appIdInput">AppIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.appId">AppId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -533,16 +541,6 @@ func PackageName() *string
 
 ---
 
-##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.project"></a>
-
-```go
-func Project() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Sha1Hashes`<sup>Required</sup> <a name="Sha1Hashes" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.sha1Hashes"></a>
 
 ```go
@@ -583,6 +581,16 @@ func IdInput() *string
 
 ---
 
+##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.projectInput"></a>
+
+```go
+func ProjectInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.appId"></a>
 
 ```go
@@ -597,6 +605,16 @@ func AppId() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.project"></a>
+
+```go
+func Project() *string
 ```
 
 - *Type:* *string
@@ -628,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefirebaseandroidapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseandroidapp"
 
 &datagooglefirebaseandroidapp.DataGoogleFirebaseAndroidAppConfig {
 	Connection: interface{},
@@ -640,6 +658,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefi
 	Provisioners: *[]interface{},
 	AppId: *string,
 	Id: *string,
+	Project: *string,
 }
 ```
 
@@ -656,6 +675,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefi
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.property.appId">AppId</a></code> | <code>*string</code> | The globally unique, Firebase-assigned identifier of the AndroidApp. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#id DataGoogleFirebaseAndroidApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#project DataGoogleFirebaseAndroidApp#project}. |
 
 ---
 
@@ -757,6 +777,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.property.project"></a>
+
+```go
+Project *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#project DataGoogleFirebaseAndroidApp#project}.
 
 ---
 

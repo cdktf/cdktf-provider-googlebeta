@@ -67,6 +67,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.resetProject">ResetProject</a></code> | *No description.* |
 
 ---
 
@@ -260,6 +261,12 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 private void ResetId()
 ```
 
+##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.resetProject"></a>
+
+```csharp
+private void ResetProject()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -351,12 +358,13 @@ DataGoogleFirebaseAppleApp.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.deletionPolicy">DeletionPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.displayName">DisplayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.project">Project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.teamId">TeamId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.appIdInput">AppIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.projectInput">ProjectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.appId">AppId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.project">Project</a></code> | <code>string</code> | *No description.* |
 
 ---
 
@@ -532,16 +540,6 @@ public string Name { get; }
 
 ---
 
-##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.project"></a>
-
-```csharp
-public string Project { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `TeamId`<sup>Required</sup> <a name="TeamId" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.teamId"></a>
 
 ```csharp
@@ -572,6 +570,16 @@ public string IdInput { get; }
 
 ---
 
+##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.projectInput"></a>
+
+```csharp
+public string ProjectInput { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `AppId`<sup>Required</sup> <a name="AppId" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.appId"></a>
 
 ```csharp
@@ -586,6 +594,16 @@ public string AppId { get; }
 
 ```csharp
 public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleApp.property.project"></a>
+
+```csharp
+public string Project { get; }
 ```
 
 - *Type:* string
@@ -628,7 +646,8 @@ new DataGoogleFirebaseAppleAppConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string AppId,
-    string Id = null
+    string Id = null,
+    string Project = null
 };
 ```
 
@@ -645,6 +664,7 @@ new DataGoogleFirebaseAppleAppConfig {
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.appId">AppId</a></code> | <code>string</code> | The globally unique, Firebase-assigned identifier of the App. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_apple_app#id DataGoogleFirebaseAppleApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}. |
 
 ---
 
@@ -746,6 +766,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleApp.DataGoogleFirebaseAppleAppConfig.property.project"></a>
+
+```csharp
+public string Project { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}.
 
 ---
 

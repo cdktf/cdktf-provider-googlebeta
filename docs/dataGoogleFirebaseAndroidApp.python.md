@@ -22,7 +22,8 @@ dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   app_id: str,
-  id: str = None
+  id: str = None,
+  project: str = None
 )
 ```
 
@@ -39,6 +40,7 @@ dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp(
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.Initializer.parameter.appId">app_id</a></code> | <code>str</code> | The globally unique, Firebase-assigned identifier of the AndroidApp. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#id DataGoogleFirebaseAndroidApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#project DataGoogleFirebaseAndroidApp#project}. |
 
 ---
 
@@ -125,6 +127,14 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.Initializer.parameter.project"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#project DataGoogleFirebaseAndroidApp#project}.
+
+---
+
 #### Methods <a name="Methods" id="Methods"></a>
 
 | **Name** | **Description** |
@@ -146,6 +156,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.resetProject">reset_project</a></code> | *No description.* |
 
 ---
 
@@ -364,6 +375,12 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_project` <a name="reset_project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.resetProject"></a>
+
+```python
+def reset_project() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -461,13 +478,14 @@ dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.is_terraform_data_sour
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.etag">etag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.packageName">package_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.project">project</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.sha1Hashes">sha1_hashes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.sha256Hashes">sha256_hashes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.appIdInput">app_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.appId">app_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.project">project</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -643,16 +661,6 @@ package_name: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.project"></a>
-
-```python
-project: str
-```
-
-- *Type:* str
-
----
-
 ##### `sha1_hashes`<sup>Required</sup> <a name="sha1_hashes" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.sha1Hashes"></a>
 
 ```python
@@ -693,6 +701,16 @@ id_input: str
 
 ---
 
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.projectInput"></a>
+
+```python
+project_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `app_id`<sup>Required</sup> <a name="app_id" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.appId"></a>
 
 ```python
@@ -707,6 +725,16 @@ app_id: str
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidApp.property.project"></a>
+
+```python
+project: str
 ```
 
 - *Type:* str
@@ -749,7 +777,8 @@ dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   app_id: str,
-  id: str = None
+  id: str = None,
+  project: str = None
 )
 ```
 
@@ -766,6 +795,7 @@ dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig(
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.property.appId">app_id</a></code> | <code>str</code> | The globally unique, Firebase-assigned identifier of the AndroidApp. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#id DataGoogleFirebaseAndroidApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#project DataGoogleFirebaseAndroidApp#project}. |
 
 ---
 
@@ -867,6 +897,18 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidApp.DataGoogleFirebaseAndroidAppConfig.property.project"></a>
+
+```python
+project: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_android_app#project DataGoogleFirebaseAndroidApp#project}.
 
 ---
 

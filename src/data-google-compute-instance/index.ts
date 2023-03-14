@@ -1255,6 +1255,11 @@ export class DataGoogleComputeInstanceSchedulingOutputReference extends cdktf.Co
     return this.getStringAttribute('instance_termination_action');
   }
 
+  // maintenance_interval - computed: true, optional: false, required: false
+  public get maintenanceInterval() {
+    return this.getStringAttribute('maintenance_interval');
+  }
+
   // max_run_duration - computed: true, optional: false, required: false
   private _maxRunDuration = new DataGoogleComputeInstanceSchedulingMaxRunDurationList(this, "max_run_duration", false);
   public get maxRunDuration() {
@@ -1540,7 +1545,7 @@ export class DataGoogleComputeInstance extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_compute_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

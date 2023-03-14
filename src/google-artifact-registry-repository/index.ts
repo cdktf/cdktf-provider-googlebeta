@@ -55,6 +55,12 @@ and dashes.
   */
   readonly location?: string;
   /**
+  * The mode configures the repository to serve artifacts from different sources. Default value: "STANDARD_REPOSITORY" Possible values: ["STANDARD_REPOSITORY", "VIRTUAL_REPOSITORY", "REMOTE_REPOSITORY"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#mode GoogleArtifactRegistryRepository#mode}
+  */
+  readonly mode?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#project GoogleArtifactRegistryRepository#project}
   */
   readonly project?: string;
@@ -72,11 +78,23 @@ and dashes.
   */
   readonly mavenConfig?: GoogleArtifactRegistryRepositoryMavenConfig;
   /**
+  * remote_repository_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#remote_repository_config GoogleArtifactRegistryRepository#remote_repository_config}
+  */
+  readonly remoteRepositoryConfig?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfig;
+  /**
   * timeouts block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#timeouts GoogleArtifactRegistryRepository#timeouts}
   */
   readonly timeouts?: GoogleArtifactRegistryRepositoryTimeouts;
+  /**
+  * virtual_repository_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#virtual_repository_config GoogleArtifactRegistryRepository#virtual_repository_config}
+  */
+  readonly virtualRepositoryConfig?: GoogleArtifactRegistryRepositoryVirtualRepositoryConfig;
 }
 export interface GoogleArtifactRegistryRepositoryMavenConfig {
   /**
@@ -173,6 +191,457 @@ export class GoogleArtifactRegistryRepositoryMavenConfigOutputReference extends 
   // Temporarily expose input value. Use with caution.
   public get versionPolicyInput() {
     return this._versionPolicy;
+  }
+}
+export interface GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository {
+  /**
+  * Address of the remote repository. Default value: "DOCKER_HUB" Possible values: ["DOCKER_HUB"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#public_repository GoogleArtifactRegistryRepository#public_repository}
+  */
+  readonly publicRepository?: string;
+}
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryToTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    public_repository: cdktf.stringToTerraform(struct!.publicRepository),
+  }
+}
+
+export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._publicRepository !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.publicRepository = this._publicRepository;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._publicRepository = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._publicRepository = value.publicRepository;
+    }
+  }
+
+  // public_repository - computed: false, optional: true, required: false
+  private _publicRepository?: string; 
+  public get publicRepository() {
+    return this.getStringAttribute('public_repository');
+  }
+  public set publicRepository(value: string) {
+    this._publicRepository = value;
+  }
+  public resetPublicRepository() {
+    this._publicRepository = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicRepositoryInput() {
+    return this._publicRepository;
+  }
+}
+export interface GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository {
+  /**
+  * Address of the remote repository. Default value: "MAVEN_CENTRAL" Possible values: ["MAVEN_CENTRAL"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#public_repository GoogleArtifactRegistryRepository#public_repository}
+  */
+  readonly publicRepository?: string;
+}
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryToTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    public_repository: cdktf.stringToTerraform(struct!.publicRepository),
+  }
+}
+
+export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._publicRepository !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.publicRepository = this._publicRepository;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._publicRepository = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._publicRepository = value.publicRepository;
+    }
+  }
+
+  // public_repository - computed: false, optional: true, required: false
+  private _publicRepository?: string; 
+  public get publicRepository() {
+    return this.getStringAttribute('public_repository');
+  }
+  public set publicRepository(value: string) {
+    this._publicRepository = value;
+  }
+  public resetPublicRepository() {
+    this._publicRepository = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicRepositoryInput() {
+    return this._publicRepository;
+  }
+}
+export interface GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository {
+  /**
+  * Address of the remote repository. Default value: "NPMJS" Possible values: ["NPMJS"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#public_repository GoogleArtifactRegistryRepository#public_repository}
+  */
+  readonly publicRepository?: string;
+}
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryToTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    public_repository: cdktf.stringToTerraform(struct!.publicRepository),
+  }
+}
+
+export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._publicRepository !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.publicRepository = this._publicRepository;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._publicRepository = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._publicRepository = value.publicRepository;
+    }
+  }
+
+  // public_repository - computed: false, optional: true, required: false
+  private _publicRepository?: string; 
+  public get publicRepository() {
+    return this.getStringAttribute('public_repository');
+  }
+  public set publicRepository(value: string) {
+    this._publicRepository = value;
+  }
+  public resetPublicRepository() {
+    this._publicRepository = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicRepositoryInput() {
+    return this._publicRepository;
+  }
+}
+export interface GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository {
+  /**
+  * Address of the remote repository. Default value: "PYPI" Possible values: ["PYPI"]
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#public_repository GoogleArtifactRegistryRepository#public_repository}
+  */
+  readonly publicRepository?: string;
+}
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryToTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    public_repository: cdktf.stringToTerraform(struct!.publicRepository),
+  }
+}
+
+export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._publicRepository !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.publicRepository = this._publicRepository;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._publicRepository = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._publicRepository = value.publicRepository;
+    }
+  }
+
+  // public_repository - computed: false, optional: true, required: false
+  private _publicRepository?: string; 
+  public get publicRepository() {
+    return this.getStringAttribute('public_repository');
+  }
+  public set publicRepository(value: string) {
+    this._publicRepository = value;
+  }
+  public resetPublicRepository() {
+    this._publicRepository = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get publicRepositoryInput() {
+    return this._publicRepository;
+  }
+}
+export interface GoogleArtifactRegistryRepositoryRemoteRepositoryConfig {
+  /**
+  * The description of the remote source.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#description GoogleArtifactRegistryRepository#description}
+  */
+  readonly description?: string;
+  /**
+  * docker_repository block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#docker_repository GoogleArtifactRegistryRepository#docker_repository}
+  */
+  readonly dockerRepository?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository;
+  /**
+  * maven_repository block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#maven_repository GoogleArtifactRegistryRepository#maven_repository}
+  */
+  readonly mavenRepository?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository;
+  /**
+  * npm_repository block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#npm_repository GoogleArtifactRegistryRepository#npm_repository}
+  */
+  readonly npmRepository?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository;
+  /**
+  * python_repository block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#python_repository GoogleArtifactRegistryRepository#python_repository}
+  */
+  readonly pythonRepository?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository;
+}
+
+export function googleArtifactRegistryRepositoryRemoteRepositoryConfigToTerraform(struct?: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference | GoogleArtifactRegistryRepositoryRemoteRepositoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    description: cdktf.stringToTerraform(struct!.description),
+    docker_repository: googleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryToTerraform(struct!.dockerRepository),
+    maven_repository: googleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryToTerraform(struct!.mavenRepository),
+    npm_repository: googleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryToTerraform(struct!.npmRepository),
+    python_repository: googleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryToTerraform(struct!.pythonRepository),
+  }
+}
+
+export class GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleArtifactRegistryRepositoryRemoteRepositoryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._description !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.description = this._description;
+    }
+    if (this._dockerRepository?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dockerRepository = this._dockerRepository?.internalValue;
+    }
+    if (this._mavenRepository?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mavenRepository = this._mavenRepository?.internalValue;
+    }
+    if (this._npmRepository?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.npmRepository = this._npmRepository?.internalValue;
+    }
+    if (this._pythonRepository?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pythonRepository = this._pythonRepository?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleArtifactRegistryRepositoryRemoteRepositoryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._description = undefined;
+      this._dockerRepository.internalValue = undefined;
+      this._mavenRepository.internalValue = undefined;
+      this._npmRepository.internalValue = undefined;
+      this._pythonRepository.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._description = value.description;
+      this._dockerRepository.internalValue = value.dockerRepository;
+      this._mavenRepository.internalValue = value.mavenRepository;
+      this._npmRepository.internalValue = value.npmRepository;
+      this._pythonRepository.internalValue = value.pythonRepository;
+    }
+  }
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // docker_repository - computed: false, optional: true, required: false
+  private _dockerRepository = new GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepositoryOutputReference(this, "docker_repository");
+  public get dockerRepository() {
+    return this._dockerRepository;
+  }
+  public putDockerRepository(value: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) {
+    this._dockerRepository.internalValue = value;
+  }
+  public resetDockerRepository() {
+    this._dockerRepository.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dockerRepositoryInput() {
+    return this._dockerRepository.internalValue;
+  }
+
+  // maven_repository - computed: false, optional: true, required: false
+  private _mavenRepository = new GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference(this, "maven_repository");
+  public get mavenRepository() {
+    return this._mavenRepository;
+  }
+  public putMavenRepository(value: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository) {
+    this._mavenRepository.internalValue = value;
+  }
+  public resetMavenRepository() {
+    this._mavenRepository.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mavenRepositoryInput() {
+    return this._mavenRepository.internalValue;
+  }
+
+  // npm_repository - computed: false, optional: true, required: false
+  private _npmRepository = new GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepositoryOutputReference(this, "npm_repository");
+  public get npmRepository() {
+    return this._npmRepository;
+  }
+  public putNpmRepository(value: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository) {
+    this._npmRepository.internalValue = value;
+  }
+  public resetNpmRepository() {
+    this._npmRepository.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get npmRepositoryInput() {
+    return this._npmRepository.internalValue;
+  }
+
+  // python_repository - computed: false, optional: true, required: false
+  private _pythonRepository = new GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference(this, "python_repository");
+  public get pythonRepository() {
+    return this._pythonRepository;
+  }
+  public putPythonRepository(value: GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository) {
+    this._pythonRepository.internalValue = value;
+  }
+  public resetPythonRepository() {
+    this._pythonRepository.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pythonRepositoryInput() {
+    return this._pythonRepository.internalValue;
   }
 }
 export interface GoogleArtifactRegistryRepositoryTimeouts {
@@ -304,6 +773,234 @@ export class GoogleArtifactRegistryRepositoryTimeoutsOutputReference extends cdk
     return this._update;
   }
 }
+export interface GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies {
+  /**
+  * The user-provided ID of the upstream policy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#id GoogleArtifactRegistryRepository#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Entries with a greater priority value take precedence in the pull order.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#priority GoogleArtifactRegistryRepository#priority}
+  */
+  readonly priority?: number;
+  /**
+  * A reference to the repository resource, for example:
+"projects/p1/locations/us-central1/repository/repo1".
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#repository GoogleArtifactRegistryRepository#repository}
+  */
+  readonly repository?: string;
+}
+
+export function googleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToTerraform(struct?: GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    priority: cdktf.numberToTerraform(struct!.priority),
+    repository: cdktf.stringToTerraform(struct!.repository),
+  }
+}
+
+export class GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    if (this._priority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.priority = this._priority;
+    }
+    if (this._repository !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.repository = this._repository;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._id = undefined;
+      this._priority = undefined;
+      this._repository = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._id = value.id;
+      this._priority = value.priority;
+      this._repository = value.repository;
+    }
+  }
+
+  // id - computed: false, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // priority - computed: false, optional: true, required: false
+  private _priority?: number; 
+  public get priority() {
+    return this.getNumberAttribute('priority');
+  }
+  public set priority(value: number) {
+    this._priority = value;
+  }
+  public resetPriority() {
+    this._priority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get priorityInput() {
+    return this._priority;
+  }
+
+  // repository - computed: false, optional: true, required: false
+  private _repository?: string; 
+  public get repository() {
+    return this.getStringAttribute('repository');
+  }
+  public set repository(value: string) {
+    this._repository = value;
+  }
+  public resetRepository() {
+    this._repository = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository;
+  }
+}
+
+export class GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList extends cdktf.ComplexList {
+  public internalValue? : GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference {
+    return new GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleArtifactRegistryRepositoryVirtualRepositoryConfig {
+  /**
+  * upstream_policies block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#upstream_policies GoogleArtifactRegistryRepository#upstream_policies}
+  */
+  readonly upstreamPolicies?: GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies[] | cdktf.IResolvable;
+}
+
+export function googleArtifactRegistryRepositoryVirtualRepositoryConfigToTerraform(struct?: GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference | GoogleArtifactRegistryRepositoryVirtualRepositoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    upstream_policies: cdktf.listMapper(googleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesToTerraform, true)(struct!.upstreamPolicies),
+  }
+}
+
+export class GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleArtifactRegistryRepositoryVirtualRepositoryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._upstreamPolicies?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.upstreamPolicies = this._upstreamPolicies?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleArtifactRegistryRepositoryVirtualRepositoryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._upstreamPolicies.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._upstreamPolicies.internalValue = value.upstreamPolicies;
+    }
+  }
+
+  // upstream_policies - computed: false, optional: true, required: false
+  private _upstreamPolicies = new GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPoliciesList(this, "upstream_policies", false);
+  public get upstreamPolicies() {
+    return this._upstreamPolicies;
+  }
+  public putUpstreamPolicies(value: GoogleArtifactRegistryRepositoryVirtualRepositoryConfigUpstreamPolicies[] | cdktf.IResolvable) {
+    this._upstreamPolicies.internalValue = value;
+  }
+  public resetUpstreamPolicies() {
+    this._upstreamPolicies.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get upstreamPoliciesInput() {
+    return this._upstreamPolicies.internalValue;
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository google_artifact_registry_repository}
@@ -331,7 +1028,7 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
       terraformResourceType: 'google_artifact_registry_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.56.0',
+        providerVersion: '4.57.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -348,10 +1045,13 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
     this._kmsKeyName = config.kmsKeyName;
     this._labels = config.labels;
     this._location = config.location;
+    this._mode = config.mode;
     this._project = config.project;
     this._repositoryId = config.repositoryId;
     this._mavenConfig.internalValue = config.mavenConfig;
+    this._remoteRepositoryConfig.internalValue = config.remoteRepositoryConfig;
     this._timeouts.internalValue = config.timeouts;
+    this._virtualRepositoryConfig.internalValue = config.virtualRepositoryConfig;
   }
 
   // ==========
@@ -456,6 +1156,22 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
     return this._location;
   }
 
+  // mode - computed: false, optional: true, required: false
+  private _mode?: string; 
+  public get mode() {
+    return this.getStringAttribute('mode');
+  }
+  public set mode(value: string) {
+    this._mode = value;
+  }
+  public resetMode() {
+    this._mode = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get modeInput() {
+    return this._mode;
+  }
+
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
@@ -511,6 +1227,22 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
     return this._mavenConfig.internalValue;
   }
 
+  // remote_repository_config - computed: false, optional: true, required: false
+  private _remoteRepositoryConfig = new GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference(this, "remote_repository_config");
+  public get remoteRepositoryConfig() {
+    return this._remoteRepositoryConfig;
+  }
+  public putRemoteRepositoryConfig(value: GoogleArtifactRegistryRepositoryRemoteRepositoryConfig) {
+    this._remoteRepositoryConfig.internalValue = value;
+  }
+  public resetRemoteRepositoryConfig() {
+    this._remoteRepositoryConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get remoteRepositoryConfigInput() {
+    return this._remoteRepositoryConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleArtifactRegistryRepositoryTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -527,6 +1259,22 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // virtual_repository_config - computed: false, optional: true, required: false
+  private _virtualRepositoryConfig = new GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference(this, "virtual_repository_config");
+  public get virtualRepositoryConfig() {
+    return this._virtualRepositoryConfig;
+  }
+  public putVirtualRepositoryConfig(value: GoogleArtifactRegistryRepositoryVirtualRepositoryConfig) {
+    this._virtualRepositoryConfig.internalValue = value;
+  }
+  public resetVirtualRepositoryConfig() {
+    this._virtualRepositoryConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualRepositoryConfigInput() {
+    return this._virtualRepositoryConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -539,10 +1287,13 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
       kms_key_name: cdktf.stringToTerraform(this._kmsKeyName),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       location: cdktf.stringToTerraform(this._location),
+      mode: cdktf.stringToTerraform(this._mode),
       project: cdktf.stringToTerraform(this._project),
       repository_id: cdktf.stringToTerraform(this._repositoryId),
       maven_config: googleArtifactRegistryRepositoryMavenConfigToTerraform(this._mavenConfig.internalValue),
+      remote_repository_config: googleArtifactRegistryRepositoryRemoteRepositoryConfigToTerraform(this._remoteRepositoryConfig.internalValue),
       timeouts: googleArtifactRegistryRepositoryTimeoutsToTerraform(this._timeouts.internalValue),
+      virtual_repository_config: googleArtifactRegistryRepositoryVirtualRepositoryConfigToTerraform(this._virtualRepositoryConfig.internalValue),
     };
   }
 }
