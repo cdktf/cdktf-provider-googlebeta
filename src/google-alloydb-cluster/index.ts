@@ -667,7 +667,7 @@ A duration in seconds with up to nine fractional digits, terminated by 's'. Exam
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_alloydb_cluster#weekly_schedule GoogleAlloydbCluster#weekly_schedule}
   */
-  readonly weeklySchedule: GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule;
+  readonly weeklySchedule?: GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule;
 }
 
 export function googleAlloydbClusterAutomatedBackupPolicyToTerraform(struct?: GoogleAlloydbClusterAutomatedBackupPolicyOutputReference | GoogleAlloydbClusterAutomatedBackupPolicy): any {
@@ -850,13 +850,16 @@ export class GoogleAlloydbClusterAutomatedBackupPolicyOutputReference extends cd
     return this._timeBasedRetention.internalValue;
   }
 
-  // weekly_schedule - computed: false, optional: false, required: true
+  // weekly_schedule - computed: false, optional: true, required: false
   private _weeklySchedule = new GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference(this, "weekly_schedule");
   public get weeklySchedule() {
     return this._weeklySchedule;
   }
   public putWeeklySchedule(value: GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule) {
     this._weeklySchedule.internalValue = value;
+  }
+  public resetWeeklySchedule() {
+    this._weeklySchedule.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get weeklyScheduleInput() {
@@ -1112,7 +1115,7 @@ export class GoogleAlloydbCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_alloydb_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.57.0',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

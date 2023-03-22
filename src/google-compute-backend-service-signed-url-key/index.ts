@@ -173,7 +173,7 @@ export class GoogleComputeBackendServiceSignedUrlKey extends cdktf.TerraformReso
       terraformResourceType: 'google_compute_backend_service_signed_url_key',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.57.0',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

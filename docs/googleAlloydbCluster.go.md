@@ -884,13 +884,13 @@ func TfResourceType() *string
 import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlealloydbcluster"
 
 &googlealloydbcluster.GoogleAlloydbClusterAutomatedBackupPolicy {
-	WeeklySchedule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule,
 	BackupWindow: *string,
 	Enabled: interface{},
 	Labels: *map[string]*string,
 	Location: *string,
 	QuantityBasedRetention: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention,
 	TimeBasedRetention: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention,
+	WeeklySchedule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule,
 }
 ```
 
@@ -898,27 +898,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlealloyd
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.property.weeklySchedule">WeeklySchedule</a></code> | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule">GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule</a></code> | weekly_schedule block. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.property.backupWindow">BackupWindow</a></code> | <code>*string</code> | The length of the time window during which a backup can be taken. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether automated backups are enabled. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Labels to apply to backups created using this configuration. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.property.location">Location</a></code> | <code>*string</code> | The location where the backup will be stored. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.property.quantityBasedRetention">QuantityBasedRetention</a></code> | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention">GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention</a></code> | quantity_based_retention block. |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.property.timeBasedRetention">TimeBasedRetention</a></code> | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention">GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention</a></code> | time_based_retention block. |
-
----
-
-##### `WeeklySchedule`<sup>Required</sup> <a name="WeeklySchedule" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.property.weeklySchedule"></a>
-
-```go
-WeeklySchedule GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule
-```
-
-- *Type:* <a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule">GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule</a>
-
-weekly_schedule block.
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_alloydb_cluster#weekly_schedule GoogleAlloydbCluster#weekly_schedule}
+| <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.property.weeklySchedule">WeeklySchedule</a></code> | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule">GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule</a></code> | weekly_schedule block. |
 
 ---
 
@@ -1011,6 +997,20 @@ TimeBasedRetention GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention
 time_based_retention block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_alloydb_cluster#time_based_retention GoogleAlloydbCluster#time_based_retention}
+
+---
+
+##### `WeeklySchedule`<sup>Optional</sup> <a name="WeeklySchedule" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicy.property.weeklySchedule"></a>
+
+```go
+WeeklySchedule GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule">GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule</a>
+
+weekly_schedule block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_alloydb_cluster#weekly_schedule GoogleAlloydbCluster#weekly_schedule}
 
 ---
 
@@ -1682,6 +1682,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyOutputReference.resetLocation">ResetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyOutputReference.resetQuantityBasedRetention">ResetQuantityBasedRetention</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyOutputReference.resetTimeBasedRetention">ResetTimeBasedRetention</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyOutputReference.resetWeeklySchedule">ResetWeeklySchedule</a></code> | *No description.* |
 
 ---
 
@@ -1905,6 +1906,12 @@ func ResetQuantityBasedRetention()
 
 ```go
 func ResetTimeBasedRetention()
+```
+
+##### `ResetWeeklySchedule` <a name="ResetWeeklySchedule" id="@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterAutomatedBackupPolicyOutputReference.resetWeeklySchedule"></a>
+
+```go
+func ResetWeeklySchedule()
 ```
 
 

@@ -607,7 +607,7 @@ export class GoogleBinaryAuthorizationAttestor extends cdktf.TerraformResource {
       terraformResourceType: 'google_binary_authorization_attestor',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.57.0',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

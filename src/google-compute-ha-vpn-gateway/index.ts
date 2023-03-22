@@ -332,7 +332,7 @@ export class GoogleComputeHaVpnGateway extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_ha_vpn_gateway',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.57.0',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

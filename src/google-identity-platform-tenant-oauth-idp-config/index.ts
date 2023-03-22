@@ -223,7 +223,7 @@ export class GoogleIdentityPlatformTenantOauthIdpConfig extends cdktf.TerraformR
       terraformResourceType: 'google_identity_platform_tenant_oauth_idp_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.57.0',
+        providerVersion: '4.58.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
