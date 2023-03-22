@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetwork"
 
 googlecomputenetwork.NewGoogleComputeNetwork(scope Construct, id *string, config GoogleComputeNetworkConfig) GoogleComputeNetwork
 ```
@@ -349,7 +349,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetwork"
 
 googlecomputenetwork.GoogleComputeNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetwork"
 
 googlecomputenetwork.GoogleComputeNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ googlecomputenetwork.GoogleComputeNetwork_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetwork"
 
 googlecomputenetwork.GoogleComputeNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -858,7 +858,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetwork"
 
 &googlecomputenetwork.GoogleComputeNetworkConfig {
 	Connection: interface{},
@@ -878,7 +878,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomput
 	Mtu: *f64,
 	Project: *string,
 	RoutingMode: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeNetwork.GoogleComputeNetworkTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeNetwork.GoogleComputeNetworkTimeouts,
 }
 ```
 
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetwork"
 
 &googlecomputenetwork.GoogleComputeNetworkTimeouts {
 	Create: *string,
@@ -1228,7 +1228,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeNetwork.GoogleComputeNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputenetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputenetwork"
 
 googlecomputenetwork.NewGoogleComputeNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeNetworkTimeoutsOutputReference
 ```

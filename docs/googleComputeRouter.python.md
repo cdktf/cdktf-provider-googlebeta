@@ -48,7 +48,7 @@ googleComputeRouter.GoogleComputeRouter(
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouter.Initializer.parameter.network">network</a></code> | <code>str</code> | A reference to the network to which this router belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouter.Initializer.parameter.bgp">bgp</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterBgp">GoogleComputeRouterBgp</a></code> | bgp block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouter.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouter.Initializer.parameter.encryptedInterconnectRouter">encrypted_interconnect_router</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Field to indicate if a router is dedicated to use with encrypted Interconnect Attachment (IPsec-encrypted Cloud Interconnect feature). |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouter.Initializer.parameter.encryptedInterconnectRouter">encrypted_interconnect_router</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments). |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router#id GoogleComputeRouter#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouter.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router#project GoogleComputeRouter#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouter.Initializer.parameter.region">region</a></code> | <code>str</code> | Region where the router resides. |
@@ -167,9 +167,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Field to indicate if a router is dedicated to use with encrypted Interconnect Attachment (IPsec-encrypted Cloud Interconnect feature).
-
-Not currently available publicly.
+Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router#encrypted_interconnect_router GoogleComputeRouter#encrypted_interconnect_router}
 
@@ -525,10 +523,15 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 The interval in seconds between BGP keepalive messages that are sent to the peer.
 
-Hold time is three times the interval at which keepalive messages are sent, and the hold time is the
-maximum number of seconds allowed to elapse between successive keepalive messages that BGP receives from a peer.
-BGP will use the smaller of either the local hold time value or the peer's hold time value as the hold time for
-the BGP connection between the two peers. If set, this value must be between 20 and 60. The default is 20.
+Hold time is three times the interval at which keepalive
+messages are sent, and the hold time is the maximum number of seconds
+allowed to elapse between successive keepalive messages that BGP
+receives from a peer.
+
+BGP will use the smaller of either the local hold time value or the
+peer's hold time value as the hold time for the BGP connection
+between the two peers. If set, this value must be between 20 and 60.
+The default is 20.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router#keepalive_interval GoogleComputeRouter#keepalive_interval}
 
@@ -1195,10 +1198,15 @@ keepalive_interval: typing.Union[int, float]
 
 The interval in seconds between BGP keepalive messages that are sent to the peer.
 
-Hold time is three times the interval at which keepalive messages are sent, and the hold time is the
-maximum number of seconds allowed to elapse between successive keepalive messages that BGP receives from a peer.
-BGP will use the smaller of either the local hold time value or the peer's hold time value as the hold time for
-the BGP connection between the two peers. If set, this value must be between 20 and 60. The default is 20.
+Hold time is three times the interval at which keepalive
+messages are sent, and the hold time is the maximum number of seconds
+allowed to elapse between successive keepalive messages that BGP
+receives from a peer.
+
+BGP will use the smaller of either the local hold time value or the
+peer's hold time value as the hold time for the BGP connection
+between the two peers. If set, this value must be between 20 and 60.
+The default is 20.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router#keepalive_interval GoogleComputeRouter#keepalive_interval}
 
@@ -1296,7 +1304,7 @@ googleComputeRouter.GoogleComputeRouterConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterConfig.property.network">network</a></code> | <code>str</code> | A reference to the network to which this router belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterConfig.property.bgp">bgp</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterBgp">GoogleComputeRouterBgp</a></code> | bgp block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterConfig.property.encryptedInterconnectRouter">encrypted_interconnect_router</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Field to indicate if a router is dedicated to use with encrypted Interconnect Attachment (IPsec-encrypted Cloud Interconnect feature). |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterConfig.property.encryptedInterconnectRouter">encrypted_interconnect_router</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments). |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router#id GoogleComputeRouter#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router#project GoogleComputeRouter#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeRouter.GoogleComputeRouterConfig.property.region">region</a></code> | <code>str</code> | Region where the router resides. |
@@ -1445,9 +1453,7 @@ encrypted_interconnect_router: typing.Union[bool, IResolvable]
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
 
-Field to indicate if a router is dedicated to use with encrypted Interconnect Attachment (IPsec-encrypted Cloud Interconnect feature).
-
-Not currently available publicly.
+Indicates if a router is dedicated for use with encrypted VLAN attachments (interconnectAttachments).
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router#encrypted_interconnect_router GoogleComputeRouter#encrypted_interconnect_router}
 

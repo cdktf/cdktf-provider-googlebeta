@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledataprocmetastoreserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreserviceiambinding"
 
 googledataprocmetastoreserviceiambinding.NewGoogleDataprocMetastoreServiceIamBinding(scope Construct, id *string, config GoogleDataprocMetastoreServiceIamBindingConfig) GoogleDataprocMetastoreServiceIamBinding
 ```
@@ -307,7 +307,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledataprocmetastoreserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreserviceiambinding"
 
 googledataprocmetastoreserviceiambinding.GoogleDataprocMetastoreServiceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledataprocmetastoreserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreserviceiambinding"
 
 googledataprocmetastoreserviceiambinding.GoogleDataprocMetastoreServiceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googledataprocmetastoreserviceiambinding.GoogleDataprocMetastoreServiceIamBindin
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledataprocmetastoreserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreserviceiambinding"
 
 googledataprocmetastoreserviceiambinding.GoogleDataprocMetastoreServiceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledataprocmetastoreserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreserviceiambinding"
 
 &googledataprocmetastoreserviceiambinding.GoogleDataprocMetastoreServiceIamBindingCondition {
 	Expression: *string,
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledataprocmetastoreserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreserviceiambinding"
 
 &googledataprocmetastoreserviceiambinding.GoogleDataprocMetastoreServiceIamBindingConfig {
 	Connection: interface{},
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatapr
 	Members: *[]*string,
 	Role: *string,
 	ServiceId: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamBinding.GoogleDataprocMetastoreServiceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledataprocmetastoreserviceiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocmetastoreserviceiambinding"
 
 googledataprocmetastoreserviceiambinding.NewGoogleDataprocMetastoreServiceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceIamBindingConditionOutputReference
 ```
