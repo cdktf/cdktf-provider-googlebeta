@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamPolicy.GoogleApiGatewayGatewayIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewaygatewayiampolicy"
 
 googleapigatewaygatewayiampolicy.NewGoogleApiGatewayGatewayIamPolicy(scope Construct, id *string, config GoogleApiGatewayGatewayIamPolicyConfig) GoogleApiGatewayGatewayIamPolicy
 ```
@@ -287,7 +287,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamPolicy.GoogleApiGatewayGatewayIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewaygatewayiampolicy"
 
 googleapigatewaygatewayiampolicy.GoogleApiGatewayGatewayIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamPolicy.GoogleApiGatewayGatewayIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewaygatewayiampolicy"
 
 googleapigatewaygatewayiampolicy.GoogleApiGatewayGatewayIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ googleapigatewaygatewayiampolicy.GoogleApiGatewayGatewayIamPolicy_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamPolicy.GoogleApiGatewayGatewayIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewaygatewayiampolicy"
 
 googleapigatewaygatewayiampolicy.GoogleApiGatewayGatewayIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamPolicy.GoogleApiGatewayGatewayIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewaygatewayiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigatewaygatewayiampolicy"
 
 &googleapigatewaygatewayiampolicy.GoogleApiGatewayGatewayIamPolicyConfig {
 	Connection: interface{},

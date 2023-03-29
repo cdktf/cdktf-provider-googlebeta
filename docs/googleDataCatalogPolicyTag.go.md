@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogpolicytag"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogpolicytag"
 
 googledatacatalogpolicytag.NewGoogleDataCatalogPolicyTag(scope Construct, id *string, config GoogleDataCatalogPolicyTagConfig) GoogleDataCatalogPolicyTag
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogpolicytag"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogpolicytag"
 
 googledatacatalogpolicytag.GoogleDataCatalogPolicyTag_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogpolicytag"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogpolicytag"
 
 googledatacatalogpolicytag.GoogleDataCatalogPolicyTag_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googledatacatalogpolicytag.GoogleDataCatalogPolicyTag_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTag.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogpolicytag"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogpolicytag"
 
 googledatacatalogpolicytag.GoogleDataCatalogPolicyTag_IsTerraformResource(x interface{}) *bool
 ```
@@ -706,7 +706,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTagConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogpolicytag"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogpolicytag"
 
 &googledatacatalogpolicytag.GoogleDataCatalogPolicyTagConfig {
 	Connection: interface{},
@@ -721,7 +721,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatal
 	Description: *string,
 	Id: *string,
 	ParentPolicyTag: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTagTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTagTimeouts,
 }
 ```
 
@@ -917,7 +917,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTagTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogpolicytag"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogpolicytag"
 
 &googledatacatalogpolicytag.GoogleDataCatalogPolicyTagTimeouts {
 	Create: *string,
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogPolicyTag.GoogleDataCatalogPolicyTagTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogpolicytag"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogpolicytag"
 
 googledatacatalogpolicytag.NewGoogleDataCatalogPolicyTagTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataCatalogPolicyTagTimeoutsOutputReference
 ```
