@@ -62,7 +62,7 @@ export class GoogleIapAppEngineVersionIamPolicy extends cdktf.TerraformResource 
       terraformResourceType: 'google_iap_app_engine_version_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

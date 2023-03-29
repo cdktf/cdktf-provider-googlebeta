@@ -4238,7 +4238,8 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 from cdktf_cdktf_provider_google_beta import google_compute_instance
 
 googleComputeInstance.GoogleComputeInstanceScratchDisk(
-  interface: str
+  interface: str,
+  size: typing.Union[int, float] = None
 )
 ```
 
@@ -4247,6 +4248,7 @@ googleComputeInstance.GoogleComputeInstanceScratchDisk(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDisk.property.interface">interface</a></code> | <code>str</code> | The disk interface used for attaching this disk. One of SCSI or NVME. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDisk.property.size">size</a></code> | <code>typing.Union[int, float]</code> | The size of the disk in gigabytes. One of 375 or 3000. |
 
 ---
 
@@ -4261,6 +4263,20 @@ interface: str
 The disk interface used for attaching this disk. One of SCSI or NVME.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance#interface GoogleComputeInstance#interface}
+
+---
+
+##### `size`<sup>Optional</sup> <a name="size" id="@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDisk.property.size"></a>
+
+```python
+size: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The size of the disk in gigabytes. One of 375 or 3000.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance#size GoogleComputeInstance#size}
 
 ---
 
@@ -12089,6 +12105,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.resetSize">reset_size</a></code> | *No description.* |
 
 ---
 
@@ -12264,6 +12281,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_size` <a name="reset_size" id="@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.resetSize"></a>
+
+```python
+def reset_size() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -12272,7 +12295,9 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.property.interfaceInput">interface_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.property.sizeInput">size_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.property.interface">interface</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.property.size">size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDisk">GoogleComputeInstanceScratchDisk</a>, cdktf.IResolvable]</code> | *No description.* |
 
 ---
@@ -12311,6 +12336,16 @@ interface_input: str
 
 ---
 
+##### `size_input`<sup>Optional</sup> <a name="size_input" id="@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.property.sizeInput"></a>
+
+```python
+size_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `interface`<sup>Required</sup> <a name="interface" id="@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.property.interface"></a>
 
 ```python
@@ -12318,6 +12353,16 @@ interface: str
 ```
 
 - *Type:* str
+
+---
+
+##### `size`<sup>Required</sup> <a name="size" id="@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceScratchDiskOutputReference.property.size"></a>
+
+```python
+size: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
 
 ---
 

@@ -861,7 +861,7 @@ export class GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference e
     return this._poolSize;
   }
 
-  // service_account - computed: false, optional: true, required: false
+  // service_account - computed: true, optional: true, required: false
   private _serviceAccount?: string; 
   public get serviceAccount() {
     return this.getStringAttribute('service_account');
@@ -1430,7 +1430,7 @@ export class GoogleWorkstationsWorkstationConfigA extends cdktf.TerraformResourc
       terraformResourceType: 'google_workstations_workstation_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

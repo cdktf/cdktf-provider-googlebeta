@@ -562,6 +562,10 @@ export interface GoogleComputeInstanceFromTemplateScratchDisk {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_from_template#interface GoogleComputeInstanceFromTemplate#interface}
   */
   readonly interface?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_from_template#size GoogleComputeInstanceFromTemplate#size}
+  */
+  readonly size?: number;
 }
 
 export function googleComputeInstanceFromTemplateScratchDiskToTerraform(struct?: GoogleComputeInstanceFromTemplateScratchDisk | cdktf.IResolvable): any {
@@ -571,6 +575,7 @@ export function googleComputeInstanceFromTemplateScratchDiskToTerraform(struct?:
   }
   return {
     interface: cdktf.stringToTerraform(struct!.interface),
+    size: cdktf.numberToTerraform(struct!.size),
   }
 }
 
@@ -598,6 +603,10 @@ export class GoogleComputeInstanceFromTemplateScratchDiskOutputReference extends
       hasAnyValues = true;
       internalValueResult.interface = this._interface;
     }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -606,6 +615,7 @@ export class GoogleComputeInstanceFromTemplateScratchDiskOutputReference extends
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._interface = undefined;
+      this._size = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -615,6 +625,7 @@ export class GoogleComputeInstanceFromTemplateScratchDiskOutputReference extends
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._interface = value.interface;
+      this._size = value.size;
     }
   }
 
@@ -632,6 +643,22 @@ export class GoogleComputeInstanceFromTemplateScratchDiskOutputReference extends
   // Temporarily expose input value. Use with caution.
   public get interfaceInput() {
     return this._interface;
+  }
+
+  // size - computed: true, optional: true, required: false
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  public resetSize() {
+    this._size = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
   }
 }
 
@@ -3211,7 +3238,7 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_from_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

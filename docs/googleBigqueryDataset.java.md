@@ -25,6 +25,7 @@ GoogleBigqueryDataset.Builder.create(Construct scope, java.lang.String id)
     .datasetId(java.lang.String)
 //  .access(IResolvable)
 //  .access(java.util.List<GoogleBigqueryDatasetAccess>)
+//  .defaultCollation(java.lang.String)
 //  .defaultEncryptionConfiguration(GoogleBigqueryDatasetDefaultEncryptionConfiguration)
 //  .defaultPartitionExpirationMs(java.lang.Number)
 //  .defaultTableExpirationMs(java.lang.Number)
@@ -33,6 +34,8 @@ GoogleBigqueryDataset.Builder.create(Construct scope, java.lang.String id)
 //  .description(java.lang.String)
 //  .friendlyName(java.lang.String)
 //  .id(java.lang.String)
+//  .isCaseInsensitive(java.lang.Boolean)
+//  .isCaseInsensitive(IResolvable)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .location(java.lang.String)
 //  .maxTimeTravelHours(java.lang.String)
@@ -54,6 +57,7 @@ GoogleBigqueryDataset.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.datasetId">datasetId</a></code> | <code>java.lang.String</code> | A unique ID for this dataset, without the project name. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.access">access</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccess">GoogleBigqueryDatasetAccess</a>></code> | access block. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.defaultCollation">defaultCollation</a></code> | <code>java.lang.String</code> | Defines the default collation specification of future tables created in the dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.defaultEncryptionConfiguration">defaultEncryptionConfiguration</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetDefaultEncryptionConfiguration">GoogleBigqueryDatasetDefaultEncryptionConfiguration</a></code> | default_encryption_configuration block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.defaultPartitionExpirationMs">defaultPartitionExpirationMs</a></code> | <code>java.lang.Number</code> | The default partition expiration for all partitioned tables in the dataset, in milliseconds. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.defaultTableExpirationMs">defaultTableExpirationMs</a></code> | <code>java.lang.Number</code> | The default lifetime of all tables in the dataset, in milliseconds. The minimum value is 3600000 milliseconds (one hour). |
@@ -61,6 +65,7 @@ GoogleBigqueryDataset.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A user-friendly description of the dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.friendlyName">friendlyName</a></code> | <code>java.lang.String</code> | A descriptive name for the dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset#id GoogleBigqueryDataset#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.isCaseInsensitive">isCaseInsensitive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | TRUE if the dataset and its table names are case-insensitive, otherwise FALSE. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | The labels associated with this dataset. You can use these to organize and group your datasets. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The geographic location where the dataset should reside. See [official docs](https://cloud.google.com/bigquery/docs/dataset-locations). |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.maxTimeTravelHours">maxTimeTravelHours</a></code> | <code>java.lang.String</code> | Defines the time travel window in hours. |
@@ -150,6 +155,27 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 access block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset#access GoogleBigqueryDataset#access}
+
+---
+
+##### `defaultCollation`<sup>Optional</sup> <a name="defaultCollation" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.defaultCollation"></a>
+
+- *Type:* java.lang.String
+
+Defines the default collation specification of future tables created in the dataset.
+
+If a table is created in this dataset without table-level
+default collation, then the table inherits the dataset default collation,
+which is applied to the string fields that do not have explicit collation
+specified. A change to this field affects only tables created afterwards,
+and does not alter the existing tables.
+
+The following values are supported:
+
+* 'und:ci': undetermined locale, case insensitive.
+* '': empty string. Default to case-sensitive behavior.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset#default_collation GoogleBigqueryDataset#default_collation}
 
 ---
 
@@ -249,6 +275,19 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `isCaseInsensitive`<sup>Optional</sup> <a name="isCaseInsensitive" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.isCaseInsensitive"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+TRUE if the dataset and its table names are case-insensitive, otherwise FALSE.
+
+By default, this is FALSE, which means the dataset and its table names are
+case-sensitive. This field does not affect routine references.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset#is_case_insensitive GoogleBigqueryDataset#is_case_insensitive}
+
+---
+
 ##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.Initializer.parameter.labels"></a>
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
@@ -331,6 +370,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.putDefaultEncryptionConfiguration">putDefaultEncryptionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetAccess">resetAccess</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetDefaultCollation">resetDefaultCollation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetDefaultEncryptionConfiguration">resetDefaultEncryptionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetDefaultPartitionExpirationMs">resetDefaultPartitionExpirationMs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetDefaultTableExpirationMs">resetDefaultTableExpirationMs</a></code> | *No description.* |
@@ -338,6 +378,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetFriendlyName">resetFriendlyName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetIsCaseInsensitive">resetIsCaseInsensitive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetLocation">resetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetMaxTimeTravelHours">resetMaxTimeTravelHours</a></code> | *No description.* |
@@ -572,6 +613,12 @@ public void putTimeouts(GoogleBigqueryDatasetTimeouts value)
 public void resetAccess()
 ```
 
+##### `resetDefaultCollation` <a name="resetDefaultCollation" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetDefaultCollation"></a>
+
+```java
+public void resetDefaultCollation()
+```
+
 ##### `resetDefaultEncryptionConfiguration` <a name="resetDefaultEncryptionConfiguration" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetDefaultEncryptionConfiguration"></a>
 
 ```java
@@ -612,6 +659,12 @@ public void resetFriendlyName()
 
 ```java
 public void resetId()
+```
+
+##### `resetIsCaseInsensitive` <a name="resetIsCaseInsensitive" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetIsCaseInsensitive"></a>
+
+```java
+public void resetIsCaseInsensitive()
 ```
 
 ##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.resetLabels"></a>
@@ -741,6 +794,7 @@ GoogleBigqueryDataset.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetTimeoutsOutputReference">GoogleBigqueryDatasetTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.accessInput">accessInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccess">GoogleBigqueryDatasetAccess</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.datasetIdInput">datasetIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.defaultCollationInput">defaultCollationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.defaultEncryptionConfigurationInput">defaultEncryptionConfigurationInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetDefaultEncryptionConfiguration">GoogleBigqueryDatasetDefaultEncryptionConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.defaultPartitionExpirationMsInput">defaultPartitionExpirationMsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.defaultTableExpirationMsInput">defaultTableExpirationMsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -748,18 +802,21 @@ GoogleBigqueryDataset.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.friendlyNameInput">friendlyNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.isCaseInsensitiveInput">isCaseInsensitiveInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.maxTimeTravelHoursInput">maxTimeTravelHoursInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetTimeouts">GoogleBigqueryDatasetTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.datasetId">datasetId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.defaultCollation">defaultCollation</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.defaultPartitionExpirationMs">defaultPartitionExpirationMs</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.defaultTableExpirationMs">defaultTableExpirationMs</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.deleteContentsOnDestroy">deleteContentsOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.friendlyName">friendlyName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.isCaseInsensitive">isCaseInsensitive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.maxTimeTravelHours">maxTimeTravelHours</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -999,6 +1056,16 @@ public java.lang.String getDatasetIdInput();
 
 ---
 
+##### `defaultCollationInput`<sup>Optional</sup> <a name="defaultCollationInput" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.defaultCollationInput"></a>
+
+```java
+public java.lang.String getDefaultCollationInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `defaultEncryptionConfigurationInput`<sup>Optional</sup> <a name="defaultEncryptionConfigurationInput" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.defaultEncryptionConfigurationInput"></a>
 
 ```java
@@ -1069,6 +1136,16 @@ public java.lang.String getIdInput();
 
 ---
 
+##### `isCaseInsensitiveInput`<sup>Optional</sup> <a name="isCaseInsensitiveInput" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.isCaseInsensitiveInput"></a>
+
+```java
+public java.lang.Object getIsCaseInsensitiveInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.labelsInput"></a>
 
 ```java
@@ -1123,6 +1200,16 @@ public java.lang.Object getTimeoutsInput();
 
 ```java
 public java.lang.String getDatasetId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `defaultCollation`<sup>Required</sup> <a name="defaultCollation" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.defaultCollation"></a>
+
+```java
+public java.lang.String getDefaultCollation();
 ```
 
 - *Type:* java.lang.String
@@ -1186,6 +1273,16 @@ public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `isCaseInsensitive`<sup>Required</sup> <a name="isCaseInsensitive" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDataset.property.isCaseInsensitive"></a>
+
+```java
+public java.lang.Object getIsCaseInsensitive();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1672,6 +1769,7 @@ GoogleBigqueryDatasetConfig.builder()
     .datasetId(java.lang.String)
 //  .access(IResolvable)
 //  .access(java.util.List<GoogleBigqueryDatasetAccess>)
+//  .defaultCollation(java.lang.String)
 //  .defaultEncryptionConfiguration(GoogleBigqueryDatasetDefaultEncryptionConfiguration)
 //  .defaultPartitionExpirationMs(java.lang.Number)
 //  .defaultTableExpirationMs(java.lang.Number)
@@ -1680,6 +1778,8 @@ GoogleBigqueryDatasetConfig.builder()
 //  .description(java.lang.String)
 //  .friendlyName(java.lang.String)
 //  .id(java.lang.String)
+//  .isCaseInsensitive(java.lang.Boolean)
+//  .isCaseInsensitive(IResolvable)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .location(java.lang.String)
 //  .maxTimeTravelHours(java.lang.String)
@@ -1701,6 +1801,7 @@ GoogleBigqueryDatasetConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.datasetId">datasetId</a></code> | <code>java.lang.String</code> | A unique ID for this dataset, without the project name. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.access">access</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccess">GoogleBigqueryDatasetAccess</a>></code> | access block. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.defaultCollation">defaultCollation</a></code> | <code>java.lang.String</code> | Defines the default collation specification of future tables created in the dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.defaultEncryptionConfiguration">defaultEncryptionConfiguration</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetDefaultEncryptionConfiguration">GoogleBigqueryDatasetDefaultEncryptionConfiguration</a></code> | default_encryption_configuration block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.defaultPartitionExpirationMs">defaultPartitionExpirationMs</a></code> | <code>java.lang.Number</code> | The default partition expiration for all partitioned tables in the dataset, in milliseconds. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.defaultTableExpirationMs">defaultTableExpirationMs</a></code> | <code>java.lang.Number</code> | The default lifetime of all tables in the dataset, in milliseconds. The minimum value is 3600000 milliseconds (one hour). |
@@ -1708,6 +1809,7 @@ GoogleBigqueryDatasetConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.description">description</a></code> | <code>java.lang.String</code> | A user-friendly description of the dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.friendlyName">friendlyName</a></code> | <code>java.lang.String</code> | A descriptive name for the dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset#id GoogleBigqueryDataset#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.isCaseInsensitive">isCaseInsensitive</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | TRUE if the dataset and its table names are case-insensitive, otherwise FALSE. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | The labels associated with this dataset. You can use these to organize and group your datasets. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.location">location</a></code> | <code>java.lang.String</code> | The geographic location where the dataset should reside. See [official docs](https://cloud.google.com/bigquery/docs/dataset-locations). |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.maxTimeTravelHours">maxTimeTravelHours</a></code> | <code>java.lang.String</code> | Defines the time travel window in hours. |
@@ -1815,6 +1917,31 @@ public java.lang.Object getAccess();
 access block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset#access GoogleBigqueryDataset#access}
+
+---
+
+##### `defaultCollation`<sup>Optional</sup> <a name="defaultCollation" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.defaultCollation"></a>
+
+```java
+public java.lang.String getDefaultCollation();
+```
+
+- *Type:* java.lang.String
+
+Defines the default collation specification of future tables created in the dataset.
+
+If a table is created in this dataset without table-level
+default collation, then the table inherits the dataset default collation,
+which is applied to the string fields that do not have explicit collation
+specified. A change to this field affects only tables created afterwards,
+and does not alter the existing tables.
+
+The following values are supported:
+
+* 'und:ci': undetermined locale, case insensitive.
+* '': empty string. Default to case-sensitive behavior.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset#default_collation GoogleBigqueryDataset#default_collation}
 
 ---
 
@@ -1939,6 +2066,23 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `isCaseInsensitive`<sup>Optional</sup> <a name="isCaseInsensitive" id="@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetConfig.property.isCaseInsensitive"></a>
+
+```java
+public java.lang.Object getIsCaseInsensitive();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+TRUE if the dataset and its table names are case-insensitive, otherwise FALSE.
+
+By default, this is FALSE, which means the dataset and its table names are
+case-sensitive. This field does not affect routine references.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset#is_case_insensitive GoogleBigqueryDataset#is_case_insensitive}
 
 ---
 

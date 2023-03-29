@@ -7279,6 +7279,7 @@ GoogleContainerClusterNodeConfig.builder()
 //  .kubeletConfig(GoogleContainerClusterNodeConfigKubeletConfig)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .linuxNodeConfig(GoogleContainerClusterNodeConfigLinuxNodeConfig)
+//  .localNvmeSsdBlockConfig(GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig)
 //  .localSsdCount(java.lang.Number)
 //  .loggingVariant(java.lang.String)
 //  .machineType(java.lang.String)
@@ -7317,6 +7318,7 @@ GoogleContainerClusterNodeConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.kubeletConfig">kubeletConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigKubeletConfig">GoogleContainerClusterNodeConfigKubeletConfig</a></code> | kubelet_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | The map of Kubernetes labels (key/value pairs) to be applied to each node. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.linuxNodeConfig">linuxNodeConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLinuxNodeConfig">GoogleContainerClusterNodeConfigLinuxNodeConfig</a></code> | linux_node_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.localNvmeSsdBlockConfig">localNvmeSsdBlockConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig</a></code> | local_nvme_ssd_block_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | The number of local SSD disks to be attached to the node. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.loggingVariant">loggingVariant</a></code> | <code>java.lang.String</code> | Type of logging agent that is used as the default value for node pools in the cluster. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.machineType">machineType</a></code> | <code>java.lang.String</code> | The name of a Google Compute Engine machine type. |
@@ -7492,6 +7494,20 @@ public GoogleContainerClusterNodeConfigLinuxNodeConfig getLinuxNodeConfig();
 linux_node_config block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#linux_node_config GoogleContainerCluster#linux_node_config}
+
+---
+
+##### `localNvmeSsdBlockConfig`<sup>Optional</sup> <a name="localNvmeSsdBlockConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.localNvmeSsdBlockConfig"></a>
+
+```java
+public GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig getLocalNvmeSsdBlockConfig();
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig</a>
+
+local_nvme_ssd_block_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#local_nvme_ssd_block_config GoogleContainerCluster#local_nvme_ssd_block_config}
 
 ---
 
@@ -7769,7 +7785,7 @@ public java.lang.Number getLocalSsdCount();
 
 Number of local SSDs to use to back ephemeral storage.
 
-Uses NVMe interfaces. Each local SSD is 375 GB in size.
+Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#local_ssd_count GoogleContainerCluster#local_ssd_count}
 
@@ -8080,6 +8096,42 @@ public java.util.Map<java.lang.String, java.lang.String> getSysctls();
 The Linux kernel parameters to be applied to the nodes and all pods running on the nodes.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#sysctls GoogleContainerCluster#sysctls}
+
+---
+
+### GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig <a name="GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.google_beta.google_container_cluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig;
+
+GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig.builder()
+    .localSsdCount(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | Number of raw-block local NVMe SSD disks to be attached to the node. |
+
+---
+
+##### `localSsdCount`<sup>Required</sup> <a name="localSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig.property.localSsdCount"></a>
+
+```java
+public java.lang.Number getLocalSsdCount();
+```
+
+- *Type:* java.lang.Number
+
+Number of raw-block local NVMe SSD disks to be attached to the node.
+
+Each local SSD is 375 GB in size.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#local_ssd_count GoogleContainerCluster#local_ssd_count}
 
 ---
 
@@ -9024,6 +9076,7 @@ GoogleContainerClusterNodePoolNodeConfig.builder()
 //  .kubeletConfig(GoogleContainerClusterNodePoolNodeConfigKubeletConfig)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
 //  .linuxNodeConfig(GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig)
+//  .localNvmeSsdBlockConfig(GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 //  .localSsdCount(java.lang.Number)
 //  .loggingVariant(java.lang.String)
 //  .machineType(java.lang.String)
@@ -9062,6 +9115,7 @@ GoogleContainerClusterNodePoolNodeConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.kubeletConfig">kubeletConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigKubeletConfig">GoogleContainerClusterNodePoolNodeConfigKubeletConfig</a></code> | kubelet_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | The map of Kubernetes labels (key/value pairs) to be applied to each node. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.linuxNodeConfig">linuxNodeConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig">GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig</a></code> | linux_node_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.localNvmeSsdBlockConfig">localNvmeSsdBlockConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig</a></code> | local_nvme_ssd_block_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | The number of local SSD disks to be attached to the node. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.loggingVariant">loggingVariant</a></code> | <code>java.lang.String</code> | Type of logging agent that is used as the default value for node pools in the cluster. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.machineType">machineType</a></code> | <code>java.lang.String</code> | The name of a Google Compute Engine machine type. |
@@ -9237,6 +9291,20 @@ public GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig getLinuxNodeConfi
 linux_node_config block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#linux_node_config GoogleContainerCluster#linux_node_config}
+
+---
+
+##### `localNvmeSsdBlockConfig`<sup>Optional</sup> <a name="localNvmeSsdBlockConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.localNvmeSsdBlockConfig"></a>
+
+```java
+public GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig getLocalNvmeSsdBlockConfig();
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig</a>
+
+local_nvme_ssd_block_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#local_nvme_ssd_block_config GoogleContainerCluster#local_nvme_ssd_block_config}
 
 ---
 
@@ -9514,7 +9582,7 @@ public java.lang.Number getLocalSsdCount();
 
 Number of local SSDs to use to back ephemeral storage.
 
-Uses NVMe interfaces. Each local SSD is 375 GB in size.
+Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#local_ssd_count GoogleContainerCluster#local_ssd_count}
 
@@ -9825,6 +9893,42 @@ public java.util.Map<java.lang.String, java.lang.String> getSysctls();
 The Linux kernel parameters to be applied to the nodes and all pods running on the nodes.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#sysctls GoogleContainerCluster#sysctls}
+
+---
+
+### GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig <a name="GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.google_beta.google_container_cluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig;
+
+GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig.builder()
+    .localSsdCount(java.lang.Number)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | Number of raw-block local NVMe SSD disks to be attached to the node. |
+
+---
+
+##### `localSsdCount`<sup>Required</sup> <a name="localSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig.property.localSsdCount"></a>
+
+```java
+public java.lang.Number getLocalSsdCount();
+```
+
+- *Type:* java.lang.Number
+
+Number of raw-block local NVMe SSD disks to be attached to the node.
+
+Each local SSD is 375 GB in size.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#local_ssd_count GoogleContainerCluster#local_ssd_count}
 
 ---
 
@@ -28598,6 +28702,277 @@ public GoogleContainerClusterNodeConfigLinuxNodeConfig getInternalValue();
 ---
 
 
+### GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference <a name="GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.google_beta.google_container_cluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference;
+
+new GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.localSsdCountInput">localSsdCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `localSsdCountInput`<sup>Optional</sup> <a name="localSsdCountInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.localSsdCountInput"></a>
+
+```java
+public java.lang.Number getLocalSsdCountInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `localSsdCount`<sup>Required</sup> <a name="localSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.localSsdCount"></a>
+
+```java
+public java.lang.Number getLocalSsdCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.internalValue"></a>
+
+```java
+public GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig</a>
+
+---
+
+
 ### GoogleContainerClusterNodeConfigOutputReference <a name="GoogleContainerClusterNodeConfigOutputReference" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.Initializer"></a>
@@ -28654,6 +29029,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putGvnic">putGvnic</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putKubeletConfig">putKubeletConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putLinuxNodeConfig">putLinuxNodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putLocalNvmeSsdBlockConfig">putLocalNvmeSsdBlockConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putReservationAffinity">putReservationAffinity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putSandboxConfig">putSandboxConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putShieldedInstanceConfig">putShieldedInstanceConfig</a></code> | *No description.* |
@@ -28670,6 +29046,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetKubeletConfig">resetKubeletConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetLinuxNodeConfig">resetLinuxNodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetLocalNvmeSsdBlockConfig">resetLocalNvmeSsdBlockConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetLocalSsdCount">resetLocalSsdCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetLoggingVariant">resetLoggingVariant</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetMachineType">resetMachineType</a></code> | *No description.* |
@@ -28912,6 +29289,18 @@ public void putLinuxNodeConfig(GoogleContainerClusterNodeConfigLinuxNodeConfig v
 
 ---
 
+##### `putLocalNvmeSsdBlockConfig` <a name="putLocalNvmeSsdBlockConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putLocalNvmeSsdBlockConfig"></a>
+
+```java
+public void putLocalNvmeSsdBlockConfig(GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putLocalNvmeSsdBlockConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig</a>
+
+---
+
 ##### `putReservationAffinity` <a name="putReservationAffinity" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putReservationAffinity"></a>
 
 ```java
@@ -29038,6 +29427,12 @@ public void resetLabels()
 public void resetLinuxNodeConfig()
 ```
 
+##### `resetLocalNvmeSsdBlockConfig` <a name="resetLocalNvmeSsdBlockConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetLocalNvmeSsdBlockConfig"></a>
+
+```java
+public void resetLocalNvmeSsdBlockConfig()
+```
+
 ##### `resetLocalSsdCount` <a name="resetLocalSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetLocalSsdCount"></a>
 
 ```java
@@ -29153,6 +29548,7 @@ public void resetWorkloadMetadataConfig()
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.gvnic">gvnic</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGvnicOutputReference">GoogleContainerClusterNodeConfigGvnicOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.kubeletConfig">kubeletConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigKubeletConfigOutputReference">GoogleContainerClusterNodeConfigKubeletConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.linuxNodeConfig">linuxNodeConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference">GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.localNvmeSsdBlockConfig">localNvmeSsdBlockConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference">GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.reservationAffinity">reservationAffinity</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigReservationAffinityOutputReference">GoogleContainerClusterNodeConfigReservationAffinityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.sandboxConfig">sandboxConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigSandboxConfigOutputReference">GoogleContainerClusterNodeConfigSandboxConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.shieldedInstanceConfig">shieldedInstanceConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference">GoogleContainerClusterNodeConfigShieldedInstanceConfigOutputReference</a></code> | *No description.* |
@@ -29169,6 +29565,7 @@ public void resetWorkloadMetadataConfig()
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.kubeletConfigInput">kubeletConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigKubeletConfig">GoogleContainerClusterNodeConfigKubeletConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.linuxNodeConfigInput">linuxNodeConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLinuxNodeConfig">GoogleContainerClusterNodeConfigLinuxNodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.localNvmeSsdBlockConfigInput">localNvmeSsdBlockConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.localSsdCountInput">localSsdCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.loggingVariantInput">loggingVariantInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.machineTypeInput">machineTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -29288,6 +29685,16 @@ public GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference getLinuxNo
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference">GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference</a>
+
+---
+
+##### `localNvmeSsdBlockConfig`<sup>Required</sup> <a name="localNvmeSsdBlockConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.localNvmeSsdBlockConfig"></a>
+
+```java
+public GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference getLocalNvmeSsdBlockConfig();
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference">GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference</a>
 
 ---
 
@@ -29448,6 +29855,16 @@ public GoogleContainerClusterNodeConfigLinuxNodeConfig getLinuxNodeConfigInput()
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLinuxNodeConfig">GoogleContainerClusterNodeConfigLinuxNodeConfig</a>
+
+---
+
+##### `localNvmeSsdBlockConfigInput`<sup>Optional</sup> <a name="localNvmeSsdBlockConfigInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.localNvmeSsdBlockConfigInput"></a>
+
+```java
+public GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig getLocalNvmeSsdBlockConfigInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig</a>
 
 ---
 
@@ -36586,6 +37003,277 @@ public GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig getInternalValue(
 ---
 
 
+### GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference <a name="GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.google_beta.google_container_cluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference;
+
+new GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.localSsdCountInput">localSsdCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.localSsdCount">localSsdCount</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `localSsdCountInput`<sup>Optional</sup> <a name="localSsdCountInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.localSsdCountInput"></a>
+
+```java
+public java.lang.Number getLocalSsdCountInput();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `localSsdCount`<sup>Required</sup> <a name="localSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.localSsdCount"></a>
+
+```java
+public java.lang.Number getLocalSsdCount();
+```
+
+- *Type:* java.lang.Number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.property.internalValue"></a>
+
+```java
+public GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig</a>
+
+---
+
+
 ### GoogleContainerClusterNodePoolNodeConfigOutputReference <a name="GoogleContainerClusterNodePoolNodeConfigOutputReference" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.Initializer"></a>
@@ -36642,6 +37330,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putGvnic">putGvnic</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putKubeletConfig">putKubeletConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putLinuxNodeConfig">putLinuxNodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putLocalNvmeSsdBlockConfig">putLocalNvmeSsdBlockConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putReservationAffinity">putReservationAffinity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putSandboxConfig">putSandboxConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putShieldedInstanceConfig">putShieldedInstanceConfig</a></code> | *No description.* |
@@ -36658,6 +37347,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetKubeletConfig">resetKubeletConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetLinuxNodeConfig">resetLinuxNodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetLocalNvmeSsdBlockConfig">resetLocalNvmeSsdBlockConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetLocalSsdCount">resetLocalSsdCount</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetLoggingVariant">resetLoggingVariant</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetMachineType">resetMachineType</a></code> | *No description.* |
@@ -36900,6 +37590,18 @@ public void putLinuxNodeConfig(GoogleContainerClusterNodePoolNodeConfigLinuxNode
 
 ---
 
+##### `putLocalNvmeSsdBlockConfig` <a name="putLocalNvmeSsdBlockConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putLocalNvmeSsdBlockConfig"></a>
+
+```java
+public void putLocalNvmeSsdBlockConfig(GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putLocalNvmeSsdBlockConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig</a>
+
+---
+
 ##### `putReservationAffinity` <a name="putReservationAffinity" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putReservationAffinity"></a>
 
 ```java
@@ -37026,6 +37728,12 @@ public void resetLabels()
 public void resetLinuxNodeConfig()
 ```
 
+##### `resetLocalNvmeSsdBlockConfig` <a name="resetLocalNvmeSsdBlockConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetLocalNvmeSsdBlockConfig"></a>
+
+```java
+public void resetLocalNvmeSsdBlockConfig()
+```
+
 ##### `resetLocalSsdCount` <a name="resetLocalSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetLocalSsdCount"></a>
 
 ```java
@@ -37141,6 +37849,7 @@ public void resetWorkloadMetadataConfig()
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.gvnic">gvnic</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGvnicOutputReference">GoogleContainerClusterNodePoolNodeConfigGvnicOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.kubeletConfig">kubeletConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.linuxNodeConfig">linuxNodeConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.localNvmeSsdBlockConfig">localNvmeSsdBlockConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.reservationAffinity">reservationAffinity</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference">GoogleContainerClusterNodePoolNodeConfigReservationAffinityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.sandboxConfig">sandboxConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigSandboxConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.shieldedInstanceConfig">shieldedInstanceConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference</a></code> | *No description.* |
@@ -37157,6 +37866,7 @@ public void resetWorkloadMetadataConfig()
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.kubeletConfigInput">kubeletConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigKubeletConfig">GoogleContainerClusterNodePoolNodeConfigKubeletConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.linuxNodeConfigInput">linuxNodeConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig">GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.localNvmeSsdBlockConfigInput">localNvmeSsdBlockConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.localSsdCountInput">localSsdCountInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.loggingVariantInput">loggingVariantInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.machineTypeInput">machineTypeInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -37276,6 +37986,16 @@ public GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference ge
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference</a>
+
+---
+
+##### `localNvmeSsdBlockConfig`<sup>Required</sup> <a name="localNvmeSsdBlockConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.localNvmeSsdBlockConfig"></a>
+
+```java
+public GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference getLocalNvmeSsdBlockConfig();
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference</a>
 
 ---
 
@@ -37436,6 +38156,16 @@ public GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig getLinuxNodeConfi
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig">GoogleContainerClusterNodePoolNodeConfigLinuxNodeConfig</a>
+
+---
+
+##### `localNvmeSsdBlockConfigInput`<sup>Optional</sup> <a name="localNvmeSsdBlockConfigInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.localNvmeSsdBlockConfigInput"></a>
+
+```java
+public GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig getLocalNvmeSsdBlockConfigInput();
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig">GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig</a>
 
 ---
 

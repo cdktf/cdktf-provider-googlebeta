@@ -2144,7 +2144,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatast
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset.property.datasetId">DatasetId</a></code> | <code>*string</code> | Dataset ID in the format projects/{project}/datasets/{dataset_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset.property.datasetId">DatasetId</a></code> | <code>*string</code> | Dataset ID in the format projects/{project}/datasets/{dataset_id} or {project}:{dataset_id}. |
 
 ---
 
@@ -2156,7 +2156,7 @@ DatasetId *string
 
 - *Type:* *string
 
-Dataset ID in the format projects/{project}/datasets/{dataset_id}.
+Dataset ID in the format projects/{project}/datasets/{dataset_id} or {project}:{dataset_id}.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_stream#dataset_id GoogleDatastreamStream#dataset_id}
 
