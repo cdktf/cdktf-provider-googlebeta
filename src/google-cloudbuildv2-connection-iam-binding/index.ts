@@ -181,7 +181,7 @@ export class GoogleCloudbuildv2ConnectionIamBinding extends cdktf.TerraformResou
       terraformResourceType: 'google_cloudbuildv2_connection_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -642,7 +642,7 @@ export interface GoogleComputeInstanceTemplateDisk {
   */
   readonly diskName?: string;
   /**
-  * The size of the image in gigabytes. If not specified, it will inherit the size of its base image. For SCRATCH disks, the size must be exactly 375GB.
+  * The size of the image in gigabytes. If not specified, it will inherit the size of its base image. For SCRATCH disks, the size must be one of 375 or 3000 GB, with a default of 375 GB.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_template#disk_size_gb GoogleComputeInstanceTemplate#disk_size_gb}
   */
@@ -3175,7 +3175,7 @@ export class GoogleComputeInstanceTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

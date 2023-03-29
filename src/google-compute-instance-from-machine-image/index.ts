@@ -620,6 +620,11 @@ export class GoogleComputeInstanceFromMachineImageScratchDiskOutputReference ext
   public get interface() {
     return this.getStringAttribute('interface');
   }
+
+  // size - computed: true, optional: false, required: false
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
 }
 
 export class GoogleComputeInstanceFromMachineImageScratchDiskList extends cdktf.ComplexList {
@@ -2797,7 +2802,7 @@ export class GoogleComputeInstanceFromMachineImage extends cdktf.TerraformResour
       terraformResourceType: 'google_compute_instance_from_machine_image',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

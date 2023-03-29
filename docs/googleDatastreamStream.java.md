@@ -2372,7 +2372,7 @@ GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetData
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset.property.datasetId">datasetId</a></code> | <code>java.lang.String</code> | Dataset ID in the format projects/{project}/datasets/{dataset_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset.property.datasetId">datasetId</a></code> | <code>java.lang.String</code> | Dataset ID in the format projects/{project}/datasets/{dataset_id} or {project}:{dataset_id}. |
 
 ---
 
@@ -2384,7 +2384,7 @@ public java.lang.String getDatasetId();
 
 - *Type:* java.lang.String
 
-Dataset ID in the format projects/{project}/datasets/{dataset_id}.
+Dataset ID in the format projects/{project}/datasets/{dataset_id} or {project}:{dataset_id}.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_stream#dataset_id GoogleDatastreamStream#dataset_id}
 

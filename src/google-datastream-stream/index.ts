@@ -1838,7 +1838,8 @@ export class GoogleDatastreamStreamBackfillNoneOutputReference extends cdktf.Com
 }
 export interface GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset {
   /**
-  * Dataset ID in the format projects/{project}/datasets/{dataset_id}
+  * Dataset ID in the format projects/{project}/datasets/{dataset_id} or
+{project}:{dataset_id}
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_stream#dataset_id GoogleDatastreamStream#dataset_id}
   */
@@ -6736,7 +6737,7 @@ export class GoogleDatastreamStream extends cdktf.TerraformResource {
       terraformResourceType: 'google_datastream_stream',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

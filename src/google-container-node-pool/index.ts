@@ -1005,7 +1005,7 @@ export class GoogleContainerNodePoolNodeConfigTaintList extends cdktf.ComplexLis
 }
 export interface GoogleContainerNodePoolNodeConfigEphemeralStorageConfig {
   /**
-  * Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD is 375 GB in size.
+  * Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
   */
@@ -1408,6 +1408,70 @@ export class GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference ext
   // Temporarily expose input value. Use with caution.
   public get sysctlsInput() {
     return this._sysctls;
+  }
+}
+export interface GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig {
+  /**
+  * Number of raw-block local NVMe SSD disks to be attached to the node. Each local SSD is 375 GB in size.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
+  */
+  readonly localSsdCount: number;
+}
+
+export function googleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigToTerraform(struct?: GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference | GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    local_ssd_count: cdktf.numberToTerraform(struct!.localSsdCount),
+  }
+}
+
+export class GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._localSsdCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.localSsdCount = this._localSsdCount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._localSsdCount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._localSsdCount = value.localSsdCount;
+    }
+  }
+
+  // local_ssd_count - computed: false, optional: false, required: true
+  private _localSsdCount?: number; 
+  public get localSsdCount() {
+    return this.getNumberAttribute('local_ssd_count');
+  }
+  public set localSsdCount(value: number) {
+    this._localSsdCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localSsdCountInput() {
+    return this._localSsdCount;
   }
 }
 export interface GoogleContainerNodePoolNodeConfigReservationAffinity {
@@ -1902,6 +1966,12 @@ export interface GoogleContainerNodePoolNodeConfig {
   */
   readonly linuxNodeConfig?: GoogleContainerNodePoolNodeConfigLinuxNodeConfig;
   /**
+  * local_nvme_ssd_block_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#local_nvme_ssd_block_config GoogleContainerNodePool#local_nvme_ssd_block_config}
+  */
+  readonly localNvmeSsdBlockConfig?: GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig;
+  /**
   * reservation_affinity block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#reservation_affinity GoogleContainerNodePool#reservation_affinity}
@@ -1957,6 +2027,7 @@ export function googleContainerNodePoolNodeConfigToTerraform(struct?: GoogleCont
     gvnic: googleContainerNodePoolNodeConfigGvnicToTerraform(struct!.gvnic),
     kubelet_config: googleContainerNodePoolNodeConfigKubeletConfigToTerraform(struct!.kubeletConfig),
     linux_node_config: googleContainerNodePoolNodeConfigLinuxNodeConfigToTerraform(struct!.linuxNodeConfig),
+    local_nvme_ssd_block_config: googleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigToTerraform(struct!.localNvmeSsdBlockConfig),
     reservation_affinity: googleContainerNodePoolNodeConfigReservationAffinityToTerraform(struct!.reservationAffinity),
     sandbox_config: googleContainerNodePoolNodeConfigSandboxConfigToTerraform(struct!.sandboxConfig),
     shielded_instance_config: googleContainerNodePoolNodeConfigShieldedInstanceConfigToTerraform(struct!.shieldedInstanceConfig),
@@ -2074,6 +2145,10 @@ export class GoogleContainerNodePoolNodeConfigOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.linuxNodeConfig = this._linuxNodeConfig?.internalValue;
     }
+    if (this._localNvmeSsdBlockConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.localNvmeSsdBlockConfig = this._localNvmeSsdBlockConfig?.internalValue;
+    }
     if (this._reservationAffinity?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.reservationAffinity = this._reservationAffinity?.internalValue;
@@ -2120,6 +2195,7 @@ export class GoogleContainerNodePoolNodeConfigOutputReference extends cdktf.Comp
       this._gvnic.internalValue = undefined;
       this._kubeletConfig.internalValue = undefined;
       this._linuxNodeConfig.internalValue = undefined;
+      this._localNvmeSsdBlockConfig.internalValue = undefined;
       this._reservationAffinity.internalValue = undefined;
       this._sandboxConfig.internalValue = undefined;
       this._shieldedInstanceConfig.internalValue = undefined;
@@ -2151,6 +2227,7 @@ export class GoogleContainerNodePoolNodeConfigOutputReference extends cdktf.Comp
       this._gvnic.internalValue = value.gvnic;
       this._kubeletConfig.internalValue = value.kubeletConfig;
       this._linuxNodeConfig.internalValue = value.linuxNodeConfig;
+      this._localNvmeSsdBlockConfig.internalValue = value.localNvmeSsdBlockConfig;
       this._reservationAffinity.internalValue = value.reservationAffinity;
       this._sandboxConfig.internalValue = value.sandboxConfig;
       this._shieldedInstanceConfig.internalValue = value.shieldedInstanceConfig;
@@ -2540,6 +2617,22 @@ export class GoogleContainerNodePoolNodeConfigOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get linuxNodeConfigInput() {
     return this._linuxNodeConfig.internalValue;
+  }
+
+  // local_nvme_ssd_block_config - computed: false, optional: true, required: false
+  private _localNvmeSsdBlockConfig = new GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference(this, "local_nvme_ssd_block_config");
+  public get localNvmeSsdBlockConfig() {
+    return this._localNvmeSsdBlockConfig;
+  }
+  public putLocalNvmeSsdBlockConfig(value: GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig) {
+    this._localNvmeSsdBlockConfig.internalValue = value;
+  }
+  public resetLocalNvmeSsdBlockConfig() {
+    this._localNvmeSsdBlockConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localNvmeSsdBlockConfigInput() {
+    return this._localNvmeSsdBlockConfig.internalValue;
   }
 
   // reservation_affinity - computed: false, optional: true, required: false
@@ -3198,7 +3291,7 @@ export class GoogleContainerNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

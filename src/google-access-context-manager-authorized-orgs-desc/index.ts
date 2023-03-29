@@ -237,7 +237,7 @@ export class GoogleAccessContextManagerAuthorizedOrgsDesc extends cdktf.Terrafor
       terraformResourceType: 'google_access_context_manager_authorized_orgs_desc',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.58.0',
+        providerVersion: '4.59.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -332,8 +332,17 @@ export * as googleDataflowFlexTemplateJob from './google-dataflow-flex-template-
 export * as googleDataflowJob from './google-dataflow-job';
 export * as googleDataformRepository from './google-dataform-repository';
 export * as googleDataplexAsset from './google-dataplex-asset';
+export * as googleDataplexAssetIamBinding from './google-dataplex-asset-iam-binding';
+export * as googleDataplexAssetIamMember from './google-dataplex-asset-iam-member';
+export * as googleDataplexAssetIamPolicy from './google-dataplex-asset-iam-policy';
 export * as googleDataplexLake from './google-dataplex-lake';
+export * as googleDataplexLakeIamBinding from './google-dataplex-lake-iam-binding';
+export * as googleDataplexLakeIamMember from './google-dataplex-lake-iam-member';
+export * as googleDataplexLakeIamPolicy from './google-dataplex-lake-iam-policy';
 export * as googleDataplexZone from './google-dataplex-zone';
+export * as googleDataplexZoneIamBinding from './google-dataplex-zone-iam-binding';
+export * as googleDataplexZoneIamMember from './google-dataplex-zone-iam-member';
+export * as googleDataplexZoneIamPolicy from './google-dataplex-zone-iam-policy';
 export * as googleDataprocAutoscalingPolicy from './google-dataproc-autoscaling-policy';
 export * as googleDataprocAutoscalingPolicyIamBinding from './google-dataproc-autoscaling-policy-iam-binding';
 export * as googleDataprocAutoscalingPolicyIamMember from './google-dataproc-autoscaling-policy-iam-member';
@@ -538,6 +547,7 @@ export * as googleNetworkManagementConnectivityTest from './google-network-manag
 export * as googleNetworkServicesEdgeCacheKeyset from './google-network-services-edge-cache-keyset';
 export * as googleNetworkServicesEdgeCacheOrigin from './google-network-services-edge-cache-origin';
 export * as googleNetworkServicesEdgeCacheService from './google-network-services-edge-cache-service';
+export * as googleNetworkServicesGateway from './google-network-services-gateway';
 export * as googleNotebooksEnvironment from './google-notebooks-environment';
 export * as googleNotebooksInstance from './google-notebooks-instance';
 export * as googleNotebooksInstanceIamBinding from './google-notebooks-instance-iam-binding';
