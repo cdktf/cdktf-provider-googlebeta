@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlesccsourceiampolicy"
 
 googlesccsourceiampolicy.NewGoogleSccSourceIamPolicy(scope Construct, id *string, config GoogleSccSourceIamPolicyConfig) GoogleSccSourceIamPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlesccsourceiampolicy"
 
 googlesccsourceiampolicy.GoogleSccSourceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlesccsourceiampolicy"
 
 googlesccsourceiampolicy.GoogleSccSourceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ googlesccsourceiampolicy.GoogleSccSourceIamPolicy_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlesccsourceiampolicy"
 
 googlesccsourceiampolicy.GoogleSccSourceIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSccSourceIamPolicy.GoogleSccSourceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlesccsourceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlesccsourceiampolicy"
 
 &googlesccsourceiampolicy.GoogleSccSourceIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectiambinding"
 
 googleprojectiambinding.NewGoogleProjectIamBinding(scope Construct, id *string, config GoogleProjectIamBindingConfig) GoogleProjectIamBinding
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectiambinding"
 
 googleprojectiambinding.GoogleProjectIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectiambinding"
 
 googleprojectiambinding.GoogleProjectIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ googleprojectiambinding.GoogleProjectIamBinding_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectiambinding"
 
 googleprojectiambinding.GoogleProjectIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectiambinding"
 
 &googleprojectiambinding.GoogleProjectIamBindingCondition {
 	Expression: *string,
@@ -719,7 +719,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectiambinding"
 
 &googleprojectiambinding.GoogleProjectIamBindingConfig {
 	Connection: interface{},
@@ -732,7 +732,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectia
 	Members: *[]*string,
 	Project: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleProjectIamBinding.GoogleProjectIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleProjectIamBinding.GoogleProjectIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -898,7 +898,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectIamBinding.GoogleProjectIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectiambinding"
 
 googleprojectiambinding.NewGoogleProjectIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleProjectIamBindingConditionOutputReference
 ```
