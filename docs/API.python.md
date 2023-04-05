@@ -184,6 +184,7 @@ The following submodules are available:
 - [googleApigeeFlowhook](./googleApigeeFlowhook.python.md)
 - [googleApigeeInstance](./googleApigeeInstance.python.md)
 - [googleApigeeInstanceAttachment](./googleApigeeInstanceAttachment.python.md)
+- [googleApigeeKeystoresAliasesKeyCertFile](./googleApigeeKeystoresAliasesKeyCertFile.python.md)
 - [googleApigeeNatAddress](./googleApigeeNatAddress.python.md)
 - [googleApigeeOrganization](./googleApigeeOrganization.python.md)
 - [googleApigeeSharedflow](./googleApigeeSharedflow.python.md)

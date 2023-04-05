@@ -184,6 +184,7 @@ The following submodules are available:
 - [googleApigeeFlowhook](./googleApigeeFlowhook.typescript.md)
 - [googleApigeeInstance](./googleApigeeInstance.typescript.md)
 - [googleApigeeInstanceAttachment](./googleApigeeInstanceAttachment.typescript.md)
+- [googleApigeeKeystoresAliasesKeyCertFile](./googleApigeeKeystoresAliasesKeyCertFile.typescript.md)
 - [googleApigeeNatAddress](./googleApigeeNatAddress.typescript.md)
 - [googleApigeeOrganization](./googleApigeeOrganization.typescript.md)
 - [googleApigeeSharedflow](./googleApigeeSharedflow.typescript.md)
