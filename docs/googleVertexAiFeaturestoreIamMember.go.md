@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlevertexaifeaturestoreiammember"
 
 googlevertexaifeaturestoreiammember.NewGoogleVertexAiFeaturestoreIamMember(scope Construct, id *string, config GoogleVertexAiFeaturestoreIamMemberConfig) GoogleVertexAiFeaturestoreIamMember
 ```
@@ -307,7 +307,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlevertexaifeaturestoreiammember"
 
 googlevertexaifeaturestoreiammember.GoogleVertexAiFeaturestoreIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlevertexaifeaturestoreiammember"
 
 googlevertexaifeaturestoreiammember.GoogleVertexAiFeaturestoreIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googlevertexaifeaturestoreiammember.GoogleVertexAiFeaturestoreIamMember_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlevertexaifeaturestoreiammember"
 
 googlevertexaifeaturestoreiammember.GoogleVertexAiFeaturestoreIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlevertexaifeaturestoreiammember"
 
 &googlevertexaifeaturestoreiammember.GoogleVertexAiFeaturestoreIamMemberCondition {
 	Expression: *string,
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlevertexaifeaturestoreiammember"
 
 &googlevertexaifeaturestoreiammember.GoogleVertexAiFeaturestoreIamMemberConfig {
 	Connection: interface{},
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaif
 	Featurestore: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamMember.GoogleVertexAiFeaturestoreIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaifeaturestoreiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlevertexaifeaturestoreiammember"
 
 googlevertexaifeaturestoreiammember.NewGoogleVertexAiFeaturestoreIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeaturestoreIamMemberConditionOutputReference
 ```
