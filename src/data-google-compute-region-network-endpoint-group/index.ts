@@ -364,7 +364,7 @@ export class DataGoogleComputeRegionNetworkEndpointGroup extends cdktf.Terraform
       terraformResourceType: 'google_compute_region_network_endpoint_group',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -184,6 +184,7 @@ The following submodules are available:
 - [googleApigeeFlowhook](./googleApigeeFlowhook.csharp.md)
 - [googleApigeeInstance](./googleApigeeInstance.csharp.md)
 - [googleApigeeInstanceAttachment](./googleApigeeInstanceAttachment.csharp.md)
+- [googleApigeeKeystoresAliasesKeyCertFile](./googleApigeeKeystoresAliasesKeyCertFile.csharp.md)
 - [googleApigeeNatAddress](./googleApigeeNatAddress.csharp.md)
 - [googleApigeeOrganization](./googleApigeeOrganization.csharp.md)
 - [googleApigeeSharedflow](./googleApigeeSharedflow.csharp.md)

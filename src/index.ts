@@ -42,6 +42,7 @@ export * as googleApigeeEnvironmentIamPolicy from './google-apigee-environment-i
 export * as googleApigeeFlowhook from './google-apigee-flowhook';
 export * as googleApigeeInstance from './google-apigee-instance';
 export * as googleApigeeInstanceAttachment from './google-apigee-instance-attachment';
+export * as googleApigeeKeystoresAliasesKeyCertFile from './google-apigee-keystores-aliases-key-cert-file';
 export * as googleApigeeNatAddress from './google-apigee-nat-address';
 export * as googleApigeeOrganization from './google-apigee-organization';
 export * as googleApigeeSharedflow from './google-apigee-sharedflow';

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecontainerazureversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecontainerazureversions"
 
 datagooglecontainerazureversions.NewDataGoogleContainerAzureVersions(scope Construct, id *string, config DataGoogleContainerAzureVersionsConfig) DataGoogleContainerAzureVersions
 ```
@@ -287,7 +287,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecontainerazureversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecontainerazureversions"
 
 datagooglecontainerazureversions.DataGoogleContainerAzureVersions_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecontainerazureversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecontainerazureversions"
 
 datagooglecontainerazureversions.DataGoogleContainerAzureVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datagooglecontainerazureversions.DataGoogleContainerAzureVersions_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecontainerazureversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecontainerazureversions"
 
 datagooglecontainerazureversions.DataGoogleContainerAzureVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -598,7 +598,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleContainerAzureVersions.DataGoogleContainerAzureVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecontainerazureversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecontainerazureversions"
 
 &datagooglecontainerazureversions.DataGoogleContainerAzureVersionsConfig {
 	Connection: interface{},

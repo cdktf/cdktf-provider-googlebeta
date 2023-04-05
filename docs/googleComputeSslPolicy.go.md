@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesslpolicy"
 
 googlecomputesslpolicy.NewGoogleComputeSslPolicy(scope Construct, id *string, config GoogleComputeSslPolicyConfig) GoogleComputeSslPolicy
 ```
@@ -328,7 +328,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesslpolicy"
 
 googlecomputesslpolicy.GoogleComputeSslPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesslpolicy"
 
 googlecomputesslpolicy.GoogleComputeSslPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ googlecomputesslpolicy.GoogleComputeSslPolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesslpolicy"
 
 googlecomputesslpolicy.GoogleComputeSslPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -793,7 +793,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesslpolicy"
 
 &googlecomputesslpolicy.GoogleComputeSslPolicyConfig {
 	Connection: interface{},
@@ -810,7 +810,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomput
 	MinTlsVersion: *string,
 	Profile: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesslpolicy"
 
 &googlecomputesslpolicy.GoogleComputeSslPolicyTimeouts {
 	Create: *string,
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSslPolicy.GoogleComputeSslPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesslpolicy"
 
 googlecomputesslpolicy.NewGoogleComputeSslPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSslPolicyTimeoutsOutputReference
 ```

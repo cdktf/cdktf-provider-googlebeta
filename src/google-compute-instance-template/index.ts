@@ -3175,7 +3175,7 @@ export class GoogleComputeInstanceTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -3464,6 +3464,11 @@ export class GoogleComputeInstanceTemplate extends cdktf.TerraformResource {
   // self_link - computed: true, optional: false, required: false
   public get selfLink() {
     return this.getStringAttribute('self_link');
+  }
+
+  // self_link_unique - computed: true, optional: false, required: false
+  public get selfLinkUnique() {
+    return this.getStringAttribute('self_link_unique');
   }
 
   // tags - computed: false, optional: true, required: false

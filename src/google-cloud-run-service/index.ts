@@ -31,7 +31,7 @@ this field is set to false, the revision name will still autogenerate.)
   */
   readonly location: string;
   /**
-  * Name must be unique within a namespace, within a Cloud Run region.
+  * Name must be unique within a Google Cloud project and region.
 Is required when creating resources. Name is primarily intended
 for creation idempotence and configuration definition. Cannot be updated.
 More info: http://kubernetes.io/docs/user-guide/identifiers#names
@@ -254,7 +254,6 @@ Cloud Run (fully managed) uses the following annotation keys to configure featur
   * Map of string keys and values that can be used to organize and categorize
 (scope and select) objects. May match selectors of replication controllers
 and routes.
-More info: http://kubernetes.io/docs/user-guide/labels
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#labels GoogleCloudRunService#labels}
   */
@@ -395,8 +394,7 @@ export class GoogleCloudRunServiceMetadataOutputReference extends cdktf.ComplexO
 export interface GoogleCloudRunServiceTemplateMetadata {
   /**
   * Annotations is a key value map stored with a resource that
-may be set by external tools to store and retrieve arbitrary metadata. More
-info: http://kubernetes.io/docs/user-guide/annotations
+may be set by external tools to store and retrieve arbitrary metadata.
 
 **Note**: The Cloud Run API may add additional annotations that were not provided in your config.
 If terraform plan shows a diff where a server-side annotation is added, you can add it to your config
@@ -407,18 +405,15 @@ or apply the lifecycle.ignore_changes rule to the metadata.0.annotations field.
   readonly annotations?: { [key: string]: string };
   /**
   * Map of string keys and values that can be used to organize and categorize
-(scope and select) objects. May match selectors of replication controllers
-and routes.
-More info: http://kubernetes.io/docs/user-guide/labels
+(scope and select) objects.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#labels GoogleCloudRunService#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Name must be unique within a namespace, within a Cloud Run region.
+  * Name must be unique within a Google Cloud project and region.
 Is required when creating resources. Name is primarily intended
 for creation idempotence and configuration definition. Cannot be updated.
-More info: http://kubernetes.io/docs/user-guide/identifiers#names
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#name GoogleCloudRunService#name}
   */
@@ -746,14 +741,7 @@ export interface GoogleCloudRunServiceTemplateSpecContainersEnv {
   */
   readonly name?: string;
   /**
-  * Variable references $(VAR_NAME) are expanded
-using the previous defined environment variables in the container and
-any route environment variables. If a variable cannot be resolved,
-the reference in the input string will be unchanged. The $(VAR_NAME)
-syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped
-references will never be expanded, regardless of whether the variable
-exists or not.
-Defaults to "".
+  * Defaults to "".
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#value GoogleCloudRunService#value}
   */
@@ -905,8 +893,6 @@ export class GoogleCloudRunServiceTemplateSpecContainersEnvList extends cdktf.Co
 export interface GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefLocalObjectReference {
   /**
   * Name of the referent.
-More info:
-https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#name GoogleCloudRunService#name}
   */
@@ -1067,8 +1053,6 @@ export class GoogleCloudRunServiceTemplateSpecContainersEnvFromConfigMapRefOutpu
 export interface GoogleCloudRunServiceTemplateSpecContainersEnvFromSecretRefLocalObjectReference {
   /**
   * Name of the referent.
-More info:
-https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#name GoogleCloudRunService#name}
   */
@@ -2939,13 +2923,6 @@ export interface GoogleCloudRunServiceTemplateSpecContainers {
   /**
   * Arguments to the entrypoint.
 The docker image's CMD is used if this is not provided.
-Variable references $(VAR_NAME) are expanded using the container's
-environment. If a variable cannot be resolved, the reference in the input
-string will be unchanged. The $(VAR_NAME) syntax can be escaped with a
-double $$, ie: $$(VAR_NAME). Escaped references will never be expanded,
-regardless of whether the variable exists or not.
-More info:
-https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#args GoogleCloudRunService#args}
   */
@@ -2953,13 +2930,6 @@ https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument
   /**
   * Entrypoint array. Not executed within a shell.
 The docker image's ENTRYPOINT is used if this is not provided.
-Variable references $(VAR_NAME) are expanded using the container's
-environment. If a variable cannot be resolved, the reference in the input
-string will be unchanged. The $(VAR_NAME) syntax can be escaped with a
-double $$, ie: $$(VAR_NAME). Escaped references will never be expanded,
-regardless of whether the variable exists or not.
-More info:
-https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#command GoogleCloudRunService#command}
   */
@@ -2967,7 +2937,6 @@ https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument
   /**
   * Docker image name. This is most often a reference to a container located
 in the container registry, such as gcr.io/cloudrun/hello
-More info: https://kubernetes.io/docs/concepts/containers/images
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#image GoogleCloudRunService#image}
   */
@@ -4393,7 +4362,7 @@ export class GoogleCloudRunService extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_run_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

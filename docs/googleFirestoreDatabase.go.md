@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirestoredatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoredatabase"
 
 googlefirestoredatabase.NewGoogleFirestoreDatabase(scope Construct, id *string, config GoogleFirestoreDatabaseConfig) GoogleFirestoreDatabase
 ```
@@ -314,7 +314,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirestoredatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoredatabase"
 
 googlefirestoredatabase.GoogleFirestoreDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirestoredatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoredatabase"
 
 googlefirestoredatabase.GoogleFirestoreDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ googlefirestoredatabase.GoogleFirestoreDatabase_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirestoredatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoredatabase"
 
 googlefirestoredatabase.GoogleFirestoreDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirestoredatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoredatabase"
 
 &googlefirestoredatabase.GoogleFirestoreDatabaseConfig {
 	Connection: interface{},
@@ -785,7 +785,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirest
 	ConcurrencyMode: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleFirestoreDatabase.GoogleFirestoreDatabaseTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirestoreDatabase.GoogleFirestoreDatabaseTimeouts,
 }
 ```
 
@@ -801,7 +801,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirest
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseConfig.property.locationId">LocationId</a></code> | <code>*string</code> | The location of the database. Available databases are listed at https://cloud.google.com/firestore/docs/locations. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseConfig.property.name">Name</a></code> | <code>*string</code> | Required. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseConfig.property.name">Name</a></code> | <code>*string</code> | The ID to use for the database, which will become the final component of the database's resource name. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseConfig.property.type">Type</a></code> | <code>*string</code> | The type of the database. See https://cloud.google.com/datastore/docs/firestore-or-datastore for information about how to choose. Possible values: ["FIRESTORE_NATIVE", "DATASTORE_MODE"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseConfig.property.appEngineIntegrationMode">AppEngineIntegrationMode</a></code> | <code>*string</code> | The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseConfig.property.concurrencyMode">ConcurrencyMode</a></code> | <code>*string</code> | The concurrency control mode to use for this database. Possible values: ["OPTIMISTIC", "PESSIMISTIC", "OPTIMISTIC_WITH_ENTITY_GROUPS"]. |
@@ -903,10 +903,9 @@ Name *string
 
 - *Type:* *string
 
-Required.
+The ID to use for the database, which will become the final component of the database's resource name.
 
-The ID to use for the database, which will become the final
-component of the database's resource name. This value should be 4-63
+This value should be 4-63
 characters. Valid characters are /[a-z][0-9]-/ with first character
 a letter and the last a letter or a number. Must not be
 UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
@@ -1004,7 +1003,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirestoredatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoredatabase"
 
 &googlefirestoredatabase.GoogleFirestoreDatabaseTimeouts {
 	Create: *string,
@@ -1066,7 +1065,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirestoreDatabase.GoogleFirestoreDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirestoredatabase"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirestoredatabase"
 
 googlefirestoredatabase.NewGoogleFirestoreDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirestoreDatabaseTimeoutsOutputReference
 ```

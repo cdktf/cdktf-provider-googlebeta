@@ -54,7 +54,7 @@ export class DataGoogleFirebaseWebAppConfigA extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_firebase_web_app_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

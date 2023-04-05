@@ -3556,6 +3556,12 @@ export interface GoogleContainerClusterIpAllocationPolicy {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#services_secondary_range_name GoogleContainerCluster#services_secondary_range_name}
   */
   readonly servicesSecondaryRangeName?: string;
+  /**
+  * The IP Stack type of the cluster. Choose between IPV4 and IPV4_IPV6. Default type is IPV4 Only if not set
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#stack_type GoogleContainerCluster#stack_type}
+  */
+  readonly stackType?: string;
 }
 
 export function googleContainerClusterIpAllocationPolicyToTerraform(struct?: GoogleContainerClusterIpAllocationPolicyOutputReference | GoogleContainerClusterIpAllocationPolicy): any {
@@ -3568,6 +3574,7 @@ export function googleContainerClusterIpAllocationPolicyToTerraform(struct?: Goo
     cluster_secondary_range_name: cdktf.stringToTerraform(struct!.clusterSecondaryRangeName),
     services_ipv4_cidr_block: cdktf.stringToTerraform(struct!.servicesIpv4CidrBlock),
     services_secondary_range_name: cdktf.stringToTerraform(struct!.servicesSecondaryRangeName),
+    stack_type: cdktf.stringToTerraform(struct!.stackType),
   }
 }
 
@@ -3601,6 +3608,10 @@ export class GoogleContainerClusterIpAllocationPolicyOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.servicesSecondaryRangeName = this._servicesSecondaryRangeName;
     }
+    if (this._stackType !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.stackType = this._stackType;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -3611,6 +3622,7 @@ export class GoogleContainerClusterIpAllocationPolicyOutputReference extends cdk
       this._clusterSecondaryRangeName = undefined;
       this._servicesIpv4CidrBlock = undefined;
       this._servicesSecondaryRangeName = undefined;
+      this._stackType = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -3618,6 +3630,7 @@ export class GoogleContainerClusterIpAllocationPolicyOutputReference extends cdk
       this._clusterSecondaryRangeName = value.clusterSecondaryRangeName;
       this._servicesIpv4CidrBlock = value.servicesIpv4CidrBlock;
       this._servicesSecondaryRangeName = value.servicesSecondaryRangeName;
+      this._stackType = value.stackType;
     }
   }
 
@@ -3683,6 +3696,22 @@ export class GoogleContainerClusterIpAllocationPolicyOutputReference extends cdk
   // Temporarily expose input value. Use with caution.
   public get servicesSecondaryRangeNameInput() {
     return this._servicesSecondaryRangeName;
+  }
+
+  // stack_type - computed: false, optional: true, required: false
+  private _stackType?: string; 
+  public get stackType() {
+    return this.getStringAttribute('stack_type');
+  }
+  public set stackType(value: string) {
+    this._stackType = value;
+  }
+  public resetStackType() {
+    this._stackType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get stackTypeInput() {
+    return this._stackType;
   }
 }
 export interface GoogleContainerClusterLoggingConfig {
@@ -5420,6 +5449,70 @@ export class GoogleContainerClusterNodeConfigTaintList extends cdktf.ComplexList
     return new GoogleContainerClusterNodeConfigTaintOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleContainerClusterNodeConfigAdvancedMachineFeatures {
+  /**
+  * The number of threads per physical core. To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#threads_per_core GoogleContainerCluster#threads_per_core}
+  */
+  readonly threadsPerCore: number;
+}
+
+export function googleContainerClusterNodeConfigAdvancedMachineFeaturesToTerraform(struct?: GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference | GoogleContainerClusterNodeConfigAdvancedMachineFeatures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    threads_per_core: cdktf.numberToTerraform(struct!.threadsPerCore),
+  }
+}
+
+export class GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterNodeConfigAdvancedMachineFeatures | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._threadsPerCore !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.threadsPerCore = this._threadsPerCore;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNodeConfigAdvancedMachineFeatures | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._threadsPerCore = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._threadsPerCore = value.threadsPerCore;
+    }
+  }
+
+  // threads_per_core - computed: false, optional: false, required: true
+  private _threadsPerCore?: number; 
+  public get threadsPerCore() {
+    return this.getNumberAttribute('threads_per_core');
+  }
+  public set threadsPerCore(value: number) {
+    this._threadsPerCore = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get threadsPerCoreInput() {
+    return this._threadsPerCore;
+  }
+}
 export interface GoogleContainerClusterNodeConfigEphemeralStorageConfig {
   /**
   * Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
@@ -6353,6 +6446,12 @@ export interface GoogleContainerClusterNodeConfig {
   */
   readonly taint?: GoogleContainerClusterNodeConfigTaint[] | cdktf.IResolvable;
   /**
+  * advanced_machine_features block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#advanced_machine_features GoogleContainerCluster#advanced_machine_features}
+  */
+  readonly advancedMachineFeatures?: GoogleContainerClusterNodeConfigAdvancedMachineFeatures;
+  /**
   * ephemeral_storage_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#ephemeral_storage_config GoogleContainerCluster#ephemeral_storage_config}
@@ -6439,6 +6538,7 @@ export function googleContainerClusterNodeConfigToTerraform(struct?: GoogleConta
     spot: cdktf.booleanToTerraform(struct!.spot),
     tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
     taint: cdktf.listMapper(googleContainerClusterNodeConfigTaintToTerraform, false)(struct!.taint),
+    advanced_machine_features: googleContainerClusterNodeConfigAdvancedMachineFeaturesToTerraform(struct!.advancedMachineFeatures),
     ephemeral_storage_config: googleContainerClusterNodeConfigEphemeralStorageConfigToTerraform(struct!.ephemeralStorageConfig),
     gcfs_config: googleContainerClusterNodeConfigGcfsConfigToTerraform(struct!.gcfsConfig),
     gvnic: googleContainerClusterNodeConfigGvnicToTerraform(struct!.gvnic),
@@ -6542,6 +6642,10 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
       hasAnyValues = true;
       internalValueResult.taint = this._taint?.internalValue;
     }
+    if (this._advancedMachineFeatures?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.advancedMachineFeatures = this._advancedMachineFeatures?.internalValue;
+    }
     if (this._ephemeralStorageConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.ephemeralStorageConfig = this._ephemeralStorageConfig?.internalValue;
@@ -6607,6 +6711,7 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
       this._spot = undefined;
       this._tags = undefined;
       this._taint.internalValue = undefined;
+      this._advancedMachineFeatures.internalValue = undefined;
       this._ephemeralStorageConfig.internalValue = undefined;
       this._gcfsConfig.internalValue = undefined;
       this._gvnic.internalValue = undefined;
@@ -6639,6 +6744,7 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
       this._spot = value.spot;
       this._tags = value.tags;
       this._taint.internalValue = value.taint;
+      this._advancedMachineFeatures.internalValue = value.advancedMachineFeatures;
       this._ephemeralStorageConfig.internalValue = value.ephemeralStorageConfig;
       this._gcfsConfig.internalValue = value.gcfsConfig;
       this._gvnic.internalValue = value.gvnic;
@@ -6954,6 +7060,22 @@ export class GoogleContainerClusterNodeConfigOutputReference extends cdktf.Compl
   // Temporarily expose input value. Use with caution.
   public get taintInput() {
     return this._taint.internalValue;
+  }
+
+  // advanced_machine_features - computed: false, optional: true, required: false
+  private _advancedMachineFeatures = new GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference(this, "advanced_machine_features");
+  public get advancedMachineFeatures() {
+    return this._advancedMachineFeatures;
+  }
+  public putAdvancedMachineFeatures(value: GoogleContainerClusterNodeConfigAdvancedMachineFeatures) {
+    this._advancedMachineFeatures.internalValue = value;
+  }
+  public resetAdvancedMachineFeatures() {
+    this._advancedMachineFeatures.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get advancedMachineFeaturesInput() {
+    return this._advancedMachineFeatures.internalValue;
   }
 
   // ephemeral_storage_config - computed: false, optional: true, required: false
@@ -8002,6 +8124,70 @@ export class GoogleContainerClusterNodePoolNodeConfigTaintList extends cdktf.Com
     return new GoogleContainerClusterNodePoolNodeConfigTaintOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures {
+  /**
+  * The number of threads per physical core. To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#threads_per_core GoogleContainerCluster#threads_per_core}
+  */
+  readonly threadsPerCore: number;
+}
+
+export function googleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesToTerraform(struct?: GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference | GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    threads_per_core: cdktf.numberToTerraform(struct!.threadsPerCore),
+  }
+}
+
+export class GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._threadsPerCore !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.threadsPerCore = this._threadsPerCore;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._threadsPerCore = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._threadsPerCore = value.threadsPerCore;
+    }
+  }
+
+  // threads_per_core - computed: false, optional: false, required: true
+  private _threadsPerCore?: number; 
+  public get threadsPerCore() {
+    return this.getNumberAttribute('threads_per_core');
+  }
+  public set threadsPerCore(value: number) {
+    this._threadsPerCore = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get threadsPerCoreInput() {
+    return this._threadsPerCore;
+  }
+}
 export interface GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig {
   /**
   * Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
@@ -8935,6 +9121,12 @@ export interface GoogleContainerClusterNodePoolNodeConfig {
   */
   readonly taint?: GoogleContainerClusterNodePoolNodeConfigTaint[] | cdktf.IResolvable;
   /**
+  * advanced_machine_features block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#advanced_machine_features GoogleContainerCluster#advanced_machine_features}
+  */
+  readonly advancedMachineFeatures?: GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures;
+  /**
   * ephemeral_storage_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#ephemeral_storage_config GoogleContainerCluster#ephemeral_storage_config}
@@ -9021,6 +9213,7 @@ export function googleContainerClusterNodePoolNodeConfigToTerraform(struct?: Goo
     spot: cdktf.booleanToTerraform(struct!.spot),
     tags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tags),
     taint: cdktf.listMapper(googleContainerClusterNodePoolNodeConfigTaintToTerraform, false)(struct!.taint),
+    advanced_machine_features: googleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesToTerraform(struct!.advancedMachineFeatures),
     ephemeral_storage_config: googleContainerClusterNodePoolNodeConfigEphemeralStorageConfigToTerraform(struct!.ephemeralStorageConfig),
     gcfs_config: googleContainerClusterNodePoolNodeConfigGcfsConfigToTerraform(struct!.gcfsConfig),
     gvnic: googleContainerClusterNodePoolNodeConfigGvnicToTerraform(struct!.gvnic),
@@ -9124,6 +9317,10 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.taint = this._taint?.internalValue;
     }
+    if (this._advancedMachineFeatures?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.advancedMachineFeatures = this._advancedMachineFeatures?.internalValue;
+    }
     if (this._ephemeralStorageConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.ephemeralStorageConfig = this._ephemeralStorageConfig?.internalValue;
@@ -9189,6 +9386,7 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
       this._spot = undefined;
       this._tags = undefined;
       this._taint.internalValue = undefined;
+      this._advancedMachineFeatures.internalValue = undefined;
       this._ephemeralStorageConfig.internalValue = undefined;
       this._gcfsConfig.internalValue = undefined;
       this._gvnic.internalValue = undefined;
@@ -9221,6 +9419,7 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
       this._spot = value.spot;
       this._tags = value.tags;
       this._taint.internalValue = value.taint;
+      this._advancedMachineFeatures.internalValue = value.advancedMachineFeatures;
       this._ephemeralStorageConfig.internalValue = value.ephemeralStorageConfig;
       this._gcfsConfig.internalValue = value.gcfsConfig;
       this._gvnic.internalValue = value.gvnic;
@@ -9536,6 +9735,22 @@ export class GoogleContainerClusterNodePoolNodeConfigOutputReference extends cdk
   // Temporarily expose input value. Use with caution.
   public get taintInput() {
     return this._taint.internalValue;
+  }
+
+  // advanced_machine_features - computed: false, optional: true, required: false
+  private _advancedMachineFeatures = new GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference(this, "advanced_machine_features");
+  public get advancedMachineFeatures() {
+    return this._advancedMachineFeatures;
+  }
+  public putAdvancedMachineFeatures(value: GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures) {
+    this._advancedMachineFeatures.internalValue = value;
+  }
+  public resetAdvancedMachineFeatures() {
+    this._advancedMachineFeatures.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get advancedMachineFeaturesInput() {
+    return this._advancedMachineFeatures.internalValue;
   }
 
   // ephemeral_storage_config - computed: false, optional: true, required: false
@@ -12418,7 +12633,7 @@ export class GoogleContainerCluster extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.59.0',
+        providerVersion: '4.60.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
