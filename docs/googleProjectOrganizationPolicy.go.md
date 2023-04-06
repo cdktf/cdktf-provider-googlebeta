@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 googleprojectorganizationpolicy.NewGoogleProjectOrganizationPolicy(scope Construct, id *string, config GoogleProjectOrganizationPolicyConfig) GoogleProjectOrganizationPolicy
 ```
@@ -360,7 +360,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 googleprojectorganizationpolicy.GoogleProjectOrganizationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 googleprojectorganizationpolicy.GoogleProjectOrganizationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ googleprojectorganizationpolicy.GoogleProjectOrganizationPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 googleprojectorganizationpolicy.GoogleProjectOrganizationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -803,7 +803,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyBooleanPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 &googleprojectorganizationpolicy.GoogleProjectOrganizationPolicyBooleanPolicy {
 	Enforced: interface{},
@@ -837,7 +837,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 &googleprojectorganizationpolicy.GoogleProjectOrganizationPolicyConfig {
 	Connection: interface{},
@@ -849,11 +849,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojec
 	Provisioners: *[]interface{},
 	Constraint: *string,
 	Project: *string,
-	BooleanPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyBooleanPolicy,
+	BooleanPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyBooleanPolicy,
 	Id: *string,
-	ListPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicy,
-	RestorePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyRestorePolicy,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyTimeouts,
+	ListPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicy,
+	RestorePolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyRestorePolicy,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyTimeouts,
 	Version: *f64,
 }
 ```
@@ -1068,11 +1068,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 &googleprojectorganizationpolicy.GoogleProjectOrganizationPolicyListPolicy {
-	Allow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicyAllow,
-	Deny: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicyDeny,
+	Allow: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicyAllow,
+	Deny: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicyDeny,
 	InheritFromParent: interface{},
 	SuggestedValue: *string,
 }
@@ -1150,7 +1150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicyAllow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 &googleprojectorganizationpolicy.GoogleProjectOrganizationPolicyListPolicyAllow {
 	All: interface{},
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicyDeny.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 &googleprojectorganizationpolicy.GoogleProjectOrganizationPolicyListPolicyDeny {
 	All: interface{},
@@ -1250,7 +1250,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyRestorePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 &googleprojectorganizationpolicy.GoogleProjectOrganizationPolicyRestorePolicy {
 	Default: interface{},
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 &googleprojectorganizationpolicy.GoogleProjectOrganizationPolicyTimeouts {
 	Create: *string,
@@ -1360,7 +1360,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyBooleanPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 googleprojectorganizationpolicy.NewGoogleProjectOrganizationPolicyBooleanPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleProjectOrganizationPolicyBooleanPolicyOutputReference
 ```
@@ -1631,7 +1631,7 @@ func InternalValue() GoogleProjectOrganizationPolicyBooleanPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicyAllowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 googleprojectorganizationpolicy.NewGoogleProjectOrganizationPolicyListPolicyAllowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleProjectOrganizationPolicyListPolicyAllowOutputReference
 ```
@@ -1938,7 +1938,7 @@ func InternalValue() GoogleProjectOrganizationPolicyListPolicyAllow
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicyDenyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 googleprojectorganizationpolicy.NewGoogleProjectOrganizationPolicyListPolicyDenyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleProjectOrganizationPolicyListPolicyDenyOutputReference
 ```
@@ -2245,7 +2245,7 @@ func InternalValue() GoogleProjectOrganizationPolicyListPolicyDeny
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyListPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 googleprojectorganizationpolicy.NewGoogleProjectOrganizationPolicyListPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleProjectOrganizationPolicyListPolicyOutputReference
 ```
@@ -2636,7 +2636,7 @@ func InternalValue() GoogleProjectOrganizationPolicyListPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyRestorePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 googleprojectorganizationpolicy.NewGoogleProjectOrganizationPolicyRestorePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleProjectOrganizationPolicyRestorePolicyOutputReference
 ```
@@ -2907,7 +2907,7 @@ func InternalValue() GoogleProjectOrganizationPolicyRestorePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy.GoogleProjectOrganizationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprojectorganizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectorganizationpolicy"
 
 googleprojectorganizationpolicy.NewGoogleProjectOrganizationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleProjectOrganizationPolicyTimeoutsOutputReference
 ```

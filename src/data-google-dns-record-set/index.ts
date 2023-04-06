@@ -59,7 +59,7 @@ export class DataGoogleDnsRecordSet extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_dns_record_set',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.0',
+        providerVersion: '4.60.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

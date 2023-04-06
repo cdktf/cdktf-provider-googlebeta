@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogentrygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogentrygroupiampolicy"
 
 googledatacatalogentrygroupiampolicy.NewGoogleDataCatalogEntryGroupIamPolicy(scope Construct, id *string, config GoogleDataCatalogEntryGroupIamPolicyConfig) GoogleDataCatalogEntryGroupIamPolicy
 ```
@@ -287,7 +287,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogentrygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogentrygroupiampolicy"
 
 googledatacatalogentrygroupiampolicy.GoogleDataCatalogEntryGroupIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogentrygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogentrygroupiampolicy"
 
 googledatacatalogentrygroupiampolicy.GoogleDataCatalogEntryGroupIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ googledatacatalogentrygroupiampolicy.GoogleDataCatalogEntryGroupIamPolicy_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogentrygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogentrygroupiampolicy"
 
 googledatacatalogentrygroupiampolicy.GoogleDataCatalogEntryGroupIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataCatalogEntryGroupIamPolicy.GoogleDataCatalogEntryGroupIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogentrygroupiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogentrygroupiampolicy"
 
 &googledatacatalogentrygroupiampolicy.GoogleDataCatalogEntryGroupIamPolicyConfig {
 	Connection: interface{},

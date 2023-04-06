@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesnapshotiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshotiammember"
 
 googlecomputesnapshotiammember.NewGoogleComputeSnapshotIamMember(scope Construct, id *string, config GoogleComputeSnapshotIamMemberConfig) GoogleComputeSnapshotIamMember
 ```
@@ -300,7 +300,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesnapshotiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshotiammember"
 
 googlecomputesnapshotiammember.GoogleComputeSnapshotIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesnapshotiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshotiammember"
 
 googlecomputesnapshotiammember.GoogleComputeSnapshotIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ googlecomputesnapshotiammember.GoogleComputeSnapshotIamMember_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesnapshotiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshotiammember"
 
 googlecomputesnapshotiammember.GoogleComputeSnapshotIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -688,7 +688,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesnapshotiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshotiammember"
 
 &googlecomputesnapshotiammember.GoogleComputeSnapshotIamMemberCondition {
 	Expression: *string,
@@ -748,7 +748,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesnapshotiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshotiammember"
 
 &googlecomputesnapshotiammember.GoogleComputeSnapshotIamMemberConfig {
 	Connection: interface{},
@@ -761,7 +761,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomput
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSnapshotIamMember.GoogleComputeSnapshotIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesnapshotiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputesnapshotiammember"
 
 googlecomputesnapshotiammember.NewGoogleComputeSnapshotIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeSnapshotIamMemberConditionOutputReference
 ```

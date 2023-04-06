@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudget(scope Construct, id *string, config GoogleBillingBudgetConfig) GoogleBillingBudget
 ```
@@ -373,7 +373,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.GoogleBillingBudget_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.GoogleBillingBudget_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ googlebillingbudget.GoogleBillingBudget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.GoogleBillingBudget_IsTerraformResource(x interface{}) *bool
 ```
@@ -805,7 +805,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetAllUpdatesRule {
 	DisableDefaultIamRecipients: interface{},
@@ -895,11 +895,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAmount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetAmount {
 	LastPeriodAmount: interface{},
-	SpecifiedAmount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleBillingBudget.GoogleBillingBudgetAmountSpecifiedAmount,
+	SpecifiedAmount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetAmountSpecifiedAmount,
 }
 ```
 
@@ -948,7 +948,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAmountSpecifiedAmount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetAmountSpecifiedAmount {
 	CurrencyCode: *string,
@@ -1021,13 +1021,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetBudgetFilter {
 	CalendarPeriod: *string,
 	CreditTypes: *[]*string,
 	CreditTypesTreatment: *string,
-	CustomPeriod: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriod,
+	CustomPeriod: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriod,
 	Labels: *map[string]*string,
 	Projects: *[]*string,
 	Services: *[]*string,
@@ -1194,11 +1194,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetBudgetFilterCustomPeriod {
-	StartDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodStartDate,
-	EndDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodEndDate,
+	StartDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodStartDate,
+	EndDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodEndDate,
 }
 ```
 
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodEndDate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetBudgetFilterCustomPeriodEndDate {
 	Day: *f64,
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodStartDate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetBudgetFilterCustomPeriodStartDate {
 	Day: *f64,
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetConfig {
 	Connection: interface{},
@@ -1386,14 +1386,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillin
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Amount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleBillingBudget.GoogleBillingBudgetAmount,
+	Amount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetAmount,
 	BillingAccount: *string,
-	AllUpdatesRule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleBillingBudget.GoogleBillingBudgetAllUpdatesRule,
-	BudgetFilter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleBillingBudget.GoogleBillingBudgetBudgetFilter,
+	AllUpdatesRule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRule,
+	BudgetFilter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetBudgetFilter,
 	DisplayName: *string,
 	Id: *string,
 	ThresholdRules: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleBillingBudget.GoogleBillingBudgetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetTimeouts,
 }
 ```
 
@@ -1607,7 +1607,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetThresholdRules {
 	ThresholdPercent: *f64,
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetTimeouts {
 	Create: *string,
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetAllUpdatesRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetAllUpdatesRuleOutputReference
 ```
@@ -2087,7 +2087,7 @@ func InternalValue() GoogleBillingBudgetAllUpdatesRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAmountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetAmountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetAmountOutputReference
 ```
@@ -2407,7 +2407,7 @@ func InternalValue() GoogleBillingBudgetAmount
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAmountSpecifiedAmountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetAmountSpecifiedAmountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetAmountSpecifiedAmountOutputReference
 ```
@@ -2743,7 +2743,7 @@ func InternalValue() GoogleBillingBudgetAmountSpecifiedAmount
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference
 ```
@@ -3058,7 +3058,7 @@ func InternalValue() GoogleBillingBudgetBudgetFilterCustomPeriodEndDate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetBudgetFilterCustomPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetBudgetFilterCustomPeriodOutputReference
 ```
@@ -3384,7 +3384,7 @@ func InternalValue() GoogleBillingBudgetBudgetFilterCustomPeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodStartDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetBudgetFilterCustomPeriodStartDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetBudgetFilterCustomPeriodStartDateOutputReference
 ```
@@ -3699,7 +3699,7 @@ func InternalValue() GoogleBillingBudgetBudgetFilterCustomPeriodStartDate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetBudgetFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetBudgetFilterOutputReference
 ```
@@ -4193,7 +4193,7 @@ func InternalValue() GoogleBillingBudgetBudgetFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetThresholdRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleBillingBudgetThresholdRulesList
 ```
@@ -4336,7 +4336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetThresholdRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleBillingBudgetThresholdRulesOutputReference
 ```
@@ -4654,7 +4654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetTimeoutsOutputReference
 ```

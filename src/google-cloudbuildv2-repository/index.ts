@@ -186,7 +186,7 @@ export class GoogleCloudbuildv2Repository extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudbuildv2_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.0',
+        providerVersion: '4.60.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
