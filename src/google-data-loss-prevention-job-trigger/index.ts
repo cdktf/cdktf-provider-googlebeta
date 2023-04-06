@@ -2576,7 +2576,7 @@ export class GoogleDataLossPreventionJobTrigger extends cdktf.TerraformResource 
       terraformResourceType: 'google_data_loss_prevention_job_trigger',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.0',
+        providerVersion: '4.60.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

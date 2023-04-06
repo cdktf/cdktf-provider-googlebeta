@@ -162,7 +162,7 @@ export class GoogleLoggingOrganizationBucketConfig extends cdktf.TerraformResour
       terraformResourceType: 'google_logging_organization_bucket_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.0',
+        providerVersion: '4.60.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
