@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeAddress.DataGoogleComputeAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddress"
 
 datagooglecomputeaddress.NewDataGoogleComputeAddress(scope Construct, id *string, config DataGoogleComputeAddressConfig) DataGoogleComputeAddress
 ```
@@ -287,7 +287,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeAddress.DataGoogleComputeAddress.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddress"
 
 datagooglecomputeaddress.DataGoogleComputeAddress_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeAddress.DataGoogleComputeAddress.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddress"
 
 datagooglecomputeaddress.DataGoogleComputeAddress_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datagooglecomputeaddress.DataGoogleComputeAddress_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeAddress.DataGoogleComputeAddress.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddress"
 
 datagooglecomputeaddress.DataGoogleComputeAddress_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -708,7 +708,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeAddress.DataGoogleComputeAddressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddress"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddress"
 
 &datagooglecomputeaddress.DataGoogleComputeAddressConfig {
 	Connection: interface{},

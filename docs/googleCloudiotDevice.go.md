@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDevice(scope Construct, id *string, config GoogleCloudiotDeviceConfig) GoogleCloudiotDevice
 ```
@@ -354,7 +354,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.GoogleCloudiotDevice_IsConstruct(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.GoogleCloudiotDevice_IsTerraformElement(x interface{}) *bool
 ```
@@ -400,7 +400,7 @@ googlecloudiotdevice.GoogleCloudiotDevice_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.GoogleCloudiotDevice_IsTerraformResource(x interface{}) *bool
 ```
@@ -907,7 +907,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceConfig {
 	Connection: interface{},
@@ -921,11 +921,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotd
 	Registry: *string,
 	Blocked: interface{},
 	Credentials: interface{},
-	GatewayConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfig,
+	GatewayConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfig,
 	Id: *string,
 	LogLevel: *string,
 	Metadata: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts,
 }
 ```
 
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceConfigA {
 
@@ -1167,10 +1167,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotd
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceCredentials {
-	PublicKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKey,
+	PublicKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKey,
 	ExpirationTime: *string,
 }
 ```
@@ -1217,7 +1217,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceCredentialsPublicKey {
 	Format: *string,
@@ -1267,7 +1267,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceGatewayConfig {
 	GatewayAuthMethod: *string,
@@ -1317,7 +1317,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceLastErrorStatus {
 
@@ -1330,7 +1330,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotd
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceState {
 
@@ -1343,7 +1343,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotd
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceTimeouts {
 	Create: *string,
@@ -1405,7 +1405,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudiotDeviceConfigAList
 ```
@@ -1537,7 +1537,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudiotDeviceConfigAOutputReference
 ```
@@ -1848,7 +1848,7 @@ func InternalValue() GoogleCloudiotDeviceConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceCredentialsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudiotDeviceCredentialsList
 ```
@@ -1991,7 +1991,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudiotDeviceCredentialsOutputReference
 ```
@@ -2322,7 +2322,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceCredentialsPublicKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudiotDeviceCredentialsPublicKeyOutputReference
 ```
@@ -2615,7 +2615,7 @@ func InternalValue() GoogleCloudiotDeviceCredentialsPublicKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceGatewayConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudiotDeviceGatewayConfigOutputReference
 ```
@@ -2944,7 +2944,7 @@ func InternalValue() GoogleCloudiotDeviceGatewayConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceLastErrorStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudiotDeviceLastErrorStatusList
 ```
@@ -3076,7 +3076,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceLastErrorStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudiotDeviceLastErrorStatusOutputReference
 ```
@@ -3376,7 +3376,7 @@ func InternalValue() GoogleCloudiotDeviceLastErrorStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudiotDeviceStateList
 ```
@@ -3508,7 +3508,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudiotDeviceStateOutputReference
 ```
@@ -3797,7 +3797,7 @@ func InternalValue() GoogleCloudiotDeviceState
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudiotDeviceTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcareconsentstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcareconsentstoreiambinding"
 
 googlehealthcareconsentstoreiambinding.NewGoogleHealthcareConsentStoreIamBinding(scope Construct, id *string, config GoogleHealthcareConsentStoreIamBindingConfig) GoogleHealthcareConsentStoreIamBinding
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcareconsentstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcareconsentstoreiambinding"
 
 googlehealthcareconsentstoreiambinding.GoogleHealthcareConsentStoreIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcareconsentstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcareconsentstoreiambinding"
 
 googlehealthcareconsentstoreiambinding.GoogleHealthcareConsentStoreIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ googlehealthcareconsentstoreiambinding.GoogleHealthcareConsentStoreIamBinding_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcareconsentstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcareconsentstoreiambinding"
 
 googlehealthcareconsentstoreiambinding.GoogleHealthcareConsentStoreIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -681,7 +681,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcareconsentstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcareconsentstoreiambinding"
 
 &googlehealthcareconsentstoreiambinding.GoogleHealthcareConsentStoreIamBindingCondition {
 	Expression: *string,
@@ -741,7 +741,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcareconsentstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcareconsentstoreiambinding"
 
 &googlehealthcareconsentstoreiambinding.GoogleHealthcareConsentStoreIamBindingConfig {
 	Connection: interface{},
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcar
 	Dataset: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -934,7 +934,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamBinding.GoogleHealthcareConsentStoreIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcareconsentstoreiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcareconsentstoreiambinding"
 
 googlehealthcareconsentstoreiambinding.NewGoogleHealthcareConsentStoreIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleHealthcareConsentStoreIamBindingConditionOutputReference
 ```
