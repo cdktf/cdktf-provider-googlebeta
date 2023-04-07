@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprivatecacertificatetemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplateiambinding"
 
 googleprivatecacertificatetemplateiambinding.NewGooglePrivatecaCertificateTemplateIamBinding(scope Construct, id *string, config GooglePrivatecaCertificateTemplateIamBindingConfig) GooglePrivatecaCertificateTemplateIamBinding
 ```
@@ -307,7 +307,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprivatecacertificatetemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplateiambinding"
 
 googleprivatecacertificatetemplateiambinding.GooglePrivatecaCertificateTemplateIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprivatecacertificatetemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplateiambinding"
 
 googleprivatecacertificatetemplateiambinding.GooglePrivatecaCertificateTemplateIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googleprivatecacertificatetemplateiambinding.GooglePrivatecaCertificateTemplateI
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprivatecacertificatetemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplateiambinding"
 
 googleprivatecacertificatetemplateiambinding.GooglePrivatecaCertificateTemplateIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprivatecacertificatetemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplateiambinding"
 
 &googleprivatecacertificatetemplateiambinding.GooglePrivatecaCertificateTemplateIamBindingCondition {
 	Expression: *string,
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprivatecacertificatetemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplateiambinding"
 
 &googleprivatecacertificatetemplateiambinding.GooglePrivatecaCertificateTemplateIamBindingConfig {
 	Connection: interface{},
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprivat
 	CertificateTemplate: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamBinding.GooglePrivatecaCertificateTemplateIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleprivatecacertificatetemplateiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprivatecacertificatetemplateiambinding"
 
 googleprivatecacertificatetemplateiambinding.NewGooglePrivatecaCertificateTemplateIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplateIamBindingConditionOutputReference
 ```

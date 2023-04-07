@@ -46,7 +46,7 @@ export class DataGoogleBigqueryDefaultServiceAccount extends cdktf.TerraformData
       terraformResourceType: 'google_bigquery_default_service_account',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

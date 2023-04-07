@@ -54,7 +54,7 @@ export class GoogleComputeBackendServiceIamPolicy extends cdktf.TerraformResourc
       terraformResourceType: 'google_compute_backend_service_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

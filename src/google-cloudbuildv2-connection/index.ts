@@ -792,7 +792,7 @@ export class GoogleCloudbuildv2Connection extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudbuildv2_connection',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

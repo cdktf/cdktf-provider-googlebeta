@@ -475,7 +475,7 @@ export class GoogleNetworkServicesEdgeCacheKeyset extends cdktf.TerraformResourc
       terraformResourceType: 'google_network_services_edge_cache_keyset',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

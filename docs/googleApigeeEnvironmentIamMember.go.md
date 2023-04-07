@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigeeenvironmentiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiammember"
 
 googleapigeeenvironmentiammember.NewGoogleApigeeEnvironmentIamMember(scope Construct, id *string, config GoogleApigeeEnvironmentIamMemberConfig) GoogleApigeeEnvironmentIamMember
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigeeenvironmentiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiammember"
 
 googleapigeeenvironmentiammember.GoogleApigeeEnvironmentIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigeeenvironmentiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiammember"
 
 googleapigeeenvironmentiammember.GoogleApigeeEnvironmentIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ googleapigeeenvironmentiammember.GoogleApigeeEnvironmentIamMember_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigeeenvironmentiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiammember"
 
 googleapigeeenvironmentiammember.GoogleApigeeEnvironmentIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -681,7 +681,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigeeenvironmentiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiammember"
 
 &googleapigeeenvironmentiammember.GoogleApigeeEnvironmentIamMemberCondition {
 	Expression: *string,
@@ -741,7 +741,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigeeenvironmentiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiammember"
 
 &googleapigeeenvironmentiammember.GoogleApigeeEnvironmentIamMemberConfig {
 	Connection: interface{},
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigee
 	Member: *string,
 	OrgId: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -934,7 +934,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamMember.GoogleApigeeEnvironmentIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleapigeeenvironmentiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeenvironmentiammember"
 
 googleapigeeenvironmentiammember.NewGoogleApigeeEnvironmentIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeEnvironmentIamMemberConditionOutputReference
 ```

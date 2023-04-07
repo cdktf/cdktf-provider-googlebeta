@@ -62,7 +62,7 @@ export class GoogleDataplexZoneIamPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_zone_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

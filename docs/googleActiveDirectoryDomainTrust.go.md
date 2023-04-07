@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.NewGoogleActiveDirectoryDomainTrust(scope Construct, id *string, config GoogleActiveDirectoryDomainTrustConfig) GoogleActiveDirectoryDomainTrust
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrust_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrust_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrust_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrust.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrust_IsTerraformResource(x interface{}) *bool
 ```
@@ -772,7 +772,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 &googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrustConfig {
 	Connection: interface{},
@@ -791,7 +791,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleactive
 	Id: *string,
 	Project: *string,
 	SelectiveAuthentication: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustTimeouts,
 }
 ```
 
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 &googleactivedirectorydomaintrust.GoogleActiveDirectoryDomainTrustTimeouts {
 	Create: *string,
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleActiveDirectoryDomainTrust.GoogleActiveDirectoryDomainTrustTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleactivedirectorydomaintrust"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleactivedirectorydomaintrust"
 
 googleactivedirectorydomaintrust.NewGoogleActiveDirectoryDomainTrustTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleActiveDirectoryDomainTrustTimeoutsOutputReference
 ```

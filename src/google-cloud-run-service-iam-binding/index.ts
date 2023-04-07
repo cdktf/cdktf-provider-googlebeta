@@ -181,7 +181,7 @@ export class GoogleCloudRunServiceIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_run_service_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

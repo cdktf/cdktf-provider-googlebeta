@@ -47,7 +47,7 @@ export class DataGoogleDnsManagedZone extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_dns_managed_zone',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

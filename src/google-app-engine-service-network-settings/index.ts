@@ -260,7 +260,7 @@ export class GoogleAppEngineServiceNetworkSettings extends cdktf.TerraformResour
       terraformResourceType: 'google_app_engine_service_network_settings',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

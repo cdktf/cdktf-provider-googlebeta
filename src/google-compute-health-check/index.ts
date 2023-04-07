@@ -1765,7 +1765,7 @@ export class GoogleComputeHealthCheck extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_health_check',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
