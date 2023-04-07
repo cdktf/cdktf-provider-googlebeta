@@ -180,7 +180,7 @@ export class GoogleComputeRegionNetworkFirewallPolicyAssociation extends cdktf.T
       terraformResourceType: 'google_compute_region_network_firewall_policy_association',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

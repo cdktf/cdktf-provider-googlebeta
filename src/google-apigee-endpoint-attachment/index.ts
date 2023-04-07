@@ -175,7 +175,7 @@ export class GoogleApigeeEndpointAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_endpoint_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

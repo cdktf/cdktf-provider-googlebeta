@@ -339,7 +339,7 @@ export class GoogleDialogflowEntityType extends cdktf.TerraformResource {
       terraformResourceType: 'google_dialogflow_entity_type',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

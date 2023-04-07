@@ -177,7 +177,7 @@ export class GoogleVertexAiFeaturestoreEntitytypeIamMember extends cdktf.Terrafo
       terraformResourceType: 'google_vertex_ai_featurestore_entitytype_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

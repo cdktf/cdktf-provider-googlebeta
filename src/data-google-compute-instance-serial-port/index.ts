@@ -58,7 +58,7 @@ export class DataGoogleComputeInstanceSerialPort extends cdktf.TerraformDataSour
       terraformResourceType: 'google_compute_instance_serial_port',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

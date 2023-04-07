@@ -309,7 +309,7 @@ export class GoogleKmsKeyRingImportJob extends cdktf.TerraformResource {
       terraformResourceType: 'google_kms_key_ring_import_job',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

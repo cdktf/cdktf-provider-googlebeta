@@ -611,7 +611,7 @@ export class DataGoogleArtifactRegistryRepository extends cdktf.TerraformDataSou
       terraformResourceType: 'google_artifact_registry_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

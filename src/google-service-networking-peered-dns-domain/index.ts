@@ -207,7 +207,7 @@ export class GoogleServiceNetworkingPeeredDnsDomain extends cdktf.TerraformResou
       terraformResourceType: 'google_service_networking_peered_dns_domain',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

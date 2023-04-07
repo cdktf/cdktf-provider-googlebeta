@@ -1975,7 +1975,7 @@ export class GoogleComputeRegionInstanceGroupManager extends cdktf.TerraformReso
       terraformResourceType: 'google_compute_region_instance_group_manager',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

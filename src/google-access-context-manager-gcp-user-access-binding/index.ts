@@ -195,7 +195,7 @@ export class GoogleAccessContextManagerGcpUserAccessBinding extends cdktf.Terraf
       terraformResourceType: 'google_access_context_manager_gcp_user_access_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.1',
+        providerVersion: '4.60.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
