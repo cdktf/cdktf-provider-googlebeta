@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 googlecomputedisk.NewGoogleComputeDisk(scope Construct, id *string, config GoogleComputeDiskConfig) GoogleComputeDisk
 ```
@@ -451,7 +451,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 googlecomputedisk.GoogleComputeDisk_IsConstruct(x interface{}) *bool
 ```
@@ -483,7 +483,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 googlecomputedisk.GoogleComputeDisk_IsTerraformElement(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ googlecomputedisk.GoogleComputeDisk_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 googlecomputedisk.GoogleComputeDisk_IsTerraformResource(x interface{}) *bool
 ```
@@ -1235,7 +1235,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 &googlecomputedisk.GoogleComputeDiskConfig {
 	Connection: interface{},
@@ -1247,7 +1247,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedi
 	Provisioners: *[]interface{},
 	Name: *string,
 	Description: *string,
-	DiskEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeDisk.GoogleComputeDiskDiskEncryptionKey,
+	DiskEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeDisk.GoogleComputeDiskDiskEncryptionKey,
 	Id: *string,
 	Image: *string,
 	Interface: *string,
@@ -1260,9 +1260,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedi
 	Size: *f64,
 	Snapshot: *string,
 	SourceDisk: *string,
-	SourceImageEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeDisk.GoogleComputeDiskSourceImageEncryptionKey,
-	SourceSnapshotEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeDisk.GoogleComputeDiskSourceSnapshotEncryptionKey,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeDisk.GoogleComputeDiskTimeouts,
+	SourceImageEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeDisk.GoogleComputeDiskSourceImageEncryptionKey,
+	SourceSnapshotEncryptionKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeDisk.GoogleComputeDiskSourceSnapshotEncryptionKey,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeDisk.GoogleComputeDiskTimeouts,
 	Type: *string,
 	Zone: *string,
 }
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskDiskEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 &googlecomputedisk.GoogleComputeDiskDiskEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -1816,7 +1816,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskSourceImageEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 &googlecomputedisk.GoogleComputeDiskSourceImageEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -1890,7 +1890,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskSourceSnapshotEncryptionKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 &googlecomputedisk.GoogleComputeDiskSourceSnapshotEncryptionKey {
 	KmsKeySelfLink: *string,
@@ -1964,7 +1964,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 &googlecomputedisk.GoogleComputeDiskTimeouts {
 	Create: *string,
@@ -2026,7 +2026,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskDiskEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 googlecomputedisk.NewGoogleComputeDiskDiskEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeDiskDiskEncryptionKeyOutputReference
 ```
@@ -2402,7 +2402,7 @@ func InternalValue() GoogleComputeDiskDiskEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskSourceImageEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 googlecomputedisk.NewGoogleComputeDiskSourceImageEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeDiskSourceImageEncryptionKeyOutputReference
 ```
@@ -2749,7 +2749,7 @@ func InternalValue() GoogleComputeDiskSourceImageEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 googlecomputedisk.NewGoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeDiskSourceSnapshotEncryptionKeyOutputReference
 ```
@@ -3096,7 +3096,7 @@ func InternalValue() GoogleComputeDiskSourceSnapshotEncryptionKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputedisk"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputedisk"
 
 googlecomputedisk.NewGoogleComputeDiskTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeDiskTimeoutsOutputReference
 ```
