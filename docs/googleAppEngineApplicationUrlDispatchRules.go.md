@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappengineapplicationurldispatchrules"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineapplicationurldispatchrules"
 
 googleappengineapplicationurldispatchrules.NewGoogleAppEngineApplicationUrlDispatchRules(scope Construct, id *string, config GoogleAppEngineApplicationUrlDispatchRulesConfig) GoogleAppEngineApplicationUrlDispatchRules
 ```
@@ -313,7 +313,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappengineapplicationurldispatchrules"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineapplicationurldispatchrules"
 
 googleappengineapplicationurldispatchrules.GoogleAppEngineApplicationUrlDispatchRules_IsConstruct(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappengineapplicationurldispatchrules"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineapplicationurldispatchrules"
 
 googleappengineapplicationurldispatchrules.GoogleAppEngineApplicationUrlDispatchRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -359,7 +359,7 @@ googleappengineapplicationurldispatchrules.GoogleAppEngineApplicationUrlDispatch
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappengineapplicationurldispatchrules"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineapplicationurldispatchrules"
 
 googleappengineapplicationurldispatchrules.GoogleAppEngineApplicationUrlDispatchRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappengineapplicationurldispatchrules"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineapplicationurldispatchrules"
 
 &googleappengineapplicationurldispatchrules.GoogleAppEngineApplicationUrlDispatchRulesConfig {
 	Connection: interface{},
@@ -659,7 +659,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappeng
 	DispatchRules: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesTimeouts,
 }
 ```
 
@@ -811,7 +811,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesDispatchRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappengineapplicationurldispatchrules"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineapplicationurldispatchrules"
 
 &googleappengineapplicationurldispatchrules.GoogleAppEngineApplicationUrlDispatchRulesDispatchRules {
 	Path: *string,
@@ -886,7 +886,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappengineapplicationurldispatchrules"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineapplicationurldispatchrules"
 
 &googleappengineapplicationurldispatchrules.GoogleAppEngineApplicationUrlDispatchRulesTimeouts {
 	Create: *string,
@@ -948,7 +948,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappengineapplicationurldispatchrules"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineapplicationurldispatchrules"
 
 googleappengineapplicationurldispatchrules.NewGoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesList
 ```
@@ -1091,7 +1091,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappengineapplicationurldispatchrules"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineapplicationurldispatchrules"
 
 googleappengineapplicationurldispatchrules.NewGoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleAppEngineApplicationUrlDispatchRulesDispatchRulesOutputReference
 ```
@@ -1431,7 +1431,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAppEngineApplicationUrlDispatchRules.GoogleAppEngineApplicationUrlDispatchRulesTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleappengineapplicationurldispatchrules"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineapplicationurldispatchrules"
 
 googleappengineapplicationurldispatchrules.NewGoogleAppEngineApplicationUrlDispatchRulesTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAppEngineApplicationUrlDispatchRulesTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebooksruntimeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebooksruntimeiammember"
 
 googlenotebooksruntimeiammember.NewGoogleNotebooksRuntimeIamMember(scope Construct, id *string, config GoogleNotebooksRuntimeIamMemberConfig) GoogleNotebooksRuntimeIamMember
 ```
@@ -307,7 +307,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebooksruntimeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebooksruntimeiammember"
 
 googlenotebooksruntimeiammember.GoogleNotebooksRuntimeIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebooksruntimeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebooksruntimeiammember"
 
 googlenotebooksruntimeiammember.GoogleNotebooksRuntimeIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googlenotebooksruntimeiammember.GoogleNotebooksRuntimeIamMember_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebooksruntimeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebooksruntimeiammember"
 
 googlenotebooksruntimeiammember.GoogleNotebooksRuntimeIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebooksruntimeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebooksruntimeiammember"
 
 &googlenotebooksruntimeiammember.GoogleNotebooksRuntimeIamMemberCondition {
 	Expression: *string,
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebooksruntimeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebooksruntimeiammember"
 
 &googlenotebooksruntimeiammember.GoogleNotebooksRuntimeIamMemberConfig {
 	Connection: interface{},
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebo
 	Member: *string,
 	Role: *string,
 	RuntimeName: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember.GoogleNotebooksRuntimeIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebooksruntimeiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebooksruntimeiammember"
 
 googlenotebooksruntimeiammember.NewGoogleNotebooksRuntimeIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksRuntimeIamMemberConditionOutputReference
 ```

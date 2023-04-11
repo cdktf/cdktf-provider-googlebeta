@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleactivefolder"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleactivefolder"
 
 datagoogleactivefolder.NewDataGoogleActiveFolder(scope Construct, id *string, config DataGoogleActiveFolderConfig) DataGoogleActiveFolder
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleactivefolder"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleactivefolder"
 
 datagoogleactivefolder.DataGoogleActiveFolder_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleactivefolder"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleactivefolder"
 
 datagoogleactivefolder.DataGoogleActiveFolder_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagoogleactivefolder.DataGoogleActiveFolder_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolder.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleactivefolder"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleactivefolder"
 
 datagoogleactivefolder.DataGoogleActiveFolder_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleActiveFolder.DataGoogleActiveFolderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleactivefolder"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleactivefolder"
 
 &datagoogleactivefolder.DataGoogleActiveFolderConfig {
 	Connection: interface{},

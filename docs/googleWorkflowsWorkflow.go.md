@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkflowsworkflow"
 
 googleworkflowsworkflow.NewGoogleWorkflowsWorkflow(scope Construct, id *string, config GoogleWorkflowsWorkflowConfig) GoogleWorkflowsWorkflow
 ```
@@ -349,7 +349,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkflowsworkflow"
 
 googleworkflowsworkflow.GoogleWorkflowsWorkflow_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkflowsworkflow"
 
 googleworkflowsworkflow.GoogleWorkflowsWorkflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ googleworkflowsworkflow.GoogleWorkflowsWorkflow_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkflowsworkflow"
 
 googleworkflowsworkflow.GoogleWorkflowsWorkflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -858,7 +858,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkflowsworkflow"
 
 &googleworkflowsworkflow.GoogleWorkflowsWorkflowConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleworkfl
 	Region: *string,
 	ServiceAccount: *string,
 	SourceContents: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeouts,
 }
 ```
 
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkflowsworkflow"
 
 &googleworkflowsworkflow.GoogleWorkflowsWorkflowTimeouts {
 	Create: *string,
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow.GoogleWorkflowsWorkflowTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleworkflowsworkflow"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkflowsworkflow"
 
 googleworkflowsworkflow.NewGoogleWorkflowsWorkflowTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkflowsWorkflowTimeoutsOutputReference
 ```

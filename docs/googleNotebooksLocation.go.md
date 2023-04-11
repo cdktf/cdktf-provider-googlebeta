@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebookslocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebookslocation"
 
 googlenotebookslocation.NewGoogleNotebooksLocation(scope Construct, id *string, config GoogleNotebooksLocationConfig) GoogleNotebooksLocation
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebookslocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebookslocation"
 
 googlenotebookslocation.GoogleNotebooksLocation_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebookslocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebookslocation"
 
 googlenotebookslocation.GoogleNotebooksLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googlenotebookslocation.GoogleNotebooksLocation_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebookslocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebookslocation"
 
 googlenotebookslocation.GoogleNotebooksLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -651,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebookslocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebookslocation"
 
 &googlenotebookslocation.GoogleNotebooksLocationConfig {
 	Connection: interface{},
@@ -664,7 +664,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebo
 	Id: *string,
 	Name: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleNotebooksLocation.GoogleNotebooksLocationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleNotebooksLocation.GoogleNotebooksLocationTimeouts,
 }
 ```
 
@@ -816,7 +816,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebookslocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebookslocation"
 
 &googlenotebookslocation.GoogleNotebooksLocationTimeouts {
 	Create: *string,
@@ -878,7 +878,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlenotebookslocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenotebookslocation"
 
 googlenotebookslocation.NewGoogleNotebooksLocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksLocationTimeoutsOutputReference
 ```

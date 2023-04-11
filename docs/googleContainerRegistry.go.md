@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainerregistry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainerregistry"
 
 googlecontainerregistry.NewGoogleContainerRegistry(scope Construct, id *string, config GoogleContainerRegistryConfig) GoogleContainerRegistry
 ```
@@ -287,7 +287,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainerregistry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainerregistry"
 
 googlecontainerregistry.GoogleContainerRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainerregistry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainerregistry"
 
 googlecontainerregistry.GoogleContainerRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ googlecontainerregistry.GoogleContainerRegistry_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainerregistry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainerregistry"
 
 googlecontainerregistry.GoogleContainerRegistry_IsTerraformResource(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainerregistry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainerregistry"
 
 &googlecontainerregistry.GoogleContainerRegistryConfig {
 	Connection: interface{},

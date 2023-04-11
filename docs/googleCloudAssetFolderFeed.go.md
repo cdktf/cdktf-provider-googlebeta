@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 googlecloudassetfolderfeed.NewGoogleCloudAssetFolderFeed(scope Construct, id *string, config GoogleCloudAssetFolderFeedConfig) GoogleCloudAssetFolderFeed
 ```
@@ -347,7 +347,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 googlecloudassetfolderfeed.GoogleCloudAssetFolderFeed_IsConstruct(x interface{}) *bool
 ```
@@ -379,7 +379,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 googlecloudassetfolderfeed.GoogleCloudAssetFolderFeed_IsTerraformElement(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ googlecloudassetfolderfeed.GoogleCloudAssetFolderFeed_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 googlecloudassetfolderfeed.GoogleCloudAssetFolderFeed_IsTerraformResource(x interface{}) *bool
 ```
@@ -834,7 +834,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 &googlecloudassetfolderfeed.GoogleCloudAssetFolderFeedCondition {
 	Expression: *string,
@@ -919,7 +919,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 &googlecloudassetfolderfeed.GoogleCloudAssetFolderFeedConfig {
 	Connection: interface{},
@@ -931,14 +931,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleclouda
 	Provisioners: *[]interface{},
 	BillingProject: *string,
 	FeedId: *string,
-	FeedOutputConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfig,
+	FeedOutputConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfig,
 	Folder: *string,
 	AssetNames: *[]*string,
 	AssetTypes: *[]*string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedCondition,
 	ContentType: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedTimeouts,
 }
 ```
 
@@ -1198,10 +1198,10 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 &googlecloudassetfolderfeed.GoogleCloudAssetFolderFeedFeedOutputConfig {
-	PubsubDestination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestination,
+	PubsubDestination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestination,
 }
 ```
 
@@ -1232,7 +1232,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 &googlecloudassetfolderfeed.GoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestination {
 	Topic: *string,
@@ -1266,7 +1266,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 &googlecloudassetfolderfeed.GoogleCloudAssetFolderFeedTimeouts {
 	Create: *string,
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 googlecloudassetfolderfeed.NewGoogleCloudAssetFolderFeedConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudAssetFolderFeedConditionOutputReference
 ```
@@ -1686,7 +1686,7 @@ func InternalValue() GoogleCloudAssetFolderFeedCondition
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 googlecloudassetfolderfeed.NewGoogleCloudAssetFolderFeedFeedOutputConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudAssetFolderFeedFeedOutputConfigOutputReference
 ```
@@ -1970,7 +1970,7 @@ func InternalValue() GoogleCloudAssetFolderFeedFeedOutputConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 googlecloudassetfolderfeed.NewGoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference
 ```
@@ -2241,7 +2241,7 @@ func InternalValue() GoogleCloudAssetFolderFeedFeedOutputConfigPubsubDestination
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeedTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecloudassetfolderfeed"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudassetfolderfeed"
 
 googlecloudassetfolderfeed.NewGoogleCloudAssetFolderFeedTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudAssetFolderFeedTimeoutsOutputReference
 ```

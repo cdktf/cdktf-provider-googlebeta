@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleiapbrand"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapbrand"
 
 googleiapbrand.NewGoogleIapBrand(scope Construct, id *string, config GoogleIapBrandConfig) GoogleIapBrand
 ```
@@ -300,7 +300,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleiapbrand"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapbrand"
 
 googleiapbrand.GoogleIapBrand_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleiapbrand"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapbrand"
 
 googleiapbrand.GoogleIapBrand_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ googleiapbrand.GoogleIapBrand_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleiapbrand"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapbrand"
 
 googleiapbrand.GoogleIapBrand_IsTerraformResource(x interface{}) *bool
 ```
@@ -677,7 +677,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleiapbrand"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapbrand"
 
 &googleiapbrand.GoogleIapBrandConfig {
 	Connection: interface{},
@@ -691,7 +691,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleiapbra
 	SupportEmail: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleIapBrand.GoogleIapBrandTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleIapBrand.GoogleIapBrandTimeouts,
 }
 ```
 
@@ -864,7 +864,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleiapbrand"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapbrand"
 
 &googleiapbrand.GoogleIapBrandTimeouts {
 	Create: *string,
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleiapbrand"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapbrand"
 
 googleiapbrand.NewGoogleIapBrandTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIapBrandTimeoutsOutputReference
 ```

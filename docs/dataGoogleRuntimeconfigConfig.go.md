@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleruntimeconfigconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleruntimeconfigconfig"
 
 datagoogleruntimeconfigconfig.NewDataGoogleRuntimeconfigConfig(scope Construct, id *string, config DataGoogleRuntimeconfigConfigConfig) DataGoogleRuntimeconfigConfig
 ```
@@ -280,7 +280,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleruntimeconfigconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleruntimeconfigconfig"
 
 datagoogleruntimeconfigconfig.DataGoogleRuntimeconfigConfig_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleruntimeconfigconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleruntimeconfigconfig"
 
 datagoogleruntimeconfigconfig.DataGoogleRuntimeconfigConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datagoogleruntimeconfigconfig.DataGoogleRuntimeconfigConfig_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleruntimeconfigconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleruntimeconfigconfig"
 
 datagoogleruntimeconfigconfig.DataGoogleRuntimeconfigConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -580,7 +580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleruntimeconfigconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleruntimeconfigconfig"
 
 &datagoogleruntimeconfigconfig.DataGoogleRuntimeconfigConfigConfig {
 	Connection: interface{},

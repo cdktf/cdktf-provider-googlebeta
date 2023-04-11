@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmscryptokeyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiampolicy"
 
 googlekmscryptokeyiampolicy.NewGoogleKmsCryptoKeyIamPolicy(scope Construct, id *string, config GoogleKmsCryptoKeyIamPolicyConfig) GoogleKmsCryptoKeyIamPolicy
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmscryptokeyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiampolicy"
 
 googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmscryptokeyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiampolicy"
 
 googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmscryptokeyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiampolicy"
 
 googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmscryptokeyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiampolicy"
 
 &googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicyConfig {
 	Connection: interface{},

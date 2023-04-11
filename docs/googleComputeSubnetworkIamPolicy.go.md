@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputesubnetworkiampolicy"
 
 googlecomputesubnetworkiampolicy.NewGoogleComputeSubnetworkIamPolicy(scope Construct, id *string, config GoogleComputeSubnetworkIamPolicyConfig) GoogleComputeSubnetworkIamPolicy
 ```
@@ -287,7 +287,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputesubnetworkiampolicy"
 
 googlecomputesubnetworkiampolicy.GoogleComputeSubnetworkIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputesubnetworkiampolicy"
 
 googlecomputesubnetworkiampolicy.GoogleComputeSubnetworkIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ googlecomputesubnetworkiampolicy.GoogleComputeSubnetworkIamPolicy_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputesubnetworkiampolicy"
 
 googlecomputesubnetworkiampolicy.GoogleComputeSubnetworkIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeSubnetworkIamPolicy.GoogleComputeSubnetworkIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputesubnetworkiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputesubnetworkiampolicy"
 
 &googlecomputesubnetworkiampolicy.GoogleComputeSubnetworkIamPolicyConfig {
 	Connection: interface{},
