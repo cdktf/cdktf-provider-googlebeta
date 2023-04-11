@@ -33,8 +33,7 @@ export interface GoogleApigeeSharedflowConfig extends cdktf.TerraformMetaArgumen
   */
   readonly name: string;
   /**
-  * The Apigee Organization associated with the Apigee instance,
-in the format 'organizations/{{org_name}}'.
+  * The Apigee Organization name associated with the Apigee instance.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_sharedflow#org_id GoogleApigeeSharedflow#org_id}
   */
@@ -276,7 +275,7 @@ export class GoogleApigeeSharedflow extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_sharedflow',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

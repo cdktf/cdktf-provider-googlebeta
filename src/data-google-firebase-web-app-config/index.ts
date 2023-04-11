@@ -8,13 +8,6 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleFirebaseWebAppConfigAConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_web_app_config#id DataGoogleFirebaseWebAppConfigA#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The project id of the Firebase web App.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_web_app_config#project DataGoogleFirebaseWebAppConfigA#project}
@@ -54,7 +47,7 @@ export class DataGoogleFirebaseWebAppConfigA extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_firebase_web_app_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -65,7 +58,6 @@ export class DataGoogleFirebaseWebAppConfigA extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
-    this._id = config.id;
     this._project = config.project;
     this._webAppId = config.webAppId;
   }
@@ -89,20 +81,9 @@ export class DataGoogleFirebaseWebAppConfigA extends cdktf.TerraformDataSource {
     return this.getStringAttribute('database_url');
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // location_id - computed: true, optional: false, required: false
@@ -160,7 +141,6 @@ export class DataGoogleFirebaseWebAppConfigA extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      id: cdktf.stringToTerraform(this._id),
       project: cdktf.stringToTerraform(this._project),
       web_app_id: cdktf.stringToTerraform(this._webAppId),
     };

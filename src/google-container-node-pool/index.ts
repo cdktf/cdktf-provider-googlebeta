@@ -1131,6 +1131,70 @@ export class GoogleContainerNodePoolNodeConfigEphemeralStorageConfigOutputRefere
     return this._localSsdCount;
   }
 }
+export interface GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig {
+  /**
+  * Number of local SSDs to use to back ephemeral storage. Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#local_ssd_count GoogleContainerNodePool#local_ssd_count}
+  */
+  readonly localSsdCount: number;
+}
+
+export function googleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigToTerraform(struct?: GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference | GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    local_ssd_count: cdktf.numberToTerraform(struct!.localSsdCount),
+  }
+}
+
+export class GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._localSsdCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.localSsdCount = this._localSsdCount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._localSsdCount = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._localSsdCount = value.localSsdCount;
+    }
+  }
+
+  // local_ssd_count - computed: false, optional: false, required: true
+  private _localSsdCount?: number; 
+  public get localSsdCount() {
+    return this.getNumberAttribute('local_ssd_count');
+  }
+  public set localSsdCount(value: number) {
+    this._localSsdCount = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get localSsdCountInput() {
+    return this._localSsdCount;
+  }
+}
 export interface GoogleContainerNodePoolNodeConfigGcfsConfig {
   /**
   * Whether or not GCFS is enabled
@@ -2012,6 +2076,12 @@ export interface GoogleContainerNodePoolNodeConfig {
   */
   readonly ephemeralStorageConfig?: GoogleContainerNodePoolNodeConfigEphemeralStorageConfig;
   /**
+  * ephemeral_storage_local_ssd_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#ephemeral_storage_local_ssd_config GoogleContainerNodePool#ephemeral_storage_local_ssd_config}
+  */
+  readonly ephemeralStorageLocalSsdConfig?: GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig;
+  /**
   * gcfs_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_node_pool#gcfs_config GoogleContainerNodePool#gcfs_config}
@@ -2094,6 +2164,7 @@ export function googleContainerNodePoolNodeConfigToTerraform(struct?: GoogleCont
     taint: cdktf.listMapper(googleContainerNodePoolNodeConfigTaintToTerraform, false)(struct!.taint),
     advanced_machine_features: googleContainerNodePoolNodeConfigAdvancedMachineFeaturesToTerraform(struct!.advancedMachineFeatures),
     ephemeral_storage_config: googleContainerNodePoolNodeConfigEphemeralStorageConfigToTerraform(struct!.ephemeralStorageConfig),
+    ephemeral_storage_local_ssd_config: googleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigToTerraform(struct!.ephemeralStorageLocalSsdConfig),
     gcfs_config: googleContainerNodePoolNodeConfigGcfsConfigToTerraform(struct!.gcfsConfig),
     gvnic: googleContainerNodePoolNodeConfigGvnicToTerraform(struct!.gvnic),
     kubelet_config: googleContainerNodePoolNodeConfigKubeletConfigToTerraform(struct!.kubeletConfig),
@@ -2204,6 +2275,10 @@ export class GoogleContainerNodePoolNodeConfigOutputReference extends cdktf.Comp
       hasAnyValues = true;
       internalValueResult.ephemeralStorageConfig = this._ephemeralStorageConfig?.internalValue;
     }
+    if (this._ephemeralStorageLocalSsdConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.ephemeralStorageLocalSsdConfig = this._ephemeralStorageLocalSsdConfig?.internalValue;
+    }
     if (this._gcfsConfig?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.gcfsConfig = this._gcfsConfig?.internalValue;
@@ -2267,6 +2342,7 @@ export class GoogleContainerNodePoolNodeConfigOutputReference extends cdktf.Comp
       this._taint.internalValue = undefined;
       this._advancedMachineFeatures.internalValue = undefined;
       this._ephemeralStorageConfig.internalValue = undefined;
+      this._ephemeralStorageLocalSsdConfig.internalValue = undefined;
       this._gcfsConfig.internalValue = undefined;
       this._gvnic.internalValue = undefined;
       this._kubeletConfig.internalValue = undefined;
@@ -2300,6 +2376,7 @@ export class GoogleContainerNodePoolNodeConfigOutputReference extends cdktf.Comp
       this._taint.internalValue = value.taint;
       this._advancedMachineFeatures.internalValue = value.advancedMachineFeatures;
       this._ephemeralStorageConfig.internalValue = value.ephemeralStorageConfig;
+      this._ephemeralStorageLocalSsdConfig.internalValue = value.ephemeralStorageLocalSsdConfig;
       this._gcfsConfig.internalValue = value.gcfsConfig;
       this._gvnic.internalValue = value.gvnic;
       this._kubeletConfig.internalValue = value.kubeletConfig;
@@ -2646,6 +2723,22 @@ export class GoogleContainerNodePoolNodeConfigOutputReference extends cdktf.Comp
   // Temporarily expose input value. Use with caution.
   public get ephemeralStorageConfigInput() {
     return this._ephemeralStorageConfig.internalValue;
+  }
+
+  // ephemeral_storage_local_ssd_config - computed: false, optional: true, required: false
+  private _ephemeralStorageLocalSsdConfig = new GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference(this, "ephemeral_storage_local_ssd_config");
+  public get ephemeralStorageLocalSsdConfig() {
+    return this._ephemeralStorageLocalSsdConfig;
+  }
+  public putEphemeralStorageLocalSsdConfig(value: GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig) {
+    this._ephemeralStorageLocalSsdConfig.internalValue = value;
+  }
+  public resetEphemeralStorageLocalSsdConfig() {
+    this._ephemeralStorageLocalSsdConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ephemeralStorageLocalSsdConfigInput() {
+    return this._ephemeralStorageLocalSsdConfig.internalValue;
   }
 
   // gcfs_config - computed: false, optional: true, required: false
@@ -3384,7 +3477,7 @@ export class GoogleContainerNodePool extends cdktf.TerraformResource {
       terraformResourceType: 'google_container_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

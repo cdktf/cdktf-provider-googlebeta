@@ -173,7 +173,7 @@ export class GoogleHealthcareDicomStoreIamBinding extends cdktf.TerraformResourc
       terraformResourceType: 'google_healthcare_dicom_store_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

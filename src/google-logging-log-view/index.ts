@@ -39,7 +39,7 @@ export interface GoogleLoggingLogViewConfig extends cdktf.TerraformMetaArguments
   */
   readonly location?: string;
   /**
-  * The resource name of the view. For example: `projects/my-project/locations/global/buckets/my-bucket/views/my-view`
+  * The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_log_view#name GoogleLoggingLogView#name}
   */
@@ -213,7 +213,7 @@ export class GoogleLoggingLogView extends cdktf.TerraformResource {
       terraformResourceType: 'google_logging_log_view',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

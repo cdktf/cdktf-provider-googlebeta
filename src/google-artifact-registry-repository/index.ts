@@ -72,6 +72,12 @@ and dashes.
   */
   readonly repositoryId: string;
   /**
+  * docker_config block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#docker_config GoogleArtifactRegistryRepository#docker_config}
+  */
+  readonly dockerConfig?: GoogleArtifactRegistryRepositoryDockerConfig;
+  /**
   * maven_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#maven_config GoogleArtifactRegistryRepository#maven_config}
@@ -95,6 +101,73 @@ and dashes.
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#virtual_repository_config GoogleArtifactRegistryRepository#virtual_repository_config}
   */
   readonly virtualRepositoryConfig?: GoogleArtifactRegistryRepositoryVirtualRepositoryConfig;
+}
+export interface GoogleArtifactRegistryRepositoryDockerConfig {
+  /**
+  * The repository which enabled this flag prevents all tags from being modified, moved or deleted. This does not prevent tags from being created.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#immutable_tags GoogleArtifactRegistryRepository#immutable_tags}
+  */
+  readonly immutableTags?: boolean | cdktf.IResolvable;
+}
+
+export function googleArtifactRegistryRepositoryDockerConfigToTerraform(struct?: GoogleArtifactRegistryRepositoryDockerConfigOutputReference | GoogleArtifactRegistryRepositoryDockerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    immutable_tags: cdktf.booleanToTerraform(struct!.immutableTags),
+  }
+}
+
+export class GoogleArtifactRegistryRepositoryDockerConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleArtifactRegistryRepositoryDockerConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._immutableTags !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.immutableTags = this._immutableTags;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleArtifactRegistryRepositoryDockerConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._immutableTags = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._immutableTags = value.immutableTags;
+    }
+  }
+
+  // immutable_tags - computed: false, optional: true, required: false
+  private _immutableTags?: boolean | cdktf.IResolvable; 
+  public get immutableTags() {
+    return this.getBooleanAttribute('immutable_tags');
+  }
+  public set immutableTags(value: boolean | cdktf.IResolvable) {
+    this._immutableTags = value;
+  }
+  public resetImmutableTags() {
+    this._immutableTags = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get immutableTagsInput() {
+    return this._immutableTags;
+  }
 }
 export interface GoogleArtifactRegistryRepositoryMavenConfig {
   /**
@@ -1028,7 +1101,7 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
       terraformResourceType: 'google_artifact_registry_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -1048,6 +1121,7 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
     this._mode = config.mode;
     this._project = config.project;
     this._repositoryId = config.repositoryId;
+    this._dockerConfig.internalValue = config.dockerConfig;
     this._mavenConfig.internalValue = config.mavenConfig;
     this._remoteRepositoryConfig.internalValue = config.remoteRepositoryConfig;
     this._timeouts.internalValue = config.timeouts;
@@ -1211,6 +1285,22 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
     return this.getStringAttribute('update_time');
   }
 
+  // docker_config - computed: false, optional: true, required: false
+  private _dockerConfig = new GoogleArtifactRegistryRepositoryDockerConfigOutputReference(this, "docker_config");
+  public get dockerConfig() {
+    return this._dockerConfig;
+  }
+  public putDockerConfig(value: GoogleArtifactRegistryRepositoryDockerConfig) {
+    this._dockerConfig.internalValue = value;
+  }
+  public resetDockerConfig() {
+    this._dockerConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dockerConfigInput() {
+    return this._dockerConfig.internalValue;
+  }
+
   // maven_config - computed: false, optional: true, required: false
   private _mavenConfig = new GoogleArtifactRegistryRepositoryMavenConfigOutputReference(this, "maven_config");
   public get mavenConfig() {
@@ -1290,6 +1380,7 @@ export class GoogleArtifactRegistryRepository extends cdktf.TerraformResource {
       mode: cdktf.stringToTerraform(this._mode),
       project: cdktf.stringToTerraform(this._project),
       repository_id: cdktf.stringToTerraform(this._repositoryId),
+      docker_config: googleArtifactRegistryRepositoryDockerConfigToTerraform(this._dockerConfig.internalValue),
       maven_config: googleArtifactRegistryRepositoryMavenConfigToTerraform(this._mavenConfig.internalValue),
       remote_repository_config: googleArtifactRegistryRepositoryRemoteRepositoryConfigToTerraform(this._remoteRepositoryConfig.internalValue),
       timeouts: googleArtifactRegistryRepositoryTimeoutsToTerraform(this._timeouts.internalValue),

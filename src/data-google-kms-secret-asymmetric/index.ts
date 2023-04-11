@@ -60,7 +60,7 @@ export class DataGoogleKmsSecretAsymmetric extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_kms_secret_asymmetric',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

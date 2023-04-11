@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddresses"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.NewDataGoogleComputeAddresses(scope Construct, id *string, config DataGoogleComputeAddressesConfig) DataGoogleComputeAddresses
 ```
@@ -294,7 +294,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddresses.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddresses"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.DataGoogleComputeAddresses_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddresses.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddresses"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.DataGoogleComputeAddresses_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ datagooglecomputeaddresses.DataGoogleComputeAddresses_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddresses.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddresses"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.DataGoogleComputeAddresses_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddresses.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddresses"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddresses"
 
 &datagooglecomputeaddresses.DataGoogleComputeAddressesAddresses {
 
@@ -629,7 +629,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagoogleco
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddresses"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddresses"
 
 &datagooglecomputeaddresses.DataGoogleComputeAddressesConfig {
 	Connection: interface{},
@@ -820,7 +820,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddresses"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.NewDataGoogleComputeAddressesAddressesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeAddressesAddressesList
 ```
@@ -952,7 +952,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeAddresses.DataGoogleComputeAddressesAddressesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglecomputeaddresses"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeaddresses"
 
 datagooglecomputeaddresses.NewDataGoogleComputeAddressesAddressesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeAddressesAddressesOutputReference
 ```
