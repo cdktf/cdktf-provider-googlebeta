@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 googledatacatalogtaxonomy.NewGoogleDataCatalogTaxonomy(scope Construct, id *string, config GoogleDataCatalogTaxonomyConfig) GoogleDataCatalogTaxonomy
 ```
@@ -321,7 +321,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 googledatacatalogtaxonomy.GoogleDataCatalogTaxonomy_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 googledatacatalogtaxonomy.GoogleDataCatalogTaxonomy_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ googledatacatalogtaxonomy.GoogleDataCatalogTaxonomy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 googledatacatalogtaxonomy.GoogleDataCatalogTaxonomy_IsTerraformResource(x interface{}) *bool
 ```
@@ -731,7 +731,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 &googledatacatalogtaxonomy.GoogleDataCatalogTaxonomyConfig {
 	Connection: interface{},
@@ -747,7 +747,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledataca
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts,
 }
 ```
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 &googledatacatalogtaxonomy.GoogleDataCatalogTaxonomyTimeouts {
 	Create: *string,
@@ -1017,7 +1017,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 googledatacatalogtaxonomy.NewGoogleDataCatalogTaxonomyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataCatalogTaxonomyTimeoutsOutputReference
 ```
