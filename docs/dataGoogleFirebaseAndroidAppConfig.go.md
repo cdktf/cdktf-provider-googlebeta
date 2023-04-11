@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidAppConfig.DataGoogleFirebaseAndroidAppConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefirebaseandroidappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseandroidappconfig"
 
 datagooglefirebaseandroidappconfig.NewDataGoogleFirebaseAndroidAppConfigA(scope Construct, id *string, config DataGoogleFirebaseAndroidAppConfigAConfig) DataGoogleFirebaseAndroidAppConfigA
 ```
@@ -273,7 +273,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidAppConfig.DataGoogleFirebaseAndroidAppConfigA.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefirebaseandroidappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseandroidappconfig"
 
 datagooglefirebaseandroidappconfig.DataGoogleFirebaseAndroidAppConfigA_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidAppConfig.DataGoogleFirebaseAndroidAppConfigA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefirebaseandroidappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseandroidappconfig"
 
 datagooglefirebaseandroidappconfig.DataGoogleFirebaseAndroidAppConfigA_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagooglefirebaseandroidappconfig.DataGoogleFirebaseAndroidAppConfigA_IsTerrafo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidAppConfig.DataGoogleFirebaseAndroidAppConfigA.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefirebaseandroidappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseandroidappconfig"
 
 datagooglefirebaseandroidappconfig.DataGoogleFirebaseAndroidAppConfigA_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleFirebaseAndroidAppConfig.DataGoogleFirebaseAndroidAppConfigAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglefirebaseandroidappconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefirebaseandroidappconfig"
 
 &datagooglefirebaseandroidappconfig.DataGoogleFirebaseAndroidAppConfigAConfig {
 	Connection: interface{},
