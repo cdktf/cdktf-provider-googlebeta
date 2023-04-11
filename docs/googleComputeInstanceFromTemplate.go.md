@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplate(scope Construct, id *string, config GoogleComputeInstanceFromTemplateConfig) GoogleComputeInstanceFromTemplate
 ```
@@ -645,7 +645,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -677,7 +677,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -691,7 +691,7 @@ googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplate_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -1671,7 +1671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAdvancedMachineFeatures.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateAdvancedMachineFeatures {
 	EnableNestedVirtualization: interface{},
@@ -1741,7 +1741,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAttachedDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateAttachedDisk {
 	DeviceName: *string,
@@ -1843,13 +1843,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateBootDisk {
 	AutoDelete: interface{},
 	DeviceName: *string,
 	DiskEncryptionKeyRaw: *string,
-	InitializeParams: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskInitializeParams,
+	InitializeParams: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskInitializeParams,
 	KmsKeySelfLink: *string,
 	Mode: *string,
 	Source: *string,
@@ -1977,7 +1977,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskInitializeParams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateBootDiskInitializeParams {
 	Image: *string,
@@ -2059,7 +2059,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateConfidentialInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateConfidentialInstanceConfig {
 	EnableConfidentialCompute: interface{},
@@ -2093,7 +2093,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateConfig {
 	Connection: interface{},
@@ -2105,12 +2105,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputein
 	Provisioners: *[]interface{},
 	Name: *string,
 	SourceInstanceTemplate: *string,
-	AdvancedMachineFeatures: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAdvancedMachineFeatures,
+	AdvancedMachineFeatures: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAdvancedMachineFeatures,
 	AllowStoppingForUpdate: interface{},
 	AttachedDisk: interface{},
-	BootDisk: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDisk,
+	BootDisk: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDisk,
 	CanIpForward: interface{},
-	ConfidentialInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateConfidentialInstanceConfig,
+	ConfidentialInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateConfidentialInstanceConfig,
 	DeletionProtection: interface{},
 	Description: *string,
 	DesiredStatus: *string,
@@ -2124,16 +2124,16 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputein
 	MetadataStartupScript: *string,
 	MinCpuPlatform: *string,
 	NetworkInterface: interface{},
-	NetworkPerformanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkPerformanceConfig,
+	NetworkPerformanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkPerformanceConfig,
 	Project: *string,
-	ReservationAffinity: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateReservationAffinity,
+	ReservationAffinity: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateReservationAffinity,
 	ResourcePolicies: *[]*string,
-	Scheduling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateScheduling,
+	Scheduling: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateScheduling,
 	ScratchDisk: interface{},
 	ServiceAccount: interface{},
-	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateShieldedInstanceConfig,
+	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateShieldedInstanceConfig,
 	Tags: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateTimeouts,
 	Zone: *string,
 }
 ```
@@ -2718,7 +2718,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateGuestAccelerator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateGuestAccelerator {
 	Count: *f64,
@@ -2764,7 +2764,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterface.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateNetworkInterface {
 	AccessConfig: interface{},
@@ -2946,7 +2946,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfig {
 	NatIp: *string,
@@ -3006,7 +3006,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRange {
 	IpCidrRange: *string,
@@ -3052,7 +3052,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfig {
 	NetworkTier: *string,
@@ -3104,7 +3104,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkPerformanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateNetworkPerformanceConfig {
 	TotalEgressBandwidthTier: *string,
@@ -3138,11 +3138,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateReservationAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateReservationAffinity {
 	Type: *string,
-	SpecificReservation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateReservationAffinitySpecificReservation,
+	SpecificReservation: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateReservationAffinitySpecificReservation,
 }
 ```
 
@@ -3188,7 +3188,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateReservationAffinitySpecificReservation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateReservationAffinitySpecificReservation {
 	Key: *string,
@@ -3240,13 +3240,13 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateScheduling.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateScheduling {
 	AutomaticRestart: interface{},
 	InstanceTerminationAction: *string,
 	MaintenanceInterval: *string,
-	MaxRunDuration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingMaxRunDuration,
+	MaxRunDuration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingMaxRunDuration,
 	MinNodeCpus: *f64,
 	NodeAffinities: interface{},
 	OnHostMaintenance: *string,
@@ -3400,7 +3400,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingMaxRunDuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateSchedulingMaxRunDuration {
 	Seconds: *f64,
@@ -3454,7 +3454,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingNodeAffinities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateSchedulingNodeAffinities {
 	Key: *string,
@@ -3514,7 +3514,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateScratchDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateScratchDisk {
 	Interface: *string,
@@ -3560,7 +3560,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateServiceAccount {
 	Email: *string,
@@ -3606,7 +3606,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateShieldedInstanceConfig {
 	EnableIntegrityMonitoring: interface{},
@@ -3672,7 +3672,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 &googlecomputeinstancefromtemplate.GoogleComputeInstanceFromTemplateTimeouts {
 	Create: *string,
@@ -3734,7 +3734,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference
 ```
@@ -4070,7 +4070,7 @@ func InternalValue() GoogleComputeInstanceFromTemplateAdvancedMachineFeatures
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAttachedDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateAttachedDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceFromTemplateAttachedDiskList
 ```
@@ -4213,7 +4213,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateAttachedDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateAttachedDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromTemplateAttachedDiskOutputReference
 ```
@@ -4654,7 +4654,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference
 ```
@@ -5019,7 +5019,7 @@ func InternalValue() GoogleComputeInstanceFromTemplateBootDiskInitializeParams
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateBootDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateBootDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateBootDiskOutputReference
 ```
@@ -5495,7 +5495,7 @@ func InternalValue() GoogleComputeInstanceFromTemplateBootDisk
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateConfidentialInstanceConfigOutputReference
 ```
@@ -5766,7 +5766,7 @@ func InternalValue() GoogleComputeInstanceFromTemplateConfidentialInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateGuestAcceleratorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateGuestAcceleratorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceFromTemplateGuestAcceleratorList
 ```
@@ -5909,7 +5909,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateGuestAcceleratorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateGuestAcceleratorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromTemplateGuestAcceleratorOutputReference
 ```
@@ -6234,7 +6234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigList
 ```
@@ -6377,7 +6377,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromTemplateNetworkInterfaceAccessConfigOutputReference
 ```
@@ -6731,7 +6731,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeList
 ```
@@ -6874,7 +6874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromTemplateNetworkInterfaceAliasIpRangeOutputReference
 ```
@@ -7199,7 +7199,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigList
 ```
@@ -7342,7 +7342,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromTemplateNetworkInterfaceIpv6AccessConfigOutputReference
 ```
@@ -7682,7 +7682,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateNetworkInterfaceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceFromTemplateNetworkInterfaceList
 ```
@@ -7825,7 +7825,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference
 ```
@@ -8443,7 +8443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateNetworkPerformanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateNetworkPerformanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateNetworkPerformanceConfigOutputReference
 ```
@@ -8714,7 +8714,7 @@ func InternalValue() GoogleComputeInstanceFromTemplateNetworkPerformanceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateReservationAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateReservationAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateReservationAffinityOutputReference
 ```
@@ -9027,7 +9027,7 @@ func InternalValue() GoogleComputeInstanceFromTemplateReservationAffinity
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateReservationAffinitySpecificReservationOutputReference
 ```
@@ -9320,7 +9320,7 @@ func InternalValue() GoogleComputeInstanceFromTemplateReservationAffinitySpecifi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingMaxRunDurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateSchedulingMaxRunDurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateSchedulingMaxRunDurationOutputReference
 ```
@@ -9620,7 +9620,7 @@ func InternalValue() GoogleComputeInstanceFromTemplateSchedulingMaxRunDuration
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesList
 ```
@@ -9763,7 +9763,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference
 ```
@@ -10096,7 +10096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateSchedulingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateSchedulingOutputReference
 ```
@@ -10632,7 +10632,7 @@ func InternalValue() GoogleComputeInstanceFromTemplateScheduling
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateScratchDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateScratchDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceFromTemplateScratchDiskList
 ```
@@ -10775,7 +10775,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateScratchDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateScratchDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromTemplateScratchDiskOutputReference
 ```
@@ -11100,7 +11100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateServiceAccountList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateServiceAccountList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeInstanceFromTemplateServiceAccountList
 ```
@@ -11243,7 +11243,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateServiceAccountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateServiceAccountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromTemplateServiceAccountOutputReference
 ```
@@ -11568,7 +11568,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateShieldedInstanceConfigOutputReference
 ```
@@ -11904,7 +11904,7 @@ func InternalValue() GoogleComputeInstanceFromTemplateShieldedInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeinstancefromtemplate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancefromtemplate"
 
 googlecomputeinstancefromtemplate.NewGoogleComputeInstanceFromTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateTimeoutsOutputReference
 ```

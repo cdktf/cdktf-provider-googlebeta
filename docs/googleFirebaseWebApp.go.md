@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasewebapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirebasewebapp"
 
 googlefirebasewebapp.NewGoogleFirebaseWebApp(scope Construct, id *string, config GoogleFirebaseWebAppConfig) GoogleFirebaseWebApp
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasewebapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirebasewebapp"
 
 googlefirebasewebapp.GoogleFirebaseWebApp_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasewebapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirebasewebapp"
 
 googlefirebasewebapp.GoogleFirebaseWebApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googlefirebasewebapp.GoogleFirebaseWebApp_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasewebapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirebasewebapp"
 
 googlefirebasewebapp.GoogleFirebaseWebApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -695,7 +695,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasewebapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirebasewebapp"
 
 &googlefirebasewebapp.GoogleFirebaseWebAppConfig {
 	Connection: interface{},
@@ -709,7 +709,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasew
 	DeletionPolicy: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts,
 }
 ```
 
@@ -879,7 +879,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasewebapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirebasewebapp"
 
 &googlefirebasewebapp.GoogleFirebaseWebAppTimeouts {
 	Create: *string,
@@ -941,7 +941,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasewebapp"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlefirebasewebapp"
 
 googlefirebasewebapp.NewGoogleFirebaseWebAppTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseWebAppTimeoutsOutputReference
 ```

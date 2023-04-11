@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshubdataexchangeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebigqueryanalyticshubdataexchangeiambinding"
 
 googlebigqueryanalyticshubdataexchangeiambinding.NewGoogleBigqueryAnalyticsHubDataExchangeIamBinding(scope Construct, id *string, config GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig) GoogleBigqueryAnalyticsHubDataExchangeIamBinding
 ```
@@ -307,7 +307,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshubdataexchangeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebigqueryanalyticshubdataexchangeiambinding"
 
 googlebigqueryanalyticshubdataexchangeiambinding.GoogleBigqueryAnalyticsHubDataExchangeIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshubdataexchangeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebigqueryanalyticshubdataexchangeiambinding"
 
 googlebigqueryanalyticshubdataexchangeiambinding.GoogleBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googlebigqueryanalyticshubdataexchangeiambinding.GoogleBigqueryAnalyticsHubDataE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshubdataexchangeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebigqueryanalyticshubdataexchangeiambinding"
 
 googlebigqueryanalyticshubdataexchangeiambinding.GoogleBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshubdataexchangeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebigqueryanalyticshubdataexchangeiambinding"
 
 &googlebigqueryanalyticshubdataexchangeiambinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition {
 	Expression: *string,
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshubdataexchangeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebigqueryanalyticshubdataexchangeiambinding"
 
 &googlebigqueryanalyticshubdataexchangeiambinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig {
 	Connection: interface{},
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerya
 	DataExchangeId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryanalyticshubdataexchangeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlebigqueryanalyticshubdataexchangeiambinding"
 
 googlebigqueryanalyticshubdataexchangeiambinding.NewGoogleBigqueryAnalyticsHubDataExchangeIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryAnalyticsHubDataExchangeIamBindingConditionOutputReference
 ```

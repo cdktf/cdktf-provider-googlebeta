@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcaredatasetiammember"
 
 googlehealthcaredatasetiammember.NewGoogleHealthcareDatasetIamMember(scope Construct, id *string, config GoogleHealthcareDatasetIamMemberConfig) GoogleHealthcareDatasetIamMember
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcaredatasetiammember"
 
 googlehealthcaredatasetiammember.GoogleHealthcareDatasetIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcaredatasetiammember"
 
 googlehealthcaredatasetiammember.GoogleHealthcareDatasetIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ googlehealthcaredatasetiammember.GoogleHealthcareDatasetIamMember_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcaredatasetiammember"
 
 googlehealthcaredatasetiammember.GoogleHealthcareDatasetIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcaredatasetiammember"
 
 &googlehealthcaredatasetiammember.GoogleHealthcareDatasetIamMemberCondition {
 	Expression: *string,
@@ -719,7 +719,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcaredatasetiammember"
 
 &googlehealthcaredatasetiammember.GoogleHealthcareDatasetIamMemberConfig {
 	Connection: interface{},
@@ -732,7 +732,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcar
 	DatasetId: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -898,7 +898,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareDatasetIamMember.GoogleHealthcareDatasetIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlehealthcaredatasetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlehealthcaredatasetiammember"
 
 googlehealthcaredatasetiammember.NewGoogleHealthcareDatasetIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleHealthcareDatasetIamMemberConditionOutputReference
 ```

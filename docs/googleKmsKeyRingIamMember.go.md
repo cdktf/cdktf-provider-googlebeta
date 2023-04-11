@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiammember"
 
 googlekmskeyringiammember.NewGoogleKmsKeyRingIamMember(scope Construct, id *string, config GoogleKmsKeyRingIamMemberConfig) GoogleKmsKeyRingIamMember
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiammember"
 
 googlekmskeyringiammember.GoogleKmsKeyRingIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiammember"
 
 googlekmskeyringiammember.GoogleKmsKeyRingIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ googlekmskeyringiammember.GoogleKmsKeyRingIamMember_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiammember"
 
 googlekmskeyringiammember.GoogleKmsKeyRingIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiammember"
 
 &googlekmskeyringiammember.GoogleKmsKeyRingIamMemberCondition {
 	Expression: *string,
@@ -719,7 +719,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiammember"
 
 &googlekmskeyringiammember.GoogleKmsKeyRingIamMemberConfig {
 	Connection: interface{},
@@ -732,7 +732,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyrin
 	KeyRingId: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -898,7 +898,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember.GoogleKmsKeyRingIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmskeyringiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlekmskeyringiammember"
 
 googlekmskeyringiammember.NewGoogleKmsKeyRingIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleKmsKeyRingIamMemberConditionOutputReference
 ```

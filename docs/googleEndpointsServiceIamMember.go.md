@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleendpointsserviceiammember"
 
 googleendpointsserviceiammember.NewGoogleEndpointsServiceIamMember(scope Construct, id *string, config GoogleEndpointsServiceIamMemberConfig) GoogleEndpointsServiceIamMember
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleendpointsserviceiammember"
 
 googleendpointsserviceiammember.GoogleEndpointsServiceIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleendpointsserviceiammember"
 
 googleendpointsserviceiammember.GoogleEndpointsServiceIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ googleendpointsserviceiammember.GoogleEndpointsServiceIamMember_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleendpointsserviceiammember"
 
 googleendpointsserviceiammember.GoogleEndpointsServiceIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleendpointsserviceiammember"
 
 &googleendpointsserviceiammember.GoogleEndpointsServiceIamMemberCondition {
 	Expression: *string,
@@ -719,7 +719,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleendpointsserviceiammember"
 
 &googleendpointsserviceiammember.GoogleEndpointsServiceIamMemberConfig {
 	Connection: interface{},
@@ -732,7 +732,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpoints
 	Member: *string,
 	Role: *string,
 	ServiceName: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -898,7 +898,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsServiceIamMember.GoogleEndpointsServiceIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleendpointsserviceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleendpointsserviceiammember"
 
 googleendpointsserviceiammember.NewGoogleEndpointsServiceIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEndpointsServiceIamMemberConditionOutputReference
 ```
