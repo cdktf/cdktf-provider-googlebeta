@@ -106,6 +106,7 @@ GoogleBetaProvider.Builder.create(Construct scope, java.lang.String id)
 //  .monitoringCustomEndpoint(java.lang.String)
 //  .networkConnectivityCustomEndpoint(java.lang.String)
 //  .networkManagementCustomEndpoint(java.lang.String)
+//  .networkSecurityCustomEndpoint(java.lang.String)
 //  .networkServicesCustomEndpoint(java.lang.String)
 //  .notebooksCustomEndpoint(java.lang.String)
 //  .orgPolicyCustomEndpoint(java.lang.String)
@@ -248,6 +249,7 @@ GoogleBetaProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer.parameter.monitoringCustomEndpoint">monitoringCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#monitoring_custom_endpoint GoogleBetaProvider#monitoring_custom_endpoint}. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer.parameter.networkConnectivityCustomEndpoint">networkConnectivityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_connectivity_custom_endpoint GoogleBetaProvider#network_connectivity_custom_endpoint}. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer.parameter.networkManagementCustomEndpoint">networkManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_management_custom_endpoint GoogleBetaProvider#network_management_custom_endpoint}. |
+| <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer.parameter.networkSecurityCustomEndpoint">networkSecurityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_security_custom_endpoint GoogleBetaProvider#network_security_custom_endpoint}. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer.parameter.networkServicesCustomEndpoint">networkServicesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_services_custom_endpoint GoogleBetaProvider#network_services_custom_endpoint}. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer.parameter.notebooksCustomEndpoint">notebooksCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#notebooks_custom_endpoint GoogleBetaProvider#notebooks_custom_endpoint}. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer.parameter.orgPolicyCustomEndpoint">orgPolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#org_policy_custom_endpoint GoogleBetaProvider#org_policy_custom_endpoint}. |
@@ -1065,6 +1067,14 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 ---
 
+##### `networkSecurityCustomEndpoint`<sup>Optional</sup> <a name="networkSecurityCustomEndpoint" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer.parameter.networkSecurityCustomEndpoint"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_security_custom_endpoint GoogleBetaProvider#network_security_custom_endpoint}.
+
+---
+
 ##### `networkServicesCustomEndpoint`<sup>Optional</sup> <a name="networkServicesCustomEndpoint" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.Initializer.parameter.networkServicesCustomEndpoint"></a>
 
 - *Type:* java.lang.String
@@ -1489,6 +1499,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetMonitoringCustomEndpoint">resetMonitoringCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetNetworkConnectivityCustomEndpoint">resetNetworkConnectivityCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetNetworkManagementCustomEndpoint">resetNetworkManagementCustomEndpoint</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetNetworkSecurityCustomEndpoint">resetNetworkSecurityCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetNetworkServicesCustomEndpoint">resetNetworkServicesCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetNotebooksCustomEndpoint">resetNotebooksCustomEndpoint</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetOrgPolicyCustomEndpoint">resetOrgPolicyCustomEndpoint</a></code> | *No description.* |
@@ -2160,6 +2171,12 @@ public void resetNetworkConnectivityCustomEndpoint()
 public void resetNetworkManagementCustomEndpoint()
 ```
 
+##### `resetNetworkSecurityCustomEndpoint` <a name="resetNetworkSecurityCustomEndpoint" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetNetworkSecurityCustomEndpoint"></a>
+
+```java
+public void resetNetworkSecurityCustomEndpoint()
+```
+
 ##### `resetNetworkServicesCustomEndpoint` <a name="resetNetworkServicesCustomEndpoint" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.resetNetworkServicesCustomEndpoint"></a>
 
 ```java
@@ -2577,6 +2594,7 @@ GoogleBetaProvider.isTerraformProvider(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.monitoringCustomEndpointInput">monitoringCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkConnectivityCustomEndpointInput">networkConnectivityCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkManagementCustomEndpointInput">networkManagementCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkSecurityCustomEndpointInput">networkSecurityCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkServicesCustomEndpointInput">networkServicesCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.notebooksCustomEndpointInput">notebooksCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.orgPolicyCustomEndpointInput">orgPolicyCustomEndpointInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -2710,6 +2728,7 @@ GoogleBetaProvider.isTerraformProvider(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.monitoringCustomEndpoint">monitoringCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkConnectivityCustomEndpoint">networkConnectivityCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkManagementCustomEndpoint">networkManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkSecurityCustomEndpoint">networkSecurityCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkServicesCustomEndpoint">networkServicesCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.notebooksCustomEndpoint">notebooksCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.orgPolicyCustomEndpoint">orgPolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -3779,6 +3798,16 @@ public java.lang.String getNetworkConnectivityCustomEndpointInput();
 
 ```java
 public java.lang.String getNetworkManagementCustomEndpointInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `networkSecurityCustomEndpointInput`<sup>Optional</sup> <a name="networkSecurityCustomEndpointInput" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkSecurityCustomEndpointInput"></a>
+
+```java
+public java.lang.String getNetworkSecurityCustomEndpointInput();
 ```
 
 - *Type:* java.lang.String
@@ -5115,6 +5144,16 @@ public java.lang.String getNetworkManagementCustomEndpoint();
 
 ---
 
+##### `networkSecurityCustomEndpoint`<sup>Optional</sup> <a name="networkSecurityCustomEndpoint" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkSecurityCustomEndpoint"></a>
+
+```java
+public java.lang.String getNetworkSecurityCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `networkServicesCustomEndpoint`<sup>Optional</sup> <a name="networkServicesCustomEndpoint" id="@cdktf/provider-google-beta.provider.GoogleBetaProvider.property.networkServicesCustomEndpoint"></a>
 
 ```java
@@ -5684,6 +5723,7 @@ GoogleBetaProviderConfig.builder()
 //  .monitoringCustomEndpoint(java.lang.String)
 //  .networkConnectivityCustomEndpoint(java.lang.String)
 //  .networkManagementCustomEndpoint(java.lang.String)
+//  .networkSecurityCustomEndpoint(java.lang.String)
 //  .networkServicesCustomEndpoint(java.lang.String)
 //  .notebooksCustomEndpoint(java.lang.String)
 //  .orgPolicyCustomEndpoint(java.lang.String)
@@ -5826,6 +5866,7 @@ GoogleBetaProviderConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig.property.monitoringCustomEndpoint">monitoringCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#monitoring_custom_endpoint GoogleBetaProvider#monitoring_custom_endpoint}. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig.property.networkConnectivityCustomEndpoint">networkConnectivityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_connectivity_custom_endpoint GoogleBetaProvider#network_connectivity_custom_endpoint}. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig.property.networkManagementCustomEndpoint">networkManagementCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_management_custom_endpoint GoogleBetaProvider#network_management_custom_endpoint}. |
+| <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig.property.networkSecurityCustomEndpoint">networkSecurityCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_security_custom_endpoint GoogleBetaProvider#network_security_custom_endpoint}. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig.property.networkServicesCustomEndpoint">networkServicesCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_services_custom_endpoint GoogleBetaProvider#network_services_custom_endpoint}. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig.property.notebooksCustomEndpoint">notebooksCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#notebooks_custom_endpoint GoogleBetaProvider#notebooks_custom_endpoint}. |
 | <code><a href="#@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig.property.orgPolicyCustomEndpoint">orgPolicyCustomEndpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#org_policy_custom_endpoint GoogleBetaProvider#org_policy_custom_endpoint}. |
@@ -6998,6 +7039,18 @@ public java.lang.String getNetworkManagementCustomEndpoint();
 - *Type:* java.lang.String
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_management_custom_endpoint GoogleBetaProvider#network_management_custom_endpoint}.
+
+---
+
+##### `networkSecurityCustomEndpoint`<sup>Optional</sup> <a name="networkSecurityCustomEndpoint" id="@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig.property.networkSecurityCustomEndpoint"></a>
+
+```java
+public java.lang.String getNetworkSecurityCustomEndpoint();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_security_custom_endpoint GoogleBetaProvider#network_security_custom_endpoint}.
 
 ---
 

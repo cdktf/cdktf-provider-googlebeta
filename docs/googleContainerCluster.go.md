@@ -6399,6 +6399,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontai
 	DiskSizeGb: *f64,
 	DiskType: *string,
 	EphemeralStorageConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageConfig,
+	EphemeralStorageLocalSsdConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig,
 	GcfsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfig,
 	GuestAccelerator: interface{},
 	Gvnic: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleContainerCluster.GoogleContainerClusterNodeConfigGvnic,
@@ -6436,6 +6437,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontai
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.diskSizeGb">DiskSizeGb</a></code> | <code>*f64</code> | Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.diskType">DiskType</a></code> | <code>*string</code> | Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.ephemeralStorageConfig">EphemeralStorageConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageConfig">GoogleContainerClusterNodeConfigEphemeralStorageConfig</a></code> | ephemeral_storage_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.ephemeralStorageLocalSsdConfig">EphemeralStorageLocalSsdConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig</a></code> | ephemeral_storage_local_ssd_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.gcfsConfig">GcfsConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfig">GoogleContainerClusterNodeConfigGcfsConfig</a></code> | gcfs_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.guestAccelerator">GuestAccelerator</a></code> | <code>interface{}</code> | List of the type and count of accelerator cards attached to the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.gvnic">Gvnic</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGvnic">GoogleContainerClusterNodeConfigGvnic</a></code> | gvnic block. |
@@ -6531,6 +6533,20 @@ EphemeralStorageConfig GoogleContainerClusterNodeConfigEphemeralStorageConfig
 ephemeral_storage_config block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#ephemeral_storage_config GoogleContainerCluster#ephemeral_storage_config}
+
+---
+
+##### `EphemeralStorageLocalSsdConfig`<sup>Optional</sup> <a name="EphemeralStorageLocalSsdConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfig.property.ephemeralStorageLocalSsdConfig"></a>
+
+```go
+EphemeralStorageLocalSsdConfig GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig</a>
+
+ephemeral_storage_local_ssd_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#ephemeral_storage_local_ssd_config GoogleContainerCluster#ephemeral_storage_local_ssd_config}
 
 ---
 
@@ -6951,6 +6967,42 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontai
 ---
 
 ##### `LocalSsdCount`<sup>Required</sup> <a name="LocalSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageConfig.property.localSsdCount"></a>
+
+```go
+LocalSsdCount *f64
+```
+
+- *Type:* *f64
+
+Number of local SSDs to use to back ephemeral storage.
+
+Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#local_ssd_count GoogleContainerCluster#local_ssd_count}
+
+---
+
+### GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig <a name="GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainercluster"
+
+&googlecontainercluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig {
+	LocalSsdCount: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Number of local SSDs to use to back ephemeral storage. |
+
+---
+
+##### `LocalSsdCount`<sup>Required</sup> <a name="LocalSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig.property.localSsdCount"></a>
 
 ```go
 LocalSsdCount *f64
@@ -8233,6 +8285,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontai
 	DiskSizeGb: *f64,
 	DiskType: *string,
 	EphemeralStorageConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig,
+	EphemeralStorageLocalSsdConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig,
 	GcfsConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGcfsConfig,
 	GuestAccelerator: interface{},
 	Gvnic: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGvnic,
@@ -8270,6 +8323,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontai
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.diskSizeGb">DiskSizeGb</a></code> | <code>*f64</code> | Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.diskType">DiskType</a></code> | <code>*string</code> | Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.ephemeralStorageConfig">EphemeralStorageConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig</a></code> | ephemeral_storage_config block. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.ephemeralStorageLocalSsdConfig">EphemeralStorageLocalSsdConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig</a></code> | ephemeral_storage_local_ssd_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.gcfsConfig">GcfsConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGcfsConfig">GoogleContainerClusterNodePoolNodeConfigGcfsConfig</a></code> | gcfs_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.guestAccelerator">GuestAccelerator</a></code> | <code>interface{}</code> | List of the type and count of accelerator cards attached to the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.gvnic">Gvnic</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGvnic">GoogleContainerClusterNodePoolNodeConfigGvnic</a></code> | gvnic block. |
@@ -8365,6 +8419,20 @@ EphemeralStorageConfig GoogleContainerClusterNodePoolNodeConfigEphemeralStorageC
 ephemeral_storage_config block.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#ephemeral_storage_config GoogleContainerCluster#ephemeral_storage_config}
+
+---
+
+##### `EphemeralStorageLocalSsdConfig`<sup>Optional</sup> <a name="EphemeralStorageLocalSsdConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfig.property.ephemeralStorageLocalSsdConfig"></a>
+
+```go
+EphemeralStorageLocalSsdConfig GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig</a>
+
+ephemeral_storage_local_ssd_config block.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#ephemeral_storage_local_ssd_config GoogleContainerCluster#ephemeral_storage_local_ssd_config}
 
 ---
 
@@ -8785,6 +8853,42 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontai
 ---
 
 ##### `LocalSsdCount`<sup>Required</sup> <a name="LocalSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig.property.localSsdCount"></a>
+
+```go
+LocalSsdCount *f64
+```
+
+- *Type:* *f64
+
+Number of local SSDs to use to back ephemeral storage.
+
+Uses NVMe interfaces. Each local SSD must be 375 or 3000 GB in size, and all local SSDs must share the same size.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#local_ssd_count GoogleContainerCluster#local_ssd_count}
+
+---
+
+### GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig <a name="GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainercluster"
+
+&googlecontainercluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig {
+	LocalSsdCount: *f64,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | Number of local SSDs to use to back ephemeral storage. |
+
+---
+
+##### `LocalSsdCount`<sup>Required</sup> <a name="LocalSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig.property.localSsdCount"></a>
 
 ```go
 LocalSsdCount *f64
@@ -9946,7 +10050,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontai
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig.property.workloadConfig">WorkloadConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig">GoogleContainerClusterProtectConfigWorkloadConfig</a></code> | workload_config block. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig.property.workloadVulnerabilityMode">WorkloadVulnerabilityMode</a></code> | <code>*string</code> | WorkloadVulnerabilityMode defines mode to perform vulnerability scanning. Accepted values are WORKLOAD_VULNERABILITY_MODE_UNSPECIFIED, DISABLED, BASIC. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfig.property.workloadVulnerabilityMode">WorkloadVulnerabilityMode</a></code> | <code>*string</code> | Sets which mode to use for Protect workload vulnerability scanning feature. Accepted values are DISABLED, BASIC. |
 
 ---
 
@@ -9972,7 +10076,7 @@ WorkloadVulnerabilityMode *string
 
 - *Type:* *string
 
-WorkloadVulnerabilityMode defines mode to perform vulnerability scanning. Accepted values are WORKLOAD_VULNERABILITY_MODE_UNSPECIFIED, DISABLED, BASIC.
+Sets which mode to use for Protect workload vulnerability scanning feature. Accepted values are DISABLED, BASIC.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#workload_vulnerability_mode GoogleContainerCluster#workload_vulnerability_mode}
 
@@ -9994,7 +10098,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig.property.auditMode">AuditMode</a></code> | <code>*string</code> | Mode defines how to audit the workload configs. Accepted values are MODE_UNSPECIFIED, DISABLED, BASIC. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterProtectConfigWorkloadConfig.property.auditMode">AuditMode</a></code> | <code>*string</code> | Sets which mode of auditing should be used for the cluster's workloads. Accepted values are DISABLED, BASIC. |
 
 ---
 
@@ -10006,7 +10110,7 @@ AuditMode *string
 
 - *Type:* *string
 
-Mode defines how to audit the workload configs. Accepted values are MODE_UNSPECIFIED, DISABLED, BASIC.
+Sets which mode of auditing should be used for the cluster's workloads. Accepted values are DISABLED, BASIC.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#audit_mode GoogleContainerCluster#audit_mode}
 
@@ -26019,6 +26123,277 @@ func InternalValue() GoogleContainerClusterNodeConfigEphemeralStorageConfig
 ---
 
 
+### GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference <a name="GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainercluster"
+
+googlecontainercluster.NewGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.localSsdCountInput">LocalSsdCountInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LocalSsdCountInput`<sup>Optional</sup> <a name="LocalSsdCountInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.localSsdCountInput"></a>
+
+```go
+func LocalSsdCountInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `LocalSsdCount`<sup>Required</sup> <a name="LocalSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.localSsdCount"></a>
+
+```go
+func LocalSsdCount() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig</a>
+
+---
+
+
 ### GoogleContainerClusterNodeConfigGcfsConfigOutputReference <a name="GoogleContainerClusterNodeConfigGcfsConfigOutputReference" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfigOutputReference.Initializer"></a>
@@ -28520,6 +28895,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putAdvancedMachineFeatures">PutAdvancedMachineFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putEphemeralStorageConfig">PutEphemeralStorageConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putEphemeralStorageLocalSsdConfig">PutEphemeralStorageLocalSsdConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putGcfsConfig">PutGcfsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putGuestAccelerator">PutGuestAccelerator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putGvnic">PutGvnic</a></code> | *No description.* |
@@ -28536,6 +28912,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetDiskSizeGb">ResetDiskSizeGb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetDiskType">ResetDiskType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetEphemeralStorageConfig">ResetEphemeralStorageConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetEphemeralStorageLocalSsdConfig">ResetEphemeralStorageLocalSsdConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetGcfsConfig">ResetGcfsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetGuestAccelerator">ResetGuestAccelerator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetGvnic">ResetGvnic</a></code> | *No description.* |
@@ -28738,6 +29115,18 @@ func PutEphemeralStorageConfig(value GoogleContainerClusterNodeConfigEphemeralSt
 
 ---
 
+##### `PutEphemeralStorageLocalSsdConfig` <a name="PutEphemeralStorageLocalSsdConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putEphemeralStorageLocalSsdConfig"></a>
+
+```go
+func PutEphemeralStorageLocalSsdConfig(value GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putEphemeralStorageLocalSsdConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig</a>
+
+---
+
 ##### `PutGcfsConfig` <a name="PutGcfsConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.putGcfsConfig"></a>
 
 ```go
@@ -28900,6 +29289,12 @@ func ResetDiskType()
 func ResetEphemeralStorageConfig()
 ```
 
+##### `ResetEphemeralStorageLocalSsdConfig` <a name="ResetEphemeralStorageLocalSsdConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetEphemeralStorageLocalSsdConfig"></a>
+
+```go
+func ResetEphemeralStorageLocalSsdConfig()
+```
+
 ##### `ResetGcfsConfig` <a name="ResetGcfsConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.resetGcfsConfig"></a>
 
 ```go
@@ -29059,6 +29454,7 @@ func ResetWorkloadMetadataConfig()
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.advancedMachineFeatures">AdvancedMachineFeatures</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference">GoogleContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.ephemeralStorageConfig">EphemeralStorageConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageConfigOutputReference">GoogleContainerClusterNodeConfigEphemeralStorageConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfig">EphemeralStorageLocalSsdConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference">GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.gcfsConfig">GcfsConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfigOutputReference">GoogleContainerClusterNodeConfigGcfsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.guestAccelerator">GuestAccelerator</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGuestAcceleratorList">GoogleContainerClusterNodeConfigGuestAcceleratorList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.gvnic">Gvnic</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGvnicOutputReference">GoogleContainerClusterNodeConfigGvnicOutputReference</a></code> | *No description.* |
@@ -29075,6 +29471,7 @@ func ResetWorkloadMetadataConfig()
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.diskSizeGbInput">DiskSizeGbInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.diskTypeInput">DiskTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.ephemeralStorageConfigInput">EphemeralStorageConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageConfig">GoogleContainerClusterNodeConfigEphemeralStorageConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfigInput">EphemeralStorageLocalSsdConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.gcfsConfigInput">GcfsConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfig">GoogleContainerClusterNodeConfigGcfsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.guestAcceleratorInput">GuestAcceleratorInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.gvnicInput">GvnicInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGvnic">GoogleContainerClusterNodeConfigGvnic</a></code> | *No description.* |
@@ -29162,6 +29559,16 @@ func EphemeralStorageConfig() GoogleContainerClusterNodeConfigEphemeralStorageCo
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageConfigOutputReference">GoogleContainerClusterNodeConfigEphemeralStorageConfigOutputReference</a>
+
+---
+
+##### `EphemeralStorageLocalSsdConfig`<sup>Required</sup> <a name="EphemeralStorageLocalSsdConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfig"></a>
+
+```go
+func EphemeralStorageLocalSsdConfig() GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference">GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference</a>
 
 ---
 
@@ -29322,6 +29729,16 @@ func EphemeralStorageConfigInput() GoogleContainerClusterNodeConfigEphemeralStor
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageConfig">GoogleContainerClusterNodeConfigEphemeralStorageConfig</a>
+
+---
+
+##### `EphemeralStorageLocalSsdConfigInput`<sup>Optional</sup> <a name="EphemeralStorageLocalSsdConfigInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfigInput"></a>
+
+```go
+func EphemeralStorageLocalSsdConfigInput() GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig</a>
 
 ---
 
@@ -34633,6 +35050,277 @@ func InternalValue() GoogleContainerClusterNodePoolNodeConfigEphemeralStorageCon
 ---
 
 
+### GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference <a name="GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainercluster"
+
+googlecontainercluster.NewGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.localSsdCountInput">LocalSsdCountInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.localSsdCount">LocalSsdCount</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `LocalSsdCountInput`<sup>Optional</sup> <a name="LocalSsdCountInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.localSsdCountInput"></a>
+
+```go
+func LocalSsdCountInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `LocalSsdCount`<sup>Required</sup> <a name="LocalSsdCount" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.localSsdCount"></a>
+
+```go
+func LocalSsdCount() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig</a>
+
+---
+
+
 ### GoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference <a name="GoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer"></a>
@@ -37134,6 +37822,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putAdvancedMachineFeatures">PutAdvancedMachineFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putEphemeralStorageConfig">PutEphemeralStorageConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putEphemeralStorageLocalSsdConfig">PutEphemeralStorageLocalSsdConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putGcfsConfig">PutGcfsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putGuestAccelerator">PutGuestAccelerator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putGvnic">PutGvnic</a></code> | *No description.* |
@@ -37150,6 +37839,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetDiskSizeGb">ResetDiskSizeGb</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetDiskType">ResetDiskType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetEphemeralStorageConfig">ResetEphemeralStorageConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetEphemeralStorageLocalSsdConfig">ResetEphemeralStorageLocalSsdConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetGcfsConfig">ResetGcfsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetGuestAccelerator">ResetGuestAccelerator</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetGvnic">ResetGvnic</a></code> | *No description.* |
@@ -37352,6 +38042,18 @@ func PutEphemeralStorageConfig(value GoogleContainerClusterNodePoolNodeConfigEph
 
 ---
 
+##### `PutEphemeralStorageLocalSsdConfig` <a name="PutEphemeralStorageLocalSsdConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putEphemeralStorageLocalSsdConfig"></a>
+
+```go
+func PutEphemeralStorageLocalSsdConfig(value GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putEphemeralStorageLocalSsdConfig.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig</a>
+
+---
+
 ##### `PutGcfsConfig` <a name="PutGcfsConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.putGcfsConfig"></a>
 
 ```go
@@ -37514,6 +38216,12 @@ func ResetDiskType()
 func ResetEphemeralStorageConfig()
 ```
 
+##### `ResetEphemeralStorageLocalSsdConfig` <a name="ResetEphemeralStorageLocalSsdConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetEphemeralStorageLocalSsdConfig"></a>
+
+```go
+func ResetEphemeralStorageLocalSsdConfig()
+```
+
 ##### `ResetGcfsConfig` <a name="ResetGcfsConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.resetGcfsConfig"></a>
 
 ```go
@@ -37673,6 +38381,7 @@ func ResetWorkloadMetadataConfig()
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.advancedMachineFeatures">AdvancedMachineFeatures</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference">GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.ephemeralStorageConfig">EphemeralStorageConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfig">EphemeralStorageLocalSsdConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.gcfsConfig">GcfsConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigGcfsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.guestAccelerator">GuestAccelerator</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList">GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.gvnic">Gvnic</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGvnicOutputReference">GoogleContainerClusterNodePoolNodeConfigGvnicOutputReference</a></code> | *No description.* |
@@ -37689,6 +38398,7 @@ func ResetWorkloadMetadataConfig()
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.diskSizeGbInput">DiskSizeGbInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.diskTypeInput">DiskTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.ephemeralStorageConfigInput">EphemeralStorageConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfigInput">EphemeralStorageLocalSsdConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.gcfsConfigInput">GcfsConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGcfsConfig">GoogleContainerClusterNodePoolNodeConfigGcfsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.guestAcceleratorInput">GuestAcceleratorInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.gvnicInput">GvnicInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGvnic">GoogleContainerClusterNodePoolNodeConfigGvnic</a></code> | *No description.* |
@@ -37776,6 +38486,16 @@ func EphemeralStorageConfig() GoogleContainerClusterNodePoolNodeConfigEphemeralS
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigOutputReference</a>
+
+---
+
+##### `EphemeralStorageLocalSsdConfig`<sup>Required</sup> <a name="EphemeralStorageLocalSsdConfig" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfig"></a>
+
+```go
+func EphemeralStorageLocalSsdConfig() GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference</a>
 
 ---
 
@@ -37936,6 +38656,16 @@ func EphemeralStorageConfigInput() GoogleContainerClusterNodePoolNodeConfigEphem
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig</a>
+
+---
+
+##### `EphemeralStorageLocalSsdConfigInput`<sup>Optional</sup> <a name="EphemeralStorageLocalSsdConfigInput" id="@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfigInput"></a>
+
+```go
+func EphemeralStorageLocalSsdConfigInput() GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig">GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig</a>
 
 ---
 

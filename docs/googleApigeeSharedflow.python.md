@@ -43,7 +43,7 @@ googleApigeeSharedflow.GoogleApigeeSharedflow(
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.Initializer.parameter.configBundle">config_bundle</a></code> | <code>str</code> | A path to the config bundle zip you want to upload. Must be defined if content is not. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.Initializer.parameter.name">name</a></code> | <code>str</code> | The ID of the shared flow. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.Initializer.parameter.orgId">org_id</a></code> | <code>str</code> | The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.Initializer.parameter.orgId">org_id</a></code> | <code>str</code> | The Apigee Organization name associated with the Apigee instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.Initializer.parameter.detectMd5Hash">detect_md5_hash</a></code> | <code>str</code> | A hash of local config bundle in string, user needs to use a Terraform Hash function of their choice. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_sharedflow#id GoogleApigeeSharedflow#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflow.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeouts">GoogleApigeeSharedflowTimeouts</a></code> | timeouts block. |
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 - *Type:* str
 
-The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
+The Apigee Organization name associated with the Apigee instance.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_sharedflow#org_id GoogleApigeeSharedflow#org_id}
 
@@ -933,7 +933,7 @@ googleApigeeSharedflow.GoogleApigeeSharedflowConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig.property.configBundle">config_bundle</a></code> | <code>str</code> | A path to the config bundle zip you want to upload. Must be defined if content is not. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig.property.name">name</a></code> | <code>str</code> | The ID of the shared flow. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig.property.orgId">org_id</a></code> | <code>str</code> | The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig.property.orgId">org_id</a></code> | <code>str</code> | The Apigee Organization name associated with the Apigee instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig.property.detectMd5Hash">detect_md5_hash</a></code> | <code>str</code> | A hash of local config bundle in string, user needs to use a Terraform Hash function of their choice. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_sharedflow#id GoogleApigeeSharedflow#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeSharedflow.GoogleApigeeSharedflowTimeouts">GoogleApigeeSharedflowTimeouts</a></code> | timeouts block. |
@@ -1046,7 +1046,7 @@ org_id: str
 
 - *Type:* str
 
-The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
+The Apigee Organization name associated with the Apigee instance.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_sharedflow#org_id GoogleApigeeSharedflow#org_id}
 

@@ -1507,8 +1507,8 @@ const googleMonitoringSloRequestBasedSliDistributionCutRange: googleMonitoringSl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange.property.max">max</a></code> | <code>number</code> | max value for the range (inclusive). If not given, will be set to "infinity", defining an open range ">= range.min". |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange.property.min">min</a></code> | <code>number</code> | Min value for the range (inclusive). If not given, will be set to "-infinity", defining an open range "< range.max". |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange.property.max">max</a></code> | <code>number</code> | max value for the range (inclusive). If not given, will be set to 0. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange.property.min">min</a></code> | <code>number</code> | Min value for the range (inclusive). If not given, will be set to 0. |
 
 ---
 
@@ -1520,7 +1520,7 @@ public readonly max: number;
 
 - *Type:* number
 
-max value for the range (inclusive). If not given, will be set to "infinity", defining an open range ">= range.min".
+max value for the range (inclusive). If not given, will be set to 0.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo#max GoogleMonitoringSlo#max}
 
@@ -1534,7 +1534,7 @@ public readonly min: number;
 
 - *Type:* number
 
-Min value for the range (inclusive). If not given, will be set to "-infinity", defining an open range "< range.max".
+Min value for the range (inclusive). If not given, will be set to 0.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo#min GoogleMonitoringSlo#min}
 
@@ -2115,8 +2115,8 @@ const googleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange.property.max">max</a></code> | <code>number</code> | max value for the range (inclusive). If not given, will be set to "infinity", defining an open range ">= range.min". |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange.property.min">min</a></code> | <code>number</code> | Min value for the range (inclusive). If not given, will be set to "-infinity", defining an open range "< range.max". |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange.property.max">max</a></code> | <code>number</code> | max value for the range (inclusive). If not given, will be set to 0. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange.property.min">min</a></code> | <code>number</code> | Min value for the range (inclusive). If not given, will be set to 0. |
 
 ---
 
@@ -2128,7 +2128,7 @@ public readonly max: number;
 
 - *Type:* number
 
-max value for the range (inclusive). If not given, will be set to "infinity", defining an open range ">= range.min".
+max value for the range (inclusive). If not given, will be set to 0.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo#max GoogleMonitoringSlo#max}
 
@@ -2142,7 +2142,7 @@ public readonly min: number;
 
 - *Type:* number
 
-Min value for the range (inclusive). If not given, will be set to "-infinity", defining an open range "< range.max".
+Min value for the range (inclusive). If not given, will be set to 0.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo#min GoogleMonitoringSlo#min}
 

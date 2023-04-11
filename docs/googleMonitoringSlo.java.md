@@ -1761,8 +1761,8 @@ GoogleMonitoringSloRequestBasedSliDistributionCutRange.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange.property.max">max</a></code> | <code>java.lang.Number</code> | max value for the range (inclusive). If not given, will be set to "infinity", defining an open range ">= range.min". |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange.property.min">min</a></code> | <code>java.lang.Number</code> | Min value for the range (inclusive). If not given, will be set to "-infinity", defining an open range "< range.max". |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange.property.max">max</a></code> | <code>java.lang.Number</code> | max value for the range (inclusive). If not given, will be set to 0. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloRequestBasedSliDistributionCutRange.property.min">min</a></code> | <code>java.lang.Number</code> | Min value for the range (inclusive). If not given, will be set to 0. |
 
 ---
 
@@ -1774,7 +1774,7 @@ public java.lang.Number getMax();
 
 - *Type:* java.lang.Number
 
-max value for the range (inclusive). If not given, will be set to "infinity", defining an open range ">= range.min".
+max value for the range (inclusive). If not given, will be set to 0.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo#max GoogleMonitoringSlo#max}
 
@@ -1788,7 +1788,7 @@ public java.lang.Number getMin();
 
 - *Type:* java.lang.Number
 
-Min value for the range (inclusive). If not given, will be set to "-infinity", defining an open range "< range.max".
+Min value for the range (inclusive). If not given, will be set to 0.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo#min GoogleMonitoringSlo#min}
 
@@ -2407,8 +2407,8 @@ GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistribution
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange.property.max">max</a></code> | <code>java.lang.Number</code> | max value for the range (inclusive). If not given, will be set to "infinity", defining an open range ">= range.min". |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange.property.min">min</a></code> | <code>java.lang.Number</code> | Min value for the range (inclusive). If not given, will be set to "-infinity", defining an open range "< range.max". |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange.property.max">max</a></code> | <code>java.lang.Number</code> | max value for the range (inclusive). If not given, will be set to 0. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringSlo.GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange.property.min">min</a></code> | <code>java.lang.Number</code> | Min value for the range (inclusive). If not given, will be set to 0. |
 
 ---
 
@@ -2420,7 +2420,7 @@ public java.lang.Number getMax();
 
 - *Type:* java.lang.Number
 
-max value for the range (inclusive). If not given, will be set to "infinity", defining an open range ">= range.min".
+max value for the range (inclusive). If not given, will be set to 0.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo#max GoogleMonitoringSlo#max}
 
@@ -2434,7 +2434,7 @@ public java.lang.Number getMin();
 
 - *Type:* java.lang.Number
 
-Min value for the range (inclusive). If not given, will be set to "-infinity", defining an open range "< range.max".
+Min value for the range (inclusive). If not given, will be set to 0.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo#min GoogleMonitoringSlo#min}
 

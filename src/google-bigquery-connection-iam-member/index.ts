@@ -181,7 +181,7 @@ export class GoogleBigqueryConnectionIamMember extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_connection_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

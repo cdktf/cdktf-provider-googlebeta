@@ -58,7 +58,7 @@ export class GoogleDataFusionInstanceIamPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_data_fusion_instance_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -2294,6 +2294,8 @@ from cdktf_cdktf_provider_google_beta import google_storage_transfer_job
 googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions(
   exclude_prefixes: typing.List[str] = None,
   include_prefixes: typing.List[str] = None,
+  last_modified_before: str = None,
+  last_modified_since: str = None,
   max_time_elapsed_since_last_modification: str = None,
   min_time_elapsed_since_last_modification: str = None
 )
@@ -2305,6 +2307,8 @@ googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions.property.excludePrefixes">exclude_prefixes</a></code> | <code>typing.List[str]</code> | exclude_prefixes must follow the requirements described for include_prefixes. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions.property.includePrefixes">include_prefixes</a></code> | <code>typing.List[str]</code> | If include_refixes is specified, objects that satisfy the object conditions must have names that start with one of the include_prefixes and that do not start with any of the exclude_prefixes. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions.property.lastModifiedBefore">last_modified_before</a></code> | <code>str</code> | If specified, only objects with a "last modification time" before this timestamp and objects that don't have a "last modification time" are transferred. |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions.property.lastModifiedSince">last_modified_since</a></code> | <code>str</code> | If specified, only objects with a "last modification time" on or after this timestamp and objects that don't have a "last modification time" are transferred. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions.property.maxTimeElapsedSinceLastModification">max_time_elapsed_since_last_modification</a></code> | <code>str</code> | A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s". |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions.property.minTimeElapsedSinceLastModification">min_time_elapsed_since_last_modification</a></code> | <code>str</code> | A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s". |
 
@@ -2337,6 +2341,38 @@ If include_refixes is specified, objects that satisfy the object conditions must
 If include_prefixes is not specified, all objects except those that have names starting with one of the exclude_prefixes must satisfy the object conditions.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_job#include_prefixes GoogleStorageTransferJob#include_prefixes}
+
+---
+
+##### `last_modified_before`<sup>Optional</sup> <a name="last_modified_before" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions.property.lastModifiedBefore"></a>
+
+```python
+last_modified_before: str
+```
+
+- *Type:* str
+
+If specified, only objects with a "last modification time" before this timestamp and objects that don't have a "last modification time" are transferred.
+
+A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_job#last_modified_before GoogleStorageTransferJob#last_modified_before}
+
+---
+
+##### `last_modified_since`<sup>Optional</sup> <a name="last_modified_since" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions.property.lastModifiedSince"></a>
+
+```python
+last_modified_since: str
+```
+
+- *Type:* str
+
+If specified, only objects with a "last modification time" on or after this timestamp and objects that don't have a "last modification time" are transferred.
+
+A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_job#last_modified_since GoogleStorageTransferJob#last_modified_since}
 
 ---
 
@@ -6817,6 +6853,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.resetExcludePrefixes">reset_exclude_prefixes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.resetIncludePrefixes">reset_include_prefixes</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.resetLastModifiedBefore">reset_last_modified_before</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.resetLastModifiedSince">reset_last_modified_since</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.resetMaxTimeElapsedSinceLastModification">reset_max_time_elapsed_since_last_modification</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.resetMinTimeElapsedSinceLastModification">reset_min_time_elapsed_since_last_modification</a></code> | *No description.* |
 
@@ -7006,6 +7044,18 @@ def reset_exclude_prefixes() -> None
 def reset_include_prefixes() -> None
 ```
 
+##### `reset_last_modified_before` <a name="reset_last_modified_before" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.resetLastModifiedBefore"></a>
+
+```python
+def reset_last_modified_before() -> None
+```
+
+##### `reset_last_modified_since` <a name="reset_last_modified_since" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.resetLastModifiedSince"></a>
+
+```python
+def reset_last_modified_since() -> None
+```
+
 ##### `reset_max_time_elapsed_since_last_modification` <a name="reset_max_time_elapsed_since_last_modification" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.resetMaxTimeElapsedSinceLastModification"></a>
 
 ```python
@@ -7027,10 +7077,14 @@ def reset_min_time_elapsed_since_last_modification() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.excludePrefixesInput">exclude_prefixes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.includePrefixesInput">include_prefixes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.lastModifiedBeforeInput">last_modified_before_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.lastModifiedSinceInput">last_modified_since_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.maxTimeElapsedSinceLastModificationInput">max_time_elapsed_since_last_modification_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.minTimeElapsedSinceLastModificationInput">min_time_elapsed_since_last_modification_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.excludePrefixes">exclude_prefixes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.includePrefixes">include_prefixes</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.lastModifiedBefore">last_modified_before</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.lastModifiedSince">last_modified_since</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.maxTimeElapsedSinceLastModification">max_time_elapsed_since_last_modification</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.minTimeElapsedSinceLastModification">min_time_elapsed_since_last_modification</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditions">GoogleStorageTransferJobTransferSpecObjectConditions</a></code> | *No description.* |
@@ -7081,6 +7135,26 @@ include_prefixes_input: typing.List[str]
 
 ---
 
+##### `last_modified_before_input`<sup>Optional</sup> <a name="last_modified_before_input" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.lastModifiedBeforeInput"></a>
+
+```python
+last_modified_before_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `last_modified_since_input`<sup>Optional</sup> <a name="last_modified_since_input" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.lastModifiedSinceInput"></a>
+
+```python
+last_modified_since_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `max_time_elapsed_since_last_modification_input`<sup>Optional</sup> <a name="max_time_elapsed_since_last_modification_input" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.maxTimeElapsedSinceLastModificationInput"></a>
 
 ```python
@@ -7118,6 +7192,26 @@ include_prefixes: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `last_modified_before`<sup>Required</sup> <a name="last_modified_before" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.lastModifiedBefore"></a>
+
+```python
+last_modified_before: str
+```
+
+- *Type:* str
+
+---
+
+##### `last_modified_since`<sup>Required</sup> <a name="last_modified_since" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference.property.lastModifiedSince"></a>
+
+```python
+last_modified_since: str
+```
+
+- *Type:* str
 
 ---
 
@@ -7579,6 +7673,8 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 def put_object_conditions(
   exclude_prefixes: typing.List[str] = None,
   include_prefixes: typing.List[str] = None,
+  last_modified_before: str = None,
+  last_modified_since: str = None,
   max_time_elapsed_since_last_modification: str = None,
   min_time_elapsed_since_last_modification: str = None
 ) -> None
@@ -7603,6 +7699,30 @@ If include_refixes is specified, objects that satisfy the object conditions must
 If include_prefixes is not specified, all objects except those that have names starting with one of the exclude_prefixes must satisfy the object conditions.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_job#include_prefixes GoogleStorageTransferJob#include_prefixes}
+
+---
+
+###### `last_modified_before`<sup>Optional</sup> <a name="last_modified_before" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecOutputReference.putObjectConditions.parameter.lastModifiedBefore"></a>
+
+- *Type:* str
+
+If specified, only objects with a "last modification time" before this timestamp and objects that don't have a "last modification time" are transferred.
+
+A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_job#last_modified_before GoogleStorageTransferJob#last_modified_before}
+
+---
+
+###### `last_modified_since`<sup>Optional</sup> <a name="last_modified_since" id="@cdktf/provider-google-beta.googleStorageTransferJob.GoogleStorageTransferJobTransferSpecOutputReference.putObjectConditions.parameter.lastModifiedSince"></a>
+
+- *Type:* str
+
+If specified, only objects with a "last modification time" on or after this timestamp and objects that don't have a "last modification time" are transferred.
+
+A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_job#last_modified_since GoogleStorageTransferJob#last_modified_since}
 
 ---
 

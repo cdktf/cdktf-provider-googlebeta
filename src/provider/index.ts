@@ -376,6 +376,10 @@ export interface GoogleBetaProviderConfig {
   */
   readonly networkManagementCustomEndpoint?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_security_custom_endpoint GoogleBetaProvider#network_security_custom_endpoint}
+  */
+  readonly networkSecurityCustomEndpoint?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_services_custom_endpoint GoogleBetaProvider#network_services_custom_endpoint}
   */
   readonly networkServicesCustomEndpoint?: string;
@@ -597,7 +601,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'google-beta',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       terraformProviderSource: 'google-beta'
@@ -694,6 +698,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     this._monitoringCustomEndpoint = config.monitoringCustomEndpoint;
     this._networkConnectivityCustomEndpoint = config.networkConnectivityCustomEndpoint;
     this._networkManagementCustomEndpoint = config.networkManagementCustomEndpoint;
+    this._networkSecurityCustomEndpoint = config.networkSecurityCustomEndpoint;
     this._networkServicesCustomEndpoint = config.networkServicesCustomEndpoint;
     this._notebooksCustomEndpoint = config.notebooksCustomEndpoint;
     this._orgPolicyCustomEndpoint = config.orgPolicyCustomEndpoint;
@@ -2214,6 +2219,22 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
     return this._networkManagementCustomEndpoint;
   }
 
+  // network_security_custom_endpoint - computed: false, optional: true, required: false
+  private _networkSecurityCustomEndpoint?: string; 
+  public get networkSecurityCustomEndpoint() {
+    return this._networkSecurityCustomEndpoint;
+  }
+  public set networkSecurityCustomEndpoint(value: string | undefined) {
+    this._networkSecurityCustomEndpoint = value;
+  }
+  public resetNetworkSecurityCustomEndpoint() {
+    this._networkSecurityCustomEndpoint = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkSecurityCustomEndpointInput() {
+    return this._networkSecurityCustomEndpoint;
+  }
+
   // network_services_custom_endpoint - computed: false, optional: true, required: false
   private _networkServicesCustomEndpoint?: string; 
   public get networkServicesCustomEndpoint() {
@@ -2984,6 +3005,7 @@ export class GoogleBetaProvider extends cdktf.TerraformProvider {
       monitoring_custom_endpoint: cdktf.stringToTerraform(this._monitoringCustomEndpoint),
       network_connectivity_custom_endpoint: cdktf.stringToTerraform(this._networkConnectivityCustomEndpoint),
       network_management_custom_endpoint: cdktf.stringToTerraform(this._networkManagementCustomEndpoint),
+      network_security_custom_endpoint: cdktf.stringToTerraform(this._networkSecurityCustomEndpoint),
       network_services_custom_endpoint: cdktf.stringToTerraform(this._networkServicesCustomEndpoint),
       notebooks_custom_endpoint: cdktf.stringToTerraform(this._notebooksCustomEndpoint),
       org_policy_custom_endpoint: cdktf.stringToTerraform(this._orgPolicyCustomEndpoint),

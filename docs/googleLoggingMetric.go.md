@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.resetBucketName">ResetBucketName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.resetBucketOptions">ResetBucketOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.resetDisabled">ResetDisabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.resetLabelExtractors">ResetLabelExtractors</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.resetMetricDescriptor">ResetMetricDescriptor</a></code> | *No description.* |
@@ -319,6 +320,12 @@ func ResetBucketOptions()
 func ResetDescription()
 ```
 
+##### `ResetDisabled` <a name="ResetDisabled" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.resetDisabled"></a>
+
+```go
+func ResetDisabled()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.resetId"></a>
 
 ```go
@@ -449,6 +456,7 @@ googleloggingmetric.GoogleLoggingMetric_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.bucketNameInput">BucketNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.bucketOptionsInput">BucketOptionsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptions">GoogleLoggingMetricBucketOptions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.disabledInput">DisabledInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.filterInput">FilterInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.labelExtractorsInput">LabelExtractorsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -459,6 +467,7 @@ googleloggingmetric.GoogleLoggingMetric_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.valueExtractorInput">ValueExtractorInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.bucketName">BucketName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.disabled">Disabled</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.filter">Filter</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.labelExtractors">LabelExtractors</a></code> | <code>*map[string]*string</code> | *No description.* |
@@ -670,6 +679,16 @@ func DescriptionInput() *string
 
 ---
 
+##### `DisabledInput`<sup>Optional</sup> <a name="DisabledInput" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.disabledInput"></a>
+
+```go
+func DisabledInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `FilterInput`<sup>Optional</sup> <a name="FilterInput" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.filterInput"></a>
 
 ```go
@@ -767,6 +786,16 @@ func Description() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.property.disabled"></a>
+
+```go
+func Disabled() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1102,6 +1131,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleloggin
 	BucketName: *string,
 	BucketOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleLoggingMetric.GoogleLoggingMetricBucketOptions,
 	Description: *string,
+	Disabled: interface{},
 	Id: *string,
 	LabelExtractors: *map[string]*string,
 	MetricDescriptor: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor,
@@ -1127,6 +1157,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleloggin
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.bucketName">BucketName</a></code> | <code>*string</code> | The resource name of the Log Bucket that owns the Log Metric. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.bucketOptions">BucketOptions</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptions">GoogleLoggingMetricBucketOptions</a></code> | bucket_options block. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.description">Description</a></code> | <code>*string</code> | A description of this metric, which is used in documentation. The maximum length of the description is 8000 characters. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.disabled">Disabled</a></code> | <code>interface{}</code> | If set to True, then this metric is disabled and it does not generate any points. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#id GoogleLoggingMetric#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.labelExtractors">LabelExtractors</a></code> | <code>*map[string]*string</code> | A map from a label key string to an extractor expression which is used to extract data from a log entry field and assign as the label value. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.metricDescriptor">MetricDescriptor</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor">GoogleLoggingMetricMetricDescriptor</a></code> | metric_descriptor block. |
@@ -1282,6 +1313,20 @@ Description *string
 A description of this metric, which is used in documentation. The maximum length of the description is 8000 characters.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#description GoogleLoggingMetric#description}
+
+---
+
+##### `Disabled`<sup>Optional</sup> <a name="Disabled" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.disabled"></a>
+
+```go
+Disabled interface{}
+```
+
+- *Type:* interface{}
+
+If set to True, then this metric is disabled and it does not generate any points.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#disabled GoogleLoggingMetric#disabled}
 
 ---
 

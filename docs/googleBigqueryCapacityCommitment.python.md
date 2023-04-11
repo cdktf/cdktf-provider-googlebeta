@@ -24,6 +24,7 @@ googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment(
   plan: str,
   slot_count: typing.Union[int, float],
   capacity_commitment_id: str = None,
+  edition: str = None,
   enforce_single_admin_project_per_org: str = None,
   id: str = None,
   location: str = None,
@@ -44,9 +45,10 @@ googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment(
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.plan">plan</a></code> | <code>str</code> | Capacity commitment plan. Valid values are FLEX, TRIAL, MONTHLY, ANNUAL. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.plan">plan</a></code> | <code>str</code> | Capacity commitment plan. Valid values are at https://cloud.google.com/bigquery/docs/reference/reservations/rpc/google.cloud.bigquery.reservation.v1#commitmentplan. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.slotCount">slot_count</a></code> | <code>typing.Union[int, float]</code> | Number of slots in this commitment. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.capacityCommitmentId">capacity_commitment_id</a></code> | <code>str</code> | The optional capacity commitment ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.edition">edition</a></code> | <code>str</code> | The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.enforceSingleAdminProjectPerOrg">enforce_single_admin_project_per_org</a></code> | <code>str</code> | If true, fail the request if another project in the organization has a capacity commitment. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_capacity_commitment#id GoogleBigqueryCapacityCommitment#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.location">location</a></code> | <code>str</code> | The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US. |
@@ -120,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Capacity commitment plan. Valid values are FLEX, TRIAL, MONTHLY, ANNUAL.
+Capacity commitment plan. Valid values are at https://cloud.google.com/bigquery/docs/reference/reservations/rpc/google.cloud.bigquery.reservation.v1#commitmentplan.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_capacity_commitment#plan GoogleBigqueryCapacityCommitment#plan}
 
@@ -148,6 +150,16 @@ cannot be a dash. Max length is 64 characters. NOTE: this ID won't be kept if th
 or merged.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_capacity_commitment#capacity_commitment_id GoogleBigqueryCapacityCommitment#capacity_commitment_id}
+
+---
+
+##### `edition`<sup>Optional</sup> <a name="edition" id="@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.Initializer.parameter.edition"></a>
+
+- *Type:* str
+
+The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_capacity_commitment#edition GoogleBigqueryCapacityCommitment#edition}
 
 ---
 
@@ -196,7 +208,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 
 The plan this capacity commitment is converted to after commitmentEndTime passes.
 
-Once the plan is changed, committed period is extended according to commitment plan. Only applicable for ANNUAL and TRIAL commitments.
+Once the plan is changed, committed period is extended according to commitment plan. Only applicable some commitment plans.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_capacity_commitment#renewal_plan GoogleBigqueryCapacityCommitment#renewal_plan}
 
@@ -234,6 +246,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.putTimeouts">put_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.resetCapacityCommitmentId">reset_capacity_commitment_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.resetEdition">reset_edition</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.resetEnforceSingleAdminProjectPerOrg">reset_enforce_single_admin_project_per_org</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.resetLocation">reset_location</a></code> | *No description.* |
@@ -492,6 +505,12 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 def reset_capacity_commitment_id() -> None
 ```
 
+##### `reset_edition` <a name="reset_edition" id="@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.resetEdition"></a>
+
+```python
+def reset_edition() -> None
+```
+
 ##### `reset_enforce_single_admin_project_per_org` <a name="reset_enforce_single_admin_project_per_org" id="@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.resetEnforceSingleAdminProjectPerOrg"></a>
 
 ```python
@@ -628,6 +647,7 @@ googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.is_terraform_r
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.state">state</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentTimeoutsOutputReference">GoogleBigqueryCapacityCommitmentTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.capacityCommitmentIdInput">capacity_commitment_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.editionInput">edition_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.enforceSingleAdminProjectPerOrgInput">enforce_single_admin_project_per_org_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
@@ -637,6 +657,7 @@ googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.is_terraform_r
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.slotCountInput">slot_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentTimeouts">GoogleBigqueryCapacityCommitmentTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.capacityCommitmentId">capacity_commitment_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.edition">edition</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.enforceSingleAdminProjectPerOrg">enforce_single_admin_project_per_org</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.location">location</a></code> | <code>str</code> | *No description.* |
@@ -849,6 +870,16 @@ capacity_commitment_id_input: str
 
 ---
 
+##### `edition_input`<sup>Optional</sup> <a name="edition_input" id="@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.editionInput"></a>
+
+```python
+edition_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `enforce_single_admin_project_per_org_input`<sup>Optional</sup> <a name="enforce_single_admin_project_per_org_input" id="@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.enforceSingleAdminProjectPerOrgInput"></a>
 
 ```python
@@ -933,6 +964,16 @@ timeouts_input: typing.Union[GoogleBigqueryCapacityCommitmentTimeouts, IResolvab
 
 ```python
 capacity_commitment_id: str
+```
+
+- *Type:* str
+
+---
+
+##### `edition`<sup>Required</sup> <a name="edition" id="@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitment.property.edition"></a>
+
+```python
+edition: str
 ```
 
 - *Type:* str
@@ -1047,6 +1088,7 @@ googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig(
   plan: str,
   slot_count: typing.Union[int, float],
   capacity_commitment_id: str = None,
+  edition: str = None,
   enforce_single_admin_project_per_org: str = None,
   id: str = None,
   location: str = None,
@@ -1067,9 +1109,10 @@ googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.plan">plan</a></code> | <code>str</code> | Capacity commitment plan. Valid values are FLEX, TRIAL, MONTHLY, ANNUAL. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.plan">plan</a></code> | <code>str</code> | Capacity commitment plan. Valid values are at https://cloud.google.com/bigquery/docs/reference/reservations/rpc/google.cloud.bigquery.reservation.v1#commitmentplan. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.slotCount">slot_count</a></code> | <code>typing.Union[int, float]</code> | Number of slots in this commitment. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.capacityCommitmentId">capacity_commitment_id</a></code> | <code>str</code> | The optional capacity commitment ID. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.edition">edition</a></code> | <code>str</code> | The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.enforceSingleAdminProjectPerOrg">enforce_single_admin_project_per_org</a></code> | <code>str</code> | If true, fail the request if another project in the organization has a capacity commitment. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_capacity_commitment#id GoogleBigqueryCapacityCommitment#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.location">location</a></code> | <code>str</code> | The geographic location where the transfer config should reside. Examples: US, EU, asia-northeast1. The default value is US. |
@@ -1157,7 +1200,7 @@ plan: str
 
 - *Type:* str
 
-Capacity commitment plan. Valid values are FLEX, TRIAL, MONTHLY, ANNUAL.
+Capacity commitment plan. Valid values are at https://cloud.google.com/bigquery/docs/reference/reservations/rpc/google.cloud.bigquery.reservation.v1#commitmentplan.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_capacity_commitment#plan GoogleBigqueryCapacityCommitment#plan}
 
@@ -1193,6 +1236,20 @@ cannot be a dash. Max length is 64 characters. NOTE: this ID won't be kept if th
 or merged.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_capacity_commitment#capacity_commitment_id GoogleBigqueryCapacityCommitment#capacity_commitment_id}
+
+---
+
+##### `edition`<sup>Optional</sup> <a name="edition" id="@cdktf/provider-google-beta.googleBigqueryCapacityCommitment.GoogleBigqueryCapacityCommitmentConfig.property.edition"></a>
+
+```python
+edition: str
+```
+
+- *Type:* str
+
+The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_capacity_commitment#edition GoogleBigqueryCapacityCommitment#edition}
 
 ---
 
@@ -1261,7 +1318,7 @@ renewal_plan: str
 
 The plan this capacity commitment is converted to after commitmentEndTime passes.
 
-Once the plan is changed, committed period is extended according to commitment plan. Only applicable for ANNUAL and TRIAL commitments.
+Once the plan is changed, committed period is extended according to commitment plan. Only applicable some commitment plans.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_capacity_commitment#renewal_plan GoogleBigqueryCapacityCommitment#renewal_plan}
 

@@ -3238,7 +3238,7 @@ export class GoogleComputeInstanceFromTemplate extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_instance_from_template',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

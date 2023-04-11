@@ -173,7 +173,7 @@ export class GoogleComputeDiskResourcePolicyAttachment extends cdktf.TerraformRe
       terraformResourceType: 'google_compute_disk_resource_policy_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.60.2',
+        providerVersion: '4.61.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -363,6 +363,7 @@ datagooglecomputehavpngateway.DataGoogleComputeHaVpnGateway_IsTerraformDataSourc
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway.property.network">Network</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway.property.selfLink">SelfLink</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway.property.stackType">StackType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway.property.vpnInterfaces">VpnInterfaces</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGatewayVpnInterfacesList">DataGoogleComputeHaVpnGatewayVpnInterfacesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
@@ -521,6 +522,16 @@ func Network() *string
 
 ```go
 func SelfLink() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `StackType`<sup>Required</sup> <a name="StackType" id="@cdktf/provider-google-beta.dataGoogleComputeHaVpnGateway.DataGoogleComputeHaVpnGateway.property.stackType"></a>
+
+```go
+func StackType() *string
 ```
 
 - *Type:* *string

@@ -797,7 +797,7 @@ new GoogleLoggingLogViewConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.bucket">Bucket</a></code> | <code>string</code> | The bucket of the resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.name">Name</a></code> | <code>string</code> | The resource name of the view. For example: `projects/my-project/locations/global/buckets/my-bucket/views/my-view`. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.name">Name</a></code> | <code>string</code> | The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.description">Description</a></code> | <code>string</code> | Describes this view. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.filter">Filter</a></code> | <code>string</code> | Filter that restricts which log entries in a bucket are visible in this view. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLogView.GoogleLoggingLogViewConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_log_view#id GoogleLoggingLogView#id}. |
@@ -899,7 +899,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-The resource name of the view. For example: `projects/my-project/locations/global/buckets/my-bucket/views/my-view`.
+The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_log_view#name GoogleLoggingLogView#name}
 
