@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkstationsworkstation"
 
 googleworkstationsworkstation.NewGoogleWorkstationsWorkstation(scope Construct, id *string, config GoogleWorkstationsWorkstationConfig) GoogleWorkstationsWorkstation
 ```
@@ -321,7 +321,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsConstruct(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformElement(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkstationsworkstation"
 
 googleworkstationsworkstation.GoogleWorkstationsWorkstation_IsTerraformResource(x interface{}) *bool
 ```
@@ -841,7 +841,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkstationsworkstation"
 
 &googleworkstationsworkstation.GoogleWorkstationsWorkstationConfig {
 	Connection: interface{},
@@ -860,7 +860,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstati
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts,
 }
 ```
 
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkstationsworkstation"
 
 &googleworkstationsworkstation.GoogleWorkstationsWorkstationTimeouts {
 	Create: *string,
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkstationsWorkstation.GoogleWorkstationsWorkstationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleworkstationsworkstation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleworkstationsworkstation"
 
 googleworkstationsworkstation.NewGoogleWorkstationsWorkstationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleWorkstationsWorkstationTimeoutsOutputReference
 ```

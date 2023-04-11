@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.NewGoogleCloudRunV2JobIamMember(scope Construct, id *string, config GoogleCloudRunV2JobIamMemberConfig) GoogleCloudRunV2JobIamMember
 ```
@@ -307,7 +307,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMember_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudrunv2jobiammember"
 
 &googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMemberCondition {
 	Expression: *string,
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudrunv2jobiammember"
 
 &googlecloudrunv2jobiammember.GoogleCloudRunV2JobIamMemberConfig {
 	Connection: interface{},
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamMember.GoogleCloudRunV2JobIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudrunv2jobiammember"
 
 googlecloudrunv2jobiammember.NewGoogleCloudRunV2JobIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobIamMemberConditionOutputReference
 ```
