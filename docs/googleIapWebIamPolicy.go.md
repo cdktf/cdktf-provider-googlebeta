@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebiampolicy"
 
 googleiapwebiampolicy.NewGoogleIapWebIamPolicy(scope Construct, id *string, config GoogleIapWebIamPolicyConfig) GoogleIapWebIamPolicy
 ```
@@ -280,7 +280,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebiampolicy"
 
 googleiapwebiampolicy.GoogleIapWebIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebiampolicy"
 
 googleiapwebiampolicy.GoogleIapWebIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ googleiapwebiampolicy.GoogleIapWebIamPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebiampolicy"
 
 googleiapwebiampolicy.GoogleIapWebIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebiampolicy"
 
 &googleiapwebiampolicy.GoogleIapWebIamPolicyConfig {
 	Connection: interface{},

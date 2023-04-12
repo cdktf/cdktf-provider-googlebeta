@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyAssociation.GoogleComputeOrganizationSecurityPolicyAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeorganizationsecuritypolicyassociation"
 
 googlecomputeorganizationsecuritypolicyassociation.NewGoogleComputeOrganizationSecurityPolicyAssociation(scope Construct, id *string, config GoogleComputeOrganizationSecurityPolicyAssociationConfig) GoogleComputeOrganizationSecurityPolicyAssociation
 ```
@@ -293,7 +293,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyAssociation.GoogleComputeOrganizationSecurityPolicyAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeorganizationsecuritypolicyassociation"
 
 googlecomputeorganizationsecuritypolicyassociation.GoogleComputeOrganizationSecurityPolicyAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyAssociation.GoogleComputeOrganizationSecurityPolicyAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeorganizationsecuritypolicyassociation"
 
 googlecomputeorganizationsecuritypolicyassociation.GoogleComputeOrganizationSecurityPolicyAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ googlecomputeorganizationsecuritypolicyassociation.GoogleComputeOrganizationSecu
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyAssociation.GoogleComputeOrganizationSecurityPolicyAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeorganizationsecuritypolicyassociation"
 
 googlecomputeorganizationsecuritypolicyassociation.GoogleComputeOrganizationSecurityPolicyAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -659,7 +659,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyAssociation.GoogleComputeOrganizationSecurityPolicyAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeorganizationsecuritypolicyassociation"
 
 &googlecomputeorganizationsecuritypolicyassociation.GoogleComputeOrganizationSecurityPolicyAssociationConfig {
 	Connection: interface{},
@@ -673,7 +673,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeor
 	Name: *string,
 	PolicyId: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeOrganizationSecurityPolicyAssociation.GoogleComputeOrganizationSecurityPolicyAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleComputeOrganizationSecurityPolicyAssociation.GoogleComputeOrganizationSecurityPolicyAssociationTimeouts,
 }
 ```
 
@@ -842,7 +842,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyAssociation.GoogleComputeOrganizationSecurityPolicyAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeorganizationsecuritypolicyassociation"
 
 &googlecomputeorganizationsecuritypolicyassociation.GoogleComputeOrganizationSecurityPolicyAssociationTimeouts {
 	Create: *string,
@@ -890,7 +890,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeOrganizationSecurityPolicyAssociation.GoogleComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeorganizationsecuritypolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeorganizationsecuritypolicyassociation"
 
 googlecomputeorganizationsecuritypolicyassociation.NewGoogleComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference
 ```

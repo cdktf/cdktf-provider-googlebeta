@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableInstanceIamPolicy.GoogleBigtableInstanceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigtableinstanceiampolicy"
 
 googlebigtableinstanceiampolicy.NewGoogleBigtableInstanceIamPolicy(scope Construct, id *string, config GoogleBigtableInstanceIamPolicyConfig) GoogleBigtableInstanceIamPolicy
 ```
@@ -280,7 +280,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigtableInstanceIamPolicy.GoogleBigtableInstanceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigtableinstanceiampolicy"
 
 googlebigtableinstanceiampolicy.GoogleBigtableInstanceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigtableInstanceIamPolicy.GoogleBigtableInstanceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigtableinstanceiampolicy"
 
 googlebigtableinstanceiampolicy.GoogleBigtableInstanceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ googlebigtableinstanceiampolicy.GoogleBigtableInstanceIamPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigtableInstanceIamPolicy.GoogleBigtableInstanceIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigtableinstanceiampolicy"
 
 googlebigtableinstanceiampolicy.GoogleBigtableInstanceIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableInstanceIamPolicy.GoogleBigtableInstanceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigtableinstanceiampolicy"
 
 &googlebigtableinstanceiampolicy.GoogleBigtableInstanceIamPolicyConfig {
 	Connection: interface{},

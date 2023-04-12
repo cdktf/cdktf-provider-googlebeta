@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 googletpunode.NewGoogleTpuNode(scope Construct, id *string, config GoogleTpuNodeConfig) GoogleTpuNode
 ```
@@ -362,7 +362,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 googletpunode.GoogleTpuNode_IsConstruct(x interface{}) *bool
 ```
@@ -394,7 +394,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 googletpunode.GoogleTpuNode_IsTerraformElement(x interface{}) *bool
 ```
@@ -408,7 +408,7 @@ googletpunode.GoogleTpuNode_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 googletpunode.GoogleTpuNode_IsTerraformResource(x interface{}) *bool
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 &googletpunode.GoogleTpuNodeConfig {
 	Connection: interface{},
@@ -934,8 +934,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 	Labels: *map[string]*string,
 	Network: *string,
 	Project: *string,
-	SchedulingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuNode.GoogleTpuNodeSchedulingConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuNode.GoogleTpuNodeTimeouts,
+	SchedulingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleTpuNode.GoogleTpuNodeSchedulingConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleTpuNode.GoogleTpuNodeTimeouts,
 	UseServiceNetworking: interface{},
 	Zone: *string,
 }
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeNetworkEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 &googletpunode.GoogleTpuNodeNetworkEndpoints {
 
@@ -1255,7 +1255,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeSchedulingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 &googletpunode.GoogleTpuNodeSchedulingConfig {
 	Preemptible: interface{},
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 &googletpunode.GoogleTpuNodeTimeouts {
 	Create: *string,
@@ -1351,7 +1351,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeNetworkEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 googletpunode.NewGoogleTpuNodeNetworkEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuNodeNetworkEndpointsList
 ```
@@ -1483,7 +1483,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeNetworkEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 googletpunode.NewGoogleTpuNodeNetworkEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuNodeNetworkEndpointsOutputReference
 ```
@@ -1772,7 +1772,7 @@ func InternalValue() GoogleTpuNodeNetworkEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeSchedulingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 googletpunode.NewGoogleTpuNodeSchedulingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuNodeSchedulingConfigOutputReference
 ```
@@ -2043,7 +2043,7 @@ func InternalValue() GoogleTpuNodeSchedulingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletpunode"
 
 googletpunode.NewGoogleTpuNodeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuNodeTimeoutsOutputReference
 ```

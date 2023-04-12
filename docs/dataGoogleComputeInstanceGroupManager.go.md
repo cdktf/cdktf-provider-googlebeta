@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManager.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManager(scope Construct, id *string, config DataGoogleComputeInstanceGroupManagerConfig) DataGoogleComputeInstanceGroupManager
 ```
@@ -301,7 +301,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManager.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManager_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManager.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManager_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManager_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManager.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManager_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -854,7 +854,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerAllInstancesConfig {
 
@@ -867,7 +867,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAutoHealingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerAutoHealingPolicies {
 
@@ -880,7 +880,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerConfig {
 	Connection: interface{},
@@ -1067,7 +1067,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicy {
 
@@ -1080,7 +1080,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerNamedPort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerNamedPort {
 
@@ -1093,7 +1093,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatefulDisk.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerStatefulDisk {
 
@@ -1106,7 +1106,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatefulExternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerStatefulExternalIp {
 
@@ -1119,7 +1119,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatefulInternalIp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerStatefulInternalIp {
 
@@ -1132,7 +1132,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerStatus {
 
@@ -1145,7 +1145,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfig {
 
@@ -1158,7 +1158,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusStateful.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerStatusStateful {
 
@@ -1171,7 +1171,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigs {
 
@@ -1184,7 +1184,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusVersionTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerStatusVersionTarget {
 
@@ -1197,7 +1197,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerUpdatePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerUpdatePolicy {
 
@@ -1210,7 +1210,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerVersion {
 
@@ -1223,7 +1223,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerVersionTargetSize.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 &datagooglecomputeinstancegroupmanager.DataGoogleComputeInstanceGroupManagerVersionTargetSize {
 
@@ -1238,7 +1238,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecompu
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerAllInstancesConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerAllInstancesConfigList
 ```
@@ -1370,7 +1370,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference
 ```
@@ -1659,7 +1659,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerAllInstancesConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesList
 ```
@@ -1791,7 +1791,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerAutoHealingPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 ```
@@ -2080,7 +2080,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerAutoHealingPolicies
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyList
 ```
@@ -2212,7 +2212,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference
 ```
@@ -2490,7 +2490,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerInstanceLifecyclePolic
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerNamedPortList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerNamedPortList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerNamedPortList
 ```
@@ -2622,7 +2622,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerNamedPortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerNamedPortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerNamedPortOutputReference
 ```
@@ -2911,7 +2911,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerNamedPort
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatefulDiskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatefulDiskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerStatefulDiskList
 ```
@@ -3043,7 +3043,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatefulDiskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatefulDiskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerStatefulDiskOutputReference
 ```
@@ -3332,7 +3332,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerStatefulDisk
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatefulExternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatefulExternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerStatefulExternalIpList
 ```
@@ -3464,7 +3464,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerStatefulExternalIpOutputReference
 ```
@@ -3753,7 +3753,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerStatefulExternalIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatefulInternalIpList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatefulInternalIpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerStatefulInternalIpList
 ```
@@ -3885,7 +3885,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference
 ```
@@ -4174,7 +4174,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerStatefulInternalIp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigList
 ```
@@ -4306,7 +4306,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerStatusAllInstancesConfigOutputReference
 ```
@@ -4584,7 +4584,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerStatusAllInstancesConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerStatusList
 ```
@@ -4716,7 +4716,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerStatusOutputReference
 ```
@@ -5027,7 +5027,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusStatefulList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatusStatefulList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerStatusStatefulList
 ```
@@ -5159,7 +5159,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusStatefulOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatusStatefulOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerStatusStatefulOutputReference
 ```
@@ -5448,7 +5448,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerStatusStateful
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList
 ```
@@ -5580,7 +5580,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsOutputReference
 ```
@@ -5858,7 +5858,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerStatusStatefulPerInsta
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusVersionTargetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatusVersionTargetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerStatusVersionTargetList
 ```
@@ -5990,7 +5990,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerStatusVersionTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerStatusVersionTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerStatusVersionTargetOutputReference
 ```
@@ -6268,7 +6268,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerStatusVersionTarget
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerUpdatePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerUpdatePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerUpdatePolicyList
 ```
@@ -6400,7 +6400,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerUpdatePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerUpdatePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerUpdatePolicyOutputReference
 ```
@@ -6766,7 +6766,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerUpdatePolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerVersionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerVersionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerVersionList
 ```
@@ -6898,7 +6898,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerVersionOutputReference
 ```
@@ -7198,7 +7198,7 @@ func InternalValue() DataGoogleComputeInstanceGroupManagerVersion
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerVersionTargetSizeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerVersionTargetSizeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeInstanceGroupManagerVersionTargetSizeList
 ```
@@ -7330,7 +7330,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerVersionTargetSizeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputeinstancegroupmanager"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputeinstancegroupmanager"
 
 datagooglecomputeinstancegroupmanager.NewDataGoogleComputeInstanceGroupManagerVersionTargetSizeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerVersionTargetSizeOutputReference
 ```

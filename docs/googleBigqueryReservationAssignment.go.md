@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryreservationassignment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigqueryreservationassignment"
 
 googlebigqueryreservationassignment.NewGoogleBigqueryReservationAssignment(scope Construct, id *string, config GoogleBigqueryReservationAssignmentConfig) GoogleBigqueryReservationAssignment
 ```
@@ -307,7 +307,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryreservationassignment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigqueryreservationassignment"
 
 googlebigqueryreservationassignment.GoogleBigqueryReservationAssignment_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryreservationassignment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigqueryreservationassignment"
 
 googlebigqueryreservationassignment.GoogleBigqueryReservationAssignment_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googlebigqueryreservationassignment.GoogleBigqueryReservationAssignment_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryreservationassignment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigqueryreservationassignment"
 
 googlebigqueryreservationassignment.GoogleBigqueryReservationAssignment_IsTerraformResource(x interface{}) *bool
 ```
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryreservationassignment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigqueryreservationassignment"
 
 &googlebigqueryreservationassignment.GoogleBigqueryReservationAssignmentConfig {
 	Connection: interface{},
@@ -744,7 +744,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryr
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignmentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignmentTimeouts,
 }
 ```
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryreservationassignment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigqueryreservationassignment"
 
 &googlebigqueryreservationassignment.GoogleBigqueryReservationAssignmentTimeouts {
 	Create: *string,
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryReservationAssignment.GoogleBigqueryReservationAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigqueryreservationassignment"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigqueryreservationassignment"
 
 googlebigqueryreservationassignment.NewGoogleBigqueryReservationAssignmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryReservationAssignmentTimeoutsOutputReference
 ```

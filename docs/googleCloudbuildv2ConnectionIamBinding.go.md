@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudbuildv2connectioniambinding"
 
 googlecloudbuildv2connectioniambinding.NewGoogleCloudbuildv2ConnectionIamBinding(scope Construct, id *string, config GoogleCloudbuildv2ConnectionIamBindingConfig) GoogleCloudbuildv2ConnectionIamBinding
 ```
@@ -307,7 +307,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudbuildv2connectioniambinding"
 
 googlecloudbuildv2connectioniambinding.GoogleCloudbuildv2ConnectionIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudbuildv2connectioniambinding"
 
 googlecloudbuildv2connectioniambinding.GoogleCloudbuildv2ConnectionIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googlecloudbuildv2connectioniambinding.GoogleCloudbuildv2ConnectionIamBinding_Is
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudbuildv2connectioniambinding"
 
 googlecloudbuildv2connectioniambinding.GoogleCloudbuildv2ConnectionIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -717,7 +717,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudbuildv2connectioniambinding"
 
 &googlecloudbuildv2connectioniambinding.GoogleCloudbuildv2ConnectionIamBindingCondition {
 	Expression: *string,
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudbuildv2connectioniambinding"
 
 &googlecloudbuildv2connectioniambinding.GoogleCloudbuildv2ConnectionIamBindingConfig {
 	Connection: interface{},
@@ -790,7 +790,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuil
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamBinding.GoogleCloudbuildv2ConnectionIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudbuildv2connectioniambinding"
 
 googlecloudbuildv2connectioniambinding.NewGoogleCloudbuildv2ConnectionIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildv2ConnectionIamBindingConditionOutputReference
 ```
