@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleartifactregistryrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiampolicy"
 
 googleartifactregistryrepositoryiampolicy.NewGoogleArtifactRegistryRepositoryIamPolicy(scope Construct, id *string, config GoogleArtifactRegistryRepositoryIamPolicyConfig) GoogleArtifactRegistryRepositoryIamPolicy
 ```
@@ -287,7 +287,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleartifactregistryrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiampolicy"
 
 googleartifactregistryrepositoryiampolicy.GoogleArtifactRegistryRepositoryIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleartifactregistryrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiampolicy"
 
 googleartifactregistryrepositoryiampolicy.GoogleArtifactRegistryRepositoryIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ googleartifactregistryrepositoryiampolicy.GoogleArtifactRegistryRepositoryIamPol
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleartifactregistryrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiampolicy"
 
 googleartifactregistryrepositoryiampolicy.GoogleArtifactRegistryRepositoryIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamPolicy.GoogleArtifactRegistryRepositoryIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleartifactregistryrepositoryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleartifactregistryrepositoryiampolicy"
 
 &googleartifactregistryrepositoryiampolicy.GoogleArtifactRegistryRepositoryIamPolicyConfig {
 	Connection: interface{},

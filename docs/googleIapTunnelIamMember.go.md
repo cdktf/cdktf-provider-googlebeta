@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.NewGoogleIapTunnelIamMember(scope Construct, id *string, config GoogleIapTunnelIamMemberConfig) GoogleIapTunnelIamMember
 ```
@@ -300,7 +300,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.GoogleIapTunnelIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.GoogleIapTunnelIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ googleiaptunneliammember.GoogleIapTunnelIamMember_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.GoogleIapTunnelIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -666,7 +666,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 &googleiaptunneliammember.GoogleIapTunnelIamMemberCondition {
 	Expression: *string,
@@ -726,7 +726,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 &googleiaptunneliammember.GoogleIapTunnelIamMemberConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiaptun
 	Provisioners: *[]interface{},
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -905,7 +905,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapTunnelIamMember.GoogleIapTunnelIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiaptunneliammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliammember"
 
 googleiaptunneliammember.NewGoogleIapTunnelIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleIapTunnelIamMemberConditionOutputReference
 ```

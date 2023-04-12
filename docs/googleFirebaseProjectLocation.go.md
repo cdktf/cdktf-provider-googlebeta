@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefirebaseprojectlocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseprojectlocation"
 
 googlefirebaseprojectlocation.NewGoogleFirebaseProjectLocation(scope Construct, id *string, config GoogleFirebaseProjectLocationConfig) GoogleFirebaseProjectLocation
 ```
@@ -300,7 +300,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefirebaseprojectlocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseprojectlocation"
 
 googlefirebaseprojectlocation.GoogleFirebaseProjectLocation_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefirebaseprojectlocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseprojectlocation"
 
 googlefirebaseprojectlocation.GoogleFirebaseProjectLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ googlefirebaseprojectlocation.GoogleFirebaseProjectLocation_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefirebaseprojectlocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseprojectlocation"
 
 googlefirebaseprojectlocation.GoogleFirebaseProjectLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -633,7 +633,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefirebaseprojectlocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseprojectlocation"
 
 &googlefirebaseprojectlocation.GoogleFirebaseProjectLocationConfig {
 	Connection: interface{},
@@ -646,7 +646,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefireba
 	LocationId: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleFirebaseProjectLocation.GoogleFirebaseProjectLocationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocationTimeouts,
 }
 ```
 
@@ -801,7 +801,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefirebaseprojectlocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseprojectlocation"
 
 &googlefirebaseprojectlocation.GoogleFirebaseProjectLocationTimeouts {
 	Create: *string,
@@ -849,7 +849,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseProjectLocation.GoogleFirebaseProjectLocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefirebaseprojectlocation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseprojectlocation"
 
 googlefirebaseprojectlocation.NewGoogleFirebaseProjectLocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseProjectLocationTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiampolicy"
 
 googlecloudiotregistryiampolicy.NewGoogleCloudiotRegistryIamPolicy(scope Construct, id *string, config GoogleCloudiotRegistryIamPolicyConfig) GoogleCloudiotRegistryIamPolicy
 ```
@@ -287,7 +287,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiampolicy"
 
 googlecloudiotregistryiampolicy.GoogleCloudiotRegistryIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiampolicy"
 
 googlecloudiotregistryiampolicy.GoogleCloudiotRegistryIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ googlecloudiotregistryiampolicy.GoogleCloudiotRegistryIamPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiampolicy"
 
 googlecloudiotregistryiampolicy.GoogleCloudiotRegistryIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -653,7 +653,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiampolicy"
 
 &googlecloudiotregistryiampolicy.GoogleCloudiotRegistryIamPolicyConfig {
 	Connection: interface{},

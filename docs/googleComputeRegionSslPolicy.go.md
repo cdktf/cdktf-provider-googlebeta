@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeregionsslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsslpolicy"
 
 googlecomputeregionsslpolicy.NewGoogleComputeRegionSslPolicy(scope Construct, id *string, config GoogleComputeRegionSslPolicyConfig) GoogleComputeRegionSslPolicy
 ```
@@ -328,7 +328,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeregionsslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsslpolicy"
 
 googlecomputeregionsslpolicy.GoogleComputeRegionSslPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeregionsslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsslpolicy"
 
 googlecomputeregionsslpolicy.GoogleComputeRegionSslPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ googlecomputeregionsslpolicy.GoogleComputeRegionSslPolicy_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeregionsslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsslpolicy"
 
 googlecomputeregionsslpolicy.GoogleComputeRegionSslPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeregionsslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsslpolicy"
 
 &googlecomputeregionsslpolicy.GoogleComputeRegionSslPolicyConfig {
 	Connection: interface{},
@@ -833,7 +833,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomput
 	MinTlsVersion: *string,
 	Profile: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicyTimeouts,
 }
 ```
 
@@ -1087,7 +1087,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeregionsslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsslpolicy"
 
 &googlecomputeregionsslpolicy.GoogleComputeRegionSslPolicyTimeouts {
 	Create: *string,
@@ -1149,7 +1149,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionSslPolicy.GoogleComputeRegionSslPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeregionsslpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregionsslpolicy"
 
 googlecomputeregionsslpolicy.NewGoogleComputeRegionSslPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionSslPolicyTimeoutsOutputReference
 ```

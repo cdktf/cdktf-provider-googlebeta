@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchema.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlepubsubschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschema"
 
 googlepubsubschema.NewGooglePubsubSchema(scope Construct, id *string, config GooglePubsubSchemaConfig) GooglePubsubSchema
 ```
@@ -314,7 +314,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchema.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlepubsubschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschema"
 
 googlepubsubschema.GooglePubsubSchema_IsConstruct(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchema.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlepubsubschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschema"
 
 googlepubsubschema.GooglePubsubSchema_IsTerraformElement(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ googlepubsubschema.GooglePubsubSchema_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchema.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlepubsubschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschema"
 
 googlepubsubschema.GooglePubsubSchema_IsTerraformResource(x interface{}) *bool
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchemaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlepubsubschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschema"
 
 &googlepubsubschema.GooglePubsubSchemaConfig {
 	Connection: interface{},
@@ -705,7 +705,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlepubsub
 	Definition: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googlePubsubSchema.GooglePubsubSchemaTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googlePubsubSchema.GooglePubsubSchemaTimeouts,
 	Type: *string,
 }
 ```
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchemaTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlepubsubschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschema"
 
 &googlepubsubschema.GooglePubsubSchemaTimeouts {
 	Create: *string,
@@ -939,7 +939,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubSchema.GooglePubsubSchemaTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlepubsubschema"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlepubsubschema"
 
 googlepubsubschema.NewGooglePubsubSchemaTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GooglePubsubSchemaTimeoutsOutputReference
 ```

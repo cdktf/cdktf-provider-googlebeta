@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigatewayapiconfigiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfigiambinding"
 
 googleapigatewayapiconfigiambinding.NewGoogleApiGatewayApiConfigIamBinding(scope Construct, id *string, config GoogleApiGatewayApiConfigIamBindingConfig) GoogleApiGatewayApiConfigIamBinding
 ```
@@ -300,7 +300,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigatewayapiconfigiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfigiambinding"
 
 googleapigatewayapiconfigiambinding.GoogleApiGatewayApiConfigIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigatewayapiconfigiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfigiambinding"
 
 googleapigatewayapiconfigiambinding.GoogleApiGatewayApiConfigIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ googleapigatewayapiconfigiambinding.GoogleApiGatewayApiConfigIamBinding_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigatewayapiconfigiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfigiambinding"
 
 googleapigatewayapiconfigiambinding.GoogleApiGatewayApiConfigIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -710,7 +710,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigatewayapiconfigiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfigiambinding"
 
 &googleapigatewayapiconfigiambinding.GoogleApiGatewayApiConfigIamBindingCondition {
 	Expression: *string,
@@ -770,7 +770,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigatewayapiconfigiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfigiambinding"
 
 &googleapigatewayapiconfigiambinding.GoogleApiGatewayApiConfigIamBindingConfig {
 	Connection: interface{},
@@ -784,7 +784,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigat
 	ApiConfig: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -977,7 +977,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApiConfigIamBinding.GoogleApiGatewayApiConfigIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigatewayapiconfigiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapiconfigiambinding"
 
 googleapigatewayapiconfigiambinding.NewGoogleApiGatewayApiConfigIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApiGatewayApiConfigIamBindingConditionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleloggingfolderbucketconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingfolderbucketconfig"
 
 googleloggingfolderbucketconfig.NewGoogleLoggingFolderBucketConfig(scope Construct, id *string, config GoogleLoggingFolderBucketConfigConfig) GoogleLoggingFolderBucketConfig
 ```
@@ -307,7 +307,7 @@ func ResetRetentionDays()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleloggingfolderbucketconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingfolderbucketconfig"
 
 googleloggingfolderbucketconfig.GoogleLoggingFolderBucketConfig_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleloggingfolderbucketconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingfolderbucketconfig"
 
 googleloggingfolderbucketconfig.GoogleLoggingFolderBucketConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googleloggingfolderbucketconfig.GoogleLoggingFolderBucketConfig_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleloggingfolderbucketconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingfolderbucketconfig"
 
 googleloggingfolderbucketconfig.GoogleLoggingFolderBucketConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigCmekSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleloggingfolderbucketconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingfolderbucketconfig"
 
 &googleloggingfolderbucketconfig.GoogleLoggingFolderBucketConfigCmekSettings {
 	KmsKeyName: *string,
@@ -768,7 +768,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleloggingfolderbucketconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingfolderbucketconfig"
 
 &googleloggingfolderbucketconfig.GoogleLoggingFolderBucketConfigConfig {
 	Connection: interface{},
@@ -781,7 +781,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleloggin
 	BucketId: *string,
 	Folder: *string,
 	Location: *string,
-	CmekSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigCmekSettings,
+	CmekSettings: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigCmekSettings,
 	Description: *string,
 	Id: *string,
 	RetentionDays: *f64,
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingFolderBucketConfig.GoogleLoggingFolderBucketConfigCmekSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleloggingfolderbucketconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingfolderbucketconfig"
 
 googleloggingfolderbucketconfig.NewGoogleLoggingFolderBucketConfigCmekSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLoggingFolderBucketConfigCmekSettingsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleproject"
 
 datagoogleproject.NewDataGoogleProject(scope Construct, id *string, config DataGoogleProjectConfig) DataGoogleProject
 ```
@@ -280,7 +280,7 @@ func ResetProjectId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datagoogleproject.DataGoogleProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProject.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleProject.DataGoogleProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleproject"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleproject"
 
 &datagoogleproject.DataGoogleProjectConfig {
 	Connection: interface{},

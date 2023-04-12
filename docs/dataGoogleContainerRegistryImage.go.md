@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecontainerregistryimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecontainerregistryimage"
 
 datagooglecontainerregistryimage.NewDataGoogleContainerRegistryImage(scope Construct, id *string, config DataGoogleContainerRegistryImageConfig) DataGoogleContainerRegistryImage
 ```
@@ -301,7 +301,7 @@ func ResetTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecontainerregistryimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecontainerregistryimage"
 
 datagooglecontainerregistryimage.DataGoogleContainerRegistryImage_IsConstruct(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecontainerregistryimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecontainerregistryimage"
 
 datagooglecontainerregistryimage.DataGoogleContainerRegistryImage_IsTerraformElement(x interface{}) *bool
 ```
@@ -347,7 +347,7 @@ datagooglecontainerregistryimage.DataGoogleContainerRegistryImage_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecontainerregistryimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecontainerregistryimage"
 
 datagooglecontainerregistryimage.DataGoogleContainerRegistryImage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -667,7 +667,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecontainerregistryimage"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecontainerregistryimage"
 
 &datagooglecontainerregistryimage.DataGoogleContainerRegistryImageConfig {
 	Connection: interface{},

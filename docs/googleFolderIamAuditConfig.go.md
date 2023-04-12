@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefolderiamauditconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiamauditconfig"
 
 googlefolderiamauditconfig.NewGoogleFolderIamAuditConfig(scope Construct, id *string, config GoogleFolderIamAuditConfigConfig) GoogleFolderIamAuditConfig
 ```
@@ -286,7 +286,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefolderiamauditconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiamauditconfig"
 
 googlefolderiamauditconfig.GoogleFolderIamAuditConfig_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefolderiamauditconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiamauditconfig"
 
 googlefolderiamauditconfig.GoogleFolderIamAuditConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ googlefolderiamauditconfig.GoogleFolderIamAuditConfig_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefolderiamauditconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiamauditconfig"
 
 googlefolderiamauditconfig.GoogleFolderIamAuditConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigAuditLogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefolderiamauditconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiamauditconfig"
 
 &googlefolderiamauditconfig.GoogleFolderIamAuditConfigAuditLogConfig {
 	LogType: *string,
@@ -682,7 +682,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefolderiamauditconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiamauditconfig"
 
 &googlefolderiamauditconfig.GoogleFolderIamAuditConfigConfig {
 	Connection: interface{},
@@ -849,7 +849,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigAuditLogConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefolderiamauditconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiamauditconfig"
 
 googlefolderiamauditconfig.NewGoogleFolderIamAuditConfigAuditLogConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFolderIamAuditConfigAuditLogConfigList
 ```
@@ -992,7 +992,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFolderIamAuditConfig.GoogleFolderIamAuditConfigAuditLogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefolderiamauditconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefolderiamauditconfig"
 
 googlefolderiamauditconfig.NewGoogleFolderIamAuditConfigAuditLogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFolderIamAuditConfigAuditLogConfigOutputReference
 ```

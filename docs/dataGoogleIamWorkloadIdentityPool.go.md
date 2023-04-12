@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.NewDataGoogleIamWorkloadIdentityPool(scope Construct, id *string, config DataGoogleIamWorkloadIdentityPoolConfig) DataGoogleIamWorkloadIdentityPool
 ```
@@ -280,7 +280,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPool_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPool_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPool_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleiamworkloadidentitypool"
 
 datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool.DataGoogleIamWorkloadIdentityPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleiamworkloadidentitypool"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleiamworkloadidentitypool"
 
 &datagoogleiamworkloadidentitypool.DataGoogleIamWorkloadIdentityPoolConfig {
 	Connection: interface{},

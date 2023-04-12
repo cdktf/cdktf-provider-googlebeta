@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglednsrecordset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsrecordset"
 
 datagooglednsrecordset.NewDataGoogleDnsRecordSet(scope Construct, id *string, config DataGoogleDnsRecordSetConfig) DataGoogleDnsRecordSet
 ```
@@ -273,7 +273,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglednsrecordset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsrecordset"
 
 datagooglednsrecordset.DataGoogleDnsRecordSet_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglednsrecordset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsrecordset"
 
 datagooglednsrecordset.DataGoogleDnsRecordSet_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagooglednsrecordset.DataGoogleDnsRecordSet_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleDnsRecordSet.DataGoogleDnsRecordSet.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglednsrecordset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsrecordset"
 
 datagooglednsrecordset.DataGoogleDnsRecordSet_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleDnsRecordSet.DataGoogleDnsRecordSetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglednsrecordset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglednsrecordset"
 
 &datagooglednsrecordset.DataGoogleDnsRecordSetConfig {
 	Connection: interface{},
