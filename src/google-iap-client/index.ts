@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_iap_client
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_client
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -12,17 +12,17 @@ export interface GoogleIapClientConfig extends cdktf.TerraformMetaArguments {
 is attached to. The format is
 'projects/{project_number}/brands/{brand_id}/identityAwareProxyClients/{client_id}'.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_client#brand GoogleIapClient#brand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_client#brand GoogleIapClient#brand}
   */
   readonly brand: string;
   /**
   * Human-friendly name given to the OAuth client.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_client#display_name GoogleIapClient#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_client#display_name GoogleIapClient#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_client#id GoogleIapClient#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_client#id GoogleIapClient#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,22 +31,22 @@ is attached to. The format is
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_client#timeouts GoogleIapClient#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_client#timeouts GoogleIapClient#timeouts}
   */
   readonly timeouts?: GoogleIapClientTimeouts;
 }
 export interface GoogleIapClientTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_client#create GoogleIapClient#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_client#create GoogleIapClient#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_client#delete GoogleIapClient#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_client#delete GoogleIapClient#delete}
   */
   readonly delete?: string;
 }
 
-export function googleIapClientTimeoutsToTerraform(struct?: GoogleIapClientTimeoutsOutputReference | GoogleIapClientTimeouts | cdktf.IResolvable): any {
+export function googleIapClientTimeoutsToTerraform(struct?: GoogleIapClientTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -66,7 +66,7 @@ export class GoogleIapClientTimeoutsOutputReference extends cdktf.ComplexObject 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleIapClientTimeouts | cdktf.IResolvable | undefined {
@@ -139,7 +139,7 @@ export class GoogleIapClientTimeoutsOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_client google_iap_client}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_client google_iap_client}
 */
 export class GoogleIapClient extends cdktf.TerraformResource {
 
@@ -153,7 +153,7 @@ export class GoogleIapClient extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_client google_iap_client} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_client google_iap_client} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

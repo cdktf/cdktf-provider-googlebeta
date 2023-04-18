@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleFirebaserulesRulesetConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#id GoogleFirebaserulesRuleset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#id GoogleFirebaserulesRuleset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,19 +17,19 @@ export interface GoogleFirebaserulesRulesetConfig extends cdktf.TerraformMetaArg
   /**
   * The project for the resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#project GoogleFirebaserulesRuleset#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#project GoogleFirebaserulesRuleset#project}
   */
   readonly project?: string;
   /**
   * source block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#source GoogleFirebaserulesRuleset#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#source GoogleFirebaserulesRuleset#source}
   */
   readonly source: GoogleFirebaserulesRulesetSource;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#timeouts GoogleFirebaserulesRuleset#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#timeouts GoogleFirebaserulesRuleset#timeouts}
   */
   readonly timeouts?: GoogleFirebaserulesRulesetTimeouts;
 }
@@ -101,19 +101,19 @@ export interface GoogleFirebaserulesRulesetSourceFiles {
   /**
   * Textual Content.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#content GoogleFirebaserulesRuleset#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#content GoogleFirebaserulesRuleset#content}
   */
   readonly content: string;
   /**
   * Fingerprint (e.g. github sha) associated with the `File`.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#fingerprint GoogleFirebaserulesRuleset#fingerprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#fingerprint GoogleFirebaserulesRuleset#fingerprint}
   */
   readonly fingerprint?: string;
   /**
   * File name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#name GoogleFirebaserulesRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#name GoogleFirebaserulesRuleset#name}
   */
   readonly name: string;
 }
@@ -252,13 +252,13 @@ export interface GoogleFirebaserulesRulesetSource {
   /**
   * `Language` of the `Source` bundle. If unspecified, the language will default to `FIREBASE_RULES`. Possible values: LANGUAGE_UNSPECIFIED, FIREBASE_RULES, EVENT_FLOW_TRIGGERS
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#language GoogleFirebaserulesRuleset#language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#language GoogleFirebaserulesRuleset#language}
   */
   readonly language?: string;
   /**
   * files block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#files GoogleFirebaserulesRuleset#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#files GoogleFirebaserulesRuleset#files}
   */
   readonly files: GoogleFirebaserulesRulesetSourceFiles[] | cdktf.IResolvable;
 }
@@ -343,16 +343,16 @@ export class GoogleFirebaserulesRulesetSourceOutputReference extends cdktf.Compl
 }
 export interface GoogleFirebaserulesRulesetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#create GoogleFirebaserulesRuleset#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#create GoogleFirebaserulesRuleset#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset#delete GoogleFirebaserulesRuleset#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset#delete GoogleFirebaserulesRuleset#delete}
   */
   readonly delete?: string;
 }
 
-export function googleFirebaserulesRulesetTimeoutsToTerraform(struct?: GoogleFirebaserulesRulesetTimeoutsOutputReference | GoogleFirebaserulesRulesetTimeouts | cdktf.IResolvable): any {
+export function googleFirebaserulesRulesetTimeoutsToTerraform(struct?: GoogleFirebaserulesRulesetTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -372,7 +372,7 @@ export class GoogleFirebaserulesRulesetTimeoutsOutputReference extends cdktf.Com
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleFirebaserulesRulesetTimeouts | cdktf.IResolvable | undefined {
@@ -445,7 +445,7 @@ export class GoogleFirebaserulesRulesetTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset google_firebaserules_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset google_firebaserules_ruleset}
 */
 export class GoogleFirebaserulesRuleset extends cdktf.TerraformResource {
 
@@ -459,7 +459,7 @@ export class GoogleFirebaserulesRuleset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset google_firebaserules_ruleset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebaserules_ruleset google_firebaserules_ruleset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

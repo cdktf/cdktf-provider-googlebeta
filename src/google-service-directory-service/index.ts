@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleServiceDirectoryServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service#id GoogleServiceDirectoryService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service#id GoogleServiceDirectoryService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -20,45 +20,45 @@ by service clients. The entire metadata dictionary may contain
 up to 2000 characters, spread across all key-value pairs.
 Metadata that goes beyond any these limits will be rejected.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service#metadata GoogleServiceDirectoryService#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service#metadata GoogleServiceDirectoryService#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * The resource name of the namespace this service will belong to.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service#namespace GoogleServiceDirectoryService#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service#namespace GoogleServiceDirectoryService#namespace}
   */
   readonly namespace: string;
   /**
   * The Resource ID must be 1-63 characters long, including digits,
 lowercase letters or the hyphen character.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service#service_id GoogleServiceDirectoryService#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service#service_id GoogleServiceDirectoryService#service_id}
   */
   readonly serviceId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service#timeouts GoogleServiceDirectoryService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service#timeouts GoogleServiceDirectoryService#timeouts}
   */
   readonly timeouts?: GoogleServiceDirectoryServiceTimeouts;
 }
 export interface GoogleServiceDirectoryServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service#create GoogleServiceDirectoryService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service#create GoogleServiceDirectoryService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service#delete GoogleServiceDirectoryService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service#delete GoogleServiceDirectoryService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service#update GoogleServiceDirectoryService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service#update GoogleServiceDirectoryService#update}
   */
   readonly update?: string;
 }
 
-export function googleServiceDirectoryServiceTimeoutsToTerraform(struct?: GoogleServiceDirectoryServiceTimeoutsOutputReference | GoogleServiceDirectoryServiceTimeouts | cdktf.IResolvable): any {
+export function googleServiceDirectoryServiceTimeoutsToTerraform(struct?: GoogleServiceDirectoryServiceTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -79,7 +79,7 @@ export class GoogleServiceDirectoryServiceTimeoutsOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleServiceDirectoryServiceTimeouts | cdktf.IResolvable | undefined {
@@ -174,7 +174,7 @@ export class GoogleServiceDirectoryServiceTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service google_service_directory_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service google_service_directory_service}
 */
 export class GoogleServiceDirectoryService extends cdktf.TerraformResource {
 
@@ -188,7 +188,7 @@ export class GoogleServiceDirectoryService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_service google_service_directory_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_service google_service_directory_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

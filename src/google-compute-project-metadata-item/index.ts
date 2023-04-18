@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleComputeProjectMetadataItemConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item#id GoogleComputeProjectMetadataItem#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item#id GoogleComputeProjectMetadataItem#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,44 +17,44 @@ export interface GoogleComputeProjectMetadataItemConfig extends cdktf.TerraformM
   /**
   * The metadata key to set.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item#key GoogleComputeProjectMetadataItem#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item#key GoogleComputeProjectMetadataItem#key}
   */
   readonly key: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item#project GoogleComputeProjectMetadataItem#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item#project GoogleComputeProjectMetadataItem#project}
   */
   readonly project?: string;
   /**
   * The value to set for the given metadata key.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item#value GoogleComputeProjectMetadataItem#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item#value GoogleComputeProjectMetadataItem#value}
   */
   readonly value: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item#timeouts GoogleComputeProjectMetadataItem#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item#timeouts GoogleComputeProjectMetadataItem#timeouts}
   */
   readonly timeouts?: GoogleComputeProjectMetadataItemTimeouts;
 }
 export interface GoogleComputeProjectMetadataItemTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item#create GoogleComputeProjectMetadataItem#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item#create GoogleComputeProjectMetadataItem#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item#delete GoogleComputeProjectMetadataItem#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item#delete GoogleComputeProjectMetadataItem#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item#update GoogleComputeProjectMetadataItem#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item#update GoogleComputeProjectMetadataItem#update}
   */
   readonly update?: string;
 }
 
-export function googleComputeProjectMetadataItemTimeoutsToTerraform(struct?: GoogleComputeProjectMetadataItemTimeoutsOutputReference | GoogleComputeProjectMetadataItemTimeouts | cdktf.IResolvable): any {
+export function googleComputeProjectMetadataItemTimeoutsToTerraform(struct?: GoogleComputeProjectMetadataItemTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -75,7 +75,7 @@ export class GoogleComputeProjectMetadataItemTimeoutsOutputReference extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleComputeProjectMetadataItemTimeouts | cdktf.IResolvable | undefined {
@@ -170,7 +170,7 @@ export class GoogleComputeProjectMetadataItemTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item google_compute_project_metadata_item}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item google_compute_project_metadata_item}
 */
 export class GoogleComputeProjectMetadataItem extends cdktf.TerraformResource {
 
@@ -184,7 +184,7 @@ export class GoogleComputeProjectMetadataItem extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata_item google_compute_project_metadata_item} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_project_metadata_item google_compute_project_metadata_item} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

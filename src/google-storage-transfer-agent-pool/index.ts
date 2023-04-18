@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleStorageTransferAgentPoolConfig extends cdktf.TerraformMet
   /**
   * Specifies the client-specified AgentPool description.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool#display_name GoogleStorageTransferAgentPool#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool#display_name GoogleStorageTransferAgentPool#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool#id GoogleStorageTransferAgentPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool#id GoogleStorageTransferAgentPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,23 +32,23 @@ The agentPoolId must meet the following requirements:
 
 As expressed by the regular expression: ^(?!goog)[a-z]([a-z0-9-._~]*[a-z0-9])?$.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool#name GoogleStorageTransferAgentPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool#name GoogleStorageTransferAgentPool#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool#project GoogleStorageTransferAgentPool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool#project GoogleStorageTransferAgentPool#project}
   */
   readonly project?: string;
   /**
   * bandwidth_limit block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool#bandwidth_limit GoogleStorageTransferAgentPool#bandwidth_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool#bandwidth_limit GoogleStorageTransferAgentPool#bandwidth_limit}
   */
   readonly bandwidthLimit?: GoogleStorageTransferAgentPoolBandwidthLimit;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool#timeouts GoogleStorageTransferAgentPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool#timeouts GoogleStorageTransferAgentPool#timeouts}
   */
   readonly timeouts?: GoogleStorageTransferAgentPoolTimeouts;
 }
@@ -56,7 +56,7 @@ export interface GoogleStorageTransferAgentPoolBandwidthLimit {
   /**
   * Bandwidth rate in megabytes per second, distributed across all the agents in the pool.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool#limit_mbps GoogleStorageTransferAgentPool#limit_mbps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool#limit_mbps GoogleStorageTransferAgentPool#limit_mbps}
   */
   readonly limitMbps: string;
 }
@@ -118,20 +118,20 @@ export class GoogleStorageTransferAgentPoolBandwidthLimitOutputReference extends
 }
 export interface GoogleStorageTransferAgentPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool#create GoogleStorageTransferAgentPool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool#create GoogleStorageTransferAgentPool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool#delete GoogleStorageTransferAgentPool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool#delete GoogleStorageTransferAgentPool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool#update GoogleStorageTransferAgentPool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool#update GoogleStorageTransferAgentPool#update}
   */
   readonly update?: string;
 }
 
-export function googleStorageTransferAgentPoolTimeoutsToTerraform(struct?: GoogleStorageTransferAgentPoolTimeoutsOutputReference | GoogleStorageTransferAgentPoolTimeouts | cdktf.IResolvable): any {
+export function googleStorageTransferAgentPoolTimeoutsToTerraform(struct?: GoogleStorageTransferAgentPoolTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -152,7 +152,7 @@ export class GoogleStorageTransferAgentPoolTimeoutsOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleStorageTransferAgentPoolTimeouts | cdktf.IResolvable | undefined {
@@ -247,7 +247,7 @@ export class GoogleStorageTransferAgentPoolTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool google_storage_transfer_agent_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool google_storage_transfer_agent_pool}
 */
 export class GoogleStorageTransferAgentPool extends cdktf.TerraformResource {
 
@@ -261,7 +261,7 @@ export class GoogleStorageTransferAgentPool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_agent_pool google_storage_transfer_agent_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_transfer_agent_pool google_storage_transfer_agent_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

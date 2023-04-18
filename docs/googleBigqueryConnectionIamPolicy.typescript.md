@@ -1,6 +1,6 @@
 # `google_bigquery_connection_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_bigquery_connection_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy).
+Refer to the Terraform Registory for docs: [`google_bigquery_connection_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy).
 
 # `googleBigqueryConnectionIamPolicy` Submodule <a name="`googleBigqueryConnectionIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_bigquery_connection_iam_poli
 
 ### GoogleBigqueryConnectionIamPolicy <a name="GoogleBigqueryConnectionIamPolicy" id="@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy google_bigquery_connection_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy google_bigquery_connection_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.Initializer"></a>
 
@@ -360,7 +360,7 @@ googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.isTerraformR
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -465,10 +465,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicy.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -667,17 +667,17 @@ const googleBigqueryConnectionIamPolicyConfig: googleBigqueryConnectionIamPolicy
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.connectionId">connectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy#connection_id GoogleBigqueryConnectionIamPolicy#connection_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy#policy_data GoogleBigqueryConnectionIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy#id GoogleBigqueryConnectionIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy#location GoogleBigqueryConnectionIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy#project GoogleBigqueryConnectionIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.connectionId">connectionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy#connection_id GoogleBigqueryConnectionIamPolicy#connection_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy#policy_data GoogleBigqueryConnectionIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy#id GoogleBigqueryConnectionIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy#location GoogleBigqueryConnectionIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy#project GoogleBigqueryConnectionIamPolicy#project}. |
 
 ---
 
@@ -694,10 +694,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleBigqueryConnectionIamPolicy.GoogleBigqueryConnectionIamPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -759,7 +759,7 @@ public readonly connectionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy#connection_id GoogleBigqueryConnectionIamPolicy#connection_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy#connection_id GoogleBigqueryConnectionIamPolicy#connection_id}.
 
 ---
 
@@ -771,7 +771,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy#policy_data GoogleBigqueryConnectionIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy#policy_data GoogleBigqueryConnectionIamPolicy#policy_data}.
 
 ---
 
@@ -783,7 +783,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy#id GoogleBigqueryConnectionIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy#id GoogleBigqueryConnectionIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -798,7 +798,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy#location GoogleBigqueryConnectionIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy#location GoogleBigqueryConnectionIamPolicy#location}.
 
 ---
 
@@ -810,7 +810,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_connection_iam_policy#project GoogleBigqueryConnectionIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_connection_iam_policy#project GoogleBigqueryConnectionIamPolicy#project}.
 
 ---
 

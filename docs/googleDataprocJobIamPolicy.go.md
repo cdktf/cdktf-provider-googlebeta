@@ -1,6 +1,6 @@
 # `google_dataproc_job_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_dataproc_job_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy).
+Refer to the Terraform Registory for docs: [`google_dataproc_job_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy).
 
 # `googleDataprocJobIamPolicy` Submodule <a name="`googleDataprocJobIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleDataprocJobIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_dataproc_job_iam_policy`](ht
 
 ### GoogleDataprocJobIamPolicy <a name="GoogleDataprocJobIamPolicy" id="@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy google_dataproc_job_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy google_dataproc_job_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googledataprocjobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocjobiampolicy"
 
 googledataprocjobiampolicy.NewGoogleDataprocJobIamPolicy(scope Construct, id *string, config GoogleDataprocJobIamPolicyConfig) GoogleDataprocJobIamPolicy
 ```
@@ -291,7 +291,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googledataprocjobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocjobiampolicy"
 
 googledataprocjobiampolicy.GoogleDataprocJobIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googledataprocjobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocjobiampolicy"
 
 googledataprocjobiampolicy.GoogleDataprocJobIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ googledataprocjobiampolicy.GoogleDataprocJobIamPolicy_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googledataprocjobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocjobiampolicy"
 
 googledataprocjobiampolicy.GoogleDataprocJobIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ googledataprocjobiampolicy.GoogleDataprocJobIamPolicy_IsTerraformResource(x inte
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -465,10 +465,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicy.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -657,11 +657,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googledataprocjobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocjobiampolicy"
 
 &googledataprocjobiampolicy.GoogleDataprocJobIamPolicyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -680,17 +680,17 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googledatapr
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.jobId">JobId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy#job_id GoogleDataprocJobIamPolicy#job_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy#policy_data GoogleDataprocJobIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy#id GoogleDataprocJobIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy#project GoogleDataprocJobIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy#region GoogleDataprocJobIamPolicy#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.jobId">JobId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy#job_id GoogleDataprocJobIamPolicy#job_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy#policy_data GoogleDataprocJobIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy#id GoogleDataprocJobIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy#project GoogleDataprocJobIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy#region GoogleDataprocJobIamPolicy#region}. |
 
 ---
 
@@ -707,10 +707,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleDataprocJobIamPolicy.GoogleDataprocJobIamPolicyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -772,7 +772,7 @@ JobId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy#job_id GoogleDataprocJobIamPolicy#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy#job_id GoogleDataprocJobIamPolicy#job_id}.
 
 ---
 
@@ -784,7 +784,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy#policy_data GoogleDataprocJobIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy#policy_data GoogleDataprocJobIamPolicy#policy_data}.
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy#id GoogleDataprocJobIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy#id GoogleDataprocJobIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy#project GoogleDataprocJobIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy#project GoogleDataprocJobIamPolicy#project}.
 
 ---
 
@@ -823,7 +823,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_policy#region GoogleDataprocJobIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataproc_job_iam_policy#region GoogleDataprocJobIamPolicy#region}.
 
 ---
 

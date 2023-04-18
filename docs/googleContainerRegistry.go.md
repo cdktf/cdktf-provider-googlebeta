@@ -1,6 +1,6 @@
 # `google_container_registry`
 
-Refer to the Terraform Registory for docs: [`google_container_registry`](https://www.terraform.io/docs/providers/google-beta/r/google_container_registry).
+Refer to the Terraform Registory for docs: [`google_container_registry`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_registry).
 
 # `googleContainerRegistry` Submodule <a name="`googleContainerRegistry` Submodule" id="@cdktf/provider-google-beta.googleContainerRegistry"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_container_registry`](https:/
 
 ### GoogleContainerRegistry <a name="GoogleContainerRegistry" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_registry google_container_registry}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_registry google_container_registry}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainerregistry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecontainerregistry"
 
 googlecontainerregistry.NewGoogleContainerRegistry(scope Construct, id *string, config GoogleContainerRegistryConfig) GoogleContainerRegistry
 ```
@@ -291,7 +291,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainerregistry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecontainerregistry"
 
 googlecontainerregistry.GoogleContainerRegistry_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainerregistry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecontainerregistry"
 
 googlecontainerregistry.GoogleContainerRegistry_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ googlecontainerregistry.GoogleContainerRegistry_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainerregistry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecontainerregistry"
 
 googlecontainerregistry.GoogleContainerRegistry_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ googlecontainerregistry.GoogleContainerRegistry_IsTerraformResource(x interface{
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -461,10 +461,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistry.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -613,11 +613,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainerregistry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecontainerregistry"
 
 &googlecontainerregistry.GoogleContainerRegistryConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -634,13 +634,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontai
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_registry#id GoogleContainerRegistry#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_registry#id GoogleContainerRegistry#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.location">Location</a></code> | <code>*string</code> | The location of the registry. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the resource belongs. |
 
@@ -659,10 +659,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleContainerRegistry.GoogleContainerRegistryConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -724,7 +724,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_registry#id GoogleContainerRegistry#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_registry#id GoogleContainerRegistry#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -743,7 +743,7 @@ The location of the registry.
 
 One of ASIA, EU, US or not specified. See the official documentation for more information on registry locations.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_registry#location GoogleContainerRegistry#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_registry#location GoogleContainerRegistry#location}
 
 ---
 
@@ -759,7 +759,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_registry#project GoogleContainerRegistry#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_registry#project GoogleContainerRegistry#project}
 
 ---
 

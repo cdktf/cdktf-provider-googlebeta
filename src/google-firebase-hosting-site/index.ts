@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,18 +11,18 @@ export interface GoogleFirebaseHostingSiteConfig extends cdktf.TerraformMetaArgu
   * Optional. The [ID of a Web App](https://firebase.google.com/docs/reference/firebase-management/rest/v1beta1/projects.webApps#WebApp.FIELDS.app_id)
 associated with the Hosting site.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site#app_id GoogleFirebaseHostingSite#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site#app_id GoogleFirebaseHostingSite#app_id}
   */
   readonly appId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site#id GoogleFirebaseHostingSite#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site#id GoogleFirebaseHostingSite#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site#project GoogleFirebaseHostingSite#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site#project GoogleFirebaseHostingSite#project}
   */
   readonly project?: string;
   /**
@@ -30,32 +30,32 @@ associated with the Hosting site.
 used to construct the Firebase-provisioned subdomains for the site, so it must also be a valid
 domain name label.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site#site_id GoogleFirebaseHostingSite#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site#site_id GoogleFirebaseHostingSite#site_id}
   */
   readonly siteId?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site#timeouts GoogleFirebaseHostingSite#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site#timeouts GoogleFirebaseHostingSite#timeouts}
   */
   readonly timeouts?: GoogleFirebaseHostingSiteTimeouts;
 }
 export interface GoogleFirebaseHostingSiteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site#create GoogleFirebaseHostingSite#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site#create GoogleFirebaseHostingSite#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site#delete GoogleFirebaseHostingSite#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site#delete GoogleFirebaseHostingSite#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site#update GoogleFirebaseHostingSite#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site#update GoogleFirebaseHostingSite#update}
   */
   readonly update?: string;
 }
 
-export function googleFirebaseHostingSiteTimeoutsToTerraform(struct?: GoogleFirebaseHostingSiteTimeoutsOutputReference | GoogleFirebaseHostingSiteTimeouts | cdktf.IResolvable): any {
+export function googleFirebaseHostingSiteTimeoutsToTerraform(struct?: GoogleFirebaseHostingSiteTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -76,7 +76,7 @@ export class GoogleFirebaseHostingSiteTimeoutsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleFirebaseHostingSiteTimeouts | cdktf.IResolvable | undefined {
@@ -171,7 +171,7 @@ export class GoogleFirebaseHostingSiteTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site google_firebase_hosting_site}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site google_firebase_hosting_site}
 */
 export class GoogleFirebaseHostingSite extends cdktf.TerraformResource {
 
@@ -185,7 +185,7 @@ export class GoogleFirebaseHostingSite extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_site google_firebase_hosting_site} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_site google_firebase_hosting_site} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

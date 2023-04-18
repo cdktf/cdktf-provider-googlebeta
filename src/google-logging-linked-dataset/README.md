@@ -1,3 +1,3 @@
 # `google_logging_linked_dataset`
 
-Refer to the Terraform Registory for docs: [`google_logging_linked_dataset`](https://www.terraform.io/docs/providers/google-beta/r/google_logging_linked_dataset).
+Refer to the Terraform Registory for docs: [`google_logging_linked_dataset`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_logging_linked_dataset).

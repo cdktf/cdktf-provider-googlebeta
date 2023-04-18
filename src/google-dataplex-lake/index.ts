@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GoogleDataplexLakeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional. Description of the lake.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#description GoogleDataplexLake#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#description GoogleDataplexLake#description}
   */
   readonly description?: string;
   /**
   * Optional. User friendly display name.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#display_name GoogleDataplexLake#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#display_name GoogleDataplexLake#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#id GoogleDataplexLake#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#id GoogleDataplexLake#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,37 +29,37 @@ export interface GoogleDataplexLakeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional. User-defined labels for the lake.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#labels GoogleDataplexLake#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#labels GoogleDataplexLake#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#location GoogleDataplexLake#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#location GoogleDataplexLake#location}
   */
   readonly location: string;
   /**
   * The name of the lake.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#name GoogleDataplexLake#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#name GoogleDataplexLake#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#project GoogleDataplexLake#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#project GoogleDataplexLake#project}
   */
   readonly project?: string;
   /**
   * metastore block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#metastore GoogleDataplexLake#metastore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#metastore GoogleDataplexLake#metastore}
   */
   readonly metastore?: GoogleDataplexLakeMetastore;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#timeouts GoogleDataplexLake#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#timeouts GoogleDataplexLake#timeouts}
   */
   readonly timeouts?: GoogleDataplexLakeTimeouts;
 }
@@ -220,7 +220,7 @@ export interface GoogleDataplexLakeMetastore {
   /**
   * Optional. A relative reference to the Dataproc Metastore (https://cloud.google.com/dataproc-metastore/docs) service associated with the lake: `projects/{project_id}/locations/{location_id}/services/{service_id}`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#service GoogleDataplexLake#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#service GoogleDataplexLake#service}
   */
   readonly service?: string;
 }
@@ -285,20 +285,20 @@ export class GoogleDataplexLakeMetastoreOutputReference extends cdktf.ComplexObj
 }
 export interface GoogleDataplexLakeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#create GoogleDataplexLake#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#create GoogleDataplexLake#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#delete GoogleDataplexLake#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#delete GoogleDataplexLake#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake#update GoogleDataplexLake#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake#update GoogleDataplexLake#update}
   */
   readonly update?: string;
 }
 
-export function googleDataplexLakeTimeoutsToTerraform(struct?: GoogleDataplexLakeTimeoutsOutputReference | GoogleDataplexLakeTimeouts | cdktf.IResolvable): any {
+export function googleDataplexLakeTimeoutsToTerraform(struct?: GoogleDataplexLakeTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -319,7 +319,7 @@ export class GoogleDataplexLakeTimeoutsOutputReference extends cdktf.ComplexObje
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleDataplexLakeTimeouts | cdktf.IResolvable | undefined {
@@ -414,7 +414,7 @@ export class GoogleDataplexLakeTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake google_dataplex_lake}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake google_dataplex_lake}
 */
 export class GoogleDataplexLake extends cdktf.TerraformResource {
 
@@ -428,7 +428,7 @@ export class GoogleDataplexLake extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_lake google_dataplex_lake} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GoogleSccNotificationConfigConfig extends cdktf.TerraformMetaAr
   /**
   * This must be unique within the organization.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#config_id GoogleSccNotificationConfig#config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#config_id GoogleSccNotificationConfig#config_id}
   */
   readonly configId: string;
   /**
   * The description of the notification config (max of 1024 characters).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#description GoogleSccNotificationConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#description GoogleSccNotificationConfig#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#id GoogleSccNotificationConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#id GoogleSccNotificationConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,26 +30,26 @@ export interface GoogleSccNotificationConfigConfig extends cdktf.TerraformMetaAr
   * The organization whose Cloud Security Command Center the Notification
 Config lives in.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#organization GoogleSccNotificationConfig#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#organization GoogleSccNotificationConfig#organization}
   */
   readonly organization: string;
   /**
   * The Pub/Sub topic to send notifications to. Its format is
 "projects/[project_id]/topics/[topic]".
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#pubsub_topic GoogleSccNotificationConfig#pubsub_topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#pubsub_topic GoogleSccNotificationConfig#pubsub_topic}
   */
   readonly pubsubTopic: string;
   /**
   * streaming_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#streaming_config GoogleSccNotificationConfig#streaming_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#streaming_config GoogleSccNotificationConfig#streaming_config}
   */
   readonly streamingConfig: GoogleSccNotificationConfigStreamingConfig;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#timeouts GoogleSccNotificationConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#timeouts GoogleSccNotificationConfig#timeouts}
   */
   readonly timeouts?: GoogleSccNotificationConfigTimeouts;
 }
@@ -81,7 +81,7 @@ See
 [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 for information on how to write a filter.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#filter GoogleSccNotificationConfig#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#filter GoogleSccNotificationConfig#filter}
   */
   readonly filter: string;
 }
@@ -143,20 +143,20 @@ export class GoogleSccNotificationConfigStreamingConfigOutputReference extends c
 }
 export interface GoogleSccNotificationConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#create GoogleSccNotificationConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#create GoogleSccNotificationConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#delete GoogleSccNotificationConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#delete GoogleSccNotificationConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config#update GoogleSccNotificationConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config#update GoogleSccNotificationConfig#update}
   */
   readonly update?: string;
 }
 
-export function googleSccNotificationConfigTimeoutsToTerraform(struct?: GoogleSccNotificationConfigTimeoutsOutputReference | GoogleSccNotificationConfigTimeouts | cdktf.IResolvable): any {
+export function googleSccNotificationConfigTimeoutsToTerraform(struct?: GoogleSccNotificationConfigTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -177,7 +177,7 @@ export class GoogleSccNotificationConfigTimeoutsOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleSccNotificationConfigTimeouts | cdktf.IResolvable | undefined {
@@ -272,7 +272,7 @@ export class GoogleSccNotificationConfigTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config google_scc_notification_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config google_scc_notification_config}
 */
 export class GoogleSccNotificationConfig extends cdktf.TerraformResource {
 
@@ -286,7 +286,7 @@ export class GoogleSccNotificationConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config google_scc_notification_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config google_scc_notification_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

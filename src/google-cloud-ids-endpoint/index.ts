@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleCloudIdsEndpointConfig extends cdktf.TerraformMetaArgumen
   /**
   * An optional description of the endpoint.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#description GoogleCloudIdsEndpoint#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#description GoogleCloudIdsEndpoint#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#id GoogleCloudIdsEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#id GoogleCloudIdsEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,60 +23,60 @@ export interface GoogleCloudIdsEndpointConfig extends cdktf.TerraformMetaArgumen
   /**
   * The location for the endpoint.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#location GoogleCloudIdsEndpoint#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#location GoogleCloudIdsEndpoint#location}
   */
   readonly location: string;
   /**
   * Name of the endpoint in the format projects/{project_id}/locations/{locationId}/endpoints/{endpointId}.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#name GoogleCloudIdsEndpoint#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#name GoogleCloudIdsEndpoint#name}
   */
   readonly name: string;
   /**
   * Name of the VPC network that is connected to the IDS endpoint. This can either contain the VPC network name itself (like "src-net") or the full URL to the network (like "projects/{project_id}/global/networks/src-net").
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#network GoogleCloudIdsEndpoint#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#network GoogleCloudIdsEndpoint#network}
   */
   readonly network: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#project GoogleCloudIdsEndpoint#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#project GoogleCloudIdsEndpoint#project}
   */
   readonly project?: string;
   /**
   * The minimum alert severity level that is reported by the endpoint. Possible values: ["INFORMATIONAL", "LOW", "MEDIUM", "HIGH", "CRITICAL"]
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#severity GoogleCloudIdsEndpoint#severity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#severity GoogleCloudIdsEndpoint#severity}
   */
   readonly severity: string;
   /**
   * Configuration for threat IDs excluded from generating alerts. Limit: 99 IDs.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#threat_exceptions GoogleCloudIdsEndpoint#threat_exceptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#threat_exceptions GoogleCloudIdsEndpoint#threat_exceptions}
   */
   readonly threatExceptions?: string[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#timeouts GoogleCloudIdsEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#timeouts GoogleCloudIdsEndpoint#timeouts}
   */
   readonly timeouts?: GoogleCloudIdsEndpointTimeouts;
 }
 export interface GoogleCloudIdsEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#create GoogleCloudIdsEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#create GoogleCloudIdsEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#delete GoogleCloudIdsEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#delete GoogleCloudIdsEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint#update GoogleCloudIdsEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint#update GoogleCloudIdsEndpoint#update}
   */
   readonly update?: string;
 }
 
-export function googleCloudIdsEndpointTimeoutsToTerraform(struct?: GoogleCloudIdsEndpointTimeoutsOutputReference | GoogleCloudIdsEndpointTimeouts | cdktf.IResolvable): any {
+export function googleCloudIdsEndpointTimeoutsToTerraform(struct?: GoogleCloudIdsEndpointTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -97,7 +97,7 @@ export class GoogleCloudIdsEndpointTimeoutsOutputReference extends cdktf.Complex
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleCloudIdsEndpointTimeouts | cdktf.IResolvable | undefined {
@@ -192,7 +192,7 @@ export class GoogleCloudIdsEndpointTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint google_cloud_ids_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint google_cloud_ids_endpoint}
 */
 export class GoogleCloudIdsEndpoint extends cdktf.TerraformResource {
 
@@ -206,7 +206,7 @@ export class GoogleCloudIdsEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint google_cloud_ids_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_ids_endpoint google_cloud_ids_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

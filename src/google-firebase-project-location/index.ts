@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project_location
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_project_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleFirebaseProjectLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project_location#id GoogleFirebaseProjectLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_project_location#id GoogleFirebaseProjectLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -18,32 +18,32 @@ export interface GoogleFirebaseProjectLocationConfig extends cdktf.TerraformMeta
   * The ID of the default GCP resource location for the Project. The location must be one of the available GCP
 resource locations.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project_location#location_id GoogleFirebaseProjectLocation#location_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_project_location#location_id GoogleFirebaseProjectLocation#location_id}
   */
   readonly locationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project_location#project GoogleFirebaseProjectLocation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_project_location#project GoogleFirebaseProjectLocation#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project_location#timeouts GoogleFirebaseProjectLocation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_project_location#timeouts GoogleFirebaseProjectLocation#timeouts}
   */
   readonly timeouts?: GoogleFirebaseProjectLocationTimeouts;
 }
 export interface GoogleFirebaseProjectLocationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project_location#create GoogleFirebaseProjectLocation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_project_location#create GoogleFirebaseProjectLocation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project_location#delete GoogleFirebaseProjectLocation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_project_location#delete GoogleFirebaseProjectLocation#delete}
   */
   readonly delete?: string;
 }
 
-export function googleFirebaseProjectLocationTimeoutsToTerraform(struct?: GoogleFirebaseProjectLocationTimeoutsOutputReference | GoogleFirebaseProjectLocationTimeouts | cdktf.IResolvable): any {
+export function googleFirebaseProjectLocationTimeoutsToTerraform(struct?: GoogleFirebaseProjectLocationTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -63,7 +63,7 @@ export class GoogleFirebaseProjectLocationTimeoutsOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleFirebaseProjectLocationTimeouts | cdktf.IResolvable | undefined {
@@ -136,7 +136,7 @@ export class GoogleFirebaseProjectLocationTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project_location google_firebase_project_location}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_project_location google_firebase_project_location}
 */
 export class GoogleFirebaseProjectLocation extends cdktf.TerraformResource {
 
@@ -150,7 +150,7 @@ export class GoogleFirebaseProjectLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project_location google_firebase_project_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_project_location google_firebase_project_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

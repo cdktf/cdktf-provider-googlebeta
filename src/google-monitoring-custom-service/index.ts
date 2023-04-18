@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface GoogleMonitoringCustomServiceConfig extends cdktf.TerraformMeta
   /**
   * Name used for UI elements listing this Service.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#display_name GoogleMonitoringCustomService#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#display_name GoogleMonitoringCustomService#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#id GoogleMonitoringCustomService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#id GoogleMonitoringCustomService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#project GoogleMonitoringCustomService#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#project GoogleMonitoringCustomService#project}
   */
   readonly project?: string;
   /**
   * An optional service ID to use. If not given, the server will generate a
 service ID.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#service_id GoogleMonitoringCustomService#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#service_id GoogleMonitoringCustomService#service_id}
   */
   readonly serviceId?: string;
   /**
@@ -39,19 +39,19 @@ length of 63 characters, and must be less than 128 bytes in size. Up to 64
 label entries may be stored. For labels which do not have a semantic value,
 the empty string may be supplied for the label value.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#user_labels GoogleMonitoringCustomService#user_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#user_labels GoogleMonitoringCustomService#user_labels}
   */
   readonly userLabels?: { [key: string]: string };
   /**
   * telemetry block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#telemetry GoogleMonitoringCustomService#telemetry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#telemetry GoogleMonitoringCustomService#telemetry}
   */
   readonly telemetry?: GoogleMonitoringCustomServiceTelemetry;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#timeouts GoogleMonitoringCustomService#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#timeouts GoogleMonitoringCustomService#timeouts}
   */
   readonly timeouts?: GoogleMonitoringCustomServiceTimeouts;
 }
@@ -61,7 +61,7 @@ export interface GoogleMonitoringCustomServiceTelemetry {
 Formatted as described in
 https://cloud.google.com/apis/design/resource_names.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#resource_name GoogleMonitoringCustomService#resource_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#resource_name GoogleMonitoringCustomService#resource_name}
   */
   readonly resourceName?: string;
 }
@@ -126,20 +126,20 @@ export class GoogleMonitoringCustomServiceTelemetryOutputReference extends cdktf
 }
 export interface GoogleMonitoringCustomServiceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#create GoogleMonitoringCustomService#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#create GoogleMonitoringCustomService#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#delete GoogleMonitoringCustomService#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#delete GoogleMonitoringCustomService#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service#update GoogleMonitoringCustomService#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service#update GoogleMonitoringCustomService#update}
   */
   readonly update?: string;
 }
 
-export function googleMonitoringCustomServiceTimeoutsToTerraform(struct?: GoogleMonitoringCustomServiceTimeoutsOutputReference | GoogleMonitoringCustomServiceTimeouts | cdktf.IResolvable): any {
+export function googleMonitoringCustomServiceTimeoutsToTerraform(struct?: GoogleMonitoringCustomServiceTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -160,7 +160,7 @@ export class GoogleMonitoringCustomServiceTimeoutsOutputReference extends cdktf.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleMonitoringCustomServiceTimeouts | cdktf.IResolvable | undefined {
@@ -255,7 +255,7 @@ export class GoogleMonitoringCustomServiceTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service google_monitoring_custom_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service google_monitoring_custom_service}
 */
 export class GoogleMonitoringCustomService extends cdktf.TerraformResource {
 
@@ -269,7 +269,7 @@ export class GoogleMonitoringCustomService extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_custom_service google_monitoring_custom_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_custom_service google_monitoring_custom_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,6 +1,6 @@
 # `google_vpc_access_connector`
 
-Refer to the Terraform Registory for docs: [`google_vpc_access_connector`](https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector).
+Refer to the Terraform Registory for docs: [`google_vpc_access_connector`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector).
 
 # `googleVpcAccessConnector` Submodule <a name="`googleVpcAccessConnector` Submodule" id="@cdktf/provider-google-beta.googleVpcAccessConnector"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_vpc_access_connector`](https
 
 ### GoogleVpcAccessConnector <a name="GoogleVpcAccessConnector" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector google_vpc_access_connector}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector google_vpc_access_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcaccessconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlevpcaccessconnector"
 
 googlevpcaccessconnector.NewGoogleVpcAccessConnector(scope Construct, id *string, config GoogleVpcAccessConnectorConfig) GoogleVpcAccessConnector
 ```
@@ -380,7 +380,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcaccessconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlevpcaccessconnector"
 
 googlevpcaccessconnector.GoogleVpcAccessConnector_IsConstruct(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcaccessconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlevpcaccessconnector"
 
 googlevpcaccessconnector.GoogleVpcAccessConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ googlevpcaccessconnector.GoogleVpcAccessConnector_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcaccessconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlevpcaccessconnector"
 
 googlevpcaccessconnector.GoogleVpcAccessConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -449,7 +449,7 @@ googlevpcaccessconnector.GoogleVpcAccessConnector_IsTerraformResource(x interfac
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -571,10 +571,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -933,11 +933,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcaccessconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlevpcaccessconnector"
 
 &googlevpcaccessconnector.GoogleVpcAccessConnectorConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -954,8 +954,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcacc
 	Network: *string,
 	Project: *string,
 	Region: *string,
-	Subnet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleVpcAccessConnector.GoogleVpcAccessConnectorSubnet,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts,
+	Subnet: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleVpcAccessConnector.GoogleVpcAccessConnectorSubnet,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts,
 }
 ```
 
@@ -964,14 +964,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcacc
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.name">Name</a></code> | <code>*string</code> | The name of the resource (Max 25 characters). |
-| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#id GoogleVpcAccessConnector#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#id GoogleVpcAccessConnector#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.ipCidrRange">IpCidrRange</a></code> | <code>*string</code> | The range of internal addresses that follows RFC 4632 notation. Example: '10.132.0.0/28'. |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.machineType">MachineType</a></code> | <code>*string</code> | Machine type of VM Instance underlying connector. Default is e2-micro. |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.maxInstances">MaxInstances</a></code> | <code>*f64</code> | Maximum value of instances in autoscaling group underlying the connector. |
@@ -979,7 +979,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcacc
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.minInstances">MinInstances</a></code> | <code>*f64</code> | Minimum value of instances in autoscaling group underlying the connector. |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.minThroughput">MinThroughput</a></code> | <code>*f64</code> | Minimum throughput of the connector in Mbps. Default and min is 200. |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.network">Network</a></code> | <code>*string</code> | Name or self_link of the VPC network. Required if 'ip_cidr_range' is set. |
-| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#project GoogleVpcAccessConnector#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#project GoogleVpcAccessConnector#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.region">Region</a></code> | <code>*string</code> | Region where the VPC Access connector resides. If it is not provided, the provider region is used. |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.subnet">Subnet</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorSubnet">GoogleVpcAccessConnectorSubnet</a></code> | subnet block. |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts">GoogleVpcAccessConnectorTimeouts</a></code> | timeouts block. |
@@ -999,10 +999,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1066,7 +1066,7 @@ Name *string
 
 The name of the resource (Max 25 characters).
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#name GoogleVpcAccessConnector#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#name GoogleVpcAccessConnector#name}
 
 ---
 
@@ -1078,7 +1078,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#id GoogleVpcAccessConnector#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#id GoogleVpcAccessConnector#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1095,7 +1095,7 @@ IpCidrRange *string
 
 The range of internal addresses that follows RFC 4632 notation. Example: '10.132.0.0/28'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#ip_cidr_range GoogleVpcAccessConnector#ip_cidr_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#ip_cidr_range GoogleVpcAccessConnector#ip_cidr_range}
 
 ---
 
@@ -1109,7 +1109,7 @@ MachineType *string
 
 Machine type of VM Instance underlying connector. Default is e2-micro.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#machine_type GoogleVpcAccessConnector#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#machine_type GoogleVpcAccessConnector#machine_type}
 
 ---
 
@@ -1123,7 +1123,7 @@ MaxInstances *f64
 
 Maximum value of instances in autoscaling group underlying the connector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#max_instances GoogleVpcAccessConnector#max_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#max_instances GoogleVpcAccessConnector#max_instances}
 
 ---
 
@@ -1137,7 +1137,7 @@ MaxThroughput *f64
 
 Maximum throughput of the connector in Mbps, must be greater than 'min_throughput'. Default is 300.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#max_throughput GoogleVpcAccessConnector#max_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#max_throughput GoogleVpcAccessConnector#max_throughput}
 
 ---
 
@@ -1151,7 +1151,7 @@ MinInstances *f64
 
 Minimum value of instances in autoscaling group underlying the connector.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#min_instances GoogleVpcAccessConnector#min_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#min_instances GoogleVpcAccessConnector#min_instances}
 
 ---
 
@@ -1165,7 +1165,7 @@ MinThroughput *f64
 
 Minimum throughput of the connector in Mbps. Default and min is 200.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#min_throughput GoogleVpcAccessConnector#min_throughput}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#min_throughput GoogleVpcAccessConnector#min_throughput}
 
 ---
 
@@ -1179,7 +1179,7 @@ Network *string
 
 Name or self_link of the VPC network. Required if 'ip_cidr_range' is set.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#network GoogleVpcAccessConnector#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#network GoogleVpcAccessConnector#network}
 
 ---
 
@@ -1191,7 +1191,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#project GoogleVpcAccessConnector#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#project GoogleVpcAccessConnector#project}.
 
 ---
 
@@ -1205,7 +1205,7 @@ Region *string
 
 Region where the VPC Access connector resides. If it is not provided, the provider region is used.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#region GoogleVpcAccessConnector#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#region GoogleVpcAccessConnector#region}
 
 ---
 
@@ -1219,7 +1219,7 @@ Subnet GoogleVpcAccessConnectorSubnet
 
 subnet block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#subnet GoogleVpcAccessConnector#subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#subnet GoogleVpcAccessConnector#subnet}
 
 ---
 
@@ -1233,7 +1233,7 @@ Timeouts GoogleVpcAccessConnectorTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#timeouts GoogleVpcAccessConnector#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#timeouts GoogleVpcAccessConnector#timeouts}
 
 ---
 
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorSubnet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcaccessconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlevpcaccessconnector"
 
 &googlevpcaccessconnector.GoogleVpcAccessConnectorSubnet {
 	Name: *string,
@@ -1272,7 +1272,7 @@ Subnet name (relative, not fully qualified).
 E.g. if the full subnet selfLink is
 https://compute.googleapis.com/compute/v1/projects/{project}/regions/{region}/subnetworks/{subnetName} the correct input for this field would be {subnetName}"
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#name GoogleVpcAccessConnector#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#name GoogleVpcAccessConnector#name}
 
 ---
 
@@ -1288,7 +1288,7 @@ Project in which the subnet exists.
 
 If not set, this project is assumed to be the project for which the connector create request was issued.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#project_id GoogleVpcAccessConnector#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#project_id GoogleVpcAccessConnector#project_id}
 
 ---
 
@@ -1297,7 +1297,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcaccessconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlevpcaccessconnector"
 
 &googlevpcaccessconnector.GoogleVpcAccessConnectorTimeouts {
 	Create: *string,
@@ -1309,8 +1309,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcacc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#create GoogleVpcAccessConnector#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#delete GoogleVpcAccessConnector#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#create GoogleVpcAccessConnector#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#delete GoogleVpcAccessConnector#delete}. |
 
 ---
 
@@ -1322,7 +1322,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#create GoogleVpcAccessConnector#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#create GoogleVpcAccessConnector#create}.
 
 ---
 
@@ -1334,7 +1334,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vpc_access_connector#delete GoogleVpcAccessConnector#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vpc_access_connector#delete GoogleVpcAccessConnector#delete}.
 
 ---
 
@@ -1345,7 +1345,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorSubnetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcaccessconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlevpcaccessconnector"
 
 googlevpcaccessconnector.NewGoogleVpcAccessConnectorSubnetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVpcAccessConnectorSubnetOutputReference
 ```
@@ -1652,7 +1652,7 @@ func InternalValue() GoogleVpcAccessConnectorSubnet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevpcaccessconnector"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlevpcaccessconnector"
 
 googlevpcaccessconnector.NewGoogleVpcAccessConnectorTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVpcAccessConnectorTimeoutsOutputReference
 ```
