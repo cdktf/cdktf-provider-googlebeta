@@ -1,3 +1,7 @@
+# `google_compute_machine_image_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_compute_machine_image_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_machine_image_iam_binding).
+
 # `googleComputeMachineImageIamBinding` Submodule <a name="`googleComputeMachineImageIamBinding` Submodule" id="@cdktf/provider-google-beta.googleComputeMachineImageIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

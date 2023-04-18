@@ -1,3 +1,7 @@
+# `google_compute_machine_image_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_compute_machine_image_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_machine_image_iam_member).
+
 # `googleComputeMachineImageIamMember` Submodule <a name="`googleComputeMachineImageIamMember` Submodule" id="@cdktf/provider-google-beta.googleComputeMachineImageIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

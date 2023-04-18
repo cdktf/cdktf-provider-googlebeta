@@ -1,3 +1,7 @@
+# `data_google_firebase_apple_app_config`
+
+Refer to the Terraform Registory for docs: [`data_google_firebase_apple_app_config`](https://www.terraform.io/docs/providers/google-beta/d/google_firebase_apple_app_config).
+
 # `dataGoogleFirebaseAppleAppConfig` Submodule <a name="`dataGoogleFirebaseAppleAppConfig` Submodule" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

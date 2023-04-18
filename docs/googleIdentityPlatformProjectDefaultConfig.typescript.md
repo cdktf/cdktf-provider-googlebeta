@@ -1,3 +1,7 @@
+# `google_identity_platform_project_default_config`
+
+Refer to the Terraform Registory for docs: [`google_identity_platform_project_default_config`](https://www.terraform.io/docs/providers/google-beta/r/google_identity_platform_project_default_config).
+
 # `googleIdentityPlatformProjectDefaultConfig` Submodule <a name="`googleIdentityPlatformProjectDefaultConfig` Submodule" id="@cdktf/provider-google-beta.googleIdentityPlatformProjectDefaultConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

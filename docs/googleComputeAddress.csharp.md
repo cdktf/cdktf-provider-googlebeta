@@ -1,3 +1,7 @@
+# `google_compute_address`
+
+Refer to the Terraform Registory for docs: [`google_compute_address`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_address).
+
 # `googleComputeAddress` Submodule <a name="`googleComputeAddress` Submodule" id="@cdktf/provider-google-beta.googleComputeAddress"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

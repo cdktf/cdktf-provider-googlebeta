@@ -1,3 +1,7 @@
+# `google_firebase_database_instance`
+
+Refer to the Terraform Registory for docs: [`google_firebase_database_instance`](https://www.terraform.io/docs/providers/google-beta/r/google_firebase_database_instance).
+
 # `googleFirebaseDatabaseInstance` Submodule <a name="`googleFirebaseDatabaseInstance` Submodule" id="@cdktf/provider-google-beta.googleFirebaseDatabaseInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

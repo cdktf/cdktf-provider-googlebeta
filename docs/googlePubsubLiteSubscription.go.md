@@ -1,3 +1,7 @@
+# `google_pubsub_lite_subscription`
+
+Refer to the Terraform Registory for docs: [`google_pubsub_lite_subscription`](https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_lite_subscription).
+
 # `googlePubsubLiteSubscription` Submodule <a name="`googlePubsubLiteSubscription` Submodule" id="@cdktf/provider-google-beta.googlePubsubLiteSubscription"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

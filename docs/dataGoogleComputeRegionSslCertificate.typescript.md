@@ -1,3 +1,7 @@
+# `data_google_compute_region_ssl_certificate`
+
+Refer to the Terraform Registory for docs: [`data_google_compute_region_ssl_certificate`](https://www.terraform.io/docs/providers/google-beta/d/google_compute_region_ssl_certificate).
+
 # `dataGoogleComputeRegionSslCertificate` Submodule <a name="`dataGoogleComputeRegionSslCertificate` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeRegionSslCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

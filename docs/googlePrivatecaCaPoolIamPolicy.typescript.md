@@ -1,3 +1,7 @@
+# `google_privateca_ca_pool_iam_policy`
+
+Refer to the Terraform Registory for docs: [`google_privateca_ca_pool_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_privateca_ca_pool_iam_policy).
+
 # `googlePrivatecaCaPoolIamPolicy` Submodule <a name="`googlePrivatecaCaPoolIamPolicy` Submodule" id="@cdktf/provider-google-beta.googlePrivatecaCaPoolIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

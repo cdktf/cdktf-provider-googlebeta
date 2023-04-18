@@ -1,3 +1,7 @@
+# `google_bigtable_instance`
+
+Refer to the Terraform Registory for docs: [`google_bigtable_instance`](https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_instance).
+
 # `googleBigtableInstance` Submodule <a name="`googleBigtableInstance` Submodule" id="@cdktf/provider-google-beta.googleBigtableInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

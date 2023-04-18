@@ -1,3 +1,7 @@
+# `data_google_sql_database`
+
+Refer to the Terraform Registory for docs: [`data_google_sql_database`](https://www.terraform.io/docs/providers/google-beta/d/google_sql_database).
+
 # `dataGoogleSqlDatabase` Submodule <a name="`dataGoogleSqlDatabase` Submodule" id="@cdktf/provider-google-beta.dataGoogleSqlDatabase"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_api_gateway_gateway_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_api_gateway_gateway_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_member).
+
 # `googleApiGatewayGatewayIamMember` Submodule <a name="`googleApiGatewayGatewayIamMember` Submodule" id="@cdktf/provider-google-beta.googleApiGatewayGatewayIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

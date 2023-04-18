@@ -1,3 +1,7 @@
+# `google_app_engine_service_split_traffic`
+
+Refer to the Terraform Registory for docs: [`google_app_engine_service_split_traffic`](https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_service_split_traffic).
+
 # `googleAppEngineServiceSplitTraffic` Submodule <a name="`googleAppEngineServiceSplitTraffic` Submodule" id="@cdktf/provider-google-beta.googleAppEngineServiceSplitTraffic"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_composer_environment`
+
+Refer to the Terraform Registory for docs: [`google_composer_environment`](https://www.terraform.io/docs/providers/google-beta/r/google_composer_environment).
+
 # `googleComposerEnvironment` Submodule <a name="`googleComposerEnvironment` Submodule" id="@cdktf/provider-google-beta.googleComposerEnvironment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

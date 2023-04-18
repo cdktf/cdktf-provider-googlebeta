@@ -1,3 +1,7 @@
+# `google_dataplex_zone_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_dataplex_zone_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_zone_iam_binding).
+
 # `googleDataplexZoneIamBinding` Submodule <a name="`googleDataplexZoneIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataplexZoneIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

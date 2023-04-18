@@ -1,3 +1,7 @@
+# `google_service_directory_namespace_iam_policy`
+
+Refer to the Terraform Registory for docs: [`google_service_directory_namespace_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace_iam_policy).
+
 # `googleServiceDirectoryNamespaceIamPolicy` Submodule <a name="`googleServiceDirectoryNamespaceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

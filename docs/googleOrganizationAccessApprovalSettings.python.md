@@ -1,3 +1,7 @@
+# `google_organization_access_approval_settings`
+
+Refer to the Terraform Registory for docs: [`google_organization_access_approval_settings`](https://www.terraform.io/docs/providers/google-beta/r/google_organization_access_approval_settings).
+
 # `googleOrganizationAccessApprovalSettings` Submodule <a name="`googleOrganizationAccessApprovalSettings` Submodule" id="@cdktf/provider-google-beta.googleOrganizationAccessApprovalSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

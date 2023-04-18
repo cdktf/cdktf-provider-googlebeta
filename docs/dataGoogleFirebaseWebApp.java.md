@@ -1,3 +1,7 @@
+# `data_google_firebase_web_app`
+
+Refer to the Terraform Registory for docs: [`data_google_firebase_web_app`](https://www.terraform.io/docs/providers/google-beta/d/google_firebase_web_app).
+
 # `dataGoogleFirebaseWebApp` Submodule <a name="`dataGoogleFirebaseWebApp` Submodule" id="@cdktf/provider-google-beta.dataGoogleFirebaseWebApp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

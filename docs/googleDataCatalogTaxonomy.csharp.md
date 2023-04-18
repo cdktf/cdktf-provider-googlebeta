@@ -1,3 +1,7 @@
+# `google_data_catalog_taxonomy`
+
+Refer to the Terraform Registory for docs: [`google_data_catalog_taxonomy`](https://www.terraform.io/docs/providers/google-beta/r/google_data_catalog_taxonomy).
+
 # `googleDataCatalogTaxonomy` Submodule <a name="`googleDataCatalogTaxonomy` Submodule" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

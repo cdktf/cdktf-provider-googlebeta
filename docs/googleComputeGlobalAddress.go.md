@@ -1,3 +1,7 @@
+# `google_compute_global_address`
+
+Refer to the Terraform Registory for docs: [`google_compute_global_address`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_global_address).
+
 # `googleComputeGlobalAddress` Submodule <a name="`googleComputeGlobalAddress` Submodule" id="@cdktf/provider-google-beta.googleComputeGlobalAddress"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

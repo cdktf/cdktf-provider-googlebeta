@@ -1,3 +1,7 @@
+# `google_bigquery_reservation`
+
+Refer to the Terraform Registory for docs: [`google_bigquery_reservation`](https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_reservation).
+
 # `googleBigqueryReservation` Submodule <a name="`googleBigqueryReservation` Submodule" id="@cdktf/provider-google-beta.googleBigqueryReservation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

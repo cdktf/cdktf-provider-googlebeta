@@ -1,3 +1,7 @@
+# `google_notebooks_instance_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_notebooks_instance_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_instance_iam_binding).
+
 # `googleNotebooksInstanceIamBinding` Submodule <a name="`googleNotebooksInstanceIamBinding` Submodule" id="@cdktf/provider-google-beta.googleNotebooksInstanceIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

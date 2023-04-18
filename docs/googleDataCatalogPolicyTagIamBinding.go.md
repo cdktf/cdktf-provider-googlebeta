@@ -1,3 +1,7 @@
+# `google_data_catalog_policy_tag_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_data_catalog_policy_tag_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_data_catalog_policy_tag_iam_binding).
+
 # `googleDataCatalogPolicyTagIamBinding` Submodule <a name="`googleDataCatalogPolicyTagIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataCatalogPolicyTagIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

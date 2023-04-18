@@ -1,3 +1,7 @@
+# `google_billing_account_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_billing_account_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_member).
+
 # `googleBillingAccountIamMember` Submodule <a name="`googleBillingAccountIamMember` Submodule" id="@cdktf/provider-google-beta.googleBillingAccountIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

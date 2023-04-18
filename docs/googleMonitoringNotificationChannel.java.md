@@ -1,3 +1,7 @@
+# `google_monitoring_notification_channel`
+
+Refer to the Terraform Registory for docs: [`google_monitoring_notification_channel`](https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_notification_channel).
+
 # `googleMonitoringNotificationChannel` Submodule <a name="`googleMonitoringNotificationChannel` Submodule" id="@cdktf/provider-google-beta.googleMonitoringNotificationChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

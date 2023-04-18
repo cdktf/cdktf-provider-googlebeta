@@ -1,3 +1,7 @@
+# `data_google_compute_router_nat`
+
+Refer to the Terraform Registory for docs: [`data_google_compute_router_nat`](https://www.terraform.io/docs/providers/google-beta/d/google_compute_router_nat).
+
 # `dataGoogleComputeRouterNat` Submodule <a name="`dataGoogleComputeRouterNat` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeRouterNat"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_artifact_registry_repository_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_artifact_registry_repository_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository_iam_binding).
+
 # `googleArtifactRegistryRepositoryIamBinding` Submodule <a name="`googleArtifactRegistryRepositoryIamBinding` Submodule" id="@cdktf/provider-google-beta.googleArtifactRegistryRepositoryIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

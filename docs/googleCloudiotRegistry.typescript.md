@@ -1,3 +1,7 @@
+# `google_cloudiot_registry`
+
+Refer to the Terraform Registory for docs: [`google_cloudiot_registry`](https://www.terraform.io/docs/providers/google-beta/r/google_cloudiot_registry).
+
 # `googleCloudiotRegistry` Submodule <a name="`googleCloudiotRegistry` Submodule" id="@cdktf/provider-google-beta.googleCloudiotRegistry"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

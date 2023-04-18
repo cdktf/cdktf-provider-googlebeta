@@ -1,3 +1,7 @@
+# `google_notebooks_runtime_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_notebooks_runtime_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_runtime_iam_member).
+
 # `googleNotebooksRuntimeIamMember` Submodule <a name="`googleNotebooksRuntimeIamMember` Submodule" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

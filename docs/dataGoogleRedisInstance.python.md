@@ -1,3 +1,7 @@
+# `data_google_redis_instance`
+
+Refer to the Terraform Registory for docs: [`data_google_redis_instance`](https://www.terraform.io/docs/providers/google-beta/d/google_redis_instance).
+
 # `dataGoogleRedisInstance` Submodule <a name="`dataGoogleRedisInstance` Submodule" id="@cdktf/provider-google-beta.dataGoogleRedisInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

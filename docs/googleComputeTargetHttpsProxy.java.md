@@ -1,3 +1,7 @@
+# `google_compute_target_https_proxy`
+
+Refer to the Terraform Registory for docs: [`google_compute_target_https_proxy`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_https_proxy).
+
 # `googleComputeTargetHttpsProxy` Submodule <a name="`googleComputeTargetHttpsProxy` Submodule" id="@cdktf/provider-google-beta.googleComputeTargetHttpsProxy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

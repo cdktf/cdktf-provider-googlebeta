@@ -1,3 +1,7 @@
+# `google_compute_http_health_check`
+
+Refer to the Terraform Registory for docs: [`google_compute_http_health_check`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_http_health_check).
+
 # `googleComputeHttpHealthCheck` Submodule <a name="`googleComputeHttpHealthCheck` Submodule" id="@cdktf/provider-google-beta.googleComputeHttpHealthCheck"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

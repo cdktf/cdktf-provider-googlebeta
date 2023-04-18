@@ -1,3 +1,7 @@
+# `google_dataproc_autoscaling_policy_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_dataproc_autoscaling_policy_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_autoscaling_policy_iam_binding).
+
 # `googleDataprocAutoscalingPolicyIamBinding` Submodule <a name="`googleDataprocAutoscalingPolicyIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

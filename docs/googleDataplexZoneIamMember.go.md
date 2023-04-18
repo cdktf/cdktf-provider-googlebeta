@@ -1,3 +1,7 @@
+# `google_dataplex_zone_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_dataplex_zone_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_dataplex_zone_iam_member).
+
 # `googleDataplexZoneIamMember` Submodule <a name="`googleDataplexZoneIamMember` Submodule" id="@cdktf/provider-google-beta.googleDataplexZoneIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

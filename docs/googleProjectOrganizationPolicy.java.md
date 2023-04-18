@@ -1,3 +1,7 @@
+# `google_project_organization_policy`
+
+Refer to the Terraform Registory for docs: [`google_project_organization_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_project_organization_policy).
+
 # `googleProjectOrganizationPolicy` Submodule <a name="`googleProjectOrganizationPolicy` Submodule" id="@cdktf/provider-google-beta.googleProjectOrganizationPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

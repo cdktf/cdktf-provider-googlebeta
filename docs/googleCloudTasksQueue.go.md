@@ -1,3 +1,7 @@
+# `google_cloud_tasks_queue`
+
+Refer to the Terraform Registory for docs: [`google_cloud_tasks_queue`](https://www.terraform.io/docs/providers/google-beta/r/google_cloud_tasks_queue).
+
 # `googleCloudTasksQueue` Submodule <a name="`googleCloudTasksQueue` Submodule" id="@cdktf/provider-google-beta.googleCloudTasksQueue"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

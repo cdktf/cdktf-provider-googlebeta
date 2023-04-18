@@ -1,3 +1,7 @@
+# `google_bigquery_table_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_bigquery_table_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_table_iam_member).
+
 # `googleBigqueryTableIamMember` Submodule <a name="`googleBigqueryTableIamMember` Submodule" id="@cdktf/provider-google-beta.googleBigqueryTableIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_compute_instance_from_template`
+
+Refer to the Terraform Registory for docs: [`google_compute_instance_from_template`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_from_template).
+
 # `googleComputeInstanceFromTemplate` Submodule <a name="`googleComputeInstanceFromTemplate` Submodule" id="@cdktf/provider-google-beta.googleComputeInstanceFromTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

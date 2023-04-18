@@ -1,3 +1,7 @@
+# `google_privateca_ca_pool_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_privateca_ca_pool_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_privateca_ca_pool_iam_binding).
+
 # `googlePrivatecaCaPoolIamBinding` Submodule <a name="`googlePrivatecaCaPoolIamBinding` Submodule" id="@cdktf/provider-google-beta.googlePrivatecaCaPoolIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

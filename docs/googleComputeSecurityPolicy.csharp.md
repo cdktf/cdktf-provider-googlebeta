@@ -1,3 +1,7 @@
+# `google_compute_security_policy`
+
+Refer to the Terraform Registory for docs: [`google_compute_security_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy).
+
 # `googleComputeSecurityPolicy` Submodule <a name="`googleComputeSecurityPolicy` Submodule" id="@cdktf/provider-google-beta.googleComputeSecurityPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

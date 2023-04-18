@@ -1,3 +1,7 @@
+# `google_project_service_identity`
+
+Refer to the Terraform Registory for docs: [`google_project_service_identity`](https://www.terraform.io/docs/providers/google-beta/r/google_project_service_identity).
+
 # `googleProjectServiceIdentity` Submodule <a name="`googleProjectServiceIdentity` Submodule" id="@cdktf/provider-google-beta.googleProjectServiceIdentity"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

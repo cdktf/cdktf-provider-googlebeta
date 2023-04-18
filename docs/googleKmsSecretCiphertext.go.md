@@ -1,3 +1,7 @@
+# `google_kms_secret_ciphertext`
+
+Refer to the Terraform Registory for docs: [`google_kms_secret_ciphertext`](https://www.terraform.io/docs/providers/google-beta/r/google_kms_secret_ciphertext).
+
 # `googleKmsSecretCiphertext` Submodule <a name="`googleKmsSecretCiphertext` Submodule" id="@cdktf/provider-google-beta.googleKmsSecretCiphertext"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

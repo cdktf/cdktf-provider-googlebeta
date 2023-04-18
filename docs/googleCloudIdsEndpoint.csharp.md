@@ -1,3 +1,7 @@
+# `google_cloud_ids_endpoint`
+
+Refer to the Terraform Registory for docs: [`google_cloud_ids_endpoint`](https://www.terraform.io/docs/providers/google-beta/r/google_cloud_ids_endpoint).
+
 # `googleCloudIdsEndpoint` Submodule <a name="`googleCloudIdsEndpoint` Submodule" id="@cdktf/provider-google-beta.googleCloudIdsEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

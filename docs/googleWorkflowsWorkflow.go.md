@@ -1,3 +1,7 @@
+# `google_workflows_workflow`
+
+Refer to the Terraform Registory for docs: [`google_workflows_workflow`](https://www.terraform.io/docs/providers/google-beta/r/google_workflows_workflow).
+
 # `googleWorkflowsWorkflow` Submodule <a name="`googleWorkflowsWorkflow` Submodule" id="@cdktf/provider-google-beta.googleWorkflowsWorkflow"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

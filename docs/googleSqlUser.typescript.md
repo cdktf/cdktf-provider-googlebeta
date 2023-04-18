@@ -1,3 +1,7 @@
+# `google_sql_user`
+
+Refer to the Terraform Registory for docs: [`google_sql_user`](https://www.terraform.io/docs/providers/google-beta/r/google_sql_user).
+
 # `googleSqlUser` Submodule <a name="`googleSqlUser` Submodule" id="@cdktf/provider-google-beta.googleSqlUser"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_spanner_instance`
+
+Refer to the Terraform Registory for docs: [`google_spanner_instance`](https://www.terraform.io/docs/providers/google-beta/r/google_spanner_instance).
+
 # `googleSpannerInstance` Submodule <a name="`googleSpannerInstance` Submodule" id="@cdktf/provider-google-beta.googleSpannerInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

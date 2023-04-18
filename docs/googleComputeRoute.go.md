@@ -1,3 +1,7 @@
+# `google_compute_route`
+
+Refer to the Terraform Registory for docs: [`google_compute_route`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_route).
+
 # `googleComputeRoute` Submodule <a name="`googleComputeRoute` Submodule" id="@cdktf/provider-google-beta.googleComputeRoute"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

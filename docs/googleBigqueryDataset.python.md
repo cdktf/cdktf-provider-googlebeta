@@ -1,3 +1,7 @@
+# `google_bigquery_dataset`
+
+Refer to the Terraform Registory for docs: [`google_bigquery_dataset`](https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset).
+
 # `googleBigqueryDataset` Submodule <a name="`googleBigqueryDataset` Submodule" id="@cdktf/provider-google-beta.googleBigqueryDataset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

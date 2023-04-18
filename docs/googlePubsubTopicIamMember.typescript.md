@@ -1,3 +1,7 @@
+# `google_pubsub_topic_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_pubsub_topic_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_member).
+
 # `googlePubsubTopicIamMember` Submodule <a name="`googlePubsubTopicIamMember` Submodule" id="@cdktf/provider-google-beta.googlePubsubTopicIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_firebase_android_app`
+
+Refer to the Terraform Registory for docs: [`google_firebase_android_app`](https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app).
+
 # `googleFirebaseAndroidApp` Submodule <a name="`googleFirebaseAndroidApp` Submodule" id="@cdktf/provider-google-beta.googleFirebaseAndroidApp"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

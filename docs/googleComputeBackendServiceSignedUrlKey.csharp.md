@@ -1,3 +1,7 @@
+# `google_compute_backend_service_signed_url_key`
+
+Refer to the Terraform Registory for docs: [`google_compute_backend_service_signed_url_key`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service_signed_url_key).
+
 # `googleComputeBackendServiceSignedUrlKey` Submodule <a name="`googleComputeBackendServiceSignedUrlKey` Submodule" id="@cdktf/provider-google-beta.googleComputeBackendServiceSignedUrlKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

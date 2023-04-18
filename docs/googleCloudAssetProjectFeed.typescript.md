@@ -1,3 +1,7 @@
+# `google_cloud_asset_project_feed`
+
+Refer to the Terraform Registory for docs: [`google_cloud_asset_project_feed`](https://www.terraform.io/docs/providers/google-beta/r/google_cloud_asset_project_feed).
+
 # `googleCloudAssetProjectFeed` Submodule <a name="`googleCloudAssetProjectFeed` Submodule" id="@cdktf/provider-google-beta.googleCloudAssetProjectFeed"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

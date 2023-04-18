@@ -1,3 +1,7 @@
+# `google_compute_url_map`
+
+Refer to the Terraform Registory for docs: [`google_compute_url_map`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_url_map).
+
 # `googleComputeUrlMap` Submodule <a name="`googleComputeUrlMap` Submodule" id="@cdktf/provider-google-beta.googleComputeUrlMap"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

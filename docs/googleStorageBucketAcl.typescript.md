@@ -1,3 +1,7 @@
+# `google_storage_bucket_acl`
+
+Refer to the Terraform Registory for docs: [`google_storage_bucket_acl`](https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket_acl).
+
 # `googleStorageBucketAcl` Submodule <a name="`googleStorageBucketAcl` Submodule" id="@cdktf/provider-google-beta.googleStorageBucketAcl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

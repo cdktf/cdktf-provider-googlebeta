@@ -1,3 +1,7 @@
+# `google_privateca_certificate_authority`
+
+Refer to the Terraform Registory for docs: [`google_privateca_certificate_authority`](https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_authority).
+
 # `googlePrivatecaCertificateAuthority` Submodule <a name="`googlePrivatecaCertificateAuthority` Submodule" id="@cdktf/provider-google-beta.googlePrivatecaCertificateAuthority"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

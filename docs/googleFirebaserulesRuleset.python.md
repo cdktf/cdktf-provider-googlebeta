@@ -1,3 +1,7 @@
+# `google_firebaserules_ruleset`
+
+Refer to the Terraform Registory for docs: [`google_firebaserules_ruleset`](https://www.terraform.io/docs/providers/google-beta/r/google_firebaserules_ruleset).
+
 # `googleFirebaserulesRuleset` Submodule <a name="`googleFirebaserulesRuleset` Submodule" id="@cdktf/provider-google-beta.googleFirebaserulesRuleset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

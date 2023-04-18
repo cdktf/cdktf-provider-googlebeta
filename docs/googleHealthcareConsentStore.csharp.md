@@ -1,3 +1,7 @@
+# `google_healthcare_consent_store`
+
+Refer to the Terraform Registory for docs: [`google_healthcare_consent_store`](https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_consent_store).
+
 # `googleHealthcareConsentStore` Submodule <a name="`googleHealthcareConsentStore` Submodule" id="@cdktf/provider-google-beta.googleHealthcareConsentStore"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

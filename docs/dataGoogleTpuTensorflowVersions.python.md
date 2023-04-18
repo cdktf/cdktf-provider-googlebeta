@@ -1,3 +1,7 @@
+# `data_google_tpu_tensorflow_versions`
+
+Refer to the Terraform Registory for docs: [`data_google_tpu_tensorflow_versions`](https://www.terraform.io/docs/providers/google-beta/d/google_tpu_tensorflow_versions).
+
 # `dataGoogleTpuTensorflowVersions` Submodule <a name="`dataGoogleTpuTensorflowVersions` Submodule" id="@cdktf/provider-google-beta.dataGoogleTpuTensorflowVersions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

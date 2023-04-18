@@ -1,3 +1,7 @@
+# `google_firebase_hosting_channel`
+
+Refer to the Terraform Registory for docs: [`google_firebase_hosting_channel`](https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel).
+
 # `googleFirebaseHostingChannel` Submodule <a name="`googleFirebaseHostingChannel` Submodule" id="@cdktf/provider-google-beta.googleFirebaseHostingChannel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

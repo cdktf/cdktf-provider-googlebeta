@@ -1,3 +1,7 @@
+# `google_bigtable_table_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_bigtable_table_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_table_iam_member).
+
 # `googleBigtableTableIamMember` Submodule <a name="`googleBigtableTableIamMember` Submodule" id="@cdktf/provider-google-beta.googleBigtableTableIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

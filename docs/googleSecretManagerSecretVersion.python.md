@@ -1,3 +1,7 @@
+# `google_secret_manager_secret_version`
+
+Refer to the Terraform Registory for docs: [`google_secret_manager_secret_version`](https://www.terraform.io/docs/providers/google-beta/r/google_secret_manager_secret_version).
+
 # `googleSecretManagerSecretVersion` Submodule <a name="`googleSecretManagerSecretVersion` Submodule" id="@cdktf/provider-google-beta.googleSecretManagerSecretVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

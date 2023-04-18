@@ -1,3 +1,7 @@
+# `google_cloud_run_service_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_cloud_run_service_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service_iam_binding).
+
 # `googleCloudRunServiceIamBinding` Submodule <a name="`googleCloudRunServiceIamBinding` Submodule" id="@cdktf/provider-google-beta.googleCloudRunServiceIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

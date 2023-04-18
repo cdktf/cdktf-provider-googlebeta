@@ -1,3 +1,7 @@
+# `google_compute_router_interface`
+
+Refer to the Terraform Registory for docs: [`google_compute_router_interface`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_router_interface).
+
 # `googleComputeRouterInterface` Submodule <a name="`googleComputeRouterInterface` Submodule" id="@cdktf/provider-google-beta.googleComputeRouterInterface"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

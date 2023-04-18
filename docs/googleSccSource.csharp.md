@@ -1,3 +1,7 @@
+# `google_scc_source`
+
+Refer to the Terraform Registory for docs: [`google_scc_source`](https://www.terraform.io/docs/providers/google-beta/r/google_scc_source).
+
 # `googleSccSource` Submodule <a name="`googleSccSource` Submodule" id="@cdktf/provider-google-beta.googleSccSource"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

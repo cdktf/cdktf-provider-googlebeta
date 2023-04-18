@@ -1,3 +1,7 @@
+# `google_apigee_organization`
+
+Refer to the Terraform Registory for docs: [`google_apigee_organization`](https://www.terraform.io/docs/providers/google-beta/r/google_apigee_organization).
+
 # `googleApigeeOrganization` Submodule <a name="`googleApigeeOrganization` Submodule" id="@cdktf/provider-google-beta.googleApigeeOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

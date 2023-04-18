@@ -1,3 +1,7 @@
+# `google_game_services_game_server_deployment_rollout`
+
+Refer to the Terraform Registory for docs: [`google_game_services_game_server_deployment_rollout`](https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout).
+
 # `googleGameServicesGameServerDeploymentRollout` Submodule <a name="`googleGameServicesGameServerDeploymentRollout` Submodule" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

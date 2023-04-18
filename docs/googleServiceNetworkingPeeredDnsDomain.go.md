@@ -1,3 +1,7 @@
+# `google_service_networking_peered_dns_domain`
+
+Refer to the Terraform Registory for docs: [`google_service_networking_peered_dns_domain`](https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_peered_dns_domain).
+
 # `googleServiceNetworkingPeeredDnsDomain` Submodule <a name="`googleServiceNetworkingPeeredDnsDomain` Submodule" id="@cdktf/provider-google-beta.googleServiceNetworkingPeeredDnsDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

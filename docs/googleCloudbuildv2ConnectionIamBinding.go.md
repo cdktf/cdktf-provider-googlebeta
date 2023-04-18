@@ -1,3 +1,7 @@
+# `google_cloudbuildv2_connection_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_cloudbuildv2_connection_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuildv2_connection_iam_binding).
+
 # `googleCloudbuildv2ConnectionIamBinding` Submodule <a name="`googleCloudbuildv2ConnectionIamBinding` Submodule" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

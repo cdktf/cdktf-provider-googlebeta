@@ -1,3 +1,7 @@
+# `google_compute_target_instance`
+
+Refer to the Terraform Registory for docs: [`google_compute_target_instance`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_instance).
+
 # `googleComputeTargetInstance` Submodule <a name="`googleComputeTargetInstance` Submodule" id="@cdktf/provider-google-beta.googleComputeTargetInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

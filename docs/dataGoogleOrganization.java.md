@@ -1,3 +1,7 @@
+# `data_google_organization`
+
+Refer to the Terraform Registory for docs: [`data_google_organization`](https://www.terraform.io/docs/providers/google-beta/d/google_organization).
+
 # `dataGoogleOrganization` Submodule <a name="`dataGoogleOrganization` Submodule" id="@cdktf/provider-google-beta.dataGoogleOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

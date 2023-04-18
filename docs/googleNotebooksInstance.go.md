@@ -1,3 +1,7 @@
+# `google_notebooks_instance`
+
+Refer to the Terraform Registory for docs: [`google_notebooks_instance`](https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_instance).
+
 # `googleNotebooksInstance` Submodule <a name="`googleNotebooksInstance` Submodule" id="@cdktf/provider-google-beta.googleNotebooksInstance"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

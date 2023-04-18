@@ -1,3 +1,7 @@
+# `google_binary_authorization_attestor_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_binary_authorization_attestor_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_binary_authorization_attestor_iam_binding).
+
 # `googleBinaryAuthorizationAttestorIamBinding` Submodule <a name="`googleBinaryAuthorizationAttestorIamBinding` Submodule" id="@cdktf/provider-google-beta.googleBinaryAuthorizationAttestorIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

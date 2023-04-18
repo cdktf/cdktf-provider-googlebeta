@@ -1,3 +1,7 @@
+# `google_compute_project_metadata`
+
+Refer to the Terraform Registory for docs: [`google_compute_project_metadata`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_project_metadata).
+
 # `googleComputeProjectMetadata` Submodule <a name="`googleComputeProjectMetadata` Submodule" id="@cdktf/provider-google-beta.googleComputeProjectMetadata"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

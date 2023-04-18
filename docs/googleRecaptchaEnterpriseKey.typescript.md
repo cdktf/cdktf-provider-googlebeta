@@ -1,3 +1,7 @@
+# `google_recaptcha_enterprise_key`
+
+Refer to the Terraform Registory for docs: [`google_recaptcha_enterprise_key`](https://www.terraform.io/docs/providers/google-beta/r/google_recaptcha_enterprise_key).
+
 # `googleRecaptchaEnterpriseKey` Submodule <a name="`googleRecaptchaEnterpriseKey` Submodule" id="@cdktf/provider-google-beta.googleRecaptchaEnterpriseKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
