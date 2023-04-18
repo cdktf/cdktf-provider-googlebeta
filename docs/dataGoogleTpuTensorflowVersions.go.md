@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogletputensorflowversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletputensorflowversions"
 
 datagoogletputensorflowversions.NewDataGoogleTpuTensorflowVersions(scope Construct, id *string, config DataGoogleTpuTensorflowVersionsConfig) DataGoogleTpuTensorflowVersions
 ```
@@ -291,7 +291,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogletputensorflowversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletputensorflowversions"
 
 datagoogletputensorflowversions.DataGoogleTpuTensorflowVersions_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogletputensorflowversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletputensorflowversions"
 
 datagoogletputensorflowversions.DataGoogleTpuTensorflowVersions_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagoogletputensorflowversions.DataGoogleTpuTensorflowVersions_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersions.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogletputensorflowversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletputensorflowversions"
 
 datagoogletputensorflowversions.DataGoogleTpuTensorflowVersions_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleTpuTensorflowVersions.DataGoogleTpuTensorflowVersionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogletputensorflowversions"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogletputensorflowversions"
 
 &datagoogletputensorflowversions.DataGoogleTpuTensorflowVersionsConfig {
 	Connection: interface{},

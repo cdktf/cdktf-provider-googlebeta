@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiambinding"
 
 googlecloudiotregistryiambinding.NewGoogleCloudiotRegistryIamBinding(scope Construct, id *string, config GoogleCloudiotRegistryIamBindingConfig) GoogleCloudiotRegistryIamBinding
 ```
@@ -311,7 +311,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiambinding"
 
 googlecloudiotregistryiambinding.GoogleCloudiotRegistryIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiambinding"
 
 googlecloudiotregistryiambinding.GoogleCloudiotRegistryIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ googlecloudiotregistryiambinding.GoogleCloudiotRegistryIamBinding_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiambinding"
 
 googlecloudiotregistryiambinding.GoogleCloudiotRegistryIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiambinding"
 
 &googlecloudiotregistryiambinding.GoogleCloudiotRegistryIamBindingCondition {
 	Expression: *string,
@@ -781,7 +781,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiambinding"
 
 &googlecloudiotregistryiambinding.GoogleCloudiotRegistryIamBindingConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudi
 	Members: *[]*string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudiotregistryiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotregistryiambinding"
 
 googlecloudiotregistryiambinding.NewGoogleCloudiotRegistryIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudiotRegistryIamBindingConditionOutputReference
 ```

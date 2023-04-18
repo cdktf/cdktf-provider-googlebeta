@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 googleapigeeorganization.NewGoogleApigeeOrganization(scope Construct, id *string, config GoogleApigeeOrganizationConfig) GoogleApigeeOrganization
 ```
@@ -373,7 +373,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 googleapigeeorganization.GoogleApigeeOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 googleapigeeorganization.GoogleApigeeOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ googleapigeeorganization.GoogleApigeeOrganization_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 googleapigeeorganization.GoogleApigeeOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -915,7 +915,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 &googleapigeeorganization.GoogleApigeeOrganizationConfig {
 	Connection: interface{},
@@ -932,11 +932,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigee
 	Description: *string,
 	DisplayName: *string,
 	Id: *string,
-	Properties: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleApigeeOrganization.GoogleApigeeOrganizationProperties,
+	Properties: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeOrganization.GoogleApigeeOrganizationProperties,
 	Retention: *string,
 	RuntimeDatabaseEncryptionKeyName: *string,
 	RuntimeType: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleApigeeOrganization.GoogleApigeeOrganizationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeOrganization.GoogleApigeeOrganizationTimeouts,
 }
 ```
 
@@ -1222,7 +1222,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 &googleapigeeorganization.GoogleApigeeOrganizationProperties {
 	Property: interface{},
@@ -1256,7 +1256,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 &googleapigeeorganization.GoogleApigeeOrganizationPropertiesProperty {
 	Name: *string,
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 &googleapigeeorganization.GoogleApigeeOrganizationTimeouts {
 	Create: *string,
@@ -1368,7 +1368,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 googleapigeeorganization.NewGoogleApigeeOrganizationPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeOrganizationPropertiesOutputReference
 ```
@@ -1659,7 +1659,7 @@ func InternalValue() GoogleApigeeOrganizationProperties
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesPropertyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 googleapigeeorganization.NewGoogleApigeeOrganizationPropertiesPropertyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApigeeOrganizationPropertiesPropertyList
 ```
@@ -1802,7 +1802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationPropertiesPropertyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 googleapigeeorganization.NewGoogleApigeeOrganizationPropertiesPropertyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApigeeOrganizationPropertiesPropertyOutputReference
 ```
@@ -2127,7 +2127,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeOrganization.GoogleApigeeOrganizationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeorganization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeeorganization"
 
 googleapigeeorganization.NewGoogleApigeeOrganizationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeOrganizationTimeoutsOutputReference
 ```

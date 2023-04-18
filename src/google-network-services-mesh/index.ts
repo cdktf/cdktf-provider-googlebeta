@@ -209,7 +209,7 @@ export class GoogleNetworkServicesMesh extends cdktf.TerraformResource {
       terraformResourceType: 'google_network_services_mesh',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
