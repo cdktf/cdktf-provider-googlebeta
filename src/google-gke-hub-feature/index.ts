@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleGkeHubFeatureConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#id GoogleGkeHubFeature#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#id GoogleGkeHubFeature#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,37 +17,37 @@ export interface GoogleGkeHubFeatureConfig extends cdktf.TerraformMetaArguments 
   /**
   * GCP labels for this Feature.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#labels GoogleGkeHubFeature#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#labels GoogleGkeHubFeature#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#location GoogleGkeHubFeature#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#location GoogleGkeHubFeature#location}
   */
   readonly location: string;
   /**
   * The full, unique name of this Feature resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#name GoogleGkeHubFeature#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#name GoogleGkeHubFeature#name}
   */
   readonly name?: string;
   /**
   * The project for the resource
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#project GoogleGkeHubFeature#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#project GoogleGkeHubFeature#project}
   */
   readonly project?: string;
   /**
   * spec block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#spec GoogleGkeHubFeature#spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#spec GoogleGkeHubFeature#spec}
   */
   readonly spec?: GoogleGkeHubFeatureSpec;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#timeouts GoogleGkeHubFeature#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#timeouts GoogleGkeHubFeature#timeouts}
   */
   readonly timeouts?: GoogleGkeHubFeatureTimeouts;
 }
@@ -263,7 +263,7 @@ export interface GoogleGkeHubFeatureSpecMulticlusteringress {
   /**
   * Fully-qualified Membership name which hosts the MultiClusterIngress CRD. Example: `projects/foo-proj/locations/global/memberships/bar`
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#config_membership GoogleGkeHubFeature#config_membership}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#config_membership GoogleGkeHubFeature#config_membership}
   */
   readonly configMembership: string;
 }
@@ -327,7 +327,7 @@ export interface GoogleGkeHubFeatureSpec {
   /**
   * multiclusteringress block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#multiclusteringress GoogleGkeHubFeature#multiclusteringress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#multiclusteringress GoogleGkeHubFeature#multiclusteringress}
   */
   readonly multiclusteringress?: GoogleGkeHubFeatureSpecMulticlusteringress;
 }
@@ -392,20 +392,20 @@ export class GoogleGkeHubFeatureSpecOutputReference extends cdktf.ComplexObject 
 }
 export interface GoogleGkeHubFeatureTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#create GoogleGkeHubFeature#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#create GoogleGkeHubFeature#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#delete GoogleGkeHubFeature#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#delete GoogleGkeHubFeature#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature#update GoogleGkeHubFeature#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature#update GoogleGkeHubFeature#update}
   */
   readonly update?: string;
 }
 
-export function googleGkeHubFeatureTimeoutsToTerraform(struct?: GoogleGkeHubFeatureTimeoutsOutputReference | GoogleGkeHubFeatureTimeouts | cdktf.IResolvable): any {
+export function googleGkeHubFeatureTimeoutsToTerraform(struct?: GoogleGkeHubFeatureTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -426,7 +426,7 @@ export class GoogleGkeHubFeatureTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleGkeHubFeatureTimeouts | cdktf.IResolvable | undefined {
@@ -521,7 +521,7 @@ export class GoogleGkeHubFeatureTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature google_gke_hub_feature}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature google_gke_hub_feature}
 */
 export class GoogleGkeHubFeature extends cdktf.TerraformResource {
 
@@ -535,7 +535,7 @@ export class GoogleGkeHubFeature extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature google_gke_hub_feature} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

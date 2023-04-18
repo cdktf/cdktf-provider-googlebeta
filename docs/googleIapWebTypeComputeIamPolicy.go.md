@@ -1,6 +1,6 @@
 # `google_iap_web_type_compute_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_iap_web_type_compute_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_type_compute_iam_policy).
+Refer to the Terraform Registory for docs: [`google_iap_web_type_compute_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_type_compute_iam_policy).
 
 # `googleIapWebTypeComputeIamPolicy` Submodule <a name="`googleIapWebTypeComputeIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_iap_web_type_compute_iam_pol
 
 ### GoogleIapWebTypeComputeIamPolicy <a name="GoogleIapWebTypeComputeIamPolicy" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_type_compute_iam_policy google_iap_web_type_compute_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_type_compute_iam_policy google_iap_web_type_compute_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebtypecomputeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiampolicy"
 
 googleiapwebtypecomputeiampolicy.NewGoogleIapWebTypeComputeIamPolicy(scope Construct, id *string, config GoogleIapWebTypeComputeIamPolicyConfig) GoogleIapWebTypeComputeIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebtypecomputeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiampolicy"
 
 googleiapwebtypecomputeiampolicy.GoogleIapWebTypeComputeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebtypecomputeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiampolicy"
 
 googleiapwebtypecomputeiampolicy.GoogleIapWebTypeComputeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ googleiapwebtypecomputeiampolicy.GoogleIapWebTypeComputeIamPolicy_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebtypecomputeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiampolicy"
 
 googleiapwebtypecomputeiampolicy.GoogleIapWebTypeComputeIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ googleiapwebtypecomputeiampolicy.GoogleIapWebTypeComputeIamPolicy_IsTerraformRes
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -454,10 +454,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicy.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -606,11 +606,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebtypecomputeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiapwebtypecomputeiampolicy"
 
 &googleiapwebtypecomputeiampolicy.GoogleIapWebTypeComputeIamPolicyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -627,15 +627,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapweb
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_type_compute_iam_policy#policy_data GoogleIapWebTypeComputeIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_type_compute_iam_policy#id GoogleIapWebTypeComputeIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_type_compute_iam_policy#project GoogleIapWebTypeComputeIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_type_compute_iam_policy#policy_data GoogleIapWebTypeComputeIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_type_compute_iam_policy#id GoogleIapWebTypeComputeIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_type_compute_iam_policy#project GoogleIapWebTypeComputeIamPolicy#project}. |
 
 ---
 
@@ -652,10 +652,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleIapWebTypeComputeIamPolicy.GoogleIapWebTypeComputeIamPolicyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -717,7 +717,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_type_compute_iam_policy#policy_data GoogleIapWebTypeComputeIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_type_compute_iam_policy#policy_data GoogleIapWebTypeComputeIamPolicy#policy_data}.
 
 ---
 
@@ -729,7 +729,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_type_compute_iam_policy#id GoogleIapWebTypeComputeIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_type_compute_iam_policy#id GoogleIapWebTypeComputeIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -744,7 +744,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_type_compute_iam_policy#project GoogleIapWebTypeComputeIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_type_compute_iam_policy#project GoogleIapWebTypeComputeIamPolicy#project}.
 
 ---
 

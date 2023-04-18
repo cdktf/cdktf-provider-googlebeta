@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,23 +11,23 @@ export interface GoogleApiGatewayGatewayConfig extends cdktf.TerraformMetaArgume
   * Resource name of the API Config for this Gateway. Format: projects/{project}/locations/global/apis/{api}/configs/{apiConfig}.
 When changing api configs please ensure the new config is a new resource and the lifecycle rule 'create_before_destroy' is set.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#api_config GoogleApiGatewayGateway#api_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#api_config GoogleApiGatewayGateway#api_config}
   */
   readonly apiConfig: string;
   /**
   * A user-visible name for the API.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#display_name GoogleApiGatewayGateway#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#display_name GoogleApiGatewayGateway#display_name}
   */
   readonly displayName?: string;
   /**
   * Identifier to assign to the Gateway. Must be unique within scope of the parent resource(project).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#gateway_id GoogleApiGatewayGateway#gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#gateway_id GoogleApiGatewayGateway#gateway_id}
   */
   readonly gatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#id GoogleApiGatewayGateway#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#id GoogleApiGatewayGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,42 +36,42 @@ When changing api configs please ensure the new config is a new resource and the
   /**
   * Resource labels to represent user-provided metadata.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#labels GoogleApiGatewayGateway#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#labels GoogleApiGatewayGateway#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#project GoogleApiGatewayGateway#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#project GoogleApiGatewayGateway#project}
   */
   readonly project?: string;
   /**
   * The region of the gateway for the API.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#region GoogleApiGatewayGateway#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#region GoogleApiGatewayGateway#region}
   */
   readonly region?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#timeouts GoogleApiGatewayGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#timeouts GoogleApiGatewayGateway#timeouts}
   */
   readonly timeouts?: GoogleApiGatewayGatewayTimeouts;
 }
 export interface GoogleApiGatewayGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#create GoogleApiGatewayGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#create GoogleApiGatewayGateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#delete GoogleApiGatewayGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#delete GoogleApiGatewayGateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway#update GoogleApiGatewayGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway#update GoogleApiGatewayGateway#update}
   */
   readonly update?: string;
 }
 
-export function googleApiGatewayGatewayTimeoutsToTerraform(struct?: GoogleApiGatewayGatewayTimeoutsOutputReference | GoogleApiGatewayGatewayTimeouts | cdktf.IResolvable): any {
+export function googleApiGatewayGatewayTimeoutsToTerraform(struct?: GoogleApiGatewayGatewayTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -92,7 +92,7 @@ export class GoogleApiGatewayGatewayTimeoutsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleApiGatewayGatewayTimeouts | cdktf.IResolvable | undefined {
@@ -187,7 +187,7 @@ export class GoogleApiGatewayGatewayTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway google_api_gateway_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway}
 */
 export class GoogleApiGatewayGateway extends cdktf.TerraformResource {
 
@@ -201,7 +201,7 @@ export class GoogleApiGatewayGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway google_api_gateway_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

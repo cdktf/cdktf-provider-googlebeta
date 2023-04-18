@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleMlEngineModelConfig extends cdktf.TerraformMetaArguments 
   /**
   * The description specified for the model when it was created.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#description GoogleMlEngineModel#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#description GoogleMlEngineModel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#id GoogleMlEngineModel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#id GoogleMlEngineModel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,48 +23,48 @@ export interface GoogleMlEngineModelConfig extends cdktf.TerraformMetaArguments 
   /**
   * One or more labels that you can add, to organize your models.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#labels GoogleMlEngineModel#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#labels GoogleMlEngineModel#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name specified for the model.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#name GoogleMlEngineModel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#name GoogleMlEngineModel#name}
   */
   readonly name: string;
   /**
   * If true, online prediction nodes send stderr and stdout streams to Stackdriver Logging
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#online_prediction_console_logging GoogleMlEngineModel#online_prediction_console_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#online_prediction_console_logging GoogleMlEngineModel#online_prediction_console_logging}
   */
   readonly onlinePredictionConsoleLogging?: boolean | cdktf.IResolvable;
   /**
   * If true, online prediction access logs are sent to StackDriver Logging.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#online_prediction_logging GoogleMlEngineModel#online_prediction_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#online_prediction_logging GoogleMlEngineModel#online_prediction_logging}
   */
   readonly onlinePredictionLogging?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#project GoogleMlEngineModel#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#project GoogleMlEngineModel#project}
   */
   readonly project?: string;
   /**
   * The list of regions where the model is going to be deployed.
 Currently only one region per model is supported
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#regions GoogleMlEngineModel#regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#regions GoogleMlEngineModel#regions}
   */
   readonly regions?: string[];
   /**
   * default_version block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#default_version GoogleMlEngineModel#default_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#default_version GoogleMlEngineModel#default_version}
   */
   readonly defaultVersion?: GoogleMlEngineModelDefaultVersion;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#timeouts GoogleMlEngineModel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#timeouts GoogleMlEngineModel#timeouts}
   */
   readonly timeouts?: GoogleMlEngineModelTimeouts;
 }
@@ -72,7 +72,7 @@ export interface GoogleMlEngineModelDefaultVersion {
   /**
   * The name specified for the version when it was created.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#name GoogleMlEngineModel#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#name GoogleMlEngineModel#name}
   */
   readonly name: string;
 }
@@ -134,16 +134,16 @@ export class GoogleMlEngineModelDefaultVersionOutputReference extends cdktf.Comp
 }
 export interface GoogleMlEngineModelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#create GoogleMlEngineModel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#create GoogleMlEngineModel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model#delete GoogleMlEngineModel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model#delete GoogleMlEngineModel#delete}
   */
   readonly delete?: string;
 }
 
-export function googleMlEngineModelTimeoutsToTerraform(struct?: GoogleMlEngineModelTimeoutsOutputReference | GoogleMlEngineModelTimeouts | cdktf.IResolvable): any {
+export function googleMlEngineModelTimeoutsToTerraform(struct?: GoogleMlEngineModelTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -163,7 +163,7 @@ export class GoogleMlEngineModelTimeoutsOutputReference extends cdktf.ComplexObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleMlEngineModelTimeouts | cdktf.IResolvable | undefined {
@@ -236,7 +236,7 @@ export class GoogleMlEngineModelTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model google_ml_engine_model}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model google_ml_engine_model}
 */
 export class GoogleMlEngineModel extends cdktf.TerraformResource {
 
@@ -250,7 +250,7 @@ export class GoogleMlEngineModel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_ml_engine_model google_ml_engine_model} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_ml_engine_model google_ml_engine_model} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_key_ring
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleKmsKeyRingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring#id GoogleKmsKeyRing#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_key_ring#id GoogleKmsKeyRing#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -18,38 +18,38 @@ export interface GoogleKmsKeyRingConfig extends cdktf.TerraformMetaArguments {
   * The location for the KeyRing.
 A full list of valid locations can be found by running 'gcloud kms locations list'.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring#location GoogleKmsKeyRing#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_key_ring#location GoogleKmsKeyRing#location}
   */
   readonly location: string;
   /**
   * The resource name for the KeyRing.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring#name GoogleKmsKeyRing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_key_ring#name GoogleKmsKeyRing#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring#project GoogleKmsKeyRing#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_key_ring#project GoogleKmsKeyRing#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
   */
   readonly timeouts?: GoogleKmsKeyRingTimeouts;
 }
 export interface GoogleKmsKeyRingTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring#create GoogleKmsKeyRing#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_key_ring#create GoogleKmsKeyRing#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring#delete GoogleKmsKeyRing#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_key_ring#delete GoogleKmsKeyRing#delete}
   */
   readonly delete?: string;
 }
 
-export function googleKmsKeyRingTimeoutsToTerraform(struct?: GoogleKmsKeyRingTimeoutsOutputReference | GoogleKmsKeyRingTimeouts | cdktf.IResolvable): any {
+export function googleKmsKeyRingTimeoutsToTerraform(struct?: GoogleKmsKeyRingTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -69,7 +69,7 @@ export class GoogleKmsKeyRingTimeoutsOutputReference extends cdktf.ComplexObject
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleKmsKeyRingTimeouts | cdktf.IResolvable | undefined {
@@ -142,7 +142,7 @@ export class GoogleKmsKeyRingTimeoutsOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring google_kms_key_ring}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_key_ring google_kms_key_ring}
 */
 export class GoogleKmsKeyRing extends cdktf.TerraformResource {
 
@@ -156,7 +156,7 @@ export class GoogleKmsKeyRing extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring google_kms_key_ring} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_key_ring google_kms_key_ring} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

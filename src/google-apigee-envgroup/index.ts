@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleApigeeEnvgroupConfig extends cdktf.TerraformMetaArguments
   /**
   * Hostnames of the environment group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup#hostnames GoogleApigeeEnvgroup#hostnames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup#hostnames GoogleApigeeEnvgroup#hostnames}
   */
   readonly hostnames?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup#id GoogleApigeeEnvgroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup#id GoogleApigeeEnvgroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,39 +23,39 @@ export interface GoogleApigeeEnvgroupConfig extends cdktf.TerraformMetaArguments
   /**
   * The resource ID of the environment group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup#name GoogleApigeeEnvgroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup#name GoogleApigeeEnvgroup#name}
   */
   readonly name: string;
   /**
   * The Apigee Organization associated with the Apigee environment group,
 in the format 'organizations/{{org_name}}'.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup#org_id GoogleApigeeEnvgroup#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup#org_id GoogleApigeeEnvgroup#org_id}
   */
   readonly orgId: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup#timeouts GoogleApigeeEnvgroup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup#timeouts GoogleApigeeEnvgroup#timeouts}
   */
   readonly timeouts?: GoogleApigeeEnvgroupTimeouts;
 }
 export interface GoogleApigeeEnvgroupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup#create GoogleApigeeEnvgroup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup#create GoogleApigeeEnvgroup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup#delete GoogleApigeeEnvgroup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup#delete GoogleApigeeEnvgroup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup#update GoogleApigeeEnvgroup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup#update GoogleApigeeEnvgroup#update}
   */
   readonly update?: string;
 }
 
-export function googleApigeeEnvgroupTimeoutsToTerraform(struct?: GoogleApigeeEnvgroupTimeoutsOutputReference | GoogleApigeeEnvgroupTimeouts | cdktf.IResolvable): any {
+export function googleApigeeEnvgroupTimeoutsToTerraform(struct?: GoogleApigeeEnvgroupTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -76,7 +76,7 @@ export class GoogleApigeeEnvgroupTimeoutsOutputReference extends cdktf.ComplexOb
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleApigeeEnvgroupTimeouts | cdktf.IResolvable | undefined {
@@ -171,7 +171,7 @@ export class GoogleApigeeEnvgroupTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup google_apigee_envgroup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup google_apigee_envgroup}
 */
 export class GoogleApigeeEnvgroup extends cdktf.TerraformResource {
 
@@ -185,7 +185,7 @@ export class GoogleApigeeEnvgroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_envgroup google_apigee_envgroup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_envgroup google_apigee_envgroup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

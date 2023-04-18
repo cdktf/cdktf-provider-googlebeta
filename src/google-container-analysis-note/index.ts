@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleContainerAnalysisNoteConfig extends cdktf.TerraformMetaAr
   /**
   * Time of expiration for this note. Leave empty if note does not expire.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#expiration_time GoogleContainerAnalysisNote#expiration_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#expiration_time GoogleContainerAnalysisNote#expiration_time}
   */
   readonly expirationTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#id GoogleContainerAnalysisNote#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#id GoogleContainerAnalysisNote#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,47 +23,47 @@ export interface GoogleContainerAnalysisNoteConfig extends cdktf.TerraformMetaAr
   /**
   * A detailed description of the note
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#long_description GoogleContainerAnalysisNote#long_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#long_description GoogleContainerAnalysisNote#long_description}
   */
   readonly longDescription?: string;
   /**
   * The name of the note.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#name GoogleContainerAnalysisNote#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#name GoogleContainerAnalysisNote#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#project GoogleContainerAnalysisNote#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#project GoogleContainerAnalysisNote#project}
   */
   readonly project?: string;
   /**
   * Names of other notes related to this note.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#related_note_names GoogleContainerAnalysisNote#related_note_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#related_note_names GoogleContainerAnalysisNote#related_note_names}
   */
   readonly relatedNoteNames?: string[];
   /**
   * A one sentence description of the note.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#short_description GoogleContainerAnalysisNote#short_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#short_description GoogleContainerAnalysisNote#short_description}
   */
   readonly shortDescription?: string;
   /**
   * attestation_authority block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#attestation_authority GoogleContainerAnalysisNote#attestation_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#attestation_authority GoogleContainerAnalysisNote#attestation_authority}
   */
   readonly attestationAuthority: GoogleContainerAnalysisNoteAttestationAuthority;
   /**
   * related_url block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#related_url GoogleContainerAnalysisNote#related_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#related_url GoogleContainerAnalysisNote#related_url}
   */
   readonly relatedUrl?: GoogleContainerAnalysisNoteRelatedUrl[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#timeouts GoogleContainerAnalysisNote#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#timeouts GoogleContainerAnalysisNote#timeouts}
   */
   readonly timeouts?: GoogleContainerAnalysisNoteTimeouts;
 }
@@ -72,7 +72,7 @@ export interface GoogleContainerAnalysisNoteAttestationAuthorityHint {
   * The human readable name of this Attestation Authority, for
 example "qa".
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#human_readable_name GoogleContainerAnalysisNote#human_readable_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#human_readable_name GoogleContainerAnalysisNote#human_readable_name}
   */
   readonly humanReadableName: string;
 }
@@ -136,7 +136,7 @@ export interface GoogleContainerAnalysisNoteAttestationAuthority {
   /**
   * hint block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#hint GoogleContainerAnalysisNote#hint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#hint GoogleContainerAnalysisNote#hint}
   */
   readonly hint: GoogleContainerAnalysisNoteAttestationAuthorityHint;
 }
@@ -200,13 +200,13 @@ export interface GoogleContainerAnalysisNoteRelatedUrl {
   /**
   * Label to describe usage of the URL
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#label GoogleContainerAnalysisNote#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#label GoogleContainerAnalysisNote#label}
   */
   readonly label?: string;
   /**
   * Specific URL associated with the resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#url GoogleContainerAnalysisNote#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#url GoogleContainerAnalysisNote#url}
   */
   readonly url: string;
 }
@@ -323,20 +323,20 @@ export class GoogleContainerAnalysisNoteRelatedUrlList extends cdktf.ComplexList
 }
 export interface GoogleContainerAnalysisNoteTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#create GoogleContainerAnalysisNote#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#create GoogleContainerAnalysisNote#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#delete GoogleContainerAnalysisNote#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#delete GoogleContainerAnalysisNote#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note#update GoogleContainerAnalysisNote#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note#update GoogleContainerAnalysisNote#update}
   */
   readonly update?: string;
 }
 
-export function googleContainerAnalysisNoteTimeoutsToTerraform(struct?: GoogleContainerAnalysisNoteTimeoutsOutputReference | GoogleContainerAnalysisNoteTimeouts | cdktf.IResolvable): any {
+export function googleContainerAnalysisNoteTimeoutsToTerraform(struct?: GoogleContainerAnalysisNoteTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -357,7 +357,7 @@ export class GoogleContainerAnalysisNoteTimeoutsOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleContainerAnalysisNoteTimeouts | cdktf.IResolvable | undefined {
@@ -452,7 +452,7 @@ export class GoogleContainerAnalysisNoteTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note google_container_analysis_note}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note google_container_analysis_note}
 */
 export class GoogleContainerAnalysisNote extends cdktf.TerraformResource {
 
@@ -466,7 +466,7 @@ export class GoogleContainerAnalysisNote extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_analysis_note google_container_analysis_note} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_analysis_note google_container_analysis_note} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GoogleFirestoreDatabaseConfig extends cdktf.TerraformMetaArgume
   /**
   * The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"]
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#app_engine_integration_mode GoogleFirestoreDatabase#app_engine_integration_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#app_engine_integration_mode GoogleFirestoreDatabase#app_engine_integration_mode}
   */
   readonly appEngineIntegrationMode?: string;
   /**
   * The concurrency control mode to use for this database. Possible values: ["OPTIMISTIC", "PESSIMISTIC", "OPTIMISTIC_WITH_ENTITY_GROUPS"]
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#concurrency_mode GoogleFirestoreDatabase#concurrency_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#concurrency_mode GoogleFirestoreDatabase#concurrency_mode}
   */
   readonly concurrencyMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#id GoogleFirestoreDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#id GoogleFirestoreDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,7 +30,7 @@ export interface GoogleFirestoreDatabaseConfig extends cdktf.TerraformMetaArgume
   * The location of the database. Available databases are listed at
 https://cloud.google.com/firestore/docs/locations.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#location_id GoogleFirestoreDatabase#location_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#location_id GoogleFirestoreDatabase#location_id}
   */
   readonly locationId: string;
   /**
@@ -41,11 +41,11 @@ a letter and the last a letter or a number. Must not be
 UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
 "(default)" database id is also valid.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#name GoogleFirestoreDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#name GoogleFirestoreDatabase#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#project GoogleFirestoreDatabase#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#project GoogleFirestoreDatabase#project}
   */
   readonly project?: string;
   /**
@@ -53,32 +53,32 @@ UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
 See https://cloud.google.com/datastore/docs/firestore-or-datastore
 for information about how to choose. Possible values: ["FIRESTORE_NATIVE", "DATASTORE_MODE"]
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#type GoogleFirestoreDatabase#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#type GoogleFirestoreDatabase#type}
   */
   readonly type: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#timeouts GoogleFirestoreDatabase#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#timeouts GoogleFirestoreDatabase#timeouts}
   */
   readonly timeouts?: GoogleFirestoreDatabaseTimeouts;
 }
 export interface GoogleFirestoreDatabaseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#create GoogleFirestoreDatabase#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#create GoogleFirestoreDatabase#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#delete GoogleFirestoreDatabase#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#delete GoogleFirestoreDatabase#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database#update GoogleFirestoreDatabase#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database#update GoogleFirestoreDatabase#update}
   */
   readonly update?: string;
 }
 
-export function googleFirestoreDatabaseTimeoutsToTerraform(struct?: GoogleFirestoreDatabaseTimeoutsOutputReference | GoogleFirestoreDatabaseTimeouts | cdktf.IResolvable): any {
+export function googleFirestoreDatabaseTimeoutsToTerraform(struct?: GoogleFirestoreDatabaseTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -99,7 +99,7 @@ export class GoogleFirestoreDatabaseTimeoutsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleFirestoreDatabaseTimeouts | cdktf.IResolvable | undefined {
@@ -194,7 +194,7 @@ export class GoogleFirestoreDatabaseTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database google_firestore_database}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database google_firestore_database}
 */
 export class GoogleFirestoreDatabase extends cdktf.TerraformResource {
 
@@ -208,7 +208,7 @@ export class GoogleFirestoreDatabase extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_firestore_database google_firestore_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firestore_database google_firestore_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,11 +11,11 @@ export interface GoogleProjectDefaultServiceAccountsConfig extends cdktf.Terrafo
   * The action to be performed in the default service accounts. Valid values are: DEPRIVILEGE, DELETE, DISABLE.
 				Note that DEPRIVILEGE action will ignore the REVERT configuration in the restore_policy.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts#action GoogleProjectDefaultServiceAccounts#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts#action GoogleProjectDefaultServiceAccounts#action}
   */
   readonly action: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts#id GoogleProjectDefaultServiceAccounts#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts#id GoogleProjectDefaultServiceAccounts#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,39 +24,39 @@ export interface GoogleProjectDefaultServiceAccountsConfig extends cdktf.Terrafo
   /**
   * The project ID where service accounts are created.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts#project GoogleProjectDefaultServiceAccounts#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts#project GoogleProjectDefaultServiceAccounts#project}
   */
   readonly project: string;
   /**
   * The action to be performed in the default service accounts on the resource destroy.
 				Valid values are NONE, REVERT and REVERT_AND_IGNORE_FAILURE. It is applied for any action but in the DEPRIVILEGE.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts#restore_policy GoogleProjectDefaultServiceAccounts#restore_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts#restore_policy GoogleProjectDefaultServiceAccounts#restore_policy}
   */
   readonly restorePolicy?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts#timeouts GoogleProjectDefaultServiceAccounts#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts#timeouts GoogleProjectDefaultServiceAccounts#timeouts}
   */
   readonly timeouts?: GoogleProjectDefaultServiceAccountsTimeouts;
 }
 export interface GoogleProjectDefaultServiceAccountsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts#create GoogleProjectDefaultServiceAccounts#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts#create GoogleProjectDefaultServiceAccounts#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts#delete GoogleProjectDefaultServiceAccounts#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts#delete GoogleProjectDefaultServiceAccounts#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts#read GoogleProjectDefaultServiceAccounts#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts#read GoogleProjectDefaultServiceAccounts#read}
   */
   readonly read?: string;
 }
 
-export function googleProjectDefaultServiceAccountsTimeoutsToTerraform(struct?: GoogleProjectDefaultServiceAccountsTimeoutsOutputReference | GoogleProjectDefaultServiceAccountsTimeouts | cdktf.IResolvable): any {
+export function googleProjectDefaultServiceAccountsTimeoutsToTerraform(struct?: GoogleProjectDefaultServiceAccountsTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -77,7 +77,7 @@ export class GoogleProjectDefaultServiceAccountsTimeoutsOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleProjectDefaultServiceAccountsTimeouts | cdktf.IResolvable | undefined {
@@ -172,7 +172,7 @@ export class GoogleProjectDefaultServiceAccountsTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts google_project_default_service_accounts}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts google_project_default_service_accounts}
 */
 export class GoogleProjectDefaultServiceAccounts extends cdktf.TerraformResource {
 
@@ -186,7 +186,7 @@ export class GoogleProjectDefaultServiceAccounts extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_project_default_service_accounts google_project_default_service_accounts} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_project_default_service_accounts google_project_default_service_accounts} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,6 +1,6 @@
 # `data_google_logging_sink`
 
-Refer to the Terraform Registory for docs: [`data_google_logging_sink`](https://www.terraform.io/docs/providers/google-beta/d/google_logging_sink).
+Refer to the Terraform Registory for docs: [`data_google_logging_sink`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/data-sources/google_logging_sink).
 
 # `dataGoogleLoggingSink` Submodule <a name="`dataGoogleLoggingSink` Submodule" id="@cdktf/provider-google-beta.dataGoogleLoggingSink"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_google_logging_sink`](https://
 
 ### DataGoogleLoggingSink <a name="DataGoogleLoggingSink" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google_logging_sink google_logging_sink}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/data-sources/google_logging_sink google_logging_sink}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 datagoogleloggingsink.NewDataGoogleLoggingSink(scope Construct, id *string, config DataGoogleLoggingSinkConfig) DataGoogleLoggingSink
 ```
@@ -270,7 +270,7 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 datagoogleloggingsink.DataGoogleLoggingSink_IsConstruct(x interface{}) *bool
 ```
@@ -302,7 +302,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 datagoogleloggingsink.DataGoogleLoggingSink_IsTerraformElement(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ datagoogleloggingsink.DataGoogleLoggingSink_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 datagoogleloggingsink.DataGoogleLoggingSink_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagoogleloggingsink.DataGoogleLoggingSink_IsTerraformDataSource(x interface{})
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -431,10 +431,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -603,7 +603,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 &datagoogleloggingsink.DataGoogleLoggingSinkBigqueryOptions {
 
@@ -616,11 +616,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglelo
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 &datagoogleloggingsink.DataGoogleLoggingSinkConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -635,7 +635,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglelo
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -658,10 +658,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -725,7 +725,7 @@ Id *string
 
 Required. An identifier for the resource in format: "projects/[PROJECT_ID]/sinks/[SINK_NAME]", "organizations/[ORGANIZATION_ID]/sinks/[SINK_NAME]", "billingAccounts/[BILLING_ACCOUNT_ID]/sinks/[SINK_NAME]", "folders/[FOLDER_ID]/sinks/[SINK_NAME]".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_logging_sink#id DataGoogleLoggingSink#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/data-sources/google_logging_sink#id DataGoogleLoggingSink#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -737,7 +737,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 &datagoogleloggingsink.DataGoogleLoggingSinkExclusions {
 
@@ -752,7 +752,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglelo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 datagoogleloggingsink.NewDataGoogleLoggingSinkBigqueryOptionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleLoggingSinkBigqueryOptionsList
 ```
@@ -884,7 +884,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 datagoogleloggingsink.NewDataGoogleLoggingSinkBigqueryOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleLoggingSinkBigqueryOptionsOutputReference
 ```
@@ -1162,7 +1162,7 @@ func InternalValue() DataGoogleLoggingSinkBigqueryOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 datagoogleloggingsink.NewDataGoogleLoggingSinkExclusionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleLoggingSinkExclusionsList
 ```
@@ -1294,7 +1294,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleloggingsink"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleloggingsink"
 
 datagoogleloggingsink.NewDataGoogleLoggingSinkExclusionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleLoggingSinkExclusionsOutputReference
 ```

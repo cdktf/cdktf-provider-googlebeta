@@ -1,3 +1,3 @@
 # `data_google_sql_database`
 
-Refer to the Terraform Registory for docs: [`data_google_sql_database`](https://www.terraform.io/docs/providers/google-beta/d/google_sql_database).
+Refer to the Terraform Registory for docs: [`data_google_sql_database`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/data-sources/google_sql_database).

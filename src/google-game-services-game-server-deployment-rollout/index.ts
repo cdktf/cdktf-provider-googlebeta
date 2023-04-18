@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,36 +13,36 @@ applied by default to all realms and clusters. For example,
 
 'projects/my-project/locations/global/gameServerDeployments/my-game/configs/my-config'.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#default_game_server_config GoogleGameServicesGameServerDeploymentRollout#default_game_server_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#default_game_server_config GoogleGameServicesGameServerDeploymentRollout#default_game_server_config}
   */
   readonly defaultGameServerConfig: string;
   /**
   * The deployment to rollout the new config to. Only 1 rollout must be associated with each deployment.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#deployment_id GoogleGameServicesGameServerDeploymentRollout#deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#deployment_id GoogleGameServicesGameServerDeploymentRollout#deployment_id}
   */
   readonly deploymentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#id GoogleGameServicesGameServerDeploymentRollout#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#id GoogleGameServicesGameServerDeploymentRollout#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#project GoogleGameServicesGameServerDeploymentRollout#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#project GoogleGameServicesGameServerDeploymentRollout#project}
   */
   readonly project?: string;
   /**
   * game_server_config_overrides block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#game_server_config_overrides GoogleGameServicesGameServerDeploymentRollout#game_server_config_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#game_server_config_overrides GoogleGameServicesGameServerDeploymentRollout#game_server_config_overrides}
   */
   readonly gameServerConfigOverrides?: GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverrides[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#timeouts GoogleGameServicesGameServerDeploymentRollout#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#timeouts GoogleGameServicesGameServerDeploymentRollout#timeouts}
   */
   readonly timeouts?: GoogleGameServicesGameServerDeploymentRolloutTimeouts;
 }
@@ -50,7 +50,7 @@ export interface GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOv
   /**
   * List of realms to match against.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#realms GoogleGameServicesGameServerDeploymentRollout#realms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#realms GoogleGameServicesGameServerDeploymentRollout#realms}
   */
   readonly realms?: string[];
 }
@@ -117,13 +117,13 @@ export interface GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOv
   /**
   * Version of the configuration.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#config_version GoogleGameServicesGameServerDeploymentRollout#config_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#config_version GoogleGameServicesGameServerDeploymentRollout#config_version}
   */
   readonly configVersion?: string;
   /**
   * realms_selector block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#realms_selector GoogleGameServicesGameServerDeploymentRollout#realms_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#realms_selector GoogleGameServicesGameServerDeploymentRollout#realms_selector}
   */
   readonly realmsSelector?: GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelector;
 }
@@ -243,20 +243,20 @@ export class GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverri
 }
 export interface GoogleGameServicesGameServerDeploymentRolloutTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#create GoogleGameServicesGameServerDeploymentRollout#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#create GoogleGameServicesGameServerDeploymentRollout#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#delete GoogleGameServicesGameServerDeploymentRollout#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#delete GoogleGameServicesGameServerDeploymentRollout#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout#update GoogleGameServicesGameServerDeploymentRollout#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout#update GoogleGameServicesGameServerDeploymentRollout#update}
   */
   readonly update?: string;
 }
 
-export function googleGameServicesGameServerDeploymentRolloutTimeoutsToTerraform(struct?: GoogleGameServicesGameServerDeploymentRolloutTimeoutsOutputReference | GoogleGameServicesGameServerDeploymentRolloutTimeouts | cdktf.IResolvable): any {
+export function googleGameServicesGameServerDeploymentRolloutTimeoutsToTerraform(struct?: GoogleGameServicesGameServerDeploymentRolloutTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -277,7 +277,7 @@ export class GoogleGameServicesGameServerDeploymentRolloutTimeoutsOutputReferenc
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleGameServicesGameServerDeploymentRolloutTimeouts | cdktf.IResolvable | undefined {
@@ -372,7 +372,7 @@ export class GoogleGameServicesGameServerDeploymentRolloutTimeoutsOutputReferenc
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout}
 */
 export class GoogleGameServicesGameServerDeploymentRollout extends cdktf.TerraformResource {
 
@@ -386,7 +386,7 @@ export class GoogleGameServicesGameServerDeploymentRollout extends cdktf.Terrafo
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

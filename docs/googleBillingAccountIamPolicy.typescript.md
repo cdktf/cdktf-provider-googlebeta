@@ -1,6 +1,6 @@
 # `google_billing_account_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_billing_account_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_policy).
+Refer to the Terraform Registory for docs: [`google_billing_account_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_billing_account_iam_policy).
 
 # `googleBillingAccountIamPolicy` Submodule <a name="`googleBillingAccountIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleBillingAccountIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_billing_account_iam_policy`]
 
 ### GoogleBillingAccountIamPolicy <a name="GoogleBillingAccountIamPolicy" id="@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_policy google_billing_account_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_billing_account_iam_policy google_billing_account_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.Initializer"></a>
 
@@ -346,7 +346,7 @@ googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.isTerraformResource(
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -447,10 +447,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicy.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -609,15 +609,15 @@ const googleBillingAccountIamPolicyConfig: googleBillingAccountIamPolicy.GoogleB
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.billingAccountId">billingAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_policy#billing_account_id GoogleBillingAccountIamPolicy#billing_account_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_policy#policy_data GoogleBillingAccountIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_policy#id GoogleBillingAccountIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.billingAccountId">billingAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_billing_account_iam_policy#billing_account_id GoogleBillingAccountIamPolicy#billing_account_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_billing_account_iam_policy#policy_data GoogleBillingAccountIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_billing_account_iam_policy#id GoogleBillingAccountIamPolicy#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleBillingAccountIamPolicy.GoogleBillingAccountIamPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -699,7 +699,7 @@ public readonly billingAccountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_policy#billing_account_id GoogleBillingAccountIamPolicy#billing_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_billing_account_iam_policy#billing_account_id GoogleBillingAccountIamPolicy#billing_account_id}.
 
 ---
 
@@ -711,7 +711,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_policy#policy_data GoogleBillingAccountIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_billing_account_iam_policy#policy_data GoogleBillingAccountIamPolicy#policy_data}.
 
 ---
 
@@ -723,7 +723,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_policy#id GoogleBillingAccountIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_billing_account_iam_policy#id GoogleBillingAccountIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

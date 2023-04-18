@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleGameServicesRealmConfig extends cdktf.TerraformMetaArgume
   /**
   * Human readable description of the realm.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#description GoogleGameServicesRealm#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#description GoogleGameServicesRealm#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#id GoogleGameServicesRealm#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#id GoogleGameServicesRealm#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,23 +23,23 @@ export interface GoogleGameServicesRealmConfig extends cdktf.TerraformMetaArgume
   /**
   * The labels associated with this realm. Each label is a key-value pair.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#labels GoogleGameServicesRealm#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#labels GoogleGameServicesRealm#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Location of the Realm.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#location GoogleGameServicesRealm#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#location GoogleGameServicesRealm#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#project GoogleGameServicesRealm#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#project GoogleGameServicesRealm#project}
   */
   readonly project?: string;
   /**
   * GCP region of the Realm.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#realm_id GoogleGameServicesRealm#realm_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#realm_id GoogleGameServicesRealm#realm_id}
   */
   readonly realmId: string;
   /**
@@ -47,32 +47,32 @@ export interface GoogleGameServicesRealmConfig extends cdktf.TerraformMetaArgume
 this field must be from the IANA time zone database:
 https://www.iana.org/time-zones.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#time_zone GoogleGameServicesRealm#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#time_zone GoogleGameServicesRealm#time_zone}
   */
   readonly timeZone: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#timeouts GoogleGameServicesRealm#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#timeouts GoogleGameServicesRealm#timeouts}
   */
   readonly timeouts?: GoogleGameServicesRealmTimeouts;
 }
 export interface GoogleGameServicesRealmTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#create GoogleGameServicesRealm#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#create GoogleGameServicesRealm#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#delete GoogleGameServicesRealm#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#delete GoogleGameServicesRealm#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm#update GoogleGameServicesRealm#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm#update GoogleGameServicesRealm#update}
   */
   readonly update?: string;
 }
 
-export function googleGameServicesRealmTimeoutsToTerraform(struct?: GoogleGameServicesRealmTimeoutsOutputReference | GoogleGameServicesRealmTimeouts | cdktf.IResolvable): any {
+export function googleGameServicesRealmTimeoutsToTerraform(struct?: GoogleGameServicesRealmTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -93,7 +93,7 @@ export class GoogleGameServicesRealmTimeoutsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleGameServicesRealmTimeouts | cdktf.IResolvable | undefined {
@@ -188,7 +188,7 @@ export class GoogleGameServicesRealmTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm google_game_services_realm}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm google_game_services_realm}
 */
 export class GoogleGameServicesRealm extends cdktf.TerraformResource {
 
@@ -202,7 +202,7 @@ export class GoogleGameServicesRealm extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_game_services_realm google_game_services_realm} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_game_services_realm google_game_services_realm} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

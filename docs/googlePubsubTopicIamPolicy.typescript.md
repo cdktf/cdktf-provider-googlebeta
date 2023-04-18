@@ -1,6 +1,6 @@
 # `google_pubsub_topic_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_pubsub_topic_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy).
+Refer to the Terraform Registory for docs: [`google_pubsub_topic_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_topic_iam_policy).
 
 # `googlePubsubTopicIamPolicy` Submodule <a name="`googlePubsubTopicIamPolicy` Submodule" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_pubsub_topic_iam_policy`](ht
 
 ### GooglePubsubTopicIamPolicy <a name="GooglePubsubTopicIamPolicy" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.Initializer"></a>
 
@@ -353,7 +353,7 @@ googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.isTerraformResource(x: any
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -456,10 +456,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicy.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -638,16 +638,16 @@ const googlePubsubTopicIamPolicyConfig: googlePubsubTopicIamPolicy.GooglePubsubT
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy#policy_data GooglePubsubTopicIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.topic">topic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy#topic GooglePubsubTopicIamPolicy#topic}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy#id GooglePubsubTopicIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy#project GooglePubsubTopicIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_topic_iam_policy#policy_data GooglePubsubTopicIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.topic">topic</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_topic_iam_policy#topic GooglePubsubTopicIamPolicy#topic}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_topic_iam_policy#id GooglePubsubTopicIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_topic_iam_policy#project GooglePubsubTopicIamPolicy#project}. |
 
 ---
 
@@ -664,10 +664,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy.GooglePubsubTopicIamPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -729,7 +729,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy#policy_data GooglePubsubTopicIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_topic_iam_policy#policy_data GooglePubsubTopicIamPolicy#policy_data}.
 
 ---
 
@@ -741,7 +741,7 @@ public readonly topic: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy#topic GooglePubsubTopicIamPolicy#topic}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_topic_iam_policy#topic GooglePubsubTopicIamPolicy#topic}.
 
 ---
 
@@ -753,7 +753,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy#id GooglePubsubTopicIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_topic_iam_policy#id GooglePubsubTopicIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -768,7 +768,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy#project GooglePubsubTopicIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_topic_iam_policy#project GooglePubsubTopicIamPolicy#project}.
 
 ---
 

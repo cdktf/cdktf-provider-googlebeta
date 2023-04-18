@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GoogleComputeManagedSslCertificateConfig extends cdktf.Terrafor
   /**
   * The unique identifier for the resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#certificate_id GoogleComputeManagedSslCertificate#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#certificate_id GoogleComputeManagedSslCertificate#certificate_id}
   */
   readonly certificateId?: number;
   /**
   * An optional description of this resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#description GoogleComputeManagedSslCertificate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#description GoogleComputeManagedSslCertificate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#id GoogleComputeManagedSslCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#id GoogleComputeManagedSslCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,30 +38,30 @@ character, which cannot be a dash.
 
 These are in the same namespace as the managed SSL certificates.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#name GoogleComputeManagedSslCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#name GoogleComputeManagedSslCertificate#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#project GoogleComputeManagedSslCertificate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#project GoogleComputeManagedSslCertificate#project}
   */
   readonly project?: string;
   /**
   * Enum field whose value is always 'MANAGED' - used to signal to the API
 which type this is. Default value: "MANAGED" Possible values: ["MANAGED"]
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#type GoogleComputeManagedSslCertificate#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#type GoogleComputeManagedSslCertificate#type}
   */
   readonly type?: string;
   /**
   * managed block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#managed GoogleComputeManagedSslCertificate#managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#managed GoogleComputeManagedSslCertificate#managed}
   */
   readonly managed?: GoogleComputeManagedSslCertificateManaged;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#timeouts GoogleComputeManagedSslCertificate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#timeouts GoogleComputeManagedSslCertificate#timeouts}
   */
   readonly timeouts?: GoogleComputeManagedSslCertificateTimeouts;
 }
@@ -70,7 +70,7 @@ export interface GoogleComputeManagedSslCertificateManaged {
   * Domains for which a managed SSL certificate will be valid.  Currently,
 there can be up to 100 domains in this list.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#domains GoogleComputeManagedSslCertificate#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#domains GoogleComputeManagedSslCertificate#domains}
   */
   readonly domains: string[];
 }
@@ -132,16 +132,16 @@ export class GoogleComputeManagedSslCertificateManagedOutputReference extends cd
 }
 export interface GoogleComputeManagedSslCertificateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#create GoogleComputeManagedSslCertificate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#create GoogleComputeManagedSslCertificate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate#delete GoogleComputeManagedSslCertificate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate#delete GoogleComputeManagedSslCertificate#delete}
   */
   readonly delete?: string;
 }
 
-export function googleComputeManagedSslCertificateTimeoutsToTerraform(struct?: GoogleComputeManagedSslCertificateTimeoutsOutputReference | GoogleComputeManagedSslCertificateTimeouts | cdktf.IResolvable): any {
+export function googleComputeManagedSslCertificateTimeoutsToTerraform(struct?: GoogleComputeManagedSslCertificateTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -161,7 +161,7 @@ export class GoogleComputeManagedSslCertificateTimeoutsOutputReference extends c
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleComputeManagedSslCertificateTimeouts | cdktf.IResolvable | undefined {
@@ -234,7 +234,7 @@ export class GoogleComputeManagedSslCertificateTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate google_compute_managed_ssl_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate google_compute_managed_ssl_certificate}
 */
 export class GoogleComputeManagedSslCertificate extends cdktf.TerraformResource {
 
@@ -248,7 +248,7 @@ export class GoogleComputeManagedSslCertificate extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_managed_ssl_certificate google_compute_managed_ssl_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

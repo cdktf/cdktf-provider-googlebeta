@@ -1,6 +1,6 @@
 # `google_iap_web_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_iap_web_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_iam_policy).
+Refer to the Terraform Registory for docs: [`google_iap_web_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_iam_policy).
 
 # `googleIapWebIamPolicy` Submodule <a name="`googleIapWebIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleIapWebIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_iap_web_iam_policy`](https:/
 
 ### GoogleIapWebIamPolicy <a name="GoogleIapWebIamPolicy" id="@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_iam_policy google_iap_web_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.Initializer"></a>
 
@@ -353,7 +353,7 @@ googleIapWebIamPolicy.GoogleIapWebIamPolicy.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -454,10 +454,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicy.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -616,15 +616,15 @@ const googleIapWebIamPolicyConfig: googleIapWebIamPolicy.GoogleIapWebIamPolicyCo
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_iam_policy#policy_data GoogleIapWebIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_iam_policy#id GoogleIapWebIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_iam_policy#project GoogleIapWebIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_iam_policy#policy_data GoogleIapWebIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_iam_policy#id GoogleIapWebIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_iam_policy#project GoogleIapWebIamPolicy#project}. |
 
 ---
 
@@ -641,10 +641,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google-beta.googleIapWebIamPolicy.GoogleIapWebIamPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -706,7 +706,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_iam_policy#policy_data GoogleIapWebIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_iam_policy#policy_data GoogleIapWebIamPolicy#policy_data}.
 
 ---
 
@@ -718,7 +718,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_iam_policy#id GoogleIapWebIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_iam_policy#id GoogleIapWebIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -733,7 +733,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_iam_policy#project GoogleIapWebIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_iam_policy#project GoogleIapWebIamPolicy#project}.
 
 ---
 

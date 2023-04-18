@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_iap_brand
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_brand
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,18 +10,18 @@ export interface GoogleIapBrandConfig extends cdktf.TerraformMetaArguments {
   /**
   * Application name displayed on OAuth consent screen.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_brand#application_title GoogleIapBrand#application_title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_brand#application_title GoogleIapBrand#application_title}
   */
   readonly applicationTitle: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_brand#id GoogleIapBrand#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_brand#id GoogleIapBrand#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_brand#project GoogleIapBrand#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_brand#project GoogleIapBrand#project}
   */
   readonly project?: string;
   /**
@@ -31,28 +31,28 @@ be the user with the associated email address. When a group email is
 specified, the caller can be either a user or a service account which
 is an owner of the specified group in Cloud Identity.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_brand#support_email GoogleIapBrand#support_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_brand#support_email GoogleIapBrand#support_email}
   */
   readonly supportEmail: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_brand#timeouts GoogleIapBrand#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_brand#timeouts GoogleIapBrand#timeouts}
   */
   readonly timeouts?: GoogleIapBrandTimeouts;
 }
 export interface GoogleIapBrandTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_brand#create GoogleIapBrand#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_brand#create GoogleIapBrand#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_brand#delete GoogleIapBrand#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_brand#delete GoogleIapBrand#delete}
   */
   readonly delete?: string;
 }
 
-export function googleIapBrandTimeoutsToTerraform(struct?: GoogleIapBrandTimeoutsOutputReference | GoogleIapBrandTimeouts | cdktf.IResolvable): any {
+export function googleIapBrandTimeoutsToTerraform(struct?: GoogleIapBrandTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -72,7 +72,7 @@ export class GoogleIapBrandTimeoutsOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleIapBrandTimeouts | cdktf.IResolvable | undefined {
@@ -145,7 +145,7 @@ export class GoogleIapBrandTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_brand google_iap_brand}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_brand google_iap_brand}
 */
 export class GoogleIapBrand extends cdktf.TerraformResource {
 
@@ -159,7 +159,7 @@ export class GoogleIapBrand extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_brand google_iap_brand} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_brand google_iap_brand} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

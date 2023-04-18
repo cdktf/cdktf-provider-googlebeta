@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleResourceManagerLienConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien#id GoogleResourceManagerLien#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien#id GoogleResourceManagerLien#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -19,7 +19,7 @@ export interface GoogleResourceManagerLienConfig extends cdktf.TerraformMetaArgu
 of the Lien, intended to be inspected programmatically. Maximum length of
 200 characters.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien#origin GoogleResourceManagerLien#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien#origin GoogleResourceManagerLien#origin}
   */
   readonly origin: string;
   /**
@@ -28,14 +28,14 @@ The server will validate the parent against those for which Liens are supported.
 Since a variety of objects can have Liens against them, you must provide the type
 prefix (e.g. "projects/my-project-name").
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien#parent GoogleResourceManagerLien#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien#parent GoogleResourceManagerLien#parent}
   */
   readonly parent: string;
   /**
   * Concise user-visible strings indicating why an action cannot be performed
 on a resource. Maximum length of 200 characters.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien#reason GoogleResourceManagerLien#reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien#reason GoogleResourceManagerLien#reason}
   */
   readonly reason: string;
   /**
@@ -45,28 +45,28 @@ the permissions against those for which Liens are supported.  An empty
 list is meaningless and will be rejected.
 e.g. ['resourcemanager.projects.delete']
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien#restrictions GoogleResourceManagerLien#restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien#restrictions GoogleResourceManagerLien#restrictions}
   */
   readonly restrictions: string[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien#timeouts GoogleResourceManagerLien#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien#timeouts GoogleResourceManagerLien#timeouts}
   */
   readonly timeouts?: GoogleResourceManagerLienTimeouts;
 }
 export interface GoogleResourceManagerLienTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien#create GoogleResourceManagerLien#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien#create GoogleResourceManagerLien#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien#delete GoogleResourceManagerLien#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien#delete GoogleResourceManagerLien#delete}
   */
   readonly delete?: string;
 }
 
-export function googleResourceManagerLienTimeoutsToTerraform(struct?: GoogleResourceManagerLienTimeoutsOutputReference | GoogleResourceManagerLienTimeouts | cdktf.IResolvable): any {
+export function googleResourceManagerLienTimeoutsToTerraform(struct?: GoogleResourceManagerLienTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -86,7 +86,7 @@ export class GoogleResourceManagerLienTimeoutsOutputReference extends cdktf.Comp
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleResourceManagerLienTimeouts | cdktf.IResolvable | undefined {
@@ -159,7 +159,7 @@ export class GoogleResourceManagerLienTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien google_resource_manager_lien}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien google_resource_manager_lien}
 */
 export class GoogleResourceManagerLien extends cdktf.TerraformResource {
 
@@ -173,7 +173,7 @@ export class GoogleResourceManagerLien extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_resource_manager_lien google_resource_manager_lien} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_resource_manager_lien google_resource_manager_lien} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

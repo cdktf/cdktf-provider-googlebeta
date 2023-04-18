@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleServiceDirectoryNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace#id GoogleServiceDirectoryNamespace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace#id GoogleServiceDirectoryNamespace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -19,7 +19,7 @@ export interface GoogleServiceDirectoryNamespaceConfig extends cdktf.TerraformMe
 labels can be associated with a given resource. Label keys and values can
 be no longer than 63 characters.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace#labels GoogleServiceDirectoryNamespace#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace#labels GoogleServiceDirectoryNamespace#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -27,43 +27,43 @@ be no longer than 63 characters.
 A full list of valid locations can be found by running
 'gcloud beta service-directory locations list'.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace#location GoogleServiceDirectoryNamespace#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace#location GoogleServiceDirectoryNamespace#location}
   */
   readonly location: string;
   /**
   * The Resource ID must be 1-63 characters long, including digits,
 lowercase letters or the hyphen character.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace#namespace_id GoogleServiceDirectoryNamespace#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace#namespace_id GoogleServiceDirectoryNamespace#namespace_id}
   */
   readonly namespaceId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace#project GoogleServiceDirectoryNamespace#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace#project GoogleServiceDirectoryNamespace#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace#timeouts GoogleServiceDirectoryNamespace#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace#timeouts GoogleServiceDirectoryNamespace#timeouts}
   */
   readonly timeouts?: GoogleServiceDirectoryNamespaceTimeouts;
 }
 export interface GoogleServiceDirectoryNamespaceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace#create GoogleServiceDirectoryNamespace#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace#create GoogleServiceDirectoryNamespace#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace#delete GoogleServiceDirectoryNamespace#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace#delete GoogleServiceDirectoryNamespace#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace#update GoogleServiceDirectoryNamespace#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace#update GoogleServiceDirectoryNamespace#update}
   */
   readonly update?: string;
 }
 
-export function googleServiceDirectoryNamespaceTimeoutsToTerraform(struct?: GoogleServiceDirectoryNamespaceTimeoutsOutputReference | GoogleServiceDirectoryNamespaceTimeouts | cdktf.IResolvable): any {
+export function googleServiceDirectoryNamespaceTimeoutsToTerraform(struct?: GoogleServiceDirectoryNamespaceTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -84,7 +84,7 @@ export class GoogleServiceDirectoryNamespaceTimeoutsOutputReference extends cdkt
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleServiceDirectoryNamespaceTimeouts | cdktf.IResolvable | undefined {
@@ -179,7 +179,7 @@ export class GoogleServiceDirectoryNamespaceTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace google_service_directory_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace google_service_directory_namespace}
 */
 export class GoogleServiceDirectoryNamespace extends cdktf.TerraformResource {
 
@@ -193,7 +193,7 @@ export class GoogleServiceDirectoryNamespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_directory_namespace google_service_directory_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_directory_namespace google_service_directory_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

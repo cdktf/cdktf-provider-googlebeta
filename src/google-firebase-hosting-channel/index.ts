@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface GoogleFirebaseHostingChannelConfig extends cdktf.TerraformMetaA
   /**
   * Required. Immutable. A unique ID within the site that identifies the channel.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#channel_id GoogleFirebaseHostingChannel#channel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#channel_id GoogleFirebaseHostingChannel#channel_id}
   */
   readonly channelId: string;
   /**
@@ -18,11 +18,11 @@ export interface GoogleFirebaseHostingChannelConfig extends cdktf.TerraformMetaA
 will not be automatically deleted. This field is present in the output whether it's
 set directly or via the 'ttl' field.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#expire_time GoogleFirebaseHostingChannel#expire_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#expire_time GoogleFirebaseHostingChannel#expire_time}
   */
   readonly expireTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#id GoogleFirebaseHostingChannel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#id GoogleFirebaseHostingChannel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -31,20 +31,20 @@ set directly or via the 'ttl' field.
   /**
   * Text labels used for extra metadata and/or filtering
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#labels GoogleFirebaseHostingChannel#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#labels GoogleFirebaseHostingChannel#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The number of previous releases to retain on the channel for rollback or other
 purposes. Must be a number between 1-100. Defaults to 10 for new channels.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#retained_release_count GoogleFirebaseHostingChannel#retained_release_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#retained_release_count GoogleFirebaseHostingChannel#retained_release_count}
   */
   readonly retainedReleaseCount?: number;
   /**
   * Required. The ID of the site in which to create this channel.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#site_id GoogleFirebaseHostingChannel#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#site_id GoogleFirebaseHostingChannel#site_id}
   */
   readonly siteId: string;
   /**
@@ -52,32 +52,32 @@ purposes. Must be a number between 1-100. Defaults to 10 for new channels.
 duration past the time of the request. A duration in seconds with up to nine fractional
 digits, terminated by 's'. Example: "86400s" (one day).
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#ttl GoogleFirebaseHostingChannel#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#ttl GoogleFirebaseHostingChannel#ttl}
   */
   readonly ttl?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#timeouts GoogleFirebaseHostingChannel#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#timeouts GoogleFirebaseHostingChannel#timeouts}
   */
   readonly timeouts?: GoogleFirebaseHostingChannelTimeouts;
 }
 export interface GoogleFirebaseHostingChannelTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#create GoogleFirebaseHostingChannel#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#create GoogleFirebaseHostingChannel#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#delete GoogleFirebaseHostingChannel#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#delete GoogleFirebaseHostingChannel#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel#update GoogleFirebaseHostingChannel#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel#update GoogleFirebaseHostingChannel#update}
   */
   readonly update?: string;
 }
 
-export function googleFirebaseHostingChannelTimeoutsToTerraform(struct?: GoogleFirebaseHostingChannelTimeoutsOutputReference | GoogleFirebaseHostingChannelTimeouts | cdktf.IResolvable): any {
+export function googleFirebaseHostingChannelTimeoutsToTerraform(struct?: GoogleFirebaseHostingChannelTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -98,7 +98,7 @@ export class GoogleFirebaseHostingChannelTimeoutsOutputReference extends cdktf.C
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleFirebaseHostingChannelTimeouts | cdktf.IResolvable | undefined {
@@ -193,7 +193,7 @@ export class GoogleFirebaseHostingChannelTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel google_firebase_hosting_channel}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel}
 */
 export class GoogleFirebaseHostingChannel extends cdktf.TerraformResource {
 
@@ -207,7 +207,7 @@ export class GoogleFirebaseHostingChannel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_hosting_channel google_firebase_hosting_channel} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

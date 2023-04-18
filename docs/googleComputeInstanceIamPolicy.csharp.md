@@ -1,6 +1,6 @@
 # `google_compute_instance_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_compute_instance_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy).
+Refer to the Terraform Registory for docs: [`google_compute_instance_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy).
 
 # `googleComputeInstanceIamPolicy` Submodule <a name="`googleComputeInstanceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleComputeInstanceIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_compute_instance_iam_policy`
 
 ### GoogleComputeInstanceIamPolicy <a name="GoogleComputeInstanceIamPolicy" id="@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy google_compute_instance_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy google_compute_instance_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy.Initializer"></a>
 
@@ -360,7 +360,7 @@ GoogleComputeInstanceIamPolicy.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -465,10 +465,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicy.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -661,7 +661,7 @@ using HashiCorp.Cdktf.Providers.GoogleBeta;
 
 new GoogleComputeInstanceIamPolicyConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -680,17 +680,17 @@ new GoogleComputeInstanceIamPolicyConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.instanceName">InstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy#instance_name GoogleComputeInstanceIamPolicy#instance_name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy#policy_data GoogleComputeInstanceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy#id GoogleComputeInstanceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy#project GoogleComputeInstanceIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.zone">Zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy#zone GoogleComputeInstanceIamPolicy#zone}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.instanceName">InstanceName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy#instance_name GoogleComputeInstanceIamPolicy#instance_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy#policy_data GoogleComputeInstanceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy#id GoogleComputeInstanceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy#project GoogleComputeInstanceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.zone">Zone</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy#zone GoogleComputeInstanceIamPolicy#zone}. |
 
 ---
 
@@ -707,10 +707,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleComputeInstanceIamPolicy.GoogleComputeInstanceIamPolicyConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -772,7 +772,7 @@ public string InstanceName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy#instance_name GoogleComputeInstanceIamPolicy#instance_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy#instance_name GoogleComputeInstanceIamPolicy#instance_name}.
 
 ---
 
@@ -784,7 +784,7 @@ public string PolicyData { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy#policy_data GoogleComputeInstanceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy#policy_data GoogleComputeInstanceIamPolicy#policy_data}.
 
 ---
 
@@ -796,7 +796,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy#id GoogleComputeInstanceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy#id GoogleComputeInstanceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy#project GoogleComputeInstanceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy#project GoogleComputeInstanceIamPolicy#project}.
 
 ---
 
@@ -823,7 +823,7 @@ public string Zone { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_iam_policy#zone GoogleComputeInstanceIamPolicy#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_instance_iam_policy#zone GoogleComputeInstanceIamPolicy#zone}.
 
 ---
 

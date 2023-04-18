@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleServiceNetworkingConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection#id GoogleServiceNetworkingConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection#id GoogleServiceNetworkingConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,44 +17,44 @@ export interface GoogleServiceNetworkingConnectionConfig extends cdktf.Terraform
   /**
   * Name of VPC network connected with service producers using VPC peering.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection#network GoogleServiceNetworkingConnection#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection#network GoogleServiceNetworkingConnection#network}
   */
   readonly network: string;
   /**
   * Named IP address range(s) of PEERING type reserved for this service provider. Note that invoking this method with a different range when connection is already established will not reallocate already provisioned service producer subnetworks.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection#reserved_peering_ranges GoogleServiceNetworkingConnection#reserved_peering_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection#reserved_peering_ranges GoogleServiceNetworkingConnection#reserved_peering_ranges}
   */
   readonly reservedPeeringRanges: string[];
   /**
   * Provider peering service that is managing peering connectivity for a service provider organization. For Google services that support this functionality it is 'servicenetworking.googleapis.com'.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection#service GoogleServiceNetworkingConnection#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection#service GoogleServiceNetworkingConnection#service}
   */
   readonly service: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection#timeouts GoogleServiceNetworkingConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection#timeouts GoogleServiceNetworkingConnection#timeouts}
   */
   readonly timeouts?: GoogleServiceNetworkingConnectionTimeouts;
 }
 export interface GoogleServiceNetworkingConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection#create GoogleServiceNetworkingConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection#create GoogleServiceNetworkingConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection#delete GoogleServiceNetworkingConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection#delete GoogleServiceNetworkingConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection#update GoogleServiceNetworkingConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection#update GoogleServiceNetworkingConnection#update}
   */
   readonly update?: string;
 }
 
-export function googleServiceNetworkingConnectionTimeoutsToTerraform(struct?: GoogleServiceNetworkingConnectionTimeoutsOutputReference | GoogleServiceNetworkingConnectionTimeouts | cdktf.IResolvable): any {
+export function googleServiceNetworkingConnectionTimeoutsToTerraform(struct?: GoogleServiceNetworkingConnectionTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -75,7 +75,7 @@ export class GoogleServiceNetworkingConnectionTimeoutsOutputReference extends cd
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleServiceNetworkingConnectionTimeouts | cdktf.IResolvable | undefined {
@@ -170,7 +170,7 @@ export class GoogleServiceNetworkingConnectionTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection google_service_networking_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection google_service_networking_connection}
 */
 export class GoogleServiceNetworkingConnection extends cdktf.TerraformResource {
 
@@ -184,7 +184,7 @@ export class GoogleServiceNetworkingConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_networking_connection google_service_networking_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_networking_connection google_service_networking_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

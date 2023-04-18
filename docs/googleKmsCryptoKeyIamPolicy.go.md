@@ -1,6 +1,6 @@
 # `google_kms_crypto_key_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_kms_crypto_key_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_policy).
+Refer to the Terraform Registory for docs: [`google_kms_crypto_key_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_policy).
 
 # `googleKmsCryptoKeyIamPolicy` Submodule <a name="`googleKmsCryptoKeyIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_kms_crypto_key_iam_policy`](
 
 ### GoogleKmsCryptoKeyIamPolicy <a name="GoogleKmsCryptoKeyIamPolicy" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiampolicy"
 
 googlekmscryptokeyiampolicy.NewGoogleKmsCryptoKeyIamPolicy(scope Construct, id *string, config GoogleKmsCryptoKeyIamPolicyConfig) GoogleKmsCryptoKeyIamPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiampolicy"
 
 googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiampolicy"
 
 googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicy_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiampolicy"
 
 googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicy_IsTerraformResource(x in
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -447,10 +447,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicy.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -599,11 +599,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlekmscryptokeyiampolicy"
 
 &googlekmscryptokeyiampolicy.GoogleKmsCryptoKeyIamPolicyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -620,15 +620,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscry
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.cryptoKeyId">CryptoKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_policy#crypto_key_id GoogleKmsCryptoKeyIamPolicy#crypto_key_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_policy#policy_data GoogleKmsCryptoKeyIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_policy#id GoogleKmsCryptoKeyIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.cryptoKeyId">CryptoKeyId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_policy#crypto_key_id GoogleKmsCryptoKeyIamPolicy#crypto_key_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_policy#policy_data GoogleKmsCryptoKeyIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_policy#id GoogleKmsCryptoKeyIamPolicy#id}. |
 
 ---
 
@@ -645,10 +645,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamPolicy.GoogleKmsCryptoKeyIamPolicyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -710,7 +710,7 @@ CryptoKeyId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_policy#crypto_key_id GoogleKmsCryptoKeyIamPolicy#crypto_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_policy#crypto_key_id GoogleKmsCryptoKeyIamPolicy#crypto_key_id}.
 
 ---
 
@@ -722,7 +722,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_policy#policy_data GoogleKmsCryptoKeyIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_policy#policy_data GoogleKmsCryptoKeyIamPolicy#policy_data}.
 
 ---
 
@@ -734,7 +734,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_policy#id GoogleKmsCryptoKeyIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_policy#id GoogleKmsCryptoKeyIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

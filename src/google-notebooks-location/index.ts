@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_location
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_notebooks_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleNotebooksLocationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_location#id GoogleNotebooksLocation#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_notebooks_location#id GoogleNotebooksLocation#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,36 +17,36 @@ export interface GoogleNotebooksLocationConfig extends cdktf.TerraformMetaArgume
   /**
   * Name of the Location resource.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_location#name GoogleNotebooksLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_notebooks_location#name GoogleNotebooksLocation#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_location#project GoogleNotebooksLocation#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_notebooks_location#project GoogleNotebooksLocation#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_location#timeouts GoogleNotebooksLocation#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_notebooks_location#timeouts GoogleNotebooksLocation#timeouts}
   */
   readonly timeouts?: GoogleNotebooksLocationTimeouts;
 }
 export interface GoogleNotebooksLocationTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_location#create GoogleNotebooksLocation#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_notebooks_location#create GoogleNotebooksLocation#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_location#delete GoogleNotebooksLocation#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_notebooks_location#delete GoogleNotebooksLocation#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_location#update GoogleNotebooksLocation#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_notebooks_location#update GoogleNotebooksLocation#update}
   */
   readonly update?: string;
 }
 
-export function googleNotebooksLocationTimeoutsToTerraform(struct?: GoogleNotebooksLocationTimeoutsOutputReference | GoogleNotebooksLocationTimeouts | cdktf.IResolvable): any {
+export function googleNotebooksLocationTimeoutsToTerraform(struct?: GoogleNotebooksLocationTimeouts | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -67,7 +67,7 @@ export class GoogleNotebooksLocationTimeoutsOutputReference extends cdktf.Comple
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute, false, 0);
+    super(terraformResource, terraformAttribute, false);
   }
 
   public get internalValue(): GoogleNotebooksLocationTimeouts | cdktf.IResolvable | undefined {
@@ -162,7 +162,7 @@ export class GoogleNotebooksLocationTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_location google_notebooks_location}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_notebooks_location google_notebooks_location}
 */
 export class GoogleNotebooksLocation extends cdktf.TerraformResource {
 
@@ -176,7 +176,7 @@ export class GoogleNotebooksLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_location google_notebooks_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_notebooks_location google_notebooks_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

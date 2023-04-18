@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,42 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleHealthcareHl7V2StoreIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding#hl7_v2_store_id GoogleHealthcareHl7V2StoreIamBinding#hl7_v2_store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#hl7_v2_store_id GoogleHealthcareHl7V2StoreIamBinding#hl7_v2_store_id}
   */
   readonly hl7V2StoreId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding#id GoogleHealthcareHl7V2StoreIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#id GoogleHealthcareHl7V2StoreIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding#members GoogleHealthcareHl7V2StoreIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#members GoogleHealthcareHl7V2StoreIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding#role GoogleHealthcareHl7V2StoreIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#role GoogleHealthcareHl7V2StoreIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding#condition GoogleHealthcareHl7V2StoreIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#condition GoogleHealthcareHl7V2StoreIamBinding#condition}
   */
   readonly condition?: GoogleHealthcareHl7V2StoreIamBindingCondition;
 }
 export interface GoogleHealthcareHl7V2StoreIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding#description GoogleHealthcareHl7V2StoreIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#description GoogleHealthcareHl7V2StoreIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding#expression GoogleHealthcareHl7V2StoreIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#expression GoogleHealthcareHl7V2StoreIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding#title GoogleHealthcareHl7V2StoreIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding#title GoogleHealthcareHl7V2StoreIamBinding#title}
   */
   readonly title: string;
 }
@@ -148,7 +148,7 @@ export class GoogleHealthcareHl7V2StoreIamBindingConditionOutputReference extend
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding google_healthcare_hl7_v2_store_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding google_healthcare_hl7_v2_store_iam_binding}
 */
 export class GoogleHealthcareHl7V2StoreIamBinding extends cdktf.TerraformResource {
 
@@ -162,7 +162,7 @@ export class GoogleHealthcareHl7V2StoreIamBinding extends cdktf.TerraformResourc
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_hl7_v2_store_iam_binding google_healthcare_hl7_v2_store_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_hl7_v2_store_iam_binding google_healthcare_hl7_v2_store_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
