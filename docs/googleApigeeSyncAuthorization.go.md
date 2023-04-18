@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesyncauthorization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeesyncauthorization"
 
 googleapigeesyncauthorization.NewGoogleApigeeSyncAuthorization(scope Construct, id *string, config GoogleApigeeSyncAuthorizationConfig) GoogleApigeeSyncAuthorization
 ```
@@ -297,7 +297,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesyncauthorization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeesyncauthorization"
 
 googleapigeesyncauthorization.GoogleApigeeSyncAuthorization_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesyncauthorization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeesyncauthorization"
 
 googleapigeesyncauthorization.GoogleApigeeSyncAuthorization_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ googleapigeesyncauthorization.GoogleApigeeSyncAuthorization_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesyncauthorization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeesyncauthorization"
 
 googleapigeesyncauthorization.GoogleApigeeSyncAuthorization_IsTerraformResource(x interface{}) *bool
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesyncauthorization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeesyncauthorization"
 
 &googleapigeesyncauthorization.GoogleApigeeSyncAuthorizationConfig {
 	Connection: interface{},
@@ -654,7 +654,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesyn
 	Identities: *[]*string,
 	Name: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationTimeouts,
 }
 ```
 
@@ -814,7 +814,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesyncauthorization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeesyncauthorization"
 
 &googleapigeesyncauthorization.GoogleApigeeSyncAuthorizationTimeouts {
 	Create: *string,
@@ -876,7 +876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeSyncAuthorization.GoogleApigeeSyncAuthorizationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeesyncauthorization"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeesyncauthorization"
 
 googleapigeesyncauthorization.NewGoogleApigeeSyncAuthorizationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeSyncAuthorizationTimeoutsOutputReference
 ```
