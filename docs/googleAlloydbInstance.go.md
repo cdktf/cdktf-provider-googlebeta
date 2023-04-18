@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 googlealloydbinstance.NewGoogleAlloydbInstance(scope Construct, id *string, config GoogleAlloydbInstanceConfig) GoogleAlloydbInstance
 ```
@@ -379,7 +379,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 googlealloydbinstance.GoogleAlloydbInstance_IsConstruct(x interface{}) *bool
 ```
@@ -411,7 +411,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 googlealloydbinstance.GoogleAlloydbInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ googlealloydbinstance.GoogleAlloydbInstance_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 googlealloydbinstance.GoogleAlloydbInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -987,7 +987,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 &googlealloydbinstance.GoogleAlloydbInstanceConfig {
 	Connection: interface{},
@@ -1007,9 +1007,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbin
 	GceZone: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	MachineConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAlloydbInstance.GoogleAlloydbInstanceMachineConfig,
-	ReadPoolConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAlloydbInstance.GoogleAlloydbInstanceReadPoolConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleAlloydbInstance.GoogleAlloydbInstanceTimeouts,
+	MachineConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleAlloydbInstance.GoogleAlloydbInstanceMachineConfig,
+	ReadPoolConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleAlloydbInstance.GoogleAlloydbInstanceReadPoolConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleAlloydbInstance.GoogleAlloydbInstanceTimeouts,
 }
 ```
 
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceMachineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 &googlealloydbinstance.GoogleAlloydbInstanceMachineConfig {
 	CpuCount: *f64,
@@ -1336,7 +1336,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceReadPoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 &googlealloydbinstance.GoogleAlloydbInstanceReadPoolConfig {
 	NodeCount: *f64,
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 &googlealloydbinstance.GoogleAlloydbInstanceTimeouts {
 	Create: *string,
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceMachineConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 googlealloydbinstance.NewGoogleAlloydbInstanceMachineConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbInstanceMachineConfigOutputReference
 ```
@@ -1710,7 +1710,7 @@ func InternalValue() GoogleAlloydbInstanceMachineConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceReadPoolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 googlealloydbinstance.NewGoogleAlloydbInstanceReadPoolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbInstanceReadPoolConfigOutputReference
 ```
@@ -1988,7 +1988,7 @@ func InternalValue() GoogleAlloydbInstanceReadPoolConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlealloydbinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlealloydbinstance"
 
 googlealloydbinstance.NewGoogleAlloydbInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleAlloydbInstanceTimeoutsOutputReference
 ```

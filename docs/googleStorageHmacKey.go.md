@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragehmackey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlestoragehmackey"
 
 googlestoragehmackey.NewGoogleStorageHmacKey(scope Construct, id *string, config GoogleStorageHmacKeyConfig) GoogleStorageHmacKey
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragehmackey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlestoragehmackey"
 
 googlestoragehmackey.GoogleStorageHmacKey_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragehmackey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlestoragehmackey"
 
 googlestoragehmackey.GoogleStorageHmacKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ googlestoragehmackey.GoogleStorageHmacKey_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragehmackey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlestoragehmackey"
 
 googlestoragehmackey.GoogleStorageHmacKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -710,7 +710,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragehmackey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlestoragehmackey"
 
 &googlestoragehmackey.GoogleStorageHmacKeyConfig {
 	Connection: interface{},
@@ -724,7 +724,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragehm
 	Id: *string,
 	Project: *string,
 	State: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleStorageHmacKey.GoogleStorageHmacKeyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleStorageHmacKey.GoogleStorageHmacKeyTimeouts,
 }
 ```
 
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragehmackey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlestoragehmackey"
 
 &googlestoragehmackey.GoogleStorageHmacKeyTimeouts {
 	Create: *string,
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleStorageHmacKey.GoogleStorageHmacKeyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlestoragehmackey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlestoragehmackey"
 
 googlestoragehmackey.NewGoogleStorageHmacKeyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleStorageHmacKeyTimeoutsOutputReference
 ```

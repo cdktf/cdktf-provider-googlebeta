@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRollout.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 googlegameservicesgameserverdeploymentrollout.NewGoogleGameServicesGameServerDeploymentRollout(scope Construct, id *string, config GoogleGameServicesGameServerDeploymentRolloutConfig) GoogleGameServicesGameServerDeploymentRollout
 ```
@@ -324,7 +324,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRollout.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 googlegameservicesgameserverdeploymentrollout.GoogleGameServicesGameServerDeploymentRollout_IsConstruct(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRollout.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 googlegameservicesgameserverdeploymentrollout.GoogleGameServicesGameServerDeploymentRollout_IsTerraformElement(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ googlegameservicesgameserverdeploymentrollout.GoogleGameServicesGameServerDeploy
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRollout.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 googlegameservicesgameserverdeploymentrollout.GoogleGameServicesGameServerDeploymentRollout_IsTerraformResource(x interface{}) *bool
 ```
@@ -712,7 +712,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 &googlegameservicesgameserverdeploymentrollout.GoogleGameServicesGameServerDeploymentRolloutConfig {
 	Connection: interface{},
@@ -727,7 +727,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservi
 	GameServerConfigOverrides: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutTimeouts,
 }
 ```
 
@@ -911,11 +911,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 &googlegameservicesgameserverdeploymentrollout.GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverrides {
 	ConfigVersion: *string,
-	RealmsSelector: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelector,
+	RealmsSelector: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelector,
 }
 ```
 
@@ -961,7 +961,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 &googlegameservicesgameserverdeploymentrollout.GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelector {
 	Realms: *[]*string,
@@ -995,7 +995,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 &googlegameservicesgameserverdeploymentrollout.GoogleGameServicesGameServerDeploymentRolloutTimeouts {
 	Create: *string,
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 googlegameservicesgameserverdeploymentrollout.NewGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesList
 ```
@@ -1200,7 +1200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 googlegameservicesgameserverdeploymentrollout.NewGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesOutputReference
 ```
@@ -1538,7 +1538,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 googlegameservicesgameserverdeploymentrollout.NewGoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGameServicesGameServerDeploymentRolloutGameServerConfigOverridesRealmsSelectorOutputReference
 ```
@@ -1816,7 +1816,7 @@ func InternalValue() GoogleGameServicesGameServerDeploymentRolloutGameServerConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGameServicesGameServerDeploymentRollout.GoogleGameServicesGameServerDeploymentRolloutTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegameservicesgameserverdeploymentrollout"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegameservicesgameserverdeploymentrollout"
 
 googlegameservicesgameserverdeploymentrollout.NewGoogleGameServicesGameServerDeploymentRolloutTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGameServicesGameServerDeploymentRolloutTimeoutsOutputReference
 ```

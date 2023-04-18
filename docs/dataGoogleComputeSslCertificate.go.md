@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputesslcertificate"
 
 datagooglecomputesslcertificate.NewDataGoogleComputeSslCertificate(scope Construct, id *string, config DataGoogleComputeSslCertificateConfig) DataGoogleComputeSslCertificate
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputesslcertificate"
 
 datagooglecomputesslcertificate.DataGoogleComputeSslCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputesslcertificate"
 
 datagooglecomputesslcertificate.DataGoogleComputeSslCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagooglecomputesslcertificate.DataGoogleComputeSslCertificate_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputesslcertificate"
 
 datagooglecomputesslcertificate.DataGoogleComputeSslCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -661,7 +661,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeSslCertificate.DataGoogleComputeSslCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagooglecomputesslcertificate"
 
 &datagooglecomputesslcertificate.DataGoogleComputeSslCertificateConfig {
 	Connection: interface{},

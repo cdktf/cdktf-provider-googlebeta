@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputevpntunnel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputevpntunnel"
 
 googlecomputevpntunnel.NewGoogleComputeVpnTunnel(scope Construct, id *string, config GoogleComputeVpnTunnelConfig) GoogleComputeVpnTunnel
 ```
@@ -402,7 +402,7 @@ func ResetVpnGatewayInterface()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputevpntunnel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputevpntunnel"
 
 googlecomputevpntunnel.GoogleComputeVpnTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputevpntunnel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputevpntunnel"
 
 googlecomputevpntunnel.GoogleComputeVpnTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ googlecomputevpntunnel.GoogleComputeVpnTunnel_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputevpntunnel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputevpntunnel"
 
 googlecomputevpntunnel.GoogleComputeVpnTunnel_IsTerraformResource(x interface{}) *bool
 ```
@@ -1131,7 +1131,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputevpntunnel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputevpntunnel"
 
 &googlecomputevpntunnel.GoogleComputeVpnTunnelConfig {
 	Connection: interface{},
@@ -1157,7 +1157,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputevp
 	RemoteTrafficSelector: *[]*string,
 	Router: *string,
 	TargetVpnGateway: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeouts,
 	VpnGateway: *string,
 	VpnGatewayInterface: *f64,
 }
@@ -1561,7 +1561,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputevpntunnel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputevpntunnel"
 
 &googlecomputevpntunnel.GoogleComputeVpnTunnelTimeouts {
 	Create: *string,
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnelTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputevpntunnel"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputevpntunnel"
 
 googlecomputevpntunnel.NewGoogleComputeVpnTunnelTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeVpnTunnelTimeoutsOutputReference
 ```

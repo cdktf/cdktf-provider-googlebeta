@@ -13,7 +13,7 @@ Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 googlevertexaimetadatastore.NewGoogleVertexAiMetadataStore(scope Construct, id *string, config GoogleVertexAiMetadataStoreConfig) GoogleVertexAiMetadataStore
 ```
@@ -345,7 +345,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 googlevertexaimetadatastore.GoogleVertexAiMetadataStore_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 googlevertexaimetadatastore.GoogleVertexAiMetadataStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ googlevertexaimetadatastore.GoogleVertexAiMetadataStore_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 googlevertexaimetadatastore.GoogleVertexAiMetadataStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -777,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 &googlevertexaimetadatastore.GoogleVertexAiMetadataStoreConfig {
 	Connection: interface{},
@@ -788,12 +788,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaim
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Description: *string,
-	EncryptionSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreEncryptionSpec,
+	EncryptionSpec: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreEncryptionSpec,
 	Id: *string,
 	Name: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreTimeouts,
 }
 ```
 
@@ -992,7 +992,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 &googlevertexaimetadatastore.GoogleVertexAiMetadataStoreEncryptionSpec {
 	KmsKeyName: *string,
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 &googlevertexaimetadatastore.GoogleVertexAiMetadataStoreState {
 
@@ -1042,7 +1042,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaim
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 &googlevertexaimetadatastore.GoogleVertexAiMetadataStoreTimeouts {
 	Create: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/googl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreEncryptionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 googlevertexaimetadatastore.NewGoogleVertexAiMetadataStoreEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiMetadataStoreEncryptionSpecOutputReference
 ```
@@ -1368,7 +1368,7 @@ func InternalValue() GoogleVertexAiMetadataStoreEncryptionSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 googlevertexaimetadatastore.NewGoogleVertexAiMetadataStoreStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVertexAiMetadataStoreStateList
 ```
@@ -1500,7 +1500,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 googlevertexaimetadatastore.NewGoogleVertexAiMetadataStoreStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVertexAiMetadataStoreStateOutputReference
 ```
@@ -1778,7 +1778,7 @@ func InternalValue() GoogleVertexAiMetadataStoreState
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiMetadataStore.GoogleVertexAiMetadataStoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevertexaimetadatastore"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaimetadatastore"
 
 googlevertexaimetadatastore.NewGoogleVertexAiMetadataStoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVertexAiMetadataStoreTimeoutsOutputReference
 ```
