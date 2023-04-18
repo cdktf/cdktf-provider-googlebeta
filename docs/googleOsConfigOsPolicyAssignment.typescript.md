@@ -1,3 +1,7 @@
+# `google_os_config_os_policy_assignment`
+
+Refer to the Terraform Registory for docs: [`google_os_config_os_policy_assignment`](https://www.terraform.io/docs/providers/google-beta/r/google_os_config_os_policy_assignment).
+
 # `googleOsConfigOsPolicyAssignment` Submodule <a name="`googleOsConfigOsPolicyAssignment` Submodule" id="@cdktf/provider-google-beta.googleOsConfigOsPolicyAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

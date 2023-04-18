@@ -1,3 +1,7 @@
+# `google_healthcare_fhir_store_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_healthcare_fhir_store_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_fhir_store_iam_binding).
+
 # `googleHealthcareFhirStoreIamBinding` Submodule <a name="`googleHealthcareFhirStoreIamBinding` Submodule" id="@cdktf/provider-google-beta.googleHealthcareFhirStoreIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

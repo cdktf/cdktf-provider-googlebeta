@@ -1,3 +1,7 @@
+# `google_active_directory_domain`
+
+Refer to the Terraform Registory for docs: [`google_active_directory_domain`](https://www.terraform.io/docs/providers/google-beta/r/google_active_directory_domain).
+
 # `googleActiveDirectoryDomain` Submodule <a name="`googleActiveDirectoryDomain` Submodule" id="@cdktf/provider-google-beta.googleActiveDirectoryDomain"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

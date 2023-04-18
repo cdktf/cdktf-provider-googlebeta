@@ -1,3 +1,7 @@
+# `google_compute_global_network_endpoint`
+
+Refer to the Terraform Registory for docs: [`google_compute_global_network_endpoint`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_global_network_endpoint).
+
 # `googleComputeGlobalNetworkEndpoint` Submodule <a name="`googleComputeGlobalNetworkEndpoint` Submodule" id="@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpoint"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

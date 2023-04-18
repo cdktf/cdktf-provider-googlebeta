@@ -1,3 +1,7 @@
+# `google_certificate_manager_certificate`
+
+Refer to the Terraform Registory for docs: [`google_certificate_manager_certificate`](https://www.terraform.io/docs/providers/google-beta/r/google_certificate_manager_certificate).
+
 # `googleCertificateManagerCertificate` Submodule <a name="`googleCertificateManagerCertificate` Submodule" id="@cdktf/provider-google-beta.googleCertificateManagerCertificate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_organization_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_organization_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_organization_iam_binding).
+
 # `googleOrganizationIamBinding` Submodule <a name="`googleOrganizationIamBinding` Submodule" id="@cdktf/provider-google-beta.googleOrganizationIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

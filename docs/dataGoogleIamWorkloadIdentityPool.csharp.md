@@ -1,3 +1,7 @@
+# `data_google_iam_workload_identity_pool`
+
+Refer to the Terraform Registory for docs: [`data_google_iam_workload_identity_pool`](https://www.terraform.io/docs/providers/google-beta/d/google_iam_workload_identity_pool).
+
 # `dataGoogleIamWorkloadIdentityPool` Submodule <a name="`dataGoogleIamWorkloadIdentityPool` Submodule" id="@cdktf/provider-google-beta.dataGoogleIamWorkloadIdentityPool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

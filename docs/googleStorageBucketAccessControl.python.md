@@ -1,3 +1,7 @@
+# `google_storage_bucket_access_control`
+
+Refer to the Terraform Registory for docs: [`google_storage_bucket_access_control`](https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket_access_control).
+
 # `googleStorageBucketAccessControl` Submodule <a name="`googleStorageBucketAccessControl` Submodule" id="@cdktf/provider-google-beta.googleStorageBucketAccessControl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

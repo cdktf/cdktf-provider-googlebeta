@@ -1,3 +1,7 @@
+# `google_bigquery_datapolicy_data_policy_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_bigquery_datapolicy_data_policy_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_datapolicy_data_policy_iam_binding).
+
 # `googleBigqueryDatapolicyDataPolicyIamBinding` Submodule <a name="`googleBigqueryDatapolicyDataPolicyIamBinding` Submodule" id="@cdktf/provider-google-beta.googleBigqueryDatapolicyDataPolicyIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

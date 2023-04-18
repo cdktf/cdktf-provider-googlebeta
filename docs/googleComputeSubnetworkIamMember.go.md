@@ -1,3 +1,7 @@
+# `google_compute_subnetwork_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_compute_subnetwork_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_subnetwork_iam_member).
+
 # `googleComputeSubnetworkIamMember` Submodule <a name="`googleComputeSubnetworkIamMember` Submodule" id="@cdktf/provider-google-beta.googleComputeSubnetworkIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_security_scanner_scan_config`
+
+Refer to the Terraform Registory for docs: [`google_security_scanner_scan_config`](https://www.terraform.io/docs/providers/google-beta/r/google_security_scanner_scan_config).
+
 # `googleSecurityScannerScanConfig` Submodule <a name="`googleSecurityScannerScanConfig` Submodule" id="@cdktf/provider-google-beta.googleSecurityScannerScanConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

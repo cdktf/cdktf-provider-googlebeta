@@ -1,3 +1,7 @@
+# `data_google_sourcerepo_repository`
+
+Refer to the Terraform Registory for docs: [`data_google_sourcerepo_repository`](https://www.terraform.io/docs/providers/google-beta/d/google_sourcerepo_repository).
+
 # `dataGoogleSourcerepoRepository` Submodule <a name="`dataGoogleSourcerepoRepository` Submodule" id="@cdktf/provider-google-beta.dataGoogleSourcerepoRepository"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

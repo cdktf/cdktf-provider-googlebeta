@@ -1,3 +1,7 @@
+# `google_cloud_asset_organization_feed`
+
+Refer to the Terraform Registory for docs: [`google_cloud_asset_organization_feed`](https://www.terraform.io/docs/providers/google-beta/r/google_cloud_asset_organization_feed).
+
 # `googleCloudAssetOrganizationFeed` Submodule <a name="`googleCloudAssetOrganizationFeed` Submodule" id="@cdktf/provider-google-beta.googleCloudAssetOrganizationFeed"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

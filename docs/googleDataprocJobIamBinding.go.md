@@ -1,3 +1,7 @@
+# `google_dataproc_job_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_dataproc_job_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_job_iam_binding).
+
 # `googleDataprocJobIamBinding` Submodule <a name="`googleDataprocJobIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

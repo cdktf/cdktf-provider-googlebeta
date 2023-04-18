@@ -1,3 +1,7 @@
+# `google_storage_bucket_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_storage_bucket_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket_iam_member).
+
 # `googleStorageBucketIamMember` Submodule <a name="`googleStorageBucketIamMember` Submodule" id="@cdktf/provider-google-beta.googleStorageBucketIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

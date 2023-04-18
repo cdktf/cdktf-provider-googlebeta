@@ -1,3 +1,7 @@
+# `google_endpoints_service_consumers_iam_policy`
+
+Refer to the Terraform Registory for docs: [`google_endpoints_service_consumers_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_endpoints_service_consumers_iam_policy).
+
 # `googleEndpointsServiceConsumersIamPolicy` Submodule <a name="`googleEndpointsServiceConsumersIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

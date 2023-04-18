@@ -1,3 +1,7 @@
+# `google_data_catalog_policy_tag`
+
+Refer to the Terraform Registory for docs: [`google_data_catalog_policy_tag`](https://www.terraform.io/docs/providers/google-beta/r/google_data_catalog_policy_tag).
+
 # `googleDataCatalogPolicyTag` Submodule <a name="`googleDataCatalogPolicyTag` Submodule" id="@cdktf/provider-google-beta.googleDataCatalogPolicyTag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

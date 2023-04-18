@@ -1,3 +1,7 @@
+# `google_notebooks_runtime`
+
+Refer to the Terraform Registory for docs: [`google_notebooks_runtime`](https://www.terraform.io/docs/providers/google-beta/r/google_notebooks_runtime).
+
 # `googleNotebooksRuntime` Submodule <a name="`googleNotebooksRuntime` Submodule" id="@cdktf/provider-google-beta.googleNotebooksRuntime"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

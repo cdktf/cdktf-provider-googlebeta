@@ -1,3 +1,7 @@
+# `data_google_container_registry_image`
+
+Refer to the Terraform Registory for docs: [`data_google_container_registry_image`](https://www.terraform.io/docs/providers/google-beta/d/google_container_registry_image).
+
 # `dataGoogleContainerRegistryImage` Submodule <a name="`dataGoogleContainerRegistryImage` Submodule" id="@cdktf/provider-google-beta.dataGoogleContainerRegistryImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_dialogflow_cx_page`
+
+Refer to the Terraform Registory for docs: [`google_dialogflow_cx_page`](https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_page).
+
 # `googleDialogflowCxPage` Submodule <a name="`googleDialogflowCxPage` Submodule" id="@cdktf/provider-google-beta.googleDialogflowCxPage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

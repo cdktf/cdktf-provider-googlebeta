@@ -1,3 +1,7 @@
+# `google_firebase_project`
+
+Refer to the Terraform Registory for docs: [`google_firebase_project`](https://www.terraform.io/docs/providers/google-beta/r/google_firebase_project).
+
 # `googleFirebaseProject` Submodule <a name="`googleFirebaseProject` Submodule" id="@cdktf/provider-google-beta.googleFirebaseProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

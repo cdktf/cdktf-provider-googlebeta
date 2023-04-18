@@ -1,3 +1,7 @@
+# `google_compute_external_vpn_gateway`
+
+Refer to the Terraform Registory for docs: [`google_compute_external_vpn_gateway`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_external_vpn_gateway).
+
 # `googleComputeExternalVpnGateway` Submodule <a name="`googleComputeExternalVpnGateway` Submodule" id="@cdktf/provider-google-beta.googleComputeExternalVpnGateway"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_service_account_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_service_account_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_service_account_iam_binding).
+
 # `googleServiceAccountIamBinding` Submodule <a name="`googleServiceAccountIamBinding` Submodule" id="@cdktf/provider-google-beta.googleServiceAccountIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

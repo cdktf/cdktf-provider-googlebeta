@@ -1,3 +1,7 @@
+# `google_logging_organization_bucket_config`
+
+Refer to the Terraform Registory for docs: [`google_logging_organization_bucket_config`](https://www.terraform.io/docs/providers/google-beta/r/google_logging_organization_bucket_config).
+
 # `googleLoggingOrganizationBucketConfig` Submodule <a name="`googleLoggingOrganizationBucketConfig` Submodule" id="@cdktf/provider-google-beta.googleLoggingOrganizationBucketConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

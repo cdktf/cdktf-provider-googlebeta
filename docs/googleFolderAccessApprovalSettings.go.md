@@ -1,3 +1,7 @@
+# `google_folder_access_approval_settings`
+
+Refer to the Terraform Registory for docs: [`google_folder_access_approval_settings`](https://www.terraform.io/docs/providers/google-beta/r/google_folder_access_approval_settings).
+
 # `googleFolderAccessApprovalSettings` Submodule <a name="`googleFolderAccessApprovalSettings` Submodule" id="@cdktf/provider-google-beta.googleFolderAccessApprovalSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

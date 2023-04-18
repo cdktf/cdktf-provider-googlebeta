@@ -1,3 +1,7 @@
+# `google_compute_region_per_instance_config`
+
+Refer to the Terraform Registory for docs: [`google_compute_region_per_instance_config`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_per_instance_config).
+
 # `googleComputeRegionPerInstanceConfig` Submodule <a name="`googleComputeRegionPerInstanceConfig` Submodule" id="@cdktf/provider-google-beta.googleComputeRegionPerInstanceConfig"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

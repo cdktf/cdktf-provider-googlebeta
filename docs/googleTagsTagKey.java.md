@@ -1,3 +1,7 @@
+# `google_tags_tag_key`
+
+Refer to the Terraform Registory for docs: [`google_tags_tag_key`](https://www.terraform.io/docs/providers/google-beta/r/google_tags_tag_key).
+
 # `googleTagsTagKey` Submodule <a name="`googleTagsTagKey` Submodule" id="@cdktf/provider-google-beta.googleTagsTagKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

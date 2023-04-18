@@ -1,3 +1,7 @@
+# `google_pubsub_topic_iam_policy`
+
+Refer to the Terraform Registory for docs: [`google_pubsub_topic_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_topic_iam_policy).
+
 # `googlePubsubTopicIamPolicy` Submodule <a name="`googlePubsubTopicIamPolicy` Submodule" id="@cdktf/provider-google-beta.googlePubsubTopicIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

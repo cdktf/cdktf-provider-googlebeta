@@ -1,3 +1,7 @@
+# `google_kms_crypto_key`
+
+Refer to the Terraform Registory for docs: [`google_kms_crypto_key`](https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key).
+
 # `googleKmsCryptoKey` Submodule <a name="`googleKmsCryptoKey` Submodule" id="@cdktf/provider-google-beta.googleKmsCryptoKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

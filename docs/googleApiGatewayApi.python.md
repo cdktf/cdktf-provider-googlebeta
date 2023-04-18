@@ -1,3 +1,7 @@
+# `google_api_gateway_api`
+
+Refer to the Terraform Registory for docs: [`google_api_gateway_api`](https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api).
+
 # `googleApiGatewayApi` Submodule <a name="`googleApiGatewayApi` Submodule" id="@cdktf/provider-google-beta.googleApiGatewayApi"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

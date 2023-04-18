@@ -1,3 +1,7 @@
+# `data_google_monitoring_istio_canonical_service`
+
+Refer to the Terraform Registory for docs: [`data_google_monitoring_istio_canonical_service`](https://www.terraform.io/docs/providers/google-beta/d/google_monitoring_istio_canonical_service).
+
 # `dataGoogleMonitoringIstioCanonicalService` Submodule <a name="`dataGoogleMonitoringIstioCanonicalService` Submodule" id="@cdktf/provider-google-beta.dataGoogleMonitoringIstioCanonicalService"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_compute_network_firewall_policy_rule`
+
+Refer to the Terraform Registory for docs: [`google_compute_network_firewall_policy_rule`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_network_firewall_policy_rule).
+
 # `googleComputeNetworkFirewallPolicyRule` Submodule <a name="`googleComputeNetworkFirewallPolicyRule` Submodule" id="@cdktf/provider-google-beta.googleComputeNetworkFirewallPolicyRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

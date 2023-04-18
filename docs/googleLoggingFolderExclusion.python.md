@@ -1,3 +1,7 @@
+# `google_logging_folder_exclusion`
+
+Refer to the Terraform Registory for docs: [`google_logging_folder_exclusion`](https://www.terraform.io/docs/providers/google-beta/r/google_logging_folder_exclusion).
+
 # `googleLoggingFolderExclusion` Submodule <a name="`googleLoggingFolderExclusion` Submodule" id="@cdktf/provider-google-beta.googleLoggingFolderExclusion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

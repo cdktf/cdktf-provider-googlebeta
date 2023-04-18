@@ -1,3 +1,7 @@
+# `google_kms_key_ring_iam_member`
+
+Refer to the Terraform Registory for docs: [`google_kms_key_ring_iam_member`](https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring_iam_member).
+
 # `googleKmsKeyRingIamMember` Submodule <a name="`googleKmsKeyRingIamMember` Submodule" id="@cdktf/provider-google-beta.googleKmsKeyRingIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

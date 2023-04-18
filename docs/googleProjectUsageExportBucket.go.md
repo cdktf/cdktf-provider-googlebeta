@@ -1,3 +1,7 @@
+# `google_project_usage_export_bucket`
+
+Refer to the Terraform Registory for docs: [`google_project_usage_export_bucket`](https://www.terraform.io/docs/providers/google-beta/r/google_project_usage_export_bucket).
+
 # `googleProjectUsageExportBucket` Submodule <a name="`googleProjectUsageExportBucket` Submodule" id="@cdktf/provider-google-beta.googleProjectUsageExportBucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

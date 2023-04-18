@@ -1,3 +1,7 @@
+# `google_compute_target_pool`
+
+Refer to the Terraform Registory for docs: [`google_compute_target_pool`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool).
+
 # `googleComputeTargetPool` Submodule <a name="`googleComputeTargetPool` Submodule" id="@cdktf/provider-google-beta.googleComputeTargetPool"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

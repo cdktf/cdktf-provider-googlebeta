@@ -1,3 +1,7 @@
+# `google_data_catalog_tag`
+
+Refer to the Terraform Registory for docs: [`google_data_catalog_tag`](https://www.terraform.io/docs/providers/google-beta/r/google_data_catalog_tag).
+
 # `googleDataCatalogTag` Submodule <a name="`googleDataCatalogTag` Submodule" id="@cdktf/provider-google-beta.googleDataCatalogTag"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

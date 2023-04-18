@@ -1,3 +1,7 @@
+# `google_kms_key_ring_import_job`
+
+Refer to the Terraform Registory for docs: [`google_kms_key_ring_import_job`](https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring_import_job).
+
 # `googleKmsKeyRingImportJob` Submodule <a name="`googleKmsKeyRingImportJob` Submodule" id="@cdktf/provider-google-beta.googleKmsKeyRingImportJob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

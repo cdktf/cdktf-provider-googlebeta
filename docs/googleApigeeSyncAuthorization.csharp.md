@@ -1,3 +1,7 @@
+# `google_apigee_sync_authorization`
+
+Refer to the Terraform Registory for docs: [`google_apigee_sync_authorization`](https://www.terraform.io/docs/providers/google-beta/r/google_apigee_sync_authorization).
+
 # `googleApigeeSyncAuthorization` Submodule <a name="`googleApigeeSyncAuthorization` Submodule" id="@cdktf/provider-google-beta.googleApigeeSyncAuthorization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

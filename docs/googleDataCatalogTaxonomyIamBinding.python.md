@@ -1,3 +1,7 @@
+# `google_data_catalog_taxonomy_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_data_catalog_taxonomy_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_data_catalog_taxonomy_iam_binding).
+
 # `googleDataCatalogTaxonomyIamBinding` Submodule <a name="`googleDataCatalogTaxonomyIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomyIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

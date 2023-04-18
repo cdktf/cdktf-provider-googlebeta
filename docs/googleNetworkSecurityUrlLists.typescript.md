@@ -1,3 +1,7 @@
+# `google_network_security_url_lists`
+
+Refer to the Terraform Registory for docs: [`google_network_security_url_lists`](https://www.terraform.io/docs/providers/google-beta/r/google_network_security_url_lists).
+
 # `googleNetworkSecurityUrlLists` Submodule <a name="`googleNetworkSecurityUrlLists` Submodule" id="@cdktf/provider-google-beta.googleNetworkSecurityUrlLists"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

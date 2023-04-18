@@ -1,3 +1,7 @@
+# `google_compute_router_peer`
+
+Refer to the Terraform Registory for docs: [`google_compute_router_peer`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_router_peer).
+
 # `googleComputeRouterPeer` Submodule <a name="`googleComputeRouterPeer` Submodule" id="@cdktf/provider-google-beta.googleComputeRouterPeer"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

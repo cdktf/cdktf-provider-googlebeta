@@ -1,3 +1,7 @@
+# `google_pubsub_subscription_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_pubsub_subscription_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_subscription_iam_binding).
+
 # `googlePubsubSubscriptionIamBinding` Submodule <a name="`googlePubsubSubscriptionIamBinding` Submodule" id="@cdktf/provider-google-beta.googlePubsubSubscriptionIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

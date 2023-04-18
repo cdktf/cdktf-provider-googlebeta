@@ -1,3 +1,7 @@
+# `google_bigquery_table_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_bigquery_table_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_table_iam_binding).
+
 # `googleBigqueryTableIamBinding` Submodule <a name="`googleBigqueryTableIamBinding` Submodule" id="@cdktf/provider-google-beta.googleBigqueryTableIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_vertex_ai_featurestore_entitytype_feature`
+
+Refer to the Terraform Registory for docs: [`google_vertex_ai_featurestore_entitytype_feature`](https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore_entitytype_feature).
+
 # `googleVertexAiFeaturestoreEntitytypeFeature` Submodule <a name="`googleVertexAiFeaturestoreEntitytypeFeature` Submodule" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytypeFeature"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

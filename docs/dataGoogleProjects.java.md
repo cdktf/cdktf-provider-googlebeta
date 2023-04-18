@@ -1,3 +1,7 @@
+# `data_google_projects`
+
+Refer to the Terraform Registory for docs: [`data_google_projects`](https://www.terraform.io/docs/providers/google-beta/d/google_projects).
+
 # `dataGoogleProjects` Submodule <a name="`dataGoogleProjects` Submodule" id="@cdktf/provider-google-beta.dataGoogleProjects"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

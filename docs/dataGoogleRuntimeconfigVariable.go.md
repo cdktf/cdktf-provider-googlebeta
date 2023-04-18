@@ -1,3 +1,7 @@
+# `data_google_runtimeconfig_variable`
+
+Refer to the Terraform Registory for docs: [`data_google_runtimeconfig_variable`](https://www.terraform.io/docs/providers/google-beta/d/google_runtimeconfig_variable).
+
 # `dataGoogleRuntimeconfigVariable` Submodule <a name="`dataGoogleRuntimeconfigVariable` Submodule" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigVariable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

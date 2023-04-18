@@ -1,3 +1,7 @@
+# `google_dialogflow_cx_entity_type`
+
+Refer to the Terraform Registory for docs: [`google_dialogflow_cx_entity_type`](https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_entity_type).
+
 # `googleDialogflowCxEntityType` Submodule <a name="`googleDialogflowCxEntityType` Submodule" id="@cdktf/provider-google-beta.googleDialogflowCxEntityType"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

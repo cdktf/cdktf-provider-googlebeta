@@ -1,3 +1,7 @@
+# `google_gke_backup_backup_plan_iam_policy`
+
+Refer to the Terraform Registory for docs: [`google_gke_backup_backup_plan_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_gke_backup_backup_plan_iam_policy).
+
 # `googleGkeBackupBackupPlanIamPolicy` Submodule <a name="`googleGkeBackupBackupPlanIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleGkeBackupBackupPlanIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

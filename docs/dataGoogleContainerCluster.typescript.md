@@ -1,3 +1,7 @@
+# `data_google_container_cluster`
+
+Refer to the Terraform Registory for docs: [`data_google_container_cluster`](https://www.terraform.io/docs/providers/google-beta/d/google_container_cluster).
+
 # `dataGoogleContainerCluster` Submodule <a name="`dataGoogleContainerCluster` Submodule" id="@cdktf/provider-google-beta.dataGoogleContainerCluster"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

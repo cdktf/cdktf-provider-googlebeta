@@ -1,3 +1,7 @@
+# `google_apigee_keystores_aliases_key_cert_file`
+
+Refer to the Terraform Registory for docs: [`google_apigee_keystores_aliases_key_cert_file`](https://www.terraform.io/docs/providers/google-beta/r/google_apigee_keystores_aliases_key_cert_file).
+
 # `googleApigeeKeystoresAliasesKeyCertFile` Submodule <a name="`googleApigeeKeystoresAliasesKeyCertFile` Submodule" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesKeyCertFile"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `google_kms_key_ring`
+
+Refer to the Terraform Registory for docs: [`google_kms_key_ring`](https://www.terraform.io/docs/providers/google-beta/r/google_kms_key_ring).
+
 # `googleKmsKeyRing` Submodule <a name="`googleKmsKeyRing` Submodule" id="@cdktf/provider-google-beta.googleKmsKeyRing"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

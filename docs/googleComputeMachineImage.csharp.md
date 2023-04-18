@@ -1,3 +1,7 @@
+# `google_compute_machine_image`
+
+Refer to the Terraform Registory for docs: [`google_compute_machine_image`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_machine_image).
+
 # `googleComputeMachineImage` Submodule <a name="`googleComputeMachineImage` Submodule" id="@cdktf/provider-google-beta.googleComputeMachineImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

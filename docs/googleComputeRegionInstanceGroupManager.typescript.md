@@ -1,3 +1,7 @@
+# `google_compute_region_instance_group_manager`
+
+Refer to the Terraform Registory for docs: [`google_compute_region_instance_group_manager`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_instance_group_manager).
+
 # `googleComputeRegionInstanceGroupManager` Submodule <a name="`googleComputeRegionInstanceGroupManager` Submodule" id="@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

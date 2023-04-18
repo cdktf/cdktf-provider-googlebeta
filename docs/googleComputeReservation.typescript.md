@@ -1,3 +1,7 @@
+# `google_compute_reservation`
+
+Refer to the Terraform Registory for docs: [`google_compute_reservation`](https://www.terraform.io/docs/providers/google-beta/r/google_compute_reservation).
+
 # `googleComputeReservation` Submodule <a name="`googleComputeReservation` Submodule" id="@cdktf/provider-google-beta.googleComputeReservation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

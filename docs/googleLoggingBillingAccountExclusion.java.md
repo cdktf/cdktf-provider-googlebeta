@@ -1,3 +1,7 @@
+# `google_logging_billing_account_exclusion`
+
+Refer to the Terraform Registory for docs: [`google_logging_billing_account_exclusion`](https://www.terraform.io/docs/providers/google-beta/r/google_logging_billing_account_exclusion).
+
 # `googleLoggingBillingAccountExclusion` Submodule <a name="`googleLoggingBillingAccountExclusion` Submodule" id="@cdktf/provider-google-beta.googleLoggingBillingAccountExclusion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

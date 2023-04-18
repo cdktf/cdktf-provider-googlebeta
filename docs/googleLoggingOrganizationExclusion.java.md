@@ -1,3 +1,7 @@
+# `google_logging_organization_exclusion`
+
+Refer to the Terraform Registory for docs: [`google_logging_organization_exclusion`](https://www.terraform.io/docs/providers/google-beta/r/google_logging_organization_exclusion).
+
 # `googleLoggingOrganizationExclusion` Submodule <a name="`googleLoggingOrganizationExclusion` Submodule" id="@cdktf/provider-google-beta.googleLoggingOrganizationExclusion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

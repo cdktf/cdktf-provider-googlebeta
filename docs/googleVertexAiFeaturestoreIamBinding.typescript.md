@@ -1,3 +1,7 @@
+# `google_vertex_ai_featurestore_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_vertex_ai_featurestore_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore_iam_binding).
+
 # `googleVertexAiFeaturestoreIamBinding` Submodule <a name="`googleVertexAiFeaturestoreIamBinding` Submodule" id="@cdktf/provider-google-beta.googleVertexAiFeaturestoreIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

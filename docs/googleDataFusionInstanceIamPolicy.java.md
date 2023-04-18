@@ -1,3 +1,7 @@
+# `google_data_fusion_instance_iam_policy`
+
+Refer to the Terraform Registory for docs: [`google_data_fusion_instance_iam_policy`](https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance_iam_policy).
+
 # `googleDataFusionInstanceIamPolicy` Submodule <a name="`googleDataFusionInstanceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleDataFusionInstanceIamPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

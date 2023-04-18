@@ -1,3 +1,7 @@
+# `google_data_fusion_instance_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_data_fusion_instance_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance_iam_binding).
+
 # `googleDataFusionInstanceIamBinding` Submodule <a name="`googleDataFusionInstanceIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataFusionInstanceIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

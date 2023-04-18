@@ -1,3 +1,7 @@
+# `data_google_netblock_ip_ranges`
+
+Refer to the Terraform Registory for docs: [`data_google_netblock_ip_ranges`](https://www.terraform.io/docs/providers/google-beta/d/google_netblock_ip_ranges).
+
 # `dataGoogleNetblockIpRanges` Submodule <a name="`dataGoogleNetblockIpRanges` Submodule" id="@cdktf/provider-google-beta.dataGoogleNetblockIpRanges"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_google_pubsub_topic`
+
+Refer to the Terraform Registory for docs: [`data_google_pubsub_topic`](https://www.terraform.io/docs/providers/google-beta/d/google_pubsub_topic).
+
 # `dataGooglePubsubTopic` Submodule <a name="`dataGooglePubsubTopic` Submodule" id="@cdktf/provider-google-beta.dataGooglePubsubTopic"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

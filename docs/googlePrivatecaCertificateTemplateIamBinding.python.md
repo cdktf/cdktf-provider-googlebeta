@@ -1,3 +1,7 @@
+# `google_privateca_certificate_template_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_privateca_certificate_template_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template_iam_binding).
+
 # `googlePrivatecaCertificateTemplateIamBinding` Submodule <a name="`googlePrivatecaCertificateTemplateIamBinding` Submodule" id="@cdktf/provider-google-beta.googlePrivatecaCertificateTemplateIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

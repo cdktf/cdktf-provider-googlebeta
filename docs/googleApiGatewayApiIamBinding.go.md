@@ -1,3 +1,7 @@
+# `google_api_gateway_api_iam_binding`
+
+Refer to the Terraform Registory for docs: [`google_api_gateway_api_iam_binding`](https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_iam_binding).
+
 # `googleApiGatewayApiIamBinding` Submodule <a name="`googleApiGatewayApiIamBinding` Submodule" id="@cdktf/provider-google-beta.googleApiGatewayApiIamBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
