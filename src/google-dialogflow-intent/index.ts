@@ -330,7 +330,7 @@ export class GoogleDialogflowIntent extends cdktf.TerraformResource {
       terraformResourceType: 'google_dialogflow_intent',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

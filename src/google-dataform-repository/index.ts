@@ -320,7 +320,7 @@ export class GoogleDataformRepository extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataform_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

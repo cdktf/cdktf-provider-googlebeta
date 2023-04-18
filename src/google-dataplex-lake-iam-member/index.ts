@@ -181,7 +181,7 @@ export class GoogleDataplexLakeIamMember extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_lake_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.61.0',
+        providerVersion: '4.62.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

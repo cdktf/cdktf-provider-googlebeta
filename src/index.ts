@@ -252,6 +252,7 @@ export * as googleComputeRegionDiskIamPolicy from './google-compute-region-disk-
 export * as googleComputeRegionDiskResourcePolicyAttachment from './google-compute-region-disk-resource-policy-attachment';
 export * as googleComputeRegionHealthCheck from './google-compute-region-health-check';
 export * as googleComputeRegionInstanceGroupManager from './google-compute-region-instance-group-manager';
+export * as googleComputeRegionInstanceTemplate from './google-compute-region-instance-template';
 export * as googleComputeRegionNetworkEndpointGroup from './google-compute-region-network-endpoint-group';
 export * as googleComputeRegionNetworkFirewallPolicy from './google-compute-region-network-firewall-policy';
 export * as googleComputeRegionNetworkFirewallPolicyAssociation from './google-compute-region-network-firewall-policy-association';
@@ -524,6 +525,7 @@ export * as googleLoggingBillingAccountSink from './google-logging-billing-accou
 export * as googleLoggingFolderBucketConfig from './google-logging-folder-bucket-config';
 export * as googleLoggingFolderExclusion from './google-logging-folder-exclusion';
 export * as googleLoggingFolderSink from './google-logging-folder-sink';
+export * as googleLoggingLinkedDataset from './google-logging-linked-dataset';
 export * as googleLoggingLogView from './google-logging-log-view';
 export * as googleLoggingMetric from './google-logging-metric';
 export * as googleLoggingOrganizationBucketConfig from './google-logging-organization-bucket-config';
@@ -757,6 +759,7 @@ export * as dataGoogleComputeNetworkEndpointGroup from './data-google-compute-ne
 export * as dataGoogleComputeNetworkPeering from './data-google-compute-network-peering';
 export * as dataGoogleComputeNodeTypes from './data-google-compute-node-types';
 export * as dataGoogleComputeRegionInstanceGroup from './data-google-compute-region-instance-group';
+export * as dataGoogleComputeRegionInstanceTemplate from './data-google-compute-region-instance-template';
 export * as dataGoogleComputeRegionNetworkEndpointGroup from './data-google-compute-region-network-endpoint-group';
 export * as dataGoogleComputeRegionSslCertificate from './data-google-compute-region-ssl-certificate';
 export * as dataGoogleComputeRegions from './data-google-compute-regions';
