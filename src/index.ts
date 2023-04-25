@@ -8,6 +8,7 @@ export * as googleAccessContextManagerAccessPolicyIamMember from './google-acces
 export * as googleAccessContextManagerAccessPolicyIamPolicy from './google-access-context-manager-access-policy-iam-policy';
 export * as googleAccessContextManagerAuthorizedOrgsDesc from './google-access-context-manager-authorized-orgs-desc';
 export * as googleAccessContextManagerGcpUserAccessBinding from './google-access-context-manager-gcp-user-access-binding';
+export * as googleAccessContextManagerIngressPolicy from './google-access-context-manager-ingress-policy';
 export * as googleAccessContextManagerServicePerimeter from './google-access-context-manager-service-perimeter';
 export * as googleAccessContextManagerServicePerimeterResource from './google-access-context-manager-service-perimeter-resource';
 export * as googleAccessContextManagerServicePerimeters from './google-access-context-manager-service-perimeters';
@@ -240,11 +241,14 @@ export * as googleComputePerInstanceConfig from './google-compute-per-instance-c
 export * as googleComputeProjectDefaultNetworkTier from './google-compute-project-default-network-tier';
 export * as googleComputeProjectMetadata from './google-compute-project-metadata';
 export * as googleComputeProjectMetadataItem from './google-compute-project-metadata-item';
+export * as googleComputePublicAdvertisedPrefix from './google-compute-public-advertised-prefix';
+export * as googleComputePublicDelegatedPrefix from './google-compute-public-delegated-prefix';
 export * as googleComputeRegionAutoscaler from './google-compute-region-autoscaler';
 export * as googleComputeRegionBackendService from './google-compute-region-backend-service';
 export * as googleComputeRegionBackendServiceIamBinding from './google-compute-region-backend-service-iam-binding';
 export * as googleComputeRegionBackendServiceIamMember from './google-compute-region-backend-service-iam-member';
 export * as googleComputeRegionBackendServiceIamPolicy from './google-compute-region-backend-service-iam-policy';
+export * as googleComputeRegionCommitment from './google-compute-region-commitment';
 export * as googleComputeRegionDisk from './google-compute-region-disk';
 export * as googleComputeRegionDiskIamBinding from './google-compute-region-disk-iam-binding';
 export * as googleComputeRegionDiskIamMember from './google-compute-region-disk-iam-member';
@@ -556,7 +560,9 @@ export * as googleNetworkServicesEdgeCacheKeyset from './google-network-services
 export * as googleNetworkServicesEdgeCacheOrigin from './google-network-services-edge-cache-origin';
 export * as googleNetworkServicesEdgeCacheService from './google-network-services-edge-cache-service';
 export * as googleNetworkServicesGateway from './google-network-services-gateway';
+export * as googleNetworkServicesHttpRoute from './google-network-services-http-route';
 export * as googleNetworkServicesMesh from './google-network-services-mesh';
+export * as googleNetworkServicesTcpRoute from './google-network-services-tcp-route';
 export * as googleNotebooksEnvironment from './google-notebooks-environment';
 export * as googleNotebooksInstance from './google-notebooks-instance';
 export * as googleNotebooksInstanceIamBinding from './google-notebooks-instance-iam-binding';
