@@ -1,6 +1,6 @@
 # `data_google_folder`
 
-Refer to the Terraform Registory for docs: [`data_google_folder`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/data-sources/google_folder).
+Refer to the Terraform Registory for docs: [`data_google_folder`](https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/data-sources/google_folder).
 
 # `dataGoogleFolder` Submodule <a name="`dataGoogleFolder` Submodule" id="@cdktf/provider-google-beta.dataGoogleFolder"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_google_folder`](https://regist
 
 ### DataGoogleFolder <a name="DataGoogleFolder" id="@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/data-sources/google_folder google_folder}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/data-sources/google_folder google_folder}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolder.Initializer"></a>
 
@@ -677,9 +677,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagooglefo
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolderConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolderConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolderConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolderConfig.property.folder">Folder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/data-sources/google_folder#folder DataGoogleFolder#folder}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/data-sources/google_folder#id DataGoogleFolder#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolderConfig.property.lookupOrganization">LookupOrganization</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/data-sources/google_folder#lookup_organization DataGoogleFolder#lookup_organization}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolderConfig.property.folder">Folder</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/data-sources/google_folder#folder DataGoogleFolder#folder}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolderConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/data-sources/google_folder#id DataGoogleFolder#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFolder.DataGoogleFolderConfig.property.lookupOrganization">LookupOrganization</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/data-sources/google_folder#lookup_organization DataGoogleFolder#lookup_organization}. |
 
 ---
 
@@ -761,7 +761,7 @@ Folder *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/data-sources/google_folder#folder DataGoogleFolder#folder}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/data-sources/google_folder#folder DataGoogleFolder#folder}.
 
 ---
 
@@ -773,7 +773,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/data-sources/google_folder#id DataGoogleFolder#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/data-sources/google_folder#id DataGoogleFolder#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -788,7 +788,7 @@ LookupOrganization interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/data-sources/google_folder#lookup_organization DataGoogleFolder#lookup_organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/data-sources/google_folder#lookup_organization DataGoogleFolder#lookup_organization}.
 
 ---
 

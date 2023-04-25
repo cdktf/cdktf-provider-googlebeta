@@ -1,3 +1,3 @@
 # `google_redis_instance`
 
-Refer to the Terraform Registory for docs: [`google_redis_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/resources/google_redis_instance).
+Refer to the Terraform Registory for docs: [`google_redis_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/resources/google_redis_instance).
