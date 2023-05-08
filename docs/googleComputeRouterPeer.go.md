@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 googlecomputerouterpeer.NewGoogleComputeRouterPeer(scope Construct, id *string, config GoogleComputeRouterPeerConfig) GoogleComputeRouterPeer
 ```
@@ -393,7 +393,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeer.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 googlecomputerouterpeer.GoogleComputeRouterPeer_IsConstruct(x interface{}) *bool
 ```
@@ -425,7 +425,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 googlecomputerouterpeer.GoogleComputeRouterPeer_IsTerraformElement(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ googlecomputerouterpeer.GoogleComputeRouterPeer_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 googlecomputerouterpeer.GoogleComputeRouterPeer_IsTerraformResource(x interface{}) *bool
 ```
@@ -1023,7 +1023,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 &googlecomputerouterpeer.GoogleComputeRouterPeerAdvertisedIpRanges {
 	Range: *string,
@@ -1073,7 +1073,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfd.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 &googlecomputerouterpeer.GoogleComputeRouterPeerBfd {
 	SessionInitializationMode: *string,
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 &googlecomputerouterpeer.GoogleComputeRouterPeerConfig {
 	Connection: interface{},
@@ -1192,14 +1192,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomput
 	AdvertisedIpRanges: interface{},
 	AdvertisedRoutePriority: *f64,
 	AdvertiseMode: *string,
-	Bfd: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleComputeRouterPeer.GoogleComputeRouterPeerBfd,
+	Bfd: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRouterPeer.GoogleComputeRouterPeerBfd,
 	Enable: interface{},
 	Id: *string,
 	IpAddress: *string,
 	Project: *string,
 	Region: *string,
 	RouterApplianceInstance: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleComputeRouterPeer.GoogleComputeRouterPeerTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeRouterPeer.GoogleComputeRouterPeerTimeouts,
 }
 ```
 
@@ -1575,7 +1575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 &googlecomputerouterpeer.GoogleComputeRouterPeerTimeouts {
 	Create: *string,
@@ -1637,7 +1637,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRangesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 googlecomputerouterpeer.NewGoogleComputeRouterPeerAdvertisedIpRangesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRouterPeerAdvertisedIpRangesList
 ```
@@ -1780,7 +1780,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerAdvertisedIpRangesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 googlecomputerouterpeer.NewGoogleComputeRouterPeerAdvertisedIpRangesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleComputeRouterPeerAdvertisedIpRangesOutputReference
 ```
@@ -2098,7 +2098,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerBfdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 googlecomputerouterpeer.NewGoogleComputeRouterPeerBfdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterPeerBfdOutputReference
 ```
@@ -2456,7 +2456,7 @@ func InternalValue() GoogleComputeRouterPeerBfd
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRouterPeer.GoogleComputeRouterPeerTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputerouterpeer"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputerouterpeer"
 
 googlecomputerouterpeer.NewGoogleComputeRouterPeerTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRouterPeerTimeoutsOutputReference
 ```

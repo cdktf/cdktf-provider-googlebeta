@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamPolicy.GoogleServiceDirectoryNamespaceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiampolicy"
 
 googleservicedirectorynamespaceiampolicy.NewGoogleServiceDirectoryNamespaceIamPolicy(scope Construct, id *string, config GoogleServiceDirectoryNamespaceIamPolicyConfig) GoogleServiceDirectoryNamespaceIamPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamPolicy.GoogleServiceDirectoryNamespaceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiampolicy"
 
 googleservicedirectorynamespaceiampolicy.GoogleServiceDirectoryNamespaceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamPolicy.GoogleServiceDirectoryNamespaceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiampolicy"
 
 googleservicedirectorynamespaceiampolicy.GoogleServiceDirectoryNamespaceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ googleservicedirectorynamespaceiampolicy.GoogleServiceDirectoryNamespaceIamPolic
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamPolicy.GoogleServiceDirectoryNamespaceIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiampolicy"
 
 googleservicedirectorynamespaceiampolicy.GoogleServiceDirectoryNamespaceIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamPolicy.GoogleServiceDirectoryNamespaceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiampolicy"
 
 &googleservicedirectorynamespaceiampolicy.GoogleServiceDirectoryNamespaceIamPolicyConfig {
 	Connection: interface{},

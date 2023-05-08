@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 googledataprocautoscalingpolicy.NewGoogleDataprocAutoscalingPolicy(scope Construct, id *string, config GoogleDataprocAutoscalingPolicyConfig) GoogleDataprocAutoscalingPolicy
 ```
@@ -371,7 +371,7 @@ func ResetWorkerConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 googledataprocautoscalingpolicy.GoogleDataprocAutoscalingPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -403,7 +403,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 googledataprocautoscalingpolicy.GoogleDataprocAutoscalingPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ googledataprocautoscalingpolicy.GoogleDataprocAutoscalingPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 googledataprocautoscalingpolicy.GoogleDataprocAutoscalingPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -803,10 +803,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithm.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 &googledataprocautoscalingpolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithm {
-	YarnConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfig,
+	YarnConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfig,
 	CooldownPeriod: *string,
 }
 ```
@@ -855,7 +855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 &googledataprocautoscalingpolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfig {
 	GracefulDecommissionTimeout: *string,
@@ -985,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 &googledataprocautoscalingpolicy.GoogleDataprocAutoscalingPolicyConfig {
 	Connection: interface{},
@@ -996,13 +996,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledatapr
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	PolicyId: *string,
-	BasicAlgorithm: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithm,
+	BasicAlgorithm: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithm,
 	Id: *string,
 	Location: *string,
 	Project: *string,
-	SecondaryWorkerConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicySecondaryWorkerConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyTimeouts,
-	WorkerConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyWorkerConfig,
+	SecondaryWorkerConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicySecondaryWorkerConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyTimeouts,
+	WorkerConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyWorkerConfig,
 }
 ```
 
@@ -1218,7 +1218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicySecondaryWorkerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 &googledataprocautoscalingpolicy.GoogleDataprocAutoscalingPolicySecondaryWorkerConfig {
 	MaxInstances: *f64,
@@ -1302,7 +1302,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 &googledataprocautoscalingpolicy.GoogleDataprocAutoscalingPolicyTimeouts {
 	Create: *string,
@@ -1362,7 +1362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyWorkerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 &googledataprocautoscalingpolicy.GoogleDataprocAutoscalingPolicyWorkerConfig {
 	MaxInstances: *f64,
@@ -1444,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithmOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 googledataprocautoscalingpolicy.NewGoogleDataprocAutoscalingPolicyBasicAlgorithmOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocAutoscalingPolicyBasicAlgorithmOutputReference
 ```
@@ -1757,7 +1757,7 @@ func InternalValue() GoogleDataprocAutoscalingPolicyBasicAlgorithm
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 googledataprocautoscalingpolicy.NewGoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfigOutputReference
 ```
@@ -2130,7 +2130,7 @@ func InternalValue() GoogleDataprocAutoscalingPolicyBasicAlgorithmYarnConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicySecondaryWorkerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 googledataprocautoscalingpolicy.NewGoogleDataprocAutoscalingPolicySecondaryWorkerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocAutoscalingPolicySecondaryWorkerConfigOutputReference
 ```
@@ -2466,7 +2466,7 @@ func InternalValue() GoogleDataprocAutoscalingPolicySecondaryWorkerConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 googledataprocautoscalingpolicy.NewGoogleDataprocAutoscalingPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocAutoscalingPolicyTimeoutsOutputReference
 ```
@@ -2802,7 +2802,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicy.GoogleDataprocAutoscalingPolicyWorkerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataprocautoscalingpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataprocautoscalingpolicy"
 
 googledataprocautoscalingpolicy.NewGoogleDataprocAutoscalingPolicyWorkerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataprocAutoscalingPolicyWorkerConfigOutputReference
 ```
