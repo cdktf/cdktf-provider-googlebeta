@@ -1,6 +1,6 @@
 # `google_iap_app_engine_version_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_iap_app_engine_version_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member).
+Refer to the Terraform Registory for docs: [`google_iap_app_engine_version_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member).
 
 # `googleIapAppEngineVersionIamMember` Submodule <a name="`googleIapAppEngineVersionIamMember` Submodule" id="@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_iap_app_engine_version_iam_m
 
 ### GoogleIapAppEngineVersionIamMember <a name="GoogleIapAppEngineVersionIamMember" id="@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member google_iap_app_engine_version_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMember.Initializer"></a>
 
@@ -749,9 +749,9 @@ new GoogleIapAppEngineVersionIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#expression GoogleIapAppEngineVersionIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#title GoogleIapAppEngineVersionIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#description GoogleIapAppEngineVersionIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#expression GoogleIapAppEngineVersionIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#title GoogleIapAppEngineVersionIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#description GoogleIapAppEngineVersionIamMember#description}. |
 
 ---
 
@@ -763,7 +763,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#expression GoogleIapAppEngineVersionIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#expression GoogleIapAppEngineVersionIamMember#expression}.
 
 ---
 
@@ -775,7 +775,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#title GoogleIapAppEngineVersionIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#title GoogleIapAppEngineVersionIamMember#title}.
 
 ---
 
@@ -787,7 +787,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#description GoogleIapAppEngineVersionIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#description GoogleIapAppEngineVersionIamMember#description}.
 
 ---
 
@@ -828,14 +828,14 @@ new GoogleIapAppEngineVersionIamMemberConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.appId">AppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#app_id GoogleIapAppEngineVersionIamMember#app_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#member GoogleIapAppEngineVersionIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#role GoogleIapAppEngineVersionIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.service">Service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#service GoogleIapAppEngineVersionIamMember#service}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.versionId">VersionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#version_id GoogleIapAppEngineVersionIamMember#version_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.appId">AppId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#app_id GoogleIapAppEngineVersionIamMember#app_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#member GoogleIapAppEngineVersionIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#role GoogleIapAppEngineVersionIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.service">Service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#service GoogleIapAppEngineVersionIamMember#service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.versionId">VersionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#version_id GoogleIapAppEngineVersionIamMember#version_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberCondition">GoogleIapAppEngineVersionIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#id GoogleIapAppEngineVersionIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#project GoogleIapAppEngineVersionIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#id GoogleIapAppEngineVersionIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapAppEngineVersionIamMember.GoogleIapAppEngineVersionIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#project GoogleIapAppEngineVersionIamMember#project}. |
 
 ---
 
@@ -917,7 +917,7 @@ public string AppId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#app_id GoogleIapAppEngineVersionIamMember#app_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#app_id GoogleIapAppEngineVersionIamMember#app_id}.
 
 ---
 
@@ -929,7 +929,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#member GoogleIapAppEngineVersionIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#member GoogleIapAppEngineVersionIamMember#member}.
 
 ---
 
@@ -941,7 +941,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#role GoogleIapAppEngineVersionIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#role GoogleIapAppEngineVersionIamMember#role}.
 
 ---
 
@@ -953,7 +953,7 @@ public string Service { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#service GoogleIapAppEngineVersionIamMember#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#service GoogleIapAppEngineVersionIamMember#service}.
 
 ---
 
@@ -965,7 +965,7 @@ public string VersionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#version_id GoogleIapAppEngineVersionIamMember#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#version_id GoogleIapAppEngineVersionIamMember#version_id}.
 
 ---
 
@@ -979,7 +979,7 @@ public GoogleIapAppEngineVersionIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#condition GoogleIapAppEngineVersionIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#condition GoogleIapAppEngineVersionIamMember#condition}
 
 ---
 
@@ -991,7 +991,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#id GoogleIapAppEngineVersionIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#id GoogleIapAppEngineVersionIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1006,7 +1006,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_iap_app_engine_version_iam_member#project GoogleIapAppEngineVersionIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_iap_app_engine_version_iam_member#project GoogleIapAppEngineVersionIamMember#project}.
 
 ---
 

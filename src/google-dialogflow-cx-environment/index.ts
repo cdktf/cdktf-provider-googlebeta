@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GoogleDialogflowCxEnvironmentConfig extends cdktf.TerraformMeta
   /**
   * The human-readable description of the environment. The maximum length is 500 characters. If exceeded, the request is rejected.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment#description GoogleDialogflowCxEnvironment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment#description GoogleDialogflowCxEnvironment#description}
   */
   readonly description?: string;
   /**
   * The human-readable name of the environment (unique in an agent). Limit of 64 characters.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment#display_name GoogleDialogflowCxEnvironment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment#display_name GoogleDialogflowCxEnvironment#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment#id GoogleDialogflowCxEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment#id GoogleDialogflowCxEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,33 +30,33 @@ export interface GoogleDialogflowCxEnvironmentConfig extends cdktf.TerraformMeta
   * The Agent to create an Environment for.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment#parent GoogleDialogflowCxEnvironment#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment#parent GoogleDialogflowCxEnvironment#parent}
   */
   readonly parent?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment#timeouts GoogleDialogflowCxEnvironment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment#timeouts GoogleDialogflowCxEnvironment#timeouts}
   */
   readonly timeouts?: GoogleDialogflowCxEnvironmentTimeouts;
   /**
   * version_configs block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment#version_configs GoogleDialogflowCxEnvironment#version_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment#version_configs GoogleDialogflowCxEnvironment#version_configs}
   */
   readonly versionConfigs: GoogleDialogflowCxEnvironmentVersionConfigs[] | cdktf.IResolvable;
 }
 export interface GoogleDialogflowCxEnvironmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment#create GoogleDialogflowCxEnvironment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment#create GoogleDialogflowCxEnvironment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment#delete GoogleDialogflowCxEnvironment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment#delete GoogleDialogflowCxEnvironment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment#update GoogleDialogflowCxEnvironment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment#update GoogleDialogflowCxEnvironment#update}
   */
   readonly update?: string;
 }
@@ -179,7 +179,7 @@ export interface GoogleDialogflowCxEnvironmentVersionConfigs {
   /**
   * Format: projects/{{project}}/locations/{{location}}/agents/{{agent}}/flows/{{flow}}/versions/{{version}}.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment#version GoogleDialogflowCxEnvironment#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment#version GoogleDialogflowCxEnvironment#version}
   */
   readonly version: string;
 }
@@ -273,7 +273,7 @@ export class GoogleDialogflowCxEnvironmentVersionConfigsList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment google_dialogflow_cx_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment google_dialogflow_cx_environment}
 */
 export class GoogleDialogflowCxEnvironment extends cdktf.TerraformResource {
 
@@ -287,7 +287,7 @@ export class GoogleDialogflowCxEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_dialogflow_cx_environment google_dialogflow_cx_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_dialogflow_cx_environment google_dialogflow_cx_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -298,7 +298,7 @@ export class GoogleDialogflowCxEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'google_dialogflow_cx_environment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.63.1',
+        providerVersion: '4.64.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

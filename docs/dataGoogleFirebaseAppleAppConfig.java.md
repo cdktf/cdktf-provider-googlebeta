@@ -1,6 +1,6 @@
 # `data_google_firebase_apple_app_config`
 
-Refer to the Terraform Registory for docs: [`data_google_firebase_apple_app_config`](https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/data-sources/google_firebase_apple_app_config).
+Refer to the Terraform Registory for docs: [`data_google_firebase_apple_app_config`](https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/data-sources/google_firebase_apple_app_config).
 
 # `dataGoogleFirebaseAppleAppConfig` Submodule <a name="`dataGoogleFirebaseAppleAppConfig` Submodule" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_google_firebase_apple_app_conf
 
 ### DataGoogleFirebaseAppleAppConfigA <a name="DataGoogleFirebaseAppleAppConfigA" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/data-sources/google_firebase_apple_app_config google_firebase_apple_app_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/data-sources/google_firebase_apple_app_config google_firebase_apple_app_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFirebaseAppleAppConfig.DataGoogleFirebaseAppleAppConfigA.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The id of the Firebase iOS App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/data-sources/google_firebase_apple_app_config#app_id DataGoogleFirebaseAppleAppConfigA#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/data-sources/google_firebase_apple_app_config#app_id DataGoogleFirebaseAppleAppConfigA#app_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The project id of the Firebase iOS App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/data-sources/google_firebase_apple_app_config#project DataGoogleFirebaseAppleAppConfigA#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/data-sources/google_firebase_apple_app_config#project DataGoogleFirebaseAppleAppConfigA#project}
 
 ---
 
@@ -770,7 +770,7 @@ public java.lang.String getAppId();
 
 The id of the Firebase iOS App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/data-sources/google_firebase_apple_app_config#app_id DataGoogleFirebaseAppleAppConfigA#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/data-sources/google_firebase_apple_app_config#app_id DataGoogleFirebaseAppleAppConfigA#app_id}
 
 ---
 
@@ -784,7 +784,7 @@ public java.lang.String getProject();
 
 The project id of the Firebase iOS App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/data-sources/google_firebase_apple_app_config#project DataGoogleFirebaseAppleAppConfigA#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/data-sources/google_firebase_apple_app_config#project DataGoogleFirebaseAppleAppConfigA#project}
 
 ---
 
