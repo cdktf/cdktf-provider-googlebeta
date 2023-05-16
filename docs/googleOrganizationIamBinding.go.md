@@ -1,6 +1,6 @@
 # `google_organization_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_organization_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding).
+Refer to the Terraform Registory for docs: [`google_organization_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding).
 
 # `googleOrganizationIamBinding` Submodule <a name="`googleOrganizationIamBinding` Submodule" id="@cdktf/provider-google-beta.googleOrganizationIamBinding"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_organization_iam_binding`](h
 
 ### GoogleOrganizationIamBinding <a name="GoogleOrganizationIamBinding" id="@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding google_organization_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding google_organization_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorganizationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiambinding"
 
 googleorganizationiambinding.NewGoogleOrganizationIamBinding(scope Construct, id *string, config GoogleOrganizationIamBindingConfig) GoogleOrganizationIamBinding
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorganizationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiambinding"
 
 googleorganizationiambinding.GoogleOrganizationIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorganizationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiambinding"
 
 googleorganizationiambinding.GoogleOrganizationIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ googleorganizationiambinding.GoogleOrganizationIamBinding_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorganizationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiambinding"
 
 googleorganizationiambinding.GoogleOrganizationIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorganizationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiambinding"
 
 &googleorganizationiambinding.GoogleOrganizationIamBindingCondition {
 	Expression: *string,
@@ -676,9 +676,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorgani
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#expression GoogleOrganizationIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#title GoogleOrganizationIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#description GoogleOrganizationIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#expression GoogleOrganizationIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#title GoogleOrganizationIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#description GoogleOrganizationIamBinding#description}. |
 
 ---
 
@@ -690,7 +690,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#expression GoogleOrganizationIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#expression GoogleOrganizationIamBinding#expression}.
 
 ---
 
@@ -702,7 +702,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#title GoogleOrganizationIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#title GoogleOrganizationIamBinding#title}.
 
 ---
 
@@ -714,7 +714,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#description GoogleOrganizationIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#description GoogleOrganizationIamBinding#description}.
 
 ---
 
@@ -723,7 +723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorganizationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiambinding"
 
 &googleorganizationiambinding.GoogleOrganizationIamBindingConfig {
 	Connection: interface{},
@@ -736,7 +736,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorgani
 	Members: *[]*string,
 	OrgId: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleOrganizationIamBinding.GoogleOrganizationIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleOrganizationIamBinding.GoogleOrganizationIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -752,11 +752,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorgani
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#members GoogleOrganizationIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#members GoogleOrganizationIamBinding#members}. |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.orgId">OrgId</a></code> | <code>*string</code> | The numeric ID of the organization in which you want to manage the audit logging config. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#role GoogleOrganizationIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#role GoogleOrganizationIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingCondition">GoogleOrganizationIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#id GoogleOrganizationIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#id GoogleOrganizationIamBinding#id}. |
 
 ---
 
@@ -838,7 +838,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#members GoogleOrganizationIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#members GoogleOrganizationIamBinding#members}.
 
 ---
 
@@ -852,7 +852,7 @@ OrgId *string
 
 The numeric ID of the organization in which you want to manage the audit logging config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#org_id GoogleOrganizationIamBinding#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#org_id GoogleOrganizationIamBinding#org_id}
 
 ---
 
@@ -864,7 +864,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#role GoogleOrganizationIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#role GoogleOrganizationIamBinding#role}.
 
 ---
 
@@ -878,7 +878,7 @@ Condition GoogleOrganizationIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#condition GoogleOrganizationIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#condition GoogleOrganizationIamBinding#condition}
 
 ---
 
@@ -890,7 +890,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_organization_iam_binding#id GoogleOrganizationIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_organization_iam_binding#id GoogleOrganizationIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -904,7 +904,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleOrganizationIamBinding.GoogleOrganizationIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorganizationiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleorganizationiambinding"
 
 googleorganizationiambinding.NewGoogleOrganizationIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleOrganizationIamBindingConditionOutputReference
 ```

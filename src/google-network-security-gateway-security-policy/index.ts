@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleNetworkSecurityGatewaySecurityPolicyConfig extends cdktf.
   /**
   * A free-text description of the resource. Max length 1024 characters.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy#description GoogleNetworkSecurityGatewaySecurityPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy#description GoogleNetworkSecurityGatewaySecurityPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy#id GoogleNetworkSecurityGatewaySecurityPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy#id GoogleNetworkSecurityGatewaySecurityPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -24,38 +24,44 @@ export interface GoogleNetworkSecurityGatewaySecurityPolicyConfig extends cdktf.
   * The location of the gateway security policy.
 The default value is 'global'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy#location GoogleNetworkSecurityGatewaySecurityPolicy#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy#location GoogleNetworkSecurityGatewaySecurityPolicy#location}
   */
   readonly location?: string;
   /**
   * Name of the resource. Name is of the form projects/{project}/locations/{location}/gatewaySecurityPolicies/{gatewaySecurityPolicy}
 gatewaySecurityPolicy should match the pattern:(^a-z?$).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy#name GoogleNetworkSecurityGatewaySecurityPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy#name GoogleNetworkSecurityGatewaySecurityPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy#project GoogleNetworkSecurityGatewaySecurityPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy#project GoogleNetworkSecurityGatewaySecurityPolicy#project}
   */
   readonly project?: string;
   /**
+  * Name of a TlsInspectionPolicy resource that defines how TLS inspection is performed for any rule that enables it.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy#tls_inspection_policy GoogleNetworkSecurityGatewaySecurityPolicy#tls_inspection_policy}
+  */
+  readonly tlsInspectionPolicy?: string;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy#timeouts GoogleNetworkSecurityGatewaySecurityPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy#timeouts GoogleNetworkSecurityGatewaySecurityPolicy#timeouts}
   */
   readonly timeouts?: GoogleNetworkSecurityGatewaySecurityPolicyTimeouts;
 }
 export interface GoogleNetworkSecurityGatewaySecurityPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy#create GoogleNetworkSecurityGatewaySecurityPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy#create GoogleNetworkSecurityGatewaySecurityPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy#delete GoogleNetworkSecurityGatewaySecurityPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy#delete GoogleNetworkSecurityGatewaySecurityPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy#update GoogleNetworkSecurityGatewaySecurityPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy#update GoogleNetworkSecurityGatewaySecurityPolicy#update}
   */
   readonly update?: string;
 }
@@ -176,7 +182,7 @@ export class GoogleNetworkSecurityGatewaySecurityPolicyTimeoutsOutputReference e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy google_network_security_gateway_security_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy google_network_security_gateway_security_policy}
 */
 export class GoogleNetworkSecurityGatewaySecurityPolicy extends cdktf.TerraformResource {
 
@@ -190,7 +196,7 @@ export class GoogleNetworkSecurityGatewaySecurityPolicy extends cdktf.TerraformR
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_network_security_gateway_security_policy google_network_security_gateway_security_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_network_security_gateway_security_policy google_network_security_gateway_security_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -201,7 +207,7 @@ export class GoogleNetworkSecurityGatewaySecurityPolicy extends cdktf.TerraformR
       terraformResourceType: 'google_network_security_gateway_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.64.0',
+        providerVersion: '4.65.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -217,6 +223,7 @@ export class GoogleNetworkSecurityGatewaySecurityPolicy extends cdktf.TerraformR
     this._location = config.location;
     this._name = config.name;
     this._project = config.project;
+    this._tlsInspectionPolicy = config.tlsInspectionPolicy;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -311,6 +318,22 @@ export class GoogleNetworkSecurityGatewaySecurityPolicy extends cdktf.TerraformR
     return this.getStringAttribute('self_link');
   }
 
+  // tls_inspection_policy - computed: false, optional: true, required: false
+  private _tlsInspectionPolicy?: string; 
+  public get tlsInspectionPolicy() {
+    return this.getStringAttribute('tls_inspection_policy');
+  }
+  public set tlsInspectionPolicy(value: string) {
+    this._tlsInspectionPolicy = value;
+  }
+  public resetTlsInspectionPolicy() {
+    this._tlsInspectionPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tlsInspectionPolicyInput() {
+    return this._tlsInspectionPolicy;
+  }
+
   // update_time - computed: true, optional: false, required: false
   public get updateTime() {
     return this.getStringAttribute('update_time');
@@ -343,6 +366,7 @@ export class GoogleNetworkSecurityGatewaySecurityPolicy extends cdktf.TerraformR
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
+      tls_inspection_policy: cdktf.stringToTerraform(this._tlsInspectionPolicy),
       timeouts: googleNetworkSecurityGatewaySecurityPolicyTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
