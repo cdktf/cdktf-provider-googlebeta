@@ -1,6 +1,6 @@
 # `google_scc_mute_config`
 
-Refer to the Terraform Registory for docs: [`google_scc_mute_config`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config).
+Refer to the Terraform Registory for docs: [`google_scc_mute_config`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config).
 
 # `googleSccMuteConfig` Submodule <a name="`googleSccMuteConfig` Submodule" id="@cdktf/provider-google-beta.googleSccMuteConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_scc_mute_config`](https://re
 
 ### GoogleSccMuteConfig <a name="GoogleSccMuteConfig" id="@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config google_scc_mute_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config google_scc_mute_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfig.Initializer"></a>
 
@@ -745,7 +745,7 @@ const googleSccMuteConfigConfig: googleSccMuteConfig.GoogleSccMuteConfigConfig =
 | <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigConfig.property.muteConfigId">muteConfigId</a></code> | <code>string</code> | Unique identifier provided by the client within the parent scope. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigConfig.property.parent">parent</a></code> | <code>string</code> | Resource name of the new mute configs's parent. Its format is "organizations/[organization_id]", "folders/[folder_id]", or "projects/[project_id]". |
 | <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigConfig.property.description">description</a></code> | <code>string</code> | A description of the mute config. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#id GoogleSccMuteConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#id GoogleSccMuteConfig#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigTimeouts">GoogleSccMuteConfigTimeouts</a></code> | timeouts block. |
 
 ---
@@ -835,7 +835,7 @@ the scope in which the mute configuration is being created. E.g.,
 If a filter contains project = X but is created under the
 project = Y scope, it might not match any findings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#filter GoogleSccMuteConfig#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#filter GoogleSccMuteConfig#filter}
 
 ---
 
@@ -849,7 +849,7 @@ public readonly muteConfigId: string;
 
 Unique identifier provided by the client within the parent scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#mute_config_id GoogleSccMuteConfig#mute_config_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#mute_config_id GoogleSccMuteConfig#mute_config_id}
 
 ---
 
@@ -863,7 +863,7 @@ public readonly parent: string;
 
 Resource name of the new mute configs's parent. Its format is "organizations/[organization_id]", "folders/[folder_id]", or "projects/[project_id]".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#parent GoogleSccMuteConfig#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#parent GoogleSccMuteConfig#parent}
 
 ---
 
@@ -877,7 +877,7 @@ public readonly description: string;
 
 A description of the mute config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#description GoogleSccMuteConfig#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#description GoogleSccMuteConfig#description}
 
 ---
 
@@ -889,7 +889,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#id GoogleSccMuteConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#id GoogleSccMuteConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -906,7 +906,7 @@ public readonly timeouts: GoogleSccMuteConfigTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#timeouts GoogleSccMuteConfig#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#timeouts GoogleSccMuteConfig#timeouts}
 
 ---
 
@@ -924,9 +924,9 @@ const googleSccMuteConfigTimeouts: googleSccMuteConfig.GoogleSccMuteConfigTimeou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#create GoogleSccMuteConfig#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#delete GoogleSccMuteConfig#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#update GoogleSccMuteConfig#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#create GoogleSccMuteConfig#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#delete GoogleSccMuteConfig#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSccMuteConfig.GoogleSccMuteConfigTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#update GoogleSccMuteConfig#update}. |
 
 ---
 
@@ -938,7 +938,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#create GoogleSccMuteConfig#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#create GoogleSccMuteConfig#create}.
 
 ---
 
@@ -950,7 +950,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#delete GoogleSccMuteConfig#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#delete GoogleSccMuteConfig#delete}.
 
 ---
 
@@ -962,7 +962,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_scc_mute_config#update GoogleSccMuteConfig#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_scc_mute_config#update GoogleSccMuteConfig#update}.
 
 ---
 

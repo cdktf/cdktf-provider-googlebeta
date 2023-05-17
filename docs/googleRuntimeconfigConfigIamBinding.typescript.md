@@ -1,6 +1,6 @@
 # `google_runtimeconfig_config_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_runtimeconfig_config_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding).
+Refer to the Terraform Registory for docs: [`google_runtimeconfig_config_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding).
 
 # `googleRuntimeconfigConfigIamBinding` Submodule <a name="`googleRuntimeconfigConfigIamBinding` Submodule" id="@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_runtimeconfig_config_iam_bin
 
 ### GoogleRuntimeconfigConfigIamBinding <a name="GoogleRuntimeconfigConfigIamBinding" id="@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding google_runtimeconfig_config_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding google_runtimeconfig_config_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBinding.Initializer"></a>
 
@@ -701,9 +701,9 @@ const googleRuntimeconfigConfigIamBindingCondition: googleRuntimeconfigConfigIam
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#expression GoogleRuntimeconfigConfigIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#title GoogleRuntimeconfigConfigIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#description GoogleRuntimeconfigConfigIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#expression GoogleRuntimeconfigConfigIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#title GoogleRuntimeconfigConfigIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#description GoogleRuntimeconfigConfigIamBinding#description}. |
 
 ---
 
@@ -715,7 +715,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#expression GoogleRuntimeconfigConfigIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#expression GoogleRuntimeconfigConfigIamBinding#expression}.
 
 ---
 
@@ -727,7 +727,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#title GoogleRuntimeconfigConfigIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#title GoogleRuntimeconfigConfigIamBinding#title}.
 
 ---
 
@@ -739,7 +739,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#description GoogleRuntimeconfigConfigIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#description GoogleRuntimeconfigConfigIamBinding#description}.
 
 ---
 
@@ -764,12 +764,12 @@ const googleRuntimeconfigConfigIamBindingConfig: googleRuntimeconfigConfigIamBin
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.config">config</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#config GoogleRuntimeconfigConfigIamBinding#config}. |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#members GoogleRuntimeconfigConfigIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#role GoogleRuntimeconfigConfigIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.config">config</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#config GoogleRuntimeconfigConfigIamBinding#config}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#members GoogleRuntimeconfigConfigIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#role GoogleRuntimeconfigConfigIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingCondition">GoogleRuntimeconfigConfigIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#id GoogleRuntimeconfigConfigIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#project GoogleRuntimeconfigConfigIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#id GoogleRuntimeconfigConfigIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigConfigIamBinding.GoogleRuntimeconfigConfigIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#project GoogleRuntimeconfigConfigIamBinding#project}. |
 
 ---
 
@@ -851,7 +851,7 @@ public readonly config: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#config GoogleRuntimeconfigConfigIamBinding#config}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#config GoogleRuntimeconfigConfigIamBinding#config}.
 
 ---
 
@@ -863,7 +863,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#members GoogleRuntimeconfigConfigIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#members GoogleRuntimeconfigConfigIamBinding#members}.
 
 ---
 
@@ -875,7 +875,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#role GoogleRuntimeconfigConfigIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#role GoogleRuntimeconfigConfigIamBinding#role}.
 
 ---
 
@@ -889,7 +889,7 @@ public readonly condition: GoogleRuntimeconfigConfigIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#condition GoogleRuntimeconfigConfigIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#condition GoogleRuntimeconfigConfigIamBinding#condition}
 
 ---
 
@@ -901,7 +901,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#id GoogleRuntimeconfigConfigIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#id GoogleRuntimeconfigConfigIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -916,7 +916,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_runtimeconfig_config_iam_binding#project GoogleRuntimeconfigConfigIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_runtimeconfig_config_iam_binding#project GoogleRuntimeconfigConfigIamBinding#project}.
 
 ---
 

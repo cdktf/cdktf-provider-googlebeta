@@ -1,6 +1,6 @@
 # `google_cloud_run_v2_service_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_cloud_run_v2_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy).
+Refer to the Terraform Registory for docs: [`google_cloud_run_v2_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy).
 
 # `googleCloudRunV2ServiceIamPolicy` Submodule <a name="`googleCloudRunV2ServiceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_cloud_run_v2_service_iam_pol
 
 ### GoogleCloudRunV2ServiceIamPolicy <a name="GoogleCloudRunV2ServiceIamPolicy" id="@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy google_cloud_run_v2_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicy.Initializer"></a>
 
@@ -686,11 +686,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecloudr
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy#name GoogleCloudRunV2ServiceIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy#policy_data GoogleCloudRunV2ServiceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy#id GoogleCloudRunV2ServiceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy#location GoogleCloudRunV2ServiceIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy#project GoogleCloudRunV2ServiceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy#name GoogleCloudRunV2ServiceIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy#policy_data GoogleCloudRunV2ServiceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy#id GoogleCloudRunV2ServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy#location GoogleCloudRunV2ServiceIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2ServiceIamPolicy.GoogleCloudRunV2ServiceIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy#project GoogleCloudRunV2ServiceIamPolicy#project}. |
 
 ---
 
@@ -772,7 +772,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy#name GoogleCloudRunV2ServiceIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy#name GoogleCloudRunV2ServiceIamPolicy#name}.
 
 ---
 
@@ -784,7 +784,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy#policy_data GoogleCloudRunV2ServiceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy#policy_data GoogleCloudRunV2ServiceIamPolicy#policy_data}.
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy#id GoogleCloudRunV2ServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy#id GoogleCloudRunV2ServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy#location GoogleCloudRunV2ServiceIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy#location GoogleCloudRunV2ServiceIamPolicy#location}.
 
 ---
 
@@ -823,7 +823,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_cloud_run_v2_service_iam_policy#project GoogleCloudRunV2ServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_cloud_run_v2_service_iam_policy#project GoogleCloudRunV2ServiceIamPolicy#project}.
 
 ---
 

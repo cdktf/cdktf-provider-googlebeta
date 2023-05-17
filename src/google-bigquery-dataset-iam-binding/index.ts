@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleBigqueryDatasetIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding#dataset_id GoogleBigqueryDatasetIamBinding#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding#dataset_id GoogleBigqueryDatasetIamBinding#dataset_id}
   */
   readonly datasetId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding#id GoogleBigqueryDatasetIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding#id GoogleBigqueryDatasetIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding#members GoogleBigqueryDatasetIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding#members GoogleBigqueryDatasetIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding#project GoogleBigqueryDatasetIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding#project GoogleBigqueryDatasetIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding#role GoogleBigqueryDatasetIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding#role GoogleBigqueryDatasetIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding#condition GoogleBigqueryDatasetIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding#condition GoogleBigqueryDatasetIamBinding#condition}
   */
   readonly condition?: GoogleBigqueryDatasetIamBindingCondition;
 }
 export interface GoogleBigqueryDatasetIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding#description GoogleBigqueryDatasetIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding#description GoogleBigqueryDatasetIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding#expression GoogleBigqueryDatasetIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding#expression GoogleBigqueryDatasetIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding#title GoogleBigqueryDatasetIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding#title GoogleBigqueryDatasetIamBinding#title}
   */
   readonly title: string;
 }
@@ -152,7 +152,7 @@ export class GoogleBigqueryDatasetIamBindingConditionOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding google_bigquery_dataset_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding google_bigquery_dataset_iam_binding}
 */
 export class GoogleBigqueryDatasetIamBinding extends cdktf.TerraformResource {
 
@@ -166,7 +166,7 @@ export class GoogleBigqueryDatasetIamBinding extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_bigquery_dataset_iam_binding google_bigquery_dataset_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigquery_dataset_iam_binding google_bigquery_dataset_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -177,7 +177,7 @@ export class GoogleBigqueryDatasetIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_dataset_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.65.0',
+        providerVersion: '4.65.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

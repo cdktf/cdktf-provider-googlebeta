@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,30 +10,30 @@ export interface GoogleDataCatalogEntryConfig extends cdktf.TerraformMetaArgumen
   /**
   * Entry description, which can consist of several sentences or paragraphs that describe entry contents.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#description GoogleDataCatalogEntry#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#description GoogleDataCatalogEntry#description}
   */
   readonly description?: string;
   /**
   * Display information such as title and description. A short name to identify the entry,
 for example, "Analytics Data - Jan 2011".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#display_name GoogleDataCatalogEntry#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#display_name GoogleDataCatalogEntry#display_name}
   */
   readonly displayName?: string;
   /**
   * The name of the entry group this entry is in.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#entry_group GoogleDataCatalogEntry#entry_group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#entry_group GoogleDataCatalogEntry#entry_group}
   */
   readonly entryGroup: string;
   /**
   * The id of the entry to create.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#entry_id GoogleDataCatalogEntry#entry_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#entry_id GoogleDataCatalogEntry#entry_id}
   */
   readonly entryId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#id GoogleDataCatalogEntry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#id GoogleDataCatalogEntry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,7 +47,7 @@ For example, the linkedResource for a table resource from BigQuery is:
 Output only when Entry is of type in the EntryType enum. For entries with userSpecifiedType,
 this field is optional and defaults to an empty string.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#linked_resource GoogleDataCatalogEntry#linked_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#linked_resource GoogleDataCatalogEntry#linked_resource}
   */
   readonly linkedResource?: string;
   /**
@@ -56,14 +56,14 @@ attached to it. See
 https://cloud.google.com/data-catalog/docs/reference/rest/v1/projects.locations.entryGroups.entries#schema
 for what fields this schema can contain.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#schema GoogleDataCatalogEntry#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#schema GoogleDataCatalogEntry#schema}
   */
   readonly schema?: string;
   /**
   * The type of the entry. Only used for Entries with types in the EntryType enum.
 Currently, only FILESET enum value is allowed. All other entries created through Data Catalog must use userSpecifiedType. Possible values: ["FILESET"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#type GoogleDataCatalogEntry#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#type GoogleDataCatalogEntry#type}
   */
   readonly type?: string;
   /**
@@ -71,7 +71,7 @@ Currently, only FILESET enum value is allowed. All other entries created through
 userSpecifiedSystem strings must begin with a letter or underscore and can only contain letters, numbers,
 and underscores; are case insensitive; must be at least 1 character and at most 64 characters long.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#user_specified_system GoogleDataCatalogEntry#user_specified_system}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#user_specified_system GoogleDataCatalogEntry#user_specified_system}
   */
   readonly userSpecifiedSystem?: string;
   /**
@@ -81,19 +81,19 @@ to be created, then provide a custom value, for example "my_special_type".
 userSpecifiedType strings must begin with a letter or underscore and can only contain letters,
 numbers, and underscores; are case insensitive; must be at least 1 character and at most 64 characters long.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#user_specified_type GoogleDataCatalogEntry#user_specified_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#user_specified_type GoogleDataCatalogEntry#user_specified_type}
   */
   readonly userSpecifiedType?: string;
   /**
   * gcs_fileset_spec block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#gcs_fileset_spec GoogleDataCatalogEntry#gcs_fileset_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#gcs_fileset_spec GoogleDataCatalogEntry#gcs_fileset_spec}
   */
   readonly gcsFilesetSpec?: GoogleDataCatalogEntryGcsFilesetSpec;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#timeouts GoogleDataCatalogEntry#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#timeouts GoogleDataCatalogEntry#timeouts}
   */
   readonly timeouts?: GoogleDataCatalogEntryTimeouts;
 }
@@ -459,7 +459,7 @@ for more information. Note that bucket wildcards are currently not supported. Ex
 * gs://bucket_name/a/*\/b: matches all files in bucket_name that match a/*\/b pattern, such as a/c/b, a/d/b
 * gs://another_bucket/a.txt: matches gs://another_bucket/a.txt
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#file_patterns GoogleDataCatalogEntry#file_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#file_patterns GoogleDataCatalogEntry#file_patterns}
   */
   readonly filePatterns: string[];
 }
@@ -527,15 +527,15 @@ export class GoogleDataCatalogEntryGcsFilesetSpecOutputReference extends cdktf.C
 }
 export interface GoogleDataCatalogEntryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#create GoogleDataCatalogEntry#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#create GoogleDataCatalogEntry#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#delete GoogleDataCatalogEntry#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#delete GoogleDataCatalogEntry#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry#update GoogleDataCatalogEntry#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry#update GoogleDataCatalogEntry#update}
   */
   readonly update?: string;
 }
@@ -656,7 +656,7 @@ export class GoogleDataCatalogEntryTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry google_data_catalog_entry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry google_data_catalog_entry}
 */
 export class GoogleDataCatalogEntry extends cdktf.TerraformResource {
 
@@ -670,7 +670,7 @@ export class GoogleDataCatalogEntry extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_entry google_data_catalog_entry} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_entry google_data_catalog_entry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -681,7 +681,7 @@ export class GoogleDataCatalogEntry extends cdktf.TerraformResource {
       terraformResourceType: 'google_data_catalog_entry',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.65.0',
+        providerVersion: '4.65.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

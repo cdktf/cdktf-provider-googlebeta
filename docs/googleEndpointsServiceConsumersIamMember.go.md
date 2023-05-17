@@ -1,6 +1,6 @@
 # `google_endpoints_service_consumers_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_endpoints_service_consumers_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member).
+Refer to the Terraform Registory for docs: [`google_endpoints_service_consumers_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member).
 
 # `googleEndpointsServiceConsumersIamMember` Submodule <a name="`googleEndpointsServiceConsumersIamMember` Submodule" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_endpoints_service_consumers_
 
 ### GoogleEndpointsServiceConsumersIamMember <a name="GoogleEndpointsServiceConsumersIamMember" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member google_endpoints_service_consumers_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMember.Initializer"></a>
 
@@ -698,9 +698,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleendpoi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#expression GoogleEndpointsServiceConsumersIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#title GoogleEndpointsServiceConsumersIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#description GoogleEndpointsServiceConsumersIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#expression GoogleEndpointsServiceConsumersIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#title GoogleEndpointsServiceConsumersIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#description GoogleEndpointsServiceConsumersIamMember#description}. |
 
 ---
 
@@ -712,7 +712,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#expression GoogleEndpointsServiceConsumersIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#expression GoogleEndpointsServiceConsumersIamMember#expression}.
 
 ---
 
@@ -724,7 +724,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#title GoogleEndpointsServiceConsumersIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#title GoogleEndpointsServiceConsumersIamMember#title}.
 
 ---
 
@@ -736,7 +736,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#description GoogleEndpointsServiceConsumersIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#description GoogleEndpointsServiceConsumersIamMember#description}.
 
 ---
 
@@ -775,12 +775,12 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleendpoi
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.consumerProject">ConsumerProject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#consumer_project GoogleEndpointsServiceConsumersIamMember#consumer_project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#member GoogleEndpointsServiceConsumersIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#role GoogleEndpointsServiceConsumersIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#service_name GoogleEndpointsServiceConsumersIamMember#service_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.consumerProject">ConsumerProject</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#consumer_project GoogleEndpointsServiceConsumersIamMember#consumer_project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.member">Member</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#member GoogleEndpointsServiceConsumersIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#role GoogleEndpointsServiceConsumersIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.serviceName">ServiceName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#service_name GoogleEndpointsServiceConsumersIamMember#service_name}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberCondition">GoogleEndpointsServiceConsumersIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#id GoogleEndpointsServiceConsumersIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamMember.GoogleEndpointsServiceConsumersIamMemberConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#id GoogleEndpointsServiceConsumersIamMember#id}. |
 
 ---
 
@@ -862,7 +862,7 @@ ConsumerProject *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#consumer_project GoogleEndpointsServiceConsumersIamMember#consumer_project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#consumer_project GoogleEndpointsServiceConsumersIamMember#consumer_project}.
 
 ---
 
@@ -874,7 +874,7 @@ Member *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#member GoogleEndpointsServiceConsumersIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#member GoogleEndpointsServiceConsumersIamMember#member}.
 
 ---
 
@@ -886,7 +886,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#role GoogleEndpointsServiceConsumersIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#role GoogleEndpointsServiceConsumersIamMember#role}.
 
 ---
 
@@ -898,7 +898,7 @@ ServiceName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#service_name GoogleEndpointsServiceConsumersIamMember#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#service_name GoogleEndpointsServiceConsumersIamMember#service_name}.
 
 ---
 
@@ -912,7 +912,7 @@ Condition GoogleEndpointsServiceConsumersIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#condition GoogleEndpointsServiceConsumersIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#condition GoogleEndpointsServiceConsumersIamMember#condition}
 
 ---
 
@@ -924,7 +924,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_endpoints_service_consumers_iam_member#id GoogleEndpointsServiceConsumersIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_endpoints_service_consumers_iam_member#id GoogleEndpointsServiceConsumersIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
