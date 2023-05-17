@@ -1,6 +1,6 @@
 # `google_iap_web_backend_service_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_iap_web_backend_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy).
+Refer to the Terraform Registory for docs: [`google_iap_web_backend_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy).
 
 # `googleIapWebBackendServiceIamPolicy` Submodule <a name="`googleIapWebBackendServiceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_iap_web_backend_service_iam_
 
 ### GoogleIapWebBackendServiceIamPolicy <a name="GoogleIapWebBackendServiceIamPolicy" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy google_iap_web_backend_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy google_iap_web_backend_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer"></a>
 
@@ -45,10 +45,10 @@ GoogleIapWebBackendServiceIamPolicy.Builder.create(Construct scope, java.lang.St
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#policy_data GoogleIapWebBackendServiceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.webBackendService">webBackendService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#web_backend_service GoogleIapWebBackendServiceIamPolicy#web_backend_service}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#id GoogleIapWebBackendServiceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#project GoogleIapWebBackendServiceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#policy_data GoogleIapWebBackendServiceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.webBackendService">webBackendService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#web_backend_service GoogleIapWebBackendServiceIamPolicy#web_backend_service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#id GoogleIapWebBackendServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#project GoogleIapWebBackendServiceIamPolicy#project}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#policy_data GoogleIapWebBackendServiceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#policy_data GoogleIapWebBackendServiceIamPolicy#policy_data}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#web_backend_service GoogleIapWebBackendServiceIamPolicy#web_backend_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#web_backend_service GoogleIapWebBackendServiceIamPolicy#web_backend_service}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#id GoogleIapWebBackendServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#id GoogleIapWebBackendServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#project GoogleIapWebBackendServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#project GoogleIapWebBackendServiceIamPolicy#project}.
 
 ---
 
@@ -757,10 +757,10 @@ GoogleIapWebBackendServiceIamPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#policy_data GoogleIapWebBackendServiceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.webBackendService">webBackendService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#web_backend_service GoogleIapWebBackendServiceIamPolicy#web_backend_service}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#id GoogleIapWebBackendServiceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#project GoogleIapWebBackendServiceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#policy_data GoogleIapWebBackendServiceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.webBackendService">webBackendService</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#web_backend_service GoogleIapWebBackendServiceIamPolicy#web_backend_service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#id GoogleIapWebBackendServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebBackendServiceIamPolicy.GoogleIapWebBackendServiceIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#project GoogleIapWebBackendServiceIamPolicy#project}. |
 
 ---
 
@@ -842,7 +842,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#policy_data GoogleIapWebBackendServiceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#policy_data GoogleIapWebBackendServiceIamPolicy#policy_data}.
 
 ---
 
@@ -854,7 +854,7 @@ public java.lang.String getWebBackendService();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#web_backend_service GoogleIapWebBackendServiceIamPolicy#web_backend_service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#web_backend_service GoogleIapWebBackendServiceIamPolicy#web_backend_service}.
 
 ---
 
@@ -866,7 +866,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#id GoogleIapWebBackendServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#id GoogleIapWebBackendServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -881,7 +881,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_iap_web_backend_service_iam_policy#project GoogleIapWebBackendServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_web_backend_service_iam_policy#project GoogleIapWebBackendServiceIamPolicy#project}.
 
 ---
 

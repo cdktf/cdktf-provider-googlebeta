@@ -1,6 +1,6 @@
 # `google_project_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_project_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_project_iam_policy).
+Refer to the Terraform Registory for docs: [`google_project_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_project_iam_policy).
 
 # `googleProjectIamPolicy` Submodule <a name="`googleProjectIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleProjectIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_project_iam_policy`](https:/
 
 ### GoogleProjectIamPolicy <a name="GoogleProjectIamPolicy" id="@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_project_iam_policy google_project_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_project_iam_policy google_project_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleprojectiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiampolicy"
 
 googleprojectiampolicy.NewGoogleProjectIamPolicy(scope Construct, id *string, config GoogleProjectIamPolicyConfig) GoogleProjectIamPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleprojectiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiampolicy"
 
 googleprojectiampolicy.GoogleProjectIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleprojectiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiampolicy"
 
 googleprojectiampolicy.GoogleProjectIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ googleprojectiampolicy.GoogleProjectIamPolicy_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleprojectiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiampolicy"
 
 googleprojectiampolicy.GoogleProjectIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleprojectiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleprojectiampolicy"
 
 &googleprojectiampolicy.GoogleProjectIamPolicyConfig {
 	Connection: interface{},
@@ -626,9 +626,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleprojec
 | <code><a href="#@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_project_iam_policy#policy_data GoogleProjectIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_project_iam_policy#project GoogleProjectIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_project_iam_policy#id GoogleProjectIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_project_iam_policy#policy_data GoogleProjectIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_project_iam_policy#project GoogleProjectIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectIamPolicy.GoogleProjectIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_project_iam_policy#id GoogleProjectIamPolicy#id}. |
 
 ---
 
@@ -710,7 +710,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_project_iam_policy#policy_data GoogleProjectIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_project_iam_policy#policy_data GoogleProjectIamPolicy#policy_data}.
 
 ---
 
@@ -722,7 +722,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_project_iam_policy#project GoogleProjectIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_project_iam_policy#project GoogleProjectIamPolicy#project}.
 
 ---
 
@@ -734,7 +734,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_project_iam_policy#id GoogleProjectIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_project_iam_policy#id GoogleProjectIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

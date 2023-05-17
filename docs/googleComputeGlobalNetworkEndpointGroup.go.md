@@ -1,6 +1,6 @@
 # `google_compute_global_network_endpoint_group`
 
-Refer to the Terraform Registory for docs: [`google_compute_global_network_endpoint_group`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group).
+Refer to the Terraform Registory for docs: [`google_compute_global_network_endpoint_group`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group).
 
 # `googleComputeGlobalNetworkEndpointGroup` Submodule <a name="`googleComputeGlobalNetworkEndpointGroup` Submodule" id="@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_compute_global_network_endpo
 
 ### GoogleComputeGlobalNetworkEndpointGroup <a name="GoogleComputeGlobalNetworkEndpointGroup" id="@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeglobalnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalnetworkendpointgroup"
 
 googlecomputeglobalnetworkendpointgroup.NewGoogleComputeGlobalNetworkEndpointGroup(scope Construct, id *string, config GoogleComputeGlobalNetworkEndpointGroupConfig) GoogleComputeGlobalNetworkEndpointGroup
 ```
@@ -318,7 +318,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeglobalnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalnetworkendpointgroup"
 
 googlecomputeglobalnetworkendpointgroup.GoogleComputeGlobalNetworkEndpointGroup_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeglobalnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalnetworkendpointgroup"
 
 googlecomputeglobalnetworkendpointgroup.GoogleComputeGlobalNetworkEndpointGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ googlecomputeglobalnetworkendpointgroup.GoogleComputeGlobalNetworkEndpointGroup_
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeglobalnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalnetworkendpointgroup"
 
 googlecomputeglobalnetworkendpointgroup.GoogleComputeGlobalNetworkEndpointGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -728,7 +728,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeglobalnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalnetworkendpointgroup"
 
 &googlecomputeglobalnetworkendpointgroup.GoogleComputeGlobalNetworkEndpointGroupConfig {
 	Connection: interface{},
@@ -744,7 +744,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomput
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeouts,
 }
 ```
 
@@ -763,8 +763,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomput
 | <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupConfig.property.networkEndpointType">NetworkEndpointType</a></code> | <code>*string</code> | Type of network endpoints in this network endpoint group. Possible values: ["INTERNET_IP_PORT", "INTERNET_FQDN_PORT"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupConfig.property.defaultPort">DefaultPort</a></code> | <code>*f64</code> | The default port used if the port number is not specified in the network endpoint. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupConfig.property.description">Description</a></code> | <code>*string</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#id GoogleComputeGlobalNetworkEndpointGroup#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#project GoogleComputeGlobalNetworkEndpointGroup#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#id GoogleComputeGlobalNetworkEndpointGroup#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#project GoogleComputeGlobalNetworkEndpointGroup#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeouts">GoogleComputeGlobalNetworkEndpointGroupTimeouts</a></code> | timeouts block. |
 
 ---
@@ -857,7 +857,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#name GoogleComputeGlobalNetworkEndpointGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#name GoogleComputeGlobalNetworkEndpointGroup#name}
 
 ---
 
@@ -871,7 +871,7 @@ NetworkEndpointType *string
 
 Type of network endpoints in this network endpoint group. Possible values: ["INTERNET_IP_PORT", "INTERNET_FQDN_PORT"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#network_endpoint_type GoogleComputeGlobalNetworkEndpointGroup#network_endpoint_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#network_endpoint_type GoogleComputeGlobalNetworkEndpointGroup#network_endpoint_type}
 
 ---
 
@@ -885,7 +885,7 @@ DefaultPort *f64
 
 The default port used if the port number is not specified in the network endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#default_port GoogleComputeGlobalNetworkEndpointGroup#default_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#default_port GoogleComputeGlobalNetworkEndpointGroup#default_port}
 
 ---
 
@@ -899,7 +899,7 @@ Description *string
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#description GoogleComputeGlobalNetworkEndpointGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#description GoogleComputeGlobalNetworkEndpointGroup#description}
 
 ---
 
@@ -911,7 +911,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#id GoogleComputeGlobalNetworkEndpointGroup#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#id GoogleComputeGlobalNetworkEndpointGroup#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -926,7 +926,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#project GoogleComputeGlobalNetworkEndpointGroup#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#project GoogleComputeGlobalNetworkEndpointGroup#project}.
 
 ---
 
@@ -940,7 +940,7 @@ Timeouts GoogleComputeGlobalNetworkEndpointGroupTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#timeouts GoogleComputeGlobalNetworkEndpointGroup#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#timeouts GoogleComputeGlobalNetworkEndpointGroup#timeouts}
 
 ---
 
@@ -949,7 +949,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeglobalnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalnetworkendpointgroup"
 
 &googlecomputeglobalnetworkendpointgroup.GoogleComputeGlobalNetworkEndpointGroupTimeouts {
 	Create: *string,
@@ -961,8 +961,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#create GoogleComputeGlobalNetworkEndpointGroup#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#delete GoogleComputeGlobalNetworkEndpointGroup#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#create GoogleComputeGlobalNetworkEndpointGroup#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#delete GoogleComputeGlobalNetworkEndpointGroup#delete}. |
 
 ---
 
@@ -974,7 +974,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#create GoogleComputeGlobalNetworkEndpointGroup#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#create GoogleComputeGlobalNetworkEndpointGroup#create}.
 
 ---
 
@@ -986,7 +986,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_compute_global_network_endpoint_group#delete GoogleComputeGlobalNetworkEndpointGroup#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_global_network_endpoint_group#delete GoogleComputeGlobalNetworkEndpointGroup#delete}.
 
 ---
 
@@ -997,7 +997,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeGlobalNetworkEndpointGroup.GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeglobalnetworkendpointgroup"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeglobalnetworkendpointgroup"
 
 googlecomputeglobalnetworkendpointgroup.NewGoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference
 ```

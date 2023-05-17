@@ -1,6 +1,6 @@
 # `google_data_catalog_taxonomy`
 
-Refer to the Terraform Registory for docs: [`google_data_catalog_taxonomy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy).
+Refer to the Terraform Registory for docs: [`google_data_catalog_taxonomy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy).
 
 # `googleDataCatalogTaxonomy` Submodule <a name="`googleDataCatalogTaxonomy` Submodule" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_data_catalog_taxonomy`](http
 
 ### GoogleDataCatalogTaxonomy <a name="GoogleDataCatalogTaxonomy" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 googledatacatalogtaxonomy.NewGoogleDataCatalogTaxonomy(scope Construct, id *string, config GoogleDataCatalogTaxonomyConfig) GoogleDataCatalogTaxonomy
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 googledatacatalogtaxonomy.GoogleDataCatalogTaxonomy_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 googledatacatalogtaxonomy.GoogleDataCatalogTaxonomy_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ googledatacatalogtaxonomy.GoogleDataCatalogTaxonomy_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 googledatacatalogtaxonomy.GoogleDataCatalogTaxonomy_IsTerraformResource(x interface{}) *bool
 ```
@@ -735,7 +735,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 &googledatacatalogtaxonomy.GoogleDataCatalogTaxonomyConfig {
 	Connection: interface{},
@@ -751,7 +751,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataca
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts,
 }
 ```
 
@@ -769,8 +769,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataca
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User defined name of this taxonomy. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.property.activatedPolicyTypes">ActivatedPolicyTypes</a></code> | <code>*[]*string</code> | A list of policy types that are activated for this taxonomy. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.property.description">Description</a></code> | <code>*string</code> | Description of this taxonomy. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#id GoogleDataCatalogTaxonomy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#project GoogleDataCatalogTaxonomy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#id GoogleDataCatalogTaxonomy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#project GoogleDataCatalogTaxonomy#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.property.region">Region</a></code> | <code>*string</code> | Taxonomy location region. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts">GoogleDataCatalogTaxonomyTimeouts</a></code> | timeouts block. |
 
@@ -860,7 +860,7 @@ It must: contain only unicode letters, numbers, underscores, dashes
 and spaces; not start or end with spaces; and be at most 200 bytes
 long when encoded in UTF-8.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#display_name GoogleDataCatalogTaxonomy#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#display_name GoogleDataCatalogTaxonomy#display_name}
 
 ---
 
@@ -877,7 +877,7 @@ A list of policy types that are activated for this taxonomy.
 If not set,
 defaults to an empty list. Possible values: ["POLICY_TYPE_UNSPECIFIED", "FINE_GRAINED_ACCESS_CONTROL"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#activated_policy_types GoogleDataCatalogTaxonomy#activated_policy_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#activated_policy_types GoogleDataCatalogTaxonomy#activated_policy_types}
 
 ---
 
@@ -895,7 +895,7 @@ It must: contain only unicode characters,
 tabs, newlines, carriage returns and page breaks; and be at most 2000 bytes
 long when encoded in UTF-8. If not set, defaults to an empty description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#description GoogleDataCatalogTaxonomy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#description GoogleDataCatalogTaxonomy#description}
 
 ---
 
@@ -907,7 +907,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#id GoogleDataCatalogTaxonomy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#id GoogleDataCatalogTaxonomy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -922,7 +922,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#project GoogleDataCatalogTaxonomy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#project GoogleDataCatalogTaxonomy#project}.
 
 ---
 
@@ -936,7 +936,7 @@ Region *string
 
 Taxonomy location region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#region GoogleDataCatalogTaxonomy#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#region GoogleDataCatalogTaxonomy#region}
 
 ---
 
@@ -950,7 +950,7 @@ Timeouts GoogleDataCatalogTaxonomyTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#timeouts GoogleDataCatalogTaxonomy#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#timeouts GoogleDataCatalogTaxonomy#timeouts}
 
 ---
 
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 &googledatacatalogtaxonomy.GoogleDataCatalogTaxonomyTimeouts {
 	Create: *string,
@@ -972,9 +972,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataca
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#create GoogleDataCatalogTaxonomy#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#delete GoogleDataCatalogTaxonomy#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#update GoogleDataCatalogTaxonomy#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#create GoogleDataCatalogTaxonomy#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#delete GoogleDataCatalogTaxonomy#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#update GoogleDataCatalogTaxonomy#update}. |
 
 ---
 
@@ -986,7 +986,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#create GoogleDataCatalogTaxonomy#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#create GoogleDataCatalogTaxonomy#create}.
 
 ---
 
@@ -998,7 +998,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#delete GoogleDataCatalogTaxonomy#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#delete GoogleDataCatalogTaxonomy#delete}.
 
 ---
 
@@ -1010,7 +1010,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_data_catalog_taxonomy#update GoogleDataCatalogTaxonomy#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_data_catalog_taxonomy#update GoogleDataCatalogTaxonomy#update}.
 
 ---
 
@@ -1021,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataCatalogTaxonomy.GoogleDataCatalogTaxonomyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledatacatalogtaxonomy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledatacatalogtaxonomy"
 
 googledatacatalogtaxonomy.NewGoogleDataCatalogTaxonomyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataCatalogTaxonomyTimeoutsOutputReference
 ```

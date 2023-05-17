@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_monitoring_dashboard
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_dashboard
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface GoogleMonitoringDashboardConfig extends cdktf.TerraformMetaArgu
   /**
   * The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_monitoring_dashboard#dashboard_json GoogleMonitoringDashboard#dashboard_json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_dashboard#dashboard_json GoogleMonitoringDashboard#dashboard_json}
   */
   readonly dashboardJson: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_monitoring_dashboard#id GoogleMonitoringDashboard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_dashboard#id GoogleMonitoringDashboard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,27 +23,27 @@ export interface GoogleMonitoringDashboardConfig extends cdktf.TerraformMetaArgu
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_monitoring_dashboard#project GoogleMonitoringDashboard#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_dashboard#project GoogleMonitoringDashboard#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_monitoring_dashboard#timeouts GoogleMonitoringDashboard#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_dashboard#timeouts GoogleMonitoringDashboard#timeouts}
   */
   readonly timeouts?: GoogleMonitoringDashboardTimeouts;
 }
 export interface GoogleMonitoringDashboardTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_monitoring_dashboard#create GoogleMonitoringDashboard#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_dashboard#create GoogleMonitoringDashboard#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_monitoring_dashboard#delete GoogleMonitoringDashboard#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_dashboard#delete GoogleMonitoringDashboard#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_monitoring_dashboard#update GoogleMonitoringDashboard#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_dashboard#update GoogleMonitoringDashboard#update}
   */
   readonly update?: string;
 }
@@ -164,7 +164,7 @@ export class GoogleMonitoringDashboardTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_monitoring_dashboard google_monitoring_dashboard}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_dashboard google_monitoring_dashboard}
 */
 export class GoogleMonitoringDashboard extends cdktf.TerraformResource {
 
@@ -178,7 +178,7 @@ export class GoogleMonitoringDashboard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.0/docs/resources/google_monitoring_dashboard google_monitoring_dashboard} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_dashboard google_monitoring_dashboard} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -189,7 +189,7 @@ export class GoogleMonitoringDashboard extends cdktf.TerraformResource {
       terraformResourceType: 'google_monitoring_dashboard',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.65.0',
+        providerVersion: '4.65.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
