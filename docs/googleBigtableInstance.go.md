@@ -1,6 +1,6 @@
 # `google_bigtable_instance`
 
-Refer to the Terraform Registory for docs: [`google_bigtable_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance).
+Refer to the Terraform Registory for docs: [`google_bigtable_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance).
 
 # `googleBigtableInstance` Submodule <a name="`googleBigtableInstance` Submodule" id="@cdktf/provider-google-beta.googleBigtableInstance"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_bigtable_instance`](https://
 
 ### GoogleBigtableInstance <a name="GoogleBigtableInstance" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance google_bigtable_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance google_bigtable_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstance"
 
 googlebigtableinstance.NewGoogleBigtableInstance(scope Construct, id *string, config GoogleBigtableInstanceConfig) GoogleBigtableInstance
 ```
@@ -332,7 +332,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstance"
 
 googlebigtableinstance.GoogleBigtableInstance_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstance"
 
 googlebigtableinstance.GoogleBigtableInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ googlebigtableinstance.GoogleBigtableInstance_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstance"
 
 googlebigtableinstance.GoogleBigtableInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -753,11 +753,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstance"
 
 &googlebigtableinstance.GoogleBigtableInstanceCluster {
 	ClusterId: *string,
-	AutoscalingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfig,
+	AutoscalingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfig,
 	KmsKeyName: *string,
 	NumNodes: *f64,
 	StorageType: *string,
@@ -790,7 +790,7 @@ The ID of the Cloud Bigtable cluster.
 
 Must be 6-30 characters and must only contain hyphens, lowercase letters and numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#cluster_id GoogleBigtableInstance#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#cluster_id GoogleBigtableInstance#cluster_id}
 
 ---
 
@@ -804,7 +804,7 @@ AutoscalingConfig GoogleBigtableInstanceClusterAutoscalingConfig
 
 autoscaling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#autoscaling_config GoogleBigtableInstance#autoscaling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#autoscaling_config GoogleBigtableInstance#autoscaling_config}
 
 ---
 
@@ -820,7 +820,7 @@ Describes the Cloud KMS encryption key that will be used to protect the destinat
 
 The requirements for this key are: 1) The Cloud Bigtable service account associated with the project that contains this cluster must be granted the cloudkms.cryptoKeyEncrypterDecrypter role on the CMEK key. 2) Only regional keys can be used and the region of the CMEK key must match the region of the cluster. 3) All clusters within an instance must use the same CMEK key. Values are of the form projects/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#kms_key_name GoogleBigtableInstance#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#kms_key_name GoogleBigtableInstance#kms_key_name}
 
 ---
 
@@ -836,7 +836,7 @@ The number of nodes in your Cloud Bigtable cluster.
 
 Required, with a minimum of 1 for each cluster in an instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#num_nodes GoogleBigtableInstance#num_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#num_nodes GoogleBigtableInstance#num_nodes}
 
 ---
 
@@ -850,7 +850,7 @@ StorageType *string
 
 The storage type to use. One of "SSD" or "HDD". Defaults to "SSD".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#storage_type GoogleBigtableInstance#storage_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#storage_type GoogleBigtableInstance#storage_type}
 
 ---
 
@@ -866,7 +866,7 @@ The zone to create the Cloud Bigtable cluster in.
 
 Each cluster must have a different zone in the same region. Zones that support Bigtable instances are noted on the Cloud Bigtable locations page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#zone GoogleBigtableInstance#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#zone GoogleBigtableInstance#zone}
 
 ---
 
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstance"
 
 &googlebigtableinstance.GoogleBigtableInstanceClusterAutoscalingConfig {
 	CpuTarget: *f64,
@@ -906,7 +906,7 @@ CpuTarget *f64
 
 The target CPU utilization for autoscaling. Value must be between 10 and 80.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#cpu_target GoogleBigtableInstance#cpu_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#cpu_target GoogleBigtableInstance#cpu_target}
 
 ---
 
@@ -920,7 +920,7 @@ MaxNodes *f64
 
 The maximum number of nodes for autoscaling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#max_nodes GoogleBigtableInstance#max_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#max_nodes GoogleBigtableInstance#max_nodes}
 
 ---
 
@@ -934,7 +934,7 @@ MinNodes *f64
 
 The minimum number of nodes for autoscaling.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#min_nodes GoogleBigtableInstance#min_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#min_nodes GoogleBigtableInstance#min_nodes}
 
 ---
 
@@ -950,7 +950,7 @@ The target storage utilization for autoscaling, in GB, for each node in a cluste
 
 This number is limited between 2560 (2.5TiB) and 5120 (5TiB) for a SSD cluster and between 8192 (8TiB) and 16384 (16 TiB) for an HDD cluster. If not set, whatever is already set for the cluster will not change, or if the cluster is just being created, it will use the default value of 2560 for SSD clusters and 8192 for HDD clusters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#storage_target GoogleBigtableInstance#storage_target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#storage_target GoogleBigtableInstance#storage_target}
 
 ---
 
@@ -959,7 +959,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstance"
 
 &googlebigtableinstance.GoogleBigtableInstanceConfig {
 	Connection: interface{},
@@ -995,7 +995,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtab
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig.property.cluster">Cluster</a></code> | <code>interface{}</code> | cluster block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig.property.deletionProtection">DeletionProtection</a></code> | <code>interface{}</code> | Whether or not to allow Terraform to destroy the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The human-readable display name of the Bigtable instance. Defaults to the instance name. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#id GoogleBigtableInstance#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#id GoogleBigtableInstance#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig.property.instanceType">InstanceType</a></code> | <code>*string</code> | The instance type to create. One of "DEVELOPMENT" or "PRODUCTION". Defaults to "PRODUCTION". |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | A mapping of labels to assign to the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the resource belongs. |
@@ -1084,7 +1084,7 @@ The name (also called Instance Id in the Cloud Console) of the Cloud Bigtable in
 
 Must be 6-33 characters and must only contain hyphens, lowercase letters and numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#name GoogleBigtableInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#name GoogleBigtableInstance#name}
 
 ---
 
@@ -1098,7 +1098,7 @@ Cluster interface{}
 
 cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#cluster GoogleBigtableInstance#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#cluster GoogleBigtableInstance#cluster}
 
 ---
 
@@ -1114,7 +1114,7 @@ Whether or not to allow Terraform to destroy the instance.
 
 Unless this field is set to false in Terraform state, a terraform destroy or terraform apply that would delete the instance will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#deletion_protection GoogleBigtableInstance#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#deletion_protection GoogleBigtableInstance#deletion_protection}
 
 ---
 
@@ -1128,7 +1128,7 @@ DisplayName *string
 
 The human-readable display name of the Bigtable instance. Defaults to the instance name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#display_name GoogleBigtableInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#display_name GoogleBigtableInstance#display_name}
 
 ---
 
@@ -1140,7 +1140,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#id GoogleBigtableInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#id GoogleBigtableInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1157,7 +1157,7 @@ InstanceType *string
 
 The instance type to create. One of "DEVELOPMENT" or "PRODUCTION". Defaults to "PRODUCTION".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#instance_type GoogleBigtableInstance#instance_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#instance_type GoogleBigtableInstance#instance_type}
 
 ---
 
@@ -1171,7 +1171,7 @@ Labels *map[string]*string
 
 A mapping of labels to assign to the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#labels GoogleBigtableInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#labels GoogleBigtableInstance#labels}
 
 ---
 
@@ -1187,7 +1187,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_bigtable_instance#project GoogleBigtableInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_bigtable_instance#project GoogleBigtableInstance#project}
 
 ---
 
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterAutoscalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstance"
 
 googlebigtableinstance.NewGoogleBigtableInstanceClusterAutoscalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 ```
@@ -1542,7 +1542,7 @@ func InternalValue() GoogleBigtableInstanceClusterAutoscalingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstance"
 
 googlebigtableinstance.NewGoogleBigtableInstanceClusterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleBigtableInstanceClusterList
 ```
@@ -1685,7 +1685,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableInstance.GoogleBigtableInstanceClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigtableinstance"
 
 googlebigtableinstance.NewGoogleBigtableInstanceClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleBigtableInstanceClusterOutputReference
 ```

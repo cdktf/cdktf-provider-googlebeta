@@ -566,6 +566,7 @@ export * as googleNetworkSecurityAuthorizationPolicy from './google-network-secu
 export * as googleNetworkSecurityClientTlsPolicy from './google-network-security-client-tls-policy';
 export * as googleNetworkSecurityGatewaySecurityPolicy from './google-network-security-gateway-security-policy';
 export * as googleNetworkSecurityGatewaySecurityPolicyRule from './google-network-security-gateway-security-policy-rule';
+export * as googleNetworkSecurityServerTlsPolicy from './google-network-security-server-tls-policy';
 export * as googleNetworkSecurityTlsInspectionPolicy from './google-network-security-tls-inspection-policy';
 export * as googleNetworkSecurityUrlLists from './google-network-security-url-lists';
 export * as googleNetworkServicesEdgeCacheKeyset from './google-network-services-edge-cache-keyset';

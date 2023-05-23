@@ -1,6 +1,6 @@
 # `google_iap_tunnel_instance_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_iap_tunnel_instance_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy).
+Refer to the Terraform Registory for docs: [`google_iap_tunnel_instance_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy).
 
 # `googleIapTunnelInstanceIamPolicy` Submodule <a name="`googleIapTunnelInstanceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_iap_tunnel_instance_iam_poli
 
 ### GoogleIapTunnelInstanceIamPolicy <a name="GoogleIapTunnelInstanceIamPolicy" id="@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy google_iap_tunnel_instance_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy google_iap_tunnel_instance_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunnelinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunnelinstanceiampolicy"
 
 googleiaptunnelinstanceiampolicy.NewGoogleIapTunnelInstanceIamPolicy(scope Construct, id *string, config GoogleIapTunnelInstanceIamPolicyConfig) GoogleIapTunnelInstanceIamPolicy
 ```
@@ -291,7 +291,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunnelinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunnelinstanceiampolicy"
 
 googleiaptunnelinstanceiampolicy.GoogleIapTunnelInstanceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunnelinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunnelinstanceiampolicy"
 
 googleiaptunnelinstanceiampolicy.GoogleIapTunnelInstanceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ googleiaptunnelinstanceiampolicy.GoogleIapTunnelInstanceIamPolicy_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunnelinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunnelinstanceiampolicy"
 
 googleiaptunnelinstanceiampolicy.GoogleIapTunnelInstanceIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunnelinstanceiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunnelinstanceiampolicy"
 
 &googleiaptunnelinstanceiampolicy.GoogleIapTunnelInstanceIamPolicyConfig {
 	Connection: interface{},
@@ -686,11 +686,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptun
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy#instance GoogleIapTunnelInstanceIamPolicy#instance}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy#policy_data GoogleIapTunnelInstanceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy#id GoogleIapTunnelInstanceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy#project GoogleIapTunnelInstanceIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy#zone GoogleIapTunnelInstanceIamPolicy#zone}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy#instance GoogleIapTunnelInstanceIamPolicy#instance}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy#policy_data GoogleIapTunnelInstanceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy#id GoogleIapTunnelInstanceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy#project GoogleIapTunnelInstanceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapTunnelInstanceIamPolicy.GoogleIapTunnelInstanceIamPolicyConfig.property.zone">Zone</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy#zone GoogleIapTunnelInstanceIamPolicy#zone}. |
 
 ---
 
@@ -772,7 +772,7 @@ Instance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy#instance GoogleIapTunnelInstanceIamPolicy#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy#instance GoogleIapTunnelInstanceIamPolicy#instance}.
 
 ---
 
@@ -784,7 +784,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy#policy_data GoogleIapTunnelInstanceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy#policy_data GoogleIapTunnelInstanceIamPolicy#policy_data}.
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy#id GoogleIapTunnelInstanceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy#id GoogleIapTunnelInstanceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy#project GoogleIapTunnelInstanceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy#project GoogleIapTunnelInstanceIamPolicy#project}.
 
 ---
 
@@ -823,7 +823,7 @@ Zone *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_iap_tunnel_instance_iam_policy#zone GoogleIapTunnelInstanceIamPolicy#zone}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_iap_tunnel_instance_iam_policy#zone GoogleIapTunnelInstanceIamPolicy#zone}.
 
 ---
 

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleDataplexLakeIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member#id GoogleDataplexLakeIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member#id GoogleDataplexLakeIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member#lake GoogleDataplexLakeIamMember#lake}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member#lake GoogleDataplexLakeIamMember#lake}
   */
   readonly lake: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member#location GoogleDataplexLakeIamMember#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member#location GoogleDataplexLakeIamMember#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member#member GoogleDataplexLakeIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member#member GoogleDataplexLakeIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member#project GoogleDataplexLakeIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member#project GoogleDataplexLakeIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member#role GoogleDataplexLakeIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member#role GoogleDataplexLakeIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member#condition GoogleDataplexLakeIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member#condition GoogleDataplexLakeIamMember#condition}
   */
   readonly condition?: GoogleDataplexLakeIamMemberCondition;
 }
 export interface GoogleDataplexLakeIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member#description GoogleDataplexLakeIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member#description GoogleDataplexLakeIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member#expression GoogleDataplexLakeIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member#expression GoogleDataplexLakeIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member#title GoogleDataplexLakeIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member#title GoogleDataplexLakeIamMember#title}
   */
   readonly title: string;
 }
@@ -156,7 +156,7 @@ export class GoogleDataplexLakeIamMemberConditionOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member google_dataplex_lake_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member google_dataplex_lake_iam_member}
 */
 export class GoogleDataplexLakeIamMember extends cdktf.TerraformResource {
 
@@ -170,7 +170,7 @@ export class GoogleDataplexLakeIamMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_dataplex_lake_iam_member google_dataplex_lake_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_dataplex_lake_iam_member google_dataplex_lake_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -181,7 +181,7 @@ export class GoogleDataplexLakeIamMember extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataplex_lake_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.65.2',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,7 +11,7 @@ export interface GoogleMonitoringAlertPolicyConfig extends cdktf.TerraformMetaAr
   * How to combine the results of multiple conditions to
 determine if an incident should be opened. Possible values: ["AND", "OR", "AND_WITH_MATCHING_RESOURCE"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#combiner GoogleMonitoringAlertPolicy#combiner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#combiner GoogleMonitoringAlertPolicy#combiner}
   */
   readonly combiner: string;
   /**
@@ -20,17 +20,17 @@ dashboards, notifications, and incidents. To avoid confusion, don't use
 the same display name for multiple policies in the same project. The
 name is limited to 512 Unicode characters.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#display_name GoogleMonitoringAlertPolicy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#display_name GoogleMonitoringAlertPolicy#display_name}
   */
   readonly displayName: string;
   /**
   * Whether or not the policy is enabled. The default is true.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#enabled GoogleMonitoringAlertPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#enabled GoogleMonitoringAlertPolicy#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#id GoogleMonitoringAlertPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#id GoogleMonitoringAlertPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,11 +45,11 @@ returned from the notificationChannels.list method. The syntax of the
 entries in this field is
 'projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID]'
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#notification_channels GoogleMonitoringAlertPolicy#notification_channels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#notification_channels GoogleMonitoringAlertPolicy#notification_channels}
   */
   readonly notificationChannels?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#project GoogleMonitoringAlertPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#project GoogleMonitoringAlertPolicy#project}
   */
   readonly project?: string;
   /**
@@ -59,31 +59,31 @@ to 63 Unicode characters or 128 bytes, whichever is smaller. Labels and values
 can contain only lowercase letters, numerals, underscores, and dashes. Keys
 must begin with a letter.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#user_labels GoogleMonitoringAlertPolicy#user_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#user_labels GoogleMonitoringAlertPolicy#user_labels}
   */
   readonly userLabels?: { [key: string]: string };
   /**
   * alert_strategy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#alert_strategy GoogleMonitoringAlertPolicy#alert_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#alert_strategy GoogleMonitoringAlertPolicy#alert_strategy}
   */
   readonly alertStrategy?: GoogleMonitoringAlertPolicyAlertStrategy;
   /**
   * conditions block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#conditions GoogleMonitoringAlertPolicy#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#conditions GoogleMonitoringAlertPolicy#conditions}
   */
   readonly conditions: GoogleMonitoringAlertPolicyConditions[] | cdktf.IResolvable;
   /**
   * documentation block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#documentation GoogleMonitoringAlertPolicy#documentation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#documentation GoogleMonitoringAlertPolicy#documentation}
   */
   readonly documentation?: GoogleMonitoringAlertPolicyDocumentation;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#timeouts GoogleMonitoringAlertPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#timeouts GoogleMonitoringAlertPolicy#timeouts}
   */
   readonly timeouts?: GoogleMonitoringAlertPolicyTimeouts;
 }
@@ -156,11 +156,142 @@ export class GoogleMonitoringAlertPolicyCreationRecordList extends cdktf.Complex
     return new GoogleMonitoringAlertPolicyCreationRecordOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy {
+  /**
+  * The notification channels that these settings apply to. Each of these
+correspond to the name field in one of the NotificationChannel objects
+referenced in the notification_channels field of this AlertPolicy. The format is
+'projects/[PROJECT_ID_OR_NUMBER]/notificationChannels/[CHANNEL_ID]'
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#notification_channel_names GoogleMonitoringAlertPolicy#notification_channel_names}
+  */
+  readonly notificationChannelNames?: string[];
+  /**
+  * The frequency at which to send reminder notifications for open incidents.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#renotify_interval GoogleMonitoringAlertPolicy#renotify_interval}
+  */
+  readonly renotifyInterval?: string;
+}
+
+export function googleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyToTerraform(struct?: GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    notification_channel_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notificationChannelNames),
+    renotify_interval: cdktf.stringToTerraform(struct!.renotifyInterval),
+  }
+}
+
+export class GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._notificationChannelNames !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationChannelNames = this._notificationChannelNames;
+    }
+    if (this._renotifyInterval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.renotifyInterval = this._renotifyInterval;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._notificationChannelNames = undefined;
+      this._renotifyInterval = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._notificationChannelNames = value.notificationChannelNames;
+      this._renotifyInterval = value.renotifyInterval;
+    }
+  }
+
+  // notification_channel_names - computed: false, optional: true, required: false
+  private _notificationChannelNames?: string[]; 
+  public get notificationChannelNames() {
+    return this.getListAttribute('notification_channel_names');
+  }
+  public set notificationChannelNames(value: string[]) {
+    this._notificationChannelNames = value;
+  }
+  public resetNotificationChannelNames() {
+    this._notificationChannelNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationChannelNamesInput() {
+    return this._notificationChannelNames;
+  }
+
+  // renotify_interval - computed: false, optional: true, required: false
+  private _renotifyInterval?: string; 
+  public get renotifyInterval() {
+    return this.getStringAttribute('renotify_interval');
+  }
+  public set renotifyInterval(value: string) {
+    this._renotifyInterval = value;
+  }
+  public resetRenotifyInterval() {
+    this._renotifyInterval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get renotifyIntervalInput() {
+    return this._renotifyInterval;
+  }
+}
+
+export class GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList extends cdktf.ComplexList {
+  public internalValue? : GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference {
+    return new GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit {
   /**
   * Not more than one notification per period.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#period GoogleMonitoringAlertPolicy#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#period GoogleMonitoringAlertPolicy#period}
   */
   readonly period?: string;
 }
@@ -227,13 +358,19 @@ export interface GoogleMonitoringAlertPolicyAlertStrategy {
   /**
   * If an alert policy that was active has no data for this long, any open incidents will close.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#auto_close GoogleMonitoringAlertPolicy#auto_close}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#auto_close GoogleMonitoringAlertPolicy#auto_close}
   */
   readonly autoClose?: string;
   /**
+  * notification_channel_strategy block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#notification_channel_strategy GoogleMonitoringAlertPolicy#notification_channel_strategy}
+  */
+  readonly notificationChannelStrategy?: GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy[] | cdktf.IResolvable;
+  /**
   * notification_rate_limit block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#notification_rate_limit GoogleMonitoringAlertPolicy#notification_rate_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#notification_rate_limit GoogleMonitoringAlertPolicy#notification_rate_limit}
   */
   readonly notificationRateLimit?: GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit;
 }
@@ -245,6 +382,7 @@ export function googleMonitoringAlertPolicyAlertStrategyToTerraform(struct?: Goo
   }
   return {
     auto_close: cdktf.stringToTerraform(struct!.autoClose),
+    notification_channel_strategy: cdktf.listMapper(googleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyToTerraform, true)(struct!.notificationChannelStrategy),
     notification_rate_limit: googleMonitoringAlertPolicyAlertStrategyNotificationRateLimitToTerraform(struct!.notificationRateLimit),
   }
 }
@@ -267,6 +405,10 @@ export class GoogleMonitoringAlertPolicyAlertStrategyOutputReference extends cdk
       hasAnyValues = true;
       internalValueResult.autoClose = this._autoClose;
     }
+    if (this._notificationChannelStrategy?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.notificationChannelStrategy = this._notificationChannelStrategy?.internalValue;
+    }
     if (this._notificationRateLimit?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.notificationRateLimit = this._notificationRateLimit?.internalValue;
@@ -278,11 +420,13 @@ export class GoogleMonitoringAlertPolicyAlertStrategyOutputReference extends cdk
     if (value === undefined) {
       this.isEmptyObject = false;
       this._autoClose = undefined;
+      this._notificationChannelStrategy.internalValue = undefined;
       this._notificationRateLimit.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._autoClose = value.autoClose;
+      this._notificationChannelStrategy.internalValue = value.notificationChannelStrategy;
       this._notificationRateLimit.internalValue = value.notificationRateLimit;
     }
   }
@@ -301,6 +445,22 @@ export class GoogleMonitoringAlertPolicyAlertStrategyOutputReference extends cdk
   // Temporarily expose input value. Use with caution.
   public get autoCloseInput() {
     return this._autoClose;
+  }
+
+  // notification_channel_strategy - computed: false, optional: true, required: false
+  private _notificationChannelStrategy = new GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyList(this, "notification_channel_strategy", false);
+  public get notificationChannelStrategy() {
+    return this._notificationChannelStrategy;
+  }
+  public putNotificationChannelStrategy(value: GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy[] | cdktf.IResolvable) {
+    this._notificationChannelStrategy.internalValue = value;
+  }
+  public resetNotificationChannelStrategy() {
+    this._notificationChannelStrategy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get notificationChannelStrategyInput() {
+    return this._notificationChannelStrategy.internalValue;
   }
 
   // notification_rate_limit - computed: false, optional: true, required: false
@@ -336,7 +496,7 @@ does not equal ALIGN_NONE, then
 this field must be defined;
 otherwise an error is returned.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
   */
   readonly alignmentPeriod?: string;
   /**
@@ -358,7 +518,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["REDUCE_NONE", "REDUCE_MEAN", "REDUCE_MIN", "REDUCE_MAX", "REDUCE_SUM", "REDUCE_STDDEV", "REDUCE_COUNT", "REDUCE_COUNT_TRUE", "REDUCE_COUNT_FALSE", "REDUCE_FRACTION_TRUE", "REDUCE_PERCENTILE_99", "REDUCE_PERCENTILE_95", "REDUCE_PERCENTILE_50", "REDUCE_PERCENTILE_05"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
   */
   readonly crossSeriesReducer?: string;
   /**
@@ -388,7 +548,7 @@ time series. If crossSeriesReducer
 is not defined, this field is
 ignored.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
   */
   readonly groupByFields?: string[];
   /**
@@ -410,7 +570,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["ALIGN_NONE", "ALIGN_DELTA", "ALIGN_RATE", "ALIGN_INTERPOLATE", "ALIGN_NEXT_OLDER", "ALIGN_MIN", "ALIGN_MAX", "ALIGN_MEAN", "ALIGN_COUNT", "ALIGN_SUM", "ALIGN_STDDEV", "ALIGN_COUNT_TRUE", "ALIGN_COUNT_FALSE", "ALIGN_FRACTION_TRUE", "ALIGN_PERCENTILE_99", "ALIGN_PERCENTILE_95", "ALIGN_PERCENTILE_50", "ALIGN_PERCENTILE_05", "ALIGN_PERCENT_CHANGE"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
   */
   readonly perSeriesAligner?: string;
 }
@@ -580,7 +740,7 @@ export interface GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger {
 that must fail the predicate for the
 condition to be triggered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
   */
   readonly count?: number;
   /**
@@ -588,7 +748,7 @@ condition to be triggered.
 must fail the predicate for the
 condition to be triggered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
   */
   readonly percent?: number;
 }
@@ -682,7 +842,7 @@ failing. Currently, only values that are a
 multiple of a minute--e.g. 60s, 120s, or 300s
 --are supported.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
   */
   readonly duration: string;
   /**
@@ -699,19 +859,19 @@ resource labels, and metric labels. This
 field may not exceed 2048 Unicode characters
 in length.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
   */
   readonly filter?: string;
   /**
   * aggregations block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#aggregations GoogleMonitoringAlertPolicy#aggregations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#aggregations GoogleMonitoringAlertPolicy#aggregations}
   */
   readonly aggregations?: GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations[] | cdktf.IResolvable;
   /**
   * trigger block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
   */
   readonly trigger?: GoogleMonitoringAlertPolicyConditionsConditionAbsentTrigger;
 }
@@ -844,7 +1004,7 @@ export interface GoogleMonitoringAlertPolicyConditionsConditionMatchedLog {
   /**
   * A logs-based filter.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
   */
   readonly filter: string;
   /**
@@ -856,7 +1016,7 @@ a separate rule for the purposes of triggering notifications.
 Label keys and corresponding values can be used in notifications
 generated by this condition.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#label_extractors GoogleMonitoringAlertPolicy#label_extractors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#label_extractors GoogleMonitoringAlertPolicy#label_extractors}
   */
   readonly labelExtractors?: { [key: string]: string };
 }
@@ -945,7 +1105,7 @@ export interface GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLa
 that must fail the predicate for the
 condition to be triggered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
   */
   readonly count?: number;
   /**
@@ -953,7 +1113,7 @@ condition to be triggered.
 must fail the predicate for the
 condition to be triggered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
   */
   readonly percent?: number;
 }
@@ -1057,7 +1217,7 @@ generate spurious alerts, but short enough
 that unhealthy states are detected and
 alerted on quickly.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
   */
   readonly duration: string;
   /**
@@ -1065,19 +1225,19 @@ alerted on quickly.
 metric-threshold conditions are evaluated when
 data stops arriving. Possible values: ["EVALUATION_MISSING_DATA_INACTIVE", "EVALUATION_MISSING_DATA_ACTIVE", "EVALUATION_MISSING_DATA_NO_OP"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#evaluation_missing_data GoogleMonitoringAlertPolicy#evaluation_missing_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#evaluation_missing_data GoogleMonitoringAlertPolicy#evaluation_missing_data}
   */
   readonly evaluationMissingData?: string;
   /**
   * Monitoring Query Language query that outputs a boolean stream.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#query GoogleMonitoringAlertPolicy#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#query GoogleMonitoringAlertPolicy#query}
   */
   readonly query: string;
   /**
   * trigger block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
   */
   readonly trigger?: GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguageTrigger;
 }
@@ -1220,7 +1380,7 @@ does not equal ALIGN_NONE, then
 this field must be defined;
 otherwise an error is returned.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
   */
   readonly alignmentPeriod?: string;
   /**
@@ -1242,7 +1402,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["REDUCE_NONE", "REDUCE_MEAN", "REDUCE_MIN", "REDUCE_MAX", "REDUCE_SUM", "REDUCE_STDDEV", "REDUCE_COUNT", "REDUCE_COUNT_TRUE", "REDUCE_COUNT_FALSE", "REDUCE_FRACTION_TRUE", "REDUCE_PERCENTILE_99", "REDUCE_PERCENTILE_95", "REDUCE_PERCENTILE_50", "REDUCE_PERCENTILE_05"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
   */
   readonly crossSeriesReducer?: string;
   /**
@@ -1272,7 +1432,7 @@ time series. If crossSeriesReducer
 is not defined, this field is
 ignored.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
   */
   readonly groupByFields?: string[];
   /**
@@ -1294,7 +1454,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["ALIGN_NONE", "ALIGN_DELTA", "ALIGN_RATE", "ALIGN_INTERPOLATE", "ALIGN_NEXT_OLDER", "ALIGN_MIN", "ALIGN_MAX", "ALIGN_MEAN", "ALIGN_COUNT", "ALIGN_SUM", "ALIGN_STDDEV", "ALIGN_COUNT_TRUE", "ALIGN_COUNT_FALSE", "ALIGN_FRACTION_TRUE", "ALIGN_PERCENTILE_99", "ALIGN_PERCENTILE_95", "ALIGN_PERCENTILE_50", "ALIGN_PERCENTILE_05", "ALIGN_PERCENT_CHANGE"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
   */
   readonly perSeriesAligner?: string;
 }
@@ -1475,7 +1635,7 @@ does not equal ALIGN_NONE, then
 this field must be defined;
 otherwise an error is returned.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#alignment_period GoogleMonitoringAlertPolicy#alignment_period}
   */
   readonly alignmentPeriod?: string;
   /**
@@ -1497,7 +1657,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["REDUCE_NONE", "REDUCE_MEAN", "REDUCE_MIN", "REDUCE_MAX", "REDUCE_SUM", "REDUCE_STDDEV", "REDUCE_COUNT", "REDUCE_COUNT_TRUE", "REDUCE_COUNT_FALSE", "REDUCE_FRACTION_TRUE", "REDUCE_PERCENTILE_99", "REDUCE_PERCENTILE_95", "REDUCE_PERCENTILE_50", "REDUCE_PERCENTILE_05"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#cross_series_reducer GoogleMonitoringAlertPolicy#cross_series_reducer}
   */
   readonly crossSeriesReducer?: string;
   /**
@@ -1527,7 +1687,7 @@ time series. If crossSeriesReducer
 is not defined, this field is
 ignored.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#group_by_fields GoogleMonitoringAlertPolicy#group_by_fields}
   */
   readonly groupByFields?: string[];
   /**
@@ -1549,7 +1709,7 @@ and alignmentPeriod must be
 specified; otherwise, an error is
 returned. Possible values: ["ALIGN_NONE", "ALIGN_DELTA", "ALIGN_RATE", "ALIGN_INTERPOLATE", "ALIGN_NEXT_OLDER", "ALIGN_MIN", "ALIGN_MAX", "ALIGN_MEAN", "ALIGN_COUNT", "ALIGN_SUM", "ALIGN_STDDEV", "ALIGN_COUNT_TRUE", "ALIGN_COUNT_FALSE", "ALIGN_FRACTION_TRUE", "ALIGN_PERCENTILE_99", "ALIGN_PERCENTILE_95", "ALIGN_PERCENTILE_50", "ALIGN_PERCENTILE_05", "ALIGN_PERCENT_CHANGE"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#per_series_aligner GoogleMonitoringAlertPolicy#per_series_aligner}
   */
   readonly perSeriesAligner?: string;
 }
@@ -1713,13 +1873,82 @@ export class GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorA
     return new GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions {
+  /**
+  * The length of time into the future to forecast
+whether a timeseries will violate the threshold.
+If the predicted value is found to violate the
+threshold, and the violation is observed in all
+forecasts made for the Configured 'duration',
+then the timeseries is considered to be failing.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#forecast_horizon GoogleMonitoringAlertPolicy#forecast_horizon}
+  */
+  readonly forecastHorizon: string;
+}
+
+export function googleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsToTerraform(struct?: GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference | GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    forecast_horizon: cdktf.stringToTerraform(struct!.forecastHorizon),
+  }
+}
+
+export class GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._forecastHorizon !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forecastHorizon = this._forecastHorizon;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._forecastHorizon = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._forecastHorizon = value.forecastHorizon;
+    }
+  }
+
+  // forecast_horizon - computed: false, optional: false, required: true
+  private _forecastHorizon?: string; 
+  public get forecastHorizon() {
+    return this.getStringAttribute('forecast_horizon');
+  }
+  public set forecastHorizon(value: string) {
+    this._forecastHorizon = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forecastHorizonInput() {
+    return this._forecastHorizon;
+  }
+}
 export interface GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger {
   /**
   * The absolute number of time series
 that must fail the predicate for the
 condition to be triggered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#count GoogleMonitoringAlertPolicy#count}
   */
   readonly count?: number;
   /**
@@ -1727,7 +1956,7 @@ condition to be triggered.
 must fail the predicate for the
 condition to be triggered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#percent GoogleMonitoringAlertPolicy#percent}
   */
   readonly percent?: number;
 }
@@ -1824,7 +2053,7 @@ the left-hand side and the threshold on the
 right-hand side. Only COMPARISON_LT and
 COMPARISON_GT are supported currently. Possible values: ["COMPARISON_GT", "COMPARISON_GE", "COMPARISON_LT", "COMPARISON_LE", "COMPARISON_EQ", "COMPARISON_NE"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#comparison GoogleMonitoringAlertPolicy#comparison}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#comparison GoogleMonitoringAlertPolicy#comparison}
   */
   readonly comparison: string;
   /**
@@ -1844,7 +2073,7 @@ resource labels, and metric labels. This
 field may not exceed 2048 Unicode characters
 in length.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#denominator_filter GoogleMonitoringAlertPolicy#denominator_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#denominator_filter GoogleMonitoringAlertPolicy#denominator_filter}
   */
   readonly denominatorFilter?: string;
   /**
@@ -1864,7 +2093,7 @@ generate spurious alerts, but short enough
 that unhealthy states are detected and
 alerted on quickly.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#duration GoogleMonitoringAlertPolicy#duration}
   */
   readonly duration: string;
   /**
@@ -1872,7 +2101,7 @@ alerted on quickly.
 metric-threshold conditions are evaluated when
 data stops arriving. Possible values: ["EVALUATION_MISSING_DATA_INACTIVE", "EVALUATION_MISSING_DATA_ACTIVE", "EVALUATION_MISSING_DATA_NO_OP"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#evaluation_missing_data GoogleMonitoringAlertPolicy#evaluation_missing_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#evaluation_missing_data GoogleMonitoringAlertPolicy#evaluation_missing_data}
   */
   readonly evaluationMissingData?: string;
   /**
@@ -1889,32 +2118,38 @@ resource labels, and metric labels. This
 field may not exceed 2048 Unicode characters
 in length.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#filter GoogleMonitoringAlertPolicy#filter}
   */
   readonly filter?: string;
   /**
   * A value against which to compare the time
 series.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#threshold_value GoogleMonitoringAlertPolicy#threshold_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#threshold_value GoogleMonitoringAlertPolicy#threshold_value}
   */
   readonly thresholdValue?: number;
   /**
   * aggregations block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#aggregations GoogleMonitoringAlertPolicy#aggregations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#aggregations GoogleMonitoringAlertPolicy#aggregations}
   */
   readonly aggregations?: GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregations[] | cdktf.IResolvable;
   /**
   * denominator_aggregations block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#denominator_aggregations GoogleMonitoringAlertPolicy#denominator_aggregations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#denominator_aggregations GoogleMonitoringAlertPolicy#denominator_aggregations}
   */
   readonly denominatorAggregations?: GoogleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregations[] | cdktf.IResolvable;
   /**
+  * forecast_options block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#forecast_options GoogleMonitoringAlertPolicy#forecast_options}
+  */
+  readonly forecastOptions?: GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions;
+  /**
   * trigger block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#trigger GoogleMonitoringAlertPolicy#trigger}
   */
   readonly trigger?: GoogleMonitoringAlertPolicyConditionsConditionThresholdTrigger;
 }
@@ -1933,6 +2168,7 @@ export function googleMonitoringAlertPolicyConditionsConditionThresholdToTerrafo
     threshold_value: cdktf.numberToTerraform(struct!.thresholdValue),
     aggregations: cdktf.listMapper(googleMonitoringAlertPolicyConditionsConditionThresholdAggregationsToTerraform, true)(struct!.aggregations),
     denominator_aggregations: cdktf.listMapper(googleMonitoringAlertPolicyConditionsConditionThresholdDenominatorAggregationsToTerraform, true)(struct!.denominatorAggregations),
+    forecast_options: googleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsToTerraform(struct!.forecastOptions),
     trigger: googleMonitoringAlertPolicyConditionsConditionThresholdTriggerToTerraform(struct!.trigger),
   }
 }
@@ -1983,6 +2219,10 @@ export class GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputRefere
       hasAnyValues = true;
       internalValueResult.denominatorAggregations = this._denominatorAggregations?.internalValue;
     }
+    if (this._forecastOptions?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.forecastOptions = this._forecastOptions?.internalValue;
+    }
     if (this._trigger?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.trigger = this._trigger?.internalValue;
@@ -2001,6 +2241,7 @@ export class GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputRefere
       this._thresholdValue = undefined;
       this._aggregations.internalValue = undefined;
       this._denominatorAggregations.internalValue = undefined;
+      this._forecastOptions.internalValue = undefined;
       this._trigger.internalValue = undefined;
     }
     else {
@@ -2013,6 +2254,7 @@ export class GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputRefere
       this._thresholdValue = value.thresholdValue;
       this._aggregations.internalValue = value.aggregations;
       this._denominatorAggregations.internalValue = value.denominatorAggregations;
+      this._forecastOptions.internalValue = value.forecastOptions;
       this._trigger.internalValue = value.trigger;
     }
   }
@@ -2139,6 +2381,22 @@ export class GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputRefere
     return this._denominatorAggregations.internalValue;
   }
 
+  // forecast_options - computed: false, optional: true, required: false
+  private _forecastOptions = new GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptionsOutputReference(this, "forecast_options");
+  public get forecastOptions() {
+    return this._forecastOptions;
+  }
+  public putForecastOptions(value: GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions) {
+    this._forecastOptions.internalValue = value;
+  }
+  public resetForecastOptions() {
+    this._forecastOptions.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get forecastOptionsInput() {
+    return this._forecastOptions.internalValue;
+  }
+
   // trigger - computed: false, optional: true, required: false
   private _trigger = new GoogleMonitoringAlertPolicyConditionsConditionThresholdTriggerOutputReference(this, "trigger");
   public get trigger() {
@@ -2163,31 +2421,31 @@ incidents. To avoid confusion, don't use the same
 display name for multiple conditions in the same
 policy.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#display_name GoogleMonitoringAlertPolicy#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#display_name GoogleMonitoringAlertPolicy#display_name}
   */
   readonly displayName: string;
   /**
   * condition_absent block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#condition_absent GoogleMonitoringAlertPolicy#condition_absent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#condition_absent GoogleMonitoringAlertPolicy#condition_absent}
   */
   readonly conditionAbsent?: GoogleMonitoringAlertPolicyConditionsConditionAbsent;
   /**
   * condition_matched_log block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#condition_matched_log GoogleMonitoringAlertPolicy#condition_matched_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#condition_matched_log GoogleMonitoringAlertPolicy#condition_matched_log}
   */
   readonly conditionMatchedLog?: GoogleMonitoringAlertPolicyConditionsConditionMatchedLog;
   /**
   * condition_monitoring_query_language block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#condition_monitoring_query_language GoogleMonitoringAlertPolicy#condition_monitoring_query_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#condition_monitoring_query_language GoogleMonitoringAlertPolicy#condition_monitoring_query_language}
   */
   readonly conditionMonitoringQueryLanguage?: GoogleMonitoringAlertPolicyConditionsConditionMonitoringQueryLanguage;
   /**
   * condition_threshold block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#condition_threshold GoogleMonitoringAlertPolicy#condition_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#condition_threshold GoogleMonitoringAlertPolicy#condition_threshold}
   */
   readonly conditionThreshold?: GoogleMonitoringAlertPolicyConditionsConditionThreshold;
 }
@@ -2383,14 +2641,14 @@ The content may not exceed 8,192 Unicode characters and may not
 exceed more than 10,240 bytes when encoded in UTF-8 format,
 whichever is smaller.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#content GoogleMonitoringAlertPolicy#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#content GoogleMonitoringAlertPolicy#content}
   */
   readonly content?: string;
   /**
   * The format of the content field. Presently, only the value
 "text/markdown" is supported.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#mime_type GoogleMonitoringAlertPolicy#mime_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#mime_type GoogleMonitoringAlertPolicy#mime_type}
   */
   readonly mimeType?: string;
 }
@@ -2478,15 +2736,15 @@ export class GoogleMonitoringAlertPolicyDocumentationOutputReference extends cdk
 }
 export interface GoogleMonitoringAlertPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#create GoogleMonitoringAlertPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#create GoogleMonitoringAlertPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#delete GoogleMonitoringAlertPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#delete GoogleMonitoringAlertPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy#update GoogleMonitoringAlertPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy#update GoogleMonitoringAlertPolicy#update}
   */
   readonly update?: string;
 }
@@ -2607,7 +2865,7 @@ export class GoogleMonitoringAlertPolicyTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy}
 */
 export class GoogleMonitoringAlertPolicy extends cdktf.TerraformResource {
 
@@ -2621,7 +2879,7 @@ export class GoogleMonitoringAlertPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2632,7 +2890,7 @@ export class GoogleMonitoringAlertPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_monitoring_alert_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.65.2',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

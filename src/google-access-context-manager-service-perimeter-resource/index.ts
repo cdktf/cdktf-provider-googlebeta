@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_service_perimeter_resource
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_service_perimeter_resource
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleAccessContextManagerServicePerimeterResourceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_service_perimeter_resource#id GoogleAccessContextManagerServicePerimeterResource#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_service_perimeter_resource#id GoogleAccessContextManagerServicePerimeterResource#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,7 +17,7 @@ export interface GoogleAccessContextManagerServicePerimeterResourceConfig extend
   /**
   * The name of the Service Perimeter to add this resource to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_service_perimeter_resource#perimeter_name GoogleAccessContextManagerServicePerimeterResource#perimeter_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_service_perimeter_resource#perimeter_name GoogleAccessContextManagerServicePerimeterResource#perimeter_name}
   */
   readonly perimeterName: string;
   /**
@@ -25,23 +25,23 @@ export interface GoogleAccessContextManagerServicePerimeterResourceConfig extend
 Currently only projects are allowed.
 Format: projects/{project_number}
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_service_perimeter_resource#resource GoogleAccessContextManagerServicePerimeterResource#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_service_perimeter_resource#resource GoogleAccessContextManagerServicePerimeterResource#resource}
   */
   readonly resource: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_service_perimeter_resource#timeouts GoogleAccessContextManagerServicePerimeterResource#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_service_perimeter_resource#timeouts GoogleAccessContextManagerServicePerimeterResource#timeouts}
   */
   readonly timeouts?: GoogleAccessContextManagerServicePerimeterResourceTimeouts;
 }
 export interface GoogleAccessContextManagerServicePerimeterResourceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_service_perimeter_resource#create GoogleAccessContextManagerServicePerimeterResource#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_service_perimeter_resource#create GoogleAccessContextManagerServicePerimeterResource#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_service_perimeter_resource#delete GoogleAccessContextManagerServicePerimeterResource#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_service_perimeter_resource#delete GoogleAccessContextManagerServicePerimeterResource#delete}
   */
   readonly delete?: string;
 }
@@ -139,7 +139,7 @@ export class GoogleAccessContextManagerServicePerimeterResourceTimeoutsOutputRef
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource}
 */
 export class GoogleAccessContextManagerServicePerimeterResource extends cdktf.TerraformResource {
 
@@ -153,7 +153,7 @@ export class GoogleAccessContextManagerServicePerimeterResource extends cdktf.Te
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_service_perimeter_resource google_access_context_manager_service_perimeter_resource} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -164,7 +164,7 @@ export class GoogleAccessContextManagerServicePerimeterResource extends cdktf.Te
       terraformResourceType: 'google_access_context_manager_service_perimeter_resource',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.65.2',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

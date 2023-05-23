@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,29 +10,29 @@ export interface GoogleApigeeKeystoresAliasesPkcs12Config extends cdktf.Terrafor
   /**
   * Alias Name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#alias GoogleApigeeKeystoresAliasesPkcs12#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#alias GoogleApigeeKeystoresAliasesPkcs12#alias}
   */
   readonly alias: string;
   /**
   * Environment associated with the alias
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#environment GoogleApigeeKeystoresAliasesPkcs12#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#environment GoogleApigeeKeystoresAliasesPkcs12#environment}
   */
   readonly environment: string;
   /**
   * Cert content
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#file GoogleApigeeKeystoresAliasesPkcs12#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#file GoogleApigeeKeystoresAliasesPkcs12#file}
   */
   readonly file: string;
   /**
   * Hash of the pkcs file
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#filehash GoogleApigeeKeystoresAliasesPkcs12#filehash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#filehash GoogleApigeeKeystoresAliasesPkcs12#filehash}
   */
   readonly filehash: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#id GoogleApigeeKeystoresAliasesPkcs12#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#id GoogleApigeeKeystoresAliasesPkcs12#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,25 +41,25 @@ export interface GoogleApigeeKeystoresAliasesPkcs12Config extends cdktf.Terrafor
   /**
   * Keystore Name
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#keystore GoogleApigeeKeystoresAliasesPkcs12#keystore}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#keystore GoogleApigeeKeystoresAliasesPkcs12#keystore}
   */
   readonly keystore: string;
   /**
   * Organization ID associated with the alias
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#org_id GoogleApigeeKeystoresAliasesPkcs12#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#org_id GoogleApigeeKeystoresAliasesPkcs12#org_id}
   */
   readonly orgId: string;
   /**
   * Password for the Private Key if it's encrypted
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#password GoogleApigeeKeystoresAliasesPkcs12#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#password GoogleApigeeKeystoresAliasesPkcs12#password}
   */
   readonly password?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#timeouts GoogleApigeeKeystoresAliasesPkcs12#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#timeouts GoogleApigeeKeystoresAliasesPkcs12#timeouts}
   */
   readonly timeouts?: GoogleApigeeKeystoresAliasesPkcs12Timeouts;
 }
@@ -244,11 +244,11 @@ export class GoogleApigeeKeystoresAliasesPkcs12CertsInfoList extends cdktf.Compl
 }
 export interface GoogleApigeeKeystoresAliasesPkcs12Timeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#create GoogleApigeeKeystoresAliasesPkcs12#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#create GoogleApigeeKeystoresAliasesPkcs12#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12#delete GoogleApigeeKeystoresAliasesPkcs12#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12#delete GoogleApigeeKeystoresAliasesPkcs12#delete}
   */
   readonly delete?: string;
 }
@@ -346,7 +346,7 @@ export class GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12}
 */
 export class GoogleApigeeKeystoresAliasesPkcs12 extends cdktf.TerraformResource {
 
@@ -360,7 +360,7 @@ export class GoogleApigeeKeystoresAliasesPkcs12 extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -371,7 +371,7 @@ export class GoogleApigeeKeystoresAliasesPkcs12 extends cdktf.TerraformResource 
       terraformResourceType: 'google_apigee_keystores_aliases_pkcs12',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.65.2',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
