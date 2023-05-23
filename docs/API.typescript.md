@@ -714,6 +714,7 @@ The following submodules are available:
 - [googleNetworkSecurityClientTlsPolicy](./googleNetworkSecurityClientTlsPolicy.typescript.md)
 - [googleNetworkSecurityGatewaySecurityPolicy](./googleNetworkSecurityGatewaySecurityPolicy.typescript.md)
 - [googleNetworkSecurityGatewaySecurityPolicyRule](./googleNetworkSecurityGatewaySecurityPolicyRule.typescript.md)
+- [googleNetworkSecurityServerTlsPolicy](./googleNetworkSecurityServerTlsPolicy.typescript.md)
 - [googleNetworkSecurityTlsInspectionPolicy](./googleNetworkSecurityTlsInspectionPolicy.typescript.md)
 - [googleNetworkSecurityUrlLists](./googleNetworkSecurityUrlLists.typescript.md)
 - [googleNetworkServicesEdgeCacheKeyset](./googleNetworkServicesEdgeCacheKeyset.typescript.md)

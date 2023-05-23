@@ -1,6 +1,6 @@
 # `google_access_context_manager_access_policy_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_access_context_manager_access_policy_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy).
+Refer to the Terraform Registory for docs: [`google_access_context_manager_access_policy_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy).
 
 # `googleAccessContextManagerAccessPolicyIamPolicy` Submodule <a name="`googleAccessContextManagerAccessPolicyIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_access_context_manager_acces
 
 ### GoogleAccessContextManagerAccessPolicyIamPolicy <a name="GoogleAccessContextManagerAccessPolicyIamPolicy" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy google_access_context_manager_access_policy_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer"></a>
 
@@ -42,9 +42,9 @@ googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccess
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#name GoogleAccessContextManagerAccessPolicyIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#policy_data GoogleAccessContextManagerAccessPolicyIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#id GoogleAccessContextManagerAccessPolicyIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#name GoogleAccessContextManagerAccessPolicyIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#policy_data GoogleAccessContextManagerAccessPolicyIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#id GoogleAccessContextManagerAccessPolicyIamPolicy#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#name GoogleAccessContextManagerAccessPolicyIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#name GoogleAccessContextManagerAccessPolicyIamPolicy#name}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#policy_data GoogleAccessContextManagerAccessPolicyIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#policy_data GoogleAccessContextManagerAccessPolicyIamPolicy#policy_data}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#id GoogleAccessContextManagerAccessPolicyIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#id GoogleAccessContextManagerAccessPolicyIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -742,9 +742,9 @@ googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccess
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#name GoogleAccessContextManagerAccessPolicyIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#policy_data GoogleAccessContextManagerAccessPolicyIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#id GoogleAccessContextManagerAccessPolicyIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#name GoogleAccessContextManagerAccessPolicyIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#policy_data GoogleAccessContextManagerAccessPolicyIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerAccessPolicyIamPolicy.GoogleAccessContextManagerAccessPolicyIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#id GoogleAccessContextManagerAccessPolicyIamPolicy#id}. |
 
 ---
 
@@ -826,7 +826,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#name GoogleAccessContextManagerAccessPolicyIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#name GoogleAccessContextManagerAccessPolicyIamPolicy#name}.
 
 ---
 
@@ -838,7 +838,7 @@ policy_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#policy_data GoogleAccessContextManagerAccessPolicyIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#policy_data GoogleAccessContextManagerAccessPolicyIamPolicy#policy_data}.
 
 ---
 
@@ -850,7 +850,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_access_context_manager_access_policy_iam_policy#id GoogleAccessContextManagerAccessPolicyIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_access_context_manager_access_policy_iam_policy#id GoogleAccessContextManagerAccessPolicyIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

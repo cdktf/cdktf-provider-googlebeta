@@ -1,6 +1,6 @@
 # `data_google_iam_policy`
 
-Refer to the Terraform Registory for docs: [`data_google_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy).
+Refer to the Terraform Registory for docs: [`data_google_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy).
 
 # `dataGoogleIamPolicy` Submodule <a name="`dataGoogleIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_google_iam_policy`](https://re
 
 ### DataGoogleIamPolicy <a name="DataGoogleIamPolicy" id="@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy google_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy google_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicy.Initializer"></a>
 
@@ -630,7 +630,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleia
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig.property.auditLogConfigs">AuditLogConfigs</a></code> | <code>interface{}</code> | audit_log_configs block. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#service DataGoogleIamPolicy#service}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig.property.service">Service</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#service DataGoogleIamPolicy#service}. |
 
 ---
 
@@ -644,7 +644,7 @@ AuditLogConfigs interface{}
 
 audit_log_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#audit_log_configs DataGoogleIamPolicy#audit_log_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#audit_log_configs DataGoogleIamPolicy#audit_log_configs}
 
 ---
 
@@ -656,7 +656,7 @@ Service *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#service DataGoogleIamPolicy#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#service DataGoogleIamPolicy#service}.
 
 ---
 
@@ -677,8 +677,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleia
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs.property.logType">LogType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#log_type DataGoogleIamPolicy#log_type}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs.property.exemptedMembers">ExemptedMembers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#exempted_members DataGoogleIamPolicy#exempted_members}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs.property.logType">LogType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#log_type DataGoogleIamPolicy#log_type}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs.property.exemptedMembers">ExemptedMembers</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#exempted_members DataGoogleIamPolicy#exempted_members}. |
 
 ---
 
@@ -690,7 +690,7 @@ LogType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#log_type DataGoogleIamPolicy#log_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#log_type DataGoogleIamPolicy#log_type}.
 
 ---
 
@@ -702,7 +702,7 @@ ExemptedMembers *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#exempted_members DataGoogleIamPolicy#exempted_members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#exempted_members DataGoogleIamPolicy#exempted_members}.
 
 ---
 
@@ -724,8 +724,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleia
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBinding.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#members DataGoogleIamPolicy#members}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBinding.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#role DataGoogleIamPolicy#role}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBinding.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#members DataGoogleIamPolicy#members}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBinding.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#role DataGoogleIamPolicy#role}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBinding.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition">DataGoogleIamPolicyBindingCondition</a></code> | condition block. |
 
 ---
@@ -738,7 +738,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#members DataGoogleIamPolicy#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#members DataGoogleIamPolicy#members}.
 
 ---
 
@@ -750,7 +750,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#role DataGoogleIamPolicy#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#role DataGoogleIamPolicy#role}.
 
 ---
 
@@ -764,7 +764,7 @@ Condition DataGoogleIamPolicyBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#condition DataGoogleIamPolicy#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#condition DataGoogleIamPolicy#condition}
 
 ---
 
@@ -786,9 +786,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleia
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#expression DataGoogleIamPolicy#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#title DataGoogleIamPolicy#title}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#description DataGoogleIamPolicy#description}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#expression DataGoogleIamPolicy#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#title DataGoogleIamPolicy#title}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#description DataGoogleIamPolicy#description}. |
 
 ---
 
@@ -800,7 +800,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#expression DataGoogleIamPolicy#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#expression DataGoogleIamPolicy#expression}.
 
 ---
 
@@ -812,7 +812,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#title DataGoogleIamPolicy#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#title DataGoogleIamPolicy#title}.
 
 ---
 
@@ -824,7 +824,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#description DataGoogleIamPolicy#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#description DataGoogleIamPolicy#description}.
 
 ---
 
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleia
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyConfig.property.auditConfig">AuditConfig</a></code> | <code>interface{}</code> | audit_config block. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyConfig.property.binding">Binding</a></code> | <code>interface{}</code> | binding block. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#id DataGoogleIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleIamPolicy.DataGoogleIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#id DataGoogleIamPolicy#id}. |
 
 ---
 
@@ -946,7 +946,7 @@ AuditConfig interface{}
 
 audit_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#audit_config DataGoogleIamPolicy#audit_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#audit_config DataGoogleIamPolicy#audit_config}
 
 ---
 
@@ -960,7 +960,7 @@ Binding interface{}
 
 binding block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#binding DataGoogleIamPolicy#binding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#binding DataGoogleIamPolicy#binding}
 
 ---
 
@@ -972,7 +972,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/data-sources/google_iam_policy#id DataGoogleIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_iam_policy#id DataGoogleIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

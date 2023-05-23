@@ -714,6 +714,7 @@ The following submodules are available:
 - [googleNetworkSecurityClientTlsPolicy](./googleNetworkSecurityClientTlsPolicy.python.md)
 - [googleNetworkSecurityGatewaySecurityPolicy](./googleNetworkSecurityGatewaySecurityPolicy.python.md)
 - [googleNetworkSecurityGatewaySecurityPolicyRule](./googleNetworkSecurityGatewaySecurityPolicyRule.python.md)
+- [googleNetworkSecurityServerTlsPolicy](./googleNetworkSecurityServerTlsPolicy.python.md)
 - [googleNetworkSecurityTlsInspectionPolicy](./googleNetworkSecurityTlsInspectionPolicy.python.md)
 - [googleNetworkSecurityUrlLists](./googleNetworkSecurityUrlLists.python.md)
 - [googleNetworkServicesEdgeCacheKeyset](./googleNetworkServicesEdgeCacheKeyset.python.md)

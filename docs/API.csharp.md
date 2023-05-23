@@ -714,6 +714,7 @@ The following submodules are available:
 - [googleNetworkSecurityClientTlsPolicy](./googleNetworkSecurityClientTlsPolicy.csharp.md)
 - [googleNetworkSecurityGatewaySecurityPolicy](./googleNetworkSecurityGatewaySecurityPolicy.csharp.md)
 - [googleNetworkSecurityGatewaySecurityPolicyRule](./googleNetworkSecurityGatewaySecurityPolicyRule.csharp.md)
+- [googleNetworkSecurityServerTlsPolicy](./googleNetworkSecurityServerTlsPolicy.csharp.md)
 - [googleNetworkSecurityTlsInspectionPolicy](./googleNetworkSecurityTlsInspectionPolicy.csharp.md)
 - [googleNetworkSecurityUrlLists](./googleNetworkSecurityUrlLists.csharp.md)
 - [googleNetworkServicesEdgeCacheKeyset](./googleNetworkServicesEdgeCacheKeyset.csharp.md)

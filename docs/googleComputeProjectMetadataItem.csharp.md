@@ -1,6 +1,6 @@
 # `google_compute_project_metadata_item`
 
-Refer to the Terraform Registory for docs: [`google_compute_project_metadata_item`](https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item).
+Refer to the Terraform Registory for docs: [`google_compute_project_metadata_item`](https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item).
 
 # `googleComputeProjectMetadataItem` Submodule <a name="`googleComputeProjectMetadataItem` Submodule" id="@cdktf/provider-google-beta.googleComputeProjectMetadataItem"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_compute_project_metadata_ite
 
 ### GoogleComputeProjectMetadataItem <a name="GoogleComputeProjectMetadataItem" id="@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item google_compute_project_metadata_item}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item google_compute_project_metadata_item}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItem.Initializer"></a>
 
@@ -690,7 +690,7 @@ new GoogleComputeProjectMetadataItemConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemConfig.property.key">Key</a></code> | <code>string</code> | The metadata key to set. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemConfig.property.value">Value</a></code> | <code>string</code> | The value to set for the given metadata key. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#id GoogleComputeProjectMetadataItem#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#id GoogleComputeProjectMetadataItem#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemConfig.property.project">Project</a></code> | <code>string</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeouts">GoogleComputeProjectMetadataItemTimeouts</a></code> | timeouts block. |
 
@@ -776,7 +776,7 @@ public string Key { get; set; }
 
 The metadata key to set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#key GoogleComputeProjectMetadataItem#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#key GoogleComputeProjectMetadataItem#key}
 
 ---
 
@@ -790,7 +790,7 @@ public string Value { get; set; }
 
 The value to set for the given metadata key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#value GoogleComputeProjectMetadataItem#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#value GoogleComputeProjectMetadataItem#value}
 
 ---
 
@@ -802,7 +802,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#id GoogleComputeProjectMetadataItem#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#id GoogleComputeProjectMetadataItem#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -821,7 +821,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#project GoogleComputeProjectMetadataItem#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#project GoogleComputeProjectMetadataItem#project}
 
 ---
 
@@ -835,7 +835,7 @@ public GoogleComputeProjectMetadataItemTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#timeouts GoogleComputeProjectMetadataItem#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#timeouts GoogleComputeProjectMetadataItem#timeouts}
 
 ---
 
@@ -857,9 +857,9 @@ new GoogleComputeProjectMetadataItemTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#create GoogleComputeProjectMetadataItem#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#delete GoogleComputeProjectMetadataItem#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#update GoogleComputeProjectMetadataItem#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#create GoogleComputeProjectMetadataItem#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#delete GoogleComputeProjectMetadataItem#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeProjectMetadataItem.GoogleComputeProjectMetadataItemTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#update GoogleComputeProjectMetadataItem#update}. |
 
 ---
 
@@ -871,7 +871,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#create GoogleComputeProjectMetadataItem#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#create GoogleComputeProjectMetadataItem#create}.
 
 ---
 
@@ -883,7 +883,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#delete GoogleComputeProjectMetadataItem#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#delete GoogleComputeProjectMetadataItem#delete}.
 
 ---
 
@@ -895,7 +895,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_compute_project_metadata_item#update GoogleComputeProjectMetadataItem#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_project_metadata_item#update GoogleComputeProjectMetadataItem#update}.
 
 ---
 

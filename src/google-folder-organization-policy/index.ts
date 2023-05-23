@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface GoogleFolderOrganizationPolicyConfig extends cdktf.TerraformMet
   /**
   * The name of the Constraint the Policy is configuring, for example, serviceuser.services.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#constraint GoogleFolderOrganizationPolicy#constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#constraint GoogleFolderOrganizationPolicy#constraint}
   */
   readonly constraint: string;
   /**
   * The resource name of the folder to set the policy for. Its format is folders/{folder_id}.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#folder GoogleFolderOrganizationPolicy#folder}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#folder GoogleFolderOrganizationPolicy#folder}
   */
   readonly folder: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#id GoogleFolderOrganizationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#id GoogleFolderOrganizationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,31 +29,31 @@ export interface GoogleFolderOrganizationPolicyConfig extends cdktf.TerraformMet
   /**
   * Version of the Policy. Default version is 0.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#version GoogleFolderOrganizationPolicy#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#version GoogleFolderOrganizationPolicy#version}
   */
   readonly version?: number;
   /**
   * boolean_policy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#boolean_policy GoogleFolderOrganizationPolicy#boolean_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#boolean_policy GoogleFolderOrganizationPolicy#boolean_policy}
   */
   readonly booleanPolicy?: GoogleFolderOrganizationPolicyBooleanPolicy;
   /**
   * list_policy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#list_policy GoogleFolderOrganizationPolicy#list_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#list_policy GoogleFolderOrganizationPolicy#list_policy}
   */
   readonly listPolicy?: GoogleFolderOrganizationPolicyListPolicy;
   /**
   * restore_policy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#restore_policy GoogleFolderOrganizationPolicy#restore_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#restore_policy GoogleFolderOrganizationPolicy#restore_policy}
   */
   readonly restorePolicy?: GoogleFolderOrganizationPolicyRestorePolicy;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#timeouts GoogleFolderOrganizationPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#timeouts GoogleFolderOrganizationPolicy#timeouts}
   */
   readonly timeouts?: GoogleFolderOrganizationPolicyTimeouts;
 }
@@ -61,7 +61,7 @@ export interface GoogleFolderOrganizationPolicyBooleanPolicy {
   /**
   * If true, then the Policy is enforced. If false, then any configuration is acceptable.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#enforced GoogleFolderOrganizationPolicy#enforced}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#enforced GoogleFolderOrganizationPolicy#enforced}
   */
   readonly enforced: boolean | cdktf.IResolvable;
 }
@@ -125,13 +125,13 @@ export interface GoogleFolderOrganizationPolicyListPolicyAllow {
   /**
   * The policy allows or denies all values.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#all GoogleFolderOrganizationPolicy#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#all GoogleFolderOrganizationPolicy#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
   * The policy can define specific values that are allowed or denied.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#values GoogleFolderOrganizationPolicy#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#values GoogleFolderOrganizationPolicy#values}
   */
   readonly values?: string[];
 }
@@ -221,13 +221,13 @@ export interface GoogleFolderOrganizationPolicyListPolicyDeny {
   /**
   * The policy allows or denies all values.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#all GoogleFolderOrganizationPolicy#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#all GoogleFolderOrganizationPolicy#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
   * The policy can define specific values that are allowed or denied.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#values GoogleFolderOrganizationPolicy#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#values GoogleFolderOrganizationPolicy#values}
   */
   readonly values?: string[];
 }
@@ -317,25 +317,25 @@ export interface GoogleFolderOrganizationPolicyListPolicy {
   /**
   * If set to true, the values from the effective Policy of the parent resource are inherited, meaning the values set in this Policy are added to the values inherited up the hierarchy.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#inherit_from_parent GoogleFolderOrganizationPolicy#inherit_from_parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#inherit_from_parent GoogleFolderOrganizationPolicy#inherit_from_parent}
   */
   readonly inheritFromParent?: boolean | cdktf.IResolvable;
   /**
   * The Google Cloud Console will try to default to a configuration that matches the value specified in this field.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#suggested_value GoogleFolderOrganizationPolicy#suggested_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#suggested_value GoogleFolderOrganizationPolicy#suggested_value}
   */
   readonly suggestedValue?: string;
   /**
   * allow block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#allow GoogleFolderOrganizationPolicy#allow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#allow GoogleFolderOrganizationPolicy#allow}
   */
   readonly allow?: GoogleFolderOrganizationPolicyListPolicyAllow;
   /**
   * deny block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#deny GoogleFolderOrganizationPolicy#deny}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#deny GoogleFolderOrganizationPolicy#deny}
   */
   readonly deny?: GoogleFolderOrganizationPolicyListPolicyDeny;
 }
@@ -471,7 +471,7 @@ export interface GoogleFolderOrganizationPolicyRestorePolicy {
   /**
   * May only be set to true. If set, then the default Policy is restored.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#default GoogleFolderOrganizationPolicy#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#default GoogleFolderOrganizationPolicy#default}
   */
   readonly default: boolean | cdktf.IResolvable;
 }
@@ -533,19 +533,19 @@ export class GoogleFolderOrganizationPolicyRestorePolicyOutputReference extends 
 }
 export interface GoogleFolderOrganizationPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#create GoogleFolderOrganizationPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#create GoogleFolderOrganizationPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#delete GoogleFolderOrganizationPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#delete GoogleFolderOrganizationPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#read GoogleFolderOrganizationPolicy#read}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#read GoogleFolderOrganizationPolicy#read}
   */
   readonly read?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy#update GoogleFolderOrganizationPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy#update GoogleFolderOrganizationPolicy#update}
   */
   readonly update?: string;
 }
@@ -689,7 +689,7 @@ export class GoogleFolderOrganizationPolicyTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy google_folder_organization_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy google_folder_organization_policy}
 */
 export class GoogleFolderOrganizationPolicy extends cdktf.TerraformResource {
 
@@ -703,7 +703,7 @@ export class GoogleFolderOrganizationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.65.2/docs/resources/google_folder_organization_policy google_folder_organization_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_folder_organization_policy google_folder_organization_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -714,7 +714,7 @@ export class GoogleFolderOrganizationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_folder_organization_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.65.2',
+        providerVersion: '4.66.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
