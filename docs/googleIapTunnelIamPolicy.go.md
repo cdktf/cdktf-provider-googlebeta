@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunneliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliampolicy"
 
 googleiaptunneliampolicy.NewGoogleIapTunnelIamPolicy(scope Construct, id *string, config GoogleIapTunnelIamPolicyConfig) GoogleIapTunnelIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunneliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliampolicy"
 
 googleiaptunneliampolicy.GoogleIapTunnelIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunneliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliampolicy"
 
 googleiaptunneliampolicy.GoogleIapTunnelIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ googleiaptunneliampolicy.GoogleIapTunnelIamPolicy_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunneliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliampolicy"
 
 googleiaptunneliampolicy.GoogleIapTunnelIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleIapTunnelIamPolicy.GoogleIapTunnelIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunneliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleiaptunneliampolicy"
 
 &googleiaptunneliampolicy.GoogleIapTunnelIamPolicyConfig {
 	Connection: interface{},
