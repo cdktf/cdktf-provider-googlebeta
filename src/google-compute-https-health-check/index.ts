@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -11,21 +11,21 @@ export interface GoogleComputeHttpsHealthCheckConfig extends cdktf.TerraformMeta
   * How often (in seconds) to send a health check. The default value is 5
 seconds.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#check_interval_sec GoogleComputeHttpsHealthCheck#check_interval_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#check_interval_sec GoogleComputeHttpsHealthCheck#check_interval_sec}
   */
   readonly checkIntervalSec?: number;
   /**
   * An optional description of this resource. Provide this property when
 you create the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#description GoogleComputeHttpsHealthCheck#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#description GoogleComputeHttpsHealthCheck#description}
   */
   readonly description?: string;
   /**
   * A so-far unhealthy instance will be marked healthy after this many
 consecutive successes. The default value is 2.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#healthy_threshold GoogleComputeHttpsHealthCheck#healthy_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#healthy_threshold GoogleComputeHttpsHealthCheck#healthy_threshold}
   */
   readonly healthyThreshold?: number;
   /**
@@ -33,11 +33,11 @@ consecutive successes. The default value is 2.
 left empty (default value), the public IP on behalf of which this
 health check is performed will be used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#host GoogleComputeHttpsHealthCheck#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#host GoogleComputeHttpsHealthCheck#host}
   */
   readonly host?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#id GoogleComputeHttpsHealthCheck#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#id GoogleComputeHttpsHealthCheck#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,25 +52,25 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#name GoogleComputeHttpsHealthCheck#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#name GoogleComputeHttpsHealthCheck#name}
   */
   readonly name: string;
   /**
   * The TCP port number for the HTTPS health check request.
 The default value is 443.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#port GoogleComputeHttpsHealthCheck#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#port GoogleComputeHttpsHealthCheck#port}
   */
   readonly port?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#project GoogleComputeHttpsHealthCheck#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#project GoogleComputeHttpsHealthCheck#project}
   */
   readonly project?: string;
   /**
   * The request path of the HTTPS health check request.
 The default value is /.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#request_path GoogleComputeHttpsHealthCheck#request_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#request_path GoogleComputeHttpsHealthCheck#request_path}
   */
   readonly requestPath?: string;
   /**
@@ -78,34 +78,34 @@ The default value is /.
 The default value is 5 seconds.  It is invalid for timeoutSec to have
 greater value than checkIntervalSec.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#timeout_sec GoogleComputeHttpsHealthCheck#timeout_sec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#timeout_sec GoogleComputeHttpsHealthCheck#timeout_sec}
   */
   readonly timeoutSec?: number;
   /**
   * A so-far healthy instance will be marked unhealthy after this many
 consecutive failures. The default value is 2.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#unhealthy_threshold GoogleComputeHttpsHealthCheck#unhealthy_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#unhealthy_threshold GoogleComputeHttpsHealthCheck#unhealthy_threshold}
   */
   readonly unhealthyThreshold?: number;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#timeouts GoogleComputeHttpsHealthCheck#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#timeouts GoogleComputeHttpsHealthCheck#timeouts}
   */
   readonly timeouts?: GoogleComputeHttpsHealthCheckTimeouts;
 }
 export interface GoogleComputeHttpsHealthCheckTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#create GoogleComputeHttpsHealthCheck#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#create GoogleComputeHttpsHealthCheck#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#delete GoogleComputeHttpsHealthCheck#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#delete GoogleComputeHttpsHealthCheck#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check#update GoogleComputeHttpsHealthCheck#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check#update GoogleComputeHttpsHealthCheck#update}
   */
   readonly update?: string;
 }
@@ -226,7 +226,7 @@ export class GoogleComputeHttpsHealthCheckTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check google_compute_https_health_check}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check google_compute_https_health_check}
 */
 export class GoogleComputeHttpsHealthCheck extends cdktf.TerraformResource {
 
@@ -240,7 +240,7 @@ export class GoogleComputeHttpsHealthCheck extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_https_health_check google_compute_https_health_check} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_https_health_check google_compute_https_health_check} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -251,7 +251,7 @@ export class GoogleComputeHttpsHealthCheck extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_https_health_check',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.66.0',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

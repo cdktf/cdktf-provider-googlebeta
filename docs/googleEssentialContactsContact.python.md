@@ -1,6 +1,6 @@
 # `google_essential_contacts_contact`
 
-Refer to the Terraform Registory for docs: [`google_essential_contacts_contact`](https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact).
+Refer to the Terraform Registory for docs: [`google_essential_contacts_contact`](https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact).
 
 # `googleEssentialContactsContact` Submodule <a name="`googleEssentialContactsContact` Submodule" id="@cdktf/provider-google-beta.googleEssentialContactsContact"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_essential_contacts_contact`]
 
 ### GoogleEssentialContactsContact <a name="GoogleEssentialContactsContact" id="@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.Initializer"></a>
 
@@ -49,7 +49,7 @@ googleEssentialContactsContact.GoogleEssentialContactsContact(
 | <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.Initializer.parameter.languageTag">language_tag</a></code> | <code>str</code> | The preferred language for notifications, as a ISO 639-1 language code. |
 | <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.Initializer.parameter.notificationCategorySubscriptions">notification_category_subscriptions</a></code> | <code>typing.List[str]</code> | The categories of notifications that the contact will receive communications for. |
 | <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.Initializer.parameter.parent">parent</a></code> | <code>str</code> | The resource to save this contact for. Format: organizations/{organization_id}, folders/{folder_id} or projects/{project_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#id GoogleEssentialContactsContact#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#id GoogleEssentialContactsContact#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContact.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts">GoogleEssentialContactsContactTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The email address to send notifications to. This does not need to be a Google account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#email GoogleEssentialContactsContact#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#email GoogleEssentialContactsContact#email}
 
 ---
 
@@ -132,7 +132,7 @@ The preferred language for notifications, as a ISO 639-1 language code.
 
 See Supported languages for a list of supported languages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#language_tag GoogleEssentialContactsContact#language_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#language_tag GoogleEssentialContactsContact#language_tag}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The categories of notifications that the contact will receive communications for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#notification_category_subscriptions GoogleEssentialContactsContact#notification_category_subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#notification_category_subscriptions GoogleEssentialContactsContact#notification_category_subscriptions}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The resource to save this contact for. Format: organizations/{organization_id}, folders/{folder_id} or projects/{project_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#parent GoogleEssentialContactsContact#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#parent GoogleEssentialContactsContact#parent}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#id GoogleEssentialContactsContact#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#id GoogleEssentialContactsContact#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#timeouts GoogleEssentialContactsContact#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#timeouts GoogleEssentialContactsContact#timeouts}
 
 ---
 
@@ -426,7 +426,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#create GoogleEssentialContactsContact#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#create GoogleEssentialContactsContact#create}.
 
 ---
 
@@ -434,7 +434,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#delete GoogleEssentialContactsContact#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#delete GoogleEssentialContactsContact#delete}.
 
 ---
 
@@ -442,7 +442,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#update GoogleEssentialContactsContact#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#update GoogleEssentialContactsContact#update}.
 
 ---
 
@@ -899,7 +899,7 @@ googleEssentialContactsContact.GoogleEssentialContactsContactConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactConfig.property.languageTag">language_tag</a></code> | <code>str</code> | The preferred language for notifications, as a ISO 639-1 language code. |
 | <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactConfig.property.notificationCategorySubscriptions">notification_category_subscriptions</a></code> | <code>typing.List[str]</code> | The categories of notifications that the contact will receive communications for. |
 | <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactConfig.property.parent">parent</a></code> | <code>str</code> | The resource to save this contact for. Format: organizations/{organization_id}, folders/{folder_id} or projects/{project_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#id GoogleEssentialContactsContact#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#id GoogleEssentialContactsContact#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts">GoogleEssentialContactsContactTimeouts</a></code> | timeouts block. |
 
 ---
@@ -984,7 +984,7 @@ email: str
 
 The email address to send notifications to. This does not need to be a Google account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#email GoogleEssentialContactsContact#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#email GoogleEssentialContactsContact#email}
 
 ---
 
@@ -1000,7 +1000,7 @@ The preferred language for notifications, as a ISO 639-1 language code.
 
 See Supported languages for a list of supported languages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#language_tag GoogleEssentialContactsContact#language_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#language_tag GoogleEssentialContactsContact#language_tag}
 
 ---
 
@@ -1014,7 +1014,7 @@ notification_category_subscriptions: typing.List[str]
 
 The categories of notifications that the contact will receive communications for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#notification_category_subscriptions GoogleEssentialContactsContact#notification_category_subscriptions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#notification_category_subscriptions GoogleEssentialContactsContact#notification_category_subscriptions}
 
 ---
 
@@ -1028,7 +1028,7 @@ parent: str
 
 The resource to save this contact for. Format: organizations/{organization_id}, folders/{folder_id} or projects/{project_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#parent GoogleEssentialContactsContact#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#parent GoogleEssentialContactsContact#parent}
 
 ---
 
@@ -1040,7 +1040,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#id GoogleEssentialContactsContact#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#id GoogleEssentialContactsContact#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1057,7 +1057,7 @@ timeouts: GoogleEssentialContactsContactTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#timeouts GoogleEssentialContactsContact#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#timeouts GoogleEssentialContactsContact#timeouts}
 
 ---
 
@@ -1079,9 +1079,9 @@ googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#create GoogleEssentialContactsContact#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#delete GoogleEssentialContactsContact#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#update GoogleEssentialContactsContact#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#create GoogleEssentialContactsContact#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#delete GoogleEssentialContactsContact#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEssentialContactsContact.GoogleEssentialContactsContactTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#update GoogleEssentialContactsContact#update}. |
 
 ---
 
@@ -1093,7 +1093,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#create GoogleEssentialContactsContact#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#create GoogleEssentialContactsContact#create}.
 
 ---
 
@@ -1105,7 +1105,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#delete GoogleEssentialContactsContact#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#delete GoogleEssentialContactsContact#delete}.
 
 ---
 
@@ -1117,7 +1117,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_essential_contacts_contact#update GoogleEssentialContactsContact#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_essential_contacts_contact#update GoogleEssentialContactsContact#update}.
 
 ---
 
