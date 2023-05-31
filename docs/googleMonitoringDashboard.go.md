@@ -1,6 +1,6 @@
 # `google_monitoring_dashboard`
 
-Refer to the Terraform Registory for docs: [`google_monitoring_dashboard`](https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard).
+Refer to the Terraform Registory for docs: [`google_monitoring_dashboard`](https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard).
 
 # `googleMonitoringDashboard` Submodule <a name="`googleMonitoringDashboard` Submodule" id="@cdktf/provider-google-beta.googleMonitoringDashboard"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_monitoring_dashboard`](https
 
 ### GoogleMonitoringDashboard <a name="GoogleMonitoringDashboard" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard google_monitoring_dashboard}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard google_monitoring_dashboard}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringdashboard"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringdashboard"
 
 googlemonitoringdashboard.NewGoogleMonitoringDashboard(scope Construct, id *string, config GoogleMonitoringDashboardConfig) GoogleMonitoringDashboard
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringdashboard"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringdashboard"
 
 googlemonitoringdashboard.GoogleMonitoringDashboard_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringdashboard"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringdashboard"
 
 googlemonitoringdashboard.GoogleMonitoringDashboard_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ googlemonitoringdashboard.GoogleMonitoringDashboard_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringdashboard"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringdashboard"
 
 googlemonitoringdashboard.GoogleMonitoringDashboard_IsTerraformResource(x interface{}) *bool
 ```
@@ -637,7 +637,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringdashboard"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringdashboard"
 
 &googlemonitoringdashboard.GoogleMonitoringDashboardConfig {
 	Connection: interface{},
@@ -650,7 +650,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonito
 	DashboardJson: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts,
 }
 ```
 
@@ -666,7 +666,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonito
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.dashboardJson">DashboardJson</a></code> | <code>*string</code> | The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#id GoogleMonitoringDashboard#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#id GoogleMonitoringDashboard#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts">GoogleMonitoringDashboardTimeouts</a></code> | timeouts block. |
 
@@ -752,7 +752,7 @@ DashboardJson *string
 
 The JSON representation of a dashboard, following the format at https://cloud.google.com/monitoring/api/ref_v3/rest/v1/projects.dashboards.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#dashboard_json GoogleMonitoringDashboard#dashboard_json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#dashboard_json GoogleMonitoringDashboard#dashboard_json}
 
 ---
 
@@ -764,7 +764,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#id GoogleMonitoringDashboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#id GoogleMonitoringDashboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -783,7 +783,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#project GoogleMonitoringDashboard#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#project GoogleMonitoringDashboard#project}
 
 ---
 
@@ -797,7 +797,7 @@ Timeouts GoogleMonitoringDashboardTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#timeouts GoogleMonitoringDashboard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#timeouts GoogleMonitoringDashboard#timeouts}
 
 ---
 
@@ -806,7 +806,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringdashboard"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringdashboard"
 
 &googlemonitoringdashboard.GoogleMonitoringDashboardTimeouts {
 	Create: *string,
@@ -819,9 +819,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonito
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#create GoogleMonitoringDashboard#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#delete GoogleMonitoringDashboard#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#update GoogleMonitoringDashboard#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#create GoogleMonitoringDashboard#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#delete GoogleMonitoringDashboard#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#update GoogleMonitoringDashboard#update}. |
 
 ---
 
@@ -833,7 +833,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#create GoogleMonitoringDashboard#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#create GoogleMonitoringDashboard#create}.
 
 ---
 
@@ -845,7 +845,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#delete GoogleMonitoringDashboard#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#delete GoogleMonitoringDashboard#delete}.
 
 ---
 
@@ -857,7 +857,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_monitoring_dashboard#update GoogleMonitoringDashboard#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_dashboard#update GoogleMonitoringDashboard#update}.
 
 ---
 
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringDashboard.GoogleMonitoringDashboardTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringdashboard"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringdashboard"
 
 googlemonitoringdashboard.NewGoogleMonitoringDashboardTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringDashboardTimeoutsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `google_billing_budget`
 
-Refer to the Terraform Registory for docs: [`google_billing_budget`](https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget).
+Refer to the Terraform Registory for docs: [`google_billing_budget`](https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget).
 
 # `googleBillingBudget` Submodule <a name="`googleBillingBudget` Submodule" id="@cdktf/provider-google-beta.googleBillingBudget"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_billing_budget`](https://reg
 
 ### GoogleBillingBudget <a name="GoogleBillingBudget" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget google_billing_budget}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget google_billing_budget}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudget(scope Construct, id *string, config GoogleBillingBudgetConfig) GoogleBillingBudget
 ```
@@ -377,7 +377,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.GoogleBillingBudget_IsConstruct(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.GoogleBillingBudget_IsTerraformElement(x interface{}) *bool
 ```
@@ -423,7 +423,7 @@ googlebillingbudget.GoogleBillingBudget_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.GoogleBillingBudget_IsTerraformResource(x interface{}) *bool
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetAllUpdatesRule {
 	DisableDefaultIamRecipients: interface{},
@@ -845,7 +845,7 @@ when a threshold is exceeded. Default recipients are
 those with Billing Account Administrators and Billing
 Account Users IAM roles for the target account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#disable_default_iam_recipients GoogleBillingBudget#disable_default_iam_recipients}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#disable_default_iam_recipients GoogleBillingBudget#disable_default_iam_recipients}
 
 ---
 
@@ -859,7 +859,7 @@ MonitoringNotificationChannels *[]*string
 
 The full resource name of a monitoring notification channel in the form projects/{project_id}/notificationChannels/{channel_id}. A maximum of 5 channels are allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#monitoring_notification_channels GoogleBillingBudget#monitoring_notification_channels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#monitoring_notification_channels GoogleBillingBudget#monitoring_notification_channels}
 
 ---
 
@@ -876,7 +876,7 @@ The name of the Cloud Pub/Sub topic where budget related messages will be publis
 Updates are sent
 at regular intervals to the topic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#pubsub_topic GoogleBillingBudget#pubsub_topic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#pubsub_topic GoogleBillingBudget#pubsub_topic}
 
 ---
 
@@ -890,7 +890,7 @@ SchemaVersion *string
 
 The schema version of the notification. Only "1.0" is accepted. It represents the JSON schema as defined in https://cloud.google.com/billing/docs/how-to/budgets#notification_format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#schema_version GoogleBillingBudget#schema_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#schema_version GoogleBillingBudget#schema_version}
 
 ---
 
@@ -899,11 +899,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAmount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetAmount {
 	LastPeriodAmount: interface{},
-	SpecifiedAmount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleBillingBudget.GoogleBillingBudgetAmountSpecifiedAmount,
+	SpecifiedAmount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetAmountSpecifiedAmount,
 }
 ```
 
@@ -929,7 +929,7 @@ Configures a budget amount that is automatically set to 100% of last period's sp
 Boolean. Set value to true to use. Do not set to false, instead
 use the 'specified_amount' block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#last_period_amount GoogleBillingBudget#last_period_amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#last_period_amount GoogleBillingBudget#last_period_amount}
 
 ---
 
@@ -943,7 +943,7 @@ SpecifiedAmount GoogleBillingBudgetAmountSpecifiedAmount
 
 specified_amount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#specified_amount GoogleBillingBudget#specified_amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#specified_amount GoogleBillingBudget#specified_amount}
 
 ---
 
@@ -952,7 +952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAmountSpecifiedAmount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetAmountSpecifiedAmount {
 	CurrencyCode: *string,
@@ -981,7 +981,7 @@ CurrencyCode *string
 
 The 3-letter currency code defined in ISO 4217.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#currency_code GoogleBillingBudget#currency_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#currency_code GoogleBillingBudget#currency_code}
 
 ---
 
@@ -1002,7 +1002,7 @@ negative. If units is negative, nanos must be negative or
 zero. For example $-1.75 is represented as units=-1 and
 nanos=-750,000,000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#nanos GoogleBillingBudget#nanos}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#nanos GoogleBillingBudget#nanos}
 
 ---
 
@@ -1016,7 +1016,7 @@ Units *string
 
 The whole units of the amount. For example if currencyCode is "USD", then 1 unit is one US dollar.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#units GoogleBillingBudget#units}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#units GoogleBillingBudget#units}
 
 ---
 
@@ -1025,13 +1025,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetBudgetFilter {
 	CalendarPeriod: *string,
 	CreditTypes: *[]*string,
 	CreditTypesTreatment: *string,
-	CustomPeriod: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriod,
+	CustomPeriod: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriod,
 	Labels: *map[string]*string,
 	Projects: *[]*string,
 	Services: *[]*string,
@@ -1069,7 +1069,7 @@ All calendar times begin at 12 AM US and Canadian Pacific Time (UTC-8).
 
 Exactly one of 'calendar_period', 'custom_period' must be provided. Possible values: ["MONTH", "QUARTER", "YEAR", "CALENDAR_PERIOD_UNSPECIFIED"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#calendar_period GoogleBillingBudget#calendar_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#calendar_period GoogleBillingBudget#calendar_period}
 
 ---
 
@@ -1089,7 +1089,7 @@ If creditTypesTreatment is not INCLUDE_SPECIFIED_CREDITS, this field must be emp
 
 *Note:** If the field has a value in the config and needs to be removed, the field has to be an emtpy array in the config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#credit_types GoogleBillingBudget#credit_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#credit_types GoogleBillingBudget#credit_types}
 
 ---
 
@@ -1103,7 +1103,7 @@ CreditTypesTreatment *string
 
 Specifies how credits should be treated when determining spend for threshold calculations. Default value: "INCLUDE_ALL_CREDITS" Possible values: ["INCLUDE_ALL_CREDITS", "EXCLUDE_ALL_CREDITS", "INCLUDE_SPECIFIED_CREDITS"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#credit_types_treatment GoogleBillingBudget#credit_types_treatment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#credit_types_treatment GoogleBillingBudget#credit_types_treatment}
 
 ---
 
@@ -1117,7 +1117,7 @@ CustomPeriod GoogleBillingBudgetBudgetFilterCustomPeriod
 
 custom_period block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#custom_period GoogleBillingBudget#custom_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#custom_period GoogleBillingBudget#custom_period}
 
 ---
 
@@ -1131,7 +1131,7 @@ Labels *map[string]*string
 
 A single label and value pair specifying that usage from only this set of labeled resources should be included in the budget.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#labels GoogleBillingBudget#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#labels GoogleBillingBudget#labels}
 
 ---
 
@@ -1149,7 +1149,7 @@ If omitted, the report will include
 all usage for the billing account, regardless of which project
 the usage occurred on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#projects GoogleBillingBudget#projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#projects GoogleBillingBudget#projects}
 
 ---
 
@@ -1168,7 +1168,7 @@ usage for all the services. The service names are available
 through the Catalog API:
 https://cloud.google.com/billing/v1/how-tos/catalog-api.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#services GoogleBillingBudget#services}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#services GoogleBillingBudget#services}
 
 ---
 
@@ -1189,7 +1189,7 @@ account and all subaccounts, if they exist.
 
 *Note:** If the field has a value in the config and needs to be removed, the field has to be an emtpy array in the config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#subaccounts GoogleBillingBudget#subaccounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#subaccounts GoogleBillingBudget#subaccounts}
 
 ---
 
@@ -1198,11 +1198,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriod.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetBudgetFilterCustomPeriod {
-	StartDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodStartDate,
-	EndDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodEndDate,
+	StartDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodStartDate,
+	EndDate: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodEndDate,
 }
 ```
 
@@ -1225,7 +1225,7 @@ StartDate GoogleBillingBudgetBudgetFilterCustomPeriodStartDate
 
 start_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#start_date GoogleBillingBudget#start_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#start_date GoogleBillingBudget#start_date}
 
 ---
 
@@ -1239,7 +1239,7 @@ EndDate GoogleBillingBudgetBudgetFilterCustomPeriodEndDate
 
 end_date block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#end_date GoogleBillingBudget#end_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#end_date GoogleBillingBudget#end_date}
 
 ---
 
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodEndDate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetBudgetFilterCustomPeriodEndDate {
 	Day: *f64,
@@ -1277,7 +1277,7 @@ Day *f64
 
 Day of a month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#day GoogleBillingBudget#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#day GoogleBillingBudget#day}
 
 ---
 
@@ -1291,7 +1291,7 @@ Month *f64
 
 Month of a year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#month GoogleBillingBudget#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#month GoogleBillingBudget#month}
 
 ---
 
@@ -1305,7 +1305,7 @@ Year *f64
 
 Year of the date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#year GoogleBillingBudget#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#year GoogleBillingBudget#year}
 
 ---
 
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodStartDate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetBudgetFilterCustomPeriodStartDate {
 	Day: *f64,
@@ -1343,7 +1343,7 @@ Day *f64
 
 Day of a month. Must be from 1 to 31 and valid for the year and month.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#day GoogleBillingBudget#day}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#day GoogleBillingBudget#day}
 
 ---
 
@@ -1357,7 +1357,7 @@ Month *f64
 
 Month of a year. Must be from 1 to 12.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#month GoogleBillingBudget#month}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#month GoogleBillingBudget#month}
 
 ---
 
@@ -1371,7 +1371,7 @@ Year *f64
 
 Year of the date. Must be from 1 to 9999.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#year GoogleBillingBudget#year}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#year GoogleBillingBudget#year}
 
 ---
 
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetConfig {
 	Connection: interface{},
@@ -1390,14 +1390,14 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillin
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Amount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleBillingBudget.GoogleBillingBudgetAmount,
+	Amount: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetAmount,
 	BillingAccount: *string,
-	AllUpdatesRule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleBillingBudget.GoogleBillingBudgetAllUpdatesRule,
-	BudgetFilter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleBillingBudget.GoogleBillingBudgetBudgetFilter,
+	AllUpdatesRule: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRule,
+	BudgetFilter: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetBudgetFilter,
 	DisplayName: *string,
 	Id: *string,
 	ThresholdRules: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleBillingBudget.GoogleBillingBudgetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBillingBudget.GoogleBillingBudgetTimeouts,
 }
 ```
 
@@ -1417,7 +1417,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillin
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.allUpdatesRule">AllUpdatesRule</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRule">GoogleBillingBudgetAllUpdatesRule</a></code> | all_updates_rule block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.budgetFilter">BudgetFilter</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilter">GoogleBillingBudgetBudgetFilter</a></code> | budget_filter block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | User data for display name in UI. Must be <= 60 chars. |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.thresholdRules">ThresholdRules</a></code> | <code>interface{}</code> | threshold_rules block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts">GoogleBillingBudgetTimeouts</a></code> | timeouts block. |
 
@@ -1503,7 +1503,7 @@ Amount GoogleBillingBudgetAmount
 
 amount block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#amount GoogleBillingBudget#amount}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#amount GoogleBillingBudget#amount}
 
 ---
 
@@ -1517,7 +1517,7 @@ BillingAccount *string
 
 ID of the billing account to set a budget on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#billing_account GoogleBillingBudget#billing_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#billing_account GoogleBillingBudget#billing_account}
 
 ---
 
@@ -1531,7 +1531,7 @@ AllUpdatesRule GoogleBillingBudgetAllUpdatesRule
 
 all_updates_rule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#all_updates_rule GoogleBillingBudget#all_updates_rule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#all_updates_rule GoogleBillingBudget#all_updates_rule}
 
 ---
 
@@ -1545,7 +1545,7 @@ BudgetFilter GoogleBillingBudgetBudgetFilter
 
 budget_filter block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#budget_filter GoogleBillingBudget#budget_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#budget_filter GoogleBillingBudget#budget_filter}
 
 ---
 
@@ -1559,7 +1559,7 @@ DisplayName *string
 
 User data for display name in UI. Must be <= 60 chars.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#display_name GoogleBillingBudget#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#display_name GoogleBillingBudget#display_name}
 
 ---
 
@@ -1571,7 +1571,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#id GoogleBillingBudget#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1588,7 +1588,7 @@ ThresholdRules interface{}
 
 threshold_rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#threshold_rules GoogleBillingBudget#threshold_rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#threshold_rules GoogleBillingBudget#threshold_rules}
 
 ---
 
@@ -1602,7 +1602,7 @@ Timeouts GoogleBillingBudgetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#timeouts GoogleBillingBudget#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#timeouts GoogleBillingBudget#timeouts}
 
 ---
 
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetThresholdRules {
 	ThresholdPercent: *f64,
@@ -1641,7 +1641,7 @@ Send an alert when this threshold is exceeded.
 This is a
 1.0-based percentage, so 0.5 = 50%. Must be >= 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#threshold_percent GoogleBillingBudget#threshold_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#threshold_percent GoogleBillingBudget#threshold_percent}
 
 ---
 
@@ -1655,7 +1655,7 @@ SpendBasis *string
 
 The type of basis used to determine if spend has passed the threshold. Default value: "CURRENT_SPEND" Possible values: ["CURRENT_SPEND", "FORECASTED_SPEND"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#spend_basis GoogleBillingBudget#spend_basis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#spend_basis GoogleBillingBudget#spend_basis}
 
 ---
 
@@ -1664,7 +1664,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 &googlebillingbudget.GoogleBillingBudgetTimeouts {
 	Create: *string,
@@ -1677,9 +1677,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#create GoogleBillingBudget#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#delete GoogleBillingBudget#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#update GoogleBillingBudget#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#create GoogleBillingBudget#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#delete GoogleBillingBudget#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#update GoogleBillingBudget#update}. |
 
 ---
 
@@ -1691,7 +1691,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#create GoogleBillingBudget#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#create GoogleBillingBudget#create}.
 
 ---
 
@@ -1703,7 +1703,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#delete GoogleBillingBudget#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#delete GoogleBillingBudget#delete}.
 
 ---
 
@@ -1715,7 +1715,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_billing_budget#update GoogleBillingBudget#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_billing_budget#update GoogleBillingBudget#update}.
 
 ---
 
@@ -1726,7 +1726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAllUpdatesRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetAllUpdatesRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetAllUpdatesRuleOutputReference
 ```
@@ -2091,7 +2091,7 @@ func InternalValue() GoogleBillingBudgetAllUpdatesRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAmountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetAmountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetAmountOutputReference
 ```
@@ -2411,7 +2411,7 @@ func InternalValue() GoogleBillingBudgetAmount
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetAmountSpecifiedAmountOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetAmountSpecifiedAmountOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetAmountSpecifiedAmountOutputReference
 ```
@@ -2747,7 +2747,7 @@ func InternalValue() GoogleBillingBudgetAmountSpecifiedAmount
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference
 ```
@@ -3062,7 +3062,7 @@ func InternalValue() GoogleBillingBudgetBudgetFilterCustomPeriodEndDate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetBudgetFilterCustomPeriodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetBudgetFilterCustomPeriodOutputReference
 ```
@@ -3388,7 +3388,7 @@ func InternalValue() GoogleBillingBudgetBudgetFilterCustomPeriod
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterCustomPeriodStartDateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetBudgetFilterCustomPeriodStartDateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetBudgetFilterCustomPeriodStartDateOutputReference
 ```
@@ -3703,7 +3703,7 @@ func InternalValue() GoogleBillingBudgetBudgetFilterCustomPeriodStartDate
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetBudgetFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetBudgetFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetBudgetFilterOutputReference
 ```
@@ -4197,7 +4197,7 @@ func InternalValue() GoogleBillingBudgetBudgetFilter
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetThresholdRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleBillingBudgetThresholdRulesList
 ```
@@ -4340,7 +4340,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetThresholdRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetThresholdRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleBillingBudgetThresholdRulesOutputReference
 ```
@@ -4658,7 +4658,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBillingBudget.GoogleBillingBudgetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebillingbudget"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebillingbudget"
 
 googlebillingbudget.NewGoogleBillingBudgetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBillingBudgetTimeoutsOutputReference
 ```

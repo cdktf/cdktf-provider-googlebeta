@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_cloud_run_service
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/data-sources/google_cloud_run_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleCloudRunServiceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_cloud_run_service#id DataGoogleCloudRunService#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/data-sources/google_cloud_run_service#id DataGoogleCloudRunService#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,7 +17,7 @@ export interface DataGoogleCloudRunServiceConfig extends cdktf.TerraformMetaArgu
   /**
   * The location of the cloud run instance. eg us-central1
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_cloud_run_service#location DataGoogleCloudRunService#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/data-sources/google_cloud_run_service#location DataGoogleCloudRunService#location}
   */
   readonly location: string;
   /**
@@ -26,11 +26,11 @@ Is required when creating resources. Name is primarily intended
 for creation idempotence and configuration definition. Cannot be updated.
 More info: http://kubernetes.io/docs/user-guide/identifiers#names
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_cloud_run_service#name DataGoogleCloudRunService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/data-sources/google_cloud_run_service#name DataGoogleCloudRunService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_cloud_run_service#project DataGoogleCloudRunService#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/data-sources/google_cloud_run_service#project DataGoogleCloudRunService#project}
   */
   readonly project?: string;
 }
@@ -1913,6 +1913,11 @@ export class DataGoogleCloudRunServiceTemplateSpecContainersOutputReference exte
     return this._livenessProbe;
   }
 
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
   // ports - computed: true, optional: false, required: false
   private _ports = new DataGoogleCloudRunServiceTemplateSpecContainersPortsList(this, "ports", false);
   public get ports() {
@@ -1959,6 +1964,75 @@ export class DataGoogleCloudRunServiceTemplateSpecContainersList extends cdktf.C
   */
   public get(index: number): DataGoogleCloudRunServiceTemplateSpecContainersOutputReference {
     return new DataGoogleCloudRunServiceTemplateSpecContainersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDir {
+}
+
+export function dataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirToTerraform(struct?: DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDir): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDir | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDir | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // medium - computed: true, optional: false, required: false
+  public get medium() {
+    return this.getStringAttribute('medium');
+  }
+
+  // size_limit - computed: true, optional: false, required: false
+  public get sizeLimit() {
+    return this.getStringAttribute('size_limit');
+  }
+}
+
+export class DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference {
+    return new DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 export interface DataGoogleCloudRunServiceTemplateSpecVolumesSecretItems {
@@ -2148,6 +2222,12 @@ export class DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference extends
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // empty_dir - computed: true, optional: false, required: false
+  private _emptyDir = new DataGoogleCloudRunServiceTemplateSpecVolumesEmptyDirList(this, "empty_dir", false);
+  public get emptyDir() {
+    return this._emptyDir;
   }
 
   // name - computed: true, optional: false, required: false
@@ -2428,7 +2508,7 @@ export class DataGoogleCloudRunServiceTrafficList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_cloud_run_service google_cloud_run_service}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/data-sources/google_cloud_run_service google_cloud_run_service}
 */
 export class DataGoogleCloudRunService extends cdktf.TerraformDataSource {
 
@@ -2442,7 +2522,7 @@ export class DataGoogleCloudRunService extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/data-sources/google_cloud_run_service google_cloud_run_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/data-sources/google_cloud_run_service google_cloud_run_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2453,7 +2533,7 @@ export class DataGoogleCloudRunService extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_cloud_run_service',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.66.0',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `google_compute_disk`
 
-Refer to the Terraform Registory for docs: [`google_compute_disk`](https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk).
+Refer to the Terraform Registory for docs: [`google_compute_disk`](https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk).
 
 # `googleComputeDisk` Submodule <a name="`googleComputeDisk` Submodule" id="@cdktf/provider-google-beta.googleComputeDisk"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_compute_disk`](https://regis
 
 ### GoogleComputeDisk <a name="GoogleComputeDisk" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk google_compute_disk}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk google_compute_disk}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer"></a>
 
@@ -31,10 +31,13 @@ GoogleComputeDisk.Builder.create(Construct scope, java.lang.String id)
 //  .asyncPrimaryDisk(GoogleComputeDiskAsyncPrimaryDisk)
 //  .description(java.lang.String)
 //  .diskEncryptionKey(GoogleComputeDiskDiskEncryptionKey)
+//  .guestOsFeatures(IResolvable)
+//  .guestOsFeatures(java.util.List<GoogleComputeDiskGuestOsFeatures>)
 //  .id(java.lang.String)
 //  .image(java.lang.String)
 //  .interface(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
+//  .licenses(java.util.List<java.lang.String>)
 //  .multiWriter(java.lang.Boolean)
 //  .multiWriter(IResolvable)
 //  .physicalBlockSizeBytes(java.lang.Number)
@@ -67,13 +70,15 @@ GoogleComputeDisk.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.asyncPrimaryDisk">asyncPrimaryDisk</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskAsyncPrimaryDisk">GoogleComputeDiskAsyncPrimaryDisk</a></code> | async_primary_disk block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.diskEncryptionKey">diskEncryptionKey</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskDiskEncryptionKey">GoogleComputeDiskDiskEncryptionKey</a></code> | disk_encryption_key block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#id GoogleComputeDisk#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.guestOsFeatures">guestOsFeatures</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a>></code> | guest_os_features block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#id GoogleComputeDisk#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.image">image</a></code> | <code>java.lang.String</code> | The image from which to initialize this disk. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.interface">interface</a></code> | <code>java.lang.String</code> | Specifies the disk interface to use for attaching this disk, which is either SCSI or NVME. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels to apply to this disk.  A list of key->value pairs. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.licenses">licenses</a></code> | <code>java.util.List<java.lang.String></code> | Any applicable license URI. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.multiWriter">multiWriter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether or not the disk can be read/write attached to more than one instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.physicalBlockSizeBytes">physicalBlockSizeBytes</a></code> | <code>java.lang.Number</code> | Physical block size of the persistent disk, in bytes. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#project GoogleComputeDisk#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#project GoogleComputeDisk#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.provisionedIops">provisionedIops</a></code> | <code>java.lang.Number</code> | Indicates how many IOPS must be provisioned for the disk. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.resourcePolicies">resourcePolicies</a></code> | <code>java.util.List<java.lang.String></code> | Resource policies applied to this disk for automatic snapshot creations. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.size">size</a></code> | <code>java.lang.Number</code> | Size of the persistent disk, specified in GB. |
@@ -161,7 +166,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#name GoogleComputeDisk#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#name GoogleComputeDisk#name}
 
 ---
 
@@ -171,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 async_primary_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#async_primary_disk GoogleComputeDisk#async_primary_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#async_primary_disk GoogleComputeDisk#async_primary_disk}
 
 ---
 
@@ -181,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#description GoogleComputeDisk#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#description GoogleComputeDisk#description}
 
 ---
 
@@ -191,7 +196,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#disk_encryption_key GoogleComputeDisk#disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#disk_encryption_key GoogleComputeDisk#disk_encryption_key}
+
+---
+
+##### `guestOsFeatures`<sup>Optional</sup> <a name="guestOsFeatures" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.guestOsFeatures"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a>>
+
+guest_os_features block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#guest_os_features GoogleComputeDisk#guest_os_features}
 
 ---
 
@@ -199,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#id GoogleComputeDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#id GoogleComputeDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -222,7 +237,7 @@ images names must include the family name. If they don't, use the
 For instance, the image 'centos-6-v20180104' includes its family name 'centos-6'.
 These images can be referred by family name here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#image GoogleComputeDisk#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#image GoogleComputeDisk#image}
 
 ---
 
@@ -234,7 +249,7 @@ Specifies the disk interface to use for attaching this disk, which is either SCS
 
 The default is SCSI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#interface GoogleComputeDisk#interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#interface GoogleComputeDisk#interface}
 
 ---
 
@@ -244,7 +259,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Labels to apply to this disk.  A list of key->value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#labels GoogleComputeDisk#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#labels GoogleComputeDisk#labels}
+
+---
+
+##### `licenses`<sup>Optional</sup> <a name="licenses" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.Initializer.parameter.licenses"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+Any applicable license URI.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#licenses GoogleComputeDisk#licenses}
 
 ---
 
@@ -254,7 +279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates whether or not the disk can be read/write attached to more than one instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#multi_writer GoogleComputeDisk#multi_writer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#multi_writer GoogleComputeDisk#multi_writer}
 
 ---
 
@@ -270,7 +295,7 @@ are 4096 and 16384, other sizes may be added in the future.
 If an unsupported value is requested, the error message will list
 the supported values for the caller's project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#physical_block_size_bytes GoogleComputeDisk#physical_block_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#physical_block_size_bytes GoogleComputeDisk#physical_block_size_bytes}
 
 ---
 
@@ -278,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#project GoogleComputeDisk#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#project GoogleComputeDisk#project}.
 
 ---
 
@@ -288,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Indicates how many IOPS must be provisioned for the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#provisioned_iops GoogleComputeDisk#provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#provisioned_iops GoogleComputeDisk#provisioned_iops}
 
 ---
 
@@ -304,7 +329,7 @@ one at a time. Use
 ['google_compute_disk_resource_policy_attachment'](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_disk_resource_policy_attachment)
 to allow for updating the resource policy attached to the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#resource_policies GoogleComputeDisk#resource_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#resource_policies GoogleComputeDisk#resource_policies}
 
 ---
 
@@ -328,7 +353,7 @@ if upsizing is detected but recreates the disk if downsizing is requested.
 You can add 'lifecycle.prevent_destroy' in the config to prevent destroying
 and recreating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#size GoogleComputeDisk#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#size GoogleComputeDisk#size}
 
 ---
 
@@ -348,7 +373,7 @@ following are valid values:
 'global/snapshots/snapshot'
 'snapshot'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#snapshot GoogleComputeDisk#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#snapshot GoogleComputeDisk#snapshot}
 
 ---
 
@@ -368,7 +393,7 @@ projects/{project}/regions/{region}/disks/{disk}
 zones/{zone}/disks/{disk}
 regions/{region}/disks/{disk}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#source_disk GoogleComputeDisk#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#source_disk GoogleComputeDisk#source_disk}
 
 ---
 
@@ -378,7 +403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_image_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#source_image_encryption_key GoogleComputeDisk#source_image_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#source_image_encryption_key GoogleComputeDisk#source_image_encryption_key}
 
 ---
 
@@ -388,7 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 source_snapshot_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#source_snapshot_encryption_key GoogleComputeDisk#source_snapshot_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#source_snapshot_encryption_key GoogleComputeDisk#source_snapshot_encryption_key}
 
 ---
 
@@ -398,7 +423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#timeouts GoogleComputeDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#timeouts GoogleComputeDisk#timeouts}
 
 ---
 
@@ -410,7 +435,7 @@ URL of the disk type resource describing which disk type to use to create the di
 
 Provide this when creating the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#type GoogleComputeDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#type GoogleComputeDisk#type}
 
 ---
 
@@ -420,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A reference to the zone where the disk resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#zone GoogleComputeDisk#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#zone GoogleComputeDisk#zone}
 
 ---
 
@@ -446,16 +471,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.putAsyncPrimaryDisk">putAsyncPrimaryDisk</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.putDiskEncryptionKey">putDiskEncryptionKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.putGuestOsFeatures">putGuestOsFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.putSourceImageEncryptionKey">putSourceImageEncryptionKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.putSourceSnapshotEncryptionKey">putSourceSnapshotEncryptionKey</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetAsyncPrimaryDisk">resetAsyncPrimaryDisk</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetDiskEncryptionKey">resetDiskEncryptionKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetGuestOsFeatures">resetGuestOsFeatures</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetImage">resetImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetInterface">resetInterface</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetLabels">resetLabels</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetLicenses">resetLicenses</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetMultiWriter">resetMultiWriter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetPhysicalBlockSizeBytes">resetPhysicalBlockSizeBytes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetProject">resetProject</a></code> | *No description.* |
@@ -680,6 +708,18 @@ public void putDiskEncryptionKey(GoogleComputeDiskDiskEncryptionKey value)
 
 ---
 
+##### `putGuestOsFeatures` <a name="putGuestOsFeatures" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.putGuestOsFeatures"></a>
+
+```java
+public void putGuestOsFeatures(IResolvable OR java.util.List<GoogleComputeDiskGuestOsFeatures> value)
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.putGuestOsFeatures.parameter.value"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a>>
+
+---
+
 ##### `putSourceImageEncryptionKey` <a name="putSourceImageEncryptionKey" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.putSourceImageEncryptionKey"></a>
 
 ```java
@@ -734,6 +774,12 @@ public void resetDescription()
 public void resetDiskEncryptionKey()
 ```
 
+##### `resetGuestOsFeatures` <a name="resetGuestOsFeatures" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetGuestOsFeatures"></a>
+
+```java
+public void resetGuestOsFeatures()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetId"></a>
 
 ```java
@@ -756,6 +802,12 @@ public void resetInterface()
 
 ```java
 public void resetLabels()
+```
+
+##### `resetLicenses` <a name="resetLicenses" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetLicenses"></a>
+
+```java
+public void resetLicenses()
 ```
 
 ##### `resetMultiWriter` <a name="resetMultiWriter" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.resetMultiWriter"></a>
@@ -927,6 +979,7 @@ GoogleComputeDisk.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.asyncPrimaryDisk">asyncPrimaryDisk</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskAsyncPrimaryDiskOutputReference">GoogleComputeDiskAsyncPrimaryDiskOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.creationTimestamp">creationTimestamp</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.diskEncryptionKey">diskEncryptionKey</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskDiskEncryptionKeyOutputReference">GoogleComputeDiskDiskEncryptionKeyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.guestOsFeatures">guestOsFeatures</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList">GoogleComputeDiskGuestOsFeaturesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.labelFingerprint">labelFingerprint</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.lastAttachTimestamp">lastAttachTimestamp</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.lastDetachTimestamp">lastDetachTimestamp</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -941,10 +994,12 @@ GoogleComputeDisk.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.asyncPrimaryDiskInput">asyncPrimaryDiskInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskAsyncPrimaryDisk">GoogleComputeDiskAsyncPrimaryDisk</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.diskEncryptionKeyInput">diskEncryptionKeyInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskDiskEncryptionKey">GoogleComputeDiskDiskEncryptionKey</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.guestOsFeaturesInput">guestOsFeaturesInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.imageInput">imageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.interfaceInput">interfaceInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.labelsInput">labelsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.licensesInput">licensesInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.multiWriterInput">multiWriterInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.physicalBlockSizeBytesInput">physicalBlockSizeBytesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -964,6 +1019,7 @@ GoogleComputeDisk.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.image">image</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.interface">interface</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.licenses">licenses</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.multiWriter">multiWriter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.physicalBlockSizeBytes">physicalBlockSizeBytes</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -1150,6 +1206,16 @@ public GoogleComputeDiskDiskEncryptionKeyOutputReference getDiskEncryptionKey();
 
 ---
 
+##### `guestOsFeatures`<sup>Required</sup> <a name="guestOsFeatures" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.guestOsFeatures"></a>
+
+```java
+public GoogleComputeDiskGuestOsFeaturesList getGuestOsFeatures();
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList">GoogleComputeDiskGuestOsFeaturesList</a>
+
+---
+
 ##### `labelFingerprint`<sup>Required</sup> <a name="labelFingerprint" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.labelFingerprint"></a>
 
 ```java
@@ -1290,6 +1356,16 @@ public GoogleComputeDiskDiskEncryptionKey getDiskEncryptionKeyInput();
 
 ---
 
+##### `guestOsFeaturesInput`<sup>Optional</sup> <a name="guestOsFeaturesInput" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.guestOsFeaturesInput"></a>
+
+```java
+public java.lang.Object getGuestOsFeaturesInput();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a>>
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.idInput"></a>
 
 ```java
@@ -1327,6 +1403,16 @@ public java.util.Map<java.lang.String, java.lang.String> getLabelsInput();
 ```
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
+
+---
+
+##### `licensesInput`<sup>Optional</sup> <a name="licensesInput" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.licensesInput"></a>
+
+```java
+public java.util.List<java.lang.String> getLicensesInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -1520,6 +1606,16 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 ---
 
+##### `licenses`<sup>Required</sup> <a name="licenses" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.licenses"></a>
+
+```java
+public java.util.List<java.lang.String> getLicenses();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+---
+
 ##### `multiWriter`<sup>Required</sup> <a name="multiWriter" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk.property.multiWriter"></a>
 
 ```java
@@ -1680,7 +1776,7 @@ public java.lang.String getDisk();
 
 Primary disk for asynchronous disk replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#disk GoogleComputeDisk#disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#disk GoogleComputeDisk#disk}
 
 ---
 
@@ -1707,10 +1803,13 @@ GoogleComputeDiskConfig.builder()
 //  .asyncPrimaryDisk(GoogleComputeDiskAsyncPrimaryDisk)
 //  .description(java.lang.String)
 //  .diskEncryptionKey(GoogleComputeDiskDiskEncryptionKey)
+//  .guestOsFeatures(IResolvable)
+//  .guestOsFeatures(java.util.List<GoogleComputeDiskGuestOsFeatures>)
 //  .id(java.lang.String)
 //  .image(java.lang.String)
 //  .interface(java.lang.String)
 //  .labels(java.util.Map<java.lang.String, java.lang.String>)
+//  .licenses(java.util.List<java.lang.String>)
 //  .multiWriter(java.lang.Boolean)
 //  .multiWriter(IResolvable)
 //  .physicalBlockSizeBytes(java.lang.Number)
@@ -1743,13 +1842,15 @@ GoogleComputeDiskConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.asyncPrimaryDisk">asyncPrimaryDisk</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskAsyncPrimaryDisk">GoogleComputeDiskAsyncPrimaryDisk</a></code> | async_primary_disk block. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.description">description</a></code> | <code>java.lang.String</code> | An optional description of this resource. Provide this property when you create the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.diskEncryptionKey">diskEncryptionKey</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskDiskEncryptionKey">GoogleComputeDiskDiskEncryptionKey</a></code> | disk_encryption_key block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#id GoogleComputeDisk#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.guestOsFeatures">guestOsFeatures</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a>></code> | guest_os_features block. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#id GoogleComputeDisk#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.image">image</a></code> | <code>java.lang.String</code> | The image from which to initialize this disk. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.interface">interface</a></code> | <code>java.lang.String</code> | Specifies the disk interface to use for attaching this disk, which is either SCSI or NVME. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.labels">labels</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Labels to apply to this disk.  A list of key->value pairs. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.licenses">licenses</a></code> | <code>java.util.List<java.lang.String></code> | Any applicable license URI. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.multiWriter">multiWriter</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicates whether or not the disk can be read/write attached to more than one instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.physicalBlockSizeBytes">physicalBlockSizeBytes</a></code> | <code>java.lang.Number</code> | Physical block size of the persistent disk, in bytes. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#project GoogleComputeDisk#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#project GoogleComputeDisk#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.provisionedIops">provisionedIops</a></code> | <code>java.lang.Number</code> | Indicates how many IOPS must be provisioned for the disk. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.resourcePolicies">resourcePolicies</a></code> | <code>java.util.List<java.lang.String></code> | Resource policies applied to this disk for automatic snapshot creations. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.size">size</a></code> | <code>java.lang.Number</code> | Size of the persistent disk, specified in GB. |
@@ -1851,7 +1952,7 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#name GoogleComputeDisk#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#name GoogleComputeDisk#name}
 
 ---
 
@@ -1865,7 +1966,7 @@ public GoogleComputeDiskAsyncPrimaryDisk getAsyncPrimaryDisk();
 
 async_primary_disk block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#async_primary_disk GoogleComputeDisk#async_primary_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#async_primary_disk GoogleComputeDisk#async_primary_disk}
 
 ---
 
@@ -1879,7 +1980,7 @@ public java.lang.String getDescription();
 
 An optional description of this resource. Provide this property when you create the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#description GoogleComputeDisk#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#description GoogleComputeDisk#description}
 
 ---
 
@@ -1893,7 +1994,21 @@ public GoogleComputeDiskDiskEncryptionKey getDiskEncryptionKey();
 
 disk_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#disk_encryption_key GoogleComputeDisk#disk_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#disk_encryption_key GoogleComputeDisk#disk_encryption_key}
+
+---
+
+##### `guestOsFeatures`<sup>Optional</sup> <a name="guestOsFeatures" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.guestOsFeatures"></a>
+
+```java
+public java.lang.Object getGuestOsFeatures();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a>>
+
+guest_os_features block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#guest_os_features GoogleComputeDisk#guest_os_features}
 
 ---
 
@@ -1905,7 +2020,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#id GoogleComputeDisk#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#id GoogleComputeDisk#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1932,7 +2047,7 @@ images names must include the family name. If they don't, use the
 For instance, the image 'centos-6-v20180104' includes its family name 'centos-6'.
 These images can be referred by family name here.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#image GoogleComputeDisk#image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#image GoogleComputeDisk#image}
 
 ---
 
@@ -1948,7 +2063,7 @@ Specifies the disk interface to use for attaching this disk, which is either SCS
 
 The default is SCSI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#interface GoogleComputeDisk#interface}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#interface GoogleComputeDisk#interface}
 
 ---
 
@@ -1962,7 +2077,21 @@ public java.util.Map<java.lang.String, java.lang.String> getLabels();
 
 Labels to apply to this disk.  A list of key->value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#labels GoogleComputeDisk#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#labels GoogleComputeDisk#labels}
+
+---
+
+##### `licenses`<sup>Optional</sup> <a name="licenses" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskConfig.property.licenses"></a>
+
+```java
+public java.util.List<java.lang.String> getLicenses();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+Any applicable license URI.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#licenses GoogleComputeDisk#licenses}
 
 ---
 
@@ -1976,7 +2105,7 @@ public java.lang.Object getMultiWriter();
 
 Indicates whether or not the disk can be read/write attached to more than one instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#multi_writer GoogleComputeDisk#multi_writer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#multi_writer GoogleComputeDisk#multi_writer}
 
 ---
 
@@ -1996,7 +2125,7 @@ are 4096 and 16384, other sizes may be added in the future.
 If an unsupported value is requested, the error message will list
 the supported values for the caller's project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#physical_block_size_bytes GoogleComputeDisk#physical_block_size_bytes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#physical_block_size_bytes GoogleComputeDisk#physical_block_size_bytes}
 
 ---
 
@@ -2008,7 +2137,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#project GoogleComputeDisk#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#project GoogleComputeDisk#project}.
 
 ---
 
@@ -2022,7 +2151,7 @@ public java.lang.Number getProvisionedIops();
 
 Indicates how many IOPS must be provisioned for the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#provisioned_iops GoogleComputeDisk#provisioned_iops}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#provisioned_iops GoogleComputeDisk#provisioned_iops}
 
 ---
 
@@ -2042,7 +2171,7 @@ one at a time. Use
 ['google_compute_disk_resource_policy_attachment'](https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/compute_disk_resource_policy_attachment)
 to allow for updating the resource policy attached to the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#resource_policies GoogleComputeDisk#resource_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#resource_policies GoogleComputeDisk#resource_policies}
 
 ---
 
@@ -2070,7 +2199,7 @@ if upsizing is detected but recreates the disk if downsizing is requested.
 You can add 'lifecycle.prevent_destroy' in the config to prevent destroying
 and recreating.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#size GoogleComputeDisk#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#size GoogleComputeDisk#size}
 
 ---
 
@@ -2094,7 +2223,7 @@ following are valid values:
 'global/snapshots/snapshot'
 'snapshot'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#snapshot GoogleComputeDisk#snapshot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#snapshot GoogleComputeDisk#snapshot}
 
 ---
 
@@ -2118,7 +2247,7 @@ projects/{project}/regions/{region}/disks/{disk}
 zones/{zone}/disks/{disk}
 regions/{region}/disks/{disk}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#source_disk GoogleComputeDisk#source_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#source_disk GoogleComputeDisk#source_disk}
 
 ---
 
@@ -2132,7 +2261,7 @@ public GoogleComputeDiskSourceImageEncryptionKey getSourceImageEncryptionKey();
 
 source_image_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#source_image_encryption_key GoogleComputeDisk#source_image_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#source_image_encryption_key GoogleComputeDisk#source_image_encryption_key}
 
 ---
 
@@ -2146,7 +2275,7 @@ public GoogleComputeDiskSourceSnapshotEncryptionKey getSourceSnapshotEncryptionK
 
 source_snapshot_encryption_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#source_snapshot_encryption_key GoogleComputeDisk#source_snapshot_encryption_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#source_snapshot_encryption_key GoogleComputeDisk#source_snapshot_encryption_key}
 
 ---
 
@@ -2160,7 +2289,7 @@ public GoogleComputeDiskTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#timeouts GoogleComputeDisk#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#timeouts GoogleComputeDisk#timeouts}
 
 ---
 
@@ -2176,7 +2305,7 @@ URL of the disk type resource describing which disk type to use to create the di
 
 Provide this when creating the disk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#type GoogleComputeDisk#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#type GoogleComputeDisk#type}
 
 ---
 
@@ -2190,7 +2319,7 @@ public java.lang.String getZone();
 
 A reference to the zone where the disk resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#zone GoogleComputeDisk#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#zone GoogleComputeDisk#zone}
 
 ---
 
@@ -2236,7 +2365,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
 
 ---
 
@@ -2252,7 +2381,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
 
 ---
 
@@ -2266,7 +2395,7 @@ public java.lang.String getRawKey();
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
 
 ---
 
@@ -2282,7 +2411,43 @@ Specifies an RFC 4648 base64 encoded, RSA-wrapped 2048-bit customer-supplied enc
 
 You can provide either the rawKey or the rsaEncryptedKey.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#rsa_encrypted_key GoogleComputeDisk#rsa_encrypted_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#rsa_encrypted_key GoogleComputeDisk#rsa_encrypted_key}
+
+---
+
+### GoogleComputeDiskGuestOsFeatures <a name="GoogleComputeDiskGuestOsFeatures" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.google_beta.google_compute_disk.GoogleComputeDiskGuestOsFeatures;
+
+GoogleComputeDiskGuestOsFeatures.builder()
+    .type(java.lang.String)
+    .build();
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures.property.type">type</a></code> | <code>java.lang.String</code> | The type of supported feature. |
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+The type of supported feature.
+
+Read [Enabling guest operating system features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features) to see a list of available options. Possible values: ["MULTI_IP_SUBNET", "SECURE_BOOT", "SEV_CAPABLE", "UEFI_COMPATIBLE", "VIRTIO_SCSI_MULTIQUEUE", "WINDOWS", "GVNIC", "SEV_LIVE_MIGRATABLE", "SEV_SNP_CAPABLE", "SUSPEND_RESUME_COMPATIBLE", "TDX_CAPABLE"]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#type GoogleComputeDisk#type}
 
 ---
 
@@ -2326,7 +2491,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
 
 ---
 
@@ -2342,7 +2507,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
 
 ---
 
@@ -2356,7 +2521,7 @@ public java.lang.String getRawKey();
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
 
 ---
 
@@ -2400,7 +2565,7 @@ in the cloud console. Your project's Compute Engine System service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 See https://cloud.google.com/compute/docs/disks/customer-managed-encryption#encrypt_a_new_persistent_disk_with_your_own_keys
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#kms_key_self_link GoogleComputeDisk#kms_key_self_link}
 
 ---
 
@@ -2416,7 +2581,7 @@ The service account used for the encryption request for the given KMS key.
 
 If absent, the Compute Engine Service Agent service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#kms_key_service_account GoogleComputeDisk#kms_key_service_account}
 
 ---
 
@@ -2430,7 +2595,7 @@ public java.lang.String getRawKey();
 
 Specifies a 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to either encrypt or decrypt this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#raw_key GoogleComputeDisk#raw_key}
 
 ---
 
@@ -2452,9 +2617,9 @@ GoogleComputeDiskTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#create GoogleComputeDisk#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#delete GoogleComputeDisk#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#update GoogleComputeDisk#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#create GoogleComputeDisk#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#delete GoogleComputeDisk#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#update GoogleComputeDisk#update}. |
 
 ---
 
@@ -2466,7 +2631,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#create GoogleComputeDisk#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#create GoogleComputeDisk#create}.
 
 ---
 
@@ -2478,7 +2643,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#delete GoogleComputeDisk#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#delete GoogleComputeDisk#delete}.
 
 ---
 
@@ -2490,7 +2655,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_compute_disk#update GoogleComputeDisk#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_compute_disk#update GoogleComputeDisk#update}.
 
 ---
 
@@ -3139,6 +3304,438 @@ public GoogleComputeDiskDiskEncryptionKey getInternalValue();
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskDiskEncryptionKey">GoogleComputeDiskDiskEncryptionKey</a>
+
+---
+
+
+### GoogleComputeDiskGuestOsFeaturesList <a name="GoogleComputeDiskGuestOsFeaturesList" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.google_beta.google_compute_disk.GoogleComputeDiskGuestOsFeaturesList;
+
+new GoogleComputeDiskGuestOsFeaturesList(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Boolean wrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.get"></a>
+
+```java
+public GoogleComputeDiskGuestOsFeaturesOutputReference get(java.lang.Number index)
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.get.parameter.index"></a>
+
+- *Type:* java.lang.Number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a>></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesList.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a>>
+
+---
+
+
+### GoogleComputeDiskGuestOsFeaturesOutputReference <a name="GoogleComputeDiskGuestOsFeaturesOutputReference" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.Initializer"></a>
+
+```java
+import com.hashicorp.cdktf.providers.google_beta.google_compute_disk.GoogleComputeDiskGuestOsFeaturesOutputReference;
+
+new GoogleComputeDiskGuestOsFeaturesOutputReference(IInterpolatingParent terraformResource, java.lang.String terraformAttribute, java.lang.Number complexObjectIndex, java.lang.Boolean complexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>com.hashicorp.cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>java.lang.String</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>java.lang.Number</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>java.lang.Boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* com.hashicorp.cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* java.lang.Number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* java.lang.Boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.computeFqn"></a>
+
+```java
+public java.lang.String computeFqn()
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getAnyMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Object> getAnyMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getBooleanAttribute"></a>
+
+```java
+public IResolvable getBooleanAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getBooleanMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Boolean> getBooleanMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getListAttribute"></a>
+
+```java
+public java.util.List<java.lang.String> getListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getNumberAttribute"></a>
+
+```java
+public java.lang.Number getNumberAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getNumberListAttribute"></a>
+
+```java
+public java.util.List<java.lang.Number> getNumberListAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getNumberMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.Number> getNumberMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getStringAttribute"></a>
+
+```java
+public java.lang.String getStringAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getStringMapAttribute"></a>
+
+```java
+public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(java.lang.String terraformAttribute)
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.interpolationForAttribute"></a>
+
+```java
+public IResolvable interpolationForAttribute(java.lang.String property)
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* java.lang.String
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.resolve"></a>
+
+```java
+public java.lang.Object resolve(IResolveContext _context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* com.hashicorp.cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.toString"></a>
+
+```java
+public java.lang.String toString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.property.typeInput">typeInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.property.creationStack"></a>
+
+```java
+public java.util.List<java.lang.String> getCreationStack();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.property.fqn"></a>
+
+```java
+public java.lang.String getFqn();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.property.typeInput"></a>
+
+```java
+public java.lang.String getTypeInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.property.type"></a>
+
+```java
+public java.lang.String getType();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeaturesOutputReference.property.internalValue"></a>
+
+```java
+public java.lang.Object getInternalValue();
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDiskGuestOsFeatures">GoogleComputeDiskGuestOsFeatures</a> OR com.hashicorp.cdktf.IResolvable
 
 ---
 

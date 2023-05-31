@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ newlines, carriage returns and page breaks; and be at most 2000 bytes long when
 encoded in UTF-8. If not set, defaults to an empty description.
 If not set, defaults to an empty description.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag#description GoogleDataCatalogPolicyTag#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag#description GoogleDataCatalogPolicyTag#description}
   */
   readonly description?: string;
   /**
@@ -21,11 +21,11 @@ If not set, defaults to an empty description.
 taxonomy; contain only unicode letters, numbers, underscores, dashes and spaces;
 not start or end with spaces; and be at most 200 bytes long when encoded in UTF-8.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag#display_name GoogleDataCatalogPolicyTag#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag#display_name GoogleDataCatalogPolicyTag#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag#id GoogleDataCatalogPolicyTag#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag#id GoogleDataCatalogPolicyTag#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -36,33 +36,33 @@ not start or end with spaces; and be at most 200 bytes long when encoded in UTF-
 If empty, it means this policy tag is a top level policy tag.
 If not set, defaults to an empty string.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag#parent_policy_tag GoogleDataCatalogPolicyTag#parent_policy_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag#parent_policy_tag GoogleDataCatalogPolicyTag#parent_policy_tag}
   */
   readonly parentPolicyTag?: string;
   /**
   * Taxonomy the policy tag is associated with
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag#taxonomy GoogleDataCatalogPolicyTag#taxonomy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag#taxonomy GoogleDataCatalogPolicyTag#taxonomy}
   */
   readonly taxonomy: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag#timeouts GoogleDataCatalogPolicyTag#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag#timeouts GoogleDataCatalogPolicyTag#timeouts}
   */
   readonly timeouts?: GoogleDataCatalogPolicyTagTimeouts;
 }
 export interface GoogleDataCatalogPolicyTagTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag#create GoogleDataCatalogPolicyTag#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag#create GoogleDataCatalogPolicyTag#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag#delete GoogleDataCatalogPolicyTag#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag#delete GoogleDataCatalogPolicyTag#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag#update GoogleDataCatalogPolicyTag#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag#update GoogleDataCatalogPolicyTag#update}
   */
   readonly update?: string;
 }
@@ -183,7 +183,7 @@ export class GoogleDataCatalogPolicyTagTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag google_data_catalog_policy_tag}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag google_data_catalog_policy_tag}
 */
 export class GoogleDataCatalogPolicyTag extends cdktf.TerraformResource {
 
@@ -197,7 +197,7 @@ export class GoogleDataCatalogPolicyTag extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.66.0/docs/resources/google_data_catalog_policy_tag google_data_catalog_policy_tag} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_catalog_policy_tag google_data_catalog_policy_tag} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -208,7 +208,7 @@ export class GoogleDataCatalogPolicyTag extends cdktf.TerraformResource {
       terraformResourceType: 'google_data_catalog_policy_tag',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.66.0',
+        providerVersion: '4.67.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
