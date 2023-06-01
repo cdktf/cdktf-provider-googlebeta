@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiammember"
 
 googleservicedirectorynamespaceiammember.NewGoogleServiceDirectoryNamespaceIamMember(scope Construct, id *string, config GoogleServiceDirectoryNamespaceIamMemberConfig) GoogleServiceDirectoryNamespaceIamMember
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiammember"
 
 googleservicedirectorynamespaceiammember.GoogleServiceDirectoryNamespaceIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiammember"
 
 googleservicedirectorynamespaceiammember.GoogleServiceDirectoryNamespaceIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ googleservicedirectorynamespaceiammember.GoogleServiceDirectoryNamespaceIamMembe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiammember"
 
 googleservicedirectorynamespaceiammember.GoogleServiceDirectoryNamespaceIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiammember"
 
 &googleservicedirectorynamespaceiammember.GoogleServiceDirectoryNamespaceIamMemberCondition {
 	Expression: *string,
@@ -723,7 +723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiammember"
 
 &googleservicedirectorynamespaceiammember.GoogleServiceDirectoryNamespaceIamMemberConfig {
 	Connection: interface{},
@@ -736,7 +736,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservic
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMemberCondition,
 	Id: *string,
 }
 ```
@@ -902,7 +902,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceDirectoryNamespaceIamMember.GoogleServiceDirectoryNamespaceIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleservicedirectorynamespaceiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleservicedirectorynamespaceiammember"
 
 googleservicedirectorynamespaceiammember.NewGoogleServiceDirectoryNamespaceIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleServiceDirectoryNamespaceIamMemberConditionOutputReference
 ```
