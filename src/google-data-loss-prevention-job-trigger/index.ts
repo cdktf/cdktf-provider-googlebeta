@@ -1373,7 +1373,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
     return this._path;
   }
 }
-export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList {
+export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct {
   /**
   * Words or phrases defining the dictionary. The dictionary must contain at least one
 phrase and every phrase must contain at least 2 characters that are letters or digits.
@@ -1383,7 +1383,7 @@ phrase and every phrase must contain at least 2 characters that are letters or d
   readonly words: string[];
 }
 
-export function googleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListToTerraform(struct?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListOutputReference | GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList): any {
+export function googleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructToTerraform(struct?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference | GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1393,7 +1393,7 @@ export function googleDataLossPreventionJobTriggerInspectJobInspectConfigCustomI
   }
 }
 
-export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListOutputReference extends cdktf.ComplexObject {
+export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1404,7 +1404,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList | undefined {
+  public get internalValue(): GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._words !== undefined) {
@@ -1414,7 +1414,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList | undefined) {
+  public set internalValue(value: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._words = undefined;
@@ -1450,7 +1450,7 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustom
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_loss_prevention_job_trigger#word_list GoogleDataLossPreventionJobTrigger#word_list}
   */
-  readonly wordList?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList;
+  readonly wordList?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct;
 }
 
 export function googleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryToTerraform(struct?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryOutputReference | GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionary): any {
@@ -1460,7 +1460,7 @@ export function googleDataLossPreventionJobTriggerInspectJobInspectConfigCustomI
   }
   return {
     cloud_storage_path: googleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePathToTerraform(struct!.cloudStoragePath),
-    word_list: googleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListToTerraform(struct!.wordList),
+    word_list: googleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructToTerraform(struct!.wordList),
   }
 }
 
@@ -1519,11 +1519,11 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
   }
 
   // word_list - computed: false, optional: true, required: false
-  private _wordList = new GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListOutputReference(this, "word_list");
+  private _wordList = new GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStructOutputReference(this, "word_list");
   public get wordList() {
     return this._wordList;
   }
-  public putWordList(value: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordList) {
+  public putWordList(value: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct) {
     this._wordList.internalValue = value;
   }
   public resetWordList() {
@@ -2764,7 +2764,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
     return this._path;
   }
 }
-export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList {
+export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct {
   /**
   * Words or phrases defining the dictionary. The dictionary must contain at least one
 phrase and every phrase must contain at least 2 characters that are letters or digits.
@@ -2774,7 +2774,7 @@ phrase and every phrase must contain at least 2 characters that are letters or d
   readonly words: string[];
 }
 
-export function googleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListToTerraform(struct?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListOutputReference | GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList): any {
+export function googleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructToTerraform(struct?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference | GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2784,7 +2784,7 @@ export function googleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSet
   }
 }
 
-export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListOutputReference extends cdktf.ComplexObject {
+export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2795,7 +2795,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList | undefined {
+  public get internalValue(): GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._words !== undefined) {
@@ -2805,7 +2805,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList | undefined) {
+  public set internalValue(value: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._words = undefined;
@@ -2841,7 +2841,7 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSe
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_loss_prevention_job_trigger#word_list GoogleDataLossPreventionJobTrigger#word_list}
   */
-  readonly wordList?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList;
+  readonly wordList?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct;
 }
 
 export function googleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryToTerraform(struct?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference | GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary): any {
@@ -2851,7 +2851,7 @@ export function googleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSet
   }
   return {
     cloud_storage_path: googleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePathToTerraform(struct!.cloudStoragePath),
-    word_list: googleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListToTerraform(struct!.wordList),
+    word_list: googleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructToTerraform(struct!.wordList),
   }
 }
 
@@ -2910,11 +2910,11 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
   }
 
   // word_list - computed: false, optional: true, required: false
-  private _wordList = new GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListOutputReference(this, "word_list");
+  private _wordList = new GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStructOutputReference(this, "word_list");
   public get wordList() {
     return this._wordList;
   }
-  public putWordList(value: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordList) {
+  public putWordList(value: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct) {
     this._wordList.internalValue = value;
   }
   public resetWordList() {

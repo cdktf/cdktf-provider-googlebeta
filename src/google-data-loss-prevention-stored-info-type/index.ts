@@ -131,7 +131,7 @@ export class GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOut
     return this._path;
   }
 }
-export interface GoogleDataLossPreventionStoredInfoTypeDictionaryWordList {
+export interface GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct {
   /**
   * Words or phrases defining the dictionary. The dictionary must contain at least one
 phrase and every phrase must contain at least 2 characters that are letters or digits.
@@ -141,7 +141,7 @@ phrase and every phrase must contain at least 2 characters that are letters or d
   readonly words: string[];
 }
 
-export function googleDataLossPreventionStoredInfoTypeDictionaryWordListToTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeDictionaryWordListOutputReference | GoogleDataLossPreventionStoredInfoTypeDictionaryWordList): any {
+export function googleDataLossPreventionStoredInfoTypeDictionaryWordListStructToTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference | GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -151,7 +151,7 @@ export function googleDataLossPreventionStoredInfoTypeDictionaryWordListToTerraf
   }
 }
 
-export class GoogleDataLossPreventionStoredInfoTypeDictionaryWordListOutputReference extends cdktf.ComplexObject {
+export class GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -162,7 +162,7 @@ export class GoogleDataLossPreventionStoredInfoTypeDictionaryWordListOutputRefer
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataLossPreventionStoredInfoTypeDictionaryWordList | undefined {
+  public get internalValue(): GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._words !== undefined) {
@@ -172,7 +172,7 @@ export class GoogleDataLossPreventionStoredInfoTypeDictionaryWordListOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataLossPreventionStoredInfoTypeDictionaryWordList | undefined) {
+  public set internalValue(value: GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._words = undefined;
@@ -208,7 +208,7 @@ export interface GoogleDataLossPreventionStoredInfoTypeDictionary {
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_data_loss_prevention_stored_info_type#word_list GoogleDataLossPreventionStoredInfoType#word_list}
   */
-  readonly wordList?: GoogleDataLossPreventionStoredInfoTypeDictionaryWordList;
+  readonly wordList?: GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct;
 }
 
 export function googleDataLossPreventionStoredInfoTypeDictionaryToTerraform(struct?: GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference | GoogleDataLossPreventionStoredInfoTypeDictionary): any {
@@ -218,7 +218,7 @@ export function googleDataLossPreventionStoredInfoTypeDictionaryToTerraform(stru
   }
   return {
     cloud_storage_path: googleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathToTerraform(struct!.cloudStoragePath),
-    word_list: googleDataLossPreventionStoredInfoTypeDictionaryWordListToTerraform(struct!.wordList),
+    word_list: googleDataLossPreventionStoredInfoTypeDictionaryWordListStructToTerraform(struct!.wordList),
   }
 }
 
@@ -277,11 +277,11 @@ export class GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference ext
   }
 
   // word_list - computed: false, optional: true, required: false
-  private _wordList = new GoogleDataLossPreventionStoredInfoTypeDictionaryWordListOutputReference(this, "word_list");
+  private _wordList = new GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference(this, "word_list");
   public get wordList() {
     return this._wordList;
   }
-  public putWordList(value: GoogleDataLossPreventionStoredInfoTypeDictionaryWordList) {
+  public putWordList(value: GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct) {
     this._wordList.internalValue = value;
   }
   public resetWordList() {

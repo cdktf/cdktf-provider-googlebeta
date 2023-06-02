@@ -417,7 +417,7 @@ export class GoogleDataprocWorkflowTemplateJobsHadoopJobOutputReference extends 
     return this._loggingConfig.internalValue;
   }
 }
-export interface GoogleDataprocWorkflowTemplateJobsHiveJobQueryList {
+export interface GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStruct {
   /**
   * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob": { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
   * 
@@ -426,7 +426,7 @@ export interface GoogleDataprocWorkflowTemplateJobsHiveJobQueryList {
   readonly queries: string[];
 }
 
-export function googleDataprocWorkflowTemplateJobsHiveJobQueryListToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsHiveJobQueryListOutputReference | GoogleDataprocWorkflowTemplateJobsHiveJobQueryList): any {
+export function googleDataprocWorkflowTemplateJobsHiveJobQueryListStructToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference | GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -436,7 +436,7 @@ export function googleDataprocWorkflowTemplateJobsHiveJobQueryListToTerraform(st
   }
 }
 
-export class GoogleDataprocWorkflowTemplateJobsHiveJobQueryListOutputReference extends cdktf.ComplexObject {
+export class GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -447,7 +447,7 @@ export class GoogleDataprocWorkflowTemplateJobsHiveJobQueryListOutputReference e
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataprocWorkflowTemplateJobsHiveJobQueryList | undefined {
+  public get internalValue(): GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._queries !== undefined) {
@@ -457,7 +457,7 @@ export class GoogleDataprocWorkflowTemplateJobsHiveJobQueryListOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataprocWorkflowTemplateJobsHiveJobQueryList | undefined) {
+  public set internalValue(value: GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._queries = undefined;
@@ -517,7 +517,7 @@ export interface GoogleDataprocWorkflowTemplateJobsHiveJob {
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_dataproc_workflow_template#query_list GoogleDataprocWorkflowTemplate#query_list}
   */
-  readonly queryList?: GoogleDataprocWorkflowTemplateJobsHiveJobQueryList;
+  readonly queryList?: GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStruct;
 }
 
 export function googleDataprocWorkflowTemplateJobsHiveJobToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsHiveJobOutputReference | GoogleDataprocWorkflowTemplateJobsHiveJob): any {
@@ -531,7 +531,7 @@ export function googleDataprocWorkflowTemplateJobsHiveJobToTerraform(struct?: Go
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
     query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
     script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
-    query_list: googleDataprocWorkflowTemplateJobsHiveJobQueryListToTerraform(struct!.queryList),
+    query_list: googleDataprocWorkflowTemplateJobsHiveJobQueryListStructToTerraform(struct!.queryList),
   }
 }
 
@@ -678,11 +678,11 @@ export class GoogleDataprocWorkflowTemplateJobsHiveJobOutputReference extends cd
   }
 
   // query_list - computed: false, optional: true, required: false
-  private _queryList = new GoogleDataprocWorkflowTemplateJobsHiveJobQueryListOutputReference(this, "query_list");
+  private _queryList = new GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStructOutputReference(this, "query_list");
   public get queryList() {
     return this._queryList;
   }
-  public putQueryList(value: GoogleDataprocWorkflowTemplateJobsHiveJobQueryList) {
+  public putQueryList(value: GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStruct) {
     this._queryList.internalValue = value;
   }
   public resetQueryList() {
@@ -760,7 +760,7 @@ export class GoogleDataprocWorkflowTemplateJobsPigJobLoggingConfigOutputReferenc
     return this._driverLogLevels;
   }
 }
-export interface GoogleDataprocWorkflowTemplateJobsPigJobQueryList {
+export interface GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct {
   /**
   * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob": { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
   * 
@@ -769,7 +769,7 @@ export interface GoogleDataprocWorkflowTemplateJobsPigJobQueryList {
   readonly queries: string[];
 }
 
-export function googleDataprocWorkflowTemplateJobsPigJobQueryListToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference | GoogleDataprocWorkflowTemplateJobsPigJobQueryList): any {
+export function googleDataprocWorkflowTemplateJobsPigJobQueryListStructToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference | GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -779,7 +779,7 @@ export function googleDataprocWorkflowTemplateJobsPigJobQueryListToTerraform(str
   }
 }
 
-export class GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference extends cdktf.ComplexObject {
+export class GoogleDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -790,7 +790,7 @@ export class GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference ex
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataprocWorkflowTemplateJobsPigJobQueryList | undefined {
+  public get internalValue(): GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._queries !== undefined) {
@@ -800,7 +800,7 @@ export class GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataprocWorkflowTemplateJobsPigJobQueryList | undefined) {
+  public set internalValue(value: GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._queries = undefined;
@@ -866,7 +866,7 @@ export interface GoogleDataprocWorkflowTemplateJobsPigJob {
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_dataproc_workflow_template#query_list GoogleDataprocWorkflowTemplate#query_list}
   */
-  readonly queryList?: GoogleDataprocWorkflowTemplateJobsPigJobQueryList;
+  readonly queryList?: GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct;
 }
 
 export function googleDataprocWorkflowTemplateJobsPigJobToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsPigJobOutputReference | GoogleDataprocWorkflowTemplateJobsPigJob): any {
@@ -881,7 +881,7 @@ export function googleDataprocWorkflowTemplateJobsPigJobToTerraform(struct?: Goo
     query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
     script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
     logging_config: googleDataprocWorkflowTemplateJobsPigJobLoggingConfigToTerraform(struct!.loggingConfig),
-    query_list: googleDataprocWorkflowTemplateJobsPigJobQueryListToTerraform(struct!.queryList),
+    query_list: googleDataprocWorkflowTemplateJobsPigJobQueryListStructToTerraform(struct!.queryList),
   }
 }
 
@@ -1050,11 +1050,11 @@ export class GoogleDataprocWorkflowTemplateJobsPigJobOutputReference extends cdk
   }
 
   // query_list - computed: false, optional: true, required: false
-  private _queryList = new GoogleDataprocWorkflowTemplateJobsPigJobQueryListOutputReference(this, "query_list");
+  private _queryList = new GoogleDataprocWorkflowTemplateJobsPigJobQueryListStructOutputReference(this, "query_list");
   public get queryList() {
     return this._queryList;
   }
-  public putQueryList(value: GoogleDataprocWorkflowTemplateJobsPigJobQueryList) {
+  public putQueryList(value: GoogleDataprocWorkflowTemplateJobsPigJobQueryListStruct) {
     this._queryList.internalValue = value;
   }
   public resetQueryList() {
@@ -1132,7 +1132,7 @@ export class GoogleDataprocWorkflowTemplateJobsPrestoJobLoggingConfigOutputRefer
     return this._driverLogLevels;
   }
 }
-export interface GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList {
+export interface GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStruct {
   /**
   * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob": { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
   * 
@@ -1141,7 +1141,7 @@ export interface GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList {
   readonly queries: string[];
 }
 
-export function googleDataprocWorkflowTemplateJobsPrestoJobQueryListToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference | GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList): any {
+export function googleDataprocWorkflowTemplateJobsPrestoJobQueryListStructToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference | GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -1151,7 +1151,7 @@ export function googleDataprocWorkflowTemplateJobsPrestoJobQueryListToTerraform(
   }
 }
 
-export class GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference extends cdktf.ComplexObject {
+export class GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1162,7 +1162,7 @@ export class GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList | undefined {
+  public get internalValue(): GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._queries !== undefined) {
@@ -1172,7 +1172,7 @@ export class GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList | undefined) {
+  public set internalValue(value: GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._queries = undefined;
@@ -1238,7 +1238,7 @@ export interface GoogleDataprocWorkflowTemplateJobsPrestoJob {
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_dataproc_workflow_template#query_list GoogleDataprocWorkflowTemplate#query_list}
   */
-  readonly queryList?: GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList;
+  readonly queryList?: GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStruct;
 }
 
 export function googleDataprocWorkflowTemplateJobsPrestoJobToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference | GoogleDataprocWorkflowTemplateJobsPrestoJob): any {
@@ -1253,7 +1253,7 @@ export function googleDataprocWorkflowTemplateJobsPrestoJobToTerraform(struct?: 
     properties: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.properties),
     query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
     logging_config: googleDataprocWorkflowTemplateJobsPrestoJobLoggingConfigToTerraform(struct!.loggingConfig),
-    query_list: googleDataprocWorkflowTemplateJobsPrestoJobQueryListToTerraform(struct!.queryList),
+    query_list: googleDataprocWorkflowTemplateJobsPrestoJobQueryListStructToTerraform(struct!.queryList),
   }
 }
 
@@ -1422,11 +1422,11 @@ export class GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference extends 
   }
 
   // query_list - computed: false, optional: true, required: false
-  private _queryList = new GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListOutputReference(this, "query_list");
+  private _queryList = new GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference(this, "query_list");
   public get queryList() {
     return this._queryList;
   }
-  public putQueryList(value: GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList) {
+  public putQueryList(value: GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStruct) {
     this._queryList.internalValue = value;
   }
   public resetQueryList() {
@@ -2547,7 +2547,7 @@ export class GoogleDataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigOutputRef
     return this._driverLogLevels;
   }
 }
-export interface GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList {
+export interface GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct {
   /**
   * Required. The queries to execute. You do not need to end a query expression with a semicolon. Multiple queries can be specified in one string by separating each with a semicolon. Here is an example of a Dataproc API snippet that uses a QueryList to specify a HiveJob: "hiveJob": { "queryList": { "queries": [ "query1", "query2", "query3;query4", ] } }
   * 
@@ -2556,7 +2556,7 @@ export interface GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList {
   readonly queries: string[];
 }
 
-export function googleDataprocWorkflowTemplateJobsSparkSqlJobQueryListToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReference | GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList): any {
+export function googleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStructToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference | GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -2566,7 +2566,7 @@ export function googleDataprocWorkflowTemplateJobsSparkSqlJobQueryListToTerrafor
   }
 }
 
-export class GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReference extends cdktf.ComplexObject {
+export class GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2577,7 +2577,7 @@ export class GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReferen
     super(terraformResource, terraformAttribute, false, 0);
   }
 
-  public get internalValue(): GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList | undefined {
+  public get internalValue(): GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._queries !== undefined) {
@@ -2587,7 +2587,7 @@ export class GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList | undefined) {
+  public set internalValue(value: GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._queries = undefined;
@@ -2647,7 +2647,7 @@ export interface GoogleDataprocWorkflowTemplateJobsSparkSqlJob {
   * 
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_dataproc_workflow_template#query_list GoogleDataprocWorkflowTemplate#query_list}
   */
-  readonly queryList?: GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList;
+  readonly queryList?: GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct;
 }
 
 export function googleDataprocWorkflowTemplateJobsSparkSqlJobToTerraform(struct?: GoogleDataprocWorkflowTemplateJobsSparkSqlJobOutputReference | GoogleDataprocWorkflowTemplateJobsSparkSqlJob): any {
@@ -2661,7 +2661,7 @@ export function googleDataprocWorkflowTemplateJobsSparkSqlJobToTerraform(struct?
     query_file_uri: cdktf.stringToTerraform(struct!.queryFileUri),
     script_variables: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.scriptVariables),
     logging_config: googleDataprocWorkflowTemplateJobsSparkSqlJobLoggingConfigToTerraform(struct!.loggingConfig),
-    query_list: googleDataprocWorkflowTemplateJobsSparkSqlJobQueryListToTerraform(struct!.queryList),
+    query_list: googleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStructToTerraform(struct!.queryList),
   }
 }
 
@@ -2808,11 +2808,11 @@ export class GoogleDataprocWorkflowTemplateJobsSparkSqlJobOutputReference extend
   }
 
   // query_list - computed: false, optional: true, required: false
-  private _queryList = new GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListOutputReference(this, "query_list");
+  private _queryList = new GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStructOutputReference(this, "query_list");
   public get queryList() {
     return this._queryList;
   }
-  public putQueryList(value: GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList) {
+  public putQueryList(value: GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct) {
     this._queryList.internalValue = value;
   }
   public resetQueryList() {
