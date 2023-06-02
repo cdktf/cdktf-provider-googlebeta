@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataplexassetiammember"
 
 googledataplexassetiammember.NewGoogleDataplexAssetIamMember(scope Construct, id *string, config GoogleDataplexAssetIamMemberConfig) GoogleDataplexAssetIamMember
 ```
@@ -311,7 +311,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataplexassetiammember"
 
 googledataplexassetiammember.GoogleDataplexAssetIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataplexassetiammember"
 
 googledataplexassetiammember.GoogleDataplexAssetIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ googledataplexassetiammember.GoogleDataplexAssetIamMember_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataplexassetiammember"
 
 googledataplexassetiammember.GoogleDataplexAssetIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -765,7 +765,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataplexassetiammember"
 
 &googledataplexassetiammember.GoogleDataplexAssetIamMemberCondition {
 	Expression: *string,
@@ -825,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataplexassetiammember"
 
 &googledataplexassetiammember.GoogleDataplexAssetIamMemberConfig {
 	Connection: interface{},
@@ -840,7 +840,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexa
 	Lake: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleDataplexAssetIamMember.GoogleDataplexAssetIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1060,7 +1060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexAssetIamMember.GoogleDataplexAssetIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googledataplexassetiammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledataplexassetiammember"
 
 googledataplexassetiammember.NewGoogleDataplexAssetIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleDataplexAssetIamMemberConditionOutputReference
 ```
