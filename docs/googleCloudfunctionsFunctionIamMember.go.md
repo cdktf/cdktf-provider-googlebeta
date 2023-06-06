@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecloudfunctionsfunctioniammember"
 
 googlecloudfunctionsfunctioniammember.NewGoogleCloudfunctionsFunctionIamMember(scope Construct, id *string, config GoogleCloudfunctionsFunctionIamMemberConfig) GoogleCloudfunctionsFunctionIamMember
 ```
@@ -311,7 +311,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecloudfunctionsfunctioniammember"
 
 googlecloudfunctionsfunctioniammember.GoogleCloudfunctionsFunctionIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecloudfunctionsfunctioniammember"
 
 googlecloudfunctionsfunctioniammember.GoogleCloudfunctionsFunctionIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ googlecloudfunctionsfunctioniammember.GoogleCloudfunctionsFunctionIamMember_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecloudfunctionsfunctioniammember"
 
 googlecloudfunctionsfunctioniammember.GoogleCloudfunctionsFunctionIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecloudfunctionsfunctioniammember"
 
 &googlecloudfunctionsfunctioniammember.GoogleCloudfunctionsFunctionIamMemberCondition {
 	Expression: *string,
@@ -781,7 +781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecloudfunctionsfunctioniammember"
 
 &googlecloudfunctionsfunctioniammember.GoogleCloudfunctionsFunctionIamMemberConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunc
 	CloudFunction: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMemberCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Region: *string,
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctionsFunctionIamMember.GoogleCloudfunctionsFunctionIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudfunctionsfunctioniammember"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecloudfunctionsfunctioniammember"
 
 googlecloudfunctionsfunctioniammember.NewGoogleCloudfunctionsFunctionIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudfunctionsFunctionIamMemberConditionOutputReference
 ```
