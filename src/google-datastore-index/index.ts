@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleDatastoreIndexConfig extends cdktf.TerraformMetaArguments
   /**
   * Policy for including ancestors in the index. Default value: "NONE" Possible values: ["NONE", "ALL_ANCESTORS"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index#ancestor GoogleDatastoreIndex#ancestor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index#ancestor GoogleDatastoreIndex#ancestor}
   */
   readonly ancestor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index#id GoogleDatastoreIndex#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index#id GoogleDatastoreIndex#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,23 +28,23 @@ export interface GoogleDatastoreIndexConfig extends cdktf.TerraformMetaArguments
   /**
   * The entity kind which the index applies to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index#kind GoogleDatastoreIndex#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index#kind GoogleDatastoreIndex#kind}
   */
   readonly kind: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index#project GoogleDatastoreIndex#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index#project GoogleDatastoreIndex#project}
   */
   readonly project?: string;
   /**
   * properties block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index#properties GoogleDatastoreIndex#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index#properties GoogleDatastoreIndex#properties}
   */
   readonly properties?: GoogleDatastoreIndexProperties[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index#timeouts GoogleDatastoreIndex#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index#timeouts GoogleDatastoreIndex#timeouts}
   */
   readonly timeouts?: GoogleDatastoreIndexTimeouts;
 }
@@ -52,13 +52,13 @@ export interface GoogleDatastoreIndexProperties {
   /**
   * The direction the index should optimize for sorting. Possible values: ["ASCENDING", "DESCENDING"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index#direction GoogleDatastoreIndex#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index#direction GoogleDatastoreIndex#direction}
   */
   readonly direction: string;
   /**
   * The property name to index.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index#name GoogleDatastoreIndex#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index#name GoogleDatastoreIndex#name}
   */
   readonly name: string;
 }
@@ -172,11 +172,11 @@ export class GoogleDatastoreIndexPropertiesList extends cdktf.ComplexList {
 }
 export interface GoogleDatastoreIndexTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index#create GoogleDatastoreIndex#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index#create GoogleDatastoreIndex#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index#delete GoogleDatastoreIndex#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index#delete GoogleDatastoreIndex#delete}
   */
   readonly delete?: string;
 }
@@ -274,7 +274,7 @@ export class GoogleDatastoreIndexTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index google_datastore_index}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index google_datastore_index}
 */
 export class GoogleDatastoreIndex extends cdktf.TerraformResource {
 
@@ -288,7 +288,7 @@ export class GoogleDatastoreIndex extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_datastore_index google_datastore_index} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_datastore_index google_datastore_index} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -299,7 +299,7 @@ export class GoogleDatastoreIndex extends cdktf.TerraformResource {
       terraformResourceType: 'google_datastore_index',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.67.0',
+        providerVersion: '4.68.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

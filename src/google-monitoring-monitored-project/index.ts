@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_monitored_project
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_monitored_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleMonitoringMonitoredProjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_monitored_project#id GoogleMonitoringMonitoredProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_monitored_project#id GoogleMonitoringMonitoredProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,29 +22,29 @@ export interface GoogleMonitoringMonitoredProjectConfig extends cdktf.TerraformM
   /**
   * Required. The resource name of the existing Metrics Scope that will monitor this project. Example: locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_monitored_project#metrics_scope GoogleMonitoringMonitoredProject#metrics_scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_monitored_project#metrics_scope GoogleMonitoringMonitoredProject#metrics_scope}
   */
   readonly metricsScope: string;
   /**
   * Immutable. The resource name of the `MonitoredProject`. On input, the resource name includes the scoping project ID and monitored project ID. On output, it contains the equivalent project numbers. Example: `locations/global/metricsScopes/{SCOPING_PROJECT_ID_OR_NUMBER}/projects/{MONITORED_PROJECT_ID_OR_NUMBER}`
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_monitored_project#name GoogleMonitoringMonitoredProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_monitored_project#name GoogleMonitoringMonitoredProject#name}
   */
   readonly name: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_monitored_project#timeouts GoogleMonitoringMonitoredProject#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_monitored_project#timeouts GoogleMonitoringMonitoredProject#timeouts}
   */
   readonly timeouts?: GoogleMonitoringMonitoredProjectTimeouts;
 }
 export interface GoogleMonitoringMonitoredProjectTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_monitored_project#create GoogleMonitoringMonitoredProject#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_monitored_project#create GoogleMonitoringMonitoredProject#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_monitored_project#delete GoogleMonitoringMonitoredProject#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_monitored_project#delete GoogleMonitoringMonitoredProject#delete}
   */
   readonly delete?: string;
 }
@@ -142,7 +142,7 @@ export class GoogleMonitoringMonitoredProjectTimeoutsOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_monitored_project google_monitoring_monitored_project}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_monitored_project google_monitoring_monitored_project}
 */
 export class GoogleMonitoringMonitoredProject extends cdktf.TerraformResource {
 
@@ -156,7 +156,7 @@ export class GoogleMonitoringMonitoredProject extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_monitoring_monitored_project google_monitoring_monitored_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_monitored_project google_monitoring_monitored_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -167,7 +167,7 @@ export class GoogleMonitoringMonitoredProject extends cdktf.TerraformResource {
       terraformResourceType: 'google_monitoring_monitored_project',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.67.0',
+        providerVersion: '4.68.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

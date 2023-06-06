@@ -1,6 +1,6 @@
 # `google_iap_brand`
 
-Refer to the Terraform Registory for docs: [`google_iap_brand`](https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand).
+Refer to the Terraform Registory for docs: [`google_iap_brand`](https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand).
 
 # `googleIapBrand` Submodule <a name="`googleIapBrand` Submodule" id="@cdktf/provider-google-beta.googleIapBrand"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_iap_brand`](https://registry
 
 ### GoogleIapBrand <a name="GoogleIapBrand" id="@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand google_iap_brand}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand google_iap_brand}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrand.Initializer"></a>
 
@@ -699,8 +699,8 @@ const googleIapBrandConfig: googleIapBrand.GoogleIapBrandConfig = { ... }
 | <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandConfig.property.applicationTitle">applicationTitle</a></code> | <code>string</code> | Application name displayed on OAuth consent screen. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandConfig.property.supportEmail">supportEmail</a></code> | <code>string</code> | Support email displayed on the OAuth consent screen. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#id GoogleIapBrand#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#project GoogleIapBrand#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#id GoogleIapBrand#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#project GoogleIapBrand#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandTimeouts">GoogleIapBrandTimeouts</a></code> | timeouts block. |
 
 ---
@@ -785,7 +785,7 @@ public readonly applicationTitle: string;
 
 Application name displayed on OAuth consent screen.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#application_title GoogleIapBrand#application_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#application_title GoogleIapBrand#application_title}
 
 ---
 
@@ -805,7 +805,7 @@ be the user with the associated email address. When a group email is
 specified, the caller can be either a user or a service account which
 is an owner of the specified group in Cloud Identity.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#support_email GoogleIapBrand#support_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#support_email GoogleIapBrand#support_email}
 
 ---
 
@@ -817,7 +817,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#id GoogleIapBrand#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#id GoogleIapBrand#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -832,7 +832,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#project GoogleIapBrand#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#project GoogleIapBrand#project}.
 
 ---
 
@@ -846,7 +846,7 @@ public readonly timeouts: GoogleIapBrandTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#timeouts GoogleIapBrand#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#timeouts GoogleIapBrand#timeouts}
 
 ---
 
@@ -864,8 +864,8 @@ const googleIapBrandTimeouts: googleIapBrand.GoogleIapBrandTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#create GoogleIapBrand#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#delete GoogleIapBrand#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#create GoogleIapBrand#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapBrand.GoogleIapBrandTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#delete GoogleIapBrand#delete}. |
 
 ---
 
@@ -877,7 +877,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#create GoogleIapBrand#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#create GoogleIapBrand#create}.
 
 ---
 
@@ -889,7 +889,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_iap_brand#delete GoogleIapBrand#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_iap_brand#delete GoogleIapBrand#delete}.
 
 ---
 
