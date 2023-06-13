@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +8,43 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleNetworkServicesGatewayConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Zero or one IPv4-address on which the Gateway will receive the traffic. When no address is provided,
+an IP from the subnetwork is allocated This field only applies to gateways of type 'SECURE_WEB_GATEWAY'.
+Gateways of type 'OPEN_MESH' listen on 0.0.0.0.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#addresses GoogleNetworkServicesGateway#addresses}
+  */
+  readonly addresses?: string[];
+  /**
+  * A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
+This feature only applies to gateways of type 'SECURE_WEB_GATEWAY'.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#certificate_urls GoogleNetworkServicesGateway#certificate_urls}
+  */
+  readonly certificateUrls?: string[];
+  /**
+  * When deleting a gateway of type 'SECURE_WEB_GATEWAY', this boolean option will also delete auto generated router by the gateway creation.
+If there is no other gateway of type 'SECURE_WEB_GATEWAY' remaining for that region and network it will be deleted.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#delete_swg_autogen_router_on_destroy GoogleNetworkServicesGateway#delete_swg_autogen_router_on_destroy}
+  */
+  readonly deleteSwgAutogenRouterOnDestroy?: boolean | cdktf.IResolvable;
+  /**
   * A free-text description of the resource. Max length 1024 characters.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#description GoogleNetworkServicesGateway#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#description GoogleNetworkServicesGateway#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#id GoogleNetworkServicesGateway#id}
+  * A fully-qualified GatewaySecurityPolicy URL reference. Defines how a server should apply security policy to inbound (VM to Proxy) initiated connections.
+For example: 'projects/*\/locations/*\/gatewaySecurityPolicies/swg-policy'.
+This policy is specific to gateways of type 'SECURE_WEB_GATEWAY'.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#gateway_security_policy GoogleNetworkServicesGateway#gateway_security_policy}
+  */
+  readonly gatewaySecurityPolicy?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#id GoogleNetworkServicesGateway#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,32 +53,40 @@ export interface GoogleNetworkServicesGatewayConfig extends cdktf.TerraformMetaA
   /**
   * Set of label tags associated with the Gateway resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#labels GoogleNetworkServicesGateway#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#labels GoogleNetworkServicesGateway#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the gateway.
 The default value is 'global'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#location GoogleNetworkServicesGateway#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#location GoogleNetworkServicesGateway#location}
   */
   readonly location?: string;
   /**
   * Short name of the Gateway resource to be created.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#name GoogleNetworkServicesGateway#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#name GoogleNetworkServicesGateway#name}
   */
   readonly name: string;
+  /**
+  * The relative resource name identifying the VPC network that is using this configuration.
+For example: 'projects/*\/global/networks/network-1'.
+Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY'.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#network GoogleNetworkServicesGateway#network}
+  */
+  readonly network?: string;
   /**
   * One or more port numbers (1-65535), on which the Gateway will receive traffic.
 The proxy binds to the specified ports. Gateways of type 'SECURE_WEB_GATEWAY' are
 limited to 1 port. Gateways of type 'OPEN_MESH' listen on 0.0.0.0 and support multiple ports.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#ports GoogleNetworkServicesGateway#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#ports GoogleNetworkServicesGateway#ports}
   */
   readonly ports: number[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#project GoogleNetworkServicesGateway#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#project GoogleNetworkServicesGateway#project}
   */
   readonly project?: string;
   /**
@@ -62,40 +95,48 @@ The configuration for multiple Gateway instances with the same scope will be mer
 a single coniguration to the proxy/load balancer.
 Max length 64 characters. Scope should start with a letter and can only have letters, numbers, hyphens.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#scope GoogleNetworkServicesGateway#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#scope GoogleNetworkServicesGateway#scope}
   */
   readonly scope: string;
   /**
   * A fully-qualified ServerTLSPolicy URL reference. Specifies how TLS traffic is terminated.
 If empty, TLS termination is disabled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#server_tls_policy GoogleNetworkServicesGateway#server_tls_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#server_tls_policy GoogleNetworkServicesGateway#server_tls_policy}
   */
   readonly serverTlsPolicy?: string;
   /**
+  * The relative resource name identifying the subnetwork in which this SWG is allocated.
+For example: 'projects/*\/regions/us-central1/subnetworks/network-1'.
+Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#subnetwork GoogleNetworkServicesGateway#subnetwork}
+  */
+  readonly subnetwork?: string;
+  /**
   * Immutable. The type of the customer-managed gateway. Possible values are: * OPEN_MESH * SECURE_WEB_GATEWAY. Possible values: ["TYPE_UNSPECIFIED", "OPEN_MESH", "SECURE_WEB_GATEWAY"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#type GoogleNetworkServicesGateway#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#type GoogleNetworkServicesGateway#type}
   */
   readonly type: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#timeouts GoogleNetworkServicesGateway#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#timeouts GoogleNetworkServicesGateway#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesGatewayTimeouts;
 }
 export interface GoogleNetworkServicesGatewayTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#create GoogleNetworkServicesGateway#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#create GoogleNetworkServicesGateway#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#delete GoogleNetworkServicesGateway#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#delete GoogleNetworkServicesGateway#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway#update GoogleNetworkServicesGateway#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway#update GoogleNetworkServicesGateway#update}
   */
   readonly update?: string;
 }
@@ -216,7 +257,7 @@ export class GoogleNetworkServicesGatewayTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway google_network_services_gateway}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway google_network_services_gateway}
 */
 export class GoogleNetworkServicesGateway extends cdktf.TerraformResource {
 
@@ -230,7 +271,7 @@ export class GoogleNetworkServicesGateway extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_network_services_gateway google_network_services_gateway} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_network_services_gateway google_network_services_gateway} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -241,7 +282,7 @@ export class GoogleNetworkServicesGateway extends cdktf.TerraformResource {
       terraformResourceType: 'google_network_services_gateway',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.68.0',
+        providerVersion: '4.69.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -252,15 +293,21 @@ export class GoogleNetworkServicesGateway extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._addresses = config.addresses;
+    this._certificateUrls = config.certificateUrls;
+    this._deleteSwgAutogenRouterOnDestroy = config.deleteSwgAutogenRouterOnDestroy;
     this._description = config.description;
+    this._gatewaySecurityPolicy = config.gatewaySecurityPolicy;
     this._id = config.id;
     this._labels = config.labels;
     this._location = config.location;
     this._name = config.name;
+    this._network = config.network;
     this._ports = config.ports;
     this._project = config.project;
     this._scope = config.scope;
     this._serverTlsPolicy = config.serverTlsPolicy;
+    this._subnetwork = config.subnetwork;
     this._type = config.type;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -269,9 +316,57 @@ export class GoogleNetworkServicesGateway extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // addresses - computed: false, optional: true, required: false
+  private _addresses?: string[]; 
+  public get addresses() {
+    return this.getListAttribute('addresses');
+  }
+  public set addresses(value: string[]) {
+    this._addresses = value;
+  }
+  public resetAddresses() {
+    this._addresses = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get addressesInput() {
+    return this._addresses;
+  }
+
+  // certificate_urls - computed: false, optional: true, required: false
+  private _certificateUrls?: string[]; 
+  public get certificateUrls() {
+    return this.getListAttribute('certificate_urls');
+  }
+  public set certificateUrls(value: string[]) {
+    this._certificateUrls = value;
+  }
+  public resetCertificateUrls() {
+    this._certificateUrls = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateUrlsInput() {
+    return this._certificateUrls;
+  }
+
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // delete_swg_autogen_router_on_destroy - computed: false, optional: true, required: false
+  private _deleteSwgAutogenRouterOnDestroy?: boolean | cdktf.IResolvable; 
+  public get deleteSwgAutogenRouterOnDestroy() {
+    return this.getBooleanAttribute('delete_swg_autogen_router_on_destroy');
+  }
+  public set deleteSwgAutogenRouterOnDestroy(value: boolean | cdktf.IResolvable) {
+    this._deleteSwgAutogenRouterOnDestroy = value;
+  }
+  public resetDeleteSwgAutogenRouterOnDestroy() {
+    this._deleteSwgAutogenRouterOnDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteSwgAutogenRouterOnDestroyInput() {
+    return this._deleteSwgAutogenRouterOnDestroy;
   }
 
   // description - computed: false, optional: true, required: false
@@ -288,6 +383,22 @@ export class GoogleNetworkServicesGateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // gateway_security_policy - computed: false, optional: true, required: false
+  private _gatewaySecurityPolicy?: string; 
+  public get gatewaySecurityPolicy() {
+    return this.getStringAttribute('gateway_security_policy');
+  }
+  public set gatewaySecurityPolicy(value: string) {
+    this._gatewaySecurityPolicy = value;
+  }
+  public resetGatewaySecurityPolicy() {
+    this._gatewaySecurityPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gatewaySecurityPolicyInput() {
+    return this._gatewaySecurityPolicy;
   }
 
   // id - computed: true, optional: true, required: false
@@ -349,6 +460,22 @@ export class GoogleNetworkServicesGateway extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // network - computed: false, optional: true, required: false
+  private _network?: string; 
+  public get network() {
+    return this.getStringAttribute('network');
+  }
+  public set network(value: string) {
+    this._network = value;
+  }
+  public resetNetwork() {
+    this._network = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get networkInput() {
+    return this._network;
   }
 
   // ports - computed: false, optional: false, required: true
@@ -414,6 +541,22 @@ export class GoogleNetworkServicesGateway extends cdktf.TerraformResource {
     return this._serverTlsPolicy;
   }
 
+  // subnetwork - computed: false, optional: true, required: false
+  private _subnetwork?: string; 
+  public get subnetwork() {
+    return this.getStringAttribute('subnetwork');
+  }
+  public set subnetwork(value: string) {
+    this._subnetwork = value;
+  }
+  public resetSubnetwork() {
+    this._subnetwork = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get subnetworkInput() {
+    return this._subnetwork;
+  }
+
   // type - computed: false, optional: false, required: true
   private _type?: string; 
   public get type() {
@@ -454,15 +597,21 @@ export class GoogleNetworkServicesGateway extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(this._addresses),
+      certificate_urls: cdktf.listMapper(cdktf.stringToTerraform, false)(this._certificateUrls),
+      delete_swg_autogen_router_on_destroy: cdktf.booleanToTerraform(this._deleteSwgAutogenRouterOnDestroy),
       description: cdktf.stringToTerraform(this._description),
+      gateway_security_policy: cdktf.stringToTerraform(this._gatewaySecurityPolicy),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       location: cdktf.stringToTerraform(this._location),
       name: cdktf.stringToTerraform(this._name),
+      network: cdktf.stringToTerraform(this._network),
       ports: cdktf.listMapper(cdktf.numberToTerraform, false)(this._ports),
       project: cdktf.stringToTerraform(this._project),
       scope: cdktf.stringToTerraform(this._scope),
       server_tls_policy: cdktf.stringToTerraform(this._serverTlsPolicy),
+      subnetwork: cdktf.stringToTerraform(this._subnetwork),
       type: cdktf.stringToTerraform(this._type),
       timeouts: googleNetworkServicesGatewayTimeoutsToTerraform(this._timeouts.internalValue),
     };

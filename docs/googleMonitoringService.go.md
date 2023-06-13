@@ -1,6 +1,6 @@
 # `google_monitoring_service`
 
-Refer to the Terraform Registory for docs: [`google_monitoring_service`](https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service).
+Refer to the Terraform Registory for docs: [`google_monitoring_service`](https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service).
 
 # `googleMonitoringService` Submodule <a name="`googleMonitoringService` Submodule" id="@cdktf/provider-google-beta.googleMonitoringService"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_monitoring_service`](https:/
 
 ### GoogleMonitoringService <a name="GoogleMonitoringService" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service google_monitoring_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service google_monitoring_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 googlemonitoringservice.NewGoogleMonitoringService(scope Construct, id *string, config GoogleMonitoringServiceConfig) GoogleMonitoringService
 ```
@@ -338,7 +338,7 @@ func ResetUserLabels()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringService.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 googlemonitoringservice.GoogleMonitoringService_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 googlemonitoringservice.GoogleMonitoringService_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ googlemonitoringservice.GoogleMonitoringService_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 googlemonitoringservice.GoogleMonitoringService_IsTerraformResource(x interface{}) *bool
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceBasicService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 &googlemonitoringservice.GoogleMonitoringServiceBasicService {
 	ServiceLabels: *map[string]*string,
@@ -786,7 +786,7 @@ ServiceLabels *map[string]*string
 
 Labels that specify the resource that emits the monitoring data which is used for SLO reporting of this 'Service'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#service_labels GoogleMonitoringService#service_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#service_labels GoogleMonitoringService#service_labels}
 
 ---
 
@@ -800,7 +800,7 @@ ServiceType *string
 
 The type of service that this basic service defines, e.g. APP_ENGINE service type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#service_type GoogleMonitoringService#service_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#service_type GoogleMonitoringService#service_type}
 
 ---
 
@@ -809,7 +809,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 &googlemonitoringservice.GoogleMonitoringServiceConfig {
 	Connection: interface{},
@@ -820,11 +820,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonito
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	ServiceId: *string,
-	BasicService: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleMonitoringService.GoogleMonitoringServiceBasicService,
+	BasicService: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringService.GoogleMonitoringServiceBasicService,
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleMonitoringService.GoogleMonitoringServiceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleMonitoringService.GoogleMonitoringServiceTimeouts,
 	UserLabels: *map[string]*string,
 }
 ```
@@ -843,8 +843,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonito
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.property.serviceId">ServiceId</a></code> | <code>*string</code> | An optional service ID to use. If not given, the server will generate a service ID. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.property.basicService">BasicService</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceBasicService">GoogleMonitoringServiceBasicService</a></code> | basic_service block. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | Name used for UI elements listing this Service. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#id GoogleMonitoringService#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#project GoogleMonitoringService#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#id GoogleMonitoringService#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#project GoogleMonitoringService#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts">GoogleMonitoringServiceTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceConfig.property.userLabels">UserLabels</a></code> | <code>*map[string]*string</code> | Labels which have been used to annotate the service. |
 
@@ -930,7 +930,7 @@ ServiceId *string
 
 An optional service ID to use. If not given, the server will generate a service ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#service_id GoogleMonitoringService#service_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#service_id GoogleMonitoringService#service_id}
 
 ---
 
@@ -944,7 +944,7 @@ BasicService GoogleMonitoringServiceBasicService
 
 basic_service block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#basic_service GoogleMonitoringService#basic_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#basic_service GoogleMonitoringService#basic_service}
 
 ---
 
@@ -958,7 +958,7 @@ DisplayName *string
 
 Name used for UI elements listing this Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#display_name GoogleMonitoringService#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#display_name GoogleMonitoringService#display_name}
 
 ---
 
@@ -970,7 +970,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#id GoogleMonitoringService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#id GoogleMonitoringService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -985,7 +985,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#project GoogleMonitoringService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#project GoogleMonitoringService#project}.
 
 ---
 
@@ -999,7 +999,7 @@ Timeouts GoogleMonitoringServiceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#timeouts GoogleMonitoringService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#timeouts GoogleMonitoringService#timeouts}
 
 ---
 
@@ -1020,7 +1020,7 @@ length of 63 characters, and must be less than 128 bytes in size. Up to 64
 label entries may be stored. For labels which do not have a semantic value,
 the empty string may be supplied for the label value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#user_labels GoogleMonitoringService#user_labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#user_labels GoogleMonitoringService#user_labels}
 
 ---
 
@@ -1029,7 +1029,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 &googlemonitoringservice.GoogleMonitoringServiceTelemetry {
 
@@ -1042,7 +1042,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonito
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 &googlemonitoringservice.GoogleMonitoringServiceTimeouts {
 	Create: *string,
@@ -1055,9 +1055,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonito
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#create GoogleMonitoringService#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#delete GoogleMonitoringService#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#update GoogleMonitoringService#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#create GoogleMonitoringService#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#delete GoogleMonitoringService#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#update GoogleMonitoringService#update}. |
 
 ---
 
@@ -1069,7 +1069,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#create GoogleMonitoringService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#create GoogleMonitoringService#create}.
 
 ---
 
@@ -1081,7 +1081,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#delete GoogleMonitoringService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#delete GoogleMonitoringService#delete}.
 
 ---
 
@@ -1093,7 +1093,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.68.0/docs/resources/google_monitoring_service#update GoogleMonitoringService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_monitoring_service#update GoogleMonitoringService#update}.
 
 ---
 
@@ -1104,7 +1104,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceBasicServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 googlemonitoringservice.NewGoogleMonitoringServiceBasicServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringServiceBasicServiceOutputReference
 ```
@@ -1411,7 +1411,7 @@ func InternalValue() GoogleMonitoringServiceBasicService
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 googlemonitoringservice.NewGoogleMonitoringServiceTelemetryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleMonitoringServiceTelemetryList
 ```
@@ -1543,7 +1543,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTelemetryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 googlemonitoringservice.NewGoogleMonitoringServiceTelemetryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleMonitoringServiceTelemetryOutputReference
 ```
@@ -1821,7 +1821,7 @@ func InternalValue() GoogleMonitoringServiceTelemetry
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleMonitoringService.GoogleMonitoringServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringservice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlemonitoringservice"
 
 googlemonitoringservice.NewGoogleMonitoringServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleMonitoringServiceTimeoutsOutputReference
 ```
