@@ -16,6 +16,8 @@ export * as googleAccessContextManagerEgressPolicy from './google-access-context
 export * as googleAccessContextManagerGcpUserAccessBinding from './google-access-context-manager-gcp-user-access-binding';
 export * as googleAccessContextManagerIngressPolicy from './google-access-context-manager-ingress-policy';
 export * as googleAccessContextManagerServicePerimeter from './google-access-context-manager-service-perimeter';
+export * as googleAccessContextManagerServicePerimeterEgressPolicy from './google-access-context-manager-service-perimeter-egress-policy';
+export * as googleAccessContextManagerServicePerimeterIngressPolicy from './google-access-context-manager-service-perimeter-ingress-policy';
 export * as googleAccessContextManagerServicePerimeterResource from './google-access-context-manager-service-perimeter-resource';
 export * as googleAccessContextManagerServicePerimeters from './google-access-context-manager-service-perimeters';
 export * as googleActiveDirectoryDomain from './google-active-directory-domain';
@@ -126,6 +128,7 @@ export * as googleBinaryAuthorizationAttestorIamMember from './google-binary-aut
 export * as googleBinaryAuthorizationAttestorIamPolicy from './google-binary-authorization-attestor-iam-policy';
 export * as googleBinaryAuthorizationPolicy from './google-binary-authorization-policy';
 export * as googleCertificateManagerCertificate from './google-certificate-manager-certificate';
+export * as googleCertificateManagerCertificateIssuanceConfig from './google-certificate-manager-certificate-issuance-config';
 export * as googleCertificateManagerCertificateMap from './google-certificate-manager-certificate-map';
 export * as googleCertificateManagerCertificateMapEntry from './google-certificate-manager-certificate-map-entry';
 export * as googleCertificateManagerDnsAuthorization from './google-certificate-manager-dns-authorization';
@@ -354,6 +357,10 @@ export * as googleDataplexAsset from './google-dataplex-asset';
 export * as googleDataplexAssetIamBinding from './google-dataplex-asset-iam-binding';
 export * as googleDataplexAssetIamMember from './google-dataplex-asset-iam-member';
 export * as googleDataplexAssetIamPolicy from './google-dataplex-asset-iam-policy';
+export * as googleDataplexDatascan from './google-dataplex-datascan';
+export * as googleDataplexDatascanIamBinding from './google-dataplex-datascan-iam-binding';
+export * as googleDataplexDatascanIamMember from './google-dataplex-datascan-iam-member';
+export * as googleDataplexDatascanIamPolicy from './google-dataplex-datascan-iam-policy';
 export * as googleDataplexLake from './google-dataplex-lake';
 export * as googleDataplexLakeIamBinding from './google-dataplex-lake-iam-binding';
 export * as googleDataplexLakeIamMember from './google-dataplex-lake-iam-member';
@@ -739,6 +746,7 @@ export * as googleVertexAiFeaturestoreIamPolicy from './google-vertex-ai-feature
 export * as googleVertexAiIndex from './google-vertex-ai-index';
 export * as googleVertexAiMetadataStore from './google-vertex-ai-metadata-store';
 export * as googleVertexAiTensorboard from './google-vertex-ai-tensorboard';
+export * as googleVmwareengineNetwork from './google-vmwareengine-network';
 export * as googleVpcAccessConnector from './google-vpc-access-connector';
 export * as googleWorkflowsWorkflow from './google-workflows-workflow';
 export * as googleWorkstationsWorkstation from './google-workstations-workstation';
@@ -861,6 +869,7 @@ export * as dataGoogleDataCatalogTagTemplateIamPolicy from './data-google-data-c
 export * as dataGoogleDataCatalogTaxonomyIamPolicy from './data-google-data-catalog-taxonomy-iam-policy';
 export * as dataGoogleDataFusionInstanceIamPolicy from './data-google-data-fusion-instance-iam-policy';
 export * as dataGoogleDataplexAssetIamPolicy from './data-google-dataplex-asset-iam-policy';
+export * as dataGoogleDataplexDatascanIamPolicy from './data-google-dataplex-datascan-iam-policy';
 export * as dataGoogleDataplexLakeIamPolicy from './data-google-dataplex-lake-iam-policy';
 export * as dataGoogleDataplexZoneIamPolicy from './data-google-dataplex-zone-iam-policy';
 export * as dataGoogleDataprocAutoscalingPolicyIamPolicy from './data-google-dataproc-autoscaling-policy-iam-policy';
@@ -987,6 +996,7 @@ export * as dataGoogleTpuTensorflowVersions from './data-google-tpu-tensorflow-v
 export * as dataGoogleVertexAiFeaturestoreEntitytypeIamPolicy from './data-google-vertex-ai-featurestore-entitytype-iam-policy';
 export * as dataGoogleVertexAiFeaturestoreIamPolicy from './data-google-vertex-ai-featurestore-iam-policy';
 export * as dataGoogleVertexAiIndex from './data-google-vertex-ai-index';
+export * as dataGoogleVmwareengineNetwork from './data-google-vmwareengine-network';
 export * as dataGoogleVpcAccessConnector from './data-google-vpc-access-connector';
 export * as dataGoogleWorkstationsWorkstationConfigIamPolicy from './data-google-workstations-workstation-config-iam-policy';
 export * as dataGoogleWorkstationsWorkstationIamPolicy from './data-google-workstations-workstation-iam-policy';
