@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleloggingorganizationexclusion"
 
 googleloggingorganizationexclusion.NewGoogleLoggingOrganizationExclusion(scope Construct, id *string, config GoogleLoggingOrganizationExclusionConfig) GoogleLoggingOrganizationExclusion
 ```
@@ -291,7 +291,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleloggingorganizationexclusion"
 
 googleloggingorganizationexclusion.GoogleLoggingOrganizationExclusion_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleloggingorganizationexclusion"
 
 googleloggingorganizationexclusion.GoogleLoggingOrganizationExclusion_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ googleloggingorganizationexclusion.GoogleLoggingOrganizationExclusion_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusion.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleloggingorganizationexclusion"
 
 googleloggingorganizationexclusion.GoogleLoggingOrganizationExclusion_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingOrganizationExclusion.GoogleLoggingOrganizationExclusionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleloggingorganizationexclusion"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleloggingorganizationexclusion"
 
 &googleloggingorganizationexclusion.GoogleLoggingOrganizationExclusionConfig {
 	Connection: interface{},
