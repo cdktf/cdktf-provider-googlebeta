@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIapWebTypeComputeIamPolicy.DataGoogleIapWebTypeComputeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleiapwebtypecomputeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiapwebtypecomputeiampolicy"
 
 datagoogleiapwebtypecomputeiampolicy.NewDataGoogleIapWebTypeComputeIamPolicy(scope Construct, id *string, config DataGoogleIapWebTypeComputeIamPolicyConfig) DataGoogleIapWebTypeComputeIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleIapWebTypeComputeIamPolicy.DataGoogleIapWebTypeComputeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleiapwebtypecomputeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiapwebtypecomputeiampolicy"
 
 datagoogleiapwebtypecomputeiampolicy.DataGoogleIapWebTypeComputeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleIapWebTypeComputeIamPolicy.DataGoogleIapWebTypeComputeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleiapwebtypecomputeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiapwebtypecomputeiampolicy"
 
 datagoogleiapwebtypecomputeiampolicy.DataGoogleIapWebTypeComputeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagoogleiapwebtypecomputeiampolicy.DataGoogleIapWebTypeComputeIamPolicy_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleIapWebTypeComputeIamPolicy.DataGoogleIapWebTypeComputeIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleiapwebtypecomputeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiapwebtypecomputeiampolicy"
 
 datagoogleiapwebtypecomputeiampolicy.DataGoogleIapWebTypeComputeIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleIapWebTypeComputeIamPolicy.DataGoogleIapWebTypeComputeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleiapwebtypecomputeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiapwebtypecomputeiampolicy"
 
 &datagoogleiapwebtypecomputeiampolicy.DataGoogleIapWebTypeComputeIamPolicyConfig {
 	Connection: interface{},

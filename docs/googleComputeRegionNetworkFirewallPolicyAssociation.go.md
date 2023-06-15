@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyAssociation.GoogleComputeRegionNetworkFirewallPolicyAssociation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeregionnetworkfirewallpolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputeregionnetworkfirewallpolicyassociation"
 
 googlecomputeregionnetworkfirewallpolicyassociation.NewGoogleComputeRegionNetworkFirewallPolicyAssociation(scope Construct, id *string, config GoogleComputeRegionNetworkFirewallPolicyAssociationConfig) GoogleComputeRegionNetworkFirewallPolicyAssociation
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyAssociation.GoogleComputeRegionNetworkFirewallPolicyAssociation.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeregionnetworkfirewallpolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputeregionnetworkfirewallpolicyassociation"
 
 googlecomputeregionnetworkfirewallpolicyassociation.GoogleComputeRegionNetworkFirewallPolicyAssociation_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyAssociation.GoogleComputeRegionNetworkFirewallPolicyAssociation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeregionnetworkfirewallpolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputeregionnetworkfirewallpolicyassociation"
 
 googlecomputeregionnetworkfirewallpolicyassociation.GoogleComputeRegionNetworkFirewallPolicyAssociation_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ googlecomputeregionnetworkfirewallpolicyassociation.GoogleComputeRegionNetworkFi
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyAssociation.GoogleComputeRegionNetworkFirewallPolicyAssociation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeregionnetworkfirewallpolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputeregionnetworkfirewallpolicyassociation"
 
 googlecomputeregionnetworkfirewallpolicyassociation.GoogleComputeRegionNetworkFirewallPolicyAssociation_IsTerraformResource(x interface{}) *bool
 ```
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyAssociation.GoogleComputeRegionNetworkFirewallPolicyAssociationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeregionnetworkfirewallpolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputeregionnetworkfirewallpolicyassociation"
 
 &googlecomputeregionnetworkfirewallpolicyassociation.GoogleComputeRegionNetworkFirewallPolicyAssociationConfig {
 	Connection: interface{},
@@ -737,7 +737,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomput
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7.googleComputeRegionNetworkFirewallPolicyAssociation.GoogleComputeRegionNetworkFirewallPolicyAssociationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleComputeRegionNetworkFirewallPolicyAssociation.GoogleComputeRegionNetworkFirewallPolicyAssociationTimeouts,
 }
 ```
 
@@ -936,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyAssociation.GoogleComputeRegionNetworkFirewallPolicyAssociationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeregionnetworkfirewallpolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputeregionnetworkfirewallpolicyassociation"
 
 &googlecomputeregionnetworkfirewallpolicyassociation.GoogleComputeRegionNetworkFirewallPolicyAssociationTimeouts {
 	Create: *string,
@@ -984,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionNetworkFirewallPolicyAssociation.GoogleComputeRegionNetworkFirewallPolicyAssociationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeregionnetworkfirewallpolicyassociation"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputeregionnetworkfirewallpolicyassociation"
 
 googlecomputeregionnetworkfirewallpolicyassociation.NewGoogleComputeRegionNetworkFirewallPolicyAssociationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionNetworkFirewallPolicyAssociationTimeoutsOutputReference
 ```
