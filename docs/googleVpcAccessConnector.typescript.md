@@ -471,7 +471,7 @@ googleVpcAccessConnector.GoogleVpcAccessConnector.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.subnetInput">subnetInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorSubnet">GoogleVpcAccessConnectorSubnet</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts">GoogleVpcAccessConnectorTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts">GoogleVpcAccessConnectorTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.ipCidrRange">ipCidrRange</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.machineType">machineType</a></code> | <code>string</code> | *No description.* |
@@ -791,10 +791,10 @@ public readonly subnetInput: GoogleVpcAccessConnectorSubnet;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnector.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: GoogleVpcAccessConnectorTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | GoogleVpcAccessConnectorTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts">GoogleVpcAccessConnectorTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts">GoogleVpcAccessConnectorTimeouts</a>
 
 ---
 
@@ -1848,7 +1848,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts">GoogleVpcAccessConnectorTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts">GoogleVpcAccessConnectorTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1919,10 +1919,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleVpcAccessConnectorTimeouts | IResolvable;
+public readonly internalValue: IResolvable | GoogleVpcAccessConnectorTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts">GoogleVpcAccessConnectorTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleVpcAccessConnector.GoogleVpcAccessConnectorTimeouts">GoogleVpcAccessConnectorTimeouts</a>
 
 ---
 
