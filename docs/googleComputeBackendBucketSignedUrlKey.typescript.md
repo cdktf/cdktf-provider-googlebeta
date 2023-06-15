@@ -385,7 +385,7 @@ googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.is
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.property.keyValueInput">keyValueInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts">GoogleComputeBackendBucketSignedUrlKeyTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts">GoogleComputeBackendBucketSignedUrlKeyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.property.backendBucket">backendBucket</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.property.keyValue">keyValue</a></code> | <code>string</code> | *No description.* |
@@ -599,10 +599,10 @@ public readonly projectInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKey.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: GoogleComputeBackendBucketSignedUrlKeyTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | GoogleComputeBackendBucketSignedUrlKeyTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts">GoogleComputeBackendBucketSignedUrlKeyTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts">GoogleComputeBackendBucketSignedUrlKeyTimeouts</a>
 
 ---
 
@@ -1135,7 +1135,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts">GoogleComputeBackendBucketSignedUrlKeyTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts">GoogleComputeBackendBucketSignedUrlKeyTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1206,10 +1206,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleComputeBackendBucketSignedUrlKeyTimeouts | IResolvable;
+public readonly internalValue: IResolvable | GoogleComputeBackendBucketSignedUrlKeyTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts">GoogleComputeBackendBucketSignedUrlKeyTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleComputeBackendBucketSignedUrlKey.GoogleComputeBackendBucketSignedUrlKeyTimeouts">GoogleComputeBackendBucketSignedUrlKeyTimeouts</a>
 
 ---
 

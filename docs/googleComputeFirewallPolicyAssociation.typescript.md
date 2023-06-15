@@ -378,7 +378,7 @@ googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.is
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.firewallPolicyInput">firewallPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.attachmentTarget">attachmentTarget</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.firewallPolicy">firewallPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -591,10 +591,10 @@ public readonly nameInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: GoogleComputeFirewallPolicyAssociationTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | GoogleComputeFirewallPolicyAssociationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a>
 
 ---
 
@@ -1101,7 +1101,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1172,10 +1172,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleComputeFirewallPolicyAssociationTimeouts | IResolvable;
+public readonly internalValue: IResolvable | GoogleComputeFirewallPolicyAssociationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a>
 
 ---
 

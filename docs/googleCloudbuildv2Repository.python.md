@@ -597,7 +597,7 @@ googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.is_terraform_resource(
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.property.parentConnectionInput">parent_connection_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.property.remoteUriInput">remote_uri_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts">GoogleCloudbuildv2RepositoryTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts">GoogleCloudbuildv2RepositoryTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.property.annotations">annotations</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.property.location">location</a></code> | <code>str</code> | *No description.* |
@@ -863,10 +863,10 @@ remote_uri_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2Repository.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[GoogleCloudbuildv2RepositoryTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, GoogleCloudbuildv2RepositoryTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts">GoogleCloudbuildv2RepositoryTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts">GoogleCloudbuildv2RepositoryTimeouts</a>]
 
 ---
 
@@ -1492,7 +1492,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts">GoogleCloudbuildv2RepositoryTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts">GoogleCloudbuildv2RepositoryTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1563,10 +1563,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GoogleCloudbuildv2RepositoryTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, GoogleCloudbuildv2RepositoryTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts">GoogleCloudbuildv2RepositoryTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudbuildv2Repository.GoogleCloudbuildv2RepositoryTimeouts">GoogleCloudbuildv2RepositoryTimeouts</a>]
 
 ---
 

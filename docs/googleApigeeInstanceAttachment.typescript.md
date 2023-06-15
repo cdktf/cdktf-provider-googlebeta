@@ -377,7 +377,7 @@ googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.isTerraformResourc
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.property.environmentInput">environmentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.property.instanceIdInput">instanceIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts">GoogleApigeeInstanceAttachmentTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts">GoogleApigeeInstanceAttachmentTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.property.environment">environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.property.instanceId">instanceId</a></code> | <code>string</code> | *No description.* |
@@ -579,10 +579,10 @@ public readonly instanceIdInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: GoogleApigeeInstanceAttachmentTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | GoogleApigeeInstanceAttachmentTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts">GoogleApigeeInstanceAttachmentTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts">GoogleApigeeInstanceAttachmentTimeouts</a>
 
 ---
 
@@ -1064,7 +1064,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts">GoogleApigeeInstanceAttachmentTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts">GoogleApigeeInstanceAttachmentTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1135,10 +1135,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleApigeeInstanceAttachmentTimeouts | IResolvable;
+public readonly internalValue: IResolvable | GoogleApigeeInstanceAttachmentTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts">GoogleApigeeInstanceAttachmentTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts">GoogleApigeeInstanceAttachmentTimeouts</a>
 
 ---
 

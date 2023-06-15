@@ -376,7 +376,7 @@ googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy.
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy.property.ingressPolicyNameInput">ingressPolicyNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy.property.resourceInput">resourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeouts">GoogleAccessContextManagerIngressPolicyTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeouts">GoogleAccessContextManagerIngressPolicyTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy.property.ingressPolicyName">ingressPolicyName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy.property.resource">resource</a></code> | <code>string</code> | *No description.* |
@@ -568,10 +568,10 @@ public readonly resourceInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicy.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: GoogleAccessContextManagerIngressPolicyTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | GoogleAccessContextManagerIngressPolicyTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeouts">GoogleAccessContextManagerIngressPolicyTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeouts">GoogleAccessContextManagerIngressPolicyTimeouts</a>
 
 ---
 
@@ -1053,7 +1053,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeouts">GoogleAccessContextManagerIngressPolicyTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeouts">GoogleAccessContextManagerIngressPolicyTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1124,10 +1124,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleAccessContextManagerIngressPolicyTimeouts | IResolvable;
+public readonly internalValue: IResolvable | GoogleAccessContextManagerIngressPolicyTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeouts">GoogleAccessContextManagerIngressPolicyTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleAccessContextManagerIngressPolicy.GoogleAccessContextManagerIngressPolicyTimeouts">GoogleAccessContextManagerIngressPolicyTimeouts</a>
 
 ---
 

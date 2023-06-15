@@ -384,7 +384,7 @@ googleFirebaseProject.GoogleFirebaseProject.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeoutsOutputReference">GoogleFirebaseProjectTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeouts">GoogleFirebaseProjectTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeouts">GoogleFirebaseProjectTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.property.project">project</a></code> | <code>string</code> | *No description.* |
 
@@ -585,10 +585,10 @@ public readonly projectInput: string;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProject.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: GoogleFirebaseProjectTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | GoogleFirebaseProjectTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeouts">GoogleFirebaseProjectTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeouts">GoogleFirebaseProjectTimeouts</a>
 
 ---
 
@@ -1043,7 +1043,7 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeouts">GoogleFirebaseProjectTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeouts">GoogleFirebaseProjectTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1114,10 +1114,10 @@ public readonly delete: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleFirebaseProjectTimeouts | IResolvable;
+public readonly internalValue: IResolvable | GoogleFirebaseProjectTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeouts">GoogleFirebaseProjectTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleFirebaseProject.GoogleFirebaseProjectTimeouts">GoogleFirebaseProjectTimeouts</a>
 
 ---
 

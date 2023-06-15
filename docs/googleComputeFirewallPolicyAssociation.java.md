@@ -493,7 +493,7 @@ GoogleComputeFirewallPolicyAssociation.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.firewallPolicyInput">firewallPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.attachmentTarget">attachmentTarget</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.firewallPolicy">firewallPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociation.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -709,7 +709,7 @@ public java.lang.String getNameInput();
 public java.lang.Object getTimeoutsInput();
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a>
 
 ---
 
@@ -1236,7 +1236,7 @@ public void resetDelete()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.delete">delete</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1310,7 +1310,7 @@ public java.lang.String getDelete();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleComputeFirewallPolicyAssociation.GoogleComputeFirewallPolicyAssociationTimeouts">GoogleComputeFirewallPolicyAssociationTimeouts</a>
 
 ---
 

@@ -534,7 +534,7 @@ googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.is_terraform_resource(
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.property.bucketIdInput">bucket_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts">GoogleFirebaseStorageBucketTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts">GoogleFirebaseStorageBucketTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.property.bucketId">bucket_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -736,10 +736,10 @@ project_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[GoogleFirebaseStorageBucketTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, GoogleFirebaseStorageBucketTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts">GoogleFirebaseStorageBucketTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts">GoogleFirebaseStorageBucketTimeouts</a>]
 
 ---
 
@@ -1259,7 +1259,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts">GoogleFirebaseStorageBucketTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts">GoogleFirebaseStorageBucketTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1330,10 +1330,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GoogleFirebaseStorageBucketTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, GoogleFirebaseStorageBucketTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts">GoogleFirebaseStorageBucketTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts">GoogleFirebaseStorageBucketTimeouts</a>]
 
 ---
 

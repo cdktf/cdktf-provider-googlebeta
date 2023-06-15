@@ -557,7 +557,7 @@ googleSccSource.GoogleSccSource.is_terraform_resource(
 | <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSource.property.displayNameInput">display_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSource.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSource.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSource.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeouts">GoogleSccSourceTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSource.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeouts">GoogleSccSourceTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSource.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSource.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSource.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -770,10 +770,10 @@ organization_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google-beta.googleSccSource.GoogleSccSource.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[GoogleSccSourceTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, GoogleSccSourceTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeouts">GoogleSccSourceTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeouts">GoogleSccSourceTimeouts</a>]
 
 ---
 
@@ -1350,7 +1350,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeouts">GoogleSccSourceTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeouts">GoogleSccSourceTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1441,10 +1441,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GoogleSccSourceTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, GoogleSccSourceTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeouts">GoogleSccSourceTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleSccSource.GoogleSccSourceTimeouts">GoogleSccSourceTimeouts</a>]
 
 ---
 

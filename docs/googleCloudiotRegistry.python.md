@@ -712,7 +712,7 @@ googleCloudiotRegistry.GoogleCloudiotRegistry.is_terraform_resource(
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistry.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistry.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistry.property.stateNotificationConfigInput">state_notification_config_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistry.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeouts">GoogleCloudiotRegistryTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistry.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeouts">GoogleCloudiotRegistryTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistry.property.httpConfig">http_config</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistry.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistry.property.logLevel">log_level</a></code> | <code>str</code> | *No description.* |
@@ -999,10 +999,10 @@ state_notification_config_input: typing.Mapping[str]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistry.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[GoogleCloudiotRegistryTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, GoogleCloudiotRegistryTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeouts">GoogleCloudiotRegistryTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeouts">GoogleCloudiotRegistryTimeouts</a>]
 
 ---
 
@@ -1947,7 +1947,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryCredentialsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryCredentialsOutputReference.property.publicKeyCertificateInput">public_key_certificate_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryCredentialsOutputReference.property.publicKeyCertificate">public_key_certificate</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryCredentialsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryCredentials">GoogleCloudiotRegistryCredentials</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryCredentialsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryCredentials">GoogleCloudiotRegistryCredentials</a>]</code> | *No description.* |
 
 ---
 
@@ -1998,10 +1998,10 @@ public_key_certificate: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryCredentialsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GoogleCloudiotRegistryCredentials, IResolvable]
+internal_value: typing.Union[IResolvable, GoogleCloudiotRegistryCredentials]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryCredentials">GoogleCloudiotRegistryCredentials</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryCredentials">GoogleCloudiotRegistryCredentials</a>]
 
 ---
 
@@ -2423,7 +2423,7 @@ def reset_subfolder_matches() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigsOutputReference.property.subfolderMatchesInput">subfolder_matches_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigsOutputReference.property.pubsubTopicName">pubsub_topic_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigsOutputReference.property.subfolderMatches">subfolder_matches</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigs">GoogleCloudiotRegistryEventNotificationConfigs</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigs">GoogleCloudiotRegistryEventNotificationConfigs</a>]</code> | *No description.* |
 
 ---
 
@@ -2494,10 +2494,10 @@ subfolder_matches: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GoogleCloudiotRegistryEventNotificationConfigs, IResolvable]
+internal_value: typing.Union[IResolvable, GoogleCloudiotRegistryEventNotificationConfigs]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigs">GoogleCloudiotRegistryEventNotificationConfigs</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryEventNotificationConfigs">GoogleCloudiotRegistryEventNotificationConfigs</a>]
 
 ---
 
@@ -2764,7 +2764,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeouts">GoogleCloudiotRegistryTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeouts">GoogleCloudiotRegistryTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -2855,10 +2855,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GoogleCloudiotRegistryTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, GoogleCloudiotRegistryTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeouts">GoogleCloudiotRegistryTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleCloudiotRegistry.GoogleCloudiotRegistryTimeouts">GoogleCloudiotRegistryTimeouts</a>]
 
 ---
 

@@ -2149,7 +2149,7 @@ def reset_disabled() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsOutputReference.property.disabled">disabled</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsOutputReference.property.filter">filter</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusions">GoogleLoggingFolderSinkExclusions</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusions">GoogleLoggingFolderSinkExclusions</a>]</code> | *No description.* |
 
 ---
 
@@ -2260,10 +2260,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusionsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GoogleLoggingFolderSinkExclusions, IResolvable]
+internal_value: typing.Union[IResolvable, GoogleLoggingFolderSinkExclusions]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusions">GoogleLoggingFolderSinkExclusions</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleLoggingFolderSink.GoogleLoggingFolderSinkExclusions">GoogleLoggingFolderSinkExclusions</a>]
 
 ---
 

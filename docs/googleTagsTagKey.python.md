@@ -602,7 +602,7 @@ googleTagsTagKey.GoogleTagsTagKey.is_terraform_resource(
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey.property.purposeDataInput">purpose_data_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey.property.purposeInput">purpose_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey.property.shortNameInput">short_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeouts">GoogleTagsTagKeyTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeouts">GoogleTagsTagKeyTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey.property.parent">parent</a></code> | <code>str</code> | *No description.* |
@@ -867,10 +867,10 @@ short_name_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKey.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[GoogleTagsTagKeyTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, GoogleTagsTagKeyTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeouts">GoogleTagsTagKeyTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeouts">GoogleTagsTagKeyTimeouts</a>]
 
 ---
 
@@ -1501,7 +1501,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeouts">GoogleTagsTagKeyTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeouts">GoogleTagsTagKeyTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1592,10 +1592,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GoogleTagsTagKeyTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, GoogleTagsTagKeyTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeouts">GoogleTagsTagKeyTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleTagsTagKey.GoogleTagsTagKeyTimeouts">GoogleTagsTagKeyTimeouts</a>]
 
 ---
 

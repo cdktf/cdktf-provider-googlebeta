@@ -543,7 +543,7 @@ googleNotebooksLocation.GoogleNotebooksLocation.is_terraform_resource(
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts">GoogleNotebooksLocationTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts">GoogleNotebooksLocationTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.property.project">project</a></code> | <code>str</code> | *No description.* |
@@ -745,10 +745,10 @@ project_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocation.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[GoogleNotebooksLocationTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, GoogleNotebooksLocationTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts">GoogleNotebooksLocationTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts">GoogleNotebooksLocationTimeouts</a>]
 
 ---
 
@@ -1291,7 +1291,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts">GoogleNotebooksLocationTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts">GoogleNotebooksLocationTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -1382,10 +1382,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[GoogleNotebooksLocationTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, GoogleNotebooksLocationTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts">GoogleNotebooksLocationTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-google-beta.googleNotebooksLocation.GoogleNotebooksLocationTimeouts">GoogleNotebooksLocationTimeouts</a>]
 
 ---
 

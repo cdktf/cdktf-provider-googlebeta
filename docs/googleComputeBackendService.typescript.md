@@ -713,7 +713,7 @@ googleComputeBackendService.GoogleComputeBackendService.isTerraformResource(x: a
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService.property.securitySettingsInput">securitySettingsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceSecuritySettings">GoogleComputeBackendServiceSecuritySettings</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService.property.sessionAffinityInput">sessionAffinityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService.property.timeoutSecInput">timeoutSecInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeouts">GoogleComputeBackendServiceTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeouts">GoogleComputeBackendServiceTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService.property.affinityCookieTtlSec">affinityCookieTtlSec</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService.property.compressionMode">compressionMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService.property.connectionDrainingTimeoutSec">connectionDrainingTimeoutSec</a></code> | <code>number</code> | *No description.* |
@@ -1301,10 +1301,10 @@ public readonly timeoutSecInput: number;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendService.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: GoogleComputeBackendServiceTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | GoogleComputeBackendServiceTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeouts">GoogleComputeBackendServiceTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeouts">GoogleComputeBackendServiceTimeouts</a>
 
 ---
 
@@ -2738,41 +2738,41 @@ public readonly localityLbPolicy: string;
 The load balancing algorithm used within the scope of the locality. The possible values are:.
 
 'ROUND_ROBIN': This is a simple policy in which each healthy backend
-              is selected in round robin order.
+             is selected in round robin order.
 
 'LEAST_REQUEST': An O(1) algorithm which selects two random healthy
-                hosts and picks the host which has fewer active requests.
+               hosts and picks the host which has fewer active requests.
 
 'RING_HASH': The ring/modulo hash load balancer implements consistent
-            hashing to backends. The algorithm has the property that the
-            addition/removal of a host from a set of N hosts only affects
-            1/N of the requests.
+           hashing to backends. The algorithm has the property that the
+           addition/removal of a host from a set of N hosts only affects
+           1/N of the requests.
 
 'RANDOM': The load balancer selects a random healthy host.
 
 'ORIGINAL_DESTINATION': Backend host is selected based on the client
-                       connection metadata, i.e., connections are opened
-                       to the same address as the destination address of
-                       the incoming connection before the connection
-                       was redirected to the load balancer.
+                      connection metadata, i.e., connections are opened
+                      to the same address as the destination address of
+                      the incoming connection before the connection
+                      was redirected to the load balancer.
 
 'MAGLEV': used as a drop in replacement for the ring hash load balancer.
-         Maglev is not as stable as ring hash but has faster table lookup
-         build times and host selection times. For more information about
-         Maglev, refer to https://ai.google/research/pubs/pub44824
+        Maglev is not as stable as ring hash but has faster table lookup
+        build times and host selection times. For more information about
+        Maglev, refer to https://ai.google/research/pubs/pub44824
 
 'WEIGHTED_MAGLEV': Per-instance weighted Load Balancing via health check
-                  reported weights. If set, the Backend Service must
-                  configure a non legacy HTTP-based Health Check, and
-                  health check replies are expected to contain
-                  non-standard HTTP response header field
-                  X-Load-Balancing-Endpoint-Weight to specify the
-                  per-instance weights. If set, Load Balancing is weight
-                  based on the per-instance weights reported in the last
-                  processed health check replies, as long as every
-                  instance either reported a valid weight or had
-                  UNAVAILABLE_WEIGHT. Otherwise, Load Balancing remains
-                  equal-weight.
+                 reported weights. If set, the Backend Service must
+                 configure a non legacy HTTP-based Health Check, and
+                 health check replies are expected to contain
+                 non-standard HTTP response header field
+                 X-Load-Balancing-Endpoint-Weight to specify the
+                 per-instance weights. If set, Load Balancing is weight
+                 based on the per-instance weights reported in the last
+                 processed health check replies, as long as every
+                 instance either reported a valid weight or had
+                 UNAVAILABLE_WEIGHT. Otherwise, Load Balancing remains
+                 equal-weight.
 
 
 This field is applicable to either:
@@ -3319,28 +3319,28 @@ not a valid configuration and will be rejected.
 The possible values are:
 
 'ROUND_ROBIN': This is a simple policy in which each healthy backend
-             is selected in round robin order.
+            is selected in round robin order.
 
 'LEAST_REQUEST': An O(1) algorithm which selects two random healthy
-               hosts and picks the host which has fewer active requests.
+              hosts and picks the host which has fewer active requests.
 
 'RING_HASH': The ring/modulo hash load balancer implements consistent
-           hashing to backends. The algorithm has the property that the
-           addition/removal of a host from a set of N hosts only affects
-           1/N of the requests.
+          hashing to backends. The algorithm has the property that the
+          addition/removal of a host from a set of N hosts only affects
+          1/N of the requests.
 
 'RANDOM': The load balancer selects a random healthy host.
 
 'ORIGINAL_DESTINATION': Backend host is selected based on the client
-                       connection metadata, i.e., connections are opened
-                       to the same address as the destination address of
-                       the incoming connection before the connection
-                       was redirected to the load balancer.
+                      connection metadata, i.e., connections are opened
+                      to the same address as the destination address of
+                      the incoming connection before the connection
+                      was redirected to the load balancer.
 
 'MAGLEV': used as a drop in replacement for the ring hash load balancer.
-         Maglev is not as stable as ring hash but has faster table lookup
-         build times and host selection times. For more information about
-         Maglev, refer to https://ai.google/research/pubs/pub44824 Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV"]
+        Maglev is not as stable as ring hash but has faster table lookup
+        build times and host selection times. For more information about
+        Maglev, refer to https://ai.google/research/pubs/pub44824 Possible values: ["ROUND_ROBIN", "LEAST_REQUEST", "RING_HASH", "RANDOM", "ORIGINAL_DESTINATION", "MAGLEV"]
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_backend_service#name GoogleComputeBackendService#name}
 
@@ -4285,7 +4285,7 @@ public resetMaxUtilization(): void
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceBackendOutputReference.property.maxRatePerEndpoint">maxRatePerEndpoint</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceBackendOutputReference.property.maxRatePerInstance">maxRatePerInstance</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceBackendOutputReference.property.maxUtilization">maxUtilization</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceBackendOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceBackend">GoogleComputeBackendServiceBackend</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceBackendOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceBackend">GoogleComputeBackendServiceBackend</a></code> | *No description.* |
 
 ---
 
@@ -4536,10 +4536,10 @@ public readonly maxUtilization: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceBackendOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleComputeBackendServiceBackend | IResolvable;
+public readonly internalValue: IResolvable | GoogleComputeBackendServiceBackend;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceBackend">GoogleComputeBackendServiceBackend</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceBackend">GoogleComputeBackendServiceBackend</a>
 
 ---
 
@@ -4917,7 +4917,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.headerNameInput">headerNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.headerName">headerName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a></code> | *No description.* |
 
 ---
 
@@ -4968,10 +4968,10 @@ public readonly headerName: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders | IResolvable;
+public readonly internalValue: IResolvable | GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders">GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeaders</a>
 
 ---
 
@@ -5817,7 +5817,7 @@ public resetTtl(): void
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.code">code</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.ttl">ttl</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy">GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy">GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy</a></code> | *No description.* |
 
 ---
 
@@ -5888,10 +5888,10 @@ public readonly ttl: number;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy | IResolvable;
+public readonly internalValue: IResolvable | GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy">GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy">GoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy</a>
 
 ---
 
@@ -9227,7 +9227,7 @@ public resetPolicy(): void
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesOutputReference.property.policy">policy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesPolicyOutputReference">GoogleComputeBackendServiceLocalityLbPoliciesPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesOutputReference.property.customPolicyInput">customPolicyInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicy">GoogleComputeBackendServiceLocalityLbPoliciesCustomPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesOutputReference.property.policyInput">policyInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesPolicy">GoogleComputeBackendServiceLocalityLbPoliciesPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPolicies">GoogleComputeBackendServiceLocalityLbPolicies</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPolicies">GoogleComputeBackendServiceLocalityLbPolicies</a></code> | *No description.* |
 
 ---
 
@@ -9298,10 +9298,10 @@ public readonly policyInput: GoogleComputeBackendServiceLocalityLbPoliciesPolicy
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPoliciesOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleComputeBackendServiceLocalityLbPolicies | IResolvable;
+public readonly internalValue: IResolvable | GoogleComputeBackendServiceLocalityLbPolicies;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPolicies">GoogleComputeBackendServiceLocalityLbPolicies</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceLocalityLbPolicies">GoogleComputeBackendServiceLocalityLbPolicies</a>
 
 ---
 
@@ -11608,7 +11608,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeouts">GoogleComputeBackendServiceTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeouts">GoogleComputeBackendServiceTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -11699,10 +11699,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: GoogleComputeBackendServiceTimeouts | IResolvable;
+public readonly internalValue: IResolvable | GoogleComputeBackendServiceTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeouts">GoogleComputeBackendServiceTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceTimeouts">GoogleComputeBackendServiceTimeouts</a>
 
 ---
 
