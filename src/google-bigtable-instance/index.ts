@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleBigtableInstanceConfig extends cdktf.TerraformMetaArgumen
   /**
   * Whether or not to allow Terraform to destroy the instance. Unless this field is set to false in Terraform state, a terraform destroy or terraform apply that would delete the instance will fail.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#deletion_protection GoogleBigtableInstance#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#deletion_protection GoogleBigtableInstance#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
   * The human-readable display name of the Bigtable instance. Defaults to the instance name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#display_name GoogleBigtableInstance#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#display_name GoogleBigtableInstance#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#id GoogleBigtableInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#id GoogleBigtableInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,57 +34,63 @@ export interface GoogleBigtableInstanceConfig extends cdktf.TerraformMetaArgumen
   /**
   * The instance type to create. One of "DEVELOPMENT" or "PRODUCTION". Defaults to "PRODUCTION".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#instance_type GoogleBigtableInstance#instance_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#instance_type GoogleBigtableInstance#instance_type}
   */
   readonly instanceType?: string;
   /**
   * A mapping of labels to assign to the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#labels GoogleBigtableInstance#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#labels GoogleBigtableInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name (also called Instance Id in the Cloud Console) of the Cloud Bigtable instance. Must be 6-33 characters and must only contain hyphens, lowercase letters and numbers.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#name GoogleBigtableInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#name GoogleBigtableInstance#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#project GoogleBigtableInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#project GoogleBigtableInstance#project}
   */
   readonly project?: string;
   /**
   * cluster block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#cluster GoogleBigtableInstance#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#cluster GoogleBigtableInstance#cluster}
   */
   readonly cluster?: GoogleBigtableInstanceCluster[] | cdktf.IResolvable;
+  /**
+  * timeouts block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#timeouts GoogleBigtableInstance#timeouts}
+  */
+  readonly timeouts?: GoogleBigtableInstanceTimeouts;
 }
 export interface GoogleBigtableInstanceClusterAutoscalingConfig {
   /**
   * The target CPU utilization for autoscaling. Value must be between 10 and 80.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#cpu_target GoogleBigtableInstance#cpu_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#cpu_target GoogleBigtableInstance#cpu_target}
   */
   readonly cpuTarget: number;
   /**
   * The maximum number of nodes for autoscaling.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#max_nodes GoogleBigtableInstance#max_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#max_nodes GoogleBigtableInstance#max_nodes}
   */
   readonly maxNodes: number;
   /**
   * The minimum number of nodes for autoscaling.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#min_nodes GoogleBigtableInstance#min_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#min_nodes GoogleBigtableInstance#min_nodes}
   */
   readonly minNodes: number;
   /**
   * The target storage utilization for autoscaling, in GB, for each node in a cluster. This number is limited between 2560 (2.5TiB) and 5120 (5TiB) for a SSD cluster and between 8192 (8TiB) and 16384 (16 TiB) for an HDD cluster. If not set, whatever is already set for the cluster will not change, or if the cluster is just being created, it will use the default value of 2560 for SSD clusters and 8192 for HDD clusters.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#storage_target GoogleBigtableInstance#storage_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#storage_target GoogleBigtableInstance#storage_target}
   */
   readonly storageTarget?: number;
 }
@@ -211,37 +217,37 @@ export interface GoogleBigtableInstanceCluster {
   /**
   * The ID of the Cloud Bigtable cluster. Must be 6-30 characters and must only contain hyphens, lowercase letters and numbers.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#cluster_id GoogleBigtableInstance#cluster_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#cluster_id GoogleBigtableInstance#cluster_id}
   */
   readonly clusterId: string;
   /**
   * Describes the Cloud KMS encryption key that will be used to protect the destination Bigtable cluster. The requirements for this key are: 1) The Cloud Bigtable service account associated with the project that contains this cluster must be granted the cloudkms.cryptoKeyEncrypterDecrypter role on the CMEK key. 2) Only regional keys can be used and the region of the CMEK key must match the region of the cluster. 3) All clusters within an instance must use the same CMEK key. Values are of the form projects/{project}/locations/{location}/keyRings/{keyring}/cryptoKeys/{key}
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#kms_key_name GoogleBigtableInstance#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#kms_key_name GoogleBigtableInstance#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * The number of nodes in your Cloud Bigtable cluster. Required, with a minimum of 1 for each cluster in an instance.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#num_nodes GoogleBigtableInstance#num_nodes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#num_nodes GoogleBigtableInstance#num_nodes}
   */
   readonly numNodes?: number;
   /**
   * The storage type to use. One of "SSD" or "HDD". Defaults to "SSD".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#storage_type GoogleBigtableInstance#storage_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#storage_type GoogleBigtableInstance#storage_type}
   */
   readonly storageType?: string;
   /**
   * The zone to create the Cloud Bigtable cluster in. Each cluster must have a different zone in the same region. Zones that support Bigtable instances are noted on the Cloud Bigtable locations page.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#zone GoogleBigtableInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#zone GoogleBigtableInstance#zone}
   */
   readonly zone?: string;
   /**
   * autoscaling_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance#autoscaling_config GoogleBigtableInstance#autoscaling_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#autoscaling_config GoogleBigtableInstance#autoscaling_config}
   */
   readonly autoscalingConfig?: GoogleBigtableInstanceClusterAutoscalingConfig;
 }
@@ -448,9 +454,111 @@ export class GoogleBigtableInstanceClusterList extends cdktf.ComplexList {
     return new GoogleBigtableInstanceClusterOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleBigtableInstanceTimeouts {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#create GoogleBigtableInstance#create}
+  */
+  readonly create?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance#update GoogleBigtableInstance#update}
+  */
+  readonly update?: string;
+}
+
+export function googleBigtableInstanceTimeoutsToTerraform(struct?: GoogleBigtableInstanceTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    create: cdktf.stringToTerraform(struct!.create),
+    update: cdktf.stringToTerraform(struct!.update),
+  }
+}
+
+export class GoogleBigtableInstanceTimeoutsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): GoogleBigtableInstanceTimeouts | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._create !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.create = this._create;
+    }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigtableInstanceTimeouts | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._create = undefined;
+      this._update = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._create = value.create;
+      this._update = value.update;
+    }
+  }
+
+  // create - computed: false, optional: true, required: false
+  private _create?: string; 
+  public get create() {
+    return this.getStringAttribute('create');
+  }
+  public set create(value: string) {
+    this._create = value;
+  }
+  public resetCreate() {
+    this._create = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createInput() {
+    return this._create;
+  }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance google_bigtable_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance google_bigtable_instance}
 */
 export class GoogleBigtableInstance extends cdktf.TerraformResource {
 
@@ -464,7 +572,7 @@ export class GoogleBigtableInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigtable_instance google_bigtable_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigtable_instance google_bigtable_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -475,7 +583,7 @@ export class GoogleBigtableInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigtable_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.69.1',
+        providerVersion: '4.70.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -494,6 +602,7 @@ export class GoogleBigtableInstance extends cdktf.TerraformResource {
     this._name = config.name;
     this._project = config.project;
     this._cluster.internalValue = config.cluster;
+    this._timeouts.internalValue = config.timeouts;
   }
 
   // ==========
@@ -625,6 +734,22 @@ export class GoogleBigtableInstance extends cdktf.TerraformResource {
     return this._cluster.internalValue;
   }
 
+  // timeouts - computed: false, optional: true, required: false
+  private _timeouts = new GoogleBigtableInstanceTimeoutsOutputReference(this, "timeouts");
+  public get timeouts() {
+    return this._timeouts;
+  }
+  public putTimeouts(value: GoogleBigtableInstanceTimeouts) {
+    this._timeouts.internalValue = value;
+  }
+  public resetTimeouts() {
+    this._timeouts.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get timeoutsInput() {
+    return this._timeouts.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -639,6 +764,7 @@ export class GoogleBigtableInstance extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
       cluster: cdktf.listMapper(googleBigtableInstanceClusterToTerraform, true)(this._cluster.internalValue),
+      timeouts: googleBigtableInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }
 }

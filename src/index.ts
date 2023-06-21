@@ -236,6 +236,7 @@ export * as googleComputeManagedSslCertificate from './google-compute-managed-ss
 export * as googleComputeNetwork from './google-compute-network';
 export * as googleComputeNetworkEndpoint from './google-compute-network-endpoint';
 export * as googleComputeNetworkEndpointGroup from './google-compute-network-endpoint-group';
+export * as googleComputeNetworkEndpoints from './google-compute-network-endpoints';
 export * as googleComputeNetworkFirewallPolicy from './google-compute-network-firewall-policy';
 export * as googleComputeNetworkFirewallPolicyAssociation from './google-compute-network-firewall-policy-association';
 export * as googleComputeNetworkFirewallPolicyRule from './google-compute-network-firewall-policy-rule';
@@ -744,6 +745,7 @@ export * as googleVertexAiFeaturestoreIamBinding from './google-vertex-ai-featur
 export * as googleVertexAiFeaturestoreIamMember from './google-vertex-ai-featurestore-iam-member';
 export * as googleVertexAiFeaturestoreIamPolicy from './google-vertex-ai-featurestore-iam-policy';
 export * as googleVertexAiIndex from './google-vertex-ai-index';
+export * as googleVertexAiIndexEndpoint from './google-vertex-ai-index-endpoint';
 export * as googleVertexAiMetadataStore from './google-vertex-ai-metadata-store';
 export * as googleVertexAiTensorboard from './google-vertex-ai-tensorboard';
 export * as googleVmwareengineNetwork from './google-vmwareengine-network';

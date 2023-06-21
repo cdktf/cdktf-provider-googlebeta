@@ -1,6 +1,6 @@
 # `google_cloudiot_registry_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_cloudiot_registry_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy).
+Refer to the Terraform Registory for docs: [`google_cloudiot_registry_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy).
 
 # `googleCloudiotRegistryIamPolicy` Submodule <a name="`googleCloudiotRegistryIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_cloudiot_registry_iam_policy
 
 ### GoogleCloudiotRegistryIamPolicy <a name="GoogleCloudiotRegistryIamPolicy" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy google_cloudiot_registry_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy google_cloudiot_registry_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicy.Initializer"></a>
 
@@ -686,11 +686,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudi
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy#name GoogleCloudiotRegistryIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy#policy_data GoogleCloudiotRegistryIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy#id GoogleCloudiotRegistryIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy#project GoogleCloudiotRegistryIamPolicy#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy#region GoogleCloudiotRegistryIamPolicy#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy#name GoogleCloudiotRegistryIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy#policy_data GoogleCloudiotRegistryIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy#id GoogleCloudiotRegistryIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy#project GoogleCloudiotRegistryIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamPolicy.GoogleCloudiotRegistryIamPolicyConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy#region GoogleCloudiotRegistryIamPolicy#region}. |
 
 ---
 
@@ -772,7 +772,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy#name GoogleCloudiotRegistryIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy#name GoogleCloudiotRegistryIamPolicy#name}.
 
 ---
 
@@ -784,7 +784,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy#policy_data GoogleCloudiotRegistryIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy#policy_data GoogleCloudiotRegistryIamPolicy#policy_data}.
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy#id GoogleCloudiotRegistryIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy#id GoogleCloudiotRegistryIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy#project GoogleCloudiotRegistryIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy#project GoogleCloudiotRegistryIamPolicy#project}.
 
 ---
 
@@ -823,7 +823,7 @@ Region *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudiot_registry_iam_policy#region GoogleCloudiotRegistryIamPolicy#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudiot_registry_iam_policy#region GoogleCloudiotRegistryIamPolicy#region}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `google_cloudfunctions2_function_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_cloudfunctions2_function_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member).
+Refer to the Terraform Registory for docs: [`google_cloudfunctions2_function_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member).
 
 # `googleCloudfunctions2FunctionIamMember` Submodule <a name="`googleCloudfunctions2FunctionIamMember` Submodule" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_cloudfunctions2_function_iam
 
 ### GoogleCloudfunctions2FunctionIamMember <a name="GoogleCloudfunctions2FunctionIamMember" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member google_cloudfunctions2_function_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member google_cloudfunctions2_function_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer"></a>
 
@@ -46,13 +46,13 @@ googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember(
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.cloudFunction">cloud_function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#cloud_function GoogleCloudfunctions2FunctionIamMember#cloud_function}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#member GoogleCloudfunctions2FunctionIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#role GoogleCloudfunctions2FunctionIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.cloudFunction">cloud_function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#cloud_function GoogleCloudfunctions2FunctionIamMember#cloud_function}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#member GoogleCloudfunctions2FunctionIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#role GoogleCloudfunctions2FunctionIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberCondition">GoogleCloudfunctions2FunctionIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#id GoogleCloudfunctions2FunctionIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#location GoogleCloudfunctions2FunctionIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#project GoogleCloudfunctions2FunctionIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#id GoogleCloudfunctions2FunctionIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#location GoogleCloudfunctions2FunctionIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#project GoogleCloudfunctions2FunctionIamMember#project}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#cloud_function GoogleCloudfunctions2FunctionIamMember#cloud_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#cloud_function GoogleCloudfunctions2FunctionIamMember#cloud_function}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#member GoogleCloudfunctions2FunctionIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#member GoogleCloudfunctions2FunctionIamMember#member}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#role GoogleCloudfunctions2FunctionIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#role GoogleCloudfunctions2FunctionIamMember#role}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#condition GoogleCloudfunctions2FunctionIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#condition GoogleCloudfunctions2FunctionIamMember#condition}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#id GoogleCloudfunctions2FunctionIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#id GoogleCloudfunctions2FunctionIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#location GoogleCloudfunctions2FunctionIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#location GoogleCloudfunctions2FunctionIamMember#location}.
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#project GoogleCloudfunctions2FunctionIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#project GoogleCloudfunctions2FunctionIamMember#project}.
 
 ---
 
@@ -428,7 +428,7 @@ def put_condition(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#expression GoogleCloudfunctions2FunctionIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#expression GoogleCloudfunctions2FunctionIamMember#expression}.
 
 ---
 
@@ -436,7 +436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#title GoogleCloudfunctions2FunctionIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#title GoogleCloudfunctions2FunctionIamMember#title}.
 
 ---
 
@@ -444,7 +444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#description GoogleCloudfunctions2FunctionIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#description GoogleCloudfunctions2FunctionIamMember#description}.
 
 ---
 
@@ -914,9 +914,9 @@ googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#expression GoogleCloudfunctions2FunctionIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#title GoogleCloudfunctions2FunctionIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#description GoogleCloudfunctions2FunctionIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#expression GoogleCloudfunctions2FunctionIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#title GoogleCloudfunctions2FunctionIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#description GoogleCloudfunctions2FunctionIamMember#description}. |
 
 ---
 
@@ -928,7 +928,7 @@ expression: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#expression GoogleCloudfunctions2FunctionIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#expression GoogleCloudfunctions2FunctionIamMember#expression}.
 
 ---
 
@@ -940,7 +940,7 @@ title: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#title GoogleCloudfunctions2FunctionIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#title GoogleCloudfunctions2FunctionIamMember#title}.
 
 ---
 
@@ -952,7 +952,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#description GoogleCloudfunctions2FunctionIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#description GoogleCloudfunctions2FunctionIamMember#description}.
 
 ---
 
@@ -992,13 +992,13 @@ googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberCon
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.cloudFunction">cloud_function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#cloud_function GoogleCloudfunctions2FunctionIamMember#cloud_function}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#member GoogleCloudfunctions2FunctionIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#role GoogleCloudfunctions2FunctionIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.cloudFunction">cloud_function</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#cloud_function GoogleCloudfunctions2FunctionIamMember#cloud_function}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#member GoogleCloudfunctions2FunctionIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#role GoogleCloudfunctions2FunctionIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberCondition">GoogleCloudfunctions2FunctionIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#id GoogleCloudfunctions2FunctionIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#location GoogleCloudfunctions2FunctionIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#project GoogleCloudfunctions2FunctionIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#id GoogleCloudfunctions2FunctionIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#location GoogleCloudfunctions2FunctionIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudfunctions2FunctionIamMember.GoogleCloudfunctions2FunctionIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#project GoogleCloudfunctions2FunctionIamMember#project}. |
 
 ---
 
@@ -1080,7 +1080,7 @@ cloud_function: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#cloud_function GoogleCloudfunctions2FunctionIamMember#cloud_function}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#cloud_function GoogleCloudfunctions2FunctionIamMember#cloud_function}.
 
 ---
 
@@ -1092,7 +1092,7 @@ member: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#member GoogleCloudfunctions2FunctionIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#member GoogleCloudfunctions2FunctionIamMember#member}.
 
 ---
 
@@ -1104,7 +1104,7 @@ role: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#role GoogleCloudfunctions2FunctionIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#role GoogleCloudfunctions2FunctionIamMember#role}.
 
 ---
 
@@ -1118,7 +1118,7 @@ condition: GoogleCloudfunctions2FunctionIamMemberCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#condition GoogleCloudfunctions2FunctionIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#condition GoogleCloudfunctions2FunctionIamMember#condition}
 
 ---
 
@@ -1130,7 +1130,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#id GoogleCloudfunctions2FunctionIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#id GoogleCloudfunctions2FunctionIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1145,7 +1145,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#location GoogleCloudfunctions2FunctionIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#location GoogleCloudfunctions2FunctionIamMember#location}.
 
 ---
 
@@ -1157,7 +1157,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_cloudfunctions2_function_iam_member#project GoogleCloudfunctions2FunctionIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_cloudfunctions2_function_iam_member#project GoogleCloudfunctions2FunctionIamMember#project}.
 
 ---
 
