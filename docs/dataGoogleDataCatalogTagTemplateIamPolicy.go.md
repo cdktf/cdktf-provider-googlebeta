@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatacatalogtagtemplateiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogledatacatalogtagtemplateiampolicy"
 
 datagoogledatacatalogtagtemplateiampolicy.NewDataGoogleDataCatalogTagTemplateIamPolicy(scope Construct, id *string, config DataGoogleDataCatalogTagTemplateIamPolicyConfig) DataGoogleDataCatalogTagTemplateIamPolicy
 ```
@@ -291,7 +291,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatacatalogtagtemplateiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogledatacatalogtagtemplateiampolicy"
 
 datagoogledatacatalogtagtemplateiampolicy.DataGoogleDataCatalogTagTemplateIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatacatalogtagtemplateiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogledatacatalogtagtemplateiampolicy"
 
 datagoogledatacatalogtagtemplateiampolicy.DataGoogleDataCatalogTagTemplateIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagoogledatacatalogtagtemplateiampolicy.DataGoogleDataCatalogTagTemplateIamPol
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatacatalogtagtemplateiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogledatacatalogtagtemplateiampolicy"
 
 datagoogledatacatalogtagtemplateiampolicy.DataGoogleDataCatalogTagTemplateIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleDataCatalogTagTemplateIamPolicy.DataGoogleDataCatalogTagTemplateIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogledatacatalogtagtemplateiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogledatacatalogtagtemplateiampolicy"
 
 &datagoogledatacatalogtagtemplateiampolicy.DataGoogleDataCatalogTagTemplateIamPolicyConfig {
 	Connection: interface{},
