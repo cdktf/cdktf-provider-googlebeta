@@ -1,6 +1,6 @@
 # `google_bigquery_table`
 
-Refer to the Terraform Registory for docs: [`google_bigquery_table`](https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table).
+Refer to the Terraform Registory for docs: [`google_bigquery_table`](https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table).
 
 # `googleBigqueryTable` Submodule <a name="`googleBigqueryTable` Submodule" id="@cdktf/provider-google-beta.googleBigqueryTable"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_bigquery_table`](https://reg
 
 ### GoogleBigqueryTable <a name="GoogleBigqueryTable" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table google_bigquery_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table google_bigquery_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTable(scope Construct, id *string, config GoogleBigqueryTableConfig) GoogleBigqueryTable
 ```
@@ -453,7 +453,7 @@ func ResetView()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.GoogleBigqueryTable_IsConstruct(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.GoogleBigqueryTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ googlebigquerytable.GoogleBigqueryTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.GoogleBigqueryTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -1171,7 +1171,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableConfig {
 	Connection: interface{},
@@ -1186,18 +1186,18 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigque
 	Clustering: *[]*string,
 	DeletionProtection: interface{},
 	Description: *string,
-	EncryptionConfiguration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableEncryptionConfiguration,
+	EncryptionConfiguration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableEncryptionConfiguration,
 	ExpirationTime: *f64,
-	ExternalDataConfiguration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableExternalDataConfiguration,
+	ExternalDataConfiguration: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfiguration,
 	FriendlyName: *string,
 	Id: *string,
 	Labels: *map[string]*string,
-	MaterializedView: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableMaterializedView,
+	MaterializedView: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableMaterializedView,
 	Project: *string,
-	RangePartitioning: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableRangePartitioning,
+	RangePartitioning: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableRangePartitioning,
 	Schema: *string,
-	TimePartitioning: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableTimePartitioning,
-	View: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableView,
+	TimePartitioning: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableTimePartitioning,
+	View: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableView,
 }
 ```
 
@@ -1221,7 +1221,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigque
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableConfig.property.expirationTime">ExpirationTime</a></code> | <code>*f64</code> | The time when this table expires, in milliseconds since the epoch. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableConfig.property.externalDataConfiguration">ExternalDataConfiguration</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfiguration">GoogleBigqueryTableExternalDataConfiguration</a></code> | external_data_configuration block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableConfig.property.friendlyName">FriendlyName</a></code> | <code>*string</code> | A descriptive name for the table. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#id GoogleBigqueryTable#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#id GoogleBigqueryTable#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | A mapping of labels to assign to the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableConfig.property.materializedView">MaterializedView</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableMaterializedView">GoogleBigqueryTableMaterializedView</a></code> | materialized_view block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the resource belongs. |
@@ -1312,7 +1312,7 @@ DatasetId *string
 
 The dataset ID to create the table in. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#dataset_id GoogleBigqueryTable#dataset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#dataset_id GoogleBigqueryTable#dataset_id}
 
 ---
 
@@ -1326,7 +1326,7 @@ TableId *string
 
 A unique ID for the resource. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#table_id GoogleBigqueryTable#table_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#table_id GoogleBigqueryTable#table_id}
 
 ---
 
@@ -1342,7 +1342,7 @@ Specifies column names to use for data clustering.
 
 Up to four top-level columns are allowed, and should be specified in descending priority order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#clustering GoogleBigqueryTable#clustering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#clustering GoogleBigqueryTable#clustering}
 
 ---
 
@@ -1358,7 +1358,7 @@ Whether or not to allow Terraform to destroy the instance.
 
 Unless this field is set to false in Terraform state, a terraform destroy or terraform apply that would delete the instance will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#deletion_protection GoogleBigqueryTable#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#deletion_protection GoogleBigqueryTable#deletion_protection}
 
 ---
 
@@ -1372,7 +1372,7 @@ Description *string
 
 The field description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#description GoogleBigqueryTable#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#description GoogleBigqueryTable#description}
 
 ---
 
@@ -1386,7 +1386,7 @@ EncryptionConfiguration GoogleBigqueryTableEncryptionConfiguration
 
 encryption_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#encryption_configuration GoogleBigqueryTable#encryption_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#encryption_configuration GoogleBigqueryTable#encryption_configuration}
 
 ---
 
@@ -1402,7 +1402,7 @@ The time when this table expires, in milliseconds since the epoch.
 
 If not present, the table will persist indefinitely. Expired tables will be deleted and their storage reclaimed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#expiration_time GoogleBigqueryTable#expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#expiration_time GoogleBigqueryTable#expiration_time}
 
 ---
 
@@ -1416,7 +1416,7 @@ ExternalDataConfiguration GoogleBigqueryTableExternalDataConfiguration
 
 external_data_configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#external_data_configuration GoogleBigqueryTable#external_data_configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#external_data_configuration GoogleBigqueryTable#external_data_configuration}
 
 ---
 
@@ -1430,7 +1430,7 @@ FriendlyName *string
 
 A descriptive name for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#friendly_name GoogleBigqueryTable#friendly_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#friendly_name GoogleBigqueryTable#friendly_name}
 
 ---
 
@@ -1442,7 +1442,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#id GoogleBigqueryTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#id GoogleBigqueryTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1459,7 +1459,7 @@ Labels *map[string]*string
 
 A mapping of labels to assign to the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#labels GoogleBigqueryTable#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#labels GoogleBigqueryTable#labels}
 
 ---
 
@@ -1473,7 +1473,7 @@ MaterializedView GoogleBigqueryTableMaterializedView
 
 materialized_view block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#materialized_view GoogleBigqueryTable#materialized_view}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#materialized_view GoogleBigqueryTable#materialized_view}
 
 ---
 
@@ -1487,7 +1487,7 @@ Project *string
 
 The ID of the project in which the resource belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#project GoogleBigqueryTable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#project GoogleBigqueryTable#project}
 
 ---
 
@@ -1501,7 +1501,7 @@ RangePartitioning GoogleBigqueryTableRangePartitioning
 
 range_partitioning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#range_partitioning GoogleBigqueryTable#range_partitioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#range_partitioning GoogleBigqueryTable#range_partitioning}
 
 ---
 
@@ -1515,7 +1515,7 @@ Schema *string
 
 A JSON schema for the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#schema GoogleBigqueryTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#schema GoogleBigqueryTable#schema}
 
 ---
 
@@ -1529,7 +1529,7 @@ TimePartitioning GoogleBigqueryTableTimePartitioning
 
 time_partitioning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#time_partitioning GoogleBigqueryTable#time_partitioning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#time_partitioning GoogleBigqueryTable#time_partitioning}
 
 ---
 
@@ -1543,7 +1543,7 @@ View GoogleBigqueryTableView
 
 view block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#view GoogleBigqueryTable#view}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#view GoogleBigqueryTable#view}
 
 ---
 
@@ -1552,7 +1552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableEncryptionConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableEncryptionConfiguration {
 	KmsKeyName: *string,
@@ -1579,7 +1579,7 @@ The self link or full name of a key which should be used to encrypt this table.
 
 Note that the default bigquery service account will need to have encrypt/decrypt permissions on this key - you may want to see the google_bigquery_default_service_account datasource and the google_kms_crypto_key_iam_binding resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#kms_key_name GoogleBigqueryTable#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#kms_key_name GoogleBigqueryTable#kms_key_name}
 
 ---
 
@@ -1588,18 +1588,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableExternalDataConfiguration {
 	Autodetect: interface{},
 	SourceFormat: *string,
 	SourceUris: *[]*string,
-	AvroOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationAvroOptions,
+	AvroOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationAvroOptions,
 	Compression: *string,
 	ConnectionId: *string,
-	CsvOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptions,
-	GoogleSheetsOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions,
-	HivePartitioningOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions,
+	CsvOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptions,
+	GoogleSheetsOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions,
+	HivePartitioningOptions: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions,
 	IgnoreUnknownValues: interface{},
 	MaxBadRecords: *f64,
 	ReferenceFileSchemaUri: *string,
@@ -1637,7 +1637,7 @@ Autodetect interface{}
 
 Let BigQuery try to autodetect the schema and format of the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#autodetect GoogleBigqueryTable#autodetect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#autodetect GoogleBigqueryTable#autodetect}
 
 ---
 
@@ -1651,7 +1651,7 @@ SourceFormat *string
 
 Please see sourceFormat under ExternalDataConfiguration in Bigquery's public API documentation (https://cloud.google.com/bigquery/docs/reference/rest/v2/tables#externaldataconfiguration) for supported formats. To use "GOOGLE_SHEETS" the scopes must include "googleapis.com/auth/drive.readonly".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#source_format GoogleBigqueryTable#source_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#source_format GoogleBigqueryTable#source_format}
 
 ---
 
@@ -1665,7 +1665,7 @@ SourceUris *[]*string
 
 A list of the fully-qualified URIs that point to your data in Google Cloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#source_uris GoogleBigqueryTable#source_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#source_uris GoogleBigqueryTable#source_uris}
 
 ---
 
@@ -1679,7 +1679,7 @@ AvroOptions GoogleBigqueryTableExternalDataConfigurationAvroOptions
 
 avro_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#avro_options GoogleBigqueryTable#avro_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#avro_options GoogleBigqueryTable#avro_options}
 
 ---
 
@@ -1693,7 +1693,7 @@ Compression *string
 
 The compression type of the data source. Valid values are "NONE" or "GZIP".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#compression GoogleBigqueryTable#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#compression GoogleBigqueryTable#compression}
 
 ---
 
@@ -1709,7 +1709,7 @@ The connection specifying the credentials to be used to read external storage, s
 
 The connectionId can have the form "{{project}}.{{location}}.{{connection_id}}" or "projects/{{project}}/locations/{{location}}/connections/{{connection_id}}".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#connection_id GoogleBigqueryTable#connection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#connection_id GoogleBigqueryTable#connection_id}
 
 ---
 
@@ -1723,7 +1723,7 @@ CsvOptions GoogleBigqueryTableExternalDataConfigurationCsvOptions
 
 csv_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#csv_options GoogleBigqueryTable#csv_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#csv_options GoogleBigqueryTable#csv_options}
 
 ---
 
@@ -1737,7 +1737,7 @@ GoogleSheetsOptions GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOpti
 
 google_sheets_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#google_sheets_options GoogleBigqueryTable#google_sheets_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#google_sheets_options GoogleBigqueryTable#google_sheets_options}
 
 ---
 
@@ -1751,7 +1751,7 @@ HivePartitioningOptions GoogleBigqueryTableExternalDataConfigurationHivePartitio
 
 hive_partitioning_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#hive_partitioning_options GoogleBigqueryTable#hive_partitioning_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#hive_partitioning_options GoogleBigqueryTable#hive_partitioning_options}
 
 ---
 
@@ -1767,7 +1767,7 @@ Indicates if BigQuery should allow extra values that are not represented in the 
 
 If true, the extra values are ignored. If false, records with extra columns are treated as bad records, and if there are too many bad records, an invalid error is returned in the job result. The default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#ignore_unknown_values GoogleBigqueryTable#ignore_unknown_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#ignore_unknown_values GoogleBigqueryTable#ignore_unknown_values}
 
 ---
 
@@ -1781,7 +1781,7 @@ MaxBadRecords *f64
 
 The maximum number of bad records that BigQuery can ignore when reading data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#max_bad_records GoogleBigqueryTable#max_bad_records}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#max_bad_records GoogleBigqueryTable#max_bad_records}
 
 ---
 
@@ -1797,7 +1797,7 @@ When creating an external table, the user can provide a reference file with the 
 
 This is enabled for the following formats: AVRO, PARQUET, ORC.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#reference_file_schema_uri GoogleBigqueryTable#reference_file_schema_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#reference_file_schema_uri GoogleBigqueryTable#reference_file_schema_uri}
 
 ---
 
@@ -1813,7 +1813,7 @@ A JSON schema for the external table.
 
 Schema is required for CSV and JSON formats and is disallowed for Google Cloud Bigtable, Cloud Datastore backups, and Avro formats when using external tables.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#schema GoogleBigqueryTable#schema}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#schema GoogleBigqueryTable#schema}
 
 ---
 
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationAvroOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableExternalDataConfigurationAvroOptions {
 	UseAvroLogicalTypes: interface{},
@@ -1847,7 +1847,7 @@ UseAvroLogicalTypes interface{}
 
 If sourceFormat is set to "AVRO", indicates whether to interpret logical types as the corresponding BigQuery data type (for example, TIMESTAMP), instead of using the raw type (for example, INTEGER).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#use_avro_logical_types GoogleBigqueryTable#use_avro_logical_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#use_avro_logical_types GoogleBigqueryTable#use_avro_logical_types}
 
 ---
 
@@ -1856,7 +1856,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableExternalDataConfigurationCsvOptions {
 	Quote: *string,
@@ -1893,7 +1893,7 @@ The value that is used to quote data sections in a CSV file.
 
 If your data does not contain quoted sections, set the property value to an empty string. If your data contains quoted newline characters, you must also set the allow_quoted_newlines property to true. The API-side default is ", specified in Terraform escaped as ". Due to limitations with Terraform default values, this value is required to be explicitly set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#quote GoogleBigqueryTable#quote}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#quote GoogleBigqueryTable#quote}
 
 ---
 
@@ -1907,7 +1907,7 @@ AllowJaggedRows interface{}
 
 Indicates if BigQuery should accept rows that are missing trailing optional columns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#allow_jagged_rows GoogleBigqueryTable#allow_jagged_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#allow_jagged_rows GoogleBigqueryTable#allow_jagged_rows}
 
 ---
 
@@ -1923,7 +1923,7 @@ Indicates if BigQuery should allow quoted data sections that contain newline cha
 
 The default value is false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#allow_quoted_newlines GoogleBigqueryTable#allow_quoted_newlines}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#allow_quoted_newlines GoogleBigqueryTable#allow_quoted_newlines}
 
 ---
 
@@ -1937,7 +1937,7 @@ Encoding *string
 
 The character encoding of the data. The supported values are UTF-8 or ISO-8859-1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#encoding GoogleBigqueryTable#encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#encoding GoogleBigqueryTable#encoding}
 
 ---
 
@@ -1951,7 +1951,7 @@ FieldDelimiter *string
 
 The separator for fields in a CSV file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#field_delimiter GoogleBigqueryTable#field_delimiter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#field_delimiter GoogleBigqueryTable#field_delimiter}
 
 ---
 
@@ -1965,7 +1965,7 @@ SkipLeadingRows *f64
 
 The number of rows at the top of a CSV file that BigQuery will skip when reading the data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#skip_leading_rows GoogleBigqueryTable#skip_leading_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#skip_leading_rows GoogleBigqueryTable#skip_leading_rows}
 
 ---
 
@@ -1974,7 +1974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions {
 	Range: *string,
@@ -2003,7 +2003,7 @@ Range of a sheet to query from.
 
 Only used when non-empty. At least one of range or skip_leading_rows must be set. Typical format: "sheet_name!top_left_cell_id:bottom_right_cell_id" For example: "sheet1!A1:B20"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#range GoogleBigqueryTable#range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#range GoogleBigqueryTable#range}
 
 ---
 
@@ -2019,7 +2019,7 @@ The number of rows at the top of the sheet that BigQuery will skip when reading 
 
 At least one of range or skip_leading_rows must be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#skip_leading_rows GoogleBigqueryTable#skip_leading_rows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#skip_leading_rows GoogleBigqueryTable#skip_leading_rows}
 
 ---
 
@@ -2028,7 +2028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions {
 	Mode: *string,
@@ -2057,7 +2057,7 @@ Mode *string
 
 When set, what mode of hive partitioning to use when reading data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#mode GoogleBigqueryTable#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#mode GoogleBigqueryTable#mode}
 
 ---
 
@@ -2071,7 +2071,7 @@ RequirePartitionFilter interface{}
 
 If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#require_partition_filter GoogleBigqueryTable#require_partition_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#require_partition_filter GoogleBigqueryTable#require_partition_filter}
 
 ---
 
@@ -2087,7 +2087,7 @@ When hive partition detection is requested, a common for all source uris must be
 
 The prefix must end immediately before the partition key encoding begins.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#source_uri_prefix GoogleBigqueryTable#source_uri_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#source_uri_prefix GoogleBigqueryTable#source_uri_prefix}
 
 ---
 
@@ -2096,7 +2096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableMaterializedView.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableMaterializedView {
 	Query: *string,
@@ -2125,7 +2125,7 @@ Query *string
 
 A query whose result is persisted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#query GoogleBigqueryTable#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#query GoogleBigqueryTable#query}
 
 ---
 
@@ -2139,7 +2139,7 @@ EnableRefresh interface{}
 
 Specifies if BigQuery should automatically refresh materialized view when the base table is updated. The default is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#enable_refresh GoogleBigqueryTable#enable_refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#enable_refresh GoogleBigqueryTable#enable_refresh}
 
 ---
 
@@ -2153,7 +2153,7 @@ RefreshIntervalMs *f64
 
 Specifies maximum frequency at which this materialized view will be refreshed. The default is 1800000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#refresh_interval_ms GoogleBigqueryTable#refresh_interval_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#refresh_interval_ms GoogleBigqueryTable#refresh_interval_ms}
 
 ---
 
@@ -2162,11 +2162,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableRangePartitioning {
 	Field: *string,
-	Range: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRange,
+	Range: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRange,
 }
 ```
 
@@ -2189,7 +2189,7 @@ Field *string
 
 The field used to determine how to create a range-based partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#field GoogleBigqueryTable#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#field GoogleBigqueryTable#field}
 
 ---
 
@@ -2203,7 +2203,7 @@ Range GoogleBigqueryTableRangePartitioningRange
 
 range block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#range GoogleBigqueryTable#range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#range GoogleBigqueryTable#range}
 
 ---
 
@@ -2212,7 +2212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableRangePartitioningRange {
 	End: *f64,
@@ -2241,7 +2241,7 @@ End *f64
 
 End of the range partitioning, exclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#end GoogleBigqueryTable#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#end GoogleBigqueryTable#end}
 
 ---
 
@@ -2255,7 +2255,7 @@ Interval *f64
 
 The width of each range within the partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#interval GoogleBigqueryTable#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#interval GoogleBigqueryTable#interval}
 
 ---
 
@@ -2269,7 +2269,7 @@ Start *f64
 
 Start of the range partitioning, inclusive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#start GoogleBigqueryTable#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#start GoogleBigqueryTable#start}
 
 ---
 
@@ -2278,7 +2278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableTimePartitioning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableTimePartitioning {
 	Type: *string,
@@ -2309,7 +2309,7 @@ Type *string
 
 The supported types are DAY, HOUR, MONTH, and YEAR, which will generate one partition per day, hour, month, and year, respectively.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#type GoogleBigqueryTable#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#type GoogleBigqueryTable#type}
 
 ---
 
@@ -2323,7 +2323,7 @@ ExpirationMs *f64
 
 Number of milliseconds for which to keep the storage for a partition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#expiration_ms GoogleBigqueryTable#expiration_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#expiration_ms GoogleBigqueryTable#expiration_ms}
 
 ---
 
@@ -2339,7 +2339,7 @@ The field used to determine how to create a time-based partition.
 
 If time-based partitioning is enabled without this value, the table is partitioned based on the load time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#field GoogleBigqueryTable#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#field GoogleBigqueryTable#field}
 
 ---
 
@@ -2353,7 +2353,7 @@ RequirePartitionFilter interface{}
 
 If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#require_partition_filter GoogleBigqueryTable#require_partition_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#require_partition_filter GoogleBigqueryTable#require_partition_filter}
 
 ---
 
@@ -2362,7 +2362,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableView.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 &googlebigquerytable.GoogleBigqueryTableView {
 	Query: *string,
@@ -2389,7 +2389,7 @@ Query *string
 
 A query that BigQuery executes when the view is referenced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#query GoogleBigqueryTable#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#query GoogleBigqueryTable#query}
 
 ---
 
@@ -2405,7 +2405,7 @@ Specifies whether to use BigQuery's legacy SQL for this view.
 
 The default value is true. If set to false, the view will use BigQuery's standard SQL
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_bigquery_table#use_legacy_sql GoogleBigqueryTable#use_legacy_sql}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_bigquery_table#use_legacy_sql GoogleBigqueryTable#use_legacy_sql}
 
 ---
 
@@ -2416,7 +2416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableEncryptionConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableEncryptionConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableEncryptionConfigurationOutputReference
 ```
@@ -2698,7 +2698,7 @@ func InternalValue() GoogleBigqueryTableEncryptionConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference
 ```
@@ -2969,7 +2969,7 @@ func InternalValue() GoogleBigqueryTableExternalDataConfigurationAvroOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableExternalDataConfigurationCsvOptionsOutputReference
 ```
@@ -3385,7 +3385,7 @@ func InternalValue() GoogleBigqueryTableExternalDataConfigurationCsvOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptionsOutputReference
 ```
@@ -3692,7 +3692,7 @@ func InternalValue() GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOpt
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference
 ```
@@ -4028,7 +4028,7 @@ func InternalValue() GoogleBigqueryTableExternalDataConfigurationHivePartitionin
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableExternalDataConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableExternalDataConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableExternalDataConfigurationOutputReference
 ```
@@ -4685,7 +4685,7 @@ func InternalValue() GoogleBigqueryTableExternalDataConfiguration
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableMaterializedViewOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableMaterializedViewOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableMaterializedViewOutputReference
 ```
@@ -5014,7 +5014,7 @@ func InternalValue() GoogleBigqueryTableMaterializedView
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableRangePartitioningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableRangePartitioningOutputReference
 ```
@@ -5320,7 +5320,7 @@ func InternalValue() GoogleBigqueryTableRangePartitioning
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableRangePartitioningRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableRangePartitioningRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableRangePartitioningRangeOutputReference
 ```
@@ -5635,7 +5635,7 @@ func InternalValue() GoogleBigqueryTableRangePartitioningRange
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableTimePartitioningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableTimePartitioningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableTimePartitioningOutputReference
 ```
@@ -5993,7 +5993,7 @@ func InternalValue() GoogleBigqueryTableTimePartitioning
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryTable.GoogleBigqueryTableViewOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerytable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerytable"
 
 googlebigquerytable.NewGoogleBigqueryTableViewOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleBigqueryTableViewOutputReference
 ```

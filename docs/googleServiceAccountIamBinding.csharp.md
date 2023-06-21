@@ -1,6 +1,6 @@
 # `google_service_account_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_service_account_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding).
+Refer to the Terraform Registory for docs: [`google_service_account_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding).
 
 # `googleServiceAccountIamBinding` Submodule <a name="`googleServiceAccountIamBinding` Submodule" id="@cdktf/provider-google-beta.googleServiceAccountIamBinding"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_service_account_iam_binding`
 
 ### GoogleServiceAccountIamBinding <a name="GoogleServiceAccountIamBinding" id="@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding google_service_account_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding google_service_account_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBinding.Initializer"></a>
 
@@ -676,9 +676,9 @@ new GoogleServiceAccountIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#expression GoogleServiceAccountIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#title GoogleServiceAccountIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#description GoogleServiceAccountIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#expression GoogleServiceAccountIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#title GoogleServiceAccountIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#description GoogleServiceAccountIamBinding#description}. |
 
 ---
 
@@ -690,7 +690,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#expression GoogleServiceAccountIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#expression GoogleServiceAccountIamBinding#expression}.
 
 ---
 
@@ -702,7 +702,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#title GoogleServiceAccountIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#title GoogleServiceAccountIamBinding#title}.
 
 ---
 
@@ -714,7 +714,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#description GoogleServiceAccountIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#description GoogleServiceAccountIamBinding#description}.
 
 ---
 
@@ -752,11 +752,11 @@ new GoogleServiceAccountIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#members GoogleServiceAccountIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#role GoogleServiceAccountIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.serviceAccountId">ServiceAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#service_account_id GoogleServiceAccountIamBinding#service_account_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#members GoogleServiceAccountIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#role GoogleServiceAccountIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.serviceAccountId">ServiceAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#service_account_id GoogleServiceAccountIamBinding#service_account_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingCondition">GoogleServiceAccountIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#id GoogleServiceAccountIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamBinding.GoogleServiceAccountIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#id GoogleServiceAccountIamBinding#id}. |
 
 ---
 
@@ -838,7 +838,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#members GoogleServiceAccountIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#members GoogleServiceAccountIamBinding#members}.
 
 ---
 
@@ -850,7 +850,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#role GoogleServiceAccountIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#role GoogleServiceAccountIamBinding#role}.
 
 ---
 
@@ -862,7 +862,7 @@ public string ServiceAccountId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#service_account_id GoogleServiceAccountIamBinding#service_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#service_account_id GoogleServiceAccountIamBinding#service_account_id}.
 
 ---
 
@@ -876,7 +876,7 @@ public GoogleServiceAccountIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#condition GoogleServiceAccountIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#condition GoogleServiceAccountIamBinding#condition}
 
 ---
 
@@ -888,7 +888,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_service_account_iam_binding#id GoogleServiceAccountIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_service_account_iam_binding#id GoogleServiceAccountIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

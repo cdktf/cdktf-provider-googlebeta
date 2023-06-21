@@ -1,6 +1,6 @@
 # `google_tags_tag_key_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_tags_tag_key_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_tags_tag_key_iam_policy).
+Refer to the Terraform Registory for docs: [`google_tags_tag_key_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_tags_tag_key_iam_policy).
 
 # `googleTagsTagKeyIamPolicy` Submodule <a name="`googleTagsTagKeyIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_tags_tag_key_iam_policy`](ht
 
 ### GoogleTagsTagKeyIamPolicy <a name="GoogleTagsTagKeyIamPolicy" id="@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_tags_tag_key_iam_policy google_tags_tag_key_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_tags_tag_key_iam_policy google_tags_tag_key_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicy.Initializer"></a>
 
@@ -615,9 +615,9 @@ const googleTagsTagKeyIamPolicyConfig: googleTagsTagKeyIamPolicy.GoogleTagsTagKe
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_tags_tag_key_iam_policy#policy_data GoogleTagsTagKeyIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig.property.tagKey">tagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_tags_tag_key_iam_policy#tag_key GoogleTagsTagKeyIamPolicy#tag_key}. |
-| <code><a href="#@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_tags_tag_key_iam_policy#id GoogleTagsTagKeyIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_tags_tag_key_iam_policy#policy_data GoogleTagsTagKeyIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig.property.tagKey">tagKey</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_tags_tag_key_iam_policy#tag_key GoogleTagsTagKeyIamPolicy#tag_key}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTagsTagKeyIamPolicy.GoogleTagsTagKeyIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_tags_tag_key_iam_policy#id GoogleTagsTagKeyIamPolicy#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_tags_tag_key_iam_policy#policy_data GoogleTagsTagKeyIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_tags_tag_key_iam_policy#policy_data GoogleTagsTagKeyIamPolicy#policy_data}.
 
 ---
 
@@ -711,7 +711,7 @@ public readonly tagKey: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_tags_tag_key_iam_policy#tag_key GoogleTagsTagKeyIamPolicy#tag_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_tags_tag_key_iam_policy#tag_key GoogleTagsTagKeyIamPolicy#tag_key}.
 
 ---
 
@@ -723,7 +723,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_tags_tag_key_iam_policy#id GoogleTagsTagKeyIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_tags_tag_key_iam_policy#id GoogleTagsTagKeyIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
