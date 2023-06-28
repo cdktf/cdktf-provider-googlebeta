@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/data-sources/google_iam_workload_identity_pool_provider
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/data-sources/google_iam_workload_identity_pool_provider
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/data-sources/google_iam_workload_identity_pool_provider#id DataGoogleIamWorkloadIdentityPoolProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/data-sources/google_iam_workload_identity_pool_provider#id DataGoogleIamWorkloadIdentityPoolProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/data-sources/google_iam_workload_identity_pool_provider#project DataGoogleIamWorkloadIdentityPoolProvider#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/data-sources/google_iam_workload_identity_pool_provider#project DataGoogleIamWorkloadIdentityPoolProvider#project}
   */
   readonly project?: string;
   /**
@@ -28,7 +23,7 @@ export interface DataGoogleIamWorkloadIdentityPoolProviderConfig extends cdktf.T
 value should be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
 'gcp-' is reserved for use by Google, and may not be specified.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/data-sources/google_iam_workload_identity_pool_provider#workload_identity_pool_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/data-sources/google_iam_workload_identity_pool_provider#workload_identity_pool_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_id}
   */
   readonly workloadIdentityPoolId: string;
   /**
@@ -36,7 +31,7 @@ value should be 4-32 characters, and may contain the characters [a-z0-9-]. The p
 value must be 4-32 characters, and may contain the characters [a-z0-9-]. The prefix
 'gcp-' is reserved for use by Google, and may not be specified.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/data-sources/google_iam_workload_identity_pool_provider#workload_identity_pool_provider_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/data-sources/google_iam_workload_identity_pool_provider#workload_identity_pool_provider_id DataGoogleIamWorkloadIdentityPoolProvider#workload_identity_pool_provider_id}
   */
   readonly workloadIdentityPoolProviderId: string;
 }
@@ -153,6 +148,11 @@ export class DataGoogleIamWorkloadIdentityPoolProviderOidcOutputReference extend
   public get issuerUri() {
     return this.getStringAttribute('issuer_uri');
   }
+
+  // jwks_json - computed: true, optional: false, required: false
+  public get jwksJson() {
+    return this.getStringAttribute('jwks_json');
+  }
 }
 
 export class DataGoogleIamWorkloadIdentityPoolProviderOidcList extends cdktf.ComplexList {
@@ -175,7 +175,7 @@ export class DataGoogleIamWorkloadIdentityPoolProviderOidcList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/data-sources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/data-sources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}
 */
 export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktf.TerraformDataSource {
 
@@ -189,7 +189,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/data-sources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/data-sources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -200,7 +200,7 @@ export class DataGoogleIamWorkloadIdentityPoolProvider extends cdktf.TerraformDa
       terraformResourceType: 'google_iam_workload_identity_pool_provider',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.70.0',
+        providerVersion: '4.71.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
