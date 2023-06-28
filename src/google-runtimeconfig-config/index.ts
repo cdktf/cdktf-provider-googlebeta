@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_runtimeconfig_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_runtimeconfig_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleRuntimeconfigConfigConfig extends cdktf.TerraformMetaArgu
   /**
   * The description to associate with the runtime config.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_runtimeconfig_config#description GoogleRuntimeconfigConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_runtimeconfig_config#description GoogleRuntimeconfigConfig#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_runtimeconfig_config#id GoogleRuntimeconfigConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_runtimeconfig_config#id GoogleRuntimeconfigConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface GoogleRuntimeconfigConfigConfig extends cdktf.TerraformMetaArgu
   /**
   * The name of the runtime config.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_runtimeconfig_config#name GoogleRuntimeconfigConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_runtimeconfig_config#name GoogleRuntimeconfigConfig#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_runtimeconfig_config#project GoogleRuntimeconfigConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_runtimeconfig_config#project GoogleRuntimeconfigConfig#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_runtimeconfig_config google_runtimeconfig_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_runtimeconfig_config google_runtimeconfig_config}
 */
 export class GoogleRuntimeconfigConfig extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class GoogleRuntimeconfigConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_runtimeconfig_config google_runtimeconfig_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_runtimeconfig_config google_runtimeconfig_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class GoogleRuntimeconfigConfig extends cdktf.TerraformResource {
       terraformResourceType: 'google_runtimeconfig_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.70.0',
+        providerVersion: '4.71.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

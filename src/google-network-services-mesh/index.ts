@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleNetworkServicesMeshConfig extends cdktf.TerraformMetaArgu
   /**
   * A free-text description of the resource. Max length 1024 characters.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh#description GoogleNetworkServicesMesh#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh#description GoogleNetworkServicesMesh#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh#id GoogleNetworkServicesMesh#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh#id GoogleNetworkServicesMesh#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,43 +32,43 @@ be redirected to this port regardless of its actual ip:port destination. If unse
 '15001' is used as the interception port. This will is applicable only for sidecar proxy
 deployments.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh#interception_port GoogleNetworkServicesMesh#interception_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh#interception_port GoogleNetworkServicesMesh#interception_port}
   */
   readonly interceptionPort?: number;
   /**
   * Set of label tags associated with the Mesh resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh#labels GoogleNetworkServicesMesh#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh#labels GoogleNetworkServicesMesh#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Short name of the Mesh resource to be created.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh#name GoogleNetworkServicesMesh#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh#name GoogleNetworkServicesMesh#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh#project GoogleNetworkServicesMesh#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh#project GoogleNetworkServicesMesh#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh#timeouts GoogleNetworkServicesMesh#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh#timeouts GoogleNetworkServicesMesh#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesMeshTimeouts;
 }
 export interface GoogleNetworkServicesMeshTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh#create GoogleNetworkServicesMesh#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh#create GoogleNetworkServicesMesh#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh#delete GoogleNetworkServicesMesh#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh#delete GoogleNetworkServicesMesh#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh#update GoogleNetworkServicesMesh#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh#update GoogleNetworkServicesMesh#update}
   */
   readonly update?: string;
 }
@@ -189,7 +189,7 @@ export class GoogleNetworkServicesMeshTimeoutsOutputReference extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh google_network_services_mesh}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh google_network_services_mesh}
 */
 export class GoogleNetworkServicesMesh extends cdktf.TerraformResource {
 
@@ -203,7 +203,7 @@ export class GoogleNetworkServicesMesh extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_mesh google_network_services_mesh} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_mesh google_network_services_mesh} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -214,7 +214,7 @@ export class GoogleNetworkServicesMesh extends cdktf.TerraformResource {
       terraformResourceType: 'google_network_services_mesh',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.70.0',
+        providerVersion: '4.71.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
