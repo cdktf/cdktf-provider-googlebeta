@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewayapiconfigiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleapigatewayapiconfigiampolicy"
 
 datagoogleapigatewayapiconfigiampolicy.NewDataGoogleApiGatewayApiConfigIamPolicy(scope Construct, id *string, config DataGoogleApiGatewayApiConfigIamPolicyConfig) DataGoogleApiGatewayApiConfigIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewayapiconfigiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleapigatewayapiconfigiampolicy"
 
 datagoogleapigatewayapiconfigiampolicy.DataGoogleApiGatewayApiConfigIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewayapiconfigiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleapigatewayapiconfigiampolicy"
 
 datagoogleapigatewayapiconfigiampolicy.DataGoogleApiGatewayApiConfigIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagoogleapigatewayapiconfigiampolicy.DataGoogleApiGatewayApiConfigIamPolicy_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewayapiconfigiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleapigatewayapiconfigiampolicy"
 
 datagoogleapigatewayapiconfigiampolicy.DataGoogleApiGatewayApiConfigIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleApiGatewayApiConfigIamPolicy.DataGoogleApiGatewayApiConfigIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleapigatewayapiconfigiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleapigatewayapiconfigiampolicy"
 
 &datagoogleapigatewayapiconfigiampolicy.DataGoogleApiGatewayApiConfigIamPolicyConfig {
 	Connection: interface{},
