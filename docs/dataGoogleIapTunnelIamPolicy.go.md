@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiaptunneliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleiaptunneliampolicy"
 
 datagoogleiaptunneliampolicy.NewDataGoogleIapTunnelIamPolicy(scope Construct, id *string, config DataGoogleIapTunnelIamPolicyConfig) DataGoogleIapTunnelIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiaptunneliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleiaptunneliampolicy"
 
 datagoogleiaptunneliampolicy.DataGoogleIapTunnelIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiaptunneliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleiaptunneliampolicy"
 
 datagoogleiaptunneliampolicy.DataGoogleIapTunnelIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagoogleiaptunneliampolicy.DataGoogleIapTunnelIamPolicy_IsTerraformElement(x i
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiaptunneliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleiaptunneliampolicy"
 
 datagoogleiaptunneliampolicy.DataGoogleIapTunnelIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -573,7 +573,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleIapTunnelIamPolicy.DataGoogleIapTunnelIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiaptunneliampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleiaptunneliampolicy"
 
 &datagoogleiaptunneliampolicy.DataGoogleIapTunnelIamPolicyConfig {
 	Connection: interface{},

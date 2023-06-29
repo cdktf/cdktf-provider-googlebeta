@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetwork"
 
 datagooglecomputesubnetwork.NewDataGoogleComputeSubnetwork(scope Construct, id *string, config DataGoogleComputeSubnetworkConfig) DataGoogleComputeSubnetwork
 ```
@@ -305,7 +305,7 @@ func ResetSelfLink()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetwork"
 
 datagooglecomputesubnetwork.DataGoogleComputeSubnetwork_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetwork"
 
 datagooglecomputesubnetwork.DataGoogleComputeSubnetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagooglecomputesubnetwork.DataGoogleComputeSubnetwork_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetwork.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetwork"
 
 datagooglecomputesubnetwork.DataGoogleComputeSubnetwork_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetwork"
 
 &datagooglecomputesubnetwork.DataGoogleComputeSubnetworkConfig {
 	Connection: interface{},
@@ -879,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRange.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetwork"
 
 &datagooglecomputesubnetwork.DataGoogleComputeSubnetworkSecondaryIpRange {
 
@@ -894,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleco
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetwork"
 
 datagooglecomputesubnetwork.NewDataGoogleComputeSubnetworkSecondaryIpRangeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeSubnetworkSecondaryIpRangeList
 ```
@@ -1026,7 +1026,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeSubnetwork.DataGoogleComputeSubnetworkSecondaryIpRangeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglecomputesubnetwork"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecomputesubnetwork"
 
 datagooglecomputesubnetwork.NewDataGoogleComputeSubnetworkSecondaryIpRangeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleComputeSubnetworkSecondaryIpRangeOutputReference
 ```

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleserviceaccountkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleserviceaccountkey"
 
 datagoogleserviceaccountkey.NewDataGoogleServiceAccountKey(scope Construct, id *string, config DataGoogleServiceAccountKeyConfig) DataGoogleServiceAccountKey
 ```
@@ -291,7 +291,7 @@ func ResetPublicKeyType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleserviceaccountkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleserviceaccountkey"
 
 datagoogleserviceaccountkey.DataGoogleServiceAccountKey_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleserviceaccountkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleserviceaccountkey"
 
 datagoogleserviceaccountkey.DataGoogleServiceAccountKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagoogleserviceaccountkey.DataGoogleServiceAccountKey_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleserviceaccountkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleserviceaccountkey"
 
 datagoogleserviceaccountkey.DataGoogleServiceAccountKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -624,7 +624,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleserviceaccountkey"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleserviceaccountkey"
 
 &datagoogleserviceaccountkey.DataGoogleServiceAccountKeyConfig {
 	Connection: interface{},

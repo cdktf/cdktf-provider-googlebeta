@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 datagoogleaccessapprovalorganizationserviceaccount.NewDataGoogleAccessApprovalOrganizationServiceAccount(scope Construct, id *string, config DataGoogleAccessApprovalOrganizationServiceAccountConfig) DataGoogleAccessApprovalOrganizationServiceAccount
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrganizationServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrganizationServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrgan
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrganizationServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleaccessapprovalorganizationserviceaccount"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagoogleaccessapprovalorganizationserviceaccount"
 
 &datagoogleaccessapprovalorganizationserviceaccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig {
 	Connection: interface{},
