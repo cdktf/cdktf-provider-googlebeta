@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleTagsTagValueConfig extends cdktf.TerraformMetaArguments {
   /**
   * User-assigned description of the TagValue. Must not exceed 256 characters.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value#description GoogleTagsTagValue#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value#description GoogleTagsTagValue#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value#id GoogleTagsTagValue#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value#id GoogleTagsTagValue#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,7 +23,7 @@ export interface GoogleTagsTagValueConfig extends cdktf.TerraformMetaArguments {
   /**
   * Input only. The resource name of the new TagValue's parent. Must be of the form tagKeys/{tag_key_id}.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value#parent GoogleTagsTagValue#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value#parent GoogleTagsTagValue#parent}
   */
   readonly parent: string;
   /**
@@ -36,27 +31,27 @@ export interface GoogleTagsTagValueConfig extends cdktf.TerraformMetaArguments {
 
 The short name must be 63 characters or less, beginning and ending with an alphanumeric character ([a-z0-9A-Z]) with dashes (-), underscores (_), dots (.), and alphanumerics between.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value#short_name GoogleTagsTagValue#short_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value#short_name GoogleTagsTagValue#short_name}
   */
   readonly shortName: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value#timeouts GoogleTagsTagValue#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value#timeouts GoogleTagsTagValue#timeouts}
   */
   readonly timeouts?: GoogleTagsTagValueTimeouts;
 }
 export interface GoogleTagsTagValueTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value#create GoogleTagsTagValue#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value#create GoogleTagsTagValue#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value#delete GoogleTagsTagValue#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value#delete GoogleTagsTagValue#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value#update GoogleTagsTagValue#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value#update GoogleTagsTagValue#update}
   */
   readonly update?: string;
 }
@@ -177,7 +172,7 @@ export class GoogleTagsTagValueTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value google_tags_tag_value}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value google_tags_tag_value}
 */
 export class GoogleTagsTagValue extends cdktf.TerraformResource {
 
@@ -191,7 +186,7 @@ export class GoogleTagsTagValue extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_tags_tag_value google_tags_tag_value} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tags_tag_value google_tags_tag_value} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -202,7 +197,7 @@ export class GoogleTagsTagValue extends cdktf.TerraformResource {
       terraformResourceType: 'google_tags_tag_value',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.71.0',
+        providerVersion: '4.72.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

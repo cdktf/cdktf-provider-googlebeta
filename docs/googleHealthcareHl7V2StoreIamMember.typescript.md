@@ -1,6 +1,6 @@
 # `google_healthcare_hl7_v2_store_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_healthcare_hl7_v2_store_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member).
+Refer to the Terraform Registory for docs: [`google_healthcare_hl7_v2_store_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member).
 
 # `googleHealthcareHl7V2StoreIamMember` Submodule <a name="`googleHealthcareHl7V2StoreIamMember` Submodule" id="@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_healthcare_hl7_v2_store_iam_
 
 ### GoogleHealthcareHl7V2StoreIamMember <a name="GoogleHealthcareHl7V2StoreIamMember" id="@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member google_healthcare_hl7_v2_store_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member google_healthcare_hl7_v2_store_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMember.Initializer"></a>
 
@@ -672,9 +672,9 @@ const googleHealthcareHl7V2StoreIamMemberCondition: googleHealthcareHl7V2StoreIa
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#expression GoogleHealthcareHl7V2StoreIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#title GoogleHealthcareHl7V2StoreIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#description GoogleHealthcareHl7V2StoreIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#expression GoogleHealthcareHl7V2StoreIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#title GoogleHealthcareHl7V2StoreIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#description GoogleHealthcareHl7V2StoreIamMember#description}. |
 
 ---
 
@@ -686,7 +686,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#expression GoogleHealthcareHl7V2StoreIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#expression GoogleHealthcareHl7V2StoreIamMember#expression}.
 
 ---
 
@@ -698,7 +698,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#title GoogleHealthcareHl7V2StoreIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#title GoogleHealthcareHl7V2StoreIamMember#title}.
 
 ---
 
@@ -710,7 +710,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#description GoogleHealthcareHl7V2StoreIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#description GoogleHealthcareHl7V2StoreIamMember#description}.
 
 ---
 
@@ -735,11 +735,11 @@ const googleHealthcareHl7V2StoreIamMemberConfig: googleHealthcareHl7V2StoreIamMe
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.hl7V2StoreId">hl7V2StoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#hl7_v2_store_id GoogleHealthcareHl7V2StoreIamMember#hl7_v2_store_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#member GoogleHealthcareHl7V2StoreIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#role GoogleHealthcareHl7V2StoreIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.hl7V2StoreId">hl7V2StoreId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#hl7_v2_store_id GoogleHealthcareHl7V2StoreIamMember#hl7_v2_store_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#member GoogleHealthcareHl7V2StoreIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#role GoogleHealthcareHl7V2StoreIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberCondition">GoogleHealthcareHl7V2StoreIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#id GoogleHealthcareHl7V2StoreIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareHl7V2StoreIamMember.GoogleHealthcareHl7V2StoreIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#id GoogleHealthcareHl7V2StoreIamMember#id}. |
 
 ---
 
@@ -821,7 +821,7 @@ public readonly hl7V2StoreId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#hl7_v2_store_id GoogleHealthcareHl7V2StoreIamMember#hl7_v2_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#hl7_v2_store_id GoogleHealthcareHl7V2StoreIamMember#hl7_v2_store_id}.
 
 ---
 
@@ -833,7 +833,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#member GoogleHealthcareHl7V2StoreIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#member GoogleHealthcareHl7V2StoreIamMember#member}.
 
 ---
 
@@ -845,7 +845,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#role GoogleHealthcareHl7V2StoreIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#role GoogleHealthcareHl7V2StoreIamMember#role}.
 
 ---
 
@@ -859,7 +859,7 @@ public readonly condition: GoogleHealthcareHl7V2StoreIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#condition GoogleHealthcareHl7V2StoreIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#condition GoogleHealthcareHl7V2StoreIamMember#condition}
 
 ---
 
@@ -871,7 +871,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#id GoogleHealthcareHl7V2StoreIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_healthcare_hl7_v2_store_iam_member#id GoogleHealthcareHl7V2StoreIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

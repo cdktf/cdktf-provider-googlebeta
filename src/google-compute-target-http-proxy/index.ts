@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,22 @@ export interface GoogleComputeTargetHttpProxyConfig extends cdktf.TerraformMetaA
   /**
   * An optional description of this resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy#description GoogleComputeTargetHttpProxy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#description GoogleComputeTargetHttpProxy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy#id GoogleComputeTargetHttpProxy#id}
+  * Specifies how long to keep a connection open, after completing a response,
+while there is no matching traffic (in seconds). If an HTTP keepalive is
+not specified, a default value (610 seconds) will be used. For Global
+external HTTP(S) load balancer, the minimum allowed value is 5 seconds and
+the maximum allowed value is 1200 seconds. For Global external HTTP(S)
+load balancer (classic), this option is not available publicly.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#http_keep_alive_timeout_sec GoogleComputeTargetHttpProxy#http_keep_alive_timeout_sec}
+  */
+  readonly httpKeepAliveTimeoutSec?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#id GoogleComputeTargetHttpProxy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,45 +40,45 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy#name GoogleComputeTargetHttpProxy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#name GoogleComputeTargetHttpProxy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy#project GoogleComputeTargetHttpProxy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#project GoogleComputeTargetHttpProxy#project}
   */
   readonly project?: string;
   /**
   * This field only applies when the forwarding rule that references
 this target proxy has a loadBalancingScheme set to INTERNAL_SELF_MANAGED.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy#proxy_bind GoogleComputeTargetHttpProxy#proxy_bind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#proxy_bind GoogleComputeTargetHttpProxy#proxy_bind}
   */
   readonly proxyBind?: boolean | cdktf.IResolvable;
   /**
   * A reference to the UrlMap resource that defines the mapping from URL
 to the BackendService.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy#url_map GoogleComputeTargetHttpProxy#url_map}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#url_map GoogleComputeTargetHttpProxy#url_map}
   */
   readonly urlMap: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy#timeouts GoogleComputeTargetHttpProxy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#timeouts GoogleComputeTargetHttpProxy#timeouts}
   */
   readonly timeouts?: GoogleComputeTargetHttpProxyTimeouts;
 }
 export interface GoogleComputeTargetHttpProxyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy#create GoogleComputeTargetHttpProxy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#create GoogleComputeTargetHttpProxy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy#delete GoogleComputeTargetHttpProxy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#delete GoogleComputeTargetHttpProxy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy#update GoogleComputeTargetHttpProxy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy#update GoogleComputeTargetHttpProxy#update}
   */
   readonly update?: string;
 }
@@ -193,7 +199,7 @@ export class GoogleComputeTargetHttpProxyTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy google_compute_target_http_proxy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy google_compute_target_http_proxy}
 */
 export class GoogleComputeTargetHttpProxy extends cdktf.TerraformResource {
 
@@ -207,7 +213,7 @@ export class GoogleComputeTargetHttpProxy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_compute_target_http_proxy google_compute_target_http_proxy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_compute_target_http_proxy google_compute_target_http_proxy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -218,7 +224,7 @@ export class GoogleComputeTargetHttpProxy extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_target_http_proxy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.71.0',
+        providerVersion: '4.72.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -230,6 +236,7 @@ export class GoogleComputeTargetHttpProxy extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._description = config.description;
+    this._httpKeepAliveTimeoutSec = config.httpKeepAliveTimeoutSec;
     this._id = config.id;
     this._name = config.name;
     this._project = config.project;
@@ -261,6 +268,22 @@ export class GoogleComputeTargetHttpProxy extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
     return this._description;
+  }
+
+  // http_keep_alive_timeout_sec - computed: false, optional: true, required: false
+  private _httpKeepAliveTimeoutSec?: number; 
+  public get httpKeepAliveTimeoutSec() {
+    return this.getNumberAttribute('http_keep_alive_timeout_sec');
+  }
+  public set httpKeepAliveTimeoutSec(value: number) {
+    this._httpKeepAliveTimeoutSec = value;
+  }
+  public resetHttpKeepAliveTimeoutSec() {
+    this._httpKeepAliveTimeoutSec = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get httpKeepAliveTimeoutSecInput() {
+    return this._httpKeepAliveTimeoutSec;
   }
 
   // id - computed: true, optional: true, required: false
@@ -370,6 +393,7 @@ export class GoogleComputeTargetHttpProxy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       description: cdktf.stringToTerraform(this._description),
+      http_keep_alive_timeout_sec: cdktf.numberToTerraform(this._httpKeepAliveTimeoutSec),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       project: cdktf.stringToTerraform(this._project),
