@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleGkeHubFeatureIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member#id GoogleGkeHubFeatureIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member#id GoogleGkeHubFeatureIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member#location GoogleGkeHubFeatureIamMember#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member#location GoogleGkeHubFeatureIamMember#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member#member GoogleGkeHubFeatureIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member#member GoogleGkeHubFeatureIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member#name GoogleGkeHubFeatureIamMember#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member#name GoogleGkeHubFeatureIamMember#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member#project GoogleGkeHubFeatureIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member#project GoogleGkeHubFeatureIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member#role GoogleGkeHubFeatureIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member#role GoogleGkeHubFeatureIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member#condition GoogleGkeHubFeatureIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member#condition GoogleGkeHubFeatureIamMember#condition}
   */
   readonly condition?: GoogleGkeHubFeatureIamMemberCondition;
 }
 export interface GoogleGkeHubFeatureIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member#description GoogleGkeHubFeatureIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member#description GoogleGkeHubFeatureIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member#expression GoogleGkeHubFeatureIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member#expression GoogleGkeHubFeatureIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member#title GoogleGkeHubFeatureIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member#title GoogleGkeHubFeatureIamMember#title}
   */
   readonly title: string;
 }
@@ -161,7 +161,7 @@ export class GoogleGkeHubFeatureIamMemberConditionOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member google_gke_hub_feature_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member google_gke_hub_feature_iam_member}
 */
 export class GoogleGkeHubFeatureIamMember extends cdktf.TerraformResource {
 
@@ -175,7 +175,7 @@ export class GoogleGkeHubFeatureIamMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_gke_hub_feature_iam_member google_gke_hub_feature_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_member google_gke_hub_feature_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -186,7 +186,7 @@ export class GoogleGkeHubFeatureIamMember extends cdktf.TerraformResource {
       terraformResourceType: 'google_gke_hub_feature_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.71.0',
+        providerVersion: '4.72.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

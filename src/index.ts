@@ -234,6 +234,7 @@ export * as googleComputeMachineImageIamMember from './google-compute-machine-im
 export * as googleComputeMachineImageIamPolicy from './google-compute-machine-image-iam-policy';
 export * as googleComputeManagedSslCertificate from './google-compute-managed-ssl-certificate';
 export * as googleComputeNetwork from './google-compute-network';
+export * as googleComputeNetworkEdgeSecurityService from './google-compute-network-edge-security-service';
 export * as googleComputeNetworkEndpoint from './google-compute-network-endpoint';
 export * as googleComputeNetworkEndpointGroup from './google-compute-network-endpoint-group';
 export * as googleComputeNetworkEndpoints from './google-compute-network-endpoints';
@@ -273,6 +274,7 @@ export * as googleComputeRegionNetworkFirewallPolicy from './google-compute-regi
 export * as googleComputeRegionNetworkFirewallPolicyAssociation from './google-compute-region-network-firewall-policy-association';
 export * as googleComputeRegionNetworkFirewallPolicyRule from './google-compute-region-network-firewall-policy-rule';
 export * as googleComputeRegionPerInstanceConfig from './google-compute-region-per-instance-config';
+export * as googleComputeRegionSecurityPolicy from './google-compute-region-security-policy';
 export * as googleComputeRegionSslCertificate from './google-compute-region-ssl-certificate';
 export * as googleComputeRegionSslPolicy from './google-compute-region-ssl-policy';
 export * as googleComputeRegionTargetHttpProxy from './google-compute-region-target-http-proxy';
@@ -644,6 +646,7 @@ export * as googleProjectOrganizationPolicy from './google-project-organization-
 export * as googleProjectService from './google-project-service';
 export * as googleProjectServiceIdentity from './google-project-service-identity';
 export * as googleProjectUsageExportBucket from './google-project-usage-export-bucket';
+export * as googlePublicCaExternalAccountKey from './google-public-ca-external-account-key';
 export * as googlePubsubLiteReservation from './google-pubsub-lite-reservation';
 export * as googlePubsubLiteSubscription from './google-pubsub-lite-subscription';
 export * as googlePubsubLiteTopic from './google-pubsub-lite-topic';
