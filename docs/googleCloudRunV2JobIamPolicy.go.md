@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiampolicy"
 
 googlecloudrunv2jobiampolicy.NewGoogleCloudRunV2JobIamPolicy(scope Construct, id *string, config GoogleCloudRunV2JobIamPolicyConfig) GoogleCloudRunV2JobIamPolicy
 ```
@@ -291,7 +291,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiampolicy"
 
 googlecloudrunv2jobiampolicy.GoogleCloudRunV2JobIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiampolicy"
 
 googlecloudrunv2jobiampolicy.GoogleCloudRunV2JobIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ googlecloudrunv2jobiampolicy.GoogleCloudRunV2JobIamPolicy_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiampolicy"
 
 googlecloudrunv2jobiampolicy.GoogleCloudRunV2JobIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiampolicy"
 
 &googlecloudrunv2jobiampolicy.GoogleCloudRunV2JobIamPolicyConfig {
 	Connection: interface{},
