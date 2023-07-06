@@ -1,6 +1,6 @@
 # `google_service_account_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_service_account_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_service_account_iam_policy).
+Refer to the Terraform Registory for docs: [`google_service_account_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_service_account_iam_policy).
 
 # `googleServiceAccountIamPolicy` Submodule <a name="`googleServiceAccountIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleServiceAccountIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_service_account_iam_policy`]
 
 ### GoogleServiceAccountIamPolicy <a name="GoogleServiceAccountIamPolicy" id="@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_service_account_iam_policy google_service_account_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_service_account_iam_policy google_service_account_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicy.Initializer"></a>
 
@@ -615,9 +615,9 @@ const googleServiceAccountIamPolicyConfig: googleServiceAccountIamPolicy.GoogleS
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_service_account_iam_policy#policy_data GoogleServiceAccountIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicyConfig.property.serviceAccountId">serviceAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_service_account_iam_policy#service_account_id GoogleServiceAccountIamPolicy#service_account_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_service_account_iam_policy#id GoogleServiceAccountIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_service_account_iam_policy#policy_data GoogleServiceAccountIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicyConfig.property.serviceAccountId">serviceAccountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_service_account_iam_policy#service_account_id GoogleServiceAccountIamPolicy#service_account_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleServiceAccountIamPolicy.GoogleServiceAccountIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_service_account_iam_policy#id GoogleServiceAccountIamPolicy#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_service_account_iam_policy#policy_data GoogleServiceAccountIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_service_account_iam_policy#policy_data GoogleServiceAccountIamPolicy#policy_data}.
 
 ---
 
@@ -711,7 +711,7 @@ public readonly serviceAccountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_service_account_iam_policy#service_account_id GoogleServiceAccountIamPolicy#service_account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_service_account_iam_policy#service_account_id GoogleServiceAccountIamPolicy#service_account_id}.
 
 ---
 
@@ -723,7 +723,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_service_account_iam_policy#id GoogleServiceAccountIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_service_account_iam_policy#id GoogleServiceAccountIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `google_apigee_environment_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_apigee_environment_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_apigee_environment_iam_policy).
+Refer to the Terraform Registory for docs: [`google_apigee_environment_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_environment_iam_policy).
 
 # `googleApigeeEnvironmentIamPolicy` Submodule <a name="`googleApigeeEnvironmentIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_apigee_environment_iam_polic
 
 ### GoogleApigeeEnvironmentIamPolicy <a name="GoogleApigeeEnvironmentIamPolicy" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicy.Initializer"></a>
 
@@ -637,10 +637,10 @@ const googleApigeeEnvironmentIamPolicyConfig: googleApigeeEnvironmentIamPolicy.G
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.envId">envId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_apigee_environment_iam_policy#env_id GoogleApigeeEnvironmentIamPolicy#env_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.orgId">orgId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_apigee_environment_iam_policy#org_id GoogleApigeeEnvironmentIamPolicy#org_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_apigee_environment_iam_policy#policy_data GoogleApigeeEnvironmentIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_apigee_environment_iam_policy#id GoogleApigeeEnvironmentIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.envId">envId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_environment_iam_policy#env_id GoogleApigeeEnvironmentIamPolicy#env_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.orgId">orgId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_environment_iam_policy#org_id GoogleApigeeEnvironmentIamPolicy#org_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_environment_iam_policy#policy_data GoogleApigeeEnvironmentIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_environment_iam_policy#id GoogleApigeeEnvironmentIamPolicy#id}. |
 
 ---
 
@@ -722,7 +722,7 @@ public readonly envId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_apigee_environment_iam_policy#env_id GoogleApigeeEnvironmentIamPolicy#env_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_environment_iam_policy#env_id GoogleApigeeEnvironmentIamPolicy#env_id}.
 
 ---
 
@@ -734,7 +734,7 @@ public readonly orgId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_apigee_environment_iam_policy#org_id GoogleApigeeEnvironmentIamPolicy#org_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_environment_iam_policy#org_id GoogleApigeeEnvironmentIamPolicy#org_id}.
 
 ---
 
@@ -746,7 +746,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_apigee_environment_iam_policy#policy_data GoogleApigeeEnvironmentIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_environment_iam_policy#policy_data GoogleApigeeEnvironmentIamPolicy#policy_data}.
 
 ---
 
@@ -758,7 +758,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_apigee_environment_iam_policy#id GoogleApigeeEnvironmentIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_environment_iam_policy#id GoogleApigeeEnvironmentIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

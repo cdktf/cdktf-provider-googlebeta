@@ -1,6 +1,6 @@
 # `google_api_gateway_api`
 
-Refer to the Terraform Registory for docs: [`google_api_gateway_api`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api).
+Refer to the Terraform Registory for docs: [`google_api_gateway_api`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api).
 
 # `googleApiGatewayApi` Submodule <a name="`googleApiGatewayApi` Submodule" id="@cdktf/provider-google-beta.googleApiGatewayApi"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_api_gateway_api`](https://re
 
 ### GoogleApiGatewayApi <a name="GoogleApiGatewayApi" id="@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api google_api_gateway_api}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api google_api_gateway_api}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigatewayapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapi"
 
 googleapigatewayapi.NewGoogleApiGatewayApi(scope Construct, id *string, config GoogleApiGatewayApiConfig) GoogleApiGatewayApi
 ```
@@ -325,7 +325,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigatewayapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapi"
 
 googleapigatewayapi.GoogleApiGatewayApi_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigatewayapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapi"
 
 googleapigatewayapi.GoogleApiGatewayApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ googleapigatewayapi.GoogleApiGatewayApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApi.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigatewayapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapi"
 
 googleapigatewayapi.GoogleApiGatewayApi_IsTerraformResource(x interface{}) *bool
 ```
@@ -746,7 +746,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigatewayapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapi"
 
 &googleapigatewayapi.GoogleApiGatewayApiConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigat
 	Labels: *map[string]*string,
 	ManagedService: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleApiGatewayApi.GoogleApiGatewayApiTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApiGatewayApi.GoogleApiGatewayApiTimeouts,
 }
 ```
 
@@ -779,10 +779,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigat
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.property.apiId">ApiId</a></code> | <code>*string</code> | Identifier to assign to the API. Must be unique within scope of the parent resource(project). |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | A user-visible name for the API. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#id GoogleApiGatewayApi#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#id GoogleApiGatewayApi#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Resource labels to represent user-provided metadata. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.property.managedService">ManagedService</a></code> | <code>*string</code> | Immutable. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#project GoogleApiGatewayApi#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#project GoogleApiGatewayApi#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiTimeouts">GoogleApiGatewayApiTimeouts</a></code> | timeouts block. |
 
 ---
@@ -867,7 +867,7 @@ ApiId *string
 
 Identifier to assign to the API. Must be unique within scope of the parent resource(project).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#api_id GoogleApiGatewayApi#api_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#api_id GoogleApiGatewayApi#api_id}
 
 ---
 
@@ -881,7 +881,7 @@ DisplayName *string
 
 A user-visible name for the API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#display_name GoogleApiGatewayApi#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#display_name GoogleApiGatewayApi#display_name}
 
 ---
 
@@ -893,7 +893,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#id GoogleApiGatewayApi#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#id GoogleApiGatewayApi#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -910,7 +910,7 @@ Labels *map[string]*string
 
 Resource labels to represent user-provided metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#labels GoogleApiGatewayApi#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#labels GoogleApiGatewayApi#labels}
 
 ---
 
@@ -927,7 +927,7 @@ Immutable.
 The name of a Google Managed Service ( https://cloud.google.com/service-infrastructure/docs/glossary#managed).
 If not specified, a new Service will automatically be created in the same project as this API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#managed_service GoogleApiGatewayApi#managed_service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#managed_service GoogleApiGatewayApi#managed_service}
 
 ---
 
@@ -939,7 +939,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#project GoogleApiGatewayApi#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#project GoogleApiGatewayApi#project}.
 
 ---
 
@@ -953,7 +953,7 @@ Timeouts GoogleApiGatewayApiTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#timeouts GoogleApiGatewayApi#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#timeouts GoogleApiGatewayApi#timeouts}
 
 ---
 
@@ -962,7 +962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigatewayapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapi"
 
 &googleapigatewayapi.GoogleApiGatewayApiTimeouts {
 	Create: *string,
@@ -975,9 +975,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#create GoogleApiGatewayApi#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#delete GoogleApiGatewayApi#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#update GoogleApiGatewayApi#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#create GoogleApiGatewayApi#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#delete GoogleApiGatewayApi#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#update GoogleApiGatewayApi#update}. |
 
 ---
 
@@ -989,7 +989,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#create GoogleApiGatewayApi#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#create GoogleApiGatewayApi#create}.
 
 ---
 
@@ -1001,7 +1001,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#delete GoogleApiGatewayApi#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#delete GoogleApiGatewayApi#delete}.
 
 ---
 
@@ -1013,7 +1013,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_api_gateway_api#update GoogleApiGatewayApi#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_api_gateway_api#update GoogleApiGatewayApi#update}.
 
 ---
 
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApiGatewayApi.GoogleApiGatewayApiTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigatewayapi"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigatewayapi"
 
 googleapigatewayapi.NewGoogleApiGatewayApiTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApiGatewayApiTimeoutsOutputReference
 ```

@@ -1,6 +1,6 @@
 # `google_gke_hub_feature_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_gke_hub_feature_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy).
+Refer to the Terraform Registory for docs: [`google_gke_hub_feature_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy).
 
 # `googleGkeHubFeatureIamPolicy` Submodule <a name="`googleGkeHubFeatureIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_gke_hub_feature_iam_policy`]
 
 ### GoogleGkeHubFeatureIamPolicy <a name="GoogleGkeHubFeatureIamPolicy" id="@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer"></a>
 
@@ -44,11 +44,11 @@ googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy(
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#name GoogleGkeHubFeatureIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#policy_data GoogleGkeHubFeatureIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#id GoogleGkeHubFeatureIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#location GoogleGkeHubFeatureIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#project GoogleGkeHubFeatureIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#name GoogleGkeHubFeatureIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#policy_data GoogleGkeHubFeatureIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#id GoogleGkeHubFeatureIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#location GoogleGkeHubFeatureIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#project GoogleGkeHubFeatureIamPolicy#project}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#name GoogleGkeHubFeatureIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#name GoogleGkeHubFeatureIamPolicy#name}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#policy_data GoogleGkeHubFeatureIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#policy_data GoogleGkeHubFeatureIamPolicy#policy_data}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#id GoogleGkeHubFeatureIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#id GoogleGkeHubFeatureIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#location GoogleGkeHubFeatureIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#location GoogleGkeHubFeatureIamPolicy#location}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#project GoogleGkeHubFeatureIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#project GoogleGkeHubFeatureIamPolicy#project}.
 
 ---
 
@@ -822,11 +822,11 @@ googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#name GoogleGkeHubFeatureIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#policy_data GoogleGkeHubFeatureIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#id GoogleGkeHubFeatureIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#location GoogleGkeHubFeatureIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#project GoogleGkeHubFeatureIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#name GoogleGkeHubFeatureIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#policy_data GoogleGkeHubFeatureIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#id GoogleGkeHubFeatureIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#location GoogleGkeHubFeatureIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubFeatureIamPolicy.GoogleGkeHubFeatureIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#project GoogleGkeHubFeatureIamPolicy#project}. |
 
 ---
 
@@ -908,7 +908,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#name GoogleGkeHubFeatureIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#name GoogleGkeHubFeatureIamPolicy#name}.
 
 ---
 
@@ -920,7 +920,7 @@ policy_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#policy_data GoogleGkeHubFeatureIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#policy_data GoogleGkeHubFeatureIamPolicy#policy_data}.
 
 ---
 
@@ -932,7 +932,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#id GoogleGkeHubFeatureIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#id GoogleGkeHubFeatureIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -947,7 +947,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#location GoogleGkeHubFeatureIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#location GoogleGkeHubFeatureIamPolicy#location}.
 
 ---
 
@@ -959,7 +959,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_gke_hub_feature_iam_policy#project GoogleGkeHubFeatureIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_gke_hub_feature_iam_policy#project GoogleGkeHubFeatureIamPolicy#project}.
 
 ---
 

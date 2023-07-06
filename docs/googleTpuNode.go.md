@@ -1,6 +1,6 @@
 # `google_tpu_node`
 
-Refer to the Terraform Registory for docs: [`google_tpu_node`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node).
+Refer to the Terraform Registory for docs: [`google_tpu_node`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node).
 
 # `googleTpuNode` Submodule <a name="`googleTpuNode` Submodule" id="@cdktf/provider-google-beta.googleTpuNode"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_tpu_node`](https://registry.
 
 ### GoogleTpuNode <a name="GoogleTpuNode" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node google_tpu_node}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node google_tpu_node}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 googletpunode.NewGoogleTpuNode(scope Construct, id *string, config GoogleTpuNodeConfig) GoogleTpuNode
 ```
@@ -366,7 +366,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 googletpunode.GoogleTpuNode_IsConstruct(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 googletpunode.GoogleTpuNode_IsTerraformElement(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ googletpunode.GoogleTpuNode_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNode.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 googletpunode.GoogleTpuNode_IsTerraformResource(x interface{}) *bool
 ```
@@ -919,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 &googletpunode.GoogleTpuNodeConfig {
 	Connection: interface{},
@@ -938,8 +938,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunod
 	Labels: *map[string]*string,
 	Network: *string,
 	Project: *string,
-	SchedulingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleTpuNode.GoogleTpuNodeSchedulingConfig,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleTpuNode.GoogleTpuNodeTimeouts,
+	SchedulingConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuNode.GoogleTpuNodeSchedulingConfig,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleTpuNode.GoogleTpuNodeTimeouts,
 	UseServiceNetworking: interface{},
 	Zone: *string,
 }
@@ -961,10 +961,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunod
 | <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.tensorflowVersion">TensorflowVersion</a></code> | <code>*string</code> | The version of Tensorflow running in the Node. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.cidrBlock">CidrBlock</a></code> | <code>*string</code> | The CIDR block that the TPU node will use when selecting an IP address. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.description">Description</a></code> | <code>*string</code> | The user-supplied description of the TPU. Maximum of 512 characters. |
-| <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#id GoogleTpuNode#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#id GoogleTpuNode#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Resource labels to represent user provided metadata. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.network">Network</a></code> | <code>*string</code> | The name of a network to peer the TPU node to. |
-| <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#project GoogleTpuNode#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#project GoogleTpuNode#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.schedulingConfig">SchedulingConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeSchedulingConfig">GoogleTpuNodeSchedulingConfig</a></code> | scheduling_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeouts">GoogleTpuNodeTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeConfig.property.useServiceNetworking">UseServiceNetworking</a></code> | <code>interface{}</code> | Whether the VPC peering for the node is set up through Service Networking API. |
@@ -1052,7 +1052,7 @@ AcceleratorType *string
 
 The type of hardware accelerators associated with this node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#accelerator_type GoogleTpuNode#accelerator_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#accelerator_type GoogleTpuNode#accelerator_type}
 
 ---
 
@@ -1066,7 +1066,7 @@ Name *string
 
 The immutable name of the TPU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#name GoogleTpuNode#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#name GoogleTpuNode#name}
 
 ---
 
@@ -1080,7 +1080,7 @@ TensorflowVersion *string
 
 The version of Tensorflow running in the Node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#tensorflow_version GoogleTpuNode#tensorflow_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#tensorflow_version GoogleTpuNode#tensorflow_version}
 
 ---
 
@@ -1103,7 +1103,7 @@ currently existing TPU node, the CIDR block conflicts with any
 subnetworks in the user's provided network, or the provided network
 is peered with another network that is using that CIDR block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#cidr_block GoogleTpuNode#cidr_block}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#cidr_block GoogleTpuNode#cidr_block}
 
 ---
 
@@ -1117,7 +1117,7 @@ Description *string
 
 The user-supplied description of the TPU. Maximum of 512 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#description GoogleTpuNode#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#description GoogleTpuNode#description}
 
 ---
 
@@ -1129,7 +1129,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#id GoogleTpuNode#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#id GoogleTpuNode#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1146,7 +1146,7 @@ Labels *map[string]*string
 
 Resource labels to represent user provided metadata.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#labels GoogleTpuNode#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#labels GoogleTpuNode#labels}
 
 ---
 
@@ -1165,7 +1165,7 @@ preexisting Compute Engine network inside of the project on which
 this API has been activated. If none is provided, "default" will be
 used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#network GoogleTpuNode#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#network GoogleTpuNode#network}
 
 ---
 
@@ -1177,7 +1177,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#project GoogleTpuNode#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#project GoogleTpuNode#project}.
 
 ---
 
@@ -1191,7 +1191,7 @@ SchedulingConfig GoogleTpuNodeSchedulingConfig
 
 scheduling_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#scheduling_config GoogleTpuNode#scheduling_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#scheduling_config GoogleTpuNode#scheduling_config}
 
 ---
 
@@ -1205,7 +1205,7 @@ Timeouts GoogleTpuNodeTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#timeouts GoogleTpuNode#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#timeouts GoogleTpuNode#timeouts}
 
 ---
 
@@ -1223,7 +1223,7 @@ The VPC Peering should be set up before provisioning the node. If this field is 
 cidr_block field should not be specified. If the network that you want to peer the
 TPU Node to is a Shared VPC network, the node must be created with this this field enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#use_service_networking GoogleTpuNode#use_service_networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#use_service_networking GoogleTpuNode#use_service_networking}
 
 ---
 
@@ -1237,7 +1237,7 @@ Zone *string
 
 The GCP location for the TPU. If it is not provided, the provider zone is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#zone GoogleTpuNode#zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#zone GoogleTpuNode#zone}
 
 ---
 
@@ -1246,7 +1246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeNetworkEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 &googletpunode.GoogleTpuNodeNetworkEndpoints {
 
@@ -1259,7 +1259,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunod
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeSchedulingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 &googletpunode.GoogleTpuNodeSchedulingConfig {
 	Preemptible: interface{},
@@ -1284,7 +1284,7 @@ Preemptible interface{}
 
 Defines whether the TPU instance is preemptible.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#preemptible GoogleTpuNode#preemptible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#preemptible GoogleTpuNode#preemptible}
 
 ---
 
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 &googletpunode.GoogleTpuNodeTimeouts {
 	Create: *string,
@@ -1306,9 +1306,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunod
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#create GoogleTpuNode#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#delete GoogleTpuNode#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#update GoogleTpuNode#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#create GoogleTpuNode#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#delete GoogleTpuNode#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#update GoogleTpuNode#update}. |
 
 ---
 
@@ -1320,7 +1320,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#create GoogleTpuNode#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#create GoogleTpuNode#create}.
 
 ---
 
@@ -1332,7 +1332,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#delete GoogleTpuNode#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#delete GoogleTpuNode#delete}.
 
 ---
 
@@ -1344,7 +1344,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_tpu_node#update GoogleTpuNode#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_tpu_node#update GoogleTpuNode#update}.
 
 ---
 
@@ -1355,7 +1355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeNetworkEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 googletpunode.NewGoogleTpuNodeNetworkEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleTpuNodeNetworkEndpointsList
 ```
@@ -1487,7 +1487,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeNetworkEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 googletpunode.NewGoogleTpuNodeNetworkEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleTpuNodeNetworkEndpointsOutputReference
 ```
@@ -1776,7 +1776,7 @@ func InternalValue() GoogleTpuNodeNetworkEndpoints
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeSchedulingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 googletpunode.NewGoogleTpuNodeSchedulingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuNodeSchedulingConfigOutputReference
 ```
@@ -2047,7 +2047,7 @@ func InternalValue() GoogleTpuNodeSchedulingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleTpuNode.GoogleTpuNodeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googletpunode"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googletpunode"
 
 googletpunode.NewGoogleTpuNodeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleTpuNodeTimeoutsOutputReference
 ```
