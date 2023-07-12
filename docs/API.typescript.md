@@ -679,6 +679,7 @@ The following submodules are available:
 - [googleFirebaseAndroidApp](./googleFirebaseAndroidApp.typescript.md)
 - [googleFirebaseAppleApp](./googleFirebaseAppleApp.typescript.md)
 - [googleFirebaseDatabaseInstance](./googleFirebaseDatabaseInstance.typescript.md)
+- [googleFirebaseExtensionsInstance](./googleFirebaseExtensionsInstance.typescript.md)
 - [googleFirebaseHostingChannel](./googleFirebaseHostingChannel.typescript.md)
 - [googleFirebaseHostingRelease](./googleFirebaseHostingRelease.typescript.md)
 - [googleFirebaseHostingSite](./googleFirebaseHostingSite.typescript.md)
