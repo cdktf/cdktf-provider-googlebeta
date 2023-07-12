@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_instance_iam_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/resources/google_spanner_instance_iam_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,28 +8,28 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleSpannerInstanceIamPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_instance_iam_policy#id GoogleSpannerInstanceIamPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/resources/google_spanner_instance_iam_policy#id GoogleSpannerInstanceIamPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_instance_iam_policy#instance GoogleSpannerInstanceIamPolicy#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/resources/google_spanner_instance_iam_policy#instance GoogleSpannerInstanceIamPolicy#instance}
   */
   readonly instance: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_instance_iam_policy#policy_data GoogleSpannerInstanceIamPolicy#policy_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/resources/google_spanner_instance_iam_policy#policy_data GoogleSpannerInstanceIamPolicy#policy_data}
   */
   readonly policyData: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_instance_iam_policy#project GoogleSpannerInstanceIamPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/resources/google_spanner_instance_iam_policy#project GoogleSpannerInstanceIamPolicy#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy}
 */
 export class GoogleSpannerInstanceIamPolicy extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class GoogleSpannerInstanceIamPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/resources/google_spanner_instance_iam_policy google_spanner_instance_iam_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class GoogleSpannerInstanceIamPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_spanner_instance_iam_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.73.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

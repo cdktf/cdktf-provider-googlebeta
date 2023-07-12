@@ -679,6 +679,7 @@ The following submodules are available:
 - [googleFirebaseAndroidApp](./googleFirebaseAndroidApp.go.md)
 - [googleFirebaseAppleApp](./googleFirebaseAppleApp.go.md)
 - [googleFirebaseDatabaseInstance](./googleFirebaseDatabaseInstance.go.md)
+- [googleFirebaseExtensionsInstance](./googleFirebaseExtensionsInstance.go.md)
 - [googleFirebaseHostingChannel](./googleFirebaseHostingChannel.go.md)
 - [googleFirebaseHostingRelease](./googleFirebaseHostingRelease.go.md)
 - [googleFirebaseHostingSite](./googleFirebaseHostingSite.go.md)

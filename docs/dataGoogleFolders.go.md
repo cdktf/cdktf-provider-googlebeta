@@ -1,6 +1,6 @@
 # `data_google_folders`
 
-Refer to the Terraform Registory for docs: [`data_google_folders`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_folders).
+Refer to the Terraform Registory for docs: [`data_google_folders`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/data-sources/google_folders).
 
 # `dataGoogleFolders` Submodule <a name="`dataGoogleFolders` Submodule" id="@cdktf/provider-google-beta.dataGoogleFolders"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_google_folders`](https://regis
 
 ### DataGoogleFolders <a name="DataGoogleFolders" id="@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFolders"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_folders google_folders}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/data-sources/google_folders google_folders}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFolders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefolders"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefolders"
 
 datagooglefolders.NewDataGoogleFolders(scope Construct, id *string, config DataGoogleFoldersConfig) DataGoogleFolders
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFolders.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefolders"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefolders"
 
 datagooglefolders.DataGoogleFolders_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFolders.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefolders"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefolders"
 
 datagooglefolders.DataGoogleFolders_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagooglefolders.DataGoogleFolders_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFolders.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefolders"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefolders"
 
 datagooglefolders.DataGoogleFolders_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefolders"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefolders"
 
 &datagooglefolders.DataGoogleFoldersConfig {
 	Connection: interface{},
@@ -581,8 +581,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefo
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersConfig.property.parentId">ParentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_folders#parent_id DataGoogleFolders#parent_id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_folders#id DataGoogleFolders#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersConfig.property.parentId">ParentId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/data-sources/google_folders#parent_id DataGoogleFolders#parent_id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/data-sources/google_folders#id DataGoogleFolders#id}. |
 
 ---
 
@@ -664,7 +664,7 @@ ParentId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_folders#parent_id DataGoogleFolders#parent_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/data-sources/google_folders#parent_id DataGoogleFolders#parent_id}.
 
 ---
 
@@ -676,7 +676,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_folders#id DataGoogleFolders#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.0/docs/data-sources/google_folders#id DataGoogleFolders#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -688,7 +688,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersFolders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefolders"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefolders"
 
 &datagooglefolders.DataGoogleFoldersFolders {
 
@@ -703,7 +703,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersFoldersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefolders"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefolders"
 
 datagooglefolders.NewDataGoogleFoldersFoldersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleFoldersFoldersList
 ```
@@ -835,7 +835,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleFolders.DataGoogleFoldersFoldersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefolders"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglefolders"
 
 datagooglefolders.NewDataGoogleFoldersFoldersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleFoldersFoldersOutputReference
 ```
