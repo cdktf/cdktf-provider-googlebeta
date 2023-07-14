@@ -1,6 +1,6 @@
 # `google_dataproc_metastore_service_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_dataproc_metastore_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy).
+Refer to the Terraform Registory for docs: [`google_dataproc_metastore_service_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy).
 
 # `googleDataprocMetastoreServiceIamPolicy` Submodule <a name="`googleDataprocMetastoreServiceIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_dataproc_metastore_service_i
 
 ### GoogleDataprocMetastoreServiceIamPolicy <a name="GoogleDataprocMetastoreServiceIamPolicy" id="@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy google_dataproc_metastore_service_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer"></a>
 
@@ -46,11 +46,11 @@ GoogleDataprocMetastoreServiceIamPolicy.Builder.create(Construct scope, java.lan
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#policy_data GoogleDataprocMetastoreServiceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.serviceId">serviceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#service_id GoogleDataprocMetastoreServiceIamPolicy#service_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#id GoogleDataprocMetastoreServiceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#location GoogleDataprocMetastoreServiceIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#project GoogleDataprocMetastoreServiceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#policy_data GoogleDataprocMetastoreServiceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.serviceId">serviceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#service_id GoogleDataprocMetastoreServiceIamPolicy#service_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#id GoogleDataprocMetastoreServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#location GoogleDataprocMetastoreServiceIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicy.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#project GoogleDataprocMetastoreServiceIamPolicy#project}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#policy_data GoogleDataprocMetastoreServiceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#policy_data GoogleDataprocMetastoreServiceIamPolicy#policy_data}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#service_id GoogleDataprocMetastoreServiceIamPolicy#service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#service_id GoogleDataprocMetastoreServiceIamPolicy#service_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#id GoogleDataprocMetastoreServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#id GoogleDataprocMetastoreServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#location GoogleDataprocMetastoreServiceIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#location GoogleDataprocMetastoreServiceIamPolicy#location}.
 
 ---
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#project GoogleDataprocMetastoreServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#project GoogleDataprocMetastoreServiceIamPolicy#project}.
 
 ---
 
@@ -797,11 +797,11 @@ GoogleDataprocMetastoreServiceIamPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#policy_data GoogleDataprocMetastoreServiceIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.serviceId">serviceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#service_id GoogleDataprocMetastoreServiceIamPolicy#service_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#id GoogleDataprocMetastoreServiceIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#location GoogleDataprocMetastoreServiceIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#project GoogleDataprocMetastoreServiceIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#policy_data GoogleDataprocMetastoreServiceIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.serviceId">serviceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#service_id GoogleDataprocMetastoreServiceIamPolicy#service_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#id GoogleDataprocMetastoreServiceIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.location">location</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#location GoogleDataprocMetastoreServiceIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocMetastoreServiceIamPolicy.GoogleDataprocMetastoreServiceIamPolicyConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#project GoogleDataprocMetastoreServiceIamPolicy#project}. |
 
 ---
 
@@ -883,7 +883,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#policy_data GoogleDataprocMetastoreServiceIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#policy_data GoogleDataprocMetastoreServiceIamPolicy#policy_data}.
 
 ---
 
@@ -895,7 +895,7 @@ public java.lang.String getServiceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#service_id GoogleDataprocMetastoreServiceIamPolicy#service_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#service_id GoogleDataprocMetastoreServiceIamPolicy#service_id}.
 
 ---
 
@@ -907,7 +907,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#id GoogleDataprocMetastoreServiceIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#id GoogleDataprocMetastoreServiceIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -922,7 +922,7 @@ public java.lang.String getLocation();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#location GoogleDataprocMetastoreServiceIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#location GoogleDataprocMetastoreServiceIamPolicy#location}.
 
 ---
 
@@ -934,7 +934,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_metastore_service_iam_policy#project GoogleDataprocMetastoreServiceIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataproc_metastore_service_iam_policy#project GoogleDataprocMetastoreServiceIamPolicy#project}.
 
 ---
 

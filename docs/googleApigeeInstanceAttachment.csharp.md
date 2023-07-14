@@ -1,6 +1,6 @@
 # `google_apigee_instance_attachment`
 
-Refer to the Terraform Registory for docs: [`google_apigee_instance_attachment`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment).
+Refer to the Terraform Registory for docs: [`google_apigee_instance_attachment`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment).
 
 # `googleApigeeInstanceAttachment` Submodule <a name="`googleApigeeInstanceAttachment` Submodule" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_apigee_instance_attachment`]
 
 ### GoogleApigeeInstanceAttachment <a name="GoogleApigeeInstanceAttachment" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment google_apigee_instance_attachment}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment google_apigee_instance_attachment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachment.Initializer"></a>
 
@@ -671,7 +671,7 @@ new GoogleApigeeInstanceAttachmentConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentConfig.property.environment">Environment</a></code> | <code>string</code> | The resource ID of the environment. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentConfig.property.instanceId">InstanceId</a></code> | <code>string</code> | The Apigee instance associated with the Apigee environment, in the format 'organisations/{{org_name}}/instances/{{instance_name}}'. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment#id GoogleApigeeInstanceAttachment#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment#id GoogleApigeeInstanceAttachment#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts">GoogleApigeeInstanceAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
@@ -756,7 +756,7 @@ public string Environment { get; set; }
 
 The resource ID of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment#environment GoogleApigeeInstanceAttachment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment#environment GoogleApigeeInstanceAttachment#environment}
 
 ---
 
@@ -770,7 +770,7 @@ public string InstanceId { get; set; }
 
 The Apigee instance associated with the Apigee environment, in the format 'organisations/{{org_name}}/instances/{{instance_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment#instance_id GoogleApigeeInstanceAttachment#instance_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment#instance_id GoogleApigeeInstanceAttachment#instance_id}
 
 ---
 
@@ -782,7 +782,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment#id GoogleApigeeInstanceAttachment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment#id GoogleApigeeInstanceAttachment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -799,7 +799,7 @@ public GoogleApigeeInstanceAttachmentTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment#timeouts GoogleApigeeInstanceAttachment#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment#timeouts GoogleApigeeInstanceAttachment#timeouts}
 
 ---
 
@@ -820,8 +820,8 @@ new GoogleApigeeInstanceAttachmentTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment#create GoogleApigeeInstanceAttachment#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment#delete GoogleApigeeInstanceAttachment#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment#create GoogleApigeeInstanceAttachment#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstanceAttachment.GoogleApigeeInstanceAttachmentTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment#delete GoogleApigeeInstanceAttachment#delete}. |
 
 ---
 
@@ -833,7 +833,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment#create GoogleApigeeInstanceAttachment#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment#create GoogleApigeeInstanceAttachment#create}.
 
 ---
 
@@ -845,7 +845,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_apigee_instance_attachment#delete GoogleApigeeInstanceAttachment#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_apigee_instance_attachment#delete GoogleApigeeInstanceAttachment#delete}.
 
 ---
 

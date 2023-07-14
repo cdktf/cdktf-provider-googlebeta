@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +10,7 @@ export interface GoogleBinaryAuthorizationPolicyConfig extends cdktf.TerraformMe
   /**
   * A descriptive comment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#description GoogleBinaryAuthorizationPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#description GoogleBinaryAuthorizationPolicy#description}
   */
   readonly description?: string;
   /**
@@ -23,42 +18,42 @@ export interface GoogleBinaryAuthorizationPolicyConfig extends cdktf.TerraformMe
 for common system-level images. Images not covered by the global
 policy will be subject to the project admission policy. Possible values: ["ENABLE", "DISABLE"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#global_policy_evaluation_mode GoogleBinaryAuthorizationPolicy#global_policy_evaluation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#global_policy_evaluation_mode GoogleBinaryAuthorizationPolicy#global_policy_evaluation_mode}
   */
   readonly globalPolicyEvaluationMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#id GoogleBinaryAuthorizationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#id GoogleBinaryAuthorizationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#project GoogleBinaryAuthorizationPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#project GoogleBinaryAuthorizationPolicy#project}
   */
   readonly project?: string;
   /**
   * admission_whitelist_patterns block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#admission_whitelist_patterns GoogleBinaryAuthorizationPolicy#admission_whitelist_patterns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#admission_whitelist_patterns GoogleBinaryAuthorizationPolicy#admission_whitelist_patterns}
   */
   readonly admissionWhitelistPatterns?: GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatterns[] | cdktf.IResolvable;
   /**
   * cluster_admission_rules block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#cluster_admission_rules GoogleBinaryAuthorizationPolicy#cluster_admission_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#cluster_admission_rules GoogleBinaryAuthorizationPolicy#cluster_admission_rules}
   */
   readonly clusterAdmissionRules?: GoogleBinaryAuthorizationPolicyClusterAdmissionRules[] | cdktf.IResolvable;
   /**
   * default_admission_rule block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#default_admission_rule GoogleBinaryAuthorizationPolicy#default_admission_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#default_admission_rule GoogleBinaryAuthorizationPolicy#default_admission_rule}
   */
   readonly defaultAdmissionRule: GoogleBinaryAuthorizationPolicyDefaultAdmissionRule;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#timeouts GoogleBinaryAuthorizationPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#timeouts GoogleBinaryAuthorizationPolicy#timeouts}
   */
   readonly timeouts?: GoogleBinaryAuthorizationPolicyTimeouts;
 }
@@ -69,7 +64,7 @@ export interface GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatterns {
 wildcard, but this is allowed only in text after the registry/
 part.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#name_pattern GoogleBinaryAuthorizationPolicy#name_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#name_pattern GoogleBinaryAuthorizationPolicy#name_pattern}
   */
   readonly namePattern: string;
 }
@@ -163,19 +158,19 @@ export class GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatternsList exten
 }
 export interface GoogleBinaryAuthorizationPolicyClusterAdmissionRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#cluster GoogleBinaryAuthorizationPolicy#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#cluster GoogleBinaryAuthorizationPolicy#cluster}
   */
   readonly cluster: string;
   /**
   * The action when a pod creation is denied by the admission rule. Possible values: ["ENFORCED_BLOCK_AND_AUDIT_LOG", "DRYRUN_AUDIT_LOG_ONLY"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#enforcement_mode GoogleBinaryAuthorizationPolicy#enforcement_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#enforcement_mode GoogleBinaryAuthorizationPolicy#enforcement_mode}
   */
   readonly enforcementMode: string;
   /**
   * How this admission rule will be evaluated. Possible values: ["ALWAYS_ALLOW", "REQUIRE_ATTESTATION", "ALWAYS_DENY"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#evaluation_mode GoogleBinaryAuthorizationPolicy#evaluation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#evaluation_mode GoogleBinaryAuthorizationPolicy#evaluation_mode}
   */
   readonly evaluationMode: string;
   /**
@@ -189,7 +184,7 @@ request must be able to read the attestor resource.
 Note: this field must be non-empty when the evaluation_mode field
 specifies REQUIRE_ATTESTATION, otherwise it must be empty.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#require_attestations_by GoogleBinaryAuthorizationPolicy#require_attestations_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#require_attestations_by GoogleBinaryAuthorizationPolicy#require_attestations_by}
   */
   readonly requireAttestationsBy?: string[];
 }
@@ -348,13 +343,13 @@ export interface GoogleBinaryAuthorizationPolicyDefaultAdmissionRule {
   /**
   * The action when a pod creation is denied by the admission rule. Possible values: ["ENFORCED_BLOCK_AND_AUDIT_LOG", "DRYRUN_AUDIT_LOG_ONLY"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#enforcement_mode GoogleBinaryAuthorizationPolicy#enforcement_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#enforcement_mode GoogleBinaryAuthorizationPolicy#enforcement_mode}
   */
   readonly enforcementMode: string;
   /**
   * How this admission rule will be evaluated. Possible values: ["ALWAYS_ALLOW", "REQUIRE_ATTESTATION", "ALWAYS_DENY"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#evaluation_mode GoogleBinaryAuthorizationPolicy#evaluation_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#evaluation_mode GoogleBinaryAuthorizationPolicy#evaluation_mode}
   */
   readonly evaluationMode: string;
   /**
@@ -368,7 +363,7 @@ request must be able to read the attestor resource.
 Note: this field must be non-empty when the evaluation_mode field
 specifies REQUIRE_ATTESTATION, otherwise it must be empty.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#require_attestations_by GoogleBinaryAuthorizationPolicy#require_attestations_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#require_attestations_by GoogleBinaryAuthorizationPolicy#require_attestations_by}
   */
   readonly requireAttestationsBy?: string[];
 }
@@ -473,15 +468,15 @@ export class GoogleBinaryAuthorizationPolicyDefaultAdmissionRuleOutputReference 
 }
 export interface GoogleBinaryAuthorizationPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#create GoogleBinaryAuthorizationPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#create GoogleBinaryAuthorizationPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#delete GoogleBinaryAuthorizationPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#delete GoogleBinaryAuthorizationPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy#update GoogleBinaryAuthorizationPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy#update GoogleBinaryAuthorizationPolicy#update}
   */
   readonly update?: string;
 }
@@ -602,7 +597,7 @@ export class GoogleBinaryAuthorizationPolicyTimeoutsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy google_binary_authorization_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy google_binary_authorization_policy}
 */
 export class GoogleBinaryAuthorizationPolicy extends cdktf.TerraformResource {
 
@@ -616,7 +611,7 @@ export class GoogleBinaryAuthorizationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_binary_authorization_policy google_binary_authorization_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_binary_authorization_policy google_binary_authorization_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -627,7 +622,7 @@ export class GoogleBinaryAuthorizationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_binary_authorization_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.73.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

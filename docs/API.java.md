@@ -679,6 +679,7 @@ The following submodules are available:
 - [googleFirebaseAndroidApp](./googleFirebaseAndroidApp.java.md)
 - [googleFirebaseAppleApp](./googleFirebaseAppleApp.java.md)
 - [googleFirebaseDatabaseInstance](./googleFirebaseDatabaseInstance.java.md)
+- [googleFirebaseExtensionsInstance](./googleFirebaseExtensionsInstance.java.md)
 - [googleFirebaseHostingChannel](./googleFirebaseHostingChannel.java.md)
 - [googleFirebaseHostingRelease](./googleFirebaseHostingRelease.java.md)
 - [googleFirebaseHostingSite](./googleFirebaseHostingSite.java.md)

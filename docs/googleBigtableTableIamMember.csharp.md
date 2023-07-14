@@ -1,6 +1,6 @@
 # `google_bigtable_table_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_bigtable_table_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member).
+Refer to the Terraform Registory for docs: [`google_bigtable_table_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member).
 
 # `googleBigtableTableIamMember` Submodule <a name="`googleBigtableTableIamMember` Submodule" id="@cdktf/provider-google-beta.googleBigtableTableIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_bigtable_table_iam_member`](
 
 ### GoogleBigtableTableIamMember <a name="GoogleBigtableTableIamMember" id="@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member google_bigtable_table_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMember.Initializer"></a>
 
@@ -727,9 +727,9 @@ new GoogleBigtableTableIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#expression GoogleBigtableTableIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#title GoogleBigtableTableIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#description GoogleBigtableTableIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#expression GoogleBigtableTableIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#title GoogleBigtableTableIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#description GoogleBigtableTableIamMember#description}. |
 
 ---
 
@@ -741,7 +741,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#expression GoogleBigtableTableIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#expression GoogleBigtableTableIamMember#expression}.
 
 ---
 
@@ -753,7 +753,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#title GoogleBigtableTableIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#title GoogleBigtableTableIamMember#title}.
 
 ---
 
@@ -765,7 +765,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#description GoogleBigtableTableIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#description GoogleBigtableTableIamMember#description}.
 
 ---
 
@@ -805,13 +805,13 @@ new GoogleBigtableTableIamMemberConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.instance">Instance</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#instance GoogleBigtableTableIamMember#instance}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#member GoogleBigtableTableIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#role GoogleBigtableTableIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.table">Table</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#table GoogleBigtableTableIamMember#table}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.instance">Instance</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#instance GoogleBigtableTableIamMember#instance}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#member GoogleBigtableTableIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#role GoogleBigtableTableIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.table">Table</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#table GoogleBigtableTableIamMember#table}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberCondition">GoogleBigtableTableIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#id GoogleBigtableTableIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#project GoogleBigtableTableIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#id GoogleBigtableTableIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTableIamMember.GoogleBigtableTableIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#project GoogleBigtableTableIamMember#project}. |
 
 ---
 
@@ -893,7 +893,7 @@ public string Instance { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#instance GoogleBigtableTableIamMember#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#instance GoogleBigtableTableIamMember#instance}.
 
 ---
 
@@ -905,7 +905,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#member GoogleBigtableTableIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#member GoogleBigtableTableIamMember#member}.
 
 ---
 
@@ -917,7 +917,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#role GoogleBigtableTableIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#role GoogleBigtableTableIamMember#role}.
 
 ---
 
@@ -929,7 +929,7 @@ public string Table { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#table GoogleBigtableTableIamMember#table}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#table GoogleBigtableTableIamMember#table}.
 
 ---
 
@@ -943,7 +943,7 @@ public GoogleBigtableTableIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#condition GoogleBigtableTableIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#condition GoogleBigtableTableIamMember#condition}
 
 ---
 
@@ -955,7 +955,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#id GoogleBigtableTableIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#id GoogleBigtableTableIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -970,7 +970,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigtable_table_iam_member#project GoogleBigtableTableIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigtable_table_iam_member#project GoogleBigtableTableIamMember#project}.
 
 ---
 

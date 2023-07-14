@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface GooglePrivatecaCaPoolIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding#ca_pool GooglePrivatecaCaPoolIamBinding#ca_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding#ca_pool GooglePrivatecaCaPoolIamBinding#ca_pool}
   */
   readonly caPool: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding#id GooglePrivatecaCaPoolIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding#id GooglePrivatecaCaPoolIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding#location GooglePrivatecaCaPoolIamBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding#location GooglePrivatecaCaPoolIamBinding#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding#members GooglePrivatecaCaPoolIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding#members GooglePrivatecaCaPoolIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding#project GooglePrivatecaCaPoolIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding#project GooglePrivatecaCaPoolIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding#role GooglePrivatecaCaPoolIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding#role GooglePrivatecaCaPoolIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding#condition GooglePrivatecaCaPoolIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding#condition GooglePrivatecaCaPoolIamBinding#condition}
   */
   readonly condition?: GooglePrivatecaCaPoolIamBindingCondition;
 }
 export interface GooglePrivatecaCaPoolIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding#description GooglePrivatecaCaPoolIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding#description GooglePrivatecaCaPoolIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding#expression GooglePrivatecaCaPoolIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding#expression GooglePrivatecaCaPoolIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding#title GooglePrivatecaCaPoolIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding#title GooglePrivatecaCaPoolIamBinding#title}
   */
   readonly title: string;
 }
@@ -161,7 +156,7 @@ export class GooglePrivatecaCaPoolIamBindingConditionOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding google_privateca_ca_pool_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding google_privateca_ca_pool_iam_binding}
 */
 export class GooglePrivatecaCaPoolIamBinding extends cdktf.TerraformResource {
 
@@ -175,7 +170,7 @@ export class GooglePrivatecaCaPoolIamBinding extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_privateca_ca_pool_iam_binding google_privateca_ca_pool_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_privateca_ca_pool_iam_binding google_privateca_ca_pool_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -186,7 +181,7 @@ export class GooglePrivatecaCaPoolIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_privateca_ca_pool_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.73.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `google_container_azure_node_pool`
 
-Refer to the Terraform Registory for docs: [`google_container_azure_node_pool`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool).
+Refer to the Terraform Registory for docs: [`google_container_azure_node_pool`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool).
 
 # `googleContainerAzureNodePool` Submodule <a name="`googleContainerAzureNodePool` Submodule" id="@cdktf/provider-google-beta.googleContainerAzureNodePool"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_container_azure_node_pool`](
 
 ### GoogleContainerAzureNodePool <a name="GoogleContainerAzureNodePool" id="@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool google_container_azure_node_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool google_container_azure_node_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePool.Initializer"></a>
 
@@ -978,7 +978,7 @@ public readonly maxNodeCount: number;
 
 Maximum number of nodes in the node pool. Must be >= min_node_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#max_node_count GoogleContainerAzureNodePool#max_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#max_node_count GoogleContainerAzureNodePool#max_node_count}
 
 ---
 
@@ -992,7 +992,7 @@ public readonly minNodeCount: number;
 
 Minimum number of nodes in the node pool. Must be >= 1 and <= max_node_count.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#min_node_count GoogleContainerAzureNodePool#min_node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#min_node_count GoogleContainerAzureNodePool#min_node_count}
 
 ---
 
@@ -1027,7 +1027,7 @@ const googleContainerAzureNodePoolConfig: googleContainerAzureNodePool.GoogleCon
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfig.property.version">version</a></code> | <code>string</code> | The Kubernetes version (e.g. `1.19.10-gke.1000`) running on this node pool. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfig.property.annotations">annotations</a></code> | <code>{[ key: string ]: string}</code> | Optional. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfig.property.azureAvailabilityZone">azureAvailabilityZone</a></code> | <code>string</code> | Optional. The Azure availability zone of the nodes in this nodepool. When unspecified, it defaults to `1`. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#id GoogleContainerAzureNodePool#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#id GoogleContainerAzureNodePool#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfig.property.project">project</a></code> | <code>string</code> | The project for the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolTimeouts">GoogleContainerAzureNodePoolTimeouts</a></code> | timeouts block. |
 
@@ -1113,7 +1113,7 @@ public readonly autoscaling: GoogleContainerAzureNodePoolAutoscaling;
 
 autoscaling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#autoscaling GoogleContainerAzureNodePool#autoscaling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#autoscaling GoogleContainerAzureNodePool#autoscaling}
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly cluster: string;
 
 The azureCluster for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#cluster GoogleContainerAzureNodePool#cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#cluster GoogleContainerAzureNodePool#cluster}
 
 ---
 
@@ -1141,7 +1141,7 @@ public readonly config: GoogleContainerAzureNodePoolConfigA;
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#config GoogleContainerAzureNodePool#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#config GoogleContainerAzureNodePool#config}
 
 ---
 
@@ -1155,7 +1155,7 @@ public readonly location: string;
 
 The location for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#location GoogleContainerAzureNodePool#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#location GoogleContainerAzureNodePool#location}
 
 ---
 
@@ -1169,7 +1169,7 @@ public readonly maxPodsConstraint: GoogleContainerAzureNodePoolMaxPodsConstraint
 
 max_pods_constraint block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#max_pods_constraint GoogleContainerAzureNodePool#max_pods_constraint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#max_pods_constraint GoogleContainerAzureNodePool#max_pods_constraint}
 
 ---
 
@@ -1183,7 +1183,7 @@ public readonly name: string;
 
 The name of this resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#name GoogleContainerAzureNodePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#name GoogleContainerAzureNodePool#name}
 
 ---
 
@@ -1199,7 +1199,7 @@ The ARM ID of the subnet where the node pool VMs run.
 
 Make sure it's a subnet under the virtual network in the cluster configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#subnet_id GoogleContainerAzureNodePool#subnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#subnet_id GoogleContainerAzureNodePool#subnet_id}
 
 ---
 
@@ -1213,7 +1213,7 @@ public readonly version: string;
 
 The Kubernetes version (e.g. `1.19.10-gke.1000`) running on this node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#version GoogleContainerAzureNodePool#version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#version GoogleContainerAzureNodePool#version}
 
 ---
 
@@ -1229,7 +1229,7 @@ Optional.
 
 Annotations on the node pool. This field has the same restrictions as Kubernetes annotations. The total size of all keys and values combined is limited to 256k. Keys can have 2 segments: prefix (optional) and name (required), separated by a slash (/). Prefix must be a DNS subdomain. Name must be 63 characters or less, begin and end with alphanumerics, with dashes (-), underscores (_), dots (.), and alphanumerics between.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#annotations GoogleContainerAzureNodePool#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#annotations GoogleContainerAzureNodePool#annotations}
 
 ---
 
@@ -1243,7 +1243,7 @@ public readonly azureAvailabilityZone: string;
 
 Optional. The Azure availability zone of the nodes in this nodepool. When unspecified, it defaults to `1`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#azure_availability_zone GoogleContainerAzureNodePool#azure_availability_zone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#azure_availability_zone GoogleContainerAzureNodePool#azure_availability_zone}
 
 ---
 
@@ -1255,7 +1255,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#id GoogleContainerAzureNodePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#id GoogleContainerAzureNodePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1272,7 +1272,7 @@ public readonly project: string;
 
 The project for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#project GoogleContainerAzureNodePool#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#project GoogleContainerAzureNodePool#project}
 
 ---
 
@@ -1286,7 +1286,7 @@ public readonly timeouts: GoogleContainerAzureNodePoolTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#timeouts GoogleContainerAzureNodePool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#timeouts GoogleContainerAzureNodePool#timeouts}
 
 ---
 
@@ -1323,7 +1323,7 @@ public readonly sshConfig: GoogleContainerAzureNodePoolConfigSshConfig;
 
 ssh_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#ssh_config GoogleContainerAzureNodePool#ssh_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#ssh_config GoogleContainerAzureNodePool#ssh_config}
 
 ---
 
@@ -1337,7 +1337,7 @@ public readonly imageType: string;
 
 The OS image type to use on node pool instances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#image_type GoogleContainerAzureNodePool#image_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#image_type GoogleContainerAzureNodePool#image_type}
 
 ---
 
@@ -1351,7 +1351,7 @@ public readonly proxyConfig: GoogleContainerAzureNodePoolConfigProxyConfig;
 
 proxy_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#proxy_config GoogleContainerAzureNodePool#proxy_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#proxy_config GoogleContainerAzureNodePool#proxy_config}
 
 ---
 
@@ -1365,7 +1365,7 @@ public readonly rootVolume: GoogleContainerAzureNodePoolConfigRootVolume;
 
 root_volume block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#root_volume GoogleContainerAzureNodePool#root_volume}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#root_volume GoogleContainerAzureNodePool#root_volume}
 
 ---
 
@@ -1381,7 +1381,7 @@ Optional.
 
 A set of tags to apply to all underlying Azure resources for this node pool. This currently only includes Virtual Machine Scale Sets. Specify at most 50 pairs containing alphanumerics, spaces, and symbols (.+-=_:@/). Keys can be up to 127 Unicode characters. Values can be up to 255 Unicode characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#tags GoogleContainerAzureNodePool#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#tags GoogleContainerAzureNodePool#tags}
 
 ---
 
@@ -1395,7 +1395,7 @@ public readonly vmSize: string;
 
 Optional. The Azure VM size name. Example: `Standard_DS2_v2`. See (/anthos/clusters/docs/azure/reference/supported-vms) for options. When unspecified, it defaults to `Standard_DS2_v2`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#vm_size GoogleContainerAzureNodePool#vm_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#vm_size GoogleContainerAzureNodePool#vm_size}
 
 ---
 
@@ -1428,7 +1428,7 @@ public readonly resourceGroupId: string;
 
 The ARM ID the of the resource group containing proxy keyvault. Resource group ids are formatted as `/subscriptions/<subscription-id>/resourceGroups/<resource-group-name>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#resource_group_id GoogleContainerAzureNodePool#resource_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#resource_group_id GoogleContainerAzureNodePool#resource_group_id}
 
 ---
 
@@ -1442,7 +1442,7 @@ public readonly secretId: string;
 
 The URL the of the proxy setting secret with its version. Secret ids are formatted as `https:<key-vault-name>.vault.azure.net/secrets/<secret-name>/<secret-version>`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#secret_id GoogleContainerAzureNodePool#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#secret_id GoogleContainerAzureNodePool#secret_id}
 
 ---
 
@@ -1476,7 +1476,7 @@ Optional.
 
 The size of the disk, in GiBs. When unspecified, a default value is provided. See the specific reference in the parent resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#size_gib GoogleContainerAzureNodePool#size_gib}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#size_gib GoogleContainerAzureNodePool#size_gib}
 
 ---
 
@@ -1510,7 +1510,7 @@ The SSH public key data for VMs managed by Anthos.
 
 This accepts the authorized_keys file format used in OpenSSH according to the sshd(8) manual page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#authorized_key GoogleContainerAzureNodePool#authorized_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#authorized_key GoogleContainerAzureNodePool#authorized_key}
 
 ---
 
@@ -1542,7 +1542,7 @@ public readonly maxPodsPerNode: number;
 
 The maximum number of pods to schedule on a single node.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#max_pods_per_node GoogleContainerAzureNodePool#max_pods_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#max_pods_per_node GoogleContainerAzureNodePool#max_pods_per_node}
 
 ---
 
@@ -1560,9 +1560,9 @@ const googleContainerAzureNodePoolTimeouts: googleContainerAzureNodePool.GoogleC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#create GoogleContainerAzureNodePool#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#delete GoogleContainerAzureNodePool#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#update GoogleContainerAzureNodePool#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#create GoogleContainerAzureNodePool#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#delete GoogleContainerAzureNodePool#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleContainerAzureNodePool.GoogleContainerAzureNodePoolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#update GoogleContainerAzureNodePool#update}. |
 
 ---
 
@@ -1574,7 +1574,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#create GoogleContainerAzureNodePool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#create GoogleContainerAzureNodePool#create}.
 
 ---
 
@@ -1586,7 +1586,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#delete GoogleContainerAzureNodePool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#delete GoogleContainerAzureNodePool#delete}.
 
 ---
 
@@ -1598,7 +1598,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_container_azure_node_pool#update GoogleContainerAzureNodePool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_container_azure_node_pool#update GoogleContainerAzureNodePool#update}.
 
 ---
 

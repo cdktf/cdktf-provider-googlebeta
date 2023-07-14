@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface GoogleBigqueryConnectionConfig extends cdktf.TerraformMetaArgum
   /**
   * Optional connection id that should be assigned to the created connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#connection_id GoogleBigqueryConnection#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#connection_id GoogleBigqueryConnection#connection_id}
   */
   readonly connectionId?: string;
   /**
   * A descriptive description for the connection
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#description GoogleBigqueryConnection#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#description GoogleBigqueryConnection#description}
   */
   readonly description?: string;
   /**
   * A descriptive name for the connection
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#friendly_name GoogleBigqueryConnection#friendly_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#friendly_name GoogleBigqueryConnection#friendly_name}
   */
   readonly friendlyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#id GoogleBigqueryConnection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#id GoogleBigqueryConnection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,47 +41,47 @@ Spanner Connections same as spanner region
 AWS allowed regions are aws-us-east-1
 Azure allowed regions are azure-eastus2
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#location GoogleBigqueryConnection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#location GoogleBigqueryConnection#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#project GoogleBigqueryConnection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#project GoogleBigqueryConnection#project}
   */
   readonly project?: string;
   /**
   * aws block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#aws GoogleBigqueryConnection#aws}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#aws GoogleBigqueryConnection#aws}
   */
   readonly aws?: GoogleBigqueryConnectionAws;
   /**
   * azure block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#azure GoogleBigqueryConnection#azure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#azure GoogleBigqueryConnection#azure}
   */
   readonly azure?: GoogleBigqueryConnectionAzure;
   /**
   * cloud_resource block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#cloud_resource GoogleBigqueryConnection#cloud_resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#cloud_resource GoogleBigqueryConnection#cloud_resource}
   */
   readonly cloudResource?: GoogleBigqueryConnectionCloudResource;
   /**
   * cloud_spanner block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#cloud_spanner GoogleBigqueryConnection#cloud_spanner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#cloud_spanner GoogleBigqueryConnection#cloud_spanner}
   */
   readonly cloudSpanner?: GoogleBigqueryConnectionCloudSpanner;
   /**
   * cloud_sql block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#cloud_sql GoogleBigqueryConnection#cloud_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#cloud_sql GoogleBigqueryConnection#cloud_sql}
   */
   readonly cloudSql?: GoogleBigqueryConnectionCloudSql;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#timeouts GoogleBigqueryConnection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#timeouts GoogleBigqueryConnection#timeouts}
   */
   readonly timeouts?: GoogleBigqueryConnectionTimeouts;
 }
@@ -94,7 +89,7 @@ export interface GoogleBigqueryConnectionAwsAccessRole {
   /**
   * The user’s AWS IAM Role that trusts the Google-owned AWS IAM user Connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#iam_role_id GoogleBigqueryConnection#iam_role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#iam_role_id GoogleBigqueryConnection#iam_role_id}
   */
   readonly iamRoleId: string;
 }
@@ -163,7 +158,7 @@ export interface GoogleBigqueryConnectionAws {
   /**
   * access_role block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#access_role GoogleBigqueryConnection#access_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#access_role GoogleBigqueryConnection#access_role}
   */
   readonly accessRole: GoogleBigqueryConnectionAwsAccessRole;
 }
@@ -227,13 +222,13 @@ export interface GoogleBigqueryConnectionAzure {
   /**
   * The id of customer's directory that host the data.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#customer_tenant_id GoogleBigqueryConnection#customer_tenant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#customer_tenant_id GoogleBigqueryConnection#customer_tenant_id}
   */
   readonly customerTenantId: string;
   /**
   * The Azure Application (client) ID where the federated credentials will be hosted.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#federated_application_client_id GoogleBigqueryConnection#federated_application_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#federated_application_client_id GoogleBigqueryConnection#federated_application_client_id}
   */
   readonly federatedApplicationClientId?: string;
 }
@@ -388,19 +383,19 @@ export interface GoogleBigqueryConnectionCloudSpanner {
   /**
   * Cloud Spanner database in the form 'project/instance/database'
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#database GoogleBigqueryConnection#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#database GoogleBigqueryConnection#database}
   */
   readonly database: string;
   /**
   * If parallelism should be used when reading from Cloud Spanner
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#use_parallelism GoogleBigqueryConnection#use_parallelism}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#use_parallelism GoogleBigqueryConnection#use_parallelism}
   */
   readonly useParallelism?: boolean | cdktf.IResolvable;
   /**
   * If the serverless analytics service should be used to read data from Cloud Spanner. useParallelism must be set when using serverless analytics
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#use_serverless_analytics GoogleBigqueryConnection#use_serverless_analytics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#use_serverless_analytics GoogleBigqueryConnection#use_serverless_analytics}
   */
   readonly useServerlessAnalytics?: boolean | cdktf.IResolvable;
 }
@@ -510,13 +505,13 @@ export interface GoogleBigqueryConnectionCloudSqlCredential {
   /**
   * Password for database.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#password GoogleBigqueryConnection#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#password GoogleBigqueryConnection#password}
   */
   readonly password: string;
   /**
   * Username for database.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#username GoogleBigqueryConnection#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#username GoogleBigqueryConnection#username}
   */
   readonly username: string;
 }
@@ -600,25 +595,25 @@ export interface GoogleBigqueryConnectionCloudSql {
   /**
   * Database name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#database GoogleBigqueryConnection#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#database GoogleBigqueryConnection#database}
   */
   readonly database: string;
   /**
   * Cloud SQL instance ID in the form project:location:instance.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#instance_id GoogleBigqueryConnection#instance_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#instance_id GoogleBigqueryConnection#instance_id}
   */
   readonly instanceId: string;
   /**
   * Type of the Cloud SQL database. Possible values: ["DATABASE_TYPE_UNSPECIFIED", "POSTGRES", "MYSQL"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#type GoogleBigqueryConnection#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#type GoogleBigqueryConnection#type}
   */
   readonly type: string;
   /**
   * credential block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#credential GoogleBigqueryConnection#credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#credential GoogleBigqueryConnection#credential}
   */
   readonly credential: GoogleBigqueryConnectionCloudSqlCredential;
 }
@@ -745,15 +740,15 @@ export class GoogleBigqueryConnectionCloudSqlOutputReference extends cdktf.Compl
 }
 export interface GoogleBigqueryConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#create GoogleBigqueryConnection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#create GoogleBigqueryConnection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#delete GoogleBigqueryConnection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#delete GoogleBigqueryConnection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection#update GoogleBigqueryConnection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection#update GoogleBigqueryConnection#update}
   */
   readonly update?: string;
 }
@@ -874,7 +869,7 @@ export class GoogleBigqueryConnectionTimeoutsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection google_bigquery_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection google_bigquery_connection}
 */
 export class GoogleBigqueryConnection extends cdktf.TerraformResource {
 
@@ -888,7 +883,7 @@ export class GoogleBigqueryConnection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_bigquery_connection google_bigquery_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_bigquery_connection google_bigquery_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -899,7 +894,7 @@ export class GoogleBigqueryConnection extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_connection',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.73.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

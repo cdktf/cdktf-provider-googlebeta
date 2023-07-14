@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,13 +11,13 @@ export interface GoogleComputeImageConfig extends cdktf.TerraformMetaArguments {
   * An optional description of this resource. Provide this property when
 you create the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#description GoogleComputeImage#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#description GoogleComputeImage#description}
   */
   readonly description?: string;
   /**
   * Size of the image when restored onto a persistent disk (in GB).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#disk_size_gb GoogleComputeImage#disk_size_gb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#disk_size_gb GoogleComputeImage#disk_size_gb}
   */
   readonly diskSizeGb?: number;
   /**
@@ -32,11 +27,11 @@ image name. The image family always returns its latest image that is
 not deprecated. The name of the image family must comply with
 RFC1035.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#family GoogleComputeImage#family}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#family GoogleComputeImage#family}
   */
   readonly family?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#id GoogleComputeImage#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#id GoogleComputeImage#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,13 +40,13 @@ RFC1035.
   /**
   * Labels to apply to this Image.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#labels GoogleComputeImage#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#labels GoogleComputeImage#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Any applicable license URI.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#licenses GoogleComputeImage#licenses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#licenses GoogleComputeImage#licenses}
   */
   readonly licenses?: string[];
   /**
@@ -63,11 +58,11 @@ the first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the
 last character, which cannot be a dash.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#name GoogleComputeImage#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#name GoogleComputeImage#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#project GoogleComputeImage#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#project GoogleComputeImage#project}
   */
   readonly project?: string;
   /**
@@ -75,7 +70,7 @@ last character, which cannot be a dash.
 You must provide either this property or the
 rawDisk.source property but not both to create an image.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#source_disk GoogleComputeImage#source_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#source_disk GoogleComputeImage#source_disk}
   */
   readonly sourceDisk?: string;
   /**
@@ -87,7 +82,7 @@ URL of one of the following:
 * The rawDisk.source URL
 * The sourceDisk URL
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#source_image GoogleComputeImage#source_image}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#source_image GoogleComputeImage#source_image}
   */
   readonly sourceImage?: string;
   /**
@@ -101,7 +96,7 @@ In order to create an image, you must provide the full or partial URL of one of 
 * The rawDisk.source URL
 * The sourceDisk URL
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#source_snapshot GoogleComputeImage#source_snapshot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#source_snapshot GoogleComputeImage#source_snapshot}
   */
   readonly sourceSnapshot?: string;
   /**
@@ -109,31 +104,31 @@ In order to create an image, you must provide the full or partial URL of one of 
 (regional or multi-regional).
 Reference link: https://cloud.google.com/compute/docs/reference/rest/v1/images
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#storage_locations GoogleComputeImage#storage_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#storage_locations GoogleComputeImage#storage_locations}
   */
   readonly storageLocations?: string[];
   /**
   * guest_os_features block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#guest_os_features GoogleComputeImage#guest_os_features}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#guest_os_features GoogleComputeImage#guest_os_features}
   */
   readonly guestOsFeatures?: GoogleComputeImageGuestOsFeatures[] | cdktf.IResolvable;
   /**
   * image_encryption_key block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#image_encryption_key GoogleComputeImage#image_encryption_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#image_encryption_key GoogleComputeImage#image_encryption_key}
   */
   readonly imageEncryptionKey?: GoogleComputeImageImageEncryptionKey;
   /**
   * raw_disk block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#raw_disk GoogleComputeImage#raw_disk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#raw_disk GoogleComputeImage#raw_disk}
   */
   readonly rawDisk?: GoogleComputeImageRawDisk;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#timeouts GoogleComputeImage#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#timeouts GoogleComputeImage#timeouts}
   */
   readonly timeouts?: GoogleComputeImageTimeouts;
 }
@@ -141,7 +136,7 @@ export interface GoogleComputeImageGuestOsFeatures {
   /**
   * The type of supported feature. Read [Enabling guest operating system features](https://cloud.google.com/compute/docs/images/create-delete-deprecate-private-images#guest-os-features) to see a list of available options. Possible values: ["MULTI_IP_SUBNET", "SECURE_BOOT", "SEV_CAPABLE", "UEFI_COMPATIBLE", "VIRTIO_SCSI_MULTIQUEUE", "WINDOWS", "GVNIC", "SEV_LIVE_MIGRATABLE", "SEV_SNP_CAPABLE", "SUSPEND_RESUME_COMPATIBLE", "TDX_CAPABLE"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#type GoogleComputeImage#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#type GoogleComputeImage#type}
   */
   readonly type: string;
 }
@@ -238,7 +233,7 @@ export interface GoogleComputeImageImageEncryptionKey {
   * The self link of the encryption key that is stored in Google Cloud
 KMS.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#kms_key_self_link GoogleComputeImage#kms_key_self_link}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#kms_key_self_link GoogleComputeImage#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
@@ -246,7 +241,7 @@ KMS.
 given KMS key. If absent, the Compute Engine default service
 account is used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#kms_key_service_account GoogleComputeImage#kms_key_service_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#kms_key_service_account GoogleComputeImage#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
 }
@@ -339,14 +334,14 @@ should be TAR. This is just a container and transmission format
 and not a runtime format. Provided by the client when the disk
 image is created. Default value: "TAR" Possible values: ["TAR"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#container_type GoogleComputeImage#container_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#container_type GoogleComputeImage#container_type}
   */
   readonly containerType?: string;
   /**
   * An optional SHA1 checksum of the disk image before unpackaging.
 This is provided by the client when the disk image is created.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#sha1 GoogleComputeImage#sha1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#sha1 GoogleComputeImage#sha1}
   */
   readonly sha1?: string;
   /**
@@ -354,7 +349,7 @@ This is provided by the client when the disk image is created.
 You must provide either this property or the sourceDisk property
 but not both.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#source GoogleComputeImage#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#source GoogleComputeImage#source}
   */
   readonly source: string;
 }
@@ -462,15 +457,15 @@ export class GoogleComputeImageRawDiskOutputReference extends cdktf.ComplexObjec
 }
 export interface GoogleComputeImageTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#create GoogleComputeImage#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#create GoogleComputeImage#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#delete GoogleComputeImage#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#delete GoogleComputeImage#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image#update GoogleComputeImage#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image#update GoogleComputeImage#update}
   */
   readonly update?: string;
 }
@@ -591,7 +586,7 @@ export class GoogleComputeImageTimeoutsOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image google_compute_image}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image google_compute_image}
 */
 export class GoogleComputeImage extends cdktf.TerraformResource {
 
@@ -605,7 +600,7 @@ export class GoogleComputeImage extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_image google_compute_image} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_compute_image google_compute_image} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -616,7 +611,7 @@ export class GoogleComputeImage extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_image',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.73.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

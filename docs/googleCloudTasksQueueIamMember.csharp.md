@@ -1,6 +1,6 @@
 # `google_cloud_tasks_queue_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_cloud_tasks_queue_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member).
+Refer to the Terraform Registory for docs: [`google_cloud_tasks_queue_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member).
 
 # `googleCloudTasksQueueIamMember` Submodule <a name="`googleCloudTasksQueueIamMember` Submodule" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_cloud_tasks_queue_iam_member
 
 ### GoogleCloudTasksQueueIamMember <a name="GoogleCloudTasksQueueIamMember" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMember.Initializer"></a>
 
@@ -734,9 +734,9 @@ new GoogleCloudTasksQueueIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#expression GoogleCloudTasksQueueIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#title GoogleCloudTasksQueueIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#description GoogleCloudTasksQueueIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#expression GoogleCloudTasksQueueIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#title GoogleCloudTasksQueueIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#description GoogleCloudTasksQueueIamMember#description}. |
 
 ---
 
@@ -748,7 +748,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#expression GoogleCloudTasksQueueIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#expression GoogleCloudTasksQueueIamMember#expression}.
 
 ---
 
@@ -760,7 +760,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#title GoogleCloudTasksQueueIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#title GoogleCloudTasksQueueIamMember#title}.
 
 ---
 
@@ -772,7 +772,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#description GoogleCloudTasksQueueIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#description GoogleCloudTasksQueueIamMember#description}.
 
 ---
 
@@ -812,13 +812,13 @@ new GoogleCloudTasksQueueIamMemberConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#member GoogleCloudTasksQueueIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#name GoogleCloudTasksQueueIamMember#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#role GoogleCloudTasksQueueIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#member GoogleCloudTasksQueueIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#name GoogleCloudTasksQueueIamMember#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#role GoogleCloudTasksQueueIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberCondition">GoogleCloudTasksQueueIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#id GoogleCloudTasksQueueIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#location GoogleCloudTasksQueueIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#project GoogleCloudTasksQueueIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#id GoogleCloudTasksQueueIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#location GoogleCloudTasksQueueIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudTasksQueueIamMember.GoogleCloudTasksQueueIamMemberConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#project GoogleCloudTasksQueueIamMember#project}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#member GoogleCloudTasksQueueIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#member GoogleCloudTasksQueueIamMember#member}.
 
 ---
 
@@ -912,7 +912,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#name GoogleCloudTasksQueueIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#name GoogleCloudTasksQueueIamMember#name}.
 
 ---
 
@@ -924,7 +924,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#role GoogleCloudTasksQueueIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#role GoogleCloudTasksQueueIamMember#role}.
 
 ---
 
@@ -938,7 +938,7 @@ public GoogleCloudTasksQueueIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#condition GoogleCloudTasksQueueIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#condition GoogleCloudTasksQueueIamMember#condition}
 
 ---
 
@@ -950,7 +950,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#id GoogleCloudTasksQueueIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#id GoogleCloudTasksQueueIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#location GoogleCloudTasksQueueIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#location GoogleCloudTasksQueueIamMember#location}.
 
 ---
 
@@ -977,7 +977,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_tasks_queue_iam_member#project GoogleCloudTasksQueueIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_tasks_queue_iam_member#project GoogleCloudTasksQueueIamMember#project}.
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_google_runtimeconfig_config`
 
-Refer to the Terraform Registory for docs: [`data_google_runtimeconfig_config`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_runtimeconfig_config).
+Refer to the Terraform Registory for docs: [`data_google_runtimeconfig_config`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/data-sources/google_runtimeconfig_config).
 
 # `dataGoogleRuntimeconfigConfig` Submodule <a name="`dataGoogleRuntimeconfigConfig` Submodule" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_google_runtimeconfig_config`](
 
 ### DataGoogleRuntimeconfigConfig <a name="DataGoogleRuntimeconfigConfig" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_runtimeconfig_config google_runtimeconfig_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/data-sources/google_runtimeconfig_config google_runtimeconfig_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.Initializer"></a>
 
@@ -43,7 +43,7 @@ dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig(
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the runtime config. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_runtimeconfig_config#id DataGoogleRuntimeconfigConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/data-sources/google_runtimeconfig_config#id DataGoogleRuntimeconfigConfig#id}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfig.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the runtime config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_runtimeconfig_config#name DataGoogleRuntimeconfigConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/data-sources/google_runtimeconfig_config#name DataGoogleRuntimeconfigConfig#name}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_runtimeconfig_config#id DataGoogleRuntimeconfigConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/data-sources/google_runtimeconfig_config#id DataGoogleRuntimeconfigConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_runtimeconfig_config#project DataGoogleRuntimeconfigConfig#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/data-sources/google_runtimeconfig_config#project DataGoogleRuntimeconfigConfig#project}
 
 ---
 
@@ -734,7 +734,7 @@ dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfigConfig(
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfigConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfigConfig.property.name">name</a></code> | <code>str</code> | The name of the runtime config. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_runtimeconfig_config#id DataGoogleRuntimeconfigConfig#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfigConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/data-sources/google_runtimeconfig_config#id DataGoogleRuntimeconfigConfig#id}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfig.DataGoogleRuntimeconfigConfigConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
 
 ---
@@ -819,7 +819,7 @@ name: str
 
 The name of the runtime config.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_runtimeconfig_config#name DataGoogleRuntimeconfigConfig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/data-sources/google_runtimeconfig_config#name DataGoogleRuntimeconfigConfig#name}
 
 ---
 
@@ -831,7 +831,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_runtimeconfig_config#id DataGoogleRuntimeconfigConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/data-sources/google_runtimeconfig_config#id DataGoogleRuntimeconfigConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -850,7 +850,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_runtimeconfig_config#project DataGoogleRuntimeconfigConfig#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/data-sources/google_runtimeconfig_config#project DataGoogleRuntimeconfigConfig#project}
 
 ---
 
