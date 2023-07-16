@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleDataformRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#id GoogleDataformRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#id GoogleDataformRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,35 +17,35 @@ export interface GoogleDataformRepositoryConfig extends cdktf.TerraformMetaArgum
   /**
   * The repository's name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#name GoogleDataformRepository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#name GoogleDataformRepository#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#project GoogleDataformRepository#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#project GoogleDataformRepository#project}
   */
   readonly project?: string;
   /**
   * A reference to the region
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#region GoogleDataformRepository#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#region GoogleDataformRepository#region}
   */
   readonly region?: string;
   /**
   * git_remote_settings block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#git_remote_settings GoogleDataformRepository#git_remote_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#git_remote_settings GoogleDataformRepository#git_remote_settings}
   */
   readonly gitRemoteSettings?: GoogleDataformRepositoryGitRemoteSettings;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#timeouts GoogleDataformRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#timeouts GoogleDataformRepository#timeouts}
   */
   readonly timeouts?: GoogleDataformRepositoryTimeouts;
   /**
   * workspace_compilation_overrides block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#workspace_compilation_overrides GoogleDataformRepository#workspace_compilation_overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#workspace_compilation_overrides GoogleDataformRepository#workspace_compilation_overrides}
   */
   readonly workspaceCompilationOverrides?: GoogleDataformRepositoryWorkspaceCompilationOverrides;
 }
@@ -58,19 +53,19 @@ export interface GoogleDataformRepositoryGitRemoteSettings {
   /**
   * The name of the Secret Manager secret version to use as an authentication token for Git operations. Must be in the format projects/*\/secrets/*\/versions/*.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#authentication_token_secret_version GoogleDataformRepository#authentication_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#authentication_token_secret_version GoogleDataformRepository#authentication_token_secret_version}
   */
   readonly authenticationTokenSecretVersion: string;
   /**
   * The Git remote's default branch name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#default_branch GoogleDataformRepository#default_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#default_branch GoogleDataformRepository#default_branch}
   */
   readonly defaultBranch: string;
   /**
   * The Git remote's URL.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#url GoogleDataformRepository#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#url GoogleDataformRepository#url}
   */
   readonly url: string;
 }
@@ -177,15 +172,15 @@ export class GoogleDataformRepositoryGitRemoteSettingsOutputReference extends cd
 }
 export interface GoogleDataformRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#create GoogleDataformRepository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#create GoogleDataformRepository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#delete GoogleDataformRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#delete GoogleDataformRepository#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#update GoogleDataformRepository#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#update GoogleDataformRepository#update}
   */
   readonly update?: string;
 }
@@ -308,19 +303,19 @@ export interface GoogleDataformRepositoryWorkspaceCompilationOverrides {
   /**
   * Optional. The default database (Google Cloud project ID).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#default_database GoogleDataformRepository#default_database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#default_database GoogleDataformRepository#default_database}
   */
   readonly defaultDatabase?: string;
   /**
   * Optional. The suffix that should be appended to all schema (BigQuery dataset ID) names.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#schema_suffix GoogleDataformRepository#schema_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#schema_suffix GoogleDataformRepository#schema_suffix}
   */
   readonly schemaSuffix?: string;
   /**
   * Optional. The prefix that should be prepended to all table names.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository#table_prefix GoogleDataformRepository#table_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository#table_prefix GoogleDataformRepository#table_prefix}
   */
   readonly tablePrefix?: string;
 }
@@ -431,7 +426,7 @@ export class GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReferenc
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository google_dataform_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository google_dataform_repository}
 */
 export class GoogleDataformRepository extends cdktf.TerraformResource {
 
@@ -445,7 +440,7 @@ export class GoogleDataformRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataform_repository google_dataform_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataform_repository google_dataform_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -456,7 +451,7 @@ export class GoogleDataformRepository extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataform_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.73.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

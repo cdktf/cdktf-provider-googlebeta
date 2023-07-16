@@ -1,6 +1,6 @@
 # `google_cloudiot_device`
 
-Refer to the Terraform Registory for docs: [`google_cloudiot_device`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device).
+Refer to the Terraform Registory for docs: [`google_cloudiot_device`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device).
 
 # `googleCloudiotDevice` Submodule <a name="`googleCloudiotDevice` Submodule" id="@cdktf/provider-google-beta.googleCloudiotDevice"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_cloudiot_device`](https://re
 
 ### GoogleCloudiotDevice <a name="GoogleCloudiotDevice" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device google_cloudiot_device}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device google_cloudiot_device}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDevice(scope Construct, id *string, config GoogleCloudiotDeviceConfig) GoogleCloudiotDevice
 ```
@@ -358,7 +358,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.GoogleCloudiotDevice_IsConstruct(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.GoogleCloudiotDevice_IsTerraformElement(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ googlecloudiotdevice.GoogleCloudiotDevice_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDevice.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.GoogleCloudiotDevice_IsTerraformResource(x interface{}) *bool
 ```
@@ -911,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceConfig {
 	Connection: interface{},
@@ -925,11 +925,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudi
 	Registry: *string,
 	Blocked: interface{},
 	Credentials: interface{},
-	GatewayConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfig,
+	GatewayConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfig,
 	Id: *string,
 	LogLevel: *string,
 	Metadata: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts,
 }
 ```
 
@@ -949,7 +949,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudi
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig.property.blocked">Blocked</a></code> | <code>interface{}</code> | If a device is blocked, connections or requests from this device will fail. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig.property.credentials">Credentials</a></code> | <code>interface{}</code> | credentials block. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig.property.gatewayConfig">GatewayConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfig">GoogleCloudiotDeviceGatewayConfig</a></code> | gateway_config block. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#id GoogleCloudiotDevice#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#id GoogleCloudiotDevice#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig.property.logLevel">LogLevel</a></code> | <code>*string</code> | The logging verbosity for device activity. Possible values: ["NONE", "ERROR", "INFO", "DEBUG"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig.property.metadata">Metadata</a></code> | <code>*map[string]*string</code> | The metadata key-value pairs assigned to the device. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts">GoogleCloudiotDeviceTimeouts</a></code> | timeouts block. |
@@ -1036,7 +1036,7 @@ Name *string
 
 A unique name for the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#name GoogleCloudiotDevice#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#name GoogleCloudiotDevice#name}
 
 ---
 
@@ -1050,7 +1050,7 @@ Registry *string
 
 The name of the device registry where this device should be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#registry GoogleCloudiotDevice#registry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#registry GoogleCloudiotDevice#registry}
 
 ---
 
@@ -1064,7 +1064,7 @@ Blocked interface{}
 
 If a device is blocked, connections or requests from this device will fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#blocked GoogleCloudiotDevice#blocked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#blocked GoogleCloudiotDevice#blocked}
 
 ---
 
@@ -1078,7 +1078,7 @@ Credentials interface{}
 
 credentials block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#credentials GoogleCloudiotDevice#credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#credentials GoogleCloudiotDevice#credentials}
 
 ---
 
@@ -1092,7 +1092,7 @@ GatewayConfig GoogleCloudiotDeviceGatewayConfig
 
 gateway_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#gateway_config GoogleCloudiotDevice#gateway_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#gateway_config GoogleCloudiotDevice#gateway_config}
 
 ---
 
@@ -1104,7 +1104,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#id GoogleCloudiotDevice#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#id GoogleCloudiotDevice#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1121,7 +1121,7 @@ LogLevel *string
 
 The logging verbosity for device activity. Possible values: ["NONE", "ERROR", "INFO", "DEBUG"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#log_level GoogleCloudiotDevice#log_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#log_level GoogleCloudiotDevice#log_level}
 
 ---
 
@@ -1135,7 +1135,7 @@ Metadata *map[string]*string
 
 The metadata key-value pairs assigned to the device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#metadata GoogleCloudiotDevice#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#metadata GoogleCloudiotDevice#metadata}
 
 ---
 
@@ -1149,7 +1149,7 @@ Timeouts GoogleCloudiotDeviceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#timeouts GoogleCloudiotDevice#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#timeouts GoogleCloudiotDevice#timeouts}
 
 ---
 
@@ -1158,7 +1158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceConfigA {
 
@@ -1171,10 +1171,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceCredentials {
-	PublicKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKey,
+	PublicKey: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKey,
 	ExpirationTime: *string,
 }
 ```
@@ -1198,7 +1198,7 @@ PublicKey GoogleCloudiotDeviceCredentialsPublicKey
 
 public_key block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#public_key GoogleCloudiotDevice#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#public_key GoogleCloudiotDevice#public_key}
 
 ---
 
@@ -1212,7 +1212,7 @@ ExpirationTime *string
 
 The time at which this credential becomes invalid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#expiration_time GoogleCloudiotDevice#expiration_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#expiration_time GoogleCloudiotDevice#expiration_time}
 
 ---
 
@@ -1221,7 +1221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceCredentialsPublicKey {
 	Format: *string,
@@ -1248,7 +1248,7 @@ Format *string
 
 The format of the key. Possible values: ["RSA_PEM", "RSA_X509_PEM", "ES256_PEM", "ES256_X509_PEM"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#format GoogleCloudiotDevice#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#format GoogleCloudiotDevice#format}
 
 ---
 
@@ -1262,7 +1262,7 @@ Key *string
 
 The key data.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#key GoogleCloudiotDevice#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#key GoogleCloudiotDevice#key}
 
 ---
 
@@ -1271,7 +1271,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceGatewayConfig {
 	GatewayAuthMethod: *string,
@@ -1298,7 +1298,7 @@ GatewayAuthMethod *string
 
 Indicates whether the device is a gateway. Possible values: ["ASSOCIATION_ONLY", "DEVICE_AUTH_TOKEN_ONLY", "ASSOCIATION_AND_DEVICE_AUTH_TOKEN"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#gateway_auth_method GoogleCloudiotDevice#gateway_auth_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#gateway_auth_method GoogleCloudiotDevice#gateway_auth_method}
 
 ---
 
@@ -1312,7 +1312,7 @@ GatewayType *string
 
 Indicates whether the device is a gateway. Default value: "NON_GATEWAY" Possible values: ["GATEWAY", "NON_GATEWAY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#gateway_type GoogleCloudiotDevice#gateway_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#gateway_type GoogleCloudiotDevice#gateway_type}
 
 ---
 
@@ -1321,7 +1321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceLastErrorStatus {
 
@@ -1334,7 +1334,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceState {
 
@@ -1347,7 +1347,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 &googlecloudiotdevice.GoogleCloudiotDeviceTimeouts {
 	Create: *string,
@@ -1360,9 +1360,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#create GoogleCloudiotDevice#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#delete GoogleCloudiotDevice#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#update GoogleCloudiotDevice#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#create GoogleCloudiotDevice#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#delete GoogleCloudiotDevice#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#update GoogleCloudiotDevice#update}. |
 
 ---
 
@@ -1374,7 +1374,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#create GoogleCloudiotDevice#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#create GoogleCloudiotDevice#create}.
 
 ---
 
@@ -1386,7 +1386,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#delete GoogleCloudiotDevice#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#delete GoogleCloudiotDevice#delete}.
 
 ---
 
@@ -1398,7 +1398,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_device#update GoogleCloudiotDevice#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloudiot_device#update GoogleCloudiotDevice#update}.
 
 ---
 
@@ -1409,7 +1409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudiotDeviceConfigAList
 ```
@@ -1541,7 +1541,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudiotDeviceConfigAOutputReference
 ```
@@ -1852,7 +1852,7 @@ func InternalValue() GoogleCloudiotDeviceConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceCredentialsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudiotDeviceCredentialsList
 ```
@@ -1995,7 +1995,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudiotDeviceCredentialsOutputReference
 ```
@@ -2326,7 +2326,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceCredentialsPublicKeyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceCredentialsPublicKeyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudiotDeviceCredentialsPublicKeyOutputReference
 ```
@@ -2619,7 +2619,7 @@ func InternalValue() GoogleCloudiotDeviceCredentialsPublicKey
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceGatewayConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceGatewayConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudiotDeviceGatewayConfigOutputReference
 ```
@@ -2948,7 +2948,7 @@ func InternalValue() GoogleCloudiotDeviceGatewayConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceLastErrorStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudiotDeviceLastErrorStatusList
 ```
@@ -3080,7 +3080,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceLastErrorStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceLastErrorStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudiotDeviceLastErrorStatusOutputReference
 ```
@@ -3380,7 +3380,7 @@ func InternalValue() GoogleCloudiotDeviceLastErrorStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleCloudiotDeviceStateList
 ```
@@ -3512,7 +3512,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleCloudiotDeviceStateOutputReference
 ```
@@ -3801,7 +3801,7 @@ func InternalValue() GoogleCloudiotDeviceState
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotDevice.GoogleCloudiotDeviceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudiotdevice"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudiotdevice"
 
 googlecloudiotdevice.NewGoogleCloudiotDeviceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCloudiotDeviceTimeoutsOutputReference
 ```

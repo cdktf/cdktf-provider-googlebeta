@@ -679,6 +679,7 @@ The following submodules are available:
 - [googleFirebaseAndroidApp](./googleFirebaseAndroidApp.csharp.md)
 - [googleFirebaseAppleApp](./googleFirebaseAppleApp.csharp.md)
 - [googleFirebaseDatabaseInstance](./googleFirebaseDatabaseInstance.csharp.md)
+- [googleFirebaseExtensionsInstance](./googleFirebaseExtensionsInstance.csharp.md)
 - [googleFirebaseHostingChannel](./googleFirebaseHostingChannel.csharp.md)
 - [googleFirebaseHostingRelease](./googleFirebaseHostingRelease.csharp.md)
 - [googleFirebaseHostingSite](./googleFirebaseHostingSite.csharp.md)

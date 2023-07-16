@@ -1,6 +1,6 @@
 # `google_workstations_workstation_config_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_workstations_workstation_config_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy).
+Refer to the Terraform Registory for docs: [`google_workstations_workstation_config_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy).
 
 # `googleWorkstationsWorkstationConfigIamPolicy` Submodule <a name="`googleWorkstationsWorkstationConfigIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_workstations_workstation_con
 
 ### GoogleWorkstationsWorkstationConfigIamPolicy <a name="GoogleWorkstationsWorkstationConfigIamPolicy" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicy.Initializer"></a>
 
@@ -695,12 +695,12 @@ const googleWorkstationsWorkstationConfigIamPolicyConfig: googleWorkstationsWork
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#policy_data GoogleWorkstationsWorkstationConfigIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.workstationClusterId">workstationClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#workstation_cluster_id GoogleWorkstationsWorkstationConfigIamPolicy#workstation_cluster_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.workstationConfigId">workstationConfigId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#workstation_config_id GoogleWorkstationsWorkstationConfigIamPolicy#workstation_config_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#id GoogleWorkstationsWorkstationConfigIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#location GoogleWorkstationsWorkstationConfigIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#project GoogleWorkstationsWorkstationConfigIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.policyData">policyData</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#policy_data GoogleWorkstationsWorkstationConfigIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.workstationClusterId">workstationClusterId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#workstation_cluster_id GoogleWorkstationsWorkstationConfigIamPolicy#workstation_cluster_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.workstationConfigId">workstationConfigId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#workstation_config_id GoogleWorkstationsWorkstationConfigIamPolicy#workstation_config_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#id GoogleWorkstationsWorkstationConfigIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#location GoogleWorkstationsWorkstationConfigIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleWorkstationsWorkstationConfigIamPolicy.GoogleWorkstationsWorkstationConfigIamPolicyConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#project GoogleWorkstationsWorkstationConfigIamPolicy#project}. |
 
 ---
 
@@ -782,7 +782,7 @@ public readonly policyData: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#policy_data GoogleWorkstationsWorkstationConfigIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#policy_data GoogleWorkstationsWorkstationConfigIamPolicy#policy_data}.
 
 ---
 
@@ -794,7 +794,7 @@ public readonly workstationClusterId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#workstation_cluster_id GoogleWorkstationsWorkstationConfigIamPolicy#workstation_cluster_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#workstation_cluster_id GoogleWorkstationsWorkstationConfigIamPolicy#workstation_cluster_id}.
 
 ---
 
@@ -806,7 +806,7 @@ public readonly workstationConfigId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#workstation_config_id GoogleWorkstationsWorkstationConfigIamPolicy#workstation_config_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#workstation_config_id GoogleWorkstationsWorkstationConfigIamPolicy#workstation_config_id}.
 
 ---
 
@@ -818,7 +818,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#id GoogleWorkstationsWorkstationConfigIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#id GoogleWorkstationsWorkstationConfigIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -833,7 +833,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#location GoogleWorkstationsWorkstationConfigIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#location GoogleWorkstationsWorkstationConfigIamPolicy#location}.
 
 ---
 
@@ -845,7 +845,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_workstations_workstation_config_iam_policy#project GoogleWorkstationsWorkstationConfigIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_workstations_workstation_config_iam_policy#project GoogleWorkstationsWorkstationConfigIamPolicy#project}.
 
 ---
 

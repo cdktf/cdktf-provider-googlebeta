@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +8,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleCloudRunV2ServiceIamBindingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding#id GoogleCloudRunV2ServiceIamBinding#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding#id GoogleCloudRunV2ServiceIamBinding#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding#location GoogleCloudRunV2ServiceIamBinding#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding#location GoogleCloudRunV2ServiceIamBinding#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding#members GoogleCloudRunV2ServiceIamBinding#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding#members GoogleCloudRunV2ServiceIamBinding#members}
   */
   readonly members: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding#name GoogleCloudRunV2ServiceIamBinding#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding#name GoogleCloudRunV2ServiceIamBinding#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding#project GoogleCloudRunV2ServiceIamBinding#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding#project GoogleCloudRunV2ServiceIamBinding#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding#role GoogleCloudRunV2ServiceIamBinding#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding#role GoogleCloudRunV2ServiceIamBinding#role}
   */
   readonly role: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding#condition GoogleCloudRunV2ServiceIamBinding#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding#condition GoogleCloudRunV2ServiceIamBinding#condition}
   */
   readonly condition?: GoogleCloudRunV2ServiceIamBindingCondition;
 }
 export interface GoogleCloudRunV2ServiceIamBindingCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding#description GoogleCloudRunV2ServiceIamBinding#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding#description GoogleCloudRunV2ServiceIamBinding#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding#expression GoogleCloudRunV2ServiceIamBinding#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding#expression GoogleCloudRunV2ServiceIamBinding#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding#title GoogleCloudRunV2ServiceIamBinding#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding#title GoogleCloudRunV2ServiceIamBinding#title}
   */
   readonly title: string;
 }
@@ -161,7 +156,7 @@ export class GoogleCloudRunV2ServiceIamBindingConditionOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding google_cloud_run_v2_service_iam_binding}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding google_cloud_run_v2_service_iam_binding}
 */
 export class GoogleCloudRunV2ServiceIamBinding extends cdktf.TerraformResource {
 
@@ -175,7 +170,7 @@ export class GoogleCloudRunV2ServiceIamBinding extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_service_iam_binding google_cloud_run_v2_service_iam_binding} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_cloud_run_v2_service_iam_binding google_cloud_run_v2_service_iam_binding} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -186,7 +181,7 @@ export class GoogleCloudRunV2ServiceIamBinding extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_run_v2_service_iam_binding',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.73.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

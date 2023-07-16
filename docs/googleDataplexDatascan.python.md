@@ -1,6 +1,6 @@
 # `google_dataplex_datascan`
 
-Refer to the Terraform Registory for docs: [`google_dataplex_datascan`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan).
+Refer to the Terraform Registory for docs: [`google_dataplex_datascan`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan).
 
 # `googleDataplexDatascan` Submodule <a name="`googleDataplexDatascan` Submodule" id="@cdktf/provider-google-beta.googleDataplexDatascan"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_dataplex_datascan`](https://
 
 ### GoogleDataplexDatascan <a name="GoogleDataplexDatascan" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan google_dataplex_datascan}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan google_dataplex_datascan}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer"></a>
 
@@ -59,9 +59,9 @@ googleDataplexDatascan.GoogleDataplexDatascan(
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer.parameter.dataQualitySpec">data_quality_spec</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpec">GoogleDataplexDatascanDataQualitySpec</a></code> | data_quality_spec block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the scan. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | User friendly display name. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#id GoogleDataplexDatascan#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#id GoogleDataplexDatascan#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User-defined labels for the scan. A list of key->value pairs. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascan.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanTimeouts">GoogleDataplexDatascanTimeouts</a></code> | timeouts block. |
 
 ---
@@ -132,7 +132,7 @@ Must be unique amongst siblings in the same scope
 
 data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#data GoogleDataplexDatascan#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#data GoogleDataplexDatascan#data}
 
 ---
 
@@ -144,7 +144,7 @@ DataScan identifier.
 
 Must contain only lowercase letters, numbers and hyphens. Must start with a letter. Must end with a number or a letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#data_scan_id GoogleDataplexDatascan#data_scan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#data_scan_id GoogleDataplexDatascan#data_scan_id}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 execution_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#execution_spec GoogleDataplexDatascan#execution_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#execution_spec GoogleDataplexDatascan#execution_spec}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The location where the data scan should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#location GoogleDataplexDatascan#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#location GoogleDataplexDatascan#location}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 data_profile_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#data_profile_spec GoogleDataplexDatascan#data_profile_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#data_profile_spec GoogleDataplexDatascan#data_profile_spec}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 data_quality_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#data_quality_spec GoogleDataplexDatascan#data_quality_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#data_quality_spec GoogleDataplexDatascan#data_quality_spec}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the scan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#description GoogleDataplexDatascan#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#description GoogleDataplexDatascan#description}
 
 ---
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#display_name GoogleDataplexDatascan#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#display_name GoogleDataplexDatascan#display_name}
 
 ---
 
@@ -212,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#id GoogleDataplexDatascan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#id GoogleDataplexDatascan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -225,7 +225,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 User-defined labels for the scan. A list of key->value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#labels GoogleDataplexDatascan#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#labels GoogleDataplexDatascan#labels}
 
 ---
 
@@ -233,7 +233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}.
 
 ---
 
@@ -243,7 +243,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#timeouts GoogleDataplexDatascan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#timeouts GoogleDataplexDatascan#timeouts}
 
 ---
 
@@ -507,7 +507,7 @@ def put_data(
 
 The Dataplex entity that represents the data source(e.g. BigQuery table) for Datascan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#entity GoogleDataplexDatascan#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#entity GoogleDataplexDatascan#entity}
 
 ---
 
@@ -520,7 +520,7 @@ The service-qualified full resource name of the cloud resource for a DataScan jo
 The field could be:
 (Cloud Storage bucket for DataDiscoveryScan)BigQuery table of type "TABLE" for DataProfileScan/DataQualityScan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#resource GoogleDataplexDatascan#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#resource GoogleDataplexDatascan#resource}
 
 ---
 
@@ -541,7 +541,7 @@ A filter applied to all rows in a single DataScan job.
 
 The filter needs to be a valid SQL expression for a WHERE clause in BigQuery standard SQL syntax. Example: col1 >= 0 AND col2 < 10
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
 
 ---
 
@@ -551,7 +551,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The percentage of the records to be selected from the dataset for DataScan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
 
 ---
 
@@ -573,7 +573,7 @@ A filter applied to all rows in a single DataScan job.
 
 The filter needs to be a valid SQL expression for a WHERE clause in BigQuery standard SQL syntax. Example: col1 >= 0 AND col2 < 10
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
 
 ---
 
@@ -583,7 +583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#rules GoogleDataplexDatascan#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#rules GoogleDataplexDatascan#rules}
 
 ---
 
@@ -593,7 +593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The percentage of the records to be selected from the dataset for DataScan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
 
 ---
 
@@ -612,7 +612,7 @@ def put_execution_spec(
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#trigger GoogleDataplexDatascan#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#trigger GoogleDataplexDatascan#trigger}
 
 ---
 
@@ -624,7 +624,7 @@ The unnested field (of type Date or Timestamp) that contains values which monoto
 
 If not specified, a data scan will run for all data in the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#field GoogleDataplexDatascan#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#field GoogleDataplexDatascan#field}
 
 ---
 
@@ -642,7 +642,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#create GoogleDataplexDatascan#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#create GoogleDataplexDatascan#create}.
 
 ---
 
@@ -650,7 +650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#delete GoogleDataplexDatascan#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#delete GoogleDataplexDatascan#delete}.
 
 ---
 
@@ -658,7 +658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#update GoogleDataplexDatascan#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#update GoogleDataplexDatascan#update}.
 
 ---
 
@@ -1381,9 +1381,9 @@ googleDataplexDatascan.GoogleDataplexDatascanConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanConfig.property.dataQualitySpec">data_quality_spec</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataQualitySpec">GoogleDataplexDatascanDataQualitySpec</a></code> | data_quality_spec block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanConfig.property.description">description</a></code> | <code>str</code> | Description of the scan. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanConfig.property.displayName">display_name</a></code> | <code>str</code> | User friendly display name. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#id GoogleDataplexDatascan#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#id GoogleDataplexDatascan#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | User-defined labels for the scan. A list of key->value pairs. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanTimeouts">GoogleDataplexDatascanTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1468,7 +1468,7 @@ data: GoogleDataplexDatascanData
 
 data block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#data GoogleDataplexDatascan#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#data GoogleDataplexDatascan#data}
 
 ---
 
@@ -1484,7 +1484,7 @@ DataScan identifier.
 
 Must contain only lowercase letters, numbers and hyphens. Must start with a letter. Must end with a number or a letter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#data_scan_id GoogleDataplexDatascan#data_scan_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#data_scan_id GoogleDataplexDatascan#data_scan_id}
 
 ---
 
@@ -1498,7 +1498,7 @@ execution_spec: GoogleDataplexDatascanExecutionSpec
 
 execution_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#execution_spec GoogleDataplexDatascan#execution_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#execution_spec GoogleDataplexDatascan#execution_spec}
 
 ---
 
@@ -1512,7 +1512,7 @@ location: str
 
 The location where the data scan should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#location GoogleDataplexDatascan#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#location GoogleDataplexDatascan#location}
 
 ---
 
@@ -1526,7 +1526,7 @@ data_profile_spec: GoogleDataplexDatascanDataProfileSpec
 
 data_profile_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#data_profile_spec GoogleDataplexDatascan#data_profile_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#data_profile_spec GoogleDataplexDatascan#data_profile_spec}
 
 ---
 
@@ -1540,7 +1540,7 @@ data_quality_spec: GoogleDataplexDatascanDataQualitySpec
 
 data_quality_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#data_quality_spec GoogleDataplexDatascan#data_quality_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#data_quality_spec GoogleDataplexDatascan#data_quality_spec}
 
 ---
 
@@ -1554,7 +1554,7 @@ description: str
 
 Description of the scan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#description GoogleDataplexDatascan#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#description GoogleDataplexDatascan#description}
 
 ---
 
@@ -1568,7 +1568,7 @@ display_name: str
 
 User friendly display name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#display_name GoogleDataplexDatascan#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#display_name GoogleDataplexDatascan#display_name}
 
 ---
 
@@ -1580,7 +1580,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#id GoogleDataplexDatascan#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#id GoogleDataplexDatascan#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1597,7 +1597,7 @@ labels: typing.Mapping[str]
 
 User-defined labels for the scan. A list of key->value pairs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#labels GoogleDataplexDatascan#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#labels GoogleDataplexDatascan#labels}
 
 ---
 
@@ -1609,7 +1609,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#project GoogleDataplexDatascan#project}.
 
 ---
 
@@ -1623,7 +1623,7 @@ timeouts: GoogleDataplexDatascanTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#timeouts GoogleDataplexDatascan#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#timeouts GoogleDataplexDatascan#timeouts}
 
 ---
 
@@ -1659,7 +1659,7 @@ entity: str
 
 The Dataplex entity that represents the data source(e.g. BigQuery table) for Datascan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#entity GoogleDataplexDatascan#entity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#entity GoogleDataplexDatascan#entity}
 
 ---
 
@@ -1676,7 +1676,7 @@ The service-qualified full resource name of the cloud resource for a DataScan jo
 The field could be:
 (Cloud Storage bucket for DataDiscoveryScan)BigQuery table of type "TABLE" for DataProfileScan/DataQualityScan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#resource GoogleDataplexDatascan#resource}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#resource GoogleDataplexDatascan#resource}
 
 ---
 
@@ -1824,7 +1824,7 @@ A filter applied to all rows in a single DataScan job.
 
 The filter needs to be a valid SQL expression for a WHERE clause in BigQuery standard SQL syntax. Example: col1 >= 0 AND col2 < 10
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
 
 ---
 
@@ -1838,7 +1838,7 @@ sampling_percent: typing.Union[int, float]
 
 The percentage of the records to be selected from the dataset for DataScan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
 
 ---
 
@@ -2032,7 +2032,7 @@ A filter applied to all rows in a single DataScan job.
 
 The filter needs to be a valid SQL expression for a WHERE clause in BigQuery standard SQL syntax. Example: col1 >= 0 AND col2 < 10
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#row_filter GoogleDataplexDatascan#row_filter}
 
 ---
 
@@ -2046,7 +2046,7 @@ rules: typing.Union[IResolvable, typing.List[GoogleDataplexDatascanDataQualitySp
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#rules GoogleDataplexDatascan#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#rules GoogleDataplexDatascan#rules}
 
 ---
 
@@ -2060,7 +2060,7 @@ sampling_percent: typing.Union[int, float]
 
 The percentage of the records to be selected from the dataset for DataScan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#sampling_percent GoogleDataplexDatascan#sampling_percent}
 
 ---
 
@@ -2118,7 +2118,7 @@ The dimension a rule belongs to.
 
 Results are also aggregated at the dimension level. Supported dimensions are ["COMPLETENESS", "ACCURACY", "CONSISTENCY", "VALIDITY", "UNIQUENESS", "INTEGRITY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#dimension GoogleDataplexDatascan#dimension}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#dimension GoogleDataplexDatascan#dimension}
 
 ---
 
@@ -2132,7 +2132,7 @@ column: str
 
 The unnested column which this rule is evaluated against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#column GoogleDataplexDatascan#column}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#column GoogleDataplexDatascan#column}
 
 ---
 
@@ -2148,7 +2148,7 @@ Rows with null values will automatically fail a rule, unless ignoreNull is true.
 
 In that case, such null rows are trivially considered passing. Only applicable to ColumnMap rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#ignore_null GoogleDataplexDatascan#ignore_null}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#ignore_null GoogleDataplexDatascan#ignore_null}
 
 ---
 
@@ -2162,7 +2162,7 @@ non_null_expectation: GoogleDataplexDatascanDataQualitySpecRulesNonNullExpectati
 
 non_null_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#non_null_expectation GoogleDataplexDatascan#non_null_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#non_null_expectation GoogleDataplexDatascan#non_null_expectation}
 
 ---
 
@@ -2176,7 +2176,7 @@ range_expectation: GoogleDataplexDatascanDataQualitySpecRulesRangeExpectation
 
 range_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#range_expectation GoogleDataplexDatascan#range_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#range_expectation GoogleDataplexDatascan#range_expectation}
 
 ---
 
@@ -2190,7 +2190,7 @@ regex_expectation: GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation
 
 regex_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#regex_expectation GoogleDataplexDatascan#regex_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#regex_expectation GoogleDataplexDatascan#regex_expectation}
 
 ---
 
@@ -2204,7 +2204,7 @@ row_condition_expectation: GoogleDataplexDatascanDataQualitySpecRulesRowConditio
 
 row_condition_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#row_condition_expectation GoogleDataplexDatascan#row_condition_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#row_condition_expectation GoogleDataplexDatascan#row_condition_expectation}
 
 ---
 
@@ -2218,7 +2218,7 @@ set_expectation: GoogleDataplexDatascanDataQualitySpecRulesSetExpectation
 
 set_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#set_expectation GoogleDataplexDatascan#set_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#set_expectation GoogleDataplexDatascan#set_expectation}
 
 ---
 
@@ -2232,7 +2232,7 @@ statistic_range_expectation: GoogleDataplexDatascanDataQualitySpecRulesStatistic
 
 statistic_range_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#statistic_range_expectation GoogleDataplexDatascan#statistic_range_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#statistic_range_expectation GoogleDataplexDatascan#statistic_range_expectation}
 
 ---
 
@@ -2246,7 +2246,7 @@ table_condition_expectation: GoogleDataplexDatascanDataQualitySpecRulesTableCond
 
 table_condition_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#table_condition_expectation GoogleDataplexDatascan#table_condition_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#table_condition_expectation GoogleDataplexDatascan#table_condition_expectation}
 
 ---
 
@@ -2260,7 +2260,7 @@ threshold: typing.Union[int, float]
 
 The minimum ratio of passing_rows / total_rows required to pass this rule, with a range of [0.0, 1.0]. 0 indicates default value (i.e. 1.0).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#threshold GoogleDataplexDatascan#threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#threshold GoogleDataplexDatascan#threshold}
 
 ---
 
@@ -2274,7 +2274,7 @@ uniqueness_expectation: GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpe
 
 uniqueness_expectation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#uniqueness_expectation GoogleDataplexDatascan#uniqueness_expectation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#uniqueness_expectation GoogleDataplexDatascan#uniqueness_expectation}
 
 ---
 
@@ -2327,7 +2327,7 @@ The maximum column value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
 
 ---
 
@@ -2343,7 +2343,7 @@ The minimum column value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
 
 ---
 
@@ -2359,7 +2359,7 @@ Whether each value needs to be strictly lesser than ('<') the maximum, or if equ
 
 Only relevant if a maxValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
 
 ---
 
@@ -2375,7 +2375,7 @@ Whether each value needs to be strictly greater than ('>') the minimum, or if eq
 
 Only relevant if a minValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
 
 ---
 
@@ -2409,7 +2409,7 @@ regex: str
 
 A regular expression the column value is expected to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#regex GoogleDataplexDatascan#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#regex GoogleDataplexDatascan#regex}
 
 ---
 
@@ -2443,7 +2443,7 @@ sql_expression: str
 
 The SQL expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
 
 ---
 
@@ -2477,7 +2477,7 @@ values: typing.List[str]
 
 Expected values for the column value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#values GoogleDataplexDatascan#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#values GoogleDataplexDatascan#values}
 
 ---
 
@@ -2519,7 +2519,7 @@ statistic: str
 
 column statistics. Possible values: ["STATISTIC_UNDEFINED", "MEAN", "MIN", "MAX"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#statistic GoogleDataplexDatascan#statistic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#statistic GoogleDataplexDatascan#statistic}
 
 ---
 
@@ -2535,7 +2535,7 @@ The maximum column statistic value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
 
 ---
 
@@ -2551,7 +2551,7 @@ The minimum column statistic value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
 
 ---
 
@@ -2567,7 +2567,7 @@ Whether column statistic needs to be strictly lesser than ('<') the maximum, or 
 
 Only relevant if a maxValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
 
 ---
 
@@ -2583,7 +2583,7 @@ Whether column statistic needs to be strictly greater than ('>') the minimum, or
 
 Only relevant if a minValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
 
 ---
 
@@ -2617,7 +2617,7 @@ sql_expression: str
 
 The SQL expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
 
 ---
 
@@ -2664,7 +2664,7 @@ trigger: GoogleDataplexDatascanExecutionSpecTrigger
 
 trigger block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#trigger GoogleDataplexDatascan#trigger}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#trigger GoogleDataplexDatascan#trigger}
 
 ---
 
@@ -2680,7 +2680,7 @@ The unnested field (of type Date or Timestamp) that contains values which monoto
 
 If not specified, a data scan will run for all data in the table.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#field GoogleDataplexDatascan#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#field GoogleDataplexDatascan#field}
 
 ---
 
@@ -2716,7 +2716,7 @@ on_demand: GoogleDataplexDatascanExecutionSpecTriggerOnDemand
 
 on_demand block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#on_demand GoogleDataplexDatascan#on_demand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#on_demand GoogleDataplexDatascan#on_demand}
 
 ---
 
@@ -2730,7 +2730,7 @@ schedule: GoogleDataplexDatascanExecutionSpecTriggerSchedule
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#schedule GoogleDataplexDatascan#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#schedule GoogleDataplexDatascan#schedule}
 
 ---
 
@@ -2775,7 +2775,7 @@ cron: str
 
 Cron schedule for running scans periodically. This field is required for Schedule scans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#cron GoogleDataplexDatascan#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#cron GoogleDataplexDatascan#cron}
 
 ---
 
@@ -2808,9 +2808,9 @@ googleDataplexDatascan.GoogleDataplexDatascanTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#create GoogleDataplexDatascan#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#delete GoogleDataplexDatascan#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#update GoogleDataplexDatascan#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#create GoogleDataplexDatascan#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#delete GoogleDataplexDatascan#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#update GoogleDataplexDatascan#update}. |
 
 ---
 
@@ -2822,7 +2822,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#create GoogleDataplexDatascan#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#create GoogleDataplexDatascan#create}.
 
 ---
 
@@ -2834,7 +2834,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#delete GoogleDataplexDatascan#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#delete GoogleDataplexDatascan#delete}.
 
 ---
 
@@ -2846,7 +2846,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#update GoogleDataplexDatascan#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#update GoogleDataplexDatascan#update}.
 
 ---
 
@@ -15850,7 +15850,7 @@ The maximum column value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
 
 ---
 
@@ -15862,7 +15862,7 @@ The minimum column value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
 
 ---
 
@@ -15874,7 +15874,7 @@ Whether each value needs to be strictly lesser than ('<') the maximum, or if equ
 
 Only relevant if a maxValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
 
 ---
 
@@ -15886,7 +15886,7 @@ Whether each value needs to be strictly greater than ('>') the minimum, or if eq
 
 Only relevant if a minValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
 
 ---
 
@@ -15904,7 +15904,7 @@ def put_regex_expectation(
 
 A regular expression the column value is expected to match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#regex GoogleDataplexDatascan#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#regex GoogleDataplexDatascan#regex}
 
 ---
 
@@ -15922,7 +15922,7 @@ def put_row_condition_expectation(
 
 The SQL expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
 
 ---
 
@@ -15940,7 +15940,7 @@ def put_set_expectation(
 
 Expected values for the column value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#values GoogleDataplexDatascan#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#values GoogleDataplexDatascan#values}
 
 ---
 
@@ -15962,7 +15962,7 @@ def put_statistic_range_expectation(
 
 column statistics. Possible values: ["STATISTIC_UNDEFINED", "MEAN", "MIN", "MAX"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#statistic GoogleDataplexDatascan#statistic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#statistic GoogleDataplexDatascan#statistic}
 
 ---
 
@@ -15974,7 +15974,7 @@ The maximum column statistic value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#max_value GoogleDataplexDatascan#max_value}
 
 ---
 
@@ -15986,7 +15986,7 @@ The minimum column statistic value allowed for a row to pass this validation.
 
 At least one of minValue and maxValue need to be provided.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#min_value GoogleDataplexDatascan#min_value}
 
 ---
 
@@ -15998,7 +15998,7 @@ Whether column statistic needs to be strictly lesser than ('<') the maximum, or 
 
 Only relevant if a maxValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#strict_max_enabled GoogleDataplexDatascan#strict_max_enabled}
 
 ---
 
@@ -16010,7 +16010,7 @@ Whether column statistic needs to be strictly greater than ('>') the minimum, or
 
 Only relevant if a minValue has been defined. Default = false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#strict_min_enabled GoogleDataplexDatascan#strict_min_enabled}
 
 ---
 
@@ -16028,7 +16028,7 @@ def put_table_condition_expectation(
 
 The SQL expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#sql_expression GoogleDataplexDatascan#sql_expression}
 
 ---
 
@@ -18919,7 +18919,7 @@ def put_trigger(
 
 on_demand block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#on_demand GoogleDataplexDatascan#on_demand}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#on_demand GoogleDataplexDatascan#on_demand}
 
 ---
 
@@ -18929,7 +18929,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 schedule block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#schedule GoogleDataplexDatascan#schedule}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#schedule GoogleDataplexDatascan#schedule}
 
 ---
 
@@ -19555,7 +19555,7 @@ def put_schedule(
 
 Cron schedule for running scans periodically. This field is required for Schedule scans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataplex_datascan#cron GoogleDataplexDatascan#cron}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.1/docs/resources/google_dataplex_datascan#cron GoogleDataplexDatascan#cron}
 
 ---
 
