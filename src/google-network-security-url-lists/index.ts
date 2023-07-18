@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleNetworkSecurityUrlListsConfig extends cdktf.TerraformMeta
   /**
   * Free-text description of the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists#description GoogleNetworkSecurityUrlLists#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists#description GoogleNetworkSecurityUrlLists#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists#id GoogleNetworkSecurityUrlLists#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists#id GoogleNetworkSecurityUrlLists#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,44 +23,44 @@ export interface GoogleNetworkSecurityUrlListsConfig extends cdktf.TerraformMeta
   /**
   * The location of the url lists.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists#location GoogleNetworkSecurityUrlLists#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists#location GoogleNetworkSecurityUrlLists#location}
   */
   readonly location: string;
   /**
   * Short name of the UrlList resource to be created.
 This value should be 1-63 characters long, containing only letters, numbers, hyphens, and underscores, and should not start with a number. E.g. 'urlList'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists#name GoogleNetworkSecurityUrlLists#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists#name GoogleNetworkSecurityUrlLists#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists#project GoogleNetworkSecurityUrlLists#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists#project GoogleNetworkSecurityUrlLists#project}
   */
   readonly project?: string;
   /**
   * FQDNs and URLs.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists#values GoogleNetworkSecurityUrlLists#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists#values GoogleNetworkSecurityUrlLists#values}
   */
   readonly values: string[];
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists#timeouts GoogleNetworkSecurityUrlLists#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists#timeouts GoogleNetworkSecurityUrlLists#timeouts}
   */
   readonly timeouts?: GoogleNetworkSecurityUrlListsTimeouts;
 }
 export interface GoogleNetworkSecurityUrlListsTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists#create GoogleNetworkSecurityUrlLists#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists#create GoogleNetworkSecurityUrlLists#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists#delete GoogleNetworkSecurityUrlLists#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists#delete GoogleNetworkSecurityUrlLists#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists#update GoogleNetworkSecurityUrlLists#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists#update GoogleNetworkSecurityUrlLists#update}
   */
   readonly update?: string;
 }
@@ -186,7 +181,7 @@ export class GoogleNetworkSecurityUrlListsTimeoutsOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists google_network_security_url_lists}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists google_network_security_url_lists}
 */
 export class GoogleNetworkSecurityUrlLists extends cdktf.TerraformResource {
 
@@ -200,7 +195,7 @@ export class GoogleNetworkSecurityUrlLists extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_network_security_url_lists google_network_security_url_lists} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_network_security_url_lists google_network_security_url_lists} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -211,7 +206,7 @@ export class GoogleNetworkSecurityUrlLists extends cdktf.TerraformResource {
       terraformResourceType: 'google_network_security_url_lists',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.73.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

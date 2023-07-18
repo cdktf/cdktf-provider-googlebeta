@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -22,18 +17,18 @@ The allowed duration for this deadline is:
 * **Note**: For PubSub targets, this field is ignored - setting it will introduce an unresolvable diff.
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#attempt_deadline GoogleCloudSchedulerJob#attempt_deadline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#attempt_deadline GoogleCloudSchedulerJob#attempt_deadline}
   */
   readonly attemptDeadline?: string;
   /**
   * A human-readable description for the job.
 This string must not contain more than 500 characters.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#description GoogleCloudSchedulerJob#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#description GoogleCloudSchedulerJob#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#id GoogleCloudSchedulerJob#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#id GoogleCloudSchedulerJob#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,66 +37,66 @@ This string must not contain more than 500 characters.
   /**
   * The name of the job.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#name GoogleCloudSchedulerJob#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#name GoogleCloudSchedulerJob#name}
   */
   readonly name: string;
   /**
   * Sets the job to a paused state. Jobs default to being enabled when this property is not set.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#paused GoogleCloudSchedulerJob#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#paused GoogleCloudSchedulerJob#paused}
   */
   readonly paused?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#project GoogleCloudSchedulerJob#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#project GoogleCloudSchedulerJob#project}
   */
   readonly project?: string;
   /**
   * Region where the scheduler job resides. If it is not provided, Terraform will use the provider default.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#region GoogleCloudSchedulerJob#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#region GoogleCloudSchedulerJob#region}
   */
   readonly region?: string;
   /**
   * Describes the schedule on which the job will be executed.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#schedule GoogleCloudSchedulerJob#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#schedule GoogleCloudSchedulerJob#schedule}
   */
   readonly schedule?: string;
   /**
   * Specifies the time zone to be used in interpreting schedule.
 The value of this field must be a time zone name from the tz database.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#time_zone GoogleCloudSchedulerJob#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#time_zone GoogleCloudSchedulerJob#time_zone}
   */
   readonly timeZone?: string;
   /**
   * app_engine_http_target block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#app_engine_http_target GoogleCloudSchedulerJob#app_engine_http_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#app_engine_http_target GoogleCloudSchedulerJob#app_engine_http_target}
   */
   readonly appEngineHttpTarget?: GoogleCloudSchedulerJobAppEngineHttpTarget;
   /**
   * http_target block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#http_target GoogleCloudSchedulerJob#http_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#http_target GoogleCloudSchedulerJob#http_target}
   */
   readonly httpTarget?: GoogleCloudSchedulerJobHttpTarget;
   /**
   * pubsub_target block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#pubsub_target GoogleCloudSchedulerJob#pubsub_target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#pubsub_target GoogleCloudSchedulerJob#pubsub_target}
   */
   readonly pubsubTarget?: GoogleCloudSchedulerJobPubsubTarget;
   /**
   * retry_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#retry_config GoogleCloudSchedulerJob#retry_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#retry_config GoogleCloudSchedulerJob#retry_config}
   */
   readonly retryConfig?: GoogleCloudSchedulerJobRetryConfig;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#timeouts GoogleCloudSchedulerJob#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#timeouts GoogleCloudSchedulerJob#timeouts}
   */
   readonly timeouts?: GoogleCloudSchedulerJobTimeouts;
 }
@@ -110,21 +105,21 @@ export interface GoogleCloudSchedulerJobAppEngineHttpTargetAppEngineRouting {
   * App instance.
 By default, the job is sent to an instance which is available when the job is attempted.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#instance GoogleCloudSchedulerJob#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#instance GoogleCloudSchedulerJob#instance}
   */
   readonly instance?: string;
   /**
   * App service.
 By default, the job is sent to the service which is the default service when the job is attempted.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#service GoogleCloudSchedulerJob#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#service GoogleCloudSchedulerJob#service}
   */
   readonly service?: string;
   /**
   * App version.
 By default, the job is sent to the version which is the default version when the job is attempted.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#version GoogleCloudSchedulerJob#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#version GoogleCloudSchedulerJob#version}
   */
   readonly version?: string;
 }
@@ -241,7 +236,7 @@ It will result in invalid argument error to set a body on a job with an incompat
 
 A base64-encoded string.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#body GoogleCloudSchedulerJob#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#body GoogleCloudSchedulerJob#body}
   */
   readonly body?: string;
   /**
@@ -249,13 +244,13 @@ A base64-encoded string.
 This map contains the header field names and values.
 Headers can be set when the job is created.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#headers GoogleCloudSchedulerJob#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#headers GoogleCloudSchedulerJob#headers}
   */
   readonly headers?: { [key: string]: string };
   /**
   * Which HTTP method to use for the request.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#http_method GoogleCloudSchedulerJob#http_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#http_method GoogleCloudSchedulerJob#http_method}
   */
   readonly httpMethod?: string;
   /**
@@ -265,13 +260,13 @@ It can contain a path, query string arguments, and \# fragments.
 If the relative URL is empty, then the root path "/" will be used.
 No spaces are allowed, and the maximum length allowed is 2083 characters
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#relative_uri GoogleCloudSchedulerJob#relative_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#relative_uri GoogleCloudSchedulerJob#relative_uri}
   */
   readonly relativeUri: string;
   /**
   * app_engine_routing block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#app_engine_routing GoogleCloudSchedulerJob#app_engine_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#app_engine_routing GoogleCloudSchedulerJob#app_engine_routing}
   */
   readonly appEngineRouting?: GoogleCloudSchedulerJobAppEngineHttpTargetAppEngineRouting;
 }
@@ -428,14 +423,14 @@ export interface GoogleCloudSchedulerJobHttpTargetOauthToken {
   * OAuth scope to be used for generating OAuth access token. If not specified,
 "https://www.googleapis.com/auth/cloud-platform" will be used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#scope GoogleCloudSchedulerJob#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#scope GoogleCloudSchedulerJob#scope}
   */
   readonly scope?: string;
   /**
   * Service account email to be used for generating OAuth token.
 The service account must be within the same project as the job.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#service_account_email GoogleCloudSchedulerJob#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#service_account_email GoogleCloudSchedulerJob#service_account_email}
   */
   readonly serviceAccountEmail: string;
 }
@@ -523,14 +518,14 @@ export interface GoogleCloudSchedulerJobHttpTargetOidcToken {
   * Audience to be used when generating OIDC token. If not specified,
 the URI specified in target will be used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#audience GoogleCloudSchedulerJob#audience}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#audience GoogleCloudSchedulerJob#audience}
   */
   readonly audience?: string;
   /**
   * Service account email to be used for generating OAuth token.
 The service account must be within the same project as the job.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#service_account_email GoogleCloudSchedulerJob#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#service_account_email GoogleCloudSchedulerJob#service_account_email}
   */
   readonly serviceAccountEmail: string;
 }
@@ -621,38 +616,38 @@ It is an error to set body on a job with an incompatible HttpMethod.
 
 A base64-encoded string.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#body GoogleCloudSchedulerJob#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#body GoogleCloudSchedulerJob#body}
   */
   readonly body?: string;
   /**
   * This map contains the header field names and values.
 Repeated headers are not supported, but a header value can contain commas.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#headers GoogleCloudSchedulerJob#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#headers GoogleCloudSchedulerJob#headers}
   */
   readonly headers?: { [key: string]: string };
   /**
   * Which HTTP method to use for the request.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#http_method GoogleCloudSchedulerJob#http_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#http_method GoogleCloudSchedulerJob#http_method}
   */
   readonly httpMethod?: string;
   /**
   * The full URI path that the request will be sent to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#uri GoogleCloudSchedulerJob#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#uri GoogleCloudSchedulerJob#uri}
   */
   readonly uri: string;
   /**
   * oauth_token block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#oauth_token GoogleCloudSchedulerJob#oauth_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#oauth_token GoogleCloudSchedulerJob#oauth_token}
   */
   readonly oauthToken?: GoogleCloudSchedulerJobHttpTargetOauthToken;
   /**
   * oidc_token block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#oidc_token GoogleCloudSchedulerJob#oidc_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#oidc_token GoogleCloudSchedulerJob#oidc_token}
   */
   readonly oidcToken?: GoogleCloudSchedulerJobHttpTargetOidcToken;
 }
@@ -832,7 +827,7 @@ export interface GoogleCloudSchedulerJobPubsubTarget {
   * Attributes for PubsubMessage.
 Pubsub message must contain either non-empty data, or at least one attribute.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#attributes GoogleCloudSchedulerJob#attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#attributes GoogleCloudSchedulerJob#attributes}
   */
   readonly attributes?: { [key: string]: string };
   /**
@@ -841,7 +836,7 @@ Pubsub message must contain either non-empty data, or at least one attribute.
 
  A base64-encoded string.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#data GoogleCloudSchedulerJob#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#data GoogleCloudSchedulerJob#data}
   */
   readonly data?: string;
   /**
@@ -850,7 +845,7 @@ messages will be published when a job is delivered. ~>**NOTE:**
 The topic name must be in the same format as required by PubSub's
 PublishRequest.name, e.g. 'projects/my-project/topics/my-topic'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#topic_name GoogleCloudSchedulerJob#topic_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#topic_name GoogleCloudSchedulerJob#topic_name}
   */
   readonly topicName: string;
 }
@@ -961,7 +956,7 @@ export interface GoogleCloudSchedulerJobRetryConfig {
   * The maximum amount of time to wait before retrying a job after it fails.
 A duration in seconds with up to nine fractional digits, terminated by 's'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#max_backoff_duration GoogleCloudSchedulerJob#max_backoff_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#max_backoff_duration GoogleCloudSchedulerJob#max_backoff_duration}
   */
   readonly maxBackoffDuration?: string;
   /**
@@ -970,7 +965,7 @@ A job's retry interval starts at minBackoffDuration,
 then doubles maxDoublings times, then increases linearly,
 and finally retries retries at intervals of maxBackoffDuration up to retryCount times.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#max_doublings GoogleCloudSchedulerJob#max_doublings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#max_doublings GoogleCloudSchedulerJob#max_doublings}
   */
   readonly maxDoublings?: number;
   /**
@@ -978,14 +973,14 @@ and finally retries retries at intervals of maxBackoffDuration up to retryCount 
 If specified with retryCount, the job will be retried until both limits are reached.
 A duration in seconds with up to nine fractional digits, terminated by 's'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#max_retry_duration GoogleCloudSchedulerJob#max_retry_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#max_retry_duration GoogleCloudSchedulerJob#max_retry_duration}
   */
   readonly maxRetryDuration?: string;
   /**
   * The minimum amount of time to wait before retrying a job after it fails.
 A duration in seconds with up to nine fractional digits, terminated by 's'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#min_backoff_duration GoogleCloudSchedulerJob#min_backoff_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#min_backoff_duration GoogleCloudSchedulerJob#min_backoff_duration}
   */
   readonly minBackoffDuration?: string;
   /**
@@ -993,7 +988,7 @@ A duration in seconds with up to nine fractional digits, terminated by 's'.
 job using the exponential backoff procedure described by maxDoublings.
 Values greater than 5 and negative values are not allowed.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#retry_count GoogleCloudSchedulerJob#retry_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#retry_count GoogleCloudSchedulerJob#retry_count}
   */
   readonly retryCount?: number;
 }
@@ -1150,15 +1145,15 @@ export class GoogleCloudSchedulerJobRetryConfigOutputReference extends cdktf.Com
 }
 export interface GoogleCloudSchedulerJobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#create GoogleCloudSchedulerJob#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#create GoogleCloudSchedulerJob#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#delete GoogleCloudSchedulerJob#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#delete GoogleCloudSchedulerJob#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job#update GoogleCloudSchedulerJob#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job#update GoogleCloudSchedulerJob#update}
   */
   readonly update?: string;
 }
@@ -1279,7 +1274,7 @@ export class GoogleCloudSchedulerJobTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job google_cloud_scheduler_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job google_cloud_scheduler_job}
 */
 export class GoogleCloudSchedulerJob extends cdktf.TerraformResource {
 
@@ -1293,7 +1288,7 @@ export class GoogleCloudSchedulerJob extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_scheduler_job google_cloud_scheduler_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_cloud_scheduler_job google_cloud_scheduler_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1304,7 +1299,7 @@ export class GoogleCloudSchedulerJob extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloud_scheduler_job',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.73.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `google_project_service_identity`
 
-Refer to the Terraform Registory for docs: [`google_project_service_identity`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity).
+Refer to the Terraform Registory for docs: [`google_project_service_identity`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity).
 
 # `googleProjectServiceIdentity` Submodule <a name="`googleProjectServiceIdentity` Submodule" id="@cdktf/provider-google-beta.googleProjectServiceIdentity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_project_service_identity`](h
 
 ### GoogleProjectServiceIdentity <a name="GoogleProjectServiceIdentity" id="@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity google_project_service_identity}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity google_project_service_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentity.Initializer"></a>
 
@@ -676,9 +676,9 @@ new GoogleProjectServiceIdentityConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig.property.service">Service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#service GoogleProjectServiceIdentity#service}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#id GoogleProjectServiceIdentity#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#project GoogleProjectServiceIdentity#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig.property.service">Service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#service GoogleProjectServiceIdentity#service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#id GoogleProjectServiceIdentity#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#project GoogleProjectServiceIdentity#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityTimeouts">GoogleProjectServiceIdentityTimeouts</a></code> | timeouts block. |
 
 ---
@@ -761,7 +761,7 @@ public string Service { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#service GoogleProjectServiceIdentity#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#service GoogleProjectServiceIdentity#service}.
 
 ---
 
@@ -773,7 +773,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#id GoogleProjectServiceIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#id GoogleProjectServiceIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -788,7 +788,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#project GoogleProjectServiceIdentity#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#project GoogleProjectServiceIdentity#project}.
 
 ---
 
@@ -802,7 +802,7 @@ public GoogleProjectServiceIdentityTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#timeouts GoogleProjectServiceIdentity#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#timeouts GoogleProjectServiceIdentity#timeouts}
 
 ---
 
@@ -824,9 +824,9 @@ new GoogleProjectServiceIdentityTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#create GoogleProjectServiceIdentity#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#delete GoogleProjectServiceIdentity#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#read GoogleProjectServiceIdentity#read}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#create GoogleProjectServiceIdentity#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#delete GoogleProjectServiceIdentity#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectServiceIdentity.GoogleProjectServiceIdentityTimeouts.property.read">Read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#read GoogleProjectServiceIdentity#read}. |
 
 ---
 
@@ -838,7 +838,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#create GoogleProjectServiceIdentity#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#create GoogleProjectServiceIdentity#create}.
 
 ---
 
@@ -850,7 +850,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#delete GoogleProjectServiceIdentity#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#delete GoogleProjectServiceIdentity#delete}.
 
 ---
 
@@ -862,7 +862,7 @@ public string Read { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_project_service_identity#read GoogleProjectServiceIdentity#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_project_service_identity#read GoogleProjectServiceIdentity#read}.
 
 ---
 

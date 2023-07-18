@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,25 +11,25 @@ export interface GoogleActiveDirectoryDomainConfig extends cdktf.TerraformMetaAr
   * The name of delegated administrator account used to perform Active Directory operations.
 If not specified, setupadmin will be used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#admin GoogleActiveDirectoryDomain#admin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#admin GoogleActiveDirectoryDomain#admin}
   */
   readonly admin?: string;
   /**
   * The full names of the Google Compute Engine networks the domain instance is connected to. The domain is only available on networks listed in authorizedNetworks.
 If CIDR subnets overlap between networks, domain creation will fail.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#authorized_networks GoogleActiveDirectoryDomain#authorized_networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#authorized_networks GoogleActiveDirectoryDomain#authorized_networks}
   */
   readonly authorizedNetworks?: string[];
   /**
   * The fully qualified domain name. e.g. mydomain.myorganization.com, with the restrictions,
 https://cloud.google.com/managed-microsoft-ad/reference/rest/v1/projects.locations.global.domains.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#domain_name GoogleActiveDirectoryDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#domain_name GoogleActiveDirectoryDomain#domain_name}
   */
   readonly domainName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#id GoogleActiveDirectoryDomain#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#id GoogleActiveDirectoryDomain#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -43,45 +38,45 @@ https://cloud.google.com/managed-microsoft-ad/reference/rest/v1/projects.locatio
   /**
   * Resource labels that can contain user-provided metadata
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#labels GoogleActiveDirectoryDomain#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#labels GoogleActiveDirectoryDomain#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Locations where domain needs to be provisioned. [regions][compute/docs/regions-zones/]
 e.g. us-west1 or us-east4 Service supports up to 4 locations at once. Each location will use a /26 block.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#locations GoogleActiveDirectoryDomain#locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#locations GoogleActiveDirectoryDomain#locations}
   */
   readonly locations: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#project GoogleActiveDirectoryDomain#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#project GoogleActiveDirectoryDomain#project}
   */
   readonly project?: string;
   /**
   * The CIDR range of internal addresses that are reserved for this domain. Reserved networks must be /24 or larger.
 Ranges must be unique and non-overlapping with existing subnets in authorizedNetworks
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#reserved_ip_range GoogleActiveDirectoryDomain#reserved_ip_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#reserved_ip_range GoogleActiveDirectoryDomain#reserved_ip_range}
   */
   readonly reservedIpRange: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#timeouts GoogleActiveDirectoryDomain#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#timeouts GoogleActiveDirectoryDomain#timeouts}
   */
   readonly timeouts?: GoogleActiveDirectoryDomainTimeouts;
 }
 export interface GoogleActiveDirectoryDomainTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#create GoogleActiveDirectoryDomain#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#create GoogleActiveDirectoryDomain#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#delete GoogleActiveDirectoryDomain#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#delete GoogleActiveDirectoryDomain#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain#update GoogleActiveDirectoryDomain#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain#update GoogleActiveDirectoryDomain#update}
   */
   readonly update?: string;
 }
@@ -202,7 +197,7 @@ export class GoogleActiveDirectoryDomainTimeoutsOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain google_active_directory_domain}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain google_active_directory_domain}
 */
 export class GoogleActiveDirectoryDomain extends cdktf.TerraformResource {
 
@@ -216,7 +211,7 @@ export class GoogleActiveDirectoryDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_active_directory_domain google_active_directory_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_active_directory_domain google_active_directory_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +222,7 @@ export class GoogleActiveDirectoryDomain extends cdktf.TerraformResource {
       terraformResourceType: 'google_active_directory_domain',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.73.2',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

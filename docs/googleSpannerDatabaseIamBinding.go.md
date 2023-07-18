@@ -1,6 +1,6 @@
 # `google_spanner_database_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_spanner_database_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding).
+Refer to the Terraform Registory for docs: [`google_spanner_database_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding).
 
 # `googleSpannerDatabaseIamBinding` Submodule <a name="`googleSpannerDatabaseIamBinding` Submodule" id="@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_spanner_database_iam_binding
 
 ### GoogleSpannerDatabaseIamBinding <a name="GoogleSpannerDatabaseIamBinding" id="@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding google_spanner_database_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding google_spanner_database_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlespannerdatabaseiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerdatabaseiambinding"
 
 googlespannerdatabaseiambinding.NewGoogleSpannerDatabaseIamBinding(scope Construct, id *string, config GoogleSpannerDatabaseIamBindingConfig) GoogleSpannerDatabaseIamBinding
 ```
@@ -304,7 +304,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlespannerdatabaseiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerdatabaseiambinding"
 
 googlespannerdatabaseiambinding.GoogleSpannerDatabaseIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlespannerdatabaseiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerdatabaseiambinding"
 
 googlespannerdatabaseiambinding.GoogleSpannerDatabaseIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ googlespannerdatabaseiambinding.GoogleSpannerDatabaseIamBinding_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlespannerdatabaseiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerdatabaseiambinding"
 
 googlespannerdatabaseiambinding.GoogleSpannerDatabaseIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -714,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlespannerdatabaseiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerdatabaseiambinding"
 
 &googlespannerdatabaseiambinding.GoogleSpannerDatabaseIamBindingCondition {
 	Expression: *string,
@@ -727,9 +727,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlespanne
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#expression GoogleSpannerDatabaseIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#title GoogleSpannerDatabaseIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#description GoogleSpannerDatabaseIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#expression GoogleSpannerDatabaseIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#title GoogleSpannerDatabaseIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#description GoogleSpannerDatabaseIamBinding#description}. |
 
 ---
 
@@ -741,7 +741,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#expression GoogleSpannerDatabaseIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#expression GoogleSpannerDatabaseIamBinding#expression}.
 
 ---
 
@@ -753,7 +753,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#title GoogleSpannerDatabaseIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#title GoogleSpannerDatabaseIamBinding#title}.
 
 ---
 
@@ -765,7 +765,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#description GoogleSpannerDatabaseIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#description GoogleSpannerDatabaseIamBinding#description}.
 
 ---
 
@@ -774,7 +774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlespannerdatabaseiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerdatabaseiambinding"
 
 &googlespannerdatabaseiambinding.GoogleSpannerDatabaseIamBindingConfig {
 	Connection: interface{},
@@ -788,7 +788,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlespanne
 	Instance: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -805,13 +805,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlespanne
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#database GoogleSpannerDatabaseIamBinding#database}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#instance GoogleSpannerDatabaseIamBinding#instance}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#members GoogleSpannerDatabaseIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#role GoogleSpannerDatabaseIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.database">Database</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#database GoogleSpannerDatabaseIamBinding#database}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.instance">Instance</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#instance GoogleSpannerDatabaseIamBinding#instance}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#members GoogleSpannerDatabaseIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#role GoogleSpannerDatabaseIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingCondition">GoogleSpannerDatabaseIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#id GoogleSpannerDatabaseIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#project GoogleSpannerDatabaseIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#id GoogleSpannerDatabaseIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#project GoogleSpannerDatabaseIamBinding#project}. |
 
 ---
 
@@ -893,7 +893,7 @@ Database *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#database GoogleSpannerDatabaseIamBinding#database}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#database GoogleSpannerDatabaseIamBinding#database}.
 
 ---
 
@@ -905,7 +905,7 @@ Instance *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#instance GoogleSpannerDatabaseIamBinding#instance}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#instance GoogleSpannerDatabaseIamBinding#instance}.
 
 ---
 
@@ -917,7 +917,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#members GoogleSpannerDatabaseIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#members GoogleSpannerDatabaseIamBinding#members}.
 
 ---
 
@@ -929,7 +929,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#role GoogleSpannerDatabaseIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#role GoogleSpannerDatabaseIamBinding#role}.
 
 ---
 
@@ -943,7 +943,7 @@ Condition GoogleSpannerDatabaseIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#condition GoogleSpannerDatabaseIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#condition GoogleSpannerDatabaseIamBinding#condition}
 
 ---
 
@@ -955,7 +955,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#id GoogleSpannerDatabaseIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#id GoogleSpannerDatabaseIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -970,7 +970,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_spanner_database_iam_binding#project GoogleSpannerDatabaseIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_spanner_database_iam_binding#project GoogleSpannerDatabaseIamBinding#project}.
 
 ---
 
@@ -981,7 +981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSpannerDatabaseIamBinding.GoogleSpannerDatabaseIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlespannerdatabaseiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlespannerdatabaseiambinding"
 
 googlespannerdatabaseiambinding.NewGoogleSpannerDatabaseIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSpannerDatabaseIamBindingConditionOutputReference
 ```

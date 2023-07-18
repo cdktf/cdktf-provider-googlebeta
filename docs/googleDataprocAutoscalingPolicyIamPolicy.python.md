@@ -1,6 +1,6 @@
 # `google_dataproc_autoscaling_policy_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_dataproc_autoscaling_policy_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy).
+Refer to the Terraform Registory for docs: [`google_dataproc_autoscaling_policy_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy).
 
 # `googleDataprocAutoscalingPolicyIamPolicy` Submodule <a name="`googleDataprocAutoscalingPolicyIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_dataproc_autoscaling_policy_
 
 ### GoogleDataprocAutoscalingPolicyIamPolicy <a name="GoogleDataprocAutoscalingPolicyIamPolicy" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy google_dataproc_autoscaling_policy_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer"></a>
 
@@ -44,11 +44,11 @@ googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolic
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_data GoogleDataprocAutoscalingPolicyIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_id GoogleDataprocAutoscalingPolicyIamPolicy#policy_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#id GoogleDataprocAutoscalingPolicyIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#location GoogleDataprocAutoscalingPolicyIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#project GoogleDataprocAutoscalingPolicyIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_data GoogleDataprocAutoscalingPolicyIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_id GoogleDataprocAutoscalingPolicyIamPolicy#policy_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#id GoogleDataprocAutoscalingPolicyIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#location GoogleDataprocAutoscalingPolicyIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicy.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#project GoogleDataprocAutoscalingPolicyIamPolicy#project}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_data GoogleDataprocAutoscalingPolicyIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_data GoogleDataprocAutoscalingPolicyIamPolicy#policy_data}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_id GoogleDataprocAutoscalingPolicyIamPolicy#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_id GoogleDataprocAutoscalingPolicyIamPolicy#policy_id}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#id GoogleDataprocAutoscalingPolicyIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#id GoogleDataprocAutoscalingPolicyIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#location GoogleDataprocAutoscalingPolicyIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#location GoogleDataprocAutoscalingPolicyIamPolicy#location}.
 
 ---
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#project GoogleDataprocAutoscalingPolicyIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#project GoogleDataprocAutoscalingPolicyIamPolicy#project}.
 
 ---
 
@@ -822,11 +822,11 @@ googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolic
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_data GoogleDataprocAutoscalingPolicyIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_id GoogleDataprocAutoscalingPolicyIamPolicy#policy_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#id GoogleDataprocAutoscalingPolicyIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#location GoogleDataprocAutoscalingPolicyIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#project GoogleDataprocAutoscalingPolicyIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_data GoogleDataprocAutoscalingPolicyIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.policyId">policy_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_id GoogleDataprocAutoscalingPolicyIamPolicy#policy_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#id GoogleDataprocAutoscalingPolicyIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#location GoogleDataprocAutoscalingPolicyIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocAutoscalingPolicyIamPolicy.GoogleDataprocAutoscalingPolicyIamPolicyConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#project GoogleDataprocAutoscalingPolicyIamPolicy#project}. |
 
 ---
 
@@ -908,7 +908,7 @@ policy_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_data GoogleDataprocAutoscalingPolicyIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_data GoogleDataprocAutoscalingPolicyIamPolicy#policy_data}.
 
 ---
 
@@ -920,7 +920,7 @@ policy_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_id GoogleDataprocAutoscalingPolicyIamPolicy#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#policy_id GoogleDataprocAutoscalingPolicyIamPolicy#policy_id}.
 
 ---
 
@@ -932,7 +932,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#id GoogleDataprocAutoscalingPolicyIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#id GoogleDataprocAutoscalingPolicyIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -947,7 +947,7 @@ location: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#location GoogleDataprocAutoscalingPolicyIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#location GoogleDataprocAutoscalingPolicyIamPolicy#location}.
 
 ---
 
@@ -959,7 +959,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_dataproc_autoscaling_policy_iam_policy#project GoogleDataprocAutoscalingPolicyIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.73.2/docs/resources/google_dataproc_autoscaling_policy_iam_policy#project GoogleDataprocAutoscalingPolicyIamPolicy#project}.
 
 ---
 
