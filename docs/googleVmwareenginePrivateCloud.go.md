@@ -1,6 +1,6 @@
 # `google_vmwareengine_private_cloud`
 
-Refer to the Terraform Registory for docs: [`google_vmwareengine_private_cloud`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud).
+Refer to the Terraform Registory for docs: [`google_vmwareengine_private_cloud`](https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud).
 
 # `googleVmwareenginePrivateCloud` Submodule <a name="`googleVmwareenginePrivateCloud` Submodule" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_vmwareengine_private_cloud`]
 
 ### GoogleVmwareenginePrivateCloud <a name="GoogleVmwareenginePrivateCloud" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloud"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloud.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloud(scope Construct, id *string, config GoogleVmwareenginePrivateCloudConfig) GoogleVmwareenginePrivateCloud
 ```
@@ -337,7 +337,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloud.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloud_IsConstruct(x interface{}) *bool
 ```
@@ -369,7 +369,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloud.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloud_IsTerraformElement(x interface{}) *bool
 ```
@@ -383,7 +383,7 @@ googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloud_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloud.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloud_IsTerraformResource(x interface{}) *bool
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 &googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloudConfig {
 	Connection: interface{},
@@ -824,13 +824,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmware
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Location: *string,
-	ManagementCluster: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementCluster,
+	ManagementCluster: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementCluster,
 	Name: *string,
-	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudNetworkConfig,
+	NetworkConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudNetworkConfig,
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeouts,
 }
 ```
 
@@ -850,8 +850,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmware
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudConfig.property.name">Name</a></code> | <code>*string</code> | The ID of the PrivateCloud. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudConfig.property.networkConfig">NetworkConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudNetworkConfig">GoogleVmwareenginePrivateCloudNetworkConfig</a></code> | network_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudConfig.property.description">Description</a></code> | <code>*string</code> | User-provided description for this private cloud. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#id GoogleVmwareenginePrivateCloud#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#project GoogleVmwareenginePrivateCloud#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#id GoogleVmwareenginePrivateCloud#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#project GoogleVmwareenginePrivateCloud#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeouts">GoogleVmwareenginePrivateCloudTimeouts</a></code> | timeouts block. |
 
 ---
@@ -936,7 +936,7 @@ Location *string
 
 The location where the PrivateCloud should reside.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#location GoogleVmwareenginePrivateCloud#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#location GoogleVmwareenginePrivateCloud#location}
 
 ---
 
@@ -950,7 +950,7 @@ ManagementCluster GoogleVmwareenginePrivateCloudManagementCluster
 
 management_cluster block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#management_cluster GoogleVmwareenginePrivateCloud#management_cluster}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#management_cluster GoogleVmwareenginePrivateCloud#management_cluster}
 
 ---
 
@@ -964,7 +964,7 @@ Name *string
 
 The ID of the PrivateCloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#name GoogleVmwareenginePrivateCloud#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#name GoogleVmwareenginePrivateCloud#name}
 
 ---
 
@@ -978,7 +978,7 @@ NetworkConfig GoogleVmwareenginePrivateCloudNetworkConfig
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#network_config GoogleVmwareenginePrivateCloud#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#network_config GoogleVmwareenginePrivateCloud#network_config}
 
 ---
 
@@ -992,7 +992,7 @@ Description *string
 
 User-provided description for this private cloud.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#description GoogleVmwareenginePrivateCloud#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#description GoogleVmwareenginePrivateCloud#description}
 
 ---
 
@@ -1004,7 +1004,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#id GoogleVmwareenginePrivateCloud#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#id GoogleVmwareenginePrivateCloud#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1019,7 +1019,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#project GoogleVmwareenginePrivateCloud#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#project GoogleVmwareenginePrivateCloud#project}.
 
 ---
 
@@ -1033,7 +1033,7 @@ Timeouts GoogleVmwareenginePrivateCloudTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#timeouts GoogleVmwareenginePrivateCloud#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#timeouts GoogleVmwareenginePrivateCloud#timeouts}
 
 ---
 
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudHcx.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 &googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloudHcx {
 
@@ -1055,7 +1055,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmware
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 &googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloudManagementCluster {
 	ClusterId: *string,
@@ -1089,7 +1089,7 @@ Ends with a non-hyphen character
 Not formatted as a UUID
 Complies with RFC 1034 (https://datatracker.ietf.org/doc/html/rfc1034) (section 3.5)
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#cluster_id GoogleVmwareenginePrivateCloud#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#cluster_id GoogleVmwareenginePrivateCloud#cluster_id}
 
 ---
 
@@ -1103,7 +1103,7 @@ NodeTypeConfigs interface{}
 
 node_type_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#node_type_configs GoogleVmwareenginePrivateCloud#node_type_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#node_type_configs GoogleVmwareenginePrivateCloud#node_type_configs}
 
 ---
 
@@ -1112,7 +1112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 &googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs {
 	NodeCount: *f64,
@@ -1126,7 +1126,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmware
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs.property.nodeCount">NodeCount</a></code> | <code>*f64</code> | The number of nodes of this type in the cluster. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#node_type_id GoogleVmwareenginePrivateCloud#node_type_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs.property.nodeTypeId">NodeTypeId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#node_type_id GoogleVmwareenginePrivateCloud#node_type_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigs.property.customCoreCount">CustomCoreCount</a></code> | <code>*f64</code> | Customized number of cores available to each node of the type. |
 
 ---
@@ -1141,7 +1141,7 @@ NodeCount *f64
 
 The number of nodes of this type in the cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#node_count GoogleVmwareenginePrivateCloud#node_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#node_count GoogleVmwareenginePrivateCloud#node_count}
 
 ---
 
@@ -1153,7 +1153,7 @@ NodeTypeId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#node_type_id GoogleVmwareenginePrivateCloud#node_type_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#node_type_id GoogleVmwareenginePrivateCloud#node_type_id}.
 
 ---
 
@@ -1171,7 +1171,7 @@ This number must always be one of 'nodeType.availableCustomCoreCounts'.
 If zero is provided max value from 'nodeType.availableCustomCoreCounts' will be used.
 This cannot be changed once the PrivateCloud is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#custom_core_count GoogleVmwareenginePrivateCloud#custom_core_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#custom_core_count GoogleVmwareenginePrivateCloud#custom_core_count}
 
 ---
 
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 &googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloudNetworkConfig {
 	ManagementCidr: *string,
@@ -1207,7 +1207,7 @@ ManagementCidr *string
 
 Management CIDR used by VMware management appliances.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#management_cidr GoogleVmwareenginePrivateCloud#management_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#management_cidr GoogleVmwareenginePrivateCloud#management_cidr}
 
 ---
 
@@ -1224,7 +1224,7 @@ The relative resource name of the VMware Engine network attached to the private 
 Specify the name in the following form: projects/{project}/locations/{location}/vmwareEngineNetworks/{vmwareEngineNetworkId}
 where {project} can either be a project number or a project ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#vmware_engine_network GoogleVmwareenginePrivateCloud#vmware_engine_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#vmware_engine_network GoogleVmwareenginePrivateCloud#vmware_engine_network}
 
 ---
 
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudNsx.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 &googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloudNsx {
 
@@ -1246,7 +1246,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmware
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 &googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloudTimeouts {
 	Create: *string,
@@ -1259,9 +1259,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmware
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#create GoogleVmwareenginePrivateCloud#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#delete GoogleVmwareenginePrivateCloud#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#update GoogleVmwareenginePrivateCloud#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#create GoogleVmwareenginePrivateCloud#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#delete GoogleVmwareenginePrivateCloud#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#update GoogleVmwareenginePrivateCloud#update}. |
 
 ---
 
@@ -1273,7 +1273,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#create GoogleVmwareenginePrivateCloud#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#create GoogleVmwareenginePrivateCloud#create}.
 
 ---
 
@@ -1285,7 +1285,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#delete GoogleVmwareenginePrivateCloud#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#delete GoogleVmwareenginePrivateCloud#delete}.
 
 ---
 
@@ -1297,7 +1297,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_vmwareengine_private_cloud#update GoogleVmwareenginePrivateCloud#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_vmwareengine_private_cloud#update GoogleVmwareenginePrivateCloud#update}.
 
 ---
 
@@ -1306,7 +1306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudVcenter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 &googlevmwareengineprivatecloud.GoogleVmwareenginePrivateCloudVcenter {
 
@@ -1321,7 +1321,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmware
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudHcxList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudHcxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVmwareenginePrivateCloudHcxList
 ```
@@ -1453,7 +1453,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudHcxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudHcxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVmwareenginePrivateCloudHcxOutputReference
 ```
@@ -1764,7 +1764,7 @@ func InternalValue() GoogleVmwareenginePrivateCloudHcx
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsList
 ```
@@ -1907,7 +1907,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVmwareenginePrivateCloudManagementClusterNodeTypeConfigsOutputReference
 ```
@@ -2247,7 +2247,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudManagementClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudManagementClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareenginePrivateCloudManagementClusterOutputReference
 ```
@@ -2560,7 +2560,7 @@ func InternalValue() GoogleVmwareenginePrivateCloudManagementCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareenginePrivateCloudNetworkConfigOutputReference
 ```
@@ -2882,7 +2882,7 @@ func InternalValue() GoogleVmwareenginePrivateCloudNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudNsxList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudNsxList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVmwareenginePrivateCloudNsxList
 ```
@@ -3014,7 +3014,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudNsxOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudNsxOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVmwareenginePrivateCloudNsxOutputReference
 ```
@@ -3325,7 +3325,7 @@ func InternalValue() GoogleVmwareenginePrivateCloudNsx
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleVmwareenginePrivateCloudTimeoutsOutputReference
 ```
@@ -3661,7 +3661,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudVcenterList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudVcenterList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleVmwareenginePrivateCloudVcenterList
 ```
@@ -3793,7 +3793,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVmwareenginePrivateCloud.GoogleVmwareenginePrivateCloudVcenterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlevmwareengineprivatecloud"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlevmwareengineprivatecloud"
 
 googlevmwareengineprivatecloud.NewGoogleVmwareenginePrivateCloudVcenterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleVmwareenginePrivateCloudVcenterOutputReference
 ```

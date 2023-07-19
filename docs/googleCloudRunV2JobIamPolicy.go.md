@@ -1,6 +1,6 @@
 # `google_cloud_run_v2_job_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_cloud_run_v2_job_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy).
+Refer to the Terraform Registory for docs: [`google_cloud_run_v2_job_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy).
 
 # `googleCloudRunV2JobIamPolicy` Submodule <a name="`googleCloudRunV2JobIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_cloud_run_v2_job_iam_policy`
 
 ### GoogleCloudRunV2JobIamPolicy <a name="GoogleCloudRunV2JobIamPolicy" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy google_cloud_run_v2_job_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiampolicy"
 
 googlecloudrunv2jobiampolicy.NewGoogleCloudRunV2JobIamPolicy(scope Construct, id *string, config GoogleCloudRunV2JobIamPolicyConfig) GoogleCloudRunV2JobIamPolicy
 ```
@@ -291,7 +291,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiampolicy"
 
 googlecloudrunv2jobiampolicy.GoogleCloudRunV2JobIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiampolicy"
 
 googlecloudrunv2jobiampolicy.GoogleCloudRunV2JobIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ googlecloudrunv2jobiampolicy.GoogleCloudRunV2JobIamPolicy_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiampolicy"
 
 googlecloudrunv2jobiampolicy.GoogleCloudRunV2JobIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudrunv2jobiampolicy"
 
 &googlecloudrunv2jobiampolicy.GoogleCloudRunV2JobIamPolicyConfig {
 	Connection: interface{},
@@ -686,11 +686,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudr
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy#name GoogleCloudRunV2JobIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy#policy_data GoogleCloudRunV2JobIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy#id GoogleCloudRunV2JobIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy#location GoogleCloudRunV2JobIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy#project GoogleCloudRunV2JobIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy#name GoogleCloudRunV2JobIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy#policy_data GoogleCloudRunV2JobIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy#id GoogleCloudRunV2JobIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy#location GoogleCloudRunV2JobIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunV2JobIamPolicy.GoogleCloudRunV2JobIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy#project GoogleCloudRunV2JobIamPolicy#project}. |
 
 ---
 
@@ -772,7 +772,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy#name GoogleCloudRunV2JobIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy#name GoogleCloudRunV2JobIamPolicy#name}.
 
 ---
 
@@ -784,7 +784,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy#policy_data GoogleCloudRunV2JobIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy#policy_data GoogleCloudRunV2JobIamPolicy#policy_data}.
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy#id GoogleCloudRunV2JobIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy#id GoogleCloudRunV2JobIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy#location GoogleCloudRunV2JobIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy#location GoogleCloudRunV2JobIamPolicy#location}.
 
 ---
 
@@ -823,7 +823,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_v2_job_iam_policy#project GoogleCloudRunV2JobIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_v2_job_iam_policy#project GoogleCloudRunV2JobIamPolicy#project}.
 
 ---
 

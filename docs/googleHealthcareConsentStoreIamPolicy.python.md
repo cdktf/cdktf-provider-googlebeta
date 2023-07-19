@@ -1,6 +1,6 @@
 # `google_healthcare_consent_store_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_healthcare_consent_store_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy).
+Refer to the Terraform Registory for docs: [`google_healthcare_consent_store_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy).
 
 # `googleHealthcareConsentStoreIamPolicy` Submodule <a name="`googleHealthcareConsentStoreIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_healthcare_consent_store_iam
 
 ### GoogleHealthcareConsentStoreIamPolicy <a name="GoogleHealthcareConsentStoreIamPolicy" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy google_healthcare_consent_store_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer"></a>
 
@@ -43,10 +43,10 @@ googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy(
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.consentStoreId">consent_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#consent_store_id GoogleHealthcareConsentStoreIamPolicy#consent_store_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.dataset">dataset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#dataset GoogleHealthcareConsentStoreIamPolicy#dataset}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#policy_data GoogleHealthcareConsentStoreIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#id GoogleHealthcareConsentStoreIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.consentStoreId">consent_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#consent_store_id GoogleHealthcareConsentStoreIamPolicy#consent_store_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.dataset">dataset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#dataset GoogleHealthcareConsentStoreIamPolicy#dataset}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#policy_data GoogleHealthcareConsentStoreIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#id GoogleHealthcareConsentStoreIamPolicy#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#consent_store_id GoogleHealthcareConsentStoreIamPolicy#consent_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#consent_store_id GoogleHealthcareConsentStoreIamPolicy#consent_store_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#dataset GoogleHealthcareConsentStoreIamPolicy#dataset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#dataset GoogleHealthcareConsentStoreIamPolicy#dataset}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#policy_data GoogleHealthcareConsentStoreIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#policy_data GoogleHealthcareConsentStoreIamPolicy#policy_data}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#id GoogleHealthcareConsentStoreIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#id GoogleHealthcareConsentStoreIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,10 +775,10 @@ googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfi
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.consentStoreId">consent_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#consent_store_id GoogleHealthcareConsentStoreIamPolicy#consent_store_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.dataset">dataset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#dataset GoogleHealthcareConsentStoreIamPolicy#dataset}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#policy_data GoogleHealthcareConsentStoreIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#id GoogleHealthcareConsentStoreIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.consentStoreId">consent_store_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#consent_store_id GoogleHealthcareConsentStoreIamPolicy#consent_store_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.dataset">dataset</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#dataset GoogleHealthcareConsentStoreIamPolicy#dataset}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#policy_data GoogleHealthcareConsentStoreIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareConsentStoreIamPolicy.GoogleHealthcareConsentStoreIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#id GoogleHealthcareConsentStoreIamPolicy#id}. |
 
 ---
 
@@ -860,7 +860,7 @@ consent_store_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#consent_store_id GoogleHealthcareConsentStoreIamPolicy#consent_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#consent_store_id GoogleHealthcareConsentStoreIamPolicy#consent_store_id}.
 
 ---
 
@@ -872,7 +872,7 @@ dataset: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#dataset GoogleHealthcareConsentStoreIamPolicy#dataset}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#dataset GoogleHealthcareConsentStoreIamPolicy#dataset}.
 
 ---
 
@@ -884,7 +884,7 @@ policy_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#policy_data GoogleHealthcareConsentStoreIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#policy_data GoogleHealthcareConsentStoreIamPolicy#policy_data}.
 
 ---
 
@@ -896,7 +896,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_healthcare_consent_store_iam_policy#id GoogleHealthcareConsentStoreIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_healthcare_consent_store_iam_policy#id GoogleHealthcareConsentStoreIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

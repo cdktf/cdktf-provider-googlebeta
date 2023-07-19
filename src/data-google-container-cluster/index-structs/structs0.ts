@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
 export interface DataGoogleContainerClusterAddonsConfigCloudrunConfig {
 }
@@ -6545,6 +6540,11 @@ export class DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference ex
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // tpu_topology - computed: true, optional: false, required: false
+  public get tpuTopology() {
+    return this.getStringAttribute('tpu_topology');
   }
 
   // type - computed: true, optional: false, required: false

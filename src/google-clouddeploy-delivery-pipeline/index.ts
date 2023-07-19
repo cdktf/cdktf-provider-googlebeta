@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleClouddeployDeliveryPipelineConfig extends cdktf.Terraform
   /**
   * User annotations. These attributes can only be set and used by the user, and not by Google Cloud Deploy. See https://google.aip.dev/128#annotations for more details such as format and size limitations.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#annotations GoogleClouddeployDeliveryPipeline#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#annotations GoogleClouddeployDeliveryPipeline#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Description of the `DeliveryPipeline`. Max length is 255 characters.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#description GoogleClouddeployDeliveryPipeline#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#description GoogleClouddeployDeliveryPipeline#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#id GoogleClouddeployDeliveryPipeline#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#id GoogleClouddeployDeliveryPipeline#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +29,43 @@ export interface GoogleClouddeployDeliveryPipelineConfig extends cdktf.Terraform
   /**
   * Labels are attributes that can be set and used by both the user and by Google Cloud Deploy. Labels must meet the following constraints: * Keys and values can contain only lowercase letters, numeric characters, underscores, and dashes. * All characters must use UTF-8 encoding, and international characters are allowed. * Keys must start with a lowercase letter or international character. * Each resource is limited to a maximum of 64 labels. Both keys and values are additionally constrained to be <= 128 bytes.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#labels GoogleClouddeployDeliveryPipeline#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#labels GoogleClouddeployDeliveryPipeline#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#location GoogleClouddeployDeliveryPipeline#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#location GoogleClouddeployDeliveryPipeline#location}
   */
   readonly location: string;
   /**
   * Name of the `DeliveryPipeline`. Format is [a-z][a-z0-9\-]{0,62}.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#name GoogleClouddeployDeliveryPipeline#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#name GoogleClouddeployDeliveryPipeline#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#project GoogleClouddeployDeliveryPipeline#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#project GoogleClouddeployDeliveryPipeline#project}
   */
   readonly project?: string;
   /**
   * When suspended, no new releases or rollouts can be created, but in-progress ones will complete.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#suspended GoogleClouddeployDeliveryPipeline#suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#suspended GoogleClouddeployDeliveryPipeline#suspended}
   */
   readonly suspended?: boolean | cdktf.IResolvable;
   /**
   * serial_pipeline block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#serial_pipeline GoogleClouddeployDeliveryPipeline#serial_pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#serial_pipeline GoogleClouddeployDeliveryPipeline#serial_pipeline}
   */
   readonly serialPipeline?: GoogleClouddeployDeliveryPipelineSerialPipeline;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#timeouts GoogleClouddeployDeliveryPipeline#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#timeouts GoogleClouddeployDeliveryPipeline#timeouts}
   */
   readonly timeouts?: GoogleClouddeployDeliveryPipelineTimeouts;
 }
@@ -363,17 +358,142 @@ export class GoogleClouddeployDeliveryPipelineConditionList extends cdktf.Comple
     return new GoogleClouddeployDeliveryPipelineConditionOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters {
+  /**
+  * Optional. Deploy parameters are applied to targets with match labels. If unspecified, deploy parameters are applied to all targets (including child targets of a multi-target).
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#match_target_labels GoogleClouddeployDeliveryPipeline#match_target_labels}
+  */
+  readonly matchTargetLabels?: { [key: string]: string };
+  /**
+  * Required. Values are deploy parameters in key-value pairs.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#values GoogleClouddeployDeliveryPipeline#values}
+  */
+  readonly values: { [key: string]: string };
+}
+
+export function googleClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersToTerraform(struct?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    match_target_labels: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.matchTargetLabels),
+    values: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.values),
+  }
+}
+
+export class GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._matchTargetLabels !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.matchTargetLabels = this._matchTargetLabels;
+    }
+    if (this._values !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.values = this._values;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._matchTargetLabels = undefined;
+      this._values = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._matchTargetLabels = value.matchTargetLabels;
+      this._values = value.values;
+    }
+  }
+
+  // match_target_labels - computed: false, optional: true, required: false
+  private _matchTargetLabels?: { [key: string]: string }; 
+  public get matchTargetLabels() {
+    return this.getStringMapAttribute('match_target_labels');
+  }
+  public set matchTargetLabels(value: { [key: string]: string }) {
+    this._matchTargetLabels = value;
+  }
+  public resetMatchTargetLabels() {
+    this._matchTargetLabels = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get matchTargetLabelsInput() {
+    return this._matchTargetLabels;
+  }
+
+  // values - computed: false, optional: false, required: true
+  private _values?: { [key: string]: string }; 
+  public get values() {
+    return this.getStringMapAttribute('values');
+  }
+  public set values(value: { [key: string]: string }) {
+    this._values = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get valuesInput() {
+    return this._values;
+  }
+}
+
+export class GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList extends cdktf.ComplexList {
+  public internalValue? : GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutputReference {
+    return new GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeployment {
   /**
   * Required. The percentage based deployments that will occur as a part of a `Rollout`. List is expected in ascending order and each integer n is 0 <= n < 100.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#percentages GoogleClouddeployDeliveryPipeline#percentages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#percentages GoogleClouddeployDeliveryPipeline#percentages}
   */
   readonly percentages: number[];
   /**
   * Whether to run verify tests after each percentage deployment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#verify GoogleClouddeployDeliveryPipeline#verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#verify GoogleClouddeployDeliveryPipeline#verify}
   */
   readonly verify?: boolean | cdktf.IResolvable;
 }
@@ -460,25 +580,25 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCa
   /**
   * Required. Percentage deployment for the phase.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#percentage GoogleClouddeployDeliveryPipeline#percentage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#percentage GoogleClouddeployDeliveryPipeline#percentage}
   */
   readonly percentage: number;
   /**
   * Required. The ID to assign to the `Rollout` phase. This value must consist of lower-case letters, numbers, and hyphens, start with a letter and end with a letter or a number, and have a max length of 63 characters. In other words, it must match the following regex: `^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#phase_id GoogleClouddeployDeliveryPipeline#phase_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#phase_id GoogleClouddeployDeliveryPipeline#phase_id}
   */
   readonly phaseId: string;
   /**
   * Skaffold profiles to use when rendering the manifest for this phase. These are in addition to the profiles list specified in the `DeliveryPipeline` stage.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#profiles GoogleClouddeployDeliveryPipeline#profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#profiles GoogleClouddeployDeliveryPipeline#profiles}
   */
   readonly profiles?: string[];
   /**
   * Whether to run verify tests after the deployment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#verify GoogleClouddeployDeliveryPipeline#verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#verify GoogleClouddeployDeliveryPipeline#verify}
   */
   readonly verify?: boolean | cdktf.IResolvable;
 }
@@ -640,7 +760,7 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCa
   /**
   * phase_configs block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#phase_configs GoogleClouddeployDeliveryPipeline#phase_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#phase_configs GoogleClouddeployDeliveryPipeline#phase_configs}
   */
   readonly phaseConfigs: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeploymentPhaseConfigs[] | cdktf.IResolvable;
 }
@@ -704,7 +824,7 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCa
   /**
   * Whether Cloud Deploy should update the traffic stanza in a Cloud Run Service on the user's behalf to facilitate traffic splitting. This is required to be true for CanaryDeployments, but optional for CustomCanaryDeployments.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#automatic_traffic_control GoogleClouddeployDeliveryPipeline#automatic_traffic_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#automatic_traffic_control GoogleClouddeployDeliveryPipeline#automatic_traffic_control}
   */
   readonly automaticTrafficControl?: boolean | cdktf.IResolvable;
 }
@@ -771,19 +891,19 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCa
   /**
   * Required. Name of the Kubernetes Deployment whose traffic is managed by the specified HTTPRoute and Service.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#deployment GoogleClouddeployDeliveryPipeline#deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#deployment GoogleClouddeployDeliveryPipeline#deployment}
   */
   readonly deployment: string;
   /**
   * Required. Name of the Gateway API HTTPRoute.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#http_route GoogleClouddeployDeliveryPipeline#http_route}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#http_route GoogleClouddeployDeliveryPipeline#http_route}
   */
   readonly httpRoute: string;
   /**
   * Required. Name of the Kubernetes Service.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#service GoogleClouddeployDeliveryPipeline#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#service GoogleClouddeployDeliveryPipeline#service}
   */
   readonly service: string;
 }
@@ -887,13 +1007,19 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCa
   /**
   * Required. Name of the Kubernetes Deployment whose traffic is managed by the specified Service.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#deployment GoogleClouddeployDeliveryPipeline#deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#deployment GoogleClouddeployDeliveryPipeline#deployment}
   */
   readonly deployment: string;
   /**
+  * Optional. Whether to disable Pod overprovisioning. If Pod overprovisioning is disabled then Cloud Deploy will limit the number of total Pods used for the deployment strategy to the number of Pods the Deployment has on the cluster.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#disable_pod_overprovisioning GoogleClouddeployDeliveryPipeline#disable_pod_overprovisioning}
+  */
+  readonly disablePodOverprovisioning?: boolean | cdktf.IResolvable;
+  /**
   * Required. Name of the Kubernetes Service.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#service GoogleClouddeployDeliveryPipeline#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#service GoogleClouddeployDeliveryPipeline#service}
   */
   readonly service: string;
 }
@@ -905,6 +1031,7 @@ export function googleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCan
   }
   return {
     deployment: cdktf.stringToTerraform(struct!.deployment),
+    disable_pod_overprovisioning: cdktf.booleanToTerraform(struct!.disablePodOverprovisioning),
     service: cdktf.stringToTerraform(struct!.service),
   }
 }
@@ -927,6 +1054,10 @@ export class GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary
       hasAnyValues = true;
       internalValueResult.deployment = this._deployment;
     }
+    if (this._disablePodOverprovisioning !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disablePodOverprovisioning = this._disablePodOverprovisioning;
+    }
     if (this._service !== undefined) {
       hasAnyValues = true;
       internalValueResult.service = this._service;
@@ -938,11 +1069,13 @@ export class GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary
     if (value === undefined) {
       this.isEmptyObject = false;
       this._deployment = undefined;
+      this._disablePodOverprovisioning = undefined;
       this._service = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._deployment = value.deployment;
+      this._disablePodOverprovisioning = value.disablePodOverprovisioning;
       this._service = value.service;
     }
   }
@@ -958,6 +1091,22 @@ export class GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary
   // Temporarily expose input value. Use with caution.
   public get deploymentInput() {
     return this._deployment;
+  }
+
+  // disable_pod_overprovisioning - computed: false, optional: true, required: false
+  private _disablePodOverprovisioning?: boolean | cdktf.IResolvable; 
+  public get disablePodOverprovisioning() {
+    return this.getBooleanAttribute('disable_pod_overprovisioning');
+  }
+  public set disablePodOverprovisioning(value: boolean | cdktf.IResolvable) {
+    this._disablePodOverprovisioning = value;
+  }
+  public resetDisablePodOverprovisioning() {
+    this._disablePodOverprovisioning = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disablePodOverprovisioningInput() {
+    return this._disablePodOverprovisioning;
   }
 
   // service - computed: false, optional: false, required: true
@@ -977,13 +1126,13 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCa
   /**
   * gateway_service_mesh block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#gateway_service_mesh GoogleClouddeployDeliveryPipeline#gateway_service_mesh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#gateway_service_mesh GoogleClouddeployDeliveryPipeline#gateway_service_mesh}
   */
   readonly gatewayServiceMesh?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesGatewayServiceMesh;
   /**
   * service_networking block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#service_networking GoogleClouddeployDeliveryPipeline#service_networking}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#service_networking GoogleClouddeployDeliveryPipeline#service_networking}
   */
   readonly serviceNetworking?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetesServiceNetworking;
 }
@@ -1073,13 +1222,13 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCa
   /**
   * cloud_run block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#cloud_run GoogleClouddeployDeliveryPipeline#cloud_run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#cloud_run GoogleClouddeployDeliveryPipeline#cloud_run}
   */
   readonly cloudRun?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRun;
   /**
   * kubernetes block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#kubernetes GoogleClouddeployDeliveryPipeline#kubernetes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#kubernetes GoogleClouddeployDeliveryPipeline#kubernetes}
   */
   readonly kubernetes?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigKubernetes;
 }
@@ -1169,19 +1318,19 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCa
   /**
   * canary_deployment block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#canary_deployment GoogleClouddeployDeliveryPipeline#canary_deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#canary_deployment GoogleClouddeployDeliveryPipeline#canary_deployment}
   */
   readonly canaryDeployment?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCanaryDeployment;
   /**
   * custom_canary_deployment block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#custom_canary_deployment GoogleClouddeployDeliveryPipeline#custom_canary_deployment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#custom_canary_deployment GoogleClouddeployDeliveryPipeline#custom_canary_deployment}
   */
   readonly customCanaryDeployment?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryCustomCanaryDeployment;
   /**
   * runtime_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#runtime_config GoogleClouddeployDeliveryPipeline#runtime_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#runtime_config GoogleClouddeployDeliveryPipeline#runtime_config}
   */
   readonly runtimeConfig?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfig;
 }
@@ -1294,7 +1443,7 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategySt
   /**
   * Whether to verify a deployment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#verify GoogleClouddeployDeliveryPipeline#verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#verify GoogleClouddeployDeliveryPipeline#verify}
   */
   readonly verify?: boolean | cdktf.IResolvable;
 }
@@ -1361,13 +1510,13 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy {
   /**
   * canary block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#canary GoogleClouddeployDeliveryPipeline#canary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#canary GoogleClouddeployDeliveryPipeline#canary}
   */
   readonly canary?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary;
   /**
   * standard block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#standard GoogleClouddeployDeliveryPipeline#standard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#standard GoogleClouddeployDeliveryPipeline#standard}
   */
   readonly standard?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard;
 }
@@ -1457,19 +1606,25 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipelineStages {
   /**
   * Skaffold profiles to use when rendering the manifest for this stage's `Target`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#profiles GoogleClouddeployDeliveryPipeline#profiles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#profiles GoogleClouddeployDeliveryPipeline#profiles}
   */
   readonly profiles?: string[];
   /**
   * The target_id to which this stage points. This field refers exclusively to the last segment of a target name. For example, this field would just be `my-target` (rather than `projects/project/locations/location/targets/my-target`). The location of the `Target` is inferred to be the same as the location of the `DeliveryPipeline` that contains this `Stage`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#target_id GoogleClouddeployDeliveryPipeline#target_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#target_id GoogleClouddeployDeliveryPipeline#target_id}
   */
   readonly targetId?: string;
   /**
+  * deploy_parameters block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#deploy_parameters GoogleClouddeployDeliveryPipeline#deploy_parameters}
+  */
+  readonly deployParameters?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters[] | cdktf.IResolvable;
+  /**
   * strategy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#strategy GoogleClouddeployDeliveryPipeline#strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#strategy GoogleClouddeployDeliveryPipeline#strategy}
   */
   readonly strategy?: GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy;
 }
@@ -1482,6 +1637,7 @@ export function googleClouddeployDeliveryPipelineSerialPipelineStagesToTerraform
   return {
     profiles: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.profiles),
     target_id: cdktf.stringToTerraform(struct!.targetId),
+    deploy_parameters: cdktf.listMapper(googleClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersToTerraform, true)(struct!.deployParameters),
     strategy: googleClouddeployDeliveryPipelineSerialPipelineStagesStrategyToTerraform(struct!.strategy),
   }
 }
@@ -1514,6 +1670,10 @@ export class GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
       hasAnyValues = true;
       internalValueResult.targetId = this._targetId;
     }
+    if (this._deployParameters?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.deployParameters = this._deployParameters?.internalValue;
+    }
     if (this._strategy?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.strategy = this._strategy?.internalValue;
@@ -1527,6 +1687,7 @@ export class GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
       this.resolvableValue = undefined;
       this._profiles = undefined;
       this._targetId = undefined;
+      this._deployParameters.internalValue = undefined;
       this._strategy.internalValue = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
@@ -1538,6 +1699,7 @@ export class GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
       this.resolvableValue = undefined;
       this._profiles = value.profiles;
       this._targetId = value.targetId;
+      this._deployParameters.internalValue = value.deployParameters;
       this._strategy.internalValue = value.strategy;
     }
   }
@@ -1572,6 +1734,22 @@ export class GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReferenc
   // Temporarily expose input value. Use with caution.
   public get targetIdInput() {
     return this._targetId;
+  }
+
+  // deploy_parameters - computed: false, optional: true, required: false
+  private _deployParameters = new GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParametersList(this, "deploy_parameters", false);
+  public get deployParameters() {
+    return this._deployParameters;
+  }
+  public putDeployParameters(value: GoogleClouddeployDeliveryPipelineSerialPipelineStagesDeployParameters[] | cdktf.IResolvable) {
+    this._deployParameters.internalValue = value;
+  }
+  public resetDeployParameters() {
+    this._deployParameters.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deployParametersInput() {
+    return this._deployParameters.internalValue;
   }
 
   // strategy - computed: false, optional: true, required: false
@@ -1614,7 +1792,7 @@ export interface GoogleClouddeployDeliveryPipelineSerialPipeline {
   /**
   * stages block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#stages GoogleClouddeployDeliveryPipeline#stages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#stages GoogleClouddeployDeliveryPipeline#stages}
   */
   readonly stages?: GoogleClouddeployDeliveryPipelineSerialPipelineStages[] | cdktf.IResolvable;
 }
@@ -1679,15 +1857,15 @@ export class GoogleClouddeployDeliveryPipelineSerialPipelineOutputReference exte
 }
 export interface GoogleClouddeployDeliveryPipelineTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#create GoogleClouddeployDeliveryPipeline#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#create GoogleClouddeployDeliveryPipeline#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#delete GoogleClouddeployDeliveryPipeline#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#delete GoogleClouddeployDeliveryPipeline#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline#update GoogleClouddeployDeliveryPipeline#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline#update GoogleClouddeployDeliveryPipeline#update}
   */
   readonly update?: string;
 }
@@ -1808,7 +1986,7 @@ export class GoogleClouddeployDeliveryPipelineTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline}
 */
 export class GoogleClouddeployDeliveryPipeline extends cdktf.TerraformResource {
 
@@ -1822,7 +2000,7 @@ export class GoogleClouddeployDeliveryPipeline extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1833,7 +2011,7 @@ export class GoogleClouddeployDeliveryPipeline extends cdktf.TerraformResource {
       terraformResourceType: 'google_clouddeploy_delivery_pipeline',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.74.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

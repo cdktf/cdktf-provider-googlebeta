@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleCloudbuildv2ConnectionConfig extends cdktf.TerraformMetaA
   /**
   * Allows clients to store small amounts of arbitrary data.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#annotations GoogleCloudbuildv2Connection#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#annotations GoogleCloudbuildv2Connection#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * If disabled is set to true, functionality is disabled for this connection. Repository based API methods and webhooks processing for repositories in this connection will be disabled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#disabled GoogleCloudbuildv2Connection#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#disabled GoogleCloudbuildv2Connection#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#id GoogleCloudbuildv2Connection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#id GoogleCloudbuildv2Connection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,37 +29,43 @@ export interface GoogleCloudbuildv2ConnectionConfig extends cdktf.TerraformMetaA
   /**
   * The location for the resource
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#location GoogleCloudbuildv2Connection#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#location GoogleCloudbuildv2Connection#location}
   */
   readonly location: string;
   /**
   * Immutable. The resource name of the connection, in the format `projects/{project}/locations/{location}/connections/{connection_id}`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#name GoogleCloudbuildv2Connection#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#name GoogleCloudbuildv2Connection#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#project GoogleCloudbuildv2Connection#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#project GoogleCloudbuildv2Connection#project}
   */
   readonly project?: string;
   /**
   * github_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#github_config GoogleCloudbuildv2Connection#github_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#github_config GoogleCloudbuildv2Connection#github_config}
   */
   readonly githubConfig?: GoogleCloudbuildv2ConnectionGithubConfig;
   /**
   * github_enterprise_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#github_enterprise_config GoogleCloudbuildv2Connection#github_enterprise_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#github_enterprise_config GoogleCloudbuildv2Connection#github_enterprise_config}
   */
   readonly githubEnterpriseConfig?: GoogleCloudbuildv2ConnectionGithubEnterpriseConfig;
   /**
+  * gitlab_config block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#gitlab_config GoogleCloudbuildv2Connection#gitlab_config}
+  */
+  readonly gitlabConfig?: GoogleCloudbuildv2ConnectionGitlabConfig;
+  /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#timeouts GoogleCloudbuildv2Connection#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#timeouts GoogleCloudbuildv2Connection#timeouts}
   */
   readonly timeouts?: GoogleCloudbuildv2ConnectionTimeouts;
 }
@@ -146,7 +147,7 @@ export interface GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredential {
   /**
   * A SecretManager resource containing the OAuth token that authorizes the Cloud Build connection. Format: `projects/*\/secrets/*\/versions/*`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#oauth_token_secret_version GoogleCloudbuildv2Connection#oauth_token_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#oauth_token_secret_version GoogleCloudbuildv2Connection#oauth_token_secret_version}
   */
   readonly oauthTokenSecretVersion?: string;
 }
@@ -218,13 +219,13 @@ export interface GoogleCloudbuildv2ConnectionGithubConfig {
   /**
   * GitHub App installation id.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#app_installation_id GoogleCloudbuildv2Connection#app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#app_installation_id GoogleCloudbuildv2Connection#app_installation_id}
   */
   readonly appInstallationId?: number;
   /**
   * authorizer_credential block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#authorizer_credential GoogleCloudbuildv2Connection#authorizer_credential}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#authorizer_credential GoogleCloudbuildv2Connection#authorizer_credential}
   */
   readonly authorizerCredential?: GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredential;
 }
@@ -314,7 +315,7 @@ export interface GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirect
   /**
   * Required. The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#service GoogleCloudbuildv2Connection#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#service GoogleCloudbuildv2Connection#service}
   */
   readonly service: string;
 }
@@ -378,49 +379,49 @@ export interface GoogleCloudbuildv2ConnectionGithubEnterpriseConfig {
   /**
   * Id of the GitHub App created from the manifest.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#app_id GoogleCloudbuildv2Connection#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#app_id GoogleCloudbuildv2Connection#app_id}
   */
   readonly appId?: number;
   /**
   * ID of the installation of the GitHub App.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#app_installation_id GoogleCloudbuildv2Connection#app_installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#app_installation_id GoogleCloudbuildv2Connection#app_installation_id}
   */
   readonly appInstallationId?: number;
   /**
   * The URL-friendly name of the GitHub App.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#app_slug GoogleCloudbuildv2Connection#app_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#app_slug GoogleCloudbuildv2Connection#app_slug}
   */
   readonly appSlug?: string;
   /**
   * Required. The URI of the GitHub Enterprise host this connection is for.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#host_uri GoogleCloudbuildv2Connection#host_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#host_uri GoogleCloudbuildv2Connection#host_uri}
   */
   readonly hostUri: string;
   /**
   * SecretManager resource containing the private key of the GitHub App, formatted as `projects/*\/secrets/*\/versions/*`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#private_key_secret_version GoogleCloudbuildv2Connection#private_key_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#private_key_secret_version GoogleCloudbuildv2Connection#private_key_secret_version}
   */
   readonly privateKeySecretVersion?: string;
   /**
   * SSL certificate to use for requests to GitHub Enterprise.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#ssl_ca GoogleCloudbuildv2Connection#ssl_ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#ssl_ca GoogleCloudbuildv2Connection#ssl_ca}
   */
   readonly sslCa?: string;
   /**
   * SecretManager resource containing the webhook secret of the GitHub App, formatted as `projects/*\/secrets/*\/versions/*`.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#webhook_secret_secret_version GoogleCloudbuildv2Connection#webhook_secret_secret_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#webhook_secret_secret_version GoogleCloudbuildv2Connection#webhook_secret_secret_version}
   */
   readonly webhookSecretSecretVersion?: string;
   /**
   * service_directory_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#service_directory_config GoogleCloudbuildv2Connection#service_directory_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#service_directory_config GoogleCloudbuildv2Connection#service_directory_config}
   */
   readonly serviceDirectoryConfig?: GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig;
 }
@@ -641,17 +642,427 @@ export class GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference e
     return this._serviceDirectoryConfig.internalValue;
   }
 }
+export interface GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential {
+  /**
+  * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: `projects/*\/secrets/*\/versions/*`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#user_token_secret_version GoogleCloudbuildv2Connection#user_token_secret_version}
+  */
+  readonly userTokenSecretVersion: string;
+}
+
+export function googleCloudbuildv2ConnectionGitlabConfigAuthorizerCredentialToTerraform(struct?: GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference | GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+  }
+}
+
+export class GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._userTokenSecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userTokenSecretVersion = this._userTokenSecretVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._userTokenSecretVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._userTokenSecretVersion = value.userTokenSecretVersion;
+    }
+  }
+
+  // user_token_secret_version - computed: false, optional: false, required: true
+  private _userTokenSecretVersion?: string; 
+  public get userTokenSecretVersion() {
+    return this.getStringAttribute('user_token_secret_version');
+  }
+  public set userTokenSecretVersion(value: string) {
+    this._userTokenSecretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userTokenSecretVersionInput() {
+    return this._userTokenSecretVersion;
+  }
+
+  // username - computed: true, optional: false, required: false
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+}
+export interface GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential {
+  /**
+  * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: `projects/*\/secrets/*\/versions/*`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#user_token_secret_version GoogleCloudbuildv2Connection#user_token_secret_version}
+  */
+  readonly userTokenSecretVersion: string;
+}
+
+export function googleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialToTerraform(struct?: GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference | GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    user_token_secret_version: cdktf.stringToTerraform(struct!.userTokenSecretVersion),
+  }
+}
+
+export class GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._userTokenSecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.userTokenSecretVersion = this._userTokenSecretVersion;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._userTokenSecretVersion = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._userTokenSecretVersion = value.userTokenSecretVersion;
+    }
+  }
+
+  // user_token_secret_version - computed: false, optional: false, required: true
+  private _userTokenSecretVersion?: string; 
+  public get userTokenSecretVersion() {
+    return this.getStringAttribute('user_token_secret_version');
+  }
+  public set userTokenSecretVersion(value: string) {
+    this._userTokenSecretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userTokenSecretVersionInput() {
+    return this._userTokenSecretVersion;
+  }
+
+  // username - computed: true, optional: false, required: false
+  public get username() {
+    return this.getStringAttribute('username');
+  }
+}
+export interface GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig {
+  /**
+  * Required. The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#service GoogleCloudbuildv2Connection#service}
+  */
+  readonly service: string;
+}
+
+export function googleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigToTerraform(struct?: GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference | GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    service: cdktf.stringToTerraform(struct!.service),
+  }
+}
+
+export class GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._service !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.service = this._service;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._service = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._service = value.service;
+    }
+  }
+
+  // service - computed: false, optional: false, required: true
+  private _service?: string; 
+  public get service() {
+    return this.getStringAttribute('service');
+  }
+  public set service(value: string) {
+    this._service = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceInput() {
+    return this._service;
+  }
+}
+export interface GoogleCloudbuildv2ConnectionGitlabConfig {
+  /**
+  * The URI of the GitLab Enterprise host this connection is for. If not specified, the default value is https://gitlab.com.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#host_uri GoogleCloudbuildv2Connection#host_uri}
+  */
+  readonly hostUri?: string;
+  /**
+  * SSL certificate to use for requests to GitLab Enterprise.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#ssl_ca GoogleCloudbuildv2Connection#ssl_ca}
+  */
+  readonly sslCa?: string;
+  /**
+  * Required. Immutable. SecretManager resource containing the webhook secret of a GitLab Enterprise project, formatted as `projects/*\/secrets/*\/versions/*`.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#webhook_secret_secret_version GoogleCloudbuildv2Connection#webhook_secret_secret_version}
+  */
+  readonly webhookSecretSecretVersion: string;
+  /**
+  * authorizer_credential block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#authorizer_credential GoogleCloudbuildv2Connection#authorizer_credential}
+  */
+  readonly authorizerCredential: GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential;
+  /**
+  * read_authorizer_credential block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#read_authorizer_credential GoogleCloudbuildv2Connection#read_authorizer_credential}
+  */
+  readonly readAuthorizerCredential: GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential;
+  /**
+  * service_directory_config block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#service_directory_config GoogleCloudbuildv2Connection#service_directory_config}
+  */
+  readonly serviceDirectoryConfig?: GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig;
+}
+
+export function googleCloudbuildv2ConnectionGitlabConfigToTerraform(struct?: GoogleCloudbuildv2ConnectionGitlabConfigOutputReference | GoogleCloudbuildv2ConnectionGitlabConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    host_uri: cdktf.stringToTerraform(struct!.hostUri),
+    ssl_ca: cdktf.stringToTerraform(struct!.sslCa),
+    webhook_secret_secret_version: cdktf.stringToTerraform(struct!.webhookSecretSecretVersion),
+    authorizer_credential: googleCloudbuildv2ConnectionGitlabConfigAuthorizerCredentialToTerraform(struct!.authorizerCredential),
+    read_authorizer_credential: googleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialToTerraform(struct!.readAuthorizerCredential),
+    service_directory_config: googleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigToTerraform(struct!.serviceDirectoryConfig),
+  }
+}
+
+export class GoogleCloudbuildv2ConnectionGitlabConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleCloudbuildv2ConnectionGitlabConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._hostUri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostUri = this._hostUri;
+    }
+    if (this._sslCa !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslCa = this._sslCa;
+    }
+    if (this._webhookSecretSecretVersion !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.webhookSecretSecretVersion = this._webhookSecretSecretVersion;
+    }
+    if (this._authorizerCredential?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.authorizerCredential = this._authorizerCredential?.internalValue;
+    }
+    if (this._readAuthorizerCredential?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.readAuthorizerCredential = this._readAuthorizerCredential?.internalValue;
+    }
+    if (this._serviceDirectoryConfig?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.serviceDirectoryConfig = this._serviceDirectoryConfig?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleCloudbuildv2ConnectionGitlabConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._hostUri = undefined;
+      this._sslCa = undefined;
+      this._webhookSecretSecretVersion = undefined;
+      this._authorizerCredential.internalValue = undefined;
+      this._readAuthorizerCredential.internalValue = undefined;
+      this._serviceDirectoryConfig.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._hostUri = value.hostUri;
+      this._sslCa = value.sslCa;
+      this._webhookSecretSecretVersion = value.webhookSecretSecretVersion;
+      this._authorizerCredential.internalValue = value.authorizerCredential;
+      this._readAuthorizerCredential.internalValue = value.readAuthorizerCredential;
+      this._serviceDirectoryConfig.internalValue = value.serviceDirectoryConfig;
+    }
+  }
+
+  // host_uri - computed: true, optional: true, required: false
+  private _hostUri?: string; 
+  public get hostUri() {
+    return this.getStringAttribute('host_uri');
+  }
+  public set hostUri(value: string) {
+    this._hostUri = value;
+  }
+  public resetHostUri() {
+    this._hostUri = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostUriInput() {
+    return this._hostUri;
+  }
+
+  // server_version - computed: true, optional: false, required: false
+  public get serverVersion() {
+    return this.getStringAttribute('server_version');
+  }
+
+  // ssl_ca - computed: false, optional: true, required: false
+  private _sslCa?: string; 
+  public get sslCa() {
+    return this.getStringAttribute('ssl_ca');
+  }
+  public set sslCa(value: string) {
+    this._sslCa = value;
+  }
+  public resetSslCa() {
+    this._sslCa = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslCaInput() {
+    return this._sslCa;
+  }
+
+  // webhook_secret_secret_version - computed: false, optional: false, required: true
+  private _webhookSecretSecretVersion?: string; 
+  public get webhookSecretSecretVersion() {
+    return this.getStringAttribute('webhook_secret_secret_version');
+  }
+  public set webhookSecretSecretVersion(value: string) {
+    this._webhookSecretSecretVersion = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get webhookSecretSecretVersionInput() {
+    return this._webhookSecretSecretVersion;
+  }
+
+  // authorizer_credential - computed: false, optional: false, required: true
+  private _authorizerCredential = new GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputReference(this, "authorizer_credential");
+  public get authorizerCredential() {
+    return this._authorizerCredential;
+  }
+  public putAuthorizerCredential(value: GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential) {
+    this._authorizerCredential.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get authorizerCredentialInput() {
+    return this._authorizerCredential.internalValue;
+  }
+
+  // read_authorizer_credential - computed: false, optional: false, required: true
+  private _readAuthorizerCredential = new GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOutputReference(this, "read_authorizer_credential");
+  public get readAuthorizerCredential() {
+    return this._readAuthorizerCredential;
+  }
+  public putReadAuthorizerCredential(value: GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential) {
+    this._readAuthorizerCredential.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readAuthorizerCredentialInput() {
+    return this._readAuthorizerCredential.internalValue;
+  }
+
+  // service_directory_config - computed: false, optional: true, required: false
+  private _serviceDirectoryConfig = new GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference(this, "service_directory_config");
+  public get serviceDirectoryConfig() {
+    return this._serviceDirectoryConfig;
+  }
+  public putServiceDirectoryConfig(value: GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig) {
+    this._serviceDirectoryConfig.internalValue = value;
+  }
+  public resetServiceDirectoryConfig() {
+    this._serviceDirectoryConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get serviceDirectoryConfigInput() {
+    return this._serviceDirectoryConfig.internalValue;
+  }
+}
 export interface GoogleCloudbuildv2ConnectionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#create GoogleCloudbuildv2Connection#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#create GoogleCloudbuildv2Connection#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#delete GoogleCloudbuildv2Connection#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#delete GoogleCloudbuildv2Connection#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection#update GoogleCloudbuildv2Connection#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection#update GoogleCloudbuildv2Connection#update}
   */
   readonly update?: string;
 }
@@ -772,7 +1183,7 @@ export class GoogleCloudbuildv2ConnectionTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection}
 */
 export class GoogleCloudbuildv2Connection extends cdktf.TerraformResource {
 
@@ -786,7 +1197,7 @@ export class GoogleCloudbuildv2Connection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -797,7 +1208,7 @@ export class GoogleCloudbuildv2Connection extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudbuildv2_connection',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.74.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -816,6 +1227,7 @@ export class GoogleCloudbuildv2Connection extends cdktf.TerraformResource {
     this._project = config.project;
     this._githubConfig.internalValue = config.githubConfig;
     this._githubEnterpriseConfig.internalValue = config.githubEnterpriseConfig;
+    this._gitlabConfig.internalValue = config.gitlabConfig;
     this._timeouts.internalValue = config.timeouts;
   }
 
@@ -971,6 +1383,22 @@ export class GoogleCloudbuildv2Connection extends cdktf.TerraformResource {
     return this._githubEnterpriseConfig.internalValue;
   }
 
+  // gitlab_config - computed: false, optional: true, required: false
+  private _gitlabConfig = new GoogleCloudbuildv2ConnectionGitlabConfigOutputReference(this, "gitlab_config");
+  public get gitlabConfig() {
+    return this._gitlabConfig;
+  }
+  public putGitlabConfig(value: GoogleCloudbuildv2ConnectionGitlabConfig) {
+    this._gitlabConfig.internalValue = value;
+  }
+  public resetGitlabConfig() {
+    this._gitlabConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gitlabConfigInput() {
+    return this._gitlabConfig.internalValue;
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleCloudbuildv2ConnectionTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -1001,6 +1429,7 @@ export class GoogleCloudbuildv2Connection extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       github_config: googleCloudbuildv2ConnectionGithubConfigToTerraform(this._githubConfig.internalValue),
       github_enterprise_config: googleCloudbuildv2ConnectionGithubEnterpriseConfigToTerraform(this._githubEnterpriseConfig.internalValue),
+      gitlab_config: googleCloudbuildv2ConnectionGitlabConfigToTerraform(this._gitlabConfig.internalValue),
       timeouts: googleCloudbuildv2ConnectionTimeoutsToTerraform(this._timeouts.internalValue),
     };
   }

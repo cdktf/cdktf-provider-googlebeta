@@ -1,6 +1,6 @@
 # `google_cloud_run_service_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_cloud_run_service_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member).
+Refer to the Terraform Registory for docs: [`google_cloud_run_service_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member).
 
 # `googleCloudRunServiceIamMember` Submodule <a name="`googleCloudRunServiceIamMember` Submodule" id="@cdktf/provider-google-beta.googleCloudRunServiceIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_cloud_run_service_iam_member
 
 ### GoogleCloudRunServiceIamMember <a name="GoogleCloudRunServiceIamMember" id="@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member google_cloud_run_service_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member google_cloud_run_service_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMember.Initializer"></a>
 
@@ -730,9 +730,9 @@ const googleCloudRunServiceIamMemberCondition: googleCloudRunServiceIamMember.Go
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#expression GoogleCloudRunServiceIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#title GoogleCloudRunServiceIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#description GoogleCloudRunServiceIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#expression GoogleCloudRunServiceIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#title GoogleCloudRunServiceIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#description GoogleCloudRunServiceIamMember#description}. |
 
 ---
 
@@ -744,7 +744,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#expression GoogleCloudRunServiceIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#expression GoogleCloudRunServiceIamMember#expression}.
 
 ---
 
@@ -756,7 +756,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#title GoogleCloudRunServiceIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#title GoogleCloudRunServiceIamMember#title}.
 
 ---
 
@@ -768,7 +768,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#description GoogleCloudRunServiceIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#description GoogleCloudRunServiceIamMember#description}.
 
 ---
 
@@ -793,13 +793,13 @@ const googleCloudRunServiceIamMemberConfig: googleCloudRunServiceIamMember.Googl
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#member GoogleCloudRunServiceIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#role GoogleCloudRunServiceIamMember#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.service">service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#service GoogleCloudRunServiceIamMember#service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.member">member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#member GoogleCloudRunServiceIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#role GoogleCloudRunServiceIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.service">service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#service GoogleCloudRunServiceIamMember#service}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberCondition">GoogleCloudRunServiceIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#id GoogleCloudRunServiceIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#location GoogleCloudRunServiceIamMember#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#project GoogleCloudRunServiceIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#id GoogleCloudRunServiceIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#location GoogleCloudRunServiceIamMember#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudRunServiceIamMember.GoogleCloudRunServiceIamMemberConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#project GoogleCloudRunServiceIamMember#project}. |
 
 ---
 
@@ -881,7 +881,7 @@ public readonly member: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#member GoogleCloudRunServiceIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#member GoogleCloudRunServiceIamMember#member}.
 
 ---
 
@@ -893,7 +893,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#role GoogleCloudRunServiceIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#role GoogleCloudRunServiceIamMember#role}.
 
 ---
 
@@ -905,7 +905,7 @@ public readonly service: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#service GoogleCloudRunServiceIamMember#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#service GoogleCloudRunServiceIamMember#service}.
 
 ---
 
@@ -919,7 +919,7 @@ public readonly condition: GoogleCloudRunServiceIamMemberCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#condition GoogleCloudRunServiceIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#condition GoogleCloudRunServiceIamMember#condition}
 
 ---
 
@@ -931,7 +931,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#id GoogleCloudRunServiceIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#id GoogleCloudRunServiceIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -946,7 +946,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#location GoogleCloudRunServiceIamMember#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#location GoogleCloudRunServiceIamMember#location}.
 
 ---
 
@@ -958,7 +958,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloud_run_service_iam_member#project GoogleCloudRunServiceIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloud_run_service_iam_member#project GoogleCloudRunServiceIamMember#project}.
 
 ---
 
