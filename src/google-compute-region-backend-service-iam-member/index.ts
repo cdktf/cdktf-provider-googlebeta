@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleComputeRegionBackendServiceIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member#id GoogleComputeRegionBackendServiceIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member#id GoogleComputeRegionBackendServiceIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member#member GoogleComputeRegionBackendServiceIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member#member GoogleComputeRegionBackendServiceIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member#name GoogleComputeRegionBackendServiceIamMember#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member#name GoogleComputeRegionBackendServiceIamMember#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member#project GoogleComputeRegionBackendServiceIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member#project GoogleComputeRegionBackendServiceIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member#region GoogleComputeRegionBackendServiceIamMember#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member#region GoogleComputeRegionBackendServiceIamMember#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member#role GoogleComputeRegionBackendServiceIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member#role GoogleComputeRegionBackendServiceIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member#condition GoogleComputeRegionBackendServiceIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member#condition GoogleComputeRegionBackendServiceIamMember#condition}
   */
   readonly condition?: GoogleComputeRegionBackendServiceIamMemberCondition;
 }
 export interface GoogleComputeRegionBackendServiceIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member#description GoogleComputeRegionBackendServiceIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member#description GoogleComputeRegionBackendServiceIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member#expression GoogleComputeRegionBackendServiceIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member#expression GoogleComputeRegionBackendServiceIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member#title GoogleComputeRegionBackendServiceIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member#title GoogleComputeRegionBackendServiceIamMember#title}
   */
   readonly title: string;
 }
@@ -161,7 +161,7 @@ export class GoogleComputeRegionBackendServiceIamMemberConditionOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member}
 */
 export class GoogleComputeRegionBackendServiceIamMember extends cdktf.TerraformResource {
 
@@ -175,7 +175,7 @@ export class GoogleComputeRegionBackendServiceIamMember extends cdktf.TerraformR
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -186,7 +186,7 @@ export class GoogleComputeRegionBackendServiceIamMember extends cdktf.TerraformR
       terraformResourceType: 'google_compute_region_backend_service_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.74.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

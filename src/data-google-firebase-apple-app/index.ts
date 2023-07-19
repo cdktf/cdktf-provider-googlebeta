@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_firebase_apple_app
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_apple_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,24 +16,24 @@ export interface DataGoogleFirebaseAppleAppConfig extends cdktf.TerraformMetaArg
   * The globally unique, Firebase-assigned identifier of the App.
 This identifier should be treated as an opaque token, as the data format is not specified.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_firebase_apple_app#app_id DataGoogleFirebaseAppleApp#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_apple_app#app_id DataGoogleFirebaseAppleApp#app_id}
   */
   readonly appId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_firebase_apple_app#id DataGoogleFirebaseAppleApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_apple_app#id DataGoogleFirebaseAppleApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_apple_app#project DataGoogleFirebaseAppleApp#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_firebase_apple_app google_firebase_apple_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app}
 */
 export class DataGoogleFirebaseAppleApp extends cdktf.TerraformDataSource {
 
@@ -47,7 +47,7 @@ export class DataGoogleFirebaseAppleApp extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -58,7 +58,7 @@ export class DataGoogleFirebaseAppleApp extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_firebase_apple_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.72.1',
+        providerVersion: '4.74.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

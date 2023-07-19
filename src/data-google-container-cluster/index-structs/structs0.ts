@@ -6547,6 +6547,11 @@ export class DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference ex
     }
   }
 
+  // tpu_topology - computed: true, optional: false, required: false
+  public get tpuTopology() {
+    return this.getStringAttribute('tpu_topology');
+  }
+
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');

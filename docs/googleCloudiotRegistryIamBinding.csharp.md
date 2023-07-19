@@ -1,6 +1,6 @@
 # `google_cloudiot_registry_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_cloudiot_registry_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding).
+Refer to the Terraform Registory for docs: [`google_cloudiot_registry_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding).
 
 # `googleCloudiotRegistryIamBinding` Submodule <a name="`googleCloudiotRegistryIamBinding` Submodule" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_cloudiot_registry_iam_bindin
 
 ### GoogleCloudiotRegistryIamBinding <a name="GoogleCloudiotRegistryIamBinding" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding google_cloudiot_registry_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding google_cloudiot_registry_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBinding.Initializer"></a>
 
@@ -734,9 +734,9 @@ new GoogleCloudiotRegistryIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#expression GoogleCloudiotRegistryIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#title GoogleCloudiotRegistryIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#description GoogleCloudiotRegistryIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#expression GoogleCloudiotRegistryIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#title GoogleCloudiotRegistryIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#description GoogleCloudiotRegistryIamBinding#description}. |
 
 ---
 
@@ -748,7 +748,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#expression GoogleCloudiotRegistryIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#expression GoogleCloudiotRegistryIamBinding#expression}.
 
 ---
 
@@ -760,7 +760,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#title GoogleCloudiotRegistryIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#title GoogleCloudiotRegistryIamBinding#title}.
 
 ---
 
@@ -772,7 +772,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#description GoogleCloudiotRegistryIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#description GoogleCloudiotRegistryIamBinding#description}.
 
 ---
 
@@ -812,13 +812,13 @@ new GoogleCloudiotRegistryIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#members GoogleCloudiotRegistryIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#name GoogleCloudiotRegistryIamBinding#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#role GoogleCloudiotRegistryIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#members GoogleCloudiotRegistryIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#name GoogleCloudiotRegistryIamBinding#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#role GoogleCloudiotRegistryIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingCondition">GoogleCloudiotRegistryIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#id GoogleCloudiotRegistryIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#project GoogleCloudiotRegistryIamBinding#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#region GoogleCloudiotRegistryIamBinding#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#id GoogleCloudiotRegistryIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#project GoogleCloudiotRegistryIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudiotRegistryIamBinding.GoogleCloudiotRegistryIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#region GoogleCloudiotRegistryIamBinding#region}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#members GoogleCloudiotRegistryIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#members GoogleCloudiotRegistryIamBinding#members}.
 
 ---
 
@@ -912,7 +912,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#name GoogleCloudiotRegistryIamBinding#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#name GoogleCloudiotRegistryIamBinding#name}.
 
 ---
 
@@ -924,7 +924,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#role GoogleCloudiotRegistryIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#role GoogleCloudiotRegistryIamBinding#role}.
 
 ---
 
@@ -938,7 +938,7 @@ public GoogleCloudiotRegistryIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#condition GoogleCloudiotRegistryIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#condition GoogleCloudiotRegistryIamBinding#condition}
 
 ---
 
@@ -950,7 +950,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#id GoogleCloudiotRegistryIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#id GoogleCloudiotRegistryIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#project GoogleCloudiotRegistryIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#project GoogleCloudiotRegistryIamBinding#project}.
 
 ---
 
@@ -977,7 +977,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs/resources/google_cloudiot_registry_iam_binding#region GoogleCloudiotRegistryIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_cloudiot_registry_iam_binding#region GoogleCloudiotRegistryIamBinding#region}.
 
 ---
 
