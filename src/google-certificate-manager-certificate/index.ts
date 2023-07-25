@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleCertificateManagerCertificateConfig extends cdktf.Terrafo
   /**
   * A human-readable description of the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#description GoogleCertificateManagerCertificate#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#description GoogleCertificateManagerCertificate#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#id GoogleCertificateManagerCertificate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#id GoogleCertificateManagerCertificate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface GoogleCertificateManagerCertificateConfig extends cdktf.Terrafo
   /**
   * Set of label tags associated with the Certificate resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#labels GoogleCertificateManagerCertificate#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#labels GoogleCertificateManagerCertificate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The Certificate Manager location. If not specified, "global" is used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#location GoogleCertificateManagerCertificate#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#location GoogleCertificateManagerCertificate#location}
   */
   readonly location?: string;
   /**
@@ -42,11 +37,11 @@ export interface GoogleCertificateManagerCertificateConfig extends cdktf.Terrafo
 The name must be 1-64 characters long, and match the regular expression [a-zA-Z][a-zA-Z0-9_-]* which means the first character must be a letter,
 and all following characters must be a dash, underscore, letter or digit.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#name GoogleCertificateManagerCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#name GoogleCertificateManagerCertificate#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#project GoogleCertificateManagerCertificate#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#project GoogleCertificateManagerCertificate#project}
   */
   readonly project?: string;
   /**
@@ -59,25 +54,25 @@ EDGE_CACHE: Certificates with scope EDGE_CACHE are special-purposed certificates
 served from non-core Google data centers.
 Currently allowed only for managed certificates.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#scope GoogleCertificateManagerCertificate#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#scope GoogleCertificateManagerCertificate#scope}
   */
   readonly scope?: string;
   /**
   * managed block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#managed GoogleCertificateManagerCertificate#managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#managed GoogleCertificateManagerCertificate#managed}
   */
   readonly managed?: GoogleCertificateManagerCertificateManaged;
   /**
   * self_managed block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#self_managed GoogleCertificateManagerCertificate#self_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#self_managed GoogleCertificateManagerCertificate#self_managed}
   */
   readonly selfManaged?: GoogleCertificateManagerCertificateSelfManaged;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#timeouts GoogleCertificateManagerCertificate#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#timeouts GoogleCertificateManagerCertificate#timeouts}
   */
   readonly timeouts?: GoogleCertificateManagerCertificateTimeouts;
 }
@@ -233,14 +228,14 @@ export interface GoogleCertificateManagerCertificateManaged {
   /**
   * Authorizations that will be used for performing domain authorization. Either issuanceConfig or dnsAuthorizations should be specificed, but not both.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#dns_authorizations GoogleCertificateManagerCertificate#dns_authorizations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#dns_authorizations GoogleCertificateManagerCertificate#dns_authorizations}
   */
   readonly dnsAuthorizations?: string[];
   /**
   * The domains for which a managed SSL certificate will be generated.
 Wildcard domains are only supported with DNS challenge resolution
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#domains GoogleCertificateManagerCertificate#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#domains GoogleCertificateManagerCertificate#domains}
   */
   readonly domains?: string[];
   /**
@@ -248,7 +243,7 @@ Wildcard domains are only supported with DNS challenge resolution
 If this field is not set, the certificates will instead be publicly signed as documented at https://cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs#caa.
 Either issuanceConfig or dnsAuthorizations should be specificed, but not both.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#issuance_config GoogleCertificateManagerCertificate#issuance_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#issuance_config GoogleCertificateManagerCertificate#issuance_config}
   */
   readonly issuanceConfig?: string;
 }
@@ -380,7 +375,7 @@ export interface GoogleCertificateManagerCertificateSelfManaged {
 
 Leaf certificate comes first, followed by intermediate ones if any.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#certificate_pem GoogleCertificateManagerCertificate#certificate_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#certificate_pem GoogleCertificateManagerCertificate#certificate_pem}
   */
   readonly certificatePem?: string;
   /**
@@ -388,19 +383,19 @@ Leaf certificate comes first, followed by intermediate ones if any.
 
 Leaf certificate comes first, followed by intermediate ones if any.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#pem_certificate GoogleCertificateManagerCertificate#pem_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#pem_certificate GoogleCertificateManagerCertificate#pem_certificate}
   */
   readonly pemCertificate?: string;
   /**
   * The private key of the leaf certificate in PEM-encoded form.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#pem_private_key GoogleCertificateManagerCertificate#pem_private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#pem_private_key GoogleCertificateManagerCertificate#pem_private_key}
   */
   readonly pemPrivateKey?: string;
   /**
   * **Deprecated** The private key of the leaf certificate in PEM-encoded form.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#private_key_pem GoogleCertificateManagerCertificate#private_key_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#private_key_pem GoogleCertificateManagerCertificate#private_key_pem}
   */
   readonly privateKeyPem?: string;
 }
@@ -534,15 +529,15 @@ export class GoogleCertificateManagerCertificateSelfManagedOutputReference exten
 }
 export interface GoogleCertificateManagerCertificateTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#create GoogleCertificateManagerCertificate#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#create GoogleCertificateManagerCertificate#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#delete GoogleCertificateManagerCertificate#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#delete GoogleCertificateManagerCertificate#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate#update GoogleCertificateManagerCertificate#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate#update GoogleCertificateManagerCertificate#update}
   */
   readonly update?: string;
 }
@@ -663,7 +658,7 @@ export class GoogleCertificateManagerCertificateTimeoutsOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate}
 */
 export class GoogleCertificateManagerCertificate extends cdktf.TerraformResource {
 
@@ -677,7 +672,7 @@ export class GoogleCertificateManagerCertificate extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -688,7 +683,7 @@ export class GoogleCertificateManagerCertificate extends cdktf.TerraformResource
       terraformResourceType: 'google_certificate_manager_certificate',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.74.0',
+        providerVersion: '4.75.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

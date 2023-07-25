@@ -811,6 +811,7 @@ The following submodules are available:
 - [googleLoggingProjectBucketConfig](./googleLoggingProjectBucketConfig.java.md)
 - [googleLoggingProjectExclusion](./googleLoggingProjectExclusion.java.md)
 - [googleLoggingProjectSink](./googleLoggingProjectSink.java.md)
+- [googleLookerInstance](./googleLookerInstance.java.md)
 - [googleMemcacheInstance](./googleMemcacheInstance.java.md)
 - [googleMlEngineModel](./googleMlEngineModel.java.md)
 - [googleMonitoringAlertPolicy](./googleMonitoringAlertPolicy.java.md)

@@ -811,6 +811,7 @@ The following submodules are available:
 - [googleLoggingProjectBucketConfig](./googleLoggingProjectBucketConfig.typescript.md)
 - [googleLoggingProjectExclusion](./googleLoggingProjectExclusion.typescript.md)
 - [googleLoggingProjectSink](./googleLoggingProjectSink.typescript.md)
+- [googleLookerInstance](./googleLookerInstance.typescript.md)
 - [googleMemcacheInstance](./googleMemcacheInstance.typescript.md)
 - [googleMlEngineModel](./googleMlEngineModel.typescript.md)
 - [googleMonitoringAlertPolicy](./googleMonitoringAlertPolicy.typescript.md)

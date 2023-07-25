@@ -811,6 +811,7 @@ The following submodules are available:
 - [googleLoggingProjectBucketConfig](./googleLoggingProjectBucketConfig.python.md)
 - [googleLoggingProjectExclusion](./googleLoggingProjectExclusion.python.md)
 - [googleLoggingProjectSink](./googleLoggingProjectSink.python.md)
+- [googleLookerInstance](./googleLookerInstance.python.md)
 - [googleMemcacheInstance](./googleMemcacheInstance.python.md)
 - [googleMlEngineModel](./googleMlEngineModel.python.md)
 - [googleMonitoringAlertPolicy](./googleMonitoringAlertPolicy.python.md)
