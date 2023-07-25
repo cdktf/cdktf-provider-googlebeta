@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +13,42 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleKmsKeyRingIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member#id GoogleKmsKeyRingIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member#id GoogleKmsKeyRingIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member#key_ring_id GoogleKmsKeyRingIamMember#key_ring_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member#key_ring_id GoogleKmsKeyRingIamMember#key_ring_id}
   */
   readonly keyRingId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member#member GoogleKmsKeyRingIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member#member GoogleKmsKeyRingIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member#role GoogleKmsKeyRingIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member#role GoogleKmsKeyRingIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member#condition GoogleKmsKeyRingIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member#condition GoogleKmsKeyRingIamMember#condition}
   */
   readonly condition?: GoogleKmsKeyRingIamMemberCondition;
 }
 export interface GoogleKmsKeyRingIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member#description GoogleKmsKeyRingIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member#description GoogleKmsKeyRingIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member#expression GoogleKmsKeyRingIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member#expression GoogleKmsKeyRingIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member#title GoogleKmsKeyRingIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member#title GoogleKmsKeyRingIamMember#title}
   */
   readonly title: string;
 }
@@ -153,7 +153,7 @@ export class GoogleKmsKeyRingIamMemberConditionOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member google_kms_key_ring_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member google_kms_key_ring_iam_member}
 */
 export class GoogleKmsKeyRingIamMember extends cdktf.TerraformResource {
 
@@ -167,7 +167,7 @@ export class GoogleKmsKeyRingIamMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_kms_key_ring_iam_member google_kms_key_ring_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_iam_member google_kms_key_ring_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -178,7 +178,7 @@ export class GoogleKmsKeyRingIamMember extends cdktf.TerraformResource {
       terraformResourceType: 'google_kms_key_ring_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.74.0',
+        providerVersion: '4.75.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

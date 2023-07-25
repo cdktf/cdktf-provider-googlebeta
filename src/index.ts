@@ -569,6 +569,7 @@ export * as googleLoggingOrganizationSink from './google-logging-organization-si
 export * as googleLoggingProjectBucketConfig from './google-logging-project-bucket-config';
 export * as googleLoggingProjectExclusion from './google-logging-project-exclusion';
 export * as googleLoggingProjectSink from './google-logging-project-sink';
+export * as googleLookerInstance from './google-looker-instance';
 export * as googleMemcacheInstance from './google-memcache-instance';
 export * as googleMlEngineModel from './google-ml-engine-model';
 export * as googleMonitoringAlertPolicy from './google-monitoring-alert-policy';

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_android_app_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/data-sources/google_firebase_android_app_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataGoogleFirebaseAndroidAppConfigAConfig extends cdktf.Terrafo
   /**
   * The id of the Firebase Android App.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_android_app_config#app_id DataGoogleFirebaseAndroidAppConfigA#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/data-sources/google_firebase_android_app_config#app_id DataGoogleFirebaseAndroidAppConfigA#app_id}
   */
   readonly appId: string;
   /**
   * The project id of the Firebase Android App.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_android_app_config#project DataGoogleFirebaseAndroidAppConfigA#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/data-sources/google_firebase_android_app_config#project DataGoogleFirebaseAndroidAppConfigA#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_android_app_config google_firebase_android_app_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/data-sources/google_firebase_android_app_config google_firebase_android_app_config}
 */
 export class DataGoogleFirebaseAndroidAppConfigA extends cdktf.TerraformDataSource {
 
@@ -41,7 +41,7 @@ export class DataGoogleFirebaseAndroidAppConfigA extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/data-sources/google_firebase_android_app_config google_firebase_android_app_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/data-sources/google_firebase_android_app_config google_firebase_android_app_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -52,7 +52,7 @@ export class DataGoogleFirebaseAndroidAppConfigA extends cdktf.TerraformDataSour
       terraformResourceType: 'google_firebase_android_app_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.74.0',
+        providerVersion: '4.75.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

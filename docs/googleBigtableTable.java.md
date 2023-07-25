@@ -1,6 +1,6 @@
 # `google_bigtable_table`
 
-Refer to the Terraform Registory for docs: [`google_bigtable_table`](https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table).
+Refer to the Terraform Registory for docs: [`google_bigtable_table`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table).
 
 # `googleBigtableTable` Submodule <a name="`googleBigtableTable` Submodule" id="@cdktf/provider-google-beta.googleBigtableTable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_bigtable_table`](https://reg
 
 ### GoogleBigtableTable <a name="GoogleBigtableTable" id="@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table google_bigtable_table}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table google_bigtable_table}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer"></a>
 
@@ -29,6 +29,7 @@ GoogleBigtableTable.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(RemoteExecProvisioner>)
     .instanceName(java.lang.String)
     .name(java.lang.String)
+//  .changeStreamRetention(java.lang.String)
 //  .columnFamily(IResolvable)
 //  .columnFamily(java.util.List<GoogleBigtableTableColumnFamily>)
 //  .deletionProtection(java.lang.String)
@@ -52,9 +53,10 @@ GoogleBigtableTable.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.instanceName">instanceName</a></code> | <code>java.lang.String</code> | The name of the Bigtable instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the table. Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.changeStreamRetention">changeStreamRetention</a></code> | <code>java.lang.String</code> | Duration to retain change stream data for the table. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.columnFamily">columnFamily</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamily">GoogleBigtableTableColumnFamily</a>></code> | column_family block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.deletionProtection">deletionProtection</a></code> | <code>java.lang.String</code> | A field to make the table protected against data loss i.e. when set to PROTECTED, deleting the table, the column families in the table, and the instance containing the table would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#id GoogleBigtableTable#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#id GoogleBigtableTable#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.splitKeys">splitKeys</a></code> | <code>java.util.List<java.lang.String></code> | A list of predefined keys to split the table on. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts">GoogleBigtableTableTimeouts</a></code> | timeouts block. |
@@ -127,7 +129,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the Bigtable instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#instance_name GoogleBigtableTable#instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#instance_name GoogleBigtableTable#instance_name}
 
 ---
 
@@ -137,7 +139,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The name of the table. Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#name GoogleBigtableTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#name GoogleBigtableTable#name}
+
+---
+
+##### `changeStreamRetention`<sup>Optional</sup> <a name="changeStreamRetention" id="@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.Initializer.parameter.changeStreamRetention"></a>
+
+- *Type:* java.lang.String
+
+Duration to retain change stream data for the table.
+
+Set to 0 to disable. Must be between 1 and 7 days.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#change_stream_retention GoogleBigtableTable#change_stream_retention}
 
 ---
 
@@ -147,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 column_family block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#column_family GoogleBigtableTable#column_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#column_family GoogleBigtableTable#column_family}
 
 ---
 
@@ -157,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A field to make the table protected against data loss i.e. when set to PROTECTED, deleting the table, the column families in the table, and the instance containing the table would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#deletion_protection GoogleBigtableTable#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#deletion_protection GoogleBigtableTable#deletion_protection}
 
 ---
 
@@ -165,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#id GoogleBigtableTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#id GoogleBigtableTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -180,7 +194,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#project GoogleBigtableTable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#project GoogleBigtableTable#project}
 
 ---
 
@@ -192,7 +206,7 @@ A list of predefined keys to split the table on.
 
 !> Warning: Modifying the split_keys of an existing table will cause Terraform to delete/recreate the entire google_bigtable_table resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#split_keys GoogleBigtableTable#split_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#split_keys GoogleBigtableTable#split_keys}
 
 ---
 
@@ -202,7 +216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#timeouts GoogleBigtableTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#timeouts GoogleBigtableTable#timeouts}
 
 ---
 
@@ -228,6 +242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.putColumnFamily">putColumnFamily</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.resetChangeStreamRetention">resetChangeStreamRetention</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.resetColumnFamily">resetColumnFamily</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.resetDeletionProtection">resetDeletionProtection</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.resetId">resetId</a></code> | *No description.* |
@@ -445,6 +460,12 @@ public void putTimeouts(GoogleBigtableTableTimeouts value)
 
 ---
 
+##### `resetChangeStreamRetention` <a name="resetChangeStreamRetention" id="@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.resetChangeStreamRetention"></a>
+
+```java
+public void resetChangeStreamRetention()
+```
+
 ##### `resetColumnFamily` <a name="resetColumnFamily" id="@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.resetColumnFamily"></a>
 
 ```java
@@ -571,6 +592,7 @@ GoogleBigtableTable.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.columnFamily">columnFamily</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyList">GoogleBigtableTableColumnFamilyList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeoutsOutputReference">GoogleBigtableTableTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.changeStreamRetentionInput">changeStreamRetentionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.columnFamilyInput">columnFamilyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamily">GoogleBigtableTableColumnFamily</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -579,6 +601,7 @@ GoogleBigtableTable.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.splitKeysInput">splitKeysInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts">GoogleBigtableTableTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.changeStreamRetention">changeStreamRetention</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.instanceName">instanceName</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -750,6 +773,16 @@ public GoogleBigtableTableTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `changeStreamRetentionInput`<sup>Optional</sup> <a name="changeStreamRetentionInput" id="@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.changeStreamRetentionInput"></a>
+
+```java
+public java.lang.String getChangeStreamRetentionInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `columnFamilyInput`<sup>Optional</sup> <a name="columnFamilyInput" id="@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.columnFamilyInput"></a>
 
 ```java
@@ -827,6 +860,16 @@ public java.lang.Object getTimeoutsInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts">GoogleBigtableTableTimeouts</a>
+
+---
+
+##### `changeStreamRetention`<sup>Required</sup> <a name="changeStreamRetention" id="@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable.property.changeStreamRetention"></a>
+
+```java
+public java.lang.String getChangeStreamRetention();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -940,7 +983,7 @@ public java.lang.String getFamily();
 
 The name of the column family.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#family GoogleBigtableTable#family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#family GoogleBigtableTable#family}
 
 ---
 
@@ -965,6 +1008,7 @@ GoogleBigtableTableConfig.builder()
 //  .provisioners(RemoteExecProvisioner>)
     .instanceName(java.lang.String)
     .name(java.lang.String)
+//  .changeStreamRetention(java.lang.String)
 //  .columnFamily(IResolvable)
 //  .columnFamily(java.util.List<GoogleBigtableTableColumnFamily>)
 //  .deletionProtection(java.lang.String)
@@ -988,9 +1032,10 @@ GoogleBigtableTableConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.instanceName">instanceName</a></code> | <code>java.lang.String</code> | The name of the Bigtable instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the table. Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.changeStreamRetention">changeStreamRetention</a></code> | <code>java.lang.String</code> | Duration to retain change stream data for the table. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.columnFamily">columnFamily</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamily">GoogleBigtableTableColumnFamily</a>></code> | column_family block. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.deletionProtection">deletionProtection</a></code> | <code>java.lang.String</code> | A field to make the table protected against data loss i.e. when set to PROTECTED, deleting the table, the column families in the table, and the instance containing the table would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#id GoogleBigtableTable#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#id GoogleBigtableTable#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.project">project</a></code> | <code>java.lang.String</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.splitKeys">splitKeys</a></code> | <code>java.util.List<java.lang.String></code> | A list of predefined keys to split the table on. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts">GoogleBigtableTableTimeouts</a></code> | timeouts block. |
@@ -1077,7 +1122,7 @@ public java.lang.String getInstanceName();
 
 The name of the Bigtable instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#instance_name GoogleBigtableTable#instance_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#instance_name GoogleBigtableTable#instance_name}
 
 ---
 
@@ -1091,7 +1136,23 @@ public java.lang.String getName();
 
 The name of the table. Must be 1-50 characters and must only contain hyphens, underscores, periods, letters and numbers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#name GoogleBigtableTable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#name GoogleBigtableTable#name}
+
+---
+
+##### `changeStreamRetention`<sup>Optional</sup> <a name="changeStreamRetention" id="@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig.property.changeStreamRetention"></a>
+
+```java
+public java.lang.String getChangeStreamRetention();
+```
+
+- *Type:* java.lang.String
+
+Duration to retain change stream data for the table.
+
+Set to 0 to disable. Must be between 1 and 7 days.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#change_stream_retention GoogleBigtableTable#change_stream_retention}
 
 ---
 
@@ -1105,7 +1166,7 @@ public java.lang.Object getColumnFamily();
 
 column_family block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#column_family GoogleBigtableTable#column_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#column_family GoogleBigtableTable#column_family}
 
 ---
 
@@ -1119,7 +1180,7 @@ public java.lang.String getDeletionProtection();
 
 A field to make the table protected against data loss i.e. when set to PROTECTED, deleting the table, the column families in the table, and the instance containing the table would be prohibited. If not provided, currently deletion protection will be set to UNPROTECTED as it is the API default value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#deletion_protection GoogleBigtableTable#deletion_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#deletion_protection GoogleBigtableTable#deletion_protection}
 
 ---
 
@@ -1131,7 +1192,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#id GoogleBigtableTable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#id GoogleBigtableTable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1150,7 +1211,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#project GoogleBigtableTable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#project GoogleBigtableTable#project}
 
 ---
 
@@ -1166,7 +1227,7 @@ A list of predefined keys to split the table on.
 
 !> Warning: Modifying the split_keys of an existing table will cause Terraform to delete/recreate the entire google_bigtable_table resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#split_keys GoogleBigtableTable#split_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#split_keys GoogleBigtableTable#split_keys}
 
 ---
 
@@ -1180,7 +1241,7 @@ public GoogleBigtableTableTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#timeouts GoogleBigtableTable#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#timeouts GoogleBigtableTable#timeouts}
 
 ---
 
@@ -1201,8 +1262,8 @@ GoogleBigtableTableTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#create GoogleBigtableTable#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#update GoogleBigtableTable#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#create GoogleBigtableTable#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#update GoogleBigtableTable#update}. |
 
 ---
 
@@ -1214,7 +1275,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#create GoogleBigtableTable#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#create GoogleBigtableTable#create}.
 
 ---
 
@@ -1226,7 +1287,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_bigtable_table#update GoogleBigtableTable#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_bigtable_table#update GoogleBigtableTable#update}.
 
 ---
 

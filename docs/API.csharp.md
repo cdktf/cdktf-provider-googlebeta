@@ -811,6 +811,7 @@ The following submodules are available:
 - [googleLoggingProjectBucketConfig](./googleLoggingProjectBucketConfig.csharp.md)
 - [googleLoggingProjectExclusion](./googleLoggingProjectExclusion.csharp.md)
 - [googleLoggingProjectSink](./googleLoggingProjectSink.csharp.md)
+- [googleLookerInstance](./googleLookerInstance.csharp.md)
 - [googleMemcacheInstance](./googleMemcacheInstance.csharp.md)
 - [googleMlEngineModel](./googleMlEngineModel.csharp.md)
 - [googleMonitoringAlertPolicy](./googleMonitoringAlertPolicy.csharp.md)
