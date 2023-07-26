@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.NewGoogleComputeManagedSslCertificate(scope Construct, id *string, config GoogleComputeManagedSslCertificateConfig) GoogleComputeManagedSslCertificate
 ```
@@ -352,7 +352,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificate_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificate_IsTerraformResource(x interface{}) *bool
 ```
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputemanagedsslcertificate"
 
 &googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificateConfig {
 	Connection: interface{},
@@ -830,10 +830,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomput
 	CertificateId: *f64,
 	Description: *string,
 	Id: *string,
-	Managed: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManaged,
+	Managed: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManaged,
 	Name: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateTimeouts,
 	Type: *string,
 }
 ```
@@ -1058,7 +1058,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManaged.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputemanagedsslcertificate"
 
 &googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificateManaged {
 	Domains: *[]*string,
@@ -1095,7 +1095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputemanagedsslcertificate"
 
 &googlecomputemanagedsslcertificate.GoogleComputeManagedSslCertificateTimeouts {
 	Create: *string,
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateManagedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.NewGoogleComputeManagedSslCertificateManagedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeManagedSslCertificateManagedOutputReference
 ```
@@ -1414,7 +1414,7 @@ func InternalValue() GoogleComputeManagedSslCertificateManaged
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeManagedSslCertificate.GoogleComputeManagedSslCertificateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputemanagedsslcertificate"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputemanagedsslcertificate"
 
 googlecomputemanagedsslcertificate.NewGoogleComputeManagedSslCertificateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleComputeManagedSslCertificateTimeoutsOutputReference
 ```
