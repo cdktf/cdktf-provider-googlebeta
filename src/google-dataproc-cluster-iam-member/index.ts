@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,50 +13,50 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleDataprocClusterIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member#cluster GoogleDataprocClusterIamMember#cluster}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member#cluster GoogleDataprocClusterIamMember#cluster}
   */
   readonly cluster: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member#id GoogleDataprocClusterIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member#id GoogleDataprocClusterIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member#member GoogleDataprocClusterIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member#member GoogleDataprocClusterIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member#project GoogleDataprocClusterIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member#project GoogleDataprocClusterIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member#region GoogleDataprocClusterIamMember#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member#region GoogleDataprocClusterIamMember#region}
   */
   readonly region?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member#role GoogleDataprocClusterIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member#role GoogleDataprocClusterIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member#condition GoogleDataprocClusterIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member#condition GoogleDataprocClusterIamMember#condition}
   */
   readonly condition?: GoogleDataprocClusterIamMemberCondition;
 }
 export interface GoogleDataprocClusterIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member#description GoogleDataprocClusterIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member#description GoogleDataprocClusterIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member#expression GoogleDataprocClusterIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member#expression GoogleDataprocClusterIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member#title GoogleDataprocClusterIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member#title GoogleDataprocClusterIamMember#title}
   */
   readonly title: string;
 }
@@ -161,7 +161,7 @@ export class GoogleDataprocClusterIamMemberConditionOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member google_dataproc_cluster_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member google_dataproc_cluster_iam_member}
 */
 export class GoogleDataprocClusterIamMember extends cdktf.TerraformResource {
 
@@ -175,7 +175,7 @@ export class GoogleDataprocClusterIamMember extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_dataproc_cluster_iam_member google_dataproc_cluster_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_cluster_iam_member google_dataproc_cluster_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -186,7 +186,7 @@ export class GoogleDataprocClusterIamMember extends cdktf.TerraformResource {
       terraformResourceType: 'google_dataproc_cluster_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.75.0',
+        providerVersion: '4.75.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleSourcerepoRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#id GoogleSourcerepoRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#id GoogleSourcerepoRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,23 +23,23 @@ export interface GoogleSourcerepoRepositoryConfig extends cdktf.TerraformMetaArg
   * Resource name of the repository, of the form '{{repo}}'.
 The repo name may contain slashes. eg, 'name/with/slash'
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#name GoogleSourcerepoRepository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#name GoogleSourcerepoRepository#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#project GoogleSourcerepoRepository#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#project GoogleSourcerepoRepository#project}
   */
   readonly project?: string;
   /**
   * pubsub_configs block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#pubsub_configs GoogleSourcerepoRepository#pubsub_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#pubsub_configs GoogleSourcerepoRepository#pubsub_configs}
   */
   readonly pubsubConfigs?: GoogleSourcerepoRepositoryPubsubConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#timeouts GoogleSourcerepoRepository#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#timeouts GoogleSourcerepoRepository#timeouts}
   */
   readonly timeouts?: GoogleSourcerepoRepositoryTimeouts;
 }
@@ -49,7 +49,7 @@ export interface GoogleSourcerepoRepositoryPubsubConfigs {
 - PROTOBUF: The message payload is a serialized protocol buffer of SourceRepoEvent.
 - JSON: The message payload is a JSON string of SourceRepoEvent. Possible values: ["PROTOBUF", "JSON"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#message_format GoogleSourcerepoRepository#message_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#message_format GoogleSourcerepoRepository#message_format}
   */
   readonly messageFormat: string;
   /**
@@ -58,11 +58,11 @@ This service account needs to be in the same project as the PubsubConfig. When a
 the caller needs to have iam.serviceAccounts.actAs permission on this service account.
 If unspecified, it defaults to the compute engine default service account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#service_account_email GoogleSourcerepoRepository#service_account_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#service_account_email GoogleSourcerepoRepository#service_account_email}
   */
   readonly serviceAccountEmail?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#topic GoogleSourcerepoRepository#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#topic GoogleSourcerepoRepository#topic}
   */
   readonly topic: string;
 }
@@ -199,15 +199,15 @@ export class GoogleSourcerepoRepositoryPubsubConfigsList extends cdktf.ComplexLi
 }
 export interface GoogleSourcerepoRepositoryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#create GoogleSourcerepoRepository#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#create GoogleSourcerepoRepository#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#delete GoogleSourcerepoRepository#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#delete GoogleSourcerepoRepository#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository#update GoogleSourcerepoRepository#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository#update GoogleSourcerepoRepository#update}
   */
   readonly update?: string;
 }
@@ -328,7 +328,7 @@ export class GoogleSourcerepoRepositoryTimeoutsOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository google_sourcerepo_repository}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository google_sourcerepo_repository}
 */
 export class GoogleSourcerepoRepository extends cdktf.TerraformResource {
 
@@ -342,7 +342,7 @@ export class GoogleSourcerepoRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_sourcerepo_repository google_sourcerepo_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_sourcerepo_repository google_sourcerepo_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -353,7 +353,7 @@ export class GoogleSourcerepoRepository extends cdktf.TerraformResource {
       terraformResourceType: 'google_sourcerepo_repository',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.75.0',
+        providerVersion: '4.75.1',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `google_network_services_gateway`
 
-Refer to the Terraform Registory for docs: [`google_network_services_gateway`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway).
+Refer to the Terraform Registory for docs: [`google_network_services_gateway`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway).
 
 # `googleNetworkServicesGateway` Submodule <a name="`googleNetworkServicesGateway` Submodule" id="@cdktf/provider-google-beta.googleNetworkServicesGateway"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_network_services_gateway`](h
 
 ### GoogleNetworkServicesGateway <a name="GoogleNetworkServicesGateway" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway google_network_services_gateway}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway google_network_services_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGateway.Initializer"></a>
 
@@ -1076,11 +1076,11 @@ new GoogleNetworkServicesGatewayConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.deleteSwgAutogenRouterOnDestroy">DeleteSwgAutogenRouterOnDestroy</a></code> | <code>object</code> | When deleting a gateway of type 'SECURE_WEB_GATEWAY', this boolean option will also delete auto generated router by the gateway creation. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.description">Description</a></code> | <code>string</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.gatewaySecurityPolicy">GatewaySecurityPolicy</a></code> | <code>string</code> | A fully-qualified GatewaySecurityPolicy URL reference. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#id GoogleNetworkServicesGateway#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#id GoogleNetworkServicesGateway#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Set of label tags associated with the Gateway resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.location">Location</a></code> | <code>string</code> | The location of the gateway. The default value is 'global'. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.network">Network</a></code> | <code>string</code> | The relative resource name identifying the VPC network that is using this configuration. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#project GoogleNetworkServicesGateway#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#project GoogleNetworkServicesGateway#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.serverTlsPolicy">ServerTlsPolicy</a></code> | <code>string</code> | A fully-qualified ServerTLSPolicy URL reference. Specifies how TLS traffic is terminated. If empty, TLS termination is disabled. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.subnetwork">Subnetwork</a></code> | <code>string</code> | The relative resource name identifying the subnetwork in which this SWG is allocated. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts">GoogleNetworkServicesGatewayTimeouts</a></code> | timeouts block. |
@@ -1167,7 +1167,7 @@ public string Name { get; set; }
 
 Short name of the Gateway resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#name GoogleNetworkServicesGateway#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#name GoogleNetworkServicesGateway#name}
 
 ---
 
@@ -1184,7 +1184,7 @@ One or more port numbers (1-65535), on which the Gateway will receive traffic.
 The proxy binds to the specified ports. Gateways of type 'SECURE_WEB_GATEWAY' are
 limited to 1 port. Gateways of type 'OPEN_MESH' listen on 0.0.0.0 and support multiple ports.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#ports GoogleNetworkServicesGateway#ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#ports GoogleNetworkServicesGateway#ports}
 
 ---
 
@@ -1203,7 +1203,7 @@ The configuration for multiple Gateway instances with the same scope will be mer
 a single coniguration to the proxy/load balancer.
 Max length 64 characters. Scope should start with a letter and can only have letters, numbers, hyphens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#scope GoogleNetworkServicesGateway#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#scope GoogleNetworkServicesGateway#scope}
 
 ---
 
@@ -1217,7 +1217,7 @@ public string Type { get; set; }
 
 Immutable. The type of the customer-managed gateway. Possible values are: * OPEN_MESH * SECURE_WEB_GATEWAY. Possible values: ["TYPE_UNSPECIFIED", "OPEN_MESH", "SECURE_WEB_GATEWAY"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#type GoogleNetworkServicesGateway#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#type GoogleNetworkServicesGateway#type}
 
 ---
 
@@ -1235,7 +1235,7 @@ When no address is provided,
 an IP from the subnetwork is allocated This field only applies to gateways of type 'SECURE_WEB_GATEWAY'.
 Gateways of type 'OPEN_MESH' listen on 0.0.0.0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#addresses GoogleNetworkServicesGateway#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#addresses GoogleNetworkServicesGateway#addresses}
 
 ---
 
@@ -1252,7 +1252,7 @@ A fully-qualified Certificates URL reference.
 The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
 This feature only applies to gateways of type 'SECURE_WEB_GATEWAY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#certificate_urls GoogleNetworkServicesGateway#certificate_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#certificate_urls GoogleNetworkServicesGateway#certificate_urls}
 
 ---
 
@@ -1268,7 +1268,7 @@ When deleting a gateway of type 'SECURE_WEB_GATEWAY', this boolean option will a
 
 If there is no other gateway of type 'SECURE_WEB_GATEWAY' remaining for that region and network it will be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#delete_swg_autogen_router_on_destroy GoogleNetworkServicesGateway#delete_swg_autogen_router_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#delete_swg_autogen_router_on_destroy GoogleNetworkServicesGateway#delete_swg_autogen_router_on_destroy}
 
 ---
 
@@ -1282,7 +1282,7 @@ public string Description { get; set; }
 
 A free-text description of the resource. Max length 1024 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#description GoogleNetworkServicesGateway#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#description GoogleNetworkServicesGateway#description}
 
 ---
 
@@ -1300,7 +1300,7 @@ Defines how a server should apply security policy to inbound (VM to Proxy) initi
 For example: 'projects/*/locations/*/gatewaySecurityPolicies/swg-policy'.
 This policy is specific to gateways of type 'SECURE_WEB_GATEWAY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#gateway_security_policy GoogleNetworkServicesGateway#gateway_security_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#gateway_security_policy GoogleNetworkServicesGateway#gateway_security_policy}
 
 ---
 
@@ -1312,7 +1312,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#id GoogleNetworkServicesGateway#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#id GoogleNetworkServicesGateway#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1329,7 +1329,7 @@ public System.Collections.Generic.IDictionary<string, string> Labels { get; set;
 
 Set of label tags associated with the Gateway resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#labels GoogleNetworkServicesGateway#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#labels GoogleNetworkServicesGateway#labels}
 
 ---
 
@@ -1343,7 +1343,7 @@ public string Location { get; set; }
 
 The location of the gateway. The default value is 'global'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#location GoogleNetworkServicesGateway#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#location GoogleNetworkServicesGateway#location}
 
 ---
 
@@ -1360,7 +1360,7 @@ The relative resource name identifying the VPC network that is using this config
 For example: 'projects/*/global/networks/network-1'.
 Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#network GoogleNetworkServicesGateway#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#network GoogleNetworkServicesGateway#network}
 
 ---
 
@@ -1372,7 +1372,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#project GoogleNetworkServicesGateway#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#project GoogleNetworkServicesGateway#project}.
 
 ---
 
@@ -1386,7 +1386,7 @@ public string ServerTlsPolicy { get; set; }
 
 A fully-qualified ServerTLSPolicy URL reference. Specifies how TLS traffic is terminated. If empty, TLS termination is disabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#server_tls_policy GoogleNetworkServicesGateway#server_tls_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#server_tls_policy GoogleNetworkServicesGateway#server_tls_policy}
 
 ---
 
@@ -1403,7 +1403,7 @@ The relative resource name identifying the subnetwork in which this SWG is alloc
 For example: 'projects/*/regions/us-central1/subnetworks/network-1'.
 Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#subnetwork GoogleNetworkServicesGateway#subnetwork}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#subnetwork GoogleNetworkServicesGateway#subnetwork}
 
 ---
 
@@ -1417,7 +1417,7 @@ public GoogleNetworkServicesGatewayTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#timeouts GoogleNetworkServicesGateway#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#timeouts GoogleNetworkServicesGateway#timeouts}
 
 ---
 
@@ -1439,9 +1439,9 @@ new GoogleNetworkServicesGatewayTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#create GoogleNetworkServicesGateway#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#delete GoogleNetworkServicesGateway#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#update GoogleNetworkServicesGateway#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#create GoogleNetworkServicesGateway#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#delete GoogleNetworkServicesGateway#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesGateway.GoogleNetworkServicesGatewayTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#update GoogleNetworkServicesGateway#update}. |
 
 ---
 
@@ -1453,7 +1453,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#create GoogleNetworkServicesGateway#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#create GoogleNetworkServicesGateway#create}.
 
 ---
 
@@ -1465,7 +1465,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#delete GoogleNetworkServicesGateway#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#delete GoogleNetworkServicesGateway#delete}.
 
 ---
 
@@ -1477,7 +1477,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_network_services_gateway#update GoogleNetworkServicesGateway#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_network_services_gateway#update GoogleNetworkServicesGateway#update}.
 
 ---
 

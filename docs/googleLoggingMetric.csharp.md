@@ -1,6 +1,6 @@
 # `google_logging_metric`
 
-Refer to the Terraform Registory for docs: [`google_logging_metric`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric).
+Refer to the Terraform Registory for docs: [`google_logging_metric`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric).
 
 # `googleLoggingMetric` Submodule <a name="`googleLoggingMetric` Submodule" id="@cdktf/provider-google-beta.googleLoggingMetric"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_logging_metric`](https://reg
 
 ### GoogleLoggingMetric <a name="GoogleLoggingMetric" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric google_logging_metric}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric google_logging_metric}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric.Initializer"></a>
 
@@ -917,7 +917,7 @@ public GoogleLoggingMetricBucketOptionsExplicitBuckets ExplicitBuckets { get; se
 
 explicit_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#explicit_buckets GoogleLoggingMetric#explicit_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#explicit_buckets GoogleLoggingMetric#explicit_buckets}
 
 ---
 
@@ -931,7 +931,7 @@ public GoogleLoggingMetricBucketOptionsExponentialBuckets ExponentialBuckets { g
 
 exponential_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#exponential_buckets GoogleLoggingMetric#exponential_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#exponential_buckets GoogleLoggingMetric#exponential_buckets}
 
 ---
 
@@ -945,7 +945,7 @@ public GoogleLoggingMetricBucketOptionsLinearBuckets LinearBuckets { get; set; }
 
 linear_buckets block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#linear_buckets GoogleLoggingMetric#linear_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#linear_buckets GoogleLoggingMetric#linear_buckets}
 
 ---
 
@@ -979,7 +979,7 @@ public double[] Bounds { get; set; }
 
 The values must be monotonically increasing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#bounds GoogleLoggingMetric#bounds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#bounds GoogleLoggingMetric#bounds}
 
 ---
 
@@ -1017,7 +1017,7 @@ public double GrowthFactor { get; set; }
 
 Must be greater than 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#growth_factor GoogleLoggingMetric#growth_factor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#growth_factor GoogleLoggingMetric#growth_factor}
 
 ---
 
@@ -1031,7 +1031,7 @@ public double NumFiniteBuckets { get; set; }
 
 Must be greater than 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#num_finite_buckets GoogleLoggingMetric#num_finite_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#num_finite_buckets GoogleLoggingMetric#num_finite_buckets}
 
 ---
 
@@ -1045,7 +1045,7 @@ public double Scale { get; set; }
 
 Must be greater than 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#scale GoogleLoggingMetric#scale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#scale GoogleLoggingMetric#scale}
 
 ---
 
@@ -1083,7 +1083,7 @@ public double NumFiniteBuckets { get; set; }
 
 Must be greater than 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#num_finite_buckets GoogleLoggingMetric#num_finite_buckets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#num_finite_buckets GoogleLoggingMetric#num_finite_buckets}
 
 ---
 
@@ -1097,7 +1097,7 @@ public double Offset { get; set; }
 
 Lower bound of the first bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#offset GoogleLoggingMetric#offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#offset GoogleLoggingMetric#offset}
 
 ---
 
@@ -1111,7 +1111,7 @@ public double Width { get; set; }
 
 Must be greater than 0.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#width GoogleLoggingMetric#width}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#width GoogleLoggingMetric#width}
 
 ---
 
@@ -1162,10 +1162,10 @@ new GoogleLoggingMetricConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.bucketOptions">BucketOptions</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptions">GoogleLoggingMetricBucketOptions</a></code> | bucket_options block. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.description">Description</a></code> | <code>string</code> | A description of this metric, which is used in documentation. The maximum length of the description is 8000 characters. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.disabled">Disabled</a></code> | <code>object</code> | If set to True, then this metric is disabled and it does not generate any points. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#id GoogleLoggingMetric#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#id GoogleLoggingMetric#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.labelExtractors">LabelExtractors</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map from a label key string to an extractor expression which is used to extract data from a log entry field and assign as the label value. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.metricDescriptor">MetricDescriptor</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor">GoogleLoggingMetricMetricDescriptor</a></code> | metric_descriptor block. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#project GoogleLoggingMetric#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#project GoogleLoggingMetric#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts">GoogleLoggingMetricTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig.property.valueExtractor">ValueExtractor</a></code> | <code>string</code> | A valueExtractor is required when using a distribution logs-based metric to extract the values to record from a log entry. |
 
@@ -1251,7 +1251,7 @@ public string Filter { get; set; }
 
 An advanced logs filter (https://cloud.google.com/logging/docs/view/advanced-filters) which is used to match log entries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#filter GoogleLoggingMetric#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#filter GoogleLoggingMetric#filter}
 
 ---
 
@@ -1271,7 +1271,7 @@ characters A-Z, a-z, 0-9, and the special characters _-.,+!*',()%/. The forward-
 character (/) denotes a hierarchy of name pieces, and it cannot be the first character
 of the name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#name GoogleLoggingMetric#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#name GoogleLoggingMetric#name}
 
 ---
 
@@ -1288,7 +1288,7 @@ The resource name of the Log Bucket that owns the Log Metric.
 Only Log Buckets in projects
 are supported. The bucket has to be in the same project as the metric.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#bucket_name GoogleLoggingMetric#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#bucket_name GoogleLoggingMetric#bucket_name}
 
 ---
 
@@ -1302,7 +1302,7 @@ public GoogleLoggingMetricBucketOptions BucketOptions { get; set; }
 
 bucket_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#bucket_options GoogleLoggingMetric#bucket_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#bucket_options GoogleLoggingMetric#bucket_options}
 
 ---
 
@@ -1316,7 +1316,7 @@ public string Description { get; set; }
 
 A description of this metric, which is used in documentation. The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#description GoogleLoggingMetric#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#description GoogleLoggingMetric#description}
 
 ---
 
@@ -1330,7 +1330,7 @@ public object Disabled { get; set; }
 
 If set to True, then this metric is disabled and it does not generate any points.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#disabled GoogleLoggingMetric#disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#disabled GoogleLoggingMetric#disabled}
 
 ---
 
@@ -1342,7 +1342,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#id GoogleLoggingMetric#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#id GoogleLoggingMetric#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1363,7 +1363,7 @@ Each label key specified in the LabelDescriptor must
 have an associated extractor expression in this map. The syntax of the extractor expression is
 the same as for the valueExtractor field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#label_extractors GoogleLoggingMetric#label_extractors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#label_extractors GoogleLoggingMetric#label_extractors}
 
 ---
 
@@ -1377,7 +1377,7 @@ public GoogleLoggingMetricMetricDescriptor MetricDescriptor { get; set; }
 
 metric_descriptor block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#metric_descriptor GoogleLoggingMetric#metric_descriptor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#metric_descriptor GoogleLoggingMetric#metric_descriptor}
 
 ---
 
@@ -1389,7 +1389,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#project GoogleLoggingMetric#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#project GoogleLoggingMetric#project}.
 
 ---
 
@@ -1403,7 +1403,7 @@ public GoogleLoggingMetricTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#timeouts GoogleLoggingMetric#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#timeouts GoogleLoggingMetric#timeouts}
 
 ---
 
@@ -1424,7 +1424,7 @@ the value is to be extracted. 2. regex - A regular expression using the Google R
 log entry field. The value of the field is converted to a string before applying the regex. It is an
 error to specify a regex that does not include exactly one capture group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#value_extractor GoogleLoggingMetric#value_extractor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#value_extractor GoogleLoggingMetric#value_extractor}
 
 ---
 
@@ -1469,7 +1469,7 @@ Whether the metric records instantaneous values, changes to a value, etc.
 Some combinations of metricKind and valueType might not be supported.
 For counter metrics, set this to DELTA. Possible values: ["DELTA", "GAUGE", "CUMULATIVE"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#metric_kind GoogleLoggingMetric#metric_kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#metric_kind GoogleLoggingMetric#metric_kind}
 
 ---
 
@@ -1486,7 +1486,7 @@ Whether the measurement is an integer, a floating-point number, etc.
 Some combinations of metricKind and valueType might not be supported.
 For counter metrics, set this to INT64. Possible values: ["BOOL", "INT64", "DOUBLE", "STRING", "DISTRIBUTION", "MONEY"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#value_type GoogleLoggingMetric#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#value_type GoogleLoggingMetric#value_type}
 
 ---
 
@@ -1504,7 +1504,7 @@ Use sentence case
 without an ending period, for example "Request count". This field is optional but it is
 recommended to be set for any metrics associated with user-visible concepts, such as Quota.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#display_name GoogleLoggingMetric#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#display_name GoogleLoggingMetric#display_name}
 
 ---
 
@@ -1518,7 +1518,7 @@ public object Labels { get; set; }
 
 labels block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#labels GoogleLoggingMetric#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#labels GoogleLoggingMetric#labels}
 
 ---
 
@@ -1536,7 +1536,7 @@ It is only applicable if the valueType is
 'INT64', 'DOUBLE', or 'DISTRIBUTION'. The supported units are a subset of
 [The Unified Code for Units of Measure](http://unitsofmeasure.org/ucum.html) standard
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#unit GoogleLoggingMetric#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#unit GoogleLoggingMetric#unit}
 
 ---
 
@@ -1574,7 +1574,7 @@ public string Key { get; set; }
 
 The label key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#key GoogleLoggingMetric#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#key GoogleLoggingMetric#key}
 
 ---
 
@@ -1588,7 +1588,7 @@ public string Description { get; set; }
 
 A human-readable description for the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#description GoogleLoggingMetric#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#description GoogleLoggingMetric#description}
 
 ---
 
@@ -1602,7 +1602,7 @@ public string ValueType { get; set; }
 
 The type of data that can be assigned to the label. Default value: "STRING" Possible values: ["BOOL", "INT64", "STRING"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#value_type GoogleLoggingMetric#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#value_type GoogleLoggingMetric#value_type}
 
 ---
 
@@ -1624,9 +1624,9 @@ new GoogleLoggingMetricTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#create GoogleLoggingMetric#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#delete GoogleLoggingMetric#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#update GoogleLoggingMetric#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#create GoogleLoggingMetric#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#delete GoogleLoggingMetric#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#update GoogleLoggingMetric#update}. |
 
 ---
 
@@ -1638,7 +1638,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#create GoogleLoggingMetric#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#create GoogleLoggingMetric#create}.
 
 ---
 
@@ -1650,7 +1650,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#delete GoogleLoggingMetric#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#delete GoogleLoggingMetric#delete}.
 
 ---
 
@@ -1662,7 +1662,7 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_logging_metric#update GoogleLoggingMetric#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_logging_metric#update GoogleLoggingMetric#update}.
 
 ---
 

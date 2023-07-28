@@ -1,6 +1,6 @@
 # `google_vertex_ai_tensorboard`
 
-Refer to the Terraform Registory for docs: [`google_vertex_ai_tensorboard`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard).
+Refer to the Terraform Registory for docs: [`google_vertex_ai_tensorboard`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard).
 
 # `googleVertexAiTensorboard` Submodule <a name="`googleVertexAiTensorboard` Submodule" id="@cdktf/provider-google-beta.googleVertexAiTensorboard"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_vertex_ai_tensorboard`](http
 
 ### GoogleVertexAiTensorboard <a name="GoogleVertexAiTensorboard" id="@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard google_vertex_ai_tensorboard}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard google_vertex_ai_tensorboard}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboard.Initializer"></a>
 
@@ -840,9 +840,9 @@ const googleVertexAiTensorboardConfig: googleVertexAiTensorboard.GoogleVertexAiT
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardConfig.property.displayName">displayName</a></code> | <code>string</code> | User provided name of this Tensorboard. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardConfig.property.description">description</a></code> | <code>string</code> | Description of this Tensorboard. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardConfig.property.encryptionSpec">encryptionSpec</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardEncryptionSpec">GoogleVertexAiTensorboardEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#id GoogleVertexAiTensorboard#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#id GoogleVertexAiTensorboard#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | The labels with user-defined metadata to organize your Tensorboards. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#project GoogleVertexAiTensorboard#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#project GoogleVertexAiTensorboard#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardConfig.property.region">region</a></code> | <code>string</code> | The region of the tensorboard. eg us-central1. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardTimeouts">GoogleVertexAiTensorboardTimeouts</a></code> | timeouts block. |
 
@@ -928,7 +928,7 @@ public readonly displayName: string;
 
 User provided name of this Tensorboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#display_name GoogleVertexAiTensorboard#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#display_name GoogleVertexAiTensorboard#display_name}
 
 ---
 
@@ -942,7 +942,7 @@ public readonly description: string;
 
 Description of this Tensorboard.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#description GoogleVertexAiTensorboard#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#description GoogleVertexAiTensorboard#description}
 
 ---
 
@@ -956,7 +956,7 @@ public readonly encryptionSpec: GoogleVertexAiTensorboardEncryptionSpec;
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#encryption_spec GoogleVertexAiTensorboard#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#encryption_spec GoogleVertexAiTensorboard#encryption_spec}
 
 ---
 
@@ -968,7 +968,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#id GoogleVertexAiTensorboard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#id GoogleVertexAiTensorboard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -985,7 +985,7 @@ public readonly labels: {[ key: string ]: string};
 
 The labels with user-defined metadata to organize your Tensorboards.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#labels GoogleVertexAiTensorboard#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#labels GoogleVertexAiTensorboard#labels}
 
 ---
 
@@ -997,7 +997,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#project GoogleVertexAiTensorboard#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#project GoogleVertexAiTensorboard#project}.
 
 ---
 
@@ -1011,7 +1011,7 @@ public readonly region: string;
 
 The region of the tensorboard. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#region GoogleVertexAiTensorboard#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#region GoogleVertexAiTensorboard#region}
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly timeouts: GoogleVertexAiTensorboardTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#timeouts GoogleVertexAiTensorboard#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#timeouts GoogleVertexAiTensorboard#timeouts}
 
 ---
 
@@ -1059,7 +1059,7 @@ The Cloud KMS resource identifier of the customer managed encryption key used to
 
 Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#kms_key_name GoogleVertexAiTensorboard#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#kms_key_name GoogleVertexAiTensorboard#kms_key_name}
 
 ---
 
@@ -1077,9 +1077,9 @@ const googleVertexAiTensorboardTimeouts: googleVertexAiTensorboard.GoogleVertexA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#create GoogleVertexAiTensorboard#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#delete GoogleVertexAiTensorboard#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#update GoogleVertexAiTensorboard#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#create GoogleVertexAiTensorboard#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#delete GoogleVertexAiTensorboard#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiTensorboard.GoogleVertexAiTensorboardTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#update GoogleVertexAiTensorboard#update}. |
 
 ---
 
@@ -1091,7 +1091,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#create GoogleVertexAiTensorboard#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#create GoogleVertexAiTensorboard#create}.
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#delete GoogleVertexAiTensorboard#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#delete GoogleVertexAiTensorboard#delete}.
 
 ---
 
@@ -1115,7 +1115,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_vertex_ai_tensorboard#update GoogleVertexAiTensorboard#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_vertex_ai_tensorboard#update GoogleVertexAiTensorboard#update}.
 
 ---
 
