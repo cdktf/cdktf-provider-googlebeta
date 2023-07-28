@@ -1,3 +1,3 @@
 # `google_kms_key_ring_import_job`
 
-Refer to the Terraform Registory for docs: [`google_kms_key_ring_import_job`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_kms_key_ring_import_job).
+Refer to the Terraform Registory for docs: [`google_kms_key_ring_import_job`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_kms_key_ring_import_job).
