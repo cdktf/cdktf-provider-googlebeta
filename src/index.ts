@@ -368,6 +368,10 @@ export * as googleDataplexLake from './google-dataplex-lake';
 export * as googleDataplexLakeIamBinding from './google-dataplex-lake-iam-binding';
 export * as googleDataplexLakeIamMember from './google-dataplex-lake-iam-member';
 export * as googleDataplexLakeIamPolicy from './google-dataplex-lake-iam-policy';
+export * as googleDataplexTask from './google-dataplex-task';
+export * as googleDataplexTaskIamBinding from './google-dataplex-task-iam-binding';
+export * as googleDataplexTaskIamMember from './google-dataplex-task-iam-member';
+export * as googleDataplexTaskIamPolicy from './google-dataplex-task-iam-policy';
 export * as googleDataplexZone from './google-dataplex-zone';
 export * as googleDataplexZoneIamBinding from './google-dataplex-zone-iam-binding';
 export * as googleDataplexZoneIamMember from './google-dataplex-zone-iam-member';
@@ -528,6 +532,9 @@ export * as googleIapWebBackendServiceIamPolicy from './google-iap-web-backend-s
 export * as googleIapWebIamBinding from './google-iap-web-iam-binding';
 export * as googleIapWebIamMember from './google-iap-web-iam-member';
 export * as googleIapWebIamPolicy from './google-iap-web-iam-policy';
+export * as googleIapWebRegionBackendServiceIamBinding from './google-iap-web-region-backend-service-iam-binding';
+export * as googleIapWebRegionBackendServiceIamMember from './google-iap-web-region-backend-service-iam-member';
+export * as googleIapWebRegionBackendServiceIamPolicy from './google-iap-web-region-backend-service-iam-policy';
 export * as googleIapWebTypeAppEngineIamBinding from './google-iap-web-type-app-engine-iam-binding';
 export * as googleIapWebTypeAppEngineIamMember from './google-iap-web-type-app-engine-iam-member';
 export * as googleIapWebTypeAppEngineIamPolicy from './google-iap-web-type-app-engine-iam-policy';
@@ -884,6 +891,7 @@ export * as dataGoogleDataFusionInstanceIamPolicy from './data-google-data-fusio
 export * as dataGoogleDataplexAssetIamPolicy from './data-google-dataplex-asset-iam-policy';
 export * as dataGoogleDataplexDatascanIamPolicy from './data-google-dataplex-datascan-iam-policy';
 export * as dataGoogleDataplexLakeIamPolicy from './data-google-dataplex-lake-iam-policy';
+export * as dataGoogleDataplexTaskIamPolicy from './data-google-dataplex-task-iam-policy';
 export * as dataGoogleDataplexZoneIamPolicy from './data-google-dataplex-zone-iam-policy';
 export * as dataGoogleDataprocAutoscalingPolicyIamPolicy from './data-google-dataproc-autoscaling-policy-iam-policy';
 export * as dataGoogleDataprocClusterIamPolicy from './data-google-dataproc-cluster-iam-policy';
@@ -930,6 +938,7 @@ export * as dataGoogleIapTunnelIamPolicy from './data-google-iap-tunnel-iam-poli
 export * as dataGoogleIapTunnelInstanceIamPolicy from './data-google-iap-tunnel-instance-iam-policy';
 export * as dataGoogleIapWebBackendServiceIamPolicy from './data-google-iap-web-backend-service-iam-policy';
 export * as dataGoogleIapWebIamPolicy from './data-google-iap-web-iam-policy';
+export * as dataGoogleIapWebRegionBackendServiceIamPolicy from './data-google-iap-web-region-backend-service-iam-policy';
 export * as dataGoogleIapWebTypeAppEngineIamPolicy from './data-google-iap-web-type-app-engine-iam-policy';
 export * as dataGoogleIapWebTypeComputeIamPolicy from './data-google-iap-web-type-compute-iam-policy';
 export * as dataGoogleKmsCryptoKey from './data-google-kms-crypto-key';

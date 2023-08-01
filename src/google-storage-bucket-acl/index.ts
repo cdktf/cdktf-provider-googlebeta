@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_storage_bucket_acl
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_bucket_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleStorageBucketAclConfig extends cdktf.TerraformMetaArgumen
   /**
   * The name of the bucket it applies to.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_storage_bucket_acl#bucket GoogleStorageBucketAcl#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_bucket_acl#bucket GoogleStorageBucketAcl#bucket}
   */
   readonly bucket: string;
   /**
   * Configure this ACL to be the default ACL.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_storage_bucket_acl#default_acl GoogleStorageBucketAcl#default_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_bucket_acl#default_acl GoogleStorageBucketAcl#default_acl}
   */
   readonly defaultAcl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_storage_bucket_acl#id GoogleStorageBucketAcl#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_bucket_acl#id GoogleStorageBucketAcl#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface GoogleStorageBucketAclConfig extends cdktf.TerraformMetaArgumen
   /**
   * The canned GCS ACL to apply. Must be set if role_entity is not.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_storage_bucket_acl#predefined_acl GoogleStorageBucketAcl#predefined_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_bucket_acl#predefined_acl GoogleStorageBucketAcl#predefined_acl}
   */
   readonly predefinedAcl?: string;
   /**
   * List of role/entity pairs in the form ROLE:entity. See GCS Bucket ACL documentation  for more details. Must be set if predefined_acl is not.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_storage_bucket_acl#role_entity GoogleStorageBucketAcl#role_entity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_bucket_acl#role_entity GoogleStorageBucketAcl#role_entity}
   */
   readonly roleEntity?: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_storage_bucket_acl google_storage_bucket_acl}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_bucket_acl google_storage_bucket_acl}
 */
 export class GoogleStorageBucketAcl extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class GoogleStorageBucketAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_storage_bucket_acl google_storage_bucket_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_storage_bucket_acl google_storage_bucket_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class GoogleStorageBucketAcl extends cdktf.TerraformResource {
       terraformResourceType: 'google_storage_bucket_acl',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.75.1',
+        providerVersion: '4.76.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

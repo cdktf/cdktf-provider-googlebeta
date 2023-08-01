@@ -1,6 +1,6 @@
 # `google_dataproc_job_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_dataproc_job_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding).
+Refer to the Terraform Registory for docs: [`google_dataproc_job_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding).
 
 # `googleDataprocJobIamBinding` Submodule <a name="`googleDataprocJobIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_dataproc_job_iam_binding`](h
 
 ### GoogleDataprocJobIamBinding <a name="GoogleDataprocJobIamBinding" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding google_dataproc_job_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding google_dataproc_job_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBinding.Initializer"></a>
 
@@ -734,9 +734,9 @@ new GoogleDataprocJobIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#expression GoogleDataprocJobIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#title GoogleDataprocJobIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#description GoogleDataprocJobIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#expression GoogleDataprocJobIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#title GoogleDataprocJobIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#description GoogleDataprocJobIamBinding#description}. |
 
 ---
 
@@ -748,7 +748,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#expression GoogleDataprocJobIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#expression GoogleDataprocJobIamBinding#expression}.
 
 ---
 
@@ -760,7 +760,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#title GoogleDataprocJobIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#title GoogleDataprocJobIamBinding#title}.
 
 ---
 
@@ -772,7 +772,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#description GoogleDataprocJobIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#description GoogleDataprocJobIamBinding#description}.
 
 ---
 
@@ -812,13 +812,13 @@ new GoogleDataprocJobIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.jobId">JobId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#job_id GoogleDataprocJobIamBinding#job_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#members GoogleDataprocJobIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#role GoogleDataprocJobIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.jobId">JobId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#job_id GoogleDataprocJobIamBinding#job_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#members GoogleDataprocJobIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#role GoogleDataprocJobIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingCondition">GoogleDataprocJobIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#id GoogleDataprocJobIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#project GoogleDataprocJobIamBinding#project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#region GoogleDataprocJobIamBinding#region}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#id GoogleDataprocJobIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#project GoogleDataprocJobIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJobIamBinding.GoogleDataprocJobIamBindingConfig.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#region GoogleDataprocJobIamBinding#region}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string JobId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#job_id GoogleDataprocJobIamBinding#job_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#job_id GoogleDataprocJobIamBinding#job_id}.
 
 ---
 
@@ -912,7 +912,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#members GoogleDataprocJobIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#members GoogleDataprocJobIamBinding#members}.
 
 ---
 
@@ -924,7 +924,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#role GoogleDataprocJobIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#role GoogleDataprocJobIamBinding#role}.
 
 ---
 
@@ -938,7 +938,7 @@ public GoogleDataprocJobIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#condition GoogleDataprocJobIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#condition GoogleDataprocJobIamBinding#condition}
 
 ---
 
@@ -950,7 +950,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#id GoogleDataprocJobIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#id GoogleDataprocJobIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#project GoogleDataprocJobIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#project GoogleDataprocJobIamBinding#project}.
 
 ---
 
@@ -977,7 +977,7 @@ public string Region { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_dataproc_job_iam_binding#region GoogleDataprocJobIamBinding#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dataproc_job_iam_binding#region GoogleDataprocJobIamBinding#region}.
 
 ---
 
