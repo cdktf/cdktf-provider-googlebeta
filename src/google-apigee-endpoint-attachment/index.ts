@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface GoogleApigeeEndpointAttachmentConfig extends cdktf.TerraformMet
   /**
   * ID of the endpoint attachment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment#endpoint_attachment_id GoogleApigeeEndpointAttachment#endpoint_attachment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment#endpoint_attachment_id GoogleApigeeEndpointAttachment#endpoint_attachment_id}
   */
   readonly endpointAttachmentId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment#id GoogleApigeeEndpointAttachment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment#id GoogleApigeeEndpointAttachment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,36 +23,36 @@ export interface GoogleApigeeEndpointAttachmentConfig extends cdktf.TerraformMet
   /**
   * Location of the endpoint attachment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment#location GoogleApigeeEndpointAttachment#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment#location GoogleApigeeEndpointAttachment#location}
   */
   readonly location: string;
   /**
   * The Apigee Organization associated with the Apigee instance,
 in the format 'organizations/{{org_name}}'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment#org_id GoogleApigeeEndpointAttachment#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment#org_id GoogleApigeeEndpointAttachment#org_id}
   */
   readonly orgId: string;
   /**
   * Format: projects/*\/regions/*\/serviceAttachments/*
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment#service_attachment GoogleApigeeEndpointAttachment#service_attachment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment#service_attachment GoogleApigeeEndpointAttachment#service_attachment}
   */
   readonly serviceAttachment: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment#timeouts GoogleApigeeEndpointAttachment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment#timeouts GoogleApigeeEndpointAttachment#timeouts}
   */
   readonly timeouts?: GoogleApigeeEndpointAttachmentTimeouts;
 }
 export interface GoogleApigeeEndpointAttachmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment#create GoogleApigeeEndpointAttachment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment#create GoogleApigeeEndpointAttachment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment#delete GoogleApigeeEndpointAttachment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment#delete GoogleApigeeEndpointAttachment#delete}
   */
   readonly delete?: string;
 }
@@ -155,7 +150,7 @@ export class GoogleApigeeEndpointAttachmentTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment}
 */
 export class GoogleApigeeEndpointAttachment extends cdktf.TerraformResource {
 
@@ -169,7 +164,7 @@ export class GoogleApigeeEndpointAttachment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_apigee_endpoint_attachment google_apigee_endpoint_attachment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +175,7 @@ export class GoogleApigeeEndpointAttachment extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_endpoint_attachment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.75.1',
+        providerVersion: '4.76.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

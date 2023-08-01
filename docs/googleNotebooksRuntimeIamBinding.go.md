@@ -1,6 +1,6 @@
 # `google_notebooks_runtime_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_notebooks_runtime_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding).
+Refer to the Terraform Registory for docs: [`google_notebooks_runtime_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding).
 
 # `googleNotebooksRuntimeIamBinding` Submodule <a name="`googleNotebooksRuntimeIamBinding` Submodule" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_notebooks_runtime_iam_bindin
 
 ### GoogleNotebooksRuntimeIamBinding <a name="GoogleNotebooksRuntimeIamBinding" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding google_notebooks_runtime_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding google_notebooks_runtime_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiambinding"
 
 googlenotebooksruntimeiambinding.NewGoogleNotebooksRuntimeIamBinding(scope Construct, id *string, config GoogleNotebooksRuntimeIamBindingConfig) GoogleNotebooksRuntimeIamBinding
 ```
@@ -311,7 +311,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiambinding"
 
 googlenotebooksruntimeiambinding.GoogleNotebooksRuntimeIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiambinding"
 
 googlenotebooksruntimeiambinding.GoogleNotebooksRuntimeIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ googlenotebooksruntimeiambinding.GoogleNotebooksRuntimeIamBinding_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiambinding"
 
 googlenotebooksruntimeiambinding.GoogleNotebooksRuntimeIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -721,7 +721,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiambinding"
 
 &googlenotebooksruntimeiambinding.GoogleNotebooksRuntimeIamBindingCondition {
 	Expression: *string,
@@ -734,9 +734,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#expression GoogleNotebooksRuntimeIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#title GoogleNotebooksRuntimeIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#description GoogleNotebooksRuntimeIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingCondition.property.expression">Expression</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#expression GoogleNotebooksRuntimeIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingCondition.property.title">Title</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#title GoogleNotebooksRuntimeIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingCondition.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#description GoogleNotebooksRuntimeIamBinding#description}. |
 
 ---
 
@@ -748,7 +748,7 @@ Expression *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#expression GoogleNotebooksRuntimeIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#expression GoogleNotebooksRuntimeIamBinding#expression}.
 
 ---
 
@@ -760,7 +760,7 @@ Title *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#title GoogleNotebooksRuntimeIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#title GoogleNotebooksRuntimeIamBinding#title}.
 
 ---
 
@@ -772,7 +772,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#description GoogleNotebooksRuntimeIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#description GoogleNotebooksRuntimeIamBinding#description}.
 
 ---
 
@@ -781,7 +781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiambinding"
 
 &googlenotebooksruntimeiambinding.GoogleNotebooksRuntimeIamBindingConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebo
 	Members: *[]*string,
 	Role: *string,
 	RuntimeName: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -812,13 +812,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebo
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#members GoogleNotebooksRuntimeIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#role GoogleNotebooksRuntimeIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.runtimeName">RuntimeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#runtime_name GoogleNotebooksRuntimeIamBinding#runtime_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.members">Members</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#members GoogleNotebooksRuntimeIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.role">Role</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#role GoogleNotebooksRuntimeIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.runtimeName">RuntimeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#runtime_name GoogleNotebooksRuntimeIamBinding#runtime_name}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingCondition">GoogleNotebooksRuntimeIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#id GoogleNotebooksRuntimeIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#location GoogleNotebooksRuntimeIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#project GoogleNotebooksRuntimeIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#id GoogleNotebooksRuntimeIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#location GoogleNotebooksRuntimeIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#project GoogleNotebooksRuntimeIamBinding#project}. |
 
 ---
 
@@ -900,7 +900,7 @@ Members *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#members GoogleNotebooksRuntimeIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#members GoogleNotebooksRuntimeIamBinding#members}.
 
 ---
 
@@ -912,7 +912,7 @@ Role *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#role GoogleNotebooksRuntimeIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#role GoogleNotebooksRuntimeIamBinding#role}.
 
 ---
 
@@ -924,7 +924,7 @@ RuntimeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#runtime_name GoogleNotebooksRuntimeIamBinding#runtime_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#runtime_name GoogleNotebooksRuntimeIamBinding#runtime_name}.
 
 ---
 
@@ -938,7 +938,7 @@ Condition GoogleNotebooksRuntimeIamBindingCondition
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#condition GoogleNotebooksRuntimeIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#condition GoogleNotebooksRuntimeIamBinding#condition}
 
 ---
 
@@ -950,7 +950,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#id GoogleNotebooksRuntimeIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#id GoogleNotebooksRuntimeIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#location GoogleNotebooksRuntimeIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#location GoogleNotebooksRuntimeIamBinding#location}.
 
 ---
 
@@ -977,7 +977,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_binding#project GoogleNotebooksRuntimeIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_binding#project GoogleNotebooksRuntimeIamBinding#project}.
 
 ---
 
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamBinding.GoogleNotebooksRuntimeIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiambinding"
 
 googlenotebooksruntimeiambinding.NewGoogleNotebooksRuntimeIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksRuntimeIamBindingConditionOutputReference
 ```

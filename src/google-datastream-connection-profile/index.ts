@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleDatastreamConnectionProfileConfig extends cdktf.Terraform
   /**
   * The connection profile identifier.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#connection_profile_id GoogleDatastreamConnectionProfile#connection_profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#connection_profile_id GoogleDatastreamConnectionProfile#connection_profile_id}
   */
   readonly connectionProfileId: string;
   /**
   * Display name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#display_name GoogleDatastreamConnectionProfile#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#display_name GoogleDatastreamConnectionProfile#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#id GoogleDatastreamConnectionProfile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#id GoogleDatastreamConnectionProfile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,65 +29,65 @@ export interface GoogleDatastreamConnectionProfileConfig extends cdktf.Terraform
   /**
   * Labels.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#labels GoogleDatastreamConnectionProfile#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#labels GoogleDatastreamConnectionProfile#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location this connection profile is located in.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#location GoogleDatastreamConnectionProfile#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#location GoogleDatastreamConnectionProfile#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#project GoogleDatastreamConnectionProfile#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#project GoogleDatastreamConnectionProfile#project}
   */
   readonly project?: string;
   /**
   * bigquery_profile block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#bigquery_profile GoogleDatastreamConnectionProfile#bigquery_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#bigquery_profile GoogleDatastreamConnectionProfile#bigquery_profile}
   */
   readonly bigqueryProfile?: GoogleDatastreamConnectionProfileBigqueryProfile;
   /**
   * forward_ssh_connectivity block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#forward_ssh_connectivity GoogleDatastreamConnectionProfile#forward_ssh_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#forward_ssh_connectivity GoogleDatastreamConnectionProfile#forward_ssh_connectivity}
   */
   readonly forwardSshConnectivity?: GoogleDatastreamConnectionProfileForwardSshConnectivity;
   /**
   * gcs_profile block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#gcs_profile GoogleDatastreamConnectionProfile#gcs_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#gcs_profile GoogleDatastreamConnectionProfile#gcs_profile}
   */
   readonly gcsProfile?: GoogleDatastreamConnectionProfileGcsProfile;
   /**
   * mysql_profile block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#mysql_profile GoogleDatastreamConnectionProfile#mysql_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#mysql_profile GoogleDatastreamConnectionProfile#mysql_profile}
   */
   readonly mysqlProfile?: GoogleDatastreamConnectionProfileMysqlProfile;
   /**
   * oracle_profile block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#oracle_profile GoogleDatastreamConnectionProfile#oracle_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#oracle_profile GoogleDatastreamConnectionProfile#oracle_profile}
   */
   readonly oracleProfile?: GoogleDatastreamConnectionProfileOracleProfile;
   /**
   * postgresql_profile block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#postgresql_profile GoogleDatastreamConnectionProfile#postgresql_profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#postgresql_profile GoogleDatastreamConnectionProfile#postgresql_profile}
   */
   readonly postgresqlProfile?: GoogleDatastreamConnectionProfilePostgresqlProfile;
   /**
   * private_connectivity block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#private_connectivity GoogleDatastreamConnectionProfile#private_connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#private_connectivity GoogleDatastreamConnectionProfile#private_connectivity}
   */
   readonly privateConnectivity?: GoogleDatastreamConnectionProfilePrivateConnectivity;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#timeouts GoogleDatastreamConnectionProfile#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#timeouts GoogleDatastreamConnectionProfile#timeouts}
   */
   readonly timeouts?: GoogleDatastreamConnectionProfileTimeouts;
 }
@@ -138,31 +133,31 @@ export interface GoogleDatastreamConnectionProfileForwardSshConnectivity {
   /**
   * Hostname for the SSH tunnel.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
   */
   readonly hostname: string;
   /**
   * SSH password.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
   */
   readonly password?: string;
   /**
   * Port for the SSH tunnel.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * SSH private key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#private_key GoogleDatastreamConnectionProfile#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#private_key GoogleDatastreamConnectionProfile#private_key}
   */
   readonly privateKey?: string;
   /**
   * Username for the SSH tunnel.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
   */
   readonly username: string;
 }
@@ -315,13 +310,13 @@ export interface GoogleDatastreamConnectionProfileGcsProfile {
   /**
   * The Cloud Storage bucket name.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#bucket GoogleDatastreamConnectionProfile#bucket}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#bucket GoogleDatastreamConnectionProfile#bucket}
   */
   readonly bucket: string;
   /**
   * The root path inside the Cloud Storage bucket.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#root_path GoogleDatastreamConnectionProfile#root_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#root_path GoogleDatastreamConnectionProfile#root_path}
   */
   readonly rootPath?: string;
 }
@@ -409,7 +404,7 @@ export interface GoogleDatastreamConnectionProfileMysqlProfileSslConfig {
   * PEM-encoded certificate of the CA that signed the source database
 server's certificate.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#ca_certificate GoogleDatastreamConnectionProfile#ca_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#ca_certificate GoogleDatastreamConnectionProfile#ca_certificate}
   */
   readonly caCertificate?: string;
   /**
@@ -418,7 +413,7 @@ authenticate against the source database server. If this field
 is used then the 'clientKey' and the 'caCertificate' fields are
 mandatory.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#client_certificate GoogleDatastreamConnectionProfile#client_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#client_certificate GoogleDatastreamConnectionProfile#client_certificate}
   */
   readonly clientCertificate?: string;
   /**
@@ -426,7 +421,7 @@ mandatory.
 If this field is used then the 'client_certificate' and the
 'ca_certificate' fields are mandatory.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#client_key GoogleDatastreamConnectionProfile#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#client_key GoogleDatastreamConnectionProfile#client_key}
   */
   readonly clientKey?: string;
 }
@@ -554,31 +549,31 @@ export interface GoogleDatastreamConnectionProfileMysqlProfile {
   /**
   * Hostname for the MySQL connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
   */
   readonly hostname: string;
   /**
   * Password for the MySQL connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
   */
   readonly password: string;
   /**
   * Port for the MySQL connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * Username for the MySQL connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
   */
   readonly username: string;
   /**
   * ssl_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#ssl_config GoogleDatastreamConnectionProfile#ssl_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#ssl_config GoogleDatastreamConnectionProfile#ssl_config}
   */
   readonly sslConfig?: GoogleDatastreamConnectionProfileMysqlProfileSslConfig;
 }
@@ -728,37 +723,37 @@ export interface GoogleDatastreamConnectionProfileOracleProfile {
   /**
   * Connection string attributes
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#connection_attributes GoogleDatastreamConnectionProfile#connection_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#connection_attributes GoogleDatastreamConnectionProfile#connection_attributes}
   */
   readonly connectionAttributes?: { [key: string]: string };
   /**
   * Database for the Oracle connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#database_service GoogleDatastreamConnectionProfile#database_service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#database_service GoogleDatastreamConnectionProfile#database_service}
   */
   readonly databaseService: string;
   /**
   * Hostname for the Oracle connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
   */
   readonly hostname: string;
   /**
   * Password for the Oracle connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
   */
   readonly password: string;
   /**
   * Port for the Oracle connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * Username for the Oracle connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
   */
   readonly username: string;
 }
@@ -928,31 +923,31 @@ export interface GoogleDatastreamConnectionProfilePostgresqlProfile {
   /**
   * Database for the PostgreSQL connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#database GoogleDatastreamConnectionProfile#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#database GoogleDatastreamConnectionProfile#database}
   */
   readonly database: string;
   /**
   * Hostname for the PostgreSQL connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#hostname GoogleDatastreamConnectionProfile#hostname}
   */
   readonly hostname: string;
   /**
   * Password for the PostgreSQL connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#password GoogleDatastreamConnectionProfile#password}
   */
   readonly password: string;
   /**
   * Port for the PostgreSQL connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#port GoogleDatastreamConnectionProfile#port}
   */
   readonly port?: number;
   /**
   * Username for the PostgreSQL connection.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#username GoogleDatastreamConnectionProfile#username}
   */
   readonly username: string;
 }
@@ -1099,7 +1094,7 @@ export interface GoogleDatastreamConnectionProfilePrivateConnectivity {
   /**
   * A reference to a private connection resource. Format: 'projects/{project}/locations/{location}/privateConnections/{name}'
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#private_connection GoogleDatastreamConnectionProfile#private_connection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#private_connection GoogleDatastreamConnectionProfile#private_connection}
   */
   readonly privateConnection: string;
 }
@@ -1161,15 +1156,15 @@ export class GoogleDatastreamConnectionProfilePrivateConnectivityOutputReference
 }
 export interface GoogleDatastreamConnectionProfileTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#create GoogleDatastreamConnectionProfile#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#create GoogleDatastreamConnectionProfile#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#delete GoogleDatastreamConnectionProfile#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#delete GoogleDatastreamConnectionProfile#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile#update GoogleDatastreamConnectionProfile#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile#update GoogleDatastreamConnectionProfile#update}
   */
   readonly update?: string;
 }
@@ -1290,7 +1285,7 @@ export class GoogleDatastreamConnectionProfileTimeoutsOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile google_datastream_connection_profile}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile}
 */
 export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
 
@@ -1304,7 +1299,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1315,7 +1310,7 @@ export class GoogleDatastreamConnectionProfile extends cdktf.TerraformResource {
       terraformResourceType: 'google_datastream_connection_profile',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.75.1',
+        providerVersion: '4.76.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

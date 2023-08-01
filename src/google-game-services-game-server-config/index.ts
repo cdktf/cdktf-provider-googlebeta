@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +10,23 @@ export interface GoogleGameServicesGameServerConfigConfig extends cdktf.Terrafor
   /**
   * A unique id for the deployment config.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#config_id GoogleGameServicesGameServerConfig#config_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#config_id GoogleGameServicesGameServerConfig#config_id}
   */
   readonly configId: string;
   /**
   * A unique id for the deployment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#deployment_id GoogleGameServicesGameServerConfig#deployment_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#deployment_id GoogleGameServicesGameServerConfig#deployment_id}
   */
   readonly deploymentId: string;
   /**
   * The description of the game server config.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#description GoogleGameServicesGameServerConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#description GoogleGameServicesGameServerConfig#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#id GoogleGameServicesGameServerConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#id GoogleGameServicesGameServerConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -41,35 +36,35 @@ export interface GoogleGameServicesGameServerConfigConfig extends cdktf.Terrafor
   * The labels associated with this game server config. Each label is a
 key-value pair.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#labels GoogleGameServicesGameServerConfig#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#labels GoogleGameServicesGameServerConfig#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Location of the Deployment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#location GoogleGameServicesGameServerConfig#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#location GoogleGameServicesGameServerConfig#location}
   */
   readonly location?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#project GoogleGameServicesGameServerConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#project GoogleGameServicesGameServerConfig#project}
   */
   readonly project?: string;
   /**
   * fleet_configs block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#fleet_configs GoogleGameServicesGameServerConfig#fleet_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#fleet_configs GoogleGameServicesGameServerConfig#fleet_configs}
   */
   readonly fleetConfigs: GoogleGameServicesGameServerConfigFleetConfigs[] | cdktf.IResolvable;
   /**
   * scaling_configs block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#scaling_configs GoogleGameServicesGameServerConfig#scaling_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#scaling_configs GoogleGameServicesGameServerConfig#scaling_configs}
   */
   readonly scalingConfigs?: GoogleGameServicesGameServerConfigScalingConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#timeouts GoogleGameServicesGameServerConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#timeouts GoogleGameServicesGameServerConfig#timeouts}
   */
   readonly timeouts?: GoogleGameServicesGameServerConfigTimeouts;
 }
@@ -85,13 +80,13 @@ instead. File references can contain the json or yaml format of the fleet spec. 
 The format of the spec can be found :
 'https://agones.dev/site/docs/reference/fleet/'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#fleet_spec GoogleGameServicesGameServerConfig#fleet_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#fleet_spec GoogleGameServicesGameServerConfig#fleet_spec}
   */
   readonly fleetSpec: string;
   /**
   * The name of the FleetConfig.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#name GoogleGameServicesGameServerConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#name GoogleGameServicesGameServerConfig#name}
   */
   readonly name?: string;
 }
@@ -213,7 +208,7 @@ after the cron job's start time.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#cron_job_duration GoogleGameServicesGameServerConfig#cron_job_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#cron_job_duration GoogleGameServicesGameServerConfig#cron_job_duration}
   */
   readonly cronJobDuration?: string;
   /**
@@ -221,7 +216,7 @@ A duration in seconds with up to nine fractional digits, terminated by 's'. Exam
 https://en.wikipedia.org/wiki/Cron. Cron spec specifies the local time as
 defined by the realm.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#cron_spec GoogleGameServicesGameServerConfig#cron_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#cron_spec GoogleGameServicesGameServerConfig#cron_spec}
   */
   readonly cronSpec?: string;
   /**
@@ -229,7 +224,7 @@ defined by the realm.
 
 A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#end_time GoogleGameServicesGameServerConfig#end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#end_time GoogleGameServicesGameServerConfig#end_time}
   */
   readonly endTime?: string;
   /**
@@ -237,7 +232,7 @@ A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "201
 
 A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#start_time GoogleGameServicesGameServerConfig#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#start_time GoogleGameServicesGameServerConfig#start_time}
   */
   readonly startTime?: string;
 }
@@ -405,7 +400,7 @@ export interface GoogleGameServicesGameServerConfigScalingConfigsSelectors {
   /**
   * Set of labels to group by.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#labels GoogleGameServicesGameServerConfig#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#labels GoogleGameServicesGameServerConfig#labels}
   */
   readonly labels?: { [key: string]: string };
 }
@@ -506,25 +501,25 @@ export interface GoogleGameServicesGameServerConfigScalingConfigs {
 Example spec can be found :
 https://agones.dev/site/docs/reference/fleetautoscaler/
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#fleet_autoscaler_spec GoogleGameServicesGameServerConfig#fleet_autoscaler_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#fleet_autoscaler_spec GoogleGameServicesGameServerConfig#fleet_autoscaler_spec}
   */
   readonly fleetAutoscalerSpec: string;
   /**
   * The name of the ScalingConfig
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#name GoogleGameServicesGameServerConfig#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#name GoogleGameServicesGameServerConfig#name}
   */
   readonly name: string;
   /**
   * schedules block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#schedules GoogleGameServicesGameServerConfig#schedules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#schedules GoogleGameServicesGameServerConfig#schedules}
   */
   readonly schedules?: GoogleGameServicesGameServerConfigScalingConfigsSchedules[] | cdktf.IResolvable;
   /**
   * selectors block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#selectors GoogleGameServicesGameServerConfig#selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#selectors GoogleGameServicesGameServerConfig#selectors}
   */
   readonly selectors?: GoogleGameServicesGameServerConfigScalingConfigsSelectors[] | cdktf.IResolvable;
 }
@@ -684,11 +679,11 @@ export class GoogleGameServicesGameServerConfigScalingConfigsList extends cdktf.
 }
 export interface GoogleGameServicesGameServerConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#create GoogleGameServicesGameServerConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#create GoogleGameServicesGameServerConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config#delete GoogleGameServicesGameServerConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config#delete GoogleGameServicesGameServerConfig#delete}
   */
   readonly delete?: string;
 }
@@ -786,7 +781,7 @@ export class GoogleGameServicesGameServerConfigTimeoutsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config google_game_services_game_server_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config google_game_services_game_server_config}
 */
 export class GoogleGameServicesGameServerConfig extends cdktf.TerraformResource {
 
@@ -800,7 +795,7 @@ export class GoogleGameServicesGameServerConfig extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_game_services_game_server_config google_game_services_game_server_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_game_services_game_server_config google_game_services_game_server_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -811,7 +806,7 @@ export class GoogleGameServicesGameServerConfig extends cdktf.TerraformResource 
       terraformResourceType: 'google_game_services_game_server_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.75.1',
+        providerVersion: '4.76.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

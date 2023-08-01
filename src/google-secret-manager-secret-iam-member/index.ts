@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,46 +8,46 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleSecretManagerSecretIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member#id GoogleSecretManagerSecretIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member#id GoogleSecretManagerSecretIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member#member GoogleSecretManagerSecretIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member#member GoogleSecretManagerSecretIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member#project GoogleSecretManagerSecretIamMember#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member#project GoogleSecretManagerSecretIamMember#project}
   */
   readonly project?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member#role GoogleSecretManagerSecretIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member#role GoogleSecretManagerSecretIamMember#role}
   */
   readonly role: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member#secret_id GoogleSecretManagerSecretIamMember#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member#secret_id GoogleSecretManagerSecretIamMember#secret_id}
   */
   readonly secretId: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member#condition GoogleSecretManagerSecretIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member#condition GoogleSecretManagerSecretIamMember#condition}
   */
   readonly condition?: GoogleSecretManagerSecretIamMemberCondition;
 }
 export interface GoogleSecretManagerSecretIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member#description GoogleSecretManagerSecretIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member#description GoogleSecretManagerSecretIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member#expression GoogleSecretManagerSecretIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member#expression GoogleSecretManagerSecretIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member#title GoogleSecretManagerSecretIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member#title GoogleSecretManagerSecretIamMember#title}
   */
   readonly title: string;
 }
@@ -157,7 +152,7 @@ export class GoogleSecretManagerSecretIamMemberConditionOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member google_secret_manager_secret_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member google_secret_manager_secret_iam_member}
 */
 export class GoogleSecretManagerSecretIamMember extends cdktf.TerraformResource {
 
@@ -171,7 +166,7 @@ export class GoogleSecretManagerSecretIamMember extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_secret_manager_secret_iam_member google_secret_manager_secret_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_secret_manager_secret_iam_member google_secret_manager_secret_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -182,7 +177,7 @@ export class GoogleSecretManagerSecretIamMember extends cdktf.TerraformResource 
       terraformResourceType: 'google_secret_manager_secret_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.75.1',
+        providerVersion: '4.76.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

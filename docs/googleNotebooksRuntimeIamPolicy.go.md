@@ -1,6 +1,6 @@
 # `google_notebooks_runtime_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_notebooks_runtime_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy).
+Refer to the Terraform Registory for docs: [`google_notebooks_runtime_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy).
 
 # `googleNotebooksRuntimeIamPolicy` Submodule <a name="`googleNotebooksRuntimeIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_notebooks_runtime_iam_policy
 
 ### GoogleNotebooksRuntimeIamPolicy <a name="GoogleNotebooksRuntimeIamPolicy" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy google_notebooks_runtime_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiampolicy"
 
 googlenotebooksruntimeiampolicy.NewGoogleNotebooksRuntimeIamPolicy(scope Construct, id *string, config GoogleNotebooksRuntimeIamPolicyConfig) GoogleNotebooksRuntimeIamPolicy
 ```
@@ -291,7 +291,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiampolicy"
 
 googlenotebooksruntimeiampolicy.GoogleNotebooksRuntimeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiampolicy"
 
 googlenotebooksruntimeiampolicy.GoogleNotebooksRuntimeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ googlenotebooksruntimeiampolicy.GoogleNotebooksRuntimeIamPolicy_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiampolicy"
 
 googlenotebooksruntimeiampolicy.GoogleNotebooksRuntimeIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebooksruntimeiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksruntimeiampolicy"
 
 &googlenotebooksruntimeiampolicy.GoogleNotebooksRuntimeIamPolicyConfig {
 	Connection: interface{},
@@ -686,11 +686,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenotebo
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy#policy_data GoogleNotebooksRuntimeIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.runtimeName">RuntimeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy#runtime_name GoogleNotebooksRuntimeIamPolicy#runtime_name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy#id GoogleNotebooksRuntimeIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy#location GoogleNotebooksRuntimeIamPolicy#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy#project GoogleNotebooksRuntimeIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy#policy_data GoogleNotebooksRuntimeIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.runtimeName">RuntimeName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy#runtime_name GoogleNotebooksRuntimeIamPolicy#runtime_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy#id GoogleNotebooksRuntimeIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy#location GoogleNotebooksRuntimeIamPolicy#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksRuntimeIamPolicy.GoogleNotebooksRuntimeIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy#project GoogleNotebooksRuntimeIamPolicy#project}. |
 
 ---
 
@@ -772,7 +772,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy#policy_data GoogleNotebooksRuntimeIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy#policy_data GoogleNotebooksRuntimeIamPolicy#policy_data}.
 
 ---
 
@@ -784,7 +784,7 @@ RuntimeName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy#runtime_name GoogleNotebooksRuntimeIamPolicy#runtime_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy#runtime_name GoogleNotebooksRuntimeIamPolicy#runtime_name}.
 
 ---
 
@@ -796,7 +796,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy#id GoogleNotebooksRuntimeIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy#id GoogleNotebooksRuntimeIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -811,7 +811,7 @@ Location *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy#location GoogleNotebooksRuntimeIamPolicy#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy#location GoogleNotebooksRuntimeIamPolicy#location}.
 
 ---
 
@@ -823,7 +823,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_notebooks_runtime_iam_policy#project GoogleNotebooksRuntimeIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_notebooks_runtime_iam_policy#project GoogleNotebooksRuntimeIamPolicy#project}.
 
 ---
 
