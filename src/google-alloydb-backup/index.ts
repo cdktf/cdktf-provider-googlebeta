@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface GoogleAlloydbBackupConfig extends cdktf.TerraformMetaArguments 
   /**
   * The ID of the alloydb backup.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#backup_id GoogleAlloydbBackup#backup_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#backup_id GoogleAlloydbBackup#backup_id}
   */
   readonly backupId: string;
   /**
   * The full resource name of the backup source cluster (e.g., projects/{project}/locations/{location}/clusters/{clusterId}).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#cluster_name GoogleAlloydbBackup#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#cluster_name GoogleAlloydbBackup#cluster_name}
   */
   readonly clusterName: string;
   /**
   * User-provided description of the backup.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#description GoogleAlloydbBackup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#description GoogleAlloydbBackup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#id GoogleAlloydbBackup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#id GoogleAlloydbBackup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,29 +40,29 @@ export interface GoogleAlloydbBackupConfig extends cdktf.TerraformMetaArguments 
   /**
   * User-defined labels for the alloydb backup.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#labels GoogleAlloydbBackup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#labels GoogleAlloydbBackup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the alloydb backup should reside.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#location GoogleAlloydbBackup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#location GoogleAlloydbBackup#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#project GoogleAlloydbBackup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#project GoogleAlloydbBackup#project}
   */
   readonly project?: string;
   /**
   * encryption_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#encryption_config GoogleAlloydbBackup#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#encryption_config GoogleAlloydbBackup#encryption_config}
   */
   readonly encryptionConfig?: GoogleAlloydbBackupEncryptionConfig;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#timeouts GoogleAlloydbBackup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#timeouts GoogleAlloydbBackup#timeouts}
   */
   readonly timeouts?: GoogleAlloydbBackupTimeouts;
 }
@@ -139,7 +139,7 @@ export interface GoogleAlloydbBackupEncryptionConfig {
   /**
   * The fully-qualified resource name of the KMS key. Each Cloud KMS key is regionalized and has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME].
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#kms_key_name GoogleAlloydbBackup#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#kms_key_name GoogleAlloydbBackup#kms_key_name}
   */
   readonly kmsKeyName?: string;
 }
@@ -204,15 +204,15 @@ export class GoogleAlloydbBackupEncryptionConfigOutputReference extends cdktf.Co
 }
 export interface GoogleAlloydbBackupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#create GoogleAlloydbBackup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#create GoogleAlloydbBackup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#delete GoogleAlloydbBackup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#delete GoogleAlloydbBackup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup#update GoogleAlloydbBackup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup#update GoogleAlloydbBackup#update}
   */
   readonly update?: string;
 }
@@ -333,7 +333,7 @@ export class GoogleAlloydbBackupTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup google_alloydb_backup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup google_alloydb_backup}
 */
 export class GoogleAlloydbBackup extends cdktf.TerraformResource {
 
@@ -347,7 +347,7 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_alloydb_backup google_alloydb_backup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_alloydb_backup google_alloydb_backup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -358,7 +358,7 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
       terraformResourceType: 'google_alloydb_backup',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

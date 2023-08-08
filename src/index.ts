@@ -424,6 +424,8 @@ export * as googleDnsResponsePolicy from './google-dns-response-policy';
 export * as googleDnsResponsePolicyRule from './google-dns-response-policy-rule';
 export * as googleDocumentAiProcessor from './google-document-ai-processor';
 export * as googleDocumentAiProcessorDefaultVersion from './google-document-ai-processor-default-version';
+export * as googleDocumentAiWarehouseDocumentSchema from './google-document-ai-warehouse-document-schema';
+export * as googleDocumentAiWarehouseLocation from './google-document-ai-warehouse-location';
 export * as googleEndpointsService from './google-endpoints-service';
 export * as googleEndpointsServiceConsumersIamBinding from './google-endpoints-service-consumers-iam-binding';
 export * as googleEndpointsServiceConsumersIamMember from './google-endpoints-service-consumers-iam-member';

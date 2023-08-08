@@ -668,6 +668,8 @@ The following submodules are available:
 - [googleDnsResponsePolicyRule](./googleDnsResponsePolicyRule.csharp.md)
 - [googleDocumentAiProcessor](./googleDocumentAiProcessor.csharp.md)
 - [googleDocumentAiProcessorDefaultVersion](./googleDocumentAiProcessorDefaultVersion.csharp.md)
+- [googleDocumentAiWarehouseDocumentSchema](./googleDocumentAiWarehouseDocumentSchema.csharp.md)
+- [googleDocumentAiWarehouseLocation](./googleDocumentAiWarehouseLocation.csharp.md)
 - [googleEndpointsService](./googleEndpointsService.csharp.md)
 - [googleEndpointsServiceConsumersIamBinding](./googleEndpointsServiceConsumersIamBinding.csharp.md)
 - [googleEndpointsServiceConsumersIamMember](./googleEndpointsServiceConsumersIamMember.csharp.md)

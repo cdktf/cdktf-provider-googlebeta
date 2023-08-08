@@ -668,6 +668,8 @@ The following submodules are available:
 - [googleDnsResponsePolicyRule](./googleDnsResponsePolicyRule.python.md)
 - [googleDocumentAiProcessor](./googleDocumentAiProcessor.python.md)
 - [googleDocumentAiProcessorDefaultVersion](./googleDocumentAiProcessorDefaultVersion.python.md)
+- [googleDocumentAiWarehouseDocumentSchema](./googleDocumentAiWarehouseDocumentSchema.python.md)
+- [googleDocumentAiWarehouseLocation](./googleDocumentAiWarehouseLocation.python.md)
 - [googleEndpointsService](./googleEndpointsService.python.md)
 - [googleEndpointsServiceConsumersIamBinding](./googleEndpointsServiceConsumersIamBinding.python.md)
 - [googleEndpointsServiceConsumersIamMember](./googleEndpointsServiceConsumersIamMember.python.md)

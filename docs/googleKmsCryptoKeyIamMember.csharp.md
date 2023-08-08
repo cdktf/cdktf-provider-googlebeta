@@ -1,6 +1,6 @@
 # `google_kms_crypto_key_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_kms_crypto_key_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member).
+Refer to the Terraform Registory for docs: [`google_kms_crypto_key_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member).
 
 # `googleKmsCryptoKeyIamMember` Submodule <a name="`googleKmsCryptoKeyIamMember` Submodule" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_kms_crypto_key_iam_member`](
 
 ### GoogleKmsCryptoKeyIamMember <a name="GoogleKmsCryptoKeyIamMember" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member google_kms_crypto_key_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member google_kms_crypto_key_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMember.Initializer"></a>
 
@@ -676,9 +676,9 @@ new GoogleKmsCryptoKeyIamMemberCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#expression GoogleKmsCryptoKeyIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#title GoogleKmsCryptoKeyIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#description GoogleKmsCryptoKeyIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#expression GoogleKmsCryptoKeyIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#title GoogleKmsCryptoKeyIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#description GoogleKmsCryptoKeyIamMember#description}. |
 
 ---
 
@@ -690,7 +690,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#expression GoogleKmsCryptoKeyIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#expression GoogleKmsCryptoKeyIamMember#expression}.
 
 ---
 
@@ -702,7 +702,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#title GoogleKmsCryptoKeyIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#title GoogleKmsCryptoKeyIamMember#title}.
 
 ---
 
@@ -714,7 +714,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#description GoogleKmsCryptoKeyIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#description GoogleKmsCryptoKeyIamMember#description}.
 
 ---
 
@@ -752,11 +752,11 @@ new GoogleKmsCryptoKeyIamMemberConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.cryptoKeyId">CryptoKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#crypto_key_id GoogleKmsCryptoKeyIamMember#crypto_key_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#member GoogleKmsCryptoKeyIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#role GoogleKmsCryptoKeyIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.cryptoKeyId">CryptoKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#crypto_key_id GoogleKmsCryptoKeyIamMember#crypto_key_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.member">Member</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#member GoogleKmsCryptoKeyIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#role GoogleKmsCryptoKeyIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberCondition">GoogleKmsCryptoKeyIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#id GoogleKmsCryptoKeyIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamMember.GoogleKmsCryptoKeyIamMemberConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#id GoogleKmsCryptoKeyIamMember#id}. |
 
 ---
 
@@ -838,7 +838,7 @@ public string CryptoKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#crypto_key_id GoogleKmsCryptoKeyIamMember#crypto_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#crypto_key_id GoogleKmsCryptoKeyIamMember#crypto_key_id}.
 
 ---
 
@@ -850,7 +850,7 @@ public string Member { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#member GoogleKmsCryptoKeyIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#member GoogleKmsCryptoKeyIamMember#member}.
 
 ---
 
@@ -862,7 +862,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#role GoogleKmsCryptoKeyIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#role GoogleKmsCryptoKeyIamMember#role}.
 
 ---
 
@@ -876,7 +876,7 @@ public GoogleKmsCryptoKeyIamMemberCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#condition GoogleKmsCryptoKeyIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#condition GoogleKmsCryptoKeyIamMember#condition}
 
 ---
 
@@ -888,7 +888,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_kms_crypto_key_iam_member#id GoogleKmsCryptoKeyIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_kms_crypto_key_iam_member#id GoogleKmsCryptoKeyIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
