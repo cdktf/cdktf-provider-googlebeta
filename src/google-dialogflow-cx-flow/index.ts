@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface GoogleDialogflowCxFlowConfig extends cdktf.TerraformMetaArgumen
   /**
   * The description of the flow. The maximum length is 500 characters. If exceeded, the request is rejected.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#description GoogleDialogflowCxFlow#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#description GoogleDialogflowCxFlow#description}
   */
   readonly description?: string;
   /**
   * The human-readable name of the flow.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#display_name GoogleDialogflowCxFlow#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#display_name GoogleDialogflowCxFlow#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#id GoogleDialogflowCxFlow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#id GoogleDialogflowCxFlow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -39,14 +34,14 @@ Flow.transition_routes.trigger_fulfillment.messages
 Flow.transition_routes.trigger_fulfillment.conditional_cases
 If not specified, the agent's default language is used. Many languages are supported. Note: languages must be enabled in the agent before they can be used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#language_code GoogleDialogflowCxFlow#language_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#language_code GoogleDialogflowCxFlow#language_code}
   */
   readonly languageCode?: string;
   /**
   * The agent to create a flow for.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#parent GoogleDialogflowCxFlow#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#parent GoogleDialogflowCxFlow#parent}
   */
   readonly parent?: string;
   /**
@@ -55,31 +50,31 @@ They are responsible for matching the user's first utterances in the flow.
 They are inherited by every page's [transition route groups][Page.transition_route_groups]. Transition route groups defined in the page have higher priority than those defined in the flow.
 Format:projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/transitionRouteGroups/<TransitionRouteGroup ID>.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#transition_route_groups GoogleDialogflowCxFlow#transition_route_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#transition_route_groups GoogleDialogflowCxFlow#transition_route_groups}
   */
   readonly transitionRouteGroups?: string[];
   /**
   * event_handlers block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#event_handlers GoogleDialogflowCxFlow#event_handlers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#event_handlers GoogleDialogflowCxFlow#event_handlers}
   */
   readonly eventHandlers?: GoogleDialogflowCxFlowEventHandlers[] | cdktf.IResolvable;
   /**
   * nlu_settings block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#nlu_settings GoogleDialogflowCxFlow#nlu_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#nlu_settings GoogleDialogflowCxFlow#nlu_settings}
   */
   readonly nluSettings?: GoogleDialogflowCxFlowNluSettings;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#timeouts GoogleDialogflowCxFlow#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#timeouts GoogleDialogflowCxFlow#timeouts}
   */
   readonly timeouts?: GoogleDialogflowCxFlowTimeouts;
   /**
   * transition_routes block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#transition_routes GoogleDialogflowCxFlow#transition_routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#transition_routes GoogleDialogflowCxFlow#transition_routes}
   */
   readonly transitionRoutes?: GoogleDialogflowCxFlowTransitionRoutes[] | cdktf.IResolvable;
 }
@@ -87,7 +82,7 @@ export interface GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesTe
   /**
   * A collection of text responses.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
   */
   readonly text?: string[];
 }
@@ -159,7 +154,7 @@ export interface GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages {
   /**
   * text block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
   */
   readonly text?: GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText;
 }
@@ -258,25 +253,25 @@ export interface GoogleDialogflowCxFlowEventHandlersTriggerFulfillment {
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#return_partial_responses GoogleDialogflowCxFlow#return_partial_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#return_partial_responses GoogleDialogflowCxFlow#return_partial_responses}
   */
   readonly returnPartialResponses?: boolean | cdktf.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#tag GoogleDialogflowCxFlow#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#tag GoogleDialogflowCxFlow#tag}
   */
   readonly tag?: string;
   /**
   * The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#webhook GoogleDialogflowCxFlow#webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#webhook GoogleDialogflowCxFlow#webhook}
   */
   readonly webhook?: string;
   /**
   * messages block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#messages GoogleDialogflowCxFlow#messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#messages GoogleDialogflowCxFlow#messages}
   */
   readonly messages?: GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessages[] | cdktf.IResolvable;
 }
@@ -412,27 +407,27 @@ export interface GoogleDialogflowCxFlowEventHandlers {
   /**
   * The name of the event to handle.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#event GoogleDialogflowCxFlow#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#event GoogleDialogflowCxFlow#event}
   */
   readonly event?: string;
   /**
   * The target flow to transition to.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#target_flow GoogleDialogflowCxFlow#target_flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#target_flow GoogleDialogflowCxFlow#target_flow}
   */
   readonly targetFlow?: string;
   /**
   * The target page to transition to.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#target_page GoogleDialogflowCxFlow#target_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#target_page GoogleDialogflowCxFlow#target_page}
   */
   readonly targetPage?: string;
   /**
   * trigger_fulfillment block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#trigger_fulfillment GoogleDialogflowCxFlow#trigger_fulfillment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#trigger_fulfillment GoogleDialogflowCxFlow#trigger_fulfillment}
   */
   readonly triggerFulfillment?: GoogleDialogflowCxFlowEventHandlersTriggerFulfillment;
 }
@@ -606,7 +601,7 @@ export interface GoogleDialogflowCxFlowNluSettings {
   * To filter out false positive results and still get variety in matched natural language inputs for your agent, you can tune the machine learning classification threshold.
 If the returned score value is less than the threshold value, then a no-match event will be triggered. The score values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the default of 0.3 is used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#classification_threshold GoogleDialogflowCxFlow#classification_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#classification_threshold GoogleDialogflowCxFlow#classification_threshold}
   */
   readonly classificationThreshold?: number;
   /**
@@ -614,7 +609,7 @@ If the returned score value is less than the threshold value, then a no-match ev
 * MODEL_TRAINING_MODE_AUTOMATIC: NLU model training is automatically triggered when a flow gets modified. User can also manually trigger model training in this mode.
 * MODEL_TRAINING_MODE_MANUAL: User needs to manually trigger NLU model training. Best for large flows whose models take long time to train. Possible values: ["MODEL_TRAINING_MODE_AUTOMATIC", "MODEL_TRAINING_MODE_MANUAL"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#model_training_mode GoogleDialogflowCxFlow#model_training_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#model_training_mode GoogleDialogflowCxFlow#model_training_mode}
   */
   readonly modelTrainingMode?: string;
   /**
@@ -622,7 +617,7 @@ If the returned score value is less than the threshold value, then a no-match ev
 * MODEL_TYPE_STANDARD: Use standard NLU model.
 * MODEL_TYPE_ADVANCED: Use advanced NLU model. Possible values: ["MODEL_TYPE_STANDARD", "MODEL_TYPE_ADVANCED"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#model_type GoogleDialogflowCxFlow#model_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#model_type GoogleDialogflowCxFlow#model_type}
   */
   readonly modelType?: string;
 }
@@ -733,15 +728,15 @@ export class GoogleDialogflowCxFlowNluSettingsOutputReference extends cdktf.Comp
 }
 export interface GoogleDialogflowCxFlowTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#create GoogleDialogflowCxFlow#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#create GoogleDialogflowCxFlow#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#delete GoogleDialogflowCxFlow#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#delete GoogleDialogflowCxFlow#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#update GoogleDialogflowCxFlow#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#update GoogleDialogflowCxFlow#update}
   */
   readonly update?: string;
 }
@@ -864,7 +859,7 @@ export interface GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessage
   /**
   * A collection of text responses.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
   */
   readonly text?: string[];
 }
@@ -936,7 +931,7 @@ export interface GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessage
   /**
   * text block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
   */
   readonly text?: GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessagesText;
 }
@@ -1035,25 +1030,25 @@ export interface GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillment {
   /**
   * Whether Dialogflow should return currently queued fulfillment response messages in streaming APIs. If a webhook is specified, it happens before Dialogflow invokes webhook. Warning: 1) This flag only affects streaming API. Responses are still queued and returned once in non-streaming API. 2) The flag can be enabled in any fulfillment but only the first 3 partial responses will be returned. You may only want to apply it to fulfillments that have slow webhooks.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#return_partial_responses GoogleDialogflowCxFlow#return_partial_responses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#return_partial_responses GoogleDialogflowCxFlow#return_partial_responses}
   */
   readonly returnPartialResponses?: boolean | cdktf.IResolvable;
   /**
   * The tag used by the webhook to identify which fulfillment is being called. This field is required if webhook is specified.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#tag GoogleDialogflowCxFlow#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#tag GoogleDialogflowCxFlow#tag}
   */
   readonly tag?: string;
   /**
   * The webhook to call. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/webhooks/<Webhook ID>.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#webhook GoogleDialogflowCxFlow#webhook}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#webhook GoogleDialogflowCxFlow#webhook}
   */
   readonly webhook?: string;
   /**
   * messages block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#messages GoogleDialogflowCxFlow#messages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#messages GoogleDialogflowCxFlow#messages}
   */
   readonly messages?: GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillmentMessages[] | cdktf.IResolvable;
 }
@@ -1190,34 +1185,34 @@ export interface GoogleDialogflowCxFlowTransitionRoutes {
   * The condition to evaluate against form parameters or session parameters.
 At least one of intent or condition must be specified. When both intent and condition are specified, the transition can only happen when both are fulfilled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#condition GoogleDialogflowCxFlow#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#condition GoogleDialogflowCxFlow#condition}
   */
   readonly condition?: string;
   /**
   * The unique identifier of an Intent.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/intents/<Intent ID>. Indicates that the transition can only happen when the given intent is matched. At least one of intent or condition must be specified. When both intent and condition are specified, the transition can only happen when both are fulfilled.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#intent GoogleDialogflowCxFlow#intent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#intent GoogleDialogflowCxFlow#intent}
   */
   readonly intent?: string;
   /**
   * The target flow to transition to.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#target_flow GoogleDialogflowCxFlow#target_flow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#target_flow GoogleDialogflowCxFlow#target_flow}
   */
   readonly targetFlow?: string;
   /**
   * The target page to transition to.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>/flows/<Flow ID>/pages/<Page ID>.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#target_page GoogleDialogflowCxFlow#target_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#target_page GoogleDialogflowCxFlow#target_page}
   */
   readonly targetPage?: string;
   /**
   * trigger_fulfillment block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow#trigger_fulfillment GoogleDialogflowCxFlow#trigger_fulfillment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow#trigger_fulfillment GoogleDialogflowCxFlow#trigger_fulfillment}
   */
   readonly triggerFulfillment?: GoogleDialogflowCxFlowTransitionRoutesTriggerFulfillment;
 }
@@ -1411,7 +1406,7 @@ export class GoogleDialogflowCxFlowTransitionRoutesList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow}
 */
 export class GoogleDialogflowCxFlow extends cdktf.TerraformResource {
 
@@ -1425,7 +1420,7 @@ export class GoogleDialogflowCxFlow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1436,7 +1431,7 @@ export class GoogleDialogflowCxFlow extends cdktf.TerraformResource {
       terraformResourceType: 'google_dialogflow_cx_flow',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.76.0',
+        providerVersion: '4.77.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -668,6 +668,8 @@ The following submodules are available:
 - [googleDnsResponsePolicyRule](./googleDnsResponsePolicyRule.typescript.md)
 - [googleDocumentAiProcessor](./googleDocumentAiProcessor.typescript.md)
 - [googleDocumentAiProcessorDefaultVersion](./googleDocumentAiProcessorDefaultVersion.typescript.md)
+- [googleDocumentAiWarehouseDocumentSchema](./googleDocumentAiWarehouseDocumentSchema.typescript.md)
+- [googleDocumentAiWarehouseLocation](./googleDocumentAiWarehouseLocation.typescript.md)
 - [googleEndpointsService](./googleEndpointsService.typescript.md)
 - [googleEndpointsServiceConsumersIamBinding](./googleEndpointsServiceConsumersIamBinding.typescript.md)
 - [googleEndpointsServiceConsumersIamMember](./googleEndpointsServiceConsumersIamMember.typescript.md)

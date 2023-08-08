@@ -1,6 +1,6 @@
 # `google_project_service`
 
-Refer to the Terraform Registory for docs: [`google_project_service`](https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service).
+Refer to the Terraform Registory for docs: [`google_project_service`](https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service).
 
 # `googleProjectService` Submodule <a name="`googleProjectService` Submodule" id="@cdktf/provider-google-beta.googleProjectService"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_project_service`](https://re
 
 ### GoogleProjectService <a name="GoogleProjectService" id="@cdktf/provider-google-beta.googleProjectService.GoogleProjectService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service google_project_service}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service google_project_service}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleProjectService.GoogleProjectService.Initializer"></a>
 
@@ -711,11 +711,11 @@ const googleProjectServiceConfig: googleProjectService.GoogleProjectServiceConfi
 | <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.service">service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#service GoogleProjectService#service}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.disableDependentServices">disableDependentServices</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#disable_dependent_services GoogleProjectService#disable_dependent_services}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.disableOnDestroy">disableOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#disable_on_destroy GoogleProjectService#disable_on_destroy}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#id GoogleProjectService#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#project GoogleProjectService#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.service">service</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#service GoogleProjectService#service}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.disableDependentServices">disableDependentServices</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#disable_dependent_services GoogleProjectService#disable_dependent_services}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.disableOnDestroy">disableOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#disable_on_destroy GoogleProjectService#disable_on_destroy}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#id GoogleProjectService#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#project GoogleProjectService#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeouts">GoogleProjectServiceTimeouts</a></code> | timeouts block. |
 
 ---
@@ -798,7 +798,7 @@ public readonly service: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#service GoogleProjectService#service}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#service GoogleProjectService#service}.
 
 ---
 
@@ -810,7 +810,7 @@ public readonly disableDependentServices: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#disable_dependent_services GoogleProjectService#disable_dependent_services}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#disable_dependent_services GoogleProjectService#disable_dependent_services}.
 
 ---
 
@@ -822,7 +822,7 @@ public readonly disableOnDestroy: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#disable_on_destroy GoogleProjectService#disable_on_destroy}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#disable_on_destroy GoogleProjectService#disable_on_destroy}.
 
 ---
 
@@ -834,7 +834,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#id GoogleProjectService#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#id GoogleProjectService#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -849,7 +849,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#project GoogleProjectService#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#project GoogleProjectService#project}.
 
 ---
 
@@ -863,7 +863,7 @@ public readonly timeouts: GoogleProjectServiceTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#timeouts GoogleProjectService#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#timeouts GoogleProjectService#timeouts}
 
 ---
 
@@ -881,10 +881,10 @@ const googleProjectServiceTimeouts: googleProjectService.GoogleProjectServiceTim
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#create GoogleProjectService#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#delete GoogleProjectService#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#read GoogleProjectService#read}. |
-| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#update GoogleProjectService#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#create GoogleProjectService#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#delete GoogleProjectService#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeouts.property.read">read</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#read GoogleProjectService#read}. |
+| <code><a href="#@cdktf/provider-google-beta.googleProjectService.GoogleProjectServiceTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#update GoogleProjectService#update}. |
 
 ---
 
@@ -896,7 +896,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#create GoogleProjectService#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#create GoogleProjectService#create}.
 
 ---
 
@@ -908,7 +908,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#delete GoogleProjectService#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#delete GoogleProjectService#delete}.
 
 ---
 
@@ -920,7 +920,7 @@ public readonly read: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#read GoogleProjectService#read}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#read GoogleProjectService#read}.
 
 ---
 
@@ -932,7 +932,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_project_service#update GoogleProjectService#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_project_service#update GoogleProjectService#update}.
 
 ---
 

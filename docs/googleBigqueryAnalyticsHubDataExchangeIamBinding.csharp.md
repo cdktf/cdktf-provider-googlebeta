@@ -1,6 +1,6 @@
 # `google_bigquery_analytics_hub_data_exchange_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_bigquery_analytics_hub_data_exchange_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding).
+Refer to the Terraform Registory for docs: [`google_bigquery_analytics_hub_data_exchange_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding).
 
 # `googleBigqueryAnalyticsHubDataExchangeIamBinding` Submodule <a name="`googleBigqueryAnalyticsHubDataExchangeIamBinding` Submodule" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_bigquery_analytics_hub_data_
 
 ### GoogleBigqueryAnalyticsHubDataExchangeIamBinding <a name="GoogleBigqueryAnalyticsHubDataExchangeIamBinding" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBinding.Initializer"></a>
 
@@ -734,9 +734,9 @@ new GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#expression GoogleBigqueryAnalyticsHubDataExchangeIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#title GoogleBigqueryAnalyticsHubDataExchangeIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#description GoogleBigqueryAnalyticsHubDataExchangeIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#expression GoogleBigqueryAnalyticsHubDataExchangeIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#title GoogleBigqueryAnalyticsHubDataExchangeIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#description GoogleBigqueryAnalyticsHubDataExchangeIamBinding#description}. |
 
 ---
 
@@ -748,7 +748,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#expression GoogleBigqueryAnalyticsHubDataExchangeIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#expression GoogleBigqueryAnalyticsHubDataExchangeIamBinding#expression}.
 
 ---
 
@@ -760,7 +760,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#title GoogleBigqueryAnalyticsHubDataExchangeIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#title GoogleBigqueryAnalyticsHubDataExchangeIamBinding#title}.
 
 ---
 
@@ -772,7 +772,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#description GoogleBigqueryAnalyticsHubDataExchangeIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#description GoogleBigqueryAnalyticsHubDataExchangeIamBinding#description}.
 
 ---
 
@@ -812,13 +812,13 @@ new GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.dataExchangeId">DataExchangeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#data_exchange_id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#data_exchange_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#members GoogleBigqueryAnalyticsHubDataExchangeIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#role GoogleBigqueryAnalyticsHubDataExchangeIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.dataExchangeId">DataExchangeId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#data_exchange_id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#data_exchange_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#members GoogleBigqueryAnalyticsHubDataExchangeIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#role GoogleBigqueryAnalyticsHubDataExchangeIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition">GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#location GoogleBigqueryAnalyticsHubDataExchangeIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#project GoogleBigqueryAnalyticsHubDataExchangeIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.location">Location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#location GoogleBigqueryAnalyticsHubDataExchangeIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryAnalyticsHubDataExchangeIamBinding.GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#project GoogleBigqueryAnalyticsHubDataExchangeIamBinding#project}. |
 
 ---
 
@@ -900,7 +900,7 @@ public string DataExchangeId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#data_exchange_id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#data_exchange_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#data_exchange_id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#data_exchange_id}.
 
 ---
 
@@ -912,7 +912,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#members GoogleBigqueryAnalyticsHubDataExchangeIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#members GoogleBigqueryAnalyticsHubDataExchangeIamBinding#members}.
 
 ---
 
@@ -924,7 +924,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#role GoogleBigqueryAnalyticsHubDataExchangeIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#role GoogleBigqueryAnalyticsHubDataExchangeIamBinding#role}.
 
 ---
 
@@ -938,7 +938,7 @@ public GoogleBigqueryAnalyticsHubDataExchangeIamBindingCondition Condition { get
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#condition GoogleBigqueryAnalyticsHubDataExchangeIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#condition GoogleBigqueryAnalyticsHubDataExchangeIamBinding#condition}
 
 ---
 
@@ -950,7 +950,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#id GoogleBigqueryAnalyticsHubDataExchangeIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -965,7 +965,7 @@ public string Location { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#location GoogleBigqueryAnalyticsHubDataExchangeIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#location GoogleBigqueryAnalyticsHubDataExchangeIamBinding#location}.
 
 ---
 
@@ -977,7 +977,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#project GoogleBigqueryAnalyticsHubDataExchangeIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding#project GoogleBigqueryAnalyticsHubDataExchangeIamBinding#project}.
 
 ---
 
