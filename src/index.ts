@@ -121,6 +121,7 @@ export * as googleBillingAccountIamBinding from './google-billing-account-iam-bi
 export * as googleBillingAccountIamMember from './google-billing-account-iam-member';
 export * as googleBillingAccountIamPolicy from './google-billing-account-iam-policy';
 export * as googleBillingBudget from './google-billing-budget';
+export * as googleBillingProjectInfo from './google-billing-project-info';
 export * as googleBillingSubaccount from './google-billing-subaccount';
 export * as googleBinaryAuthorizationAttestor from './google-binary-authorization-attestor';
 export * as googleBinaryAuthorizationAttestorIamBinding from './google-binary-authorization-attestor-iam-binding';
@@ -356,6 +357,7 @@ export * as googleDatabaseMigrationServiceConnectionProfile from './google-datab
 export * as googleDataflowFlexTemplateJob from './google-dataflow-flex-template-job';
 export * as googleDataflowJob from './google-dataflow-job';
 export * as googleDataformRepository from './google-dataform-repository';
+export * as googleDataformRepositoryReleaseConfig from './google-dataform-repository-release-config';
 export * as googleDataplexAsset from './google-dataplex-asset';
 export * as googleDataplexAssetIamBinding from './google-dataplex-asset-iam-binding';
 export * as googleDataplexAssetIamMember from './google-dataplex-asset-iam-member';
@@ -592,6 +594,7 @@ export * as googleMonitoringService from './google-monitoring-service';
 export * as googleMonitoringSlo from './google-monitoring-slo';
 export * as googleMonitoringUptimeCheckConfig from './google-monitoring-uptime-check-config';
 export * as googleNetworkConnectivityHub from './google-network-connectivity-hub';
+export * as googleNetworkConnectivityServiceConnectionPolicy from './google-network-connectivity-service-connection-policy';
 export * as googleNetworkConnectivitySpoke from './google-network-connectivity-spoke';
 export * as googleNetworkManagementConnectivityTest from './google-network-management-connectivity-test';
 export * as googleNetworkSecurityAddressGroup from './google-network-security-address-group';

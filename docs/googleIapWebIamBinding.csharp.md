@@ -1,6 +1,6 @@
 # `google_iap_web_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_iap_web_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding).
+Refer to the Terraform Registory for docs: [`google_iap_web_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding).
 
 # `googleIapWebIamBinding` Submodule <a name="`googleIapWebIamBinding` Submodule" id="@cdktf/provider-google-beta.googleIapWebIamBinding"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_iap_web_iam_binding`](https:
 
 ### GoogleIapWebIamBinding <a name="GoogleIapWebIamBinding" id="@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding google_iap_web_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding google_iap_web_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBinding.Initializer"></a>
 
@@ -683,9 +683,9 @@ new GoogleIapWebIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#expression GoogleIapWebIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#title GoogleIapWebIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#description GoogleIapWebIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#expression GoogleIapWebIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#title GoogleIapWebIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#description GoogleIapWebIamBinding#description}. |
 
 ---
 
@@ -697,7 +697,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#expression GoogleIapWebIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#expression GoogleIapWebIamBinding#expression}.
 
 ---
 
@@ -709,7 +709,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#title GoogleIapWebIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#title GoogleIapWebIamBinding#title}.
 
 ---
 
@@ -721,7 +721,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#description GoogleIapWebIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#description GoogleIapWebIamBinding#description}.
 
 ---
 
@@ -759,11 +759,11 @@ new GoogleIapWebIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#members GoogleIapWebIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#role GoogleIapWebIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#members GoogleIapWebIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#role GoogleIapWebIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingCondition">GoogleIapWebIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#id GoogleIapWebIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#project GoogleIapWebIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#id GoogleIapWebIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleIapWebIamBinding.GoogleIapWebIamBindingConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#project GoogleIapWebIamBinding#project}. |
 
 ---
 
@@ -845,7 +845,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#members GoogleIapWebIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#members GoogleIapWebIamBinding#members}.
 
 ---
 
@@ -857,7 +857,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#role GoogleIapWebIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#role GoogleIapWebIamBinding#role}.
 
 ---
 
@@ -871,7 +871,7 @@ public GoogleIapWebIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#condition GoogleIapWebIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#condition GoogleIapWebIamBinding#condition}
 
 ---
 
@@ -883,7 +883,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#id GoogleIapWebIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#id GoogleIapWebIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -898,7 +898,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_iap_web_iam_binding#project GoogleIapWebIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_iap_web_iam_binding#project GoogleIapWebIamBinding#project}.
 
 ---
 

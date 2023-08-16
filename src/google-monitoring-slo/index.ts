@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,50 +16,50 @@ export interface GoogleMonitoringSloConfig extends cdktf.TerraformMetaArguments 
   * A calendar period, semantically "since the start of the current
 <calendarPeriod>". Possible values: ["DAY", "WEEK", "FORTNIGHT", "MONTH"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#calendar_period GoogleMonitoringSlo#calendar_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#calendar_period GoogleMonitoringSlo#calendar_period}
   */
   readonly calendarPeriod?: string;
   /**
   * Name used for UI elements listing this SLO.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#display_name GoogleMonitoringSlo#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#display_name GoogleMonitoringSlo#display_name}
   */
   readonly displayName?: string;
   /**
   * The fraction of service that must be good in order for this objective
 to be met. 0 < goal <= 0.999
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#goal GoogleMonitoringSlo#goal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#goal GoogleMonitoringSlo#goal}
   */
   readonly goal: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#id GoogleMonitoringSlo#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#id GoogleMonitoringSlo#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#project GoogleMonitoringSlo#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#project GoogleMonitoringSlo#project}
   */
   readonly project?: string;
   /**
   * A rolling time period, semantically "in the past X days".
 Must be between 1 to 30 days, inclusive.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#rolling_period_days GoogleMonitoringSlo#rolling_period_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#rolling_period_days GoogleMonitoringSlo#rolling_period_days}
   */
   readonly rollingPeriodDays?: number;
   /**
   * ID of the service to which this SLO belongs.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#service GoogleMonitoringSlo#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#service GoogleMonitoringSlo#service}
   */
   readonly service: string;
   /**
   * The id to use for this ServiceLevelObjective. If omitted, an id will be generated instead.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#slo_id GoogleMonitoringSlo#slo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#slo_id GoogleMonitoringSlo#slo_id}
   */
   readonly sloId?: string;
   /**
@@ -69,31 +69,31 @@ to 63 Unicode characters or 128 bytes, whichever is smaller. Labels and values
 can contain only lowercase letters, numerals, underscores, and dashes. Keys
 must begin with a letter.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#user_labels GoogleMonitoringSlo#user_labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#user_labels GoogleMonitoringSlo#user_labels}
   */
   readonly userLabels?: { [key: string]: string };
   /**
   * basic_sli block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#basic_sli GoogleMonitoringSlo#basic_sli}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#basic_sli GoogleMonitoringSlo#basic_sli}
   */
   readonly basicSli?: GoogleMonitoringSloBasicSli;
   /**
   * request_based_sli block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#request_based_sli GoogleMonitoringSlo#request_based_sli}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#request_based_sli GoogleMonitoringSlo#request_based_sli}
   */
   readonly requestBasedSli?: GoogleMonitoringSloRequestBasedSli;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#timeouts GoogleMonitoringSlo#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#timeouts GoogleMonitoringSlo#timeouts}
   */
   readonly timeouts?: GoogleMonitoringSloTimeouts;
   /**
   * windows_based_sli block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#windows_based_sli GoogleMonitoringSlo#windows_based_sli}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#windows_based_sli GoogleMonitoringSlo#windows_based_sli}
   */
   readonly windowsBasedSli?: GoogleMonitoringSloWindowsBasedSli;
 }
@@ -101,7 +101,7 @@ export interface GoogleMonitoringSloBasicSliAvailability {
   /**
   * Whether an availability SLI is enabled or not. Must be set to true. Defaults to 'true'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#enabled GoogleMonitoringSlo#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#enabled GoogleMonitoringSlo#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -170,7 +170,7 @@ export interface GoogleMonitoringSloBasicSliLatency {
 Good service is defined to be the count of requests made to
 this service that return in no more than threshold.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#threshold GoogleMonitoringSlo#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#threshold GoogleMonitoringSlo#threshold}
   */
   readonly threshold: string;
 }
@@ -239,7 +239,7 @@ locations in which the Service has activity. For service types
 that don't support breaking down by location, setting this
 field will result in an error.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#location GoogleMonitoringSlo#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#location GoogleMonitoringSlo#location}
   */
   readonly location?: string[];
   /**
@@ -250,7 +250,7 @@ the Service's methods. For service types that don't support
 breaking down by method, setting this field will result in an
 error.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#method GoogleMonitoringSlo#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#method GoogleMonitoringSlo#method}
   */
   readonly method?: string[];
   /**
@@ -261,19 +261,19 @@ this SLI applies to all API versions. For service types
 that don't support breaking down by version, setting this
 field will result in an error.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#version GoogleMonitoringSlo#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#version GoogleMonitoringSlo#version}
   */
   readonly version?: string[];
   /**
   * availability block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#availability GoogleMonitoringSlo#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#availability GoogleMonitoringSlo#availability}
   */
   readonly availability?: GoogleMonitoringSloBasicSliAvailability;
   /**
   * latency block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#latency GoogleMonitoringSlo#latency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#latency GoogleMonitoringSlo#latency}
   */
   readonly latency?: GoogleMonitoringSloBasicSliLatency;
 }
@@ -433,14 +433,14 @@ export interface GoogleMonitoringSloRequestBasedSliDistributionCutRange {
   * max value for the range (inclusive). If not given,
 will be set to 0
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#max GoogleMonitoringSlo#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#max GoogleMonitoringSlo#max}
   */
   readonly max?: number;
   /**
   * Min value for the range (inclusive). If not given,
 will be set to 0
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#min GoogleMonitoringSlo#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#min GoogleMonitoringSlo#min}
   */
   readonly min?: number;
 }
@@ -534,13 +534,13 @@ aggregating values to quantify the good service provided.
 Must have ValueType = DISTRIBUTION and
 MetricKind = DELTA or MetricKind = CUMULATIVE.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#distribution_filter GoogleMonitoringSlo#distribution_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#distribution_filter GoogleMonitoringSlo#distribution_filter}
   */
   readonly distributionFilter: string;
   /**
   * range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#range GoogleMonitoringSlo#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#range GoogleMonitoringSlo#range}
   */
   readonly range: GoogleMonitoringSloRequestBasedSliDistributionCutRange;
 }
@@ -633,7 +633,7 @@ must have MetricKind = DELTA or MetricKind = CUMULATIVE.
 Exactly two of 'good_service_filter','bad_service_filter','total_service_filter'
 must be set (good + bad = total is assumed).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#bad_service_filter GoogleMonitoringSlo#bad_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#bad_service_filter GoogleMonitoringSlo#bad_service_filter}
   */
   readonly badServiceFilter?: string;
   /**
@@ -645,7 +645,7 @@ must have MetricKind = DELTA or MetricKind = CUMULATIVE.
 Exactly two of 'good_service_filter','bad_service_filter','total_service_filter'
 must be set (good + bad = total is assumed).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#good_service_filter GoogleMonitoringSlo#good_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#good_service_filter GoogleMonitoringSlo#good_service_filter}
   */
   readonly goodServiceFilter?: string;
   /**
@@ -658,7 +658,7 @@ must have MetricKind = DELTA or MetricKind = CUMULATIVE.
 Exactly two of 'good_service_filter','bad_service_filter','total_service_filter'
 must be set (good + bad = total is assumed).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#total_service_filter GoogleMonitoringSlo#total_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#total_service_filter GoogleMonitoringSlo#total_service_filter}
   */
   readonly totalServiceFilter?: string;
 }
@@ -771,13 +771,13 @@ export interface GoogleMonitoringSloRequestBasedSli {
   /**
   * distribution_cut block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#distribution_cut GoogleMonitoringSlo#distribution_cut}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#distribution_cut GoogleMonitoringSlo#distribution_cut}
   */
   readonly distributionCut?: GoogleMonitoringSloRequestBasedSliDistributionCut;
   /**
   * good_total_ratio block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#good_total_ratio GoogleMonitoringSlo#good_total_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#good_total_ratio GoogleMonitoringSlo#good_total_ratio}
   */
   readonly goodTotalRatio?: GoogleMonitoringSloRequestBasedSliGoodTotalRatio;
 }
@@ -865,15 +865,15 @@ export class GoogleMonitoringSloRequestBasedSliOutputReference extends cdktf.Com
 }
 export interface GoogleMonitoringSloTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#create GoogleMonitoringSlo#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#create GoogleMonitoringSlo#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#delete GoogleMonitoringSlo#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#delete GoogleMonitoringSlo#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#update GoogleMonitoringSlo#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#update GoogleMonitoringSlo#update}
   */
   readonly update?: string;
 }
@@ -996,7 +996,7 @@ export interface GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicS
   /**
   * Whether an availability SLI is enabled or not. Must be set to 'true. Defaults to 'true'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#enabled GoogleMonitoringSlo#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#enabled GoogleMonitoringSlo#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
 }
@@ -1065,7 +1065,7 @@ export interface GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicS
 Good service is defined to be the count of requests made to
 this service that return in no more than threshold.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#threshold GoogleMonitoringSlo#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#threshold GoogleMonitoringSlo#threshold}
   */
   readonly threshold: string;
 }
@@ -1134,7 +1134,7 @@ locations in which the Service has activity. For service types
 that don't support breaking down by location, setting this
 field will result in an error.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#location GoogleMonitoringSlo#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#location GoogleMonitoringSlo#location}
   */
   readonly location?: string[];
   /**
@@ -1145,7 +1145,7 @@ the Service's methods. For service types that don't support
 breaking down by method, setting this field will result in an
 error.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#method GoogleMonitoringSlo#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#method GoogleMonitoringSlo#method}
   */
   readonly method?: string[];
   /**
@@ -1156,19 +1156,19 @@ this SLI applies to all API versions. For service types
 that don't support breaking down by version, setting this
 field will result in an error.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#version GoogleMonitoringSlo#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#version GoogleMonitoringSlo#version}
   */
   readonly version?: string[];
   /**
   * availability block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#availability GoogleMonitoringSlo#availability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#availability GoogleMonitoringSlo#availability}
   */
   readonly availability?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability;
   /**
   * latency block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#latency GoogleMonitoringSlo#latency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#latency GoogleMonitoringSlo#latency}
   */
   readonly latency?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency;
 }
@@ -1328,14 +1328,14 @@ export interface GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerfor
   * max value for the range (inclusive). If not given,
 will be set to 0
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#max GoogleMonitoringSlo#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#max GoogleMonitoringSlo#max}
   */
   readonly max?: number;
   /**
   * Min value for the range (inclusive). If not given,
 will be set to 0
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#min GoogleMonitoringSlo#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#min GoogleMonitoringSlo#min}
   */
   readonly min?: number;
 }
@@ -1429,13 +1429,13 @@ aggregating values to quantify the good service provided.
 Must have ValueType = DISTRIBUTION and
 MetricKind = DELTA or MetricKind = CUMULATIVE.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#distribution_filter GoogleMonitoringSlo#distribution_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#distribution_filter GoogleMonitoringSlo#distribution_filter}
   */
   readonly distributionFilter: string;
   /**
   * range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#range GoogleMonitoringSlo#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#range GoogleMonitoringSlo#range}
   */
   readonly range: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange;
 }
@@ -1527,7 +1527,7 @@ good + bad = total is assumed)
 Must have ValueType = DOUBLE or ValueType = INT64 and
 must have MetricKind = DELTA or MetricKind = CUMULATIVE.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#bad_service_filter GoogleMonitoringSlo#bad_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#bad_service_filter GoogleMonitoringSlo#bad_service_filter}
   */
   readonly badServiceFilter?: string;
   /**
@@ -1539,7 +1539,7 @@ good + bad = total is assumed)
 Must have ValueType = DOUBLE or ValueType = INT64 and
 must have MetricKind = DELTA or MetricKind = CUMULATIVE.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#good_service_filter GoogleMonitoringSlo#good_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#good_service_filter GoogleMonitoringSlo#good_service_filter}
   */
   readonly goodServiceFilter?: string;
   /**
@@ -1551,7 +1551,7 @@ good + bad = total is assumed)
 Must have ValueType = DOUBLE or ValueType = INT64 and
 must have MetricKind = DELTA or MetricKind = CUMULATIVE.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#total_service_filter GoogleMonitoringSlo#total_service_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#total_service_filter GoogleMonitoringSlo#total_service_filter}
   */
   readonly totalServiceFilter?: string;
 }
@@ -1664,13 +1664,13 @@ export interface GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerfor
   /**
   * distribution_cut block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#distribution_cut GoogleMonitoringSlo#distribution_cut}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#distribution_cut GoogleMonitoringSlo#distribution_cut}
   */
   readonly distributionCut?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut;
   /**
   * good_total_ratio block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#good_total_ratio GoogleMonitoringSlo#good_total_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#good_total_ratio GoogleMonitoringSlo#good_total_ratio}
   */
   readonly goodTotalRatio?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio;
 }
@@ -1761,19 +1761,19 @@ export interface GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold {
   * If window performance >= threshold, the window is counted
 as good.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#threshold GoogleMonitoringSlo#threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#threshold GoogleMonitoringSlo#threshold}
   */
   readonly threshold?: number;
   /**
   * basic_sli_performance block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#basic_sli_performance GoogleMonitoringSlo#basic_sli_performance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#basic_sli_performance GoogleMonitoringSlo#basic_sli_performance}
   */
   readonly basicSliPerformance?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance;
   /**
   * performance block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#performance GoogleMonitoringSlo#performance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#performance GoogleMonitoringSlo#performance}
   */
   readonly performance?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThresholdPerformance;
 }
@@ -1888,7 +1888,7 @@ export interface GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange {
 will be set to "infinity", defining an open range
 ">= range.min"
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#max GoogleMonitoringSlo#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#max GoogleMonitoringSlo#max}
   */
   readonly max?: number;
   /**
@@ -1896,7 +1896,7 @@ will be set to "infinity", defining an open range
 will be set to "-infinity", defining an open range
 "< range.max"
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#min GoogleMonitoringSlo#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#min GoogleMonitoringSlo#min}
   */
   readonly min?: number;
 }
@@ -1991,13 +1991,13 @@ ValueType = DOUBLE and MetricKind = GAUGE. Mean value 'X'
 should satisfy 'range.min <= X <= range.max'
 under good service.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#time_series GoogleMonitoringSlo#time_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#time_series GoogleMonitoringSlo#time_series}
   */
   readonly timeSeries: string;
   /**
   * range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#range GoogleMonitoringSlo#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#range GoogleMonitoringSlo#range}
   */
   readonly range: GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRange;
 }
@@ -2083,7 +2083,7 @@ export interface GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange {
 will be set to "infinity", defining an open range
 ">= range.min"
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#max GoogleMonitoringSlo#max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#max GoogleMonitoringSlo#max}
   */
   readonly max?: number;
   /**
@@ -2091,7 +2091,7 @@ will be set to "infinity", defining an open range
 will be set to "-infinity", defining an open range
 "< range.max"
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#min GoogleMonitoringSlo#min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#min GoogleMonitoringSlo#min}
   */
   readonly min?: number;
 }
@@ -2188,13 +2188,13 @@ MetricKind = GAUGE.
 Summed value 'X' should satisfy
 'range.min <= X <= range.max' for a good window.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#time_series GoogleMonitoringSlo#time_series}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#time_series GoogleMonitoringSlo#time_series}
   */
   readonly timeSeries: string;
   /**
   * range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#range GoogleMonitoringSlo#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#range GoogleMonitoringSlo#range}
   */
   readonly range: GoogleMonitoringSloWindowsBasedSliMetricSumInRangeRange;
 }
@@ -2282,7 +2282,7 @@ appear in the window. One of 'good_bad_metric_filter',
 'good_total_ratio_threshold', 'metric_mean_in_range',
 'metric_sum_in_range' must be set for 'windows_based_sli'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#good_bad_metric_filter GoogleMonitoringSlo#good_bad_metric_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#good_bad_metric_filter GoogleMonitoringSlo#good_bad_metric_filter}
   */
   readonly goodBadMetricFilter?: string;
   /**
@@ -2290,25 +2290,25 @@ appear in the window. One of 'good_bad_metric_filter',
 duration string "{X}s" representing X seconds. Must be an
 integer fraction of a day and at least 60s.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#window_period GoogleMonitoringSlo#window_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#window_period GoogleMonitoringSlo#window_period}
   */
   readonly windowPeriod?: string;
   /**
   * good_total_ratio_threshold block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#good_total_ratio_threshold GoogleMonitoringSlo#good_total_ratio_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#good_total_ratio_threshold GoogleMonitoringSlo#good_total_ratio_threshold}
   */
   readonly goodTotalRatioThreshold?: GoogleMonitoringSloWindowsBasedSliGoodTotalRatioThreshold;
   /**
   * metric_mean_in_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#metric_mean_in_range GoogleMonitoringSlo#metric_mean_in_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#metric_mean_in_range GoogleMonitoringSlo#metric_mean_in_range}
   */
   readonly metricMeanInRange?: GoogleMonitoringSloWindowsBasedSliMetricMeanInRange;
   /**
   * metric_sum_in_range block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo#metric_sum_in_range GoogleMonitoringSlo#metric_sum_in_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo#metric_sum_in_range GoogleMonitoringSlo#metric_sum_in_range}
   */
   readonly metricSumInRange?: GoogleMonitoringSloWindowsBasedSliMetricSumInRange;
 }
@@ -2465,7 +2465,7 @@ export class GoogleMonitoringSloWindowsBasedSliOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo google_monitoring_slo}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo google_monitoring_slo}
 */
 export class GoogleMonitoringSlo extends cdktf.TerraformResource {
 
@@ -2479,7 +2479,7 @@ export class GoogleMonitoringSlo extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_monitoring_slo google_monitoring_slo} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_monitoring_slo google_monitoring_slo} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2490,7 +2490,7 @@ export class GoogleMonitoringSlo extends cdktf.TerraformResource {
       terraformResourceType: 'google_monitoring_slo',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.77.0',
+        providerVersion: '4.78.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
