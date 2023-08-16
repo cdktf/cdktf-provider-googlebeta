@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstance(scope Construct, id *string, config GoogleFirebaseExtensionsInstanceConfig) GoogleFirebaseExtensionsInstance
 ```
@@ -317,7 +317,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstance_IsConstruct(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstance_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -782,7 +782,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 &googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstanceConfig {
 	Connection: interface{},
@@ -792,11 +792,11 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasee
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceConfigA,
+	Config: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceConfigA,
 	InstanceId: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceTimeouts,
 }
 ```
 
@@ -963,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 &googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstanceConfigA {
 	ExtensionRef: *string,
@@ -1080,7 +1080,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceErrorStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 &googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstanceErrorStatus {
 
@@ -1093,7 +1093,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasee
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceRuntimeData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 &googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstanceRuntimeData {
 
@@ -1106,7 +1106,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasee
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceRuntimeDataFatalError.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 &googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstanceRuntimeDataFatalError {
 
@@ -1119,7 +1119,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasee
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceRuntimeDataProcessingState.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 &googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstanceRuntimeDataProcessingState {
 
@@ -1132,7 +1132,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasee
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 &googlefirebaseextensionsinstance.GoogleFirebaseExtensionsInstanceTimeouts {
 	Create: *string,
@@ -1194,7 +1194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstanceConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseExtensionsInstanceConfigAOutputReference
 ```
@@ -1636,7 +1636,7 @@ func InternalValue() GoogleFirebaseExtensionsInstanceConfigA
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceErrorStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstanceErrorStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseExtensionsInstanceErrorStatusList
 ```
@@ -1768,7 +1768,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceErrorStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstanceErrorStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseExtensionsInstanceErrorStatusOutputReference
 ```
@@ -2068,7 +2068,7 @@ func InternalValue() GoogleFirebaseExtensionsInstanceErrorStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorList
 ```
@@ -2200,7 +2200,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorOutputReference
 ```
@@ -2478,7 +2478,7 @@ func InternalValue() GoogleFirebaseExtensionsInstanceRuntimeDataFatalError
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceRuntimeDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstanceRuntimeDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseExtensionsInstanceRuntimeDataList
 ```
@@ -2610,7 +2610,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceRuntimeDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstanceRuntimeDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseExtensionsInstanceRuntimeDataOutputReference
 ```
@@ -2910,7 +2910,7 @@ func InternalValue() GoogleFirebaseExtensionsInstanceRuntimeData
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceRuntimeDataProcessingStateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstanceRuntimeDataProcessingStateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleFirebaseExtensionsInstanceRuntimeDataProcessingStateList
 ```
@@ -3042,7 +3042,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceRuntimeDataProcessingStateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstanceRuntimeDataProcessingStateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleFirebaseExtensionsInstanceRuntimeDataProcessingStateOutputReference
 ```
@@ -3331,7 +3331,7 @@ func InternalValue() GoogleFirebaseExtensionsInstanceRuntimeDataProcessingState
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseExtensionsInstance.GoogleFirebaseExtensionsInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebaseextensionsinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebaseextensionsinstance"
 
 googlefirebaseextensionsinstance.NewGoogleFirebaseExtensionsInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseExtensionsInstanceTimeoutsOutputReference
 ```
