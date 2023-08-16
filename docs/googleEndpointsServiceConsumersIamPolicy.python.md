@@ -1,6 +1,6 @@
 # `google_endpoints_service_consumers_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_endpoints_service_consumers_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy).
+Refer to the Terraform Registory for docs: [`google_endpoints_service_consumers_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy).
 
 # `googleEndpointsServiceConsumersIamPolicy` Submodule <a name="`googleEndpointsServiceConsumersIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_endpoints_service_consumers_
 
 ### GoogleEndpointsServiceConsumersIamPolicy <a name="GoogleEndpointsServiceConsumersIamPolicy" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer"></a>
 
@@ -43,10 +43,10 @@ googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolic
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.consumerProject">consumer_project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.consumerProject">consumer_project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicy.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,10 +775,10 @@ googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolic
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.consumerProject">consumer_project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.consumerProject">consumer_project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.policyData">policy_data</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.serviceName">service_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleEndpointsServiceConsumersIamPolicy.GoogleEndpointsServiceConsumersIamPolicyConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}. |
 
 ---
 
@@ -860,7 +860,7 @@ consumer_project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#consumer_project GoogleEndpointsServiceConsumersIamPolicy#consumer_project}.
 
 ---
 
@@ -872,7 +872,7 @@ policy_data: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#policy_data GoogleEndpointsServiceConsumersIamPolicy#policy_data}.
 
 ---
 
@@ -884,7 +884,7 @@ service_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#service_name GoogleEndpointsServiceConsumersIamPolicy#service_name}.
 
 ---
 
@@ -896,7 +896,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_endpoints_service_consumers_iam_policy#id GoogleEndpointsServiceConsumersIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

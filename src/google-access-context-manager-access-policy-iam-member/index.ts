@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,42 +8,42 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleAccessContextManagerAccessPolicyIamMemberConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member#id GoogleAccessContextManagerAccessPolicyIamMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member#id GoogleAccessContextManagerAccessPolicyIamMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member#member GoogleAccessContextManagerAccessPolicyIamMember#member}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member#member GoogleAccessContextManagerAccessPolicyIamMember#member}
   */
   readonly member: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member#name GoogleAccessContextManagerAccessPolicyIamMember#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member#name GoogleAccessContextManagerAccessPolicyIamMember#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member#role GoogleAccessContextManagerAccessPolicyIamMember#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member#role GoogleAccessContextManagerAccessPolicyIamMember#role}
   */
   readonly role: string;
   /**
   * condition block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member#condition GoogleAccessContextManagerAccessPolicyIamMember#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member#condition GoogleAccessContextManagerAccessPolicyIamMember#condition}
   */
   readonly condition?: GoogleAccessContextManagerAccessPolicyIamMemberCondition;
 }
 export interface GoogleAccessContextManagerAccessPolicyIamMemberCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member#description GoogleAccessContextManagerAccessPolicyIamMember#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member#description GoogleAccessContextManagerAccessPolicyIamMember#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member#expression GoogleAccessContextManagerAccessPolicyIamMember#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member#expression GoogleAccessContextManagerAccessPolicyIamMember#expression}
   */
   readonly expression: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member#title GoogleAccessContextManagerAccessPolicyIamMember#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member#title GoogleAccessContextManagerAccessPolicyIamMember#title}
   */
   readonly title: string;
 }
@@ -153,7 +148,7 @@ export class GoogleAccessContextManagerAccessPolicyIamMemberConditionOutputRefer
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member}
 */
 export class GoogleAccessContextManagerAccessPolicyIamMember extends cdktf.TerraformResource {
 
@@ -167,7 +162,7 @@ export class GoogleAccessContextManagerAccessPolicyIamMember extends cdktf.Terra
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_access_context_manager_access_policy_iam_member google_access_context_manager_access_policy_iam_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -178,7 +173,7 @@ export class GoogleAccessContextManagerAccessPolicyIamMember extends cdktf.Terra
       terraformResourceType: 'google_access_context_manager_access_policy_iam_member',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.77.0',
+        providerVersion: '4.78.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

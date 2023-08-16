@@ -1,6 +1,6 @@
 # `google_dataplex_task_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_dataplex_task_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding).
+Refer to the Terraform Registory for docs: [`google_dataplex_task_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding).
 
 # `googleDataplexTaskIamBinding` Submodule <a name="`googleDataplexTaskIamBinding` Submodule" id="@cdktf/provider-google-beta.googleDataplexTaskIamBinding"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_dataplex_task_iam_binding`](
 
 ### GoogleDataplexTaskIamBinding <a name="GoogleDataplexTaskIamBinding" id="@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding google_dataplex_task_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding google_dataplex_task_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBinding.Initializer"></a>
 
@@ -752,9 +752,9 @@ const googleDataplexTaskIamBindingCondition: googleDataplexTaskIamBinding.Google
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#expression GoogleDataplexTaskIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#title GoogleDataplexTaskIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#description GoogleDataplexTaskIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingCondition.property.expression">expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#expression GoogleDataplexTaskIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingCondition.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#title GoogleDataplexTaskIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingCondition.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#description GoogleDataplexTaskIamBinding#description}. |
 
 ---
 
@@ -766,7 +766,7 @@ public readonly expression: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#expression GoogleDataplexTaskIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#expression GoogleDataplexTaskIamBinding#expression}.
 
 ---
 
@@ -778,7 +778,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#title GoogleDataplexTaskIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#title GoogleDataplexTaskIamBinding#title}.
 
 ---
 
@@ -790,7 +790,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#description GoogleDataplexTaskIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#description GoogleDataplexTaskIamBinding#description}.
 
 ---
 
@@ -815,14 +815,14 @@ const googleDataplexTaskIamBindingConfig: googleDataplexTaskIamBinding.GoogleDat
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.lake">lake</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#lake GoogleDataplexTaskIamBinding#lake}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#members GoogleDataplexTaskIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#role GoogleDataplexTaskIamBinding#role}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.taskId">taskId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#task_id GoogleDataplexTaskIamBinding#task_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.lake">lake</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#lake GoogleDataplexTaskIamBinding#lake}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.members">members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#members GoogleDataplexTaskIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.role">role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#role GoogleDataplexTaskIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.taskId">taskId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#task_id GoogleDataplexTaskIamBinding#task_id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingCondition">GoogleDataplexTaskIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#id GoogleDataplexTaskIamBinding#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#location GoogleDataplexTaskIamBinding#location}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#project GoogleDataplexTaskIamBinding#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#id GoogleDataplexTaskIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.location">location</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#location GoogleDataplexTaskIamBinding#location}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataplexTaskIamBinding.GoogleDataplexTaskIamBindingConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#project GoogleDataplexTaskIamBinding#project}. |
 
 ---
 
@@ -904,7 +904,7 @@ public readonly lake: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#lake GoogleDataplexTaskIamBinding#lake}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#lake GoogleDataplexTaskIamBinding#lake}.
 
 ---
 
@@ -916,7 +916,7 @@ public readonly members: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#members GoogleDataplexTaskIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#members GoogleDataplexTaskIamBinding#members}.
 
 ---
 
@@ -928,7 +928,7 @@ public readonly role: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#role GoogleDataplexTaskIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#role GoogleDataplexTaskIamBinding#role}.
 
 ---
 
@@ -940,7 +940,7 @@ public readonly taskId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#task_id GoogleDataplexTaskIamBinding#task_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#task_id GoogleDataplexTaskIamBinding#task_id}.
 
 ---
 
@@ -954,7 +954,7 @@ public readonly condition: GoogleDataplexTaskIamBindingCondition;
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#condition GoogleDataplexTaskIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#condition GoogleDataplexTaskIamBinding#condition}
 
 ---
 
@@ -966,7 +966,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#id GoogleDataplexTaskIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#id GoogleDataplexTaskIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -981,7 +981,7 @@ public readonly location: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#location GoogleDataplexTaskIamBinding#location}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#location GoogleDataplexTaskIamBinding#location}.
 
 ---
 
@@ -993,7 +993,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_dataplex_task_iam_binding#project GoogleDataplexTaskIamBinding#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataplex_task_iam_binding#project GoogleDataplexTaskIamBinding#project}.
 
 ---
 

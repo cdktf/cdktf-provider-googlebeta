@@ -1,6 +1,6 @@
 # `google_bigquery_dataset_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_bigquery_dataset_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_dataset_iam_policy).
+Refer to the Terraform Registory for docs: [`google_bigquery_dataset_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_policy).
 
 # `googleBigqueryDatasetIamPolicy` Submodule <a name="`googleBigqueryDatasetIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_bigquery_dataset_iam_policy`
 
 ### GoogleBigqueryDatasetIamPolicy <a name="GoogleBigqueryDatasetIamPolicy" id="@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerydatasetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetiampolicy"
 
 googlebigquerydatasetiampolicy.NewGoogleBigqueryDatasetIamPolicy(scope Construct, id *string, config GoogleBigqueryDatasetIamPolicyConfig) GoogleBigqueryDatasetIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerydatasetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetiampolicy"
 
 googlebigquerydatasetiampolicy.GoogleBigqueryDatasetIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerydatasetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetiampolicy"
 
 googlebigquerydatasetiampolicy.GoogleBigqueryDatasetIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ googlebigquerydatasetiampolicy.GoogleBigqueryDatasetIamPolicy_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerydatasetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetiampolicy"
 
 googlebigquerydatasetiampolicy.GoogleBigqueryDatasetIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -628,7 +628,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigquerydatasetiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlebigquerydatasetiampolicy"
 
 &googlebigquerydatasetiampolicy.GoogleBigqueryDatasetIamPolicyConfig {
 	Connection: interface{},
@@ -656,10 +656,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigque
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.datasetId">DatasetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_dataset_iam_policy#dataset_id GoogleBigqueryDatasetIamPolicy#dataset_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_dataset_iam_policy#policy_data GoogleBigqueryDatasetIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_dataset_iam_policy#id GoogleBigqueryDatasetIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_dataset_iam_policy#project GoogleBigqueryDatasetIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.datasetId">DatasetId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_policy#dataset_id GoogleBigqueryDatasetIamPolicy#dataset_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.policyData">PolicyData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_policy#policy_data GoogleBigqueryDatasetIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_policy#id GoogleBigqueryDatasetIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleBigqueryDatasetIamPolicy.GoogleBigqueryDatasetIamPolicyConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_policy#project GoogleBigqueryDatasetIamPolicy#project}. |
 
 ---
 
@@ -741,7 +741,7 @@ DatasetId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_dataset_iam_policy#dataset_id GoogleBigqueryDatasetIamPolicy#dataset_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_policy#dataset_id GoogleBigqueryDatasetIamPolicy#dataset_id}.
 
 ---
 
@@ -753,7 +753,7 @@ PolicyData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_dataset_iam_policy#policy_data GoogleBigqueryDatasetIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_policy#policy_data GoogleBigqueryDatasetIamPolicy#policy_data}.
 
 ---
 
@@ -765,7 +765,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_dataset_iam_policy#id GoogleBigqueryDatasetIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_policy#id GoogleBigqueryDatasetIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -780,7 +780,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_bigquery_dataset_iam_policy#project GoogleBigqueryDatasetIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_bigquery_dataset_iam_policy#project GoogleBigqueryDatasetIamPolicy#project}.
 
 ---
 

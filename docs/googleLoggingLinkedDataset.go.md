@@ -1,6 +1,6 @@
 # `google_logging_linked_dataset`
 
-Refer to the Terraform Registory for docs: [`google_logging_linked_dataset`](https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset).
+Refer to the Terraform Registory for docs: [`google_logging_linked_dataset`](https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset).
 
 # `googleLoggingLinkedDataset` Submodule <a name="`googleLoggingLinkedDataset` Submodule" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_logging_linked_dataset`](htt
 
 ### GoogleLoggingLinkedDataset <a name="GoogleLoggingLinkedDataset" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlelogginglinkeddataset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglinkeddataset"
 
 googlelogginglinkeddataset.NewGoogleLoggingLinkedDataset(scope Construct, id *string, config GoogleLoggingLinkedDatasetConfig) GoogleLoggingLinkedDataset
 ```
@@ -338,7 +338,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlelogginglinkeddataset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglinkeddataset"
 
 googlelogginglinkeddataset.GoogleLoggingLinkedDataset_IsConstruct(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlelogginglinkeddataset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglinkeddataset"
 
 googlelogginglinkeddataset.GoogleLoggingLinkedDataset_IsTerraformElement(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ googlelogginglinkeddataset.GoogleLoggingLinkedDataset_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDataset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlelogginglinkeddataset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglinkeddataset"
 
 googlelogginglinkeddataset.GoogleLoggingLinkedDataset_IsTerraformResource(x interface{}) *bool
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetBigqueryDataset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlelogginglinkeddataset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglinkeddataset"
 
 &googlelogginglinkeddataset.GoogleLoggingLinkedDatasetBigqueryDataset {
 
@@ -805,7 +805,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleloggin
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlelogginglinkeddataset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglinkeddataset"
 
 &googlelogginglinkeddataset.GoogleLoggingLinkedDatasetConfig {
 	Connection: interface{},
@@ -822,7 +822,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleloggin
 	Id: *string,
 	Location: *string,
 	Parent: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeouts,
 }
 ```
 
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleloggin
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetConfig.property.linkId">LinkId</a></code> | <code>*string</code> | The id of the linked dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetConfig.property.bigqueryDataset">BigqueryDataset</a></code> | <code>interface{}</code> | bigquery_dataset block. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetConfig.property.description">Description</a></code> | <code>*string</code> | Describes this link. The maximum length of the description is 8000 characters. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#id GoogleLoggingLinkedDataset#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#id GoogleLoggingLinkedDataset#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetConfig.property.location">Location</a></code> | <code>*string</code> | The location of the linked dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetConfig.property.parent">Parent</a></code> | <code>*string</code> | The parent of the linked dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeouts">GoogleLoggingLinkedDatasetTimeouts</a></code> | timeouts block. |
@@ -928,7 +928,7 @@ Bucket *string
 
 The bucket to which the linked dataset is attached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#bucket GoogleLoggingLinkedDataset#bucket}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#bucket GoogleLoggingLinkedDataset#bucket}
 
 ---
 
@@ -942,7 +942,7 @@ LinkId *string
 
 The id of the linked dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#link_id GoogleLoggingLinkedDataset#link_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#link_id GoogleLoggingLinkedDataset#link_id}
 
 ---
 
@@ -956,7 +956,7 @@ BigqueryDataset interface{}
 
 bigquery_dataset block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#bigquery_dataset GoogleLoggingLinkedDataset#bigquery_dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#bigquery_dataset GoogleLoggingLinkedDataset#bigquery_dataset}
 
 ---
 
@@ -970,7 +970,7 @@ Description *string
 
 Describes this link. The maximum length of the description is 8000 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#description GoogleLoggingLinkedDataset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#description GoogleLoggingLinkedDataset#description}
 
 ---
 
@@ -982,7 +982,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#id GoogleLoggingLinkedDataset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#id GoogleLoggingLinkedDataset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -999,7 +999,7 @@ Location *string
 
 The location of the linked dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#location GoogleLoggingLinkedDataset#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#location GoogleLoggingLinkedDataset#location}
 
 ---
 
@@ -1013,7 +1013,7 @@ Parent *string
 
 The parent of the linked dataset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#parent GoogleLoggingLinkedDataset#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#parent GoogleLoggingLinkedDataset#parent}
 
 ---
 
@@ -1027,7 +1027,7 @@ Timeouts GoogleLoggingLinkedDatasetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#timeouts GoogleLoggingLinkedDataset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#timeouts GoogleLoggingLinkedDataset#timeouts}
 
 ---
 
@@ -1036,7 +1036,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlelogginglinkeddataset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglinkeddataset"
 
 &googlelogginglinkeddataset.GoogleLoggingLinkedDatasetTimeouts {
 	Create: *string,
@@ -1048,8 +1048,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleloggin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#create GoogleLoggingLinkedDataset#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#delete GoogleLoggingLinkedDataset#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#create GoogleLoggingLinkedDataset#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#delete GoogleLoggingLinkedDataset#delete}. |
 
 ---
 
@@ -1061,7 +1061,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#create GoogleLoggingLinkedDataset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#create GoogleLoggingLinkedDataset#create}.
 
 ---
 
@@ -1073,7 +1073,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_logging_linked_dataset#delete GoogleLoggingLinkedDataset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_logging_linked_dataset#delete GoogleLoggingLinkedDataset#delete}.
 
 ---
 
@@ -1084,7 +1084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetBigqueryDatasetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlelogginglinkeddataset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglinkeddataset"
 
 googlelogginglinkeddataset.NewGoogleLoggingLinkedDatasetBigqueryDatasetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleLoggingLinkedDatasetBigqueryDatasetList
 ```
@@ -1227,7 +1227,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetBigqueryDatasetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlelogginglinkeddataset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglinkeddataset"
 
 googlelogginglinkeddataset.NewGoogleLoggingLinkedDatasetBigqueryDatasetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleLoggingLinkedDatasetBigqueryDatasetOutputReference
 ```
@@ -1505,7 +1505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleLoggingLinkedDataset.GoogleLoggingLinkedDatasetTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlelogginglinkeddataset"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlelogginglinkeddataset"
 
 googlelogginglinkeddataset.NewGoogleLoggingLinkedDatasetTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleLoggingLinkedDatasetTimeoutsOutputReference
 ```
