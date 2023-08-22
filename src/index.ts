@@ -73,6 +73,7 @@ export * as googleArtifactRegistryRepositoryIamBinding from './google-artifact-r
 export * as googleArtifactRegistryRepositoryIamMember from './google-artifact-registry-repository-iam-member';
 export * as googleArtifactRegistryRepositoryIamPolicy from './google-artifact-registry-repository-iam-policy';
 export * as googleAssuredWorkloadsWorkload from './google-assured-workloads-workload';
+export * as googleBackupDrManagementServer from './google-backup-dr-management-server';
 export * as googleBeyondcorpAppConnection from './google-beyondcorp-app-connection';
 export * as googleBeyondcorpAppConnector from './google-beyondcorp-app-connector';
 export * as googleBeyondcorpAppGateway from './google-beyondcorp-app-gateway';
@@ -276,6 +277,7 @@ export * as googleComputeRegionNetworkFirewallPolicyAssociation from './google-c
 export * as googleComputeRegionNetworkFirewallPolicyRule from './google-compute-region-network-firewall-policy-rule';
 export * as googleComputeRegionPerInstanceConfig from './google-compute-region-per-instance-config';
 export * as googleComputeRegionSecurityPolicy from './google-compute-region-security-policy';
+export * as googleComputeRegionSecurityPolicyRule from './google-compute-region-security-policy-rule';
 export * as googleComputeRegionSslCertificate from './google-compute-region-ssl-certificate';
 export * as googleComputeRegionSslPolicy from './google-compute-region-ssl-policy';
 export * as googleComputeRegionTargetHttpProxy from './google-compute-region-target-http-proxy';

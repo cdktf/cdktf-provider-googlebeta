@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleComputeRegionSecurityPolicyConfig extends cdktf.Terraform
   /**
   * An optional description of this resource. Provide this property when you create the resource.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#description GoogleComputeRegionSecurityPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#description GoogleComputeRegionSecurityPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#id GoogleComputeRegionSecurityPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#id GoogleComputeRegionSecurityPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,18 +29,18 @@ export interface GoogleComputeRegionSecurityPolicyConfig extends cdktf.Terraform
   * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035.
 Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#name GoogleComputeRegionSecurityPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#name GoogleComputeRegionSecurityPolicy#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#project GoogleComputeRegionSecurityPolicy#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#project GoogleComputeRegionSecurityPolicy#project}
   */
   readonly project?: string;
   /**
   * The Region in which the created Region Security Policy should reside.
 If it is not provided, the provider region is used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#region GoogleComputeRegionSecurityPolicy#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#region GoogleComputeRegionSecurityPolicy#region}
   */
   readonly region?: string;
   /**
@@ -50,21 +50,27 @@ If it is not provided, the provider region is used.
 - CLOUD_ARMOR_NETWORK: Cloud Armor network policies can be configured to filter packets targeting network load balancing resources such as backend services, target pools, target instances, and instances with external IPs. They filter requests before the request is served from the application.
 This field can be set only at resource creation time. Possible values: ["CLOUD_ARMOR", "CLOUD_ARMOR_EDGE", "CLOUD_ARMOR_NETWORK"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#type GoogleComputeRegionSecurityPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#type GoogleComputeRegionSecurityPolicy#type}
   */
   readonly type?: string;
   /**
   * ddos_protection_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#ddos_protection_config GoogleComputeRegionSecurityPolicy#ddos_protection_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#ddos_protection_config GoogleComputeRegionSecurityPolicy#ddos_protection_config}
   */
   readonly ddosProtectionConfig?: GoogleComputeRegionSecurityPolicyDdosProtectionConfig;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#timeouts GoogleComputeRegionSecurityPolicy#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#timeouts GoogleComputeRegionSecurityPolicy#timeouts}
   */
   readonly timeouts?: GoogleComputeRegionSecurityPolicyTimeouts;
+  /**
+  * user_defined_fields block
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#user_defined_fields GoogleComputeRegionSecurityPolicy#user_defined_fields}
+  */
+  readonly userDefinedFields?: GoogleComputeRegionSecurityPolicyUserDefinedFields[] | cdktf.IResolvable;
 }
 export interface GoogleComputeRegionSecurityPolicyDdosProtectionConfig {
   /**
@@ -73,7 +79,7 @@ export interface GoogleComputeRegionSecurityPolicyDdosProtectionConfig {
 - ADVANCED: additional protections for Managed Protection Plus subscribers who use network load balancers, protocol forwarding, or VMs with public IP addresses.
 - ADVANCED_PREVIEW: flag to enable the security policy in preview mode. Possible values: ["ADVANCED", "ADVANCED_PREVIEW", "STANDARD"]
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#ddos_protection GoogleComputeRegionSecurityPolicy#ddos_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#ddos_protection GoogleComputeRegionSecurityPolicy#ddos_protection}
   */
   readonly ddosProtection: string;
 }
@@ -135,15 +141,15 @@ export class GoogleComputeRegionSecurityPolicyDdosProtectionConfigOutputReferenc
 }
 export interface GoogleComputeRegionSecurityPolicyTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#create GoogleComputeRegionSecurityPolicy#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#create GoogleComputeRegionSecurityPolicy#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#delete GoogleComputeRegionSecurityPolicy#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#delete GoogleComputeRegionSecurityPolicy#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy#update GoogleComputeRegionSecurityPolicy#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#update GoogleComputeRegionSecurityPolicy#update}
   */
   readonly update?: string;
 }
@@ -262,9 +268,227 @@ export class GoogleComputeRegionSecurityPolicyTimeoutsOutputReference extends cd
     return this._update;
   }
 }
+export interface GoogleComputeRegionSecurityPolicyUserDefinedFields {
+  /**
+  * The base relative to which 'offset' is measured. Possible values are:
+- IPV4: Points to the beginning of the IPv4 header.
+- IPV6: Points to the beginning of the IPv6 header.
+- TCP: Points to the beginning of the TCP header, skipping over any IPv4 options or IPv6 extension headers. Not present for non-first fragments.
+- UDP: Points to the beginning of the UDP header, skipping over any IPv4 options or IPv6 extension headers. Not present for non-first fragments. Possible values: ["IPV4", "IPV6", "TCP", "UDP"]
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#base GoogleComputeRegionSecurityPolicy#base}
+  */
+  readonly base: string;
+  /**
+  * If specified, apply this mask (bitwise AND) to the field to ignore bits before matching.
+Encoded as a hexadecimal number (starting with "0x").
+The last byte of the field (in network byte order) corresponds to the least significant byte of the mask.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#mask GoogleComputeRegionSecurityPolicy#mask}
+  */
+  readonly mask?: string;
+  /**
+  * The name of this field. Must be unique within the policy.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#name GoogleComputeRegionSecurityPolicy#name}
+  */
+  readonly name?: string;
+  /**
+  * Offset of the first byte of the field (in network byte order) relative to 'base'.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#offset GoogleComputeRegionSecurityPolicy#offset}
+  */
+  readonly offset?: number;
+  /**
+  * Size of the field in bytes. Valid values: 1-4.
+  * 
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#size GoogleComputeRegionSecurityPolicy#size}
+  */
+  readonly size?: number;
+}
+
+export function googleComputeRegionSecurityPolicyUserDefinedFieldsToTerraform(struct?: GoogleComputeRegionSecurityPolicyUserDefinedFields | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    base: cdktf.stringToTerraform(struct!.base),
+    mask: cdktf.stringToTerraform(struct!.mask),
+    name: cdktf.stringToTerraform(struct!.name),
+    offset: cdktf.numberToTerraform(struct!.offset),
+    size: cdktf.numberToTerraform(struct!.size),
+  }
+}
+
+export class GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleComputeRegionSecurityPolicyUserDefinedFields | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._base !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.base = this._base;
+    }
+    if (this._mask !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.mask = this._mask;
+    }
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._offset !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.offset = this._offset;
+    }
+    if (this._size !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.size = this._size;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleComputeRegionSecurityPolicyUserDefinedFields | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._base = undefined;
+      this._mask = undefined;
+      this._name = undefined;
+      this._offset = undefined;
+      this._size = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._base = value.base;
+      this._mask = value.mask;
+      this._name = value.name;
+      this._offset = value.offset;
+      this._size = value.size;
+    }
+  }
+
+  // base - computed: false, optional: false, required: true
+  private _base?: string; 
+  public get base() {
+    return this.getStringAttribute('base');
+  }
+  public set base(value: string) {
+    this._base = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get baseInput() {
+    return this._base;
+  }
+
+  // mask - computed: false, optional: true, required: false
+  private _mask?: string; 
+  public get mask() {
+    return this.getStringAttribute('mask');
+  }
+  public set mask(value: string) {
+    this._mask = value;
+  }
+  public resetMask() {
+    this._mask = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get maskInput() {
+    return this._mask;
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // offset - computed: false, optional: true, required: false
+  private _offset?: number; 
+  public get offset() {
+    return this.getNumberAttribute('offset');
+  }
+  public set offset(value: number) {
+    this._offset = value;
+  }
+  public resetOffset() {
+    this._offset = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get offsetInput() {
+    return this._offset;
+  }
+
+  // size - computed: false, optional: true, required: false
+  private _size?: number; 
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+  public set size(value: number) {
+    this._size = value;
+  }
+  public resetSize() {
+    this._size = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sizeInput() {
+    return this._size;
+  }
+}
+
+export class GoogleComputeRegionSecurityPolicyUserDefinedFieldsList extends cdktf.ComplexList {
+  public internalValue? : GoogleComputeRegionSecurityPolicyUserDefinedFields[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference {
+    return new GoogleComputeRegionSecurityPolicyUserDefinedFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy}
 */
 export class GoogleComputeRegionSecurityPolicy extends cdktf.TerraformResource {
 
@@ -278,7 +502,7 @@ export class GoogleComputeRegionSecurityPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -289,7 +513,7 @@ export class GoogleComputeRegionSecurityPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_region_security_policy',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.78.0',
+        providerVersion: '4.79.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -308,6 +532,7 @@ export class GoogleComputeRegionSecurityPolicy extends cdktf.TerraformResource {
     this._type = config.type;
     this._ddosProtectionConfig.internalValue = config.ddosProtectionConfig;
     this._timeouts.internalValue = config.timeouts;
+    this._userDefinedFields.internalValue = config.userDefinedFields;
   }
 
   // ==========
@@ -459,6 +684,22 @@ export class GoogleComputeRegionSecurityPolicy extends cdktf.TerraformResource {
     return this._timeouts.internalValue;
   }
 
+  // user_defined_fields - computed: false, optional: true, required: false
+  private _userDefinedFields = new GoogleComputeRegionSecurityPolicyUserDefinedFieldsList(this, "user_defined_fields", false);
+  public get userDefinedFields() {
+    return this._userDefinedFields;
+  }
+  public putUserDefinedFields(value: GoogleComputeRegionSecurityPolicyUserDefinedFields[] | cdktf.IResolvable) {
+    this._userDefinedFields.internalValue = value;
+  }
+  public resetUserDefinedFields() {
+    this._userDefinedFields.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get userDefinedFieldsInput() {
+    return this._userDefinedFields.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -473,6 +714,7 @@ export class GoogleComputeRegionSecurityPolicy extends cdktf.TerraformResource {
       type: cdktf.stringToTerraform(this._type),
       ddos_protection_config: googleComputeRegionSecurityPolicyDdosProtectionConfigToTerraform(this._ddosProtectionConfig.internalValue),
       timeouts: googleComputeRegionSecurityPolicyTimeoutsToTerraform(this._timeouts.internalValue),
+      user_defined_fields: cdktf.listMapper(googleComputeRegionSecurityPolicyUserDefinedFieldsToTerraform, true)(this._userDefinedFields.internalValue),
     };
   }
 }

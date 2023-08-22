@@ -1,6 +1,6 @@
 # `google_compute_backend_bucket_iam_member`
 
-Refer to the Terraform Registory for docs: [`google_compute_backend_bucket_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member).
+Refer to the Terraform Registory for docs: [`google_compute_backend_bucket_iam_member`](https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member).
 
 # `googleComputeBackendBucketIamMember` Submodule <a name="`googleComputeBackendBucketIamMember` Submodule" id="@cdktf/provider-google-beta.googleComputeBackendBucketIamMember"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_compute_backend_bucket_iam_m
 
 ### GoogleComputeBackendBucketIamMember <a name="GoogleComputeBackendBucketIamMember" id="@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member google_compute_backend_bucket_iam_member}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member google_compute_backend_bucket_iam_member}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer"></a>
 
@@ -47,12 +47,12 @@ GoogleComputeBackendBucketIamMember.Builder.create(Construct scope, java.lang.St
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#member GoogleComputeBackendBucketIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#name GoogleComputeBackendBucketIamMember#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#role GoogleComputeBackendBucketIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#member GoogleComputeBackendBucketIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#name GoogleComputeBackendBucketIamMember#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#role GoogleComputeBackendBucketIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberCondition">GoogleComputeBackendBucketIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#id GoogleComputeBackendBucketIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#project GoogleComputeBackendBucketIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#id GoogleComputeBackendBucketIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMember.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#project GoogleComputeBackendBucketIamMember#project}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#member GoogleComputeBackendBucketIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#member GoogleComputeBackendBucketIamMember#member}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#name GoogleComputeBackendBucketIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#name GoogleComputeBackendBucketIamMember#name}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#role GoogleComputeBackendBucketIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#role GoogleComputeBackendBucketIamMember#role}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#condition GoogleComputeBackendBucketIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#condition GoogleComputeBackendBucketIamMember#condition}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#id GoogleComputeBackendBucketIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#id GoogleComputeBackendBucketIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -165,7 +165,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#project GoogleComputeBackendBucketIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#project GoogleComputeBackendBucketIamMember#project}.
 
 ---
 
@@ -824,9 +824,9 @@ GoogleComputeBackendBucketIamMemberCondition.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#expression GoogleComputeBackendBucketIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#title GoogleComputeBackendBucketIamMember#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#description GoogleComputeBackendBucketIamMember#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberCondition.property.expression">expression</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#expression GoogleComputeBackendBucketIamMember#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberCondition.property.title">title</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#title GoogleComputeBackendBucketIamMember#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberCondition.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#description GoogleComputeBackendBucketIamMember#description}. |
 
 ---
 
@@ -838,7 +838,7 @@ public java.lang.String getExpression();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#expression GoogleComputeBackendBucketIamMember#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#expression GoogleComputeBackendBucketIamMember#expression}.
 
 ---
 
@@ -850,7 +850,7 @@ public java.lang.String getTitle();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#title GoogleComputeBackendBucketIamMember#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#title GoogleComputeBackendBucketIamMember#title}.
 
 ---
 
@@ -862,7 +862,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#description GoogleComputeBackendBucketIamMember#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#description GoogleComputeBackendBucketIamMember#description}.
 
 ---
 
@@ -905,12 +905,12 @@ GoogleComputeBackendBucketIamMemberConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#member GoogleComputeBackendBucketIamMember#member}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#name GoogleComputeBackendBucketIamMember#name}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#role GoogleComputeBackendBucketIamMember#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.member">member</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#member GoogleComputeBackendBucketIamMember#member}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#name GoogleComputeBackendBucketIamMember#name}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.role">role</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#role GoogleComputeBackendBucketIamMember#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberCondition">GoogleComputeBackendBucketIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#id GoogleComputeBackendBucketIamMember#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#project GoogleComputeBackendBucketIamMember#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#id GoogleComputeBackendBucketIamMember#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeBackendBucketIamMember.GoogleComputeBackendBucketIamMemberConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#project GoogleComputeBackendBucketIamMember#project}. |
 
 ---
 
@@ -992,7 +992,7 @@ public java.lang.String getMember();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#member GoogleComputeBackendBucketIamMember#member}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#member GoogleComputeBackendBucketIamMember#member}.
 
 ---
 
@@ -1004,7 +1004,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#name GoogleComputeBackendBucketIamMember#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#name GoogleComputeBackendBucketIamMember#name}.
 
 ---
 
@@ -1016,7 +1016,7 @@ public java.lang.String getRole();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#role GoogleComputeBackendBucketIamMember#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#role GoogleComputeBackendBucketIamMember#role}.
 
 ---
 
@@ -1030,7 +1030,7 @@ public GoogleComputeBackendBucketIamMemberCondition getCondition();
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#condition GoogleComputeBackendBucketIamMember#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#condition GoogleComputeBackendBucketIamMember#condition}
 
 ---
 
@@ -1042,7 +1042,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#id GoogleComputeBackendBucketIamMember#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#id GoogleComputeBackendBucketIamMember#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1057,7 +1057,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_backend_bucket_iam_member#project GoogleComputeBackendBucketIamMember#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_backend_bucket_iam_member#project GoogleComputeBackendBucketIamMember#project}.
 
 ---
 

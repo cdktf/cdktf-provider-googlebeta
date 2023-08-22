@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface GoogleComputeTargetPoolConfig extends cdktf.TerraformMetaArgume
   /**
   * URL to the backup target pool. Must also set failover_ratio.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#backup_pool GoogleComputeTargetPool#backup_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#backup_pool GoogleComputeTargetPool#backup_pool}
   */
   readonly backupPool?: string;
   /**
   * Textual description field.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#description GoogleComputeTargetPool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#description GoogleComputeTargetPool#description}
   */
   readonly description?: string;
   /**
   * Ratio (0 to 1) of failed nodes before using the backup pool (which must also be set).
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#failover_ratio GoogleComputeTargetPool#failover_ratio}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#failover_ratio GoogleComputeTargetPool#failover_ratio}
   */
   readonly failoverRatio?: number;
   /**
   * List of zero or one health check name or self_link. Only legacy google_compute_http_health_check is supported.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#health_checks GoogleComputeTargetPool#health_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#health_checks GoogleComputeTargetPool#health_checks}
   */
   readonly healthChecks?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#id GoogleComputeTargetPool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#id GoogleComputeTargetPool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,51 +46,51 @@ export interface GoogleComputeTargetPoolConfig extends cdktf.TerraformMetaArgume
   /**
   * List of instances in the pool. They can be given as URLs, or in the form of "zone/name". Note that the instances need not exist at the time of target pool creation, so there is no need to use the Terraform interpolators to create a dependency on the instances from the target pool.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#instances GoogleComputeTargetPool#instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#instances GoogleComputeTargetPool#instances}
   */
   readonly instances?: string[];
   /**
   * A unique name for the resource, required by GCE. Changing this forces a new resource to be created.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#name GoogleComputeTargetPool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#name GoogleComputeTargetPool#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#project GoogleComputeTargetPool#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#project GoogleComputeTargetPool#project}
   */
   readonly project?: string;
   /**
   * Where the target pool resides. Defaults to project region.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#region GoogleComputeTargetPool#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#region GoogleComputeTargetPool#region}
   */
   readonly region?: string;
   /**
   * How to distribute load. Options are "NONE" (no affinity). "CLIENT_IP" (hash of the source/dest addresses / ports), and "CLIENT_IP_PROTO" also includes the protocol (default "NONE").
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#session_affinity GoogleComputeTargetPool#session_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#session_affinity GoogleComputeTargetPool#session_affinity}
   */
   readonly sessionAffinity?: string;
   /**
   * timeouts block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#timeouts GoogleComputeTargetPool#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#timeouts GoogleComputeTargetPool#timeouts}
   */
   readonly timeouts?: GoogleComputeTargetPoolTimeouts;
 }
 export interface GoogleComputeTargetPoolTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#create GoogleComputeTargetPool#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#create GoogleComputeTargetPool#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#delete GoogleComputeTargetPool#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#delete GoogleComputeTargetPool#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool#update GoogleComputeTargetPool#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#update GoogleComputeTargetPool#update}
   */
   readonly update?: string;
 }
@@ -211,7 +211,7 @@ export class GoogleComputeTargetPoolTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool google_compute_target_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool google_compute_target_pool}
 */
 export class GoogleComputeTargetPool extends cdktf.TerraformResource {
 
@@ -225,7 +225,7 @@ export class GoogleComputeTargetPool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -236,7 +236,7 @@ export class GoogleComputeTargetPool extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_target_pool',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.78.0',
+        providerVersion: '4.79.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
