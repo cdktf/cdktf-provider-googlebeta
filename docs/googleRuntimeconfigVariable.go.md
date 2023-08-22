@@ -1,6 +1,6 @@
 # `google_runtimeconfig_variable`
 
-Refer to the Terraform Registory for docs: [`google_runtimeconfig_variable`](https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable).
+Refer to the Terraform Registory for docs: [`google_runtimeconfig_variable`](https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable).
 
 # `googleRuntimeconfigVariable` Submodule <a name="`googleRuntimeconfigVariable` Submodule" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_runtimeconfig_variable`](htt
 
 ### GoogleRuntimeconfigVariable <a name="GoogleRuntimeconfigVariable" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable google_runtimeconfig_variable}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable google_runtimeconfig_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 googleruntimeconfigvariable.NewGoogleRuntimeconfigVariable(scope Construct, id *string, config GoogleRuntimeconfigVariableConfig) GoogleRuntimeconfigVariable
 ```
@@ -298,7 +298,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 googleruntimeconfigvariable.GoogleRuntimeconfigVariable_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 googleruntimeconfigvariable.GoogleRuntimeconfigVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ googleruntimeconfigvariable.GoogleRuntimeconfigVariable_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 googleruntimeconfigvariable.GoogleRuntimeconfigVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleruntimeconfigvariable"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleruntimeconfigvariable"
 
 &googleruntimeconfigvariable.GoogleRuntimeconfigVariableConfig {
 	Connection: interface{},
@@ -718,10 +718,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleruntim
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.property.name">Name</a></code> | <code>*string</code> | The name of the variable to manage. Note that variable names can be hierarchical using slashes (e.g. "prod-variables/hostname"). |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.property.parent">Parent</a></code> | <code>*string</code> | The name of the RuntimeConfig resource containing this variable. |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable#id GoogleRuntimeconfigVariable#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#id GoogleRuntimeconfigVariable#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.property.project">Project</a></code> | <code>*string</code> | The ID of the project in which the resource belongs. |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable#text GoogleRuntimeconfigVariable#text}. |
-| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable#value GoogleRuntimeconfigVariable#value}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.property.text">Text</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#text GoogleRuntimeconfigVariable#text}. |
+| <code><a href="#@cdktf/provider-google-beta.googleRuntimeconfigVariable.GoogleRuntimeconfigVariableConfig.property.value">Value</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#value GoogleRuntimeconfigVariable#value}. |
 
 ---
 
@@ -805,7 +805,7 @@ Name *string
 
 The name of the variable to manage. Note that variable names can be hierarchical using slashes (e.g. "prod-variables/hostname").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable#name GoogleRuntimeconfigVariable#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#name GoogleRuntimeconfigVariable#name}
 
 ---
 
@@ -819,7 +819,7 @@ Parent *string
 
 The name of the RuntimeConfig resource containing this variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable#parent GoogleRuntimeconfigVariable#parent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#parent GoogleRuntimeconfigVariable#parent}
 
 ---
 
@@ -831,7 +831,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable#id GoogleRuntimeconfigVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#id GoogleRuntimeconfigVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -850,7 +850,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable#project GoogleRuntimeconfigVariable#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#project GoogleRuntimeconfigVariable#project}
 
 ---
 
@@ -862,7 +862,7 @@ Text *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable#text GoogleRuntimeconfigVariable#text}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#text GoogleRuntimeconfigVariable#text}.
 
 ---
 
@@ -874,7 +874,7 @@ Value *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_runtimeconfig_variable#value GoogleRuntimeconfigVariable#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#value GoogleRuntimeconfigVariable#value}.
 
 ---
 
