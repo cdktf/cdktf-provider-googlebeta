@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall
 // generated from terraform resource schema
 
@@ -15,7 +10,7 @@ export interface GoogleComputeFirewallConfig extends cdktf.TerraformMetaArgument
   /**
   * An optional description of this resource. Provide this property when
 you create the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#description GoogleComputeFirewall#description}
   */
   readonly description?: string;
@@ -23,7 +18,7 @@ you create the resource.
   * If destination ranges are specified, the firewall will apply only to
 traffic that has destination IP address in these ranges. These ranges
 must be expressed in CIDR format. IPv4 or IPv6 ranges are supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#destination_ranges GoogleComputeFirewall#destination_ranges}
   */
   readonly destinationRanges?: string[];
@@ -31,7 +26,7 @@ must be expressed in CIDR format. IPv4 or IPv6 ranges are supported.
   * Direction of traffic to which this firewall applies; default is
 INGRESS. Note: For INGRESS traffic, one of 'source_ranges',
 'source_tags' or 'source_service_accounts' is required. Possible values: ["INGRESS", "EGRESS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#direction GoogleComputeFirewall#direction}
   */
   readonly direction?: string;
@@ -40,13 +35,13 @@ INGRESS. Note: For INGRESS traffic, one of 'source_ranges',
 network it is associated with. When set to true, the firewall rule is
 not enforced and the network behaves as if it did not exist. If this
 is unspecified, the firewall rule will be enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#disabled GoogleComputeFirewall#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * This field denotes whether to enable logging for a particular firewall rule. If logging is enabled, logs will be exported to Stackdriver.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#enable_logging GoogleComputeFirewall#enable_logging}
   */
   readonly enableLogging?: boolean | cdktf.IResolvable;
@@ -65,13 +60,13 @@ the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the
 first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#name GoogleComputeFirewall#name}
   */
   readonly name: string;
   /**
   * The name or self_link of the network to attach this firewall to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#network GoogleComputeFirewall#network}
   */
   readonly network: string;
@@ -82,7 +77,7 @@ priorities determine precedence of conflicting rules. Lower value of
 priority implies higher precedence (eg, a rule with priority 0 has
 higher precedence than a rule with priority 1). DENY rules take
 precedence over ALLOW rules having equal priority.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#priority GoogleComputeFirewall#priority}
   */
   readonly priority?: number;
@@ -100,7 +95,7 @@ source IP that belongs to a tag listed in the sourceTags property. The
 connection does not need to match both properties for the firewall to
 apply. IPv4 or IPv6 ranges are supported. For INGRESS traffic, one of
 'source_ranges', 'source_tags' or 'source_service_accounts' is required.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#source_ranges GoogleComputeFirewall#source_ranges}
   */
   readonly sourceRanges?: string[];
@@ -117,7 +112,7 @@ sourceServiceAccount. The connection does not need to match both
 properties for the firewall to apply. sourceServiceAccounts cannot be
 used at the same time as sourceTags or targetTags. For INGRESS traffic,
 one of 'source_ranges', 'source_tags' or 'source_service_accounts' is required.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#source_service_accounts GoogleComputeFirewall#source_service_accounts}
   */
   readonly sourceServiceAccounts?: string[];
@@ -132,7 +127,7 @@ source IP address within sourceRanges OR the source IP that belongs to
 a tag listed in the sourceTags property. The connection does not need
 to match both properties for the firewall to apply. For INGRESS traffic,
 one of 'source_ranges', 'source_tags' or 'source_service_accounts' is required.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#source_tags GoogleComputeFirewall#source_tags}
   */
   readonly sourceTags?: string[];
@@ -143,7 +138,7 @@ targetServiceAccounts cannot be used at the same time as targetTags or
 sourceTags. If neither targetServiceAccounts nor targetTags are
 specified, the firewall rule applies to all instances on the specified
 network.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#target_service_accounts GoogleComputeFirewall#target_service_accounts}
   */
   readonly targetServiceAccounts?: string[];
@@ -152,31 +147,31 @@ network.
 network that may make network connections as specified in allowed[].
 If no targetTags are specified, the firewall rule applies to all
 instances on the specified network.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#target_tags GoogleComputeFirewall#target_tags}
   */
   readonly targetTags?: string[];
   /**
   * allow block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#allow GoogleComputeFirewall#allow}
   */
   readonly allow?: GoogleComputeFirewallAllow[] | cdktf.IResolvable;
   /**
   * deny block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#deny GoogleComputeFirewall#deny}
   */
   readonly deny?: GoogleComputeFirewallDeny[] | cdktf.IResolvable;
   /**
   * log_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#log_config GoogleComputeFirewall#log_config}
   */
   readonly logConfig?: GoogleComputeFirewallLogConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#timeouts GoogleComputeFirewall#timeouts}
   */
   readonly timeouts?: GoogleComputeFirewallTimeouts;
@@ -190,7 +185,7 @@ applies to connections through any port.
 
 Example inputs include: ["22"], ["80","443"], and
 ["12345-12349"].
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#ports GoogleComputeFirewall#ports}
   */
   readonly ports?: string[];
@@ -199,7 +194,7 @@ Example inputs include: ["22"], ["80","443"], and
 required when creating a firewall rule. This value can either be
 one of the following well known protocol strings (tcp, udp,
 icmp, esp, ah, sctp, ipip, all), or the IP protocol number.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#protocol GoogleComputeFirewall#protocol}
   */
   readonly protocol: string;
@@ -324,7 +319,7 @@ applies to connections through any port.
 
 Example inputs include: ["22"], ["80","443"], and
 ["12345-12349"].
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#ports GoogleComputeFirewall#ports}
   */
   readonly ports?: string[];
@@ -333,7 +328,7 @@ Example inputs include: ["22"], ["80","443"], and
 required when creating a firewall rule. This value can either be
 one of the following well known protocol strings (tcp, udp,
 icmp, esp, ah, sctp, ipip, all), or the IP protocol number.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#protocol GoogleComputeFirewall#protocol}
   */
   readonly protocol: string;
@@ -452,7 +447,7 @@ export class GoogleComputeFirewallDenyList extends cdktf.ComplexList {
 export interface GoogleComputeFirewallLogConfig {
   /**
   * This field denotes whether to include or exclude metadata for firewall logs. Possible values: ["EXCLUDE_ALL_METADATA", "INCLUDE_ALL_METADATA"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall#metadata GoogleComputeFirewall#metadata}
   */
   readonly metadata: string;

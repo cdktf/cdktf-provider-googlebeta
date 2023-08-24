@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric
 // generated from terraform resource schema
 
@@ -15,27 +10,27 @@ export interface GoogleLoggingMetricConfig extends cdktf.TerraformMetaArguments 
   /**
   * The resource name of the Log Bucket that owns the Log Metric. Only Log Buckets in projects
 are supported. The bucket has to be in the same project as the metric.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#bucket_name GoogleLoggingMetric#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * A description of this metric, which is used in documentation. The maximum length of the
 description is 8000 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#description GoogleLoggingMetric#description}
   */
   readonly description?: string;
   /**
   * If set to True, then this metric is disabled and it does not generate any points.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#disabled GoogleLoggingMetric#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * An advanced logs filter (https://cloud.google.com/logging/docs/view/advanced-filters) which
 is used to match log entries.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#filter GoogleLoggingMetric#filter}
   */
   readonly filter: string;
@@ -51,7 +46,7 @@ is used to match log entries.
 entry field and assign as the label value. Each label key specified in the LabelDescriptor must
 have an associated extractor expression in this map. The syntax of the extractor expression is
 the same as for the valueExtractor field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#label_extractors GoogleLoggingMetric#label_extractors}
   */
   readonly labelExtractors?: { [key: string]: string };
@@ -61,7 +56,7 @@ Metric identifiers are limited to 100 characters and can include only the follow
 characters A-Z, a-z, 0-9, and the special characters _-.,+!*',()%/. The forward-slash
 character (/) denotes a hierarchy of name pieces, and it cannot be the first character
 of the name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#name GoogleLoggingMetric#name}
   */
   readonly name: string;
@@ -77,25 +72,25 @@ the value is to be extracted. 2. regex - A regular expression using the Google R
 (https://github.com/google/re2/wiki/Syntax) with a single capture group to extract data from the specified
 log entry field. The value of the field is converted to a string before applying the regex. It is an
 error to specify a regex that does not include exactly one capture group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#value_extractor GoogleLoggingMetric#value_extractor}
   */
   readonly valueExtractor?: string;
   /**
   * bucket_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#bucket_options GoogleLoggingMetric#bucket_options}
   */
   readonly bucketOptions?: GoogleLoggingMetricBucketOptions;
   /**
   * metric_descriptor block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#metric_descriptor GoogleLoggingMetric#metric_descriptor}
   */
   readonly metricDescriptor?: GoogleLoggingMetricMetricDescriptor;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#timeouts GoogleLoggingMetric#timeouts}
   */
   readonly timeouts?: GoogleLoggingMetricTimeouts;
@@ -103,7 +98,7 @@ error to specify a regex that does not include exactly one capture group.
 export interface GoogleLoggingMetricBucketOptionsExplicitBuckets {
   /**
   * The values must be monotonically increasing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#bounds GoogleLoggingMetric#bounds}
   */
   readonly bounds: number[];
@@ -167,19 +162,19 @@ export class GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference exte
 export interface GoogleLoggingMetricBucketOptionsExponentialBuckets {
   /**
   * Must be greater than 1.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#growth_factor GoogleLoggingMetric#growth_factor}
   */
   readonly growthFactor?: number;
   /**
   * Must be greater than 0.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#num_finite_buckets GoogleLoggingMetric#num_finite_buckets}
   */
   readonly numFiniteBuckets?: number;
   /**
   * Must be greater than 0.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#scale GoogleLoggingMetric#scale}
   */
   readonly scale?: number;
@@ -292,19 +287,19 @@ export class GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference e
 export interface GoogleLoggingMetricBucketOptionsLinearBuckets {
   /**
   * Must be greater than 0.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#num_finite_buckets GoogleLoggingMetric#num_finite_buckets}
   */
   readonly numFiniteBuckets?: number;
   /**
   * Lower bound of the first bucket.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#offset GoogleLoggingMetric#offset}
   */
   readonly offset?: number;
   /**
   * Must be greater than 0.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#width GoogleLoggingMetric#width}
   */
   readonly width?: number;
@@ -417,19 +412,19 @@ export class GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference extend
 export interface GoogleLoggingMetricBucketOptions {
   /**
   * explicit_buckets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#explicit_buckets GoogleLoggingMetric#explicit_buckets}
   */
   readonly explicitBuckets?: GoogleLoggingMetricBucketOptionsExplicitBuckets;
   /**
   * exponential_buckets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#exponential_buckets GoogleLoggingMetric#exponential_buckets}
   */
   readonly exponentialBuckets?: GoogleLoggingMetricBucketOptionsExponentialBuckets;
   /**
   * linear_buckets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#linear_buckets GoogleLoggingMetric#linear_buckets}
   */
   readonly linearBuckets?: GoogleLoggingMetricBucketOptionsLinearBuckets;
@@ -542,19 +537,19 @@ export class GoogleLoggingMetricBucketOptionsOutputReference extends cdktf.Compl
 export interface GoogleLoggingMetricMetricDescriptorLabels {
   /**
   * A human-readable description for the label.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#description GoogleLoggingMetric#description}
   */
   readonly description?: string;
   /**
   * The label key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#key GoogleLoggingMetric#key}
   */
   readonly key: string;
   /**
   * The type of data that can be assigned to the label. Default value: "STRING" Possible values: ["BOOL", "INT64", "STRING"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#value_type GoogleLoggingMetric#value_type}
   */
   readonly valueType?: string;
@@ -698,7 +693,7 @@ export interface GoogleLoggingMetricMetricDescriptor {
   * A concise name for the metric, which can be displayed in user interfaces. Use sentence case
 without an ending period, for example "Request count". This field is optional but it is
 recommended to be set for any metrics associated with user-visible concepts, such as Quota.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#display_name GoogleLoggingMetric#display_name}
   */
   readonly displayName?: string;
@@ -706,7 +701,7 @@ recommended to be set for any metrics associated with user-visible concepts, suc
   * Whether the metric records instantaneous values, changes to a value, etc.
 Some combinations of metricKind and valueType might not be supported.
 For counter metrics, set this to DELTA. Possible values: ["DELTA", "GAUGE", "CUMULATIVE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#metric_kind GoogleLoggingMetric#metric_kind}
   */
   readonly metricKind: string;
@@ -714,7 +709,7 @@ For counter metrics, set this to DELTA. Possible values: ["DELTA", "GAUGE", "CUM
   * The unit in which the metric value is reported. It is only applicable if the valueType is
 'INT64', 'DOUBLE', or 'DISTRIBUTION'. The supported units are a subset of
 [The Unified Code for Units of Measure](http://unitsofmeasure.org/ucum.html) standard
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#unit GoogleLoggingMetric#unit}
   */
   readonly unit?: string;
@@ -722,13 +717,13 @@ For counter metrics, set this to DELTA. Possible values: ["DELTA", "GAUGE", "CUM
   * Whether the measurement is an integer, a floating-point number, etc.
 Some combinations of metricKind and valueType might not be supported.
 For counter metrics, set this to INT64. Possible values: ["BOOL", "INT64", "DOUBLE", "STRING", "DISTRIBUTION", "MONEY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#value_type GoogleLoggingMetric#value_type}
   */
   readonly valueType: string;
   /**
   * labels block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_metric#labels GoogleLoggingMetric#labels}
   */
   readonly labels?: GoogleLoggingMetricMetricDescriptorLabels[] | cdktf.IResolvable;

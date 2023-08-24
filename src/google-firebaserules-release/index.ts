@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_release
 // generated from terraform resource schema
 
@@ -21,25 +16,25 @@ export interface GoogleFirebaserulesReleaseConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * Format: `projects/{project_id}/releases/{release_id}`\Firestore Rules Releases will **always** have the name 'cloud.firestore'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_release#name GoogleFirebaserulesRelease#name}
   */
   readonly name: string;
   /**
   * The project for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_release#project GoogleFirebaserulesRelease#project}
   */
   readonly project?: string;
   /**
   * Name of the `Ruleset` referred to by this `Release`. The `Ruleset` must exist for the `Release` to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_release#ruleset_name GoogleFirebaserulesRelease#ruleset_name}
   */
   readonly rulesetName: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_release#timeouts GoogleFirebaserulesRelease#timeouts}
   */
   readonly timeouts?: GoogleFirebaserulesReleaseTimeouts;

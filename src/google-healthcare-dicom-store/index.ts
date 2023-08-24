@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dicom_store
 // generated from terraform resource schema
 
@@ -15,7 +10,7 @@ export interface GoogleHealthcareDicomStoreConfig extends cdktf.TerraformMetaArg
   /**
   * Identifies the dataset addressed by this request. Must be in the format
 'projects/{project}/locations/{location}/datasets/{dataset}'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dicom_store#dataset GoogleHealthcareDicomStore#dataset}
   */
   readonly dataset: string;
@@ -39,7 +34,7 @@ No more than 64 labels can be associated with a given store.
 
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dicom_store#labels GoogleHealthcareDicomStore#labels}
   */
   readonly labels?: { [key: string]: string };
@@ -47,25 +42,25 @@ Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   * The resource name for the DicomStore.
 
 ** Changing this property may recreate the Dicom store (removing all data) **
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dicom_store#name GoogleHealthcareDicomStore#name}
   */
   readonly name: string;
   /**
   * notification_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dicom_store#notification_config GoogleHealthcareDicomStore#notification_config}
   */
   readonly notificationConfig?: GoogleHealthcareDicomStoreNotificationConfig;
   /**
   * stream_configs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dicom_store#stream_configs GoogleHealthcareDicomStore#stream_configs}
   */
   readonly streamConfigs?: GoogleHealthcareDicomStoreStreamConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dicom_store#timeouts GoogleHealthcareDicomStore#timeouts}
   */
   readonly timeouts?: GoogleHealthcareDicomStoreTimeouts;
@@ -78,7 +73,7 @@ It is guaranteed to be unique within the topic. PubsubMessage.PublishTime is the
 was published. Notifications are only sent if the topic is non-empty. Topic names must be scoped to a
 project. service-PROJECT_NUMBER@gcp-sa-healthcare.iam.gserviceaccount.com must have publisher permissions on the given
 Cloud Pub/Sub topic. Not having adequate permissions will cause the calls that send notifications to fail.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dicom_store#pubsub_topic GoogleHealthcareDicomStore#pubsub_topic}
   */
   readonly pubsubTopic: string;
@@ -142,7 +137,7 @@ export class GoogleHealthcareDicomStoreNotificationConfigOutputReference extends
 export interface GoogleHealthcareDicomStoreStreamConfigsBigqueryDestination {
   /**
   * a fully qualified BigQuery table URI where DICOM instance metadata will be streamed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dicom_store#table_uri GoogleHealthcareDicomStore#table_uri}
   */
   readonly tableUri: string;
@@ -206,7 +201,7 @@ export class GoogleHealthcareDicomStoreStreamConfigsBigqueryDestinationOutputRef
 export interface GoogleHealthcareDicomStoreStreamConfigs {
   /**
   * bigquery_destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dicom_store#bigquery_destination GoogleHealthcareDicomStore#bigquery_destination}
   */
   readonly bigqueryDestination: GoogleHealthcareDicomStoreStreamConfigsBigqueryDestination;

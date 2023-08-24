@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_iam_binding
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface GoogleComputeDiskIamBindingConfig extends cdktf.TerraformMetaAr
   readonly zone?: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_iam_binding#condition GoogleComputeDiskIamBinding#condition}
   */
   readonly condition?: GoogleComputeDiskIamBindingCondition;

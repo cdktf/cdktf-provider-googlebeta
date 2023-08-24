@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleWorkstationsWorkstationClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * Client-specified annotations. This is distinct from labels.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#annotations GoogleWorkstationsWorkstationCluster#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Human-readable name for this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#display_name GoogleWorkstationsWorkstationCluster#display_name}
   */
   readonly displayName?: string;
@@ -33,20 +28,20 @@ export interface GoogleWorkstationsWorkstationClusterConfig extends cdktf.Terraf
   readonly id?: string;
   /**
   * Client-specified labels that are applied to the resource and that are also propagated to the underlying Compute Engine resources.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#labels GoogleWorkstationsWorkstationCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the workstation cluster should reside.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#location GoogleWorkstationsWorkstationCluster#location}
   */
   readonly location?: string;
   /**
   * The relative resource name of the VPC network on which the instance can be accessed.
 It is specified in the following form: "projects/{projectNumber}/global/networks/{network_id}".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#network GoogleWorkstationsWorkstationCluster#network}
   */
   readonly network: string;
@@ -57,25 +52,25 @@ It is specified in the following form: "projects/{projectNumber}/global/networks
   /**
   * Name of the Compute Engine subnetwork in which instances associated with this cluster will be created.
 Must be part of the subnetwork specified for this cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#subnetwork GoogleWorkstationsWorkstationCluster#subnetwork}
   */
   readonly subnetwork: string;
   /**
   * ID to use for the workstation cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#workstation_cluster_id GoogleWorkstationsWorkstationCluster#workstation_cluster_id}
   */
   readonly workstationClusterId: string;
   /**
   * private_cluster_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#private_cluster_config GoogleWorkstationsWorkstationCluster#private_cluster_config}
   */
   readonly privateClusterConfig?: GoogleWorkstationsWorkstationClusterPrivateClusterConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#timeouts GoogleWorkstationsWorkstationCluster#timeouts}
   */
   readonly timeouts?: GoogleWorkstationsWorkstationClusterTimeouts;
@@ -159,13 +154,13 @@ export interface GoogleWorkstationsWorkstationClusterPrivateClusterConfig {
   /**
   * Additional project IDs that are allowed to attach to the workstation cluster's service attachment.
 By default, the workstation cluster's project and the VPC host project (if different) are allowed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#allowed_projects GoogleWorkstationsWorkstationCluster#allowed_projects}
   */
   readonly allowedProjects?: string[];
   /**
   * Whether Workstations endpoint is private.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_cluster#enable_private_endpoint GoogleWorkstationsWorkstationCluster#enable_private_endpoint}
   */
   readonly enablePrivateEndpoint: boolean | cdktf.IResolvable;

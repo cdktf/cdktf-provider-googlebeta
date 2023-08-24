@@ -1347,7 +1347,7 @@ new GooglePrivatecaCertificateConfig {
 | <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfig.property.name">Name</a></code> | <code>string</code> | The name for this Certificate. |
 | <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfig.property.pool">Pool</a></code> | <code>string</code> | The name of the CaPool this Certificate belongs to. |
 | <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfig.property.certificateAuthority">CertificateAuthority</a></code> | <code>string</code> | The Certificate Authority ID that should issue the certificate. |
-| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfig.property.certificateTemplate">CertificateTemplate</a></code> | <code>string</code> | The resource name for a CertificateTemplate used to issue this certificate, in the format 'projects/*\/locations/*\/certificateTemplates/*'. |
+| <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfig.property.certificateTemplate">CertificateTemplate</a></code> | <code>string</code> | The resource name for a CertificateTemplate used to issue this certificate, in the format 'projects/* /locations/* /certificateTemplates/*'. |
 | <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfig.property.config">Config</a></code> | <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfigA">GooglePrivatecaCertificateConfigA</a></code> | config block. |
 | <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_privateca_certificate#id GooglePrivatecaCertificate#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificateConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Labels with user-defined metadata to apply to this resource. |
@@ -1497,7 +1497,7 @@ public string CertificateTemplate { get; set; }
 
 - *Type:* string
 
-The resource name for a CertificateTemplate used to issue this certificate, in the format 'projects/*\/locations/*\/certificateTemplates/*'.
+The resource name for a CertificateTemplate used to issue this certificate, in the format 'projects/* /locations/* /certificateTemplates/*'.
 
 If this is specified,
 the caller must have the necessary permission to use this template. If this is
@@ -1505,6 +1505,8 @@ omitted, no template will be used. This template must be in the same location
 as the Certificate.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_privateca_certificate#certificate_template GooglePrivatecaCertificate#certificate_template}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 

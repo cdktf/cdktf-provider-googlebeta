@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_default_supported_idp_config
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface GoogleIdentityPlatformDefaultSupportedIdpConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * OAuth client ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_default_supported_idp_config#client_id GoogleIdentityPlatformDefaultSupportedIdpConfig#client_id}
   */
   readonly clientId: string;
   /**
   * OAuth client secret
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_default_supported_idp_config#client_secret GoogleIdentityPlatformDefaultSupportedIdpConfig#client_secret}
   */
   readonly clientSecret: string;
   /**
   * If this IDP allows the user to sign in
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_default_supported_idp_config#enabled GoogleIdentityPlatformDefaultSupportedIdpConfig#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -59,7 +54,7 @@ export interface GoogleIdentityPlatformDefaultSupportedIdpConfigConfig extends c
 * 'twitter.com'
 
 * 'yahoo.com'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_default_supported_idp_config#idp_id GoogleIdentityPlatformDefaultSupportedIdpConfig#idp_id}
   */
   readonly idpId: string;
@@ -69,7 +64,7 @@ export interface GoogleIdentityPlatformDefaultSupportedIdpConfigConfig extends c
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_default_supported_idp_config#timeouts GoogleIdentityPlatformDefaultSupportedIdpConfig#timeouts}
   */
   readonly timeouts?: GoogleIdentityPlatformDefaultSupportedIdpConfigTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_organization_iam_policy
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface GoogleOrganizationIamPolicyConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * The numeric ID of the organization in which you want to manage the audit logging config.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_organization_iam_policy#org_id GoogleOrganizationIamPolicy#org_id}
   */
   readonly orgId: string;

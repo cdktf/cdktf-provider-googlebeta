@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_environment
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleDialogflowCxEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The human-readable description of the environment. The maximum length is 500 characters. If exceeded, the request is rejected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_environment#description GoogleDialogflowCxEnvironment#description}
   */
   readonly description?: string;
   /**
   * The human-readable name of the environment (unique in an agent). Limit of 64 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_environment#display_name GoogleDialogflowCxEnvironment#display_name}
   */
   readonly displayName: string;
@@ -34,19 +29,19 @@ export interface GoogleDialogflowCxEnvironmentConfig extends cdktf.TerraformMeta
   /**
   * The Agent to create an Environment for.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_environment#parent GoogleDialogflowCxEnvironment#parent}
   */
   readonly parent?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_environment#timeouts GoogleDialogflowCxEnvironment#timeouts}
   */
   readonly timeouts?: GoogleDialogflowCxEnvironmentTimeouts;
   /**
   * version_configs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_environment#version_configs GoogleDialogflowCxEnvironment#version_configs}
   */
   readonly versionConfigs: GoogleDialogflowCxEnvironmentVersionConfigs[] | cdktf.IResolvable;
@@ -183,7 +178,7 @@ export class GoogleDialogflowCxEnvironmentTimeoutsOutputReference extends cdktf.
 export interface GoogleDialogflowCxEnvironmentVersionConfigs {
   /**
   * Format: projects/{{project}}/locations/{{location}}/agents/{{agent}}/flows/{{flow}}/versions/{{version}}.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_environment#version GoogleDialogflowCxEnvironment#version}
   */
   readonly version: string;

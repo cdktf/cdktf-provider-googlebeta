@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_android_app
 // generated from terraform resource schema
 
@@ -16,13 +11,13 @@ export interface GoogleFirebaseAndroidAppConfig extends cdktf.TerraformMetaArgum
   * (Optional) Set to 'ABANDON' to allow the AndroidApp to be untracked from terraform state
 rather than deleted upon 'terraform destroy'. This is useful because the AndroidApp may be
 serving traffic. Set to 'DELETE' to delete the AndroidApp. Defaults to 'DELETE'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_android_app#deletion_policy GoogleFirebaseAndroidApp#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The user-assigned display name of the AndroidApp.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_android_app#display_name GoogleFirebaseAndroidApp#display_name}
   */
   readonly displayName: string;
@@ -36,7 +31,7 @@ serving traffic. Set to 'DELETE' to delete the AndroidApp. Defaults to 'DELETE'.
   /**
   * Immutable. The canonical package name of the Android app as would appear in the Google Play
 Developer Console.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_android_app#package_name GoogleFirebaseAndroidApp#package_name}
   */
   readonly packageName?: string;
@@ -46,19 +41,19 @@ Developer Console.
   readonly project?: string;
   /**
   * The SHA1 certificate hashes for the AndroidApp.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_android_app#sha1_hashes GoogleFirebaseAndroidApp#sha1_hashes}
   */
   readonly sha1Hashes?: string[];
   /**
   * The SHA256 certificate hashes for the AndroidApp.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_android_app#sha256_hashes GoogleFirebaseAndroidApp#sha256_hashes}
   */
   readonly sha256Hashes?: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_android_app#timeouts GoogleFirebaseAndroidApp#timeouts}
   */
   readonly timeouts?: GoogleFirebaseAndroidAppTimeouts;

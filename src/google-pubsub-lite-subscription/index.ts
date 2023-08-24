@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_lite_subscription
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface GooglePubsubLiteSubscriptionConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * Name of the subscription.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_lite_subscription#name GooglePubsubLiteSubscription#name}
   */
   readonly name: string;
@@ -31,31 +26,31 @@ export interface GooglePubsubLiteSubscriptionConfig extends cdktf.TerraformMetaA
   readonly project?: string;
   /**
   * The region of the pubsub lite topic.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_lite_subscription#region GooglePubsubLiteSubscription#region}
   */
   readonly region?: string;
   /**
   * A reference to a Topic resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_lite_subscription#topic GooglePubsubLiteSubscription#topic}
   */
   readonly topic: string;
   /**
   * The zone of the pubsub lite topic.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_lite_subscription#zone GooglePubsubLiteSubscription#zone}
   */
   readonly zone?: string;
   /**
   * delivery_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_lite_subscription#delivery_config GooglePubsubLiteSubscription#delivery_config}
   */
   readonly deliveryConfig?: GooglePubsubLiteSubscriptionDeliveryConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_lite_subscription#timeouts GooglePubsubLiteSubscription#timeouts}
   */
   readonly timeouts?: GooglePubsubLiteSubscriptionTimeouts;
@@ -63,7 +58,7 @@ export interface GooglePubsubLiteSubscriptionConfig extends cdktf.TerraformMetaA
 export interface GooglePubsubLiteSubscriptionDeliveryConfig {
   /**
   * When this subscription should send messages to subscribers relative to messages persistence in storage. Possible values: ["DELIVER_IMMEDIATELY", "DELIVER_AFTER_STORED", "DELIVERY_REQUIREMENT_UNSPECIFIED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_lite_subscription#delivery_requirement GooglePubsubLiteSubscription#delivery_requirement}
   */
   readonly deliveryRequirement: string;

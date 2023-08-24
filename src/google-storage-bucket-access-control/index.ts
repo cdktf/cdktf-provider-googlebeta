@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_bucket_access_control
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleStorageBucketAccessControlConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the bucket.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_bucket_access_control#bucket GoogleStorageBucketAccessControl#bucket}
   */
   readonly bucket: string;
@@ -34,7 +29,7 @@ Examples:
   group-example@googlegroups.com.
   To refer to all members of the Google Apps for Business domain
   example.com, the entity would be domain-example.com.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_bucket_access_control#entity GoogleStorageBucketAccessControl#entity}
   */
   readonly entity: string;
@@ -47,13 +42,13 @@ Examples:
   readonly id?: string;
   /**
   * The access permission for the entity. Possible values: ["OWNER", "READER", "WRITER"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_bucket_access_control#role GoogleStorageBucketAccessControl#role}
   */
   readonly role?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_bucket_access_control#timeouts GoogleStorageBucketAccessControl#timeouts}
   */
   readonly timeouts?: GoogleStorageBucketAccessControlTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version
 // generated from terraform resource schema
 
@@ -14,26 +9,26 @@ import * as cdktf from 'cdktf';
 export interface GoogleAppEngineFlexibleAppVersionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Metadata settings that are supplied to this version to enable beta runtime features.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#beta_settings GoogleAppEngineFlexibleAppVersion#beta_settings}
   */
   readonly betaSettings?: { [key: string]: string };
   /**
   * Duration that static files should be cached by web proxies and browsers.
 Only applicable if the corresponding StaticFilesHandler does not specify its own expiration time.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#default_expiration GoogleAppEngineFlexibleAppVersion#default_expiration}
   */
   readonly defaultExpiration?: string;
   /**
   * If set to 'true', the service will be deleted if it is the last version.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#delete_service_on_destroy GoogleAppEngineFlexibleAppVersion#delete_service_on_destroy}
   */
   readonly deleteServiceOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * Environment variables available to the application.  As these are not returned in the API request, Terraform will not detect any changes made outside of the Terraform config.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#env_variables GoogleAppEngineFlexibleAppVersion#env_variables}
   */
   readonly envVariables?: { [key: string]: string };
@@ -46,7 +41,7 @@ Only applicable if the corresponding StaticFilesHandler does not specify its own
   readonly id?: string;
   /**
   * A list of the types of messages that this application is able to receive. Possible values: ["INBOUND_SERVICE_MAIL", "INBOUND_SERVICE_MAIL_BOUNCE", "INBOUND_SERVICE_XMPP_ERROR", "INBOUND_SERVICE_XMPP_MESSAGE", "INBOUND_SERVICE_XMPP_SUBSCRIBE", "INBOUND_SERVICE_XMPP_PRESENCE", "INBOUND_SERVICE_CHANNEL_PRESENCE", "INBOUND_SERVICE_WARMUP"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#inbound_services GoogleAppEngineFlexibleAppVersion#inbound_services}
   */
   readonly inboundServices?: string[];
@@ -55,19 +50,19 @@ Only applicable if the corresponding StaticFilesHandler does not specify its own
 AutomaticScaling: F1, F2, F4, F4_1G
 ManualScaling: B1, B2, B4, B8, B4_1G
 Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#instance_class GoogleAppEngineFlexibleAppVersion#instance_class}
   */
   readonly instanceClass?: string;
   /**
   * Files that match this pattern will not be built into this version. Only applicable for Go runtimes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#nobuild_files_regex GoogleAppEngineFlexibleAppVersion#nobuild_files_regex}
   */
   readonly nobuildFilesRegex?: string;
   /**
   * If set to 'true', the application version will not be deleted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#noop_on_destroy GoogleAppEngineFlexibleAppVersion#noop_on_destroy}
   */
   readonly noopOnDestroy?: boolean | cdktf.IResolvable;
@@ -77,7 +72,7 @@ Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
   readonly project?: string;
   /**
   * Desired runtime. Example python27.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#runtime GoogleAppEngineFlexibleAppVersion#runtime}
   */
   readonly runtime: string;
@@ -85,123 +80,123 @@ Defaults to F1 for AutomaticScaling and B1 for ManualScaling.
   * The version of the API in the given runtime environment.
 Please see the app.yaml reference for valid values at 'https://cloud.google.com/appengine/docs/standard/<language>/config/appref'\
 Substitute '<language>' with 'python', 'java', 'php', 'ruby', 'go' or 'nodejs'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#runtime_api_version GoogleAppEngineFlexibleAppVersion#runtime_api_version}
   */
   readonly runtimeApiVersion?: string;
   /**
   * The channel of the runtime to use. Only available for some runtimes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#runtime_channel GoogleAppEngineFlexibleAppVersion#runtime_channel}
   */
   readonly runtimeChannel?: string;
   /**
   * The path or name of the app's main executable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#runtime_main_executable_path GoogleAppEngineFlexibleAppVersion#runtime_main_executable_path}
   */
   readonly runtimeMainExecutablePath?: string;
   /**
   * AppEngine service resource. Can contain numbers, letters, and hyphens.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#service GoogleAppEngineFlexibleAppVersion#service}
   */
   readonly service: string;
   /**
   * The identity that the deployed version will run as. Admin API will use the App Engine Appspot service account as
 default if this field is neither provided in app.yaml file nor through CLI flag.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#service_account GoogleAppEngineFlexibleAppVersion#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Current serving status of this version. Only the versions with a SERVING status create instances and can be billed. Default value: "SERVING" Possible values: ["SERVING", "STOPPED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#serving_status GoogleAppEngineFlexibleAppVersion#serving_status}
   */
   readonly servingStatus?: string;
   /**
   * Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters, numbers, or hyphens.
 Reserved names,"default", "latest", and any name with the prefix "ah-".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#version_id GoogleAppEngineFlexibleAppVersion#version_id}
   */
   readonly versionId?: string;
   /**
   * api_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#api_config GoogleAppEngineFlexibleAppVersion#api_config}
   */
   readonly apiConfig?: GoogleAppEngineFlexibleAppVersionApiConfig;
   /**
   * automatic_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#automatic_scaling GoogleAppEngineFlexibleAppVersion#automatic_scaling}
   */
   readonly automaticScaling?: GoogleAppEngineFlexibleAppVersionAutomaticScaling;
   /**
   * deployment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#deployment GoogleAppEngineFlexibleAppVersion#deployment}
   */
   readonly deployment?: GoogleAppEngineFlexibleAppVersionDeployment;
   /**
   * endpoints_api_service block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#endpoints_api_service GoogleAppEngineFlexibleAppVersion#endpoints_api_service}
   */
   readonly endpointsApiService?: GoogleAppEngineFlexibleAppVersionEndpointsApiService;
   /**
   * entrypoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#entrypoint GoogleAppEngineFlexibleAppVersion#entrypoint}
   */
   readonly entrypoint?: GoogleAppEngineFlexibleAppVersionEntrypoint;
   /**
   * handlers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#handlers GoogleAppEngineFlexibleAppVersion#handlers}
   */
   readonly handlers?: GoogleAppEngineFlexibleAppVersionHandlers[] | cdktf.IResolvable;
   /**
   * liveness_check block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#liveness_check GoogleAppEngineFlexibleAppVersion#liveness_check}
   */
   readonly livenessCheck: GoogleAppEngineFlexibleAppVersionLivenessCheck;
   /**
   * manual_scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#manual_scaling GoogleAppEngineFlexibleAppVersion#manual_scaling}
   */
   readonly manualScaling?: GoogleAppEngineFlexibleAppVersionManualScaling;
   /**
   * network block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#network GoogleAppEngineFlexibleAppVersion#network}
   */
   readonly network?: GoogleAppEngineFlexibleAppVersionNetwork;
   /**
   * readiness_check block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#readiness_check GoogleAppEngineFlexibleAppVersion#readiness_check}
   */
   readonly readinessCheck: GoogleAppEngineFlexibleAppVersionReadinessCheck;
   /**
   * resources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#resources GoogleAppEngineFlexibleAppVersion#resources}
   */
   readonly resources?: GoogleAppEngineFlexibleAppVersionResources;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#timeouts GoogleAppEngineFlexibleAppVersion#timeouts}
   */
   readonly timeouts?: GoogleAppEngineFlexibleAppVersionTimeouts;
   /**
   * vpc_access_connector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#vpc_access_connector GoogleAppEngineFlexibleAppVersion#vpc_access_connector}
   */
   readonly vpcAccessConnector?: GoogleAppEngineFlexibleAppVersionVpcAccessConnector;
@@ -209,31 +204,31 @@ Reserved names,"default", "latest", and any name with the prefix "ah-".
 export interface GoogleAppEngineFlexibleAppVersionApiConfig {
   /**
   * Action to take when users access resources that require authentication. Default value: "AUTH_FAIL_ACTION_REDIRECT" Possible values: ["AUTH_FAIL_ACTION_REDIRECT", "AUTH_FAIL_ACTION_UNAUTHORIZED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#auth_fail_action GoogleAppEngineFlexibleAppVersion#auth_fail_action}
   */
   readonly authFailAction?: string;
   /**
   * Level of login required to access this resource. Default value: "LOGIN_OPTIONAL" Possible values: ["LOGIN_OPTIONAL", "LOGIN_ADMIN", "LOGIN_REQUIRED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#login GoogleAppEngineFlexibleAppVersion#login}
   */
   readonly login?: string;
   /**
   * Path to the script from the application root directory.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#script GoogleAppEngineFlexibleAppVersion#script}
   */
   readonly script: string;
   /**
   * Security (HTTPS) enforcement for this URL. Possible values: ["SECURE_DEFAULT", "SECURE_NEVER", "SECURE_OPTIONAL", "SECURE_ALWAYS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#security_level GoogleAppEngineFlexibleAppVersion#security_level}
   */
   readonly securityLevel?: string;
   /**
   * URL to serve the endpoint at.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#url GoogleAppEngineFlexibleAppVersion#url}
   */
   readonly url?: string;
@@ -389,13 +384,13 @@ export class GoogleAppEngineFlexibleAppVersionApiConfigOutputReference extends c
 export interface GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilization {
   /**
   * Period of time over which CPU utilization is calculated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#aggregation_window_length GoogleAppEngineFlexibleAppVersion#aggregation_window_length}
   */
   readonly aggregationWindowLength?: string;
   /**
   * Target CPU utilization ratio to maintain when scaling. Must be between 0 and 1.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_utilization GoogleAppEngineFlexibleAppVersion#target_utilization}
   */
   readonly targetUtilization: number;
@@ -482,25 +477,25 @@ export class GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilizationOutp
 export interface GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilization {
   /**
   * Target bytes read per second.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_read_bytes_per_second GoogleAppEngineFlexibleAppVersion#target_read_bytes_per_second}
   */
   readonly targetReadBytesPerSecond?: number;
   /**
   * Target ops read per seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_read_ops_per_second GoogleAppEngineFlexibleAppVersion#target_read_ops_per_second}
   */
   readonly targetReadOpsPerSecond?: number;
   /**
   * Target bytes written per second.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_write_bytes_per_second GoogleAppEngineFlexibleAppVersion#target_write_bytes_per_second}
   */
   readonly targetWriteBytesPerSecond?: number;
   /**
   * Target ops written per second.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_write_ops_per_second GoogleAppEngineFlexibleAppVersion#target_write_ops_per_second}
   */
   readonly targetWriteOpsPerSecond?: number;
@@ -636,25 +631,25 @@ export class GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilizationOut
 export interface GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization {
   /**
   * Target bytes received per second.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_received_bytes_per_second GoogleAppEngineFlexibleAppVersion#target_received_bytes_per_second}
   */
   readonly targetReceivedBytesPerSecond?: number;
   /**
   * Target packets received per second.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_received_packets_per_second GoogleAppEngineFlexibleAppVersion#target_received_packets_per_second}
   */
   readonly targetReceivedPacketsPerSecond?: number;
   /**
   * Target bytes sent per second.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_sent_bytes_per_second GoogleAppEngineFlexibleAppVersion#target_sent_bytes_per_second}
   */
   readonly targetSentBytesPerSecond?: number;
   /**
   * Target packets sent per second.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_sent_packets_per_second GoogleAppEngineFlexibleAppVersion#target_sent_packets_per_second}
   */
   readonly targetSentPacketsPerSecond?: number;
@@ -790,13 +785,13 @@ export class GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization
 export interface GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilization {
   /**
   * Target number of concurrent requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_concurrent_requests GoogleAppEngineFlexibleAppVersion#target_concurrent_requests}
   */
   readonly targetConcurrentRequests?: number;
   /**
   * Target requests per second.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#target_request_count_per_second GoogleAppEngineFlexibleAppVersion#target_request_count_per_second}
   */
   readonly targetRequestCountPerSecond?: string;
@@ -888,7 +883,7 @@ export interface GoogleAppEngineFlexibleAppVersionAutomaticScaling {
   * The time period that the Autoscaler should wait before it starts collecting information from a new instance.
 This prevents the autoscaler from collecting information when the instance is initializing,
 during which the collected usage would not be reliable. Default: 120s
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#cool_down_period GoogleAppEngineFlexibleAppVersion#cool_down_period}
   */
   readonly coolDownPeriod?: string;
@@ -896,67 +891,67 @@ during which the collected usage would not be reliable. Default: 120s
   * Number of concurrent requests an automatic scaling instance can accept before the scheduler spawns a new instance.
 
 Defaults to a runtime-specific value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#max_concurrent_requests GoogleAppEngineFlexibleAppVersion#max_concurrent_requests}
   */
   readonly maxConcurrentRequests?: number;
   /**
   * Maximum number of idle instances that should be maintained for this version.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#max_idle_instances GoogleAppEngineFlexibleAppVersion#max_idle_instances}
   */
   readonly maxIdleInstances?: number;
   /**
   * Maximum amount of time that a request should wait in the pending queue before starting a new instance to handle it.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#max_pending_latency GoogleAppEngineFlexibleAppVersion#max_pending_latency}
   */
   readonly maxPendingLatency?: string;
   /**
   * Maximum number of instances that should be started to handle requests for this version. Default: 20
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#max_total_instances GoogleAppEngineFlexibleAppVersion#max_total_instances}
   */
   readonly maxTotalInstances?: number;
   /**
   * Minimum number of idle instances that should be maintained for this version. Only applicable for the default version of a service.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#min_idle_instances GoogleAppEngineFlexibleAppVersion#min_idle_instances}
   */
   readonly minIdleInstances?: number;
   /**
   * Minimum amount of time a request should wait in the pending queue before starting a new instance to handle it.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#min_pending_latency GoogleAppEngineFlexibleAppVersion#min_pending_latency}
   */
   readonly minPendingLatency?: string;
   /**
   * Minimum number of running instances that should be maintained for this version. Default: 2
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#min_total_instances GoogleAppEngineFlexibleAppVersion#min_total_instances}
   */
   readonly minTotalInstances?: number;
   /**
   * cpu_utilization block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#cpu_utilization GoogleAppEngineFlexibleAppVersion#cpu_utilization}
   */
   readonly cpuUtilization: GoogleAppEngineFlexibleAppVersionAutomaticScalingCpuUtilization;
   /**
   * disk_utilization block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#disk_utilization GoogleAppEngineFlexibleAppVersion#disk_utilization}
   */
   readonly diskUtilization?: GoogleAppEngineFlexibleAppVersionAutomaticScalingDiskUtilization;
   /**
   * network_utilization block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#network_utilization GoogleAppEngineFlexibleAppVersion#network_utilization}
   */
   readonly networkUtilization?: GoogleAppEngineFlexibleAppVersionAutomaticScalingNetworkUtilization;
   /**
   * request_utilization block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#request_utilization GoogleAppEngineFlexibleAppVersion#request_utilization}
   */
   readonly requestUtilization?: GoogleAppEngineFlexibleAppVersionAutomaticScalingRequestUtilization;
@@ -1273,7 +1268,7 @@ export class GoogleAppEngineFlexibleAppVersionAutomaticScalingOutputReference ex
 export interface GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions {
   /**
   * Path to the yaml file used in deployment, used to determine runtime configuration details.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#app_yaml_path GoogleAppEngineFlexibleAppVersion#app_yaml_path}
   */
   readonly appYamlPath: string;
@@ -1281,7 +1276,7 @@ export interface GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions {
   * The Cloud Build timeout used as part of any dependent builds performed by version creation. Defaults to 10 minutes.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#cloud_build_timeout GoogleAppEngineFlexibleAppVersion#cloud_build_timeout}
   */
   readonly cloudBuildTimeout?: string;
@@ -1369,7 +1364,7 @@ export interface GoogleAppEngineFlexibleAppVersionDeploymentContainer {
   /**
   * URI to the hosted container image in Google Container Registry. The URI must be fully qualified and include a tag or digest.
 Examples: "gcr.io/my-project/image:tag" or "gcr.io/my-project/image@digest"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#image GoogleAppEngineFlexibleAppVersion#image}
   */
   readonly image: string;
@@ -1437,13 +1432,13 @@ export interface GoogleAppEngineFlexibleAppVersionDeploymentFiles {
   readonly name: string;
   /**
   * SHA1 checksum of the file
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#sha1_sum GoogleAppEngineFlexibleAppVersion#sha1_sum}
   */
   readonly sha1Sum?: string;
   /**
   * Source URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#source_url GoogleAppEngineFlexibleAppVersion#source_url}
   */
   readonly sourceUrl: string;
@@ -1582,13 +1577,13 @@ export class GoogleAppEngineFlexibleAppVersionDeploymentFilesList extends cdktf.
 export interface GoogleAppEngineFlexibleAppVersionDeploymentZip {
   /**
   * files count
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#files_count GoogleAppEngineFlexibleAppVersion#files_count}
   */
   readonly filesCount?: number;
   /**
   * Source URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#source_url GoogleAppEngineFlexibleAppVersion#source_url}
   */
   readonly sourceUrl: string;
@@ -1675,25 +1670,25 @@ export class GoogleAppEngineFlexibleAppVersionDeploymentZipOutputReference exten
 export interface GoogleAppEngineFlexibleAppVersionDeployment {
   /**
   * cloud_build_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#cloud_build_options GoogleAppEngineFlexibleAppVersion#cloud_build_options}
   */
   readonly cloudBuildOptions?: GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptions;
   /**
   * container block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#container GoogleAppEngineFlexibleAppVersion#container}
   */
   readonly container?: GoogleAppEngineFlexibleAppVersionDeploymentContainer;
   /**
   * files block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#files GoogleAppEngineFlexibleAppVersion#files}
   */
   readonly files?: GoogleAppEngineFlexibleAppVersionDeploymentFiles[] | cdktf.IResolvable;
   /**
   * zip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#zip GoogleAppEngineFlexibleAppVersion#zip}
   */
   readonly zip?: GoogleAppEngineFlexibleAppVersionDeploymentZip;
@@ -1836,26 +1831,26 @@ and is required in this case.
 
 Endpoints also has a rollout strategy called "MANAGED". When using this, Endpoints fetches the latest configuration and does not need
 the configuration ID. In this case, configId must be omitted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#config_id GoogleAppEngineFlexibleAppVersion#config_id}
   */
   readonly configId?: string;
   /**
   * Enable or disable trace sampling. By default, this is set to false for enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#disable_trace_sampling GoogleAppEngineFlexibleAppVersion#disable_trace_sampling}
   */
   readonly disableTraceSampling?: boolean | cdktf.IResolvable;
   /**
   * Endpoints service name which is the name of the "service" resource in the Service Management API.
 For example "myapi.endpoints.myproject.cloud.goog"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#name GoogleAppEngineFlexibleAppVersion#name}
   */
   readonly name: string;
   /**
   * Endpoints rollout strategy. If FIXED, configId must be specified. If MANAGED, configId must be omitted. Default value: "FIXED" Possible values: ["FIXED", "MANAGED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#rollout_strategy GoogleAppEngineFlexibleAppVersion#rollout_strategy}
   */
   readonly rolloutStrategy?: string;
@@ -1988,7 +1983,7 @@ export class GoogleAppEngineFlexibleAppVersionEndpointsApiServiceOutputReference
 export interface GoogleAppEngineFlexibleAppVersionEntrypoint {
   /**
   * The format should be a shell command that can be fed to bash -c.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#shell GoogleAppEngineFlexibleAppVersion#shell}
   */
   readonly shell: string;
@@ -2052,7 +2047,7 @@ export class GoogleAppEngineFlexibleAppVersionEntrypointOutputReference extends 
 export interface GoogleAppEngineFlexibleAppVersionHandlersScript {
   /**
   * Path to the script from the application root directory.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#script_path GoogleAppEngineFlexibleAppVersion#script_path}
   */
   readonly scriptPath: string;
@@ -2118,7 +2113,7 @@ export interface GoogleAppEngineFlexibleAppVersionHandlersStaticFiles {
   * Whether files should also be uploaded as code data. By default, files declared in static file handlers are
 uploaded as static data and are only served to end users; they cannot be read by the application. If enabled,
 uploads are charged against both your code and static data storage resource quotas.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#application_readable GoogleAppEngineFlexibleAppVersion#application_readable}
   */
   readonly applicationReadable?: boolean | cdktf.IResolvable;
@@ -2126,40 +2121,40 @@ uploads are charged against both your code and static data storage resource quot
   * Time a static file served by this handler should be cached by web proxies and browsers.
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example "3.5s".
 Default is '0s'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#expiration GoogleAppEngineFlexibleAppVersion#expiration}
   */
   readonly expiration?: string;
   /**
   * HTTP headers to use for all responses from these URLs.
 An object containing a list of "key:value" value pairs.".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#http_headers GoogleAppEngineFlexibleAppVersion#http_headers}
   */
   readonly httpHeaders?: { [key: string]: string };
   /**
   * MIME type used to serve all files served by this handler.
 Defaults to file-specific MIME types, which are derived from each file's filename extension.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#mime_type GoogleAppEngineFlexibleAppVersion#mime_type}
   */
   readonly mimeType?: string;
   /**
   * Path to the static files matched by the URL pattern, from the application root directory.
 The path can refer to text matched in groupings in the URL pattern.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#path GoogleAppEngineFlexibleAppVersion#path}
   */
   readonly path?: string;
   /**
   * Whether this handler should match the request if the file referenced by the handler does not exist.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#require_matching_file GoogleAppEngineFlexibleAppVersion#require_matching_file}
   */
   readonly requireMatchingFile?: boolean | cdktf.IResolvable;
   /**
   * Regular expression that matches the file paths for all files that should be referenced by this handler.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#upload_path_regex GoogleAppEngineFlexibleAppVersion#upload_path_regex}
   */
   readonly uploadPathRegex?: string;
@@ -2364,44 +2359,44 @@ export class GoogleAppEngineFlexibleAppVersionHandlersStaticFilesOutputReference
 export interface GoogleAppEngineFlexibleAppVersionHandlers {
   /**
   * Actions to take when the user is not logged in. Possible values: ["AUTH_FAIL_ACTION_REDIRECT", "AUTH_FAIL_ACTION_UNAUTHORIZED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#auth_fail_action GoogleAppEngineFlexibleAppVersion#auth_fail_action}
   */
   readonly authFailAction?: string;
   /**
   * Methods to restrict access to a URL based on login status. Possible values: ["LOGIN_OPTIONAL", "LOGIN_ADMIN", "LOGIN_REQUIRED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#login GoogleAppEngineFlexibleAppVersion#login}
   */
   readonly login?: string;
   /**
   * 30x code to use when performing redirects for the secure field. Possible values: ["REDIRECT_HTTP_RESPONSE_CODE_301", "REDIRECT_HTTP_RESPONSE_CODE_302", "REDIRECT_HTTP_RESPONSE_CODE_303", "REDIRECT_HTTP_RESPONSE_CODE_307"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#redirect_http_response_code GoogleAppEngineFlexibleAppVersion#redirect_http_response_code}
   */
   readonly redirectHttpResponseCode?: string;
   /**
   * Security (HTTPS) enforcement for this URL. Possible values: ["SECURE_DEFAULT", "SECURE_NEVER", "SECURE_OPTIONAL", "SECURE_ALWAYS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#security_level GoogleAppEngineFlexibleAppVersion#security_level}
   */
   readonly securityLevel?: string;
   /**
   * URL prefix. Uses regular expression syntax, which means regexp special characters must be escaped, but should not contain groupings.
 All URLs that begin with this prefix are handled by this handler, using the portion of the URL after the prefix as part of the file path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#url_regex GoogleAppEngineFlexibleAppVersion#url_regex}
   */
   readonly urlRegex?: string;
   /**
   * script block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#script GoogleAppEngineFlexibleAppVersion#script}
   */
   readonly script?: GoogleAppEngineFlexibleAppVersionHandlersScript;
   /**
   * static_files block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#static_files GoogleAppEngineFlexibleAppVersion#static_files}
   */
   readonly staticFiles?: GoogleAppEngineFlexibleAppVersionHandlersStaticFiles;
@@ -2638,43 +2633,43 @@ export class GoogleAppEngineFlexibleAppVersionHandlersList extends cdktf.Complex
 export interface GoogleAppEngineFlexibleAppVersionLivenessCheck {
   /**
   * Interval between health checks.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#check_interval GoogleAppEngineFlexibleAppVersion#check_interval}
   */
   readonly checkInterval?: string;
   /**
   * Number of consecutive failed checks required before considering the VM unhealthy. Default: 4.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#failure_threshold GoogleAppEngineFlexibleAppVersion#failure_threshold}
   */
   readonly failureThreshold?: number;
   /**
   * Host header to send when performing a HTTP Readiness check. Example: "myapp.appspot.com"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#host GoogleAppEngineFlexibleAppVersion#host}
   */
   readonly host?: string;
   /**
   * The initial delay before starting to execute the checks. Default: "300s"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#initial_delay GoogleAppEngineFlexibleAppVersion#initial_delay}
   */
   readonly initialDelay?: string;
   /**
   * The request path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#path GoogleAppEngineFlexibleAppVersion#path}
   */
   readonly path: string;
   /**
   * Number of consecutive successful checks required before considering the VM healthy. Default: 2.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#success_threshold GoogleAppEngineFlexibleAppVersion#success_threshold}
   */
   readonly successThreshold?: number;
   /**
   * Time before the check is considered failed. Default: "4s"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#timeout GoogleAppEngineFlexibleAppVersion#timeout}
   */
   readonly timeout?: string;
@@ -2879,7 +2874,7 @@ export interface GoogleAppEngineFlexibleAppVersionManualScaling {
 
 **Note:** When managing the number of instances at runtime through the App Engine Admin API or the (now deprecated) Python 2
 Modules API set_num_instances() you must use 'lifecycle.ignore_changes = ["manual_scaling"[0].instances]' to prevent drift detection.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#instances GoogleAppEngineFlexibleAppVersion#instances}
   */
   readonly instances: number;
@@ -2943,25 +2938,25 @@ export class GoogleAppEngineFlexibleAppVersionManualScalingOutputReference exten
 export interface GoogleAppEngineFlexibleAppVersionNetwork {
   /**
   * List of ports, or port pairs, to forward from the virtual machine to the application container.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#forwarded_ports GoogleAppEngineFlexibleAppVersion#forwarded_ports}
   */
   readonly forwardedPorts?: string[];
   /**
   * Tag to apply to the instance during creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#instance_tag GoogleAppEngineFlexibleAppVersion#instance_tag}
   */
   readonly instanceTag?: string;
   /**
   * Google Compute Engine network where the virtual machines are created. Specify the short name, not the resource path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#name GoogleAppEngineFlexibleAppVersion#name}
   */
   readonly name: string;
   /**
   * Enable session affinity.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#session_affinity GoogleAppEngineFlexibleAppVersion#session_affinity}
   */
   readonly sessionAffinity?: boolean | cdktf.IResolvable;
@@ -2972,7 +2967,7 @@ If the network that the instance is being created in is a Legacy network, then t
 If the network that the instance is being created in is an auto Subnet Mode Network, then only network name should be specified (not the subnetworkName) and the IP address is created from the IPCidrRange of the subnetwork that exists in that zone for that network.
 If the network that the instance is being created in is a custom Subnet Mode Network, then the subnetworkName must be specified and the IP address is created from the IPCidrRange of the subnetwork.
 If specified, the subnetwork must exist in the same region as the App Engine flexible environment application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#subnetwork GoogleAppEngineFlexibleAppVersion#subnetwork}
   */
   readonly subnetwork?: string;
@@ -3129,43 +3124,43 @@ export interface GoogleAppEngineFlexibleAppVersionReadinessCheck {
   /**
   * A maximum time limit on application initialization, measured from moment the application successfully
 replies to a healthcheck until it is ready to serve traffic. Default: "300s"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#app_start_timeout GoogleAppEngineFlexibleAppVersion#app_start_timeout}
   */
   readonly appStartTimeout?: string;
   /**
   * Interval between health checks.  Default: "5s".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#check_interval GoogleAppEngineFlexibleAppVersion#check_interval}
   */
   readonly checkInterval?: string;
   /**
   * Number of consecutive failed checks required before removing traffic. Default: 2.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#failure_threshold GoogleAppEngineFlexibleAppVersion#failure_threshold}
   */
   readonly failureThreshold?: number;
   /**
   * Host header to send when performing a HTTP Readiness check. Example: "myapp.appspot.com"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#host GoogleAppEngineFlexibleAppVersion#host}
   */
   readonly host?: string;
   /**
   * The request path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#path GoogleAppEngineFlexibleAppVersion#path}
   */
   readonly path: string;
   /**
   * Number of consecutive successful checks required before receiving traffic. Default: 2.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#success_threshold GoogleAppEngineFlexibleAppVersion#success_threshold}
   */
   readonly successThreshold?: number;
   /**
   * Time before the check is considered failed. Default: "4s"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#timeout GoogleAppEngineFlexibleAppVersion#timeout}
   */
   readonly timeout?: string;
@@ -3367,19 +3362,19 @@ export class GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference exte
 export interface GoogleAppEngineFlexibleAppVersionResourcesVolumes {
   /**
   * Unique name for the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#name GoogleAppEngineFlexibleAppVersion#name}
   */
   readonly name: string;
   /**
   * Volume size in gigabytes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#size_gb GoogleAppEngineFlexibleAppVersion#size_gb}
   */
   readonly sizeGb: number;
   /**
   * Underlying volume type, e.g. 'tmpfs'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#volume_type GoogleAppEngineFlexibleAppVersion#volume_type}
   */
   readonly volumeType: string;
@@ -3515,25 +3510,25 @@ export class GoogleAppEngineFlexibleAppVersionResourcesVolumesList extends cdktf
 export interface GoogleAppEngineFlexibleAppVersionResources {
   /**
   * Number of CPU cores needed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#cpu GoogleAppEngineFlexibleAppVersion#cpu}
   */
   readonly cpu?: number;
   /**
   * Disk size (GB) needed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#disk_gb GoogleAppEngineFlexibleAppVersion#disk_gb}
   */
   readonly diskGb?: number;
   /**
   * Memory (GB) needed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#memory_gb GoogleAppEngineFlexibleAppVersion#memory_gb}
   */
   readonly memoryGb?: number;
   /**
   * volumes block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#volumes GoogleAppEngineFlexibleAppVersion#volumes}
   */
   readonly volumes?: GoogleAppEngineFlexibleAppVersionResourcesVolumes[] | cdktf.IResolvable;
@@ -3798,7 +3793,7 @@ export class GoogleAppEngineFlexibleAppVersionTimeoutsOutputReference extends cd
 export interface GoogleAppEngineFlexibleAppVersionVpcAccessConnector {
   /**
   * Full Serverless VPC Access Connector name e.g. /projects/my-project/locations/us-central1/connectors/c1.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_flexible_app_version#name GoogleAppEngineFlexibleAppVersion#name}
   */
   readonly name: string;

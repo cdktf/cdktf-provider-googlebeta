@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_release
 // generated from terraform resource schema
 
@@ -15,7 +10,7 @@ export interface GoogleFirebaseHostingReleaseConfig extends cdktf.TerraformMetaA
   /**
   * The ID of the channel to which the release belongs. If not provided, the release will
 belong to the default "live" channel
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_release#channel_id GoogleFirebaseHostingRelease#channel_id}
   */
   readonly channelId?: string;
@@ -28,13 +23,13 @@ belong to the default "live" channel
   readonly id?: string;
   /**
   * The deploy description when the release was created. The value can be up to 512 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_release#message GoogleFirebaseHostingRelease#message}
   */
   readonly message?: string;
   /**
   * Required. The ID of the site to which the release belongs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_release#site_id GoogleFirebaseHostingRelease#site_id}
   */
   readonly siteId: string;
@@ -44,7 +39,7 @@ belong to the default "live" channel
 DEPLOY: A version was uploaded to Firebase Hosting and released. Output only.
 ROLLBACK: The release points back to a previously deployed version. Output only.
 SITE_DISABLE: The release prevents the site from serving content. Firebase Hosting acts as if the site never existed Possible values: ["DEPLOY", "ROLLBACK", "SITE_DISABLE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_release#type GoogleFirebaseHostingRelease#type}
   */
   readonly type?: string;
@@ -53,13 +48,13 @@ SITE_DISABLE: The release prevents the site from serving content. Firebase Hosti
 The content of the version specified will be actively displayed on the appropriate URL.
 The Version must belong to the same site as in the 'site_id'.
 This parameter must be empty if the 'type' of the release is 'SITE_DISABLE'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_release#version_name GoogleFirebaseHostingRelease#version_name}
   */
   readonly versionName?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_release#timeouts GoogleFirebaseHostingRelease#timeouts}
   */
   readonly timeouts?: GoogleFirebaseHostingReleaseTimeouts;

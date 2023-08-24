@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_document_ai_processor
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleDocumentAiProcessorConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name. Must be unique.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_document_ai_processor#display_name GoogleDocumentAiProcessor#display_name}
   */
   readonly displayName: string;
@@ -27,13 +22,13 @@ export interface GoogleDocumentAiProcessorConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * The KMS key used for encryption/decryption in CMEK scenarios. See https://cloud.google.com/security-key-management.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_document_ai_processor#kms_key_name GoogleDocumentAiProcessor#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * The location of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_document_ai_processor#location GoogleDocumentAiProcessor#location}
   */
   readonly location: string;
@@ -43,13 +38,13 @@ export interface GoogleDocumentAiProcessorConfig extends cdktf.TerraformMetaArgu
   readonly project?: string;
   /**
   * The type of processor. For possible types see the [official list](https://cloud.google.com/document-ai/docs/reference/rest/v1/projects.locations/fetchProcessorTypes#google.cloud.documentai.v1.DocumentProcessorService.FetchProcessorTypes)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_document_ai_processor#type GoogleDocumentAiProcessor#type}
   */
   readonly type: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_document_ai_processor#timeouts GoogleDocumentAiProcessor#timeouts}
   */
   readonly timeouts?: GoogleDocumentAiProcessorTimeouts;

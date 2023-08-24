@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleApiGatewayApiConfig extends cdktf.TerraformMetaArguments {
   /**
   * Identifier to assign to the API. Must be unique within scope of the parent resource(project)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api#api_id GoogleApiGatewayApi#api_id}
   */
   readonly apiId: string;
   /**
   * A user-visible name for the API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api#display_name GoogleApiGatewayApi#display_name}
   */
   readonly displayName?: string;
@@ -33,14 +28,14 @@ export interface GoogleApiGatewayApiConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * Resource labels to represent user-provided metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api#labels GoogleApiGatewayApi#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Immutable. The name of a Google Managed Service ( https://cloud.google.com/service-infrastructure/docs/glossary#managed).
 If not specified, a new Service will automatically be created in the same project as this API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api#managed_service GoogleApiGatewayApi#managed_service}
   */
   readonly managedService?: string;
@@ -50,7 +45,7 @@ If not specified, a new Service will automatically be created in the same projec
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api#timeouts GoogleApiGatewayApi#timeouts}
   */
   readonly timeouts?: GoogleApiGatewayApiTimeouts;

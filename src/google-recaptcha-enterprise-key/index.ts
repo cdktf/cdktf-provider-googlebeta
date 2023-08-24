@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleRecaptchaEnterpriseKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Human-readable display name of this key. Modifiable by user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#display_name GoogleRecaptchaEnterpriseKey#display_name}
   */
   readonly displayName: string;
@@ -27,43 +22,43 @@ export interface GoogleRecaptchaEnterpriseKeyConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * See [Creating and managing labels](https://cloud.google.com/recaptcha-enterprise/docs/labels).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#labels GoogleRecaptchaEnterpriseKey#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The project for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#project GoogleRecaptchaEnterpriseKey#project}
   */
   readonly project?: string;
   /**
   * android_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#android_settings GoogleRecaptchaEnterpriseKey#android_settings}
   */
   readonly androidSettings?: GoogleRecaptchaEnterpriseKeyAndroidSettings;
   /**
   * ios_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#ios_settings GoogleRecaptchaEnterpriseKey#ios_settings}
   */
   readonly iosSettings?: GoogleRecaptchaEnterpriseKeyIosSettings;
   /**
   * testing_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#testing_options GoogleRecaptchaEnterpriseKey#testing_options}
   */
   readonly testingOptions?: GoogleRecaptchaEnterpriseKeyTestingOptions;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#timeouts GoogleRecaptchaEnterpriseKey#timeouts}
   */
   readonly timeouts?: GoogleRecaptchaEnterpriseKeyTimeouts;
   /**
   * web_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#web_settings GoogleRecaptchaEnterpriseKey#web_settings}
   */
   readonly webSettings?: GoogleRecaptchaEnterpriseKeyWebSettings;
@@ -71,13 +66,13 @@ export interface GoogleRecaptchaEnterpriseKeyConfig extends cdktf.TerraformMetaA
 export interface GoogleRecaptchaEnterpriseKeyAndroidSettings {
   /**
   * If set to true, it means allowed_package_names will not be enforced.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#allow_all_package_names GoogleRecaptchaEnterpriseKey#allow_all_package_names}
   */
   readonly allowAllPackageNames?: boolean | cdktf.IResolvable;
   /**
   * Android package names of apps allowed to use the key. Example: 'com.companyname.appname'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#allowed_package_names GoogleRecaptchaEnterpriseKey#allowed_package_names}
   */
   readonly allowedPackageNames?: string[];
@@ -167,13 +162,13 @@ export class GoogleRecaptchaEnterpriseKeyAndroidSettingsOutputReference extends 
 export interface GoogleRecaptchaEnterpriseKeyIosSettings {
   /**
   * If set to true, it means allowed_bundle_ids will not be enforced.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#allow_all_bundle_ids GoogleRecaptchaEnterpriseKey#allow_all_bundle_ids}
   */
   readonly allowAllBundleIds?: boolean | cdktf.IResolvable;
   /**
   * iOS bundle ids of apps allowed to use the key. Example: 'com.companyname.productname.appname'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#allowed_bundle_ids GoogleRecaptchaEnterpriseKey#allowed_bundle_ids}
   */
   readonly allowedBundleIds?: string[];
@@ -263,13 +258,13 @@ export class GoogleRecaptchaEnterpriseKeyIosSettingsOutputReference extends cdkt
 export interface GoogleRecaptchaEnterpriseKeyTestingOptions {
   /**
   * For challenge-based keys only (CHECKBOX, INVISIBLE), all challenge requests for this site will return nocaptcha if NOCAPTCHA, or an unsolvable challenge if UNSOLVABLE_CHALLENGE. Possible values: TESTING_CHALLENGE_UNSPECIFIED, NOCAPTCHA, UNSOLVABLE_CHALLENGE
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#testing_challenge GoogleRecaptchaEnterpriseKey#testing_challenge}
   */
   readonly testingChallenge?: string;
   /**
   * All assessments for this Key will return this score. Must be between 0 (likely not legitimate) and 1 (likely legitimate) inclusive.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#testing_score GoogleRecaptchaEnterpriseKey#testing_score}
   */
   readonly testingScore?: number;
@@ -488,31 +483,31 @@ export class GoogleRecaptchaEnterpriseKeyTimeoutsOutputReference extends cdktf.C
 export interface GoogleRecaptchaEnterpriseKeyWebSettings {
   /**
   * If set to true, it means allowed_domains will not be enforced.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#allow_all_domains GoogleRecaptchaEnterpriseKey#allow_all_domains}
   */
   readonly allowAllDomains?: boolean | cdktf.IResolvable;
   /**
   * If set to true, the key can be used on AMP (Accelerated Mobile Pages) websites. This is supported only for the SCORE integration type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#allow_amp_traffic GoogleRecaptchaEnterpriseKey#allow_amp_traffic}
   */
   readonly allowAmpTraffic?: boolean | cdktf.IResolvable;
   /**
   * Domains or subdomains of websites allowed to use the key. All subdomains of an allowed domain are automatically allowed. A valid domain requires a host and must not include any path, port, query or fragment. Examples: 'example.com' or 'subdomain.example.com'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#allowed_domains GoogleRecaptchaEnterpriseKey#allowed_domains}
   */
   readonly allowedDomains?: string[];
   /**
   * Settings for the frequency and difficulty at which this key triggers captcha challenges. This should only be specified for IntegrationTypes CHECKBOX and INVISIBLE. Possible values: CHALLENGE_SECURITY_PREFERENCE_UNSPECIFIED, USABILITY, BALANCE, SECURITY
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#challenge_security_preference GoogleRecaptchaEnterpriseKey#challenge_security_preference}
   */
   readonly challengeSecurityPreference?: string;
   /**
   * Required. Describes how this key is integrated with the website. Possible values: SCORE, CHECKBOX, INVISIBLE
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_recaptcha_enterprise_key#integration_type GoogleRecaptchaEnterpriseKey#integration_type}
   */
   readonly integrationType: string;

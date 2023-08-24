@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route
 // generated from terraform resource schema
 
@@ -14,20 +9,22 @@ import * as cdktf from 'cdktf';
 export interface GoogleNetworkServicesHttpRouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * A free-text description of the resource. Max length 1024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#description GoogleNetworkServicesHttpRoute#description}
   */
   readonly description?: string;
   /**
   * Gateways defines a list of gateways this HttpRoute is attached to, as one of the routing rules to route the requests served by the gateway.
-Each gateway reference should match the pattern: projects/*\/locations/global/gateways/<gateway_name>
-  * 
+Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#gateways GoogleNetworkServicesHttpRoute#gateways}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly gateways?: string[];
   /**
   * Set of hosts that should match against the HTTP host header to select a HttpRoute to process the request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#hostnames GoogleNetworkServicesHttpRoute#hostnames}
   */
   readonly hostnames: string[];
@@ -40,21 +37,23 @@ Each gateway reference should match the pattern: projects/*\/locations/global/ga
   readonly id?: string;
   /**
   * Set of label tags associated with the HttpRoute resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#labels GoogleNetworkServicesHttpRoute#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Meshes defines a list of meshes this HttpRoute is attached to, as one of the routing rules to route the requests served by the mesh.
-Each mesh reference should match the pattern: projects/*\/locations/global/meshes/<mesh_name>.
+Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>.
 The attached Mesh should be of a type SIDECAR.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#meshes GoogleNetworkServicesHttpRoute#meshes}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly meshes?: string[];
   /**
   * Name of the HttpRoute resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#name GoogleNetworkServicesHttpRoute#name}
   */
   readonly name: string;
@@ -64,13 +63,13 @@ The attached Mesh should be of a type SIDECAR.
   readonly project?: string;
   /**
   * rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#rules GoogleNetworkServicesHttpRoute#rules}
   */
   readonly rules: GoogleNetworkServicesHttpRouteRules[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#timeouts GoogleNetworkServicesHttpRoute#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesHttpRouteTimeouts;
@@ -78,49 +77,49 @@ The attached Mesh should be of a type SIDECAR.
 export interface GoogleNetworkServicesHttpRouteRulesActionCorsPolicy {
   /**
   * In response to a preflight request, setting this to true indicates that the actual request can include user credentials.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#allow_credentials GoogleNetworkServicesHttpRoute#allow_credentials}
   */
   readonly allowCredentials?: boolean | cdktf.IResolvable;
   /**
   * Specifies the content for Access-Control-Allow-Headers header.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#allow_headers GoogleNetworkServicesHttpRoute#allow_headers}
   */
   readonly allowHeaders?: string[];
   /**
   * Specifies the content for Access-Control-Allow-Methods header.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#allow_methods GoogleNetworkServicesHttpRoute#allow_methods}
   */
   readonly allowMethods?: string[];
   /**
   * Specifies the regular expression patterns that match allowed origins.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#allow_origin_regexes GoogleNetworkServicesHttpRoute#allow_origin_regexes}
   */
   readonly allowOriginRegexes?: string[];
   /**
   * Specifies the list of origins that will be allowed to do CORS requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#allow_origins GoogleNetworkServicesHttpRoute#allow_origins}
   */
   readonly allowOrigins?: string[];
   /**
   * If true, the CORS policy is disabled. The default value is false, which indicates that the CORS policy is in effect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#disabled GoogleNetworkServicesHttpRoute#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * Specifies the content for Access-Control-Expose-Headers header.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#expose_headers GoogleNetworkServicesHttpRoute#expose_headers}
   */
   readonly exposeHeaders?: string[];
   /**
   * Specifies how long result of a preflight request can be cached in seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#max_age GoogleNetworkServicesHttpRoute#max_age}
   */
   readonly maxAge?: string;
@@ -348,7 +347,7 @@ export class GoogleNetworkServicesHttpRouteRulesActionCorsPolicyOutputReference 
 export interface GoogleNetworkServicesHttpRouteRulesActionDestinations {
   /**
   * The URL of a BackendService to route traffic to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#service_name GoogleNetworkServicesHttpRoute#service_name}
   */
   readonly serviceName?: string;
@@ -357,7 +356,7 @@ export interface GoogleNetworkServicesHttpRouteRulesActionDestinations {
 If only one serviceName is specified and it has a weight greater than 0, 100% of the traffic is forwarded to that backend.
 If weights are specified for any one service name, they need to be specified for all of them.
 If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#weight GoogleNetworkServicesHttpRoute#weight}
   */
   readonly weight?: number;
@@ -479,13 +478,13 @@ export class GoogleNetworkServicesHttpRouteRulesActionDestinationsList extends c
 export interface GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort {
   /**
   * The HTTP status code used to abort the request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#http_status GoogleNetworkServicesHttpRoute#http_status}
   */
   readonly httpStatus?: number;
   /**
   * The percentage of traffic which will be aborted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#percentage GoogleNetworkServicesHttpRoute#percentage}
   */
   readonly percentage?: number;
@@ -575,13 +574,13 @@ export class GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbortO
 export interface GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay {
   /**
   * Specify a fixed delay before forwarding the request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#fixed_delay GoogleNetworkServicesHttpRoute#fixed_delay}
   */
   readonly fixedDelay?: string;
   /**
   * The percentage of traffic on which delay will be injected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#percentage GoogleNetworkServicesHttpRoute#percentage}
   */
   readonly percentage?: number;
@@ -671,13 +670,13 @@ export class GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayO
 export interface GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicy {
   /**
   * abort block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#abort GoogleNetworkServicesHttpRoute#abort}
   */
   readonly abort?: GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort;
   /**
   * delay block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#delay GoogleNetworkServicesHttpRoute#delay}
   */
   readonly delay?: GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay;
@@ -767,43 +766,43 @@ export class GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutput
 export interface GoogleNetworkServicesHttpRouteRulesActionRedirect {
   /**
   * The host that will be used in the redirect response instead of the one that was supplied in the request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#host_redirect GoogleNetworkServicesHttpRoute#host_redirect}
   */
   readonly hostRedirect?: string;
   /**
   * If set to true, the URL scheme in the redirected request is set to https.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#https_redirect GoogleNetworkServicesHttpRoute#https_redirect}
   */
   readonly httpsRedirect?: boolean | cdktf.IResolvable;
   /**
   * The path that will be used in the redirect response instead of the one that was supplied in the request. pathRedirect can not be supplied together with prefixRedirect. Supply one alone or neither. If neither is supplied, the path of the original request will be used for the redirect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#path_redirect GoogleNetworkServicesHttpRoute#path_redirect}
   */
   readonly pathRedirect?: string;
   /**
   * The port that will be used in the redirected request instead of the one that was supplied in the request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#port_redirect GoogleNetworkServicesHttpRoute#port_redirect}
   */
   readonly portRedirect?: number;
   /**
   * Indicates that during redirection, the matched prefix (or path) should be swapped with this value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#prefix_rewrite GoogleNetworkServicesHttpRoute#prefix_rewrite}
   */
   readonly prefixRewrite?: string;
   /**
   * The HTTP Status code to use for the redirect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#response_code GoogleNetworkServicesHttpRoute#response_code}
   */
   readonly responseCode?: string;
   /**
   * If set to true, any accompanying query portion of the original URL is removed prior to redirecting the request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#strip_query GoogleNetworkServicesHttpRoute#strip_query}
   */
   readonly stripQuery?: boolean | cdktf.IResolvable;
@@ -1008,19 +1007,19 @@ export class GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference ex
 export interface GoogleNetworkServicesHttpRouteRulesActionRequestHeaderModifier {
   /**
   * Add the headers with given map where key is the name of the header, value is the value of the header.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#add GoogleNetworkServicesHttpRoute#add}
   */
   readonly add?: { [key: string]: string };
   /**
   * Remove headers (matching by header names) specified in the list.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#remove GoogleNetworkServicesHttpRoute#remove}
   */
   readonly remove?: string[];
   /**
   * Completely overwrite/replace the headers with given map where key is the name of the header, value is the value of the header.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#set GoogleNetworkServicesHttpRoute#set}
   */
   readonly set?: { [key: string]: string };
@@ -1133,7 +1132,7 @@ export class GoogleNetworkServicesHttpRouteRulesActionRequestHeaderModifierOutpu
 export interface GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination {
   /**
   * The URL of a BackendService to route traffic to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#service_name GoogleNetworkServicesHttpRoute#service_name}
   */
   readonly serviceName?: string;
@@ -1142,7 +1141,7 @@ export interface GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDes
 If only one serviceName is specified and it has a weight greater than 0, 100% of the traffic is forwarded to that backend.
 If weights are specified for any one service name, they need to be specified for all of them.
 If weights are unspecified for all services, then, traffic is distributed in equal proportions to all of them.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#weight GoogleNetworkServicesHttpRoute#weight}
   */
   readonly weight?: number;
@@ -1232,7 +1231,7 @@ export class GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestina
 export interface GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicy {
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#destination GoogleNetworkServicesHttpRoute#destination}
   */
   readonly destination?: GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination;
@@ -1299,19 +1298,19 @@ export class GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputR
 export interface GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifier {
   /**
   * Add the headers with given map where key is the name of the header, value is the value of the header.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#add GoogleNetworkServicesHttpRoute#add}
   */
   readonly add?: { [key: string]: string };
   /**
   * Remove headers (matching by header names) specified in the list.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#remove GoogleNetworkServicesHttpRoute#remove}
   */
   readonly remove?: string[];
   /**
   * Completely overwrite/replace the headers with given map where key is the name of the header, value is the value of the header.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#set GoogleNetworkServicesHttpRoute#set}
   */
   readonly set?: { [key: string]: string };
@@ -1424,19 +1423,19 @@ export class GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutp
 export interface GoogleNetworkServicesHttpRouteRulesActionRetryPolicy {
   /**
   * Specifies the allowed number of retries.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#num_retries GoogleNetworkServicesHttpRoute#num_retries}
   */
   readonly numRetries?: number;
   /**
   * Specifies a non-zero timeout per retry attempt. A duration in seconds with up to nine fractional digits, ending with 's'. Example: "3.5s".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#per_try_timeout GoogleNetworkServicesHttpRoute#per_try_timeout}
   */
   readonly perTryTimeout?: string;
   /**
   * Specifies one or more conditions when this retry policy applies.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#retry_conditions GoogleNetworkServicesHttpRoute#retry_conditions}
   */
   readonly retryConditions?: string[];
@@ -1549,13 +1548,13 @@ export class GoogleNetworkServicesHttpRouteRulesActionRetryPolicyOutputReference
 export interface GoogleNetworkServicesHttpRouteRulesActionUrlRewrite {
   /**
   * Prior to forwarding the request to the selected destination, the requests host header is replaced by this value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#host_rewrite GoogleNetworkServicesHttpRoute#host_rewrite}
   */
   readonly hostRewrite?: string;
   /**
   * Prior to forwarding the request to the selected destination, the matching portion of the requests path is replaced by this value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#path_prefix_rewrite GoogleNetworkServicesHttpRoute#path_prefix_rewrite}
   */
   readonly pathPrefixRewrite?: string;
@@ -1645,61 +1644,61 @@ export class GoogleNetworkServicesHttpRouteRulesActionUrlRewriteOutputReference 
 export interface GoogleNetworkServicesHttpRouteRulesAction {
   /**
   * Specifies the timeout for selected route.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#timeout GoogleNetworkServicesHttpRoute#timeout}
   */
   readonly timeout?: string;
   /**
   * cors_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#cors_policy GoogleNetworkServicesHttpRoute#cors_policy}
   */
   readonly corsPolicy?: GoogleNetworkServicesHttpRouteRulesActionCorsPolicy;
   /**
   * destinations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#destinations GoogleNetworkServicesHttpRoute#destinations}
   */
   readonly destinations?: GoogleNetworkServicesHttpRouteRulesActionDestinations[] | cdktf.IResolvable;
   /**
   * fault_injection_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#fault_injection_policy GoogleNetworkServicesHttpRoute#fault_injection_policy}
   */
   readonly faultInjectionPolicy?: GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicy;
   /**
   * redirect block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#redirect GoogleNetworkServicesHttpRoute#redirect}
   */
   readonly redirect?: GoogleNetworkServicesHttpRouteRulesActionRedirect;
   /**
   * request_header_modifier block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#request_header_modifier GoogleNetworkServicesHttpRoute#request_header_modifier}
   */
   readonly requestHeaderModifier?: GoogleNetworkServicesHttpRouteRulesActionRequestHeaderModifier;
   /**
   * request_mirror_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#request_mirror_policy GoogleNetworkServicesHttpRoute#request_mirror_policy}
   */
   readonly requestMirrorPolicy?: GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicy;
   /**
   * response_header_modifier block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#response_header_modifier GoogleNetworkServicesHttpRoute#response_header_modifier}
   */
   readonly responseHeaderModifier?: GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifier;
   /**
   * retry_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#retry_policy GoogleNetworkServicesHttpRoute#retry_policy}
   */
   readonly retryPolicy?: GoogleNetworkServicesHttpRouteRulesActionRetryPolicy;
   /**
   * url_rewrite block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#url_rewrite GoogleNetworkServicesHttpRoute#url_rewrite}
   */
   readonly urlRewrite?: GoogleNetworkServicesHttpRouteRulesActionUrlRewrite;
@@ -1973,13 +1972,13 @@ export class GoogleNetworkServicesHttpRouteRulesActionOutputReference extends cd
 export interface GoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatch {
   /**
   * End of the range (exclusive).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#end GoogleNetworkServicesHttpRoute#end}
   */
   readonly end: number;
   /**
   * Start of the range (inclusive).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#start GoogleNetworkServicesHttpRoute#start}
   */
   readonly start: number;
@@ -2063,49 +2062,49 @@ export class GoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatchOutputRe
 export interface GoogleNetworkServicesHttpRouteRulesMatchesHeaders {
   /**
   * The value of the header should match exactly the content of exactMatch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#exact_match GoogleNetworkServicesHttpRoute#exact_match}
   */
   readonly exactMatch?: string;
   /**
   * The name of the HTTP header to match against.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#header GoogleNetworkServicesHttpRoute#header}
   */
   readonly header?: string;
   /**
   * If specified, the match result will be inverted before checking. Default value is set to false.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#invert_match GoogleNetworkServicesHttpRoute#invert_match}
   */
   readonly invertMatch?: boolean | cdktf.IResolvable;
   /**
   * The value of the header must start with the contents of prefixMatch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#prefix_match GoogleNetworkServicesHttpRoute#prefix_match}
   */
   readonly prefixMatch?: string;
   /**
   * A header with headerName must exist. The match takes place whether or not the header has a value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#present_match GoogleNetworkServicesHttpRoute#present_match}
   */
   readonly presentMatch?: boolean | cdktf.IResolvable;
   /**
   * The value of the header must match the regular expression specified in regexMatch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#regex_match GoogleNetworkServicesHttpRoute#regex_match}
   */
   readonly regexMatch?: string;
   /**
   * The value of the header must end with the contents of suffixMatch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#suffix_match GoogleNetworkServicesHttpRoute#suffix_match}
   */
   readonly suffixMatch?: string;
   /**
   * range_match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#range_match GoogleNetworkServicesHttpRoute#range_match}
   */
   readonly rangeMatch?: GoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatch;
@@ -2365,25 +2364,25 @@ export class GoogleNetworkServicesHttpRouteRulesMatchesHeadersList extends cdktf
 export interface GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters {
   /**
   * The value of the query parameter must exactly match the contents of exactMatch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#exact_match GoogleNetworkServicesHttpRoute#exact_match}
   */
   readonly exactMatch?: string;
   /**
   * Specifies that the QueryParameterMatcher matches if request contains query parameter, irrespective of whether the parameter has a value or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#present_match GoogleNetworkServicesHttpRoute#present_match}
   */
   readonly presentMatch?: boolean | cdktf.IResolvable;
   /**
   * The name of the query parameter to match.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#query_parameter GoogleNetworkServicesHttpRoute#query_parameter}
   */
   readonly queryParameter?: string;
   /**
   * The value of the query parameter must match the regular expression specified by regexMatch.For regular expression grammar, please see https://github.com/google/re2/wiki/Syntax
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#regex_match GoogleNetworkServicesHttpRoute#regex_match}
   */
   readonly regexMatch?: string;
@@ -2551,37 +2550,37 @@ export class GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList exten
 export interface GoogleNetworkServicesHttpRouteRulesMatches {
   /**
   * The HTTP request path value should exactly match this value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#full_path_match GoogleNetworkServicesHttpRoute#full_path_match}
   */
   readonly fullPathMatch?: string;
   /**
   * Specifies if prefixMatch and fullPathMatch matches are case sensitive. The default value is false.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#ignore_case GoogleNetworkServicesHttpRoute#ignore_case}
   */
   readonly ignoreCase?: boolean | cdktf.IResolvable;
   /**
   * The HTTP request path value must begin with specified prefixMatch. prefixMatch must begin with a /.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#prefix_match GoogleNetworkServicesHttpRoute#prefix_match}
   */
   readonly prefixMatch?: string;
   /**
   * The HTTP request path value must satisfy the regular expression specified by regexMatch after removing any query parameters and anchor supplied with the original URL. For regular expression grammar, please see https://github.com/google/re2/wiki/Syntax
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#regex_match GoogleNetworkServicesHttpRoute#regex_match}
   */
   readonly regexMatch?: string;
   /**
   * headers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#headers GoogleNetworkServicesHttpRoute#headers}
   */
   readonly headers?: GoogleNetworkServicesHttpRouteRulesMatchesHeaders[] | cdktf.IResolvable;
   /**
   * query_parameters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#query_parameters GoogleNetworkServicesHttpRoute#query_parameters}
   */
   readonly queryParameters?: GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters[] | cdktf.IResolvable;
@@ -2795,13 +2794,13 @@ export class GoogleNetworkServicesHttpRouteRulesMatchesList extends cdktf.Comple
 export interface GoogleNetworkServicesHttpRouteRules {
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#action GoogleNetworkServicesHttpRoute#action}
   */
   readonly action?: GoogleNetworkServicesHttpRouteRulesAction;
   /**
   * matches block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_http_route#matches GoogleNetworkServicesHttpRoute#matches}
   */
   readonly matches?: GoogleNetworkServicesHttpRouteRulesMatches[] | cdktf.IResolvable;

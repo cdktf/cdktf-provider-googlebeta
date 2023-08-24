@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config
 // generated from terraform resource schema
 
@@ -25,13 +20,13 @@ export interface GoogleIdentityPlatformProjectDefaultConfigConfig extends cdktf.
   readonly project?: string;
   /**
   * sign_in block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#sign_in GoogleIdentityPlatformProjectDefaultConfig#sign_in}
   */
   readonly signIn?: GoogleIdentityPlatformProjectDefaultConfigSignIn;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#timeouts GoogleIdentityPlatformProjectDefaultConfig#timeouts}
   */
   readonly timeouts?: GoogleIdentityPlatformProjectDefaultConfigTimeouts;
@@ -123,7 +118,7 @@ export class GoogleIdentityPlatformProjectDefaultConfigSignInHashConfigList exte
 export interface GoogleIdentityPlatformProjectDefaultConfigSignInAnonymous {
   /**
   * Whether anonymous user auth is enabled for the project or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#enabled GoogleIdentityPlatformProjectDefaultConfig#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
@@ -187,7 +182,7 @@ export class GoogleIdentityPlatformProjectDefaultConfigSignInAnonymousOutputRefe
 export interface GoogleIdentityPlatformProjectDefaultConfigSignInEmail {
   /**
   * Whether email auth is enabled for the project or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#enabled GoogleIdentityPlatformProjectDefaultConfig#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -195,7 +190,7 @@ export interface GoogleIdentityPlatformProjectDefaultConfigSignInEmail {
   * Whether a password is required for email auth or not. If true, both an email and
 password must be provided to sign in. If false, a user may sign in via either
 email/password or email link.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#password_required GoogleIdentityPlatformProjectDefaultConfig#password_required}
   */
   readonly passwordRequired?: boolean | cdktf.IResolvable;
@@ -285,13 +280,13 @@ export class GoogleIdentityPlatformProjectDefaultConfigSignInEmailOutputReferenc
 export interface GoogleIdentityPlatformProjectDefaultConfigSignInPhoneNumber {
   /**
   * Whether phone number auth is enabled for the project or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#enabled GoogleIdentityPlatformProjectDefaultConfig#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * A map of <test phone number, fake code> that can be used for phone auth testing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#test_phone_numbers GoogleIdentityPlatformProjectDefaultConfig#test_phone_numbers}
   */
   readonly testPhoneNumbers?: { [key: string]: string };
@@ -381,25 +376,25 @@ export class GoogleIdentityPlatformProjectDefaultConfigSignInPhoneNumberOutputRe
 export interface GoogleIdentityPlatformProjectDefaultConfigSignIn {
   /**
   * Whether to allow more than one account to have the same email.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#allow_duplicate_emails GoogleIdentityPlatformProjectDefaultConfig#allow_duplicate_emails}
   */
   readonly allowDuplicateEmails?: boolean | cdktf.IResolvable;
   /**
   * anonymous block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#anonymous GoogleIdentityPlatformProjectDefaultConfig#anonymous}
   */
   readonly anonymous?: GoogleIdentityPlatformProjectDefaultConfigSignInAnonymous;
   /**
   * email block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#email GoogleIdentityPlatformProjectDefaultConfig#email}
   */
   readonly email?: GoogleIdentityPlatformProjectDefaultConfigSignInEmail;
   /**
   * phone_number block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_project_default_config#phone_number GoogleIdentityPlatformProjectDefaultConfig#phone_number}
   */
   readonly phoneNumber?: GoogleIdentityPlatformProjectDefaultConfigSignInPhoneNumber;

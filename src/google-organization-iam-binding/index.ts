@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_organization_iam_binding
 // generated from terraform resource schema
 
@@ -25,7 +20,7 @@ export interface GoogleOrganizationIamBindingConfig extends cdktf.TerraformMetaA
   readonly members: string[];
   /**
   * The numeric ID of the organization in which you want to manage the audit logging config.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_organization_iam_binding#org_id GoogleOrganizationIamBinding#org_id}
   */
   readonly orgId: string;
@@ -35,7 +30,7 @@ export interface GoogleOrganizationIamBindingConfig extends cdktf.TerraformMetaA
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_organization_iam_binding#condition GoogleOrganizationIamBinding#condition}
   */
   readonly condition?: GoogleOrganizationIamBindingCondition;

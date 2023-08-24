@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleDialogflowFulfillmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The human-readable name of the fulfillment, unique within the agent.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment#display_name GoogleDialogflowFulfillment#display_name}
   */
   readonly displayName: string;
   /**
   * Whether fulfillment is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment#enabled GoogleDialogflowFulfillment#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -37,19 +32,19 @@ export interface GoogleDialogflowFulfillmentConfig extends cdktf.TerraformMetaAr
   readonly project?: string;
   /**
   * features block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment#features GoogleDialogflowFulfillment#features}
   */
   readonly features?: GoogleDialogflowFulfillmentFeatures[] | cdktf.IResolvable;
   /**
   * generic_web_service block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment#generic_web_service GoogleDialogflowFulfillment#generic_web_service}
   */
   readonly genericWebService?: GoogleDialogflowFulfillmentGenericWebService;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment#timeouts GoogleDialogflowFulfillment#timeouts}
   */
   readonly timeouts?: GoogleDialogflowFulfillmentTimeouts;
@@ -58,7 +53,7 @@ export interface GoogleDialogflowFulfillmentFeatures {
   /**
   * The type of the feature that enabled for fulfillment.
 * SMALLTALK: Fulfillment is enabled for SmallTalk. Possible values: ["SMALLTALK"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment#type GoogleDialogflowFulfillment#type}
   */
   readonly type: string;
@@ -154,25 +149,25 @@ export class GoogleDialogflowFulfillmentFeaturesList extends cdktf.ComplexList {
 export interface GoogleDialogflowFulfillmentGenericWebService {
   /**
   * The password for HTTP Basic authentication.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment#password GoogleDialogflowFulfillment#password}
   */
   readonly password?: string;
   /**
   * The HTTP request headers to send together with fulfillment requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment#request_headers GoogleDialogflowFulfillment#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
   * The fulfillment URI for receiving POST requests. It must use https protocol.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment#uri GoogleDialogflowFulfillment#uri}
   */
   readonly uri: string;
   /**
   * The user name for HTTP Basic authentication.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_fulfillment#username GoogleDialogflowFulfillment#username}
   */
   readonly username?: string;

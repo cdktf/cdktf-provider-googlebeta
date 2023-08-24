@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs
 // generated from terraform resource schema
 
@@ -586,13 +581,13 @@ export interface GoogleBetaProviderConfig {
   readonly zone?: string;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs#alias GoogleBetaProvider#alias}
   */
   readonly alias?: string;
   /**
   * batching block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs#batching GoogleBetaProvider#batching}
   */
   readonly batching?: GoogleBetaProviderBatching;

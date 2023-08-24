@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_nat_address
 // generated from terraform resource schema
 
@@ -22,19 +17,19 @@ export interface GoogleApigeeNatAddressConfig extends cdktf.TerraformMetaArgumen
   /**
   * The Apigee instance associated with the Apigee environment,
 in the format 'organizations/{{org_name}}/instances/{{instance_name}}'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_nat_address#instance_id GoogleApigeeNatAddress#instance_id}
   */
   readonly instanceId: string;
   /**
   * Resource ID of the NAT address.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_nat_address#name GoogleApigeeNatAddress#name}
   */
   readonly name: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_nat_address#timeouts GoogleApigeeNatAddress#timeouts}
   */
   readonly timeouts?: GoogleApigeeNatAddressTimeouts;

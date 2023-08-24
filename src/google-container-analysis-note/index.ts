@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleContainerAnalysisNoteConfig extends cdktf.TerraformMetaArguments {
   /**
   * Time of expiration for this note. Leave empty if note does not expire.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#expiration_time GoogleContainerAnalysisNote#expiration_time}
   */
   readonly expirationTime?: string;
@@ -27,13 +22,13 @@ export interface GoogleContainerAnalysisNoteConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * A detailed description of the note
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#long_description GoogleContainerAnalysisNote#long_description}
   */
   readonly longDescription?: string;
   /**
   * The name of the note.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#name GoogleContainerAnalysisNote#name}
   */
   readonly name: string;
@@ -43,31 +38,31 @@ export interface GoogleContainerAnalysisNoteConfig extends cdktf.TerraformMetaAr
   readonly project?: string;
   /**
   * Names of other notes related to this note.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#related_note_names GoogleContainerAnalysisNote#related_note_names}
   */
   readonly relatedNoteNames?: string[];
   /**
   * A one sentence description of the note.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#short_description GoogleContainerAnalysisNote#short_description}
   */
   readonly shortDescription?: string;
   /**
   * attestation_authority block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#attestation_authority GoogleContainerAnalysisNote#attestation_authority}
   */
   readonly attestationAuthority: GoogleContainerAnalysisNoteAttestationAuthority;
   /**
   * related_url block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#related_url GoogleContainerAnalysisNote#related_url}
   */
   readonly relatedUrl?: GoogleContainerAnalysisNoteRelatedUrl[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#timeouts GoogleContainerAnalysisNote#timeouts}
   */
   readonly timeouts?: GoogleContainerAnalysisNoteTimeouts;
@@ -76,7 +71,7 @@ export interface GoogleContainerAnalysisNoteAttestationAuthorityHint {
   /**
   * The human readable name of this Attestation Authority, for
 example "qa".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#human_readable_name GoogleContainerAnalysisNote#human_readable_name}
   */
   readonly humanReadableName: string;
@@ -140,7 +135,7 @@ export class GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference 
 export interface GoogleContainerAnalysisNoteAttestationAuthority {
   /**
   * hint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#hint GoogleContainerAnalysisNote#hint}
   */
   readonly hint: GoogleContainerAnalysisNoteAttestationAuthorityHint;
@@ -204,13 +199,13 @@ export class GoogleContainerAnalysisNoteAttestationAuthorityOutputReference exte
 export interface GoogleContainerAnalysisNoteRelatedUrl {
   /**
   * Label to describe usage of the URL
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#label GoogleContainerAnalysisNote#label}
   */
   readonly label?: string;
   /**
   * Specific URL associated with the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#url GoogleContainerAnalysisNote#url}
   */
   readonly url: string;

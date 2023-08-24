@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy
 // generated from terraform resource schema
 
@@ -16,13 +11,13 @@ export interface GoogleNetworkSecurityServerTlsPolicyConfig extends cdktf.Terraf
   * This field applies only for Traffic Director policies. It is must be set to false for external HTTPS load balancer policies.
 Determines if server allows plaintext connections. If set to true, server allows plain text connections. By default, it is set to false. This setting is not exclusive of other encryption modes. For example, if allowOpen and mtlsPolicy are set, server allows both plain text and mTLS connections. See documentation of other encryption modes to confirm compatibility.
 Consider using it if you wish to upgrade in place your deployment to TLS while having mixed TLS and non-TLS traffic reaching port :80.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#allow_open GoogleNetworkSecurityServerTlsPolicy#allow_open}
   */
   readonly allowOpen?: boolean | cdktf.IResolvable;
   /**
   * A free-text description of the resource. Max length 1024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#description GoogleNetworkSecurityServerTlsPolicy#description}
   */
   readonly description?: string;
@@ -35,20 +30,20 @@ Consider using it if you wish to upgrade in place your deployment to TLS while h
   readonly id?: string;
   /**
   * Set of label tags associated with the ServerTlsPolicy resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#labels GoogleNetworkSecurityServerTlsPolicy#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the server tls policy.
 The default value is 'global'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#location GoogleNetworkSecurityServerTlsPolicy#location}
   */
   readonly location?: string;
   /**
   * Name of the ServerTlsPolicy resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#name GoogleNetworkSecurityServerTlsPolicy#name}
   */
   readonly name: string;
@@ -58,19 +53,19 @@ The default value is 'global'.
   readonly project?: string;
   /**
   * mtls_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#mtls_policy GoogleNetworkSecurityServerTlsPolicy#mtls_policy}
   */
   readonly mtlsPolicy?: GoogleNetworkSecurityServerTlsPolicyMtlsPolicy;
   /**
   * server_certificate block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#server_certificate GoogleNetworkSecurityServerTlsPolicy#server_certificate}
   */
   readonly serverCertificate?: GoogleNetworkSecurityServerTlsPolicyServerCertificate;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#timeouts GoogleNetworkSecurityServerTlsPolicy#timeouts}
   */
   readonly timeouts?: GoogleNetworkSecurityServerTlsPolicyTimeouts;
@@ -78,7 +73,7 @@ The default value is 'global'.
 export interface GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstance {
   /**
   * Plugin instance name, used to locate and load CertificateProvider instance configuration. Set to "google_cloud_private_spiffe" to use Certificate Authority Service certificate provider instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#plugin_instance GoogleNetworkSecurityServerTlsPolicy#plugin_instance}
   */
   readonly pluginInstance: string;
@@ -142,7 +137,7 @@ export class GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCer
 export interface GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpoint {
   /**
   * The target URI of the gRPC endpoint. Only UDS path is supported, and should start with "unix:".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#target_uri GoogleNetworkSecurityServerTlsPolicy#target_uri}
   */
   readonly targetUri: string;
@@ -206,13 +201,13 @@ export class GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrp
 export interface GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCa {
   /**
   * certificate_provider_instance block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#certificate_provider_instance GoogleNetworkSecurityServerTlsPolicy#certificate_provider_instance}
   */
   readonly certificateProviderInstance?: GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaCertificateProviderInstance;
   /**
   * grpc_endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#grpc_endpoint GoogleNetworkSecurityServerTlsPolicy#grpc_endpoint}
   */
   readonly grpcEndpoint?: GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCaGrpcEndpoint;
@@ -335,7 +330,7 @@ export interface GoogleNetworkSecurityServerTlsPolicyMtlsPolicy {
   /**
   * When the client presents an invalid certificate or no certificate to the load balancer, the clientValidationMode specifies how the client connection is handled.
 Required if the policy is to be used with the external HTTPS load balancing. For Traffic Director it must be empty. Possible values: ["CLIENT_VALIDATION_MODE_UNSPECIFIED", "ALLOW_INVALID_OR_MISSING_CLIENT_CERT", "REJECT_INVALID"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#client_validation_mode GoogleNetworkSecurityServerTlsPolicy#client_validation_mode}
   */
   readonly clientValidationMode?: string;
@@ -343,13 +338,13 @@ Required if the policy is to be used with the external HTTPS load balancing. For
   * Reference to the TrustConfig from certificatemanager.googleapis.com namespace.
 If specified, the chain validation will be performed against certificates configured in the given TrustConfig.
 Allowed only if the policy is to be used with external HTTPS load balancers.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#client_validation_trust_config GoogleNetworkSecurityServerTlsPolicy#client_validation_trust_config}
   */
   readonly clientValidationTrustConfig?: string;
   /**
   * client_validation_ca block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#client_validation_ca GoogleNetworkSecurityServerTlsPolicy#client_validation_ca}
   */
   readonly clientValidationCa?: GoogleNetworkSecurityServerTlsPolicyMtlsPolicyClientValidationCa[] | cdktf.IResolvable;
@@ -462,7 +457,7 @@ export class GoogleNetworkSecurityServerTlsPolicyMtlsPolicyOutputReference exten
 export interface GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstance {
   /**
   * Plugin instance name, used to locate and load CertificateProvider instance configuration. Set to "google_cloud_private_spiffe" to use Certificate Authority Service certificate provider instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#plugin_instance GoogleNetworkSecurityServerTlsPolicy#plugin_instance}
   */
   readonly pluginInstance: string;
@@ -526,7 +521,7 @@ export class GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificatePro
 export interface GoogleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpoint {
   /**
   * The target URI of the gRPC endpoint. Only UDS path is supported, and should start with "unix:".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#target_uri GoogleNetworkSecurityServerTlsPolicy#target_uri}
   */
   readonly targetUri: string;
@@ -590,13 +585,13 @@ export class GoogleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOu
 export interface GoogleNetworkSecurityServerTlsPolicyServerCertificate {
   /**
   * certificate_provider_instance block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#certificate_provider_instance GoogleNetworkSecurityServerTlsPolicy#certificate_provider_instance}
   */
   readonly certificateProviderInstance?: GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstance;
   /**
   * grpc_endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy#grpc_endpoint GoogleNetworkSecurityServerTlsPolicy#grpc_endpoint}
   */
   readonly grpcEndpoint?: GoogleNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpoint;

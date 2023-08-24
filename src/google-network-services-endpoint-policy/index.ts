@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface GoogleNetworkServicesEndpointPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * This field specifies the URL of AuthorizationPolicy resource that applies authorization policies to the inbound traffic at the matched endpoints.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#authorization_policy GoogleNetworkServicesEndpointPolicy#authorization_policy}
   */
   readonly authorizationPolicy?: string;
   /**
   * A URL referring to a ClientTlsPolicy resource. ClientTlsPolicy can be set to specify the authentication for traffic from the proxy to the actual endpoints.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#client_tls_policy GoogleNetworkServicesEndpointPolicy#client_tls_policy}
   */
   readonly clientTlsPolicy?: string;
   /**
   * A free-text description of the resource. Max length 1024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#description GoogleNetworkServicesEndpointPolicy#description}
   */
   readonly description?: string;
@@ -39,13 +34,13 @@ export interface GoogleNetworkServicesEndpointPolicyConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * Set of label tags associated with the TcpRoute resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#labels GoogleNetworkServicesEndpointPolicy#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the EndpointPolicy resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#name GoogleNetworkServicesEndpointPolicy#name}
   */
   readonly name: string;
@@ -55,31 +50,31 @@ export interface GoogleNetworkServicesEndpointPolicyConfig extends cdktf.Terrafo
   readonly project?: string;
   /**
   * A URL referring to ServerTlsPolicy resource. ServerTlsPolicy is used to determine the authentication policy to be applied to terminate the inbound traffic at the identified backends.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#server_tls_policy GoogleNetworkServicesEndpointPolicy#server_tls_policy}
   */
   readonly serverTlsPolicy?: string;
   /**
   * The type of endpoint policy. This is primarily used to validate the configuration. Possible values: ["SIDECAR_PROXY", "GRPC_SERVER"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#type GoogleNetworkServicesEndpointPolicy#type}
   */
   readonly type: string;
   /**
   * endpoint_matcher block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#endpoint_matcher GoogleNetworkServicesEndpointPolicy#endpoint_matcher}
   */
   readonly endpointMatcher: GoogleNetworkServicesEndpointPolicyEndpointMatcher;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#timeouts GoogleNetworkServicesEndpointPolicy#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesEndpointPolicyTimeouts;
   /**
   * traffic_port_selector block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#traffic_port_selector GoogleNetworkServicesEndpointPolicy#traffic_port_selector}
   */
   readonly trafficPortSelector?: GoogleNetworkServicesEndpointPolicyTrafficPortSelector;
@@ -87,13 +82,13 @@ export interface GoogleNetworkServicesEndpointPolicyConfig extends cdktf.Terrafo
 export interface GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels {
   /**
   * Required. Label name presented as key in xDS Node Metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#label_name GoogleNetworkServicesEndpointPolicy#label_name}
   */
   readonly labelName: string;
   /**
   * Required. Label value presented as value corresponding to the above key, in xDS Node Metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#label_value GoogleNetworkServicesEndpointPolicy#label_value}
   */
   readonly labelValue: string;
@@ -209,13 +204,13 @@ export class GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatc
 export interface GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher {
   /**
   * Specifies how matching should be done. Possible values: ["MATCH_ANY", "MATCH_ALL"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#metadata_label_match_criteria GoogleNetworkServicesEndpointPolicy#metadata_label_match_criteria}
   */
   readonly metadataLabelMatchCriteria: string;
   /**
   * metadata_labels block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#metadata_labels GoogleNetworkServicesEndpointPolicy#metadata_labels}
   */
   readonly metadataLabels?: GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels[] | cdktf.IResolvable;
@@ -302,7 +297,7 @@ export class GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatc
 export interface GoogleNetworkServicesEndpointPolicyEndpointMatcher {
   /**
   * metadata_label_matcher block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#metadata_label_matcher GoogleNetworkServicesEndpointPolicy#metadata_label_matcher}
   */
   readonly metadataLabelMatcher: GoogleNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher;
@@ -495,7 +490,7 @@ export class GoogleNetworkServicesEndpointPolicyTimeoutsOutputReference extends 
 export interface GoogleNetworkServicesEndpointPolicyTrafficPortSelector {
   /**
   * List of ports. Can be port numbers or port range (example, [80-90] specifies all ports from 80 to 90, including 80 and 90) or named ports or * to specify all ports. If the list is empty, all ports are selected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_endpoint_policy#ports GoogleNetworkServicesEndpointPolicy#ports}
   */
   readonly ports: string[];

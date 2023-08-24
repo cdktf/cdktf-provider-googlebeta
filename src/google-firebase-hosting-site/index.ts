@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_site
 // generated from terraform resource schema
 
@@ -15,7 +10,7 @@ export interface GoogleFirebaseHostingSiteConfig extends cdktf.TerraformMetaArgu
   /**
   * Optional. The [ID of a Web App](https://firebase.google.com/docs/reference/firebase-management/rest/v1beta1/projects.webApps#WebApp.FIELDS.app_id)
 associated with the Hosting site.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_site#app_id GoogleFirebaseHostingSite#app_id}
   */
   readonly appId?: string;
@@ -34,13 +29,13 @@ associated with the Hosting site.
   * Required. Immutable. A globally unique identifier for the Hosting site. This identifier is
 used to construct the Firebase-provisioned subdomains for the site, so it must also be a valid
 domain name label.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_site#site_id GoogleFirebaseHostingSite#site_id}
   */
   readonly siteId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_site#timeouts GoogleFirebaseHostingSite#timeouts}
   */
   readonly timeouts?: GoogleFirebaseHostingSiteTimeouts;

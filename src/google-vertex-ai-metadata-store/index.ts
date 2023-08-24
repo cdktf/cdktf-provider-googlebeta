@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_metadata_store
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleVertexAiMetadataStoreConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the MetadataStore.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_metadata_store#description GoogleVertexAiMetadataStore#description}
   */
   readonly description?: string;
@@ -27,7 +22,7 @@ export interface GoogleVertexAiMetadataStoreConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * The name of the MetadataStore. This value may be up to 60 characters, and valid characters are [a-z0-9_]. The first character cannot be a number.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_metadata_store#name GoogleVertexAiMetadataStore#name}
   */
   readonly name?: string;
@@ -37,19 +32,19 @@ export interface GoogleVertexAiMetadataStoreConfig extends cdktf.TerraformMetaAr
   readonly project?: string;
   /**
   * The region of the Metadata Store. eg us-central1
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_metadata_store#region GoogleVertexAiMetadataStore#region}
   */
   readonly region?: string;
   /**
   * encryption_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_metadata_store#encryption_spec GoogleVertexAiMetadataStore#encryption_spec}
   */
   readonly encryptionSpec?: GoogleVertexAiMetadataStoreEncryptionSpec;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_metadata_store#timeouts GoogleVertexAiMetadataStore#timeouts}
   */
   readonly timeouts?: GoogleVertexAiMetadataStoreTimeouts;
@@ -122,7 +117,7 @@ export interface GoogleVertexAiMetadataStoreEncryptionSpec {
   /**
   * Required. The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource.
 Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the resource is created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_metadata_store#kms_key_name GoogleVertexAiMetadataStore#kms_key_name}
   */
   readonly kmsKeyName?: string;

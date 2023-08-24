@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_backup_dr_management_server
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface GoogleBackupDrManagementServerConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * The location for the management server (management console)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_backup_dr_management_server#location GoogleBackupDrManagementServer#location}
   */
   readonly location: string;
   /**
   * The name of management server (management console)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_backup_dr_management_server#name GoogleBackupDrManagementServer#name}
   */
   readonly name: string;
@@ -37,19 +32,19 @@ export interface GoogleBackupDrManagementServerConfig extends cdktf.TerraformMet
   readonly project?: string;
   /**
   * The type of management server (management console). Default value: "BACKUP_RESTORE" Possible values: ["BACKUP_RESTORE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_backup_dr_management_server#type GoogleBackupDrManagementServer#type}
   */
   readonly type?: string;
   /**
   * networks block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_backup_dr_management_server#networks GoogleBackupDrManagementServer#networks}
   */
   readonly networks: GoogleBackupDrManagementServerNetworks[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_backup_dr_management_server#timeouts GoogleBackupDrManagementServer#timeouts}
   */
   readonly timeouts?: GoogleBackupDrManagementServerTimeouts;
@@ -126,13 +121,13 @@ export class GoogleBackupDrManagementServerManagementUriList extends cdktf.Compl
 export interface GoogleBackupDrManagementServerNetworks {
   /**
   * Network with format 'projects/{{project_id}}/global/networks/{{network_id}}'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_backup_dr_management_server#network GoogleBackupDrManagementServer#network}
   */
   readonly network: string;
   /**
   * Type of Network peeringMode Default value: "PRIVATE_SERVICE_ACCESS" Possible values: ["PRIVATE_SERVICE_ACCESS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_backup_dr_management_server#peering_mode GoogleBackupDrManagementServer#peering_mode}
   */
   readonly peeringMode?: string;

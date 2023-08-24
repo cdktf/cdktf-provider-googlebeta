@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_service
 // generated from terraform resource schema
 
@@ -24,26 +19,26 @@ export interface GoogleServiceDirectoryServiceConfig extends cdktf.TerraformMeta
 by service clients. The entire metadata dictionary may contain
 up to 2000 characters, spread across all key-value pairs.
 Metadata that goes beyond any these limits will be rejected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_service#metadata GoogleServiceDirectoryService#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * The resource name of the namespace this service will belong to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_service#namespace GoogleServiceDirectoryService#namespace}
   */
   readonly namespace: string;
   /**
   * The Resource ID must be 1-63 characters long, including digits,
 lowercase letters or the hyphen character.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_service#service_id GoogleServiceDirectoryService#service_id}
   */
   readonly serviceId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_service#timeouts GoogleServiceDirectoryService#timeouts}
   */
   readonly timeouts?: GoogleServiceDirectoryServiceTimeouts;

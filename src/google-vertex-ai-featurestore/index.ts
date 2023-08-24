@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleVertexAiFeaturestoreConfig extends cdktf.TerraformMetaArguments {
   /**
   * If set to true, any EntityTypes and Features for this Featurestore will also be deleted
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#force_destroy GoogleVertexAiFeaturestore#force_destroy}
   */
   readonly forceDestroy?: boolean | cdktf.IResolvable;
@@ -27,19 +22,19 @@ export interface GoogleVertexAiFeaturestoreConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * A set of key/value label pairs to assign to this Featurestore.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#labels GoogleVertexAiFeaturestore#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the Featurestore. This value may be up to 60 characters, and valid characters are [a-z0-9_]. The first character cannot be a number.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#name GoogleVertexAiFeaturestore#name}
   */
   readonly name?: string;
   /**
   * TTL in days for feature values that will be stored in online serving storage. The Feature Store online storage periodically removes obsolete feature values older than onlineStorageTtlDays since the feature generation time. Note that onlineStorageTtlDays should be less than or equal to offlineStorageTtlDays for each EntityType under a featurestore. If not set, default to 4000 days
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#online_storage_ttl_days GoogleVertexAiFeaturestore#online_storage_ttl_days}
   */
   readonly onlineStorageTtlDays?: number;
@@ -49,25 +44,25 @@ export interface GoogleVertexAiFeaturestoreConfig extends cdktf.TerraformMetaArg
   readonly project?: string;
   /**
   * The region of the dataset. eg us-central1
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#region GoogleVertexAiFeaturestore#region}
   */
   readonly region?: string;
   /**
   * encryption_spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#encryption_spec GoogleVertexAiFeaturestore#encryption_spec}
   */
   readonly encryptionSpec?: GoogleVertexAiFeaturestoreEncryptionSpec;
   /**
   * online_serving_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#online_serving_config GoogleVertexAiFeaturestore#online_serving_config}
   */
   readonly onlineServingConfig?: GoogleVertexAiFeaturestoreOnlineServingConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#timeouts GoogleVertexAiFeaturestore#timeouts}
   */
   readonly timeouts?: GoogleVertexAiFeaturestoreTimeouts;
@@ -75,7 +70,7 @@ export interface GoogleVertexAiFeaturestoreConfig extends cdktf.TerraformMetaArg
 export interface GoogleVertexAiFeaturestoreEncryptionSpec {
   /**
   * The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource. Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the compute resource is created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#kms_key_name GoogleVertexAiFeaturestore#kms_key_name}
   */
   readonly kmsKeyName: string;
@@ -139,13 +134,13 @@ export class GoogleVertexAiFeaturestoreEncryptionSpecOutputReference extends cdk
 export interface GoogleVertexAiFeaturestoreOnlineServingConfigScaling {
   /**
   * The maximum number of nodes to scale up to. Must be greater than minNodeCount, and less than or equal to 10 times of 'minNodeCount'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#max_node_count GoogleVertexAiFeaturestore#max_node_count}
   */
   readonly maxNodeCount: number;
   /**
   * The minimum number of nodes to scale down to. Must be greater than or equal to 1.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#min_node_count GoogleVertexAiFeaturestore#min_node_count}
   */
   readonly minNodeCount: number;
@@ -229,13 +224,13 @@ export class GoogleVertexAiFeaturestoreOnlineServingConfigScalingOutputReference
 export interface GoogleVertexAiFeaturestoreOnlineServingConfig {
   /**
   * The number of nodes for each cluster. The number of nodes will not scale automatically but can be scaled manually by providing different values when updating.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#fixed_node_count GoogleVertexAiFeaturestore#fixed_node_count}
   */
   readonly fixedNodeCount?: number;
   /**
   * scaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore#scaling GoogleVertexAiFeaturestore#scaling}
   */
   readonly scaling?: GoogleVertexAiFeaturestoreOnlineServingConfigScaling;

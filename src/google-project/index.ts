@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface GoogleProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * Create the 'default' network automatically.  Default true. If set to false, the default network will be deleted.  Note that, for quota purposes, you will still need to have 1 network slot available to create the project successfully, even if you set auto_create_network to false, since the network will exist momentarily.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project#auto_create_network GoogleProject#auto_create_network}
   */
   readonly autoCreateNetwork?: boolean | cdktf.IResolvable;
   /**
   * The alphanumeric ID of the billing account this project belongs to. The user or service account performing this operation with Terraform must have Billing Account Administrator privileges (roles/billing.admin) in the organization. See Google Cloud Billing API Access Control for more details.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project#billing_account GoogleProject#billing_account}
   */
   readonly billingAccount?: string;
   /**
   * The numeric ID of the folder this project should be created under. Only one of org_id or folder_id may be specified. If the folder_id is specified, then the project is created under the specified folder. Changing this forces the project to be migrated to the newly specified folder.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project#folder_id GoogleProject#folder_id}
   */
   readonly folderId?: string;
@@ -39,37 +34,37 @@ export interface GoogleProjectConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * A set of key/value label pairs to assign to the project.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project#labels GoogleProject#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The display name of the project.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project#name GoogleProject#name}
   */
   readonly name: string;
   /**
   * The numeric ID of the organization this project belongs to. Changing this forces a new project to be created.  Only one of org_id or folder_id may be specified. If the org_id is specified then the project is created at the top level. Changing this forces the project to be migrated to the newly specified organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project#org_id GoogleProject#org_id}
   */
   readonly orgId?: string;
   /**
   * The project ID. Changing this forces a new project to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project#project_id GoogleProject#project_id}
   */
   readonly projectId: string;
   /**
   * If true, the Terraform resource can be deleted without deleting the Project via the Google API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project#skip_delete GoogleProject#skip_delete}
   */
   readonly skipDelete?: boolean | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project#timeouts GoogleProject#timeouts}
   */
   readonly timeouts?: GoogleProjectTimeouts;

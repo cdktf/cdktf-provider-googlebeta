@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_gateway_security_policy
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleNetworkSecurityGatewaySecurityPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * A free-text description of the resource. Max length 1024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_gateway_security_policy#description GoogleNetworkSecurityGatewaySecurityPolicy#description}
   */
   readonly description?: string;
@@ -28,14 +23,14 @@ export interface GoogleNetworkSecurityGatewaySecurityPolicyConfig extends cdktf.
   /**
   * The location of the gateway security policy.
 The default value is 'global'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_gateway_security_policy#location GoogleNetworkSecurityGatewaySecurityPolicy#location}
   */
   readonly location?: string;
   /**
   * Name of the resource. Name is of the form projects/{project}/locations/{location}/gatewaySecurityPolicies/{gatewaySecurityPolicy}
 gatewaySecurityPolicy should match the pattern:(^a-z?$).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_gateway_security_policy#name GoogleNetworkSecurityGatewaySecurityPolicy#name}
   */
   readonly name: string;
@@ -45,13 +40,13 @@ gatewaySecurityPolicy should match the pattern:(^a-z?$).
   readonly project?: string;
   /**
   * Name of a TlsInspectionPolicy resource that defines how TLS inspection is performed for any rule that enables it.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_gateway_security_policy#tls_inspection_policy GoogleNetworkSecurityGatewaySecurityPolicy#tls_inspection_policy}
   */
   readonly tlsInspectionPolicy?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_gateway_security_policy#timeouts GoogleNetworkSecurityGatewaySecurityPolicy#timeouts}
   */
   readonly timeouts?: GoogleNetworkSecurityGatewaySecurityPolicyTimeouts;

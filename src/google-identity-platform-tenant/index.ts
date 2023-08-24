@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleIdentityPlatformTenantConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether to allow email/password user authentication.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant#allow_password_signup GoogleIdentityPlatformTenant#allow_password_signup}
   */
   readonly allowPasswordSignup?: boolean | cdktf.IResolvable;
@@ -22,19 +17,19 @@ export interface GoogleIdentityPlatformTenantConfig extends cdktf.TerraformMetaA
   * Whether authentication is disabled for the tenant. If true, the users under
 the disabled tenant are not allowed to sign-in. Admins of the disabled tenant
 are not able to manage its users.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant#disable_auth GoogleIdentityPlatformTenant#disable_auth}
   */
   readonly disableAuth?: boolean | cdktf.IResolvable;
   /**
   * Human friendly display name of the tenant.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant#display_name GoogleIdentityPlatformTenant#display_name}
   */
   readonly displayName: string;
   /**
   * Whether to enable email link user authentication.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant#enable_email_link_signin GoogleIdentityPlatformTenant#enable_email_link_signin}
   */
   readonly enableEmailLinkSignin?: boolean | cdktf.IResolvable;
@@ -51,7 +46,7 @@ are not able to manage its users.
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant#timeouts GoogleIdentityPlatformTenant#timeouts}
   */
   readonly timeouts?: GoogleIdentityPlatformTenantTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleAlloydbClusterConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the alloydb cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#cluster_id GoogleAlloydbCluster#cluster_id}
   */
   readonly clusterId: string;
   /**
   * User-settable and human-readable display name for the Cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#display_name GoogleAlloydbCluster#display_name}
   */
   readonly displayName?: string;
@@ -33,13 +28,13 @@ export interface GoogleAlloydbClusterConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * User-defined labels for the alloydb cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#labels GoogleAlloydbCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the alloydb cluster should reside.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#location GoogleAlloydbCluster#location}
   */
   readonly location: string;
@@ -47,7 +42,7 @@ export interface GoogleAlloydbClusterConfig extends cdktf.TerraformMetaArguments
   * The relative resource name of the VPC network on which the instance can be accessed. It is specified in the following form:
 
 "projects/{projectNumber}/global/networks/{network_id}".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#network GoogleAlloydbCluster#network}
   */
   readonly network: string;
@@ -57,31 +52,31 @@ export interface GoogleAlloydbClusterConfig extends cdktf.TerraformMetaArguments
   readonly project?: string;
   /**
   * automated_backup_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#automated_backup_policy GoogleAlloydbCluster#automated_backup_policy}
   */
   readonly automatedBackupPolicy?: GoogleAlloydbClusterAutomatedBackupPolicy;
   /**
   * continuous_backup_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#continuous_backup_config GoogleAlloydbCluster#continuous_backup_config}
   */
   readonly continuousBackupConfig?: GoogleAlloydbClusterContinuousBackupConfig;
   /**
   * encryption_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#encryption_config GoogleAlloydbCluster#encryption_config}
   */
   readonly encryptionConfig?: GoogleAlloydbClusterEncryptionConfig;
   /**
   * initial_user block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#initial_user GoogleAlloydbCluster#initial_user}
   */
   readonly initialUser?: GoogleAlloydbClusterInitialUser;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#timeouts GoogleAlloydbCluster#timeouts}
   */
   readonly timeouts?: GoogleAlloydbClusterTimeouts;
@@ -445,7 +440,7 @@ export class GoogleAlloydbClusterMigrationSourceList extends cdktf.ComplexList {
 export interface GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig {
   /**
   * The fully-qualified resource name of the KMS key. Each Cloud KMS key is regionalized and has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME].
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#kms_key_name GoogleAlloydbCluster#kms_key_name}
   */
   readonly kmsKeyName?: string;
@@ -512,7 +507,7 @@ export class GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputRefe
 export interface GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention {
   /**
   * The number of backups to retain.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#count GoogleAlloydbCluster#count}
   */
   readonly count?: number;
@@ -580,7 +575,7 @@ export interface GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention {
   /**
   * The retention period.
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#retention_period GoogleAlloydbCluster#retention_period}
   */
   readonly retentionPeriod?: string;
@@ -647,25 +642,25 @@ export class GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputRe
 export interface GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes {
   /**
   * Hours of day in 24 hour format. Should be from 0 to 23. An API may choose to allow the value "24:00:00" for scenarios like business closing time.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#hours GoogleAlloydbCluster#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of hour of day. Currently, only the value 0 is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#minutes GoogleAlloydbCluster#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds in nanoseconds. Currently, only the value 0 is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#nanos GoogleAlloydbCluster#nanos}
   */
   readonly nanos?: number;
   /**
   * Seconds of minutes of the time. Currently, only the value 0 is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#seconds GoogleAlloydbCluster#seconds}
   */
   readonly seconds?: number;
@@ -833,13 +828,13 @@ export class GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimesLi
 export interface GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule {
   /**
   * The days of the week to perform a backup. At least one day of the week must be provided. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#days_of_week GoogleAlloydbCluster#days_of_week}
   */
   readonly daysOfWeek?: string[];
   /**
   * start_times block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#start_times GoogleAlloydbCluster#start_times}
   */
   readonly startTimes: GoogleAlloydbClusterAutomatedBackupPolicyWeeklyScheduleStartTimes[] | cdktf.IResolvable;
@@ -930,49 +925,49 @@ export interface GoogleAlloydbClusterAutomatedBackupPolicy {
 The backup window must be at least 5 minutes long. There is no upper bound on the window. If not set, it will default to 1 hour.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#backup_window GoogleAlloydbCluster#backup_window}
   */
   readonly backupWindow?: string;
   /**
   * Whether automated backups are enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#enabled GoogleAlloydbCluster#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Labels to apply to backups created using this configuration.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#labels GoogleAlloydbCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the backup will be stored. Currently, the only supported option is to store the backup in the same region as the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#location GoogleAlloydbCluster#location}
   */
   readonly location?: string;
   /**
   * encryption_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#encryption_config GoogleAlloydbCluster#encryption_config}
   */
   readonly encryptionConfig?: GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig;
   /**
   * quantity_based_retention block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#quantity_based_retention GoogleAlloydbCluster#quantity_based_retention}
   */
   readonly quantityBasedRetention?: GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention;
   /**
   * time_based_retention block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#time_based_retention GoogleAlloydbCluster#time_based_retention}
   */
   readonly timeBasedRetention?: GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention;
   /**
   * weekly_schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#weekly_schedule GoogleAlloydbCluster#weekly_schedule}
   */
   readonly weeklySchedule?: GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule;
@@ -1200,7 +1195,7 @@ export class GoogleAlloydbClusterAutomatedBackupPolicyOutputReference extends cd
 export interface GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig {
   /**
   * The fully-qualified resource name of the KMS key. Each Cloud KMS key is regionalized and has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME].
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#kms_key_name GoogleAlloydbCluster#kms_key_name}
   */
   readonly kmsKeyName?: string;
@@ -1267,7 +1262,7 @@ export class GoogleAlloydbClusterContinuousBackupConfigEncryptionConfigOutputRef
 export interface GoogleAlloydbClusterContinuousBackupConfig {
   /**
   * Whether continuous backup recovery is enabled. If not set, defaults to true.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#enabled GoogleAlloydbCluster#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -1275,13 +1270,13 @@ export interface GoogleAlloydbClusterContinuousBackupConfig {
   * The numbers of days that are eligible to restore from using PITR. To support the entire recovery window, backups and logs are retained for one day more than the recovery window.
 
 If not set, defaults to 14 days.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#recovery_window_days GoogleAlloydbCluster#recovery_window_days}
   */
   readonly recoveryWindowDays?: number;
   /**
   * encryption_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#encryption_config GoogleAlloydbCluster#encryption_config}
   */
   readonly encryptionConfig?: GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig;
@@ -1394,7 +1389,7 @@ export class GoogleAlloydbClusterContinuousBackupConfigOutputReference extends c
 export interface GoogleAlloydbClusterEncryptionConfig {
   /**
   * The fully-qualified resource name of the KMS key. Each Cloud KMS key is regionalized and has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME].
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#kms_key_name GoogleAlloydbCluster#kms_key_name}
   */
   readonly kmsKeyName?: string;
@@ -1461,13 +1456,13 @@ export class GoogleAlloydbClusterEncryptionConfigOutputReference extends cdktf.C
 export interface GoogleAlloydbClusterInitialUser {
   /**
   * The initial password for the user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#password GoogleAlloydbCluster#password}
   */
   readonly password: string;
   /**
   * The database username.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster#user GoogleAlloydbCluster#user}
   */
   readonly user?: string;

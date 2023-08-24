@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleeventarcgooglechannelconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcgooglechannelconfig"
 
 googleeventarcgooglechannelconfig.NewGoogleEventarcGoogleChannelConfig(scope Construct, id *string, config GoogleEventarcGoogleChannelConfigConfig) GoogleEventarcGoogleChannelConfig
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleeventarcgooglechannelconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcgooglechannelconfig"
 
 googleeventarcgooglechannelconfig.GoogleEventarcGoogleChannelConfig_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleeventarcgooglechannelconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcgooglechannelconfig"
 
 googleeventarcgooglechannelconfig.GoogleEventarcGoogleChannelConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ googleeventarcgooglechannelconfig.GoogleEventarcGoogleChannelConfig_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleeventarcgooglechannelconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcgooglechannelconfig"
 
 googleeventarcgooglechannelconfig.GoogleEventarcGoogleChannelConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -699,7 +699,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleeventarcgooglechannelconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcgooglechannelconfig"
 
 &googleeventarcgooglechannelconfig.GoogleEventarcGoogleChannelConfigConfig {
 	Connection: interface{},
@@ -714,7 +714,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleeventa
 	CryptoKeyName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfigTimeouts,
 }
 ```
 
@@ -846,9 +846,11 @@ CryptoKeyName *string
 
 Optional.
 
-Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt their event data. It must match the pattern `projects/*\/locations/*\/keyRings/*\/cryptoKeys/*`.
+Resource name of a KMS crypto key (managed by the user) used to encrypt/decrypt their event data. It must match the pattern `projects/* /locations/* /keyRings/* /cryptoKeys/*`.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_eventarc_google_channel_config#crypto_key_name GoogleEventarcGoogleChannelConfig#crypto_key_name}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 
@@ -900,7 +902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleeventarcgooglechannelconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcgooglechannelconfig"
 
 &googleeventarcgooglechannelconfig.GoogleEventarcGoogleChannelConfigTimeouts {
 	Create: *string,
@@ -962,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleEventarcGoogleChannelConfig.GoogleEventarcGoogleChannelConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleeventarcgooglechannelconfig"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleeventarcgooglechannelconfig"
 
 googleeventarcgooglechannelconfig.NewGoogleEventarcGoogleChannelConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleEventarcGoogleChannelConfigTimeoutsOutputReference
 ```

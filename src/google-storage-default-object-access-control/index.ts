@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_default_object_access_control
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleStorageDefaultObjectAccessControlConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the bucket.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_default_object_access_control#bucket GoogleStorageDefaultObjectAccessControl#bucket}
   */
   readonly bucket: string;
@@ -28,7 +23,7 @@ export interface GoogleStorageDefaultObjectAccessControlConfig extends cdktf.Ter
   * project-team-{{projectId}}
   * allUsers
   * allAuthenticatedUsers
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_default_object_access_control#entity GoogleStorageDefaultObjectAccessControl#entity}
   */
   readonly entity: string;
@@ -41,19 +36,19 @@ export interface GoogleStorageDefaultObjectAccessControlConfig extends cdktf.Ter
   readonly id?: string;
   /**
   * The name of the object, if applied to an object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_default_object_access_control#object GoogleStorageDefaultObjectAccessControl#object}
   */
   readonly object?: string;
   /**
   * The access permission for the entity. Possible values: ["OWNER", "READER"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_default_object_access_control#role GoogleStorageDefaultObjectAccessControl#role}
   */
   readonly role: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_default_object_access_control#timeouts GoogleStorageDefaultObjectAccessControl#timeouts}
   */
   readonly timeouts?: GoogleStorageDefaultObjectAccessControlTimeouts;

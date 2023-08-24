@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_managed_ssl_certificate
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeManagedSslCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * The unique identifier for the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_managed_ssl_certificate#certificate_id GoogleComputeManagedSslCertificate#certificate_id}
   */
   readonly certificateId?: number;
   /**
   * An optional description of this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_managed_ssl_certificate#description GoogleComputeManagedSslCertificate#description}
   */
   readonly description?: string;
@@ -42,7 +37,7 @@ character, which cannot be a dash.
 
 
 These are in the same namespace as the managed SSL certificates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_managed_ssl_certificate#name GoogleComputeManagedSslCertificate#name}
   */
   readonly name?: string;
@@ -53,19 +48,19 @@ These are in the same namespace as the managed SSL certificates.
   /**
   * Enum field whose value is always 'MANAGED' - used to signal to the API
 which type this is. Default value: "MANAGED" Possible values: ["MANAGED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_managed_ssl_certificate#type GoogleComputeManagedSslCertificate#type}
   */
   readonly type?: string;
   /**
   * managed block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_managed_ssl_certificate#managed GoogleComputeManagedSslCertificate#managed}
   */
   readonly managed?: GoogleComputeManagedSslCertificateManaged;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_managed_ssl_certificate#timeouts GoogleComputeManagedSslCertificate#timeouts}
   */
   readonly timeouts?: GoogleComputeManagedSslCertificateTimeouts;
@@ -74,7 +69,7 @@ export interface GoogleComputeManagedSslCertificateManaged {
   /**
   * Domains for which a managed SSL certificate will be valid.  Currently,
 there can be up to 100 domains in this list.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_managed_ssl_certificate#domains GoogleComputeManagedSslCertificate#domains}
   */
   readonly domains: string[];

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleIamAccessBoundaryPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#display_name GoogleIamAccessBoundaryPolicy#display_name}
   */
   readonly displayName?: string;
@@ -27,25 +22,25 @@ export interface GoogleIamAccessBoundaryPolicyConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * The name of the policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#name GoogleIamAccessBoundaryPolicy#name}
   */
   readonly name: string;
   /**
   * The attachment point is identified by its URL-encoded full resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#parent GoogleIamAccessBoundaryPolicy#parent}
   */
   readonly parent: string;
   /**
   * rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#rules GoogleIamAccessBoundaryPolicy#rules}
   */
   readonly rules: GoogleIamAccessBoundaryPolicyRules[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#timeouts GoogleIamAccessBoundaryPolicy#timeouts}
   */
   readonly timeouts?: GoogleIamAccessBoundaryPolicyTimeouts;
@@ -54,27 +49,27 @@ export interface GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilit
   /**
   * Description of the expression. This is a longer text which describes the expression,
 e.g. when hovered over it in a UI.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#description GoogleIamAccessBoundaryPolicy#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#expression GoogleIamAccessBoundaryPolicy#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting,
 e.g. a file name and a position in the file.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#location GoogleIamAccessBoundaryPolicy#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose.
 This can be used e.g. in UIs which allow to enter the expression.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#title GoogleIamAccessBoundaryPolicy#title}
   */
   readonly title?: string;
@@ -207,19 +202,19 @@ export class GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCon
 export interface GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRule {
   /**
   * A list of permissions that may be allowed for use on the specified resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#available_permissions GoogleIamAccessBoundaryPolicy#available_permissions}
   */
   readonly availablePermissions?: string[];
   /**
   * The full resource name of a Google Cloud resource entity.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#available_resource GoogleIamAccessBoundaryPolicy#available_resource}
   */
   readonly availableResource?: string;
   /**
   * availability_condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#availability_condition GoogleIamAccessBoundaryPolicy#availability_condition}
   */
   readonly availabilityCondition?: GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleAvailabilityCondition;
@@ -332,13 +327,13 @@ export class GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRuleOutputReference
 export interface GoogleIamAccessBoundaryPolicyRules {
   /**
   * The description of the rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#description GoogleIamAccessBoundaryPolicy#description}
   */
   readonly description?: string;
   /**
   * access_boundary_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_access_boundary_policy#access_boundary_rule GoogleIamAccessBoundaryPolicy#access_boundary_rule}
   */
   readonly accessBoundaryRule?: GoogleIamAccessBoundaryPolicyRulesAccessBoundaryRule;

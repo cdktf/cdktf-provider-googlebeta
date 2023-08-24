@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_linked_dataset
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleLoggingLinkedDatasetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The bucket to which the linked dataset is attached.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_linked_dataset#bucket GoogleLoggingLinkedDataset#bucket}
   */
   readonly bucket: string;
   /**
   * Describes this link. The maximum length of the description is 8000 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_linked_dataset#description GoogleLoggingLinkedDataset#description}
   */
   readonly description?: string;
@@ -33,31 +28,31 @@ export interface GoogleLoggingLinkedDatasetConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * The id of the linked dataset.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_linked_dataset#link_id GoogleLoggingLinkedDataset#link_id}
   */
   readonly linkId: string;
   /**
   * The location of the linked dataset.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_linked_dataset#location GoogleLoggingLinkedDataset#location}
   */
   readonly location?: string;
   /**
   * The parent of the linked dataset.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_linked_dataset#parent GoogleLoggingLinkedDataset#parent}
   */
   readonly parent?: string;
   /**
   * bigquery_dataset block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_linked_dataset#bigquery_dataset GoogleLoggingLinkedDataset#bigquery_dataset}
   */
   readonly bigqueryDataset?: GoogleLoggingLinkedDatasetBigqueryDataset[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_linked_dataset#timeouts GoogleLoggingLinkedDataset#timeouts}
   */
   readonly timeouts?: GoogleLoggingLinkedDatasetTimeouts;

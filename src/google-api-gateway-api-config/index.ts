@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface GoogleApiGatewayApiConfigAConfig extends cdktf.TerraformMetaArguments {
   /**
   * The API to attach the config to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#api GoogleApiGatewayApiConfigA#api}
   */
   readonly api: string;
   /**
   * Identifier to assign to the API Config. Must be unique within scope of the parent resource(api).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#api_config_id GoogleApiGatewayApiConfigA#api_config_id}
   */
   readonly apiConfigId?: string;
   /**
   * Creates a unique name beginning with the specified prefix. If this and api_config_id are unspecified, a random value is chosen for the name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#api_config_id_prefix GoogleApiGatewayApiConfigA#api_config_id_prefix}
   */
   readonly apiConfigIdPrefix?: string;
   /**
   * A user-visible name for the API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#display_name GoogleApiGatewayApiConfigA#display_name}
   */
   readonly displayName?: string;
@@ -45,7 +40,7 @@ export interface GoogleApiGatewayApiConfigAConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * Resource labels to represent user-provided metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#labels GoogleApiGatewayApiConfigA#labels}
   */
   readonly labels?: { [key: string]: string };
@@ -55,31 +50,31 @@ export interface GoogleApiGatewayApiConfigAConfig extends cdktf.TerraformMetaArg
   readonly project?: string;
   /**
   * gateway_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#gateway_config GoogleApiGatewayApiConfigA#gateway_config}
   */
   readonly gatewayConfig?: GoogleApiGatewayApiConfigGatewayConfig;
   /**
   * grpc_services block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#grpc_services GoogleApiGatewayApiConfigA#grpc_services}
   */
   readonly grpcServices?: GoogleApiGatewayApiConfigGrpcServices[] | cdktf.IResolvable;
   /**
   * managed_service_configs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#managed_service_configs GoogleApiGatewayApiConfigA#managed_service_configs}
   */
   readonly managedServiceConfigs?: GoogleApiGatewayApiConfigManagedServiceConfigs[] | cdktf.IResolvable;
   /**
   * openapi_documents block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#openapi_documents GoogleApiGatewayApiConfigA#openapi_documents}
   */
   readonly openapiDocuments?: GoogleApiGatewayApiConfigOpenapiDocuments[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#timeouts GoogleApiGatewayApiConfigA#timeouts}
   */
   readonly timeouts?: GoogleApiGatewayApiConfigTimeouts;
@@ -88,7 +83,7 @@ export interface GoogleApiGatewayApiConfigGatewayConfigBackendConfig {
   /**
   * Google Cloud IAM service account used to sign OIDC tokens for backends that have authentication configured
 (https://cloud.google.com/service-infrastructure/docs/service-management/reference/rest/v1/services.configs#backend).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#google_service_account GoogleApiGatewayApiConfigA#google_service_account}
   */
   readonly googleServiceAccount: string;
@@ -152,7 +147,7 @@ export class GoogleApiGatewayApiConfigGatewayConfigBackendConfigOutputReference 
 export interface GoogleApiGatewayApiConfigGatewayConfig {
   /**
   * backend_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#backend_config GoogleApiGatewayApiConfigA#backend_config}
   */
   readonly backendConfig: GoogleApiGatewayApiConfigGatewayConfigBackendConfig;
@@ -216,13 +211,13 @@ export class GoogleApiGatewayApiConfigGatewayConfigOutputReference extends cdktf
 export interface GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet {
   /**
   * Base64 encoded content of the file.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
   */
   readonly contents: string;
   /**
   * The file path (full or relative path). This is typically the path of the file when it is uploaded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
   */
   readonly path: string;
@@ -306,13 +301,13 @@ export class GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSetOutputReferen
 export interface GoogleApiGatewayApiConfigGrpcServicesSource {
   /**
   * Base64 encoded content of the file.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
   */
   readonly contents: string;
   /**
   * The file path (full or relative path). This is typically the path of the file when it is uploaded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
   */
   readonly path: string;
@@ -428,13 +423,13 @@ export class GoogleApiGatewayApiConfigGrpcServicesSourceList extends cdktf.Compl
 export interface GoogleApiGatewayApiConfigGrpcServices {
   /**
   * file_descriptor_set block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#file_descriptor_set GoogleApiGatewayApiConfigA#file_descriptor_set}
   */
   readonly fileDescriptorSet: GoogleApiGatewayApiConfigGrpcServicesFileDescriptorSet;
   /**
   * source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#source GoogleApiGatewayApiConfigA#source}
   */
   readonly source?: GoogleApiGatewayApiConfigGrpcServicesSource[] | cdktf.IResolvable;
@@ -553,13 +548,13 @@ export class GoogleApiGatewayApiConfigGrpcServicesList extends cdktf.ComplexList
 export interface GoogleApiGatewayApiConfigManagedServiceConfigs {
   /**
   * Base64 encoded content of the file.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
   */
   readonly contents: string;
   /**
   * The file path (full or relative path). This is typically the path of the file when it is uploaded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
   */
   readonly path: string;
@@ -675,13 +670,13 @@ export class GoogleApiGatewayApiConfigManagedServiceConfigsList extends cdktf.Co
 export interface GoogleApiGatewayApiConfigOpenapiDocumentsDocument {
   /**
   * Base64 encoded content of the file.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#contents GoogleApiGatewayApiConfigA#contents}
   */
   readonly contents: string;
   /**
   * The file path (full or relative path). This is typically the path of the file when it is uploaded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#path GoogleApiGatewayApiConfigA#path}
   */
   readonly path: string;
@@ -765,7 +760,7 @@ export class GoogleApiGatewayApiConfigOpenapiDocumentsDocumentOutputReference ex
 export interface GoogleApiGatewayApiConfigOpenapiDocuments {
   /**
   * document block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config#document GoogleApiGatewayApiConfigA#document}
   */
   readonly document: GoogleApiGatewayApiConfigOpenapiDocumentsDocument;

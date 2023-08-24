@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleDnsResponsePolicyRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Answer this query with a behavior rather than DNS data. Acceptable values are 'behaviorUnspecified', and 'bypassResponsePolicy'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#behavior GoogleDnsResponsePolicyRule#behavior}
   */
   readonly behavior?: string;
   /**
   * The DNS name (wildcard or exact) to apply this rule to. Must be unique within the Response Policy Rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#dns_name GoogleDnsResponsePolicyRule#dns_name}
   */
   readonly dnsName: string;
@@ -37,25 +32,25 @@ export interface GoogleDnsResponsePolicyRuleConfig extends cdktf.TerraformMetaAr
   readonly project?: string;
   /**
   * Identifies the response policy addressed by this request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#response_policy GoogleDnsResponsePolicyRule#response_policy}
   */
   readonly responsePolicy: string;
   /**
   * An identifier for this rule. Must be unique with the ResponsePolicy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#rule_name GoogleDnsResponsePolicyRule#rule_name}
   */
   readonly ruleName: string;
   /**
   * local_data block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#local_data GoogleDnsResponsePolicyRule#local_data}
   */
   readonly localData?: GoogleDnsResponsePolicyRuleLocalData;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#timeouts GoogleDnsResponsePolicyRule#timeouts}
   */
   readonly timeouts?: GoogleDnsResponsePolicyRuleTimeouts;
@@ -63,26 +58,26 @@ export interface GoogleDnsResponsePolicyRuleConfig extends cdktf.TerraformMetaAr
 export interface GoogleDnsResponsePolicyRuleLocalDataLocalDatas {
   /**
   * For example, www.example.com.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#name GoogleDnsResponsePolicyRule#name}
   */
   readonly name: string;
   /**
   * As defined in RFC 1035 (section 5) and RFC 1034 (section 3.6.1)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#rrdatas GoogleDnsResponsePolicyRule#rrdatas}
   */
   readonly rrdatas?: string[];
   /**
   * Number of seconds that this ResourceRecordSet can be cached by
 resolvers.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#ttl GoogleDnsResponsePolicyRule#ttl}
   */
   readonly ttl?: number;
   /**
   * One of valid DNS resource types. Possible values: ["A", "AAAA", "CAA", "CNAME", "DNSKEY", "DS", "HTTPS", "IPSECVPNKEY", "MX", "NAPTR", "NS", "PTR", "SOA", "SPF", "SRV", "SSHFP", "SVCB", "TLSA", "TXT"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#type GoogleDnsResponsePolicyRule#type}
   */
   readonly type: string;
@@ -244,7 +239,7 @@ export class GoogleDnsResponsePolicyRuleLocalDataLocalDatasList extends cdktf.Co
 export interface GoogleDnsResponsePolicyRuleLocalData {
   /**
   * local_datas block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy_rule#local_datas GoogleDnsResponsePolicyRule#local_datas}
   */
   readonly localDatas: GoogleDnsResponsePolicyRuleLocalDataLocalDatas[] | cdktf.IResolvable;

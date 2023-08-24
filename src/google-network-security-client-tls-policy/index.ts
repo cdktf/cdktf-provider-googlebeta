@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleNetworkSecurityClientTlsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * A free-text description of the resource. Max length 1024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#description GoogleNetworkSecurityClientTlsPolicy#description}
   */
   readonly description?: string;
@@ -27,20 +22,20 @@ export interface GoogleNetworkSecurityClientTlsPolicyConfig extends cdktf.Terraf
   readonly id?: string;
   /**
   * Set of label tags associated with the ClientTlsPolicy resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#labels GoogleNetworkSecurityClientTlsPolicy#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the client tls policy.
 The default value is 'global'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#location GoogleNetworkSecurityClientTlsPolicy#location}
   */
   readonly location?: string;
   /**
   * Name of the ClientTlsPolicy resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#name GoogleNetworkSecurityClientTlsPolicy#name}
   */
   readonly name: string;
@@ -50,25 +45,25 @@ The default value is 'global'.
   readonly project?: string;
   /**
   * Server Name Indication string to present to the server during TLS handshake. E.g: "secure.example.com".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#sni GoogleNetworkSecurityClientTlsPolicy#sni}
   */
   readonly sni?: string;
   /**
   * client_certificate block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#client_certificate GoogleNetworkSecurityClientTlsPolicy#client_certificate}
   */
   readonly clientCertificate?: GoogleNetworkSecurityClientTlsPolicyClientCertificate;
   /**
   * server_validation_ca block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#server_validation_ca GoogleNetworkSecurityClientTlsPolicy#server_validation_ca}
   */
   readonly serverValidationCa?: GoogleNetworkSecurityClientTlsPolicyServerValidationCa[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#timeouts GoogleNetworkSecurityClientTlsPolicy#timeouts}
   */
   readonly timeouts?: GoogleNetworkSecurityClientTlsPolicyTimeouts;
@@ -76,7 +71,7 @@ The default value is 'global'.
 export interface GoogleNetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance {
   /**
   * Plugin instance name, used to locate and load CertificateProvider instance configuration. Set to "google_cloud_private_spiffe" to use Certificate Authority Service certificate provider instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#plugin_instance GoogleNetworkSecurityClientTlsPolicy#plugin_instance}
   */
   readonly pluginInstance: string;
@@ -140,7 +135,7 @@ export class GoogleNetworkSecurityClientTlsPolicyClientCertificateCertificatePro
 export interface GoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint {
   /**
   * The target URI of the gRPC endpoint. Only UDS path is supported, and should start with "unix:".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#target_uri GoogleNetworkSecurityClientTlsPolicy#target_uri}
   */
   readonly targetUri: string;
@@ -204,13 +199,13 @@ export class GoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEndpointOu
 export interface GoogleNetworkSecurityClientTlsPolicyClientCertificate {
   /**
   * certificate_provider_instance block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#certificate_provider_instance GoogleNetworkSecurityClientTlsPolicy#certificate_provider_instance}
   */
   readonly certificateProviderInstance?: GoogleNetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance;
   /**
   * grpc_endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#grpc_endpoint GoogleNetworkSecurityClientTlsPolicy#grpc_endpoint}
   */
   readonly grpcEndpoint?: GoogleNetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint;
@@ -300,7 +295,7 @@ export class GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReferenc
 export interface GoogleNetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstance {
   /**
   * Plugin instance name, used to locate and load CertificateProvider instance configuration. Set to "google_cloud_private_spiffe" to use Certificate Authority Service certificate provider instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#plugin_instance GoogleNetworkSecurityClientTlsPolicy#plugin_instance}
   */
   readonly pluginInstance: string;
@@ -364,7 +359,7 @@ export class GoogleNetworkSecurityClientTlsPolicyServerValidationCaCertificatePr
 export interface GoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint {
   /**
   * The target URI of the gRPC endpoint. Only UDS path is supported, and should start with "unix:".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#target_uri GoogleNetworkSecurityClientTlsPolicy#target_uri}
   */
   readonly targetUri: string;
@@ -428,13 +423,13 @@ export class GoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpointO
 export interface GoogleNetworkSecurityClientTlsPolicyServerValidationCa {
   /**
   * certificate_provider_instance block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#certificate_provider_instance GoogleNetworkSecurityClientTlsPolicy#certificate_provider_instance}
   */
   readonly certificateProviderInstance?: GoogleNetworkSecurityClientTlsPolicyServerValidationCaCertificateProviderInstance;
   /**
   * grpc_endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_client_tls_policy#grpc_endpoint GoogleNetworkSecurityClientTlsPolicy#grpc_endpoint}
   */
   readonly grpcEndpoint?: GoogleNetworkSecurityClientTlsPolicyServerValidationCaGrpcEndpoint;

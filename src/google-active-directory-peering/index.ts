@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_active_directory_peering
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleActiveDirectoryPeeringConfig extends cdktf.TerraformMetaArguments {
   /**
   * The full names of the Google Compute Engine networks to which the instance is connected. Caller needs to make sure that CIDR subnets do not overlap between networks, else peering creation will fail.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_active_directory_peering#authorized_network GoogleActiveDirectoryPeering#authorized_network}
   */
   readonly authorizedNetwork: string;
   /**
   * Full domain resource path for the Managed AD Domain involved in peering. The resource path should be in the form projects/{projectId}/locations/global/domains/{domainName}
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_active_directory_peering#domain_resource GoogleActiveDirectoryPeering#domain_resource}
   */
   readonly domainResource: string;
@@ -33,7 +28,7 @@ export interface GoogleActiveDirectoryPeeringConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * Resource labels that can contain user-provided metadata
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_active_directory_peering#labels GoogleActiveDirectoryPeering#labels}
   */
   readonly labels?: { [key: string]: string };
@@ -47,19 +42,19 @@ export interface GoogleActiveDirectoryPeeringConfig extends cdktf.TerraformMetaA
   readonly project?: string;
   /**
   * The current state of this Peering.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_active_directory_peering#status GoogleActiveDirectoryPeering#status}
   */
   readonly status?: string;
   /**
   * Additional information about the current status of this peering, if available.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_active_directory_peering#status_message GoogleActiveDirectoryPeering#status_message}
   */
   readonly statusMessage?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_active_directory_peering#timeouts GoogleActiveDirectoryPeering#timeouts}
   */
   readonly timeouts?: GoogleActiveDirectoryPeeringTimeouts;

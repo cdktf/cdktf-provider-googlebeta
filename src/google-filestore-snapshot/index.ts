@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_snapshot
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleFilestoreSnapshotConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the snapshot with 2048 characters or less. Requests with longer descriptions will be rejected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_snapshot#description GoogleFilestoreSnapshot#description}
   */
   readonly description?: string;
@@ -27,19 +22,19 @@ export interface GoogleFilestoreSnapshotConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * The resource name of the filestore instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_snapshot#instance GoogleFilestoreSnapshot#instance}
   */
   readonly instance: string;
   /**
   * Resource labels to represent user-provided metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_snapshot#labels GoogleFilestoreSnapshot#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_snapshot#location GoogleFilestoreSnapshot#location}
   */
   readonly location: string;
@@ -52,7 +47,7 @@ the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the
 first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_snapshot#name GoogleFilestoreSnapshot#name}
   */
   readonly name: string;
@@ -62,7 +57,7 @@ character, which cannot be a dash.
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_snapshot#timeouts GoogleFilestoreSnapshot#timeouts}
   */
   readonly timeouts?: GoogleFilestoreSnapshotTimeouts;

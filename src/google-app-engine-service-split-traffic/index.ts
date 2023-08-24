@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_service_split_traffic
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface GoogleAppEngineServiceSplitTrafficConfig extends cdktf.Terrafor
   readonly id?: string;
   /**
   * If set to true traffic will be migrated to this version.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_service_split_traffic#migrate_traffic GoogleAppEngineServiceSplitTraffic#migrate_traffic}
   */
   readonly migrateTraffic?: boolean | cdktf.IResolvable;
@@ -31,19 +26,19 @@ export interface GoogleAppEngineServiceSplitTrafficConfig extends cdktf.Terrafor
   readonly project?: string;
   /**
   * The name of the service these settings apply to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_service_split_traffic#service GoogleAppEngineServiceSplitTraffic#service}
   */
   readonly service: string;
   /**
   * split block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_service_split_traffic#split GoogleAppEngineServiceSplitTraffic#split}
   */
   readonly split: GoogleAppEngineServiceSplitTrafficSplit;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_service_split_traffic#timeouts GoogleAppEngineServiceSplitTraffic#timeouts}
   */
   readonly timeouts?: GoogleAppEngineServiceSplitTrafficTimeouts;
@@ -51,13 +46,13 @@ export interface GoogleAppEngineServiceSplitTrafficConfig extends cdktf.Terrafor
 export interface GoogleAppEngineServiceSplitTrafficSplit {
   /**
   * Mapping from version IDs within the service to fractional (0.000, 1] allocations of traffic for that version. Each version can be specified only once, but some versions in the service may not have any traffic allocation. Services that have traffic allocated cannot be deleted until either the service is deleted or their traffic allocation is removed. Allocations must sum to 1. Up to two decimal place precision is supported for IP-based splits and up to three decimal places is supported for cookie-based splits.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_service_split_traffic#allocations GoogleAppEngineServiceSplitTraffic#allocations}
   */
   readonly allocations: { [key: string]: string };
   /**
   * Mechanism used to determine which version a request is sent to. The traffic selection algorithm will be stable for either type until allocations are changed. Possible values: ["UNSPECIFIED", "COOKIE", "IP", "RANDOM"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_service_split_traffic#shard_by GoogleAppEngineServiceSplitTraffic#shard_by}
   */
   readonly shardBy?: string;

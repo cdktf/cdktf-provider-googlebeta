@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleBeyondcorpAppConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * List of AppConnectors that are authorised to be associated with this AppConnection
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#connectors GoogleBeyondcorpAppConnection#connectors}
   */
   readonly connectors?: string[];
   /**
   * An arbitrary user-provided name for the AppConnection.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#display_name GoogleBeyondcorpAppConnection#display_name}
   */
   readonly displayName?: string;
@@ -33,13 +28,13 @@ export interface GoogleBeyondcorpAppConnectionConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * Resource labels to represent user provided metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#labels GoogleBeyondcorpAppConnection#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * ID of the AppConnection.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#name GoogleBeyondcorpAppConnection#name}
   */
   readonly name: string;
@@ -49,7 +44,7 @@ export interface GoogleBeyondcorpAppConnectionConfig extends cdktf.TerraformMeta
   readonly project?: string;
   /**
   * The region of the AppConnection.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#region GoogleBeyondcorpAppConnection#region}
   */
   readonly region?: string;
@@ -57,25 +52,25 @@ export interface GoogleBeyondcorpAppConnectionConfig extends cdktf.TerraformMeta
   * The type of network connectivity used by the AppConnection. Refer to
 https://cloud.google.com/beyondcorp/docs/reference/rest/v1/projects.locations.appConnections#type
 for a list of possible values.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#type GoogleBeyondcorpAppConnection#type}
   */
   readonly type?: string;
   /**
   * application_endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#application_endpoint GoogleBeyondcorpAppConnection#application_endpoint}
   */
   readonly applicationEndpoint: GoogleBeyondcorpAppConnectionApplicationEndpoint;
   /**
   * gateway block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#gateway GoogleBeyondcorpAppConnection#gateway}
   */
   readonly gateway?: GoogleBeyondcorpAppConnectionGateway;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#timeouts GoogleBeyondcorpAppConnection#timeouts}
   */
   readonly timeouts?: GoogleBeyondcorpAppConnectionTimeouts;
@@ -83,13 +78,13 @@ for a list of possible values.
 export interface GoogleBeyondcorpAppConnectionApplicationEndpoint {
   /**
   * Hostname or IP address of the remote application endpoint.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#host GoogleBeyondcorpAppConnection#host}
   */
   readonly host: string;
   /**
   * Port of the remote application endpoint.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#port GoogleBeyondcorpAppConnection#port}
   */
   readonly port: number;
@@ -173,7 +168,7 @@ export class GoogleBeyondcorpAppConnectionApplicationEndpointOutputReference ext
 export interface GoogleBeyondcorpAppConnectionGateway {
   /**
   * AppGateway name in following format: projects/{project_id}/locations/{locationId}/appgateways/{gateway_id}.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#app_gateway GoogleBeyondcorpAppConnection#app_gateway}
   */
   readonly appGateway: string;
@@ -181,7 +176,7 @@ export interface GoogleBeyondcorpAppConnectionGateway {
   * The type of hosting used by the gateway. Refer to
 https://cloud.google.com/beyondcorp/docs/reference/rest/v1/projects.locations.appConnections#Type_1
 for a list of possible values.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connection#type GoogleBeyondcorpAppConnection#type}
   */
   readonly type?: string;

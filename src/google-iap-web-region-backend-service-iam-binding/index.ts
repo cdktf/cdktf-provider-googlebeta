@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_web_region_backend_service_iam_binding
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface GoogleIapWebRegionBackendServiceIamBindingConfig extends cdktf.
   readonly webRegionBackendService: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_web_region_backend_service_iam_binding#condition GoogleIapWebRegionBackendServiceIamBinding#condition}
   */
   readonly condition?: GoogleIapWebRegionBackendServiceIamBindingCondition;

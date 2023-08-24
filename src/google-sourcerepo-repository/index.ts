@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sourcerepo_repository
 // generated from terraform resource schema
 
@@ -22,7 +17,7 @@ export interface GoogleSourcerepoRepositoryConfig extends cdktf.TerraformMetaArg
   /**
   * Resource name of the repository, of the form '{{repo}}'.
 The repo name may contain slashes. eg, 'name/with/slash'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sourcerepo_repository#name GoogleSourcerepoRepository#name}
   */
   readonly name: string;
@@ -32,13 +27,13 @@ The repo name may contain slashes. eg, 'name/with/slash'
   readonly project?: string;
   /**
   * pubsub_configs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sourcerepo_repository#pubsub_configs GoogleSourcerepoRepository#pubsub_configs}
   */
   readonly pubsubConfigs?: GoogleSourcerepoRepositoryPubsubConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sourcerepo_repository#timeouts GoogleSourcerepoRepository#timeouts}
   */
   readonly timeouts?: GoogleSourcerepoRepositoryTimeouts;
@@ -48,7 +43,7 @@ export interface GoogleSourcerepoRepositoryPubsubConfigs {
   * The format of the Cloud Pub/Sub messages.
 - PROTOBUF: The message payload is a serialized protocol buffer of SourceRepoEvent.
 - JSON: The message payload is a JSON string of SourceRepoEvent. Possible values: ["PROTOBUF", "JSON"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sourcerepo_repository#message_format GoogleSourcerepoRepository#message_format}
   */
   readonly messageFormat: string;
@@ -57,7 +52,7 @@ export interface GoogleSourcerepoRepositoryPubsubConfigs {
 This service account needs to be in the same project as the PubsubConfig. When added,
 the caller needs to have iam.serviceAccounts.actAs permission on this service account.
 If unspecified, it defaults to the compute engine default service account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sourcerepo_repository#service_account_email GoogleSourcerepoRepository#service_account_email}
   */
   readonly serviceAccountEmail?: string;

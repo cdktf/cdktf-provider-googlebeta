@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_backup
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleFilestoreBackupConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_backup#description GoogleFilestoreBackup#description}
   */
   readonly description?: string;
@@ -27,13 +22,13 @@ export interface GoogleFilestoreBackupConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * Resource labels to represent user-provided metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_backup#labels GoogleFilestoreBackup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location of the instance. This can be a region for ENTERPRISE tier instances.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_backup#location GoogleFilestoreBackup#location}
   */
   readonly location: string;
@@ -46,7 +41,7 @@ the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the
 first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_backup#name GoogleFilestoreBackup#name}
   */
   readonly name: string;
@@ -56,19 +51,19 @@ character, which cannot be a dash.
   readonly project?: string;
   /**
   * Name of the file share in the source Cloud Filestore instance that the backup is created from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_backup#source_file_share GoogleFilestoreBackup#source_file_share}
   */
   readonly sourceFileShare: string;
   /**
   * The resource name of the source Cloud Filestore instance, in the format projects/{projectId}/locations/{locationId}/instances/{instanceId}, used to create this backup.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_backup#source_instance GoogleFilestoreBackup#source_instance}
   */
   readonly sourceInstance: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_filestore_backup#timeouts GoogleFilestoreBackup#timeouts}
   */
   readonly timeouts?: GoogleFilestoreBackupTimeouts;

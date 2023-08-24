@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_managed_zone_iam_binding
 // generated from terraform resource schema
 
@@ -37,7 +32,7 @@ export interface GoogleDnsManagedZoneIamBindingConfig extends cdktf.TerraformMet
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_managed_zone_iam_binding#condition GoogleDnsManagedZoneIamBinding#condition}
   */
   readonly condition?: GoogleDnsManagedZoneIamBindingCondition;

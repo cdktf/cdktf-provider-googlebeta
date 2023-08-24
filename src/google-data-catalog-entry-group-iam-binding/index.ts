@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_entry_group_iam_binding
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface GoogleDataCatalogEntryGroupIamBindingConfig extends cdktf.Terra
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_entry_group_iam_binding#condition GoogleDataCatalogEntryGroupIamBinding#condition}
   */
   readonly condition?: GoogleDataCatalogEntryGroupIamBindingCondition;

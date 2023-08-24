@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_taxonomy
 // generated from terraform resource schema
 
@@ -15,7 +10,7 @@ export interface GoogleDataCatalogTaxonomyConfig extends cdktf.TerraformMetaArgu
   /**
   * A list of policy types that are activated for this taxonomy. If not set,
 defaults to an empty list. Possible values: ["POLICY_TYPE_UNSPECIFIED", "FINE_GRAINED_ACCESS_CONTROL"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_taxonomy#activated_policy_types GoogleDataCatalogTaxonomy#activated_policy_types}
   */
   readonly activatedPolicyTypes?: string[];
@@ -23,7 +18,7 @@ defaults to an empty list. Possible values: ["POLICY_TYPE_UNSPECIFIED", "FINE_GR
   * Description of this taxonomy. It must: contain only unicode characters,
 tabs, newlines, carriage returns and page breaks; and be at most 2000 bytes
 long when encoded in UTF-8. If not set, defaults to an empty description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_taxonomy#description GoogleDataCatalogTaxonomy#description}
   */
   readonly description?: string;
@@ -32,7 +27,7 @@ long when encoded in UTF-8. If not set, defaults to an empty description.
 It must: contain only unicode letters, numbers, underscores, dashes
 and spaces; not start or end with spaces; and be at most 200 bytes
 long when encoded in UTF-8.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_taxonomy#display_name GoogleDataCatalogTaxonomy#display_name}
   */
   readonly displayName: string;
@@ -49,13 +44,13 @@ long when encoded in UTF-8.
   readonly project?: string;
   /**
   * Taxonomy location region.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_taxonomy#region GoogleDataCatalogTaxonomy#region}
   */
   readonly region?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_taxonomy#timeouts GoogleDataCatalogTaxonomy#timeouts}
   */
   readonly timeouts?: GoogleDataCatalogTaxonomyTimeouts;

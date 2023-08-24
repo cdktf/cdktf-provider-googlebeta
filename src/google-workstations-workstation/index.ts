@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleWorkstationsWorkstationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Client-specified annotations. This is distinct from labels.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation#annotations GoogleWorkstationsWorkstation#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Human-readable name for this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation#display_name GoogleWorkstationsWorkstation#display_name}
   */
   readonly displayName?: string;
@@ -33,13 +28,13 @@ export interface GoogleWorkstationsWorkstationConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * Client-specified labels that are applied to the resource and that are also propagated to the underlying Compute Engine resources.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation#labels GoogleWorkstationsWorkstation#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the workstation parent resources reside.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation#location GoogleWorkstationsWorkstation#location}
   */
   readonly location: string;
@@ -49,25 +44,25 @@ export interface GoogleWorkstationsWorkstationConfig extends cdktf.TerraformMeta
   readonly project?: string;
   /**
   * The ID of the parent workstation cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation#workstation_cluster_id GoogleWorkstationsWorkstation#workstation_cluster_id}
   */
   readonly workstationClusterId: string;
   /**
   * The ID of the parent workstation cluster config.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation#workstation_config_id GoogleWorkstationsWorkstation#workstation_config_id}
   */
   readonly workstationConfigId: string;
   /**
   * ID to use for the workstation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation#workstation_id GoogleWorkstationsWorkstation#workstation_id}
   */
   readonly workstationId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation#timeouts GoogleWorkstationsWorkstation#timeouts}
   */
   readonly timeouts?: GoogleWorkstationsWorkstationTimeouts;

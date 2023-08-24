@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_async_replication
 // generated from terraform resource schema
 
@@ -21,19 +16,19 @@ export interface GoogleComputeDiskAsyncReplicationConfig extends cdktf.Terraform
   readonly id?: string;
   /**
   * Primary disk for asynchronous replication.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_async_replication#primary_disk GoogleComputeDiskAsyncReplication#primary_disk}
   */
   readonly primaryDisk: string;
   /**
   * secondary_disk block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_async_replication#secondary_disk GoogleComputeDiskAsyncReplication#secondary_disk}
   */
   readonly secondaryDisk: GoogleComputeDiskAsyncReplicationSecondaryDisk;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_async_replication#timeouts GoogleComputeDiskAsyncReplication#timeouts}
   */
   readonly timeouts?: GoogleComputeDiskAsyncReplicationTimeouts;
@@ -41,7 +36,7 @@ export interface GoogleComputeDiskAsyncReplicationConfig extends cdktf.Terraform
 export interface GoogleComputeDiskAsyncReplicationSecondaryDisk {
   /**
   * Secondary disk for asynchronous replication.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_async_replication#disk GoogleComputeDiskAsyncReplication#disk}
   */
   readonly disk: string;

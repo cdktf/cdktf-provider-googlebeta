@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent
 // generated from terraform resource schema
 
@@ -19,7 +14,7 @@ the specified API version.
 * API_VERSION_V1: Legacy V1 API.
 * API_VERSION_V2: V2 API.
 * API_VERSION_V2_BETA_1: V2beta1 API. Possible values: ["API_VERSION_V1", "API_VERSION_V2", "API_VERSION_V2_BETA_1"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#api_version GoogleDialogflowAgent#api_version}
   */
   readonly apiVersion?: string;
@@ -27,7 +22,7 @@ the specified API version.
   * The URI of the agent's avatar, which are used throughout the Dialogflow console. When an image URL is entered
 into this field, the Dialogflow will save the image in the backend. The address of the backend image returned
 from the API will be shown in the [avatarUriBackend] field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#avatar_uri GoogleDialogflowAgent#avatar_uri}
   */
   readonly avatarUri?: string;
@@ -37,32 +32,32 @@ you can tune the machine learning classification threshold. If the returned scor
 value, then a fallback intent will be triggered or, if there are no fallback intents defined, no intent will be
 triggered. The score values range from 0.0 (completely uncertain) to 1.0 (completely certain). If set to 0.0, the
 default of 0.3 is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#classification_threshold GoogleDialogflowAgent#classification_threshold}
   */
   readonly classificationThreshold?: number;
   /**
   * The default language of the agent as a language tag. [See Language Support](https://cloud.google.com/dialogflow/docs/reference/language)
 for a list of the currently supported language codes. This field cannot be updated after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#default_language_code GoogleDialogflowAgent#default_language_code}
   */
   readonly defaultLanguageCode: string;
   /**
   * The description of this agent. The maximum length is 500 characters. If exceeded, the request is rejected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#description GoogleDialogflowAgent#description}
   */
   readonly description?: string;
   /**
   * The name of this agent.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#display_name GoogleDialogflowAgent#display_name}
   */
   readonly displayName: string;
   /**
   * Determines whether this agent should log conversation queries.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#enable_logging GoogleDialogflowAgent#enable_logging}
   */
   readonly enableLogging?: boolean | cdktf.IResolvable;
@@ -79,7 +74,7 @@ for a list of the currently supported language codes. This field cannot be updat
 syntax and composite entities.
 * MATCH_MODE_ML_ONLY: Can be used for agents with a large number of examples in intents, especially the ones
 using @sys.any or very large developer entities. Possible values: ["MATCH_MODE_HYBRID", "MATCH_MODE_ML_ONLY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#match_mode GoogleDialogflowAgent#match_mode}
   */
   readonly matchMode?: string;
@@ -89,7 +84,7 @@ using @sys.any or very large developer entities. Possible values: ["MATCH_MODE_H
   readonly project?: string;
   /**
   * The list of all languages supported by this agent (except for the defaultLanguageCode).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#supported_language_codes GoogleDialogflowAgent#supported_language_codes}
   */
   readonly supportedLanguageCodes?: string[];
@@ -100,20 +95,20 @@ using @sys.any or very large developer entities. Possible values: ["MATCH_MODE_H
 * TIER_ENTERPRISE_PLUS: Enterprise tier (Plus).
 NOTE: Due to consistency issues, the provider will not read this field from the API. Drift is possible between
 the Terraform state and Dialogflow if the agent tier is changed outside of Terraform. Possible values: ["TIER_STANDARD", "TIER_ENTERPRISE", "TIER_ENTERPRISE_PLUS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#tier GoogleDialogflowAgent#tier}
   */
   readonly tier?: string;
   /**
   * The time zone of this agent from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York,
 Europe/Paris.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#time_zone GoogleDialogflowAgent#time_zone}
   */
   readonly timeZone: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_agent#timeouts GoogleDialogflowAgent#timeouts}
   */
   readonly timeouts?: GoogleDialogflowAgentTimeouts;

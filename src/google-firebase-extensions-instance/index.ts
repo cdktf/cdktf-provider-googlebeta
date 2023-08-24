@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_extensions_instance
 // generated from terraform resource schema
 
@@ -22,7 +17,7 @@ export interface GoogleFirebaseExtensionsInstanceConfig extends cdktf.TerraformM
   /**
   * The ID to use for the Extension Instance, which will become the final
 component of the instance's name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_extensions_instance#instance_id GoogleFirebaseExtensionsInstance#instance_id}
   */
   readonly instanceId: string;
@@ -32,13 +27,13 @@ component of the instance's name.
   readonly project?: string;
   /**
   * config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_extensions_instance#config GoogleFirebaseExtensionsInstance#config}
   */
   readonly config: GoogleFirebaseExtensionsInstanceConfigA;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_extensions_instance#timeouts GoogleFirebaseExtensionsInstance#timeouts}
   */
   readonly timeouts?: GoogleFirebaseExtensionsInstanceTimeouts;
@@ -331,31 +326,31 @@ export interface GoogleFirebaseExtensionsInstanceConfigA {
   /**
   * List of extension events selected by consumer that extension is allowed to
 emit, identified by their types.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_extensions_instance#allowed_event_types GoogleFirebaseExtensionsInstance#allowed_event_types}
   */
   readonly allowedEventTypes?: string[];
   /**
   * Fully qualified Eventarc resource name that consumers should use for event triggers.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_extensions_instance#eventarc_channel GoogleFirebaseExtensionsInstance#eventarc_channel}
   */
   readonly eventarcChannel?: string;
   /**
   * The ref of the Extension from the Registry (e.g. publisher-id/awesome-extension)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_extensions_instance#extension_ref GoogleFirebaseExtensionsInstance#extension_ref}
   */
   readonly extensionRef: string;
   /**
   * The version of the Extension from the Registry (e.g. 1.0.3). If left blank, latest is assumed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_extensions_instance#extension_version GoogleFirebaseExtensionsInstance#extension_version}
   */
   readonly extensionVersion?: string;
   /**
   * Environment variables that may be configured for the Extension
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_extensions_instance#params GoogleFirebaseExtensionsInstance#params}
   */
   readonly params: { [key: string]: string };
@@ -363,7 +358,7 @@ emit, identified by their types.
   * Params whose values are only available at deployment time.
 Unlike other params, these will not be set as environment variables on
 functions.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_extensions_instance#system_params GoogleFirebaseExtensionsInstance#system_params}
   */
   readonly systemParams?: { [key: string]: string };

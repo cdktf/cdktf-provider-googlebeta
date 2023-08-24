@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_sharedflow
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleApigeeSharedflowConfig extends cdktf.TerraformMetaArguments {
   /**
   * Path to the config zip bundle
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_sharedflow#config_bundle GoogleApigeeSharedflow#config_bundle}
   */
   readonly configBundle: string;
   /**
   * A hash of local config bundle in string, user needs to use a Terraform Hash function of their choice. A change in hash will trigger an update.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_sharedflow#detect_md5hash GoogleApigeeSharedflow#detect_md5hash}
   */
   readonly detectMd5Hash?: string;
@@ -33,19 +28,19 @@ export interface GoogleApigeeSharedflowConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * The ID of the shared flow.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_sharedflow#name GoogleApigeeSharedflow#name}
   */
   readonly name: string;
   /**
   * The Apigee Organization name associated with the Apigee instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_sharedflow#org_id GoogleApigeeSharedflow#org_id}
   */
   readonly orgId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_sharedflow#timeouts GoogleApigeeSharedflow#timeouts}
   */
   readonly timeouts?: GoogleApigeeSharedflowTimeouts;

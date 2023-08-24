@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag_template_iam_member
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface GoogleDataCatalogTagTemplateIamMemberConfig extends cdktf.Terra
   readonly tagTemplate: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag_template_iam_member#condition GoogleDataCatalogTagTemplateIamMember#condition}
   */
   readonly condition?: GoogleDataCatalogTagTemplateIamMemberCondition;

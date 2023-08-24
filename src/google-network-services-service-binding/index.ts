@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_service_binding
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleNetworkServicesServiceBindingConfig extends cdktf.TerraformMetaArguments {
   /**
   * A free-text description of the resource. Max length 1024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_service_binding#description GoogleNetworkServicesServiceBinding#description}
   */
   readonly description?: string;
@@ -27,13 +22,13 @@ export interface GoogleNetworkServicesServiceBindingConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * Set of label tags associated with the ServiceBinding resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_service_binding#labels GoogleNetworkServicesServiceBinding#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Name of the ServiceBinding resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_service_binding#name GoogleNetworkServicesServiceBinding#name}
   */
   readonly name: string;
@@ -43,14 +38,16 @@ export interface GoogleNetworkServicesServiceBindingConfig extends cdktf.Terrafo
   readonly project?: string;
   /**
   * The full Service Directory Service name of the format
-projects/*\/locations/*\/namespaces/*\/services/*
-  * 
+projects/* /locations/* /namespaces/* /services/*
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_service_binding#service GoogleNetworkServicesServiceBinding#service}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly service: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_service_binding#timeouts GoogleNetworkServicesServiceBinding#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesServiceBindingTimeouts;

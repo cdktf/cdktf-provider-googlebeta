@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_membership
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleGkeHubMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of this entity type to be displayed on the console. This field is unavailable in v1 of the API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_membership#description GoogleGkeHubMembership#description}
   */
   readonly description?: string;
@@ -27,13 +22,13 @@ export interface GoogleGkeHubMembershipConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * Labels to apply to this membership.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_membership#labels GoogleGkeHubMembership#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The client-provided identifier of the membership.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_membership#membership_id GoogleGkeHubMembership#membership_id}
   */
   readonly membershipId: string;
@@ -43,19 +38,19 @@ export interface GoogleGkeHubMembershipConfig extends cdktf.TerraformMetaArgumen
   readonly project?: string;
   /**
   * authority block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_membership#authority GoogleGkeHubMembership#authority}
   */
   readonly authority?: GoogleGkeHubMembershipAuthority;
   /**
   * endpoint block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_membership#endpoint GoogleGkeHubMembership#endpoint}
   */
   readonly endpoint?: GoogleGkeHubMembershipEndpoint;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_membership#timeouts GoogleGkeHubMembership#timeouts}
   */
   readonly timeouts?: GoogleGkeHubMembershipTimeouts;
@@ -64,7 +59,7 @@ export interface GoogleGkeHubMembershipAuthority {
   /**
   * A JSON Web Token (JWT) issuer URI. 'issuer' must start with 'https://' and // be a valid
 with length <2000 characters. For example: 'https://container.googleapis.com/v1/projects/my-project/locations/us-west1/clusters/my-cluster' (must be 'locations' rather than 'zones'). If the cluster is provisioned with Terraform, this is '"https://container.googleapis.com/v1/${google_container_cluster.my-cluster.id}"'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_membership#issuer GoogleGkeHubMembership#issuer}
   */
   readonly issuer: string;
@@ -132,7 +127,7 @@ For example: '//container.googleapis.com/projects/my-project/zones/us-west1-a/cl
 It can be at the most 1000 characters in length. If the cluster is provisioned with Terraform,
 this can be '"//container.googleapis.com/${google_container_cluster.my-cluster.id}"' or
 'google_container_cluster.my-cluster.id'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_membership#resource_link GoogleGkeHubMembership#resource_link}
   */
   readonly resourceLink: string;
@@ -196,7 +191,7 @@ export class GoogleGkeHubMembershipEndpointGkeClusterOutputReference extends cdk
 export interface GoogleGkeHubMembershipEndpoint {
   /**
   * gke_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_membership#gke_cluster GoogleGkeHubMembership#gke_cluster}
   */
   readonly gkeCluster?: GoogleGkeHubMembershipEndpointGkeCluster;

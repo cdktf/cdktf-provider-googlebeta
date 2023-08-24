@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule
 // generated from terraform resource schema
 
@@ -15,19 +10,19 @@ export interface GoogleComputeOrganizationSecurityPolicyRuleConfig extends cdktf
   /**
   * The Action to perform when the client connection triggers the rule. Can currently be either
 "allow", "deny" or "goto_next".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#action GoogleComputeOrganizationSecurityPolicyRule#action}
   */
   readonly action: string;
   /**
   * A description of the rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#description GoogleComputeOrganizationSecurityPolicyRule#description}
   */
   readonly description?: string;
   /**
   * The direction in which this rule applies. If unspecified an INGRESS rule is created. Possible values: ["INGRESS", "EGRESS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#direction GoogleComputeOrganizationSecurityPolicyRule#direction}
   */
   readonly direction?: string;
@@ -35,7 +30,7 @@ export interface GoogleComputeOrganizationSecurityPolicyRuleConfig extends cdktf
   * Denotes whether to enable logging for a particular rule.
 If logging is enabled, logs will be exported to the
 configured export destination in Stackdriver.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#enable_logging GoogleComputeOrganizationSecurityPolicyRule#enable_logging}
   */
   readonly enableLogging?: boolean | cdktf.IResolvable;
@@ -48,13 +43,13 @@ configured export destination in Stackdriver.
   readonly id?: string;
   /**
   * The ID of the OrganizationSecurityPolicy this rule applies to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#policy_id GoogleComputeOrganizationSecurityPolicyRule#policy_id}
   */
   readonly policyId: string;
   /**
   * If set to true, the specified action is not enforced.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#preview GoogleComputeOrganizationSecurityPolicyRule#preview}
   */
   readonly preview?: boolean | cdktf.IResolvable;
@@ -62,7 +57,7 @@ configured export destination in Stackdriver.
   * An integer indicating the priority of a rule in the list. The priority must be a value
 between 0 and 2147483647. Rules are evaluated from highest to lowest priority where 0 is the
 highest priority and 2147483647 is the lowest prority.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#priority GoogleComputeOrganizationSecurityPolicyRule#priority}
   */
   readonly priority: number;
@@ -71,26 +66,26 @@ highest priority and 2147483647 is the lowest prority.
 This field allows you to control which network's VMs get
 this rule. If this field is left blank, all VMs
 within the organization will receive the rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#target_resources GoogleComputeOrganizationSecurityPolicyRule#target_resources}
   */
   readonly targetResources?: string[];
   /**
   * A list of service accounts indicating the sets of
 instances that are applied with this rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#target_service_accounts GoogleComputeOrganizationSecurityPolicyRule#target_service_accounts}
   */
   readonly targetServiceAccounts?: string[];
   /**
   * match block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#match GoogleComputeOrganizationSecurityPolicyRule#match}
   */
   readonly match: GoogleComputeOrganizationSecurityPolicyRuleMatch;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#timeouts GoogleComputeOrganizationSecurityPolicyRule#timeouts}
   */
   readonly timeouts?: GoogleComputeOrganizationSecurityPolicyRuleTimeouts;
@@ -102,7 +97,7 @@ type is required when creating a firewall rule.
 This value can either be one of the following well
 known protocol strings (tcp, udp, icmp, esp, ah, ipip, sctp),
 or the IP protocol number.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#ip_protocol GoogleComputeOrganizationSecurityPolicyRule#ip_protocol}
   */
   readonly ipProtocol: string;
@@ -114,7 +109,7 @@ applies to connections through any port.
 
 Example inputs include: ["22"], ["80","443"], and
 ["12345-12349"].
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#ports GoogleComputeOrganizationSecurityPolicyRule#ports}
   */
   readonly ports?: string[];
@@ -234,20 +229,20 @@ export interface GoogleComputeOrganizationSecurityPolicyRuleMatchConfig {
   /**
   * Destination IP address range in CIDR format. Required for
 EGRESS rules.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#dest_ip_ranges GoogleComputeOrganizationSecurityPolicyRule#dest_ip_ranges}
   */
   readonly destIpRanges?: string[];
   /**
   * Source IP address range in CIDR format. Required for
 INGRESS rules.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#src_ip_ranges GoogleComputeOrganizationSecurityPolicyRule#src_ip_ranges}
   */
   readonly srcIpRanges?: string[];
   /**
   * layer4_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#layer4_config GoogleComputeOrganizationSecurityPolicyRule#layer4_config}
   */
   readonly layer4Config: GoogleComputeOrganizationSecurityPolicyRuleMatchConfigLayer4Config[] | cdktf.IResolvable;
@@ -357,20 +352,20 @@ export class GoogleComputeOrganizationSecurityPolicyRuleMatchConfigOutputReferen
 export interface GoogleComputeOrganizationSecurityPolicyRuleMatch {
   /**
   * A description of the rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#description GoogleComputeOrganizationSecurityPolicyRule#description}
   */
   readonly description?: string;
   /**
   * Preconfigured versioned expression. For organization security policy rules,
 the only supported type is "FIREWALL". Default value: "FIREWALL" Possible values: ["FIREWALL"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#versioned_expr GoogleComputeOrganizationSecurityPolicyRule#versioned_expr}
   */
   readonly versionedExpr?: string;
   /**
   * config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_rule#config GoogleComputeOrganizationSecurityPolicyRule#config}
   */
   readonly config: GoogleComputeOrganizationSecurityPolicyRuleMatchConfig;

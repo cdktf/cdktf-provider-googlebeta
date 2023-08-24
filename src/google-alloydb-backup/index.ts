@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_backup
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface GoogleAlloydbBackupConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the alloydb backup.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_backup#backup_id GoogleAlloydbBackup#backup_id}
   */
   readonly backupId: string;
   /**
   * The full resource name of the backup source cluster (e.g., projects/{project}/locations/{location}/clusters/{clusterId}).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_backup#cluster_name GoogleAlloydbBackup#cluster_name}
   */
   readonly clusterName: string;
   /**
   * User-provided description of the backup.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_backup#description GoogleAlloydbBackup#description}
   */
   readonly description?: string;
@@ -39,13 +34,13 @@ export interface GoogleAlloydbBackupConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * User-defined labels for the alloydb backup.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_backup#labels GoogleAlloydbBackup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the alloydb backup should reside.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_backup#location GoogleAlloydbBackup#location}
   */
   readonly location: string;
@@ -55,13 +50,13 @@ export interface GoogleAlloydbBackupConfig extends cdktf.TerraformMetaArguments 
   readonly project?: string;
   /**
   * encryption_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_backup#encryption_config GoogleAlloydbBackup#encryption_config}
   */
   readonly encryptionConfig?: GoogleAlloydbBackupEncryptionConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_backup#timeouts GoogleAlloydbBackup#timeouts}
   */
   readonly timeouts?: GoogleAlloydbBackupTimeouts;
@@ -138,7 +133,7 @@ export class GoogleAlloydbBackupEncryptionInfoList extends cdktf.ComplexList {
 export interface GoogleAlloydbBackupEncryptionConfig {
   /**
   * The fully-qualified resource name of the KMS key. Each Cloud KMS key is regionalized and has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME].
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_backup#kms_key_name GoogleAlloydbBackup#kms_key_name}
   */
   readonly kmsKeyName?: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app
 // generated from terraform resource schema
 
@@ -16,13 +11,13 @@ export interface GoogleFirebaseWebAppConfig extends cdktf.TerraformMetaArguments
   * Set to 'ABANDON' to allow the WebApp to be untracked from terraform state
 rather than deleted upon 'terraform destroy'. This is useful becaue the WebApp may be
 serving traffic. Set to 'DELETE' to delete the WebApp. Default to 'ABANDON'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#deletion_policy GoogleFirebaseWebApp#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The user-assigned display name of the App.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#display_name GoogleFirebaseWebApp#display_name}
   */
   readonly displayName: string;
@@ -39,7 +34,7 @@ serving traffic. Set to 'DELETE' to delete the WebApp. Default to 'ABANDON'
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#timeouts GoogleFirebaseWebApp#timeouts}
   */
   readonly timeouts?: GoogleFirebaseWebAppTimeouts;

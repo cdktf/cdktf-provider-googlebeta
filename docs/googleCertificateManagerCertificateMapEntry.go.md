@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecertificatemanagercertificatemapentry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificatemapentry"
 
 googlecertificatemanagercertificatemapentry.NewGoogleCertificateManagerCertificateMapEntry(scope Construct, id *string, config GoogleCertificateManagerCertificateMapEntryConfig) GoogleCertificateManagerCertificateMapEntry
 ```
@@ -332,7 +332,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecertificatemanagercertificatemapentry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificatemapentry"
 
 googlecertificatemanagercertificatemapentry.GoogleCertificateManagerCertificateMapEntry_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecertificatemanagercertificatemapentry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificatemapentry"
 
 googlecertificatemanagercertificatemapentry.GoogleCertificateManagerCertificateMapEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ googlecertificatemanagercertificatemapentry.GoogleCertificateManagerCertificateM
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecertificatemanagercertificatemapentry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificatemapentry"
 
 googlecertificatemanagercertificatemapentry.GoogleCertificateManagerCertificateMapEntry_IsTerraformResource(x interface{}) *bool
 ```
@@ -830,7 +830,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecertificatemanagercertificatemapentry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificatemapentry"
 
 &googlecertificatemanagercertificatemapentry.GoogleCertificateManagerCertificateMapEntryConfig {
 	Connection: interface{},
@@ -849,7 +849,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecertif
 	Labels: *map[string]*string,
 	Matcher: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryTimeouts,
 }
 ```
 
@@ -866,7 +866,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecertif
 | <code><a href="#@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryConfig.property.certificates">Certificates</a></code> | <code>*[]*string</code> | A set of Certificates defines for the given hostname. |
 | <code><a href="#@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryConfig.property.map">Map</a></code> | <code>*string</code> | A map entry that is inputted into the cetrificate map. |
-| <code><a href="#@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryConfig.property.name">Name</a></code> | <code>*string</code> | A user-defined name of the Certificate Map Entry. Certificate Map Entry names must be unique globally and match pattern 'projects/*\/locations/*\/certificateMaps/*\/certificateMapEntries/*'. |
+| <code><a href="#@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryConfig.property.name">Name</a></code> | <code>*string</code> | A user-defined name of the Certificate Map Entry. |
 | <code><a href="#@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryConfig.property.description">Description</a></code> | <code>*string</code> | A human-readable description of the resource. |
 | <code><a href="#@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryConfig.property.hostname">Hostname</a></code> | <code>*string</code> | A Hostname (FQDN, e.g. example.com) or a wildcard hostname expression (*.example.com) for a set of hostnames with common suffix. Used as Server Name Indication (SNI) for selecting a proper certificate. |
 | <code><a href="#@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate_map_entry#id GoogleCertificateManagerCertificateMapEntry#id}. |
@@ -958,9 +958,11 @@ Certificates *[]*string
 A set of Certificates defines for the given hostname.
 
 There can be defined up to fifteen certificates in each Certificate Map Entry.
-Each certificate must match pattern projects/*/locations/*/certificates/*.
+Each certificate must match pattern projects/* /locations/* /certificates/*.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate_map_entry#certificates GoogleCertificateManagerCertificateMapEntry#certificates}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 
@@ -986,9 +988,15 @@ Name *string
 
 - *Type:* *string
 
-A user-defined name of the Certificate Map Entry. Certificate Map Entry names must be unique globally and match pattern 'projects/*\/locations/*\/certificateMaps/*\/certificateMapEntries/*'.
+A user-defined name of the Certificate Map Entry.
+
+Certificate Map Entry
+names must be unique globally and match pattern
+'projects/* /locations/* /certificateMaps/* /certificateMapEntries/*'
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate_map_entry#name GoogleCertificateManagerCertificateMapEntry#name}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 
@@ -1097,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecertificatemanagercertificatemapentry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificatemapentry"
 
 &googlecertificatemanagercertificatemapentry.GoogleCertificateManagerCertificateMapEntryTimeouts {
 	Create: *string,
@@ -1159,7 +1167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCertificateManagerCertificateMapEntry.GoogleCertificateManagerCertificateMapEntryTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecertificatemanagercertificatemapentry"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecertificatemanagercertificatemapentry"
 
 googlecertificatemanagercertificatemapentry.NewGoogleCertificateManagerCertificateMapEntryTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleCertificateManagerCertificateMapEntryTimeoutsOutputReference
 ```

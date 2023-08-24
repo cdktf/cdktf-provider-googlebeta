@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_access_policy
 // generated from terraform resource schema
 
@@ -22,26 +17,26 @@ export interface GoogleAccessContextManagerAccessPolicyConfig extends cdktf.Terr
   /**
   * The parent of this AccessPolicy in the Cloud Resource Hierarchy.
 Format: organizations/{organization_id}
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_access_policy#parent GoogleAccessContextManagerAccessPolicy#parent}
   */
   readonly parent: string;
   /**
   * Folder or project on which this policy is applicable.
 Format: folders/{{folder_id}} or projects/{{project_id}}
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_access_policy#scopes GoogleAccessContextManagerAccessPolicy#scopes}
   */
   readonly scopes?: string[];
   /**
   * Human readable title. Does not affect behavior.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_access_policy#title GoogleAccessContextManagerAccessPolicy#title}
   */
   readonly title: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_access_policy#timeouts GoogleAccessContextManagerAccessPolicy#timeouts}
   */
   readonly timeouts?: GoogleAccessContextManagerAccessPolicyTimeouts;

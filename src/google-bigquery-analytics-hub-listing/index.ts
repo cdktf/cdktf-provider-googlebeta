@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing
 // generated from terraform resource schema
 
@@ -14,37 +9,37 @@ import * as cdktf from 'cdktf';
 export interface GoogleBigqueryAnalyticsHubListingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Categories of the listing. Up to two categories are allowed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#categories GoogleBigqueryAnalyticsHubListing#categories}
   */
   readonly categories?: string[];
   /**
   * The ID of the data exchange. Must contain only Unicode letters, numbers (0-9), underscores (_). Should not use characters that require URL-escaping, or characters outside of ASCII, spaces.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#data_exchange_id GoogleBigqueryAnalyticsHubListing#data_exchange_id}
   */
   readonly dataExchangeId: string;
   /**
   * Short description of the listing. The description must not contain Unicode non-characters and C0 and C1 control codes except tabs (HT), new lines (LF), carriage returns (CR), and page breaks (FF).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#description GoogleBigqueryAnalyticsHubListing#description}
   */
   readonly description?: string;
   /**
   * Human-readable display name of the listing. The display name must contain only Unicode letters, numbers (0-9), underscores (_), dashes (-), spaces ( ), ampersands (&) and can't start or end with spaces.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#display_name GoogleBigqueryAnalyticsHubListing#display_name}
   */
   readonly displayName: string;
   /**
   * Documentation describing the listing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#documentation GoogleBigqueryAnalyticsHubListing#documentation}
   */
   readonly documentation?: string;
   /**
   * Base64 encoded image representing the listing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#icon GoogleBigqueryAnalyticsHubListing#icon}
   */
   readonly icon?: string;
@@ -57,19 +52,19 @@ export interface GoogleBigqueryAnalyticsHubListingConfig extends cdktf.Terraform
   readonly id?: string;
   /**
   * The ID of the listing. Must contain only Unicode letters, numbers (0-9), underscores (_). Should not use characters that require URL-escaping, or characters outside of ASCII, spaces.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#listing_id GoogleBigqueryAnalyticsHubListing#listing_id}
   */
   readonly listingId: string;
   /**
   * The name of the location this data exchange listing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#location GoogleBigqueryAnalyticsHubListing#location}
   */
   readonly location: string;
   /**
   * Email or URL of the primary point of contact of the listing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#primary_contact GoogleBigqueryAnalyticsHubListing#primary_contact}
   */
   readonly primaryContact?: string;
@@ -79,31 +74,31 @@ export interface GoogleBigqueryAnalyticsHubListingConfig extends cdktf.Terraform
   readonly project?: string;
   /**
   * Email or URL of the request access of the listing. Subscribers can use this reference to request access.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#request_access GoogleBigqueryAnalyticsHubListing#request_access}
   */
   readonly requestAccess?: string;
   /**
   * bigquery_dataset block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#bigquery_dataset GoogleBigqueryAnalyticsHubListing#bigquery_dataset}
   */
   readonly bigqueryDataset: GoogleBigqueryAnalyticsHubListingBigqueryDataset;
   /**
   * data_provider block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#data_provider GoogleBigqueryAnalyticsHubListing#data_provider}
   */
   readonly dataProvider?: GoogleBigqueryAnalyticsHubListingDataProvider;
   /**
   * publisher block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#publisher GoogleBigqueryAnalyticsHubListing#publisher}
   */
   readonly publisher?: GoogleBigqueryAnalyticsHubListingPublisher;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#timeouts GoogleBigqueryAnalyticsHubListing#timeouts}
   */
   readonly timeouts?: GoogleBigqueryAnalyticsHubListingTimeouts;
@@ -111,7 +106,7 @@ export interface GoogleBigqueryAnalyticsHubListingConfig extends cdktf.Terraform
 export interface GoogleBigqueryAnalyticsHubListingBigqueryDataset {
   /**
   * Resource name of the dataset source for this listing. e.g. projects/myproject/datasets/123
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#dataset GoogleBigqueryAnalyticsHubListing#dataset}
   */
   readonly dataset: string;
@@ -175,13 +170,13 @@ export class GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference ext
 export interface GoogleBigqueryAnalyticsHubListingDataProvider {
   /**
   * Name of the data provider.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#name GoogleBigqueryAnalyticsHubListing#name}
   */
   readonly name: string;
   /**
   * Email or URL of the data provider.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#primary_contact GoogleBigqueryAnalyticsHubListing#primary_contact}
   */
   readonly primaryContact?: string;
@@ -268,13 +263,13 @@ export class GoogleBigqueryAnalyticsHubListingDataProviderOutputReference extend
 export interface GoogleBigqueryAnalyticsHubListingPublisher {
   /**
   * Name of the listing publisher.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#name GoogleBigqueryAnalyticsHubListing#name}
   */
   readonly name: string;
   /**
   * Email or URL of the listing publisher.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_listing#primary_contact GoogleBigqueryAnalyticsHubListing#primary_contact}
   */
   readonly primaryContact?: string;

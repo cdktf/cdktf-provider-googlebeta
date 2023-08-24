@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_runtimeconfig_config
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataGoogleRuntimeconfigConfigConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * The name of the runtime config.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_runtimeconfig_config#name DataGoogleRuntimeconfigConfig#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_runtimeconfig_config#project DataGoogleRuntimeconfigConfig#project}
   */
   readonly project?: string;

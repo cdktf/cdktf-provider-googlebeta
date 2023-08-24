@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_firebase_hosting_channel
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface DataGoogleFirebaseHostingChannelConfig extends cdktf.TerraformMetaArguments {
   /**
   * Required. Immutable. A unique ID within the site that identifies the channel.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_firebase_hosting_channel#channel_id DataGoogleFirebaseHostingChannel#channel_id}
   */
   readonly channelId: string;
@@ -27,7 +22,7 @@ export interface DataGoogleFirebaseHostingChannelConfig extends cdktf.TerraformM
   readonly id?: string;
   /**
   * Required. The ID of the site in which to create this channel.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_firebase_hosting_channel#site_id DataGoogleFirebaseHostingChannel#site_id}
   */
   readonly siteId: string;

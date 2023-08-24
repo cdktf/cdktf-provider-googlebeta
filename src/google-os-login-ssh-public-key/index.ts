@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_login_ssh_public_key
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleOsLoginSshPublicKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * An expiration time in microseconds since epoch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_login_ssh_public_key#expiration_time_usec GoogleOsLoginSshPublicKey#expiration_time_usec}
   */
   readonly expirationTimeUsec?: string;
@@ -27,25 +22,25 @@ export interface GoogleOsLoginSshPublicKeyConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Public key text in SSH format, defined by RFC4253 section 6.6.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_login_ssh_public_key#key GoogleOsLoginSshPublicKey#key}
   */
   readonly key: string;
   /**
   * The project ID of the Google Cloud Platform project.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_login_ssh_public_key#project GoogleOsLoginSshPublicKey#project}
   */
   readonly project?: string;
   /**
   * The user email.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_login_ssh_public_key#user GoogleOsLoginSshPublicKey#user}
   */
   readonly user: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_login_ssh_public_key#timeouts GoogleOsLoginSshPublicKey#timeouts}
   */
   readonly timeouts?: GoogleOsLoginSshPublicKeyTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firestore_database
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleFirestoreDatabaseConfig extends cdktf.TerraformMetaArguments {
   /**
   * The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firestore_database#app_engine_integration_mode GoogleFirestoreDatabase#app_engine_integration_mode}
   */
   readonly appEngineIntegrationMode?: string;
   /**
   * The concurrency control mode to use for this database. Possible values: ["OPTIMISTIC", "PESSIMISTIC", "OPTIMISTIC_WITH_ENTITY_GROUPS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firestore_database#concurrency_mode GoogleFirestoreDatabase#concurrency_mode}
   */
   readonly concurrencyMode?: string;
@@ -34,7 +29,7 @@ export interface GoogleFirestoreDatabaseConfig extends cdktf.TerraformMetaArgume
   /**
   * The location of the database. Available databases are listed at
 https://cloud.google.com/firestore/docs/locations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firestore_database#location_id GoogleFirestoreDatabase#location_id}
   */
   readonly locationId: string;
@@ -45,7 +40,7 @@ characters. Valid characters are /[a-z][0-9]-/ with first character
 a letter and the last a letter or a number. Must not be
 UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
 "(default)" database id is also valid.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firestore_database#name GoogleFirestoreDatabase#name}
   */
   readonly name: string;
@@ -57,13 +52,13 @@ UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
   * The type of the database.
 See https://cloud.google.com/datastore/docs/firestore-or-datastore
 for information about how to choose. Possible values: ["FIRESTORE_NATIVE", "DATASTORE_MODE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firestore_database#type GoogleFirestoreDatabase#type}
   */
   readonly type: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firestore_database#timeouts GoogleFirestoreDatabase#timeouts}
   */
   readonly timeouts?: GoogleFirestoreDatabaseTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_cluster
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface GoogleVmwareengineClusterConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * The ID of the Cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_cluster#name GoogleVmwareengineCluster#name}
   */
   readonly name: string;
@@ -29,19 +24,19 @@ export interface GoogleVmwareengineClusterConfig extends cdktf.TerraformMetaArgu
   * The resource name of the private cloud to create a new cluster in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_cluster#parent GoogleVmwareengineCluster#parent}
   */
   readonly parent: string;
   /**
   * node_type_configs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_cluster#node_type_configs GoogleVmwareengineCluster#node_type_configs}
   */
   readonly nodeTypeConfigs?: GoogleVmwareengineClusterNodeTypeConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_cluster#timeouts GoogleVmwareengineCluster#timeouts}
   */
   readonly timeouts?: GoogleVmwareengineClusterTimeouts;
@@ -52,13 +47,13 @@ export interface GoogleVmwareengineClusterNodeTypeConfigs {
 This number must always be one of 'nodeType.availableCustomCoreCounts'.
 If zero is provided max value from 'nodeType.availableCustomCoreCounts' will be used.
 Once the customer is created then corecount cannot be changed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_cluster#custom_core_count GoogleVmwareengineCluster#custom_core_count}
   */
   readonly customCoreCount?: number;
   /**
   * The number of nodes of this type in the cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_cluster#node_count GoogleVmwareengineCluster#node_count}
   */
   readonly nodeCount: number;

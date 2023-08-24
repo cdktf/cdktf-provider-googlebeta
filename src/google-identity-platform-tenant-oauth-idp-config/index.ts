@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant_oauth_idp_config
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface GoogleIdentityPlatformTenantOauthIdpConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * The client id of an OAuth client.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant_oauth_idp_config#client_id GoogleIdentityPlatformTenantOauthIdpConfig#client_id}
   */
   readonly clientId: string;
   /**
   * The client secret of the OAuth client, to enable OIDC code flow.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant_oauth_idp_config#client_secret GoogleIdentityPlatformTenantOauthIdpConfig#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * Human friendly display name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant_oauth_idp_config#display_name GoogleIdentityPlatformTenantOauthIdpConfig#display_name}
   */
   readonly displayName: string;
   /**
   * If this config allows users to sign in with the provider.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant_oauth_idp_config#enabled GoogleIdentityPlatformTenantOauthIdpConfig#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -45,13 +40,13 @@ export interface GoogleIdentityPlatformTenantOauthIdpConfigConfig extends cdktf.
   readonly id?: string;
   /**
   * For OIDC Idps, the issuer identifier.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant_oauth_idp_config#issuer GoogleIdentityPlatformTenantOauthIdpConfig#issuer}
   */
   readonly issuer: string;
   /**
   * The name of the OauthIdpConfig. Must start with 'oidc.'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant_oauth_idp_config#name GoogleIdentityPlatformTenantOauthIdpConfig#name}
   */
   readonly name: string;
@@ -61,13 +56,13 @@ export interface GoogleIdentityPlatformTenantOauthIdpConfigConfig extends cdktf.
   readonly project?: string;
   /**
   * The name of the tenant where this OIDC IDP configuration resource exists
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant_oauth_idp_config#tenant GoogleIdentityPlatformTenantOauthIdpConfig#tenant}
   */
   readonly tenant: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_identity_platform_tenant_oauth_idp_config#timeouts GoogleIdentityPlatformTenantOauthIdpConfig#timeouts}
   */
   readonly timeouts?: GoogleIdentityPlatformTenantOauthIdpConfigTimeouts;

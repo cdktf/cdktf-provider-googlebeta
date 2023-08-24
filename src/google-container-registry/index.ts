@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_registry
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface GoogleContainerRegistryConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * The location of the registry. One of ASIA, EU, US or not specified. See the official documentation for more information on registry locations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_registry#location GoogleContainerRegistry#location}
   */
   readonly location?: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_registry#project GoogleContainerRegistry#project}
   */
   readonly project?: string;

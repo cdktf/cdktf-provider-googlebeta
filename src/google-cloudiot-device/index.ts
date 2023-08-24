@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleCloudiotDeviceConfig extends cdktf.TerraformMetaArguments {
   /**
   * If a device is blocked, connections or requests from this device will fail.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#blocked GoogleCloudiotDevice#blocked}
   */
   readonly blocked?: boolean | cdktf.IResolvable;
@@ -27,43 +22,43 @@ export interface GoogleCloudiotDeviceConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * The logging verbosity for device activity. Possible values: ["NONE", "ERROR", "INFO", "DEBUG"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#log_level GoogleCloudiotDevice#log_level}
   */
   readonly logLevel?: string;
   /**
   * The metadata key-value pairs assigned to the device.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#metadata GoogleCloudiotDevice#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * A unique name for the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#name GoogleCloudiotDevice#name}
   */
   readonly name: string;
   /**
   * The name of the device registry where this device should be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#registry GoogleCloudiotDevice#registry}
   */
   readonly registry: string;
   /**
   * credentials block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#credentials GoogleCloudiotDevice#credentials}
   */
   readonly credentials?: GoogleCloudiotDeviceCredentials[] | cdktf.IResolvable;
   /**
   * gateway_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#gateway_config GoogleCloudiotDevice#gateway_config}
   */
   readonly gatewayConfig?: GoogleCloudiotDeviceGatewayConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#timeouts GoogleCloudiotDevice#timeouts}
   */
   readonly timeouts?: GoogleCloudiotDeviceTimeouts;
@@ -294,13 +289,13 @@ export class GoogleCloudiotDeviceStateList extends cdktf.ComplexList {
 export interface GoogleCloudiotDeviceCredentialsPublicKey {
   /**
   * The format of the key. Possible values: ["RSA_PEM", "RSA_X509_PEM", "ES256_PEM", "ES256_X509_PEM"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#format GoogleCloudiotDevice#format}
   */
   readonly format: string;
   /**
   * The key data.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#key GoogleCloudiotDevice#key}
   */
   readonly key: string;
@@ -384,13 +379,13 @@ export class GoogleCloudiotDeviceCredentialsPublicKeyOutputReference extends cdk
 export interface GoogleCloudiotDeviceCredentials {
   /**
   * The time at which this credential becomes invalid.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#expiration_time GoogleCloudiotDevice#expiration_time}
   */
   readonly expirationTime?: string;
   /**
   * public_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#public_key GoogleCloudiotDevice#public_key}
   */
   readonly publicKey: GoogleCloudiotDeviceCredentialsPublicKey;
@@ -509,13 +504,13 @@ export class GoogleCloudiotDeviceCredentialsList extends cdktf.ComplexList {
 export interface GoogleCloudiotDeviceGatewayConfig {
   /**
   * Indicates whether the device is a gateway. Possible values: ["ASSOCIATION_ONLY", "DEVICE_AUTH_TOKEN_ONLY", "ASSOCIATION_AND_DEVICE_AUTH_TOKEN"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#gateway_auth_method GoogleCloudiotDevice#gateway_auth_method}
   */
   readonly gatewayAuthMethod?: string;
   /**
   * Indicates whether the device is a gateway. Default value: "NON_GATEWAY" Possible values: ["GATEWAY", "NON_GATEWAY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_device#gateway_type GoogleCloudiotDevice#gateway_type}
   */
   readonly gatewayType?: string;

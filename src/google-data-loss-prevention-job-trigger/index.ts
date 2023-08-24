@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleDataLossPreventionJobTriggerConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the job trigger.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#description GoogleDataLossPreventionJobTrigger#description}
   */
   readonly description?: string;
   /**
   * User set display name of the job trigger.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#display_name GoogleDataLossPreventionJobTrigger#display_name}
   */
   readonly displayName?: string;
@@ -34,13 +29,13 @@ export interface GoogleDataLossPreventionJobTriggerConfig extends cdktf.Terrafor
   /**
   * The parent of the trigger, either in the format 'projects/{{project}}'
 or 'projects/{{project}}/locations/{{location}}'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#parent GoogleDataLossPreventionJobTrigger#parent}
   */
   readonly parent: string;
   /**
   * Whether the trigger is currently active. Default value: "HEALTHY" Possible values: ["PAUSED", "HEALTHY", "CANCELLED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#status GoogleDataLossPreventionJobTrigger#status}
   */
   readonly status?: string;
@@ -48,25 +43,25 @@ or 'projects/{{project}}/locations/{{location}}'
   * The trigger id can contain uppercase and lowercase letters, numbers, and hyphens;
 that is, it must match the regular expression: [a-zA-Z\d-_]+.
 The maximum length is 100 characters. Can be empty to allow the system to generate one.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#trigger_id GoogleDataLossPreventionJobTrigger#trigger_id}
   */
   readonly triggerId?: string;
   /**
   * inspect_job block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#inspect_job GoogleDataLossPreventionJobTrigger#inspect_job}
   */
   readonly inspectJob?: GoogleDataLossPreventionJobTriggerInspectJob;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#timeouts GoogleDataLossPreventionJobTrigger#timeouts}
   */
   readonly timeouts?: GoogleDataLossPreventionJobTriggerTimeouts;
   /**
   * triggers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#triggers GoogleDataLossPreventionJobTrigger#triggers}
   */
   readonly triggers: GoogleDataLossPreventionJobTriggerTriggers[] | cdktf.IResolvable;
@@ -74,19 +69,19 @@ The maximum length is 100 characters. Can be empty to allow the system to genera
 export interface GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfig {
   /**
   * If this template is specified, it will serve as the default de-identify template.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#deidentify_template GoogleDataLossPreventionJobTrigger#deidentify_template}
   */
   readonly deidentifyTemplate?: string;
   /**
   * If this template is specified, it will serve as the de-identify template for images.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#image_redact_template GoogleDataLossPreventionJobTrigger#image_redact_template}
   */
   readonly imageRedactTemplate?: string;
   /**
   * If this template is specified, it will serve as the de-identify template for structured content such as delimited files and tables.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#structured_deidentify_template GoogleDataLossPreventionJobTrigger#structured_deidentify_template}
   */
   readonly structuredDeidentifyTemplate?: string;
@@ -199,13 +194,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyTransf
 export interface GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigTable {
   /**
   * The ID of the dataset containing this table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#dataset_id GoogleDataLossPreventionJobTrigger#dataset_id}
   */
   readonly datasetId: string;
   /**
   * The ID of the project containing this table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#project_id GoogleDataLossPreventionJobTrigger#project_id}
   */
   readonly projectId: string;
@@ -213,7 +208,7 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyTr
   * The ID of the table. The ID must contain only letters (a-z,
 A-Z), numbers (0-9), or underscores (_). The maximum length
 is 1,024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#table_id GoogleDataLossPreventionJobTrigger#table_id}
   */
   readonly tableId?: string;
@@ -320,7 +315,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyTransf
 export interface GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfig {
   /**
   * table block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#table GoogleDataLossPreventionJobTrigger#table}
   */
   readonly table: GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfigTable;
@@ -392,7 +387,7 @@ The output Cloud Storage bucket must be different from the input bucket.
 De-identified files will overwrite files in the output path.
 
 Form of: gs://bucket/folder/ or gs://bucket
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#cloud_storage_output GoogleDataLossPreventionJobTrigger#cloud_storage_output}
   */
   readonly cloudStorageOutput: string;
@@ -402,19 +397,19 @@ Form of: gs://bucket/folder/ or gs://bucket
 If empty, all supported files will be transformed. Supported types may be automatically added over time.
 
 If a file type is set in this field that isn't supported by the Deidentify action then the job will fail and will not be successfully created/started. Possible values: ["IMAGE", "TEXT_FILE", "CSV", "TSV"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#file_types_to_transform GoogleDataLossPreventionJobTrigger#file_types_to_transform}
   */
   readonly fileTypesToTransform?: string[];
   /**
   * transformation_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#transformation_config GoogleDataLossPreventionJobTrigger#transformation_config}
   */
   readonly transformationConfig?: GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationConfig;
   /**
   * transformation_details_storage_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#transformation_details_storage_config GoogleDataLossPreventionJobTrigger#transformation_details_storage_config}
   */
   readonly transformationDetailsStorageConfig?: GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyTransformationDetailsStorageConfig;
@@ -585,7 +580,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationE
 export interface GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub {
   /**
   * Cloud Pub/Sub topic to send notifications to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#topic GoogleDataLossPreventionJobTrigger#topic}
   */
   readonly topic: string;
@@ -763,20 +758,20 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdr
 export interface GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable {
   /**
   * Dataset ID of the table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#dataset_id GoogleDataLossPreventionJobTrigger#dataset_id}
   */
   readonly datasetId: string;
   /**
   * The Google Cloud Platform project ID of the project containing the table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#project_id GoogleDataLossPreventionJobTrigger#project_id}
   */
   readonly projectId: string;
   /**
   * Name of the table. If is not set a new one will be generated for you with the following format:
 'dlp_googleapis_yyyy_mm_dd_[dlp_job_id]'. Pacific timezone will be used for generating the date details.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#table_id GoogleDataLossPreventionJobTrigger#table_id}
   */
   readonly tableId?: string;
@@ -890,13 +885,13 @@ that are missing will be added. No columns in the existing table will be deleted
 If unspecified, then all available columns will be used for a new table or an (existing)
 table with no schema, and no changes will be made to an existing table that has a schema.
 Only for use with external storage. Possible values: ["BASIC_COLUMNS", "GCS_COLUMNS", "DATASTORE_COLUMNS", "BIG_QUERY_COLUMNS", "ALL_COLUMNS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#output_schema GoogleDataLossPreventionJobTrigger#output_schema}
   */
   readonly outputSchema?: string;
   /**
   * table block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#table GoogleDataLossPreventionJobTrigger#table}
   */
   readonly table: GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfigTable;
@@ -983,7 +978,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutp
 export interface GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings {
   /**
   * output_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#output_config GoogleDataLossPreventionJobTrigger#output_config}
   */
   readonly outputConfig: GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputConfig;
@@ -1047,43 +1042,43 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutp
 export interface GoogleDataLossPreventionJobTriggerInspectJobActions {
   /**
   * deidentify block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#deidentify GoogleDataLossPreventionJobTrigger#deidentify}
   */
   readonly deidentify?: GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentify;
   /**
   * job_notification_emails block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#job_notification_emails GoogleDataLossPreventionJobTrigger#job_notification_emails}
   */
   readonly jobNotificationEmails?: GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails;
   /**
   * pub_sub block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#pub_sub GoogleDataLossPreventionJobTrigger#pub_sub}
   */
   readonly pubSub?: GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub;
   /**
   * publish_findings_to_cloud_data_catalog block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#publish_findings_to_cloud_data_catalog GoogleDataLossPreventionJobTrigger#publish_findings_to_cloud_data_catalog}
   */
   readonly publishFindingsToCloudDataCatalog?: GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog;
   /**
   * publish_summary_to_cscc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#publish_summary_to_cscc GoogleDataLossPreventionJobTrigger#publish_summary_to_cscc}
   */
   readonly publishSummaryToCscc?: GoogleDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc;
   /**
   * publish_to_stackdriver block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#publish_to_stackdriver GoogleDataLossPreventionJobTrigger#publish_to_stackdriver}
   */
   readonly publishToStackdriver?: GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver;
   /**
   * save_findings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#save_findings GoogleDataLossPreventionJobTrigger#save_findings}
   */
   readonly saveFindings?: GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings;
@@ -1320,7 +1315,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobActionsList extends cdk
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath {
   /**
   * A url representing a file or path (no wildcards) in Cloud Storage. Example: 'gs://[BUCKET_NAME]/dictionary.txt'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#path GoogleDataLossPreventionJobTrigger#path}
   */
   readonly path: string;
@@ -1385,7 +1380,7 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustom
   /**
   * Words or phrases defining the dictionary. The dictionary must contain at least one
 phrase and every phrase must contain at least 2 characters that are letters or digits.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#words GoogleDataLossPreventionJobTrigger#words}
   */
   readonly words: string[];
@@ -1449,13 +1444,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionary {
   /**
   * cloud_storage_path block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#cloud_storage_path GoogleDataLossPreventionJobTrigger#cloud_storage_path}
   */
   readonly cloudStoragePath?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryCloudStoragePath;
   /**
   * word_list block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#word_list GoogleDataLossPreventionJobTrigger#word_list}
   */
   readonly wordList?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionaryWordListStruct;
@@ -1545,7 +1540,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScore {
   /**
   * The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#score GoogleDataLossPreventionJobTrigger#score}
   */
   readonly score: string;
@@ -1610,19 +1605,19 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustom
   /**
   * Name of the information type. Either a name of your choosing when creating a CustomInfoType, or one of the names
 listed at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
   /**
   * Version of the information type to use. By default, the version is set to stable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#version GoogleDataLossPreventionJobTrigger#version}
   */
   readonly version?: string;
   /**
   * sensitivity_score block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#sensitivity_score GoogleDataLossPreventionJobTrigger#sensitivity_score}
   */
   readonly sensitivityScore?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoTypeSensitivityScore;
@@ -1732,14 +1727,14 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegex {
   /**
   * The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#group_indexes GoogleDataLossPreventionJobTrigger#group_indexes}
   */
   readonly groupIndexes?: number[];
   /**
   * Pattern defining the regular expression.
 Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#pattern GoogleDataLossPreventionJobTrigger#pattern}
   */
   readonly pattern: string;
@@ -1826,7 +1821,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore {
   /**
   * The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#score GoogleDataLossPreventionJobTrigger#score}
   */
   readonly score: string;
@@ -1891,7 +1886,7 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustom
   /**
   * Resource name of the requested StoredInfoType, for example 'organizations/433245324/storedInfoTypes/432452342'
 or 'projects/project-id/storedInfoTypes/432452342'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
@@ -1998,50 +1993,50 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes {
   /**
   * If set to EXCLUSION_TYPE_EXCLUDE this infoType will not cause a finding to be returned. It still can be used for rules matching. Possible values: ["EXCLUSION_TYPE_EXCLUDE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#exclusion_type GoogleDataLossPreventionJobTrigger#exclusion_type}
   */
   readonly exclusionType?: string;
   /**
   * Likelihood to return for this CustomInfoType. This base value can be altered by a detection rule if the finding meets the criteria
 specified by the rule. Default value: "VERY_LIKELY" Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#likelihood GoogleDataLossPreventionJobTrigger#likelihood}
   */
   readonly likelihood?: string;
   /**
   * dictionary block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#dictionary GoogleDataLossPreventionJobTrigger#dictionary}
   */
   readonly dictionary?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesDictionary;
   /**
   * info_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#info_type GoogleDataLossPreventionJobTrigger#info_type}
   */
   readonly infoType: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesInfoType;
   /**
   * regex block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#regex GoogleDataLossPreventionJobTrigger#regex}
   */
   readonly regex?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesRegex;
   /**
   * sensitivity_score block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#sensitivity_score GoogleDataLossPreventionJobTrigger#sensitivity_score}
   */
   readonly sensitivityScore?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSensitivityScore;
   /**
   * stored_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#stored_type GoogleDataLossPreventionJobTrigger#stored_type}
   */
   readonly storedType?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesStoredType;
   /**
   * surrogate_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#surrogate_type GoogleDataLossPreventionJobTrigger#surrogate_type}
   */
   readonly surrogateType?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypesSurrogateType;
@@ -2298,7 +2293,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfo
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScore {
   /**
   * The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#score GoogleDataLossPreventionJobTrigger#score}
   */
   readonly score: string;
@@ -2363,19 +2358,19 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigInfoTy
   /**
   * Name of the information type. Either a name of your choosing when creating a CustomInfoType, or one of the names listed
 at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
   /**
   * Version of the information type to use. By default, the version is set to stable
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#version GoogleDataLossPreventionJobTrigger#version}
   */
   readonly version?: string;
   /**
   * sensitivity_score block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#sensitivity_score GoogleDataLossPreventionJobTrigger#sensitivity_score}
   */
   readonly sensitivityScore?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesSensitivityScore;
@@ -2517,7 +2512,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigInfoTypesL
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore {
   /**
   * The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#score GoogleDataLossPreventionJobTrigger#score}
   */
   readonly score: string;
@@ -2582,19 +2577,19 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimits
   /**
   * Name of the information type. Either a name of your choosing when creating a CustomInfoType, or one of the names listed
 at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
   /**
   * Version of the information type to use. By default, the version is set to stable
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#version GoogleDataLossPreventionJobTrigger#version}
   */
   readonly version?: string;
   /**
   * sensitivity_score block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#sensitivity_score GoogleDataLossPreventionJobTrigger#sensitivity_score}
   */
   readonly sensitivityScore?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeSensitivityScore;
@@ -2704,13 +2699,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxF
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType {
   /**
   * Max findings limit for the given infoType.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#max_findings GoogleDataLossPreventionJobTrigger#max_findings}
   */
   readonly maxFindings?: number;
   /**
   * info_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#info_type GoogleDataLossPreventionJobTrigger#info_type}
   */
   readonly infoType?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoTypeInfoType;
@@ -2832,19 +2827,19 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxF
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimits {
   /**
   * Max number of findings that will be returned for each item scanned. The maximum returned is 2000.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#max_findings_per_item GoogleDataLossPreventionJobTrigger#max_findings_per_item}
   */
   readonly maxFindingsPerItem?: number;
   /**
   * Max number of findings that will be returned per request/job. The maximum returned is 2000.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#max_findings_per_request GoogleDataLossPreventionJobTrigger#max_findings_per_request}
   */
   readonly maxFindingsPerRequest?: number;
   /**
   * max_findings_per_info_type block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#max_findings_per_info_type GoogleDataLossPreventionJobTrigger#max_findings_per_info_type}
   */
   readonly maxFindingsPerInfoType?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimitsMaxFindingsPerInfoType[] | cdktf.IResolvable;
@@ -2957,7 +2952,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimitsOutp
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScore {
   /**
   * The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#score GoogleDataLossPreventionJobTrigger#score}
   */
   readonly score: string;
@@ -3022,19 +3017,19 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSe
   /**
   * Name of the information type. Either a name of your choosing when creating a CustomInfoType, or one of the names listed
 at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
   /**
   * Version of the information type to use. By default, the version is set to stable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#version GoogleDataLossPreventionJobTrigger#version}
   */
   readonly version?: string;
   /**
   * sensitivity_score block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#sensitivity_score GoogleDataLossPreventionJobTrigger#sensitivity_score}
   */
   readonly sensitivityScore?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypesSensitivityScore;
@@ -3176,7 +3171,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInf
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath {
   /**
   * A url representing a file or path (no wildcards) in Cloud Storage. Example: 'gs://[BUCKET_NAME]/dictionary.txt'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#path GoogleDataLossPreventionJobTrigger#path}
   */
   readonly path: string;
@@ -3241,7 +3236,7 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSe
   /**
   * Words or phrases defining the dictionary. The dictionary must contain at least one
 phrase and every phrase must contain at least 2 characters that are letters or digits.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#words GoogleDataLossPreventionJobTrigger#words}
   */
   readonly words: string[];
@@ -3305,13 +3300,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary {
   /**
   * cloud_storage_path block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#cloud_storage_path GoogleDataLossPreventionJobTrigger#cloud_storage_path}
   */
   readonly cloudStoragePath?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryCloudStoragePath;
   /**
   * word_list block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#word_list GoogleDataLossPreventionJobTrigger#word_list}
   */
   readonly wordList?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionaryWordListStruct;
@@ -3402,14 +3397,14 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSe
   /**
   * The index of the submatch to extract as findings. When not specified,
 the entire match is returned. No more than 3 may be included.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#group_indexes GoogleDataLossPreventionJobTrigger#group_indexes}
   */
   readonly groupIndexes?: number[];
   /**
   * Pattern defining the regular expression. Its syntax
 (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#pattern GoogleDataLossPreventionJobTrigger#pattern}
   */
   readonly pattern?: string;
@@ -3499,13 +3494,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity {
   /**
   * Number of characters after the finding to consider. Either this or window_before must be specified
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#window_after GoogleDataLossPreventionJobTrigger#window_after}
   */
   readonly windowAfter?: number;
   /**
   * Number of characters before the finding to consider. Either this or window_after must be specified
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#window_before GoogleDataLossPreventionJobTrigger#window_before}
   */
   readonly windowBefore?: number;
@@ -3595,13 +3590,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotword {
   /**
   * hotword_regex block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#hotword_regex GoogleDataLossPreventionJobTrigger#hotword_regex}
   */
   readonly hotwordRegex?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordHotwordRegex;
   /**
   * proximity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#proximity GoogleDataLossPreventionJobTrigger#proximity}
   */
   readonly proximity?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordProximity;
@@ -3691,7 +3686,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore {
   /**
   * The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#score GoogleDataLossPreventionJobTrigger#score}
   */
   readonly score: string;
@@ -3756,19 +3751,19 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSe
   /**
   * Name of the information type. Either a name of your choosing when creating a CustomInfoType, or one of the names listed
 at https://cloud.google.com/dlp/docs/infotypes-reference when specifying a built-in type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
   /**
   * Version of the information type to use. By default, the version is set to stable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#version GoogleDataLossPreventionJobTrigger#version}
   */
   readonly version?: string;
   /**
   * sensitivity_score block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#sensitivity_score GoogleDataLossPreventionJobTrigger#sensitivity_score}
   */
   readonly sensitivityScore?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypesSensitivityScore;
@@ -3910,7 +3905,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes {
   /**
   * info_types block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#info_types GoogleDataLossPreventionJobTrigger#info_types}
   */
   readonly infoTypes: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesInfoTypes[] | cdktf.IResolvable;
@@ -3974,14 +3969,14 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleRegex {
   /**
   * The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#group_indexes GoogleDataLossPreventionJobTrigger#group_indexes}
   */
   readonly groupIndexes?: number[];
   /**
   * Pattern defining the regular expression.
 Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#pattern GoogleDataLossPreventionJobTrigger#pattern}
   */
   readonly pattern: string;
@@ -4068,31 +4063,31 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRule {
   /**
   * How the rule is applied. See the documentation for more information: https://cloud.google.com/dlp/docs/reference/rest/v2/InspectConfig#MatchingType Possible values: ["MATCHING_TYPE_FULL_MATCH", "MATCHING_TYPE_PARTIAL_MATCH", "MATCHING_TYPE_INVERSE_MATCH"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#matching_type GoogleDataLossPreventionJobTrigger#matching_type}
   */
   readonly matchingType: string;
   /**
   * dictionary block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#dictionary GoogleDataLossPreventionJobTrigger#dictionary}
   */
   readonly dictionary?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleDictionary;
   /**
   * exclude_by_hotword block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#exclude_by_hotword GoogleDataLossPreventionJobTrigger#exclude_by_hotword}
   */
   readonly excludeByHotword?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeByHotword;
   /**
   * exclude_info_types block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#exclude_info_types GoogleDataLossPreventionJobTrigger#exclude_info_types}
   */
   readonly excludeInfoTypes?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes;
   /**
   * regex block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#regex GoogleDataLossPreventionJobTrigger#regex}
   */
   readonly regex?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRuleRegex;
@@ -4249,14 +4244,14 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSe
   /**
   * The index of the submatch to extract as findings. When not specified,
 the entire match is returned. No more than 3 may be included.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#group_indexes GoogleDataLossPreventionJobTrigger#group_indexes}
   */
   readonly groupIndexes?: number[];
   /**
   * Pattern defining the regular expression. Its syntax
 (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#pattern GoogleDataLossPreventionJobTrigger#pattern}
   */
   readonly pattern?: string;
@@ -4346,7 +4341,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment {
   /**
   * Set the likelihood of a finding to a fixed value. Either this or relative_likelihood can be set. Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#fixed_likelihood GoogleDataLossPreventionJobTrigger#fixed_likelihood}
   */
   readonly fixedLikelihood?: string;
@@ -4357,7 +4352,7 @@ then it is upgraded to LIKELY, while a value of -1 would downgrade it to UNLIKEL
 Likelihood may never drop below VERY_UNLIKELY or exceed VERY_LIKELY, so applying an
 adjustment of 1 followed by an adjustment of -1 when base likelihood is VERY_LIKELY
 will result in a final likelihood of LIKELY. Either this or fixed_likelihood can be set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#relative_likelihood GoogleDataLossPreventionJobTrigger#relative_likelihood}
   */
   readonly relativeLikelihood?: number;
@@ -4447,13 +4442,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleProximity {
   /**
   * Number of characters after the finding to consider. Either this or window_before must be specified
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#window_after GoogleDataLossPreventionJobTrigger#window_after}
   */
   readonly windowAfter?: number;
   /**
   * Number of characters before the finding to consider. Either this or window_after must be specified
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#window_before GoogleDataLossPreventionJobTrigger#window_before}
   */
   readonly windowBefore?: number;
@@ -4543,19 +4538,19 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRule {
   /**
   * hotword_regex block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#hotword_regex GoogleDataLossPreventionJobTrigger#hotword_regex}
   */
   readonly hotwordRegex?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleHotwordRegex;
   /**
   * likelihood_adjustment block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#likelihood_adjustment GoogleDataLossPreventionJobTrigger#likelihood_adjustment}
   */
   readonly likelihoodAdjustment?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleLikelihoodAdjustment;
   /**
   * proximity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#proximity GoogleDataLossPreventionJobTrigger#proximity}
   */
   readonly proximity?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRuleProximity;
@@ -4668,13 +4663,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules {
   /**
   * exclusion_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#exclusion_rule GoogleDataLossPreventionJobTrigger#exclusion_rule}
   */
   readonly exclusionRule?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesExclusionRule;
   /**
   * hotword_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#hotword_rule GoogleDataLossPreventionJobTrigger#hotword_rule}
   */
   readonly hotwordRule?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRulesHotwordRule;
@@ -4796,13 +4791,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRul
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSet {
   /**
   * info_types block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#info_types GoogleDataLossPreventionJobTrigger#info_types}
   */
   readonly infoTypes?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetInfoTypes[] | cdktf.IResolvable;
   /**
   * rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#rules GoogleDataLossPreventionJobTrigger#rules}
   */
   readonly rules: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetRules[] | cdktf.IResolvable;
@@ -4921,43 +4916,43 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSetLis
 export interface GoogleDataLossPreventionJobTriggerInspectJobInspectConfig {
   /**
   * When true, excludes type information of the findings.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#exclude_info_types GoogleDataLossPreventionJobTrigger#exclude_info_types}
   */
   readonly excludeInfoTypes?: boolean | cdktf.IResolvable;
   /**
   * When true, a contextual quote from the data that triggered a finding is included in the response.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#include_quote GoogleDataLossPreventionJobTrigger#include_quote}
   */
   readonly includeQuote?: boolean | cdktf.IResolvable;
   /**
   * Only returns findings equal or above this threshold. See https://cloud.google.com/dlp/docs/likelihood for more info Default value: "POSSIBLE" Possible values: ["VERY_UNLIKELY", "UNLIKELY", "POSSIBLE", "LIKELY", "VERY_LIKELY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#min_likelihood GoogleDataLossPreventionJobTrigger#min_likelihood}
   */
   readonly minLikelihood?: string;
   /**
   * custom_info_types block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#custom_info_types GoogleDataLossPreventionJobTrigger#custom_info_types}
   */
   readonly customInfoTypes?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigCustomInfoTypes[] | cdktf.IResolvable;
   /**
   * info_types block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#info_types GoogleDataLossPreventionJobTrigger#info_types}
   */
   readonly infoTypes?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigInfoTypes[] | cdktf.IResolvable;
   /**
   * limits block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#limits GoogleDataLossPreventionJobTrigger#limits}
   */
   readonly limits?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigLimits;
   /**
   * rule_set block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#rule_set GoogleDataLossPreventionJobTrigger#rule_set}
   */
   readonly ruleSet?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfigRuleSet[] | cdktf.IResolvable;
@@ -5162,7 +5157,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobInspectConfigOutputRefe
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields {
   /**
   * Name describing the field excluded from scanning.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
@@ -5258,7 +5253,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields {
   /**
   * Name of a BigQuery field to be returned with the findings.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
@@ -5354,7 +5349,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields {
   /**
   * Name describing the field to which scanning is limited.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
@@ -5450,19 +5445,19 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference {
   /**
   * The dataset ID of the table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#dataset_id GoogleDataLossPreventionJobTrigger#dataset_id}
   */
   readonly datasetId: string;
   /**
   * The Google Cloud Platform project ID of the project containing the table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#project_id GoogleDataLossPreventionJobTrigger#project_id}
   */
   readonly projectId: string;
   /**
   * The name of the table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#table_id GoogleDataLossPreventionJobTrigger#table_id}
   */
   readonly tableId: string;
@@ -5568,7 +5563,7 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQue
   * Max number of rows to scan. If the table has more rows than this value, the rest of the rows are omitted.
 If not set, or if set to 0, all rows will be scanned. Only one of rowsLimit and rowsLimitPercent can be
 specified. Cannot be used in conjunction with TimespanConfig.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#rows_limit GoogleDataLossPreventionJobTrigger#rows_limit}
   */
   readonly rowsLimit?: number;
@@ -5576,38 +5571,38 @@ specified. Cannot be used in conjunction with TimespanConfig.
   * Max percentage of rows to scan. The rest are omitted. The number of rows scanned is rounded down.
 Must be between 0 and 100, inclusively. Both 0 and 100 means no limit. Defaults to 0. Only one of
 rowsLimit and rowsLimitPercent can be specified. Cannot be used in conjunction with TimespanConfig.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#rows_limit_percent GoogleDataLossPreventionJobTrigger#rows_limit_percent}
   */
   readonly rowsLimitPercent?: number;
   /**
   * How to sample rows if not all rows are scanned. Meaningful only when used in conjunction with either
 rowsLimit or rowsLimitPercent. If not specified, rows are scanned in the order BigQuery reads them. Default value: "TOP" Possible values: ["TOP", "RANDOM_START"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#sample_method GoogleDataLossPreventionJobTrigger#sample_method}
   */
   readonly sampleMethod?: string;
   /**
   * excluded_fields block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#excluded_fields GoogleDataLossPreventionJobTrigger#excluded_fields}
   */
   readonly excludedFields?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsExcludedFields[] | cdktf.IResolvable;
   /**
   * identifying_fields block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#identifying_fields GoogleDataLossPreventionJobTrigger#identifying_fields}
   */
   readonly identifyingFields?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFields[] | cdktf.IResolvable;
   /**
   * included_fields block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#included_fields GoogleDataLossPreventionJobTrigger#included_fields}
   */
   readonly includedFields?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIncludedFields[] | cdktf.IResolvable;
   /**
   * table_reference block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#table_reference GoogleDataLossPreventionJobTrigger#table_reference}
   */
   readonly tableReference: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference;
@@ -5809,14 +5804,14 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOp
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet {
   /**
   * The name of a Cloud Storage bucket.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#bucket_name GoogleDataLossPreventionJobTrigger#bucket_name}
   */
   readonly bucketName: string;
   /**
   * A list of regular expressions matching file paths to exclude. All files in the bucket that match at
 least one of these regular expressions will be excluded from the scan.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#exclude_regex GoogleDataLossPreventionJobTrigger#exclude_regex}
   */
   readonly excludeRegex?: string[];
@@ -5825,7 +5820,7 @@ least one of these regular expressions will be excluded from the scan.
 that match at least one of these regular expressions will be included in the set of files,
 except for those that also match an item in excludeRegex. Leaving this field empty will
 match all files by default (this is equivalent to including .* in the list)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#include_regex GoogleDataLossPreventionJobTrigger#include_regex}
   */
   readonly includeRegex?: string[];
@@ -5940,13 +5935,13 @@ in the path is allowed.
 If the url ends in a trailing slash, the bucket or directory represented by the url will be scanned
 non-recursively (content in sub-directories will not be scanned). This means that 'gs://mybucket/' is
 equivalent to 'gs://mybucket/*', and 'gs://mybucket/directory/' is equivalent to 'gs://mybucket/directory/*'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#url GoogleDataLossPreventionJobTrigger#url}
   */
   readonly url?: string;
   /**
   * regex_file_set block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#regex_file_set GoogleDataLossPreventionJobTrigger#regex_file_set}
   */
   readonly regexFileSet?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSetRegexFileSet;
@@ -6037,14 +6032,14 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudS
   /**
   * Max number of bytes to scan from a file. If a scanned file's size is bigger than this value
 then the rest of the bytes are omitted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#bytes_limit_per_file GoogleDataLossPreventionJobTrigger#bytes_limit_per_file}
   */
   readonly bytesLimitPerFile?: number;
   /**
   * Max percentage of bytes to scan from a file. The rest are omitted. The number of bytes scanned is rounded down.
 Must be between 0 and 100, inclusively. Both 0 and 100 means no limit.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#bytes_limit_per_file_percent GoogleDataLossPreventionJobTrigger#bytes_limit_per_file_percent}
   */
   readonly bytesLimitPerFilePercent?: number;
@@ -6052,27 +6047,27 @@ Must be between 0 and 100, inclusively. Both 0 and 100 means no limit.
   * List of file type groups to include in the scan. If empty, all files are scanned and available data
 format processors are applied. In addition, the binary content of the selected files is always scanned as well.
 Images are scanned only as binary if the specified region does not support image inspection and no fileTypes were specified. Possible values: ["BINARY_FILE", "TEXT_FILE", "IMAGE", "WORD", "PDF", "AVRO", "CSV", "TSV", "POWERPOINT", "EXCEL"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#file_types GoogleDataLossPreventionJobTrigger#file_types}
   */
   readonly fileTypes?: string[];
   /**
   * Limits the number of files to scan to this percentage of the input FileSet. Number of files scanned is rounded down.
 Must be between 0 and 100, inclusively. Both 0 and 100 means no limit.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#files_limit_percent GoogleDataLossPreventionJobTrigger#files_limit_percent}
   */
   readonly filesLimitPercent?: number;
   /**
   * How to sample bytes if not all bytes are scanned. Meaningful only when used in conjunction with bytesLimitPerFile.
 If not specified, scanning would start from the top. Possible values: ["TOP", "RANDOM_START"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#sample_method GoogleDataLossPreventionJobTrigger#sample_method}
   */
   readonly sampleMethod?: string;
   /**
   * file_set block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#file_set GoogleDataLossPreventionJobTrigger#file_set}
   */
   readonly fileSet: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptionsFileSet;
@@ -6251,7 +6246,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStora
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKind {
   /**
   * The name of the Datastore kind.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
@@ -6315,13 +6310,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreO
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionId {
   /**
   * If not empty, the ID of the namespace to which the entities belong.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#namespace_id GoogleDataLossPreventionJobTrigger#namespace_id}
   */
   readonly namespaceId?: string;
   /**
   * The ID of the project to which the entities belong.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#project_id GoogleDataLossPreventionJobTrigger#project_id}
   */
   readonly projectId: string;
@@ -6408,13 +6403,13 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreO
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptions {
   /**
   * kind block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#kind GoogleDataLossPreventionJobTrigger#kind}
   */
   readonly kind: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsKind;
   /**
   * partition_id block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#partition_id GoogleDataLossPreventionJobTrigger#partition_id}
   */
   readonly partitionId: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptionsPartitionId;
@@ -6498,7 +6493,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreO
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields {
   /**
   * Name describing the field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
@@ -6594,7 +6589,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOpti
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptions {
   /**
   * identifying_fields block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#identifying_fields GoogleDataLossPreventionJobTrigger#identifying_fields}
   */
   readonly identifyingFields?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptionsIdentifyingFields[] | cdktf.IResolvable;
@@ -6661,7 +6656,7 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOpti
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions {
   /**
   * A short description of where the data is coming from. Will be stored once in the job. 256 max length.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#description GoogleDataLossPreventionJobTrigger#description}
   */
   readonly description?: string;
@@ -6677,7 +6672,7 @@ No more than 10 labels can be associated with a given finding.
 Examples:
 * '"environment" : "production"'
 * '"pipeline" : "etl"'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#labels GoogleDataLossPreventionJobTrigger#labels}
   */
   readonly labels?: { [key: string]: string };
@@ -6688,13 +6683,13 @@ may contain others, but any missing one of these will be rejected.
 Label keys must be between 1 and 63 characters long and must conform to the following regular expression: '[a-z]([-a-z0-9]*[a-z0-9])?'.
 
 No more than 10 keys can be required.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#required_finding_label_keys GoogleDataLossPreventionJobTrigger#required_finding_label_keys}
   */
   readonly requiredFindingLabelKeys?: string[];
   /**
   * table_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#table_options GoogleDataLossPreventionJobTrigger#table_options}
   */
   readonly tableOptions?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptionsTableOptions;
@@ -6837,7 +6832,7 @@ field are: INTEGER, DATE, TIMESTAMP, or DATETIME BigQuery column.
 
 For Datastore. Valid data types of the timestamp field are: TIMESTAMP. Datastore entity will be scanned if the
 timestamp property does not exist or its value is empty or invalid.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#name GoogleDataLossPreventionJobTrigger#name}
   */
   readonly name: string;
@@ -6903,25 +6898,25 @@ export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimesp
   * When the job is started by a JobTrigger we will automatically figure out a valid startTime to avoid
 scanning files that have not been modified since the last time the JobTrigger executed. This will
 be based on the time of the execution of the last run of the JobTrigger.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#enable_auto_population_of_timespan_config GoogleDataLossPreventionJobTrigger#enable_auto_population_of_timespan_config}
   */
   readonly enableAutoPopulationOfTimespanConfig?: boolean | cdktf.IResolvable;
   /**
   * Exclude files or rows newer than this value. If set to zero, no upper time limit is applied.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#end_time GoogleDataLossPreventionJobTrigger#end_time}
   */
   readonly endTime?: string;
   /**
   * Exclude files or rows older than this value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#start_time GoogleDataLossPreventionJobTrigger#start_time}
   */
   readonly startTime?: string;
   /**
   * timestamp_field block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#timestamp_field GoogleDataLossPreventionJobTrigger#timestamp_field}
   */
   readonly timestampField: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigTimestampField;
@@ -7054,31 +7049,31 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanCo
 export interface GoogleDataLossPreventionJobTriggerInspectJobStorageConfig {
   /**
   * big_query_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#big_query_options GoogleDataLossPreventionJobTrigger#big_query_options}
   */
   readonly bigQueryOptions?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions;
   /**
   * cloud_storage_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#cloud_storage_options GoogleDataLossPreventionJobTrigger#cloud_storage_options}
   */
   readonly cloudStorageOptions?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigCloudStorageOptions;
   /**
   * datastore_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#datastore_options GoogleDataLossPreventionJobTrigger#datastore_options}
   */
   readonly datastoreOptions?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigDatastoreOptions;
   /**
   * hybrid_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#hybrid_options GoogleDataLossPreventionJobTrigger#hybrid_options}
   */
   readonly hybridOptions?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions;
   /**
   * timespan_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#timespan_config GoogleDataLossPreventionJobTrigger#timespan_config}
   */
   readonly timespanConfig?: GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig;
@@ -7237,25 +7232,25 @@ export class GoogleDataLossPreventionJobTriggerInspectJobStorageConfigOutputRefe
 export interface GoogleDataLossPreventionJobTriggerInspectJob {
   /**
   * The name of the template to run when this job is triggered.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#inspect_template_name GoogleDataLossPreventionJobTrigger#inspect_template_name}
   */
   readonly inspectTemplateName?: string;
   /**
   * actions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#actions GoogleDataLossPreventionJobTrigger#actions}
   */
   readonly actions?: GoogleDataLossPreventionJobTriggerInspectJobActions[] | cdktf.IResolvable;
   /**
   * inspect_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#inspect_config GoogleDataLossPreventionJobTrigger#inspect_config}
   */
   readonly inspectConfig?: GoogleDataLossPreventionJobTriggerInspectJobInspectConfig;
   /**
   * storage_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#storage_config GoogleDataLossPreventionJobTrigger#storage_config}
   */
   readonly storageConfig: GoogleDataLossPreventionJobTriggerInspectJobStorageConfig;
@@ -7561,7 +7556,7 @@ A scheduled start time will be skipped if the previous execution has not ended w
 This value must be set to a time duration greater than or equal to 1 day and can be no longer than 60 days.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#recurrence_period_duration GoogleDataLossPreventionJobTrigger#recurrence_period_duration}
   */
   readonly recurrencePeriodDuration?: string;
@@ -7628,13 +7623,13 @@ export class GoogleDataLossPreventionJobTriggerTriggersScheduleOutputReference e
 export interface GoogleDataLossPreventionJobTriggerTriggers {
   /**
   * manual block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#manual GoogleDataLossPreventionJobTrigger#manual}
   */
   readonly manual?: GoogleDataLossPreventionJobTriggerTriggersManual;
   /**
   * schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_job_trigger#schedule GoogleDataLossPreventionJobTrigger#schedule}
   */
   readonly schedule?: GoogleDataLossPreventionJobTriggerTriggersSchedule;

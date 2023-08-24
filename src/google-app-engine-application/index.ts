@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleAppEngineApplicationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The domain to authenticate users with when using App Engine's User API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application#auth_domain GoogleAppEngineApplication#auth_domain}
   */
   readonly authDomain?: string;
@@ -31,37 +26,37 @@ export interface GoogleAppEngineApplicationConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * The location to serve the app from.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application#location_id GoogleAppEngineApplication#location_id}
   */
   readonly locationId: string;
   /**
   * The project ID to create the application under.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application#project GoogleAppEngineApplication#project}
   */
   readonly project?: string;
   /**
   * The serving status of the app.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application#serving_status GoogleAppEngineApplication#serving_status}
   */
   readonly servingStatus?: string;
   /**
   * feature_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application#feature_settings GoogleAppEngineApplication#feature_settings}
   */
   readonly featureSettings?: GoogleAppEngineApplicationFeatureSettings;
   /**
   * iap block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application#iap GoogleAppEngineApplication#iap}
   */
   readonly iap?: GoogleAppEngineApplicationIap;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application#timeouts GoogleAppEngineApplication#timeouts}
   */
   readonly timeouts?: GoogleAppEngineApplicationTimeouts;
@@ -205,19 +200,19 @@ export class GoogleAppEngineApplicationFeatureSettingsOutputReference extends cd
 export interface GoogleAppEngineApplicationIap {
   /**
   * Adapted for use with the app
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application#enabled GoogleAppEngineApplication#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * OAuth2 client ID to use for the authentication flow.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application#oauth2_client_id GoogleAppEngineApplication#oauth2_client_id}
   */
   readonly oauth2ClientId: string;
   /**
   * OAuth2 client secret to use for the authentication flow. The SHA-256 hash of the value is returned in the oauth2ClientSecretSha256 field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application#oauth2_client_secret GoogleAppEngineApplication#oauth2_client_secret}
   */
   readonly oauth2ClientSecret: string;

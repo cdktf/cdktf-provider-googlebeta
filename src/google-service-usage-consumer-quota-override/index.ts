@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_usage_consumer_quota_override
 // generated from terraform resource schema
 
@@ -14,14 +9,14 @@ import * as cdktf from 'cdktf';
 export interface GoogleServiceUsageConsumerQuotaOverrideConfig extends cdktf.TerraformMetaArguments {
   /**
   * If this map is nonempty, then this override applies only to specific values for dimensions defined in the limit unit.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_usage_consumer_quota_override#dimensions GoogleServiceUsageConsumerQuotaOverride#dimensions}
   */
   readonly dimensions?: { [key: string]: string };
   /**
   * If the new quota would decrease the existing quota by more than 10%, the request is rejected.
 If 'force' is 'true', that safety check is ignored.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_usage_consumer_quota_override#force GoogleServiceUsageConsumerQuotaOverride#force}
   */
   readonly force?: boolean | cdktf.IResolvable;
@@ -37,19 +32,19 @@ If 'force' is 'true', that safety check is ignored.
 
 ~> Make sure that 'limit' is in a format that doesn't start with '1/' or contain curly braces.
 E.g. use '/project/user' instead of '1/{project}/{user}'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_usage_consumer_quota_override#limit GoogleServiceUsageConsumerQuotaOverride#limit}
   */
   readonly limit: string;
   /**
   * The metric that should be limited, e.g. 'compute.googleapis.com/cpus'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_usage_consumer_quota_override#metric GoogleServiceUsageConsumerQuotaOverride#metric}
   */
   readonly metric: string;
   /**
   * The overriding quota limit value. Can be any nonnegative integer, or -1 (unlimited quota).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_usage_consumer_quota_override#override_value GoogleServiceUsageConsumerQuotaOverride#override_value}
   */
   readonly overrideValue: string;
@@ -59,13 +54,13 @@ E.g. use '/project/user' instead of '1/{project}/{user}'.
   readonly project?: string;
   /**
   * The service that the metrics belong to, e.g. 'compute.googleapis.com'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_usage_consumer_quota_override#service GoogleServiceUsageConsumerQuotaOverride#service}
   */
   readonly service: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_usage_consumer_quota_override#timeouts GoogleServiceUsageConsumerQuotaOverride#timeouts}
   */
   readonly timeouts?: GoogleServiceUsageConsumerQuotaOverrideTimeouts;

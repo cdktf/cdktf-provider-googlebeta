@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleCloudbuildv2ConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Allows clients to store small amounts of arbitrary data.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#annotations GoogleCloudbuildv2Connection#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * If disabled is set to true, functionality is disabled for this connection. Repository based API methods and webhooks processing for repositories in this connection will be disabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#disabled GoogleCloudbuildv2Connection#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
@@ -33,43 +28,43 @@ export interface GoogleCloudbuildv2ConnectionConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * The location for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#location GoogleCloudbuildv2Connection#location}
   */
   readonly location: string;
   /**
   * Immutable. The resource name of the connection, in the format `projects/{project}/locations/{location}/connections/{connection_id}`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#name GoogleCloudbuildv2Connection#name}
   */
   readonly name: string;
   /**
   * The project for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#project GoogleCloudbuildv2Connection#project}
   */
   readonly project?: string;
   /**
   * github_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#github_config GoogleCloudbuildv2Connection#github_config}
   */
   readonly githubConfig?: GoogleCloudbuildv2ConnectionGithubConfig;
   /**
   * github_enterprise_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#github_enterprise_config GoogleCloudbuildv2Connection#github_enterprise_config}
   */
   readonly githubEnterpriseConfig?: GoogleCloudbuildv2ConnectionGithubEnterpriseConfig;
   /**
   * gitlab_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#gitlab_config GoogleCloudbuildv2Connection#gitlab_config}
   */
   readonly gitlabConfig?: GoogleCloudbuildv2ConnectionGitlabConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#timeouts GoogleCloudbuildv2Connection#timeouts}
   */
   readonly timeouts?: GoogleCloudbuildv2ConnectionTimeouts;
@@ -150,9 +145,11 @@ export class GoogleCloudbuildv2ConnectionInstallationStateList extends cdktf.Com
 }
 export interface GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredential {
   /**
-  * A SecretManager resource containing the OAuth token that authorizes the Cloud Build connection. Format: `projects/*\/secrets/*\/versions/*`.
-  * 
+  * A SecretManager resource containing the OAuth token that authorizes the Cloud Build connection. Format: `projects/* /secrets/* /versions/*`.
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#oauth_token_secret_version GoogleCloudbuildv2Connection#oauth_token_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly oauthTokenSecretVersion?: string;
 }
@@ -223,13 +220,13 @@ export class GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredentialOutputR
 export interface GoogleCloudbuildv2ConnectionGithubConfig {
   /**
   * GitHub App installation id.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#app_installation_id GoogleCloudbuildv2Connection#app_installation_id}
   */
   readonly appInstallationId?: number;
   /**
   * authorizer_credential block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#authorizer_credential GoogleCloudbuildv2Connection#authorizer_credential}
   */
   readonly authorizerCredential?: GoogleCloudbuildv2ConnectionGithubConfigAuthorizerCredential;
@@ -319,7 +316,7 @@ export class GoogleCloudbuildv2ConnectionGithubConfigOutputReference extends cdk
 export interface GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig {
   /**
   * Required. The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#service GoogleCloudbuildv2Connection#service}
   */
   readonly service: string;
@@ -383,49 +380,53 @@ export class GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryC
 export interface GoogleCloudbuildv2ConnectionGithubEnterpriseConfig {
   /**
   * Id of the GitHub App created from the manifest.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#app_id GoogleCloudbuildv2Connection#app_id}
   */
   readonly appId?: number;
   /**
   * ID of the installation of the GitHub App.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#app_installation_id GoogleCloudbuildv2Connection#app_installation_id}
   */
   readonly appInstallationId?: number;
   /**
   * The URL-friendly name of the GitHub App.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#app_slug GoogleCloudbuildv2Connection#app_slug}
   */
   readonly appSlug?: string;
   /**
   * Required. The URI of the GitHub Enterprise host this connection is for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#host_uri GoogleCloudbuildv2Connection#host_uri}
   */
   readonly hostUri: string;
   /**
-  * SecretManager resource containing the private key of the GitHub App, formatted as `projects/*\/secrets/*\/versions/*`.
-  * 
+  * SecretManager resource containing the private key of the GitHub App, formatted as `projects/* /secrets/* /versions/*`.
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#private_key_secret_version GoogleCloudbuildv2Connection#private_key_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly privateKeySecretVersion?: string;
   /**
   * SSL certificate to use for requests to GitHub Enterprise.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#ssl_ca GoogleCloudbuildv2Connection#ssl_ca}
   */
   readonly sslCa?: string;
   /**
-  * SecretManager resource containing the webhook secret of the GitHub App, formatted as `projects/*\/secrets/*\/versions/*`.
-  * 
+  * SecretManager resource containing the webhook secret of the GitHub App, formatted as `projects/* /secrets/* /versions/*`.
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#webhook_secret_secret_version GoogleCloudbuildv2Connection#webhook_secret_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly webhookSecretSecretVersion?: string;
   /**
   * service_directory_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#service_directory_config GoogleCloudbuildv2Connection#service_directory_config}
   */
   readonly serviceDirectoryConfig?: GoogleCloudbuildv2ConnectionGithubEnterpriseConfigServiceDirectoryConfig;
@@ -649,9 +650,11 @@ export class GoogleCloudbuildv2ConnectionGithubEnterpriseConfigOutputReference e
 }
 export interface GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential {
   /**
-  * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: `projects/*\/secrets/*\/versions/*`.
-  * 
+  * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: `projects/* /secrets/* /versions/*`.
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#user_token_secret_version GoogleCloudbuildv2Connection#user_token_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly userTokenSecretVersion: string;
 }
@@ -718,9 +721,11 @@ export class GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredentialOutputR
 }
 export interface GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential {
   /**
-  * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: `projects/*\/secrets/*\/versions/*`.
-  * 
+  * Required. A SecretManager resource containing the user token that authorizes the Cloud Build connection. Format: `projects/* /secrets/* /versions/*`.
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#user_token_secret_version GoogleCloudbuildv2Connection#user_token_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly userTokenSecretVersion: string;
 }
@@ -788,7 +793,7 @@ export class GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredentialOut
 export interface GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig {
   /**
   * Required. The Service Directory service name. Format: projects/{project}/locations/{location}/namespaces/{namespace}/services/{service}.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#service GoogleCloudbuildv2Connection#service}
   */
   readonly service: string;
@@ -852,37 +857,39 @@ export class GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutpu
 export interface GoogleCloudbuildv2ConnectionGitlabConfig {
   /**
   * The URI of the GitLab Enterprise host this connection is for. If not specified, the default value is https://gitlab.com.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#host_uri GoogleCloudbuildv2Connection#host_uri}
   */
   readonly hostUri?: string;
   /**
   * SSL certificate to use for requests to GitLab Enterprise.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#ssl_ca GoogleCloudbuildv2Connection#ssl_ca}
   */
   readonly sslCa?: string;
   /**
-  * Required. Immutable. SecretManager resource containing the webhook secret of a GitLab Enterprise project, formatted as `projects/*\/secrets/*\/versions/*`.
-  * 
+  * Required. Immutable. SecretManager resource containing the webhook secret of a GitLab Enterprise project, formatted as `projects/* /secrets/* /versions/*`.
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#webhook_secret_secret_version GoogleCloudbuildv2Connection#webhook_secret_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly webhookSecretSecretVersion: string;
   /**
   * authorizer_credential block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#authorizer_credential GoogleCloudbuildv2Connection#authorizer_credential}
   */
   readonly authorizerCredential: GoogleCloudbuildv2ConnectionGitlabConfigAuthorizerCredential;
   /**
   * read_authorizer_credential block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#read_authorizer_credential GoogleCloudbuildv2Connection#read_authorizer_credential}
   */
   readonly readAuthorizerCredential: GoogleCloudbuildv2ConnectionGitlabConfigReadAuthorizerCredential;
   /**
   * service_directory_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection#service_directory_config GoogleCloudbuildv2Connection#service_directory_config}
   */
   readonly serviceDirectoryConfig?: GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfig;

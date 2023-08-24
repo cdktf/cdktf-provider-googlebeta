@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment
 // generated from terraform resource schema
 
@@ -17,7 +12,7 @@ export interface GoogleComputeRegionCommitmentConfig extends cdktf.TerraformMeta
 The default value is false if not specified.
 If the field is set to true, the commitment will be automatically renewed for either
 one or three years according to the terms of the existing commitment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#auto_renew GoogleComputeRegionCommitment#auto_renew}
   */
   readonly autoRenew?: boolean | cdktf.IResolvable;
@@ -26,13 +21,13 @@ one or three years according to the terms of the existing commitment.
 machine resources such as VCPU or MEMORY, listed in resources. Category LICENSE
 specifies commitments composed of software licenses, listed in licenseResources.
 Note that only MACHINE commitments should have a Type specified. Possible values: ["LICENSE", "MACHINE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#category GoogleComputeRegionCommitment#category}
   */
   readonly category?: string;
   /**
   * An optional description of this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#description GoogleComputeRegionCommitment#description}
   */
   readonly description?: string;
@@ -49,14 +44,14 @@ the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?' which means the
 first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#name GoogleComputeRegionCommitment#name}
   */
   readonly name: string;
   /**
   * The plan for this commitment, which determines duration and discount rate.
 The currently supported plans are TWELVE_MONTH (1 year), and THIRTY_SIX_MONTH (3 years). Possible values: ["TWELVE_MONTH", "THIRTY_SIX_MONTH"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#plan GoogleComputeRegionCommitment#plan}
   */
   readonly plan: string;
@@ -66,7 +61,7 @@ The currently supported plans are TWELVE_MONTH (1 year), and THIRTY_SIX_MONTH (3
   readonly project?: string;
   /**
   * URL of the region where this commitment may be used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#region GoogleComputeRegionCommitment#region}
   */
   readonly region?: string;
@@ -76,25 +71,25 @@ The type could be one of the following value: 'MEMORY_OPTIMIZED', 'ACCELERATOR_O
 'GENERAL_PURPOSE_N1', 'GENERAL_PURPOSE_N2', 'GENERAL_PURPOSE_N2D', 'GENERAL_PURPOSE_E2',
 'GENERAL_PURPOSE_T2D', 'GENERAL_PURPOSE_C3', 'COMPUTE_OPTIMIZED_C2', 'COMPUTE_OPTIMIZED_C2D' and
 'GRAPHICS_OPTIMIZED_G2'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#type GoogleComputeRegionCommitment#type}
   */
   readonly type?: string;
   /**
   * license_resource block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#license_resource GoogleComputeRegionCommitment#license_resource}
   */
   readonly licenseResource?: GoogleComputeRegionCommitmentLicenseResource;
   /**
   * resources block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#resources GoogleComputeRegionCommitment#resources}
   */
   readonly resources?: GoogleComputeRegionCommitmentResources[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#timeouts GoogleComputeRegionCommitment#timeouts}
   */
   readonly timeouts?: GoogleComputeRegionCommitmentTimeouts;
@@ -102,19 +97,19 @@ The type could be one of the following value: 'MEMORY_OPTIMIZED', 'ACCELERATOR_O
 export interface GoogleComputeRegionCommitmentLicenseResource {
   /**
   * The number of licenses purchased.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#amount GoogleComputeRegionCommitment#amount}
   */
   readonly amount?: string;
   /**
   * Specifies the core range of the instance for which this license applies.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#cores_per_license GoogleComputeRegionCommitment#cores_per_license}
   */
   readonly coresPerLicense?: string;
   /**
   * Any applicable license URI.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#license GoogleComputeRegionCommitment#license}
   */
   readonly license: string;
@@ -224,7 +219,7 @@ export class GoogleComputeRegionCommitmentLicenseResourceOutputReference extends
 export interface GoogleComputeRegionCommitmentResources {
   /**
   * Name of the accelerator type resource. Applicable only when the type is ACCELERATOR.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#accelerator_type GoogleComputeRegionCommitment#accelerator_type}
   */
   readonly acceleratorType?: string;
@@ -233,14 +228,14 @@ export interface GoogleComputeRegionCommitmentResources {
 such as bytes). For vCPUs, this can just be an integer. For memory,
 this must be provided in MB. Memory must be a multiple of 256 MB,
 with up to 6.5GB of memory per every vCPU.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#amount GoogleComputeRegionCommitment#amount}
   */
   readonly amount?: string;
   /**
   * Type of resource for which this commitment applies.
 Possible values are VCPU, MEMORY, LOCAL_SSD, and ACCELERATOR.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment#type GoogleComputeRegionCommitment#type}
   */
   readonly type?: string;

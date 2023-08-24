@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dataset_iam_binding
 // generated from terraform resource schema
 
@@ -33,7 +28,7 @@ export interface GoogleHealthcareDatasetIamBindingConfig extends cdktf.Terraform
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dataset_iam_binding#condition GoogleHealthcareDatasetIamBinding#condition}
   */
   readonly condition?: GoogleHealthcareDatasetIamBindingCondition;

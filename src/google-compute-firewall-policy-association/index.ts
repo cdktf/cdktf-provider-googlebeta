@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall_policy_association
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeFirewallPolicyAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The target that the firewall policy is attached to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall_policy_association#attachment_target GoogleComputeFirewallPolicyAssociation#attachment_target}
   */
   readonly attachmentTarget: string;
   /**
   * The firewall policy ID of the association.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall_policy_association#firewall_policy GoogleComputeFirewallPolicyAssociation#firewall_policy}
   */
   readonly firewallPolicy: string;
@@ -33,13 +28,13 @@ export interface GoogleComputeFirewallPolicyAssociationConfig extends cdktf.Terr
   readonly id?: string;
   /**
   * The name for an association.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall_policy_association#name GoogleComputeFirewallPolicyAssociation#name}
   */
   readonly name: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_firewall_policy_association#timeouts GoogleComputeFirewallPolicyAssociation#timeouts}
   */
   readonly timeouts?: GoogleComputeFirewallPolicyAssociationTimeouts;

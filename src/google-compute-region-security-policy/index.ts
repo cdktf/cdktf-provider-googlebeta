@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeRegionSecurityPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * An optional description of this resource. Provide this property when you create the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#description GoogleComputeRegionSecurityPolicy#description}
   */
   readonly description?: string;
@@ -28,7 +23,7 @@ export interface GoogleComputeRegionSecurityPolicyConfig extends cdktf.Terraform
   /**
   * Name of the resource. Provided by the client when the resource is created. The name must be 1-63 characters long, and comply with RFC1035.
 Specifically, the name must be 1-63 characters long and match the regular expression [a-z]([-a-z0-9]*[a-z0-9])? which means the first character must be a lowercase letter, and all following characters must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#name GoogleComputeRegionSecurityPolicy#name}
   */
   readonly name: string;
@@ -39,7 +34,7 @@ Specifically, the name must be 1-63 characters long and match the regular expres
   /**
   * The Region in which the created Region Security Policy should reside.
 If it is not provided, the provider region is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#region GoogleComputeRegionSecurityPolicy#region}
   */
   readonly region?: string;
@@ -49,25 +44,25 @@ If it is not provided, the provider region is used.
 - CLOUD_ARMOR_EDGE: Cloud Armor edge security policies can be configured to filter incoming HTTP requests targeting backend services (including Cloud CDN-enabled) as well as backend buckets (Cloud Storage). They filter requests before the request is served from Google's cache.
 - CLOUD_ARMOR_NETWORK: Cloud Armor network policies can be configured to filter packets targeting network load balancing resources such as backend services, target pools, target instances, and instances with external IPs. They filter requests before the request is served from the application.
 This field can be set only at resource creation time. Possible values: ["CLOUD_ARMOR", "CLOUD_ARMOR_EDGE", "CLOUD_ARMOR_NETWORK"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#type GoogleComputeRegionSecurityPolicy#type}
   */
   readonly type?: string;
   /**
   * ddos_protection_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#ddos_protection_config GoogleComputeRegionSecurityPolicy#ddos_protection_config}
   */
   readonly ddosProtectionConfig?: GoogleComputeRegionSecurityPolicyDdosProtectionConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#timeouts GoogleComputeRegionSecurityPolicy#timeouts}
   */
   readonly timeouts?: GoogleComputeRegionSecurityPolicyTimeouts;
   /**
   * user_defined_fields block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#user_defined_fields GoogleComputeRegionSecurityPolicy#user_defined_fields}
   */
   readonly userDefinedFields?: GoogleComputeRegionSecurityPolicyUserDefinedFields[] | cdktf.IResolvable;
@@ -78,7 +73,7 @@ export interface GoogleComputeRegionSecurityPolicyDdosProtectionConfig {
 - STANDARD: basic always-on protection for network load balancers, protocol forwarding, or VMs with public IP addresses.
 - ADVANCED: additional protections for Managed Protection Plus subscribers who use network load balancers, protocol forwarding, or VMs with public IP addresses.
 - ADVANCED_PREVIEW: flag to enable the security policy in preview mode. Possible values: ["ADVANCED", "ADVANCED_PREVIEW", "STANDARD"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#ddos_protection GoogleComputeRegionSecurityPolicy#ddos_protection}
   */
   readonly ddosProtection: string;
@@ -275,7 +270,7 @@ export interface GoogleComputeRegionSecurityPolicyUserDefinedFields {
 - IPV6: Points to the beginning of the IPv6 header.
 - TCP: Points to the beginning of the TCP header, skipping over any IPv4 options or IPv6 extension headers. Not present for non-first fragments.
 - UDP: Points to the beginning of the UDP header, skipping over any IPv4 options or IPv6 extension headers. Not present for non-first fragments. Possible values: ["IPV4", "IPV6", "TCP", "UDP"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#base GoogleComputeRegionSecurityPolicy#base}
   */
   readonly base: string;
@@ -283,25 +278,25 @@ export interface GoogleComputeRegionSecurityPolicyUserDefinedFields {
   * If specified, apply this mask (bitwise AND) to the field to ignore bits before matching.
 Encoded as a hexadecimal number (starting with "0x").
 The last byte of the field (in network byte order) corresponds to the least significant byte of the mask.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#mask GoogleComputeRegionSecurityPolicy#mask}
   */
   readonly mask?: string;
   /**
   * The name of this field. Must be unique within the policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#name GoogleComputeRegionSecurityPolicy#name}
   */
   readonly name?: string;
   /**
   * Offset of the first byte of the field (in network byte order) relative to 'base'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#offset GoogleComputeRegionSecurityPolicy#offset}
   */
   readonly offset?: number;
   /**
   * Size of the field in bytes. Valid values: 1-4.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_security_policy#size GoogleComputeRegionSecurityPolicy#size}
   */
   readonly size?: number;

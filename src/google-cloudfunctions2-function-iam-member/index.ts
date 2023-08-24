@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudfunctions2_function_iam_member
 // generated from terraform resource schema
 
@@ -41,7 +36,7 @@ export interface GoogleCloudfunctions2FunctionIamMemberConfig extends cdktf.Terr
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudfunctions2_function_iam_member#condition GoogleCloudfunctions2FunctionIamMember#condition}
   */
   readonly condition?: GoogleCloudfunctions2FunctionIamMemberCondition;

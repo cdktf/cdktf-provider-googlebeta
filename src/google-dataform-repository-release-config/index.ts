@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleDataformRepositoryReleaseConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional. Optional schedule (in cron format) for automatic creation of compilation results.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#cron_schedule GoogleDataformRepositoryReleaseConfig#cron_schedule}
   */
   readonly cronSchedule?: string;
   /**
   * Git commit/tag/branch name at which the repository should be compiled. Must exist in the remote repository.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#git_commitish GoogleDataformRepositoryReleaseConfig#git_commitish}
   */
   readonly gitCommitish: string;
@@ -33,7 +28,7 @@ export interface GoogleDataformRepositoryReleaseConfigConfig extends cdktf.Terra
   readonly id?: string;
   /**
   * The release's name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#name GoogleDataformRepositoryReleaseConfig#name}
   */
   readonly name: string;
@@ -43,31 +38,31 @@ export interface GoogleDataformRepositoryReleaseConfigConfig extends cdktf.Terra
   readonly project?: string;
   /**
   * A reference to the region
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#region GoogleDataformRepositoryReleaseConfig#region}
   */
   readonly region?: string;
   /**
   * A reference to the Dataform repository
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#repository GoogleDataformRepositoryReleaseConfig#repository}
   */
   readonly repository?: string;
   /**
   * Optional. Specifies the time zone to be used when interpreting cronSchedule. Must be a time zone name from the time zone database (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones). If left unspecified, the default is UTC.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#time_zone GoogleDataformRepositoryReleaseConfig#time_zone}
   */
   readonly timeZone?: string;
   /**
   * code_compilation_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#code_compilation_config GoogleDataformRepositoryReleaseConfig#code_compilation_config}
   */
   readonly codeCompilationConfig?: GoogleDataformRepositoryReleaseConfigCodeCompilationConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#timeouts GoogleDataformRepositoryReleaseConfig#timeouts}
   */
   readonly timeouts?: GoogleDataformRepositoryReleaseConfigTimeouts;
@@ -219,44 +214,44 @@ export class GoogleDataformRepositoryReleaseConfigRecentScheduledReleaseRecordsL
 export interface GoogleDataformRepositoryReleaseConfigCodeCompilationConfig {
   /**
   * Optional. The default schema (BigQuery dataset ID) for assertions.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#assertion_schema GoogleDataformRepositoryReleaseConfig#assertion_schema}
   */
   readonly assertionSchema?: string;
   /**
   * Optional. The suffix that should be appended to all database (Google Cloud project ID) names.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#database_suffix GoogleDataformRepositoryReleaseConfig#database_suffix}
   */
   readonly databaseSuffix?: string;
   /**
   * Optional. The default database (Google Cloud project ID).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#default_database GoogleDataformRepositoryReleaseConfig#default_database}
   */
   readonly defaultDatabase?: string;
   /**
   * Optional. The default BigQuery location to use. Defaults to "US".
 See the BigQuery docs for a full list of locations: https://cloud.google.com/bigquery/docs/locations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#default_location GoogleDataformRepositoryReleaseConfig#default_location}
   */
   readonly defaultLocation?: string;
   /**
   * Optional. The default schema (BigQuery dataset ID).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#default_schema GoogleDataformRepositoryReleaseConfig#default_schema}
   */
   readonly defaultSchema?: string;
   /**
   * Optional. The suffix that should be appended to all schema (BigQuery dataset ID) names.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#schema_suffix GoogleDataformRepositoryReleaseConfig#schema_suffix}
   */
   readonly schemaSuffix?: string;
   /**
   * Optional. The prefix that should be prepended to all table names.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#table_prefix GoogleDataformRepositoryReleaseConfig#table_prefix}
   */
   readonly tablePrefix?: string;
@@ -264,7 +259,7 @@ See the BigQuery docs for a full list of locations: https://cloud.google.com/big
   * Optional. User-defined variables that are made available to project code during compilation.
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository_release_config#vars GoogleDataformRepositoryReleaseConfig#vars}
   */
   readonly vars?: { [key: string]: string };

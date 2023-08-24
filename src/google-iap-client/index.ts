@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_client
 // generated from terraform resource schema
 
@@ -16,13 +11,13 @@ export interface GoogleIapClientConfig extends cdktf.TerraformMetaArguments {
   * Identifier of the brand to which this client
 is attached to. The format is
 'projects/{project_number}/brands/{brand_id}/identityAwareProxyClients/{client_id}'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_client#brand GoogleIapClient#brand}
   */
   readonly brand: string;
   /**
   * Human-friendly name given to the OAuth client.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_client#display_name GoogleIapClient#display_name}
   */
   readonly displayName: string;
@@ -35,7 +30,7 @@ is attached to. The format is
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_client#timeouts GoogleIapClient#timeouts}
   */
   readonly timeouts?: GoogleIapClientTimeouts;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_namespace
 // generated from terraform resource schema
 
@@ -23,7 +18,7 @@ export interface GoogleServiceDirectoryNamespaceConfig extends cdktf.TerraformMe
   * Resource labels associated with this Namespace. No more than 64 user
 labels can be associated with a given resource. Label keys and values can
 be no longer than 63 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_namespace#labels GoogleServiceDirectoryNamespace#labels}
   */
   readonly labels?: { [key: string]: string };
@@ -31,14 +26,14 @@ be no longer than 63 characters.
   * The location for the Namespace.
 A full list of valid locations can be found by running
 'gcloud beta service-directory locations list'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_namespace#location GoogleServiceDirectoryNamespace#location}
   */
   readonly location: string;
   /**
   * The Resource ID must be 1-63 characters long, including digits,
 lowercase letters or the hyphen character.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_namespace#namespace_id GoogleServiceDirectoryNamespace#namespace_id}
   */
   readonly namespaceId: string;
@@ -48,7 +43,7 @@ lowercase letters or the hyphen character.
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_namespace#timeouts GoogleServiceDirectoryNamespace#timeouts}
   */
   readonly timeouts?: GoogleServiceDirectoryNamespaceTimeouts;

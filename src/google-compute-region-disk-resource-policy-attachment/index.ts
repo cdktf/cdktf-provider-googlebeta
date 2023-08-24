@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_disk_resource_policy_attachment
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeRegionDiskResourcePolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the regional disk in which the resource policies are attached to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_disk_resource_policy_attachment#disk GoogleComputeRegionDiskResourcePolicyAttachment#disk}
   */
   readonly disk: string;
@@ -28,7 +23,7 @@ export interface GoogleComputeRegionDiskResourcePolicyAttachmentConfig extends c
   /**
   * The resource policy to be attached to the disk for scheduling snapshot
 creation. Do not specify the self link.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_disk_resource_policy_attachment#name GoogleComputeRegionDiskResourcePolicyAttachment#name}
   */
   readonly name: string;
@@ -38,13 +33,13 @@ creation. Do not specify the self link.
   readonly project?: string;
   /**
   * A reference to the region where the disk resides.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_disk_resource_policy_attachment#region GoogleComputeRegionDiskResourcePolicyAttachment#region}
   */
   readonly region?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_disk_resource_policy_attachment#timeouts GoogleComputeRegionDiskResourcePolicyAttachment#timeouts}
   */
   readonly timeouts?: GoogleComputeRegionDiskResourcePolicyAttachmentTimeouts;

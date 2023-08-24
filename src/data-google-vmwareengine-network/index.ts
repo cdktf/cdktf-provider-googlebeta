@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vmwareengine_network
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataGoogleVmwareengineNetworkConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * The location where the VMwareEngineNetwork should reside.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vmwareengine_network#location DataGoogleVmwareengineNetwork#location}
   */
   readonly location: string;
   /**
   * The ID of the VMwareEngineNetwork.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vmwareengine_network#name DataGoogleVmwareengineNetwork#name}
   */
   readonly name: string;

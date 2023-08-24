@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_resource_manager_lien
 // generated from terraform resource schema
 
@@ -23,7 +18,7 @@ export interface GoogleResourceManagerLienConfig extends cdktf.TerraformMetaArgu
   * A stable, user-visible/meaningful string identifying the origin
 of the Lien, intended to be inspected programmatically. Maximum length of
 200 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_resource_manager_lien#origin GoogleResourceManagerLien#origin}
   */
   readonly origin: string;
@@ -32,14 +27,14 @@ of the Lien, intended to be inspected programmatically. Maximum length of
 The server will validate the parent against those for which Liens are supported.
 Since a variety of objects can have Liens against them, you must provide the type
 prefix (e.g. "projects/my-project-name").
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_resource_manager_lien#parent GoogleResourceManagerLien#parent}
   */
   readonly parent: string;
   /**
   * Concise user-visible strings indicating why an action cannot be performed
 on a resource. Maximum length of 200 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_resource_manager_lien#reason GoogleResourceManagerLien#reason}
   */
   readonly reason: string;
@@ -49,13 +44,13 @@ Each value should correspond to an IAM permission. The server will validate
 the permissions against those for which Liens are supported.  An empty
 list is meaningless and will be rejected.
 e.g. ['resourcemanager.projects.delete']
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_resource_manager_lien#restrictions GoogleResourceManagerLien#restrictions}
   */
   readonly restrictions: string[];
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_resource_manager_lien#timeouts GoogleResourceManagerLien#timeouts}
   */
   readonly timeouts?: GoogleResourceManagerLienTimeouts;

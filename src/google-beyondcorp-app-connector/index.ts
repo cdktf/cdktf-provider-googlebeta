@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleBeyondcorpAppConnectorConfig extends cdktf.TerraformMetaArguments {
   /**
   * An arbitrary user-provided name for the AppConnector.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector#display_name GoogleBeyondcorpAppConnector#display_name}
   */
   readonly displayName?: string;
@@ -27,13 +22,13 @@ export interface GoogleBeyondcorpAppConnectorConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * Resource labels to represent user provided metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector#labels GoogleBeyondcorpAppConnector#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * ID of the AppConnector.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector#name GoogleBeyondcorpAppConnector#name}
   */
   readonly name: string;
@@ -43,19 +38,19 @@ export interface GoogleBeyondcorpAppConnectorConfig extends cdktf.TerraformMetaA
   readonly project?: string;
   /**
   * The region of the AppConnector.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector#region GoogleBeyondcorpAppConnector#region}
   */
   readonly region?: string;
   /**
   * principal_info block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector#principal_info GoogleBeyondcorpAppConnector#principal_info}
   */
   readonly principalInfo: GoogleBeyondcorpAppConnectorPrincipalInfo;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector#timeouts GoogleBeyondcorpAppConnector#timeouts}
   */
   readonly timeouts?: GoogleBeyondcorpAppConnectorTimeouts;
@@ -63,7 +58,7 @@ export interface GoogleBeyondcorpAppConnectorConfig extends cdktf.TerraformMetaA
 export interface GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount {
   /**
   * Email address of the service account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector#email GoogleBeyondcorpAppConnector#email}
   */
   readonly email: string;
@@ -127,7 +122,7 @@ export class GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccountOutputRefere
 export interface GoogleBeyondcorpAppConnectorPrincipalInfo {
   /**
   * service_account block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector#service_account GoogleBeyondcorpAppConnector#service_account}
   */
   readonly serviceAccount: GoogleBeyondcorpAppConnectorPrincipalInfoServiceAccount;

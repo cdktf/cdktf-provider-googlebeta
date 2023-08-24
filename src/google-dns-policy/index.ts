@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleDnsPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * A textual description field. Defaults to 'Managed by Terraform'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#description GoogleDnsPolicy#description}
   */
   readonly description?: string;
@@ -23,14 +18,14 @@ export interface GoogleDnsPolicyConfig extends cdktf.TerraformMetaArguments {
 by VMs or applications over VPN connections. When enabled, a
 virtual IP address will be allocated from each of the sub-networks
 that are bound to this policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#enable_inbound_forwarding GoogleDnsPolicy#enable_inbound_forwarding}
   */
   readonly enableInboundForwarding?: boolean | cdktf.IResolvable;
   /**
   * Controls whether logging is enabled for the networks bound to this policy.
 Defaults to no logging if not set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#enable_logging GoogleDnsPolicy#enable_logging}
   */
   readonly enableLogging?: boolean | cdktf.IResolvable;
@@ -43,7 +38,7 @@ Defaults to no logging if not set.
   readonly id?: string;
   /**
   * User assigned name for this policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#name GoogleDnsPolicy#name}
   */
   readonly name: string;
@@ -53,19 +48,19 @@ Defaults to no logging if not set.
   readonly project?: string;
   /**
   * alternative_name_server_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#alternative_name_server_config GoogleDnsPolicy#alternative_name_server_config}
   */
   readonly alternativeNameServerConfig?: GoogleDnsPolicyAlternativeNameServerConfig;
   /**
   * networks block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#networks GoogleDnsPolicy#networks}
   */
   readonly networks?: GoogleDnsPolicyNetworks[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#timeouts GoogleDnsPolicy#timeouts}
   */
   readonly timeouts?: GoogleDnsPolicyTimeouts;
@@ -75,13 +70,13 @@ export interface GoogleDnsPolicyAlternativeNameServerConfigTargetNameServers {
   * Forwarding path for this TargetNameServer. If unset or 'default' Cloud DNS will make forwarding
 decision based on address ranges, i.e. RFC1918 addresses go to the VPC, Non-RFC1918 addresses go
 to the Internet. When set to 'private', Cloud DNS will always send queries through VPC for this target Possible values: ["default", "private"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#forwarding_path GoogleDnsPolicy#forwarding_path}
   */
   readonly forwardingPath?: string;
   /**
   * IPv4 address to forward to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#ipv4_address GoogleDnsPolicy#ipv4_address}
   */
   readonly ipv4Address: string;
@@ -200,7 +195,7 @@ export class GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersList ext
 export interface GoogleDnsPolicyAlternativeNameServerConfig {
   /**
   * target_name_servers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#target_name_servers GoogleDnsPolicy#target_name_servers}
   */
   readonly targetNameServers: GoogleDnsPolicyAlternativeNameServerConfigTargetNameServers[] | cdktf.IResolvable;
@@ -266,7 +261,7 @@ export interface GoogleDnsPolicyNetworks {
   * The id or fully qualified URL of the VPC network to forward queries to.
 This should be formatted like 'projects/{project}/global/networks/{network}' or
 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_policy#network_url GoogleDnsPolicy#network_url}
   */
   readonly networkUrl: string;

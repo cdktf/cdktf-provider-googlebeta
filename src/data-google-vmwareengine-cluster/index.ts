@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vmwareengine_cluster
 // generated from terraform resource schema
 
@@ -21,7 +16,7 @@ export interface DataGoogleVmwareengineClusterConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * The ID of the Cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vmwareengine_cluster#name DataGoogleVmwareengineCluster#name}
   */
   readonly name: string;
@@ -29,7 +24,7 @@ export interface DataGoogleVmwareengineClusterConfig extends cdktf.TerraformMeta
   * The resource name of the private cloud to create a new cluster in.
 Resource names are schemeless URIs that follow the conventions in https://cloud.google.com/apis/design/resource_names.
 For example: projects/my-project/locations/us-west1-a/privateClouds/my-cloud
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vmwareengine_cluster#parent DataGoogleVmwareengineCluster#parent}
   */
   readonly parent: string;

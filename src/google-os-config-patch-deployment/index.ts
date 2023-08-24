@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment
 // generated from terraform resource schema
 
@@ -14,14 +9,14 @@ import * as cdktf from 'cdktf';
 export interface GoogleOsConfigPatchDeploymentConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description of the patch deployment. Length of the description is limited to 1024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#description GoogleOsConfigPatchDeployment#description}
   */
   readonly description?: string;
   /**
   * Duration of the patch. After the duration ends, the patch times out.
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#duration GoogleOsConfigPatchDeployment#duration}
   */
   readonly duration?: string;
@@ -39,7 +34,7 @@ A duration in seconds with up to nine fractional digits, terminated by 's'. Exam
 * Must be between 1-63 characters.
 * Must end with a number or a letter.
 * Must be unique within the project.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#patch_deployment_id GoogleOsConfigPatchDeployment#patch_deployment_id}
   */
   readonly patchDeploymentId: string;
@@ -49,37 +44,37 @@ A duration in seconds with up to nine fractional digits, terminated by 's'. Exam
   readonly project?: string;
   /**
   * instance_filter block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#instance_filter GoogleOsConfigPatchDeployment#instance_filter}
   */
   readonly instanceFilter: GoogleOsConfigPatchDeploymentInstanceFilter;
   /**
   * one_time_schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#one_time_schedule GoogleOsConfigPatchDeployment#one_time_schedule}
   */
   readonly oneTimeSchedule?: GoogleOsConfigPatchDeploymentOneTimeSchedule;
   /**
   * patch_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#patch_config GoogleOsConfigPatchDeployment#patch_config}
   */
   readonly patchConfig?: GoogleOsConfigPatchDeploymentPatchConfig;
   /**
   * recurring_schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#recurring_schedule GoogleOsConfigPatchDeployment#recurring_schedule}
   */
   readonly recurringSchedule?: GoogleOsConfigPatchDeploymentRecurringSchedule;
   /**
   * rollout block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#rollout GoogleOsConfigPatchDeployment#rollout}
   */
   readonly rollout?: GoogleOsConfigPatchDeploymentRollout;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#timeouts GoogleOsConfigPatchDeployment#timeouts}
   */
   readonly timeouts?: GoogleOsConfigPatchDeploymentTimeouts;
@@ -87,7 +82,7 @@ A duration in seconds with up to nine fractional digits, terminated by 's'. Exam
 export interface GoogleOsConfigPatchDeploymentInstanceFilterGroupLabels {
   /**
   * Compute Engine instance labels that must be present for a VM instance to be targeted by this filter
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#labels GoogleOsConfigPatchDeployment#labels}
   */
   readonly labels: { [key: string]: string };
@@ -183,14 +178,14 @@ export class GoogleOsConfigPatchDeploymentInstanceFilterGroupLabelsList extends 
 export interface GoogleOsConfigPatchDeploymentInstanceFilter {
   /**
   * Target all VM instances in the project. If true, no other criteria is permitted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#all GoogleOsConfigPatchDeployment#all}
   */
   readonly all?: boolean | cdktf.IResolvable;
   /**
   * Targets VMs whose name starts with one of these prefixes. Similar to labels, this is another way to group
 VMs when targeting configs, for example prefix="prod-".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#instance_name_prefixes GoogleOsConfigPatchDeployment#instance_name_prefixes}
   */
   readonly instanceNamePrefixes?: string[];
@@ -198,19 +193,19 @@ VMs when targeting configs, for example prefix="prod-".
   * Targets any of the VM instances specified. Instances are specified by their URI in the 'form zones/{{zone}}/instances/{{instance_name}}',
 'projects/{{project_id}}/zones/{{zone}}/instances/{{instance_name}}', or
 'https://www.googleapis.com/compute/v1/projects/{{project_id}}/zones/{{zone}}/instances/{{instance_name}}'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#instances GoogleOsConfigPatchDeployment#instances}
   */
   readonly instances?: string[];
   /**
   * Targets VM instances in ANY of these zones. Leave empty to target VM instances in any zone.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#zones GoogleOsConfigPatchDeployment#zones}
   */
   readonly zones?: string[];
   /**
   * group_labels block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#group_labels GoogleOsConfigPatchDeployment#group_labels}
   */
   readonly groupLabels?: GoogleOsConfigPatchDeploymentInstanceFilterGroupLabels[] | cdktf.IResolvable;
@@ -370,7 +365,7 @@ export interface GoogleOsConfigPatchDeploymentOneTimeSchedule {
   /**
   * The desired patch job execution time. A timestamp in RFC3339 UTC "Zulu" format,
 accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#execute_time GoogleOsConfigPatchDeployment#execute_time}
   */
   readonly executeTime: string;
@@ -434,7 +429,7 @@ export class GoogleOsConfigPatchDeploymentOneTimeScheduleOutputReference extends
 export interface GoogleOsConfigPatchDeploymentPatchConfigApt {
   /**
   * List of packages to exclude from update. These packages will be excluded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#excludes GoogleOsConfigPatchDeployment#excludes}
   */
   readonly excludes?: string[];
@@ -442,13 +437,13 @@ export interface GoogleOsConfigPatchDeploymentPatchConfigApt {
   * An exclusive list of packages to be updated. These are the only packages that will be updated.
 If these packages are not installed, they will be ignored. This field cannot be specified with
 any other patch configuration fields.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#exclusive_packages GoogleOsConfigPatchDeployment#exclusive_packages}
   */
   readonly exclusivePackages?: string[];
   /**
   * By changing the type to DIST, the patching is performed using apt-get dist-upgrade instead. Possible values: ["DIST", "UPGRADE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#type GoogleOsConfigPatchDeployment#type}
   */
   readonly type?: string;
@@ -561,7 +556,7 @@ export class GoogleOsConfigPatchDeploymentPatchConfigAptOutputReference extends 
 export interface GoogleOsConfigPatchDeploymentPatchConfigGoo {
   /**
   * goo update settings. Use this setting to override the default goo patch rules.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#enabled GoogleOsConfigPatchDeployment#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
@@ -625,19 +620,19 @@ export class GoogleOsConfigPatchDeploymentPatchConfigGooOutputReference extends 
 export interface GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject {
   /**
   * Bucket of the Cloud Storage object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#bucket GoogleOsConfigPatchDeployment#bucket}
   */
   readonly bucket: string;
   /**
   * Generation number of the Cloud Storage object. This is used to ensure that the ExecStep specified by this PatchJob does not change.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#generation_number GoogleOsConfigPatchDeployment#generation_number}
   */
   readonly generationNumber: string;
   /**
   * Name of the Cloud Storage object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#object GoogleOsConfigPatchDeployment#object}
   */
   readonly object: string;
@@ -741,26 +736,26 @@ export class GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig
 export interface GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig {
   /**
   * Defaults to [0]. A list of possible return values that the execution can return to indicate a success.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#allowed_success_codes GoogleOsConfigPatchDeployment#allowed_success_codes}
   */
   readonly allowedSuccessCodes?: number[];
   /**
   * The script interpreter to use to run the script. If no interpreter is specified the script will
 be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#interpreter GoogleOsConfigPatchDeployment#interpreter}
   */
   readonly interpreter?: string;
   /**
   * An absolute path to the executable on the VM.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#local_path GoogleOsConfigPatchDeployment#local_path}
   */
   readonly localPath?: string;
   /**
   * gcs_object block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#gcs_object GoogleOsConfigPatchDeployment#gcs_object}
   */
   readonly gcsObject?: GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfigGcsObject;
@@ -896,19 +891,19 @@ export class GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig
 export interface GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject {
   /**
   * Bucket of the Cloud Storage object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#bucket GoogleOsConfigPatchDeployment#bucket}
   */
   readonly bucket: string;
   /**
   * Generation number of the Cloud Storage object. This is used to ensure that the ExecStep specified by this PatchJob does not change.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#generation_number GoogleOsConfigPatchDeployment#generation_number}
   */
   readonly generationNumber: string;
   /**
   * Name of the Cloud Storage object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#object GoogleOsConfigPatchDeployment#object}
   */
   readonly object: string;
@@ -1012,26 +1007,26 @@ export class GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConf
 export interface GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig {
   /**
   * Defaults to [0]. A list of possible return values that the execution can return to indicate a success.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#allowed_success_codes GoogleOsConfigPatchDeployment#allowed_success_codes}
   */
   readonly allowedSuccessCodes?: number[];
   /**
   * The script interpreter to use to run the script. If no interpreter is specified the script will
 be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#interpreter GoogleOsConfigPatchDeployment#interpreter}
   */
   readonly interpreter?: string;
   /**
   * An absolute path to the executable on the VM.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#local_path GoogleOsConfigPatchDeployment#local_path}
   */
   readonly localPath?: string;
   /**
   * gcs_object block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#gcs_object GoogleOsConfigPatchDeployment#gcs_object}
   */
   readonly gcsObject?: GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfigGcsObject;
@@ -1167,13 +1162,13 @@ export class GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConf
 export interface GoogleOsConfigPatchDeploymentPatchConfigPostStep {
   /**
   * linux_exec_step_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#linux_exec_step_config GoogleOsConfigPatchDeployment#linux_exec_step_config}
   */
   readonly linuxExecStepConfig?: GoogleOsConfigPatchDeploymentPatchConfigPostStepLinuxExecStepConfig;
   /**
   * windows_exec_step_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#windows_exec_step_config GoogleOsConfigPatchDeployment#windows_exec_step_config}
   */
   readonly windowsExecStepConfig?: GoogleOsConfigPatchDeploymentPatchConfigPostStepWindowsExecStepConfig;
@@ -1263,19 +1258,19 @@ export class GoogleOsConfigPatchDeploymentPatchConfigPostStepOutputReference ext
 export interface GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject {
   /**
   * Bucket of the Cloud Storage object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#bucket GoogleOsConfigPatchDeployment#bucket}
   */
   readonly bucket: string;
   /**
   * Generation number of the Cloud Storage object. This is used to ensure that the ExecStep specified by this PatchJob does not change.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#generation_number GoogleOsConfigPatchDeployment#generation_number}
   */
   readonly generationNumber: string;
   /**
   * Name of the Cloud Storage object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#object GoogleOsConfigPatchDeployment#object}
   */
   readonly object: string;
@@ -1379,26 +1374,26 @@ export class GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigG
 export interface GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig {
   /**
   * Defaults to [0]. A list of possible return values that the execution can return to indicate a success.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#allowed_success_codes GoogleOsConfigPatchDeployment#allowed_success_codes}
   */
   readonly allowedSuccessCodes?: number[];
   /**
   * The script interpreter to use to run the script. If no interpreter is specified the script will
 be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#interpreter GoogleOsConfigPatchDeployment#interpreter}
   */
   readonly interpreter?: string;
   /**
   * An absolute path to the executable on the VM.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#local_path GoogleOsConfigPatchDeployment#local_path}
   */
   readonly localPath?: string;
   /**
   * gcs_object block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#gcs_object GoogleOsConfigPatchDeployment#gcs_object}
   */
   readonly gcsObject?: GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject;
@@ -1534,19 +1529,19 @@ export class GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigO
 export interface GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject {
   /**
   * Bucket of the Cloud Storage object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#bucket GoogleOsConfigPatchDeployment#bucket}
   */
   readonly bucket: string;
   /**
   * Generation number of the Cloud Storage object. This is used to ensure that the ExecStep specified by this PatchJob does not change.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#generation_number GoogleOsConfigPatchDeployment#generation_number}
   */
   readonly generationNumber: string;
   /**
   * Name of the Cloud Storage object.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#object GoogleOsConfigPatchDeployment#object}
   */
   readonly object: string;
@@ -1650,26 +1645,26 @@ export class GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfi
 export interface GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig {
   /**
   * Defaults to [0]. A list of possible return values that the execution can return to indicate a success.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#allowed_success_codes GoogleOsConfigPatchDeployment#allowed_success_codes}
   */
   readonly allowedSuccessCodes?: number[];
   /**
   * The script interpreter to use to run the script. If no interpreter is specified the script will
 be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: ["SHELL", "POWERSHELL"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#interpreter GoogleOsConfigPatchDeployment#interpreter}
   */
   readonly interpreter?: string;
   /**
   * An absolute path to the executable on the VM.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#local_path GoogleOsConfigPatchDeployment#local_path}
   */
   readonly localPath?: string;
   /**
   * gcs_object block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#gcs_object GoogleOsConfigPatchDeployment#gcs_object}
   */
   readonly gcsObject?: GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigGcsObject;
@@ -1805,13 +1800,13 @@ export class GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfi
 export interface GoogleOsConfigPatchDeploymentPatchConfigPreStep {
   /**
   * linux_exec_step_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#linux_exec_step_config GoogleOsConfigPatchDeployment#linux_exec_step_config}
   */
   readonly linuxExecStepConfig?: GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfig;
   /**
   * windows_exec_step_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#windows_exec_step_config GoogleOsConfigPatchDeployment#windows_exec_step_config}
   */
   readonly windowsExecStepConfig?: GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfig;
@@ -1901,20 +1896,20 @@ export class GoogleOsConfigPatchDeploymentPatchConfigPreStepOutputReference exte
 export interface GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdate {
   /**
   * Only apply updates of these windows update classifications. If empty, all updates are applied. Possible values: ["CRITICAL", "SECURITY", "DEFINITION", "DRIVER", "FEATURE_PACK", "SERVICE_PACK", "TOOL", "UPDATE_ROLLUP", "UPDATE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#classifications GoogleOsConfigPatchDeployment#classifications}
   */
   readonly classifications?: string[];
   /**
   * List of KBs to exclude from update.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#excludes GoogleOsConfigPatchDeployment#excludes}
   */
   readonly excludes?: string[];
   /**
   * An exclusive list of kbs to be updated. These are the only patches that will be updated.
 This field must not be used with other patch configurations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#exclusive_patches GoogleOsConfigPatchDeployment#exclusive_patches}
   */
   readonly exclusivePatches?: string[];
@@ -2027,7 +2022,7 @@ export class GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReferenc
 export interface GoogleOsConfigPatchDeploymentPatchConfigYum {
   /**
   * List of packages to exclude from update. These packages will be excluded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#excludes GoogleOsConfigPatchDeployment#excludes}
   */
   readonly excludes?: string[];
@@ -2035,19 +2030,19 @@ export interface GoogleOsConfigPatchDeploymentPatchConfigYum {
   * An exclusive list of packages to be updated. These are the only packages that will be updated.
 If these packages are not installed, they will be ignored. This field cannot be specified with
 any other patch configuration fields.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#exclusive_packages GoogleOsConfigPatchDeployment#exclusive_packages}
   */
   readonly exclusivePackages?: string[];
   /**
   * Will cause patch to run yum update-minimal instead.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#minimal GoogleOsConfigPatchDeployment#minimal}
   */
   readonly minimal?: boolean | cdktf.IResolvable;
   /**
   * Adds the --security flag to yum update. Not supported on all platforms.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#security GoogleOsConfigPatchDeployment#security}
   */
   readonly security?: boolean | cdktf.IResolvable;
@@ -2183,38 +2178,38 @@ export class GoogleOsConfigPatchDeploymentPatchConfigYumOutputReference extends 
 export interface GoogleOsConfigPatchDeploymentPatchConfigZypper {
   /**
   * Install only patches with these categories. Common categories include security, recommended, and feature.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#categories GoogleOsConfigPatchDeployment#categories}
   */
   readonly categories?: string[];
   /**
   * List of packages to exclude from update.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#excludes GoogleOsConfigPatchDeployment#excludes}
   */
   readonly excludes?: string[];
   /**
   * An exclusive list of patches to be updated. These are the only patches that will be installed using 'zypper patch patch:' command.
 This field must not be used with any other patch configuration fields.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#exclusive_patches GoogleOsConfigPatchDeployment#exclusive_patches}
   */
   readonly exclusivePatches?: string[];
   /**
   * Install only patches with these severities. Common severities include critical, important, moderate, and low.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#severities GoogleOsConfigPatchDeployment#severities}
   */
   readonly severities?: string[];
   /**
   * Adds the --with-optional flag to zypper patch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#with_optional GoogleOsConfigPatchDeployment#with_optional}
   */
   readonly withOptional?: boolean | cdktf.IResolvable;
   /**
   * Adds the --with-update flag, to zypper patch.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#with_update GoogleOsConfigPatchDeployment#with_update}
   */
   readonly withUpdate?: boolean | cdktf.IResolvable;
@@ -2396,55 +2391,55 @@ export class GoogleOsConfigPatchDeploymentPatchConfigZypperOutputReference exten
 export interface GoogleOsConfigPatchDeploymentPatchConfig {
   /**
   * Allows the patch job to run on Managed instance groups (MIGs).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#mig_instances_allowed GoogleOsConfigPatchDeployment#mig_instances_allowed}
   */
   readonly migInstancesAllowed?: boolean | cdktf.IResolvable;
   /**
   * Post-patch reboot settings. Possible values: ["DEFAULT", "ALWAYS", "NEVER"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#reboot_config GoogleOsConfigPatchDeployment#reboot_config}
   */
   readonly rebootConfig?: string;
   /**
   * apt block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#apt GoogleOsConfigPatchDeployment#apt}
   */
   readonly apt?: GoogleOsConfigPatchDeploymentPatchConfigApt;
   /**
   * goo block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#goo GoogleOsConfigPatchDeployment#goo}
   */
   readonly goo?: GoogleOsConfigPatchDeploymentPatchConfigGoo;
   /**
   * post_step block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#post_step GoogleOsConfigPatchDeployment#post_step}
   */
   readonly postStep?: GoogleOsConfigPatchDeploymentPatchConfigPostStep;
   /**
   * pre_step block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#pre_step GoogleOsConfigPatchDeployment#pre_step}
   */
   readonly preStep?: GoogleOsConfigPatchDeploymentPatchConfigPreStep;
   /**
   * windows_update block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#windows_update GoogleOsConfigPatchDeployment#windows_update}
   */
   readonly windowsUpdate?: GoogleOsConfigPatchDeploymentPatchConfigWindowsUpdate;
   /**
   * yum block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#yum GoogleOsConfigPatchDeployment#yum}
   */
   readonly yum?: GoogleOsConfigPatchDeploymentPatchConfigYum;
   /**
   * zypper block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#zypper GoogleOsConfigPatchDeployment#zypper}
   */
   readonly zypper?: GoogleOsConfigPatchDeploymentPatchConfigZypper;
@@ -2695,13 +2690,13 @@ export class GoogleOsConfigPatchDeploymentPatchConfigOutputReference extends cdk
 export interface GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth {
   /**
   * A day of the week. Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#day_of_week GoogleOsConfigPatchDeployment#day_of_week}
   */
   readonly dayOfWeek: string;
   /**
   * Week number in a month. 1-4 indicates the 1st to 4th week of the month. -1 indicates the last week of the month.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#week_ordinal GoogleOsConfigPatchDeployment#week_ordinal}
   */
   readonly weekOrdinal: number;
@@ -2787,13 +2782,13 @@ export interface GoogleOsConfigPatchDeploymentRecurringScheduleMonthly {
   * One day of the month. 1-31 indicates the 1st to the 31st day. -1 indicates the last day of the month.
 Months without the target day will be skipped. For example, a schedule to run "every month on the 31st"
 will not run in February, April, June, etc.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#month_day GoogleOsConfigPatchDeployment#month_day}
   */
   readonly monthDay?: number;
   /**
   * week_day_of_month block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#week_day_of_month GoogleOsConfigPatchDeployment#week_day_of_month}
   */
   readonly weekDayOfMonth?: GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonth;
@@ -2884,25 +2879,25 @@ export interface GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDay {
   /**
   * Hours of day in 24 hour format. Should be from 0 to 23.
 An API may choose to allow the value "24:00:00" for scenarios like business closing time.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#hours GoogleOsConfigPatchDeployment#hours}
   */
   readonly hours?: number;
   /**
   * Minutes of hour of day. Must be from 0 to 59.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#minutes GoogleOsConfigPatchDeployment#minutes}
   */
   readonly minutes?: number;
   /**
   * Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#nanos GoogleOsConfigPatchDeployment#nanos}
   */
   readonly nanos?: number;
   /**
   * Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#seconds GoogleOsConfigPatchDeployment#seconds}
   */
   readonly seconds?: number;
@@ -3038,7 +3033,7 @@ export class GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDayOutputRefere
 export interface GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone {
   /**
   * IANA Time Zone Database time zone, e.g. "America/New_York".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#id GoogleOsConfigPatchDeployment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -3047,7 +3042,7 @@ export interface GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone {
   readonly id: string;
   /**
   * IANA Time Zone Database version number, e.g. "2019a".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#version GoogleOsConfigPatchDeployment#version}
   */
   readonly version?: string;
@@ -3134,7 +3129,7 @@ export class GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReferen
 export interface GoogleOsConfigPatchDeploymentRecurringScheduleWeekly {
   /**
   * IANA Time Zone Database time zone, e.g. "America/New_York". Possible values: ["MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY", "SUNDAY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#day_of_week GoogleOsConfigPatchDeployment#day_of_week}
   */
   readonly dayOfWeek: string;
@@ -3199,38 +3194,38 @@ export interface GoogleOsConfigPatchDeploymentRecurringSchedule {
   /**
   * The end time at which a recurring patch deployment schedule is no longer active.
 A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#end_time GoogleOsConfigPatchDeployment#end_time}
   */
   readonly endTime?: string;
   /**
   * The time that the recurring schedule becomes effective. Defaults to createTime of the patch deployment.
 A timestamp in RFC3339 UTC "Zulu" format, accurate to nanoseconds. Example: "2014-10-02T15:01:23.045123456Z".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#start_time GoogleOsConfigPatchDeployment#start_time}
   */
   readonly startTime?: string;
   /**
   * monthly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#monthly GoogleOsConfigPatchDeployment#monthly}
   */
   readonly monthly?: GoogleOsConfigPatchDeploymentRecurringScheduleMonthly;
   /**
   * time_of_day block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#time_of_day GoogleOsConfigPatchDeployment#time_of_day}
   */
   readonly timeOfDay: GoogleOsConfigPatchDeploymentRecurringScheduleTimeOfDay;
   /**
   * time_zone block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#time_zone GoogleOsConfigPatchDeployment#time_zone}
   */
   readonly timeZone: GoogleOsConfigPatchDeploymentRecurringScheduleTimeZone;
   /**
   * weekly block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#weekly GoogleOsConfigPatchDeployment#weekly}
   */
   readonly weekly?: GoogleOsConfigPatchDeploymentRecurringScheduleWeekly;
@@ -3416,13 +3411,13 @@ export class GoogleOsConfigPatchDeploymentRecurringScheduleOutputReference exten
 export interface GoogleOsConfigPatchDeploymentRolloutDisruptionBudget {
   /**
   * Specifies a fixed value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#fixed GoogleOsConfigPatchDeployment#fixed}
   */
   readonly fixed?: number;
   /**
   * Specifies the relative value defined as a percentage, which will be multiplied by a reference value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#percentage GoogleOsConfigPatchDeployment#percentage}
   */
   readonly percentage?: number;
@@ -3512,13 +3507,13 @@ export class GoogleOsConfigPatchDeploymentRolloutDisruptionBudgetOutputReference
 export interface GoogleOsConfigPatchDeploymentRollout {
   /**
   * Mode of the patch rollout. Possible values: ["ZONE_BY_ZONE", "CONCURRENT_ZONES"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#mode GoogleOsConfigPatchDeployment#mode}
   */
   readonly mode: string;
   /**
   * disruption_budget block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#disruption_budget GoogleOsConfigPatchDeployment#disruption_budget}
   */
   readonly disruptionBudget: GoogleOsConfigPatchDeploymentRolloutDisruptionBudget;

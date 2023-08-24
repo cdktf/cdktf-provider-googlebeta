@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_transfer_agent_pool
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleStorageTransferAgentPoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Specifies the client-specified AgentPool description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_transfer_agent_pool#display_name GoogleStorageTransferAgentPool#display_name}
   */
   readonly displayName?: string;
@@ -36,7 +31,7 @@ The agentPoolId must meet the following requirements:
   * One or more numerals or lowercase ASCII characters.
 
 As expressed by the regular expression: ^(?!goog)[a-z]([a-z0-9-._~]*[a-z0-9])?$.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_transfer_agent_pool#name GoogleStorageTransferAgentPool#name}
   */
   readonly name: string;
@@ -46,13 +41,13 @@ As expressed by the regular expression: ^(?!goog)[a-z]([a-z0-9-._~]*[a-z0-9])?$.
   readonly project?: string;
   /**
   * bandwidth_limit block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_transfer_agent_pool#bandwidth_limit GoogleStorageTransferAgentPool#bandwidth_limit}
   */
   readonly bandwidthLimit?: GoogleStorageTransferAgentPoolBandwidthLimit;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_transfer_agent_pool#timeouts GoogleStorageTransferAgentPool#timeouts}
   */
   readonly timeouts?: GoogleStorageTransferAgentPoolTimeouts;
@@ -60,7 +55,7 @@ As expressed by the regular expression: ^(?!goog)[a-z]([a-z0-9-._~]*[a-z0-9])?$.
 export interface GoogleStorageTransferAgentPoolBandwidthLimit {
   /**
   * Bandwidth rate in megabytes per second, distributed across all the agents in the pool.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_transfer_agent_pool#limit_mbps GoogleStorageTransferAgentPool#limit_mbps}
   */
   readonly limitMbps: string;

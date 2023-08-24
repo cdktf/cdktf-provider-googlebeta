@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeOrganizationSecurityPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * A textual description for the organization security policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy#description GoogleComputeOrganizationSecurityPolicy#description}
   */
   readonly description?: string;
   /**
   * A textual name of the security policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy#display_name GoogleComputeOrganizationSecurityPolicy#display_name}
   */
   readonly displayName: string;
@@ -34,7 +29,7 @@ export interface GoogleComputeOrganizationSecurityPolicyConfig extends cdktf.Ter
   /**
   * The parent of this OrganizationSecurityPolicy in the Cloud Resource Hierarchy.
 Format: organizations/{organization_id} or folders/{folder_id}
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy#parent GoogleComputeOrganizationSecurityPolicy#parent}
   */
   readonly parent: string;
@@ -42,13 +37,13 @@ Format: organizations/{organization_id} or folders/{folder_id}
   * The type indicates the intended use of the security policy.
 For organization security policies, the only supported type
 is "FIREWALL". Default value: "FIREWALL" Possible values: ["FIREWALL"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy#type GoogleComputeOrganizationSecurityPolicy#type}
   */
   readonly type?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy#timeouts GoogleComputeOrganizationSecurityPolicy#timeouts}
   */
   readonly timeouts?: GoogleComputeOrganizationSecurityPolicyTimeouts;
