@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 googleapigeekeystoresaliasespkcs12.NewGoogleApigeeKeystoresAliasesPkcs12(scope Construct, id *string, config GoogleApigeeKeystoresAliasesPkcs12Config) GoogleApigeeKeystoresAliasesPkcs12
 ```
@@ -304,7 +304,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 googleapigeekeystoresaliasespkcs12.GoogleApigeeKeystoresAliasesPkcs12_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 googleapigeekeystoresaliasespkcs12.GoogleApigeeKeystoresAliasesPkcs12_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ googleapigeekeystoresaliasespkcs12.GoogleApigeeKeystoresAliasesPkcs12_IsTerrafor
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 googleapigeekeystoresaliasespkcs12.GoogleApigeeKeystoresAliasesPkcs12_IsTerraformResource(x interface{}) *bool
 ```
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 &googleapigeekeystoresaliasespkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfo {
 
@@ -782,7 +782,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekey
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 &googleapigeekeystoresaliasespkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfo {
 
@@ -795,7 +795,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekey
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 &googleapigeekeystoresaliasespkcs12.GoogleApigeeKeystoresAliasesPkcs12Config {
 	Connection: interface{},
@@ -813,7 +813,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekey
 	OrgId: *string,
 	Id: *string,
 	Password: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12Timeouts,
 }
 ```
 
@@ -1042,7 +1042,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 &googleapigeekeystoresaliasespkcs12.GoogleApigeeKeystoresAliasesPkcs12Timeouts {
 	Create: *string,
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 googleapigeekeystoresaliasespkcs12.NewGoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoList
 ```
@@ -1222,7 +1222,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 googleapigeekeystoresaliasespkcs12.NewGoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference
 ```
@@ -1610,7 +1610,7 @@ func InternalValue() GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 googleapigeekeystoresaliasespkcs12.NewGoogleApigeeKeystoresAliasesPkcs12CertsInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleApigeeKeystoresAliasesPkcs12CertsInfoList
 ```
@@ -1742,7 +1742,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 googleapigeekeystoresaliasespkcs12.NewGoogleApigeeKeystoresAliasesPkcs12CertsInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleApigeeKeystoresAliasesPkcs12CertsInfoOutputReference
 ```
@@ -2020,7 +2020,7 @@ func InternalValue() GoogleApigeeKeystoresAliasesPkcs12CertsInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googleapigeekeystoresaliasespkcs12"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeekeystoresaliasespkcs12"
 
 googleapigeekeystoresaliasespkcs12.NewGoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference
 ```
