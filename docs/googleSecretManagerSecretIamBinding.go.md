@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesecretmanagersecretiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesecretmanagersecretiambinding"
 
 googlesecretmanagersecretiambinding.NewGoogleSecretManagerSecretIamBinding(scope Construct, id *string, config GoogleSecretManagerSecretIamBindingConfig) GoogleSecretManagerSecretIamBinding
 ```
@@ -304,7 +304,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesecretmanagersecretiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesecretmanagersecretiambinding"
 
 googlesecretmanagersecretiambinding.GoogleSecretManagerSecretIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesecretmanagersecretiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesecretmanagersecretiambinding"
 
 googlesecretmanagersecretiambinding.GoogleSecretManagerSecretIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ googlesecretmanagersecretiambinding.GoogleSecretManagerSecretIamBinding_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesecretmanagersecretiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesecretmanagersecretiambinding"
 
 googlesecretmanagersecretiambinding.GoogleSecretManagerSecretIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesecretmanagersecretiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesecretmanagersecretiambinding"
 
 &googlesecretmanagersecretiambinding.GoogleSecretManagerSecretIamBindingCondition {
 	Expression: *string,
@@ -752,7 +752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesecretmanagersecretiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesecretmanagersecretiambinding"
 
 &googlesecretmanagersecretiambinding.GoogleSecretManagerSecretIamBindingConfig {
 	Connection: interface{},
@@ -765,7 +765,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesecret
 	Members: *[]*string,
 	Role: *string,
 	SecretId: *string,
-	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBindingCondition,
+	Condition: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -945,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleSecretManagerSecretIamBinding.GoogleSecretManagerSecretIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesecretmanagersecretiambinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesecretmanagersecretiambinding"
 
 googlesecretmanagersecretiambinding.NewGoogleSecretManagerSecretIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleSecretManagerSecretIamBindingConditionOutputReference
 ```

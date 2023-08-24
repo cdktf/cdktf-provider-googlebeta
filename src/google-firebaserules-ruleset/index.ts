@@ -21,19 +21,19 @@ export interface GoogleFirebaserulesRulesetConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * The project for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_ruleset#project GoogleFirebaserulesRuleset#project}
   */
   readonly project?: string;
   /**
   * source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_ruleset#source GoogleFirebaserulesRuleset#source}
   */
   readonly source: GoogleFirebaserulesRulesetSource;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_ruleset#timeouts GoogleFirebaserulesRuleset#timeouts}
   */
   readonly timeouts?: GoogleFirebaserulesRulesetTimeouts;
@@ -105,19 +105,19 @@ export class GoogleFirebaserulesRulesetMetadataList extends cdktf.ComplexList {
 export interface GoogleFirebaserulesRulesetSourceFiles {
   /**
   * Textual Content.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_ruleset#content GoogleFirebaserulesRuleset#content}
   */
   readonly content: string;
   /**
   * Fingerprint (e.g. github sha) associated with the `File`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_ruleset#fingerprint GoogleFirebaserulesRuleset#fingerprint}
   */
   readonly fingerprint?: string;
   /**
   * File name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_ruleset#name GoogleFirebaserulesRuleset#name}
   */
   readonly name: string;
@@ -256,13 +256,13 @@ export class GoogleFirebaserulesRulesetSourceFilesList extends cdktf.ComplexList
 export interface GoogleFirebaserulesRulesetSource {
   /**
   * `Language` of the `Source` bundle. If unspecified, the language will default to `FIREBASE_RULES`. Possible values: LANGUAGE_UNSPECIFIED, FIREBASE_RULES, EVENT_FLOW_TRIGGERS
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_ruleset#language GoogleFirebaserulesRuleset#language}
   */
   readonly language?: string;
   /**
   * files block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebaserules_ruleset#files GoogleFirebaserulesRuleset#files}
   */
   readonly files: GoogleFirebaserulesRulesetSourceFiles[] | cdktf.IResolvable;

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworkservicesservicebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkservicesservicebinding"
 
 googlenetworkservicesservicebinding.NewGoogleNetworkServicesServiceBinding(scope Construct, id *string, config GoogleNetworkServicesServiceBindingConfig) GoogleNetworkServicesServiceBinding
 ```
@@ -318,7 +318,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworkservicesservicebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkservicesservicebinding"
 
 googlenetworkservicesservicebinding.GoogleNetworkServicesServiceBinding_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworkservicesservicebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkservicesservicebinding"
 
 googlenetworkservicesservicebinding.GoogleNetworkServicesServiceBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ googlenetworkservicesservicebinding.GoogleNetworkServicesServiceBinding_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworkservicesservicebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkservicesservicebinding"
 
 googlenetworkservicesservicebinding.GoogleNetworkServicesServiceBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -739,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworkservicesservicebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkservicesservicebinding"
 
 &googlenetworkservicesservicebinding.GoogleNetworkServicesServiceBindingConfig {
 	Connection: interface{},
@@ -755,7 +755,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetwor
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingTimeouts,
 }
 ```
 
@@ -771,7 +771,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetwor
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingConfig.property.name">Name</a></code> | <code>*string</code> | Name of the ServiceBinding resource. |
-| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingConfig.property.service">Service</a></code> | <code>*string</code> | The full Service Directory Service name of the format projects/*\/locations/*\/namespaces/*\/services/*. |
+| <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingConfig.property.service">Service</a></code> | <code>*string</code> | The full Service Directory Service name of the format projects/* /locations/* /namespaces/* /services/*. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingConfig.property.description">Description</a></code> | <code>*string</code> | A free-text description of the resource. Max length 1024 characters. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_service_binding#id GoogleNetworkServicesServiceBinding#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingConfig.property.labels">Labels</a></code> | <code>*map[string]*string</code> | Set of label tags associated with the ServiceBinding resource. |
@@ -872,9 +872,11 @@ Service *string
 
 - *Type:* *string
 
-The full Service Directory Service name of the format projects/*\/locations/*\/namespaces/*\/services/*.
+The full Service Directory Service name of the format projects/* /locations/* /namespaces/* /services/*.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_service_binding#service GoogleNetworkServicesServiceBinding#service}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 
@@ -952,7 +954,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworkservicesservicebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkservicesservicebinding"
 
 &googlenetworkservicesservicebinding.GoogleNetworkServicesServiceBindingTimeouts {
 	Create: *string,
@@ -1000,7 +1002,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesServiceBinding.GoogleNetworkServicesServiceBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworkservicesservicebinding"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkservicesservicebinding"
 
 googlenetworkservicesservicebinding.NewGoogleNetworkServicesServiceBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesServiceBindingTimeoutsOutputReference
 ```

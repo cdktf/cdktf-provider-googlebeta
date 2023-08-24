@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleDialogflowEntityTypeConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of this entity type to be displayed on the console.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_entity_type#display_name GoogleDialogflowEntityType#display_name}
   */
   readonly displayName: string;
   /**
   * Enables fuzzy entity extraction during classification.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_entity_type#enable_fuzzy_extraction GoogleDialogflowEntityType#enable_fuzzy_extraction}
   */
   readonly enableFuzzyExtraction?: boolean | cdktf.IResolvable;
@@ -37,7 +37,7 @@ export interface GoogleDialogflowEntityTypeConfig extends cdktf.TerraformMetaArg
 * KIND_LIST: List entity types contain a set of entries that do not map to reference values. However, list entity
 types can contain references to other entity types (with or without aliases).
 * KIND_REGEXP: Regexp entity types allow to specify regular expressions in entries values. Possible values: ["KIND_MAP", "KIND_LIST", "KIND_REGEXP"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_entity_type#kind GoogleDialogflowEntityType#kind}
   */
   readonly kind: string;
@@ -47,13 +47,13 @@ types can contain references to other entity types (with or without aliases).
   readonly project?: string;
   /**
   * entities block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_entity_type#entities GoogleDialogflowEntityType#entities}
   */
   readonly entities?: GoogleDialogflowEntityTypeEntities[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_entity_type#timeouts GoogleDialogflowEntityType#timeouts}
   */
   readonly timeouts?: GoogleDialogflowEntityTypeTimeouts;
@@ -64,7 +64,7 @@ export interface GoogleDialogflowEntityTypeEntities {
 could be green onions.
 For KIND_LIST entity types:
 * This collection must contain exactly one synonym equal to value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_entity_type#synonyms GoogleDialogflowEntityType#synonyms}
   */
   readonly synonyms: string[];
@@ -75,7 +75,7 @@ For KIND_MAP entity types:
 * A reference value to be used in place of synonyms.
 For KIND_LIST entity types:
 * A string that can contain references to other entity types (with or without aliases).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_entity_type#value GoogleDialogflowEntityType#value}
   */
   readonly value: string;

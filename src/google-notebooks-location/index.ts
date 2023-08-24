@@ -21,7 +21,7 @@ export interface GoogleNotebooksLocationConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Name of the Location resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_notebooks_location#name GoogleNotebooksLocation#name}
   */
   readonly name?: string;
@@ -31,7 +31,7 @@ export interface GoogleNotebooksLocationConfig extends cdktf.TerraformMetaArgume
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_notebooks_location#timeouts GoogleNotebooksLocation#timeouts}
   */
   readonly timeouts?: GoogleNotebooksLocationTimeouts;

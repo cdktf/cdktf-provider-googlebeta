@@ -25,7 +25,7 @@ export interface GoogleOrganizationIamMemberConfig extends cdktf.TerraformMetaAr
   readonly member: string;
   /**
   * The numeric ID of the organization in which you want to manage the audit logging config.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_organization_iam_member#org_id GoogleOrganizationIamMember#org_id}
   */
   readonly orgId: string;
@@ -35,7 +35,7 @@ export interface GoogleOrganizationIamMemberConfig extends cdktf.TerraformMetaAr
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_organization_iam_member#condition GoogleOrganizationIamMember#condition}
   */
   readonly condition?: GoogleOrganizationIamMemberCondition;

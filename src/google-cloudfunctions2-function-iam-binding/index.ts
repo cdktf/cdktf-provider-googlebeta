@@ -41,7 +41,7 @@ export interface GoogleCloudfunctions2FunctionIamBindingConfig extends cdktf.Ter
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudfunctions2_function_iam_binding#condition GoogleCloudfunctions2FunctionIamBinding#condition}
   */
   readonly condition?: GoogleCloudfunctions2FunctionIamBindingCondition;

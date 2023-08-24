@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleSecretManagerSecretVersionConfig extends cdktf.TerraformMetaArguments {
   /**
   * The current state of the SecretVersion.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_secret_manager_secret_version#enabled GoogleSecretManagerSecretVersion#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -27,19 +27,19 @@ export interface GoogleSecretManagerSecretVersionConfig extends cdktf.TerraformM
   readonly id?: string;
   /**
   * Secret Manager secret resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_secret_manager_secret_version#secret GoogleSecretManagerSecretVersion#secret}
   */
   readonly secret: string;
   /**
   * The secret data. Must be no larger than 64KiB.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_secret_manager_secret_version#secret_data GoogleSecretManagerSecretVersion#secret_data}
   */
   readonly secretData: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_secret_manager_secret_version#timeouts GoogleSecretManagerSecretVersion#timeouts}
   */
   readonly timeouts?: GoogleSecretManagerSecretVersionTimeouts;

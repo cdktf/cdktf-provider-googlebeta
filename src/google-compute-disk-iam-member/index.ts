@@ -41,7 +41,7 @@ export interface GoogleComputeDiskIamMemberConfig extends cdktf.TerraformMetaArg
   readonly zone?: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_iam_member#condition GoogleComputeDiskIamMember#condition}
   */
   readonly condition?: GoogleComputeDiskIamMemberCondition;

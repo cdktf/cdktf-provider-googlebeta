@@ -21,7 +21,7 @@ export interface DataGoogleVertexAiIndexConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * The resource name of the Index.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vertex_ai_index#name DataGoogleVertexAiIndex#name}
   */
   readonly name: string;
@@ -31,7 +31,7 @@ export interface DataGoogleVertexAiIndexConfig extends cdktf.TerraformMetaArgume
   readonly project?: string;
   /**
   * The region of the index. eg us-central1
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vertex_ai_index#region DataGoogleVertexAiIndex#region}
   */
   readonly region: string;

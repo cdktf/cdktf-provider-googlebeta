@@ -41,7 +41,7 @@ export interface GoogleBigqueryTableIamBindingConfig extends cdktf.TerraformMeta
   readonly tableId: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_table_iam_binding#condition GoogleBigqueryTableIamBinding#condition}
   */
   readonly condition?: GoogleBigqueryTableIamBindingCondition;

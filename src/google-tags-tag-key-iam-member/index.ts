@@ -33,7 +33,7 @@ export interface GoogleTagsTagKeyIamMemberConfig extends cdktf.TerraformMetaArgu
   readonly tagKey: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_tags_tag_key_iam_member#condition GoogleTagsTagKeyIamMember#condition}
   */
   readonly condition?: GoogleTagsTagKeyIamMemberCondition;

@@ -37,7 +37,7 @@ export interface GoogleComputeSnapshotIamMemberConfig extends cdktf.TerraformMet
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_snapshot_iam_member#condition GoogleComputeSnapshotIamMember#condition}
   */
   readonly condition?: GoogleComputeSnapshotIamMemberCondition;

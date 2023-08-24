@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DataGoogleDnsKeysConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Name of the zone.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_dns_keys#managed_zone DataGoogleDnsKeys#managed_zone}
   */
   readonly managedZone: string;
   /**
   * The ID of the project for the Google Cloud.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_dns_keys#project DataGoogleDnsKeys#project}
   */
   readonly project?: string;

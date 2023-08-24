@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeVpnTunnelConfig extends cdktf.TerraformMetaArguments {
   /**
   * An optional description of this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#description GoogleComputeVpnTunnel#description}
   */
   readonly description?: string;
@@ -29,13 +29,13 @@ export interface GoogleComputeVpnTunnelConfig extends cdktf.TerraformMetaArgumen
   * IKE protocol version to use when establishing the VPN tunnel with
 peer VPN gateway.
 Acceptable IKE versions are 1 or 2. Default version is 2.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#ike_version GoogleComputeVpnTunnel#ike_version}
   */
   readonly ikeVersion?: number;
   /**
   * Labels to apply to this VpnTunnel.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#labels GoogleComputeVpnTunnel#labels}
   */
   readonly labels?: { [key: string]: string };
@@ -44,7 +44,7 @@ Acceptable IKE versions are 1 or 2. Default version is 2.
 peer VPN gateway. The value should be a CIDR formatted string,
 for example '192.168.0.0/16'. The ranges should be disjoint.
 Only IPv4 is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#local_traffic_selector GoogleComputeVpnTunnel#local_traffic_selector}
   */
   readonly localTrafficSelector?: string[];
@@ -56,19 +56,19 @@ characters long and match the regular expression
 must be a lowercase letter, and all following characters must
 be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#name GoogleComputeVpnTunnel#name}
   */
   readonly name: string;
   /**
   * URL of the peer side external VPN gateway to which this VPN tunnel is connected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#peer_external_gateway GoogleComputeVpnTunnel#peer_external_gateway}
   */
   readonly peerExternalGateway?: string;
   /**
   * The interface ID of the external VPN gateway to which this VPN tunnel is connected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#peer_external_gateway_interface GoogleComputeVpnTunnel#peer_external_gateway_interface}
   */
   readonly peerExternalGatewayInterface?: number;
@@ -77,13 +77,13 @@ except the last character, which cannot be a dash.
 If provided, the VPN tunnel will automatically use the same vpn_gateway_interface
 ID in the peer GCP VPN gateway.
 This field must reference a 'google_compute_ha_vpn_gateway' resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#peer_gcp_gateway GoogleComputeVpnTunnel#peer_gcp_gateway}
   */
   readonly peerGcpGateway?: string;
   /**
   * IP address of the peer VPN gateway. Only IPv4 is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#peer_ip GoogleComputeVpnTunnel#peer_ip}
   */
   readonly peerIp?: string;
@@ -93,7 +93,7 @@ This field must reference a 'google_compute_ha_vpn_gateway' resource.
   readonly project?: string;
   /**
   * The region where the tunnel is located. If unset, is set to the region of 'target_vpn_gateway'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#region GoogleComputeVpnTunnel#region}
   */
   readonly region?: string;
@@ -102,27 +102,27 @@ This field must reference a 'google_compute_ha_vpn_gateway' resource.
 peer VPN gateway. The value should be a CIDR formatted string,
 for example '192.168.0.0/16'. The ranges should be disjoint.
 Only IPv4 is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#remote_traffic_selector GoogleComputeVpnTunnel#remote_traffic_selector}
   */
   readonly remoteTrafficSelector?: string[];
   /**
   * URL of router resource to be used for dynamic routing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#router GoogleComputeVpnTunnel#router}
   */
   readonly router?: string;
   /**
   * Shared secret used to set the secure session between the Cloud VPN
 gateway and the peer VPN gateway.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#shared_secret GoogleComputeVpnTunnel#shared_secret}
   */
   readonly sharedSecret: string;
   /**
   * URL of the Target VPN gateway with which this VPN tunnel is
 associated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#target_vpn_gateway GoogleComputeVpnTunnel#target_vpn_gateway}
   */
   readonly targetVpnGateway?: string;
@@ -130,19 +130,19 @@ associated.
   * URL of the VPN gateway with which this VPN tunnel is associated.
 This must be used if a High Availability VPN gateway resource is created.
 This field must reference a 'google_compute_ha_vpn_gateway' resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#vpn_gateway GoogleComputeVpnTunnel#vpn_gateway}
   */
   readonly vpnGateway?: string;
   /**
   * The interface ID of the VPN gateway with which this VPN tunnel is associated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#vpn_gateway_interface GoogleComputeVpnTunnel#vpn_gateway_interface}
   */
   readonly vpnGatewayInterface?: number;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel#timeouts GoogleComputeVpnTunnel#timeouts}
   */
   readonly timeouts?: GoogleComputeVpnTunnelTimeouts;

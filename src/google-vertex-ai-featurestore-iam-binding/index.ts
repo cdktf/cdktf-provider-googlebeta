@@ -41,7 +41,7 @@ export interface GoogleVertexAiFeaturestoreIamBindingConfig extends cdktf.Terraf
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_featurestore_iam_binding#condition GoogleVertexAiFeaturestoreIamBinding#condition}
   */
   readonly condition?: GoogleVertexAiFeaturestoreIamBindingCondition;

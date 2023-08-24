@@ -25,7 +25,7 @@ export interface DataGoogleSecretManagerSecretConfig extends cdktf.TerraformMeta
   readonly project?: string;
   /**
   * This must be unique within the project.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_secret_manager_secret#secret_id DataGoogleSecretManagerSecret#secret_id}
   */
   readonly secretId: string;

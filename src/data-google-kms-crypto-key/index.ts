@@ -22,13 +22,13 @@ export interface DataGoogleKmsCryptoKeyConfig extends cdktf.TerraformMetaArgumen
   /**
   * The KeyRing that this key belongs to.
 Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_kms_crypto_key#key_ring DataGoogleKmsCryptoKey#key_ring}
   */
   readonly keyRing: string;
   /**
   * The resource name for the CryptoKey.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_kms_crypto_key#name DataGoogleKmsCryptoKey#name}
   */
   readonly name: string;

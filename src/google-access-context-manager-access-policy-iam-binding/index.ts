@@ -33,7 +33,7 @@ export interface GoogleAccessContextManagerAccessPolicyIamBindingConfig extends 
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_access_policy_iam_binding#condition GoogleAccessContextManagerAccessPolicyIamBinding#condition}
   */
   readonly condition?: GoogleAccessContextManagerAccessPolicyIamBindingCondition;

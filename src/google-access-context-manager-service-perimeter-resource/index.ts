@@ -21,7 +21,7 @@ export interface GoogleAccessContextManagerServicePerimeterResourceConfig extend
   readonly id?: string;
   /**
   * The name of the Service Perimeter to add this resource to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_service_perimeter_resource#perimeter_name GoogleAccessContextManagerServicePerimeterResource#perimeter_name}
   */
   readonly perimeterName: string;
@@ -29,13 +29,13 @@ export interface GoogleAccessContextManagerServicePerimeterResourceConfig extend
   * A GCP resource that is inside of the service perimeter.
 Currently only projects are allowed.
 Format: projects/{project_number}
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_service_perimeter_resource#resource GoogleAccessContextManagerServicePerimeterResource#resource}
   */
   readonly resource: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_service_perimeter_resource#timeouts GoogleAccessContextManagerServicePerimeterResource#timeouts}
   */
   readonly timeouts?: GoogleAccessContextManagerServicePerimeterResourceTimeouts;

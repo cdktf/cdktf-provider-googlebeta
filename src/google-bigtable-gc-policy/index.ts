@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleBigtableGcPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the column family.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#column_family GoogleBigtableGcPolicy#column_family}
   */
   readonly columnFamily: string;
@@ -22,13 +22,13 @@ export interface GoogleBigtableGcPolicyConfig extends cdktf.TerraformMetaArgumen
   * The deletion policy for the GC policy. Setting ABANDON allows the resource
 				to be abandoned rather than deleted. This is useful for GC policy as it cannot be deleted
 				in a replicated instance. Possible values are: "ABANDON".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#deletion_policy GoogleBigtableGcPolicy#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * Serialized JSON string for garbage collection policy. Conflicts with "mode", "max_age" and "max_version".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#gc_rules GoogleBigtableGcPolicy#gc_rules}
   */
   readonly gcRules?: string;
@@ -41,43 +41,43 @@ export interface GoogleBigtableGcPolicyConfig extends cdktf.TerraformMetaArgumen
   readonly id?: string;
   /**
   * The name of the Bigtable instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#instance_name GoogleBigtableGcPolicy#instance_name}
   */
   readonly instanceName: string;
   /**
   * NOTE: 'gc_rules' is more flexible, and should be preferred over this field for new resources. This field may be deprecated in the future. If multiple policies are set, you should choose between UNION OR INTERSECTION.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#mode GoogleBigtableGcPolicy#mode}
   */
   readonly mode?: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#project GoogleBigtableGcPolicy#project}
   */
   readonly project?: string;
   /**
   * The name of the table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#table GoogleBigtableGcPolicy#table}
   */
   readonly table: string;
   /**
   * max_age block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#max_age GoogleBigtableGcPolicy#max_age}
   */
   readonly maxAge?: GoogleBigtableGcPolicyMaxAge;
   /**
   * max_version block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#max_version GoogleBigtableGcPolicy#max_version}
   */
   readonly maxVersion?: GoogleBigtableGcPolicyMaxVersion[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#timeouts GoogleBigtableGcPolicy#timeouts}
   */
   readonly timeouts?: GoogleBigtableGcPolicyTimeouts;
@@ -85,13 +85,13 @@ export interface GoogleBigtableGcPolicyConfig extends cdktf.TerraformMetaArgumen
 export interface GoogleBigtableGcPolicyMaxAge {
   /**
   * Number of days before applying GC policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#days GoogleBigtableGcPolicy#days}
   */
   readonly days?: number;
   /**
   * Duration before applying GC policy
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#duration GoogleBigtableGcPolicy#duration}
   */
   readonly duration?: string;
@@ -181,7 +181,7 @@ export class GoogleBigtableGcPolicyMaxAgeOutputReference extends cdktf.ComplexOb
 export interface GoogleBigtableGcPolicyMaxVersion {
   /**
   * Number of version before applying the GC policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_gc_policy#number GoogleBigtableGcPolicy#number}
   */
   readonly number: number;

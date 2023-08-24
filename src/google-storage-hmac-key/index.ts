@@ -25,19 +25,19 @@ export interface GoogleStorageHmacKeyConfig extends cdktf.TerraformMetaArguments
   readonly project?: string;
   /**
   * The email address of the key's associated service account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_hmac_key#service_account_email GoogleStorageHmacKey#service_account_email}
   */
   readonly serviceAccountEmail: string;
   /**
   * The state of the key. Can be set to one of ACTIVE, INACTIVE. Default value: "ACTIVE" Possible values: ["ACTIVE", "INACTIVE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_hmac_key#state GoogleStorageHmacKey#state}
   */
   readonly state?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_hmac_key#timeouts GoogleStorageHmacKey#timeouts}
   */
   readonly timeouts?: GoogleStorageHmacKeyTimeouts;

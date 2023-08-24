@@ -41,7 +41,7 @@ export interface GoogleDataprocAutoscalingPolicyIamBindingConfig extends cdktf.T
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_autoscaling_policy_iam_binding#condition GoogleDataprocAutoscalingPolicyIamBinding#condition}
   */
   readonly condition?: GoogleDataprocAutoscalingPolicyIamBindingCondition;

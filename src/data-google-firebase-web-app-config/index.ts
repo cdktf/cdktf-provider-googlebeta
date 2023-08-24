@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface DataGoogleFirebaseWebAppConfigAConfig extends cdktf.TerraformMetaArguments {
   /**
   * The project id of the Firebase web App.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_firebase_web_app_config#project DataGoogleFirebaseWebAppConfigA#project}
   */
   readonly project?: string;
   /**
   * The id of the Firebase web App.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_firebase_web_app_config#web_app_id DataGoogleFirebaseWebAppConfigA#web_app_id}
   */
   readonly webAppId: string;

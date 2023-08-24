@@ -37,7 +37,7 @@ export interface GooglePubsubSubscriptionIamBindingConfig extends cdktf.Terrafor
   readonly subscription: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_subscription_iam_binding#condition GooglePubsubSubscriptionIamBinding#condition}
   */
   readonly condition?: GooglePubsubSubscriptionIamBindingCondition;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleStorageObjectAccessControlConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the bucket.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_object_access_control#bucket GoogleStorageObjectAccessControl#bucket}
   */
   readonly bucket: string;
@@ -28,7 +28,7 @@ export interface GoogleStorageObjectAccessControlConfig extends cdktf.TerraformM
   * project-team-{{projectId}}
   * allUsers
   * allAuthenticatedUsers
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_object_access_control#entity GoogleStorageObjectAccessControl#entity}
   */
   readonly entity: string;
@@ -41,19 +41,19 @@ export interface GoogleStorageObjectAccessControlConfig extends cdktf.TerraformM
   readonly id?: string;
   /**
   * The name of the object to apply the access control to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_object_access_control#object GoogleStorageObjectAccessControl#object}
   */
   readonly object: string;
   /**
   * The access permission for the entity. Possible values: ["OWNER", "READER"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_object_access_control#role GoogleStorageObjectAccessControl#role}
   */
   readonly role: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_storage_object_access_control#timeouts GoogleStorageObjectAccessControl#timeouts}
   */
   readonly timeouts?: GoogleStorageObjectAccessControlTimeouts;

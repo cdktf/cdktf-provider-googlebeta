@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleDatastreamPrivateConnectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Display name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastream_private_connection#display_name GoogleDatastreamPrivateConnection#display_name}
   */
   readonly displayName: string;
@@ -27,19 +27,19 @@ export interface GoogleDatastreamPrivateConnectionConfig extends cdktf.Terraform
   readonly id?: string;
   /**
   * Labels.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastream_private_connection#labels GoogleDatastreamPrivateConnection#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of the location this private connection is located in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastream_private_connection#location GoogleDatastreamPrivateConnection#location}
   */
   readonly location: string;
   /**
   * The private connectivity identifier.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastream_private_connection#private_connection_id GoogleDatastreamPrivateConnection#private_connection_id}
   */
   readonly privateConnectionId: string;
@@ -49,13 +49,13 @@ export interface GoogleDatastreamPrivateConnectionConfig extends cdktf.Terraform
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastream_private_connection#timeouts GoogleDatastreamPrivateConnection#timeouts}
   */
   readonly timeouts?: GoogleDatastreamPrivateConnectionTimeouts;
   /**
   * vpc_peering_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastream_private_connection#vpc_peering_config GoogleDatastreamPrivateConnection#vpc_peering_config}
   */
   readonly vpcPeeringConfig: GoogleDatastreamPrivateConnectionVpcPeeringConfig;
@@ -235,14 +235,14 @@ export class GoogleDatastreamPrivateConnectionTimeoutsOutputReference extends cd
 export interface GoogleDatastreamPrivateConnectionVpcPeeringConfig {
   /**
   * A free subnet for peering. (CIDR of /29)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastream_private_connection#subnet GoogleDatastreamPrivateConnection#subnet}
   */
   readonly subnet: string;
   /**
   * Fully qualified name of the VPC that Datastream will peer to.
 Format: projects/{project}/global/{networks}/{name}
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastream_private_connection#vpc GoogleDatastreamPrivateConnection#vpc}
   */
   readonly vpc: string;

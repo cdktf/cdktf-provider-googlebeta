@@ -41,7 +41,7 @@ export interface GoogleGkeHubFeatureIamMemberConfig extends cdktf.TerraformMetaA
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature_iam_member#condition GoogleGkeHubFeatureIamMember#condition}
   */
   readonly condition?: GoogleGkeHubFeatureIamMemberCondition;

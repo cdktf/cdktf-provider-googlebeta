@@ -22,7 +22,7 @@ export interface GoogleFirebaseProjectLocationConfig extends cdktf.TerraformMeta
   /**
   * The ID of the default GCP resource location for the Project. The location must be one of the available GCP
 resource locations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_project_location#location_id GoogleFirebaseProjectLocation#location_id}
   */
   readonly locationId: string;
@@ -32,7 +32,7 @@ resource locations.
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_project_location#timeouts GoogleFirebaseProjectLocation#timeouts}
   */
   readonly timeouts?: GoogleFirebaseProjectLocationTimeouts;

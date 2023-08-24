@@ -14,15 +14,17 @@ import * as cdktf from 'cdktf';
 export interface GoogleNetworkServicesTlsRouteConfig extends cdktf.TerraformMetaArguments {
   /**
   * A free-text description of the resource. Max length 1024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#description GoogleNetworkServicesTlsRoute#description}
   */
   readonly description?: string;
   /**
   * Gateways defines a list of gateways this TlsRoute is attached to, as one of the routing rules to route the requests served by the gateway.
-Each gateway reference should match the pattern: projects/*\/locations/global/gateways/<gateway_name>
-  * 
+Each gateway reference should match the pattern: projects/* /locations/global/gateways/<gateway_name>
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#gateways GoogleNetworkServicesTlsRoute#gateways}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly gateways?: string[];
   /**
@@ -34,15 +36,17 @@ Each gateway reference should match the pattern: projects/*\/locations/global/ga
   readonly id?: string;
   /**
   * Meshes defines a list of meshes this TlsRoute is attached to, as one of the routing rules to route the requests served by the mesh.
-Each mesh reference should match the pattern: projects/*\/locations/global/meshes/<mesh_name>
+Each mesh reference should match the pattern: projects/* /locations/global/meshes/<mesh_name>
 The attached Mesh should be of a type SIDECAR
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#meshes GoogleNetworkServicesTlsRoute#meshes}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly meshes?: string[];
   /**
   * Name of the TlsRoute resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#name GoogleNetworkServicesTlsRoute#name}
   */
   readonly name: string;
@@ -52,13 +56,13 @@ The attached Mesh should be of a type SIDECAR
   readonly project?: string;
   /**
   * rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#rules GoogleNetworkServicesTlsRoute#rules}
   */
   readonly rules: GoogleNetworkServicesTlsRouteRules[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#timeouts GoogleNetworkServicesTlsRoute#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesTlsRouteTimeouts;
@@ -66,13 +70,13 @@ The attached Mesh should be of a type SIDECAR
 export interface GoogleNetworkServicesTlsRouteRulesActionDestinations {
   /**
   * The URL of a BackendService to route traffic to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#service_name GoogleNetworkServicesTlsRoute#service_name}
   */
   readonly serviceName?: string;
   /**
   * Specifies the proportion of requests forwarded to the backend referenced by the serviceName field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#weight GoogleNetworkServicesTlsRoute#weight}
   */
   readonly weight?: number;
@@ -194,7 +198,7 @@ export class GoogleNetworkServicesTlsRouteRulesActionDestinationsList extends cd
 export interface GoogleNetworkServicesTlsRouteRulesAction {
   /**
   * destinations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#destinations GoogleNetworkServicesTlsRoute#destinations}
   */
   readonly destinations?: GoogleNetworkServicesTlsRouteRulesActionDestinations[] | cdktf.IResolvable;
@@ -261,14 +265,14 @@ export class GoogleNetworkServicesTlsRouteRulesActionOutputReference extends cdk
 export interface GoogleNetworkServicesTlsRouteRulesMatches {
   /**
   * ALPN (Application-Layer Protocol Negotiation) to match against. Examples: "http/1.1", "h2". At least one of sniHost and alpn is required. Up to 5 alpns across all matches can be set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#alpn GoogleNetworkServicesTlsRoute#alpn}
   */
   readonly alpn?: string[];
   /**
   * SNI (server name indicator) to match against. SNI will be matched against all wildcard domains, i.e. www.example.com will be first matched against www.example.com, then *.example.com, then *.com.
 Partial wildcards are not supported, and values like *w.example.com are invalid. At least one of sniHost and alpn is required. Up to 5 sni hosts across all matches can be set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#sni_host GoogleNetworkServicesTlsRoute#sni_host}
   */
   readonly sniHost?: string[];
@@ -390,13 +394,13 @@ export class GoogleNetworkServicesTlsRouteRulesMatchesList extends cdktf.Complex
 export interface GoogleNetworkServicesTlsRouteRules {
   /**
   * action block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#action GoogleNetworkServicesTlsRoute#action}
   */
   readonly action: GoogleNetworkServicesTlsRouteRulesAction;
   /**
   * matches block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tls_route#matches GoogleNetworkServicesTlsRoute#matches}
   */
   readonly matches: GoogleNetworkServicesTlsRouteRulesMatches[] | cdktf.IResolvable;

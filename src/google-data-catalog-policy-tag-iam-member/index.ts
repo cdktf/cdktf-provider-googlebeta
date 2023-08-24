@@ -33,7 +33,7 @@ export interface GoogleDataCatalogPolicyTagIamMemberConfig extends cdktf.Terrafo
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_policy_tag_iam_member#condition GoogleDataCatalogPolicyTagIamMember#condition}
   */
   readonly condition?: GoogleDataCatalogPolicyTagIamMemberCondition;

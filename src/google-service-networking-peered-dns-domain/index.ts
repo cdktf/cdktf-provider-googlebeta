@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleServiceNetworkingPeeredDnsDomainConfig extends cdktf.TerraformMetaArguments {
   /**
   * The DNS domain name suffix of the peered DNS domain.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_networking_peered_dns_domain#dns_suffix GoogleServiceNetworkingPeeredDnsDomain#dns_suffix}
   */
   readonly dnsSuffix: string;
@@ -27,31 +27,31 @@ export interface GoogleServiceNetworkingPeeredDnsDomainConfig extends cdktf.Terr
   readonly id?: string;
   /**
   * Name of the peered DNS domain.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_networking_peered_dns_domain#name GoogleServiceNetworkingPeeredDnsDomain#name}
   */
   readonly name: string;
   /**
   * Network in the consumer project to peer with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_networking_peered_dns_domain#network GoogleServiceNetworkingPeeredDnsDomain#network}
   */
   readonly network: string;
   /**
   * The ID of the project that the service account will be created in. Defaults to the provider project configuration.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_networking_peered_dns_domain#project GoogleServiceNetworkingPeeredDnsDomain#project}
   */
   readonly project?: string;
   /**
   * The name of the service to create a peered DNS domain for, e.g. servicenetworking.googleapis.com
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_networking_peered_dns_domain#service GoogleServiceNetworkingPeeredDnsDomain#service}
   */
   readonly service?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_networking_peered_dns_domain#timeouts GoogleServiceNetworkingPeeredDnsDomain#timeouts}
   */
   readonly timeouts?: GoogleServiceNetworkingPeeredDnsDomainTimeouts;

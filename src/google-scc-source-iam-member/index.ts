@@ -37,7 +37,7 @@ export interface GoogleSccSourceIamMemberConfig extends cdktf.TerraformMetaArgum
   readonly source: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_source_iam_member#condition GoogleSccSourceIamMember#condition}
   */
   readonly condition?: GoogleSccSourceIamMemberCondition;

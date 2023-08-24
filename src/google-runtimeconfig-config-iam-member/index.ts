@@ -37,7 +37,7 @@ export interface GoogleRuntimeconfigConfigIamMemberConfig extends cdktf.Terrafor
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_config_iam_member#condition GoogleRuntimeconfigConfigIamMember#condition}
   */
   readonly condition?: GoogleRuntimeconfigConfigIamMemberCondition;

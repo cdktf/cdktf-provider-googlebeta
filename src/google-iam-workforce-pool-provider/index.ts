@@ -32,7 +32,7 @@ The following example shows how to only allow credentials with a mapped 'google.
 ```
 "'admins' in google.groups"
 ```
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#attribute_condition GoogleIamWorkforcePoolProvider#attribute_condition}
   */
   readonly attributeCondition?: string;
@@ -88,26 +88,26 @@ on a Google token:
 
 An object containing a list of '"key": value' pairs.
 Example: '{ "name": "wrench", "mass": "1.3kg", "count": "3" }'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#attribute_mapping GoogleIamWorkforcePoolProvider#attribute_mapping}
   */
   readonly attributeMapping?: { [key: string]: string };
   /**
   * A user-specified description of the provider. Cannot exceed 256 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#description GoogleIamWorkforcePoolProvider#description}
   */
   readonly description?: string;
   /**
   * Whether the provider is disabled. You cannot use a disabled provider to exchange tokens.
 However, existing tokens still grant access.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#disabled GoogleIamWorkforcePoolProvider#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * A user-specified display name for the provider. Cannot exceed 32 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#display_name GoogleIamWorkforcePoolProvider#display_name}
   */
   readonly displayName?: string;
@@ -120,7 +120,7 @@ However, existing tokens still grant access.
   readonly id?: string;
   /**
   * The location for the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#location GoogleIamWorkforcePoolProvider#location}
   */
   readonly location: string;
@@ -128,7 +128,7 @@ However, existing tokens still grant access.
   * The ID for the provider, which becomes the final component of the resource name.
 This value must be 4-32 characters, and may contain the characters [a-z0-9-].
 The prefix 'gcp-' is reserved for use by Google, and may not be specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#provider_id GoogleIamWorkforcePoolProvider#provider_id}
   */
   readonly providerId: string;
@@ -137,25 +137,25 @@ The prefix 'gcp-' is reserved for use by Google, and may not be specified.
 The IDs must be a globally unique string of 6 to 63 lowercase letters, digits, or hyphens.
 It must start with a letter, and cannot have a trailing hyphen.
 The prefix 'gcp-' is reserved for use by Google, and may not be specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#workforce_pool_id GoogleIamWorkforcePoolProvider#workforce_pool_id}
   */
   readonly workforcePoolId: string;
   /**
   * oidc block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#oidc GoogleIamWorkforcePoolProvider#oidc}
   */
   readonly oidc?: GoogleIamWorkforcePoolProviderOidc;
   /**
   * saml block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#saml GoogleIamWorkforcePoolProvider#saml}
   */
   readonly saml?: GoogleIamWorkforcePoolProviderSaml;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#timeouts GoogleIamWorkforcePoolProvider#timeouts}
   */
   readonly timeouts?: GoogleIamWorkforcePoolProviderTimeouts;
@@ -163,7 +163,7 @@ The prefix 'gcp-' is reserved for use by Google, and may not be specified.
 export interface GoogleIamWorkforcePoolProviderOidcClientSecretValue {
   /**
   * The plain text of the client secret value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#plain_text GoogleIamWorkforcePoolProvider#plain_text}
   */
   readonly plainText: string;
@@ -232,7 +232,7 @@ export class GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference 
 export interface GoogleIamWorkforcePoolProviderOidcClientSecret {
   /**
   * value block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#value GoogleIamWorkforcePoolProvider#value}
   */
   readonly value?: GoogleIamWorkforcePoolProviderOidcClientSecretValue;
@@ -301,7 +301,7 @@ export interface GoogleIamWorkforcePoolProviderOidcWebSsoConfig {
   * The behavior for how OIDC Claims are included in the 'assertion' object used for attribute mapping and attribute condition.
 * MERGE_USER_INFO_OVER_ID_TOKEN_CLAIMS: Merge the UserInfo Endpoint Claims with ID Token Claims, preferring UserInfo Claim Values for the same Claim Name. This option is available only for the Authorization Code Flow.
 * ONLY_ID_TOKEN_CLAIMS: Only include ID Token Claims. Possible values: ["MERGE_USER_INFO_OVER_ID_TOKEN_CLAIMS", "ONLY_ID_TOKEN_CLAIMS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#assertion_claims_behavior GoogleIamWorkforcePoolProvider#assertion_claims_behavior}
   */
   readonly assertionClaimsBehavior: string;
@@ -311,7 +311,7 @@ export interface GoogleIamWorkforcePoolProviderOidcWebSsoConfig {
 The 'CODE' Response Type is recommended to avoid the Implicit Flow, for security reasons.
 * CODE: The 'response_type=code' selection uses the Authorization Code Flow for web sign-in. Requires a configured client secret.
 * ID_TOKEN: The 'response_type=id_token' selection uses the Implicit Flow for web sign-in. Possible values: ["CODE", "ID_TOKEN"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#response_type GoogleIamWorkforcePoolProvider#response_type}
   */
   readonly responseType: string;
@@ -395,25 +395,25 @@ export class GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference exten
 export interface GoogleIamWorkforcePoolProviderOidc {
   /**
   * The client ID. Must match the audience claim of the JWT issued by the identity provider.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#client_id GoogleIamWorkforcePoolProvider#client_id}
   */
   readonly clientId: string;
   /**
   * The OIDC issuer URI. Must be a valid URI using the 'https' scheme.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#issuer_uri GoogleIamWorkforcePoolProvider#issuer_uri}
   */
   readonly issuerUri: string;
   /**
   * client_secret block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#client_secret GoogleIamWorkforcePoolProvider#client_secret}
   */
   readonly clientSecret?: GoogleIamWorkforcePoolProviderOidcClientSecret;
   /**
   * web_sso_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#web_sso_config GoogleIamWorkforcePoolProvider#web_sso_config}
   */
   readonly webSsoConfig?: GoogleIamWorkforcePoolProviderOidcWebSsoConfig;
@@ -557,7 +557,7 @@ The metadata xml document should satisfy the following constraints:
 When updating the provider's metadata xml, at least one non-expired signing key
 must overlap with the existing metadata. This requirement is skipped if there are
 no non-expired signing keys present in the existing metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workforce_pool_provider#idp_metadata_xml GoogleIamWorkforcePoolProvider#idp_metadata_xml}
   */
   readonly idpMetadataXml: string;

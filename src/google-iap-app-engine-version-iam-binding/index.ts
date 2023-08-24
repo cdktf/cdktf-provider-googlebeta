@@ -45,7 +45,7 @@ export interface GoogleIapAppEngineVersionIamBindingConfig extends cdktf.Terrafo
   readonly versionId: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_app_engine_version_iam_binding#condition GoogleIapAppEngineVersionIamBinding#condition}
   */
   readonly condition?: GoogleIapAppEngineVersionIamBindingCondition;

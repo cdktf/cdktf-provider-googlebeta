@@ -2262,7 +2262,7 @@ googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters.property.gkeClusterName">gke_cluster_name</a></code> | <code>str</code> | The resource name of the cluster to bind this ManagedZone to. This should be specified in the format like 'projects/*\/locations/*\/clusters/*'. |
+| <code><a href="#@cdktf/provider-google-beta.googleDnsManagedZone.GoogleDnsManagedZonePrivateVisibilityConfigGkeClusters.property.gkeClusterName">gke_cluster_name</a></code> | <code>str</code> | The resource name of the cluster to bind this ManagedZone to. |
 
 ---
 
@@ -2274,9 +2274,14 @@ gke_cluster_name: str
 
 - *Type:* str
 
-The resource name of the cluster to bind this ManagedZone to. This should be specified in the format like 'projects/*\/locations/*\/clusters/*'.
+The resource name of the cluster to bind this ManagedZone to.
+
+This should be specified in the format like
+'projects/* /locations/* /clusters/*'
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_managed_zone#gke_cluster_name GoogleDnsManagedZone#gke_cluster_name}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 

@@ -16,7 +16,7 @@ export interface GoogleDataprocMetastoreFederationConfig extends cdktf.Terraform
   * The ID of the metastore federation. The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_),
 and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of between
 3 and 63 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation#federation_id GoogleDataprocMetastoreFederation#federation_id}
   */
   readonly federationId: string;
@@ -29,13 +29,13 @@ and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of 
   readonly id?: string;
   /**
   * User-defined labels for the metastore federation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation#labels GoogleDataprocMetastoreFederation#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the metastore federation should reside.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation#location GoogleDataprocMetastoreFederation#location}
   */
   readonly location?: string;
@@ -45,19 +45,19 @@ and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of 
   readonly project?: string;
   /**
   * The Apache Hive metastore version of the federation. All backend metastore versions must be compatible with the federation version.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation#version GoogleDataprocMetastoreFederation#version}
   */
   readonly version: string;
   /**
   * backend_metastores block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation#backend_metastores GoogleDataprocMetastoreFederation#backend_metastores}
   */
   readonly backendMetastores: GoogleDataprocMetastoreFederationBackendMetastores[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation#timeouts GoogleDataprocMetastoreFederation#timeouts}
   */
   readonly timeouts?: GoogleDataprocMetastoreFederationTimeouts;
@@ -65,13 +65,13 @@ and hyphens (-). Cannot begin or end with underscore or hyphen. Must consist of 
 export interface GoogleDataprocMetastoreFederationBackendMetastores {
   /**
   * The type of the backend metastore. Possible values: ["METASTORE_TYPE_UNSPECIFIED", "DATAPROC_METASTORE", "BIGQUERY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation#metastore_type GoogleDataprocMetastoreFederation#metastore_type}
   */
   readonly metastoreType: string;
   /**
   * The relative resource name of the metastore that is being federated. The formats of the relative resource names for the currently supported metastores are listed below: Dataplex: projects/{projectId}/locations/{location}/lakes/{lake_id} BigQuery: projects/{projectId} Dataproc Metastore: projects/{projectId}/locations/{location}/services/{serviceId}
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation#name GoogleDataprocMetastoreFederation#name}
   */
   readonly name: string;

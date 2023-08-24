@@ -19,27 +19,27 @@ values combined is limited to 256k. Key can have 2 segments: prefix (optional)
 and name (required), separated by a slash (/). Prefix must be a DNS subdomain.
 Name must be 63 characters or less, begin and end with alphanumerics,
 with dashes (-), underscores (_), dots (.), and alphanumerics between.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#annotations GoogleContainerAttachedCluster#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Policy to determine what flags to send on delete.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#deletion_policy GoogleContainerAttachedCluster#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * A human readable description of this attached cluster. Cannot be longer
 than 255 UTF-8 encoded bytes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#description GoogleContainerAttachedCluster#description}
   */
   readonly description?: string;
   /**
   * The Kubernetes distribution of the underlying attached cluster. Supported values:
 "eks", "aks".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#distribution GoogleContainerAttachedCluster#distribution}
   */
   readonly distribution: string;
@@ -52,19 +52,19 @@ than 255 UTF-8 encoded bytes.
   readonly id?: string;
   /**
   * The location for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#location GoogleContainerAttachedCluster#location}
   */
   readonly location: string;
   /**
   * The name of this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#name GoogleContainerAttachedCluster#name}
   */
   readonly name: string;
   /**
   * The platform version for the cluster (e.g. '1.23.0-gke.1').
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#platform_version GoogleContainerAttachedCluster#platform_version}
   */
   readonly platformVersion: string;
@@ -74,37 +74,37 @@ than 255 UTF-8 encoded bytes.
   readonly project?: string;
   /**
   * authorization block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#authorization GoogleContainerAttachedCluster#authorization}
   */
   readonly authorization?: GoogleContainerAttachedClusterAuthorization;
   /**
   * fleet block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#fleet GoogleContainerAttachedCluster#fleet}
   */
   readonly fleet: GoogleContainerAttachedClusterFleet;
   /**
   * logging_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#logging_config GoogleContainerAttachedCluster#logging_config}
   */
   readonly loggingConfig?: GoogleContainerAttachedClusterLoggingConfig;
   /**
   * monitoring_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#monitoring_config GoogleContainerAttachedCluster#monitoring_config}
   */
   readonly monitoringConfig?: GoogleContainerAttachedClusterMonitoringConfig;
   /**
   * oidc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#oidc_config GoogleContainerAttachedCluster#oidc_config}
   */
   readonly oidcConfig: GoogleContainerAttachedClusterOidcConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#timeouts GoogleContainerAttachedCluster#timeouts}
   */
   readonly timeouts?: GoogleContainerAttachedClusterTimeouts;
@@ -255,7 +255,7 @@ to the users. Up to ten admin users can be provided.
 
 For more info on RBAC, see
 https://kubernetes.io/docs/reference/access-authn-authz/rbac/#user-facing-roles
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#admin_users GoogleContainerAttachedCluster#admin_users}
   */
   readonly adminUsers?: string[];
@@ -322,7 +322,7 @@ export class GoogleContainerAttachedClusterAuthorizationOutputReference extends 
 export interface GoogleContainerAttachedClusterFleet {
   /**
   * The number of the Fleet host project where this cluster will be registered.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#project GoogleContainerAttachedCluster#project}
   */
   readonly project: string;
@@ -391,7 +391,7 @@ export class GoogleContainerAttachedClusterFleetOutputReference extends cdktf.Co
 export interface GoogleContainerAttachedClusterLoggingConfigComponentConfig {
   /**
   * The components to be enabled. Possible values: ["SYSTEM_COMPONENTS", "WORKLOADS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#enable_components GoogleContainerAttachedCluster#enable_components}
   */
   readonly enableComponents?: string[];
@@ -458,7 +458,7 @@ export class GoogleContainerAttachedClusterLoggingConfigComponentConfigOutputRef
 export interface GoogleContainerAttachedClusterLoggingConfig {
   /**
   * component_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#component_config GoogleContainerAttachedCluster#component_config}
   */
   readonly componentConfig?: GoogleContainerAttachedClusterLoggingConfigComponentConfig;
@@ -525,7 +525,7 @@ export class GoogleContainerAttachedClusterLoggingConfigOutputReference extends 
 export interface GoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConfig {
   /**
   * Enable Managed Collection.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#enabled GoogleContainerAttachedCluster#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -592,7 +592,7 @@ export class GoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConf
 export interface GoogleContainerAttachedClusterMonitoringConfig {
   /**
   * managed_prometheus_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#managed_prometheus_config GoogleContainerAttachedCluster#managed_prometheus_config}
   */
   readonly managedPrometheusConfig?: GoogleContainerAttachedClusterMonitoringConfigManagedPrometheusConfig;
@@ -659,13 +659,13 @@ export class GoogleContainerAttachedClusterMonitoringConfigOutputReference exten
 export interface GoogleContainerAttachedClusterOidcConfig {
   /**
   * A JSON Web Token (JWT) issuer URI. 'issuer' must start with 'https://'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#issuer_url GoogleContainerAttachedCluster#issuer_url}
   */
   readonly issuerUrl: string;
   /**
   * OIDC verification keys in JWKS format (RFC 7517).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_attached_cluster#jwks GoogleContainerAttachedCluster#jwks}
   */
   readonly jwks?: string;

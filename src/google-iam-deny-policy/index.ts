@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleIamDenyPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The display name of the rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#display_name GoogleIamDenyPolicy#display_name}
   */
   readonly displayName?: string;
@@ -27,25 +27,25 @@ export interface GoogleIamDenyPolicyConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * The name of the policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#name GoogleIamDenyPolicy#name}
   */
   readonly name: string;
   /**
   * The attachment point is identified by its URL-encoded full resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#parent GoogleIamDenyPolicy#parent}
   */
   readonly parent: string;
   /**
   * rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#rules GoogleIamDenyPolicy#rules}
   */
   readonly rules: GoogleIamDenyPolicyRules[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#timeouts GoogleIamDenyPolicy#timeouts}
   */
   readonly timeouts?: GoogleIamDenyPolicyTimeouts;
@@ -54,27 +54,27 @@ export interface GoogleIamDenyPolicyRulesDenyRuleDenialCondition {
   /**
   * Description of the expression. This is a longer text which describes the expression,
 e.g. when hovered over it in a UI.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#description GoogleIamDenyPolicy#description}
   */
   readonly description?: string;
   /**
   * Textual representation of an expression in Common Expression Language syntax.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#expression GoogleIamDenyPolicy#expression}
   */
   readonly expression: string;
   /**
   * String indicating the location of the expression for error reporting,
 e.g. a file name and a position in the file.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#location GoogleIamDenyPolicy#location}
   */
   readonly location?: string;
   /**
   * Title for the expression, i.e. a short string describing its purpose.
 This can be used e.g. in UIs which allow to enter the expression.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#title GoogleIamDenyPolicy#title}
   */
   readonly title?: string;
@@ -208,13 +208,13 @@ export interface GoogleIamDenyPolicyRulesDenyRule {
   /**
   * The permissions that are explicitly denied by this rule. Each permission uses the format '{service-fqdn}/{resource}.{verb}',
 where '{service-fqdn}' is the fully qualified domain name for the service. For example, 'iam.googleapis.com/roles.list'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#denied_permissions GoogleIamDenyPolicy#denied_permissions}
   */
   readonly deniedPermissions?: string[];
   /**
   * The identities that are prevented from using one or more permissions on Google Cloud resources.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#denied_principals GoogleIamDenyPolicy#denied_principals}
   */
   readonly deniedPrincipals?: string[];
@@ -222,20 +222,20 @@ where '{service-fqdn}' is the fully qualified domain name for the service. For e
   * Specifies the permissions that this rule excludes from the set of denied permissions given by deniedPermissions.
 If a permission appears in deniedPermissions and in exceptionPermissions then it will not be denied.
 The excluded permissions can be specified using the same syntax as deniedPermissions.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#exception_permissions GoogleIamDenyPolicy#exception_permissions}
   */
   readonly exceptionPermissions?: string[];
   /**
   * The identities that are excluded from the deny rule, even if they are listed in the deniedPrincipals.
 For example, you could add a Google group to the deniedPrincipals, then exclude specific users who belong to that group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#exception_principals GoogleIamDenyPolicy#exception_principals}
   */
   readonly exceptionPrincipals?: string[];
   /**
   * denial_condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#denial_condition GoogleIamDenyPolicy#denial_condition}
   */
   readonly denialCondition?: GoogleIamDenyPolicyRulesDenyRuleDenialCondition;
@@ -394,13 +394,13 @@ export class GoogleIamDenyPolicyRulesDenyRuleOutputReference extends cdktf.Compl
 export interface GoogleIamDenyPolicyRules {
   /**
   * The description of the rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#description GoogleIamDenyPolicy#description}
   */
   readonly description?: string;
   /**
   * deny_rule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_deny_policy#deny_rule GoogleIamDenyPolicy#deny_rule}
   */
   readonly denyRule?: GoogleIamDenyPolicyRulesDenyRule;

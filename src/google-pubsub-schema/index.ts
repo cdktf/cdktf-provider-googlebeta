@@ -16,7 +16,7 @@ export interface GooglePubsubSchemaConfig extends cdktf.TerraformMetaArguments {
   * The definition of the schema.
 This should contain a string representing the full definition of the schema
 that is a valid schema definition of the type specified in type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_schema#definition GooglePubsubSchema#definition}
   */
   readonly definition?: string;
@@ -29,7 +29,7 @@ that is a valid schema definition of the type specified in type.
   readonly id?: string;
   /**
   * The ID to use for the schema, which will become the final component of the schema's resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_schema#name GooglePubsubSchema#name}
   */
   readonly name: string;
@@ -39,13 +39,13 @@ that is a valid schema definition of the type specified in type.
   readonly project?: string;
   /**
   * The type of the schema definition Default value: "TYPE_UNSPECIFIED" Possible values: ["TYPE_UNSPECIFIED", "PROTOCOL_BUFFER", "AVRO"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_schema#type GooglePubsubSchema#type}
   */
   readonly type?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_schema#timeouts GooglePubsubSchema#timeouts}
   */
   readonly timeouts?: GooglePubsubSchemaTimeouts;

@@ -33,7 +33,7 @@ export interface GoogleIapWebIamBindingConfig extends cdktf.TerraformMetaArgumen
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_web_iam_binding#condition GoogleIapWebIamBinding#condition}
   */
   readonly condition?: GoogleIapWebIamBindingCondition;

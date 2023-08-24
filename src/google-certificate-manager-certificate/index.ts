@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleCertificateManagerCertificateConfig extends cdktf.TerraformMetaArguments {
   /**
   * A human-readable description of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#description GoogleCertificateManagerCertificate#description}
   */
   readonly description?: string;
@@ -27,13 +27,13 @@ export interface GoogleCertificateManagerCertificateConfig extends cdktf.Terrafo
   readonly id?: string;
   /**
   * Set of label tags associated with the Certificate resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#labels GoogleCertificateManagerCertificate#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The Certificate Manager location. If not specified, "global" is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#location GoogleCertificateManagerCertificate#location}
   */
   readonly location?: string;
@@ -41,7 +41,7 @@ export interface GoogleCertificateManagerCertificateConfig extends cdktf.Terrafo
   * A user-defined name of the certificate. Certificate names must be unique
 The name must be 1-64 characters long, and match the regular expression [a-zA-Z][a-zA-Z0-9_-]* which means the first character must be a letter,
 and all following characters must be a dash, underscore, letter or digit.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#name GoogleCertificateManagerCertificate#name}
   */
   readonly name: string;
@@ -60,25 +60,25 @@ served from non-core Google data centers.
 
 ALL_REGIONS: Certificates with ALL_REGIONS scope are served from all GCP regions (You can only use ALL_REGIONS with global certs).
 see https://cloud.google.com/compute/docs/regions-zones
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#scope GoogleCertificateManagerCertificate#scope}
   */
   readonly scope?: string;
   /**
   * managed block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#managed GoogleCertificateManagerCertificate#managed}
   */
   readonly managed?: GoogleCertificateManagerCertificateManaged;
   /**
   * self_managed block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#self_managed GoogleCertificateManagerCertificate#self_managed}
   */
   readonly selfManaged?: GoogleCertificateManagerCertificateSelfManaged;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#timeouts GoogleCertificateManagerCertificate#timeouts}
   */
   readonly timeouts?: GoogleCertificateManagerCertificateTimeouts;
@@ -234,23 +234,25 @@ export class GoogleCertificateManagerCertificateManagedProvisioningIssueList ext
 export interface GoogleCertificateManagerCertificateManaged {
   /**
   * Authorizations that will be used for performing domain authorization. Either issuanceConfig or dnsAuthorizations should be specificed, but not both.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#dns_authorizations GoogleCertificateManagerCertificate#dns_authorizations}
   */
   readonly dnsAuthorizations?: string[];
   /**
   * The domains for which a managed SSL certificate will be generated.
 Wildcard domains are only supported with DNS challenge resolution
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#domains GoogleCertificateManagerCertificate#domains}
   */
   readonly domains?: string[];
   /**
-  * The resource name for a CertificateIssuanceConfig used to configure private PKI certificates in the format projects/*\/locations/*\/certificateIssuanceConfigs/*.
+  * The resource name for a CertificateIssuanceConfig used to configure private PKI certificates in the format projects/* /locations/* /certificateIssuanceConfigs/*.
 If this field is not set, the certificates will instead be publicly signed as documented at https://cloud.google.com/load-balancing/docs/ssl-certificates/google-managed-certs#caa.
 Either issuanceConfig or dnsAuthorizations should be specificed, but not both.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#issuance_config GoogleCertificateManagerCertificate#issuance_config}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly issuanceConfig?: string;
 }
@@ -381,7 +383,7 @@ export interface GoogleCertificateManagerCertificateSelfManaged {
   * **Deprecated** The certificate chain in PEM-encoded form.
 
 Leaf certificate comes first, followed by intermediate ones if any.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#certificate_pem GoogleCertificateManagerCertificate#certificate_pem}
   */
   readonly certificatePem?: string;
@@ -389,19 +391,19 @@ Leaf certificate comes first, followed by intermediate ones if any.
   * The certificate chain in PEM-encoded form.
 
 Leaf certificate comes first, followed by intermediate ones if any.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#pem_certificate GoogleCertificateManagerCertificate#pem_certificate}
   */
   readonly pemCertificate?: string;
   /**
   * The private key of the leaf certificate in PEM-encoded form.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#pem_private_key GoogleCertificateManagerCertificate#pem_private_key}
   */
   readonly pemPrivateKey?: string;
   /**
   * **Deprecated** The private key of the leaf certificate in PEM-encoded form.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate#private_key_pem GoogleCertificateManagerCertificate#private_key_pem}
   */
   readonly privateKeyPem?: string;

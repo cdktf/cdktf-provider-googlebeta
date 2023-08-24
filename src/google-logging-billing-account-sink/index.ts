@@ -14,31 +14,31 @@ import * as cdktf from 'cdktf';
 export interface GoogleLoggingBillingAccountSinkConfig extends cdktf.TerraformMetaArguments {
   /**
   * The billing account exported to the sink.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#billing_account GoogleLoggingBillingAccountSink#billing_account}
   */
   readonly billingAccount: string;
   /**
   * A description of this sink. The maximum length of the description is 8000 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#description GoogleLoggingBillingAccountSink#description}
   */
   readonly description?: string;
   /**
   * The destination of the sink (or, in other words, where logs are written to). Can be a Cloud Storage bucket, a PubSub topic, or a BigQuery dataset. Examples: "storage.googleapis.com/[GCS_BUCKET]" "bigquery.googleapis.com/projects/[PROJECT_ID]/datasets/[DATASET]" "pubsub.googleapis.com/projects/[PROJECT_ID]/topics/[TOPIC_ID]" The writer associated with the sink must have access to write to the above resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#destination GoogleLoggingBillingAccountSink#destination}
   */
   readonly destination: string;
   /**
   * If set to True, then this sink is disabled and it does not export any log entries.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#disabled GoogleLoggingBillingAccountSink#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The filter to apply when exporting logs. Only log entries that match the filter are exported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#filter GoogleLoggingBillingAccountSink#filter}
   */
   readonly filter?: string;
@@ -51,19 +51,19 @@ export interface GoogleLoggingBillingAccountSinkConfig extends cdktf.TerraformMe
   readonly id?: string;
   /**
   * The name of the logging sink.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#name GoogleLoggingBillingAccountSink#name}
   */
   readonly name: string;
   /**
   * bigquery_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#bigquery_options GoogleLoggingBillingAccountSink#bigquery_options}
   */
   readonly bigqueryOptions?: GoogleLoggingBillingAccountSinkBigqueryOptions;
   /**
   * exclusions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#exclusions GoogleLoggingBillingAccountSink#exclusions}
   */
   readonly exclusions?: GoogleLoggingBillingAccountSinkExclusions[] | cdktf.IResolvable;
@@ -71,7 +71,7 @@ export interface GoogleLoggingBillingAccountSinkConfig extends cdktf.TerraformMe
 export interface GoogleLoggingBillingAccountSinkBigqueryOptions {
   /**
   * Whether to use BigQuery's partition tables. By default, Logging creates dated tables based on the log entries' timestamps, e.g. syslog_20170523. With partitioned tables the date suffix is no longer present and special query syntax has to be used instead. In both cases, tables are sharded based on UTC timezone.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#use_partitioned_tables GoogleLoggingBillingAccountSink#use_partitioned_tables}
   */
   readonly usePartitionedTables: boolean | cdktf.IResolvable;
@@ -135,25 +135,25 @@ export class GoogleLoggingBillingAccountSinkBigqueryOptionsOutputReference exten
 export interface GoogleLoggingBillingAccountSinkExclusions {
   /**
   * A description of this exclusion.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#description GoogleLoggingBillingAccountSink#description}
   */
   readonly description?: string;
   /**
   * If set to True, then this exclusion is disabled and it does not exclude any log entries
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#disabled GoogleLoggingBillingAccountSink#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * An advanced logs filter that matches the log entries to be excluded. By using the sample function, you can exclude less than 100% of the matching log entries
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#filter GoogleLoggingBillingAccountSink#filter}
   */
   readonly filter: string;
   /**
   * A client-assigned identifier, such as "load-balancer-exclusion". Identifiers are limited to 100 characters and can include only letters, digits, underscores, hyphens, and periods. First character has to be alphanumeric.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink#name GoogleLoggingBillingAccountSink#name}
   */
   readonly name: string;

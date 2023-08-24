@@ -25,13 +25,13 @@ export interface GoogleProjectIamAuditConfigConfig extends cdktf.TerraformMetaAr
   readonly project: string;
   /**
   * Service which will be enabled for audit logging. The special value allServices covers all services.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project_iam_audit_config#service GoogleProjectIamAuditConfig#service}
   */
   readonly service: string;
   /**
   * audit_log_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project_iam_audit_config#audit_log_config GoogleProjectIamAuditConfig#audit_log_config}
   */
   readonly auditLogConfig: GoogleProjectIamAuditConfigAuditLogConfig[] | cdktf.IResolvable;
@@ -39,13 +39,13 @@ export interface GoogleProjectIamAuditConfigConfig extends cdktf.TerraformMetaAr
 export interface GoogleProjectIamAuditConfigAuditLogConfig {
   /**
   * Identities that do not cause logging for this type of permission. Each entry can have one of the following values:user:{emailid}: An email address that represents a specific Google account. For example, alice@gmail.com or joe@example.com. serviceAccount:{emailid}: An email address that represents a service account. For example, my-other-app@appspot.gserviceaccount.com. group:{emailid}: An email address that represents a Google group. For example, admins@example.com. domain:{domain}: A G Suite domain (primary, instead of alias) name that represents all the users of that domain. For example, google.com or example.com.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project_iam_audit_config#exempted_members GoogleProjectIamAuditConfig#exempted_members}
   */
   readonly exemptedMembers?: string[];
   /**
   * Permission type for which logging is to be configured. Must be one of DATA_READ, DATA_WRITE, or ADMIN_READ.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project_iam_audit_config#log_type GoogleProjectIamAuditConfig#log_type}
   */
   readonly logType: string;

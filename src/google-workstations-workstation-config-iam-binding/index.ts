@@ -45,7 +45,7 @@ export interface GoogleWorkstationsWorkstationConfigIamBindingConfig extends cdk
   readonly workstationConfigId: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_config_iam_binding#condition GoogleWorkstationsWorkstationConfigIamBinding#condition}
   */
   readonly condition?: GoogleWorkstationsWorkstationConfigIamBindingCondition;

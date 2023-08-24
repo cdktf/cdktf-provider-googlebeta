@@ -15,19 +15,19 @@ export interface GoogleApiGatewayGatewayConfig extends cdktf.TerraformMetaArgume
   /**
   * Resource name of the API Config for this Gateway. Format: projects/{project}/locations/global/apis/{api}/configs/{apiConfig}.
 When changing api configs please ensure the new config is a new resource and the lifecycle rule 'create_before_destroy' is set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_gateway#api_config GoogleApiGatewayGateway#api_config}
   */
   readonly apiConfig: string;
   /**
   * A user-visible name for the API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_gateway#display_name GoogleApiGatewayGateway#display_name}
   */
   readonly displayName?: string;
   /**
   * Identifier to assign to the Gateway. Must be unique within scope of the parent resource(project).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_gateway#gateway_id GoogleApiGatewayGateway#gateway_id}
   */
   readonly gatewayId: string;
@@ -40,7 +40,7 @@ When changing api configs please ensure the new config is a new resource and the
   readonly id?: string;
   /**
   * Resource labels to represent user-provided metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_gateway#labels GoogleApiGatewayGateway#labels}
   */
   readonly labels?: { [key: string]: string };
@@ -50,13 +50,13 @@ When changing api configs please ensure the new config is a new resource and the
   readonly project?: string;
   /**
   * The region of the gateway for the API.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_gateway#region GoogleApiGatewayGateway#region}
   */
   readonly region?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_gateway#timeouts GoogleApiGatewayGateway#timeouts}
   */
   readonly timeouts?: GoogleApiGatewayGatewayTimeouts;

@@ -41,7 +41,7 @@ export interface GoogleComputeInstanceIamBindingConfig extends cdktf.TerraformMe
   readonly zone?: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance_iam_binding#condition GoogleComputeInstanceIamBinding#condition}
   */
   readonly condition?: GoogleComputeInstanceIamBindingCondition;

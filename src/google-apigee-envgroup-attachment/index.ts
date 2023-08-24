@@ -15,13 +15,13 @@ export interface GoogleApigeeEnvgroupAttachmentConfig extends cdktf.TerraformMet
   /**
   * The Apigee environment group associated with the Apigee environment,
 in the format 'organizations/{{org_name}}/envgroups/{{envgroup_name}}'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_envgroup_attachment#envgroup_id GoogleApigeeEnvgroupAttachment#envgroup_id}
   */
   readonly envgroupId: string;
   /**
   * The resource ID of the environment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_envgroup_attachment#environment GoogleApigeeEnvgroupAttachment#environment}
   */
   readonly environment: string;
@@ -34,7 +34,7 @@ in the format 'organizations/{{org_name}}/envgroups/{{envgroup_name}}'.
   readonly id?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_envgroup_attachment#timeouts GoogleApigeeEnvgroupAttachment#timeouts}
   */
   readonly timeouts?: GoogleApigeeEnvgroupAttachmentTimeouts;

@@ -41,7 +41,7 @@ export interface GoogleComputeSubnetworkIamMemberConfig extends cdktf.TerraformM
   readonly subnetwork: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_subnetwork_iam_member#condition GoogleComputeSubnetworkIamMember#condition}
   */
   readonly condition?: GoogleComputeSubnetworkIamMemberCondition;

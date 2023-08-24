@@ -49,7 +49,7 @@ export interface GoogleWorkstationsWorkstationIamMemberConfig extends cdktf.Terr
   readonly workstationId: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_workstations_workstation_iam_member#condition GoogleWorkstationsWorkstationIamMember#condition}
   */
   readonly condition?: GoogleWorkstationsWorkstationIamMemberCondition;

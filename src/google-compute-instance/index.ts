@@ -14,49 +14,49 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * If true, allows Terraform to stop the instance to update its properties. If you try to update a property that requires stopping the instance without setting this field, the update will fail.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#allow_stopping_for_update GoogleComputeInstance#allow_stopping_for_update}
   */
   readonly allowStoppingForUpdate?: boolean | cdktf.IResolvable;
   /**
   * Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#can_ip_forward GoogleComputeInstance#can_ip_forward}
   */
   readonly canIpForward?: boolean | cdktf.IResolvable;
   /**
   * Whether deletion protection is enabled on this instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#deletion_protection GoogleComputeInstance#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
   * A brief description of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#description GoogleComputeInstance#description}
   */
   readonly description?: string;
   /**
   * Desired status of the instance. Either "RUNNING" or "TERMINATED".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#desired_status GoogleComputeInstance#desired_status}
   */
   readonly desiredStatus?: string;
   /**
   * Whether the instance has virtual displays enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#enable_display GoogleComputeInstance#enable_display}
   */
   readonly enableDisplay?: boolean | cdktf.IResolvable;
   /**
   * List of the type and count of accelerator cards attached to the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#guest_accelerator GoogleComputeInstance#guest_accelerator}
   */
   readonly guestAccelerator?: GoogleComputeInstanceGuestAccelerator[] | cdktf.IResolvable;
   /**
   * A custom hostname for the instance. Must be a fully qualified DNS name and RFC-1035-valid. Valid format is a series of labels 1-63 characters long matching the regular expression [a-z]([-a-z0-9]*[a-z0-9]), concatenated with periods. The entire hostname must not exceed 253 characters. Changing this forces a new resource to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#hostname GoogleComputeInstance#hostname}
   */
   readonly hostname?: string;
@@ -69,139 +69,139 @@ export interface GoogleComputeInstanceConfig extends cdktf.TerraformMetaArgument
   readonly id?: string;
   /**
   * A set of key/value label pairs assigned to the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#labels GoogleComputeInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The machine type to create.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#machine_type GoogleComputeInstance#machine_type}
   */
   readonly machineType: string;
   /**
   * Metadata key/value pairs made available within the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#metadata GoogleComputeInstance#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * Metadata startup scripts made available within the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#metadata_startup_script GoogleComputeInstance#metadata_startup_script}
   */
   readonly metadataStartupScript?: string;
   /**
   * The minimum CPU platform specified for the VM instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#min_cpu_platform GoogleComputeInstance#min_cpu_platform}
   */
   readonly minCpuPlatform?: string;
   /**
   * The name of the instance. One of name or self_link must be provided.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#name GoogleComputeInstance#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If self_link is provided, this value is ignored. If neither self_link nor project are provided, the provider project is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#project GoogleComputeInstance#project}
   */
   readonly project?: string;
   /**
   * A list of self_links of resource policies to attach to the instance. Currently a max of 1 resource policy is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#resource_policies GoogleComputeInstance#resource_policies}
   */
   readonly resourcePolicies?: string[];
   /**
   * The list of tags attached to the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#tags GoogleComputeInstance#tags}
   */
   readonly tags?: string[];
   /**
   * The zone of the instance. If self_link is provided, this value is ignored. If neither self_link nor zone are provided, the provider zone is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#zone GoogleComputeInstance#zone}
   */
   readonly zone?: string;
   /**
   * advanced_machine_features block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#advanced_machine_features GoogleComputeInstance#advanced_machine_features}
   */
   readonly advancedMachineFeatures?: GoogleComputeInstanceAdvancedMachineFeatures;
   /**
   * attached_disk block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#attached_disk GoogleComputeInstance#attached_disk}
   */
   readonly attachedDisk?: GoogleComputeInstanceAttachedDisk[] | cdktf.IResolvable;
   /**
   * boot_disk block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#boot_disk GoogleComputeInstance#boot_disk}
   */
   readonly bootDisk: GoogleComputeInstanceBootDisk;
   /**
   * confidential_instance_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#confidential_instance_config GoogleComputeInstance#confidential_instance_config}
   */
   readonly confidentialInstanceConfig?: GoogleComputeInstanceConfidentialInstanceConfig;
   /**
   * network_interface block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#network_interface GoogleComputeInstance#network_interface}
   */
   readonly networkInterface: GoogleComputeInstanceNetworkInterface[] | cdktf.IResolvable;
   /**
   * network_performance_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#network_performance_config GoogleComputeInstance#network_performance_config}
   */
   readonly networkPerformanceConfig?: GoogleComputeInstanceNetworkPerformanceConfig;
   /**
   * params block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#params GoogleComputeInstance#params}
   */
   readonly params?: GoogleComputeInstanceParams;
   /**
   * reservation_affinity block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#reservation_affinity GoogleComputeInstance#reservation_affinity}
   */
   readonly reservationAffinity?: GoogleComputeInstanceReservationAffinity;
   /**
   * scheduling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#scheduling GoogleComputeInstance#scheduling}
   */
   readonly scheduling?: GoogleComputeInstanceScheduling;
   /**
   * scratch_disk block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#scratch_disk GoogleComputeInstance#scratch_disk}
   */
   readonly scratchDisk?: GoogleComputeInstanceScratchDisk[] | cdktf.IResolvable;
   /**
   * service_account block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#service_account GoogleComputeInstance#service_account}
   */
   readonly serviceAccount?: GoogleComputeInstanceServiceAccount;
   /**
   * shielded_instance_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#shielded_instance_config GoogleComputeInstance#shielded_instance_config}
   */
   readonly shieldedInstanceConfig?: GoogleComputeInstanceShieldedInstanceConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#timeouts GoogleComputeInstance#timeouts}
   */
   readonly timeouts?: GoogleComputeInstanceTimeouts;
@@ -333,19 +333,19 @@ export class GoogleComputeInstanceGuestAcceleratorList extends cdktf.ComplexList
 export interface GoogleComputeInstanceAdvancedMachineFeatures {
   /**
   * Whether to enable nested virtualization or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#enable_nested_virtualization GoogleComputeInstance#enable_nested_virtualization}
   */
   readonly enableNestedVirtualization?: boolean | cdktf.IResolvable;
   /**
   * The number of threads per physical core. To disable simultaneous multithreading (SMT) set this to 1. If unset, the maximum number of threads supported per core by the underlying processor is assumed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#threads_per_core GoogleComputeInstance#threads_per_core}
   */
   readonly threadsPerCore?: number;
   /**
   * The number of physical cores to expose to an instance. Multiply by the number of threads per core to compute the total number of virtual CPUs to expose to the instance. If unset, the number of cores is inferred from the instance\'s nominal CPU count and the underlying platform\'s SMT width.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#visible_core_count GoogleComputeInstance#visible_core_count}
   */
   readonly visibleCoreCount?: number;
@@ -458,31 +458,31 @@ export class GoogleComputeInstanceAdvancedMachineFeaturesOutputReference extends
 export interface GoogleComputeInstanceAttachedDisk {
   /**
   * Name with which the attached disk is accessible under /dev/disk/by-id/
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#device_name GoogleComputeInstance#device_name}
   */
   readonly deviceName?: string;
   /**
   * A 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#disk_encryption_key_raw GoogleComputeInstance#disk_encryption_key_raw}
   */
   readonly diskEncryptionKeyRaw?: string;
   /**
   * The self_link of the encryption key that is stored in Google Cloud KMS to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#kms_key_self_link GoogleComputeInstance#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * Read/write mode for the disk. One of "READ_ONLY" or "READ_WRITE".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#mode GoogleComputeInstance#mode}
   */
   readonly mode?: string;
   /**
   * The name or self_link of the disk attached to this instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#source GoogleComputeInstance#source}
   */
   readonly source: string;
@@ -675,31 +675,31 @@ export class GoogleComputeInstanceAttachedDiskList extends cdktf.ComplexList {
 export interface GoogleComputeInstanceBootDiskInitializeParams {
   /**
   * The image from which this disk was initialised.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#image GoogleComputeInstance#image}
   */
   readonly image?: string;
   /**
   * A set of key/value label pairs assigned to the disk.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#labels GoogleComputeInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * A map of resource manager tags. Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#resource_manager_tags GoogleComputeInstance#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
   /**
   * The size of the image in gigabytes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#size GoogleComputeInstance#size}
   */
   readonly size?: number;
   /**
   * The Google Compute Engine disk type. Such as pd-standard, pd-ssd or pd-balanced.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#type GoogleComputeInstance#type}
   */
   readonly type?: string;
@@ -858,43 +858,43 @@ export class GoogleComputeInstanceBootDiskInitializeParamsOutputReference extend
 export interface GoogleComputeInstanceBootDisk {
   /**
   * Whether the disk will be auto-deleted when the instance is deleted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#auto_delete GoogleComputeInstance#auto_delete}
   */
   readonly autoDelete?: boolean | cdktf.IResolvable;
   /**
   * Name with which attached disk will be accessible under /dev/disk/by-id/
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#device_name GoogleComputeInstance#device_name}
   */
   readonly deviceName?: string;
   /**
   * A 256-bit customer-supplied encryption key, encoded in RFC 4648 base64 to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#disk_encryption_key_raw GoogleComputeInstance#disk_encryption_key_raw}
   */
   readonly diskEncryptionKeyRaw?: string;
   /**
   * The self_link of the encryption key that is stored in Google Cloud KMS to encrypt this disk. Only one of kms_key_self_link and disk_encryption_key_raw may be set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#kms_key_self_link GoogleComputeInstance#kms_key_self_link}
   */
   readonly kmsKeySelfLink?: string;
   /**
   * Read/write mode for the disk. One of "READ_ONLY" or "READ_WRITE".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#mode GoogleComputeInstance#mode}
   */
   readonly mode?: string;
   /**
   * The name or self_link of the disk attached to this instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#source GoogleComputeInstance#source}
   */
   readonly source?: string;
   /**
   * initialize_params block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#initialize_params GoogleComputeInstance#initialize_params}
   */
   readonly initializeParams?: GoogleComputeInstanceBootDiskInitializeParams;
@@ -1104,7 +1104,7 @@ export class GoogleComputeInstanceBootDiskOutputReference extends cdktf.ComplexO
 export interface GoogleComputeInstanceConfidentialInstanceConfig {
   /**
   * Defines whether the instance should have confidential compute enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#enable_confidential_compute GoogleComputeInstance#enable_confidential_compute}
   */
   readonly enableConfidentialCompute: boolean | cdktf.IResolvable;
@@ -1168,19 +1168,19 @@ export class GoogleComputeInstanceConfidentialInstanceConfigOutputReference exte
 export interface GoogleComputeInstanceNetworkInterfaceAccessConfig {
   /**
   * The IP address that is be 1:1 mapped to the instance's network ip.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#nat_ip GoogleComputeInstance#nat_ip}
   */
   readonly natIp?: string;
   /**
   * The networking tier used for configuring this instance. One of PREMIUM or STANDARD.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#network_tier GoogleComputeInstance#network_tier}
   */
   readonly networkTier?: string;
   /**
   * The DNS domain name for the public PTR record.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#public_ptr_domain_name GoogleComputeInstance#public_ptr_domain_name}
   */
   readonly publicPtrDomainName?: string;
@@ -1325,13 +1325,13 @@ export class GoogleComputeInstanceNetworkInterfaceAccessConfigList extends cdktf
 export interface GoogleComputeInstanceNetworkInterfaceAliasIpRange {
   /**
   * The IP CIDR range represented by this alias IP range.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#ip_cidr_range GoogleComputeInstance#ip_cidr_range}
   */
   readonly ipCidrRange: string;
   /**
   * The subnetwork secondary range name specifying the secondary range from which to allocate the IP CIDR range for this alias IP range.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#subnetwork_range_name GoogleComputeInstance#subnetwork_range_name}
   */
   readonly subnetworkRangeName?: string;
@@ -1450,31 +1450,31 @@ export class GoogleComputeInstanceNetworkInterfaceAliasIpRangeList extends cdktf
 export interface GoogleComputeInstanceNetworkInterfaceIpv6AccessConfig {
   /**
   * The first IPv6 address of the external IPv6 range associated with this instance, prefix length is stored in externalIpv6PrefixLength in ipv6AccessConfig. To use a static external IP address, it must be unused and in the same region as the instance's zone. If not specified, Google Cloud will automatically assign an external IPv6 address from the instance's subnetwork.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#external_ipv6 GoogleComputeInstance#external_ipv6}
   */
   readonly externalIpv6?: string;
   /**
   * The prefix length of the external IPv6 range.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#external_ipv6_prefix_length GoogleComputeInstance#external_ipv6_prefix_length}
   */
   readonly externalIpv6PrefixLength?: string;
   /**
   * The name of this access configuration. In ipv6AccessConfigs, the recommended name is External IPv6.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#name GoogleComputeInstance#name}
   */
   readonly name?: string;
   /**
   * The service-level to be provided for IPv6 traffic when the subnet has an external subnet. Only PREMIUM tier is valid for IPv6
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#network_tier GoogleComputeInstance#network_tier}
   */
   readonly networkTier: string;
   /**
   * The domain name to be used when creating DNSv6 records for the external IPv6 ranges.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#public_ptr_domain_name GoogleComputeInstance#public_ptr_domain_name}
   */
   readonly publicPtrDomainName?: string;
@@ -1662,61 +1662,61 @@ export class GoogleComputeInstanceNetworkInterfaceIpv6AccessConfigList extends c
 export interface GoogleComputeInstanceNetworkInterface {
   /**
   * The name or self_link of the network attached to this interface.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#network GoogleComputeInstance#network}
   */
   readonly network?: string;
   /**
   * The private IP address assigned to the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#network_ip GoogleComputeInstance#network_ip}
   */
   readonly networkIp?: string;
   /**
   * The type of vNIC to be used on this interface. Possible values:GVNIC, VIRTIO_NET
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#nic_type GoogleComputeInstance#nic_type}
   */
   readonly nicType?: string;
   /**
   * The networking queue count that's specified by users for the network interface. Both Rx and Tx queues will be set to this number. It will be empty if not specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#queue_count GoogleComputeInstance#queue_count}
   */
   readonly queueCount?: number;
   /**
   * The stack type for this network interface to identify whether the IPv6 feature is enabled or not. If not specified, IPV4_ONLY will be used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#stack_type GoogleComputeInstance#stack_type}
   */
   readonly stackType?: string;
   /**
   * The name or self_link of the subnetwork attached to this interface.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#subnetwork GoogleComputeInstance#subnetwork}
   */
   readonly subnetwork?: string;
   /**
   * The project in which the subnetwork belongs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#subnetwork_project GoogleComputeInstance#subnetwork_project}
   */
   readonly subnetworkProject?: string;
   /**
   * access_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#access_config GoogleComputeInstance#access_config}
   */
   readonly accessConfig?: GoogleComputeInstanceNetworkInterfaceAccessConfig[] | cdktf.IResolvable;
   /**
   * alias_ip_range block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#alias_ip_range GoogleComputeInstance#alias_ip_range}
   */
   readonly aliasIpRange?: GoogleComputeInstanceNetworkInterfaceAliasIpRange[] | cdktf.IResolvable;
   /**
   * ipv6_access_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#ipv6_access_config GoogleComputeInstance#ipv6_access_config}
   */
   readonly ipv6AccessConfig?: GoogleComputeInstanceNetworkInterfaceIpv6AccessConfig[] | cdktf.IResolvable;
@@ -2032,7 +2032,7 @@ export class GoogleComputeInstanceNetworkInterfaceList extends cdktf.ComplexList
 export interface GoogleComputeInstanceNetworkPerformanceConfig {
   /**
   * The egress bandwidth tier to enable. Possible values:TIER_1, DEFAULT
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#total_egress_bandwidth_tier GoogleComputeInstance#total_egress_bandwidth_tier}
   */
   readonly totalEgressBandwidthTier: string;
@@ -2096,7 +2096,7 @@ export class GoogleComputeInstanceNetworkPerformanceConfigOutputReference extend
 export interface GoogleComputeInstanceParams {
   /**
   * A map of resource manager tags. Resource manager tag keys and values have the same definition as resource manager tags. Keys must be in the format tagKeys/{tag_key_id}, and values are in the format tagValues/456. The field is ignored (both PUT & PATCH) when empty.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#resource_manager_tags GoogleComputeInstance#resource_manager_tags}
   */
   readonly resourceManagerTags?: { [key: string]: string };
@@ -2163,13 +2163,13 @@ export class GoogleComputeInstanceParamsOutputReference extends cdktf.ComplexObj
 export interface GoogleComputeInstanceReservationAffinitySpecificReservation {
   /**
   * Corresponds to the label key of a reservation resource. To target a SPECIFIC_RESERVATION by name, specify compute.googleapis.com/reservation-name as the key and specify the name of your reservation as the only value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#key GoogleComputeInstance#key}
   */
   readonly key: string;
   /**
   * Corresponds to the label values of a reservation resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#values GoogleComputeInstance#values}
   */
   readonly values: string[];
@@ -2253,13 +2253,13 @@ export class GoogleComputeInstanceReservationAffinitySpecificReservationOutputRe
 export interface GoogleComputeInstanceReservationAffinity {
   /**
   * The type of reservation from which this instance can consume resources.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#type GoogleComputeInstance#type}
   */
   readonly type: string;
   /**
   * specific_reservation block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#specific_reservation GoogleComputeInstance#specific_reservation}
   */
   readonly specificReservation?: GoogleComputeInstanceReservationAffinitySpecificReservation;
@@ -2349,14 +2349,14 @@ export interface GoogleComputeInstanceSchedulingLocalSsdRecoveryTimeout {
 resolution. Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must
 be from 0 to 999,999,999 inclusive.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#nanos GoogleComputeInstance#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#seconds GoogleComputeInstance#seconds}
   */
   readonly seconds: number;
@@ -2446,14 +2446,14 @@ export interface GoogleComputeInstanceSchedulingMaxRunDuration {
 resolution. Durations less than one second are represented
 with a 0 seconds field and a positive nanos field. Must
 be from 0 to 999,999,999 inclusive.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#nanos GoogleComputeInstance#nanos}
   */
   readonly nanos?: number;
   /**
   * Span of time at a resolution of a second.
 Must be from 0 to 315,576,000,000 inclusive.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#seconds GoogleComputeInstance#seconds}
   */
   readonly seconds: number;
@@ -2682,19 +2682,19 @@ export class GoogleComputeInstanceSchedulingNodeAffinitiesList extends cdktf.Com
 export interface GoogleComputeInstanceScheduling {
   /**
   * Specifies if the instance should be restarted if it was terminated by Compute Engine (not a user).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#automatic_restart GoogleComputeInstance#automatic_restart}
   */
   readonly automaticRestart?: boolean | cdktf.IResolvable;
   /**
   * Specifies the action GCE should take when SPOT VM is preempted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#instance_termination_action GoogleComputeInstance#instance_termination_action}
   */
   readonly instanceTerminationAction?: string;
   /**
   * Specifies the frequency of planned maintenance events. The accepted values are: PERIODIC
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#maintenance_interval GoogleComputeInstance#maintenance_interval}
   */
   readonly maintenanceInterval?: string;
@@ -2704,37 +2704,37 @@ export interface GoogleComputeInstanceScheduling {
   readonly minNodeCpus?: number;
   /**
   * Describes maintenance behavior for the instance. One of MIGRATE or TERMINATE,
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#on_host_maintenance GoogleComputeInstance#on_host_maintenance}
   */
   readonly onHostMaintenance?: string;
   /**
   * Whether the instance is preemptible.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#preemptible GoogleComputeInstance#preemptible}
   */
   readonly preemptible?: boolean | cdktf.IResolvable;
   /**
   * Whether the instance is spot. If this is set as SPOT.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#provisioning_model GoogleComputeInstance#provisioning_model}
   */
   readonly provisioningModel?: string;
   /**
   * local_ssd_recovery_timeout block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#local_ssd_recovery_timeout GoogleComputeInstance#local_ssd_recovery_timeout}
   */
   readonly localSsdRecoveryTimeout?: GoogleComputeInstanceSchedulingLocalSsdRecoveryTimeout;
   /**
   * max_run_duration block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#max_run_duration GoogleComputeInstance#max_run_duration}
   */
   readonly maxRunDuration?: GoogleComputeInstanceSchedulingMaxRunDuration;
   /**
   * node_affinities block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#node_affinities GoogleComputeInstance#node_affinities}
   */
   readonly nodeAffinities?: GoogleComputeInstanceSchedulingNodeAffinities[] | cdktf.IResolvable;
@@ -3008,13 +3008,13 @@ export class GoogleComputeInstanceSchedulingOutputReference extends cdktf.Comple
 export interface GoogleComputeInstanceScratchDisk {
   /**
   * The disk interface used for attaching this disk. One of SCSI or NVME.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#interface GoogleComputeInstance#interface}
   */
   readonly interface: string;
   /**
   * The size of the disk in gigabytes. One of 375 or 3000.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#size GoogleComputeInstance#size}
   */
   readonly size?: number;
@@ -3133,13 +3133,13 @@ export class GoogleComputeInstanceScratchDiskList extends cdktf.ComplexList {
 export interface GoogleComputeInstanceServiceAccount {
   /**
   * The service account e-mail address.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#email GoogleComputeInstance#email}
   */
   readonly email?: string;
   /**
   * A list of service scopes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#scopes GoogleComputeInstance#scopes}
   */
   readonly scopes: string[];
@@ -3226,19 +3226,19 @@ export class GoogleComputeInstanceServiceAccountOutputReference extends cdktf.Co
 export interface GoogleComputeInstanceShieldedInstanceConfig {
   /**
   * Whether integrity monitoring is enabled for the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#enable_integrity_monitoring GoogleComputeInstance#enable_integrity_monitoring}
   */
   readonly enableIntegrityMonitoring?: boolean | cdktf.IResolvable;
   /**
   * Whether secure boot is enabled for the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#enable_secure_boot GoogleComputeInstance#enable_secure_boot}
   */
   readonly enableSecureBoot?: boolean | cdktf.IResolvable;
   /**
   * Whether the instance uses vTPM.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_instance#enable_vtpm GoogleComputeInstance#enable_vtpm}
   */
   readonly enableVtpm?: boolean | cdktf.IResolvable;

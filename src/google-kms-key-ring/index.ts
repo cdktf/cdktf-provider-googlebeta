@@ -22,13 +22,13 @@ export interface GoogleKmsKeyRingConfig extends cdktf.TerraformMetaArguments {
   /**
   * The location for the KeyRing.
 A full list of valid locations can be found by running 'gcloud kms locations list'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_key_ring#location GoogleKmsKeyRing#location}
   */
   readonly location: string;
   /**
   * The resource name for the KeyRing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_key_ring#name GoogleKmsKeyRing#name}
   */
   readonly name: string;
@@ -38,7 +38,7 @@ A full list of valid locations can be found by running 'gcloud kms locations lis
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_key_ring#timeouts GoogleKmsKeyRing#timeouts}
   */
   readonly timeouts?: GoogleKmsKeyRingTimeouts;

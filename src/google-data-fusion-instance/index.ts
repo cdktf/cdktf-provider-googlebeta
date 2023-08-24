@@ -14,37 +14,37 @@ import * as cdktf from 'cdktf';
 export interface GoogleDataFusionInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * User-managed service account to set on Dataproc when Cloud Data Fusion creates Dataproc to run data processing pipelines.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#dataproc_service_account GoogleDataFusionInstance#dataproc_service_account}
   */
   readonly dataprocServiceAccount?: string;
   /**
   * An optional description of the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#description GoogleDataFusionInstance#description}
   */
   readonly description?: string;
   /**
   * Display name for an instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#display_name GoogleDataFusionInstance#display_name}
   */
   readonly displayName?: string;
   /**
   * Option to enable granular role-based access control.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#enable_rbac GoogleDataFusionInstance#enable_rbac}
   */
   readonly enableRbac?: boolean | cdktf.IResolvable;
   /**
   * Option to enable Stackdriver Logging.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#enable_stackdriver_logging GoogleDataFusionInstance#enable_stackdriver_logging}
   */
   readonly enableStackdriverLogging?: boolean | cdktf.IResolvable;
   /**
   * Option to enable Stackdriver Monitoring.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#enable_stackdriver_monitoring GoogleDataFusionInstance#enable_stackdriver_monitoring}
   */
   readonly enableStackdriverMonitoring?: boolean | cdktf.IResolvable;
@@ -58,19 +58,19 @@ export interface GoogleDataFusionInstanceConfig extends cdktf.TerraformMetaArgum
   /**
   * The resource labels for instance to use to annotate any related underlying resources,
 such as Compute Engine VMs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#labels GoogleDataFusionInstance#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The ID of the instance or a fully qualified identifier for the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#name GoogleDataFusionInstance#name}
   */
   readonly name: string;
   /**
   * Map of additional options used to configure the behavior of Data Fusion instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#options GoogleDataFusionInstance#options}
   */
   readonly options?: { [key: string]: string };
@@ -78,7 +78,7 @@ such as Compute Engine VMs.
   * Specifies whether the Data Fusion instance should be private. If set to
 true, all Data Fusion nodes will have private IP addresses and will not be
 able to access the public internet.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#private_instance GoogleDataFusionInstance#private_instance}
   */
   readonly privateInstance?: boolean | cdktf.IResolvable;
@@ -88,7 +88,7 @@ able to access the public internet.
   readonly project?: string;
   /**
   * The region of the Data Fusion instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#region GoogleDataFusionInstance#region}
   */
   readonly region?: string;
@@ -103,49 +103,49 @@ available, such as support for streaming pipelines, higher number of concurrent 
 - DEVELOPER: Developer Data Fusion instance. In Developer type, the user will have all features available but
 with restrictive capabilities. This is to help enterprises design and develop their data ingestion and integration
 pipelines at low cost. Possible values: ["BASIC", "ENTERPRISE", "DEVELOPER"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#type GoogleDataFusionInstance#type}
   */
   readonly type: string;
   /**
   * Current version of the Data Fusion.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#version GoogleDataFusionInstance#version}
   */
   readonly version?: string;
   /**
   * Name of the zone in which the Data Fusion instance will be created. Only DEVELOPER instances use this field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#zone GoogleDataFusionInstance#zone}
   */
   readonly zone?: string;
   /**
   * accelerators block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#accelerators GoogleDataFusionInstance#accelerators}
   */
   readonly accelerators?: GoogleDataFusionInstanceAccelerators[] | cdktf.IResolvable;
   /**
   * crypto_key_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#crypto_key_config GoogleDataFusionInstance#crypto_key_config}
   */
   readonly cryptoKeyConfig?: GoogleDataFusionInstanceCryptoKeyConfig;
   /**
   * event_publish_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#event_publish_config GoogleDataFusionInstance#event_publish_config}
   */
   readonly eventPublishConfig?: GoogleDataFusionInstanceEventPublishConfig;
   /**
   * network_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#network_config GoogleDataFusionInstance#network_config}
   */
   readonly networkConfig?: GoogleDataFusionInstanceNetworkConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#timeouts GoogleDataFusionInstance#timeouts}
   */
   readonly timeouts?: GoogleDataFusionInstanceTimeouts;
@@ -153,13 +153,13 @@ pipelines at low cost. Possible values: ["BASIC", "ENTERPRISE", "DEVELOPER"]
 export interface GoogleDataFusionInstanceAccelerators {
   /**
   * The type of an accelator for a CDF instance. Possible values: ["CDC", "HEALTHCARE", "CCAI_INSIGHTS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#accelerator_type GoogleDataFusionInstance#accelerator_type}
   */
   readonly acceleratorType: string;
   /**
   * The type of an accelator for a CDF instance. Possible values: ["ENABLED", "DISABLED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#state GoogleDataFusionInstance#state}
   */
   readonly state: string;
@@ -274,9 +274,11 @@ export class GoogleDataFusionInstanceAcceleratorsList extends cdktf.ComplexList 
 }
 export interface GoogleDataFusionInstanceCryptoKeyConfig {
   /**
-  * The name of the key which is used to encrypt/decrypt customer data. For key in Cloud KMS, the key should be in the format of projects/*\/locations/*\/keyRings/*\/cryptoKeys/*.
-  * 
+  * The name of the key which is used to encrypt/decrypt customer data. For key in Cloud KMS, the key should be in the format of projects/* /locations/* /keyRings/* /cryptoKeys/*.
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#key_reference GoogleDataFusionInstance#key_reference}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly keyReference: string;
 }
@@ -339,13 +341,13 @@ export class GoogleDataFusionInstanceCryptoKeyConfigOutputReference extends cdkt
 export interface GoogleDataFusionInstanceEventPublishConfig {
   /**
   * Option to enable Event Publishing.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#enabled GoogleDataFusionInstance#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * The resource name of the Pub/Sub topic. Format: projects/{projectId}/topics/{topic_id}
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#topic GoogleDataFusionInstance#topic}
   */
   readonly topic: string;
@@ -430,7 +432,7 @@ export interface GoogleDataFusionInstanceNetworkConfig {
   /**
   * The IP range in CIDR notation to use for the managed Data Fusion instance
 nodes. This range must not overlap with any other ranges used in the Data Fusion instance network.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#ip_allocation GoogleDataFusionInstance#ip_allocation}
   */
   readonly ipAllocation: string;
@@ -438,7 +440,7 @@ nodes. This range must not overlap with any other ranges used in the Data Fusion
   * Name of the network in the project with which the tenant project
 will be peered for executing pipelines. In case of shared VPC where the network resides in another host
 project the network should specified in the form of projects/{host-project-id}/global/networks/{network}
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_fusion_instance#network GoogleDataFusionInstance#network}
   */
   readonly network: string;

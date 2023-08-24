@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigeeenvironmentiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeeenvironmentiampolicy"
 
 googleapigeeenvironmentiampolicy.NewGoogleApigeeEnvironmentIamPolicy(scope Construct, id *string, config GoogleApigeeEnvironmentIamPolicyConfig) GoogleApigeeEnvironmentIamPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigeeenvironmentiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeeenvironmentiampolicy"
 
 googleapigeeenvironmentiampolicy.GoogleApigeeEnvironmentIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigeeenvironmentiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeeenvironmentiampolicy"
 
 googleapigeeenvironmentiampolicy.GoogleApigeeEnvironmentIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ googleapigeeenvironmentiampolicy.GoogleApigeeEnvironmentIamPolicy_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigeeenvironmentiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeeenvironmentiampolicy"
 
 googleapigeeenvironmentiampolicy.GoogleApigeeEnvironmentIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -621,7 +621,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleApigeeEnvironmentIamPolicy.GoogleApigeeEnvironmentIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigeeenvironmentiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeeenvironmentiampolicy"
 
 &googleapigeeenvironmentiampolicy.GoogleApigeeEnvironmentIamPolicyConfig {
 	Connection: interface{},

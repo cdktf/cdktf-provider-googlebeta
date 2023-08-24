@@ -14,20 +14,20 @@ import * as cdktf from 'cdktf';
 export interface GoogleDataCatalogEntryGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Entry group description, which can consist of several sentences or paragraphs that describe entry group contents.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_entry_group#description GoogleDataCatalogEntryGroup#description}
   */
   readonly description?: string;
   /**
   * A short name to identify the entry group, for example, "analytics data - jan 2011".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_entry_group#display_name GoogleDataCatalogEntryGroup#display_name}
   */
   readonly displayName?: string;
   /**
   * The id of the entry group to create. The id must begin with a letter or underscore,
 contain only English letters, numbers and underscores, and be at most 64 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_entry_group#entry_group_id GoogleDataCatalogEntryGroup#entry_group_id}
   */
   readonly entryGroupId: string;
@@ -44,13 +44,13 @@ contain only English letters, numbers and underscores, and be at most 64 charact
   readonly project?: string;
   /**
   * EntryGroup location region.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_entry_group#region GoogleDataCatalogEntryGroup#region}
   */
   readonly region?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_entry_group#timeouts GoogleDataCatalogEntryGroup#timeouts}
   */
   readonly timeouts?: GoogleDataCatalogEntryGroupTimeouts;

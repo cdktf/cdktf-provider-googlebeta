@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleEssentialContactsContactConfig extends cdktf.TerraformMetaArguments {
   /**
   * The email address to send notifications to. This does not need to be a Google account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_essential_contacts_contact#email GoogleEssentialContactsContact#email}
   */
   readonly email: string;
@@ -27,25 +27,25 @@ export interface GoogleEssentialContactsContactConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * The preferred language for notifications, as a ISO 639-1 language code. See Supported languages for a list of supported languages.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_essential_contacts_contact#language_tag GoogleEssentialContactsContact#language_tag}
   */
   readonly languageTag: string;
   /**
   * The categories of notifications that the contact will receive communications for.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_essential_contacts_contact#notification_category_subscriptions GoogleEssentialContactsContact#notification_category_subscriptions}
   */
   readonly notificationCategorySubscriptions: string[];
   /**
   * The resource to save this contact for. Format: organizations/{organization_id}, folders/{folder_id} or projects/{project_id}
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_essential_contacts_contact#parent GoogleEssentialContactsContact#parent}
   */
   readonly parent: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_essential_contacts_contact#timeouts GoogleEssentialContactsContact#timeouts}
   */
   readonly timeouts?: GoogleEssentialContactsContactTimeouts;

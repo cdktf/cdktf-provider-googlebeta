@@ -33,7 +33,7 @@ export interface GoogleServiceDirectoryNamespaceIamBindingConfig extends cdktf.T
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_namespace_iam_binding#condition GoogleServiceDirectoryNamespaceIamBinding#condition}
   */
   readonly condition?: GoogleServiceDirectoryNamespaceIamBindingCondition;

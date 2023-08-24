@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleBigqueryReservationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Maximum number of queries that are allowed to run concurrently in this reservation. This is a soft limit due to asynchronous nature of the system and various optimizations for small queries. Default value is 0 which means that concurrency will be automatically set based on the reservation size.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_reservation#concurrency GoogleBigqueryReservation#concurrency}
   */
   readonly concurrency?: number;
   /**
   * The edition type. Valid values are STANDARD, ENTERPRISE, ENTERPRISE_PLUS
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_reservation#edition GoogleBigqueryReservation#edition}
   */
   readonly edition?: string;
@@ -35,27 +35,27 @@ export interface GoogleBigqueryReservationConfig extends cdktf.TerraformMetaArgu
   * If false, any query using this reservation will use idle slots from other reservations within
 the same admin project. If true, a query using this reservation will execute with the slot
 capacity specified above at most.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_reservation#ignore_idle_slots GoogleBigqueryReservation#ignore_idle_slots}
   */
   readonly ignoreIdleSlots?: boolean | cdktf.IResolvable;
   /**
   * The geographic location where the transfer config should reside.
 Examples: US, EU, asia-northeast1. The default value is US.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_reservation#location GoogleBigqueryReservation#location}
   */
   readonly location?: string;
   /**
   * Applicable only for reservations located within one of the BigQuery multi-regions (US or EU).
 If set to true, this reservation is placed in the organization's secondary region which is designated for disaster recovery purposes. If false, this reservation is placed in the organization's default region.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_reservation#multi_region_auxiliary GoogleBigqueryReservation#multi_region_auxiliary}
   */
   readonly multiRegionAuxiliary?: boolean | cdktf.IResolvable;
   /**
   * The name of the reservation. This field must only contain alphanumeric characters or dash.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_reservation#name GoogleBigqueryReservation#name}
   */
   readonly name: string;
@@ -66,19 +66,19 @@ If set to true, this reservation is placed in the organization's secondary regio
   /**
   * Minimum slots available to this reservation. A slot is a unit of computational power in BigQuery, and serves as the
 unit of parallelism. Queries using this reservation might use more slots during runtime if ignoreIdleSlots is set to false.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_reservation#slot_capacity GoogleBigqueryReservation#slot_capacity}
   */
   readonly slotCapacity: number;
   /**
   * autoscale block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_reservation#autoscale GoogleBigqueryReservation#autoscale}
   */
   readonly autoscale?: GoogleBigqueryReservationAutoscale;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_reservation#timeouts GoogleBigqueryReservation#timeouts}
   */
   readonly timeouts?: GoogleBigqueryReservationTimeouts;
@@ -86,7 +86,7 @@ unit of parallelism. Queries using this reservation might use more slots during 
 export interface GoogleBigqueryReservationAutoscale {
   /**
   * Number of slots to be scaled when needed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_reservation#max_slots GoogleBigqueryReservation#max_slots}
   */
   readonly maxSlots?: number;

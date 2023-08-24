@@ -16,13 +16,13 @@ export interface GoogleSqlUserConfig extends cdktf.TerraformMetaArguments {
   * The deletion policy for the user. Setting ABANDON allows the resource
 				to be abandoned rather than deleted. This is useful for Postgres, where users cannot be deleted from the API if they
 				have been granted SQL roles. Possible values are: "ABANDON".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#deletion_policy GoogleSqlUser#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The host the user can connect from. This is only supported for MySQL instances. Don't set this field for PostgreSQL instances. Can be an IP address. Changing this forces a new resource to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#host GoogleSqlUser#host}
   */
   readonly host?: string;
@@ -35,45 +35,45 @@ export interface GoogleSqlUserConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the Cloud SQL instance. Changing this forces a new resource to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#instance GoogleSqlUser#instance}
   */
   readonly instance: string;
   /**
   * The name of the user. Changing this forces a new resource to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#name GoogleSqlUser#name}
   */
   readonly name: string;
   /**
   * The password for the user. Can be updated. For Postgres instances this is a Required field, unless type is set to
                 either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#password GoogleSqlUser#password}
   */
   readonly password?: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#project GoogleSqlUser#project}
   */
   readonly project?: string;
   /**
   * The user type. It determines the method to authenticate the user during login.
                 The default is the database's built-in user type. Flags include "BUILT_IN", "CLOUD_IAM_USER", or "CLOUD_IAM_SERVICE_ACCOUNT".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#type GoogleSqlUser#type}
   */
   readonly type?: string;
   /**
   * password_policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#password_policy GoogleSqlUser#password_policy}
   */
   readonly passwordPolicy?: GoogleSqlUserPasswordPolicy;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#timeouts GoogleSqlUser#timeouts}
   */
   readonly timeouts?: GoogleSqlUserTimeouts;
@@ -219,25 +219,25 @@ export class GoogleSqlUserPasswordPolicyStatusList extends cdktf.ComplexList {
 export interface GoogleSqlUserPasswordPolicy {
   /**
   * Number of failed attempts allowed before the user get locked.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#allowed_failed_attempts GoogleSqlUser#allowed_failed_attempts}
   */
   readonly allowedFailedAttempts?: number;
   /**
   * If true, the check that will lock user after too many failed login attempts will be enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#enable_failed_attempts_check GoogleSqlUser#enable_failed_attempts_check}
   */
   readonly enableFailedAttemptsCheck?: boolean | cdktf.IResolvable;
   /**
   * If true, the user must specify the current password before changing the password. This flag is supported only for MySQL.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#enable_password_verification GoogleSqlUser#enable_password_verification}
   */
   readonly enablePasswordVerification?: boolean | cdktf.IResolvable;
   /**
   * Password expiration duration with one week grace period.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_user#password_expiration_duration GoogleSqlUser#password_expiration_duration}
   */
   readonly passwordExpirationDuration?: string;

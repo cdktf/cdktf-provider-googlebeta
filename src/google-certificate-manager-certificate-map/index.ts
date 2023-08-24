@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleCertificateManagerCertificateMapConfig extends cdktf.TerraformMetaArguments {
   /**
   * A human-readable description of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate_map#description GoogleCertificateManagerCertificateMap#description}
   */
   readonly description?: string;
@@ -27,15 +27,17 @@ export interface GoogleCertificateManagerCertificateMapConfig extends cdktf.Terr
   readonly id?: string;
   /**
   * Set of labels associated with a Certificate Map resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate_map#labels GoogleCertificateManagerCertificateMap#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * A user-defined name of the Certificate Map. Certificate Map names must be unique
-globally and match the pattern 'projects/*\/locations/*\/certificateMaps/*'.
-  * 
+globally and match the pattern 'projects/* /locations/* /certificateMaps/*'.
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate_map#name GoogleCertificateManagerCertificateMap#name}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly name: string;
   /**
@@ -44,7 +46,7 @@ globally and match the pattern 'projects/*\/locations/*\/certificateMaps/*'.
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate_map#timeouts GoogleCertificateManagerCertificateMap#timeouts}
   */
   readonly timeouts?: GoogleCertificateManagerCertificateMapTimeouts;

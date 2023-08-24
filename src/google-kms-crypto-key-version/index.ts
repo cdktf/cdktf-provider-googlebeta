@@ -15,7 +15,7 @@ export interface GoogleKmsCryptoKeyVersionConfig extends cdktf.TerraformMetaArgu
   /**
   * The name of the cryptoKey associated with the CryptoKeyVersions.
 Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyring}}/cryptoKeys/{{cryptoKey}}''
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_crypto_key_version#crypto_key GoogleKmsCryptoKeyVersion#crypto_key}
   */
   readonly cryptoKey: string;
@@ -28,13 +28,13 @@ Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyring}}/crypt
   readonly id?: string;
   /**
   * The current state of the CryptoKeyVersion. Possible values: ["PENDING_GENERATION", "ENABLED", "DISABLED", "DESTROYED", "DESTROY_SCHEDULED", "PENDING_IMPORT", "IMPORT_FAILED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_crypto_key_version#state GoogleKmsCryptoKeyVersion#state}
   */
   readonly state?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_crypto_key_version#timeouts GoogleKmsCryptoKeyVersion#timeouts}
   */
   readonly timeouts?: GoogleKmsCryptoKeyVersionTimeouts;

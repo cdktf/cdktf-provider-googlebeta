@@ -30,7 +30,7 @@ character, which cannot be a dash.
 
 
 These are in the same namespace as the managed SSL certificates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_compute_ssl_certificate#name DataGoogleComputeSslCertificate#name}
   */
   readonly name: string;

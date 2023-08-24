@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface GoogleClouddeployTargetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Optional. User annotations. These attributes can only be set and used by the user, and not by Google Cloud Deploy. See https://google.aip.dev/128#annotations for more details such as format and size limitations.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#annotations GoogleClouddeployTarget#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Optional. The deploy parameters to use for this target.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#deploy_parameters GoogleClouddeployTarget#deploy_parameters}
   */
   readonly deployParameters?: { [key: string]: string };
   /**
   * Optional. Description of the `Target`. Max length is 255 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#description GoogleClouddeployTarget#description}
   */
   readonly description?: string;
@@ -39,67 +39,67 @@ export interface GoogleClouddeployTargetConfig extends cdktf.TerraformMetaArgume
   readonly id?: string;
   /**
   * Optional. Labels are attributes that can be set and used by both the user and by Google Cloud Deploy. Labels must meet the following constraints: * Keys and values can contain only lowercase letters, numeric characters, underscores, and dashes. * All characters must use UTF-8 encoding, and international characters are allowed. * Keys must start with a lowercase letter or international character. * Each resource is limited to a maximum of 64 labels. Both keys and values are additionally constrained to be <= 128 bytes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#labels GoogleClouddeployTarget#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#location GoogleClouddeployTarget#location}
   */
   readonly location: string;
   /**
   * Name of the `Target`. Format is [a-z][a-z0-9\-]{0,62}.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#name GoogleClouddeployTarget#name}
   */
   readonly name: string;
   /**
   * The project for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#project GoogleClouddeployTarget#project}
   */
   readonly project?: string;
   /**
   * Optional. Whether or not the `Target` requires approval.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#require_approval GoogleClouddeployTarget#require_approval}
   */
   readonly requireApproval?: boolean | cdktf.IResolvable;
   /**
   * anthos_cluster block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#anthos_cluster GoogleClouddeployTarget#anthos_cluster}
   */
   readonly anthosCluster?: GoogleClouddeployTargetAnthosCluster;
   /**
   * execution_configs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#execution_configs GoogleClouddeployTarget#execution_configs}
   */
   readonly executionConfigs?: GoogleClouddeployTargetExecutionConfigs[] | cdktf.IResolvable;
   /**
   * gke block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#gke GoogleClouddeployTarget#gke}
   */
   readonly gke?: GoogleClouddeployTargetGke;
   /**
   * multi_target block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#multi_target GoogleClouddeployTarget#multi_target}
   */
   readonly multiTarget?: GoogleClouddeployTargetMultiTarget;
   /**
   * run block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#run GoogleClouddeployTarget#run}
   */
   readonly run?: GoogleClouddeployTargetRun;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#timeouts GoogleClouddeployTarget#timeouts}
   */
   readonly timeouts?: GoogleClouddeployTargetTimeouts;
@@ -107,7 +107,7 @@ export interface GoogleClouddeployTargetConfig extends cdktf.TerraformMetaArgume
 export interface GoogleClouddeployTargetAnthosCluster {
   /**
   * Membership of the GKE Hub-registered cluster to which to apply the Skaffold configuration. Format is `projects/{project}/locations/{location}/memberships/{membership_name}`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#membership GoogleClouddeployTarget#membership}
   */
   readonly membership?: string;
@@ -174,31 +174,31 @@ export class GoogleClouddeployTargetAnthosClusterOutputReference extends cdktf.C
 export interface GoogleClouddeployTargetExecutionConfigs {
   /**
   * Optional. Cloud Storage location in which to store execution outputs. This can either be a bucket ("gs://my-bucket") or a path within a bucket ("gs://my-bucket/my-dir"). If unspecified, a default bucket located in the same region will be used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#artifact_storage GoogleClouddeployTarget#artifact_storage}
   */
   readonly artifactStorage?: string;
   /**
   * Optional. Execution timeout for a Cloud Build Execution. This must be between 10m and 24h in seconds format. If unspecified, a default timeout of 1h is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#execution_timeout GoogleClouddeployTarget#execution_timeout}
   */
   readonly executionTimeout?: string;
   /**
   * Optional. Google service account to use for execution. If unspecified, the project execution service account (-compute@developer.gserviceaccount.com) is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#service_account GoogleClouddeployTarget#service_account}
   */
   readonly serviceAccount?: string;
   /**
   * Required. Usages when this configuration should be applied.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#usages GoogleClouddeployTarget#usages}
   */
   readonly usages: string[];
   /**
   * Optional. The resource name of the `WorkerPool`, with the format `projects/{project}/locations/{location}/workerPools/{worker_pool}`. If this optional field is unspecified, the default Cloud Build pool will be used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#worker_pool GoogleClouddeployTarget#worker_pool}
   */
   readonly workerPool?: string;
@@ -386,13 +386,13 @@ export class GoogleClouddeployTargetExecutionConfigsList extends cdktf.ComplexLi
 export interface GoogleClouddeployTargetGke {
   /**
   * Information specifying a GKE Cluster. Format is `projects/{project_id}/locations/{location_id}/clusters/{cluster_id}.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#cluster GoogleClouddeployTarget#cluster}
   */
   readonly cluster?: string;
   /**
   * Optional. If true, `cluster` is accessed using the private IP address of the control plane endpoint. Otherwise, the default IP address of the control plane endpoint is used. The default IP address is the private IP address for clusters with private control-plane endpoints and the public IP address otherwise. Only specify this option when `cluster` is a [private GKE cluster](https://cloud.google.com/kubernetes-engine/docs/concepts/private-cluster-concept).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#internal_ip GoogleClouddeployTarget#internal_ip}
   */
   readonly internalIp?: boolean | cdktf.IResolvable;
@@ -482,7 +482,7 @@ export class GoogleClouddeployTargetGkeOutputReference extends cdktf.ComplexObje
 export interface GoogleClouddeployTargetMultiTarget {
   /**
   * Required. The target_ids of this multiTarget.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#target_ids GoogleClouddeployTarget#target_ids}
   */
   readonly targetIds: string[];
@@ -546,7 +546,7 @@ export class GoogleClouddeployTargetMultiTargetOutputReference extends cdktf.Com
 export interface GoogleClouddeployTargetRun {
   /**
   * Required. The location where the Cloud Run Service should be located. Format is `projects/{project}/locations/{location}`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_clouddeploy_target#location GoogleClouddeployTarget#location}
   */
   readonly location: string;

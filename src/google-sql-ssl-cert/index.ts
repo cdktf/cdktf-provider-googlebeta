@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleSqlSslCertConfig extends cdktf.TerraformMetaArguments {
   /**
   * The common name to be used in the certificate to identify the client. Constrained to [a-zA-Z.-_ ]+. Changing this forces a new resource to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_ssl_cert#common_name GoogleSqlSslCert#common_name}
   */
   readonly commonName: string;
@@ -27,19 +27,19 @@ export interface GoogleSqlSslCertConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the Cloud SQL instance. Changing this forces a new resource to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_ssl_cert#instance GoogleSqlSslCert#instance}
   */
   readonly instance: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_ssl_cert#project GoogleSqlSslCert#project}
   */
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_ssl_cert#timeouts GoogleSqlSslCert#timeouts}
   */
   readonly timeouts?: GoogleSqlSslCertTimeouts;

@@ -37,7 +37,7 @@ export interface GoogleDnsManagedZoneIamMemberConfig extends cdktf.TerraformMeta
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_managed_zone_iam_member#condition GoogleDnsManagedZoneIamMember#condition}
   */
   readonly condition?: GoogleDnsManagedZoneIamMemberCondition;

@@ -15,7 +15,7 @@ export interface DataGoogleFirebaseAppleAppConfig extends cdktf.TerraformMetaArg
   /**
   * The globally unique, Firebase-assigned identifier of the App.
 This identifier should be treated as an opaque token, as the data format is not specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_firebase_apple_app#app_id DataGoogleFirebaseAppleApp#app_id}
   */
   readonly appId: string;

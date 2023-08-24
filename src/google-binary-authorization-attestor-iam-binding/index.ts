@@ -37,7 +37,7 @@ export interface GoogleBinaryAuthorizationAttestorIamBindingConfig extends cdktf
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor_iam_binding#condition GoogleBinaryAuthorizationAttestorIamBinding#condition}
   */
   readonly condition?: GoogleBinaryAuthorizationAttestorIamBindingCondition;

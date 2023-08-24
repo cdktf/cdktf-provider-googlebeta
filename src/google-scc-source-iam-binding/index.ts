@@ -37,7 +37,7 @@ export interface GoogleSccSourceIamBindingConfig extends cdktf.TerraformMetaArgu
   readonly source: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_source_iam_binding#condition GoogleSccSourceIamBinding#condition}
   */
   readonly condition?: GoogleSccSourceIamBindingCondition;

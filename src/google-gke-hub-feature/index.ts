@@ -21,19 +21,19 @@ export interface GoogleGkeHubFeatureConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * GCP labels for this Feature.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#labels GoogleGkeHubFeature#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#location GoogleGkeHubFeature#location}
   */
   readonly location: string;
   /**
   * The full, unique name of this Feature resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#name GoogleGkeHubFeature#name}
   */
   readonly name?: string;
@@ -43,13 +43,13 @@ export interface GoogleGkeHubFeatureConfig extends cdktf.TerraformMetaArguments 
   readonly project?: string;
   /**
   * spec block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#spec GoogleGkeHubFeature#spec}
   */
   readonly spec?: GoogleGkeHubFeatureSpec;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#timeouts GoogleGkeHubFeature#timeouts}
   */
   readonly timeouts?: GoogleGkeHubFeatureTimeouts;
@@ -265,7 +265,7 @@ export class GoogleGkeHubFeatureStateList extends cdktf.ComplexList {
 export interface GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig {
   /**
   * Specified if fleet logging feature is enabled. Possible values: ["MODE_UNSPECIFIED", "COPY", "MOVE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#mode GoogleGkeHubFeature#mode}
   */
   readonly mode?: string;
@@ -332,7 +332,7 @@ export class GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig
 export interface GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfig {
   /**
   * Specified if fleet logging feature is enabled. Possible values: ["MODE_UNSPECIFIED", "COPY", "MOVE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#mode GoogleGkeHubFeature#mode}
   */
   readonly mode?: string;
@@ -399,13 +399,13 @@ export class GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLog
 export interface GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig {
   /**
   * default_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#default_config GoogleGkeHubFeature#default_config}
   */
   readonly defaultConfig?: GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig;
   /**
   * fleet_scope_logs_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#fleet_scope_logs_config GoogleGkeHubFeature#fleet_scope_logs_config}
   */
   readonly fleetScopeLogsConfig?: GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfig;
@@ -495,7 +495,7 @@ export class GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReferen
 export interface GoogleGkeHubFeatureSpecFleetobservability {
   /**
   * logging_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#logging_config GoogleGkeHubFeature#logging_config}
   */
   readonly loggingConfig?: GoogleGkeHubFeatureSpecFleetobservabilityLoggingConfig;
@@ -562,7 +562,7 @@ export class GoogleGkeHubFeatureSpecFleetobservabilityOutputReference extends cd
 export interface GoogleGkeHubFeatureSpecMulticlusteringress {
   /**
   * Fully-qualified Membership name which hosts the MultiClusterIngress CRD. Example: 'projects/foo-proj/locations/global/memberships/bar'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#config_membership GoogleGkeHubFeature#config_membership}
   */
   readonly configMembership: string;
@@ -626,13 +626,13 @@ export class GoogleGkeHubFeatureSpecMulticlusteringressOutputReference extends c
 export interface GoogleGkeHubFeatureSpec {
   /**
   * fleetobservability block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#fleetobservability GoogleGkeHubFeature#fleetobservability}
   */
   readonly fleetobservability?: GoogleGkeHubFeatureSpecFleetobservability;
   /**
   * multiclusteringress block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature#multiclusteringress GoogleGkeHubFeature#multiclusteringress}
   */
   readonly multiclusteringress?: GoogleGkeHubFeatureSpecMulticlusteringress;

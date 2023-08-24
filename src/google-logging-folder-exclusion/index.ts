@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface GoogleLoggingFolderExclusionConfig extends cdktf.TerraformMetaArguments {
   /**
   * A human-readable description.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_folder_exclusion#description GoogleLoggingFolderExclusion#description}
   */
   readonly description?: string;
   /**
   * Whether this exclusion rule should be disabled or not. This defaults to false.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_folder_exclusion#disabled GoogleLoggingFolderExclusion#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The filter to apply when excluding logs. Only log entries that match the filter are excluded.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_folder_exclusion#filter GoogleLoggingFolderExclusion#filter}
   */
   readonly filter: string;
@@ -43,7 +43,7 @@ export interface GoogleLoggingFolderExclusionConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * The name of the logging exclusion.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_folder_exclusion#name GoogleLoggingFolderExclusion#name}
   */
   readonly name: string;

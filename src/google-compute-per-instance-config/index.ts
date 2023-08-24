@@ -21,7 +21,7 @@ export interface GoogleComputePerInstanceConfigConfig extends cdktf.TerraformMet
   readonly id?: string;
   /**
   * The instance group manager this instance config is part of.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#instance_group_manager GoogleComputePerInstanceConfig#instance_group_manager}
   */
   readonly instanceGroupManager: string;
@@ -32,7 +32,7 @@ Default is 'NONE'. Possible values are:
 * RESTART
 * REFRESH
 * NONE
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#minimal_action GoogleComputePerInstanceConfig#minimal_action}
   */
   readonly minimalAction?: string;
@@ -43,13 +43,13 @@ Default is 'REPLACE'. Possible values are:
 * RESTART
 * REFRESH
 * NONE
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#most_disruptive_allowed_action GoogleComputePerInstanceConfig#most_disruptive_allowed_action}
   */
   readonly mostDisruptiveAllowedAction?: string;
   /**
   * The name for this per-instance config and its corresponding instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#name GoogleComputePerInstanceConfig#name}
   */
   readonly name: string;
@@ -61,25 +61,25 @@ Default is 'REPLACE'. Possible values are:
   * When true, deleting this config will immediately remove any specified state from the underlying instance.
 When false, deleting this config will *not* immediately remove any state from the underlying instance.
 State will be removed on the next instance recreation or update.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#remove_instance_state_on_destroy GoogleComputePerInstanceConfig#remove_instance_state_on_destroy}
   */
   readonly removeInstanceStateOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * Zone where the containing instance group manager is located
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#zone GoogleComputePerInstanceConfig#zone}
   */
   readonly zone?: string;
   /**
   * preserved_state block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#preserved_state GoogleComputePerInstanceConfig#preserved_state}
   */
   readonly preservedState?: GoogleComputePerInstanceConfigPreservedState;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#timeouts GoogleComputePerInstanceConfig#timeouts}
   */
   readonly timeouts?: GoogleComputePerInstanceConfigTimeouts;
@@ -91,26 +91,26 @@ The available options are 'NEVER' and 'ON_PERMANENT_INSTANCE_DELETION'.
 'NEVER' - detach the disk when the VM is deleted, but do not delete the disk.
 'ON_PERMANENT_INSTANCE_DELETION' will delete the stateful disk when the VM is permanently
 deleted from the instance group. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#delete_rule GoogleComputePerInstanceConfig#delete_rule}
   */
   readonly deleteRule?: string;
   /**
   * A unique device name that is reflected into the /dev/ tree of a Linux operating system running within the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#device_name GoogleComputePerInstanceConfig#device_name}
   */
   readonly deviceName: string;
   /**
   * The mode of the disk. Default value: "READ_WRITE" Possible values: ["READ_ONLY", "READ_WRITE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#mode GoogleComputePerInstanceConfig#mode}
   */
   readonly mode?: string;
   /**
   * The URI of an existing persistent disk to attach under the specified device-name in the format
 'projects/project-id/zones/zone/disks/disk-name'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#source GoogleComputePerInstanceConfig#source}
   */
   readonly source: string;
@@ -272,7 +272,7 @@ export class GoogleComputePerInstanceConfigPreservedStateDiskList extends cdktf.
 export interface GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress {
   /**
   * The URL of the reservation for this IP address.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#address GoogleComputePerInstanceConfig#address}
   */
   readonly address?: string;
@@ -339,7 +339,7 @@ export class GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddressOutp
 export interface GoogleComputePerInstanceConfigPreservedStateExternalIp {
   /**
   * These stateful IPs will never be released during autohealing, update or VM instance recreate operations. This flag is used to configure if the IP reservation should be deleted after it is no longer used by the group, e.g. when the given instance or the whole group is deleted. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#auto_delete GoogleComputePerInstanceConfig#auto_delete}
   */
   readonly autoDelete?: string;
@@ -349,7 +349,7 @@ export interface GoogleComputePerInstanceConfigPreservedStateExternalIp {
   readonly interfaceName: string;
   /**
   * ip_address block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#ip_address GoogleComputePerInstanceConfig#ip_address}
   */
   readonly ipAddress?: GoogleComputePerInstanceConfigPreservedStateExternalIpIpAddress;
@@ -491,7 +491,7 @@ export class GoogleComputePerInstanceConfigPreservedStateExternalIpList extends 
 export interface GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress {
   /**
   * The URL of the reservation for this IP address.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#address GoogleComputePerInstanceConfig#address}
   */
   readonly address?: string;
@@ -558,7 +558,7 @@ export class GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddressOutp
 export interface GoogleComputePerInstanceConfigPreservedStateInternalIp {
   /**
   * These stateful IPs will never be released during autohealing, update or VM instance recreate operations. This flag is used to configure if the IP reservation should be deleted after it is no longer used by the group, e.g. when the given instance or the whole group is deleted. Default value: "NEVER" Possible values: ["NEVER", "ON_PERMANENT_INSTANCE_DELETION"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#auto_delete GoogleComputePerInstanceConfig#auto_delete}
   */
   readonly autoDelete?: string;
@@ -568,7 +568,7 @@ export interface GoogleComputePerInstanceConfigPreservedStateInternalIp {
   readonly interfaceName: string;
   /**
   * ip_address block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#ip_address GoogleComputePerInstanceConfig#ip_address}
   */
   readonly ipAddress?: GoogleComputePerInstanceConfigPreservedStateInternalIpIpAddress;
@@ -710,25 +710,25 @@ export class GoogleComputePerInstanceConfigPreservedStateInternalIpList extends 
 export interface GoogleComputePerInstanceConfigPreservedState {
   /**
   * Preserved metadata defined for this instance. This is a list of key->value pairs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#metadata GoogleComputePerInstanceConfig#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * disk block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#disk GoogleComputePerInstanceConfig#disk}
   */
   readonly disk?: GoogleComputePerInstanceConfigPreservedStateDisk[] | cdktf.IResolvable;
   /**
   * external_ip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#external_ip GoogleComputePerInstanceConfig#external_ip}
   */
   readonly externalIp?: GoogleComputePerInstanceConfigPreservedStateExternalIp[] | cdktf.IResolvable;
   /**
   * internal_ip block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_per_instance_config#internal_ip GoogleComputePerInstanceConfig#internal_ip}
   */
   readonly internalIp?: GoogleComputePerInstanceConfigPreservedStateInternalIp[] | cdktf.IResolvable;

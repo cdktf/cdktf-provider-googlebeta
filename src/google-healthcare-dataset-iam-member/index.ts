@@ -33,7 +33,7 @@ export interface GoogleHealthcareDatasetIamMemberConfig extends cdktf.TerraformM
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dataset_iam_member#condition GoogleHealthcareDatasetIamMember#condition}
   */
   readonly condition?: GoogleHealthcareDatasetIamMemberCondition;

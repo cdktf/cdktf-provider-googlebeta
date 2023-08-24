@@ -54,19 +54,19 @@ export interface DataGoogleContainerClusterConfig extends cdktf.TerraformMetaArg
   readonly id?: string;
   /**
   * The location (region or zone) in which the cluster master will be created, as well as the default node location. If you specify a zone (such as us-central1-a), the cluster will be a zonal cluster with a single cluster master. If you specify a region (such as us-west1), the cluster will be a regional cluster with multiple masters spread across zones in the region, and with default node locations in those zones as well.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_container_cluster#location DataGoogleContainerCluster#location}
   */
   readonly location?: string;
   /**
   * The name of the cluster, unique within the project and location.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_container_cluster#name DataGoogleContainerCluster#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_container_cluster#project DataGoogleContainerCluster#project}
   */
   readonly project?: string;

@@ -37,7 +37,7 @@ export interface GoogleSourcerepoRepositoryIamBindingConfig extends cdktf.Terraf
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sourcerepo_repository_iam_binding#condition GoogleSourcerepoRepositoryIamBinding#condition}
   */
   readonly condition?: GoogleSourcerepoRepositoryIamBindingCondition;

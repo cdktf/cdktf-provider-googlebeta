@@ -41,7 +41,7 @@ export interface GoogleCloudRunServiceIamBindingConfig extends cdktf.TerraformMe
   readonly service: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloud_run_service_iam_binding#condition GoogleCloudRunServiceIamBinding#condition}
   */
   readonly condition?: GoogleCloudRunServiceIamBindingCondition;

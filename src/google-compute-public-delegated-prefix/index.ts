@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputePublicDelegatedPrefixConfig extends cdktf.TerraformMetaArguments {
   /**
   * An optional description of this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_public_delegated_prefix#description GoogleComputePublicDelegatedPrefix#description}
   */
   readonly description?: string;
@@ -27,13 +27,13 @@ export interface GoogleComputePublicDelegatedPrefixConfig extends cdktf.Terrafor
   readonly id?: string;
   /**
   * The IPv4 address range, in CIDR format, represented by this public advertised prefix.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_public_delegated_prefix#ip_cidr_range GoogleComputePublicDelegatedPrefix#ip_cidr_range}
   */
   readonly ipCidrRange: string;
   /**
   * If true, the prefix will be live migrated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_public_delegated_prefix#is_live_migration GoogleComputePublicDelegatedPrefix#is_live_migration}
   */
   readonly isLiveMigration?: boolean | cdktf.IResolvable;
@@ -44,13 +44,13 @@ long and match the regular expression '[a-z]([-a-z0-9]*[a-z0-9])?'
 which means the first character must be a lowercase letter, and all
 following characters must be a dash, lowercase letter, or digit,
 except the last character, which cannot be a dash.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_public_delegated_prefix#name GoogleComputePublicDelegatedPrefix#name}
   */
   readonly name: string;
   /**
   * The URL of parent prefix. Either PublicAdvertisedPrefix or PublicDelegatedPrefix.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_public_delegated_prefix#parent_prefix GoogleComputePublicDelegatedPrefix#parent_prefix}
   */
   readonly parentPrefix: string;
@@ -60,13 +60,13 @@ except the last character, which cannot be a dash.
   readonly project?: string;
   /**
   * A region where the prefix will reside.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_public_delegated_prefix#region GoogleComputePublicDelegatedPrefix#region}
   */
   readonly region: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_public_delegated_prefix#timeouts GoogleComputePublicDelegatedPrefix#timeouts}
   */
   readonly timeouts?: GoogleComputePublicDelegatedPrefixTimeouts;

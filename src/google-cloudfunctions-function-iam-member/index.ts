@@ -41,7 +41,7 @@ export interface GoogleCloudfunctionsFunctionIamMemberConfig extends cdktf.Terra
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudfunctions_function_iam_member#condition GoogleCloudfunctionsFunctionIamMember#condition}
   */
   readonly condition?: GoogleCloudfunctionsFunctionIamMemberCondition;

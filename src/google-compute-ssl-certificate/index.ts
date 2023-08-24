@@ -16,13 +16,13 @@ export interface GoogleComputeSslCertificateConfig extends cdktf.TerraformMetaAr
   * The certificate in PEM format.
 The certificate chain must be no greater than 5 certs long.
 The chain must include at least one intermediate cert.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_ssl_certificate#certificate GoogleComputeSslCertificate#certificate}
   */
   readonly certificate: string;
   /**
   * An optional description of this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_ssl_certificate#description GoogleComputeSslCertificate#description}
   */
   readonly description?: string;
@@ -44,19 +44,19 @@ character, which cannot be a dash.
 
 
 These are in the same namespace as the managed SSL certificates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_ssl_certificate#name GoogleComputeSslCertificate#name}
   */
   readonly name?: string;
   /**
   * Creates a unique name beginning with the specified prefix. Conflicts with name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_ssl_certificate#name_prefix GoogleComputeSslCertificate#name_prefix}
   */
   readonly namePrefix?: string;
   /**
   * The write-only private key in PEM format.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_ssl_certificate#private_key GoogleComputeSslCertificate#private_key}
   */
   readonly privateKey: string;
@@ -66,7 +66,7 @@ These are in the same namespace as the managed SSL certificates.
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_ssl_certificate#timeouts GoogleComputeSslCertificate#timeouts}
   */
   readonly timeouts?: GoogleComputeSslCertificateTimeouts;

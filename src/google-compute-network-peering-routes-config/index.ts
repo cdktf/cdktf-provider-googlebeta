@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeNetworkPeeringRoutesConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether to export the custom routes to the peer network.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_peering_routes_config#export_custom_routes GoogleComputeNetworkPeeringRoutesConfig#export_custom_routes}
   */
   readonly exportCustomRoutes: boolean | cdktf.IResolvable;
@@ -27,19 +27,19 @@ export interface GoogleComputeNetworkPeeringRoutesConfigConfig extends cdktf.Ter
   readonly id?: string;
   /**
   * Whether to import the custom routes to the peer network.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_peering_routes_config#import_custom_routes GoogleComputeNetworkPeeringRoutesConfig#import_custom_routes}
   */
   readonly importCustomRoutes: boolean | cdktf.IResolvable;
   /**
   * The name of the primary network for the peering.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_peering_routes_config#network GoogleComputeNetworkPeeringRoutesConfig#network}
   */
   readonly network: string;
   /**
   * Name of the peering.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_peering_routes_config#peering GoogleComputeNetworkPeeringRoutesConfig#peering}
   */
   readonly peering: string;
@@ -49,7 +49,7 @@ export interface GoogleComputeNetworkPeeringRoutesConfigConfig extends cdktf.Ter
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_peering_routes_config#timeouts GoogleComputeNetworkPeeringRoutesConfig#timeouts}
   */
   readonly timeouts?: GoogleComputeNetworkPeeringRoutesConfigTimeouts;

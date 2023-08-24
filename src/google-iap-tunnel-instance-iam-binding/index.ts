@@ -41,7 +41,7 @@ export interface GoogleIapTunnelInstanceIamBindingConfig extends cdktf.Terraform
   readonly zone?: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_tunnel_instance_iam_binding#condition GoogleIapTunnelInstanceIamBinding#condition}
   */
   readonly condition?: GoogleIapTunnelInstanceIamBindingCondition;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleDatastoreIndexConfig extends cdktf.TerraformMetaArguments {
   /**
   * Policy for including ancestors in the index. Default value: "NONE" Possible values: ["NONE", "ALL_ANCESTORS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastore_index#ancestor GoogleDatastoreIndex#ancestor}
   */
   readonly ancestor?: string;
@@ -27,7 +27,7 @@ export interface GoogleDatastoreIndexConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * The entity kind which the index applies to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastore_index#kind GoogleDatastoreIndex#kind}
   */
   readonly kind: string;
@@ -37,13 +37,13 @@ export interface GoogleDatastoreIndexConfig extends cdktf.TerraformMetaArguments
   readonly project?: string;
   /**
   * properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastore_index#properties GoogleDatastoreIndex#properties}
   */
   readonly properties?: GoogleDatastoreIndexProperties[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastore_index#timeouts GoogleDatastoreIndex#timeouts}
   */
   readonly timeouts?: GoogleDatastoreIndexTimeouts;
@@ -51,13 +51,13 @@ export interface GoogleDatastoreIndexConfig extends cdktf.TerraformMetaArguments
 export interface GoogleDatastoreIndexProperties {
   /**
   * The direction the index should optimize for sorting. Possible values: ["ASCENDING", "DESCENDING"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastore_index#direction GoogleDatastoreIndex#direction}
   */
   readonly direction: string;
   /**
   * The property name to index.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastore_index#name GoogleDatastoreIndex#name}
   */
   readonly name: string;

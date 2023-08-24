@@ -21,7 +21,7 @@ export interface GoogleComputeNetworkEndpointsConfig extends cdktf.TerraformMeta
   readonly id?: string;
   /**
   * The network endpoint group these endpoints are part of.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_endpoints#network_endpoint_group GoogleComputeNetworkEndpoints#network_endpoint_group}
   */
   readonly networkEndpointGroup: string;
@@ -31,19 +31,19 @@ export interface GoogleComputeNetworkEndpointsConfig extends cdktf.TerraformMeta
   readonly project?: string;
   /**
   * Zone where the containing network endpoint group is located.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_endpoints#zone GoogleComputeNetworkEndpoints#zone}
   */
   readonly zone?: string;
   /**
   * network_endpoints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_endpoints#network_endpoints GoogleComputeNetworkEndpoints#network_endpoints}
   */
   readonly networkEndpoints?: GoogleComputeNetworkEndpointsNetworkEndpoints[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_endpoints#timeouts GoogleComputeNetworkEndpoints#timeouts}
   */
   readonly timeouts?: GoogleComputeNetworkEndpointsTimeouts;
@@ -53,7 +53,7 @@ export interface GoogleComputeNetworkEndpointsNetworkEndpoints {
   * The name for a specific VM instance that the IP address belongs to.
 This is required for network endpoints of type GCE_VM_IP_PORT.
 The instance must be in the same zone as the network endpoint group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_endpoints#instance GoogleComputeNetworkEndpoints#instance}
   */
   readonly instance?: string;
@@ -61,7 +61,7 @@ The instance must be in the same zone as the network endpoint group.
   * IPv4 address of network endpoint. The IP address must belong
 to a VM in GCE (either the primary IP or as part of an aliased IP
 range).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_endpoints#ip_address GoogleComputeNetworkEndpoints#ip_address}
   */
   readonly ipAddress: string;
@@ -69,7 +69,7 @@ range).
   * Port number of network endpoint.
 **Note** 'port' is required unless the Network Endpoint Group is created
 with the type of 'GCE_VM_IP'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_endpoints#port GoogleComputeNetworkEndpoints#port}
   */
   readonly port?: number;

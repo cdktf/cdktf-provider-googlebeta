@@ -41,7 +41,7 @@ export interface GoogleBigtableTableIamMemberConfig extends cdktf.TerraformMetaA
   readonly table: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigtable_table_iam_member#condition GoogleBigtableTableIamMember#condition}
   */
   readonly condition?: GoogleBigtableTableIamMemberCondition;

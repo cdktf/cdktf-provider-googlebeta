@@ -37,7 +37,7 @@ export interface GooglePubsubTopicIamMemberConfig extends cdktf.TerraformMetaArg
   readonly topic: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_pubsub_topic_iam_member#condition GooglePubsubTopicIamMember#condition}
   */
   readonly condition?: GooglePubsubTopicIamMemberCondition;

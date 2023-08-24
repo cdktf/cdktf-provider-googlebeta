@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeNodeTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
   * CPU overcommit. Default value: "NONE" Possible values: ["ENABLED", "NONE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#cpu_overcommit_type GoogleComputeNodeTemplate#cpu_overcommit_type}
   */
   readonly cpuOvercommitType?: string;
   /**
   * An optional textual description of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#description GoogleComputeNodeTemplate#description}
   */
   readonly description?: string;
@@ -33,21 +33,21 @@ export interface GoogleComputeNodeTemplateConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * Name of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#name GoogleComputeNodeTemplate#name}
   */
   readonly name?: string;
   /**
   * Labels to use for node affinity, which will be used in
 instance scheduling.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#node_affinity_labels GoogleComputeNodeTemplate#node_affinity_labels}
   */
   readonly nodeAffinityLabels?: { [key: string]: string };
   /**
   * Node type to use for nodes group that are created from this template.
 Only one of nodeTypeFlexibility and nodeType can be specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#node_type GoogleComputeNodeTemplate#node_type}
   */
   readonly nodeType?: string;
@@ -58,25 +58,25 @@ Only one of nodeTypeFlexibility and nodeType can be specified.
   /**
   * Region where nodes using the node template will be created.
 If it is not provided, the provider region is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#region GoogleComputeNodeTemplate#region}
   */
   readonly region?: string;
   /**
   * node_type_flexibility block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#node_type_flexibility GoogleComputeNodeTemplate#node_type_flexibility}
   */
   readonly nodeTypeFlexibility?: GoogleComputeNodeTemplateNodeTypeFlexibility;
   /**
   * server_binding block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#server_binding GoogleComputeNodeTemplate#server_binding}
   */
   readonly serverBinding?: GoogleComputeNodeTemplateServerBinding;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#timeouts GoogleComputeNodeTemplate#timeouts}
   */
   readonly timeouts?: GoogleComputeNodeTemplateTimeouts;
@@ -84,13 +84,13 @@ If it is not provided, the provider region is used.
 export interface GoogleComputeNodeTemplateNodeTypeFlexibility {
   /**
   * Number of virtual CPUs to use.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#cpus GoogleComputeNodeTemplate#cpus}
   */
   readonly cpus?: string;
   /**
   * Physical memory available to the node, defined in MB.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#memory GoogleComputeNodeTemplate#memory}
   */
   readonly memory?: string;
@@ -196,7 +196,7 @@ software licenses tied to the underlying server characteristics
 such as physical sockets or cores, to avoid the need for
 additional licenses when maintenance occurs. However, VMs on such
 nodes will experience outages while maintenance is applied. Possible values: ["RESTART_NODE_ON_ANY_SERVER", "RESTART_NODE_ON_MINIMAL_SERVERS"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#type GoogleComputeNodeTemplate#type}
   */
   readonly type: string;

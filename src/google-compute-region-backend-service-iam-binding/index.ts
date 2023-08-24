@@ -41,7 +41,7 @@ export interface GoogleComputeRegionBackendServiceIamBindingConfig extends cdktf
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_backend_service_iam_binding#condition GoogleComputeRegionBackendServiceIamBinding#condition}
   */
   readonly condition?: GoogleComputeRegionBackendServiceIamBindingCondition;

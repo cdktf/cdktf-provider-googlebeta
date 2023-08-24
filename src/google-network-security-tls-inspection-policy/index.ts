@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface GoogleNetworkSecurityTlsInspectionPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * A CA pool resource used to issue interception certificates.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_tls_inspection_policy#ca_pool GoogleNetworkSecurityTlsInspectionPolicy#ca_pool}
   */
   readonly caPool: string;
   /**
   * Free-text description of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_tls_inspection_policy#description GoogleNetworkSecurityTlsInspectionPolicy#description}
   */
   readonly description?: string;
   /**
   * If FALSE (the default), use our default set of public CAs in addition to any CAs specified in trustConfig. These public CAs are currently based on the Mozilla Root Program and are subject to change over time. If TRUE, do not accept our default set of public CAs. Only CAs specified in trustConfig will be accepted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_tls_inspection_policy#exclude_public_ca_set GoogleNetworkSecurityTlsInspectionPolicy#exclude_public_ca_set}
   */
   readonly excludePublicCaSet?: boolean | cdktf.IResolvable;
@@ -39,13 +39,13 @@ export interface GoogleNetworkSecurityTlsInspectionPolicyConfig extends cdktf.Te
   readonly id?: string;
   /**
   * The location of the tls inspection policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_tls_inspection_policy#location GoogleNetworkSecurityTlsInspectionPolicy#location}
   */
   readonly location?: string;
   /**
   * Short name of the TlsInspectionPolicy resource to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_tls_inspection_policy#name GoogleNetworkSecurityTlsInspectionPolicy#name}
   */
   readonly name: string;
@@ -55,7 +55,7 @@ export interface GoogleNetworkSecurityTlsInspectionPolicyConfig extends cdktf.Te
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_tls_inspection_policy#timeouts GoogleNetworkSecurityTlsInspectionPolicy#timeouts}
   */
   readonly timeouts?: GoogleNetworkSecurityTlsInspectionPolicyTimeouts;

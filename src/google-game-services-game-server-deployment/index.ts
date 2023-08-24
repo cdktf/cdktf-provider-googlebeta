@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleGameServicesGameServerDeploymentConfig extends cdktf.TerraformMetaArguments {
   /**
   * A unique id for the deployment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_game_services_game_server_deployment#deployment_id GoogleGameServicesGameServerDeployment#deployment_id}
   */
   readonly deploymentId: string;
   /**
   * Human readable description of the game server deployment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_game_services_game_server_deployment#description GoogleGameServicesGameServerDeployment#description}
   */
   readonly description?: string;
@@ -34,13 +34,13 @@ export interface GoogleGameServicesGameServerDeploymentConfig extends cdktf.Terr
   /**
   * The labels associated with this game server deployment. Each label is a
 key-value pair.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_game_services_game_server_deployment#labels GoogleGameServicesGameServerDeployment#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Location of the Deployment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_game_services_game_server_deployment#location GoogleGameServicesGameServerDeployment#location}
   */
   readonly location?: string;
@@ -50,7 +50,7 @@ key-value pair.
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_game_services_game_server_deployment#timeouts GoogleGameServicesGameServerDeployment#timeouts}
   */
   readonly timeouts?: GoogleGameServicesGameServerDeploymentTimeouts;

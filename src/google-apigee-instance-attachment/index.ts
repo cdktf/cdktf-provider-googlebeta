@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleApigeeInstanceAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource ID of the environment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance_attachment#environment GoogleApigeeInstanceAttachment#environment}
   */
   readonly environment: string;
@@ -28,13 +28,13 @@ export interface GoogleApigeeInstanceAttachmentConfig extends cdktf.TerraformMet
   /**
   * The Apigee instance associated with the Apigee environment,
 in the format 'organisations/{{org_name}}/instances/{{instance_name}}'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance_attachment#instance_id GoogleApigeeInstanceAttachment#instance_id}
   */
   readonly instanceId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance_attachment#timeouts GoogleApigeeInstanceAttachment#timeouts}
   */
   readonly timeouts?: GoogleApigeeInstanceAttachmentTimeouts;

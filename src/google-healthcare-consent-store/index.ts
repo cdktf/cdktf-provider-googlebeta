@@ -15,7 +15,7 @@ export interface GoogleHealthcareConsentStoreConfig extends cdktf.TerraformMetaA
   /**
   * Identifies the dataset addressed by this request. Must be in the format
 'projects/{project}/locations/{location}/datasets/{dataset}'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_consent_store#dataset GoogleHealthcareConsentStore#dataset}
   */
   readonly dataset: string;
@@ -23,13 +23,13 @@ export interface GoogleHealthcareConsentStoreConfig extends cdktf.TerraformMetaA
   * Default time to live for consents in this store. Must be at least 24 hours. Updating this field will not affect the expiration time of existing consents.
 
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_consent_store#default_consent_ttl GoogleHealthcareConsentStore#default_consent_ttl}
   */
   readonly defaultConsentTtl?: string;
   /**
   * If true, [consents.patch] [google.cloud.healthcare.v1.consent.UpdateConsent] creates the consent if it does not already exist.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_consent_store#enable_consent_create_on_update GoogleHealthcareConsentStore#enable_consent_create_on_update}
   */
   readonly enableConsentCreateOnUpdate?: boolean | cdktf.IResolvable;
@@ -53,20 +53,20 @@ No more than 64 labels can be associated with a given store.
 
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_consent_store#labels GoogleHealthcareConsentStore#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name of this ConsentStore, for example:
 "consent1"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_consent_store#name GoogleHealthcareConsentStore#name}
   */
   readonly name: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_consent_store#timeouts GoogleHealthcareConsentStore#timeouts}
   */
   readonly timeouts?: GoogleHealthcareConsentStoreTimeouts;

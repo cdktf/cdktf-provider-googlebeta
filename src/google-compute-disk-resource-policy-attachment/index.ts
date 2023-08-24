@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeDiskResourcePolicyAttachmentConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the disk in which the resource policies are attached to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_resource_policy_attachment#disk GoogleComputeDiskResourcePolicyAttachment#disk}
   */
   readonly disk: string;
@@ -28,7 +28,7 @@ export interface GoogleComputeDiskResourcePolicyAttachmentConfig extends cdktf.T
   /**
   * The resource policy to be attached to the disk for scheduling snapshot
 creation. Do not specify the self link.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_resource_policy_attachment#name GoogleComputeDiskResourcePolicyAttachment#name}
   */
   readonly name: string;
@@ -38,13 +38,13 @@ creation. Do not specify the self link.
   readonly project?: string;
   /**
   * A reference to the zone where the disk resides.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_resource_policy_attachment#zone GoogleComputeDiskResourcePolicyAttachment#zone}
   */
   readonly zone?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_disk_resource_policy_attachment#timeouts GoogleComputeDiskResourcePolicyAttachment#timeouts}
   */
   readonly timeouts?: GoogleComputeDiskResourcePolicyAttachmentTimeouts;

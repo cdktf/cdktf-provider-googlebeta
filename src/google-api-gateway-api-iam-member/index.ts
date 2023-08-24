@@ -37,7 +37,7 @@ export interface GoogleApiGatewayApiIamMemberConfig extends cdktf.TerraformMetaA
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_iam_member#condition GoogleApiGatewayApiIamMember#condition}
   */
   readonly condition?: GoogleApiGatewayApiIamMemberCondition;

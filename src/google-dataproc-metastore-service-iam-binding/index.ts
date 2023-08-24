@@ -41,7 +41,7 @@ export interface GoogleDataprocMetastoreServiceIamBindingConfig extends cdktf.Te
   readonly serviceId: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_service_iam_binding#condition GoogleDataprocMetastoreServiceIamBinding#condition}
   */
   readonly condition?: GoogleDataprocMetastoreServiceIamBindingCondition;

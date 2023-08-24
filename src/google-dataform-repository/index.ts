@@ -21,7 +21,7 @@ export interface GoogleDataformRepositoryConfig extends cdktf.TerraformMetaArgum
   readonly id?: string;
   /**
   * The repository's name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#name GoogleDataformRepository#name}
   */
   readonly name: string;
@@ -31,45 +31,47 @@ export interface GoogleDataformRepositoryConfig extends cdktf.TerraformMetaArgum
   readonly project?: string;
   /**
   * A reference to the region
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#region GoogleDataformRepository#region}
   */
   readonly region?: string;
   /**
   * git_remote_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#git_remote_settings GoogleDataformRepository#git_remote_settings}
   */
   readonly gitRemoteSettings?: GoogleDataformRepositoryGitRemoteSettings;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#timeouts GoogleDataformRepository#timeouts}
   */
   readonly timeouts?: GoogleDataformRepositoryTimeouts;
   /**
   * workspace_compilation_overrides block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#workspace_compilation_overrides GoogleDataformRepository#workspace_compilation_overrides}
   */
   readonly workspaceCompilationOverrides?: GoogleDataformRepositoryWorkspaceCompilationOverrides;
 }
 export interface GoogleDataformRepositoryGitRemoteSettings {
   /**
-  * The name of the Secret Manager secret version to use as an authentication token for Git operations. Must be in the format projects/*\/secrets/*\/versions/*.
-  * 
+  * The name of the Secret Manager secret version to use as an authentication token for Git operations. Must be in the format projects/* /secrets/* /versions/*.
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#authentication_token_secret_version GoogleDataformRepository#authentication_token_secret_version}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly authenticationTokenSecretVersion: string;
   /**
   * The Git remote's default branch name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#default_branch GoogleDataformRepository#default_branch}
   */
   readonly defaultBranch: string;
   /**
   * The Git remote's URL.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#url GoogleDataformRepository#url}
   */
   readonly url: string;
@@ -307,19 +309,19 @@ export class GoogleDataformRepositoryTimeoutsOutputReference extends cdktf.Compl
 export interface GoogleDataformRepositoryWorkspaceCompilationOverrides {
   /**
   * Optional. The default database (Google Cloud project ID).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#default_database GoogleDataformRepository#default_database}
   */
   readonly defaultDatabase?: string;
   /**
   * Optional. The suffix that should be appended to all schema (BigQuery dataset ID) names.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#schema_suffix GoogleDataformRepository#schema_suffix}
   */
   readonly schemaSuffix?: string;
   /**
   * Optional. The prefix that should be prepended to all table names.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataform_repository#table_prefix GoogleDataformRepository#table_prefix}
   */
   readonly tablePrefix?: string;

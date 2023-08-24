@@ -33,7 +33,7 @@ export interface GoogleServiceAccountIamBindingConfig extends cdktf.TerraformMet
   readonly serviceAccountId: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_account_iam_binding#condition GoogleServiceAccountIamBinding#condition}
   */
   readonly condition?: GoogleServiceAccountIamBindingCondition;

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.NewGoogleNetworkSecurityAuthorizationPolicy(scope Construct, id *string, config GoogleNetworkSecurityAuthorizationPolicyConfig) GoogleNetworkSecurityAuthorizationPolicy
 ```
@@ -345,7 +345,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.GoogleNetworkSecurityAuthorizationPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.GoogleNetworkSecurityAuthorizationPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ googlenetworksecurityauthorizationpolicy.GoogleNetworkSecurityAuthorizationPolic
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.GoogleNetworkSecurityAuthorizationPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -810,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 &googlenetworksecurityauthorizationpolicy.GoogleNetworkSecurityAuthorizationPolicyConfig {
 	Connection: interface{},
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetwor
 	Location: *string,
 	Project: *string,
 	Rules: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyTimeouts,
 }
 ```
 
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 &googlenetworksecurityauthorizationpolicy.GoogleNetworkSecurityAuthorizationPolicyRules {
 	Destinations: interface{},
@@ -1107,13 +1107,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 &googlenetworksecurityauthorizationpolicy.GoogleNetworkSecurityAuthorizationPolicyRulesDestinations {
 	Hosts: *[]*string,
 	Methods: *[]*string,
 	Ports: *[]*f64,
-	HttpHeaderMatch: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatch,
+	HttpHeaderMatch: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatch,
 }
 ```
 
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 &googlenetworksecurityauthorizationpolicy.GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatch {
 	HeaderName: *string,
@@ -1247,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesSources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 &googlenetworksecurityauthorizationpolicy.GoogleNetworkSecurityAuthorizationPolicyRulesSources {
 	IpBlocks: *[]*string,
@@ -1291,10 +1291,12 @@ Principals *[]*string
 
 List of peer identities to match for authorization.
 
-At least one principal should match. Each peer can be an exact match, or a prefix match (example, "namespace/*") or a suffix match (example, "*/service-account") or a presence match "*".
+At least one principal should match. Each peer can be an exact match, or a prefix match (example, "namespace/*") or a suffix match (example, "* /service-account") or a presence match "*".
 Authorization based on the principal name without certificate validation (configured by ServerTlsPolicy resource) is considered insecure.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_authorization_policy#principals GoogleNetworkSecurityAuthorizationPolicy#principals}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 
@@ -1303,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 &googlenetworksecurityauthorizationpolicy.GoogleNetworkSecurityAuthorizationPolicyTimeouts {
 	Create: *string,
@@ -1365,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.NewGoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHttpHeaderMatchOutputReference
 ```
@@ -1658,7 +1660,7 @@ func InternalValue() GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsHt
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.NewGoogleNetworkSecurityAuthorizationPolicyRulesDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsList
 ```
@@ -1801,7 +1803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.NewGoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference
 ```
@@ -2176,7 +2178,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.NewGoogleNetworkSecurityAuthorizationPolicyRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkSecurityAuthorizationPolicyRulesList
 ```
@@ -2319,7 +2321,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.NewGoogleNetworkSecurityAuthorizationPolicyRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkSecurityAuthorizationPolicyRulesOutputReference
 ```
@@ -2670,7 +2672,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.NewGoogleNetworkSecurityAuthorizationPolicyRulesSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkSecurityAuthorizationPolicyRulesSourcesList
 ```
@@ -2813,7 +2815,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyRulesSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.NewGoogleNetworkSecurityAuthorizationPolicyRulesSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkSecurityAuthorizationPolicyRulesSourcesOutputReference
 ```
@@ -3138,7 +3140,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkSecurityAuthorizationPolicy.GoogleNetworkSecurityAuthorizationPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityauthorizationpolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityauthorizationpolicy"
 
 googlenetworksecurityauthorizationpolicy.NewGoogleNetworkSecurityAuthorizationPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkSecurityAuthorizationPolicyTimeoutsOutputReference
 ```

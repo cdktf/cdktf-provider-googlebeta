@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleMlEngineModelConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description specified for the model when it was created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_ml_engine_model#description GoogleMlEngineModel#description}
   */
   readonly description?: string;
@@ -27,25 +27,25 @@ export interface GoogleMlEngineModelConfig extends cdktf.TerraformMetaArguments 
   readonly id?: string;
   /**
   * One or more labels that you can add, to organize your models.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_ml_engine_model#labels GoogleMlEngineModel#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The name specified for the model.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_ml_engine_model#name GoogleMlEngineModel#name}
   */
   readonly name: string;
   /**
   * If true, online prediction nodes send stderr and stdout streams to Stackdriver Logging
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_ml_engine_model#online_prediction_console_logging GoogleMlEngineModel#online_prediction_console_logging}
   */
   readonly onlinePredictionConsoleLogging?: boolean | cdktf.IResolvable;
   /**
   * If true, online prediction access logs are sent to StackDriver Logging.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_ml_engine_model#online_prediction_logging GoogleMlEngineModel#online_prediction_logging}
   */
   readonly onlinePredictionLogging?: boolean | cdktf.IResolvable;
@@ -56,19 +56,19 @@ export interface GoogleMlEngineModelConfig extends cdktf.TerraformMetaArguments 
   /**
   * The list of regions where the model is going to be deployed.
 Currently only one region per model is supported
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_ml_engine_model#regions GoogleMlEngineModel#regions}
   */
   readonly regions?: string[];
   /**
   * default_version block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_ml_engine_model#default_version GoogleMlEngineModel#default_version}
   */
   readonly defaultVersion?: GoogleMlEngineModelDefaultVersion;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_ml_engine_model#timeouts GoogleMlEngineModel#timeouts}
   */
   readonly timeouts?: GoogleMlEngineModelTimeouts;
@@ -76,7 +76,7 @@ Currently only one region per model is supported
 export interface GoogleMlEngineModelDefaultVersion {
   /**
   * The name specified for the version when it was created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_ml_engine_model#name GoogleMlEngineModel#name}
   */
   readonly name: string;

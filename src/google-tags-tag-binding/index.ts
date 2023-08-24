@@ -21,19 +21,19 @@ export interface GoogleTagsTagBindingConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * The full resource name of the resource the TagValue is bound to. E.g. //cloudresourcemanager.googleapis.com/projects/123
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_tags_tag_binding#parent GoogleTagsTagBinding#parent}
   */
   readonly parent: string;
   /**
   * The TagValue of the TagBinding. Must be of the form tagValues/456.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_tags_tag_binding#tag_value GoogleTagsTagBinding#tag_value}
   */
   readonly tagValue: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_tags_tag_binding#timeouts GoogleTagsTagBinding#timeouts}
   */
   readonly timeouts?: GoogleTagsTagBindingTimeouts;

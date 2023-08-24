@@ -17,26 +17,26 @@ export interface GoogleApigeeInstanceConfig extends cdktf.TerraformMetaArguments
 side that can privately connect to the service attachment. It is an optional field
 which the customers can provide during the instance creation. By default, the customer
 project associated with the Apigee organization will be included to the list.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#consumer_accept_list GoogleApigeeInstance#consumer_accept_list}
   */
   readonly consumerAcceptList?: string[];
   /**
   * Description of the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#description GoogleApigeeInstance#description}
   */
   readonly description?: string;
   /**
   * Customer Managed Encryption Key (CMEK) used for disk and volume encryption. Required for Apigee paid subscriptions only.
 Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#disk_encryption_key_name GoogleApigeeInstance#disk_encryption_key_name}
   */
   readonly diskEncryptionKeyName?: string;
   /**
   * Display name of the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#display_name GoogleApigeeInstance#display_name}
   */
   readonly displayName?: string;
@@ -55,39 +55,39 @@ Networking peering. If this is not provided, Apigee will automatically request f
 available /22 CIDR block from Service Networking. The customer should use this CIDR block
 for configuring their firewall needs to allow traffic from Apigee.
 Input format: "a.b.c.d/22"
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#ip_range GoogleApigeeInstance#ip_range}
   */
   readonly ipRange?: string;
   /**
   * Required. Compute Engine location where the instance resides.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#location GoogleApigeeInstance#location}
   */
   readonly location: string;
   /**
   * Resource ID of the instance.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#name GoogleApigeeInstance#name}
   */
   readonly name: string;
   /**
   * The Apigee Organization associated with the Apigee instance,
 in the format 'organizations/{{org_name}}'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#org_id GoogleApigeeInstance#org_id}
   */
   readonly orgId: string;
   /**
   * The size of the CIDR block range that will be reserved by the instance. For valid values,
 see [CidrRange](https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.instances#CidrRange) on the documentation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#peering_cidr_range GoogleApigeeInstance#peering_cidr_range}
   */
   readonly peeringCidrRange?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#timeouts GoogleApigeeInstance#timeouts}
   */
   readonly timeouts?: GoogleApigeeInstanceTimeouts;

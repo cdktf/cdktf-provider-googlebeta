@@ -21,19 +21,19 @@ separated by a slash (/).
 Prefix must be a DNS subdomain.
 Name must be 63 characters or less, begin and end with alphanumerics,
 with dashes (-), underscores (_), dots (.), and alphanumerics between.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#annotations GoogleGkeonpremBareMetalAdminCluster#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * A human readable description of this Bare Metal Admin Cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#bare_metal_version GoogleGkeonpremBareMetalAdminCluster#bare_metal_version}
   */
   readonly bareMetalVersion?: string;
   /**
   * A human readable description of this Bare Metal Admin Cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#description GoogleGkeonpremBareMetalAdminCluster#description}
   */
   readonly description?: string;
@@ -46,13 +46,13 @@ with dashes (-), underscores (_), dots (.), and alphanumerics between.
   readonly id?: string;
   /**
   * The location of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#location GoogleGkeonpremBareMetalAdminCluster#location}
   */
   readonly location: string;
   /**
   * The bare metal admin cluster name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#name GoogleGkeonpremBareMetalAdminCluster#name}
   */
   readonly name: string;
@@ -62,67 +62,67 @@ with dashes (-), underscores (_), dots (.), and alphanumerics between.
   readonly project?: string;
   /**
   * cluster_operations block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#cluster_operations GoogleGkeonpremBareMetalAdminCluster#cluster_operations}
   */
   readonly clusterOperations?: GoogleGkeonpremBareMetalAdminClusterClusterOperations;
   /**
   * control_plane block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#control_plane GoogleGkeonpremBareMetalAdminCluster#control_plane}
   */
   readonly controlPlane?: GoogleGkeonpremBareMetalAdminClusterControlPlane;
   /**
   * load_balancer block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#load_balancer GoogleGkeonpremBareMetalAdminCluster#load_balancer}
   */
   readonly loadBalancer?: GoogleGkeonpremBareMetalAdminClusterLoadBalancer;
   /**
   * maintenance_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#maintenance_config GoogleGkeonpremBareMetalAdminCluster#maintenance_config}
   */
   readonly maintenanceConfig?: GoogleGkeonpremBareMetalAdminClusterMaintenanceConfig;
   /**
   * network_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#network_config GoogleGkeonpremBareMetalAdminCluster#network_config}
   */
   readonly networkConfig?: GoogleGkeonpremBareMetalAdminClusterNetworkConfig;
   /**
   * node_access_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#node_access_config GoogleGkeonpremBareMetalAdminCluster#node_access_config}
   */
   readonly nodeAccessConfig?: GoogleGkeonpremBareMetalAdminClusterNodeAccessConfig;
   /**
   * node_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#node_config GoogleGkeonpremBareMetalAdminCluster#node_config}
   */
   readonly nodeConfig?: GoogleGkeonpremBareMetalAdminClusterNodeConfig;
   /**
   * proxy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#proxy GoogleGkeonpremBareMetalAdminCluster#proxy}
   */
   readonly proxy?: GoogleGkeonpremBareMetalAdminClusterProxy;
   /**
   * security_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#security_config GoogleGkeonpremBareMetalAdminCluster#security_config}
   */
   readonly securityConfig?: GoogleGkeonpremBareMetalAdminClusterSecurityConfig;
   /**
   * storage block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#storage GoogleGkeonpremBareMetalAdminCluster#storage}
   */
   readonly storage?: GoogleGkeonpremBareMetalAdminClusterStorage;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#timeouts GoogleGkeonpremBareMetalAdminCluster#timeouts}
   */
   readonly timeouts?: GoogleGkeonpremBareMetalAdminClusterTimeouts;
@@ -572,7 +572,7 @@ export class GoogleGkeonpremBareMetalAdminClusterValidationCheckList extends cdk
 export interface GoogleGkeonpremBareMetalAdminClusterClusterOperations {
   /**
   * Whether collection of application logs/metrics should be enabled (in addition to system logs/metrics).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#enable_application_logs GoogleGkeonpremBareMetalAdminCluster#enable_application_logs}
   */
   readonly enableApplicationLogs?: boolean | cdktf.IResolvable;
@@ -639,13 +639,13 @@ export class GoogleGkeonpremBareMetalAdminClusterClusterOperationsOutputReferenc
 export interface GoogleGkeonpremBareMetalAdminClusterControlPlaneApiServerArgs {
   /**
   * The argument name as it appears on the API Server command line please make sure to remove the leading dashes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#argument GoogleGkeonpremBareMetalAdminCluster#argument}
   */
   readonly argument: string;
   /**
   * The value of the arg as it will be passed to the API Server command line.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#value GoogleGkeonpremBareMetalAdminCluster#value}
   */
   readonly value: string;
@@ -770,14 +770,14 @@ and the valid values, see:
   http://kubernetes.io/v1.1/docs/user-guide/labels.html
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#labels GoogleGkeonpremBareMetalAdminCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The default IPv4 address for SSH access and Kubernetes node.
 Example: 192.168.0.1
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#node_ip GoogleGkeonpremBareMetalAdminCluster#node_ip}
   */
   readonly nodeIp?: string;
@@ -899,19 +899,19 @@ export class GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoo
 export interface GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigTaints {
   /**
   * Specifies the nodes operating system (default: LINUX). Possible values: ["EFFECT_UNSPECIFIED", "PREFER_NO_SCHEDULE", "NO_EXECUTE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#effect GoogleGkeonpremBareMetalAdminCluster#effect}
   */
   readonly effect?: string;
   /**
   * Key associated with the effect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#key GoogleGkeonpremBareMetalAdminCluster#key}
   */
   readonly key?: string;
   /**
   * Value associated with the effect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#value GoogleGkeonpremBareMetalAdminCluster#value}
   */
   readonly value?: string;
@@ -1065,25 +1065,25 @@ and the valid values, see:
   http://kubernetes.io/v1.1/docs/user-guide/labels.html
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#labels GoogleGkeonpremBareMetalAdminCluster#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Specifies the nodes operating system (default: LINUX).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#operating_system GoogleGkeonpremBareMetalAdminCluster#operating_system}
   */
   readonly operatingSystem?: string;
   /**
   * node_configs block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#node_configs GoogleGkeonpremBareMetalAdminCluster#node_configs}
   */
   readonly nodeConfigs?: GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigNodeConfigs[] | cdktf.IResolvable;
   /**
   * taints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#taints GoogleGkeonpremBareMetalAdminCluster#taints}
   */
   readonly taints?: GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfigTaints[] | cdktf.IResolvable;
@@ -1219,7 +1219,7 @@ export class GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoo
 export interface GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfig {
   /**
   * node_pool_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#node_pool_config GoogleGkeonpremBareMetalAdminCluster#node_pool_config}
   */
   readonly nodePoolConfig: GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfigNodePoolConfig;
@@ -1283,13 +1283,13 @@ export class GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoo
 export interface GoogleGkeonpremBareMetalAdminClusterControlPlane {
   /**
   * api_server_args block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#api_server_args GoogleGkeonpremBareMetalAdminCluster#api_server_args}
   */
   readonly apiServerArgs?: GoogleGkeonpremBareMetalAdminClusterControlPlaneApiServerArgs[] | cdktf.IResolvable;
   /**
   * control_plane_node_pool_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#control_plane_node_pool_config GoogleGkeonpremBareMetalAdminCluster#control_plane_node_pool_config}
   */
   readonly controlPlaneNodePoolConfig: GoogleGkeonpremBareMetalAdminClusterControlPlaneControlPlaneNodePoolConfig;
@@ -1376,7 +1376,7 @@ export class GoogleGkeonpremBareMetalAdminClusterControlPlaneOutputReference ext
 export interface GoogleGkeonpremBareMetalAdminClusterLoadBalancerManualLbConfig {
   /**
   * Whether manual load balancing is enabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#enabled GoogleGkeonpremBareMetalAdminCluster#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
@@ -1440,7 +1440,7 @@ export class GoogleGkeonpremBareMetalAdminClusterLoadBalancerManualLbConfigOutpu
 export interface GoogleGkeonpremBareMetalAdminClusterLoadBalancerPortConfig {
   /**
   * The port that control plane hosted load balancers will listen on.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#control_plane_load_balancer_port GoogleGkeonpremBareMetalAdminCluster#control_plane_load_balancer_port}
   */
   readonly controlPlaneLoadBalancerPort: number;
@@ -1504,7 +1504,7 @@ export class GoogleGkeonpremBareMetalAdminClusterLoadBalancerPortConfigOutputRef
 export interface GoogleGkeonpremBareMetalAdminClusterLoadBalancerVipConfig {
   /**
   * The VIP which you previously set aside for the Kubernetes API of this Bare Metal Admin Cluster.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#control_plane_vip GoogleGkeonpremBareMetalAdminCluster#control_plane_vip}
   */
   readonly controlPlaneVip: string;
@@ -1568,19 +1568,19 @@ export class GoogleGkeonpremBareMetalAdminClusterLoadBalancerVipConfigOutputRefe
 export interface GoogleGkeonpremBareMetalAdminClusterLoadBalancer {
   /**
   * manual_lb_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#manual_lb_config GoogleGkeonpremBareMetalAdminCluster#manual_lb_config}
   */
   readonly manualLbConfig?: GoogleGkeonpremBareMetalAdminClusterLoadBalancerManualLbConfig;
   /**
   * port_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#port_config GoogleGkeonpremBareMetalAdminCluster#port_config}
   */
   readonly portConfig: GoogleGkeonpremBareMetalAdminClusterLoadBalancerPortConfig;
   /**
   * vip_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#vip_config GoogleGkeonpremBareMetalAdminCluster#vip_config}
   */
   readonly vipConfig: GoogleGkeonpremBareMetalAdminClusterLoadBalancerVipConfig;
@@ -1690,7 +1690,7 @@ export interface GoogleGkeonpremBareMetalAdminClusterMaintenanceConfig {
 Nodes in maintenance mode will be cordoned and drained. When both of these
 are true, the "baremetal.cluster.gke.io/maintenance" annotation will be set
 on the node resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#maintenance_address_cidr_blocks GoogleGkeonpremBareMetalAdminCluster#maintenance_address_cidr_blocks}
   */
   readonly maintenanceAddressCidrBlocks: string[];
@@ -1754,13 +1754,13 @@ export class GoogleGkeonpremBareMetalAdminClusterMaintenanceConfigOutputReferenc
 export interface GoogleGkeonpremBareMetalAdminClusterNetworkConfigIslandModeCidr {
   /**
   * All pods in the cluster are assigned an RFC1918 IPv4 address from these ranges. This field cannot be changed after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#pod_address_cidr_blocks GoogleGkeonpremBareMetalAdminCluster#pod_address_cidr_blocks}
   */
   readonly podAddressCidrBlocks: string[];
   /**
   * All services in the cluster are assigned an RFC1918 IPv4 address from these ranges. This field cannot be changed after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#service_address_cidr_blocks GoogleGkeonpremBareMetalAdminCluster#service_address_cidr_blocks}
   */
   readonly serviceAddressCidrBlocks: string[];
@@ -1844,7 +1844,7 @@ export class GoogleGkeonpremBareMetalAdminClusterNetworkConfigIslandModeCidrOutp
 export interface GoogleGkeonpremBareMetalAdminClusterNetworkConfig {
   /**
   * island_mode_cidr block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#island_mode_cidr GoogleGkeonpremBareMetalAdminCluster#island_mode_cidr}
   */
   readonly islandModeCidr?: GoogleGkeonpremBareMetalAdminClusterNetworkConfigIslandModeCidr;
@@ -1912,7 +1912,7 @@ export interface GoogleGkeonpremBareMetalAdminClusterNodeAccessConfig {
   /**
   * LoginUser is the user name used to access node machines.
 It defaults to "root" if not set.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#login_user GoogleGkeonpremBareMetalAdminCluster#login_user}
   */
   readonly loginUser?: string;
@@ -1980,7 +1980,7 @@ export interface GoogleGkeonpremBareMetalAdminClusterNodeConfig {
   /**
   * The maximum number of pods a node can run. The size of the CIDR range
 assigned to the node will be derived from this parameter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#max_pods_per_node GoogleGkeonpremBareMetalAdminCluster#max_pods_per_node}
   */
   readonly maxPodsPerNode?: number;
@@ -2048,7 +2048,7 @@ export interface GoogleGkeonpremBareMetalAdminClusterProxy {
   /**
   * A list of IPs, hostnames, and domains that should skip the proxy.
 Examples: ["127.0.0.1", "example.com", ".corp", "localhost"].
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#no_proxy GoogleGkeonpremBareMetalAdminCluster#no_proxy}
   */
   readonly noProxy?: string[];
@@ -2057,7 +2057,7 @@ Examples: ["127.0.0.1", "example.com", ".corp", "localhost"].
 Examples: http://domain
 WARNING: Do not provide credentials in the format
 http://(username:password@)domain these will be rejected by the server.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#uri GoogleGkeonpremBareMetalAdminCluster#uri}
   */
   readonly uri: string;
@@ -2144,7 +2144,7 @@ export class GoogleGkeonpremBareMetalAdminClusterProxyOutputReference extends cd
 export interface GoogleGkeonpremBareMetalAdminClusterSecurityConfigAuthorizationAdminUsers {
   /**
   * The name of the user, e.g. 'my-gcp-id@gmail.com'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#username GoogleGkeonpremBareMetalAdminCluster#username}
   */
   readonly username: string;
@@ -2240,7 +2240,7 @@ export class GoogleGkeonpremBareMetalAdminClusterSecurityConfigAuthorizationAdmi
 export interface GoogleGkeonpremBareMetalAdminClusterSecurityConfigAuthorization {
   /**
   * admin_users block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#admin_users GoogleGkeonpremBareMetalAdminCluster#admin_users}
   */
   readonly adminUsers: GoogleGkeonpremBareMetalAdminClusterSecurityConfigAuthorizationAdminUsers[] | cdktf.IResolvable;
@@ -2304,7 +2304,7 @@ export class GoogleGkeonpremBareMetalAdminClusterSecurityConfigAuthorizationOutp
 export interface GoogleGkeonpremBareMetalAdminClusterSecurityConfig {
   /**
   * authorization block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#authorization GoogleGkeonpremBareMetalAdminCluster#authorization}
   */
   readonly authorization?: GoogleGkeonpremBareMetalAdminClusterSecurityConfigAuthorization;
@@ -2371,13 +2371,13 @@ export class GoogleGkeonpremBareMetalAdminClusterSecurityConfigOutputReference e
 export interface GoogleGkeonpremBareMetalAdminClusterStorageLvpNodeMountsConfig {
   /**
   * The host machine path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#path GoogleGkeonpremBareMetalAdminCluster#path}
   */
   readonly path: string;
   /**
   * The StorageClass name that PVs will be created with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#storage_class GoogleGkeonpremBareMetalAdminCluster#storage_class}
   */
   readonly storageClass: string;
@@ -2461,13 +2461,13 @@ export class GoogleGkeonpremBareMetalAdminClusterStorageLvpNodeMountsConfigOutpu
 export interface GoogleGkeonpremBareMetalAdminClusterStorageLvpShareConfigLvpConfig {
   /**
   * The host machine path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#path GoogleGkeonpremBareMetalAdminCluster#path}
   */
   readonly path: string;
   /**
   * The StorageClass name that PVs will be created with.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#storage_class GoogleGkeonpremBareMetalAdminCluster#storage_class}
   */
   readonly storageClass: string;
@@ -2551,13 +2551,13 @@ export class GoogleGkeonpremBareMetalAdminClusterStorageLvpShareConfigLvpConfigO
 export interface GoogleGkeonpremBareMetalAdminClusterStorageLvpShareConfig {
   /**
   * The number of subdirectories to create under path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#shared_path_pv_count GoogleGkeonpremBareMetalAdminCluster#shared_path_pv_count}
   */
   readonly sharedPathPvCount?: number;
   /**
   * lvp_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#lvp_config GoogleGkeonpremBareMetalAdminCluster#lvp_config}
   */
   readonly lvpConfig: GoogleGkeonpremBareMetalAdminClusterStorageLvpShareConfigLvpConfig;
@@ -2644,13 +2644,13 @@ export class GoogleGkeonpremBareMetalAdminClusterStorageLvpShareConfigOutputRefe
 export interface GoogleGkeonpremBareMetalAdminClusterStorage {
   /**
   * lvp_node_mounts_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#lvp_node_mounts_config GoogleGkeonpremBareMetalAdminCluster#lvp_node_mounts_config}
   */
   readonly lvpNodeMountsConfig: GoogleGkeonpremBareMetalAdminClusterStorageLvpNodeMountsConfig;
   /**
   * lvp_share_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster#lvp_share_config GoogleGkeonpremBareMetalAdminCluster#lvp_share_config}
   */
   readonly lvpShareConfig: GoogleGkeonpremBareMetalAdminClusterStorageLvpShareConfig;

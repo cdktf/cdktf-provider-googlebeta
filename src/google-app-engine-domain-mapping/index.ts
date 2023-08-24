@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleAppEngineDomainMappingConfig extends cdktf.TerraformMetaArguments {
   /**
   * Relative name of the domain serving the application. Example: example.com.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_domain_mapping#domain_name GoogleAppEngineDomainMapping#domain_name}
   */
   readonly domainName: string;
@@ -28,7 +28,7 @@ export interface GoogleAppEngineDomainMappingConfig extends cdktf.TerraformMetaA
   /**
   * Whether the domain creation should override any existing mappings for this domain.
 By default, overrides are rejected. Default value: "STRICT" Possible values: ["STRICT", "OVERRIDE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_domain_mapping#override_strategy GoogleAppEngineDomainMapping#override_strategy}
   */
   readonly overrideStrategy?: string;
@@ -38,13 +38,13 @@ By default, overrides are rejected. Default value: "STRICT" Possible values: ["S
   readonly project?: string;
   /**
   * ssl_settings block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_domain_mapping#ssl_settings GoogleAppEngineDomainMapping#ssl_settings}
   */
   readonly sslSettings?: GoogleAppEngineDomainMappingSslSettings;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_domain_mapping#timeouts GoogleAppEngineDomainMapping#timeouts}
   */
   readonly timeouts?: GoogleAppEngineDomainMappingTimeouts;
@@ -131,14 +131,14 @@ By default, a managed certificate is automatically created for every domain mapp
 or to configure SSL manually, specify 'SslManagementType.MANUAL' on a 'CREATE' or 'UPDATE' request. You must be
 authorized to administer the 'AuthorizedCertificate' resource to manually map it to a DomainMapping resource.
 Example: 12345.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_domain_mapping#certificate_id GoogleAppEngineDomainMapping#certificate_id}
   */
   readonly certificateId?: string;
   /**
   * SSL management type for this domain. If 'AUTOMATIC', a managed certificate is automatically provisioned.
 If 'MANUAL', 'certificateId' must be manually specified in order to configure SSL for this domain. Possible values: ["AUTOMATIC", "MANUAL"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_domain_mapping#ssl_management_type GoogleAppEngineDomainMapping#ssl_management_type}
   */
   readonly sslManagementType: string;

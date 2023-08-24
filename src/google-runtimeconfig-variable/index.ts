@@ -21,19 +21,19 @@ export interface GoogleRuntimeconfigVariableConfig extends cdktf.TerraformMetaAr
   readonly id?: string;
   /**
   * The name of the variable to manage. Note that variable names can be hierarchical using slashes (e.g. "prod-variables/hostname").
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#name GoogleRuntimeconfigVariable#name}
   */
   readonly name: string;
   /**
   * The name of the RuntimeConfig resource containing this variable.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#parent GoogleRuntimeconfigVariable#parent}
   */
   readonly parent: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_runtimeconfig_variable#project GoogleRuntimeconfigVariable#project}
   */
   readonly project?: string;

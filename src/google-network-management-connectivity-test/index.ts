@@ -15,7 +15,7 @@ export interface GoogleNetworkManagementConnectivityTestConfig extends cdktf.Ter
   /**
   * The user-supplied description of the Connectivity Test.
 Maximum of 512 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#description GoogleNetworkManagementConnectivityTest#description}
   */
   readonly description?: string;
@@ -28,13 +28,13 @@ Maximum of 512 characters.
   readonly id?: string;
   /**
   * Resource labels to represent user-provided metadata.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#labels GoogleNetworkManagementConnectivityTest#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Unique name for the connectivity test.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#name GoogleNetworkManagementConnectivityTest#name}
   */
   readonly name: string;
@@ -44,7 +44,7 @@ Maximum of 512 characters.
   readonly project?: string;
   /**
   * IP Protocol of the test. When not provided, "TCP" is assumed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#protocol GoogleNetworkManagementConnectivityTest#protocol}
   */
   readonly protocol?: string;
@@ -52,25 +52,25 @@ Maximum of 512 characters.
   * Other projects that may be relevant for reachability analysis.
 This is applicable to scenarios where a test can cross project
 boundaries.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#related_projects GoogleNetworkManagementConnectivityTest#related_projects}
   */
   readonly relatedProjects?: string[];
   /**
   * destination block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#destination GoogleNetworkManagementConnectivityTest#destination}
   */
   readonly destination: GoogleNetworkManagementConnectivityTestDestination;
   /**
   * source block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#source GoogleNetworkManagementConnectivityTest#source}
   */
   readonly source: GoogleNetworkManagementConnectivityTestSource;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#timeouts GoogleNetworkManagementConnectivityTest#timeouts}
   */
   readonly timeouts?: GoogleNetworkManagementConnectivityTestTimeouts;
@@ -78,7 +78,7 @@ boundaries.
 export interface GoogleNetworkManagementConnectivityTestDestination {
   /**
   * A Compute Engine instance URI.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#instance GoogleNetworkManagementConnectivityTest#instance}
   */
   readonly instance?: string;
@@ -86,20 +86,20 @@ export interface GoogleNetworkManagementConnectivityTestDestination {
   * The IP address of the endpoint, which can be an external or
 internal IP. An IPv6 address is only allowed when the test's
 destination is a global load balancer VIP.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#ip_address GoogleNetworkManagementConnectivityTest#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * A Compute Engine network URI.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#network GoogleNetworkManagementConnectivityTest#network}
   */
   readonly network?: string;
   /**
   * The IP protocol port of the endpoint. Only applicable when
 protocol is TCP or UDP.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#port GoogleNetworkManagementConnectivityTest#port}
   */
   readonly port?: number;
@@ -112,7 +112,7 @@ a GCP project. 2. When you are using Shared VPC and the IP address
 that you provide is from the service project. In this case, the
 network that the IP address resides in is defined in the host
 project.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#project_id GoogleNetworkManagementConnectivityTest#project_id}
   */
   readonly projectId?: string;
@@ -271,7 +271,7 @@ export class GoogleNetworkManagementConnectivityTestDestinationOutputReference e
 export interface GoogleNetworkManagementConnectivityTestSource {
   /**
   * A Compute Engine instance URI.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#instance GoogleNetworkManagementConnectivityTest#instance}
   */
   readonly instance?: string;
@@ -279,26 +279,26 @@ export interface GoogleNetworkManagementConnectivityTestSource {
   * The IP address of the endpoint, which can be an external or
 internal IP. An IPv6 address is only allowed when the test's
 destination is a global load balancer VIP.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#ip_address GoogleNetworkManagementConnectivityTest#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * A Compute Engine network URI.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#network GoogleNetworkManagementConnectivityTest#network}
   */
   readonly network?: string;
   /**
   * Type of the network where the endpoint is located. Possible values: ["GCP_NETWORK", "NON_GCP_NETWORK"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#network_type GoogleNetworkManagementConnectivityTest#network_type}
   */
   readonly networkType?: string;
   /**
   * The IP protocol port of the endpoint. Only applicable when
 protocol is TCP or UDP.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#port GoogleNetworkManagementConnectivityTest#port}
   */
   readonly port?: number;
@@ -313,7 +313,7 @@ The following are two cases where you must provide the project ID:
    that you provide is from the service project. In this case,
    the network that the IP address resides in is defined in the
    host project.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_management_connectivity_test#project_id GoogleNetworkManagementConnectivityTest#project_id}
   */
   readonly projectId?: string;

@@ -41,7 +41,7 @@ export interface GoogleCloudRunV2JobIamBindingConfig extends cdktf.TerraformMeta
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloud_run_v2_job_iam_binding#condition GoogleCloudRunV2JobIamBinding#condition}
   */
   readonly condition?: GoogleCloudRunV2JobIamBindingCondition;

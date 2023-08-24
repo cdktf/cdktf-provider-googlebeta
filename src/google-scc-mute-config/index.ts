@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleSccMuteConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the mute config.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_mute_config#description GoogleSccMuteConfig#description}
   */
   readonly description?: string;
@@ -24,7 +24,7 @@ events of findings. While creating a filter string, be mindful of
 the scope in which the mute configuration is being created. E.g.,
 If a filter contains project = X but is created under the
 project = Y scope, it might not match any findings.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_mute_config#filter GoogleSccMuteConfig#filter}
   */
   readonly filter: string;
@@ -37,7 +37,7 @@ project = Y scope, it might not match any findings.
   readonly id?: string;
   /**
   * Unique identifier provided by the client within the parent scope.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_mute_config#mute_config_id GoogleSccMuteConfig#mute_config_id}
   */
   readonly muteConfigId: string;
@@ -45,13 +45,13 @@ project = Y scope, it might not match any findings.
   * Resource name of the new mute configs's parent. Its format is
 "organizations/[organization_id]", "folders/[folder_id]", or
 "projects/[project_id]".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_mute_config#parent GoogleSccMuteConfig#parent}
   */
   readonly parent: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_mute_config#timeouts GoogleSccMuteConfig#timeouts}
   */
   readonly timeouts?: GoogleSccMuteConfigTimeouts;

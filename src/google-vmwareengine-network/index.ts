@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleVmwareengineNetworkConfig extends cdktf.TerraformMetaArguments {
   /**
   * User-provided description for this VMware Engine network.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_network#description GoogleVmwareengineNetwork#description}
   */
   readonly description?: string;
@@ -27,13 +27,13 @@ export interface GoogleVmwareengineNetworkConfig extends cdktf.TerraformMetaArgu
   readonly id?: string;
   /**
   * The location where the VMwareEngineNetwork should reside.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_network#location GoogleVmwareengineNetwork#location}
   */
   readonly location: string;
   /**
   * The ID of the VMwareEngineNetwork.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_network#name GoogleVmwareengineNetwork#name}
   */
   readonly name: string;
@@ -43,13 +43,13 @@ export interface GoogleVmwareengineNetworkConfig extends cdktf.TerraformMetaArgu
   readonly project?: string;
   /**
   * VMware Engine network type. Possible values: ["LEGACY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_network#type GoogleVmwareengineNetwork#type}
   */
   readonly type: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vmwareengine_network#timeouts GoogleVmwareengineNetwork#timeouts}
   */
   readonly timeouts?: GoogleVmwareengineNetworkTimeouts;

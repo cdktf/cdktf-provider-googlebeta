@@ -41,7 +41,7 @@ export interface GoogleCloudbuildv2ConnectionIamMemberConfig extends cdktf.Terra
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection_iam_member#condition GoogleCloudbuildv2ConnectionIamMember#condition}
   */
   readonly condition?: GoogleCloudbuildv2ConnectionIamMemberCondition;

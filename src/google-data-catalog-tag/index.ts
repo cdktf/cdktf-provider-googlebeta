@@ -18,7 +18,7 @@ individual column based on that schema.
 
 For attaching a tag to a nested column, use '.' to separate the column names. Example:
 'outer_column.inner_column'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag#column GoogleDataCatalogTag#column}
   */
   readonly column?: string;
@@ -32,7 +32,7 @@ For attaching a tag to a nested column, use '.' to separate the column names. Ex
   /**
   * The name of the parent this tag is attached to. This can be the name of an entry or an entry group. If an entry group, the tag will be attached to
 all entries in that group.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag#parent GoogleDataCatalogTag#parent}
   */
   readonly parent?: string;
@@ -40,19 +40,19 @@ all entries in that group.
   * The resource name of the tag template that this tag uses. Example:
 projects/{project_id}/locations/{location}/tagTemplates/{tagTemplateId}
 This field cannot be modified after creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag#template GoogleDataCatalogTag#template}
   */
   readonly template: string;
   /**
   * fields block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag#fields GoogleDataCatalogTag#fields}
   */
   readonly fields: GoogleDataCatalogTagFields[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag#timeouts GoogleDataCatalogTag#timeouts}
   */
   readonly timeouts?: GoogleDataCatalogTagTimeouts;
@@ -60,19 +60,19 @@ This field cannot be modified after creation.
 export interface GoogleDataCatalogTagFields {
   /**
   * Holds the value for a tag field with boolean type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag#bool_value GoogleDataCatalogTag#bool_value}
   */
   readonly boolValue?: boolean | cdktf.IResolvable;
   /**
   * Holds the value for a tag field with double type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag#double_value GoogleDataCatalogTag#double_value}
   */
   readonly doubleValue?: number;
   /**
   * The display name of the enum value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag#enum_value GoogleDataCatalogTag#enum_value}
   */
   readonly enumValue?: string;
@@ -82,13 +82,13 @@ export interface GoogleDataCatalogTagFields {
   readonly fieldName: string;
   /**
   * Holds the value for a tag field with string type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag#string_value GoogleDataCatalogTag#string_value}
   */
   readonly stringValue?: string;
   /**
   * Holds the value for a tag field with timestamp type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_catalog_tag#timestamp_value GoogleDataCatalogTag#timestamp_value}
   */
   readonly timestampValue?: string;

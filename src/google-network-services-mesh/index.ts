@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleNetworkServicesMeshConfig extends cdktf.TerraformMetaArguments {
   /**
   * A free-text description of the resource. Max length 1024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_mesh#description GoogleNetworkServicesMesh#description}
   */
   readonly description?: string;
@@ -31,19 +31,19 @@ specified port of localhost (127.0.0.1) address. The SIDECAR proxy will expect a
 be redirected to this port regardless of its actual ip:port destination. If unset, a port
 '15001' is used as the interception port. This will is applicable only for sidecar proxy
 deployments.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_mesh#interception_port GoogleNetworkServicesMesh#interception_port}
   */
   readonly interceptionPort?: number;
   /**
   * Set of label tags associated with the Mesh resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_mesh#labels GoogleNetworkServicesMesh#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Short name of the Mesh resource to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_mesh#name GoogleNetworkServicesMesh#name}
   */
   readonly name: string;
@@ -53,7 +53,7 @@ deployments.
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_mesh#timeouts GoogleNetworkServicesMesh#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesMeshTimeouts;

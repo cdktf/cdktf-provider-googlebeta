@@ -14,25 +14,25 @@ import * as cdktf from 'cdktf';
 export interface GoogleDialogflowCxWebhookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Indicates whether the webhook is disabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#disabled GoogleDialogflowCxWebhook#disabled}
   */
   readonly disabled?: boolean | cdktf.IResolvable;
   /**
   * The human-readable name of the webhook, unique within the agent.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#display_name GoogleDialogflowCxWebhook#display_name}
   */
   readonly displayName: string;
   /**
   * Indicates if automatic spell correction is enabled in detect intent requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#enable_spell_correction GoogleDialogflowCxWebhook#enable_spell_correction}
   */
   readonly enableSpellCorrection?: boolean | cdktf.IResolvable;
   /**
   * Determines whether this agent should log conversation queries.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#enable_stackdriver_logging GoogleDialogflowCxWebhook#enable_stackdriver_logging}
   */
   readonly enableStackdriverLogging?: boolean | cdktf.IResolvable;
@@ -46,37 +46,37 @@ export interface GoogleDialogflowCxWebhookConfig extends cdktf.TerraformMetaArgu
   /**
   * The agent to create a webhook for.
 Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#parent GoogleDialogflowCxWebhook#parent}
   */
   readonly parent?: string;
   /**
   * Name of the SecuritySettings reference for the agent. Format: projects/<Project ID>/locations/<Location ID>/securitySettings/<Security Settings ID>.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#security_settings GoogleDialogflowCxWebhook#security_settings}
   */
   readonly securitySettings?: string;
   /**
   * Webhook execution timeout.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#timeout GoogleDialogflowCxWebhook#timeout}
   */
   readonly timeout?: string;
   /**
   * generic_web_service block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#generic_web_service GoogleDialogflowCxWebhook#generic_web_service}
   */
   readonly genericWebService?: GoogleDialogflowCxWebhookGenericWebService;
   /**
   * service_directory block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#service_directory GoogleDialogflowCxWebhook#service_directory}
   */
   readonly serviceDirectory?: GoogleDialogflowCxWebhookServiceDirectory;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#timeouts GoogleDialogflowCxWebhook#timeouts}
   */
   readonly timeouts?: GoogleDialogflowCxWebhookTimeouts;
@@ -84,19 +84,19 @@ Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 export interface GoogleDialogflowCxWebhookGenericWebService {
   /**
   * Specifies a list of allowed custom CA certificates (in DER format) for HTTPS verification.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#allowed_ca_certs GoogleDialogflowCxWebhook#allowed_ca_certs}
   */
   readonly allowedCaCerts?: string[];
   /**
   * The HTTP request headers to send together with webhook requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#request_headers GoogleDialogflowCxWebhook#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
   * Whether to use speech adaptation for speech recognition.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#uri GoogleDialogflowCxWebhook#uri}
   */
   readonly uri: string;
@@ -206,19 +206,19 @@ export class GoogleDialogflowCxWebhookGenericWebServiceOutputReference extends c
 export interface GoogleDialogflowCxWebhookServiceDirectoryGenericWebService {
   /**
   * Specifies a list of allowed custom CA certificates (in DER format) for HTTPS verification.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#allowed_ca_certs GoogleDialogflowCxWebhook#allowed_ca_certs}
   */
   readonly allowedCaCerts?: string[];
   /**
   * The HTTP request headers to send together with webhook requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#request_headers GoogleDialogflowCxWebhook#request_headers}
   */
   readonly requestHeaders?: { [key: string]: string };
   /**
   * Whether to use speech adaptation for speech recognition.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#uri GoogleDialogflowCxWebhook#uri}
   */
   readonly uri: string;
@@ -328,13 +328,13 @@ export class GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputRef
 export interface GoogleDialogflowCxWebhookServiceDirectory {
   /**
   * The name of Service Directory service.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#service GoogleDialogflowCxWebhook#service}
   */
   readonly service: string;
   /**
   * generic_web_service block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_webhook#generic_web_service GoogleDialogflowCxWebhook#generic_web_service}
   */
   readonly genericWebService: GoogleDialogflowCxWebhookServiceDirectoryGenericWebService;

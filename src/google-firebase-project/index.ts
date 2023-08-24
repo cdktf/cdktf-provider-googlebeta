@@ -25,7 +25,7 @@ export interface GoogleFirebaseProjectConfig extends cdktf.TerraformMetaArgument
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_project#timeouts GoogleFirebaseProject#timeouts}
   */
   readonly timeouts?: GoogleFirebaseProjectTimeouts;

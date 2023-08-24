@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeOrganizationSecurityPolicyAssociationConfig extends cdktf.TerraformMetaArguments {
   /**
   * The resource that the security policy is attached to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_association#attachment_id GoogleComputeOrganizationSecurityPolicyAssociation#attachment_id}
   */
   readonly attachmentId: string;
@@ -27,19 +27,19 @@ export interface GoogleComputeOrganizationSecurityPolicyAssociationConfig extend
   readonly id?: string;
   /**
   * The name for an association.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_association#name GoogleComputeOrganizationSecurityPolicyAssociation#name}
   */
   readonly name: string;
   /**
   * The security policy ID of the association.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_association#policy_id GoogleComputeOrganizationSecurityPolicyAssociation#policy_id}
   */
   readonly policyId: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_organization_security_policy_association#timeouts GoogleComputeOrganizationSecurityPolicyAssociation#timeouts}
   */
   readonly timeouts?: GoogleComputeOrganizationSecurityPolicyAssociationTimeouts;

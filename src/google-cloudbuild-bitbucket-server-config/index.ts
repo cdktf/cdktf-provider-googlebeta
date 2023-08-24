@@ -15,20 +15,20 @@ export interface GoogleCloudbuildBitbucketServerConfigConfig extends cdktf.Terra
   /**
   * Immutable. API Key that will be attached to webhook. Once this field has been set, it cannot be changed.
 Changing this field will result in deleting/ recreating the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#api_key GoogleCloudbuildBitbucketServerConfig#api_key}
   */
   readonly apiKey: string;
   /**
   * The ID to use for the BitbucketServerConfig, which will become the final component of the BitbucketServerConfig's resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#config_id GoogleCloudbuildBitbucketServerConfig#config_id}
   */
   readonly configId: string;
   /**
   * Immutable. The URI of the Bitbucket Server host. Once this field has been set, it cannot be changed.
 If you need to change it, please create another BitbucketServerConfig.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#host_uri GoogleCloudbuildBitbucketServerConfig#host_uri}
   */
   readonly hostUri: string;
@@ -41,7 +41,7 @@ If you need to change it, please create another BitbucketServerConfig.
   readonly id?: string;
   /**
   * The location of this bitbucket server config.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#location GoogleCloudbuildBitbucketServerConfig#location}
   */
   readonly location: string;
@@ -50,7 +50,7 @@ If you need to change it, please create another BitbucketServerConfig.
 This should be set if the Bitbucket Server instance is hosted on-premises and not reachable by public internet. If this field is left empty,
 no network peering will occur and calls to the Bitbucket Server instance will be made over the public internet. Must be in the format
 projects/{project}/global/networks/{network}, where {project} is a project number or id and {network} is the name of a VPC network in the project.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#peered_network GoogleCloudbuildBitbucketServerConfig#peered_network}
   */
   readonly peeredNetwork?: string;
@@ -60,31 +60,31 @@ projects/{project}/global/networks/{network}, where {project} is a project numbe
   readonly project?: string;
   /**
   * SSL certificate to use for requests to Bitbucket Server. The format should be PEM format but the extension can be one of .pem, .cer, or .crt.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#ssl_ca GoogleCloudbuildBitbucketServerConfig#ssl_ca}
   */
   readonly sslCa?: string;
   /**
   * Username of the account Cloud Build will use on Bitbucket Server.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#username GoogleCloudbuildBitbucketServerConfig#username}
   */
   readonly username: string;
   /**
   * connected_repositories block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#connected_repositories GoogleCloudbuildBitbucketServerConfig#connected_repositories}
   */
   readonly connectedRepositories?: GoogleCloudbuildBitbucketServerConfigConnectedRepositories[] | cdktf.IResolvable;
   /**
   * secrets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#secrets GoogleCloudbuildBitbucketServerConfig#secrets}
   */
   readonly secrets: GoogleCloudbuildBitbucketServerConfigSecrets;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#timeouts GoogleCloudbuildBitbucketServerConfig#timeouts}
   */
   readonly timeouts?: GoogleCloudbuildBitbucketServerConfigTimeouts;
@@ -92,13 +92,13 @@ projects/{project}/global/networks/{network}, where {project} is a project numbe
 export interface GoogleCloudbuildBitbucketServerConfigConnectedRepositories {
   /**
   * Identifier for the project storing the repository.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#project_key GoogleCloudbuildBitbucketServerConfig#project_key}
   */
   readonly projectKey: string;
   /**
   * Identifier for the repository.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#repo_slug GoogleCloudbuildBitbucketServerConfig#repo_slug}
   */
   readonly repoSlug: string;
@@ -214,20 +214,20 @@ export class GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList exte
 export interface GoogleCloudbuildBitbucketServerConfigSecrets {
   /**
   * The resource name for the admin access token's secret version.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#admin_access_token_version_name GoogleCloudbuildBitbucketServerConfig#admin_access_token_version_name}
   */
   readonly adminAccessTokenVersionName: string;
   /**
   * The resource name for the read access token's secret version.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#read_access_token_version_name GoogleCloudbuildBitbucketServerConfig#read_access_token_version_name}
   */
   readonly readAccessTokenVersionName: string;
   /**
   * Immutable. The resource name for the webhook secret's secret version. Once this field has been set, it cannot be changed.
 Changing this field will result in deleting/ recreating the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_bitbucket_server_config#webhook_secret_version_name GoogleCloudbuildBitbucketServerConfig#webhook_secret_version_name}
   */
   readonly webhookSecretVersionName: string;

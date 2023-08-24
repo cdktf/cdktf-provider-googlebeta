@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfigIamPolicy.DataGoogleRuntimeconfigConfigIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleruntimeconfigconfigiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagoogleruntimeconfigconfigiampolicy"
 
 datagoogleruntimeconfigconfigiampolicy.NewDataGoogleRuntimeconfigConfigIamPolicy(scope Construct, id *string, config DataGoogleRuntimeconfigConfigIamPolicyConfig) DataGoogleRuntimeconfigConfigIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfigIamPolicy.DataGoogleRuntimeconfigConfigIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleruntimeconfigconfigiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagoogleruntimeconfigconfigiampolicy"
 
 datagoogleruntimeconfigconfigiampolicy.DataGoogleRuntimeconfigConfigIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfigIamPolicy.DataGoogleRuntimeconfigConfigIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleruntimeconfigconfigiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagoogleruntimeconfigconfigiampolicy"
 
 datagoogleruntimeconfigconfigiampolicy.DataGoogleRuntimeconfigConfigIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagoogleruntimeconfigconfigiampolicy.DataGoogleRuntimeconfigConfigIamPolicy_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfigIamPolicy.DataGoogleRuntimeconfigConfigIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleruntimeconfigconfigiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagoogleruntimeconfigconfigiampolicy"
 
 datagoogleruntimeconfigconfigiampolicy.DataGoogleRuntimeconfigConfigIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleRuntimeconfigConfigIamPolicy.DataGoogleRuntimeconfigConfigIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleruntimeconfigconfigiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagoogleruntimeconfigconfigiampolicy"
 
 &datagoogleruntimeconfigconfigiampolicy.DataGoogleRuntimeconfigConfigIamPolicyConfig {
 	Connection: interface{},

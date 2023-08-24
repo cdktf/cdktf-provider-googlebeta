@@ -33,7 +33,7 @@ export interface GoogleBillingAccountIamBindingConfig extends cdktf.TerraformMet
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_billing_account_iam_binding#condition GoogleBillingAccountIamBinding#condition}
   */
   readonly condition?: GoogleBillingAccountIamBindingCondition;

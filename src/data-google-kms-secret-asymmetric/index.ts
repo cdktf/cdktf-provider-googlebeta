@@ -14,19 +14,19 @@ import * as cdktf from 'cdktf';
 export interface DataGoogleKmsSecretAsymmetricConfig extends cdktf.TerraformMetaArguments {
   /**
   * The public key encrypted ciphertext in base64 encoding
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_kms_secret_asymmetric#ciphertext DataGoogleKmsSecretAsymmetric#ciphertext}
   */
   readonly ciphertext: string;
   /**
   * The crc32 checksum of the ciphertext, hexadecimal encoding. If not specified, it will be computed
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_kms_secret_asymmetric#crc32 DataGoogleKmsSecretAsymmetric#crc32}
   */
   readonly crc32?: string;
   /**
   * The fully qualified KMS crypto key version name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_kms_secret_asymmetric#crypto_key_version DataGoogleKmsSecretAsymmetric#crypto_key_version}
   */
   readonly cryptoKeyVersion: string;

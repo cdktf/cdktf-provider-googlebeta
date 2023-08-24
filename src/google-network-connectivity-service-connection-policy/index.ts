@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleNetworkConnectivityServiceConnectionPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Free-text description of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_service_connection_policy#description GoogleNetworkConnectivityServiceConnectionPolicy#description}
   */
   readonly description?: string;
@@ -27,25 +27,25 @@ export interface GoogleNetworkConnectivityServiceConnectionPolicyConfig extends 
   readonly id?: string;
   /**
   * User-defined labels.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_service_connection_policy#labels GoogleNetworkConnectivityServiceConnectionPolicy#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the ServiceConnectionPolicy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_service_connection_policy#location GoogleNetworkConnectivityServiceConnectionPolicy#location}
   */
   readonly location: string;
   /**
   * The name of a ServiceConnectionPolicy. Format: projects/{project}/locations/{location}/serviceConnectionPolicies/{service_connection_policy} See: https://google.aip.dev/122#fields-representing-resource-names
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_service_connection_policy#name GoogleNetworkConnectivityServiceConnectionPolicy#name}
   */
   readonly name: string;
   /**
   * The resource path of the consumer network. Example: - projects/{projectNumOrId}/global/networks/{resourceId}.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_service_connection_policy#network GoogleNetworkConnectivityServiceConnectionPolicy#network}
   */
   readonly network: string;
@@ -56,19 +56,19 @@ export interface GoogleNetworkConnectivityServiceConnectionPolicyConfig extends 
   /**
   * The service class identifier for which this ServiceConnectionPolicy is for. The service class identifier is a unique, symbolic representation of a ServiceClass.
 It is provided by the Service Producer. Google services have a prefix of gcp. For example, gcp-cloud-sql. 3rd party services do not. For example, test-service-a3dfcx.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_service_connection_policy#service_class GoogleNetworkConnectivityServiceConnectionPolicy#service_class}
   */
   readonly serviceClass: string;
   /**
   * psc_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_service_connection_policy#psc_config GoogleNetworkConnectivityServiceConnectionPolicy#psc_config}
   */
   readonly pscConfig?: GoogleNetworkConnectivityServiceConnectionPolicyPscConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_service_connection_policy#timeouts GoogleNetworkConnectivityServiceConnectionPolicy#timeouts}
   */
   readonly timeouts?: GoogleNetworkConnectivityServiceConnectionPolicyTimeouts;
@@ -76,13 +76,13 @@ It is provided by the Service Producer. Google services have a prefix of gcp. Fo
 export interface GoogleNetworkConnectivityServiceConnectionPolicyPscConfig {
   /**
   * Max number of PSC connections for this policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_service_connection_policy#limit GoogleNetworkConnectivityServiceConnectionPolicy#limit}
   */
   readonly limit?: string;
   /**
   * IDs of the subnetworks or fully qualified identifiers for the subnetworks
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_service_connection_policy#subnetworks GoogleNetworkConnectivityServiceConnectionPolicy#subnetworks}
   */
   readonly subnetworks: string[];

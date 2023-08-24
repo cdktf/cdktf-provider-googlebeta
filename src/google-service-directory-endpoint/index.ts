@@ -14,14 +14,14 @@ import * as cdktf from 'cdktf';
 export interface GoogleServiceDirectoryEndpointConfig extends cdktf.TerraformMetaArguments {
   /**
   * IPv4 or IPv6 address of the endpoint.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_endpoint#address GoogleServiceDirectoryEndpoint#address}
   */
   readonly address?: string;
   /**
   * The Resource ID must be 1-63 characters long, including digits,
 lowercase letters or the hyphen character.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_endpoint#endpoint_id GoogleServiceDirectoryEndpoint#endpoint_id}
   */
   readonly endpointId: string;
@@ -37,32 +37,32 @@ lowercase letters or the hyphen character.
 by service clients. The entire metadata dictionary may contain
 up to 512 characters, spread across all key-value pairs.
 Metadata that goes beyond any these limits will be rejected.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_endpoint#metadata GoogleServiceDirectoryEndpoint#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * The URL to the network, such as projects/PROJECT_NUMBER/locations/global/networks/NETWORK_NAME.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_endpoint#network GoogleServiceDirectoryEndpoint#network}
   */
   readonly network?: string;
   /**
   * Port that the endpoint is running on, must be in the
 range of [0, 65535]. If unspecified, the default is 0.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_endpoint#port GoogleServiceDirectoryEndpoint#port}
   */
   readonly port?: number;
   /**
   * The resource name of the service that this endpoint provides.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_endpoint#service GoogleServiceDirectoryEndpoint#service}
   */
   readonly service: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_service_directory_endpoint#timeouts GoogleServiceDirectoryEndpoint#timeouts}
   */
   readonly timeouts?: GoogleServiceDirectoryEndpointTimeouts;

@@ -15,19 +15,19 @@ export interface GoogleSecurityScannerScanConfigConfig extends cdktf.TerraformMe
   /**
   * The blacklist URL patterns as described in
 https://cloud.google.com/security-scanner/docs/excluded-urls
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#blacklist_patterns GoogleSecurityScannerScanConfig#blacklist_patterns}
   */
   readonly blacklistPatterns?: string[];
   /**
   * The user provider display name of the ScanConfig.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#display_name GoogleSecurityScannerScanConfig#display_name}
   */
   readonly displayName: string;
   /**
   * Controls export of scan configurations and results to Cloud Security Command Center. Default value: "ENABLED" Possible values: ["ENABLED", "DISABLED"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#export_to_security_command_center GoogleSecurityScannerScanConfig#export_to_security_command_center}
   */
   readonly exportToSecurityCommandCenter?: string;
@@ -41,7 +41,7 @@ https://cloud.google.com/security-scanner/docs/excluded-urls
   /**
   * The maximum QPS during scanning. A valid value ranges from 5 to 20 inclusively.
 Defaults to 15.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#max_qps GoogleSecurityScannerScanConfig#max_qps}
   */
   readonly maxQps?: number;
@@ -51,37 +51,37 @@ Defaults to 15.
   readonly project?: string;
   /**
   * The starting URLs from which the scanner finds site pages.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#starting_urls GoogleSecurityScannerScanConfig#starting_urls}
   */
   readonly startingUrls: string[];
   /**
   * Set of Cloud Platforms targeted by the scan. If empty, APP_ENGINE will be used as a default. Possible values: ["APP_ENGINE", "COMPUTE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#target_platforms GoogleSecurityScannerScanConfig#target_platforms}
   */
   readonly targetPlatforms?: string[];
   /**
   * Type of the user agents used for scanning Default value: "CHROME_LINUX" Possible values: ["USER_AGENT_UNSPECIFIED", "CHROME_LINUX", "CHROME_ANDROID", "SAFARI_IPHONE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#user_agent GoogleSecurityScannerScanConfig#user_agent}
   */
   readonly userAgent?: string;
   /**
   * authentication block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#authentication GoogleSecurityScannerScanConfig#authentication}
   */
   readonly authentication?: GoogleSecurityScannerScanConfigAuthentication;
   /**
   * schedule block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#schedule GoogleSecurityScannerScanConfig#schedule}
   */
   readonly schedule?: GoogleSecurityScannerScanConfigSchedule;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#timeouts GoogleSecurityScannerScanConfig#timeouts}
   */
   readonly timeouts?: GoogleSecurityScannerScanConfigTimeouts;
@@ -89,20 +89,20 @@ Defaults to 15.
 export interface GoogleSecurityScannerScanConfigAuthenticationCustomAccount {
   /**
   * The login form URL of the website.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#login_url GoogleSecurityScannerScanConfig#login_url}
   */
   readonly loginUrl: string;
   /**
   * The password of the custom account. The credential is stored encrypted
 in GCP.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#password GoogleSecurityScannerScanConfig#password}
   */
   readonly password: string;
   /**
   * The user name of the custom account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#username GoogleSecurityScannerScanConfig#username}
   */
   readonly username: string;
@@ -207,13 +207,13 @@ export interface GoogleSecurityScannerScanConfigAuthenticationGoogleAccount {
   /**
   * The password of the Google account. The credential is stored encrypted
 in GCP.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#password GoogleSecurityScannerScanConfig#password}
   */
   readonly password: string;
   /**
   * The user name of the Google account.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#username GoogleSecurityScannerScanConfig#username}
   */
   readonly username: string;
@@ -297,13 +297,13 @@ export class GoogleSecurityScannerScanConfigAuthenticationGoogleAccountOutputRef
 export interface GoogleSecurityScannerScanConfigAuthentication {
   /**
   * custom_account block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#custom_account GoogleSecurityScannerScanConfig#custom_account}
   */
   readonly customAccount?: GoogleSecurityScannerScanConfigAuthenticationCustomAccount;
   /**
   * google_account block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#google_account GoogleSecurityScannerScanConfig#google_account}
   */
   readonly googleAccount?: GoogleSecurityScannerScanConfigAuthenticationGoogleAccount;
@@ -393,7 +393,7 @@ export class GoogleSecurityScannerScanConfigAuthenticationOutputReference extend
 export interface GoogleSecurityScannerScanConfigSchedule {
   /**
   * The duration of time between executions in days
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#interval_duration_days GoogleSecurityScannerScanConfig#interval_duration_days}
   */
   readonly intervalDurationDays: number;
@@ -401,7 +401,7 @@ export interface GoogleSecurityScannerScanConfigSchedule {
   * A timestamp indicates when the next run will be scheduled. The value is refreshed
 by the server after each run. If unspecified, it will default to current server time,
 which means the scan will be scheduled to start immediately.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_security_scanner_scan_config#schedule_time GoogleSecurityScannerScanConfig#schedule_time}
   */
   readonly scheduleTime?: string;

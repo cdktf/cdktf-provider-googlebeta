@@ -41,7 +41,7 @@ export interface GoogleNotebooksInstanceIamBindingConfig extends cdktf.Terraform
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_notebooks_instance_iam_binding#condition GoogleNotebooksInstanceIamBinding#condition}
   */
   readonly condition?: GoogleNotebooksInstanceIamBindingCondition;

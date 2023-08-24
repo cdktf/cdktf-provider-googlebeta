@@ -41,7 +41,7 @@ export interface GooglePrivatecaCaPoolIamBindingConfig extends cdktf.TerraformMe
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_privateca_ca_pool_iam_binding#condition GooglePrivatecaCaPoolIamBinding#condition}
   */
   readonly condition?: GooglePrivatecaCaPoolIamBindingCondition;

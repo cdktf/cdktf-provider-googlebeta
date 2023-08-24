@@ -15,7 +15,7 @@ export interface GoogleApigeeEnvironmentConfig extends cdktf.TerraformMetaArgume
   /**
   * Optional. API Proxy type supported by the environment. The type can be set when creating
 the Environment and cannot be changed. Possible values: ["API_PROXY_TYPE_UNSPECIFIED", "PROGRAMMABLE", "CONFIGURABLE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_environment#api_proxy_type GoogleApigeeEnvironment#api_proxy_type}
   */
   readonly apiProxyType?: string;
@@ -27,19 +27,19 @@ environment, including:
 Managing the deployment of API proxy or shared flow revisions;
 Creating, updating, or deleting resource files;
 Creating, updating, or deleting target servers. Possible values: ["DEPLOYMENT_TYPE_UNSPECIFIED", "PROXY", "ARCHIVE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_environment#deployment_type GoogleApigeeEnvironment#deployment_type}
   */
   readonly deploymentType?: string;
   /**
   * Description of the environment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_environment#description GoogleApigeeEnvironment#description}
   */
   readonly description?: string;
   /**
   * Display name of the environment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_environment#display_name GoogleApigeeEnvironment#display_name}
   */
   readonly displayName?: string;
@@ -52,26 +52,26 @@ Creating, updating, or deleting target servers. Possible values: ["DEPLOYMENT_TY
   readonly id?: string;
   /**
   * The resource ID of the environment.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_environment#name GoogleApigeeEnvironment#name}
   */
   readonly name: string;
   /**
   * The Apigee Organization associated with the Apigee environment,
 in the format 'organizations/{{org_name}}'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_environment#org_id GoogleApigeeEnvironment#org_id}
   */
   readonly orgId: string;
   /**
   * node_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_environment#node_config GoogleApigeeEnvironment#node_config}
   */
   readonly nodeConfig?: GoogleApigeeEnvironmentNodeConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_environment#timeouts GoogleApigeeEnvironment#timeouts}
   */
   readonly timeouts?: GoogleApigeeEnvironmentTimeouts;
@@ -81,7 +81,7 @@ export interface GoogleApigeeEnvironmentNodeConfig {
   * The maximum total number of gateway nodes that the is reserved for all instances that
 has the specified environment. If not specified, the default is determined by the
 recommended maximum number of nodes for that gateway.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_environment#max_node_count GoogleApigeeEnvironment#max_node_count}
   */
   readonly maxNodeCount?: string;
@@ -89,7 +89,7 @@ recommended maximum number of nodes for that gateway.
   * The minimum total number of gateway nodes that the is reserved for all instances that
 has the specified environment. If not specified, the default is determined by the
 recommended minimum number of nodes for that gateway.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_environment#min_node_count GoogleApigeeEnvironment#min_node_count}
   */
   readonly minNodeCount?: string;

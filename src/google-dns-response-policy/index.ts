@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleDnsResponsePolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The description of the response policy, such as 'My new response policy'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy#description GoogleDnsResponsePolicy#description}
   */
   readonly description?: string;
@@ -31,25 +31,25 @@ export interface GoogleDnsResponsePolicyConfig extends cdktf.TerraformMetaArgume
   readonly project?: string;
   /**
   * The user assigned name for this Response Policy, such as 'myresponsepolicy'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy#response_policy_name GoogleDnsResponsePolicy#response_policy_name}
   */
   readonly responsePolicyName: string;
   /**
   * gke_clusters block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy#gke_clusters GoogleDnsResponsePolicy#gke_clusters}
   */
   readonly gkeClusters?: GoogleDnsResponsePolicyGkeClusters[] | cdktf.IResolvable;
   /**
   * networks block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy#networks GoogleDnsResponsePolicy#networks}
   */
   readonly networks?: GoogleDnsResponsePolicyNetworks[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy#timeouts GoogleDnsResponsePolicy#timeouts}
   */
   readonly timeouts?: GoogleDnsResponsePolicyTimeouts;
@@ -58,9 +58,11 @@ export interface GoogleDnsResponsePolicyGkeClusters {
   /**
   * The resource name of the cluster to bind this ManagedZone to.
 This should be specified in the format like
-'projects/*\/locations/*\/clusters/*'
-  * 
+'projects/* /locations/* /clusters/*'
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy#gke_cluster_name GoogleDnsResponsePolicy#gke_cluster_name}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly gkeClusterName: string;
 }
@@ -157,7 +159,7 @@ export interface GoogleDnsResponsePolicyNetworks {
   * The fully qualified URL of the VPC network to bind to.
 This should be formatted like
 'https://www.googleapis.com/compute/v1/projects/{project}/global/networks/{network}'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dns_response_policy#network_url GoogleDnsResponsePolicy#network_url}
   */
   readonly networkUrl: string;

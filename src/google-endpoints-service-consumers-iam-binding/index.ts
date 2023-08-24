@@ -37,7 +37,7 @@ export interface GoogleEndpointsServiceConsumersIamBindingConfig extends cdktf.T
   readonly serviceName: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_endpoints_service_consumers_iam_binding#condition GoogleEndpointsServiceConsumersIamBinding#condition}
   */
   readonly condition?: GoogleEndpointsServiceConsumersIamBindingCondition;

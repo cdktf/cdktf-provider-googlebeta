@@ -21,19 +21,19 @@ export interface GoogleFirebaseHostingVersionConfig extends cdktf.TerraformMetaA
   readonly id?: string;
   /**
   * Required. The ID of the site in which to create this Version.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#site_id GoogleFirebaseHostingVersion#site_id}
   */
   readonly siteId: string;
   /**
   * config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#config GoogleFirebaseHostingVersion#config}
   */
   readonly config?: GoogleFirebaseHostingVersionConfigA;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#timeouts GoogleFirebaseHostingVersion#timeouts}
   */
   readonly timeouts?: GoogleFirebaseHostingVersionTimeouts;
@@ -41,7 +41,7 @@ export interface GoogleFirebaseHostingVersionConfig extends cdktf.TerraformMetaA
 export interface GoogleFirebaseHostingVersionConfigRedirects {
   /**
   * The user-supplied glob to match against the request URL path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
   */
   readonly glob?: string;
@@ -57,19 +57,19 @@ redirects {
   location = "https://example.com/foo/:capture"
 }
 ```
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#location GoogleFirebaseHostingVersion#location}
   */
   readonly location: string;
   /**
   * The user-supplied RE2 regular expression to match against the request URL path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
   */
   readonly regex?: string;
   /**
   * The status HTTP code to return in the response. It must be a valid 3xx status code.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#status_code GoogleFirebaseHostingVersion#status_code}
   */
   readonly statusCode: number;
@@ -231,13 +231,13 @@ export class GoogleFirebaseHostingVersionConfigRedirectsList extends cdktf.Compl
 export interface GoogleFirebaseHostingVersionConfigRewritesRun {
   /**
   * Optional. User-provided region where the Cloud Run service is hosted. Defaults to 'us-central1' if not supplied.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#region GoogleFirebaseHostingVersion#region}
   */
   readonly region?: string;
   /**
   * User-defined ID of the Cloud Run service.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#service_id GoogleFirebaseHostingVersion#service_id}
   */
   readonly serviceId: string;
@@ -324,25 +324,25 @@ export class GoogleFirebaseHostingVersionConfigRewritesRunOutputReference extend
 export interface GoogleFirebaseHostingVersionConfigRewrites {
   /**
   * The function to proxy requests to. Must match the exported function name exactly.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#function GoogleFirebaseHostingVersion#function}
   */
   readonly function?: string;
   /**
   * The user-supplied glob to match against the request URL path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
   */
   readonly glob?: string;
   /**
   * The user-supplied RE2 regular expression to match against the request URL path.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
   */
   readonly regex?: string;
   /**
   * run block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#run GoogleFirebaseHostingVersion#run}
   */
   readonly run?: GoogleFirebaseHostingVersionConfigRewritesRun;
@@ -510,13 +510,13 @@ export class GoogleFirebaseHostingVersionConfigRewritesList extends cdktf.Comple
 export interface GoogleFirebaseHostingVersionConfigA {
   /**
   * redirects block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#redirects GoogleFirebaseHostingVersion#redirects}
   */
   readonly redirects?: GoogleFirebaseHostingVersionConfigRedirects[] | cdktf.IResolvable;
   /**
   * rewrites block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_hosting_version#rewrites GoogleFirebaseHostingVersion#rewrites}
   */
   readonly rewrites?: GoogleFirebaseHostingVersionConfigRewrites[] | cdktf.IResolvable;

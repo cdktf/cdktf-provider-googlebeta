@@ -45,7 +45,7 @@ export interface GoogleDataplexTaskIamBindingConfig extends cdktf.TerraformMetaA
   readonly taskId: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataplex_task_iam_binding#condition GoogleDataplexTaskIamBinding#condition}
   */
   readonly condition?: GoogleDataplexTaskIamBindingCondition;

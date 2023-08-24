@@ -41,7 +41,7 @@ export interface GoogleDataprocClusterIamMemberConfig extends cdktf.TerraformMet
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_cluster_iam_member#condition GoogleDataprocClusterIamMember#condition}
   */
   readonly condition?: GoogleDataprocClusterIamMemberCondition;

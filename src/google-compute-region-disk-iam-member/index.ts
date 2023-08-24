@@ -41,7 +41,7 @@ export interface GoogleComputeRegionDiskIamMemberConfig extends cdktf.TerraformM
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_disk_iam_member#condition GoogleComputeRegionDiskIamMember#condition}
   */
   readonly condition?: GoogleComputeRegionDiskIamMemberCondition;

@@ -41,7 +41,7 @@ export interface GoogleNotebooksRuntimeIamMemberConfig extends cdktf.TerraformMe
   readonly runtimeName: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_notebooks_runtime_iam_member#condition GoogleNotebooksRuntimeIamMember#condition}
   */
   readonly condition?: GoogleNotebooksRuntimeIamMemberCondition;

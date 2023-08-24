@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleAccessContextManagerEgressPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the Service Perimeter to add this resource to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_egress_policy#egress_policy_name GoogleAccessContextManagerEgressPolicy#egress_policy_name}
   */
   readonly egressPolicyName: string;
@@ -27,13 +27,13 @@ export interface GoogleAccessContextManagerEgressPolicyConfig extends cdktf.Terr
   readonly id?: string;
   /**
   * A GCP resource that is inside of the service perimeter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_egress_policy#resource GoogleAccessContextManagerEgressPolicy#resource}
   */
   readonly resource: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_egress_policy#timeouts GoogleAccessContextManagerEgressPolicy#timeouts}
   */
   readonly timeouts?: GoogleAccessContextManagerEgressPolicyTimeouts;

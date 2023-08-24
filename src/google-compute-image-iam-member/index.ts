@@ -37,7 +37,7 @@ export interface GoogleComputeImageIamMemberConfig extends cdktf.TerraformMetaAr
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_image_iam_member#condition GoogleComputeImageIamMember#condition}
   */
   readonly condition?: GoogleComputeImageIamMemberCondition;

@@ -21,13 +21,13 @@ export interface GoogleComputeSharedVpcHostProjectConfig extends cdktf.Terraform
   readonly id?: string;
   /**
   * The ID of the project that will serve as a Shared VPC host project
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_shared_vpc_host_project#project GoogleComputeSharedVpcHostProject#project}
   */
   readonly project: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_shared_vpc_host_project#timeouts GoogleComputeSharedVpcHostProject#timeouts}
   */
   readonly timeouts?: GoogleComputeSharedVpcHostProjectTimeouts;

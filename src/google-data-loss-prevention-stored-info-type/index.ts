@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleDataLossPreventionStoredInfoTypeConfig extends cdktf.TerraformMetaArguments {
   /**
   * A description of the info type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#description GoogleDataLossPreventionStoredInfoType#description}
   */
   readonly description?: string;
   /**
   * User set display name of the info type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#display_name GoogleDataLossPreventionStoredInfoType#display_name}
   */
   readonly displayName?: string;
@@ -38,7 +38,7 @@ export interface GoogleDataLossPreventionStoredInfoTypeConfig extends cdktf.Terr
 * 'projects/{{project}}/locations/{{location}}'
 * 'organizations/{{organization_id}}'
 * 'organizations/{{organization_id}}/locations/{{location}}'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#parent GoogleDataLossPreventionStoredInfoType#parent}
   */
   readonly parent: string;
@@ -46,31 +46,31 @@ export interface GoogleDataLossPreventionStoredInfoTypeConfig extends cdktf.Terr
   * The storedInfoType ID can contain uppercase and lowercase letters, numbers, and hyphens;
 that is, it must match the regular expression: [a-zA-Z\d-_]+. The maximum length is 100
 characters. Can be empty to allow the system to generate one.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#stored_info_type_id GoogleDataLossPreventionStoredInfoType#stored_info_type_id}
   */
   readonly storedInfoTypeId?: string;
   /**
   * dictionary block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#dictionary GoogleDataLossPreventionStoredInfoType#dictionary}
   */
   readonly dictionary?: GoogleDataLossPreventionStoredInfoTypeDictionary;
   /**
   * large_custom_dictionary block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#large_custom_dictionary GoogleDataLossPreventionStoredInfoType#large_custom_dictionary}
   */
   readonly largeCustomDictionary?: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary;
   /**
   * regex block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#regex GoogleDataLossPreventionStoredInfoType#regex}
   */
   readonly regex?: GoogleDataLossPreventionStoredInfoTypeRegex;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#timeouts GoogleDataLossPreventionStoredInfoType#timeouts}
   */
   readonly timeouts?: GoogleDataLossPreventionStoredInfoTypeTimeouts;
@@ -78,7 +78,7 @@ characters. Can be empty to allow the system to generate one.
 export interface GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath {
   /**
   * A url representing a file or path (no wildcards) in Cloud Storage. Example: 'gs://[BUCKET_NAME]/dictionary.txt'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#path GoogleDataLossPreventionStoredInfoType#path}
   */
   readonly path: string;
@@ -143,7 +143,7 @@ export interface GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct 
   /**
   * Words or phrases defining the dictionary. The dictionary must contain at least one
 phrase and every phrase must contain at least 2 characters that are letters or digits.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#words GoogleDataLossPreventionStoredInfoType#words}
   */
   readonly words: string[];
@@ -207,13 +207,13 @@ export class GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutpu
 export interface GoogleDataLossPreventionStoredInfoTypeDictionary {
   /**
   * cloud_storage_path block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#cloud_storage_path GoogleDataLossPreventionStoredInfoType#cloud_storage_path}
   */
   readonly cloudStoragePath?: GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath;
   /**
   * word_list block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#word_list GoogleDataLossPreventionStoredInfoType#word_list}
   */
   readonly wordList?: GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct;
@@ -303,7 +303,7 @@ export class GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference ext
 export interface GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldField {
   /**
   * Name describing the field.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#name GoogleDataLossPreventionStoredInfoType#name}
   */
   readonly name: string;
@@ -367,19 +367,19 @@ export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQuery
 export interface GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTable {
   /**
   * The dataset ID of the table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#dataset_id GoogleDataLossPreventionStoredInfoType#dataset_id}
   */
   readonly datasetId: string;
   /**
   * The Google Cloud Platform project ID of the project containing the table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#project_id GoogleDataLossPreventionStoredInfoType#project_id}
   */
   readonly projectId: string;
   /**
   * The name of the table.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#table_id GoogleDataLossPreventionStoredInfoType#table_id}
   */
   readonly tableId: string;
@@ -483,13 +483,13 @@ export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQuery
 export interface GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryField {
   /**
   * field block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#field GoogleDataLossPreventionStoredInfoType#field}
   */
   readonly field: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldField;
   /**
   * table block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#table GoogleDataLossPreventionStoredInfoType#table}
   */
   readonly table: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryFieldTable;
@@ -573,7 +573,7 @@ export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQuery
 export interface GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet {
   /**
   * The url, in the format 'gs://<bucket>/<path>'. Trailing wildcard in the path is allowed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#url GoogleDataLossPreventionStoredInfoType#url}
   */
   readonly url: string;
@@ -637,7 +637,7 @@ export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudSto
 export interface GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPath {
   /**
   * A url representing a file or path (no wildcards) in Cloud Storage. Example: 'gs://[BUCKET_NAME]/dictionary.txt'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#path GoogleDataLossPreventionStoredInfoType#path}
   */
   readonly path: string;
@@ -701,19 +701,19 @@ export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPa
 export interface GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionary {
   /**
   * big_query_field block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#big_query_field GoogleDataLossPreventionStoredInfoType#big_query_field}
   */
   readonly bigQueryField?: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryBigQueryField;
   /**
   * cloud_storage_file_set block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#cloud_storage_file_set GoogleDataLossPreventionStoredInfoType#cloud_storage_file_set}
   */
   readonly cloudStorageFileSet?: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryCloudStorageFileSet;
   /**
   * output_path block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#output_path GoogleDataLossPreventionStoredInfoType#output_path}
   */
   readonly outputPath: GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputPath;
@@ -823,14 +823,14 @@ export class GoogleDataLossPreventionStoredInfoTypeLargeCustomDictionaryOutputRe
 export interface GoogleDataLossPreventionStoredInfoTypeRegex {
   /**
   * The index of the submatch to extract as findings. When not specified, the entire match is returned. No more than 3 may be included.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#group_indexes GoogleDataLossPreventionStoredInfoType#group_indexes}
   */
   readonly groupIndexes?: number[];
   /**
   * Pattern defining the regular expression.
 Its syntax (https://github.com/google/re2/wiki/Syntax) can be found under the google/re2 repository on GitHub.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_stored_info_type#pattern GoogleDataLossPreventionStoredInfoType#pattern}
   */
   readonly pattern: string;

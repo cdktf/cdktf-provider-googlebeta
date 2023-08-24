@@ -37,7 +37,7 @@ export interface GoogleSpannerInstanceIamBindingConfig extends cdktf.TerraformMe
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_spanner_instance_iam_binding#condition GoogleSpannerInstanceIamBinding#condition}
   */
   readonly condition?: GoogleSpannerInstanceIamBindingCondition;

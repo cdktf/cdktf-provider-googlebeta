@@ -14,14 +14,14 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeMachineImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * A text description of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_machine_image#description GoogleComputeMachineImage#description}
   */
   readonly description?: string;
   /**
   * Specify this to create an application consistent machine image by informing the OS to prepare for the snapshot process.
 Currently only supported on Windows instances using the Volume Shadow Copy Service (VSS).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_machine_image#guest_flush GoogleComputeMachineImage#guest_flush}
   */
   readonly guestFlush?: boolean | cdktf.IResolvable;
@@ -34,7 +34,7 @@ Currently only supported on Windows instances using the Volume Shadow Copy Servi
   readonly id?: string;
   /**
   * Name of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_machine_image#name GoogleComputeMachineImage#name}
   */
   readonly name: string;
@@ -44,19 +44,19 @@ Currently only supported on Windows instances using the Volume Shadow Copy Servi
   readonly project?: string;
   /**
   * The source instance used to create the machine image. You can provide this as a partial or full URL to the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_machine_image#source_instance GoogleComputeMachineImage#source_instance}
   */
   readonly sourceInstance: string;
   /**
   * machine_image_encryption_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_machine_image#machine_image_encryption_key GoogleComputeMachineImage#machine_image_encryption_key}
   */
   readonly machineImageEncryptionKey?: GoogleComputeMachineImageMachineImageEncryptionKey;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_machine_image#timeouts GoogleComputeMachineImage#timeouts}
   */
   readonly timeouts?: GoogleComputeMachineImageTimeouts;
@@ -64,21 +64,21 @@ Currently only supported on Windows instances using the Volume Shadow Copy Servi
 export interface GoogleComputeMachineImageMachineImageEncryptionKey {
   /**
   * The name of the encryption key that is stored in Google Cloud KMS.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_machine_image#kms_key_name GoogleComputeMachineImage#kms_key_name}
   */
   readonly kmsKeyName?: string;
   /**
   * The service account used for the encryption request for the given KMS key.
 If absent, the Compute Engine Service Agent service account is used.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_machine_image#kms_key_service_account GoogleComputeMachineImage#kms_key_service_account}
   */
   readonly kmsKeyServiceAccount?: string;
   /**
   * Specifies a 256-bit customer-supplied encryption key, encoded in
 RFC 4648 base64 to either encrypt or decrypt this resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_machine_image#raw_key GoogleComputeMachineImage#raw_key}
   */
   readonly rawKey?: string;

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleComputeNetworkEdgeSecurityServiceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Free-text description of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_edge_security_service#description GoogleComputeNetworkEdgeSecurityService#description}
   */
   readonly description?: string;
@@ -27,7 +27,7 @@ export interface GoogleComputeNetworkEdgeSecurityServiceConfig extends cdktf.Ter
   readonly id?: string;
   /**
   * Name of the resource. Provided by the client when the resource is created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_edge_security_service#name GoogleComputeNetworkEdgeSecurityService#name}
   */
   readonly name: string;
@@ -37,19 +37,19 @@ export interface GoogleComputeNetworkEdgeSecurityServiceConfig extends cdktf.Ter
   readonly project?: string;
   /**
   * The region of the gateway security policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_edge_security_service#region GoogleComputeNetworkEdgeSecurityService#region}
   */
   readonly region?: string;
   /**
   * The resource URL for the network edge security service associated with this network edge security service.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_edge_security_service#security_policy GoogleComputeNetworkEdgeSecurityService#security_policy}
   */
   readonly securityPolicy?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_edge_security_service#timeouts GoogleComputeNetworkEdgeSecurityService#timeouts}
   */
   readonly timeouts?: GoogleComputeNetworkEdgeSecurityServiceTimeouts;

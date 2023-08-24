@@ -21,13 +21,13 @@ separated by a slash (/).
 Prefix must be a DNS subdomain.
 Name must be 63 characters or less, begin and end with alphanumerics,
 with dashes (-), underscores (_), dots (.), and alphanumerics between.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#annotations GoogleGkeonpremVmwareNodePool#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * The display name for the node pool.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#display_name GoogleGkeonpremVmwareNodePool#display_name}
   */
   readonly displayName?: string;
@@ -40,13 +40,13 @@ with dashes (-), underscores (_), dots (.), and alphanumerics between.
   readonly id?: string;
   /**
   * The location of the resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#location GoogleGkeonpremVmwareNodePool#location}
   */
   readonly location: string;
   /**
   * The vmware node pool name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#name GoogleGkeonpremVmwareNodePool#name}
   */
   readonly name: string;
@@ -56,25 +56,25 @@ with dashes (-), underscores (_), dots (.), and alphanumerics between.
   readonly project?: string;
   /**
   * The cluster this node pool belongs to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#vmware_cluster GoogleGkeonpremVmwareNodePool#vmware_cluster}
   */
   readonly vmwareCluster: string;
   /**
   * config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#config GoogleGkeonpremVmwareNodePool#config}
   */
   readonly config: GoogleGkeonpremVmwareNodePoolConfigA;
   /**
   * node_pool_autoscaling block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#node_pool_autoscaling GoogleGkeonpremVmwareNodePool#node_pool_autoscaling}
   */
   readonly nodePoolAutoscaling?: GoogleGkeonpremVmwareNodePoolNodePoolAutoscaling;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#timeouts GoogleGkeonpremVmwareNodePool#timeouts}
   */
   readonly timeouts?: GoogleGkeonpremVmwareNodePoolTimeouts;
@@ -375,19 +375,19 @@ export class GoogleGkeonpremVmwareNodePoolConfigVsphereConfigList extends cdktf.
 export interface GoogleGkeonpremVmwareNodePoolConfigTaints {
   /**
   * Available taint effects. Possible values: ["EFFECT_UNSPECIFIED", "NO_SCHEDULE", "PREFER_NO_SCHEDULE", "NO_EXECUTE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#effect GoogleGkeonpremVmwareNodePool#effect}
   */
   readonly effect?: string;
   /**
   * Key associated with the effect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#key GoogleGkeonpremVmwareNodePool#key}
   */
   readonly key: string;
   /**
   * Value associated with the effect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#value GoogleGkeonpremVmwareNodePool#value}
   */
   readonly value: string;
@@ -526,33 +526,33 @@ export class GoogleGkeonpremVmwareNodePoolConfigTaintsList extends cdktf.Complex
 export interface GoogleGkeonpremVmwareNodePoolConfigA {
   /**
   * VMware disk size to be used during creation.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#boot_disk_size_gb GoogleGkeonpremVmwareNodePool#boot_disk_size_gb}
   */
   readonly bootDiskSizeGb?: number;
   /**
   * The number of CPUs for each node in the node pool.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#cpus GoogleGkeonpremVmwareNodePool#cpus}
   */
   readonly cpus?: number;
   /**
   * Allow node pool traffic to be load balanced. Only works for clusters with
 MetalLB load balancers.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#enable_load_balancer GoogleGkeonpremVmwareNodePool#enable_load_balancer}
   */
   readonly enableLoadBalancer?: boolean | cdktf.IResolvable;
   /**
   * The OS image name in vCenter, only valid when using Windows.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#image GoogleGkeonpremVmwareNodePool#image}
   */
   readonly image?: string;
   /**
   * The OS image to be used for each node in a node pool.
 Currently 'cos', 'ubuntu', 'ubuntu_containerd' and 'windows' are supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#image_type GoogleGkeonpremVmwareNodePool#image_type}
   */
   readonly imageType: string;
@@ -563,25 +563,25 @@ Kubernetes may apply to the node.
 In case of conflict in label keys, the applied set may differ depending on
 the Kubernetes version -- it's best to assume the behavior is undefined
 and conflicts should be avoided.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#labels GoogleGkeonpremVmwareNodePool#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The megabytes of memory for each node in the node pool.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#memory_mb GoogleGkeonpremVmwareNodePool#memory_mb}
   */
   readonly memoryMb?: number;
   /**
   * The number of nodes in the node pool.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#replicas GoogleGkeonpremVmwareNodePool#replicas}
   */
   readonly replicas?: number;
   /**
   * taints block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#taints GoogleGkeonpremVmwareNodePool#taints}
   */
   readonly taints?: GoogleGkeonpremVmwareNodePoolConfigTaints[] | cdktf.IResolvable;
@@ -835,13 +835,13 @@ export class GoogleGkeonpremVmwareNodePoolConfigAOutputReference extends cdktf.C
 export interface GoogleGkeonpremVmwareNodePoolNodePoolAutoscaling {
   /**
   * Maximum number of replicas in the NodePool.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#max_replicas GoogleGkeonpremVmwareNodePool#max_replicas}
   */
   readonly maxReplicas: number;
   /**
   * Minimum number of replicas in the NodePool.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_node_pool#min_replicas GoogleGkeonpremVmwareNodePool#min_replicas}
   */
   readonly minReplicas: number;

@@ -25,13 +25,13 @@ export interface GoogleAppEngineApplicationUrlDispatchRulesConfig extends cdktf.
   readonly project?: string;
   /**
   * dispatch_rules block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application_url_dispatch_rules#dispatch_rules GoogleAppEngineApplicationUrlDispatchRules#dispatch_rules}
   */
   readonly dispatchRules: GoogleAppEngineApplicationUrlDispatchRulesDispatchRules[] | cdktf.IResolvable;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application_url_dispatch_rules#timeouts GoogleAppEngineApplicationUrlDispatchRules#timeouts}
   */
   readonly timeouts?: GoogleAppEngineApplicationUrlDispatchRulesTimeouts;
@@ -40,21 +40,21 @@ export interface GoogleAppEngineApplicationUrlDispatchRulesDispatchRules {
   /**
   * Domain name to match against. The wildcard "*" is supported if specified before a period: "*.".
 Defaults to matching all domains: "*".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application_url_dispatch_rules#domain GoogleAppEngineApplicationUrlDispatchRules#domain}
   */
   readonly domain?: string;
   /**
   * Pathname within the host. Must start with a "/". A single "*" can be included at the end of the path.
 The sum of the lengths of the domain and path may not exceed 100 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application_url_dispatch_rules#path GoogleAppEngineApplicationUrlDispatchRules#path}
   */
   readonly path: string;
   /**
   * Pathname within the host. Must start with a "/". A single "*" can be included at the end of the path.
 The sum of the lengths of the domain and path may not exceed 100 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_app_engine_application_url_dispatch_rules#service GoogleAppEngineApplicationUrlDispatchRules#service}
   */
   readonly service: string;

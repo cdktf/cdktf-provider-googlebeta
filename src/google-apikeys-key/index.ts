@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleApikeysKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Human-readable display name of this API key. Modifiable by user.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#display_name GoogleApikeysKey#display_name}
   */
   readonly displayName?: string;
@@ -27,25 +27,25 @@ export interface GoogleApikeysKeyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The resource name of the key. The name must be unique within the project, must conform with RFC-1034, is restricted to lower-cased letters, and has a maximum length of 63 characters. In another word, the name must match the regular expression: `[a-z]([a-z0-9-]{0,61}[a-z0-9])?`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#name GoogleApikeysKey#name}
   */
   readonly name: string;
   /**
   * The project for the resource
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#project GoogleApikeysKey#project}
   */
   readonly project?: string;
   /**
   * restrictions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#restrictions GoogleApikeysKey#restrictions}
   */
   readonly restrictions?: GoogleApikeysKeyRestrictions;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#timeouts GoogleApikeysKey#timeouts}
   */
   readonly timeouts?: GoogleApikeysKeyTimeouts;
@@ -53,13 +53,13 @@ export interface GoogleApikeysKeyConfig extends cdktf.TerraformMetaArguments {
 export interface GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications {
   /**
   * The package name of the application.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#package_name GoogleApikeysKey#package_name}
   */
   readonly packageName: string;
   /**
   * The SHA1 fingerprint of the application. For example, both sha1 formats are acceptable : DA:39:A3:EE:5E:6B:4B:0D:32:55:BF:EF:95:60:18:90:AF:D8:07:09 or DA39A3EE5E6B4B0D3255BFEF95601890AFD80709. Output format is the latter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#sha1_fingerprint GoogleApikeysKey#sha1_fingerprint}
   */
   readonly sha1Fingerprint: string;
@@ -175,7 +175,7 @@ export class GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplicatio
 export interface GoogleApikeysKeyRestrictionsAndroidKeyRestrictions {
   /**
   * allowed_applications block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#allowed_applications GoogleApikeysKey#allowed_applications}
   */
   readonly allowedApplications: GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsAllowedApplications[] | cdktf.IResolvable;
@@ -239,13 +239,13 @@ export class GoogleApikeysKeyRestrictionsAndroidKeyRestrictionsOutputReference e
 export interface GoogleApikeysKeyRestrictionsApiTargets {
   /**
   * Optional. List of one or more methods that can be called. If empty, all methods for the service are allowed. A wildcard (*) can be used as the last symbol. Valid examples: `google.cloud.translate.v2.TranslateService.GetSupportedLanguage` `TranslateText` `Get*` `translate.googleapis.com.Get*`
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#methods GoogleApikeysKey#methods}
   */
   readonly methods?: string[];
   /**
   * The service for this restriction. It should be the canonical service name, for example: `translate.googleapis.com`. You can use `gcloud services list` to get a list of services that are enabled in the project.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#service GoogleApikeysKey#service}
   */
   readonly service: string;
@@ -364,7 +364,7 @@ export class GoogleApikeysKeyRestrictionsApiTargetsList extends cdktf.ComplexLis
 export interface GoogleApikeysKeyRestrictionsBrowserKeyRestrictions {
   /**
   * A list of regular expressions for the referrer URLs that are allowed to make API calls with this key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#allowed_referrers GoogleApikeysKey#allowed_referrers}
   */
   readonly allowedReferrers: string[];
@@ -428,7 +428,7 @@ export class GoogleApikeysKeyRestrictionsBrowserKeyRestrictionsOutputReference e
 export interface GoogleApikeysKeyRestrictionsIosKeyRestrictions {
   /**
   * A list of bundle IDs that are allowed when making API calls with this key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#allowed_bundle_ids GoogleApikeysKey#allowed_bundle_ids}
   */
   readonly allowedBundleIds: string[];
@@ -492,7 +492,7 @@ export class GoogleApikeysKeyRestrictionsIosKeyRestrictionsOutputReference exten
 export interface GoogleApikeysKeyRestrictionsServerKeyRestrictions {
   /**
   * A list of the caller IP addresses that are allowed to make API calls with this key.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#allowed_ips GoogleApikeysKey#allowed_ips}
   */
   readonly allowedIps: string[];
@@ -556,31 +556,31 @@ export class GoogleApikeysKeyRestrictionsServerKeyRestrictionsOutputReference ex
 export interface GoogleApikeysKeyRestrictions {
   /**
   * android_key_restrictions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#android_key_restrictions GoogleApikeysKey#android_key_restrictions}
   */
   readonly androidKeyRestrictions?: GoogleApikeysKeyRestrictionsAndroidKeyRestrictions;
   /**
   * api_targets block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#api_targets GoogleApikeysKey#api_targets}
   */
   readonly apiTargets?: GoogleApikeysKeyRestrictionsApiTargets[] | cdktf.IResolvable;
   /**
   * browser_key_restrictions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#browser_key_restrictions GoogleApikeysKey#browser_key_restrictions}
   */
   readonly browserKeyRestrictions?: GoogleApikeysKeyRestrictionsBrowserKeyRestrictions;
   /**
   * ios_key_restrictions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#ios_key_restrictions GoogleApikeysKey#ios_key_restrictions}
   */
   readonly iosKeyRestrictions?: GoogleApikeysKeyRestrictionsIosKeyRestrictions;
   /**
   * server_key_restrictions block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apikeys_key#server_key_restrictions GoogleApikeysKey#server_key_restrictions}
   */
   readonly serverKeyRestrictions?: GoogleApikeysKeyRestrictionsServerKeyRestrictions;

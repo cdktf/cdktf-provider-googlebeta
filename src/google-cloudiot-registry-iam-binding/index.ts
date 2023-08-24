@@ -41,7 +41,7 @@ export interface GoogleCloudiotRegistryIamBindingConfig extends cdktf.TerraformM
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudiot_registry_iam_binding#condition GoogleCloudiotRegistryIamBinding#condition}
   */
   readonly condition?: GoogleCloudiotRegistryIamBindingCondition;

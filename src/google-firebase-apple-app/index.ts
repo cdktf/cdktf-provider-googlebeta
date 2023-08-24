@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleFirebaseAppleAppConfig extends cdktf.TerraformMetaArguments {
   /**
   * The automatically generated Apple ID assigned to the Apple app by Apple in the Apple App Store.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_apple_app#app_store_id GoogleFirebaseAppleApp#app_store_id}
   */
   readonly appStoreId?: string;
   /**
   * The canonical bundle ID of the Apple app as it would appear in the Apple AppStore.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_apple_app#bundle_id GoogleFirebaseAppleApp#bundle_id}
   */
   readonly bundleId: string;
@@ -28,13 +28,13 @@ export interface GoogleFirebaseAppleAppConfig extends cdktf.TerraformMetaArgumen
   * (Optional) Set to 'ABANDON' to allow the Apple to be untracked from terraform state
 rather than deleted upon 'terraform destroy'. This is useful because the Apple may be
 serving traffic. Set to 'DELETE' to delete the Apple. Defaults to 'DELETE'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_apple_app#deletion_policy GoogleFirebaseAppleApp#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The user-assigned display name of the App.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_apple_app#display_name GoogleFirebaseAppleApp#display_name}
   */
   readonly displayName: string;
@@ -51,13 +51,13 @@ serving traffic. Set to 'DELETE' to delete the Apple. Defaults to 'DELETE'.
   readonly project?: string;
   /**
   * The Apple Developer Team ID associated with the App in the App Store.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_apple_app#team_id GoogleFirebaseAppleApp#team_id}
   */
   readonly teamId?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_apple_app#timeouts GoogleFirebaseAppleApp#timeouts}
   */
   readonly timeouts?: GoogleFirebaseAppleAppTimeouts;

@@ -45,7 +45,7 @@ export interface GoogleDataplexTaskIamMemberConfig extends cdktf.TerraformMetaAr
   readonly taskId: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataplex_task_iam_member#condition GoogleDataplexTaskIamMember#condition}
   */
   readonly condition?: GoogleDataplexTaskIamMemberCondition;

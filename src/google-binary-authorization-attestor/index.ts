@@ -15,7 +15,7 @@ export interface GoogleBinaryAuthorizationAttestorConfig extends cdktf.Terraform
   /**
   * A descriptive comment. This field may be updated. The field may be
 displayed in chooser dialogs.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#description GoogleBinaryAuthorizationAttestor#description}
   */
   readonly description?: string;
@@ -28,7 +28,7 @@ displayed in chooser dialogs.
   readonly id?: string;
   /**
   * The resource name.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#name GoogleBinaryAuthorizationAttestor#name}
   */
   readonly name: string;
@@ -38,13 +38,13 @@ displayed in chooser dialogs.
   readonly project?: string;
   /**
   * attestation_authority_note block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#attestation_authority_note GoogleBinaryAuthorizationAttestor#attestation_authority_note}
   */
   readonly attestationAuthorityNote: GoogleBinaryAuthorizationAttestorAttestationAuthorityNote;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#timeouts GoogleBinaryAuthorizationAttestor#timeouts}
   */
   readonly timeouts?: GoogleBinaryAuthorizationAttestorTimeouts;
@@ -53,7 +53,7 @@ export interface GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublic
   /**
   * A PEM-encoded public key, as described in
 'https://tools.ietf.org/html/rfc7468#section-13'
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#public_key_pem GoogleBinaryAuthorizationAttestor#public_key_pem}
   */
   readonly publicKeyPem?: string;
@@ -63,7 +63,7 @@ a signature using this key. These signature algorithm must
 match the structure and any object identifiers encoded in
 publicKeyPem (i.e. this algorithm must match that of the
 public key).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#signature_algorithm GoogleBinaryAuthorizationAttestor#signature_algorithm}
   */
   readonly signatureAlgorithm?: string;
@@ -161,13 +161,13 @@ and fill it in automatically. BinAuthz computes this ID
 as the OpenPGP RFC4880 V4 fingerprint, represented as
 upper-case hex. If id is provided by the caller, it will
 be overwritten by the API-calculated ID.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#ascii_armored_pgp_public_key GoogleBinaryAuthorizationAttestor#ascii_armored_pgp_public_key}
   */
   readonly asciiArmoredPgpPublicKey?: string;
   /**
   * A descriptive comment. This field may be updated.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#comment GoogleBinaryAuthorizationAttestor#comment}
   */
   readonly comment?: string;
@@ -178,7 +178,7 @@ verify them, and that ID must match the contents of this
 field exactly. Additional restrictions on this field can
 be imposed based on which public key type is encapsulated.
 See the documentation on publicKey cases below for details.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#id GoogleBinaryAuthorizationAttestor#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -187,7 +187,7 @@ See the documentation on publicKey cases below for details.
   readonly id?: string;
   /**
   * pkix_public_key block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#pkix_public_key GoogleBinaryAuthorizationAttestor#pkix_public_key}
   */
   readonly pkixPublicKey?: GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysPkixPublicKey;
@@ -356,18 +356,20 @@ export interface GoogleBinaryAuthorizationAttestorAttestationAuthorityNote {
   /**
   * The resource name of a ATTESTATION_AUTHORITY Note, created by the
 user. If the Note is in a different project from the Attestor, it
-should be specified in the format 'projects/*\/notes/*' (or the legacy
-'providers/*\/notes/*'). This field may not be updated.
+should be specified in the format 'projects/* /notes/*' (or the legacy
+'providers/* /notes/*'). This field may not be updated.
 An attestation by this attestor is stored as a Container Analysis
 ATTESTATION_AUTHORITY Occurrence that names a container image
 and that links to this Note.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#note_reference GoogleBinaryAuthorizationAttestor#note_reference}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly noteReference: string;
   /**
   * public_keys block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_attestor#public_keys GoogleBinaryAuthorizationAttestor#public_keys}
   */
   readonly publicKeys?: GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeys[] | cdktf.IResolvable;

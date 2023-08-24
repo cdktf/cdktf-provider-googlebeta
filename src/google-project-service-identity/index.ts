@@ -29,7 +29,7 @@ export interface GoogleProjectServiceIdentityConfig extends cdktf.TerraformMetaA
   readonly service: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project_service_identity#timeouts GoogleProjectServiceIdentity#timeouts}
   */
   readonly timeouts?: GoogleProjectServiceIdentityTimeouts;

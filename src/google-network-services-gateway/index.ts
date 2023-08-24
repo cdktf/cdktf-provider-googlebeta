@@ -16,36 +16,38 @@ export interface GoogleNetworkServicesGatewayConfig extends cdktf.TerraformMetaA
   * Zero or one IPv4-address on which the Gateway will receive the traffic. When no address is provided,
 an IP from the subnetwork is allocated This field only applies to gateways of type 'SECURE_WEB_GATEWAY'.
 Gateways of type 'OPEN_MESH' listen on 0.0.0.0.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#addresses GoogleNetworkServicesGateway#addresses}
   */
   readonly addresses?: string[];
   /**
   * A fully-qualified Certificates URL reference. The proxy presents a Certificate (selected based on SNI) when establishing a TLS connection.
 This feature only applies to gateways of type 'SECURE_WEB_GATEWAY'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#certificate_urls GoogleNetworkServicesGateway#certificate_urls}
   */
   readonly certificateUrls?: string[];
   /**
   * When deleting a gateway of type 'SECURE_WEB_GATEWAY', this boolean option will also delete auto generated router by the gateway creation.
 If there is no other gateway of type 'SECURE_WEB_GATEWAY' remaining for that region and network it will be deleted.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#delete_swg_autogen_router_on_destroy GoogleNetworkServicesGateway#delete_swg_autogen_router_on_destroy}
   */
   readonly deleteSwgAutogenRouterOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * A free-text description of the resource. Max length 1024 characters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#description GoogleNetworkServicesGateway#description}
   */
   readonly description?: string;
   /**
   * A fully-qualified GatewaySecurityPolicy URL reference. Defines how a server should apply security policy to inbound (VM to Proxy) initiated connections.
-For example: 'projects/*\/locations/*\/gatewaySecurityPolicies/swg-policy'.
+For example: 'projects/* /locations/* /gatewaySecurityPolicies/swg-policy'.
 This policy is specific to gateways of type 'SECURE_WEB_GATEWAY'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#gateway_security_policy GoogleNetworkServicesGateway#gateway_security_policy}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly gatewaySecurityPolicy?: string;
   /**
@@ -57,36 +59,38 @@ This policy is specific to gateways of type 'SECURE_WEB_GATEWAY'.
   readonly id?: string;
   /**
   * Set of label tags associated with the Gateway resource.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#labels GoogleNetworkServicesGateway#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location of the gateway.
 The default value is 'global'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#location GoogleNetworkServicesGateway#location}
   */
   readonly location?: string;
   /**
   * Short name of the Gateway resource to be created.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#name GoogleNetworkServicesGateway#name}
   */
   readonly name: string;
   /**
   * The relative resource name identifying the VPC network that is using this configuration.
-For example: 'projects/*\/global/networks/network-1'.
+For example: 'projects/* /global/networks/network-1'.
 Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#network GoogleNetworkServicesGateway#network}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly network?: string;
   /**
   * One or more port numbers (1-65535), on which the Gateway will receive traffic.
 The proxy binds to the specified ports. Gateways of type 'SECURE_WEB_GATEWAY' are
 limited to 1 port. Gateways of type 'OPEN_MESH' listen on 0.0.0.0 and support multiple ports.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#ports GoogleNetworkServicesGateway#ports}
   */
   readonly ports: number[];
@@ -99,34 +103,36 @@ limited to 1 port. Gateways of type 'OPEN_MESH' listen on 0.0.0.0 and support mu
 The configuration for multiple Gateway instances with the same scope will be merged as presented as
 a single coniguration to the proxy/load balancer.
 Max length 64 characters. Scope should start with a letter and can only have letters, numbers, hyphens.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#scope GoogleNetworkServicesGateway#scope}
   */
   readonly scope?: string;
   /**
   * A fully-qualified ServerTLSPolicy URL reference. Specifies how TLS traffic is terminated.
 If empty, TLS termination is disabled.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#server_tls_policy GoogleNetworkServicesGateway#server_tls_policy}
   */
   readonly serverTlsPolicy?: string;
   /**
   * The relative resource name identifying the subnetwork in which this SWG is allocated.
-For example: 'projects/*\/regions/us-central1/subnetworks/network-1'.
+For example: 'projects/* /regions/us-central1/subnetworks/network-1'.
 Currently, this field is specific to gateways of type 'SECURE_WEB_GATEWAY.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#subnetwork GoogleNetworkServicesGateway#subnetwork}
+   *
+  * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
   readonly subnetwork?: string;
   /**
   * Immutable. The type of the customer-managed gateway. Possible values are: * OPEN_MESH * SECURE_WEB_GATEWAY. Possible values: ["TYPE_UNSPECIFIED", "OPEN_MESH", "SECURE_WEB_GATEWAY"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#type GoogleNetworkServicesGateway#type}
   */
   readonly type: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_gateway#timeouts GoogleNetworkServicesGateway#timeouts}
   */
   readonly timeouts?: GoogleNetworkServicesGatewayTimeouts;

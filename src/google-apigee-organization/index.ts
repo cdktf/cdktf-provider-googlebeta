@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleApigeeOrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Primary GCP region for analytics data storage. For valid values, see [Create an Apigee organization](https://cloud.google.com/apigee/docs/api-platform/get-started/create-org).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#analytics_region GoogleApigeeOrganization#analytics_region}
   */
   readonly analyticsRegion?: string;
@@ -22,19 +22,19 @@ export interface GoogleApigeeOrganizationConfig extends cdktf.TerraformMetaArgum
   * Compute Engine network used for Service Networking to be peered with Apigee runtime instances.
 See [Getting started with the Service Networking API](https://cloud.google.com/service-infrastructure/docs/service-networking/getting-started).
 Valid only when 'RuntimeType' is set to CLOUD. The value can be updated only when there are no runtime instances. For example: "default".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#authorized_network GoogleApigeeOrganization#authorized_network}
   */
   readonly authorizedNetwork?: string;
   /**
   * Billing type of the Apigee organization. See [Apigee pricing](https://cloud.google.com/apigee/pricing).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#billing_type GoogleApigeeOrganization#billing_type}
   */
   readonly billingType?: string;
   /**
   * Description of the Apigee organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#description GoogleApigeeOrganization#description}
   */
   readonly description?: string;
@@ -44,13 +44,13 @@ disabled between the consumer network and Apigee. Required if an 'authorizedNetw
 on the consumer project is not provided, in which case the flag should be set to 'true'.
 Valid only when 'RuntimeType' is set to CLOUD. The value must be set before the creation
 of any Apigee runtime instance and can be updated only when there are no runtime instances.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#disable_vpc_peering GoogleApigeeOrganization#disable_vpc_peering}
   */
   readonly disableVpcPeering?: boolean | cdktf.IResolvable;
   /**
   * The display name of the Apigee organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#display_name GoogleApigeeOrganization#display_name}
   */
   readonly displayName?: string;
@@ -63,7 +63,7 @@ of any Apigee runtime instance and can be updated only when there are no runtime
   readonly id?: string;
   /**
   * The project ID associated with the Apigee organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#project_id GoogleApigeeOrganization#project_id}
   */
   readonly projectId: string;
@@ -72,7 +72,7 @@ of any Apigee runtime instance and can be updated only when there are no runtime
 is not EVALUATION). It controls how long Organization data will be retained after the initial delete
 operation completes. During this period, the Organization may be restored to its last known state.
 After this period, the Organization will no longer be able to be restored. Default value: "DELETION_RETENTION_UNSPECIFIED" Possible values: ["DELETION_RETENTION_UNSPECIFIED", "MINIMUM"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#retention GoogleApigeeOrganization#retention}
   */
   readonly retention?: string;
@@ -81,25 +81,25 @@ After this period, the Organization will no longer be able to be restored. Defau
 Update is not allowed after the organization is created.
 If not specified, a Google-Managed encryption key will be used.
 Valid only when 'RuntimeType' is CLOUD. For example: 'projects/foo/locations/us/keyRings/bar/cryptoKeys/baz'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#runtime_database_encryption_key_name GoogleApigeeOrganization#runtime_database_encryption_key_name}
   */
   readonly runtimeDatabaseEncryptionKeyName?: string;
   /**
   * Runtime type of the Apigee organization based on the Apigee subscription purchased. Default value: "CLOUD" Possible values: ["CLOUD", "HYBRID"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#runtime_type GoogleApigeeOrganization#runtime_type}
   */
   readonly runtimeType?: string;
   /**
   * properties block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#properties GoogleApigeeOrganization#properties}
   */
   readonly properties?: GoogleApigeeOrganizationProperties;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#timeouts GoogleApigeeOrganization#timeouts}
   */
   readonly timeouts?: GoogleApigeeOrganizationTimeouts;
@@ -107,13 +107,13 @@ Valid only when 'RuntimeType' is CLOUD. For example: 'projects/foo/locations/us/
 export interface GoogleApigeeOrganizationPropertiesProperty {
   /**
   * Name of the property.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#name GoogleApigeeOrganization#name}
   */
   readonly name?: string;
   /**
   * Value of the property.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#value GoogleApigeeOrganization#value}
   */
   readonly value?: string;
@@ -235,7 +235,7 @@ export class GoogleApigeeOrganizationPropertiesPropertyList extends cdktf.Comple
 export interface GoogleApigeeOrganizationProperties {
   /**
   * property block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#property GoogleApigeeOrganization#property}
   */
   readonly property?: GoogleApigeeOrganizationPropertiesProperty[] | cdktf.IResolvable;

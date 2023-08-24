@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleFirebaseStorageBucketConfig extends cdktf.TerraformMetaArguments {
   /**
   * Required. Immutable. The ID of the underlying Google Cloud Storage bucket
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#bucket_id GoogleFirebaseStorageBucket#bucket_id}
   */
   readonly bucketId?: string;
@@ -31,7 +31,7 @@ export interface GoogleFirebaseStorageBucketConfig extends cdktf.TerraformMetaAr
   readonly project?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#timeouts GoogleFirebaseStorageBucket#timeouts}
   */
   readonly timeouts?: GoogleFirebaseStorageBucketTimeouts;

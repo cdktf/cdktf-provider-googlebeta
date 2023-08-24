@@ -14,13 +14,13 @@ import * as cdktf from 'cdktf';
 export interface GoogleSccNotificationConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * This must be unique within the organization.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_notification_config#config_id GoogleSccNotificationConfig#config_id}
   */
   readonly configId: string;
   /**
   * The description of the notification config (max of 1024 characters).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_notification_config#description GoogleSccNotificationConfig#description}
   */
   readonly description?: string;
@@ -34,26 +34,26 @@ export interface GoogleSccNotificationConfigConfig extends cdktf.TerraformMetaAr
   /**
   * The organization whose Cloud Security Command Center the Notification
 Config lives in.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_notification_config#organization GoogleSccNotificationConfig#organization}
   */
   readonly organization: string;
   /**
   * The Pub/Sub topic to send notifications to. Its format is
 "projects/[project_id]/topics/[topic]".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_notification_config#pubsub_topic GoogleSccNotificationConfig#pubsub_topic}
   */
   readonly pubsubTopic: string;
   /**
   * streaming_config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_notification_config#streaming_config GoogleSccNotificationConfig#streaming_config}
   */
   readonly streamingConfig: GoogleSccNotificationConfigStreamingConfig;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_notification_config#timeouts GoogleSccNotificationConfig#timeouts}
   */
   readonly timeouts?: GoogleSccNotificationConfigTimeouts;
@@ -85,7 +85,7 @@ The supported value types are:
 See
 [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 for information on how to write a filter.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_notification_config#filter GoogleSccNotificationConfig#filter}
   */
   readonly filter: string;

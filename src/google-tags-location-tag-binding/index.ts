@@ -22,25 +22,25 @@ export interface GoogleTagsLocationTagBindingConfig extends cdktf.TerraformMetaA
   /**
   * The geographic location where the transfer config should reside.
 Examples: US, EU, asia-northeast1. The default value is US.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_tags_location_tag_binding#location GoogleTagsLocationTagBinding#location}
   */
   readonly location?: string;
   /**
   * The full resource name of the resource the TagValue is bound to. E.g. //cloudresourcemanager.googleapis.com/projects/123
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_tags_location_tag_binding#parent GoogleTagsLocationTagBinding#parent}
   */
   readonly parent: string;
   /**
   * The TagValue of the TagBinding. Must be of the form tagValues/456.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_tags_location_tag_binding#tag_value GoogleTagsLocationTagBinding#tag_value}
   */
   readonly tagValue: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_tags_location_tag_binding#timeouts GoogleTagsLocationTagBinding#timeouts}
   */
   readonly timeouts?: GoogleTagsLocationTagBindingTimeouts;

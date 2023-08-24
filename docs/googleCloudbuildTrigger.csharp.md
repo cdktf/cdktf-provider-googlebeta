@@ -2070,7 +2070,7 @@ new GoogleCloudbuildTriggerBuildAvailableSecretsSecretManager {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsSecretManager.property.env">Env</a></code> | <code>string</code> | Environment variable name to associate with the secret. |
-| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsSecretManager.property.versionName">VersionName</a></code> | <code>string</code> | Resource name of the SecretVersion. In format: projects/*\/secrets/*\/versions/*. |
+| <code><a href="#@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildAvailableSecretsSecretManager.property.versionName">VersionName</a></code> | <code>string</code> | Resource name of the SecretVersion. In format: projects/* /secrets/* /versions/*. |
 
 ---
 
@@ -2100,9 +2100,11 @@ public string VersionName { get; set; }
 
 - *Type:* string
 
-Resource name of the SecretVersion. In format: projects/*\/secrets/*\/versions/*.
+Resource name of the SecretVersion. In format: projects/* /secrets/* /versions/*.
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuild_trigger#version_name GoogleCloudbuildTrigger#version_name}
+
+Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
 
 ---
 

@@ -14,7 +14,7 @@ import * as cdktf from 'cdktf';
 export interface GoogleFirebaseDatabaseInstanceConfig extends cdktf.TerraformMetaArguments {
   /**
   * The intended database state.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_database_instance#desired_state GoogleFirebaseDatabaseInstance#desired_state}
   */
   readonly desiredState?: string;
@@ -28,7 +28,7 @@ export interface GoogleFirebaseDatabaseInstanceConfig extends cdktf.TerraformMet
   /**
   * The globally unique identifier of the Firebase Realtime Database instance.
 Instance IDs cannot be reused after deletion.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_database_instance#instance_id GoogleFirebaseDatabaseInstance#instance_id}
   */
   readonly instanceId: string;
@@ -39,7 +39,7 @@ Instance IDs cannot be reused after deletion.
   /**
   * A reference to the region where the Firebase Realtime database resides.
 Check all [available regions](https://firebase.google.com/docs/projects/locations#rtdb-locations)
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_database_instance#region GoogleFirebaseDatabaseInstance#region}
   */
   readonly region: string;
@@ -48,13 +48,13 @@ Check all [available regions](https://firebase.google.com/docs/projects/location
 Each project can create one default Firebase Realtime Database, which cannot be deleted once created.
 Creating user Databases is only available for projects on the Blaze plan.
 Projects can be upgraded using the Cloud Billing API https://cloud.google.com/billing/reference/rest/v1/projects/updateBillingInfo. Default value: "USER_DATABASE" Possible values: ["DEFAULT_DATABASE", "USER_DATABASE"]
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_database_instance#type GoogleFirebaseDatabaseInstance#type}
   */
   readonly type?: string;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_database_instance#timeouts GoogleFirebaseDatabaseInstance#timeouts}
   */
   readonly timeouts?: GoogleFirebaseDatabaseInstanceTimeouts;

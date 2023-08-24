@@ -33,7 +33,7 @@ export interface GoogleKmsKeyRingIamBindingConfig extends cdktf.TerraformMetaArg
   readonly role: string;
   /**
   * condition block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_key_ring_iam_binding#condition GoogleKmsKeyRingIamBinding#condition}
   */
   readonly condition?: GoogleKmsKeyRingIamBindingCondition;
