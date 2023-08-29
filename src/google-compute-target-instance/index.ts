@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleComputeTargetInstanceConfig extends cdktf.TerraformMetaAr
   /**
   * An optional description of this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#description GoogleComputeTargetInstance#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#description GoogleComputeTargetInstance#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#id GoogleComputeTargetInstance#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#id GoogleComputeTargetInstance#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -33,7 +33,7 @@ name is given, the zone will default to the given zone or
 the provider-default zone and the project will default to the
 provider-level project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#instance GoogleComputeTargetInstance#instance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#instance GoogleComputeTargetInstance#instance}
   */
   readonly instance: string;
   /**
@@ -45,48 +45,58 @@ first character must be a lowercase letter, and all following
 characters must be a dash, lowercase letter, or digit, except the last
 character, which cannot be a dash.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#name GoogleComputeTargetInstance#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#name GoogleComputeTargetInstance#name}
   */
   readonly name: string;
   /**
   * NAT option controlling how IPs are NAT'ed to the instance.
 Currently only NO_NAT (default value) is supported. Default value: "NO_NAT" Possible values: ["NO_NAT"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#nat_policy GoogleComputeTargetInstance#nat_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#nat_policy GoogleComputeTargetInstance#nat_policy}
   */
   readonly natPolicy?: string;
   /**
   * The URL of the network this target instance uses to forward traffic. If not specified, the traffic will be forwarded to the network that the default network interface belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#network GoogleComputeTargetInstance#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#network GoogleComputeTargetInstance#network}
   */
   readonly network?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#project GoogleComputeTargetInstance#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#project GoogleComputeTargetInstance#project}
   */
   readonly project?: string;
   /**
+  * The resource URL for the security policy associated with this target instance.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#security_policy GoogleComputeTargetInstance#security_policy}
+  */
+  readonly securityPolicy?: string;
+  /**
   * URL of the zone where the target instance resides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#zone GoogleComputeTargetInstance#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#zone GoogleComputeTargetInstance#zone}
   */
   readonly zone?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#timeouts GoogleComputeTargetInstance#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#timeouts GoogleComputeTargetInstance#timeouts}
   */
   readonly timeouts?: GoogleComputeTargetInstanceTimeouts;
 }
 export interface GoogleComputeTargetInstanceTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#create GoogleComputeTargetInstance#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#create GoogleComputeTargetInstance#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance#delete GoogleComputeTargetInstance#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#delete GoogleComputeTargetInstance#delete}
   */
   readonly delete?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance#update GoogleComputeTargetInstance#update}
+  */
+  readonly update?: string;
 }
 
 export function googleComputeTargetInstanceTimeoutsToTerraform(struct?: GoogleComputeTargetInstanceTimeouts | cdktf.IResolvable): any {
@@ -97,6 +107,7 @@ export function googleComputeTargetInstanceTimeoutsToTerraform(struct?: GoogleCo
   return {
     create: cdktf.stringToTerraform(struct!.create),
     delete: cdktf.stringToTerraform(struct!.delete),
+    update: cdktf.stringToTerraform(struct!.update),
   }
 }
 
@@ -126,6 +137,10 @@ export class GoogleComputeTargetInstanceTimeoutsOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.delete = this._delete;
     }
+    if (this._update !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.update = this._update;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -135,6 +150,7 @@ export class GoogleComputeTargetInstanceTimeoutsOutputReference extends cdktf.Co
       this.resolvableValue = undefined;
       this._create = undefined;
       this._delete = undefined;
+      this._update = undefined;
     }
     else if (cdktf.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -145,6 +161,7 @@ export class GoogleComputeTargetInstanceTimeoutsOutputReference extends cdktf.Co
       this.resolvableValue = undefined;
       this._create = value.create;
       this._delete = value.delete;
+      this._update = value.update;
     }
   }
 
@@ -179,10 +196,26 @@ export class GoogleComputeTargetInstanceTimeoutsOutputReference extends cdktf.Co
   public get deleteInput() {
     return this._delete;
   }
+
+  // update - computed: false, optional: true, required: false
+  private _update?: string; 
+  public get update() {
+    return this.getStringAttribute('update');
+  }
+  public set update(value: string) {
+    this._update = value;
+  }
+  public resetUpdate() {
+    this._update = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get updateInput() {
+    return this._update;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance google_compute_target_instance}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance google_compute_target_instance}
 */
 export class GoogleComputeTargetInstance extends cdktf.TerraformResource {
 
@@ -196,7 +229,7 @@ export class GoogleComputeTargetInstance extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_instance google_compute_target_instance} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_instance google_compute_target_instance} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -207,7 +240,7 @@ export class GoogleComputeTargetInstance extends cdktf.TerraformResource {
       terraformResourceType: 'google_compute_target_instance',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.79.0',
+        providerVersion: '4.80.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -225,6 +258,7 @@ export class GoogleComputeTargetInstance extends cdktf.TerraformResource {
     this._natPolicy = config.natPolicy;
     this._network = config.network;
     this._project = config.project;
+    this._securityPolicy = config.securityPolicy;
     this._zone = config.zone;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -344,6 +378,22 @@ export class GoogleComputeTargetInstance extends cdktf.TerraformResource {
     return this._project;
   }
 
+  // security_policy - computed: false, optional: true, required: false
+  private _securityPolicy?: string; 
+  public get securityPolicy() {
+    return this.getStringAttribute('security_policy');
+  }
+  public set securityPolicy(value: string) {
+    this._securityPolicy = value;
+  }
+  public resetSecurityPolicy() {
+    this._securityPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityPolicyInput() {
+    return this._securityPolicy;
+  }
+
   // self_link - computed: true, optional: false, required: false
   public get selfLink() {
     return this.getStringAttribute('self_link');
@@ -394,6 +444,7 @@ export class GoogleComputeTargetInstance extends cdktf.TerraformResource {
       nat_policy: cdktf.stringToTerraform(this._natPolicy),
       network: cdktf.stringToTerraform(this._network),
       project: cdktf.stringToTerraform(this._project),
+      security_policy: cdktf.stringToTerraform(this._securityPolicy),
       zone: cdktf.stringToTerraform(this._zone),
       timeouts: googleComputeTargetInstanceTimeoutsToTerraform(this._timeouts.internalValue),
     };

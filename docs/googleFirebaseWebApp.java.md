@@ -1,6 +1,6 @@
 # `google_firebase_web_app`
 
-Refer to the Terraform Registory for docs: [`google_firebase_web_app`](https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app).
+Refer to the Terraform Registory for docs: [`google_firebase_web_app`](https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app).
 
 # `googleFirebaseWebApp` Submodule <a name="`googleFirebaseWebApp` Submodule" id="@cdktf/provider-google-beta.googleFirebaseWebApp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_firebase_web_app`](https://r
 
 ### GoogleFirebaseWebApp <a name="GoogleFirebaseWebApp" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app google_firebase_web_app}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app google_firebase_web_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer"></a>
 
@@ -28,6 +28,7 @@ GoogleFirebaseWebApp.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .displayName(java.lang.String)
+//  .apiKeyId(java.lang.String)
 //  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -47,9 +48,10 @@ GoogleFirebaseWebApp.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.displayName">displayName</a></code> | <code>java.lang.String</code> | The user-assigned display name of the App. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.apiKeyId">apiKeyId</a></code> | <code>java.lang.String</code> | The globally unique, Google-assigned identifier (UID) for the Firebase API key associated with the WebApp. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Set to 'ABANDON' to allow the WebApp to be untracked from terraform state rather than deleted upon 'terraform destroy'. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#id GoogleFirebaseWebApp#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#project GoogleFirebaseWebApp#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#id GoogleFirebaseWebApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#project GoogleFirebaseWebApp#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts">GoogleFirebaseWebAppTimeouts</a></code> | timeouts block. |
 
 ---
@@ -120,7 +122,20 @@ Must be unique amongst siblings in the same scope
 
 The user-assigned display name of the App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#display_name GoogleFirebaseWebApp#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#display_name GoogleFirebaseWebApp#display_name}
+
+---
+
+##### `apiKeyId`<sup>Optional</sup> <a name="apiKeyId" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.Initializer.parameter.apiKeyId"></a>
+
+- *Type:* java.lang.String
+
+The globally unique, Google-assigned identifier (UID) for the Firebase API key associated with the WebApp.
+
+If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the WebApp.
+This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#api_key_id GoogleFirebaseWebApp#api_key_id}
 
 ---
 
@@ -133,7 +148,7 @@ Set to 'ABANDON' to allow the WebApp to be untracked from terraform state rather
 This is useful becaue the WebApp may be
 serving traffic. Set to 'DELETE' to delete the WebApp. Default to 'ABANDON'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#deletion_policy GoogleFirebaseWebApp#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#deletion_policy GoogleFirebaseWebApp#deletion_policy}
 
 ---
 
@@ -141,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#id GoogleFirebaseWebApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#id GoogleFirebaseWebApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -152,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#project GoogleFirebaseWebApp#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#project GoogleFirebaseWebApp#project}.
 
 ---
 
@@ -162,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#timeouts GoogleFirebaseWebApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#timeouts GoogleFirebaseWebApp#timeouts}
 
 ---
 
@@ -187,6 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.resetApiKeyId">resetApiKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.resetDeletionPolicy">resetDeletionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.resetProject">resetProject</a></code> | *No description.* |
@@ -390,6 +406,12 @@ public void putTimeouts(GoogleFirebaseWebAppTimeouts value)
 
 ---
 
+##### `resetApiKeyId` <a name="resetApiKeyId" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.resetApiKeyId"></a>
+
+```java
+public void resetApiKeyId()
+```
+
 ##### `resetDeletionPolicy` <a name="resetDeletionPolicy" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.resetDeletionPolicy"></a>
 
 ```java
@@ -506,11 +528,13 @@ GoogleFirebaseWebApp.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.appUrls">appUrls</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeoutsOutputReference">GoogleFirebaseWebAppTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.apiKeyIdInput">apiKeyIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.deletionPolicyInput">deletionPolicyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.displayNameInput">displayNameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.projectInput">projectInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts">GoogleFirebaseWebAppTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.apiKeyId">apiKeyId</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.displayName">displayName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -700,6 +724,16 @@ public GoogleFirebaseWebAppTimeoutsOutputReference getTimeouts();
 
 ---
 
+##### `apiKeyIdInput`<sup>Optional</sup> <a name="apiKeyIdInput" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.apiKeyIdInput"></a>
+
+```java
+public java.lang.String getApiKeyIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `deletionPolicyInput`<sup>Optional</sup> <a name="deletionPolicyInput" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.deletionPolicyInput"></a>
 
 ```java
@@ -747,6 +781,16 @@ public java.lang.Object getTimeoutsInput();
 ```
 
 - *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts">GoogleFirebaseWebAppTimeouts</a>
+
+---
+
+##### `apiKeyId`<sup>Required</sup> <a name="apiKeyId" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp.property.apiKeyId"></a>
+
+```java
+public java.lang.String getApiKeyId();
+```
+
+- *Type:* java.lang.String
 
 ---
 
@@ -830,6 +874,7 @@ GoogleFirebaseWebAppConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .displayName(java.lang.String)
+//  .apiKeyId(java.lang.String)
 //  .deletionPolicy(java.lang.String)
 //  .id(java.lang.String)
 //  .project(java.lang.String)
@@ -849,9 +894,10 @@ GoogleFirebaseWebAppConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.displayName">displayName</a></code> | <code>java.lang.String</code> | The user-assigned display name of the App. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.apiKeyId">apiKeyId</a></code> | <code>java.lang.String</code> | The globally unique, Google-assigned identifier (UID) for the Firebase API key associated with the WebApp. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.deletionPolicy">deletionPolicy</a></code> | <code>java.lang.String</code> | Set to 'ABANDON' to allow the WebApp to be untracked from terraform state rather than deleted upon 'terraform destroy'. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#id GoogleFirebaseWebApp#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#project GoogleFirebaseWebApp#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#id GoogleFirebaseWebApp#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.project">project</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#project GoogleFirebaseWebApp#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts">GoogleFirebaseWebAppTimeouts</a></code> | timeouts block. |
 
 ---
@@ -936,7 +982,24 @@ public java.lang.String getDisplayName();
 
 The user-assigned display name of the App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#display_name GoogleFirebaseWebApp#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#display_name GoogleFirebaseWebApp#display_name}
+
+---
+
+##### `apiKeyId`<sup>Optional</sup> <a name="apiKeyId" id="@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppConfig.property.apiKeyId"></a>
+
+```java
+public java.lang.String getApiKeyId();
+```
+
+- *Type:* java.lang.String
+
+The globally unique, Google-assigned identifier (UID) for the Firebase API key associated with the WebApp.
+
+If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the WebApp.
+This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#api_key_id GoogleFirebaseWebApp#api_key_id}
 
 ---
 
@@ -953,7 +1016,7 @@ Set to 'ABANDON' to allow the WebApp to be untracked from terraform state rather
 This is useful becaue the WebApp may be
 serving traffic. Set to 'DELETE' to delete the WebApp. Default to 'ABANDON'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#deletion_policy GoogleFirebaseWebApp#deletion_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#deletion_policy GoogleFirebaseWebApp#deletion_policy}
 
 ---
 
@@ -965,7 +1028,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#id GoogleFirebaseWebApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#id GoogleFirebaseWebApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -980,7 +1043,7 @@ public java.lang.String getProject();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#project GoogleFirebaseWebApp#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#project GoogleFirebaseWebApp#project}.
 
 ---
 
@@ -994,7 +1057,7 @@ public GoogleFirebaseWebAppTimeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#timeouts GoogleFirebaseWebApp#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#timeouts GoogleFirebaseWebApp#timeouts}
 
 ---
 
@@ -1016,9 +1079,9 @@ GoogleFirebaseWebAppTimeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#create GoogleFirebaseWebApp#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#delete GoogleFirebaseWebApp#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#update GoogleFirebaseWebApp#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#create GoogleFirebaseWebApp#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#delete GoogleFirebaseWebApp#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebAppTimeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#update GoogleFirebaseWebApp#update}. |
 
 ---
 
@@ -1030,7 +1093,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#create GoogleFirebaseWebApp#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#create GoogleFirebaseWebApp#create}.
 
 ---
 
@@ -1042,7 +1105,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#delete GoogleFirebaseWebApp#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#delete GoogleFirebaseWebApp#delete}.
 
 ---
 
@@ -1054,7 +1117,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#update GoogleFirebaseWebApp#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#update GoogleFirebaseWebApp#update}.
 
 ---
 

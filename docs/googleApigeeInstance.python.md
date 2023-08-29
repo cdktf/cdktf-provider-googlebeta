@@ -1,6 +1,6 @@
 # `google_apigee_instance`
 
-Refer to the Terraform Registory for docs: [`google_apigee_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance).
+Refer to the Terraform Registory for docs: [`google_apigee_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance).
 
 # `googleApigeeInstance` Submodule <a name="`googleApigeeInstance` Submodule" id="@cdktf/provider-google-beta.googleApigeeInstance"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_apigee_instance`](https://re
 
 ### GoogleApigeeInstance <a name="GoogleApigeeInstance" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance google_apigee_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance google_apigee_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer"></a>
 
@@ -57,7 +57,7 @@ googleApigeeInstance.GoogleApigeeInstance(
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.description">description</a></code> | <code>str</code> | Description of the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.diskEncryptionKeyName">disk_encryption_key_name</a></code> | <code>str</code> | Customer Managed Encryption Key (CMEK) used for disk and volume encryption. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | Display name of the instance. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.ipRange">ip_range</a></code> | <code>str</code> | IP range represents the customer-provided CIDR block of length 22 that will be used for the Apigee instance creation. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.peeringCidrRange">peering_cidr_range</a></code> | <code>str</code> | The size of the CIDR block range that will be reserved by the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstance.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts">GoogleApigeeInstanceTimeouts</a></code> | timeouts block. |
@@ -130,7 +130,7 @@ Must be unique amongst siblings in the same scope
 
 Required. Compute Engine location where the instance resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#location GoogleApigeeInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#location GoogleApigeeInstance#location}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Resource ID of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#name GoogleApigeeInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#name GoogleApigeeInstance#name}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#org_id GoogleApigeeInstance#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#org_id GoogleApigeeInstance#org_id}
 
 ---
 
@@ -165,7 +165,7 @@ side that can privately connect to the service attachment. It is an optional fie
 which the customers can provide during the instance creation. By default, the customer
 project associated with the Apigee organization will be included to the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#consumer_accept_list GoogleApigeeInstance#consumer_accept_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#consumer_accept_list GoogleApigeeInstance#consumer_accept_list}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#description GoogleApigeeInstance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#description GoogleApigeeInstance#description}
 
 ---
 
@@ -188,7 +188,7 @@ Customer Managed Encryption Key (CMEK) used for disk and volume encryption.
 Required for Apigee paid subscriptions only.
 Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#disk_encryption_key_name GoogleApigeeInstance#disk_encryption_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#disk_encryption_key_name GoogleApigeeInstance#disk_encryption_key_name}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Display name of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#display_name GoogleApigeeInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#display_name GoogleApigeeInstance#display_name}
 
 ---
 
@@ -206,7 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -226,7 +226,7 @@ available /22 CIDR block from Service Networking. The customer should use this C
 for configuring their firewall needs to allow traffic from Apigee.
 Input format: "a.b.c.d/22"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#ip_range GoogleApigeeInstance#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#ip_range GoogleApigeeInstance#ip_range}
 
 ---
 
@@ -239,7 +239,7 @@ The size of the CIDR block range that will be reserved by the instance.
 For valid values,
 see [CidrRange](https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.instances#CidrRange) on the documentation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#peering_cidr_range GoogleApigeeInstance#peering_cidr_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#peering_cidr_range GoogleApigeeInstance#peering_cidr_range}
 
 ---
 
@@ -249,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#timeouts GoogleApigeeInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#timeouts GoogleApigeeInstance#timeouts}
 
 ---
 
@@ -507,7 +507,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}.
 
 ---
 
@@ -515,7 +515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}.
 
 ---
 
@@ -1148,7 +1148,7 @@ googleApigeeInstance.GoogleApigeeInstanceConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.description">description</a></code> | <code>str</code> | Description of the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.diskEncryptionKeyName">disk_encryption_key_name</a></code> | <code>str</code> | Customer Managed Encryption Key (CMEK) used for disk and volume encryption. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.displayName">display_name</a></code> | <code>str</code> | Display name of the instance. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.ipRange">ip_range</a></code> | <code>str</code> | IP range represents the customer-provided CIDR block of length 22 that will be used for the Apigee instance creation. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.peeringCidrRange">peering_cidr_range</a></code> | <code>str</code> | The size of the CIDR block range that will be reserved by the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts">GoogleApigeeInstanceTimeouts</a></code> | timeouts block. |
@@ -1235,7 +1235,7 @@ location: str
 
 Required. Compute Engine location where the instance resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#location GoogleApigeeInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#location GoogleApigeeInstance#location}
 
 ---
 
@@ -1249,7 +1249,7 @@ name: str
 
 Resource ID of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#name GoogleApigeeInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#name GoogleApigeeInstance#name}
 
 ---
 
@@ -1263,7 +1263,7 @@ org_id: str
 
 The Apigee Organization associated with the Apigee instance, in the format 'organizations/{{org_name}}'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#org_id GoogleApigeeInstance#org_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#org_id GoogleApigeeInstance#org_id}
 
 ---
 
@@ -1282,7 +1282,7 @@ side that can privately connect to the service attachment. It is an optional fie
 which the customers can provide during the instance creation. By default, the customer
 project associated with the Apigee organization will be included to the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#consumer_accept_list GoogleApigeeInstance#consumer_accept_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#consumer_accept_list GoogleApigeeInstance#consumer_accept_list}
 
 ---
 
@@ -1296,7 +1296,7 @@ description: str
 
 Description of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#description GoogleApigeeInstance#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#description GoogleApigeeInstance#description}
 
 ---
 
@@ -1313,7 +1313,7 @@ Customer Managed Encryption Key (CMEK) used for disk and volume encryption.
 Required for Apigee paid subscriptions only.
 Use the following format: 'projects/([^/]+)/locations/([^/]+)/keyRings/([^/]+)/cryptoKeys/([^/]+)'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#disk_encryption_key_name GoogleApigeeInstance#disk_encryption_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#disk_encryption_key_name GoogleApigeeInstance#disk_encryption_key_name}
 
 ---
 
@@ -1327,7 +1327,7 @@ display_name: str
 
 Display name of the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#display_name GoogleApigeeInstance#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#display_name GoogleApigeeInstance#display_name}
 
 ---
 
@@ -1339,7 +1339,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#id GoogleApigeeInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1363,7 +1363,7 @@ available /22 CIDR block from Service Networking. The customer should use this C
 for configuring their firewall needs to allow traffic from Apigee.
 Input format: "a.b.c.d/22"
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#ip_range GoogleApigeeInstance#ip_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#ip_range GoogleApigeeInstance#ip_range}
 
 ---
 
@@ -1380,7 +1380,7 @@ The size of the CIDR block range that will be reserved by the instance.
 For valid values,
 see [CidrRange](https://cloud.google.com/apigee/docs/reference/apis/apigee/rest/v1/organizations.instances#CidrRange) on the documentation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#peering_cidr_range GoogleApigeeInstance#peering_cidr_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#peering_cidr_range GoogleApigeeInstance#peering_cidr_range}
 
 ---
 
@@ -1394,7 +1394,7 @@ timeouts: GoogleApigeeInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#timeouts GoogleApigeeInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#timeouts GoogleApigeeInstance#timeouts}
 
 ---
 
@@ -1415,8 +1415,8 @@ googleApigeeInstance.GoogleApigeeInstanceTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleApigeeInstance.GoogleApigeeInstanceTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}. |
 
 ---
 
@@ -1428,7 +1428,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#create GoogleApigeeInstance#create}.
 
 ---
 
@@ -1440,7 +1440,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_instance#delete GoogleApigeeInstance#delete}.
 
 ---
 

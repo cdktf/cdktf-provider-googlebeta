@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleVertexAiDatasetConfig extends cdktf.TerraformMetaArgument
   /**
   * The user-defined name of the Dataset. The name can be up to 128 characters long and can be consist of any UTF-8 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#display_name GoogleVertexAiDataset#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#display_name GoogleVertexAiDataset#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#id GoogleVertexAiDataset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#id GoogleVertexAiDataset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,35 +28,35 @@ export interface GoogleVertexAiDatasetConfig extends cdktf.TerraformMetaArgument
   /**
   * A set of key/value label pairs to assign to this Workflow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#labels GoogleVertexAiDataset#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#labels GoogleVertexAiDataset#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * Points to a YAML file stored on Google Cloud Storage describing additional information about the Dataset. The schema is defined as an OpenAPI 3.0.2 Schema Object. The schema files that can be used here are found in gs://google-cloud-aiplatform/schema/dataset/metadata/.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#metadata_schema_uri GoogleVertexAiDataset#metadata_schema_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#metadata_schema_uri GoogleVertexAiDataset#metadata_schema_uri}
   */
   readonly metadataSchemaUri: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#project GoogleVertexAiDataset#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#project GoogleVertexAiDataset#project}
   */
   readonly project?: string;
   /**
   * The region of the dataset. eg us-central1
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#region GoogleVertexAiDataset#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#region GoogleVertexAiDataset#region}
   */
   readonly region?: string;
   /**
   * encryption_spec block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#encryption_spec GoogleVertexAiDataset#encryption_spec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#encryption_spec GoogleVertexAiDataset#encryption_spec}
   */
   readonly encryptionSpec?: GoogleVertexAiDatasetEncryptionSpec;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#timeouts GoogleVertexAiDataset#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#timeouts GoogleVertexAiDataset#timeouts}
   */
   readonly timeouts?: GoogleVertexAiDatasetTimeouts;
 }
@@ -65,7 +65,7 @@ export interface GoogleVertexAiDatasetEncryptionSpec {
   * Required. The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource.
 Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the resource is created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#kms_key_name GoogleVertexAiDataset#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#kms_key_name GoogleVertexAiDataset#kms_key_name}
   */
   readonly kmsKeyName?: string;
 }
@@ -130,15 +130,15 @@ export class GoogleVertexAiDatasetEncryptionSpecOutputReference extends cdktf.Co
 }
 export interface GoogleVertexAiDatasetTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#create GoogleVertexAiDataset#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#create GoogleVertexAiDataset#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#delete GoogleVertexAiDataset#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#delete GoogleVertexAiDataset#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset#update GoogleVertexAiDataset#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#update GoogleVertexAiDataset#update}
   */
   readonly update?: string;
 }
@@ -259,7 +259,7 @@ export class GoogleVertexAiDatasetTimeoutsOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset}
 */
 export class GoogleVertexAiDataset extends cdktf.TerraformResource {
 
@@ -273,7 +273,7 @@ export class GoogleVertexAiDataset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -284,7 +284,7 @@ export class GoogleVertexAiDataset extends cdktf.TerraformResource {
       terraformResourceType: 'google_vertex_ai_dataset',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.79.0',
+        providerVersion: '4.80.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `google_compute_target_pool`
 
-Refer to the Terraform Registory for docs: [`google_compute_target_pool`](https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool).
+Refer to the Terraform Registory for docs: [`google_compute_target_pool`](https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool).
 
 # `googleComputeTargetPool` Submodule <a name="`googleComputeTargetPool` Submodule" id="@cdktf/provider-google-beta.googleComputeTargetPool"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_compute_target_pool`](https:
 
 ### GoogleComputeTargetPool <a name="GoogleComputeTargetPool" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool google_compute_target_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool google_compute_target_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetInstances">resetInstances</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetSecurityPolicy">resetSecurityPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetSessionAffinity">resetSessionAffinity</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -328,6 +329,12 @@ public resetProject(): void
 public resetRegion(): void
 ```
 
+##### `resetSecurityPolicy` <a name="resetSecurityPolicy" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetSecurityPolicy"></a>
+
+```typescript
+public resetSecurityPolicy(): void
+```
+
 ##### `resetSessionAffinity` <a name="resetSessionAffinity" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.resetSessionAffinity"></a>
 
 ```typescript
@@ -439,6 +446,7 @@ googleComputeTargetPool.GoogleComputeTargetPool.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.securityPolicyInput">securityPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.sessionAffinityInput">sessionAffinityInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts">GoogleComputeTargetPoolTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.backupPool">backupPool</a></code> | <code>string</code> | *No description.* |
@@ -450,6 +458,7 @@ googleComputeTargetPool.GoogleComputeTargetPool.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.securityPolicy">securityPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.sessionAffinity">sessionAffinity</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -706,6 +715,16 @@ public readonly regionInput: string;
 
 ---
 
+##### `securityPolicyInput`<sup>Optional</sup> <a name="securityPolicyInput" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.securityPolicyInput"></a>
+
+```typescript
+public readonly securityPolicyInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sessionAffinityInput`<sup>Optional</sup> <a name="sessionAffinityInput" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.sessionAffinityInput"></a>
 
 ```typescript
@@ -816,6 +835,16 @@ public readonly region: string;
 
 ---
 
+##### `securityPolicy`<sup>Required</sup> <a name="securityPolicy" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.securityPolicy"></a>
+
+```typescript
+public readonly securityPolicy: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `sessionAffinity`<sup>Required</sup> <a name="sessionAffinity" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPool.property.sessionAffinity"></a>
 
 ```typescript
@@ -872,10 +901,11 @@ const googleComputeTargetPoolConfig: googleComputeTargetPool.GoogleComputeTarget
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.description">description</a></code> | <code>string</code> | Textual description field. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.failoverRatio">failoverRatio</a></code> | <code>number</code> | Ratio (0 to 1) of failed nodes before using the backup pool (which must also be set). |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.healthChecks">healthChecks</a></code> | <code>string[]</code> | List of zero or one health check name or self_link. Only legacy google_compute_http_health_check is supported. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#id GoogleComputeTargetPool#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#id GoogleComputeTargetPool#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.instances">instances</a></code> | <code>string[]</code> | List of instances in the pool. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.project">project</a></code> | <code>string</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.region">region</a></code> | <code>string</code> | Where the target pool resides. Defaults to project region. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.securityPolicy">securityPolicy</a></code> | <code>string</code> | The resource URL for the security policy associated with this target pool. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.sessionAffinity">sessionAffinity</a></code> | <code>string</code> | How to distribute load. |
 | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts">GoogleComputeTargetPoolTimeouts</a></code> | timeouts block. |
 
@@ -961,7 +991,7 @@ public readonly name: string;
 
 A unique name for the resource, required by GCE. Changing this forces a new resource to be created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#name GoogleComputeTargetPool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#name GoogleComputeTargetPool#name}
 
 ---
 
@@ -975,7 +1005,7 @@ public readonly backupPool: string;
 
 URL to the backup target pool. Must also set failover_ratio.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#backup_pool GoogleComputeTargetPool#backup_pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#backup_pool GoogleComputeTargetPool#backup_pool}
 
 ---
 
@@ -989,7 +1019,7 @@ public readonly description: string;
 
 Textual description field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#description GoogleComputeTargetPool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#description GoogleComputeTargetPool#description}
 
 ---
 
@@ -1003,7 +1033,7 @@ public readonly failoverRatio: number;
 
 Ratio (0 to 1) of failed nodes before using the backup pool (which must also be set).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#failover_ratio GoogleComputeTargetPool#failover_ratio}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#failover_ratio GoogleComputeTargetPool#failover_ratio}
 
 ---
 
@@ -1017,7 +1047,7 @@ public readonly healthChecks: string[];
 
 List of zero or one health check name or self_link. Only legacy google_compute_http_health_check is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#health_checks GoogleComputeTargetPool#health_checks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#health_checks GoogleComputeTargetPool#health_checks}
 
 ---
 
@@ -1029,7 +1059,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#id GoogleComputeTargetPool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#id GoogleComputeTargetPool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1048,7 +1078,7 @@ List of instances in the pool.
 
 They can be given as URLs, or in the form of "zone/name". Note that the instances need not exist at the time of target pool creation, so there is no need to use the Terraform interpolators to create a dependency on the instances from the target pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#instances GoogleComputeTargetPool#instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#instances GoogleComputeTargetPool#instances}
 
 ---
 
@@ -1064,7 +1094,7 @@ The ID of the project in which the resource belongs.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#project GoogleComputeTargetPool#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#project GoogleComputeTargetPool#project}
 
 ---
 
@@ -1078,7 +1108,21 @@ public readonly region: string;
 
 Where the target pool resides. Defaults to project region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#region GoogleComputeTargetPool#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#region GoogleComputeTargetPool#region}
+
+---
+
+##### `securityPolicy`<sup>Optional</sup> <a name="securityPolicy" id="@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolConfig.property.securityPolicy"></a>
+
+```typescript
+public readonly securityPolicy: string;
+```
+
+- *Type:* string
+
+The resource URL for the security policy associated with this target pool.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#security_policy GoogleComputeTargetPool#security_policy}
 
 ---
 
@@ -1094,7 +1138,7 @@ How to distribute load.
 
 Options are "NONE" (no affinity). "CLIENT_IP" (hash of the source/dest addresses / ports), and "CLIENT_IP_PROTO" also includes the protocol (default "NONE").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#session_affinity GoogleComputeTargetPool#session_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#session_affinity GoogleComputeTargetPool#session_affinity}
 
 ---
 
@@ -1108,7 +1152,7 @@ public readonly timeouts: GoogleComputeTargetPoolTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#timeouts GoogleComputeTargetPool#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#timeouts GoogleComputeTargetPool#timeouts}
 
 ---
 
@@ -1126,9 +1170,9 @@ const googleComputeTargetPoolTimeouts: googleComputeTargetPool.GoogleComputeTarg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#create GoogleComputeTargetPool#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#delete GoogleComputeTargetPool#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#update GoogleComputeTargetPool#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#create GoogleComputeTargetPool#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#delete GoogleComputeTargetPool#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleComputeTargetPool.GoogleComputeTargetPoolTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#update GoogleComputeTargetPool#update}. |
 
 ---
 
@@ -1140,7 +1184,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#create GoogleComputeTargetPool#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#create GoogleComputeTargetPool#create}.
 
 ---
 
@@ -1152,7 +1196,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#delete GoogleComputeTargetPool#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#delete GoogleComputeTargetPool#delete}.
 
 ---
 
@@ -1164,7 +1208,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_target_pool#update GoogleComputeTargetPool#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_target_pool#update GoogleComputeTargetPool#update}.
 
 ---
 

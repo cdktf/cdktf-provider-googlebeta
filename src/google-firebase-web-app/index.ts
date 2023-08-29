@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,56 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleFirebaseWebAppConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The globally unique, Google-assigned identifier (UID) for the Firebase API key associated with the WebApp.
+If apiKeyId is not set during creation, then Firebase automatically associates an apiKeyId with the WebApp.
+This auto-associated key may be an existing valid key or, if no valid key exists, a new one will be provisioned.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#api_key_id GoogleFirebaseWebApp#api_key_id}
+  */
+  readonly apiKeyId?: string;
+  /**
   * Set to 'ABANDON' to allow the WebApp to be untracked from terraform state
 rather than deleted upon 'terraform destroy'. This is useful becaue the WebApp may be
 serving traffic. Set to 'DELETE' to delete the WebApp. Default to 'ABANDON'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#deletion_policy GoogleFirebaseWebApp#deletion_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#deletion_policy GoogleFirebaseWebApp#deletion_policy}
   */
   readonly deletionPolicy?: string;
   /**
   * The user-assigned display name of the App.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#display_name GoogleFirebaseWebApp#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#display_name GoogleFirebaseWebApp#display_name}
   */
   readonly displayName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#id GoogleFirebaseWebApp#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#id GoogleFirebaseWebApp#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#project GoogleFirebaseWebApp#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#project GoogleFirebaseWebApp#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#timeouts GoogleFirebaseWebApp#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#timeouts GoogleFirebaseWebApp#timeouts}
   */
   readonly timeouts?: GoogleFirebaseWebAppTimeouts;
 }
 export interface GoogleFirebaseWebAppTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#create GoogleFirebaseWebApp#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#create GoogleFirebaseWebApp#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#delete GoogleFirebaseWebApp#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#delete GoogleFirebaseWebApp#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app#update GoogleFirebaseWebApp#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app#update GoogleFirebaseWebApp#update}
   */
   readonly update?: string;
 }
@@ -175,7 +183,7 @@ export class GoogleFirebaseWebAppTimeoutsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app google_firebase_web_app}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app google_firebase_web_app}
 */
 export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
 
@@ -189,7 +197,7 @@ export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app google_firebase_web_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app google_firebase_web_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -200,7 +208,7 @@ export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_web_app',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.79.0',
+        providerVersion: '4.80.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -211,6 +219,7 @@ export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._apiKeyId = config.apiKeyId;
     this._deletionPolicy = config.deletionPolicy;
     this._displayName = config.displayName;
     this._id = config.id;
@@ -221,6 +230,22 @@ export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // api_key_id - computed: true, optional: true, required: false
+  private _apiKeyId?: string; 
+  public get apiKeyId() {
+    return this.getStringAttribute('api_key_id');
+  }
+  public set apiKeyId(value: string) {
+    this._apiKeyId = value;
+  }
+  public resetApiKeyId() {
+    this._apiKeyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get apiKeyIdInput() {
+    return this._apiKeyId;
+  }
 
   // app_id - computed: true, optional: false, required: false
   public get appId() {
@@ -320,6 +345,7 @@ export class GoogleFirebaseWebApp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      api_key_id: cdktf.stringToTerraform(this._apiKeyId),
       deletion_policy: cdktf.stringToTerraform(this._deletionPolicy),
       display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
