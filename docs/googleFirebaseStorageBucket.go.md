@@ -1,6 +1,6 @@
 # `google_firebase_storage_bucket`
 
-Refer to the Terraform Registory for docs: [`google_firebase_storage_bucket`](https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket).
+Refer to the Terraform Registory for docs: [`google_firebase_storage_bucket`](https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket).
 
 # `googleFirebaseStorageBucket` Submodule <a name="`googleFirebaseStorageBucket` Submodule" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_firebase_storage_bucket`](ht
 
 ### GoogleFirebaseStorageBucket <a name="GoogleFirebaseStorageBucket" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket google_firebase_storage_bucket}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket google_firebase_storage_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefirebasestoragebucket"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasestoragebucket"
 
 googlefirebasestoragebucket.NewGoogleFirebaseStorageBucket(scope Construct, id *string, config GoogleFirebaseStorageBucketConfig) GoogleFirebaseStorageBucket
 ```
@@ -311,7 +311,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefirebasestoragebucket"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasestoragebucket"
 
 googlefirebasestoragebucket.GoogleFirebaseStorageBucket_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefirebasestoragebucket"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasestoragebucket"
 
 googlefirebasestoragebucket.GoogleFirebaseStorageBucket_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ googlefirebasestoragebucket.GoogleFirebaseStorageBucket_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucket.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefirebasestoragebucket"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasestoragebucket"
 
 googlefirebasestoragebucket.GoogleFirebaseStorageBucket_IsTerraformResource(x interface{}) *bool
 ```
@@ -655,7 +655,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefirebasestoragebucket"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasestoragebucket"
 
 &googlefirebasestoragebucket.GoogleFirebaseStorageBucketConfig {
 	Connection: interface{},
@@ -668,7 +668,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefireba
 	BucketId: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts,
 }
 ```
 
@@ -684,8 +684,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefireba
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig.property.bucketId">BucketId</a></code> | <code>*string</code> | Required. Immutable. The ID of the underlying Google Cloud Storage bucket. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#id GoogleFirebaseStorageBucket#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#project GoogleFirebaseStorageBucket#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket#id GoogleFirebaseStorageBucket#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket#project GoogleFirebaseStorageBucket#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts">GoogleFirebaseStorageBucketTimeouts</a></code> | timeouts block. |
 
 ---
@@ -770,7 +770,7 @@ BucketId *string
 
 Required. Immutable. The ID of the underlying Google Cloud Storage bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#bucket_id GoogleFirebaseStorageBucket#bucket_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket#bucket_id GoogleFirebaseStorageBucket#bucket_id}
 
 ---
 
@@ -782,7 +782,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#id GoogleFirebaseStorageBucket#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket#id GoogleFirebaseStorageBucket#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -797,7 +797,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#project GoogleFirebaseStorageBucket#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket#project GoogleFirebaseStorageBucket#project}.
 
 ---
 
@@ -811,7 +811,7 @@ Timeouts GoogleFirebaseStorageBucketTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#timeouts GoogleFirebaseStorageBucket#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket#timeouts GoogleFirebaseStorageBucket#timeouts}
 
 ---
 
@@ -820,7 +820,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefirebasestoragebucket"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasestoragebucket"
 
 &googlefirebasestoragebucket.GoogleFirebaseStorageBucketTimeouts {
 	Create: *string,
@@ -832,8 +832,8 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefireba
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#create GoogleFirebaseStorageBucket#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#delete GoogleFirebaseStorageBucket#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket#create GoogleFirebaseStorageBucket#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket#delete GoogleFirebaseStorageBucket#delete}. |
 
 ---
 
@@ -845,7 +845,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#create GoogleFirebaseStorageBucket#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket#create GoogleFirebaseStorageBucket#create}.
 
 ---
 
@@ -857,7 +857,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_storage_bucket#delete GoogleFirebaseStorageBucket#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_storage_bucket#delete GoogleFirebaseStorageBucket#delete}.
 
 ---
 
@@ -868,7 +868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleFirebaseStorageBucket.GoogleFirebaseStorageBucketTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefirebasestoragebucket"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlefirebasestoragebucket"
 
 googlefirebasestoragebucket.NewGoogleFirebaseStorageBucketTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleFirebaseStorageBucketTimeoutsOutputReference
 ```

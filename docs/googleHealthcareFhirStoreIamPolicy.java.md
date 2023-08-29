@@ -1,6 +1,6 @@
 # `google_healthcare_fhir_store_iam_policy`
 
-Refer to the Terraform Registory for docs: [`google_healthcare_fhir_store_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy).
+Refer to the Terraform Registory for docs: [`google_healthcare_fhir_store_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy).
 
 # `googleHealthcareFhirStoreIamPolicy` Submodule <a name="`googleHealthcareFhirStoreIamPolicy` Submodule" id="@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_healthcare_fhir_store_iam_po
 
 ### GoogleHealthcareFhirStoreIamPolicy <a name="GoogleHealthcareFhirStoreIamPolicy" id="@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy google_healthcare_fhir_store_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy google_healthcare_fhir_store_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy.Initializer"></a>
 
@@ -44,9 +44,9 @@ GoogleHealthcareFhirStoreIamPolicy.Builder.create(Construct scope, java.lang.Str
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy.Initializer.parameter.fhirStoreId">fhirStoreId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#fhir_store_id GoogleHealthcareFhirStoreIamPolicy#fhir_store_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#policy_data GoogleHealthcareFhirStoreIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#id GoogleHealthcareFhirStoreIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy.Initializer.parameter.fhirStoreId">fhirStoreId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#fhir_store_id GoogleHealthcareFhirStoreIamPolicy#fhir_store_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy.Initializer.parameter.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#policy_data GoogleHealthcareFhirStoreIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#id GoogleHealthcareFhirStoreIamPolicy#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#fhir_store_id GoogleHealthcareFhirStoreIamPolicy#fhir_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#fhir_store_id GoogleHealthcareFhirStoreIamPolicy#fhir_store_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#policy_data GoogleHealthcareFhirStoreIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#policy_data GoogleHealthcareFhirStoreIamPolicy#policy_data}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#id GoogleHealthcareFhirStoreIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#id GoogleHealthcareFhirStoreIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -717,9 +717,9 @@ GoogleHealthcareFhirStoreIamPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicyConfig.property.fhirStoreId">fhirStoreId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#fhir_store_id GoogleHealthcareFhirStoreIamPolicy#fhir_store_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#policy_data GoogleHealthcareFhirStoreIamPolicy#policy_data}. |
-| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#id GoogleHealthcareFhirStoreIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicyConfig.property.fhirStoreId">fhirStoreId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#fhir_store_id GoogleHealthcareFhirStoreIamPolicy#fhir_store_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicyConfig.property.policyData">policyData</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#policy_data GoogleHealthcareFhirStoreIamPolicy#policy_data}. |
+| <code><a href="#@cdktf/provider-google-beta.googleHealthcareFhirStoreIamPolicy.GoogleHealthcareFhirStoreIamPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#id GoogleHealthcareFhirStoreIamPolicy#id}. |
 
 ---
 
@@ -801,7 +801,7 @@ public java.lang.String getFhirStoreId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#fhir_store_id GoogleHealthcareFhirStoreIamPolicy#fhir_store_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#fhir_store_id GoogleHealthcareFhirStoreIamPolicy#fhir_store_id}.
 
 ---
 
@@ -813,7 +813,7 @@ public java.lang.String getPolicyData();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#policy_data GoogleHealthcareFhirStoreIamPolicy#policy_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#policy_data GoogleHealthcareFhirStoreIamPolicy#policy_data}.
 
 ---
 
@@ -825,7 +825,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store_iam_policy#id GoogleHealthcareFhirStoreIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_fhir_store_iam_policy#id GoogleHealthcareFhirStoreIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
