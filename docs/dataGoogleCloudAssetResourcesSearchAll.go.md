@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecloudassetresourcessearchall"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudassetresourcessearchall"
 
 datagooglecloudassetresourcessearchall.NewDataGoogleCloudAssetResourcesSearchAll(scope Construct, id *string, config DataGoogleCloudAssetResourcesSearchAllConfig) DataGoogleCloudAssetResourcesSearchAll
 ```
@@ -291,7 +291,7 @@ func ResetQuery()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecloudassetresourcessearchall"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudassetresourcessearchall"
 
 datagooglecloudassetresourcessearchall.DataGoogleCloudAssetResourcesSearchAll_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecloudassetresourcessearchall"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudassetresourcessearchall"
 
 datagooglecloudassetresourcessearchall.DataGoogleCloudAssetResourcesSearchAll_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagooglecloudassetresourcessearchall.DataGoogleCloudAssetResourcesSearchAll_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAll.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecloudassetresourcessearchall"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudassetresourcessearchall"
 
 datagooglecloudassetresourcessearchall.DataGoogleCloudAssetResourcesSearchAll_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -613,7 +613,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecloudassetresourcessearchall"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudassetresourcessearchall"
 
 &datagooglecloudassetresourcessearchall.DataGoogleCloudAssetResourcesSearchAllConfig {
 	Connection: interface{},
@@ -774,7 +774,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResults.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecloudassetresourcessearchall"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudassetresourcessearchall"
 
 &datagooglecloudassetresourcessearchall.DataGoogleCloudAssetResourcesSearchAllResults {
 
@@ -789,7 +789,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecl
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecloudassetresourcessearchall"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudassetresourcessearchall"
 
 datagooglecloudassetresourcessearchall.NewDataGoogleCloudAssetResourcesSearchAllResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudAssetResourcesSearchAllResultsList
 ```
@@ -921,7 +921,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleCloudAssetResourcesSearchAll.DataGoogleCloudAssetResourcesSearchAllResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecloudassetresourcessearchall"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglecloudassetresourcessearchall"
 
 datagooglecloudassetresourcessearchall.NewDataGoogleCloudAssetResourcesSearchAllResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudAssetResourcesSearchAllResultsOutputReference
 ```
