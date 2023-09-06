@@ -77,6 +77,8 @@ export * as googleBackupDrManagementServer from './google-backup-dr-management-s
 export * as googleBeyondcorpAppConnection from './google-beyondcorp-app-connection';
 export * as googleBeyondcorpAppConnector from './google-beyondcorp-app-connector';
 export * as googleBeyondcorpAppGateway from './google-beyondcorp-app-gateway';
+export * as googleBiglakeCatalog from './google-biglake-catalog';
+export * as googleBiglakeDatabase from './google-biglake-database';
 export * as googleBigqueryAnalyticsHubDataExchange from './google-bigquery-analytics-hub-data-exchange';
 export * as googleBigqueryAnalyticsHubDataExchangeIamBinding from './google-bigquery-analytics-hub-data-exchange-iam-binding';
 export * as googleBigqueryAnalyticsHubDataExchangeIamMember from './google-bigquery-analytics-hub-data-exchange-iam-member';
@@ -238,6 +240,7 @@ export * as googleComputeMachineImageIamMember from './google-compute-machine-im
 export * as googleComputeMachineImageIamPolicy from './google-compute-machine-image-iam-policy';
 export * as googleComputeManagedSslCertificate from './google-compute-managed-ssl-certificate';
 export * as googleComputeNetwork from './google-compute-network';
+export * as googleComputeNetworkAttachment from './google-compute-network-attachment';
 export * as googleComputeNetworkEdgeSecurityService from './google-compute-network-edge-security-service';
 export * as googleComputeNetworkEndpoint from './google-compute-network-endpoint';
 export * as googleComputeNetworkEndpointGroup from './google-compute-network-endpoint-group';
@@ -487,10 +490,17 @@ export * as googleGkeHubFeatureIamMember from './google-gke-hub-feature-iam-memb
 export * as googleGkeHubFeatureIamPolicy from './google-gke-hub-feature-iam-policy';
 export * as googleGkeHubFeatureMembership from './google-gke-hub-feature-membership';
 export * as googleGkeHubMembership from './google-gke-hub-membership';
+export * as googleGkeHubMembershipBinding from './google-gke-hub-membership-binding';
 export * as googleGkeHubMembershipIamBinding from './google-gke-hub-membership-iam-binding';
 export * as googleGkeHubMembershipIamMember from './google-gke-hub-membership-iam-member';
 export * as googleGkeHubMembershipIamPolicy from './google-gke-hub-membership-iam-policy';
 export * as googleGkeHubMembershipRbacRoleBinding from './google-gke-hub-membership-rbac-role-binding';
+export * as googleGkeHubNamespace from './google-gke-hub-namespace';
+export * as googleGkeHubScope from './google-gke-hub-scope';
+export * as googleGkeHubScopeIamBinding from './google-gke-hub-scope-iam-binding';
+export * as googleGkeHubScopeIamMember from './google-gke-hub-scope-iam-member';
+export * as googleGkeHubScopeIamPolicy from './google-gke-hub-scope-iam-policy';
+export * as googleGkeHubScopeRbacRoleBinding from './google-gke-hub-scope-rbac-role-binding';
 export * as googleGkeonpremBareMetalAdminCluster from './google-gkeonprem-bare-metal-admin-cluster';
 export * as googleGkeonpremBareMetalCluster from './google-gkeonprem-bare-metal-cluster';
 export * as googleGkeonpremBareMetalNodePool from './google-gkeonprem-bare-metal-node-pool';
@@ -681,6 +691,7 @@ export * as googlePubsubTopicIamBinding from './google-pubsub-topic-iam-binding'
 export * as googlePubsubTopicIamMember from './google-pubsub-topic-iam-member';
 export * as googlePubsubTopicIamPolicy from './google-pubsub-topic-iam-policy';
 export * as googleRecaptchaEnterpriseKey from './google-recaptcha-enterprise-key';
+export * as googleRedisCluster from './google-redis-cluster';
 export * as googleRedisInstance from './google-redis-instance';
 export * as googleResourceManagerLien from './google-resource-manager-lien';
 export * as googleRuntimeconfigConfig from './google-runtimeconfig-config';
@@ -932,6 +943,7 @@ export * as dataGoogleGameServicesGameServerDeploymentRollout from './data-googl
 export * as dataGoogleGkeBackupBackupPlanIamPolicy from './data-google-gke-backup-backup-plan-iam-policy';
 export * as dataGoogleGkeHubFeatureIamPolicy from './data-google-gke-hub-feature-iam-policy';
 export * as dataGoogleGkeHubMembershipIamPolicy from './data-google-gke-hub-membership-iam-policy';
+export * as dataGoogleGkeHubScopeIamPolicy from './data-google-gke-hub-scope-iam-policy';
 export * as dataGoogleHealthcareConsentStoreIamPolicy from './data-google-healthcare-consent-store-iam-policy';
 export * as dataGoogleHealthcareDatasetIamPolicy from './data-google-healthcare-dataset-iam-policy';
 export * as dataGoogleHealthcareDicomStoreIamPolicy from './data-google-healthcare-dicom-store-iam-policy';
