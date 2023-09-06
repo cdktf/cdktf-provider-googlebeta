@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRoute(scope Construct, id *string, config GoogleNetworkServicesHttpRouteConfig) GoogleNetworkServicesHttpRoute
 ```
@@ -345,7 +345,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.GoogleNetworkServicesHttpRoute_IsConstruct(x interface{}) *bool
 ```
@@ -377,7 +377,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.GoogleNetworkServicesHttpRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ googlenetworkserviceshttproute.GoogleNetworkServicesHttpRoute_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.GoogleNetworkServicesHttpRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -843,7 +843,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkse
 	Labels: *map[string]*string,
 	Meshes: *[]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteTimeouts,
 }
 ```
 
@@ -1113,10 +1113,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRules {
-	Action: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesAction,
+	Action: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesAction,
 	Matches: interface{},
 }
 ```
@@ -1163,19 +1163,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesAction.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesAction {
-	CorsPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionCorsPolicy,
+	CorsPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionCorsPolicy,
 	Destinations: interface{},
-	FaultInjectionPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicy,
-	Redirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRedirect,
-	RequestHeaderModifier: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestHeaderModifier,
-	RequestMirrorPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicy,
-	ResponseHeaderModifier: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifier,
-	RetryPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRetryPolicy,
+	FaultInjectionPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicy,
+	Redirect: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRedirect,
+	RequestHeaderModifier: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestHeaderModifier,
+	RequestMirrorPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicy,
+	ResponseHeaderModifier: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifier,
+	RetryPolicy: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRetryPolicy,
 	Timeout: *string,
-	UrlRewrite: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionUrlRewrite,
+	UrlRewrite: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionUrlRewrite,
 }
 ```
 
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionCorsPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionCorsPolicy {
 	AllowCredentials: interface{},
@@ -1489,7 +1489,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionDestinations {
 	ServiceName: *string,
@@ -1544,11 +1544,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicy {
-	Abort: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort,
-	Delay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay,
+	Abort: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort,
+	Delay: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay,
 }
 ```
 
@@ -1594,7 +1594,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbort {
 	HttpStatus: *f64,
@@ -1644,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelay {
 	FixedDelay: *string,
@@ -1694,7 +1694,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRedirect.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionRedirect {
 	HostRedirect: *string,
@@ -1826,7 +1826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestHeaderModifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionRequestHeaderModifier {
 	Add: *map[string]*string,
@@ -1892,10 +1892,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicy {
-	Destination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination,
+	Destination: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination,
 }
 ```
 
@@ -1926,7 +1926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestination {
 	ServiceName: *string,
@@ -1981,7 +1981,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifier.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifier {
 	Add: *map[string]*string,
@@ -2047,7 +2047,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRetryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionRetryPolicy {
 	NumRetries: *f64,
@@ -2115,7 +2115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionUrlRewrite.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesActionUrlRewrite {
 	HostRewrite: *string,
@@ -2165,7 +2165,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatches.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesMatches {
 	FullPathMatch: *string,
@@ -2281,7 +2281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesMatchesHeaders {
 	ExactMatch: *string,
@@ -2289,7 +2289,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkse
 	InvertMatch: interface{},
 	PrefixMatch: *string,
 	PresentMatch: interface{},
-	RangeMatch: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatch,
+	RangeMatch: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatch,
 	RegexMatch: *string,
 	SuffixMatch: *string,
 }
@@ -2427,7 +2427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatch {
 	End: *f64,
@@ -2477,7 +2477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters {
 	ExactMatch: *string,
@@ -2559,7 +2559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 &googlenetworkserviceshttproute.GoogleNetworkServicesHttpRouteTimeouts {
 	Create: *string,
@@ -2621,7 +2621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionCorsPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionCorsPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionCorsPolicyOutputReference
 ```
@@ -3102,7 +3102,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionCorsPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesHttpRouteRulesActionDestinationsList
 ```
@@ -3245,7 +3245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesHttpRouteRulesActionDestinationsOutputReference
 ```
@@ -3570,7 +3570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbortOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbortOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyAbortOutputReference
 ```
@@ -3877,7 +3877,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPoli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyDelayOutputReference
 ```
@@ -4184,7 +4184,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPoli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference
 ```
@@ -4517,7 +4517,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPoli
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionOutputReference
 ```
@@ -5173,7 +5173,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesAction
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionRedirectOutputReference
 ```
@@ -5625,7 +5625,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionRedirect
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestHeaderModifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionRequestHeaderModifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionRequestHeaderModifierOutputReference
 ```
@@ -5961,7 +5961,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionRequestHeaderModif
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyDestinationOutputReference
 ```
@@ -6268,7 +6268,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolic
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference
 ```
@@ -6559,7 +6559,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionRequestMirrorPolic
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModifierOutputReference
 ```
@@ -6895,7 +6895,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionResponseHeaderModi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionRetryPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionRetryPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionRetryPolicyOutputReference
 ```
@@ -7231,7 +7231,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionRetryPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesActionUrlRewriteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesActionUrlRewriteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesActionUrlRewriteOutputReference
 ```
@@ -7538,7 +7538,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesActionUrlRewrite
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesHttpRouteRulesList
 ```
@@ -7681,7 +7681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesMatchesHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesHttpRouteRulesMatchesHeadersList
 ```
@@ -7824,7 +7824,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference
 ```
@@ -8336,7 +8336,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatchOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatchOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatchOutputReference
 ```
@@ -8629,7 +8629,7 @@ func InternalValue() GoogleNetworkServicesHttpRouteRulesMatchesHeadersRangeMatch
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesMatchesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesHttpRouteRulesMatchesList
 ```
@@ -8772,7 +8772,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesMatchesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesHttpRouteRulesMatchesOutputReference
 ```
@@ -9239,7 +9239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList
 ```
@@ -9382,7 +9382,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesMatchesQueryParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersOutputReference
 ```
@@ -9765,7 +9765,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GoogleNetworkServicesHttpRouteRulesOutputReference
 ```
@@ -10116,7 +10116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNetworkServicesHttpRoute.GoogleNetworkServicesHttpRouteTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenetworkserviceshttproute"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute"
 
 googlenetworkserviceshttproute.NewGoogleNetworkServicesHttpRouteTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesHttpRouteTimeoutsOutputReference
 ```

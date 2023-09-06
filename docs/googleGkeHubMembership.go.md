@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 googlegkehubmembership.NewGoogleGkeHubMembership(scope Construct, id *string, config GoogleGkeHubMembershipConfig) GoogleGkeHubMembership
 ```
@@ -358,7 +358,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 googlegkehubmembership.GoogleGkeHubMembership_IsConstruct(x interface{}) *bool
 ```
@@ -390,7 +390,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 googlegkehubmembership.GoogleGkeHubMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -404,7 +404,7 @@ googlegkehubmembership.GoogleGkeHubMembership_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 googlegkehubmembership.GoogleGkeHubMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -790,7 +790,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 &googlegkehubmembership.GoogleGkeHubMembershipAuthority {
 	Issuer: *string,
@@ -827,7 +827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 &googlegkehubmembership.GoogleGkeHubMembershipConfig {
 	Connection: interface{},
@@ -838,13 +838,13 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmem
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	MembershipId: *string,
-	Authority: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeHubMembership.GoogleGkeHubMembershipAuthority,
+	Authority: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleGkeHubMembership.GoogleGkeHubMembershipAuthority,
 	Description: *string,
-	Endpoint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeHubMembership.GoogleGkeHubMembershipEndpoint,
+	Endpoint: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleGkeHubMembership.GoogleGkeHubMembershipEndpoint,
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeHubMembership.GoogleGkeHubMembershipTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleGkeHubMembership.GoogleGkeHubMembershipTimeouts,
 }
 ```
 
@@ -1058,10 +1058,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 &googlegkehubmembership.GoogleGkeHubMembershipEndpoint {
-	GkeCluster: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointGkeCluster,
+	GkeCluster: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleGkeHubMembership.GoogleGkeHubMembershipEndpointGkeCluster,
 }
 ```
 
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointGkeCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 &googlegkehubmembership.GoogleGkeHubMembershipEndpointGkeCluster {
 	ResourceLink: *string,
@@ -1131,7 +1131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 &googlegkehubmembership.GoogleGkeHubMembershipTimeouts {
 	Create: *string,
@@ -1193,7 +1193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipAuthorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 googlegkehubmembership.NewGoogleGkeHubMembershipAuthorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeHubMembershipAuthorityOutputReference
 ```
@@ -1464,7 +1464,7 @@ func InternalValue() GoogleGkeHubMembershipAuthority
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointGkeClusterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 googlegkehubmembership.NewGoogleGkeHubMembershipEndpointGkeClusterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeHubMembershipEndpointGkeClusterOutputReference
 ```
@@ -1735,7 +1735,7 @@ func InternalValue() GoogleGkeHubMembershipEndpointGkeCluster
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 googlegkehubmembership.NewGoogleGkeHubMembershipEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeHubMembershipEndpointOutputReference
 ```
@@ -2026,7 +2026,7 @@ func InternalValue() GoogleGkeHubMembershipEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlegkehubmembership"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubmembership"
 
 googlegkehubmembership.NewGoogleGkeHubMembershipTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleGkeHubMembershipTimeoutsOutputReference
 ```
