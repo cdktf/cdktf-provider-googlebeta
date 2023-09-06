@@ -1,6 +1,6 @@
 # `data_google_sql_databases`
 
-Refer to the Terraform Registory for docs: [`data_google_sql_databases`](https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_sql_databases).
+Refer to the Terraform Registory for docs: [`data_google_sql_databases`](https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_sql_databases).
 
 # `dataGoogleSqlDatabases` Submodule <a name="`dataGoogleSqlDatabases` Submodule" id="@cdktf/provider-google-beta.dataGoogleSqlDatabases"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_google_sql_databases`](https:/
 
 ### DataGoogleSqlDatabases <a name="DataGoogleSqlDatabases" id="@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabases"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_sql_databases google_sql_databases}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_sql_databases google_sql_databases}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesqldatabases"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabases"
 
 datagooglesqldatabases.NewDataGoogleSqlDatabases(scope Construct, id *string, config DataGoogleSqlDatabasesConfig) DataGoogleSqlDatabases
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabases.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesqldatabases"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabases"
 
 datagooglesqldatabases.DataGoogleSqlDatabases_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabases.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesqldatabases"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabases"
 
 datagooglesqldatabases.DataGoogleSqlDatabases_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagooglesqldatabases.DataGoogleSqlDatabases_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabases.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesqldatabases"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabases"
 
 datagooglesqldatabases.DataGoogleSqlDatabases_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesqldatabases"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabases"
 
 &datagooglesqldatabases.DataGoogleSqlDatabasesConfig {
 	Connection: interface{},
@@ -612,7 +612,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesq
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesConfig.property.instance">Instance</a></code> | <code>*string</code> | The name of the Cloud SQL database instance in which the database belongs. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_sql_databases#id DataGoogleSqlDatabases#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_sql_databases#id DataGoogleSqlDatabases#id}. |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesConfig.property.project">Project</a></code> | <code>*string</code> | Project ID of the project that contains the instance. |
 
 ---
@@ -697,7 +697,7 @@ Instance *string
 
 The name of the Cloud SQL database instance in which the database belongs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_sql_databases#instance DataGoogleSqlDatabases#instance}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_sql_databases#instance DataGoogleSqlDatabases#instance}
 
 ---
 
@@ -709,7 +709,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_sql_databases#id DataGoogleSqlDatabases#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_sql_databases#id DataGoogleSqlDatabases#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -726,7 +726,7 @@ Project *string
 
 Project ID of the project that contains the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_sql_databases#project DataGoogleSqlDatabases#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_sql_databases#project DataGoogleSqlDatabases#project}
 
 ---
 
@@ -735,7 +735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesqldatabases"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabases"
 
 &datagooglesqldatabases.DataGoogleSqlDatabasesDatabases {
 
@@ -750,7 +750,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesq
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesqldatabases"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabases"
 
 datagooglesqldatabases.NewDataGoogleSqlDatabasesDatabasesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSqlDatabasesDatabasesList
 ```
@@ -882,7 +882,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSqlDatabases.DataGoogleSqlDatabasesDatabasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesqldatabases"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesqldatabases"
 
 datagooglesqldatabases.NewDataGoogleSqlDatabasesDatabasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSqlDatabasesDatabasesOutputReference
 ```

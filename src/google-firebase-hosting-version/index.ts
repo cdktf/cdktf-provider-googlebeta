@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleFirebaseHostingVersionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#id GoogleFirebaseHostingVersion#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#id GoogleFirebaseHostingVersion#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface GoogleFirebaseHostingVersionConfig extends cdktf.TerraformMetaA
   /**
   * Required. The ID of the site in which to create this Version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#site_id GoogleFirebaseHostingVersion#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#site_id GoogleFirebaseHostingVersion#site_id}
   */
   readonly siteId: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#config GoogleFirebaseHostingVersion#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#config GoogleFirebaseHostingVersion#config}
   */
   readonly config?: GoogleFirebaseHostingVersionConfigA;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#timeouts GoogleFirebaseHostingVersion#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#timeouts GoogleFirebaseHostingVersion#timeouts}
   */
   readonly timeouts?: GoogleFirebaseHostingVersionTimeouts;
 }
@@ -42,7 +37,7 @@ export interface GoogleFirebaseHostingVersionConfigRedirects {
   /**
   * The user-supplied glob to match against the request URL path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
   */
   readonly glob?: string;
   /**
@@ -58,19 +53,19 @@ redirects {
 }
 ```
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#location GoogleFirebaseHostingVersion#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#location GoogleFirebaseHostingVersion#location}
   */
   readonly location: string;
   /**
   * The user-supplied RE2 regular expression to match against the request URL path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
   */
   readonly regex?: string;
   /**
   * The status HTTP code to return in the response. It must be a valid 3xx status code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#status_code GoogleFirebaseHostingVersion#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#status_code GoogleFirebaseHostingVersion#status_code}
   */
   readonly statusCode: number;
 }
@@ -232,13 +227,13 @@ export interface GoogleFirebaseHostingVersionConfigRewritesRun {
   /**
   * Optional. User-provided region where the Cloud Run service is hosted. Defaults to 'us-central1' if not supplied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#region GoogleFirebaseHostingVersion#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#region GoogleFirebaseHostingVersion#region}
   */
   readonly region?: string;
   /**
   * User-defined ID of the Cloud Run service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#service_id GoogleFirebaseHostingVersion#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#service_id GoogleFirebaseHostingVersion#service_id}
   */
   readonly serviceId: string;
 }
@@ -325,25 +320,25 @@ export interface GoogleFirebaseHostingVersionConfigRewrites {
   /**
   * The function to proxy requests to. Must match the exported function name exactly.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#function GoogleFirebaseHostingVersion#function}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#function GoogleFirebaseHostingVersion#function}
   */
   readonly function?: string;
   /**
   * The user-supplied glob to match against the request URL path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#glob GoogleFirebaseHostingVersion#glob}
   */
   readonly glob?: string;
   /**
   * The user-supplied RE2 regular expression to match against the request URL path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#regex GoogleFirebaseHostingVersion#regex}
   */
   readonly regex?: string;
   /**
   * run block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#run GoogleFirebaseHostingVersion#run}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#run GoogleFirebaseHostingVersion#run}
   */
   readonly run?: GoogleFirebaseHostingVersionConfigRewritesRun;
 }
@@ -511,13 +506,13 @@ export interface GoogleFirebaseHostingVersionConfigA {
   /**
   * redirects block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#redirects GoogleFirebaseHostingVersion#redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#redirects GoogleFirebaseHostingVersion#redirects}
   */
   readonly redirects?: GoogleFirebaseHostingVersionConfigRedirects[] | cdktf.IResolvable;
   /**
   * rewrites block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#rewrites GoogleFirebaseHostingVersion#rewrites}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#rewrites GoogleFirebaseHostingVersion#rewrites}
   */
   readonly rewrites?: GoogleFirebaseHostingVersionConfigRewrites[] | cdktf.IResolvable;
 }
@@ -605,11 +600,11 @@ export class GoogleFirebaseHostingVersionConfigAOutputReference extends cdktf.Co
 }
 export interface GoogleFirebaseHostingVersionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#create GoogleFirebaseHostingVersion#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#create GoogleFirebaseHostingVersion#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version#delete GoogleFirebaseHostingVersion#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version#delete GoogleFirebaseHostingVersion#delete}
   */
   readonly delete?: string;
 }
@@ -707,7 +702,7 @@ export class GoogleFirebaseHostingVersionTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version google_firebase_hosting_version}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version google_firebase_hosting_version}
 */
 export class GoogleFirebaseHostingVersion extends cdktf.TerraformResource {
 
@@ -721,7 +716,7 @@ export class GoogleFirebaseHostingVersion extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_hosting_version google_firebase_hosting_version} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_firebase_hosting_version google_firebase_hosting_version} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -732,7 +727,7 @@ export class GoogleFirebaseHostingVersion extends cdktf.TerraformResource {
       terraformResourceType: 'google_firebase_hosting_version',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.80.0',
+        providerVersion: '4.81.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

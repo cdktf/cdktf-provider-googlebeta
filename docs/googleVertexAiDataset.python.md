@@ -1,6 +1,6 @@
 # `google_vertex_ai_dataset`
 
-Refer to the Terraform Registory for docs: [`google_vertex_ai_dataset`](https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset).
+Refer to the Terraform Registory for docs: [`google_vertex_ai_dataset`](https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset).
 
 # `googleVertexAiDataset` Submodule <a name="`googleVertexAiDataset` Submodule" id="@cdktf/provider-google-beta.googleVertexAiDataset"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_vertex_ai_dataset`](https://
 
 ### GoogleVertexAiDataset <a name="GoogleVertexAiDataset" id="@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer"></a>
 
@@ -50,9 +50,9 @@ googleVertexAiDataset.GoogleVertexAiDataset(
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer.parameter.displayName">display_name</a></code> | <code>str</code> | The user-defined name of the Dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer.parameter.metadataSchemaUri">metadata_schema_uri</a></code> | <code>str</code> | Points to a YAML file stored on Google Cloud Storage describing additional information about the Dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer.parameter.encryptionSpec">encryption_spec</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetEncryptionSpec">GoogleVertexAiDatasetEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#id GoogleVertexAiDataset#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#id GoogleVertexAiDataset#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | A set of key/value label pairs to assign to this Workflow. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#project GoogleVertexAiDataset#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#project GoogleVertexAiDataset#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer.parameter.region">region</a></code> | <code>str</code> | The region of the dataset. eg us-central1. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDataset.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeouts">GoogleVertexAiDatasetTimeouts</a></code> | timeouts block. |
 
@@ -126,7 +126,7 @@ The user-defined name of the Dataset.
 
 The name can be up to 128 characters long and can be consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#display_name GoogleVertexAiDataset#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#display_name GoogleVertexAiDataset#display_name}
 
 ---
 
@@ -138,7 +138,7 @@ Points to a YAML file stored on Google Cloud Storage describing additional infor
 
 The schema is defined as an OpenAPI 3.0.2 Schema Object. The schema files that can be used here are found in gs://google-cloud-aiplatform/schema/dataset/metadata/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#metadata_schema_uri GoogleVertexAiDataset#metadata_schema_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#metadata_schema_uri GoogleVertexAiDataset#metadata_schema_uri}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#encryption_spec GoogleVertexAiDataset#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#encryption_spec GoogleVertexAiDataset#encryption_spec}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#id GoogleVertexAiDataset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#id GoogleVertexAiDataset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A set of key/value label pairs to assign to this Workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#labels GoogleVertexAiDataset#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#labels GoogleVertexAiDataset#labels}
 
 ---
 
@@ -177,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#project GoogleVertexAiDataset#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#project GoogleVertexAiDataset#project}.
 
 ---
 
@@ -187,7 +187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The region of the dataset. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#region GoogleVertexAiDataset#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#region GoogleVertexAiDataset#region}
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#timeouts GoogleVertexAiDataset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#timeouts GoogleVertexAiDataset#timeouts}
 
 ---
 
@@ -458,7 +458,7 @@ Required.
 The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource.
 Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#kms_key_name GoogleVertexAiDataset#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#kms_key_name GoogleVertexAiDataset#kms_key_name}
 
 ---
 
@@ -476,7 +476,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#create GoogleVertexAiDataset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#create GoogleVertexAiDataset#create}.
 
 ---
 
@@ -484,7 +484,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#delete GoogleVertexAiDataset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#delete GoogleVertexAiDataset#delete}.
 
 ---
 
@@ -492,7 +492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#update GoogleVertexAiDataset#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#update GoogleVertexAiDataset#update}.
 
 ---
 
@@ -1040,9 +1040,9 @@ googleVertexAiDataset.GoogleVertexAiDatasetConfig(
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig.property.displayName">display_name</a></code> | <code>str</code> | The user-defined name of the Dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig.property.metadataSchemaUri">metadata_schema_uri</a></code> | <code>str</code> | Points to a YAML file stored on Google Cloud Storage describing additional information about the Dataset. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig.property.encryptionSpec">encryption_spec</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetEncryptionSpec">GoogleVertexAiDatasetEncryptionSpec</a></code> | encryption_spec block. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#id GoogleVertexAiDataset#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#id GoogleVertexAiDataset#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | A set of key/value label pairs to assign to this Workflow. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#project GoogleVertexAiDataset#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#project GoogleVertexAiDataset#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig.property.region">region</a></code> | <code>str</code> | The region of the dataset. eg us-central1. |
 | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeouts">GoogleVertexAiDatasetTimeouts</a></code> | timeouts block. |
 
@@ -1130,7 +1130,7 @@ The user-defined name of the Dataset.
 
 The name can be up to 128 characters long and can be consist of any UTF-8 characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#display_name GoogleVertexAiDataset#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#display_name GoogleVertexAiDataset#display_name}
 
 ---
 
@@ -1146,7 +1146,7 @@ Points to a YAML file stored on Google Cloud Storage describing additional infor
 
 The schema is defined as an OpenAPI 3.0.2 Schema Object. The schema files that can be used here are found in gs://google-cloud-aiplatform/schema/dataset/metadata/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#metadata_schema_uri GoogleVertexAiDataset#metadata_schema_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#metadata_schema_uri GoogleVertexAiDataset#metadata_schema_uri}
 
 ---
 
@@ -1160,7 +1160,7 @@ encryption_spec: GoogleVertexAiDatasetEncryptionSpec
 
 encryption_spec block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#encryption_spec GoogleVertexAiDataset#encryption_spec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#encryption_spec GoogleVertexAiDataset#encryption_spec}
 
 ---
 
@@ -1172,7 +1172,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#id GoogleVertexAiDataset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#id GoogleVertexAiDataset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1189,7 +1189,7 @@ labels: typing.Mapping[str]
 
 A set of key/value label pairs to assign to this Workflow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#labels GoogleVertexAiDataset#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#labels GoogleVertexAiDataset#labels}
 
 ---
 
@@ -1201,7 +1201,7 @@ project: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#project GoogleVertexAiDataset#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#project GoogleVertexAiDataset#project}.
 
 ---
 
@@ -1215,7 +1215,7 @@ region: str
 
 The region of the dataset. eg us-central1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#region GoogleVertexAiDataset#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#region GoogleVertexAiDataset#region}
 
 ---
 
@@ -1229,7 +1229,7 @@ timeouts: GoogleVertexAiDatasetTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#timeouts GoogleVertexAiDataset#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#timeouts GoogleVertexAiDataset#timeouts}
 
 ---
 
@@ -1266,7 +1266,7 @@ Required.
 The Cloud KMS resource identifier of the customer managed encryption key used to protect a resource.
 Has the form: projects/my-project/locations/my-region/keyRings/my-kr/cryptoKeys/my-key. The key needs to be in the same region as where the resource is created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#kms_key_name GoogleVertexAiDataset#kms_key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#kms_key_name GoogleVertexAiDataset#kms_key_name}
 
 ---
 
@@ -1288,9 +1288,9 @@ googleVertexAiDataset.GoogleVertexAiDatasetTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#create GoogleVertexAiDataset#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#delete GoogleVertexAiDataset#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#update GoogleVertexAiDataset#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#create GoogleVertexAiDataset#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#delete GoogleVertexAiDataset#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleVertexAiDataset.GoogleVertexAiDatasetTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#update GoogleVertexAiDataset#update}. |
 
 ---
 
@@ -1302,7 +1302,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#create GoogleVertexAiDataset#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#create GoogleVertexAiDataset#create}.
 
 ---
 
@@ -1314,7 +1314,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#delete GoogleVertexAiDataset#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#delete GoogleVertexAiDataset#delete}.
 
 ---
 
@@ -1326,7 +1326,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_vertex_ai_dataset#update GoogleVertexAiDataset#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_vertex_ai_dataset#update GoogleVertexAiDataset#update}.
 
 ---
 
