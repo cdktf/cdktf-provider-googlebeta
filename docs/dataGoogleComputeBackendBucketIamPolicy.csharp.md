@@ -1,6 +1,6 @@
 # `data_google_compute_backend_bucket_iam_policy`
 
-Refer to the Terraform Registory for docs: [`data_google_compute_backend_bucket_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_compute_backend_bucket_iam_policy).
+Refer to the Terraform Registory for docs: [`data_google_compute_backend_bucket_iam_policy`](https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/data-sources/google_compute_backend_bucket_iam_policy).
 
 # `dataGoogleComputeBackendBucketIamPolicy` Submodule <a name="`dataGoogleComputeBackendBucketIamPolicy` Submodule" id="@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_google_compute_backend_bucket_
 
 ### DataGoogleComputeBackendBucketIamPolicy <a name="DataGoogleComputeBackendBucketIamPolicy" id="@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_compute_backend_bucket_iam_policy google_compute_backend_bucket_iam_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/data-sources/google_compute_backend_bucket_iam_policy google_compute_backend_bucket_iam_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicy.Initializer"></a>
 
@@ -622,9 +622,9 @@ new DataGoogleComputeBackendBucketIamPolicyConfig {
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_compute_backend_bucket_iam_policy#name DataGoogleComputeBackendBucketIamPolicy#name}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_compute_backend_bucket_iam_policy#id DataGoogleComputeBackendBucketIamPolicy#id}. |
-| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_compute_backend_bucket_iam_policy#project DataGoogleComputeBackendBucketIamPolicy#project}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicyConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/data-sources/google_compute_backend_bucket_iam_policy#name DataGoogleComputeBackendBucketIamPolicy#name}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/data-sources/google_compute_backend_bucket_iam_policy#id DataGoogleComputeBackendBucketIamPolicy#id}. |
+| <code><a href="#@cdktf/provider-google-beta.dataGoogleComputeBackendBucketIamPolicy.DataGoogleComputeBackendBucketIamPolicyConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/data-sources/google_compute_backend_bucket_iam_policy#project DataGoogleComputeBackendBucketIamPolicy#project}. |
 
 ---
 
@@ -706,7 +706,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_compute_backend_bucket_iam_policy#name DataGoogleComputeBackendBucketIamPolicy#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/data-sources/google_compute_backend_bucket_iam_policy#name DataGoogleComputeBackendBucketIamPolicy#name}.
 
 ---
 
@@ -718,7 +718,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_compute_backend_bucket_iam_policy#id DataGoogleComputeBackendBucketIamPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/data-sources/google_compute_backend_bucket_iam_policy#id DataGoogleComputeBackendBucketIamPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -733,7 +733,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_compute_backend_bucket_iam_policy#project DataGoogleComputeBackendBucketIamPolicy#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/data-sources/google_compute_backend_bucket_iam_policy#project DataGoogleComputeBackendBucketIamPolicy#project}.
 
 ---
 
