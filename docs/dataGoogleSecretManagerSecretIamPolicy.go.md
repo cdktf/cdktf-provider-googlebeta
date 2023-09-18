@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagersecretiampolicy"
 
 datagooglesecretmanagersecretiampolicy.NewDataGoogleSecretManagerSecretIamPolicy(scope Construct, id *string, config DataGoogleSecretManagerSecretIamPolicyConfig) DataGoogleSecretManagerSecretIamPolicy
 ```
@@ -284,7 +284,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagersecretiampolicy"
 
 datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagersecretiampolicy"
 
 datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicy_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google-beta.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagersecretiampolicy"
 
 datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/datagooglesecretmanagersecretiampolicy"
 
 &datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicyConfig {
 	Connection: interface{},
