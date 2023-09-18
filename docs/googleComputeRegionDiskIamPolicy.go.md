@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputeregiondiskiampolicy"
 
 googlecomputeregiondiskiampolicy.NewGoogleComputeRegionDiskIamPolicy(scope Construct, id *string, config GoogleComputeRegionDiskIamPolicyConfig) GoogleComputeRegionDiskIamPolicy
 ```
@@ -291,7 +291,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputeregiondiskiampolicy"
 
 googlecomputeregiondiskiampolicy.GoogleComputeRegionDiskIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputeregiondiskiampolicy"
 
 googlecomputeregiondiskiampolicy.GoogleComputeRegionDiskIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ googlecomputeregiondiskiampolicy.GoogleComputeRegionDiskIamPolicy_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputeregiondiskiampolicy"
 
 googlecomputeregiondiskiampolicy.GoogleComputeRegionDiskIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleComputeRegionDiskIamPolicy.GoogleComputeRegionDiskIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecomputeregiondiskiampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputeregiondiskiampolicy"
 
 &googlecomputeregiondiskiampolicy.GoogleComputeRegionDiskIamPolicyConfig {
 	Connection: interface{},
