@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleApigeeSharedflowConfig extends cdktf.TerraformMetaArgumen
   /**
   * Path to the config zip bundle
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow#config_bundle GoogleApigeeSharedflow#config_bundle}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow#config_bundle GoogleApigeeSharedflow#config_bundle}
   */
   readonly configBundle: string;
   /**
   * A hash of local config bundle in string, user needs to use a Terraform Hash function of their choice. A change in hash will trigger an update.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow#detect_md5hash GoogleApigeeSharedflow#detect_md5hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow#detect_md5hash GoogleApigeeSharedflow#detect_md5hash}
   */
   readonly detectMd5Hash?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow#id GoogleApigeeSharedflow#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow#id GoogleApigeeSharedflow#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface GoogleApigeeSharedflowConfig extends cdktf.TerraformMetaArgumen
   /**
   * The ID of the shared flow.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow#name GoogleApigeeSharedflow#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow#name GoogleApigeeSharedflow#name}
   */
   readonly name: string;
   /**
   * The Apigee Organization name associated with the Apigee instance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow#org_id GoogleApigeeSharedflow#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow#org_id GoogleApigeeSharedflow#org_id}
   */
   readonly orgId: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow#timeouts GoogleApigeeSharedflow#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow#timeouts GoogleApigeeSharedflow#timeouts}
   */
   readonly timeouts?: GoogleApigeeSharedflowTimeouts;
 }
@@ -126,15 +126,15 @@ export class GoogleApigeeSharedflowMetaDataList extends cdktf.ComplexList {
 }
 export interface GoogleApigeeSharedflowTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow#create GoogleApigeeSharedflow#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow#create GoogleApigeeSharedflow#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow#delete GoogleApigeeSharedflow#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow#delete GoogleApigeeSharedflow#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow#update GoogleApigeeSharedflow#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow#update GoogleApigeeSharedflow#update}
   */
   readonly update?: string;
 }
@@ -255,7 +255,7 @@ export class GoogleApigeeSharedflowTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow}
 */
 export class GoogleApigeeSharedflow extends cdktf.TerraformResource {
 
@@ -269,7 +269,7 @@ export class GoogleApigeeSharedflow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -280,7 +280,7 @@ export class GoogleApigeeSharedflow extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_sharedflow',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.82.0',
+        providerVersion: '4.83.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

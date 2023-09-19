@@ -1,6 +1,6 @@
 # `google_gkeonprem_bare_metal_cluster`
 
-Refer to the Terraform Registory for docs: [`google_gkeonprem_bare_metal_cluster`](https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster).
+Refer to the Terraform Registory for docs: [`google_gkeonprem_bare_metal_cluster`](https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster).
 
 # `googleGkeonpremBareMetalCluster` Submodule <a name="`googleGkeonpremBareMetalCluster` Submodule" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_gkeonprem_bare_metal_cluster
 
 ### GoogleGkeonpremBareMetalCluster <a name="GoogleGkeonpremBareMetalCluster" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster google_gkeonprem_bare_metal_cluster}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.Initializer"></a>
 
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putBinaryAuthorization">PutBinaryAuthorization</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putClusterOperations">PutClusterOperations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putControlPlane">PutControlPlane</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putLoadBalancer">PutLoadBalancer</a></code> | *No description.* |
@@ -82,7 +83,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putSecurityConfig">PutSecurityConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putStorage">PutStorage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putUpgradePolicy">PutUpgradePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetAnnotations">ResetAnnotations</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetBinaryAuthorization">ResetBinaryAuthorization</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetClusterOperations">ResetClusterOperations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetId">ResetId</a></code> | *No description.* |
@@ -94,6 +97,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetProxy">ResetProxy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetSecurityConfig">ResetSecurityConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetUpgradePolicy">ResetUpgradePolicy</a></code> | *No description.* |
 
 ---
 
@@ -281,6 +285,18 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `PutBinaryAuthorization` <a name="PutBinaryAuthorization" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putBinaryAuthorization"></a>
+
+```csharp
+private void PutBinaryAuthorization(GoogleGkeonpremBareMetalClusterBinaryAuthorization Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putBinaryAuthorization.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization">GoogleGkeonpremBareMetalClusterBinaryAuthorization</a>
+
+---
+
 ##### `PutClusterOperations` <a name="PutClusterOperations" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putClusterOperations"></a>
 
 ```csharp
@@ -425,10 +441,28 @@ private void PutTimeouts(GoogleGkeonpremBareMetalClusterTimeouts Value)
 
 ---
 
+##### `PutUpgradePolicy` <a name="PutUpgradePolicy" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putUpgradePolicy"></a>
+
+```csharp
+private void PutUpgradePolicy(GoogleGkeonpremBareMetalClusterUpgradePolicy Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.putUpgradePolicy.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy">GoogleGkeonpremBareMetalClusterUpgradePolicy</a>
+
+---
+
 ##### `ResetAnnotations` <a name="ResetAnnotations" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetAnnotations"></a>
 
 ```csharp
 private void ResetAnnotations()
+```
+
+##### `ResetBinaryAuthorization` <a name="ResetBinaryAuthorization" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetBinaryAuthorization"></a>
+
+```csharp
+private void ResetBinaryAuthorization()
 ```
 
 ##### `ResetClusterOperations` <a name="ResetClusterOperations" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetClusterOperations"></a>
@@ -495,6 +529,12 @@ private void ResetSecurityConfig()
 
 ```csharp
 private void ResetTimeouts()
+```
+
+##### `ResetUpgradePolicy` <a name="ResetUpgradePolicy" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.resetUpgradePolicy"></a>
+
+```csharp
+private void ResetUpgradePolicy()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -585,6 +625,7 @@ GoogleGkeonpremBareMetalCluster.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.binaryAuthorization">BinaryAuthorization</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference">GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.clusterOperations">ClusterOperations</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference">GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.controlPlane">ControlPlane</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneOutputReference">GoogleGkeonpremBareMetalClusterControlPlaneOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.createTime">CreateTime</a></code> | <code>string</code> | *No description.* |
@@ -608,10 +649,12 @@ GoogleGkeonpremBareMetalCluster.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterTimeoutsOutputReference">GoogleGkeonpremBareMetalClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.uid">Uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.updateTime">UpdateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.upgradePolicy">UpgradePolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference">GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.validationCheck">ValidationCheck</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterValidationCheckList">GoogleGkeonpremBareMetalClusterValidationCheckList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.adminClusterMembershipInput">AdminClusterMembershipInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.annotationsInput">AnnotationsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.bareMetalVersionInput">BareMetalVersionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.binaryAuthorizationInput">BinaryAuthorizationInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization">GoogleGkeonpremBareMetalClusterBinaryAuthorization</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.clusterOperationsInput">ClusterOperationsInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterClusterOperations">GoogleGkeonpremBareMetalClusterClusterOperations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.controlPlaneInput">ControlPlaneInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlane">GoogleGkeonpremBareMetalClusterControlPlane</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
@@ -629,6 +672,7 @@ GoogleGkeonpremBareMetalCluster.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.securityConfigInput">SecurityConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterSecurityConfig">GoogleGkeonpremBareMetalClusterSecurityConfig</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.storageInput">StorageInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterStorage">GoogleGkeonpremBareMetalClusterStorage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.upgradePolicyInput">UpgradePolicyInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy">GoogleGkeonpremBareMetalClusterUpgradePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.adminClusterMembership">AdminClusterMembership</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.annotations">Annotations</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.bareMetalVersion">BareMetalVersion</a></code> | <code>string</code> | *No description.* |
@@ -779,6 +823,16 @@ public object[] Provisioners { get; }
 ```
 
 - *Type:* object[]
+
+---
+
+##### `BinaryAuthorization`<sup>Required</sup> <a name="BinaryAuthorization" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.binaryAuthorization"></a>
+
+```csharp
+public GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference BinaryAuthorization { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference">GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference</a>
 
 ---
 
@@ -1012,6 +1066,16 @@ public string UpdateTime { get; }
 
 ---
 
+##### `UpgradePolicy`<sup>Required</sup> <a name="UpgradePolicy" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.upgradePolicy"></a>
+
+```csharp
+public GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference UpgradePolicy { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference">GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference</a>
+
+---
+
 ##### `ValidationCheck`<sup>Required</sup> <a name="ValidationCheck" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.validationCheck"></a>
 
 ```csharp
@@ -1049,6 +1113,16 @@ public string BareMetalVersionInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `BinaryAuthorizationInput`<sup>Optional</sup> <a name="BinaryAuthorizationInput" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.binaryAuthorizationInput"></a>
+
+```csharp
+public GoogleGkeonpremBareMetalClusterBinaryAuthorization BinaryAuthorizationInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization">GoogleGkeonpremBareMetalClusterBinaryAuthorization</a>
 
 ---
 
@@ -1222,6 +1296,16 @@ public object TimeoutsInput { get; }
 
 ---
 
+##### `UpgradePolicyInput`<sup>Optional</sup> <a name="UpgradePolicyInput" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.upgradePolicyInput"></a>
+
+```csharp
+public GoogleGkeonpremBareMetalClusterUpgradePolicy UpgradePolicyInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy">GoogleGkeonpremBareMetalClusterUpgradePolicy</a>
+
+---
+
 ##### `AdminClusterMembership`<sup>Required</sup> <a name="AdminClusterMembership" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalCluster.property.adminClusterMembership"></a>
 
 ```csharp
@@ -1322,6 +1406,40 @@ public string TfResourceType { get; }
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### GoogleGkeonpremBareMetalClusterBinaryAuthorization <a name="GoogleGkeonpremBareMetalClusterBinaryAuthorization" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GoogleGkeonpremBareMetalClusterBinaryAuthorization {
+    string EvaluationMode = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization.property.evaluationMode">EvaluationMode</a></code> | <code>string</code> | Mode of operation for binauthz policy evaluation. If unspecified, defaults to DISABLED. Possible values: ["DISABLED", "PROJECT_SINGLETON_POLICY_ENFORCE"]. |
+
+---
+
+##### `EvaluationMode`<sup>Optional</sup> <a name="EvaluationMode" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization.property.evaluationMode"></a>
+
+```csharp
+public string EvaluationMode { get; set; }
+```
+
+- *Type:* string
+
+Mode of operation for binauthz policy evaluation. If unspecified, defaults to DISABLED. Possible values: ["DISABLED", "PROJECT_SINGLETON_POLICY_ENFORCE"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#evaluation_mode GoogleGkeonpremBareMetalCluster#evaluation_mode}
+
+---
+
 ### GoogleGkeonpremBareMetalClusterClusterOperations <a name="GoogleGkeonpremBareMetalClusterClusterOperations" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterClusterOperations"></a>
 
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterClusterOperations.Initializer"></a>
@@ -1352,7 +1470,7 @@ public object EnableApplicationLogs { get; set; }
 
 Whether collection of application logs/metrics should be enabled (in addition to system logs/metrics).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#enable_application_logs GoogleGkeonpremBareMetalCluster#enable_application_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#enable_application_logs GoogleGkeonpremBareMetalCluster#enable_application_logs}
 
 ---
 
@@ -1380,6 +1498,7 @@ new GoogleGkeonpremBareMetalClusterConfig {
     GoogleGkeonpremBareMetalClusterNetworkConfig NetworkConfig,
     GoogleGkeonpremBareMetalClusterStorage Storage,
     System.Collections.Generic.IDictionary<string, string> Annotations = null,
+    GoogleGkeonpremBareMetalClusterBinaryAuthorization BinaryAuthorization = null,
     GoogleGkeonpremBareMetalClusterClusterOperations ClusterOperations = null,
     string Description = null,
     string Id = null,
@@ -1390,7 +1509,8 @@ new GoogleGkeonpremBareMetalClusterConfig {
     string Project = null,
     GoogleGkeonpremBareMetalClusterProxy Proxy = null,
     GoogleGkeonpremBareMetalClusterSecurityConfig SecurityConfig = null,
-    GoogleGkeonpremBareMetalClusterTimeouts Timeouts = null
+    GoogleGkeonpremBareMetalClusterTimeouts Timeouts = null,
+    GoogleGkeonpremBareMetalClusterUpgradePolicy UpgradePolicy = null
 };
 ```
 
@@ -1414,17 +1534,19 @@ new GoogleGkeonpremBareMetalClusterConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.networkConfig">NetworkConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNetworkConfig">GoogleGkeonpremBareMetalClusterNetworkConfig</a></code> | network_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.storage">Storage</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterStorage">GoogleGkeonpremBareMetalClusterStorage</a></code> | storage block. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.annotations">Annotations</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Annotations on the Bare Metal User Cluster. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.binaryAuthorization">BinaryAuthorization</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization">GoogleGkeonpremBareMetalClusterBinaryAuthorization</a></code> | binary_authorization block. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.clusterOperations">ClusterOperations</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterClusterOperations">GoogleGkeonpremBareMetalClusterClusterOperations</a></code> | cluster_operations block. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.description">Description</a></code> | <code>string</code> | A human readable description of this Bare Metal User Cluster. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#id GoogleGkeonpremBareMetalCluster#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#id GoogleGkeonpremBareMetalCluster#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.maintenanceConfig">MaintenanceConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterMaintenanceConfig">GoogleGkeonpremBareMetalClusterMaintenanceConfig</a></code> | maintenance_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.nodeAccessConfig">NodeAccessConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNodeAccessConfig">GoogleGkeonpremBareMetalClusterNodeAccessConfig</a></code> | node_access_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.nodeConfig">NodeConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterNodeConfig">GoogleGkeonpremBareMetalClusterNodeConfig</a></code> | node_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.osEnvironmentConfig">OsEnvironmentConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterOsEnvironmentConfig">GoogleGkeonpremBareMetalClusterOsEnvironmentConfig</a></code> | os_environment_config block. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#project GoogleGkeonpremBareMetalCluster#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.project">Project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#project GoogleGkeonpremBareMetalCluster#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.proxy">Proxy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterProxy">GoogleGkeonpremBareMetalClusterProxy</a></code> | proxy block. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.securityConfig">SecurityConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterSecurityConfig">GoogleGkeonpremBareMetalClusterSecurityConfig</a></code> | security_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterTimeouts">GoogleGkeonpremBareMetalClusterTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.upgradePolicy">UpgradePolicy</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy">GoogleGkeonpremBareMetalClusterUpgradePolicy</a></code> | upgrade_policy block. |
 
 ---
 
@@ -1510,7 +1632,7 @@ The Admin Cluster this Bare Metal User Cluster belongs to.
 
 This is the full resource name of the Admin Cluster's hub membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#admin_cluster_membership GoogleGkeonpremBareMetalCluster#admin_cluster_membership}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#admin_cluster_membership GoogleGkeonpremBareMetalCluster#admin_cluster_membership}
 
 ---
 
@@ -1524,7 +1646,7 @@ public string BareMetalVersion { get; set; }
 
 A human readable description of this Bare Metal User Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#bare_metal_version GoogleGkeonpremBareMetalCluster#bare_metal_version}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#bare_metal_version GoogleGkeonpremBareMetalCluster#bare_metal_version}
 
 ---
 
@@ -1538,7 +1660,7 @@ public GoogleGkeonpremBareMetalClusterControlPlane ControlPlane { get; set; }
 
 control_plane block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane GoogleGkeonpremBareMetalCluster#control_plane}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane GoogleGkeonpremBareMetalCluster#control_plane}
 
 ---
 
@@ -1552,7 +1674,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancer LoadBalancer { get; set; }
 
 load_balancer block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#load_balancer GoogleGkeonpremBareMetalCluster#load_balancer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#load_balancer GoogleGkeonpremBareMetalCluster#load_balancer}
 
 ---
 
@@ -1566,7 +1688,7 @@ public string Location { get; set; }
 
 The location of the resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#location GoogleGkeonpremBareMetalCluster#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#location GoogleGkeonpremBareMetalCluster#location}
 
 ---
 
@@ -1580,7 +1702,7 @@ public string Name { get; set; }
 
 The bare metal cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#name GoogleGkeonpremBareMetalCluster#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#name GoogleGkeonpremBareMetalCluster#name}
 
 ---
 
@@ -1594,7 +1716,7 @@ public GoogleGkeonpremBareMetalClusterNetworkConfig NetworkConfig { get; set; }
 
 network_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#network_config GoogleGkeonpremBareMetalCluster#network_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#network_config GoogleGkeonpremBareMetalCluster#network_config}
 
 ---
 
@@ -1608,7 +1730,7 @@ public GoogleGkeonpremBareMetalClusterStorage Storage { get; set; }
 
 storage block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#storage GoogleGkeonpremBareMetalCluster#storage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#storage GoogleGkeonpremBareMetalCluster#storage}
 
 ---
 
@@ -1630,7 +1752,21 @@ Prefix must be a DNS subdomain.
 Name must be 63 characters or less, begin and end with alphanumerics,
 with dashes (-), underscores (_), dots (.), and alphanumerics between.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#annotations GoogleGkeonpremBareMetalCluster#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#annotations GoogleGkeonpremBareMetalCluster#annotations}
+
+---
+
+##### `BinaryAuthorization`<sup>Optional</sup> <a name="BinaryAuthorization" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.binaryAuthorization"></a>
+
+```csharp
+public GoogleGkeonpremBareMetalClusterBinaryAuthorization BinaryAuthorization { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization">GoogleGkeonpremBareMetalClusterBinaryAuthorization</a>
+
+binary_authorization block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#binary_authorization GoogleGkeonpremBareMetalCluster#binary_authorization}
 
 ---
 
@@ -1644,7 +1780,7 @@ public GoogleGkeonpremBareMetalClusterClusterOperations ClusterOperations { get;
 
 cluster_operations block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#cluster_operations GoogleGkeonpremBareMetalCluster#cluster_operations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#cluster_operations GoogleGkeonpremBareMetalCluster#cluster_operations}
 
 ---
 
@@ -1658,7 +1794,7 @@ public string Description { get; set; }
 
 A human readable description of this Bare Metal User Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#description GoogleGkeonpremBareMetalCluster#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#description GoogleGkeonpremBareMetalCluster#description}
 
 ---
 
@@ -1670,7 +1806,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#id GoogleGkeonpremBareMetalCluster#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#id GoogleGkeonpremBareMetalCluster#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1687,7 +1823,7 @@ public GoogleGkeonpremBareMetalClusterMaintenanceConfig MaintenanceConfig { get;
 
 maintenance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#maintenance_config GoogleGkeonpremBareMetalCluster#maintenance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#maintenance_config GoogleGkeonpremBareMetalCluster#maintenance_config}
 
 ---
 
@@ -1701,7 +1837,7 @@ public GoogleGkeonpremBareMetalClusterNodeAccessConfig NodeAccessConfig { get; s
 
 node_access_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_access_config GoogleGkeonpremBareMetalCluster#node_access_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_access_config GoogleGkeonpremBareMetalCluster#node_access_config}
 
 ---
 
@@ -1715,7 +1851,7 @@ public GoogleGkeonpremBareMetalClusterNodeConfig NodeConfig { get; set; }
 
 node_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_config GoogleGkeonpremBareMetalCluster#node_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_config GoogleGkeonpremBareMetalCluster#node_config}
 
 ---
 
@@ -1729,7 +1865,7 @@ public GoogleGkeonpremBareMetalClusterOsEnvironmentConfig OsEnvironmentConfig { 
 
 os_environment_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#os_environment_config GoogleGkeonpremBareMetalCluster#os_environment_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#os_environment_config GoogleGkeonpremBareMetalCluster#os_environment_config}
 
 ---
 
@@ -1741,7 +1877,7 @@ public string Project { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#project GoogleGkeonpremBareMetalCluster#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#project GoogleGkeonpremBareMetalCluster#project}.
 
 ---
 
@@ -1755,7 +1891,7 @@ public GoogleGkeonpremBareMetalClusterProxy Proxy { get; set; }
 
 proxy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#proxy GoogleGkeonpremBareMetalCluster#proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#proxy GoogleGkeonpremBareMetalCluster#proxy}
 
 ---
 
@@ -1769,7 +1905,7 @@ public GoogleGkeonpremBareMetalClusterSecurityConfig SecurityConfig { get; set; 
 
 security_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#security_config GoogleGkeonpremBareMetalCluster#security_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#security_config GoogleGkeonpremBareMetalCluster#security_config}
 
 ---
 
@@ -1783,7 +1919,21 @@ public GoogleGkeonpremBareMetalClusterTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#timeouts GoogleGkeonpremBareMetalCluster#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#timeouts GoogleGkeonpremBareMetalCluster#timeouts}
+
+---
+
+##### `UpgradePolicy`<sup>Optional</sup> <a name="UpgradePolicy" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterConfig.property.upgradePolicy"></a>
+
+```csharp
+public GoogleGkeonpremBareMetalClusterUpgradePolicy UpgradePolicy { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy">GoogleGkeonpremBareMetalClusterUpgradePolicy</a>
+
+upgrade_policy block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#upgrade_policy GoogleGkeonpremBareMetalCluster#upgrade_policy}
 
 ---
 
@@ -1819,7 +1969,7 @@ public GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfig Con
 
 control_plane_node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane_node_pool_config GoogleGkeonpremBareMetalCluster#control_plane_node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane_node_pool_config GoogleGkeonpremBareMetalCluster#control_plane_node_pool_config}
 
 ---
 
@@ -1833,7 +1983,7 @@ public object ApiServerArgs { get; set; }
 
 api_server_args block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#api_server_args GoogleGkeonpremBareMetalCluster#api_server_args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#api_server_args GoogleGkeonpremBareMetalCluster#api_server_args}
 
 ---
 
@@ -1869,7 +2019,7 @@ public string Argument { get; set; }
 
 The argument name as it appears on the API Server command line please make sure to remove the leading dashes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#argument GoogleGkeonpremBareMetalCluster#argument}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#argument GoogleGkeonpremBareMetalCluster#argument}
 
 ---
 
@@ -1883,7 +2033,7 @@ public string Value { get; set; }
 
 The value of the arg as it will be passed to the API Server command line.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#value GoogleGkeonpremBareMetalCluster#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#value GoogleGkeonpremBareMetalCluster#value}
 
 ---
 
@@ -1917,7 +2067,7 @@ public GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfigNode
 
 node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_pool_config GoogleGkeonpremBareMetalCluster#node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_pool_config GoogleGkeonpremBareMetalCluster#node_pool_config}
 
 ---
 
@@ -1967,7 +2117,7 @@ http://kubernetes.io/v1.1/docs/user-guide/labels.html
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
 
 ---
 
@@ -1981,7 +2131,7 @@ public object NodeConfigs { get; set; }
 
 node_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_configs GoogleGkeonpremBareMetalCluster#node_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_configs GoogleGkeonpremBareMetalCluster#node_configs}
 
 ---
 
@@ -1995,7 +2145,7 @@ public string OperatingSystem { get; set; }
 
 Specifies the nodes operating system (default: LINUX).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#operating_system GoogleGkeonpremBareMetalCluster#operating_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#operating_system GoogleGkeonpremBareMetalCluster#operating_system}
 
 ---
 
@@ -2009,7 +2159,7 @@ public object Taints { get; set; }
 
 taints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#taints GoogleGkeonpremBareMetalCluster#taints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#taints GoogleGkeonpremBareMetalCluster#taints}
 
 ---
 
@@ -2055,7 +2205,7 @@ http://kubernetes.io/v1.1/docs/user-guide/labels.html
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
 
 ---
 
@@ -2069,7 +2219,7 @@ public string NodeIp { get; set; }
 
 The default IPv4 address for SSH access and Kubernetes node. Example: 192.168.0.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_ip GoogleGkeonpremBareMetalCluster#node_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_ip GoogleGkeonpremBareMetalCluster#node_ip}
 
 ---
 
@@ -2107,7 +2257,7 @@ public string Effect { get; set; }
 
 Specifies the nodes operating system (default: LINUX). Possible values: ["EFFECT_UNSPECIFIED", "PREFER_NO_SCHEDULE", "NO_EXECUTE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#effect GoogleGkeonpremBareMetalCluster#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#effect GoogleGkeonpremBareMetalCluster#effect}
 
 ---
 
@@ -2121,7 +2271,7 @@ public string Key { get; set; }
 
 Key associated with the effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#key GoogleGkeonpremBareMetalCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#key GoogleGkeonpremBareMetalCluster#key}
 
 ---
 
@@ -2135,7 +2285,7 @@ public string Value { get; set; }
 
 Value associated with the effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#value GoogleGkeonpremBareMetalCluster#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#value GoogleGkeonpremBareMetalCluster#value}
 
 ---
 
@@ -2190,7 +2340,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancerPortConfig PortConfig { get; s
 
 port_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#port_config GoogleGkeonpremBareMetalCluster#port_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#port_config GoogleGkeonpremBareMetalCluster#port_config}
 
 ---
 
@@ -2204,7 +2354,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancerVipConfig VipConfig { get; set
 
 vip_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#vip_config GoogleGkeonpremBareMetalCluster#vip_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#vip_config GoogleGkeonpremBareMetalCluster#vip_config}
 
 ---
 
@@ -2218,7 +2368,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfig BgpLbConfig { get;
 
 bgp_lb_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#bgp_lb_config GoogleGkeonpremBareMetalCluster#bgp_lb_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#bgp_lb_config GoogleGkeonpremBareMetalCluster#bgp_lb_config}
 
 ---
 
@@ -2232,7 +2382,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancerManualLbConfig ManualLbConfig 
 
 manual_lb_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#manual_lb_config GoogleGkeonpremBareMetalCluster#manual_lb_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#manual_lb_config GoogleGkeonpremBareMetalCluster#manual_lb_config}
 
 ---
 
@@ -2246,7 +2396,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfig MetalLbConfig { 
 
 metal_lb_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#metal_lb_config GoogleGkeonpremBareMetalCluster#metal_lb_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#metal_lb_config GoogleGkeonpremBareMetalCluster#metal_lb_config}
 
 ---
 
@@ -2286,7 +2436,7 @@ public object AddressPools { get; set; }
 
 address_pools block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#address_pools GoogleGkeonpremBareMetalCluster#address_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#address_pools GoogleGkeonpremBareMetalCluster#address_pools}
 
 ---
 
@@ -2300,7 +2450,7 @@ public double Asn { get; set; }
 
 BGP autonomous system number (ASN) of the cluster. This field can be updated after cluster creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#asn GoogleGkeonpremBareMetalCluster#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#asn GoogleGkeonpremBareMetalCluster#asn}
 
 ---
 
@@ -2314,7 +2464,7 @@ public object BgpPeerConfigs { get; set; }
 
 bgp_peer_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#bgp_peer_configs GoogleGkeonpremBareMetalCluster#bgp_peer_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#bgp_peer_configs GoogleGkeonpremBareMetalCluster#bgp_peer_configs}
 
 ---
 
@@ -2328,7 +2478,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoo
 
 load_balancer_node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#load_balancer_node_pool_config GoogleGkeonpremBareMetalCluster#load_balancer_node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#load_balancer_node_pool_config GoogleGkeonpremBareMetalCluster#load_balancer_node_pool_config}
 
 ---
 
@@ -2370,7 +2520,7 @@ The addresses that are part of this pool.
 
 Each address must be either in the CIDR form (1.2.3.0/24) or range form (1.2.3.1-1.2.3.5).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#addresses GoogleGkeonpremBareMetalCluster#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#addresses GoogleGkeonpremBareMetalCluster#addresses}
 
 ---
 
@@ -2384,7 +2534,7 @@ public string Pool { get; set; }
 
 The name of the address pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#pool GoogleGkeonpremBareMetalCluster#pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#pool GoogleGkeonpremBareMetalCluster#pool}
 
 ---
 
@@ -2398,7 +2548,7 @@ public object AvoidBuggyIps { get; set; }
 
 If true, avoid using IPs ending in .0 or .255. This avoids buggy consumer devices mistakenly dropping IPv4 traffic for those special IP addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#avoid_buggy_ips GoogleGkeonpremBareMetalCluster#avoid_buggy_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#avoid_buggy_ips GoogleGkeonpremBareMetalCluster#avoid_buggy_ips}
 
 ---
 
@@ -2412,7 +2562,7 @@ public string ManualAssign { get; set; }
 
 If true, prevent IP addresses from being automatically assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#manual_assign GoogleGkeonpremBareMetalCluster#manual_assign}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#manual_assign GoogleGkeonpremBareMetalCluster#manual_assign}
 
 ---
 
@@ -2450,7 +2600,7 @@ public double Asn { get; set; }
 
 BGP autonomous system number (ASN) for the network that contains the external peer device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#asn GoogleGkeonpremBareMetalCluster#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#asn GoogleGkeonpremBareMetalCluster#asn}
 
 ---
 
@@ -2464,7 +2614,7 @@ public string IpAddress { get; set; }
 
 The IP address of the external peer device.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#ip_address GoogleGkeonpremBareMetalCluster#ip_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#ip_address GoogleGkeonpremBareMetalCluster#ip_address}
 
 ---
 
@@ -2482,7 +2632,7 @@ If you don't specify any control plane nodes, all control plane nodes
 can connect to the external peer. If you specify one or more IP addresses,
 only the nodes specified participate in peering sessions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane_nodes GoogleGkeonpremBareMetalCluster#control_plane_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane_nodes GoogleGkeonpremBareMetalCluster#control_plane_nodes}
 
 ---
 
@@ -2516,7 +2666,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoo
 
 node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_pool_config GoogleGkeonpremBareMetalCluster#node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_pool_config GoogleGkeonpremBareMetalCluster#node_pool_config}
 
 ---
 
@@ -2558,7 +2708,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancerBgpLbConfigLoadBalancerNodePoo
 
 kubelet_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#kubelet_config GoogleGkeonpremBareMetalCluster#kubelet_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#kubelet_config GoogleGkeonpremBareMetalCluster#kubelet_config}
 
 ---
 
@@ -2582,7 +2732,7 @@ http://kubernetes.io/v1.1/docs/user-guide/labels.html
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
 
 ---
 
@@ -2596,7 +2746,7 @@ public object NodeConfigs { get; set; }
 
 node_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_configs GoogleGkeonpremBareMetalCluster#node_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_configs GoogleGkeonpremBareMetalCluster#node_configs}
 
 ---
 
@@ -2610,7 +2760,7 @@ public string OperatingSystem { get; set; }
 
 Specifies the nodes operating system (default: LINUX).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#operating_system GoogleGkeonpremBareMetalCluster#operating_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#operating_system GoogleGkeonpremBareMetalCluster#operating_system}
 
 ---
 
@@ -2624,7 +2774,7 @@ public object Taints { get; set; }
 
 taints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#taints GoogleGkeonpremBareMetalCluster#taints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#taints GoogleGkeonpremBareMetalCluster#taints}
 
 ---
 
@@ -2667,7 +2817,7 @@ Updating this field may impact scalability by changing the amount of
 traffic produced by image pulls.
 Defaults to 10.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#registry_burst GoogleGkeonpremBareMetalCluster#registry_burst}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#registry_burst GoogleGkeonpremBareMetalCluster#registry_burst}
 
 ---
 
@@ -2686,7 +2836,7 @@ Updating this field may impact scalability by changing the amount of
 traffic produced by image pulls.
 Defaults to 5.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#registry_pull_qps GoogleGkeonpremBareMetalCluster#registry_pull_qps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#registry_pull_qps GoogleGkeonpremBareMetalCluster#registry_pull_qps}
 
 ---
 
@@ -2705,7 +2855,7 @@ daemon with version  < 1.9 or an Another Union File System (Aufs) storage
 backend. Issue https://github.com/kubernetes/kubernetes/issues/10959 has
 more details.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#serialize_image_pulls_disabled GoogleGkeonpremBareMetalCluster#serialize_image_pulls_disabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#serialize_image_pulls_disabled GoogleGkeonpremBareMetalCluster#serialize_image_pulls_disabled}
 
 ---
 
@@ -2751,7 +2901,7 @@ http://kubernetes.io/v1.1/docs/user-guide/labels.html
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
 
 ---
 
@@ -2765,7 +2915,7 @@ public string NodeIp { get; set; }
 
 The default IPv4 address for SSH access and Kubernetes node. Example: 192.168.0.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_ip GoogleGkeonpremBareMetalCluster#node_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_ip GoogleGkeonpremBareMetalCluster#node_ip}
 
 ---
 
@@ -2803,7 +2953,7 @@ public string Effect { get; set; }
 
 Specifies the nodes operating system (default: LINUX). Possible values: ["EFFECT_UNSPECIFIED", "PREFER_NO_SCHEDULE", "NO_EXECUTE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#effect GoogleGkeonpremBareMetalCluster#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#effect GoogleGkeonpremBareMetalCluster#effect}
 
 ---
 
@@ -2817,7 +2967,7 @@ public string Key { get; set; }
 
 Key associated with the effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#key GoogleGkeonpremBareMetalCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#key GoogleGkeonpremBareMetalCluster#key}
 
 ---
 
@@ -2831,7 +2981,7 @@ public string Value { get; set; }
 
 Value associated with the effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#value GoogleGkeonpremBareMetalCluster#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#value GoogleGkeonpremBareMetalCluster#value}
 
 ---
 
@@ -2865,7 +3015,7 @@ public object Enabled { get; set; }
 
 Whether manual load balancing is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#enabled GoogleGkeonpremBareMetalCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#enabled GoogleGkeonpremBareMetalCluster#enabled}
 
 ---
 
@@ -2901,7 +3051,7 @@ public object AddressPools { get; set; }
 
 address_pools block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#address_pools GoogleGkeonpremBareMetalCluster#address_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#address_pools GoogleGkeonpremBareMetalCluster#address_pools}
 
 ---
 
@@ -2915,7 +3065,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodeP
 
 load_balancer_node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#load_balancer_node_pool_config GoogleGkeonpremBareMetalCluster#load_balancer_node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#load_balancer_node_pool_config GoogleGkeonpremBareMetalCluster#load_balancer_node_pool_config}
 
 ---
 
@@ -2957,7 +3107,7 @@ The addresses that are part of this pool.
 
 Each address must be either in the CIDR form (1.2.3.0/24) or range form (1.2.3.1-1.2.3.5).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#addresses GoogleGkeonpremBareMetalCluster#addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#addresses GoogleGkeonpremBareMetalCluster#addresses}
 
 ---
 
@@ -2971,7 +3121,7 @@ public string Pool { get; set; }
 
 The name of the address pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#pool GoogleGkeonpremBareMetalCluster#pool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#pool GoogleGkeonpremBareMetalCluster#pool}
 
 ---
 
@@ -2985,7 +3135,7 @@ public object AvoidBuggyIps { get; set; }
 
 If true, avoid using IPs ending in .0 or .255. This avoids buggy consumer devices mistakenly dropping IPv4 traffic for those special IP addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#avoid_buggy_ips GoogleGkeonpremBareMetalCluster#avoid_buggy_ips}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#avoid_buggy_ips GoogleGkeonpremBareMetalCluster#avoid_buggy_ips}
 
 ---
 
@@ -2999,7 +3149,7 @@ public object ManualAssign { get; set; }
 
 If true, prevent IP addresses from being automatically assigned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#manual_assign GoogleGkeonpremBareMetalCluster#manual_assign}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#manual_assign GoogleGkeonpremBareMetalCluster#manual_assign}
 
 ---
 
@@ -3033,7 +3183,7 @@ public GoogleGkeonpremBareMetalClusterLoadBalancerMetalLbConfigLoadBalancerNodeP
 
 node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_pool_config GoogleGkeonpremBareMetalCluster#node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_pool_config GoogleGkeonpremBareMetalCluster#node_pool_config}
 
 ---
 
@@ -3083,7 +3233,7 @@ http://kubernetes.io/v1.1/docs/user-guide/labels.html
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
 
 ---
 
@@ -3097,7 +3247,7 @@ public object NodeConfigs { get; set; }
 
 node_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_configs GoogleGkeonpremBareMetalCluster#node_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_configs GoogleGkeonpremBareMetalCluster#node_configs}
 
 ---
 
@@ -3111,7 +3261,7 @@ public string OperatingSystem { get; set; }
 
 Specifies the nodes operating system (default: LINUX).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#operating_system GoogleGkeonpremBareMetalCluster#operating_system}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#operating_system GoogleGkeonpremBareMetalCluster#operating_system}
 
 ---
 
@@ -3125,7 +3275,7 @@ public object Taints { get; set; }
 
 taints block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#taints GoogleGkeonpremBareMetalCluster#taints}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#taints GoogleGkeonpremBareMetalCluster#taints}
 
 ---
 
@@ -3171,7 +3321,7 @@ http://kubernetes.io/v1.1/docs/user-guide/labels.html
 An object containing a list of "key": value pairs.
 Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#labels GoogleGkeonpremBareMetalCluster#labels}
 
 ---
 
@@ -3185,7 +3335,7 @@ public string NodeIp { get; set; }
 
 The default IPv4 address for SSH access and Kubernetes node. Example: 192.168.0.1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_ip GoogleGkeonpremBareMetalCluster#node_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#node_ip GoogleGkeonpremBareMetalCluster#node_ip}
 
 ---
 
@@ -3223,7 +3373,7 @@ public string Effect { get; set; }
 
 Specifies the nodes operating system (default: LINUX). Possible values: ["EFFECT_UNSPECIFIED", "PREFER_NO_SCHEDULE", "NO_EXECUTE"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#effect GoogleGkeonpremBareMetalCluster#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#effect GoogleGkeonpremBareMetalCluster#effect}
 
 ---
 
@@ -3237,7 +3387,7 @@ public string Key { get; set; }
 
 Key associated with the effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#key GoogleGkeonpremBareMetalCluster#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#key GoogleGkeonpremBareMetalCluster#key}
 
 ---
 
@@ -3251,7 +3401,7 @@ public string Value { get; set; }
 
 Value associated with the effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#value GoogleGkeonpremBareMetalCluster#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#value GoogleGkeonpremBareMetalCluster#value}
 
 ---
 
@@ -3285,7 +3435,7 @@ public double ControlPlaneLoadBalancerPort { get; set; }
 
 The port that control plane hosted load balancers will listen on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane_load_balancer_port GoogleGkeonpremBareMetalCluster#control_plane_load_balancer_port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane_load_balancer_port GoogleGkeonpremBareMetalCluster#control_plane_load_balancer_port}
 
 ---
 
@@ -3321,7 +3471,7 @@ public string ControlPlaneVip { get; set; }
 
 The VIP which you previously set aside for the Kubernetes API of this Bare Metal User Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane_vip GoogleGkeonpremBareMetalCluster#control_plane_vip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#control_plane_vip GoogleGkeonpremBareMetalCluster#control_plane_vip}
 
 ---
 
@@ -3335,7 +3485,7 @@ public string IngressVip { get; set; }
 
 The VIP which you previously set aside for ingress traffic into this Bare Metal User Cluster.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#ingress_vip GoogleGkeonpremBareMetalCluster#ingress_vip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#ingress_vip GoogleGkeonpremBareMetalCluster#ingress_vip}
 
 ---
 
@@ -3373,7 +3523,7 @@ Nodes in maintenance mode will be cordoned and drained. When both of these
 are true, the "baremetal.cluster.gke.io/maintenance" annotation will be set
 on the node resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#maintenance_address_cidr_blocks GoogleGkeonpremBareMetalCluster#maintenance_address_cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#maintenance_address_cidr_blocks GoogleGkeonpremBareMetalCluster#maintenance_address_cidr_blocks}
 
 ---
 
@@ -3416,7 +3566,7 @@ Enables the use of advanced Anthos networking features, such as Bundled Load Bal
 Setting configuration for advanced networking features will automatically
 set this flag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#advanced_networking GoogleGkeonpremBareMetalCluster#advanced_networking}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#advanced_networking GoogleGkeonpremBareMetalCluster#advanced_networking}
 
 ---
 
@@ -3430,7 +3580,7 @@ public GoogleGkeonpremBareMetalClusterNetworkConfigIslandModeCidr IslandModeCidr
 
 island_mode_cidr block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#island_mode_cidr GoogleGkeonpremBareMetalCluster#island_mode_cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#island_mode_cidr GoogleGkeonpremBareMetalCluster#island_mode_cidr}
 
 ---
 
@@ -3444,7 +3594,7 @@ public GoogleGkeonpremBareMetalClusterNetworkConfigMultipleNetworkInterfacesConf
 
 multiple_network_interfaces_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#multiple_network_interfaces_config GoogleGkeonpremBareMetalCluster#multiple_network_interfaces_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#multiple_network_interfaces_config GoogleGkeonpremBareMetalCluster#multiple_network_interfaces_config}
 
 ---
 
@@ -3458,7 +3608,7 @@ public GoogleGkeonpremBareMetalClusterNetworkConfigSrIovConfig SrIovConfig { get
 
 sr_iov_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#sr_iov_config GoogleGkeonpremBareMetalCluster#sr_iov_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#sr_iov_config GoogleGkeonpremBareMetalCluster#sr_iov_config}
 
 ---
 
@@ -3496,7 +3646,7 @@ All pods in the cluster are assigned an RFC1918 IPv4 address from these ranges.
 
 This field cannot be changed after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#pod_address_cidr_blocks GoogleGkeonpremBareMetalCluster#pod_address_cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#pod_address_cidr_blocks GoogleGkeonpremBareMetalCluster#pod_address_cidr_blocks}
 
 ---
 
@@ -3512,7 +3662,7 @@ All services in the cluster are assigned an RFC1918 IPv4 address from these rang
 
 This field cannot be changed after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#service_address_cidr_blocks GoogleGkeonpremBareMetalCluster#service_address_cidr_blocks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#service_address_cidr_blocks GoogleGkeonpremBareMetalCluster#service_address_cidr_blocks}
 
 ---
 
@@ -3546,7 +3696,7 @@ public object Enabled { get; set; }
 
 Whether to enable multiple network interfaces for your pods. When set network_config.advanced_networking is automatically set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#enabled GoogleGkeonpremBareMetalCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#enabled GoogleGkeonpremBareMetalCluster#enabled}
 
 ---
 
@@ -3580,7 +3730,7 @@ public object Enabled { get; set; }
 
 Whether to install the SR-IOV operator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#enabled GoogleGkeonpremBareMetalCluster#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#enabled GoogleGkeonpremBareMetalCluster#enabled}
 
 ---
 
@@ -3614,7 +3764,7 @@ public string LoginUser { get; set; }
 
 LoginUser is the user name used to access node machines. It defaults to "root" if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#login_user GoogleGkeonpremBareMetalCluster#login_user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#login_user GoogleGkeonpremBareMetalCluster#login_user}
 
 ---
 
@@ -3652,7 +3802,7 @@ The available runtimes that can be used to run containers in a Bare Metal User C
 
 Possible values: ["CONTAINER_RUNTIME_UNSPECIFIED", "DOCKER", "CONTAINERD"]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#container_runtime GoogleGkeonpremBareMetalCluster#container_runtime}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#container_runtime GoogleGkeonpremBareMetalCluster#container_runtime}
 
 ---
 
@@ -3669,7 +3819,7 @@ The maximum number of pods a node can run.
 The size of the CIDR range
 assigned to the node will be derived from this parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#max_pods_per_node GoogleGkeonpremBareMetalCluster#max_pods_per_node}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#max_pods_per_node GoogleGkeonpremBareMetalCluster#max_pods_per_node}
 
 ---
 
@@ -3703,7 +3853,7 @@ public object PackageRepoExcluded { get; set; }
 
 Whether the package repo should not be included when initializing bare metal machines.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#package_repo_excluded GoogleGkeonpremBareMetalCluster#package_repo_excluded}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#package_repo_excluded GoogleGkeonpremBareMetalCluster#package_repo_excluded}
 
 ---
 
@@ -3743,7 +3893,7 @@ Examples: http://domain
 WARNING: Do not provide credentials in the format
 http://(username:password@)domain these will be rejected by the server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#uri GoogleGkeonpremBareMetalCluster#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#uri GoogleGkeonpremBareMetalCluster#uri}
 
 ---
 
@@ -3757,7 +3907,7 @@ public string[] NoProxy { get; set; }
 
 A list of IPs, hostnames, and domains that should skip the proxy. Examples: ["127.0.0.1", "example.com", ".corp", "localhost"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#no_proxy GoogleGkeonpremBareMetalCluster#no_proxy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#no_proxy GoogleGkeonpremBareMetalCluster#no_proxy}
 
 ---
 
@@ -3791,7 +3941,7 @@ public GoogleGkeonpremBareMetalClusterSecurityConfigAuthorization Authorization 
 
 authorization block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#authorization GoogleGkeonpremBareMetalCluster#authorization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#authorization GoogleGkeonpremBareMetalCluster#authorization}
 
 ---
 
@@ -3825,7 +3975,7 @@ public object AdminUsers { get; set; }
 
 admin_users block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#admin_users GoogleGkeonpremBareMetalCluster#admin_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#admin_users GoogleGkeonpremBareMetalCluster#admin_users}
 
 ---
 
@@ -3859,7 +4009,7 @@ public string Username { get; set; }
 
 The name of the user, e.g. 'my-gcp-id@gmail.com'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#username GoogleGkeonpremBareMetalCluster#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#username GoogleGkeonpremBareMetalCluster#username}
 
 ---
 
@@ -3921,7 +4071,7 @@ public GoogleGkeonpremBareMetalClusterStorageLvpNodeMountsConfig LvpNodeMountsCo
 
 lvp_node_mounts_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#lvp_node_mounts_config GoogleGkeonpremBareMetalCluster#lvp_node_mounts_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#lvp_node_mounts_config GoogleGkeonpremBareMetalCluster#lvp_node_mounts_config}
 
 ---
 
@@ -3935,7 +4085,7 @@ public GoogleGkeonpremBareMetalClusterStorageLvpShareConfig LvpShareConfig { get
 
 lvp_share_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#lvp_share_config GoogleGkeonpremBareMetalCluster#lvp_share_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#lvp_share_config GoogleGkeonpremBareMetalCluster#lvp_share_config}
 
 ---
 
@@ -3971,7 +4121,7 @@ public string Path { get; set; }
 
 The host machine path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#path GoogleGkeonpremBareMetalCluster#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#path GoogleGkeonpremBareMetalCluster#path}
 
 ---
 
@@ -3985,7 +4135,7 @@ public string StorageClass { get; set; }
 
 The StorageClass name that PVs will be created with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#storage_class GoogleGkeonpremBareMetalCluster#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#storage_class GoogleGkeonpremBareMetalCluster#storage_class}
 
 ---
 
@@ -4021,7 +4171,7 @@ public GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfig LvpConfig {
 
 lvp_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#lvp_config GoogleGkeonpremBareMetalCluster#lvp_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#lvp_config GoogleGkeonpremBareMetalCluster#lvp_config}
 
 ---
 
@@ -4035,7 +4185,7 @@ public double SharedPathPvCount { get; set; }
 
 The number of subdirectories to create under path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#shared_path_pv_count GoogleGkeonpremBareMetalCluster#shared_path_pv_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#shared_path_pv_count GoogleGkeonpremBareMetalCluster#shared_path_pv_count}
 
 ---
 
@@ -4071,7 +4221,7 @@ public string Path { get; set; }
 
 The host machine path.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#path GoogleGkeonpremBareMetalCluster#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#path GoogleGkeonpremBareMetalCluster#path}
 
 ---
 
@@ -4085,7 +4235,7 @@ public string StorageClass { get; set; }
 
 The StorageClass name that PVs will be created with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#storage_class GoogleGkeonpremBareMetalCluster#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#storage_class GoogleGkeonpremBareMetalCluster#storage_class}
 
 ---
 
@@ -4107,9 +4257,9 @@ new GoogleGkeonpremBareMetalClusterTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#create GoogleGkeonpremBareMetalCluster#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#delete GoogleGkeonpremBareMetalCluster#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#update GoogleGkeonpremBareMetalCluster#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#create GoogleGkeonpremBareMetalCluster#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#delete GoogleGkeonpremBareMetalCluster#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterTimeouts.property.update">Update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#update GoogleGkeonpremBareMetalCluster#update}. |
 
 ---
 
@@ -4121,7 +4271,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#create GoogleGkeonpremBareMetalCluster#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#create GoogleGkeonpremBareMetalCluster#create}.
 
 ---
 
@@ -4133,7 +4283,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#delete GoogleGkeonpremBareMetalCluster#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#delete GoogleGkeonpremBareMetalCluster#delete}.
 
 ---
 
@@ -4145,7 +4295,41 @@ public string Update { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gkeonprem_bare_metal_cluster#update GoogleGkeonpremBareMetalCluster#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#update GoogleGkeonpremBareMetalCluster#update}.
+
+---
+
+### GoogleGkeonpremBareMetalClusterUpgradePolicy <a name="GoogleGkeonpremBareMetalClusterUpgradePolicy" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GoogleGkeonpremBareMetalClusterUpgradePolicy {
+    string Policy = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy.property.policy">Policy</a></code> | <code>string</code> | Specifies which upgrade policy to use. Possible values: ["SERIAL", "CONCURRENT"]. |
+
+---
+
+##### `Policy`<sup>Optional</sup> <a name="Policy" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy.property.policy"></a>
+
+```csharp
+public string Policy { get; set; }
+```
+
+- *Type:* string
+
+Specifies which upgrade policy to use. Possible values: ["SERIAL", "CONCURRENT"].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gkeonprem_bare_metal_cluster#policy GoogleGkeonpremBareMetalCluster#policy}
 
 ---
 
@@ -4189,6 +4373,284 @@ new GoogleGkeonpremBareMetalClusterValidationCheckStatusResult {
 
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference <a name="GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.resetEvaluationMode">ResetEvaluationMode</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetEvaluationMode` <a name="ResetEvaluationMode" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.resetEvaluationMode"></a>
+
+```csharp
+private void ResetEvaluationMode()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.property.evaluationModeInput">EvaluationModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.property.evaluationMode">EvaluationMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization">GoogleGkeonpremBareMetalClusterBinaryAuthorization</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EvaluationModeInput`<sup>Optional</sup> <a name="EvaluationModeInput" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.property.evaluationModeInput"></a>
+
+```csharp
+public string EvaluationModeInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EvaluationMode`<sup>Required</sup> <a name="EvaluationMode" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.property.evaluationMode"></a>
+
+```csharp
+public string EvaluationMode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorizationOutputReference.property.internalValue"></a>
+
+```csharp
+public GoogleGkeonpremBareMetalClusterBinaryAuthorization InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterBinaryAuthorization">GoogleGkeonpremBareMetalClusterBinaryAuthorization</a>
+
+---
+
 
 ### GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference <a name="GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterClusterOperationsOutputReference"></a>
 
@@ -20578,6 +21040,284 @@ public object InternalValue { get; }
 ```
 
 - *Type:* object
+
+---
+
+
+### GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference <a name="GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.GoogleBeta;
+
+new GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.resetPolicy">ResetPolicy</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetPolicy` <a name="ResetPolicy" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.resetPolicy"></a>
+
+```csharp
+private void ResetPolicy()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.property.policyInput">PolicyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.property.policy">Policy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy">GoogleGkeonpremBareMetalClusterUpgradePolicy</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PolicyInput`<sup>Optional</sup> <a name="PolicyInput" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.property.policyInput"></a>
+
+```csharp
+public string PolicyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Policy`<sup>Required</sup> <a name="Policy" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.property.policy"></a>
+
+```csharp
+public string Policy { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicyOutputReference.property.internalValue"></a>
+
+```csharp
+public GoogleGkeonpremBareMetalClusterUpgradePolicy InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterUpgradePolicy">GoogleGkeonpremBareMetalClusterUpgradePolicy</a>
 
 ---
 

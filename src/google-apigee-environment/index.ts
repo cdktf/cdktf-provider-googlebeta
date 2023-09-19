@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,7 +16,7 @@ export interface GoogleApigeeEnvironmentConfig extends cdktf.TerraformMetaArgume
   * Optional. API Proxy type supported by the environment. The type can be set when creating
 the Environment and cannot be changed. Possible values: ["API_PROXY_TYPE_UNSPECIFIED", "PROGRAMMABLE", "CONFIGURABLE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#api_proxy_type GoogleApigeeEnvironment#api_proxy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#api_proxy_type GoogleApigeeEnvironment#api_proxy_type}
   */
   readonly apiProxyType?: string;
   /**
@@ -28,23 +28,23 @@ Managing the deployment of API proxy or shared flow revisions;
 Creating, updating, or deleting resource files;
 Creating, updating, or deleting target servers. Possible values: ["DEPLOYMENT_TYPE_UNSPECIFIED", "PROXY", "ARCHIVE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#deployment_type GoogleApigeeEnvironment#deployment_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#deployment_type GoogleApigeeEnvironment#deployment_type}
   */
   readonly deploymentType?: string;
   /**
   * Description of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#description GoogleApigeeEnvironment#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#description GoogleApigeeEnvironment#description}
   */
   readonly description?: string;
   /**
   * Display name of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#display_name GoogleApigeeEnvironment#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#display_name GoogleApigeeEnvironment#display_name}
   */
   readonly displayName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#id GoogleApigeeEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#id GoogleApigeeEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -53,26 +53,26 @@ Creating, updating, or deleting target servers. Possible values: ["DEPLOYMENT_TY
   /**
   * The resource ID of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#name GoogleApigeeEnvironment#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#name GoogleApigeeEnvironment#name}
   */
   readonly name: string;
   /**
   * The Apigee Organization associated with the Apigee environment,
 in the format 'organizations/{{org_name}}'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#org_id GoogleApigeeEnvironment#org_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#org_id GoogleApigeeEnvironment#org_id}
   */
   readonly orgId: string;
   /**
   * node_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#node_config GoogleApigeeEnvironment#node_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#node_config GoogleApigeeEnvironment#node_config}
   */
   readonly nodeConfig?: GoogleApigeeEnvironmentNodeConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#timeouts GoogleApigeeEnvironment#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#timeouts GoogleApigeeEnvironment#timeouts}
   */
   readonly timeouts?: GoogleApigeeEnvironmentTimeouts;
 }
@@ -82,7 +82,7 @@ export interface GoogleApigeeEnvironmentNodeConfig {
 has the specified environment. If not specified, the default is determined by the
 recommended maximum number of nodes for that gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#max_node_count GoogleApigeeEnvironment#max_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#max_node_count GoogleApigeeEnvironment#max_node_count}
   */
   readonly maxNodeCount?: string;
   /**
@@ -90,7 +90,7 @@ recommended maximum number of nodes for that gateway.
 has the specified environment. If not specified, the default is determined by the
 recommended minimum number of nodes for that gateway.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#min_node_count GoogleApigeeEnvironment#min_node_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#min_node_count GoogleApigeeEnvironment#min_node_count}
   */
   readonly minNodeCount?: string;
 }
@@ -183,15 +183,15 @@ export class GoogleApigeeEnvironmentNodeConfigOutputReference extends cdktf.Comp
 }
 export interface GoogleApigeeEnvironmentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#create GoogleApigeeEnvironment#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#create GoogleApigeeEnvironment#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#delete GoogleApigeeEnvironment#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#delete GoogleApigeeEnvironment#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment#update GoogleApigeeEnvironment#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment#update GoogleApigeeEnvironment#update}
   */
   readonly update?: string;
 }
@@ -312,7 +312,7 @@ export class GoogleApigeeEnvironmentTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment google_apigee_environment}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment google_apigee_environment}
 */
 export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
 
@@ -326,7 +326,7 @@ export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_apigee_environment google_apigee_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_apigee_environment google_apigee_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -337,7 +337,7 @@ export class GoogleApigeeEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'google_apigee_environment',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.82.0',
+        providerVersion: '4.83.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

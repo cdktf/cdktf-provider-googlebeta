@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleFirestoreDatabaseConfig extends cdktf.TerraformMetaArgume
   /**
   * The App Engine integration mode to use for this database. Possible values: ["ENABLED", "DISABLED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#app_engine_integration_mode GoogleFirestoreDatabase#app_engine_integration_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#app_engine_integration_mode GoogleFirestoreDatabase#app_engine_integration_mode}
   */
   readonly appEngineIntegrationMode?: string;
   /**
   * The concurrency control mode to use for this database. Possible values: ["OPTIMISTIC", "PESSIMISTIC", "OPTIMISTIC_WITH_ENTITY_GROUPS"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#concurrency_mode GoogleFirestoreDatabase#concurrency_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#concurrency_mode GoogleFirestoreDatabase#concurrency_mode}
   */
   readonly concurrencyMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#id GoogleFirestoreDatabase#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#id GoogleFirestoreDatabase#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,7 +35,7 @@ export interface GoogleFirestoreDatabaseConfig extends cdktf.TerraformMetaArgume
   * The location of the database. Available databases are listed at
 https://cloud.google.com/firestore/docs/locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#location_id GoogleFirestoreDatabase#location_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#location_id GoogleFirestoreDatabase#location_id}
   */
   readonly locationId: string;
   /**
@@ -46,11 +46,21 @@ a letter and the last a letter or a number. Must not be
 UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
 "(default)" database id is also valid.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#name GoogleFirestoreDatabase#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#name GoogleFirestoreDatabase#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#project GoogleFirestoreDatabase#project}
+  * Whether to enable the PITR feature on this database.
+If 'POINT_IN_TIME_RECOVERY_ENABLED' is selected, reads are supported on selected versions of the data from within the past 7 days.
+versionRetentionPeriod and earliestVersionTime can be used to determine the supported versions. These include reads against any timestamp within the past hour
+and reads against 1-minute snapshots beyond 1 hour and within 7 days.
+If 'POINT_IN_TIME_RECOVERY_DISABLED' is selected, reads are supported on any version of the data from within the past 1 hour. Default value: "POINT_IN_TIME_RECOVERY_DISABLED" Possible values: ["POINT_IN_TIME_RECOVERY_ENABLED", "POINT_IN_TIME_RECOVERY_DISABLED"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#point_in_time_recovery_enablement GoogleFirestoreDatabase#point_in_time_recovery_enablement}
+  */
+  readonly pointInTimeRecoveryEnablement?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#project GoogleFirestoreDatabase#project}
   */
   readonly project?: string;
   /**
@@ -58,27 +68,27 @@ UUID-like /[0-9a-f]{8}(-[0-9a-f]{4}){3}-[0-9a-f]{12}/.
 See https://cloud.google.com/datastore/docs/firestore-or-datastore
 for information about how to choose. Possible values: ["FIRESTORE_NATIVE", "DATASTORE_MODE"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#type GoogleFirestoreDatabase#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#type GoogleFirestoreDatabase#type}
   */
   readonly type: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#timeouts GoogleFirestoreDatabase#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#timeouts GoogleFirestoreDatabase#timeouts}
   */
   readonly timeouts?: GoogleFirestoreDatabaseTimeouts;
 }
 export interface GoogleFirestoreDatabaseTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#create GoogleFirestoreDatabase#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#create GoogleFirestoreDatabase#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#delete GoogleFirestoreDatabase#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#delete GoogleFirestoreDatabase#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database#update GoogleFirestoreDatabase#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database#update GoogleFirestoreDatabase#update}
   */
   readonly update?: string;
 }
@@ -199,7 +209,7 @@ export class GoogleFirestoreDatabaseTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database google_firestore_database}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database google_firestore_database}
 */
 export class GoogleFirestoreDatabase extends cdktf.TerraformResource {
 
@@ -213,7 +223,7 @@ export class GoogleFirestoreDatabase extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database google_firestore_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database google_firestore_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -224,7 +234,7 @@ export class GoogleFirestoreDatabase extends cdktf.TerraformResource {
       terraformResourceType: 'google_firestore_database',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.82.0',
+        providerVersion: '4.83.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -240,6 +250,7 @@ export class GoogleFirestoreDatabase extends cdktf.TerraformResource {
     this._id = config.id;
     this._locationId = config.locationId;
     this._name = config.name;
+    this._pointInTimeRecoveryEnablement = config.pointInTimeRecoveryEnablement;
     this._project = config.project;
     this._type = config.type;
     this._timeouts.internalValue = config.timeouts;
@@ -284,6 +295,11 @@ export class GoogleFirestoreDatabase extends cdktf.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // earliest_version_time - computed: true, optional: false, required: false
+  public get earliestVersionTime() {
+    return this.getStringAttribute('earliest_version_time');
   }
 
   // etag - computed: true, optional: false, required: false
@@ -338,6 +354,22 @@ export class GoogleFirestoreDatabase extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // point_in_time_recovery_enablement - computed: false, optional: true, required: false
+  private _pointInTimeRecoveryEnablement?: string; 
+  public get pointInTimeRecoveryEnablement() {
+    return this.getStringAttribute('point_in_time_recovery_enablement');
+  }
+  public set pointInTimeRecoveryEnablement(value: string) {
+    this._pointInTimeRecoveryEnablement = value;
+  }
+  public resetPointInTimeRecoveryEnablement() {
+    this._pointInTimeRecoveryEnablement = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pointInTimeRecoveryEnablementInput() {
+    return this._pointInTimeRecoveryEnablement;
+  }
+
   // project - computed: true, optional: true, required: false
   private _project?: string; 
   public get project() {
@@ -367,6 +399,21 @@ export class GoogleFirestoreDatabase extends cdktf.TerraformResource {
     return this._type;
   }
 
+  // uid - computed: true, optional: false, required: false
+  public get uid() {
+    return this.getStringAttribute('uid');
+  }
+
+  // update_time - computed: true, optional: false, required: false
+  public get updateTime() {
+    return this.getStringAttribute('update_time');
+  }
+
+  // version_retention_period - computed: true, optional: false, required: false
+  public get versionRetentionPeriod() {
+    return this.getStringAttribute('version_retention_period');
+  }
+
   // timeouts - computed: false, optional: true, required: false
   private _timeouts = new GoogleFirestoreDatabaseTimeoutsOutputReference(this, "timeouts");
   public get timeouts() {
@@ -394,6 +441,7 @@ export class GoogleFirestoreDatabase extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       location_id: cdktf.stringToTerraform(this._locationId),
       name: cdktf.stringToTerraform(this._name),
+      point_in_time_recovery_enablement: cdktf.stringToTerraform(this._pointInTimeRecoveryEnablement),
       project: cdktf.stringToTerraform(this._project),
       type: cdktf.stringToTerraform(this._type),
       timeouts: googleFirestoreDatabaseTimeoutsToTerraform(this._timeouts.internalValue),
