@@ -1,3 +1,3 @@
 # `google_scc_notification_config`
 
-Refer to the Terraform Registory for docs: [`google_scc_notification_config`](https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_scc_notification_config).
+Refer to the Terraform Registory for docs: [`google_scc_notification_config`](https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_scc_notification_config).

@@ -1,6 +1,6 @@
 # `google_notebooks_instance`
 
-Refer to the Terraform Registory for docs: [`google_notebooks_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance).
+Refer to the Terraform Registory for docs: [`google_notebooks_instance`](https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance).
 
 # `googleNotebooksInstance` Submodule <a name="`googleNotebooksInstance` Submodule" id="@cdktf/provider-google-beta.googleNotebooksInstance"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`google_notebooks_instance`](https:/
 
 ### GoogleNotebooksInstance <a name="GoogleNotebooksInstance" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance google_notebooks_instance}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance google_notebooks_instance}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstance(scope Construct, id *string, config GoogleNotebooksInstanceConfig) GoogleNotebooksInstance
 ```
@@ -565,7 +565,7 @@ func ResetVmImage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 googlenotebooksinstance.GoogleNotebooksInstance_IsConstruct(x interface{}) *bool
 ```
@@ -597,7 +597,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 googlenotebooksinstance.GoogleNotebooksInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -611,7 +611,7 @@ googlenotebooksinstance.GoogleNotebooksInstance_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstance.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 googlenotebooksinstance.GoogleNotebooksInstance_IsTerraformResource(x interface{}) *bool
 ```
@@ -1580,7 +1580,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceAcceleratorConfig {
 	CoreCount: *f64,
@@ -1607,7 +1607,7 @@ CoreCount *f64
 
 Count of cores of this accelerator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#core_count GoogleNotebooksInstance#core_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#core_count GoogleNotebooksInstance#core_count}
 
 ---
 
@@ -1621,7 +1621,7 @@ Type *string
 
 Type of this accelerator. Possible values: ["ACCELERATOR_TYPE_UNSPECIFIED", "NVIDIA_TESLA_K80", "NVIDIA_TESLA_P100", "NVIDIA_TESLA_V100", "NVIDIA_TESLA_P4", "NVIDIA_TESLA_T4", "NVIDIA_TESLA_T4_VWS", "NVIDIA_TESLA_P100_VWS", "NVIDIA_TESLA_P4_VWS", "NVIDIA_TESLA_A100", "TPU_V2", "TPU_V3"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#type GoogleNotebooksInstance#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#type GoogleNotebooksInstance#type}
 
 ---
 
@@ -1630,7 +1630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceConfig {
 	Connection: interface{},
@@ -1643,10 +1643,10 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebo
 	Location: *string,
 	MachineType: *string,
 	Name: *string,
-	AcceleratorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfig,
+	AcceleratorConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfig,
 	BootDiskSizeGb: *f64,
 	BootDiskType: *string,
-	ContainerImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNotebooksInstance.GoogleNotebooksInstanceContainerImage,
+	ContainerImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImage,
 	CreateTime: *string,
 	CustomGpuDriverPath: *string,
 	DataDiskSizeGb: *f64,
@@ -1665,15 +1665,15 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebo
 	NoRemoveDataDisk: interface{},
 	PostStartupScript: *string,
 	Project: *string,
-	ReservationAffinity: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinity,
+	ReservationAffinity: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinity,
 	ServiceAccount: *string,
 	ServiceAccountScopes: *[]*string,
-	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfig,
+	ShieldedInstanceConfig: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfig,
 	Subnet: *string,
 	Tags: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts,
 	UpdateTime: *string,
-	VmImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9.googleNotebooksInstance.GoogleNotebooksInstanceVmImage,
+	VmImage: github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta.googleNotebooksInstance.GoogleNotebooksInstanceVmImage,
 }
 ```
 
@@ -1700,7 +1700,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebo
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.dataDiskSizeGb">DataDiskSizeGb</a></code> | <code>*f64</code> | The size of the data disk in GB attached to this instance, up to a maximum of 64000 GB (64 TB). |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.dataDiskType">DataDiskType</a></code> | <code>*string</code> | Possible disk types for notebook instances. Possible values: ["DISK_TYPE_UNSPECIFIED", "PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"]. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.diskEncryption">DiskEncryption</a></code> | <code>*string</code> | Disk encryption method used on the boot and data disks, defaults to GMEK. Possible values: ["DISK_ENCRYPTION_UNSPECIFIED", "GMEK", "CMEK"]. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#id GoogleNotebooksInstance#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#id GoogleNotebooksInstance#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.installGpuDriver">InstallGpuDriver</a></code> | <code>interface{}</code> | Whether the end user authorizes Google Cloud to install GPU driver on this instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.instanceOwners">InstanceOwners</a></code> | <code>*[]*string</code> | The list of owners of this instance after creation. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.kmsKey">KmsKey</a></code> | <code>*string</code> | The KMS key used to encrypt the disks, only applicable if diskEncryption is CMEK. Format: projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}. |
@@ -1712,7 +1712,7 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebo
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.noPublicIp">NoPublicIp</a></code> | <code>interface{}</code> | No public IP will be assigned to this instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.noRemoveDataDisk">NoRemoveDataDisk</a></code> | <code>interface{}</code> | If true, the data disk will not be auto deleted when deleting the instance. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.postStartupScript">PostStartupScript</a></code> | <code>*string</code> | Path to a Bash script that automatically runs after a notebook instance fully boots up. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#project GoogleNotebooksInstance#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#project GoogleNotebooksInstance#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.reservationAffinity">ReservationAffinity</a></code> | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinity">GoogleNotebooksInstanceReservationAffinity</a></code> | reservation_affinity block. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.serviceAccount">ServiceAccount</a></code> | <code>*string</code> | The service account on this instance, giving access to other Google Cloud services. |
 | <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceConfig.property.serviceAccountScopes">ServiceAccountScopes</a></code> | <code>*[]*string</code> | Optional. |
@@ -1805,7 +1805,7 @@ Location *string
 
 A reference to the zone where the machine resides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#location GoogleNotebooksInstance#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#location GoogleNotebooksInstance#location}
 
 ---
 
@@ -1819,7 +1819,7 @@ MachineType *string
 
 A reference to a machine type which defines VM kind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#machine_type GoogleNotebooksInstance#machine_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#machine_type GoogleNotebooksInstance#machine_type}
 
 ---
 
@@ -1833,7 +1833,7 @@ Name *string
 
 The name specified for the Notebook instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#name GoogleNotebooksInstance#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#name GoogleNotebooksInstance#name}
 
 ---
 
@@ -1847,7 +1847,7 @@ AcceleratorConfig GoogleNotebooksInstanceAcceleratorConfig
 
 accelerator_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#accelerator_config GoogleNotebooksInstance#accelerator_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#accelerator_config GoogleNotebooksInstance#accelerator_config}
 
 ---
 
@@ -1864,7 +1864,7 @@ The size of the boot disk in GB attached to this instance, up to a maximum of 64
 The minimum recommended value is 100 GB.
 If not specified, this defaults to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#boot_disk_size_gb GoogleNotebooksInstance#boot_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#boot_disk_size_gb GoogleNotebooksInstance#boot_disk_size_gb}
 
 ---
 
@@ -1878,7 +1878,7 @@ BootDiskType *string
 
 Possible disk types for notebook instances. Possible values: ["DISK_TYPE_UNSPECIFIED", "PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#boot_disk_type GoogleNotebooksInstance#boot_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#boot_disk_type GoogleNotebooksInstance#boot_disk_type}
 
 ---
 
@@ -1892,7 +1892,7 @@ ContainerImage GoogleNotebooksInstanceContainerImage
 
 container_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#container_image GoogleNotebooksInstance#container_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#container_image GoogleNotebooksInstance#container_image}
 
 ---
 
@@ -1906,7 +1906,7 @@ CreateTime *string
 
 Instance creation time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#create_time GoogleNotebooksInstance#create_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#create_time GoogleNotebooksInstance#create_time}
 
 ---
 
@@ -1922,7 +1922,7 @@ Specify a custom Cloud Storage path where the GPU driver is stored.
 
 If not specified, we'll automatically choose from official GPU drivers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#custom_gpu_driver_path GoogleNotebooksInstance#custom_gpu_driver_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#custom_gpu_driver_path GoogleNotebooksInstance#custom_gpu_driver_path}
 
 ---
 
@@ -1939,7 +1939,7 @@ The size of the data disk in GB attached to this instance, up to a maximum of 64
 You can choose the size of the data disk based on how big your notebooks and data are.
 If not specified, this defaults to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#data_disk_size_gb GoogleNotebooksInstance#data_disk_size_gb}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#data_disk_size_gb GoogleNotebooksInstance#data_disk_size_gb}
 
 ---
 
@@ -1953,7 +1953,7 @@ DataDiskType *string
 
 Possible disk types for notebook instances. Possible values: ["DISK_TYPE_UNSPECIFIED", "PD_STANDARD", "PD_SSD", "PD_BALANCED", "PD_EXTREME"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#data_disk_type GoogleNotebooksInstance#data_disk_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#data_disk_type GoogleNotebooksInstance#data_disk_type}
 
 ---
 
@@ -1967,7 +1967,7 @@ DiskEncryption *string
 
 Disk encryption method used on the boot and data disks, defaults to GMEK. Possible values: ["DISK_ENCRYPTION_UNSPECIFIED", "GMEK", "CMEK"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#disk_encryption GoogleNotebooksInstance#disk_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#disk_encryption GoogleNotebooksInstance#disk_encryption}
 
 ---
 
@@ -1979,7 +1979,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#id GoogleNotebooksInstance#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#id GoogleNotebooksInstance#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1999,7 +1999,7 @@ Whether the end user authorizes Google Cloud to install GPU driver on this insta
 If this field is empty or set to false, the GPU driver
 won't be installed. Only applicable to instances with GPUs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#install_gpu_driver GoogleNotebooksInstance#install_gpu_driver}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#install_gpu_driver GoogleNotebooksInstance#install_gpu_driver}
 
 ---
 
@@ -2018,7 +2018,7 @@ Currently supports one owner only.
 If not specified, all of the service account users of
 your VM instance's service account can use the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#instance_owners GoogleNotebooksInstance#instance_owners}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#instance_owners GoogleNotebooksInstance#instance_owners}
 
 ---
 
@@ -2032,7 +2032,7 @@ KmsKey *string
 
 The KMS key used to encrypt the disks, only applicable if diskEncryption is CMEK. Format: projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#kms_key GoogleNotebooksInstance#kms_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#kms_key GoogleNotebooksInstance#kms_key}
 
 ---
 
@@ -2049,7 +2049,7 @@ Labels to apply to this instance.
 These can be later modified by the setLabels method.
 An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#labels GoogleNotebooksInstance#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#labels GoogleNotebooksInstance#labels}
 
 ---
 
@@ -2065,7 +2065,7 @@ Custom metadata to apply to this instance.
 
 An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#metadata GoogleNotebooksInstance#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#metadata GoogleNotebooksInstance#metadata}
 
 ---
 
@@ -2079,7 +2079,7 @@ Network *string
 
 The name of the VPC that this instance is in. Format: projects/{project_id}/global/networks/{network_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#network GoogleNotebooksInstance#network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#network GoogleNotebooksInstance#network}
 
 ---
 
@@ -2093,7 +2093,7 @@ NicType *string
 
 The type of vNIC driver. Possible values: ["UNSPECIFIED_NIC_TYPE", "VIRTIO_NET", "GVNIC"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#nic_type GoogleNotebooksInstance#nic_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#nic_type GoogleNotebooksInstance#nic_type}
 
 ---
 
@@ -2107,7 +2107,7 @@ NoProxyAccess interface{}
 
 The notebook instance will not register with the proxy..
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#no_proxy_access GoogleNotebooksInstance#no_proxy_access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#no_proxy_access GoogleNotebooksInstance#no_proxy_access}
 
 ---
 
@@ -2121,7 +2121,7 @@ NoPublicIp interface{}
 
 No public IP will be assigned to this instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#no_public_ip GoogleNotebooksInstance#no_public_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#no_public_ip GoogleNotebooksInstance#no_public_ip}
 
 ---
 
@@ -2135,7 +2135,7 @@ NoRemoveDataDisk interface{}
 
 If true, the data disk will not be auto deleted when deleting the instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#no_remove_data_disk GoogleNotebooksInstance#no_remove_data_disk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#no_remove_data_disk GoogleNotebooksInstance#no_remove_data_disk}
 
 ---
 
@@ -2152,7 +2152,7 @@ Path to a Bash script that automatically runs after a notebook instance fully bo
 The path must be a URL
 or Cloud Storage path (gs://path-to-file/file-name).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#post_startup_script GoogleNotebooksInstance#post_startup_script}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#post_startup_script GoogleNotebooksInstance#post_startup_script}
 
 ---
 
@@ -2164,7 +2164,7 @@ Project *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#project GoogleNotebooksInstance#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#project GoogleNotebooksInstance#project}.
 
 ---
 
@@ -2178,7 +2178,7 @@ ReservationAffinity GoogleNotebooksInstanceReservationAffinity
 
 reservation_affinity block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#reservation_affinity GoogleNotebooksInstance#reservation_affinity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#reservation_affinity GoogleNotebooksInstance#reservation_affinity}
 
 ---
 
@@ -2197,7 +2197,7 @@ the same project, but you must have the service account user
 permission to use the instance. If not specified,
 the Compute Engine default service account is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#service_account GoogleNotebooksInstance#service_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#service_account GoogleNotebooksInstance#service_account}
 
 ---
 
@@ -2217,7 +2217,7 @@ If not specified, the following scopes are defined:
 * https://www.googleapis.com/auth/cloud-platform
 * https://www.googleapis.com/auth/userinfo.email
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#service_account_scopes GoogleNotebooksInstance#service_account_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#service_account_scopes GoogleNotebooksInstance#service_account_scopes}
 
 ---
 
@@ -2231,7 +2231,7 @@ ShieldedInstanceConfig GoogleNotebooksInstanceShieldedInstanceConfig
 
 shielded_instance_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#shielded_instance_config GoogleNotebooksInstance#shielded_instance_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#shielded_instance_config GoogleNotebooksInstance#shielded_instance_config}
 
 ---
 
@@ -2245,7 +2245,7 @@ Subnet *string
 
 The name of the subnet that this instance is in. Format: projects/{project_id}/regions/{region}/subnetworks/{subnetwork_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#subnet GoogleNotebooksInstance#subnet}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#subnet GoogleNotebooksInstance#subnet}
 
 ---
 
@@ -2259,7 +2259,7 @@ Tags *[]*string
 
 The Compute Engine tags to add to instance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#tags GoogleNotebooksInstance#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#tags GoogleNotebooksInstance#tags}
 
 ---
 
@@ -2273,7 +2273,7 @@ Timeouts GoogleNotebooksInstanceTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#timeouts GoogleNotebooksInstance#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#timeouts GoogleNotebooksInstance#timeouts}
 
 ---
 
@@ -2287,7 +2287,7 @@ UpdateTime *string
 
 Instance update time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#update_time GoogleNotebooksInstance#update_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#update_time GoogleNotebooksInstance#update_time}
 
 ---
 
@@ -2301,7 +2301,7 @@ VmImage GoogleNotebooksInstanceVmImage
 
 vm_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#vm_image GoogleNotebooksInstance#vm_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#vm_image GoogleNotebooksInstance#vm_image}
 
 ---
 
@@ -2310,7 +2310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceContainerImage {
 	Repository: *string,
@@ -2337,7 +2337,7 @@ Repository *string
 
 The path to the container image repository. For example: gcr.io/{project_id}/{imageName}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#repository GoogleNotebooksInstance#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#repository GoogleNotebooksInstance#repository}
 
 ---
 
@@ -2351,7 +2351,7 @@ Tag *string
 
 The tag of the container image. If not specified, this defaults to the latest tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#tag GoogleNotebooksInstance#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#tag GoogleNotebooksInstance#tag}
 
 ---
 
@@ -2360,7 +2360,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceReservationAffinity {
 	ConsumeReservationType: *string,
@@ -2389,7 +2389,7 @@ ConsumeReservationType *string
 
 The type of Compute Reservation. Possible values: ["NO_RESERVATION", "ANY_RESERVATION", "SPECIFIC_RESERVATION"].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#consume_reservation_type GoogleNotebooksInstance#consume_reservation_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#consume_reservation_type GoogleNotebooksInstance#consume_reservation_type}
 
 ---
 
@@ -2403,7 +2403,7 @@ Key *string
 
 Corresponds to the label key of reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#key GoogleNotebooksInstance#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#key GoogleNotebooksInstance#key}
 
 ---
 
@@ -2417,7 +2417,7 @@ Values *[]*string
 
 Corresponds to the label values of reservation resource.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#values GoogleNotebooksInstance#values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#values GoogleNotebooksInstance#values}
 
 ---
 
@@ -2426,7 +2426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceShieldedInstanceConfig {
 	EnableIntegrityMonitoring: interface{},
@@ -2460,7 +2460,7 @@ boot integrity of the instance. The attestation is performed against the integri
 This baseline is initially derived from the implicitly trusted boot image when the instance is created.
 Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#enable_integrity_monitoring GoogleNotebooksInstance#enable_integrity_monitoring}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#enable_integrity_monitoring GoogleNotebooksInstance#enable_integrity_monitoring}
 
 ---
 
@@ -2479,7 +2479,7 @@ authentic software by verifying the digital signature of all boot components, an
 if signature verification fails.
 Disabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#enable_secure_boot GoogleNotebooksInstance#enable_secure_boot}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#enable_secure_boot GoogleNotebooksInstance#enable_secure_boot}
 
 ---
 
@@ -2493,7 +2493,7 @@ EnableVtpm interface{}
 
 Defines whether the instance has the vTPM enabled. Enabled by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#enable_vtpm GoogleNotebooksInstance#enable_vtpm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#enable_vtpm GoogleNotebooksInstance#enable_vtpm}
 
 ---
 
@@ -2502,7 +2502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceTimeouts {
 	Create: *string,
@@ -2515,9 +2515,9 @@ import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#create GoogleNotebooksInstance#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#delete GoogleNotebooksInstance#delete}. |
-| <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#update GoogleNotebooksInstance#update}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#create GoogleNotebooksInstance#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#delete GoogleNotebooksInstance#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#update GoogleNotebooksInstance#update}. |
 
 ---
 
@@ -2529,7 +2529,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#create GoogleNotebooksInstance#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#create GoogleNotebooksInstance#create}.
 
 ---
 
@@ -2541,7 +2541,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#delete GoogleNotebooksInstance#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#delete GoogleNotebooksInstance#delete}.
 
 ---
 
@@ -2553,7 +2553,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#update GoogleNotebooksInstance#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#update GoogleNotebooksInstance#update}.
 
 ---
 
@@ -2562,7 +2562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceVmImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 &googlenotebooksinstance.GoogleNotebooksInstanceVmImage {
 	Project: *string,
@@ -2591,7 +2591,7 @@ Project *string
 
 The name of the Google Cloud project that this VM image belongs to. Format: projects/{project_id}.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#project GoogleNotebooksInstance#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#project GoogleNotebooksInstance#project}
 
 ---
 
@@ -2605,7 +2605,7 @@ ImageFamily *string
 
 Use this VM image family to find the image; the newest image in this family will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#image_family GoogleNotebooksInstance#image_family}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#image_family GoogleNotebooksInstance#image_family}
 
 ---
 
@@ -2619,7 +2619,7 @@ ImageName *string
 
 Use VM image name to find the image.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_notebooks_instance#image_name GoogleNotebooksInstance#image_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_notebooks_instance#image_name GoogleNotebooksInstance#image_name}
 
 ---
 
@@ -2630,7 +2630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceAcceleratorConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceAcceleratorConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceAcceleratorConfigOutputReference
 ```
@@ -2923,7 +2923,7 @@ func InternalValue() GoogleNotebooksInstanceAcceleratorConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceContainerImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceContainerImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceContainerImageOutputReference
 ```
@@ -3223,7 +3223,7 @@ func InternalValue() GoogleNotebooksInstanceContainerImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceReservationAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceReservationAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceReservationAffinityOutputReference
 ```
@@ -3552,7 +3552,7 @@ func InternalValue() GoogleNotebooksInstanceReservationAffinity
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceShieldedInstanceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceShieldedInstanceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceShieldedInstanceConfigOutputReference
 ```
@@ -3888,7 +3888,7 @@ func InternalValue() GoogleNotebooksInstanceShieldedInstanceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceTimeoutsOutputReference
 ```
@@ -4224,7 +4224,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleNotebooksInstance.GoogleNotebooksInstanceVmImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenotebooksinstance"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlenotebooksinstance"
 
 googlenotebooksinstance.NewGoogleNotebooksInstanceVmImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GoogleNotebooksInstanceVmImageOutputReference
 ```

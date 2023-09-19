@@ -1,6 +1,6 @@
 # `google_gke_hub_scope`
 
-Refer to the Terraform Registory for docs: [`google_gke_hub_scope`](https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope).
+Refer to the Terraform Registory for docs: [`google_gke_hub_scope`](https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope).
 
 # `googleGkeHubScope` Submodule <a name="`googleGkeHubScope` Submodule" id="@cdktf/provider-google-beta.googleGkeHubScope"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_gke_hub_scope`](https://regi
 
 ### GoogleGkeHubScope <a name="GoogleGkeHubScope" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope google_gke_hub_scope}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope google_gke_hub_scope}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.Initializer"></a>
 
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetLabels">resetLabels</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetProject">resetProject</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
@@ -279,6 +280,12 @@ public putTimeouts(value: GoogleGkeHubScopeTimeouts): void
 public resetId(): void
 ```
 
+##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetLabels"></a>
+
+```typescript
+public resetLabels(): void
+```
+
 ##### `resetProject` <a name="resetProject" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.resetProject"></a>
 
 ```typescript
@@ -387,10 +394,12 @@ googleGkeHubScope.GoogleGkeHubScope.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.scopeIdInput">scopeIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts">GoogleGkeHubScopeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.scopeId">scopeId</a></code> | <code>string</code> | *No description.* |
 
@@ -618,6 +627,16 @@ public readonly idInput: string;
 
 ---
 
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.labelsInput"></a>
+
+```typescript
+public readonly labelsInput: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+---
+
 ##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.projectInput"></a>
 
 ```typescript
@@ -655,6 +674,16 @@ public readonly id: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScope.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
 
 ---
 
@@ -720,8 +749,9 @@ const googleGkeHubScopeConfig: googleGkeHubScope.GoogleGkeHubScopeConfig = { ...
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.scopeId">scopeId</a></code> | <code>string</code> | The client-provided identifier of the scope. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | Labels for this Scope. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts">GoogleGkeHubScopeTimeouts</a></code> | timeouts block. |
 
 ---
@@ -806,7 +836,7 @@ public readonly scopeId: string;
 
 The client-provided identifier of the scope.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope#scope_id GoogleGkeHubScope#scope_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#scope_id GoogleGkeHubScope#scope_id}
 
 ---
 
@@ -818,10 +848,24 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#id GoogleGkeHubScope#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeConfig.property.labels"></a>
+
+```typescript
+public readonly labels: {[ key: string ]: string};
+```
+
+- *Type:* {[ key: string ]: string}
+
+Labels for this Scope.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#labels GoogleGkeHubScope#labels}
 
 ---
 
@@ -833,7 +877,7 @@ public readonly project: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#project GoogleGkeHubScope#project}.
 
 ---
 
@@ -847,7 +891,7 @@ public readonly timeouts: GoogleGkeHubScopeTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope#timeouts GoogleGkeHubScope#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#timeouts GoogleGkeHubScope#timeouts}
 
 ---
 
@@ -876,8 +920,9 @@ const googleGkeHubScopeTimeouts: googleGkeHubScope.GoogleGkeHubScopeTimeouts = {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope#create GoogleGkeHubScope#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope#delete GoogleGkeHubScope#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#create GoogleGkeHubScope#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#delete GoogleGkeHubScope#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#update GoogleGkeHubScope#update}. |
 
 ---
 
@@ -889,7 +934,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope#create GoogleGkeHubScope#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#create GoogleGkeHubScope#create}.
 
 ---
 
@@ -901,7 +946,19 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_gke_hub_scope#delete GoogleGkeHubScope#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#delete GoogleGkeHubScope#delete}.
+
+---
+
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts.property.update"></a>
+
+```typescript
+public readonly update: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_gke_hub_scope#update GoogleGkeHubScope#update}.
 
 ---
 
@@ -1369,6 +1426,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
@@ -1534,6 +1592,12 @@ public resetCreate(): void
 public resetDelete(): void
 ```
 
+##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.resetUpdate"></a>
+
+```typescript
+public resetUpdate(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1543,8 +1607,10 @@ public resetDelete(): void
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeouts">GoogleGkeHubScopeTimeouts</a></code> | *No description.* |
 
 ---
@@ -1593,6 +1659,16 @@ public readonly deleteInput: string;
 
 ---
 
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.updateInput"></a>
+
+```typescript
+public readonly updateInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.create"></a>
 
 ```typescript
@@ -1607,6 +1683,16 @@ public readonly create: string;
 
 ```typescript
 public readonly delete: string;
+```
+
+- *Type:* string
+
+---
+
+##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google-beta.googleGkeHubScope.GoogleGkeHubScopeTimeoutsOutputReference.property.update"></a>
+
+```typescript
+public readonly update: string;
 ```
 
 - *Type:* string

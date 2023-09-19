@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,41 +10,41 @@ export interface GoogleBigqueryTableConfig extends cdktf.TerraformMetaArguments 
   /**
   * Specifies column names to use for data clustering. Up to four top-level columns are allowed, and should be specified in descending priority order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#clustering GoogleBigqueryTable#clustering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#clustering GoogleBigqueryTable#clustering}
   */
   readonly clustering?: string[];
   /**
   * The dataset ID to create the table in. Changing this forces a new resource to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#dataset_id GoogleBigqueryTable#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#dataset_id GoogleBigqueryTable#dataset_id}
   */
   readonly datasetId: string;
   /**
   * Whether or not to allow Terraform to destroy the instance. Unless this field is set to false in Terraform state, a terraform destroy or terraform apply that would delete the instance will fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#deletion_protection GoogleBigqueryTable#deletion_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#deletion_protection GoogleBigqueryTable#deletion_protection}
   */
   readonly deletionProtection?: boolean | cdktf.IResolvable;
   /**
   * The field description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#description GoogleBigqueryTable#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#description GoogleBigqueryTable#description}
   */
   readonly description?: string;
   /**
   * The time when this table expires, in milliseconds since the epoch. If not present, the table will persist indefinitely. Expired tables will be deleted and their storage reclaimed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#expiration_time GoogleBigqueryTable#expiration_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#expiration_time GoogleBigqueryTable#expiration_time}
   */
   readonly expirationTime?: number;
   /**
   * A descriptive name for the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#friendly_name GoogleBigqueryTable#friendly_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#friendly_name GoogleBigqueryTable#friendly_name}
   */
   readonly friendlyName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#id GoogleBigqueryTable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#id GoogleBigqueryTable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,67 +53,73 @@ export interface GoogleBigqueryTableConfig extends cdktf.TerraformMetaArguments 
   /**
   * A mapping of labels to assign to the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#labels GoogleBigqueryTable#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#labels GoogleBigqueryTable#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The maximum staleness of data that could be returned when the table (or stale MV) is queried. Staleness encoded as a string encoding of sql IntervalValue type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#max_staleness GoogleBigqueryTable#max_staleness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#max_staleness GoogleBigqueryTable#max_staleness}
   */
   readonly maxStaleness?: string;
   /**
   * The ID of the project in which the resource belongs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#project GoogleBigqueryTable#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#project GoogleBigqueryTable#project}
   */
   readonly project?: string;
   /**
   * A JSON schema for the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#schema GoogleBigqueryTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#schema GoogleBigqueryTable#schema}
   */
   readonly schema?: string;
   /**
   * A unique ID for the resource. Changing this forces a new resource to be created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#table_id GoogleBigqueryTable#table_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#table_id GoogleBigqueryTable#table_id}
   */
   readonly tableId: string;
   /**
   * encryption_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#encryption_configuration GoogleBigqueryTable#encryption_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#encryption_configuration GoogleBigqueryTable#encryption_configuration}
   */
   readonly encryptionConfiguration?: GoogleBigqueryTableEncryptionConfiguration;
   /**
   * external_data_configuration block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#external_data_configuration GoogleBigqueryTable#external_data_configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#external_data_configuration GoogleBigqueryTable#external_data_configuration}
   */
   readonly externalDataConfiguration?: GoogleBigqueryTableExternalDataConfiguration;
   /**
   * materialized_view block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#materialized_view GoogleBigqueryTable#materialized_view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#materialized_view GoogleBigqueryTable#materialized_view}
   */
   readonly materializedView?: GoogleBigqueryTableMaterializedView;
   /**
   * range_partitioning block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#range_partitioning GoogleBigqueryTable#range_partitioning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#range_partitioning GoogleBigqueryTable#range_partitioning}
   */
   readonly rangePartitioning?: GoogleBigqueryTableRangePartitioning;
   /**
+  * table_constraints block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#table_constraints GoogleBigqueryTable#table_constraints}
+  */
+  readonly tableConstraints?: GoogleBigqueryTableTableConstraints;
+  /**
   * time_partitioning block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#time_partitioning GoogleBigqueryTable#time_partitioning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#time_partitioning GoogleBigqueryTable#time_partitioning}
   */
   readonly timePartitioning?: GoogleBigqueryTableTimePartitioning;
   /**
   * view block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#view GoogleBigqueryTable#view}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#view GoogleBigqueryTable#view}
   */
   readonly view?: GoogleBigqueryTableView;
 }
@@ -126,7 +127,7 @@ export interface GoogleBigqueryTableEncryptionConfiguration {
   /**
   * The self link or full name of a key which should be used to encrypt this table. Note that the default bigquery service account will need to have encrypt/decrypt permissions on this key - you may want to see the google_bigquery_default_service_account datasource and the google_kms_crypto_key_iam_binding resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#kms_key_name GoogleBigqueryTable#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#kms_key_name GoogleBigqueryTable#kms_key_name}
   */
   readonly kmsKeyName: string;
 }
@@ -195,7 +196,7 @@ export interface GoogleBigqueryTableExternalDataConfigurationAvroOptions {
   /**
   * If sourceFormat is set to "AVRO", indicates whether to interpret logical types as the corresponding BigQuery data type (for example, TIMESTAMP), instead of using the raw type (for example, INTEGER).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#use_avro_logical_types GoogleBigqueryTable#use_avro_logical_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#use_avro_logical_types GoogleBigqueryTable#use_avro_logical_types}
   */
   readonly useAvroLogicalTypes: boolean | cdktf.IResolvable;
 }
@@ -259,37 +260,37 @@ export interface GoogleBigqueryTableExternalDataConfigurationCsvOptions {
   /**
   * Indicates if BigQuery should accept rows that are missing trailing optional columns.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#allow_jagged_rows GoogleBigqueryTable#allow_jagged_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#allow_jagged_rows GoogleBigqueryTable#allow_jagged_rows}
   */
   readonly allowJaggedRows?: boolean | cdktf.IResolvable;
   /**
   * Indicates if BigQuery should allow quoted data sections that contain newline characters in a CSV file. The default value is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#allow_quoted_newlines GoogleBigqueryTable#allow_quoted_newlines}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#allow_quoted_newlines GoogleBigqueryTable#allow_quoted_newlines}
   */
   readonly allowQuotedNewlines?: boolean | cdktf.IResolvable;
   /**
   * The character encoding of the data. The supported values are UTF-8 or ISO-8859-1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#encoding GoogleBigqueryTable#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#encoding GoogleBigqueryTable#encoding}
   */
   readonly encoding?: string;
   /**
   * The separator for fields in a CSV file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#field_delimiter GoogleBigqueryTable#field_delimiter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#field_delimiter GoogleBigqueryTable#field_delimiter}
   */
   readonly fieldDelimiter?: string;
   /**
   * The value that is used to quote data sections in a CSV file. If your data does not contain quoted sections, set the property value to an empty string. If your data contains quoted newline characters, you must also set the allow_quoted_newlines property to true. The API-side default is ", specified in Terraform escaped as \". Due to limitations with Terraform default values, this value is required to be explicitly set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#quote GoogleBigqueryTable#quote}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#quote GoogleBigqueryTable#quote}
   */
   readonly quote: string;
   /**
   * The number of rows at the top of a CSV file that BigQuery will skip when reading the data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#skip_leading_rows GoogleBigqueryTable#skip_leading_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#skip_leading_rows GoogleBigqueryTable#skip_leading_rows}
   */
   readonly skipLeadingRows?: number;
 }
@@ -468,13 +469,13 @@ export interface GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions
   /**
   * Range of a sheet to query from. Only used when non-empty. At least one of range or skip_leading_rows must be set. Typical format: "sheet_name!top_left_cell_id:bottom_right_cell_id" For example: "sheet1!A1:B20"
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#range GoogleBigqueryTable#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#range GoogleBigqueryTable#range}
   */
   readonly range?: string;
   /**
   * The number of rows at the top of the sheet that BigQuery will skip when reading the data. At least one of range or skip_leading_rows must be set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#skip_leading_rows GoogleBigqueryTable#skip_leading_rows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#skip_leading_rows GoogleBigqueryTable#skip_leading_rows}
   */
   readonly skipLeadingRows?: number;
 }
@@ -564,19 +565,19 @@ export interface GoogleBigqueryTableExternalDataConfigurationHivePartitioningOpt
   /**
   * When set, what mode of hive partitioning to use when reading data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#mode GoogleBigqueryTable#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#mode GoogleBigqueryTable#mode}
   */
   readonly mode?: string;
   /**
   * If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#require_partition_filter GoogleBigqueryTable#require_partition_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#require_partition_filter GoogleBigqueryTable#require_partition_filter}
   */
   readonly requirePartitionFilter?: boolean | cdktf.IResolvable;
   /**
   * When hive partition detection is requested, a common for all source uris must be required. The prefix must end immediately before the partition key encoding begins.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#source_uri_prefix GoogleBigqueryTable#source_uri_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#source_uri_prefix GoogleBigqueryTable#source_uri_prefix}
   */
   readonly sourceUriPrefix?: string;
 }
@@ -689,7 +690,7 @@ export interface GoogleBigqueryTableExternalDataConfigurationJsonOptions {
   /**
   * The character encoding of the data. The supported values are UTF-8, UTF-16BE, UTF-16LE, UTF-32BE, and UTF-32LE. The default value is UTF-8.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#encoding GoogleBigqueryTable#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#encoding GoogleBigqueryTable#encoding}
   */
   readonly encoding?: string;
 }
@@ -756,13 +757,13 @@ export interface GoogleBigqueryTableExternalDataConfigurationParquetOptions {
   /**
   * Indicates whether to use schema inference specifically for Parquet LIST logical type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#enable_list_inference GoogleBigqueryTable#enable_list_inference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#enable_list_inference GoogleBigqueryTable#enable_list_inference}
   */
   readonly enableListInference?: boolean | cdktf.IResolvable;
   /**
   * Indicates whether to infer Parquet ENUM logical type as STRING instead of BYTES by default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#enum_as_string GoogleBigqueryTable#enum_as_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#enum_as_string GoogleBigqueryTable#enum_as_string}
   */
   readonly enumAsString?: boolean | cdktf.IResolvable;
 }
@@ -852,109 +853,109 @@ export interface GoogleBigqueryTableExternalDataConfiguration {
   /**
   * Let BigQuery try to autodetect the schema and format of the table.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#autodetect GoogleBigqueryTable#autodetect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#autodetect GoogleBigqueryTable#autodetect}
   */
   readonly autodetect: boolean | cdktf.IResolvable;
   /**
   * The compression type of the data source. Valid values are "NONE" or "GZIP".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#compression GoogleBigqueryTable#compression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#compression GoogleBigqueryTable#compression}
   */
   readonly compression?: string;
   /**
   * The connection specifying the credentials to be used to read external storage, such as Azure Blob, Cloud Storage, or S3. The connectionId can have the form "{{project}}.{{location}}.{{connection_id}}" or "projects/{{project}}/locations/{{location}}/connections/{{connection_id}}".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#connection_id GoogleBigqueryTable#connection_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#connection_id GoogleBigqueryTable#connection_id}
   */
   readonly connectionId?: string;
   /**
   * Specifies how source URIs are interpreted for constructing the file set to load.  By default source URIs are expanded against the underlying storage.  Other options include specifying manifest files. Only applicable to object storage systems.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#file_set_spec_type GoogleBigqueryTable#file_set_spec_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#file_set_spec_type GoogleBigqueryTable#file_set_spec_type}
   */
   readonly fileSetSpecType?: string;
   /**
   * Indicates if BigQuery should allow extra values that are not represented in the table schema. If true, the extra values are ignored. If false, records with extra columns are treated as bad records, and if there are too many bad records, an invalid error is returned in the job result. The default value is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#ignore_unknown_values GoogleBigqueryTable#ignore_unknown_values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#ignore_unknown_values GoogleBigqueryTable#ignore_unknown_values}
   */
   readonly ignoreUnknownValues?: boolean | cdktf.IResolvable;
   /**
   * The maximum number of bad records that BigQuery can ignore when reading data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#max_bad_records GoogleBigqueryTable#max_bad_records}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#max_bad_records GoogleBigqueryTable#max_bad_records}
   */
   readonly maxBadRecords?: number;
   /**
   * Metadata Cache Mode for the table. Set this to enable caching of metadata from external data source.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#metadata_cache_mode GoogleBigqueryTable#metadata_cache_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#metadata_cache_mode GoogleBigqueryTable#metadata_cache_mode}
   */
   readonly metadataCacheMode?: string;
   /**
   * Object Metadata is used to create Object Tables. Object Tables contain a listing of objects (with their metadata) found at the sourceUris. If ObjectMetadata is set, sourceFormat should be omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#object_metadata GoogleBigqueryTable#object_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#object_metadata GoogleBigqueryTable#object_metadata}
   */
   readonly objectMetadata?: string;
   /**
   * When creating an external table, the user can provide a reference file with the table schema. This is enabled for the following formats: AVRO, PARQUET, ORC.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#reference_file_schema_uri GoogleBigqueryTable#reference_file_schema_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#reference_file_schema_uri GoogleBigqueryTable#reference_file_schema_uri}
   */
   readonly referenceFileSchemaUri?: string;
   /**
   * A JSON schema for the external table. Schema is required for CSV and JSON formats and is disallowed for Google Cloud Bigtable, Cloud Datastore backups, and Avro formats when using external tables.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#schema GoogleBigqueryTable#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#schema GoogleBigqueryTable#schema}
   */
   readonly schema?: string;
   /**
   *  Please see sourceFormat under ExternalDataConfiguration in Bigquery's public API documentation (https://cloud.google.com/bigquery/docs/reference/rest/v2/tables#externaldataconfiguration) for supported formats. To use "GOOGLE_SHEETS" the scopes must include "googleapis.com/auth/drive.readonly".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#source_format GoogleBigqueryTable#source_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#source_format GoogleBigqueryTable#source_format}
   */
   readonly sourceFormat?: string;
   /**
   * A list of the fully-qualified URIs that point to your data in Google Cloud.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#source_uris GoogleBigqueryTable#source_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#source_uris GoogleBigqueryTable#source_uris}
   */
   readonly sourceUris: string[];
   /**
   * avro_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#avro_options GoogleBigqueryTable#avro_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#avro_options GoogleBigqueryTable#avro_options}
   */
   readonly avroOptions?: GoogleBigqueryTableExternalDataConfigurationAvroOptions;
   /**
   * csv_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#csv_options GoogleBigqueryTable#csv_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#csv_options GoogleBigqueryTable#csv_options}
   */
   readonly csvOptions?: GoogleBigqueryTableExternalDataConfigurationCsvOptions;
   /**
   * google_sheets_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#google_sheets_options GoogleBigqueryTable#google_sheets_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#google_sheets_options GoogleBigqueryTable#google_sheets_options}
   */
   readonly googleSheetsOptions?: GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions;
   /**
   * hive_partitioning_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#hive_partitioning_options GoogleBigqueryTable#hive_partitioning_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#hive_partitioning_options GoogleBigqueryTable#hive_partitioning_options}
   */
   readonly hivePartitioningOptions?: GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions;
   /**
   * json_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#json_options GoogleBigqueryTable#json_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#json_options GoogleBigqueryTable#json_options}
   */
   readonly jsonOptions?: GoogleBigqueryTableExternalDataConfigurationJsonOptions;
   /**
   * parquet_options block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#parquet_options GoogleBigqueryTable#parquet_options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#parquet_options GoogleBigqueryTable#parquet_options}
   */
   readonly parquetOptions?: GoogleBigqueryTableExternalDataConfigurationParquetOptions;
 }
@@ -1404,21 +1405,27 @@ export class GoogleBigqueryTableExternalDataConfigurationOutputReference extends
 }
 export interface GoogleBigqueryTableMaterializedView {
   /**
+  * Allow non incremental materialized view definition. The default value is false.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#allow_non_incremental_definition GoogleBigqueryTable#allow_non_incremental_definition}
+  */
+  readonly allowNonIncrementalDefinition?: boolean | cdktf.IResolvable;
+  /**
   * Specifies if BigQuery should automatically refresh materialized view when the base table is updated. The default is true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#enable_refresh GoogleBigqueryTable#enable_refresh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#enable_refresh GoogleBigqueryTable#enable_refresh}
   */
   readonly enableRefresh?: boolean | cdktf.IResolvable;
   /**
   * A query whose result is persisted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#query GoogleBigqueryTable#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#query GoogleBigqueryTable#query}
   */
   readonly query: string;
   /**
   * Specifies maximum frequency at which this materialized view will be refreshed. The default is 1800000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#refresh_interval_ms GoogleBigqueryTable#refresh_interval_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#refresh_interval_ms GoogleBigqueryTable#refresh_interval_ms}
   */
   readonly refreshIntervalMs?: number;
 }
@@ -1429,6 +1436,7 @@ export function googleBigqueryTableMaterializedViewToTerraform(struct?: GoogleBi
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    allow_non_incremental_definition: cdktf.booleanToTerraform(struct!.allowNonIncrementalDefinition),
     enable_refresh: cdktf.booleanToTerraform(struct!.enableRefresh),
     query: cdktf.stringToTerraform(struct!.query),
     refresh_interval_ms: cdktf.numberToTerraform(struct!.refreshIntervalMs),
@@ -1449,6 +1457,10 @@ export class GoogleBigqueryTableMaterializedViewOutputReference extends cdktf.Co
   public get internalValue(): GoogleBigqueryTableMaterializedView | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._allowNonIncrementalDefinition !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowNonIncrementalDefinition = this._allowNonIncrementalDefinition;
+    }
     if (this._enableRefresh !== undefined) {
       hasAnyValues = true;
       internalValueResult.enableRefresh = this._enableRefresh;
@@ -1467,16 +1479,34 @@ export class GoogleBigqueryTableMaterializedViewOutputReference extends cdktf.Co
   public set internalValue(value: GoogleBigqueryTableMaterializedView | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._allowNonIncrementalDefinition = undefined;
       this._enableRefresh = undefined;
       this._query = undefined;
       this._refreshIntervalMs = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowNonIncrementalDefinition = value.allowNonIncrementalDefinition;
       this._enableRefresh = value.enableRefresh;
       this._query = value.query;
       this._refreshIntervalMs = value.refreshIntervalMs;
     }
+  }
+
+  // allow_non_incremental_definition - computed: false, optional: true, required: false
+  private _allowNonIncrementalDefinition?: boolean | cdktf.IResolvable; 
+  public get allowNonIncrementalDefinition() {
+    return this.getBooleanAttribute('allow_non_incremental_definition');
+  }
+  public set allowNonIncrementalDefinition(value: boolean | cdktf.IResolvable) {
+    this._allowNonIncrementalDefinition = value;
+  }
+  public resetAllowNonIncrementalDefinition() {
+    this._allowNonIncrementalDefinition = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowNonIncrementalDefinitionInput() {
+    return this._allowNonIncrementalDefinition;
   }
 
   // enable_refresh - computed: false, optional: true, required: false
@@ -1528,19 +1558,19 @@ export interface GoogleBigqueryTableRangePartitioningRange {
   /**
   * End of the range partitioning, exclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#end GoogleBigqueryTable#end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#end GoogleBigqueryTable#end}
   */
   readonly end: number;
   /**
   * The width of each range within the partition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#interval GoogleBigqueryTable#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#interval GoogleBigqueryTable#interval}
   */
   readonly interval: number;
   /**
   * Start of the range partitioning, inclusive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#start GoogleBigqueryTable#start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#start GoogleBigqueryTable#start}
   */
   readonly start: number;
 }
@@ -1644,13 +1674,13 @@ export interface GoogleBigqueryTableRangePartitioning {
   /**
   * The field used to determine how to create a range-based partition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#field GoogleBigqueryTable#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#field GoogleBigqueryTable#field}
   */
   readonly field: string;
   /**
   * range block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#range GoogleBigqueryTable#range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#range GoogleBigqueryTable#range}
   */
   readonly range: GoogleBigqueryTableRangePartitioningRange;
 }
@@ -1730,29 +1760,546 @@ export class GoogleBigqueryTableRangePartitioningOutputReference extends cdktf.C
     return this._range.internalValue;
   }
 }
+export interface GoogleBigqueryTableTableConstraintsForeignKeysColumnReferences {
+  /**
+  * The column in the primary key that are referenced by the referencingColumn.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#referenced_column GoogleBigqueryTable#referenced_column}
+  */
+  readonly referencedColumn: string;
+  /**
+  * The column that composes the foreign key.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#referencing_column GoogleBigqueryTable#referencing_column}
+  */
+  readonly referencingColumn: string;
+}
+
+export function googleBigqueryTableTableConstraintsForeignKeysColumnReferencesToTerraform(struct?: GoogleBigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference | GoogleBigqueryTableTableConstraintsForeignKeysColumnReferences): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    referenced_column: cdktf.stringToTerraform(struct!.referencedColumn),
+    referencing_column: cdktf.stringToTerraform(struct!.referencingColumn),
+  }
+}
+
+export class GoogleBigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryTableTableConstraintsForeignKeysColumnReferences | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._referencedColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.referencedColumn = this._referencedColumn;
+    }
+    if (this._referencingColumn !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.referencingColumn = this._referencingColumn;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryTableTableConstraintsForeignKeysColumnReferences | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._referencedColumn = undefined;
+      this._referencingColumn = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._referencedColumn = value.referencedColumn;
+      this._referencingColumn = value.referencingColumn;
+    }
+  }
+
+  // referenced_column - computed: false, optional: false, required: true
+  private _referencedColumn?: string; 
+  public get referencedColumn() {
+    return this.getStringAttribute('referenced_column');
+  }
+  public set referencedColumn(value: string) {
+    this._referencedColumn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get referencedColumnInput() {
+    return this._referencedColumn;
+  }
+
+  // referencing_column - computed: false, optional: false, required: true
+  private _referencingColumn?: string; 
+  public get referencingColumn() {
+    return this.getStringAttribute('referencing_column');
+  }
+  public set referencingColumn(value: string) {
+    this._referencingColumn = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get referencingColumnInput() {
+    return this._referencingColumn;
+  }
+}
+export interface GoogleBigqueryTableTableConstraintsForeignKeysReferencedTable {
+  /**
+  * The ID of the dataset containing this table.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#dataset_id GoogleBigqueryTable#dataset_id}
+  */
+  readonly datasetId: string;
+  /**
+  * The ID of the project containing this table.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#project_id GoogleBigqueryTable#project_id}
+  */
+  readonly projectId: string;
+  /**
+  * The ID of the table. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 1,024 characters. Certain operations allow suffixing of the table ID with a partition decorator, such as sample_table$20190123.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#table_id GoogleBigqueryTable#table_id}
+  */
+  readonly tableId: string;
+}
+
+export function googleBigqueryTableTableConstraintsForeignKeysReferencedTableToTerraform(struct?: GoogleBigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference | GoogleBigqueryTableTableConstraintsForeignKeysReferencedTable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    dataset_id: cdktf.stringToTerraform(struct!.datasetId),
+    project_id: cdktf.stringToTerraform(struct!.projectId),
+    table_id: cdktf.stringToTerraform(struct!.tableId),
+  }
+}
+
+export class GoogleBigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryTableTableConstraintsForeignKeysReferencedTable | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._datasetId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.datasetId = this._datasetId;
+    }
+    if (this._projectId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.projectId = this._projectId;
+    }
+    if (this._tableId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tableId = this._tableId;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryTableTableConstraintsForeignKeysReferencedTable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._datasetId = undefined;
+      this._projectId = undefined;
+      this._tableId = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._datasetId = value.datasetId;
+      this._projectId = value.projectId;
+      this._tableId = value.tableId;
+    }
+  }
+
+  // dataset_id - computed: false, optional: false, required: true
+  private _datasetId?: string; 
+  public get datasetId() {
+    return this.getStringAttribute('dataset_id');
+  }
+  public set datasetId(value: string) {
+    this._datasetId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get datasetIdInput() {
+    return this._datasetId;
+  }
+
+  // project_id - computed: false, optional: false, required: true
+  private _projectId?: string; 
+  public get projectId() {
+    return this.getStringAttribute('project_id');
+  }
+  public set projectId(value: string) {
+    this._projectId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get projectIdInput() {
+    return this._projectId;
+  }
+
+  // table_id - computed: false, optional: false, required: true
+  private _tableId?: string; 
+  public get tableId() {
+    return this.getStringAttribute('table_id');
+  }
+  public set tableId(value: string) {
+    this._tableId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableIdInput() {
+    return this._tableId;
+  }
+}
+export interface GoogleBigqueryTableTableConstraintsForeignKeys {
+  /**
+  * Set only if the foreign key constraint is named.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#name GoogleBigqueryTable#name}
+  */
+  readonly name?: string;
+  /**
+  * column_references block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#column_references GoogleBigqueryTable#column_references}
+  */
+  readonly columnReferences: GoogleBigqueryTableTableConstraintsForeignKeysColumnReferences;
+  /**
+  * referenced_table block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#referenced_table GoogleBigqueryTable#referenced_table}
+  */
+  readonly referencedTable: GoogleBigqueryTableTableConstraintsForeignKeysReferencedTable;
+}
+
+export function googleBigqueryTableTableConstraintsForeignKeysToTerraform(struct?: GoogleBigqueryTableTableConstraintsForeignKeys | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    name: cdktf.stringToTerraform(struct!.name),
+    column_references: googleBigqueryTableTableConstraintsForeignKeysColumnReferencesToTerraform(struct!.columnReferences),
+    referenced_table: googleBigqueryTableTableConstraintsForeignKeysReferencedTableToTerraform(struct!.referencedTable),
+  }
+}
+
+export class GoogleBigqueryTableTableConstraintsForeignKeysOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleBigqueryTableTableConstraintsForeignKeys | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
+    if (this._columnReferences?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columnReferences = this._columnReferences?.internalValue;
+    }
+    if (this._referencedTable?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.referencedTable = this._referencedTable?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryTableTableConstraintsForeignKeys | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+      this._columnReferences.internalValue = undefined;
+      this._referencedTable.internalValue = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
+      this._columnReferences.internalValue = value.columnReferences;
+      this._referencedTable.internalValue = value.referencedTable;
+    }
+  }
+
+  // name - computed: false, optional: true, required: false
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // column_references - computed: false, optional: false, required: true
+  private _columnReferences = new GoogleBigqueryTableTableConstraintsForeignKeysColumnReferencesOutputReference(this, "column_references");
+  public get columnReferences() {
+    return this._columnReferences;
+  }
+  public putColumnReferences(value: GoogleBigqueryTableTableConstraintsForeignKeysColumnReferences) {
+    this._columnReferences.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnReferencesInput() {
+    return this._columnReferences.internalValue;
+  }
+
+  // referenced_table - computed: false, optional: false, required: true
+  private _referencedTable = new GoogleBigqueryTableTableConstraintsForeignKeysReferencedTableOutputReference(this, "referenced_table");
+  public get referencedTable() {
+    return this._referencedTable;
+  }
+  public putReferencedTable(value: GoogleBigqueryTableTableConstraintsForeignKeysReferencedTable) {
+    this._referencedTable.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get referencedTableInput() {
+    return this._referencedTable.internalValue;
+  }
+}
+
+export class GoogleBigqueryTableTableConstraintsForeignKeysList extends cdktf.ComplexList {
+  public internalValue? : GoogleBigqueryTableTableConstraintsForeignKeys[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleBigqueryTableTableConstraintsForeignKeysOutputReference {
+    return new GoogleBigqueryTableTableConstraintsForeignKeysOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface GoogleBigqueryTableTableConstraintsPrimaryKey {
+  /**
+  * The columns that are composed of the primary key constraint.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#columns GoogleBigqueryTable#columns}
+  */
+  readonly columns: string[];
+}
+
+export function googleBigqueryTableTableConstraintsPrimaryKeyToTerraform(struct?: GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference | GoogleBigqueryTableTableConstraintsPrimaryKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    columns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.columns),
+  }
+}
+
+export class GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryTableTableConstraintsPrimaryKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._columns !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.columns = this._columns;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryTableTableConstraintsPrimaryKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._columns = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._columns = value.columns;
+    }
+  }
+
+  // columns - computed: false, optional: false, required: true
+  private _columns?: string[]; 
+  public get columns() {
+    return this.getListAttribute('columns');
+  }
+  public set columns(value: string[]) {
+    this._columns = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get columnsInput() {
+    return this._columns;
+  }
+}
+export interface GoogleBigqueryTableTableConstraints {
+  /**
+  * foreign_keys block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#foreign_keys GoogleBigqueryTable#foreign_keys}
+  */
+  readonly foreignKeys?: GoogleBigqueryTableTableConstraintsForeignKeys[] | cdktf.IResolvable;
+  /**
+  * primary_key block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#primary_key GoogleBigqueryTable#primary_key}
+  */
+  readonly primaryKey?: GoogleBigqueryTableTableConstraintsPrimaryKey;
+}
+
+export function googleBigqueryTableTableConstraintsToTerraform(struct?: GoogleBigqueryTableTableConstraintsOutputReference | GoogleBigqueryTableTableConstraints): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    foreign_keys: cdktf.listMapper(googleBigqueryTableTableConstraintsForeignKeysToTerraform, true)(struct!.foreignKeys),
+    primary_key: googleBigqueryTableTableConstraintsPrimaryKeyToTerraform(struct!.primaryKey),
+  }
+}
+
+export class GoogleBigqueryTableTableConstraintsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleBigqueryTableTableConstraints | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._foreignKeys?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.foreignKeys = this._foreignKeys?.internalValue;
+    }
+    if (this._primaryKey?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.primaryKey = this._primaryKey?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleBigqueryTableTableConstraints | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._foreignKeys.internalValue = undefined;
+      this._primaryKey.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._foreignKeys.internalValue = value.foreignKeys;
+      this._primaryKey.internalValue = value.primaryKey;
+    }
+  }
+
+  // foreign_keys - computed: false, optional: true, required: false
+  private _foreignKeys = new GoogleBigqueryTableTableConstraintsForeignKeysList(this, "foreign_keys", false);
+  public get foreignKeys() {
+    return this._foreignKeys;
+  }
+  public putForeignKeys(value: GoogleBigqueryTableTableConstraintsForeignKeys[] | cdktf.IResolvable) {
+    this._foreignKeys.internalValue = value;
+  }
+  public resetForeignKeys() {
+    this._foreignKeys.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get foreignKeysInput() {
+    return this._foreignKeys.internalValue;
+  }
+
+  // primary_key - computed: false, optional: true, required: false
+  private _primaryKey = new GoogleBigqueryTableTableConstraintsPrimaryKeyOutputReference(this, "primary_key");
+  public get primaryKey() {
+    return this._primaryKey;
+  }
+  public putPrimaryKey(value: GoogleBigqueryTableTableConstraintsPrimaryKey) {
+    this._primaryKey.internalValue = value;
+  }
+  public resetPrimaryKey() {
+    this._primaryKey.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get primaryKeyInput() {
+    return this._primaryKey.internalValue;
+  }
+}
 export interface GoogleBigqueryTableTimePartitioning {
   /**
   * Number of milliseconds for which to keep the storage for a partition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#expiration_ms GoogleBigqueryTable#expiration_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#expiration_ms GoogleBigqueryTable#expiration_ms}
   */
   readonly expirationMs?: number;
   /**
   * The field used to determine how to create a time-based partition. If time-based partitioning is enabled without this value, the table is partitioned based on the load time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#field GoogleBigqueryTable#field}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#field GoogleBigqueryTable#field}
   */
   readonly field?: string;
   /**
   * If set to true, queries over this table require a partition filter that can be used for partition elimination to be specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#require_partition_filter GoogleBigqueryTable#require_partition_filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#require_partition_filter GoogleBigqueryTable#require_partition_filter}
   */
   readonly requirePartitionFilter?: boolean | cdktf.IResolvable;
   /**
   * The supported types are DAY, HOUR, MONTH, and YEAR, which will generate one partition per day, hour, month, and year, respectively.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#type GoogleBigqueryTable#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#type GoogleBigqueryTable#type}
   */
   readonly type: string;
 }
@@ -1885,13 +2432,13 @@ export interface GoogleBigqueryTableView {
   /**
   * A query that BigQuery executes when the view is referenced.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#query GoogleBigqueryTable#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#query GoogleBigqueryTable#query}
   */
   readonly query: string;
   /**
   * Specifies whether to use BigQuery's legacy SQL for this view. The default value is true. If set to false, the view will use BigQuery's standard SQL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table#use_legacy_sql GoogleBigqueryTable#use_legacy_sql}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table#use_legacy_sql GoogleBigqueryTable#use_legacy_sql}
   */
   readonly useLegacySql?: boolean | cdktf.IResolvable;
 }
@@ -1976,7 +2523,7 @@ export class GoogleBigqueryTableViewOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table google_bigquery_table}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table google_bigquery_table}
 */
 export class GoogleBigqueryTable extends cdktf.TerraformResource {
 
@@ -1990,7 +2537,7 @@ export class GoogleBigqueryTable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table google_bigquery_table} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table google_bigquery_table} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2001,7 +2548,7 @@ export class GoogleBigqueryTable extends cdktf.TerraformResource {
       terraformResourceType: 'google_bigquery_table',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.82.0',
+        providerVersion: '4.83.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -2028,6 +2575,7 @@ export class GoogleBigqueryTable extends cdktf.TerraformResource {
     this._externalDataConfiguration.internalValue = config.externalDataConfiguration;
     this._materializedView.internalValue = config.materializedView;
     this._rangePartitioning.internalValue = config.rangePartitioning;
+    this._tableConstraints.internalValue = config.tableConstraints;
     this._timePartitioning.internalValue = config.timePartitioning;
     this._view.internalValue = config.view;
   }
@@ -2331,6 +2879,22 @@ export class GoogleBigqueryTable extends cdktf.TerraformResource {
     return this._rangePartitioning.internalValue;
   }
 
+  // table_constraints - computed: false, optional: true, required: false
+  private _tableConstraints = new GoogleBigqueryTableTableConstraintsOutputReference(this, "table_constraints");
+  public get tableConstraints() {
+    return this._tableConstraints;
+  }
+  public putTableConstraints(value: GoogleBigqueryTableTableConstraints) {
+    this._tableConstraints.internalValue = value;
+  }
+  public resetTableConstraints() {
+    this._tableConstraints.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tableConstraintsInput() {
+    return this._tableConstraints.internalValue;
+  }
+
   // time_partitioning - computed: false, optional: true, required: false
   private _timePartitioning = new GoogleBigqueryTableTimePartitioningOutputReference(this, "time_partitioning");
   public get timePartitioning() {
@@ -2385,6 +2949,7 @@ export class GoogleBigqueryTable extends cdktf.TerraformResource {
       external_data_configuration: googleBigqueryTableExternalDataConfigurationToTerraform(this._externalDataConfiguration.internalValue),
       materialized_view: googleBigqueryTableMaterializedViewToTerraform(this._materializedView.internalValue),
       range_partitioning: googleBigqueryTableRangePartitioningToTerraform(this._rangePartitioning.internalValue),
+      table_constraints: googleBigqueryTableTableConstraintsToTerraform(this._tableConstraints.internalValue),
       time_partitioning: googleBigqueryTableTimePartitioningToTerraform(this._timePartitioning.internalValue),
       view: googleBigqueryTableViewToTerraform(this._view.internalValue),
     };
