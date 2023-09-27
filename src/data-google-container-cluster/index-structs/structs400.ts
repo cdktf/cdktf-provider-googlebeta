@@ -1,14 +1,354 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 import * as cdktf from 'cdktf';
-import { DataGoogleContainerClusterNodePoolAutoscalingList,
+import { DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList,
+DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList,
+DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigList,
+DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList,
+DataGoogleContainerClusterNodePoolNodeConfigFastSocketList,
+DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList,
+DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList,
+DataGoogleContainerClusterNodePoolNodeConfigGvnicList,
+DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList,
+DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigList,
+DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList,
+DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList,
+DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList,
+DataGoogleContainerClusterNodePoolNodeConfigSandboxConfigList,
+DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList,
+DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList,
+DataGoogleContainerClusterNodePoolNodeConfigTaintList,
+DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigList,
+DataGoogleContainerClusterNodePoolAutoscalingList,
 DataGoogleContainerClusterNodePoolManagementList,
-DataGoogleContainerClusterNodePoolNetworkConfigList,
-DataGoogleContainerClusterNodePoolNodeConfigList,
-DataGoogleContainerClusterNodePoolPlacementPolicyList } from './structs0'
+DataGoogleContainerClusterNodePoolNetworkConfigList } from './structs0'
+export interface DataGoogleContainerClusterNodePoolNodeConfig {
+}
+
+export function dataGoogleContainerClusterNodePoolNodeConfigToTerraform(struct?: DataGoogleContainerClusterNodePoolNodeConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleContainerClusterNodePoolNodeConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleContainerClusterNodePoolNodeConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleContainerClusterNodePoolNodeConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // advanced_machine_features - computed: true, optional: false, required: false
+  private _advancedMachineFeatures = new DataGoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesList(this, "advanced_machine_features", false);
+  public get advancedMachineFeatures() {
+    return this._advancedMachineFeatures;
+  }
+
+  // boot_disk_kms_key - computed: true, optional: false, required: false
+  public get bootDiskKmsKey() {
+    return this.getStringAttribute('boot_disk_kms_key');
+  }
+
+  // confidential_nodes - computed: true, optional: false, required: false
+  private _confidentialNodes = new DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList(this, "confidential_nodes", false);
+  public get confidentialNodes() {
+    return this._confidentialNodes;
+  }
+
+  // disk_size_gb - computed: true, optional: false, required: false
+  public get diskSizeGb() {
+    return this.getNumberAttribute('disk_size_gb');
+  }
+
+  // disk_type - computed: true, optional: false, required: false
+  public get diskType() {
+    return this.getStringAttribute('disk_type');
+  }
+
+  // ephemeral_storage_config - computed: true, optional: false, required: false
+  private _ephemeralStorageConfig = new DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigList(this, "ephemeral_storage_config", false);
+  public get ephemeralStorageConfig() {
+    return this._ephemeralStorageConfig;
+  }
+
+  // ephemeral_storage_local_ssd_config - computed: true, optional: false, required: false
+  private _ephemeralStorageLocalSsdConfig = new DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList(this, "ephemeral_storage_local_ssd_config", false);
+  public get ephemeralStorageLocalSsdConfig() {
+    return this._ephemeralStorageLocalSsdConfig;
+  }
+
+  // fast_socket - computed: true, optional: false, required: false
+  private _fastSocket = new DataGoogleContainerClusterNodePoolNodeConfigFastSocketList(this, "fast_socket", false);
+  public get fastSocket() {
+    return this._fastSocket;
+  }
+
+  // gcfs_config - computed: true, optional: false, required: false
+  private _gcfsConfig = new DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList(this, "gcfs_config", false);
+  public get gcfsConfig() {
+    return this._gcfsConfig;
+  }
+
+  // guest_accelerator - computed: true, optional: false, required: false
+  private _guestAccelerator = new DataGoogleContainerClusterNodePoolNodeConfigGuestAcceleratorList(this, "guest_accelerator", false);
+  public get guestAccelerator() {
+    return this._guestAccelerator;
+  }
+
+  // gvnic - computed: true, optional: false, required: false
+  private _gvnic = new DataGoogleContainerClusterNodePoolNodeConfigGvnicList(this, "gvnic", false);
+  public get gvnic() {
+    return this._gvnic;
+  }
+
+  // host_maintenance_policy - computed: true, optional: false, required: false
+  private _hostMaintenancePolicy = new DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList(this, "host_maintenance_policy", false);
+  public get hostMaintenancePolicy() {
+    return this._hostMaintenancePolicy;
+  }
+
+  // image_type - computed: true, optional: false, required: false
+  public get imageType() {
+    return this.getStringAttribute('image_type');
+  }
+
+  // kubelet_config - computed: true, optional: false, required: false
+  private _kubeletConfig = new DataGoogleContainerClusterNodePoolNodeConfigKubeletConfigList(this, "kubelet_config", false);
+  public get kubeletConfig() {
+    return this._kubeletConfig;
+  }
+
+  // labels - computed: true, optional: false, required: false
+  private _labels = new cdktf.StringMap(this, "labels");
+  public get labels() {
+    return this._labels;
+  }
+
+  // linux_node_config - computed: true, optional: false, required: false
+  private _linuxNodeConfig = new DataGoogleContainerClusterNodePoolNodeConfigLinuxNodeConfigList(this, "linux_node_config", false);
+  public get linuxNodeConfig() {
+    return this._linuxNodeConfig;
+  }
+
+  // local_nvme_ssd_block_config - computed: true, optional: false, required: false
+  private _localNvmeSsdBlockConfig = new DataGoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigList(this, "local_nvme_ssd_block_config", false);
+  public get localNvmeSsdBlockConfig() {
+    return this._localNvmeSsdBlockConfig;
+  }
+
+  // local_ssd_count - computed: true, optional: false, required: false
+  public get localSsdCount() {
+    return this.getNumberAttribute('local_ssd_count');
+  }
+
+  // logging_variant - computed: true, optional: false, required: false
+  public get loggingVariant() {
+    return this.getStringAttribute('logging_variant');
+  }
+
+  // machine_type - computed: true, optional: false, required: false
+  public get machineType() {
+    return this.getStringAttribute('machine_type');
+  }
+
+  // metadata - computed: true, optional: false, required: false
+  private _metadata = new cdktf.StringMap(this, "metadata");
+  public get metadata() {
+    return this._metadata;
+  }
+
+  // min_cpu_platform - computed: true, optional: false, required: false
+  public get minCpuPlatform() {
+    return this.getStringAttribute('min_cpu_platform');
+  }
+
+  // node_group - computed: true, optional: false, required: false
+  public get nodeGroup() {
+    return this.getStringAttribute('node_group');
+  }
+
+  // oauth_scopes - computed: true, optional: false, required: false
+  public get oauthScopes() {
+    return cdktf.Fn.tolist(this.getListAttribute('oauth_scopes'));
+  }
+
+  // preemptible - computed: true, optional: false, required: false
+  public get preemptible() {
+    return this.getBooleanAttribute('preemptible');
+  }
+
+  // reservation_affinity - computed: true, optional: false, required: false
+  private _reservationAffinity = new DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList(this, "reservation_affinity", false);
+  public get reservationAffinity() {
+    return this._reservationAffinity;
+  }
+
+  // resource_labels - computed: true, optional: false, required: false
+  private _resourceLabels = new cdktf.StringMap(this, "resource_labels");
+  public get resourceLabels() {
+    return this._resourceLabels;
+  }
+
+  // sandbox_config - computed: true, optional: false, required: false
+  private _sandboxConfig = new DataGoogleContainerClusterNodePoolNodeConfigSandboxConfigList(this, "sandbox_config", false);
+  public get sandboxConfig() {
+    return this._sandboxConfig;
+  }
+
+  // service_account - computed: true, optional: false, required: false
+  public get serviceAccount() {
+    return this.getStringAttribute('service_account');
+  }
+
+  // shielded_instance_config - computed: true, optional: false, required: false
+  private _shieldedInstanceConfig = new DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList(this, "shielded_instance_config", false);
+  public get shieldedInstanceConfig() {
+    return this._shieldedInstanceConfig;
+  }
+
+  // sole_tenant_config - computed: true, optional: false, required: false
+  private _soleTenantConfig = new DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList(this, "sole_tenant_config", false);
+  public get soleTenantConfig() {
+    return this._soleTenantConfig;
+  }
+
+  // spot - computed: true, optional: false, required: false
+  public get spot() {
+    return this.getBooleanAttribute('spot');
+  }
+
+  // tags - computed: true, optional: false, required: false
+  public get tags() {
+    return this.getListAttribute('tags');
+  }
+
+  // taint - computed: true, optional: false, required: false
+  private _taint = new DataGoogleContainerClusterNodePoolNodeConfigTaintList(this, "taint", false);
+  public get taint() {
+    return this._taint;
+  }
+
+  // workload_metadata_config - computed: true, optional: false, required: false
+  private _workloadMetadataConfig = new DataGoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigList(this, "workload_metadata_config", false);
+  public get workloadMetadataConfig() {
+    return this._workloadMetadataConfig;
+  }
+}
+
+export class DataGoogleContainerClusterNodePoolNodeConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleContainerClusterNodePoolNodeConfigOutputReference {
+    return new DataGoogleContainerClusterNodePoolNodeConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGoogleContainerClusterNodePoolPlacementPolicy {
+}
+
+export function dataGoogleContainerClusterNodePoolPlacementPolicyToTerraform(struct?: DataGoogleContainerClusterNodePoolPlacementPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGoogleContainerClusterNodePoolPlacementPolicy | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGoogleContainerClusterNodePoolPlacementPolicy | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // policy_name - computed: true, optional: false, required: false
+  public get policyName() {
+    return this.getStringAttribute('policy_name');
+  }
+
+  // tpu_topology - computed: true, optional: false, required: false
+  public get tpuTopology() {
+    return this.getStringAttribute('tpu_topology');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+
+export class DataGoogleContainerClusterNodePoolPlacementPolicyList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference {
+    return new DataGoogleContainerClusterNodePoolPlacementPolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy {
 }
 

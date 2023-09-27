@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,56 +10,56 @@ export interface GoogleFirestoreDocumentConfig extends cdktf.TerraformMetaArgume
   /**
   * The collection ID, relative to database. For example: chatrooms or chatrooms/my-document/private-messages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document#collection GoogleFirestoreDocument#collection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document#collection GoogleFirestoreDocument#collection}
   */
   readonly collection: string;
   /**
   * The Firestore database id. Defaults to '"(default)"'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document#database GoogleFirestoreDocument#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document#database GoogleFirestoreDocument#database}
   */
   readonly database?: string;
   /**
   * The client-assigned document ID to use for this document during creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document#document_id GoogleFirestoreDocument#document_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document#document_id GoogleFirestoreDocument#document_id}
   */
   readonly documentId: string;
   /**
   * The document's [fields](https://cloud.google.com/firestore/docs/reference/rest/v1/projects.databases.documents) formated as a json string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document#fields GoogleFirestoreDocument#fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document#fields GoogleFirestoreDocument#fields}
   */
   readonly fields: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document#id GoogleFirestoreDocument#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document#id GoogleFirestoreDocument#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document#project GoogleFirestoreDocument#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document#project GoogleFirestoreDocument#project}
   */
   readonly project?: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document#timeouts GoogleFirestoreDocument#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document#timeouts GoogleFirestoreDocument#timeouts}
   */
   readonly timeouts?: GoogleFirestoreDocumentTimeouts;
 }
 export interface GoogleFirestoreDocumentTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document#create GoogleFirestoreDocument#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document#create GoogleFirestoreDocument#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document#delete GoogleFirestoreDocument#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document#delete GoogleFirestoreDocument#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document#update GoogleFirestoreDocument#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document#update GoogleFirestoreDocument#update}
   */
   readonly update?: string;
 }
@@ -185,7 +180,7 @@ export class GoogleFirestoreDocumentTimeoutsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document google_firestore_document}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document google_firestore_document}
 */
 export class GoogleFirestoreDocument extends cdktf.TerraformResource {
 
@@ -199,7 +194,7 @@ export class GoogleFirestoreDocument extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_document google_firestore_document} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_document google_firestore_document} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -210,7 +205,7 @@ export class GoogleFirestoreDocument extends cdktf.TerraformResource {
       terraformResourceType: 'google_firestore_document',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.83.0',
+        providerVersion: '4.84.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

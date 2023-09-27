@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface GooglePubsubLiteSubscriptionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#id GooglePubsubLiteSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#id GooglePubsubLiteSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,41 +17,41 @@ export interface GooglePubsubLiteSubscriptionConfig extends cdktf.TerraformMetaA
   /**
   * Name of the subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#name GooglePubsubLiteSubscription#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#name GooglePubsubLiteSubscription#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#project GooglePubsubLiteSubscription#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#project GooglePubsubLiteSubscription#project}
   */
   readonly project?: string;
   /**
   * The region of the pubsub lite topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#region GooglePubsubLiteSubscription#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#region GooglePubsubLiteSubscription#region}
   */
   readonly region?: string;
   /**
   * A reference to a Topic resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#topic GooglePubsubLiteSubscription#topic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#topic GooglePubsubLiteSubscription#topic}
   */
   readonly topic: string;
   /**
   * The zone of the pubsub lite topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#zone GooglePubsubLiteSubscription#zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#zone GooglePubsubLiteSubscription#zone}
   */
   readonly zone?: string;
   /**
   * delivery_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#delivery_config GooglePubsubLiteSubscription#delivery_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#delivery_config GooglePubsubLiteSubscription#delivery_config}
   */
   readonly deliveryConfig?: GooglePubsubLiteSubscriptionDeliveryConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#timeouts GooglePubsubLiteSubscription#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#timeouts GooglePubsubLiteSubscription#timeouts}
   */
   readonly timeouts?: GooglePubsubLiteSubscriptionTimeouts;
 }
@@ -64,7 +59,7 @@ export interface GooglePubsubLiteSubscriptionDeliveryConfig {
   /**
   * When this subscription should send messages to subscribers relative to messages persistence in storage. Possible values: ["DELIVER_IMMEDIATELY", "DELIVER_AFTER_STORED", "DELIVERY_REQUIREMENT_UNSPECIFIED"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#delivery_requirement GooglePubsubLiteSubscription#delivery_requirement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#delivery_requirement GooglePubsubLiteSubscription#delivery_requirement}
   */
   readonly deliveryRequirement: string;
 }
@@ -126,15 +121,15 @@ export class GooglePubsubLiteSubscriptionDeliveryConfigOutputReference extends c
 }
 export interface GooglePubsubLiteSubscriptionTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#create GooglePubsubLiteSubscription#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#create GooglePubsubLiteSubscription#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#delete GooglePubsubLiteSubscription#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#delete GooglePubsubLiteSubscription#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription#update GooglePubsubLiteSubscription#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription#update GooglePubsubLiteSubscription#update}
   */
   readonly update?: string;
 }
@@ -255,7 +250,7 @@ export class GooglePubsubLiteSubscriptionTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription}
 */
 export class GooglePubsubLiteSubscription extends cdktf.TerraformResource {
 
@@ -269,7 +264,7 @@ export class GooglePubsubLiteSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -280,7 +275,7 @@ export class GooglePubsubLiteSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'google_pubsub_lite_subscription',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.83.0',
+        providerVersion: '4.84.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
