@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleCloudiotRegistryConfig extends cdktf.TerraformMetaArgumen
   /**
   * Activate or deactivate HTTP.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#http_config GoogleCloudiotRegistry#http_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#http_config GoogleCloudiotRegistry#http_config}
   */
   readonly httpConfig?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#id GoogleCloudiotRegistry#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#id GoogleCloudiotRegistry#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -32,54 +32,54 @@ example, if the LogLevel is ERROR, only events that terminate in
 errors will be logged. LogLevel is inclusive; enabling INFO logging
 will also enable ERROR logging. Default value: "NONE" Possible values: ["NONE", "ERROR", "INFO", "DEBUG"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#log_level GoogleCloudiotRegistry#log_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#log_level GoogleCloudiotRegistry#log_level}
   */
   readonly logLevel?: string;
   /**
   * Activate or deactivate MQTT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#mqtt_config GoogleCloudiotRegistry#mqtt_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#mqtt_config GoogleCloudiotRegistry#mqtt_config}
   */
   readonly mqttConfig?: { [key: string]: string };
   /**
   * A unique name for the resource, required by device registry.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#name GoogleCloudiotRegistry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#name GoogleCloudiotRegistry#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#project GoogleCloudiotRegistry#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#project GoogleCloudiotRegistry#project}
   */
   readonly project?: string;
   /**
   * The region in which the created registry should reside.
 If it is not provided, the provider region is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#region GoogleCloudiotRegistry#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#region GoogleCloudiotRegistry#region}
   */
   readonly region?: string;
   /**
   * A PubSub topic to publish device state updates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#state_notification_config GoogleCloudiotRegistry#state_notification_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#state_notification_config GoogleCloudiotRegistry#state_notification_config}
   */
   readonly stateNotificationConfig?: { [key: string]: string };
   /**
   * credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#credentials GoogleCloudiotRegistry#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#credentials GoogleCloudiotRegistry#credentials}
   */
   readonly credentials?: GoogleCloudiotRegistryCredentials[] | cdktf.IResolvable;
   /**
   * event_notification_configs block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#event_notification_configs GoogleCloudiotRegistry#event_notification_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#event_notification_configs GoogleCloudiotRegistry#event_notification_configs}
   */
   readonly eventNotificationConfigs?: GoogleCloudiotRegistryEventNotificationConfigs[] | cdktf.IResolvable;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#timeouts GoogleCloudiotRegistry#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#timeouts GoogleCloudiotRegistry#timeouts}
   */
   readonly timeouts?: GoogleCloudiotRegistryTimeouts;
 }
@@ -87,7 +87,7 @@ export interface GoogleCloudiotRegistryCredentials {
   /**
   * A public key certificate format and data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#public_key_certificate GoogleCloudiotRegistry#public_key_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#public_key_certificate GoogleCloudiotRegistry#public_key_certificate}
   */
   readonly publicKeyCertificate: { [key: string]: string };
 }
@@ -183,7 +183,7 @@ export interface GoogleCloudiotRegistryEventNotificationConfigs {
   /**
   * PubSub topic name to publish device events.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#pubsub_topic_name GoogleCloudiotRegistry#pubsub_topic_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#pubsub_topic_name GoogleCloudiotRegistry#pubsub_topic_name}
   */
   readonly pubsubTopicName: string;
   /**
@@ -193,7 +193,7 @@ leading '/' character. If empty, all strings are matched. Empty
 value can only be used for the last 'event_notification_configs'
 item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#subfolder_matches GoogleCloudiotRegistry#subfolder_matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#subfolder_matches GoogleCloudiotRegistry#subfolder_matches}
   */
   readonly subfolderMatches?: string;
 }
@@ -310,15 +310,15 @@ export class GoogleCloudiotRegistryEventNotificationConfigsList extends cdktf.Co
 }
 export interface GoogleCloudiotRegistryTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#create GoogleCloudiotRegistry#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#create GoogleCloudiotRegistry#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#delete GoogleCloudiotRegistry#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#delete GoogleCloudiotRegistry#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry#update GoogleCloudiotRegistry#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry#update GoogleCloudiotRegistry#update}
   */
   readonly update?: string;
 }
@@ -439,7 +439,7 @@ export class GoogleCloudiotRegistryTimeoutsOutputReference extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry google_cloudiot_registry}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry google_cloudiot_registry}
 */
 export class GoogleCloudiotRegistry extends cdktf.TerraformResource {
 
@@ -453,7 +453,7 @@ export class GoogleCloudiotRegistry extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_cloudiot_registry google_cloudiot_registry} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudiot_registry google_cloudiot_registry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -464,7 +464,7 @@ export class GoogleCloudiotRegistry extends cdktf.TerraformResource {
       terraformResourceType: 'google_cloudiot_registry',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.83.0',
+        providerVersion: '4.84.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

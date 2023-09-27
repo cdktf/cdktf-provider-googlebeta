@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface GoogleNetworkConnectivitySpokeConfig extends cdktf.TerraformMet
   /**
   * An optional description of the spoke.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#description GoogleNetworkConnectivitySpoke#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#description GoogleNetworkConnectivitySpoke#description}
   */
   readonly description?: string;
   /**
   * Immutable. The URI of the hub that this spoke is attached to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#hub GoogleNetworkConnectivitySpoke#hub}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#hub GoogleNetworkConnectivitySpoke#hub}
   */
   readonly hub: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#id GoogleNetworkConnectivitySpoke#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#id GoogleNetworkConnectivitySpoke#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,49 +34,55 @@ export interface GoogleNetworkConnectivitySpokeConfig extends cdktf.TerraformMet
   /**
   * Optional labels in key:value format. For more information about labels, see [Requirements for labels](https://cloud.google.com/resource-manager/docs/creating-managing-labels#requirements).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#labels GoogleNetworkConnectivitySpoke#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#labels GoogleNetworkConnectivitySpoke#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#location GoogleNetworkConnectivitySpoke#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#location GoogleNetworkConnectivitySpoke#location}
   */
   readonly location: string;
   /**
   * Immutable. The name of the spoke. Spoke names must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#name GoogleNetworkConnectivitySpoke#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#name GoogleNetworkConnectivitySpoke#name}
   */
   readonly name: string;
   /**
   * The project for the resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#project GoogleNetworkConnectivitySpoke#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#project GoogleNetworkConnectivitySpoke#project}
   */
   readonly project?: string;
   /**
   * linked_interconnect_attachments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#linked_interconnect_attachments GoogleNetworkConnectivitySpoke#linked_interconnect_attachments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#linked_interconnect_attachments GoogleNetworkConnectivitySpoke#linked_interconnect_attachments}
   */
   readonly linkedInterconnectAttachments?: GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments;
   /**
   * linked_router_appliance_instances block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#linked_router_appliance_instances GoogleNetworkConnectivitySpoke#linked_router_appliance_instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#linked_router_appliance_instances GoogleNetworkConnectivitySpoke#linked_router_appliance_instances}
   */
   readonly linkedRouterApplianceInstances?: GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstances;
   /**
+  * linked_vpc_network block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#linked_vpc_network GoogleNetworkConnectivitySpoke#linked_vpc_network}
+  */
+  readonly linkedVpcNetwork?: GoogleNetworkConnectivitySpokeLinkedVpcNetwork;
+  /**
   * linked_vpn_tunnels block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#linked_vpn_tunnels GoogleNetworkConnectivitySpoke#linked_vpn_tunnels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#linked_vpn_tunnels GoogleNetworkConnectivitySpoke#linked_vpn_tunnels}
   */
   readonly linkedVpnTunnels?: GoogleNetworkConnectivitySpokeLinkedVpnTunnels;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#timeouts GoogleNetworkConnectivitySpoke#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#timeouts GoogleNetworkConnectivitySpoke#timeouts}
   */
   readonly timeouts?: GoogleNetworkConnectivitySpokeTimeouts;
 }
@@ -84,13 +90,13 @@ export interface GoogleNetworkConnectivitySpokeLinkedInterconnectAttachments {
   /**
   * A value that controls whether site-to-site data transfer is enabled for these resources. Note that data transfer is available only in supported locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#site_to_site_data_transfer GoogleNetworkConnectivitySpoke#site_to_site_data_transfer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#site_to_site_data_transfer GoogleNetworkConnectivitySpoke#site_to_site_data_transfer}
   */
   readonly siteToSiteDataTransfer: boolean | cdktf.IResolvable;
   /**
   * The URIs of linked interconnect attachment resources
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#uris GoogleNetworkConnectivitySpoke#uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#uris GoogleNetworkConnectivitySpoke#uris}
   */
   readonly uris: string[];
 }
@@ -174,13 +180,13 @@ export interface GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesIns
   /**
   * The IP address on the VM to use for peering.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#ip_address GoogleNetworkConnectivitySpoke#ip_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#ip_address GoogleNetworkConnectivitySpoke#ip_address}
   */
   readonly ipAddress?: string;
   /**
   * The URI of the virtual machine resource
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#virtual_machine GoogleNetworkConnectivitySpoke#virtual_machine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#virtual_machine GoogleNetworkConnectivitySpoke#virtual_machine}
   */
   readonly virtualMachine?: string;
 }
@@ -302,13 +308,13 @@ export interface GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstances {
   /**
   * A value that controls whether site-to-site data transfer is enabled for these resources. Note that data transfer is available only in supported locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#site_to_site_data_transfer GoogleNetworkConnectivitySpoke#site_to_site_data_transfer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#site_to_site_data_transfer GoogleNetworkConnectivitySpoke#site_to_site_data_transfer}
   */
   readonly siteToSiteDataTransfer: boolean | cdktf.IResolvable;
   /**
   * instances block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#instances GoogleNetworkConnectivitySpoke#instances}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#instances GoogleNetworkConnectivitySpoke#instances}
   */
   readonly instances: GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances[] | cdktf.IResolvable;
 }
@@ -388,17 +394,110 @@ export class GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputR
     return this._instances.internalValue;
   }
 }
+export interface GoogleNetworkConnectivitySpokeLinkedVpcNetwork {
+  /**
+  * IP ranges encompassing the subnets to be excluded from peering.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#exclude_export_ranges GoogleNetworkConnectivitySpoke#exclude_export_ranges}
+  */
+  readonly excludeExportRanges?: string[];
+  /**
+  * The URI of the VPC network resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#uri GoogleNetworkConnectivitySpoke#uri}
+  */
+  readonly uri: string;
+}
+
+export function googleNetworkConnectivitySpokeLinkedVpcNetworkToTerraform(struct?: GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference | GoogleNetworkConnectivitySpokeLinkedVpcNetwork): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    exclude_export_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.excludeExportRanges),
+    uri: cdktf.stringToTerraform(struct!.uri),
+  }
+}
+
+export class GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): GoogleNetworkConnectivitySpokeLinkedVpcNetwork | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._excludeExportRanges !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.excludeExportRanges = this._excludeExportRanges;
+    }
+    if (this._uri !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.uri = this._uri;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleNetworkConnectivitySpokeLinkedVpcNetwork | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._excludeExportRanges = undefined;
+      this._uri = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._excludeExportRanges = value.excludeExportRanges;
+      this._uri = value.uri;
+    }
+  }
+
+  // exclude_export_ranges - computed: false, optional: true, required: false
+  private _excludeExportRanges?: string[]; 
+  public get excludeExportRanges() {
+    return this.getListAttribute('exclude_export_ranges');
+  }
+  public set excludeExportRanges(value: string[]) {
+    this._excludeExportRanges = value;
+  }
+  public resetExcludeExportRanges() {
+    this._excludeExportRanges = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get excludeExportRangesInput() {
+    return this._excludeExportRanges;
+  }
+
+  // uri - computed: false, optional: false, required: true
+  private _uri?: string; 
+  public get uri() {
+    return this.getStringAttribute('uri');
+  }
+  public set uri(value: string) {
+    this._uri = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get uriInput() {
+    return this._uri;
+  }
+}
 export interface GoogleNetworkConnectivitySpokeLinkedVpnTunnels {
   /**
   * A value that controls whether site-to-site data transfer is enabled for these resources. Note that data transfer is available only in supported locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#site_to_site_data_transfer GoogleNetworkConnectivitySpoke#site_to_site_data_transfer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#site_to_site_data_transfer GoogleNetworkConnectivitySpoke#site_to_site_data_transfer}
   */
   readonly siteToSiteDataTransfer: boolean | cdktf.IResolvable;
   /**
   * The URIs of linked VPN tunnel resources.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#uris GoogleNetworkConnectivitySpoke#uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#uris GoogleNetworkConnectivitySpoke#uris}
   */
   readonly uris: string[];
 }
@@ -480,15 +579,15 @@ export class GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference exten
 }
 export interface GoogleNetworkConnectivitySpokeTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#create GoogleNetworkConnectivitySpoke#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#create GoogleNetworkConnectivitySpoke#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#delete GoogleNetworkConnectivitySpoke#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#delete GoogleNetworkConnectivitySpoke#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke#update GoogleNetworkConnectivitySpoke#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke#update GoogleNetworkConnectivitySpoke#update}
   */
   readonly update?: string;
 }
@@ -609,7 +708,7 @@ export class GoogleNetworkConnectivitySpokeTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke}
 */
 export class GoogleNetworkConnectivitySpoke extends cdktf.TerraformResource {
 
@@ -623,7 +722,7 @@ export class GoogleNetworkConnectivitySpoke extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -634,7 +733,7 @@ export class GoogleNetworkConnectivitySpoke extends cdktf.TerraformResource {
       terraformResourceType: 'google_network_connectivity_spoke',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.83.0',
+        providerVersion: '4.84.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,
@@ -654,6 +753,7 @@ export class GoogleNetworkConnectivitySpoke extends cdktf.TerraformResource {
     this._project = config.project;
     this._linkedInterconnectAttachments.internalValue = config.linkedInterconnectAttachments;
     this._linkedRouterApplianceInstances.internalValue = config.linkedRouterApplianceInstances;
+    this._linkedVpcNetwork.internalValue = config.linkedVpcNetwork;
     this._linkedVpnTunnels.internalValue = config.linkedVpnTunnels;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -817,6 +917,22 @@ export class GoogleNetworkConnectivitySpoke extends cdktf.TerraformResource {
     return this._linkedRouterApplianceInstances.internalValue;
   }
 
+  // linked_vpc_network - computed: false, optional: true, required: false
+  private _linkedVpcNetwork = new GoogleNetworkConnectivitySpokeLinkedVpcNetworkOutputReference(this, "linked_vpc_network");
+  public get linkedVpcNetwork() {
+    return this._linkedVpcNetwork;
+  }
+  public putLinkedVpcNetwork(value: GoogleNetworkConnectivitySpokeLinkedVpcNetwork) {
+    this._linkedVpcNetwork.internalValue = value;
+  }
+  public resetLinkedVpcNetwork() {
+    this._linkedVpcNetwork.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get linkedVpcNetworkInput() {
+    return this._linkedVpcNetwork.internalValue;
+  }
+
   // linked_vpn_tunnels - computed: false, optional: true, required: false
   private _linkedVpnTunnels = new GoogleNetworkConnectivitySpokeLinkedVpnTunnelsOutputReference(this, "linked_vpn_tunnels");
   public get linkedVpnTunnels() {
@@ -864,6 +980,7 @@ export class GoogleNetworkConnectivitySpoke extends cdktf.TerraformResource {
       project: cdktf.stringToTerraform(this._project),
       linked_interconnect_attachments: googleNetworkConnectivitySpokeLinkedInterconnectAttachmentsToTerraform(this._linkedInterconnectAttachments.internalValue),
       linked_router_appliance_instances: googleNetworkConnectivitySpokeLinkedRouterApplianceInstancesToTerraform(this._linkedRouterApplianceInstances.internalValue),
+      linked_vpc_network: googleNetworkConnectivitySpokeLinkedVpcNetworkToTerraform(this._linkedVpcNetwork.internalValue),
       linked_vpn_tunnels: googleNetworkConnectivitySpokeLinkedVpnTunnelsToTerraform(this._linkedVpnTunnels.internalValue),
       timeouts: googleNetworkConnectivitySpokeTimeoutsToTerraform(this._timeouts.internalValue),
     };

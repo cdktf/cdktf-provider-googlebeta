@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface GooglePubsubTopicConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#id GooglePubsubTopic#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#id GooglePubsubTopic#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ to messages published on this topic. Your project's PubSub service account
 'roles/cloudkms.cryptoKeyEncrypterDecrypter' to use this feature.
 The expected format is 'projects/* /locations/* /keyRings/* /cryptoKeys/*'
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#kms_key_name GooglePubsubTopic#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#kms_key_name GooglePubsubTopic#kms_key_name}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -34,7 +34,7 @@ The expected format is 'projects/* /locations/* /keyRings/* /cryptoKeys/*'
   /**
   * A set of key/value label pairs to assign to this Topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#labels GooglePubsubTopic#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#labels GooglePubsubTopic#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
@@ -46,35 +46,35 @@ that is up to messageRetentionDuration in the past. If this field is not
 set, message retention is controlled by settings on individual subscriptions.
 Cannot be more than 31 days or less than 10 minutes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#message_retention_duration GooglePubsubTopic#message_retention_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#message_retention_duration GooglePubsubTopic#message_retention_duration}
   */
   readonly messageRetentionDuration?: string;
   /**
   * Name of the topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#name GooglePubsubTopic#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#name GooglePubsubTopic#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#project GooglePubsubTopic#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#project GooglePubsubTopic#project}
   */
   readonly project?: string;
   /**
   * message_storage_policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#message_storage_policy GooglePubsubTopic#message_storage_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#message_storage_policy GooglePubsubTopic#message_storage_policy}
   */
   readonly messageStoragePolicy?: GooglePubsubTopicMessageStoragePolicy;
   /**
   * schema_settings block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#schema_settings GooglePubsubTopic#schema_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#schema_settings GooglePubsubTopic#schema_settings}
   */
   readonly schemaSettings?: GooglePubsubTopicSchemaSettings;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#timeouts GooglePubsubTopic#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#timeouts GooglePubsubTopic#timeouts}
   */
   readonly timeouts?: GooglePubsubTopicTimeouts;
 }
@@ -87,7 +87,7 @@ of GCP altogether) will be routed for storage in one of the
 allowed regions. An empty list means that no regions are allowed,
 and is not a valid configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#allowed_persistence_regions GooglePubsubTopic#allowed_persistence_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#allowed_persistence_regions GooglePubsubTopic#allowed_persistence_regions}
   */
   readonly allowedPersistenceRegions: string[];
 }
@@ -151,7 +151,7 @@ export interface GooglePubsubTopicSchemaSettings {
   /**
   * The encoding of messages validated against schema. Default value: "ENCODING_UNSPECIFIED" Possible values: ["ENCODING_UNSPECIFIED", "JSON", "BINARY"]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#encoding GooglePubsubTopic#encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#encoding GooglePubsubTopic#encoding}
   */
   readonly encoding?: string;
   /**
@@ -160,7 +160,7 @@ validated against. Format is projects/{project}/schemas/{schema}.
 The value of this field will be _deleted-schema_
 if the schema has been deleted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#schema GooglePubsubTopic#schema}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#schema GooglePubsubTopic#schema}
   */
   readonly schema: string;
 }
@@ -245,15 +245,15 @@ export class GooglePubsubTopicSchemaSettingsOutputReference extends cdktf.Comple
 }
 export interface GooglePubsubTopicTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#create GooglePubsubTopic#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#create GooglePubsubTopic#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#delete GooglePubsubTopic#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#delete GooglePubsubTopic#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic#update GooglePubsubTopic#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic#update GooglePubsubTopic#update}
   */
   readonly update?: string;
 }
@@ -374,7 +374,7 @@ export class GooglePubsubTopicTimeoutsOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic google_pubsub_topic}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic google_pubsub_topic}
 */
 export class GooglePubsubTopic extends cdktf.TerraformResource {
 
@@ -388,7 +388,7 @@ export class GooglePubsubTopic extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic google_pubsub_topic} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic google_pubsub_topic} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -399,7 +399,7 @@ export class GooglePubsubTopic extends cdktf.TerraformResource {
       terraformResourceType: 'google_pubsub_topic',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.83.0',
+        providerVersion: '4.84.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

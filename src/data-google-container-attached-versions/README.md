@@ -1,3 +1,3 @@
 # `data_google_container_attached_versions`
 
-Refer to the Terraform Registory for docs: [`data_google_container_attached_versions`](https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/data-sources/google_container_attached_versions).
+Refer to the Terraform Registory for docs: [`data_google_container_attached_versions`](https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_container_attached_versions).

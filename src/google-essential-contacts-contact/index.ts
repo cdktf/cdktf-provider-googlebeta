@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact
+// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface GoogleEssentialContactsContactConfig extends cdktf.TerraformMet
   /**
   * The email address to send notifications to. This does not need to be a Google account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact#email GoogleEssentialContactsContact#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact#email GoogleEssentialContactsContact#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact#id GoogleEssentialContactsContact#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact#id GoogleEssentialContactsContact#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,39 +28,39 @@ export interface GoogleEssentialContactsContactConfig extends cdktf.TerraformMet
   /**
   * The preferred language for notifications, as a ISO 639-1 language code. See Supported languages for a list of supported languages.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact#language_tag GoogleEssentialContactsContact#language_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact#language_tag GoogleEssentialContactsContact#language_tag}
   */
   readonly languageTag: string;
   /**
   * The categories of notifications that the contact will receive communications for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact#notification_category_subscriptions GoogleEssentialContactsContact#notification_category_subscriptions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact#notification_category_subscriptions GoogleEssentialContactsContact#notification_category_subscriptions}
   */
   readonly notificationCategorySubscriptions: string[];
   /**
   * The resource to save this contact for. Format: organizations/{organization_id}, folders/{folder_id} or projects/{project_id}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact#parent GoogleEssentialContactsContact#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact#parent GoogleEssentialContactsContact#parent}
   */
   readonly parent: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact#timeouts GoogleEssentialContactsContact#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact#timeouts GoogleEssentialContactsContact#timeouts}
   */
   readonly timeouts?: GoogleEssentialContactsContactTimeouts;
 }
 export interface GoogleEssentialContactsContactTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact#create GoogleEssentialContactsContact#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact#create GoogleEssentialContactsContact#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact#delete GoogleEssentialContactsContact#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact#delete GoogleEssentialContactsContact#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact#update GoogleEssentialContactsContact#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact#update GoogleEssentialContactsContact#update}
   */
   readonly update?: string;
 }
@@ -181,7 +181,7 @@ export class GoogleEssentialContactsContactTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact}
 */
 export class GoogleEssentialContactsContact extends cdktf.TerraformResource {
 
@@ -195,7 +195,7 @@ export class GoogleEssentialContactsContact extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -206,7 +206,7 @@ export class GoogleEssentialContactsContact extends cdktf.TerraformResource {
       terraformResourceType: 'google_essential_contacts_contact',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.83.0',
+        providerVersion: '4.84.0',
         providerVersionConstraint: '~> 4.17'
       },
       provider: config.provider,

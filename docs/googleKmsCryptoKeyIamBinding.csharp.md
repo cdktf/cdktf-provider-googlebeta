@@ -1,6 +1,6 @@
 # `google_kms_crypto_key_iam_binding`
 
-Refer to the Terraform Registory for docs: [`google_kms_crypto_key_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding).
+Refer to the Terraform Registory for docs: [`google_kms_crypto_key_iam_binding`](https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding).
 
 # `googleKmsCryptoKeyIamBinding` Submodule <a name="`googleKmsCryptoKeyIamBinding` Submodule" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_kms_crypto_key_iam_binding`]
 
 ### GoogleKmsCryptoKeyIamBinding <a name="GoogleKmsCryptoKeyIamBinding" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBinding.Initializer"></a>
 
@@ -676,9 +676,9 @@ new GoogleKmsCryptoKeyIamBindingCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#expression GoogleKmsCryptoKeyIamBinding#expression}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#title GoogleKmsCryptoKeyIamBinding#title}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#description GoogleKmsCryptoKeyIamBinding#description}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingCondition.property.expression">Expression</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#expression GoogleKmsCryptoKeyIamBinding#expression}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingCondition.property.title">Title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#title GoogleKmsCryptoKeyIamBinding#title}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingCondition.property.description">Description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#description GoogleKmsCryptoKeyIamBinding#description}. |
 
 ---
 
@@ -690,7 +690,7 @@ public string Expression { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#expression GoogleKmsCryptoKeyIamBinding#expression}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#expression GoogleKmsCryptoKeyIamBinding#expression}.
 
 ---
 
@@ -702,7 +702,7 @@ public string Title { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#title GoogleKmsCryptoKeyIamBinding#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#title GoogleKmsCryptoKeyIamBinding#title}.
 
 ---
 
@@ -714,7 +714,7 @@ public string Description { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#description GoogleKmsCryptoKeyIamBinding#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#description GoogleKmsCryptoKeyIamBinding#description}.
 
 ---
 
@@ -752,11 +752,11 @@ new GoogleKmsCryptoKeyIamBindingConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.cryptoKeyId">CryptoKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#crypto_key_id GoogleKmsCryptoKeyIamBinding#crypto_key_id}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#members GoogleKmsCryptoKeyIamBinding#members}. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#role GoogleKmsCryptoKeyIamBinding#role}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.cryptoKeyId">CryptoKeyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#crypto_key_id GoogleKmsCryptoKeyIamBinding#crypto_key_id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.members">Members</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#members GoogleKmsCryptoKeyIamBinding#members}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.role">Role</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#role GoogleKmsCryptoKeyIamBinding#role}. |
 | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.condition">Condition</a></code> | <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingCondition">GoogleKmsCryptoKeyIamBindingCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#id GoogleKmsCryptoKeyIamBinding#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleKmsCryptoKeyIamBinding.GoogleKmsCryptoKeyIamBindingConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#id GoogleKmsCryptoKeyIamBinding#id}. |
 
 ---
 
@@ -838,7 +838,7 @@ public string CryptoKeyId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#crypto_key_id GoogleKmsCryptoKeyIamBinding#crypto_key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#crypto_key_id GoogleKmsCryptoKeyIamBinding#crypto_key_id}.
 
 ---
 
@@ -850,7 +850,7 @@ public string[] Members { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#members GoogleKmsCryptoKeyIamBinding#members}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#members GoogleKmsCryptoKeyIamBinding#members}.
 
 ---
 
@@ -862,7 +862,7 @@ public string Role { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#role GoogleKmsCryptoKeyIamBinding#role}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#role GoogleKmsCryptoKeyIamBinding#role}.
 
 ---
 
@@ -876,7 +876,7 @@ public GoogleKmsCryptoKeyIamBindingCondition Condition { get; set; }
 
 condition block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#condition GoogleKmsCryptoKeyIamBinding#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#condition GoogleKmsCryptoKeyIamBinding#condition}
 
 ---
 
@@ -888,7 +888,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_kms_crypto_key_iam_binding#id GoogleKmsCryptoKeyIamBinding#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_kms_crypto_key_iam_binding#id GoogleKmsCryptoKeyIamBinding#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
