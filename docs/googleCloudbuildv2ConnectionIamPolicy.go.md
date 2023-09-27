@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google-bet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudbuildv2connectioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniampolicy"
 
 googlecloudbuildv2connectioniampolicy.NewGoogleCloudbuildv2ConnectionIamPolicy(scope Construct, id *string, config GoogleCloudbuildv2ConnectionIamPolicyConfig) GoogleCloudbuildv2ConnectionIamPolicy
 ```
@@ -291,7 +291,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudbuildv2connectioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniampolicy"
 
 googlecloudbuildv2connectioniampolicy.GoogleCloudbuildv2ConnectionIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudbuildv2connectioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniampolicy"
 
 googlecloudbuildv2connectioniampolicy.GoogleCloudbuildv2ConnectionIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ googlecloudbuildv2connectioniampolicy.GoogleCloudbuildv2ConnectionIamPolicy_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudbuildv2connectioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniampolicy"
 
 googlecloudbuildv2connectioniampolicy.GoogleCloudbuildv2ConnectionIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google-beta.googleCloudbuildv2ConnectionIamPolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudbuildv2connectioniampolicy"
+import "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/googlecloudbuildv2connectioniampolicy"
 
 &googlecloudbuildv2connectioniampolicy.GoogleCloudbuildv2ConnectionIamPolicyConfig {
 	Connection: interface{},
