@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,48 +15,48 @@ export interface GoogleIdentityPlatformConfigConfig extends cdktf.TerraformMetaA
   /**
   * List of domains authorized for OAuth redirects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#authorized_domains GoogleIdentityPlatformConfig#authorized_domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#authorized_domains GoogleIdentityPlatformConfig#authorized_domains}
   */
   readonly authorizedDomains?: string[];
   /**
   * Whether anonymous users will be auto-deleted after a period of 30 days
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#autodelete_anonymous_users GoogleIdentityPlatformConfig#autodelete_anonymous_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#autodelete_anonymous_users GoogleIdentityPlatformConfig#autodelete_anonymous_users}
   */
   readonly autodeleteAnonymousUsers?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#id GoogleIdentityPlatformConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#id GoogleIdentityPlatformConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#project GoogleIdentityPlatformConfig#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#project GoogleIdentityPlatformConfig#project}
   */
   readonly project?: string;
   /**
   * blocking_functions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#blocking_functions GoogleIdentityPlatformConfig#blocking_functions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#blocking_functions GoogleIdentityPlatformConfig#blocking_functions}
   */
   readonly blockingFunctions?: GoogleIdentityPlatformConfigBlockingFunctions;
   /**
   * quota block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#quota GoogleIdentityPlatformConfig#quota}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#quota GoogleIdentityPlatformConfig#quota}
   */
   readonly quota?: GoogleIdentityPlatformConfigQuota;
   /**
   * sign_in block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#sign_in GoogleIdentityPlatformConfig#sign_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#sign_in GoogleIdentityPlatformConfig#sign_in}
   */
   readonly signIn?: GoogleIdentityPlatformConfigSignIn;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#timeouts GoogleIdentityPlatformConfig#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#timeouts GoogleIdentityPlatformConfig#timeouts}
   */
   readonly timeouts?: GoogleIdentityPlatformConfigTimeouts;
 }
@@ -64,19 +64,19 @@ export interface GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCred
   /**
   * Whether to pass the user's OAuth identity provider's access token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#access_token GoogleIdentityPlatformConfig#access_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#access_token GoogleIdentityPlatformConfig#access_token}
   */
   readonly accessToken?: boolean | cdktf.IResolvable;
   /**
   * Whether to pass the user's OIDC identity provider's ID token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#id_token GoogleIdentityPlatformConfig#id_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#id_token GoogleIdentityPlatformConfig#id_token}
   */
   readonly idToken?: boolean | cdktf.IResolvable;
   /**
   * Whether to pass the user's OAuth identity provider's refresh token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#refresh_token GoogleIdentityPlatformConfig#refresh_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#refresh_token GoogleIdentityPlatformConfig#refresh_token}
   */
   readonly refreshToken?: boolean | cdktf.IResolvable;
 }
@@ -187,13 +187,13 @@ export class GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredenti
 }
 export interface GoogleIdentityPlatformConfigBlockingFunctionsTriggers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#event_type GoogleIdentityPlatformConfig#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#event_type GoogleIdentityPlatformConfig#event_type}
   */
   readonly eventType: string;
   /**
   * HTTP URI trigger for the Cloud Function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#function_uri GoogleIdentityPlatformConfig#function_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#function_uri GoogleIdentityPlatformConfig#function_uri}
   */
   readonly functionUri: string;
 }
@@ -314,13 +314,13 @@ export interface GoogleIdentityPlatformConfigBlockingFunctions {
   /**
   * forward_inbound_credentials block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#forward_inbound_credentials GoogleIdentityPlatformConfig#forward_inbound_credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#forward_inbound_credentials GoogleIdentityPlatformConfig#forward_inbound_credentials}
   */
   readonly forwardInboundCredentials?: GoogleIdentityPlatformConfigBlockingFunctionsForwardInboundCredentials;
   /**
   * triggers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#triggers GoogleIdentityPlatformConfig#triggers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#triggers GoogleIdentityPlatformConfig#triggers}
   */
   readonly triggers: GoogleIdentityPlatformConfigBlockingFunctionsTriggers[] | cdktf.IResolvable;
 }
@@ -407,19 +407,19 @@ export interface GoogleIdentityPlatformConfigQuotaSignUpQuotaConfig {
   /**
   * A sign up APIs quota that customers can override temporarily.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#quota GoogleIdentityPlatformConfig#quota}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#quota GoogleIdentityPlatformConfig#quota}
   */
   readonly quota?: number;
   /**
   * How long this quota will be active for. It is measurred in seconds, e.g., Example: "9.615s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#quota_duration GoogleIdentityPlatformConfig#quota_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#quota_duration GoogleIdentityPlatformConfig#quota_duration}
   */
   readonly quotaDuration?: string;
   /**
   * When this quota will take affect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#start_time GoogleIdentityPlatformConfig#start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#start_time GoogleIdentityPlatformConfig#start_time}
   */
   readonly startTime?: string;
 }
@@ -532,7 +532,7 @@ export interface GoogleIdentityPlatformConfigQuota {
   /**
   * sign_up_quota_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#sign_up_quota_config GoogleIdentityPlatformConfig#sign_up_quota_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#sign_up_quota_config GoogleIdentityPlatformConfig#sign_up_quota_config}
   */
   readonly signUpQuotaConfig?: GoogleIdentityPlatformConfigQuotaSignUpQuotaConfig;
 }
@@ -683,7 +683,7 @@ export interface GoogleIdentityPlatformConfigSignInAnonymous {
   /**
   * Whether anonymous user auth is enabled for the project or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#enabled GoogleIdentityPlatformConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#enabled GoogleIdentityPlatformConfig#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
 }
@@ -747,7 +747,7 @@ export interface GoogleIdentityPlatformConfigSignInEmail {
   /**
   * Whether email auth is enabled for the project or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#enabled GoogleIdentityPlatformConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#enabled GoogleIdentityPlatformConfig#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
@@ -755,7 +755,7 @@ export interface GoogleIdentityPlatformConfigSignInEmail {
 password must be provided to sign in. If false, a user may sign in via either
 email/password or email link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#password_required GoogleIdentityPlatformConfig#password_required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#password_required GoogleIdentityPlatformConfig#password_required}
   */
   readonly passwordRequired?: boolean | cdktf.IResolvable;
 }
@@ -842,13 +842,13 @@ export interface GoogleIdentityPlatformConfigSignInPhoneNumber {
   /**
   * Whether phone number auth is enabled for the project or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#enabled GoogleIdentityPlatformConfig#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#enabled GoogleIdentityPlatformConfig#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
   * A map of <test phone number, fake code> that can be used for phone auth testing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#test_phone_numbers GoogleIdentityPlatformConfig#test_phone_numbers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#test_phone_numbers GoogleIdentityPlatformConfig#test_phone_numbers}
   */
   readonly testPhoneNumbers?: { [key: string]: string };
 }
@@ -935,25 +935,25 @@ export interface GoogleIdentityPlatformConfigSignIn {
   /**
   * Whether to allow more than one account to have the same email.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#allow_duplicate_emails GoogleIdentityPlatformConfig#allow_duplicate_emails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#allow_duplicate_emails GoogleIdentityPlatformConfig#allow_duplicate_emails}
   */
   readonly allowDuplicateEmails?: boolean | cdktf.IResolvable;
   /**
   * anonymous block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#anonymous GoogleIdentityPlatformConfig#anonymous}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#anonymous GoogleIdentityPlatformConfig#anonymous}
   */
   readonly anonymous?: GoogleIdentityPlatformConfigSignInAnonymous;
   /**
   * email block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#email GoogleIdentityPlatformConfig#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#email GoogleIdentityPlatformConfig#email}
   */
   readonly email?: GoogleIdentityPlatformConfigSignInEmail;
   /**
   * phone_number block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#phone_number GoogleIdentityPlatformConfig#phone_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#phone_number GoogleIdentityPlatformConfig#phone_number}
   */
   readonly phoneNumber?: GoogleIdentityPlatformConfigSignInPhoneNumber;
 }
@@ -1093,15 +1093,15 @@ export class GoogleIdentityPlatformConfigSignInOutputReference extends cdktf.Com
 }
 export interface GoogleIdentityPlatformConfigTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#create GoogleIdentityPlatformConfig#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#create GoogleIdentityPlatformConfig#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#delete GoogleIdentityPlatformConfig#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#delete GoogleIdentityPlatformConfig#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config#update GoogleIdentityPlatformConfig#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config#update GoogleIdentityPlatformConfig#update}
   */
   readonly update?: string;
 }
@@ -1222,7 +1222,7 @@ export class GoogleIdentityPlatformConfigTimeoutsOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config google_identity_platform_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config google_identity_platform_config}
 */
 export class GoogleIdentityPlatformConfig extends cdktf.TerraformResource {
 
@@ -1236,7 +1236,7 @@ export class GoogleIdentityPlatformConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1247,8 +1247,8 @@ export class GoogleIdentityPlatformConfig extends cdktf.TerraformResource {
       terraformResourceType: 'google_identity_platform_config',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.84.0',
-        providerVersionConstraint: '~> 4.17'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

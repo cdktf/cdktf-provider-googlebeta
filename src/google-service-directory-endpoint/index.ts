@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,18 +15,18 @@ export interface GoogleServiceDirectoryEndpointConfig extends cdktf.TerraformMet
   /**
   * IPv4 or IPv6 address of the endpoint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#address GoogleServiceDirectoryEndpoint#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#address GoogleServiceDirectoryEndpoint#address}
   */
   readonly address?: string;
   /**
   * The Resource ID must be 1-63 characters long, including digits,
 lowercase letters or the hyphen character.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#endpoint_id GoogleServiceDirectoryEndpoint#endpoint_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#endpoint_id GoogleServiceDirectoryEndpoint#endpoint_id}
   */
   readonly endpointId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#id GoogleServiceDirectoryEndpoint#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#id GoogleServiceDirectoryEndpoint#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -38,46 +38,46 @@ by service clients. The entire metadata dictionary may contain
 up to 512 characters, spread across all key-value pairs.
 Metadata that goes beyond any these limits will be rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#metadata GoogleServiceDirectoryEndpoint#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#metadata GoogleServiceDirectoryEndpoint#metadata}
   */
   readonly metadata?: { [key: string]: string };
   /**
   * The URL to the network, such as projects/PROJECT_NUMBER/locations/global/networks/NETWORK_NAME.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#network GoogleServiceDirectoryEndpoint#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#network GoogleServiceDirectoryEndpoint#network}
   */
   readonly network?: string;
   /**
   * Port that the endpoint is running on, must be in the
 range of [0, 65535]. If unspecified, the default is 0.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#port GoogleServiceDirectoryEndpoint#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#port GoogleServiceDirectoryEndpoint#port}
   */
   readonly port?: number;
   /**
   * The resource name of the service that this endpoint provides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#service GoogleServiceDirectoryEndpoint#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#service GoogleServiceDirectoryEndpoint#service}
   */
   readonly service: string;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#timeouts GoogleServiceDirectoryEndpoint#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#timeouts GoogleServiceDirectoryEndpoint#timeouts}
   */
   readonly timeouts?: GoogleServiceDirectoryEndpointTimeouts;
 }
 export interface GoogleServiceDirectoryEndpointTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#create GoogleServiceDirectoryEndpoint#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#create GoogleServiceDirectoryEndpoint#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#delete GoogleServiceDirectoryEndpoint#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#delete GoogleServiceDirectoryEndpoint#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint#update GoogleServiceDirectoryEndpoint#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint#update GoogleServiceDirectoryEndpoint#update}
   */
   readonly update?: string;
 }
@@ -198,7 +198,7 @@ export class GoogleServiceDirectoryEndpointTimeoutsOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint google_service_directory_endpoint}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint google_service_directory_endpoint}
 */
 export class GoogleServiceDirectoryEndpoint extends cdktf.TerraformResource {
 
@@ -212,7 +212,7 @@ export class GoogleServiceDirectoryEndpoint extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_service_directory_endpoint google_service_directory_endpoint} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_service_directory_endpoint google_service_directory_endpoint} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,8 +223,8 @@ export class GoogleServiceDirectoryEndpoint extends cdktf.TerraformResource {
       terraformResourceType: 'google_service_directory_endpoint',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.84.0',
-        providerVersionConstraint: '~> 4.17'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,83 @@ import * as cdktf from 'cdktf';
 
 export interface GoogleAlloydbBackupConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Annotations to allow client tools to store small amount of arbitrary data. This is distinct from labels. https://google.aip.dev/128
+An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+
+
+**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#annotations GoogleAlloydbBackup#annotations}
+  */
+  readonly annotations?: { [key: string]: string };
+  /**
   * The ID of the alloydb backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#backup_id GoogleAlloydbBackup#backup_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#backup_id GoogleAlloydbBackup#backup_id}
   */
   readonly backupId: string;
   /**
   * The full resource name of the backup source cluster (e.g., projects/{project}/locations/{location}/clusters/{clusterId}).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#cluster_name GoogleAlloydbBackup#cluster_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#cluster_name GoogleAlloydbBackup#cluster_name}
   */
   readonly clusterName: string;
   /**
   * User-provided description of the backup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#description GoogleAlloydbBackup#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#description GoogleAlloydbBackup#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#id GoogleAlloydbBackup#id}
+  * User-settable and human-readable display name for the Backup.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#display_name GoogleAlloydbBackup#display_name}
+  */
+  readonly displayName?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#id GoogleAlloydbBackup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * User-defined labels for the alloydb backup.
+  * User-defined labels for the alloydb backup. An object containing a list of "key": value pairs. Example: { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+
+
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#labels GoogleAlloydbBackup#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#labels GoogleAlloydbBackup#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
   * The location where the alloydb backup should reside.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#location GoogleAlloydbBackup#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#location GoogleAlloydbBackup#location}
   */
   readonly location: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#project GoogleAlloydbBackup#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#project GoogleAlloydbBackup#project}
   */
   readonly project?: string;
   /**
+  * The backup type, which suggests the trigger for the backup. Possible values: ["TYPE_UNSPECIFIED", "ON_DEMAND", "AUTOMATED", "CONTINUOUS"]
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#type GoogleAlloydbBackup#type}
+  */
+  readonly type?: string;
+  /**
   * encryption_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#encryption_config GoogleAlloydbBackup#encryption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#encryption_config GoogleAlloydbBackup#encryption_config}
   */
   readonly encryptionConfig?: GoogleAlloydbBackupEncryptionConfig;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#timeouts GoogleAlloydbBackup#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#timeouts GoogleAlloydbBackup#timeouts}
   */
   readonly timeouts?: GoogleAlloydbBackupTimeouts;
 }
@@ -135,11 +162,80 @@ export class GoogleAlloydbBackupEncryptionInfoList extends cdktf.ComplexList {
     return new GoogleAlloydbBackupEncryptionInfoOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface GoogleAlloydbBackupExpiryQuantity {
+}
+
+export function googleAlloydbBackupExpiryQuantityToTerraform(struct?: GoogleAlloydbBackupExpiryQuantity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class GoogleAlloydbBackupExpiryQuantityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): GoogleAlloydbBackupExpiryQuantity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: GoogleAlloydbBackupExpiryQuantity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // retention_count - computed: true, optional: false, required: false
+  public get retentionCount() {
+    return this.getNumberAttribute('retention_count');
+  }
+
+  // total_retention_count - computed: true, optional: false, required: false
+  public get totalRetentionCount() {
+    return this.getNumberAttribute('total_retention_count');
+  }
+}
+
+export class GoogleAlloydbBackupExpiryQuantityList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): GoogleAlloydbBackupExpiryQuantityOutputReference {
+    return new GoogleAlloydbBackupExpiryQuantityOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface GoogleAlloydbBackupEncryptionConfig {
   /**
   * The fully-qualified resource name of the KMS key. Each Cloud KMS key is regionalized and has the following format: projects/[PROJECT]/locations/[REGION]/keyRings/[RING]/cryptoKeys/[KEY_NAME].
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#kms_key_name GoogleAlloydbBackup#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#kms_key_name GoogleAlloydbBackup#kms_key_name}
   */
   readonly kmsKeyName?: string;
 }
@@ -204,15 +300,15 @@ export class GoogleAlloydbBackupEncryptionConfigOutputReference extends cdktf.Co
 }
 export interface GoogleAlloydbBackupTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#create GoogleAlloydbBackup#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#create GoogleAlloydbBackup#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#delete GoogleAlloydbBackup#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#delete GoogleAlloydbBackup#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup#update GoogleAlloydbBackup#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup#update GoogleAlloydbBackup#update}
   */
   readonly update?: string;
 }
@@ -333,7 +429,7 @@ export class GoogleAlloydbBackupTimeoutsOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup google_alloydb_backup}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup google_alloydb_backup}
 */
 export class GoogleAlloydbBackup extends cdktf.TerraformResource {
 
@@ -347,7 +443,7 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_backup google_alloydb_backup} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_alloydb_backup google_alloydb_backup} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -358,8 +454,8 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
       terraformResourceType: 'google_alloydb_backup',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.84.0',
-        providerVersionConstraint: '~> 4.17'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -369,13 +465,16 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._annotations = config.annotations;
     this._backupId = config.backupId;
     this._clusterName = config.clusterName;
     this._description = config.description;
+    this._displayName = config.displayName;
     this._id = config.id;
     this._labels = config.labels;
     this._location = config.location;
     this._project = config.project;
+    this._type = config.type;
     this._encryptionConfig.internalValue = config.encryptionConfig;
     this._timeouts.internalValue = config.timeouts;
   }
@@ -383,6 +482,22 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // annotations - computed: false, optional: true, required: false
+  private _annotations?: { [key: string]: string }; 
+  public get annotations() {
+    return this.getStringMapAttribute('annotations');
+  }
+  public set annotations(value: { [key: string]: string }) {
+    this._annotations = value;
+  }
+  public resetAnnotations() {
+    this._annotations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get annotationsInput() {
+    return this._annotations;
+  }
 
   // backup_id - computed: false, optional: false, required: true
   private _backupId?: string; 
@@ -410,9 +525,19 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
     return this._clusterName;
   }
 
+  // cluster_uid - computed: true, optional: false, required: false
+  public get clusterUid() {
+    return this.getStringAttribute('cluster_uid');
+  }
+
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // delete_time - computed: true, optional: false, required: false
+  public get deleteTime() {
+    return this.getStringAttribute('delete_time');
   }
 
   // description - computed: false, optional: true, required: false
@@ -431,6 +556,34 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
     return this._description;
   }
 
+  // display_name - computed: false, optional: true, required: false
+  private _displayName?: string; 
+  public get displayName() {
+    return this.getStringAttribute('display_name');
+  }
+  public set displayName(value: string) {
+    this._displayName = value;
+  }
+  public resetDisplayName() {
+    this._displayName = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get displayNameInput() {
+    return this._displayName;
+  }
+
+  // effective_annotations - computed: true, optional: false, required: false
+  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  public get effectiveAnnotations() {
+    return this._effectiveAnnotations;
+  }
+
+  // effective_labels - computed: true, optional: false, required: false
+  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  public get effectiveLabels() {
+    return this._effectiveLabels;
+  }
+
   // encryption_info - computed: true, optional: false, required: false
   private _encryptionInfo = new GoogleAlloydbBackupEncryptionInfoList(this, "encryption_info", false);
   public get encryptionInfo() {
@@ -440,6 +593,17 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
   // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
+  }
+
+  // expiry_quantity - computed: true, optional: false, required: false
+  private _expiryQuantity = new GoogleAlloydbBackupExpiryQuantityList(this, "expiry_quantity", false);
+  public get expiryQuantity() {
+    return this._expiryQuantity;
+  }
+
+  // expiry_time - computed: true, optional: false, required: false
+  public get expiryTime() {
+    return this.getStringAttribute('expiry_time');
   }
 
   // id - computed: true, optional: true, required: false
@@ -513,9 +677,36 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
     return this.getBooleanAttribute('reconciling');
   }
 
+  // size_bytes - computed: true, optional: false, required: false
+  public get sizeBytes() {
+    return this.getStringAttribute('size_bytes');
+  }
+
   // state - computed: true, optional: false, required: false
   public get state() {
     return this.getStringAttribute('state');
+  }
+
+  // terraform_labels - computed: true, optional: false, required: false
+  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  public get terraformLabels() {
+    return this._terraformLabels;
+  }
+
+  // type - computed: true, optional: true, required: false
+  private _type?: string; 
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+  public set type(value: string) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
   }
 
   // uid - computed: true, optional: false, required: false
@@ -566,13 +757,16 @@ export class GoogleAlloydbBackup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      annotations: cdktf.hashMapper(cdktf.stringToTerraform)(this._annotations),
       backup_id: cdktf.stringToTerraform(this._backupId),
       cluster_name: cdktf.stringToTerraform(this._clusterName),
       description: cdktf.stringToTerraform(this._description),
+      display_name: cdktf.stringToTerraform(this._displayName),
       id: cdktf.stringToTerraform(this._id),
       labels: cdktf.hashMapper(cdktf.stringToTerraform)(this._labels),
       location: cdktf.stringToTerraform(this._location),
       project: cdktf.stringToTerraform(this._project),
+      type: cdktf.stringToTerraform(this._type),
       encryption_config: googleAlloydbBackupEncryptionConfigToTerraform(this._encryptionConfig.internalValue),
       timeouts: googleAlloydbBackupTimeoutsToTerraform(this._timeouts.internalValue),
     };

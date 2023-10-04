@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret
+// https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -27,19 +27,23 @@ The total size of annotation keys and values must be less than 16KiB.
 
 An object containing a list of "key": value pairs. Example:
 { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+
+
+**Note**: This field is non-authoritative, and will only manage the annotations present in your configuration.
+Please refer to the field 'effective_annotations' for all of the annotations present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#annotations GoogleSecretManagerSecret#annotations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#annotations GoogleSecretManagerSecret#annotations}
   */
   readonly annotations?: { [key: string]: string };
   /**
   * Timestamp in UTC when the Secret is scheduled to expire. This is always provided on output, regardless of what was sent on input.
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#expire_time GoogleSecretManagerSecret#expire_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#expire_time GoogleSecretManagerSecret#expire_time}
   */
   readonly expireTime?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#id GoogleSecretManagerSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#id GoogleSecretManagerSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -58,25 +62,29 @@ No more than 64 labels can be assigned to a given resource.
 
 An object containing a list of "key": value pairs. Example:
 { "name": "wrench", "mass": "1.3kg", "count": "3" }.
+
+
+**Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+Please refer to the field 'effective_labels' for all of the labels present on the resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#labels GoogleSecretManagerSecret#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#labels GoogleSecretManagerSecret#labels}
   */
   readonly labels?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#project GoogleSecretManagerSecret#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#project GoogleSecretManagerSecret#project}
   */
   readonly project?: string;
   /**
   * This must be unique within the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#secret_id GoogleSecretManagerSecret#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#secret_id GoogleSecretManagerSecret#secret_id}
   */
   readonly secretId: string;
   /**
   * The TTL for the Secret.
 A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#ttl GoogleSecretManagerSecret#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#ttl GoogleSecretManagerSecret#ttl}
   */
   readonly ttl?: string;
   /**
@@ -90,31 +98,31 @@ characters. An alias string must start with a letter and cannot be the string
 An object containing a list of "key": value pairs. Example:
 { "name": "wrench", "mass": "1.3kg", "count": "3" }.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#version_aliases GoogleSecretManagerSecret#version_aliases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#version_aliases GoogleSecretManagerSecret#version_aliases}
   */
   readonly versionAliases?: { [key: string]: string };
   /**
   * replication block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#replication GoogleSecretManagerSecret#replication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#replication GoogleSecretManagerSecret#replication}
   */
   readonly replication: GoogleSecretManagerSecretReplication;
   /**
   * rotation block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#rotation GoogleSecretManagerSecret#rotation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#rotation GoogleSecretManagerSecret#rotation}
   */
   readonly rotation?: GoogleSecretManagerSecretRotation;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#timeouts GoogleSecretManagerSecret#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#timeouts GoogleSecretManagerSecret#timeouts}
   */
   readonly timeouts?: GoogleSecretManagerSecretTimeouts;
   /**
   * topics block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#topics GoogleSecretManagerSecret#topics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#topics GoogleSecretManagerSecret#topics}
   */
   readonly topics?: GoogleSecretManagerSecretTopics[] | cdktf.IResolvable;
 }
@@ -122,7 +130,7 @@ export interface GoogleSecretManagerSecretReplicationAutoCustomerManagedEncrypti
   /**
   * The resource name of the Cloud KMS CryptoKey used to encrypt secret payloads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#kms_key_name GoogleSecretManagerSecret#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#kms_key_name GoogleSecretManagerSecret#kms_key_name}
   */
   readonly kmsKeyName: string;
 }
@@ -186,7 +194,7 @@ export interface GoogleSecretManagerSecretReplicationAuto {
   /**
   * customer_managed_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#customer_managed_encryption GoogleSecretManagerSecret#customer_managed_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#customer_managed_encryption GoogleSecretManagerSecret#customer_managed_encryption}
   */
   readonly customerManagedEncryption?: GoogleSecretManagerSecretReplicationAutoCustomerManagedEncryption;
 }
@@ -253,7 +261,7 @@ export interface GoogleSecretManagerSecretReplicationUserManagedReplicasCustomer
   /**
   * Describes the Cloud KMS encryption key that will be used to protect destination secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#kms_key_name GoogleSecretManagerSecret#kms_key_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#kms_key_name GoogleSecretManagerSecret#kms_key_name}
   */
   readonly kmsKeyName: string;
 }
@@ -317,13 +325,13 @@ export interface GoogleSecretManagerSecretReplicationUserManagedReplicas {
   /**
   * The canonical IDs of the location to replicate data. For example: "us-east1".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#location GoogleSecretManagerSecret#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#location GoogleSecretManagerSecret#location}
   */
   readonly location: string;
   /**
   * customer_managed_encryption block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#customer_managed_encryption GoogleSecretManagerSecret#customer_managed_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#customer_managed_encryption GoogleSecretManagerSecret#customer_managed_encryption}
   */
   readonly customerManagedEncryption?: GoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption;
 }
@@ -442,7 +450,7 @@ export interface GoogleSecretManagerSecretReplicationUserManaged {
   /**
   * replicas block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#replicas GoogleSecretManagerSecret#replicas}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#replicas GoogleSecretManagerSecret#replicas}
   */
   readonly replicas: GoogleSecretManagerSecretReplicationUserManagedReplicas[] | cdktf.IResolvable;
 }
@@ -504,21 +512,15 @@ export class GoogleSecretManagerSecretReplicationUserManagedOutputReference exte
 }
 export interface GoogleSecretManagerSecretReplication {
   /**
-  * The Secret will automatically be replicated without any restrictions.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#automatic GoogleSecretManagerSecret#automatic}
-  */
-  readonly automatic?: boolean | cdktf.IResolvable;
-  /**
   * auto block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#auto GoogleSecretManagerSecret#auto}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#auto GoogleSecretManagerSecret#auto}
   */
   readonly auto?: GoogleSecretManagerSecretReplicationAuto;
   /**
   * user_managed block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#user_managed GoogleSecretManagerSecret#user_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#user_managed GoogleSecretManagerSecret#user_managed}
   */
   readonly userManaged?: GoogleSecretManagerSecretReplicationUserManaged;
 }
@@ -529,7 +531,6 @@ export function googleSecretManagerSecretReplicationToTerraform(struct?: GoogleS
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    automatic: cdktf.booleanToTerraform(struct!.automatic),
     auto: googleSecretManagerSecretReplicationAutoToTerraform(struct!.auto),
     user_managed: googleSecretManagerSecretReplicationUserManagedToTerraform(struct!.userManaged),
   }
@@ -549,10 +550,6 @@ export class GoogleSecretManagerSecretReplicationOutputReference extends cdktf.C
   public get internalValue(): GoogleSecretManagerSecretReplication | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._automatic !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.automatic = this._automatic;
-    }
     if (this._auto?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.auto = this._auto?.internalValue;
@@ -567,32 +564,14 @@ export class GoogleSecretManagerSecretReplicationOutputReference extends cdktf.C
   public set internalValue(value: GoogleSecretManagerSecretReplication | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
-      this._automatic = undefined;
       this._auto.internalValue = undefined;
       this._userManaged.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
-      this._automatic = value.automatic;
       this._auto.internalValue = value.auto;
       this._userManaged.internalValue = value.userManaged;
     }
-  }
-
-  // automatic - computed: false, optional: true, required: false
-  private _automatic?: boolean | cdktf.IResolvable; 
-  public get automatic() {
-    return this.getBooleanAttribute('automatic');
-  }
-  public set automatic(value: boolean | cdktf.IResolvable) {
-    this._automatic = value;
-  }
-  public resetAutomatic() {
-    this._automatic = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get automaticInput() {
-    return this._automatic;
   }
 
   // auto - computed: false, optional: true, required: false
@@ -632,14 +611,14 @@ export interface GoogleSecretManagerSecretRotation {
   * Timestamp in UTC at which the Secret is scheduled to rotate.
 A timestamp in RFC3339 UTC "Zulu" format, with nanosecond resolution and up to nine fractional digits. Examples: "2014-10-02T15:01:23Z" and "2014-10-02T15:01:23.045123456Z".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#next_rotation_time GoogleSecretManagerSecret#next_rotation_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#next_rotation_time GoogleSecretManagerSecret#next_rotation_time}
   */
   readonly nextRotationTime?: string;
   /**
   * The Duration between rotation notifications. Must be in seconds and at least 3600s (1h) and at most 3153600000s (100 years).
 If rotationPeriod is set, 'next_rotation_time' must be set. 'next_rotation_time' will be advanced by this period when the service automatically sends rotation notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#rotation_period GoogleSecretManagerSecret#rotation_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#rotation_period GoogleSecretManagerSecret#rotation_period}
   */
   readonly rotationPeriod?: string;
 }
@@ -727,15 +706,15 @@ export class GoogleSecretManagerSecretRotationOutputReference extends cdktf.Comp
 }
 export interface GoogleSecretManagerSecretTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#create GoogleSecretManagerSecret#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#create GoogleSecretManagerSecret#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#delete GoogleSecretManagerSecret#delete}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#delete GoogleSecretManagerSecret#delete}
   */
   readonly delete?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#update GoogleSecretManagerSecret#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#update GoogleSecretManagerSecret#update}
   */
   readonly update?: string;
 }
@@ -859,7 +838,7 @@ export interface GoogleSecretManagerSecretTopics {
   * The resource name of the Pub/Sub topic that will be published to, in the following format: projects/* /topics/*.
 For publication to succeed, the Secret Manager Service Agent service account must have pubsub.publisher permissions on the topic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret#name GoogleSecretManagerSecret#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret#name GoogleSecretManagerSecret#name}
    *
   * Note: The above comment contained a comment block ending sequence (* followed by /). We have introduced a space between to prevent syntax errors. Please ignore the space.
   */
@@ -955,7 +934,7 @@ export class GoogleSecretManagerSecretTopicsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret google_secret_manager_secret}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret google_secret_manager_secret}
 */
 export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
 
@@ -969,7 +948,7 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -980,8 +959,8 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
       terraformResourceType: 'google_secret_manager_secret',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.84.0',
-        providerVersionConstraint: '~> 4.17'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -1028,6 +1007,18 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
   // create_time - computed: true, optional: false, required: false
   public get createTime() {
     return this.getStringAttribute('create_time');
+  }
+
+  // effective_annotations - computed: true, optional: false, required: false
+  private _effectiveAnnotations = new cdktf.StringMap(this, "effective_annotations");
+  public get effectiveAnnotations() {
+    return this._effectiveAnnotations;
+  }
+
+  // effective_labels - computed: true, optional: false, required: false
+  private _effectiveLabels = new cdktf.StringMap(this, "effective_labels");
+  public get effectiveLabels() {
+    return this._effectiveLabels;
   }
 
   // expire_time - computed: true, optional: true, required: false
@@ -1110,6 +1101,12 @@ export class GoogleSecretManagerSecret extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get secretIdInput() {
     return this._secretId;
+  }
+
+  // terraform_labels - computed: true, optional: false, required: false
+  private _terraformLabels = new cdktf.StringMap(this, "terraform_labels");
+  public get terraformLabels() {
+    return this._terraformLabels;
   }
 
   // ttl - computed: false, optional: true, required: false

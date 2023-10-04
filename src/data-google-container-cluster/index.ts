@@ -46,7 +46,7 @@ import { Construct } from 'constructs';
 import * as cdktf from 'cdktf';
 export interface DataGoogleContainerClusterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_container_cluster#id DataGoogleContainerCluster#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_container_cluster#id DataGoogleContainerCluster#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -55,25 +55,25 @@ export interface DataGoogleContainerClusterConfig extends cdktf.TerraformMetaArg
   /**
   * The location (region or zone) in which the cluster master will be created, as well as the default node location. If you specify a zone (such as us-central1-a), the cluster will be a zonal cluster with a single cluster master. If you specify a region (such as us-west1), the cluster will be a regional cluster with multiple masters spread across zones in the region, and with default node locations in those zones as well.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_container_cluster#location DataGoogleContainerCluster#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_container_cluster#location DataGoogleContainerCluster#location}
   */
   readonly location?: string;
   /**
   * The name of the cluster, unique within the project and location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_container_cluster#name DataGoogleContainerCluster#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_container_cluster#name DataGoogleContainerCluster#name}
   */
   readonly name: string;
   /**
   * The ID of the project in which the resource belongs. If it is not provided, the provider project is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_container_cluster#project DataGoogleContainerCluster#project}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_container_cluster#project DataGoogleContainerCluster#project}
   */
   readonly project?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_container_cluster google_container_cluster}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_container_cluster google_container_cluster}
 */
 export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
 
@@ -87,7 +87,7 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -98,8 +98,8 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
       terraformResourceType: 'google_container_cluster',
       terraformGeneratorMetadata: {
         providerName: 'google-beta',
-        providerVersion: '4.84.0',
-        providerVersionConstraint: '~> 4.17'
+        providerVersion: '5.0.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -193,6 +193,11 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
     return this._defaultSnatStatus;
   }
 
+  // deletion_protection - computed: true, optional: false, required: false
+  public get deletionProtection() {
+    return this.getBooleanAttribute('deletion_protection');
+  }
+
   // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
@@ -207,11 +212,6 @@ export class DataGoogleContainerCluster extends cdktf.TerraformDataSource {
   // enable_autopilot - computed: true, optional: false, required: false
   public get enableAutopilot() {
     return this.getBooleanAttribute('enable_autopilot');
-  }
-
-  // enable_binary_authorization - computed: true, optional: false, required: false
-  public get enableBinaryAuthorization() {
-    return this.getBooleanAttribute('enable_binary_authorization');
   }
 
   // enable_fqdn_network_policy - computed: true, optional: false, required: false

@@ -1,6 +1,6 @@
 # `google_dataproc_job`
 
-Refer to the Terraform Registory for docs: [`google_dataproc_job`](https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job).
+Refer to the Terraform Registory for docs: [`google_dataproc_job`](https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job).
 
 # `googleDataprocJob` Submodule <a name="`googleDataprocJob` Submodule" id="@cdktf/provider-google-beta.googleDataprocJob"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`google_dataproc_job`](https://regis
 
 ### GoogleDataprocJob <a name="GoogleDataprocJob" id="@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job google_dataproc_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job google_dataproc_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.Initializer"></a>
 
@@ -595,6 +595,7 @@ GoogleDataprocJob.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.driverControlsFilesUri">DriverControlsFilesUri</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.driverOutputResourceUri">DriverOutputResourceUri</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.effectiveLabels">EffectiveLabels</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.hadoopConfig">HadoopConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfigOutputReference">GoogleDataprocJobHadoopConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.hiveConfig">HiveConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHiveConfigOutputReference">GoogleDataprocJobHiveConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.pigConfig">PigConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPigConfigOutputReference">GoogleDataprocJobPigConfigOutputReference</a></code> | *No description.* |
@@ -606,6 +607,7 @@ GoogleDataprocJob.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.sparkConfig">SparkConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSparkConfigOutputReference">GoogleDataprocJobSparkConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.sparksqlConfig">SparksqlConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobSparksqlConfigOutputReference">GoogleDataprocJobSparksqlConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.status">Status</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobStatusList">GoogleDataprocJobStatusList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.terraformLabels">TerraformLabels</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobTimeoutsOutputReference">GoogleDataprocJobTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.forceDeleteInput">ForceDeleteInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.hadoopConfigInput">HadoopConfigInput</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfig">GoogleDataprocJobHadoopConfig</a></code> | *No description.* |
@@ -793,6 +795,16 @@ public string DriverOutputResourceUri { get; }
 
 ---
 
+##### `EffectiveLabels`<sup>Required</sup> <a name="EffectiveLabels" id="@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.effectiveLabels"></a>
+
+```csharp
+public StringMap EffectiveLabels { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.StringMap
+
+---
+
 ##### `HadoopConfig`<sup>Required</sup> <a name="HadoopConfig" id="@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.hadoopConfig"></a>
 
 ```csharp
@@ -900,6 +912,16 @@ public GoogleDataprocJobStatusList Status { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobStatusList">GoogleDataprocJobStatusList</a>
+
+---
+
+##### `TerraformLabels`<sup>Required</sup> <a name="TerraformLabels" id="@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJob.property.terraformLabels"></a>
+
+```csharp
+public StringMap TerraformLabels { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.StringMap
 
 ---
 
@@ -1192,7 +1214,7 @@ new GoogleDataprocJobConfig {
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobConfig.property.forceDelete">ForceDelete</a></code> | <code>object</code> | By default, you can only delete inactive jobs within Dataproc. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobConfig.property.hadoopConfig">HadoopConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHadoopConfig">GoogleDataprocJobHadoopConfig</a></code> | hadoop_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobConfig.property.hiveConfig">HiveConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobHiveConfig">GoogleDataprocJobHiveConfig</a></code> | hive_config block. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#id GoogleDataprocJob#id}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#id GoogleDataprocJob#id}. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobConfig.property.labels">Labels</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Optional. The labels to associate with this job. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobConfig.property.pigConfig">PigConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPigConfig">GoogleDataprocJobPigConfig</a></code> | pig_config block. |
 | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobConfig.property.prestoConfig">PrestoConfig</a></code> | <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobPrestoConfig">GoogleDataprocJobPrestoConfig</a></code> | presto_config block. |
@@ -1287,7 +1309,7 @@ public GoogleDataprocJobPlacement Placement { get; set; }
 
 placement block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#placement GoogleDataprocJob#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#placement GoogleDataprocJob#placement}
 
 ---
 
@@ -1303,7 +1325,7 @@ By default, you can only delete inactive jobs within Dataproc.
 
 Setting this to true, and calling destroy, will ensure that the job is first cancelled before issuing the delete.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#force_delete GoogleDataprocJob#force_delete}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#force_delete GoogleDataprocJob#force_delete}
 
 ---
 
@@ -1317,7 +1339,7 @@ public GoogleDataprocJobHadoopConfig HadoopConfig { get; set; }
 
 hadoop_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#hadoop_config GoogleDataprocJob#hadoop_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#hadoop_config GoogleDataprocJob#hadoop_config}
 
 ---
 
@@ -1331,7 +1353,7 @@ public GoogleDataprocJobHiveConfig HiveConfig { get; set; }
 
 hive_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#hive_config GoogleDataprocJob#hive_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#hive_config GoogleDataprocJob#hive_config}
 
 ---
 
@@ -1343,7 +1365,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#id GoogleDataprocJob#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#id GoogleDataprocJob#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1360,7 +1382,10 @@ public System.Collections.Generic.IDictionary<string, string> Labels { get; set;
 
 Optional. The labels to associate with this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#labels GoogleDataprocJob#labels}
+*Note**: This field is non-authoritative, and will only manage the labels present in your configuration.
+Please refer to the field 'effective_labels' for all of the labels present on the resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#labels GoogleDataprocJob#labels}
 
 ---
 
@@ -1374,7 +1399,7 @@ public GoogleDataprocJobPigConfig PigConfig { get; set; }
 
 pig_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#pig_config GoogleDataprocJob#pig_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#pig_config GoogleDataprocJob#pig_config}
 
 ---
 
@@ -1388,7 +1413,7 @@ public GoogleDataprocJobPrestoConfig PrestoConfig { get; set; }
 
 presto_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#presto_config GoogleDataprocJob#presto_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#presto_config GoogleDataprocJob#presto_config}
 
 ---
 
@@ -1404,7 +1429,7 @@ The project in which the cluster can be found and jobs subsequently run against.
 
 If it is not provided, the provider project is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#project GoogleDataprocJob#project}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#project GoogleDataprocJob#project}
 
 ---
 
@@ -1418,7 +1443,7 @@ public GoogleDataprocJobPysparkConfig PysparkConfig { get; set; }
 
 pyspark_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#pyspark_config GoogleDataprocJob#pyspark_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#pyspark_config GoogleDataprocJob#pyspark_config}
 
 ---
 
@@ -1432,7 +1457,7 @@ public GoogleDataprocJobReference Reference { get; set; }
 
 reference block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#reference GoogleDataprocJob#reference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#reference GoogleDataprocJob#reference}
 
 ---
 
@@ -1448,7 +1473,7 @@ The Cloud Dataproc region.
 
 This essentially determines which clusters are available for this job to be submitted to. If not specified, defaults to global.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#region GoogleDataprocJob#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#region GoogleDataprocJob#region}
 
 ---
 
@@ -1462,7 +1487,7 @@ public GoogleDataprocJobScheduling Scheduling { get; set; }
 
 scheduling block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#scheduling GoogleDataprocJob#scheduling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#scheduling GoogleDataprocJob#scheduling}
 
 ---
 
@@ -1476,7 +1501,7 @@ public GoogleDataprocJobSparkConfig SparkConfig { get; set; }
 
 spark_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#spark_config GoogleDataprocJob#spark_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#spark_config GoogleDataprocJob#spark_config}
 
 ---
 
@@ -1490,7 +1515,7 @@ public GoogleDataprocJobSparksqlConfig SparksqlConfig { get; set; }
 
 sparksql_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#sparksql_config GoogleDataprocJob#sparksql_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#sparksql_config GoogleDataprocJob#sparksql_config}
 
 ---
 
@@ -1504,7 +1529,7 @@ public GoogleDataprocJobTimeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#timeouts GoogleDataprocJob#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#timeouts GoogleDataprocJob#timeouts}
 
 ---
 
@@ -1552,7 +1577,7 @@ public string[] ArchiveUris { get; set; }
 
 HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#archive_uris GoogleDataprocJob#archive_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#archive_uris GoogleDataprocJob#archive_uris}
 
 ---
 
@@ -1566,7 +1591,7 @@ public string[] Args { get; set; }
 
 The arguments to pass to the driver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#args GoogleDataprocJob#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#args GoogleDataprocJob#args}
 
 ---
 
@@ -1582,7 +1607,7 @@ HCFS URIs of files to be copied to the working directory of Spark drivers and di
 
 Useful for naively parallel tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#file_uris GoogleDataprocJob#file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#file_uris GoogleDataprocJob#file_uris}
 
 ---
 
@@ -1596,7 +1621,7 @@ public string[] JarFileUris { get; set; }
 
 HCFS URIs of jar files to add to the CLASSPATHs of the Spark driver and tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
 
 ---
 
@@ -1610,7 +1635,7 @@ public GoogleDataprocJobHadoopConfigLoggingConfig LoggingConfig { get; set; }
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
 
 ---
 
@@ -1626,7 +1651,7 @@ The class containing the main method of the driver.
 
 Must be in a provided jar or jar that is already on the classpath. Conflicts with main_jar_file_uri
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#main_class GoogleDataprocJob#main_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#main_class GoogleDataprocJob#main_class}
 
 ---
 
@@ -1640,7 +1665,7 @@ public string MainJarFileUri { get; set; }
 
 The HCFS URI of jar file containing the driver jar. Conflicts with main_class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#main_jar_file_uri GoogleDataprocJob#main_jar_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#main_jar_file_uri GoogleDataprocJob#main_jar_file_uri}
 
 ---
 
@@ -1656,7 +1681,7 @@ A mapping of property names to values, used to configure Spark.
 
 Properties that conflict with values set by the Cloud Dataproc API may be overwritten. Can include properties set in /etc/spark/conf/spark-defaults.conf and classes in user code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
 
 ---
 
@@ -1692,7 +1717,7 @@ Optional.
 
 The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
 
 ---
 
@@ -1738,7 +1763,7 @@ Whether to continue executing queries if a query fails.
 
 The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#continue_on_failure GoogleDataprocJob#continue_on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#continue_on_failure GoogleDataprocJob#continue_on_failure}
 
 ---
 
@@ -1754,7 +1779,7 @@ HCFS URIs of jar files to add to the CLASSPATH of the Hive server and Hadoop Map
 
 Can contain Hive SerDes and UDFs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
 
 ---
 
@@ -1770,7 +1795,7 @@ A mapping of property names and values, used to configure Hive.
 
 Properties that conflict with values set by the Cloud Dataproc API may be overwritten. Can include properties set in /etc/hadoop/conf/*-site.xml, /etc/hive/conf/hive-site.xml, and classes in user code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
 
 ---
 
@@ -1784,7 +1809,7 @@ public string QueryFileUri { get; set; }
 
 HCFS URI of file containing Hive script to execute as the job. Conflicts with query_list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#query_file_uri GoogleDataprocJob#query_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#query_file_uri GoogleDataprocJob#query_file_uri}
 
 ---
 
@@ -1798,7 +1823,7 @@ public string[] QueryList { get; set; }
 
 The list of Hive queries or statements to execute as part of the job. Conflicts with query_file_uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#query_list GoogleDataprocJob#query_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#query_list GoogleDataprocJob#query_list}
 
 ---
 
@@ -1812,7 +1837,7 @@ public System.Collections.Generic.IDictionary<string, string> ScriptVariables { 
 
 Mapping of query variable names to values (equivalent to the Hive command: SET name="value";).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#script_variables GoogleDataprocJob#script_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#script_variables GoogleDataprocJob#script_variables}
 
 ---
 
@@ -1860,7 +1885,7 @@ Whether to continue executing queries if a query fails.
 
 The default value is false. Setting to true can be useful when executing independent parallel queries. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#continue_on_failure GoogleDataprocJob#continue_on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#continue_on_failure GoogleDataprocJob#continue_on_failure}
 
 ---
 
@@ -1876,7 +1901,7 @@ HCFS URIs of jar files to add to the CLASSPATH of the Pig Client and Hadoop MapR
 
 Can contain Pig UDFs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
 
 ---
 
@@ -1890,7 +1915,7 @@ public GoogleDataprocJobPigConfigLoggingConfig LoggingConfig { get; set; }
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
 
 ---
 
@@ -1906,7 +1931,7 @@ A mapping of property names to values, used to configure Pig.
 
 Properties that conflict with values set by the Cloud Dataproc API may be overwritten. Can include properties set in /etc/hadoop/conf/*-site.xml, /etc/pig/conf/pig.properties, and classes in user code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
 
 ---
 
@@ -1920,7 +1945,7 @@ public string QueryFileUri { get; set; }
 
 HCFS URI of file containing Hive script to execute as the job. Conflicts with query_list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#query_file_uri GoogleDataprocJob#query_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#query_file_uri GoogleDataprocJob#query_file_uri}
 
 ---
 
@@ -1934,7 +1959,7 @@ public string[] QueryList { get; set; }
 
 The list of Hive queries or statements to execute as part of the job. Conflicts with query_file_uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#query_list GoogleDataprocJob#query_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#query_list GoogleDataprocJob#query_list}
 
 ---
 
@@ -1948,7 +1973,7 @@ public System.Collections.Generic.IDictionary<string, string> ScriptVariables { 
 
 Mapping of query variable names to values (equivalent to the Pig command: name=[value]).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#script_variables GoogleDataprocJob#script_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#script_variables GoogleDataprocJob#script_variables}
 
 ---
 
@@ -1984,7 +2009,7 @@ Optional.
 
 The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
 
 ---
 
@@ -2018,7 +2043,7 @@ public string ClusterName { get; set; }
 
 The name of the cluster where the job will be submitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#cluster_name GoogleDataprocJob#cluster_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#cluster_name GoogleDataprocJob#cluster_name}
 
 ---
 
@@ -2064,7 +2089,7 @@ public string[] ClientTags { get; set; }
 
 Presto client tags to attach to this query.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#client_tags GoogleDataprocJob#client_tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#client_tags GoogleDataprocJob#client_tags}
 
 ---
 
@@ -2080,7 +2105,7 @@ Whether to continue executing queries if a query fails.
 
 Setting to true can be useful when executing independent parallel queries. Defaults to false.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#continue_on_failure GoogleDataprocJob#continue_on_failure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#continue_on_failure GoogleDataprocJob#continue_on_failure}
 
 ---
 
@@ -2094,7 +2119,7 @@ public GoogleDataprocJobPrestoConfigLoggingConfig LoggingConfig { get; set; }
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
 
 ---
 
@@ -2108,7 +2133,7 @@ public string OutputFormat { get; set; }
 
 The format in which query output will be displayed. See the Presto documentation for supported output formats.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#output_format GoogleDataprocJob#output_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#output_format GoogleDataprocJob#output_format}
 
 ---
 
@@ -2124,7 +2149,7 @@ A mapping of property names to values.
 
 Used to set Presto session properties Equivalent to using the --session flag in the Presto CLI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
 
 ---
 
@@ -2138,7 +2163,7 @@ public string QueryFileUri { get; set; }
 
 The HCFS URI of the script that contains SQL queries. Conflicts with query_list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#query_file_uri GoogleDataprocJob#query_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#query_file_uri GoogleDataprocJob#query_file_uri}
 
 ---
 
@@ -2152,7 +2177,7 @@ public string[] QueryList { get; set; }
 
 The list of SQL queries or statements to execute as part of the job. Conflicts with query_file_uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#query_list GoogleDataprocJob#query_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#query_list GoogleDataprocJob#query_list}
 
 ---
 
@@ -2188,7 +2213,7 @@ Optional.
 
 The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
 
 ---
 
@@ -2236,7 +2261,7 @@ public string MainPythonFileUri { get; set; }
 
 Required. The HCFS URI of the main Python file to use as the driver. Must be a .py file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#main_python_file_uri GoogleDataprocJob#main_python_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#main_python_file_uri GoogleDataprocJob#main_python_file_uri}
 
 ---
 
@@ -2250,7 +2275,7 @@ public string[] ArchiveUris { get; set; }
 
 Optional. HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#archive_uris GoogleDataprocJob#archive_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#archive_uris GoogleDataprocJob#archive_uris}
 
 ---
 
@@ -2266,7 +2291,7 @@ Optional.
 
 The arguments to pass to the driver. Do not include arguments, such as --conf, that can be set as job properties, since a collision may occur that causes an incorrect job submission
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#args GoogleDataprocJob#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#args GoogleDataprocJob#args}
 
 ---
 
@@ -2282,7 +2307,7 @@ Optional.
 
 HCFS URIs of files to be copied to the working directory of Python drivers and distributed tasks. Useful for naively parallel tasks
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#file_uris GoogleDataprocJob#file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#file_uris GoogleDataprocJob#file_uris}
 
 ---
 
@@ -2296,7 +2321,7 @@ public string[] JarFileUris { get; set; }
 
 Optional. HCFS URIs of jar files to add to the CLASSPATHs of the Python driver and tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
 
 ---
 
@@ -2310,7 +2335,7 @@ public GoogleDataprocJobPysparkConfigLoggingConfig LoggingConfig { get; set; }
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
 
 ---
 
@@ -2326,7 +2351,7 @@ Optional.
 
 A mapping of property names to values, used to configure PySpark. Properties that conflict with values set by the Cloud Dataproc API may be overwritten. Can include properties set in /etc/spark/conf/spark-defaults.conf and classes in user code
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
 
 ---
 
@@ -2342,7 +2367,7 @@ Optional.
 
 HCFS file URIs of Python files to pass to the PySpark framework. Supported file types: .py, .egg, and .zip
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#python_file_uris GoogleDataprocJob#python_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#python_file_uris GoogleDataprocJob#python_file_uris}
 
 ---
 
@@ -2378,7 +2403,7 @@ Optional.
 
 The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
 
 ---
 
@@ -2414,7 +2439,7 @@ The job ID, which must be unique within the project.
 
 The job ID is generated by the server upon job submission or provided by the user as a means to perform retries without creating duplicate jobs
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#job_id GoogleDataprocJob#job_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#job_id GoogleDataprocJob#job_id}
 
 ---
 
@@ -2450,7 +2475,7 @@ public double MaxFailuresPerHour { get; set; }
 
 Maximum number of times per hour a driver may be restarted as a result of driver exiting with non-zero code before job is reported failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#max_failures_per_hour GoogleDataprocJob#max_failures_per_hour}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#max_failures_per_hour GoogleDataprocJob#max_failures_per_hour}
 
 ---
 
@@ -2464,7 +2489,7 @@ public double MaxFailuresTotal { get; set; }
 
 Maximum number of times in total a driver may be restarted as a result of driver exiting with non-zero code before job is reported failed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#max_failures_total GoogleDataprocJob#max_failures_total}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#max_failures_total GoogleDataprocJob#max_failures_total}
 
 ---
 
@@ -2512,7 +2537,7 @@ public string[] ArchiveUris { get; set; }
 
 HCFS URIs of archives to be extracted in the working directory of .jar, .tar, .tar.gz, .tgz, and .zip.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#archive_uris GoogleDataprocJob#archive_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#archive_uris GoogleDataprocJob#archive_uris}
 
 ---
 
@@ -2526,7 +2551,7 @@ public string[] Args { get; set; }
 
 The arguments to pass to the driver.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#args GoogleDataprocJob#args}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#args GoogleDataprocJob#args}
 
 ---
 
@@ -2542,7 +2567,7 @@ HCFS URIs of files to be copied to the working directory of Spark drivers and di
 
 Useful for naively parallel tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#file_uris GoogleDataprocJob#file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#file_uris GoogleDataprocJob#file_uris}
 
 ---
 
@@ -2556,7 +2581,7 @@ public string[] JarFileUris { get; set; }
 
 HCFS URIs of jar files to add to the CLASSPATHs of the Spark driver and tasks.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
 
 ---
 
@@ -2570,7 +2595,7 @@ public GoogleDataprocJobSparkConfigLoggingConfig LoggingConfig { get; set; }
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
 
 ---
 
@@ -2586,7 +2611,7 @@ The class containing the main method of the driver.
 
 Must be in a provided jar or jar that is already on the classpath. Conflicts with main_jar_file_uri
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#main_class GoogleDataprocJob#main_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#main_class GoogleDataprocJob#main_class}
 
 ---
 
@@ -2600,7 +2625,7 @@ public string MainJarFileUri { get; set; }
 
 The HCFS URI of jar file containing the driver jar. Conflicts with main_class.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#main_jar_file_uri GoogleDataprocJob#main_jar_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#main_jar_file_uri GoogleDataprocJob#main_jar_file_uri}
 
 ---
 
@@ -2616,7 +2641,7 @@ A mapping of property names to values, used to configure Spark.
 
 Properties that conflict with values set by the Cloud Dataproc API may be overwritten. Can include properties set in /etc/spark/conf/spark-defaults.conf and classes in user code.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
 
 ---
 
@@ -2652,7 +2677,7 @@ Optional.
 
 The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
 
 ---
 
@@ -2696,7 +2721,7 @@ public string[] JarFileUris { get; set; }
 
 HCFS URIs of jar files to be added to the Spark CLASSPATH.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#jar_file_uris GoogleDataprocJob#jar_file_uris}
 
 ---
 
@@ -2710,7 +2735,7 @@ public GoogleDataprocJobSparksqlConfigLoggingConfig LoggingConfig { get; set; }
 
 logging_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#logging_config GoogleDataprocJob#logging_config}
 
 ---
 
@@ -2726,7 +2751,7 @@ A mapping of property names to values, used to configure Spark SQL's SparkConf.
 
 Properties that conflict with values set by the Cloud Dataproc API may be overwritten.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#properties GoogleDataprocJob#properties}
 
 ---
 
@@ -2740,7 +2765,7 @@ public string QueryFileUri { get; set; }
 
 The HCFS URI of the script that contains SQL queries. Conflicts with query_list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#query_file_uri GoogleDataprocJob#query_file_uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#query_file_uri GoogleDataprocJob#query_file_uri}
 
 ---
 
@@ -2754,7 +2779,7 @@ public string[] QueryList { get; set; }
 
 The list of SQL queries or statements to execute as part of the job. Conflicts with query_file_uri.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#query_list GoogleDataprocJob#query_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#query_list GoogleDataprocJob#query_list}
 
 ---
 
@@ -2768,7 +2793,7 @@ public System.Collections.Generic.IDictionary<string, string> ScriptVariables { 
 
 Mapping of query variable names to values (equivalent to the Spark SQL command: SET name="value";).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#script_variables GoogleDataprocJob#script_variables}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#script_variables GoogleDataprocJob#script_variables}
 
 ---
 
@@ -2804,7 +2829,7 @@ Optional.
 
 The per-package log levels for the driver. This may include 'root' package name to configure rootLogger. Examples: 'com.google = FATAL', 'root = INFO', 'org.apache = DEBUG'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#driver_log_levels GoogleDataprocJob#driver_log_levels}
 
 ---
 
@@ -2838,8 +2863,8 @@ new GoogleDataprocJobTimeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#create GoogleDataprocJob#create}. |
-| <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#delete GoogleDataprocJob#delete}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobTimeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#create GoogleDataprocJob#create}. |
+| <code><a href="#@cdktf/provider-google-beta.googleDataprocJob.GoogleDataprocJobTimeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#delete GoogleDataprocJob#delete}. |
 
 ---
 
@@ -2851,7 +2876,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#create GoogleDataprocJob#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#create GoogleDataprocJob#create}.
 
 ---
 
@@ -2863,7 +2888,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job#delete GoogleDataprocJob#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job#delete GoogleDataprocJob#delete}.
 
 ---
 
